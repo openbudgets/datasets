@@ -1,0 +1,164 @@
+# ----- DSD-specific namespaces -----
+
+@prefix eu:               <http://data.openbudgets.eu/ontology/budget-of-the-european-union/> .
+@prefix eu-attribute:     <http://data.openbudgets.eu/ontology/dsd/eu-budget-2014/attribute/> .
+@prefix eu-codelist:      <http://data.openbudgets.eu/resource/eu-budget-2014/codelist/> .
+@prefix eu-dimension:     <http://data.openbudgets.eu/ontology/dsd/eu-budget-2014/dimension/> .
+@prefix eu-operation:     <http://data.openbudgets.eu/resource/eu-budget-2014/codelist/operation-character/> .
+@prefix eu-optional:      <http://data.openbudgets.eu/ontology/dsd/eu-budget-2014/optional-property/> .
+
+# ----- OpenBudgets.eu namespaces -----
+
+@prefix obeu:             <http://data.openbudgets.eu/ontology/> .
+@prefix obeu-attribute:   <http://data.openbudgets.eu/ontology/dsd/attribute/> .
+@prefix obeu-dimension:   <http://data.openbudgets.eu/ontology/dsd/dimension/> .
+@prefix obeu-measure:     <http://data.openbudgets.eu/ontology/dsd/measure/> .
+@prefix obeu-operation:   <http://data.openbudgets.eu/resource/codelist/operation-character/> .
+
+# ----- Generic namespaces ------
+
+@prefix org:              <http://www.w3.org/ns/org#> .
+@prefix qb:               <http://purl.org/linked-data/cube#> .
+@prefix rdf:              <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:             <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:             <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd:              <http://www.w3.org/2001/XMLSchema#> .
+
+# ----- DSD -----
+
+<http://data.openbudgets.eu/ontology/dsd/eu-budget-2014> a qb:DataStructureDefinition ;
+  rdfs:label "Data structure definition for the budget of the European Union from the year 2014"@en ;
+  qb:component [ qb:dimension obeu-dimension:budgetaryUnit ;
+                 qb:componentAttachment qb:DataSet ],
+               [ qb:dimension eu-dimension:budgetPhase ],
+               [ qb:dimension eu-dimension:operationCharacter ],
+               [ qb:dimension obeu-dimension:fiscalYear ],
+               [ qb:dimension eu-dimension:budgetNomenclature ],
+               [ qb:dimension eu-dimension:catpol ],
+               [ qb:componentProperty eu-optional:compulsoryExpenditure ],
+               [ qb:componentProperty eu-optional:isDelegation ],
+               [ qb:componentProperty eu-optional:isReserve ],
+               [ qb:attribute obeu-attribute:currency ;
+                 qb:componentRequired true ;
+                 qb:componentAttachment qb:DataSet ],
+               [ qb:measure obeu-measure:amount ] .
+
+<http://data.openbudgets.eu/ontology/dsd/eu-budget-2014-reserves> a qb:DataStructureDefinition ;
+  rdfs:label "Data structure definition for reserves in the budget of the European Union from the year 2014"@en ;
+  qb:component [ qb:dimension eu-dimension:reservedFor ],
+               [ qb:componentProperty eu-optional:budgetNomenclature ],
+               [ qb:attribute obeu-attribute:currency ;
+                 qb:componentRequired true ;
+                 qb:componentAttachment qb:DataSet ],
+               [ qb:measure obeu-measure:amount ] .
+
+# ----- Component properties -----
+
+eu-dimension:budgetNomenclature a rdf:Property, qb:CodedProperty, qb:DimensionProperty ;
+  rdfs:label "Activity-Based Budgeting nomenclature 2014"@en ;
+  rdfs:comment "Concepts in the EU’s Activity-Based Budgeting nomenclature are hierarchically organized into sections, chapters, articles, items, and sub-items. Each concept may have a supplementary editorial and legal notes."@en ;
+  rdfs:subPropertyOf obeu-dimension:classification ;
+  qb:codeList eu-codelist:budget-nomenclature-2014 ;
+  rdfs:range eu:BudgetNomenclature ;
+  rdfs:isDefinedBy <http://data.openbudgets.eu/ontology/dsd/eu-budget-2014> .
+
+eu-dimension:budgetPhase a rdf:Property, qb:CodedProperty, qb:DimensionProperty ;
+  rdfs:label "EU budget phase"@en ;
+  rdfs:subPropertyOf obeu-dimension:budgetPhase ;
+  qb:codeList <http://publications.europa.eu/resource/authority/eu-budget-amount-status> ;
+  rdfs:isDefinedBy <http://data.openbudgets.eu/ontology/dsd/eu-budget-2014> .
+
+eu-dimension:catpol a rdf:Property, qb:CodedProperty, qb:DimensionProperty ;
+  rdfs:label "MFF/CATPOL heading"@en ;
+  rdfs:comment "Multiannual Financial Framework Political Category classification of a budget line."@en ;
+  rdfs:subPropertyOf obeu-dimension:classification ;
+  qb:codeList eu-codelist:catpol ;
+  rdfs:range eu:CATPOL ;
+  rdfs:isDefinedBy <http://data.openbudgets.eu/ontology/dsd/eu-budget-2014> .
+
+eu-dimension:operationCharacter a rdf:Property, qb:CodedProperty, qb:DimensionProperty ;
+  rdfs:label "Operation character"@en ;
+  rdfs:comment "EU budget's specific operation characters"@en ;
+  rdfs:subPropertyOf obeu-dimension:operationCharacter ;
+  qb:codeList eu-codelist:operation-character ;
+  rdfs:range obeu:OperationCharacter ;
+  rdfs:isDefinedBy <http://data.openbudgets.eu/ontology/dsd/eu-budget-2014> .
+
+eu-dimension:reservedFor a rdf:Property, qb:DimensionProperty ;
+  rdfs:label "Reserved for"@en ;
+  rdfs:comment "Budget line for which the reserve is allocated."@en ;
+  rdfs:range qb:Observation ;
+  rdfs:isDefinedBy <http://data.openbudgets.eu/ontology/dsd/eu-budget-2014> .
+
+eu-optional:budgetNomenclature a rdf:Property, qb:CodedProperty, obeu:OptionalProperty ;
+  rdfs:label "Activity-Based Budgeting nomenclature 2014"@en ;
+  rdfs:comment "Concepts in the EU’s Activity-Based Budgeting nomenclature are hierarchically organized into sections, chapters, articles, items, and sub-items. Each concept may have a supplementary editorial and legal notes."@en ;
+  qb:codeList eu-codelist:budget-nomenclature-2014 ;
+  rdfs:range eu:BudgetNomenclature ;
+  rdfs:isDefinedBy <http://data.openbudgets.eu/ontology/dsd/eu-budget-2014> .
+
+eu-optional:compulsoryExpenditure a rdf:Property, obeu:OptionalProperty ;
+  rdfs:label "Compulsory expenditure"@en ;
+  rdfs:comment "Indicates whether the appropriation in question is a compulsory or non-compulsory expenditure. Compulsory expenditures, such as pensions, must be spent."@en ;
+  rdfs:domain qb:Observation ;
+  rdfs:range xsd:boolean ;
+  rdfs:isDefinedBy <http://data.openbudgets.eu/ontology/dsd/eu-budget-2014> .
+
+eu-optional:isDelegation a rdf:Property, obeu:OptionalProperty ;
+  rdfs:label "Is delegation"@en ;
+  rdfs:comment "Indicates whether an expenditure is related to a delegation."@en ;
+  rdfs:domain qb:Observation ;
+  rdfs:range xsd:boolean ;
+  rdfs:isDefinedBy <http://data.openbudgets.eu/ontology/dsd/eu-budget-2014> .
+
+eu-optional:isReserve a rdf:Property, obeu:OptionalProperty ;
+  rdfs:label "Is reserve"@en ;
+  rdfs:comment "Reserves set aside for the budget line. They are not allocated to any precise purpose, i.e., there is no basic act for the action when the budget is established or there are doubts about the adequacy of the appropriation; they may be used only after approved transfer."@en ;
+  rdfs:domain qb:Observation ;
+  rdfs:range xsd:boolean ;
+  rdfs:isDefinedBy <http://data.openbudgets.eu/ontology/dsd/eu-budget-2014> .
+
+eu:agencyClassification a rdf:Property ;
+  rdfs:label "Agency classification"@en ;
+  rdfs:domain qb:Observation ;
+  qb:codeList <http://publications.europa.eu/resource/authority/corporate-body> ;
+  qb:concept obeu:AdministrativeClassification ;
+  rdfs:isDefinedBy <http://data.openbudgets.eu/ontology/budget-of-the-european-union> .
+
+eu:programClassification a rdf:Property ;
+  rdfs:label "Program classification"@en ;
+  rdfs:domain qb:Observation ;
+  rdfs:range skos:Concept ;
+  qb:codeList <http://publications.europa.eu/ontology/authority/eu-programme> ;
+  qb:concept obeu:ProgrammeClassification ;
+  rdfs:isDefinedBy <http://data.openbudgets.eu/ontology/budget-of-the-european-union> .
+
+eu:BudgetNomenclature a rdfs:Class ;
+  rdfs:label "Budget nomenclature"@en ;
+  rdfs:comment "Concept from the budget nomenclature for the EU budget 2014"@en ;
+  rdfs:subClassOf skos:Concept ;
+  rdfs:isDefinedBy <http://data.openbudgets.eu/ontology/budget-of-the-european-union> .
+
+eu:CATPOL a rdfs:Class ;
+  rdfs:label "CATPOL"@en ;
+  rdfs:comment "Concept from the Multiannual Financial Framework's Political Category headings"@en ;
+  rdfs:subClassOf skos:Concept ;
+  rdfs:isDefinedBy <http://data.openbudgets.eu/ontology/budget-of-the-european-union> .
+
+# ----- Code lists -----
+
+eu-codelist:operation-character a skos:ConceptScheme ;
+  rdfs:label "An extended code list of operation characters for the EU budget"@en ;
+  skos:hasTopConcept obeu-operation:expenditure, obeu-operation:revenue .
+
+eu-operation:commitment a skos:Concept, obeu:OperationCharacter ;
+  skos:prefLabel "Commitment"@en ;
+  skos:definition "Total cost of the legal commitments during the current fiscal year."@en ;
+  skos:broader obeu-operation:expenditure ;
+  skos:inScheme eu-codelist:operation-character .
+
+eu-operation:payment a skos:Concept, obeu:OperationCharacter ;
+  skos:prefLabel "Payment"@en ;
+  skos:definition "Payments made to honour the legal commitments entered into in the current fiscal year and/or earlier fiscal years."@en ;
+  skos:broader obeu-operation:expenditure ;
+  skos:inScheme eu-codelist:operation-character .
