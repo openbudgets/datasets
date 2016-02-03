@@ -48,7 +48,9 @@
 	[ qb:attribute obeu-attribute:currency ;
 	  qb:componentRequired "true"^^xsd:boolean ;
 	  qb:componentAttachment qb:DataSet ],
-	[ qb:measure obeu-measure:amount ] .
+	[ qb:measure obeu-measure:amount ] ;
+	
+	qb:sliceKey  thess-be2011-dsd-slice:slice-by-functionalCode.
 
 	
 # Slice key definition
@@ -65,6 +67,7 @@ gr-dimension:economicClassification a rdf:Property, qb:CodedProperty, qb:Dimensi
 	rdfs:comment "Budget expenditure codes (KAE) for greek municipalities"@en ;
 	rdfs:subPropertyOf obeu-dimension:economicClassification ;
 	qb:codeList obeu-codelist:kae-ota-exodwn-2014 ;
+	rdfs:range skos:Concept ;
 	rdfs:isDefinedBy <http://data.openbudgets.eu/ontology/dsd/greek-municipalities> . 
 
 thess-dimension:administrativeClassification a rdf:Property, qb:CodedProperty, qb:DimensionProperty ;
@@ -72,6 +75,7 @@ thess-dimension:administrativeClassification a rdf:Property, qb:CodedProperty, q
 	rdfs:comment "The organization unit (office) of the municipality of Thessaloniki that is responsible for the budget amount."@en ;
 	rdfs:subPropertyOf obeu-dimension:administrativeClassification ;
 	qb:codeList obeu-codelist:kae-ota-administration-2014 ;
+	rdfs:range skos:Concept ;
 	rdfs:isDefinedBy <http://data.openbudgets.eu/ontology/dsd/municipality-of-thessaloniki> .
 	
 thess-dimension:functionalClassification a rdf:Property, qb:CodedProperty, qb:DimensionProperty ;
@@ -79,4 +83,5 @@ thess-dimension:functionalClassification a rdf:Property, qb:CodedProperty, qb:Di
 	rdfs:comment "Specific function of expenditure budget per office for Municipality of Thessaloniki expenditure Budget of year 2011"@en ;
 	rdfs:subPropertyOf obeu-dimension:functionalClassification ;
 	qb:codeList thess-be2011:codelist ;
+	rdfs:range skos:Concept ;
 	rdfs:isDefinedBy <http://data.openbudgets.eu/ontology/dsd/thess-budget-expenditure-2011> .
