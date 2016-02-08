@@ -1,13 +1,5 @@
 # ----- DSD-specific namespaces -----
 
-#TODO necessary? --> remove/change
-
-#@prefix eu:               <http://data.openbudgets.eu/ontology/budget-of-the-european-union/> .
-#@prefix eu-attribute:     <http://data.openbudgets.eu/ontology/dsd/eu-budget-2014/attribute/> .
-#@prefix eu-dimension:     <http://data.openbudgets.eu/ontology/dsd/eu-budget-2014/dimension/> .
-#@prefix eu-codelist:      <http://data.openbudgets.eu/resource/eu-budget-2014/codelist/> .
-#@prefix eu-operation:     <http://data.openbudgets.eu/resource/eu-budget-2014/codelist/operation-character/> .
-
 @prefix esif:             <http://data.openbudgets.eu/ontology/european-funds/> .
 @prefix esif-codelist:    <http://data.openbudgets.eu/resource/ESIF_2014-2020/codelist/> .
 @prefix esif-dimension:   <http://data.openbudgets.eu/ontology/dsd/ESIF_2014-2020/dimension/> .
@@ -20,7 +12,6 @@
 @prefix obeu-attribute:   <http://data.openbudgets.eu/ontology/dsd/attribute/> .
 @prefix obeu-dimension:   <http://data.openbudgets.eu/ontology/dsd/dimension/> .
 @prefix obeu-measure:     <http://data.openbudgets.eu/ontology/dsd/measure/> .
-#@prefix obeu-operation:   <http://data.openbudgets.eu/resource/codelist/operation-character/> .
 
 # ----- Generic namespaces ------
 
@@ -99,10 +90,3 @@ esif-measure:amountEU a rdf:Property, qb:DimensionProperty ;
   rdfs:comment "Sum of the amount funded by the resp. EU fund and the national part."@en ;
   rdfs:subPropertyOf obeu-measure:amount ;
   rdfs:isDefinedBy <http://data.openbudgets.eu/ontology/dsd/ESIF_2014-2020> .
-
-
-
-# ----- Code lists -----
-	
-
-	
