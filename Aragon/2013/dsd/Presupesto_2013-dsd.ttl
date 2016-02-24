@@ -8,11 +8,11 @@
 #@prefix eu-codelist:      <http://data.openbudgets.eu/resource/eu-budget-2014/codelist/> .
 #@prefix eu-operation:     <http://data.openbudgets.eu/resource/eu-budget-2014/codelist/operation-character/> .
 
-@prefix aragon-budget:             			<http://data.openbudgets.eu/ontology/aragon-budget/> .
-@prefix aragon-codelist-econ-spend:    	<http://data.openbudgets.eu/resource/codelist/estructura_economica_g_aragon_2013/> .
-@prefix aragon-codelist-econ-inc:    	<http://data.openbudgets.eu/resource/codelist/estructura_economica_i_aragon_2013> .
-@prefix aragon-codelist-fin-spend:    	<http://data.openbudgets.eu/resource/codelist/estructura_financiacion_g_aragon_2013/> .
-@prefix aragon-codelist-fin-inc:    	<http://data.openbudgets.eu/resource/codelist/estructura_financiacion_i_aragon_2013/> .
+@prefix aragon-budget:             		<http://data.openbudgets.eu/ontology/aragon-budget/> .
+@prefix aragon-codelist-econ-exp:    	<http://data.openbudgets.eu/resource/codelist/estructura_economica_g_aragon_2013/> .
+@prefix aragon-codelist-econ-rev:    	<http://data.openbudgets.eu/resource/codelist/estructura_economica_i_aragon_2013> .
+@prefix aragon-codelist-fin-exp:    	<http://data.openbudgets.eu/resource/codelist/estructura_financiacion_g_aragon_2013/> .
+@prefix aragon-codelist-fin-rev:    	<http://data.openbudgets.eu/resource/codelist/estructura_financiacion_i_aragon_2013/> .
 @prefix aragon-codelist-func:    		<http://data.openbudgets.eu/resource/codelist/estructura_funcional_aragon_2013/> .
 @prefix aragon-codelist-org:    		<http://data.openbudgets.eu/resource/codelist/estructura_organica_aragon_2013/> .
 @prefix aragon-dimension:   			<http://data.openbudgets.eu/ontology/dsd/aragon-budget/dimension/> .
@@ -39,8 +39,8 @@
 # ----- DSD -----
 # TO BE CONTINUED FOR ARAGON DATASET.
 
-<http://example.openbudgets.eu/ontology/dsd/ESIF_2014-2020> a qb:DataStructureDefinition ;
-  rdfs:label "Data structure definition for the European Structural and Investment Funds of the years 2014-2020"@en ;  
+<http://example.openbudgets.eu/ontology/dsd/aragon-budget> a qb:DataStructureDefinition ;
+  rdfs:label "Data structure definition for the Aragon dataset for fiscal year 2013"@en ;  
   qb:component [ qb:dimension obeu-dimension:budgetaryUnit ;
                  qb:componentAttachment qb:DataSet ],
                [ qb:dimension obeu-dimension:budgetPhase ;
@@ -49,64 +49,36 @@
                  qb:componentAttachment qb:DataSet ],
                [ qb:dimension obeu-dimension:fiscalPeriod ;
                  qb:componentAttachment qb:DataSet ],
-               [ qb:dimension obeu-dimension:administrativeClassification ],
-               [ qb:dimension esif-dimension:fund ],
-               [ qb:dimension esif-dimension:functionalClassification ],
+               [ qb:dimension obeu-dimension:administrativeClassification ], #Identifies the entity responsible for managing the public funds concerned.
+               [ qb:dimension obeu-dimension:functionalClassification ], #Purpose of expenditure
+               [ qb:dimension obeu-dimension:economicClassification ], #economicClassification
+               [ qb:dimension aragon-dimension:RevSourceClassification ], #which organization finance the funds
 #               [ qb:dimension esif-dimension:priority ],
                [ qb:attribute obeu-attribute:currency ;
                  qb:componentRequired true ;
                  qb:componentAttachment qb:DataSet ],
-               [ qb:measure esif-measure:amountEU ],
-               [ qb:measure esif-measure:amountNational ],
-               [ qb:measure esif-measure:amountTotal ] .
+               [ qb:measure  obeu-measure:amount] .
 
 
 # ----- Component properties -----
 
-esif-dimension:fund a rdf:Property, qb:CodedProperty, qb:DimensionProperty, obeu-dimension:programmeClassification ;
-  rdfs:label "European Structural and Investment Fund"@en ;
-  rdfs:comment "Different funds of the European Union for sturctual development and investment."@en ;
+aragon-dimension:RevSourceClassification a rdf:Property, qb:CodedProperty, qb:DimensionProperty ;
+  rdfs:label "Funding source organization"@en ;
+  rdfs:comment "The organization which provides a funding for specific expenses."@en ;
   rdfs:subPropertyOf obeu-dimension:classification ;
-  qb:codeList esif-codelist:funds ;
-  rdfs:range esif:Fund ;
-  rdfs:isDefinedBy <http://data.openbudgets.eu/ontology/dsd/ESIF_2014-2020> .
+  qb:codeList aragon-codelist:aragon-codelist-fin-rev ;
+  rdfs:range aragon-budget:Financing ;
+  rdfs:isDefinedBy <http://data.openbudgets.eu/ontology/dsd/aragon-budget> .
 
-esif-dimension:functionalClassification a rdf:Property, qb:CodedProperty, qb:DimensionProperty, obeu-dimension:functionalClassification ;
-  rdfs:label "Intention of expenditure"@en ;
-  rdfs:comment "Classifies expenditures by the purpose of the funded money."@en ;
+
+aragon-dimension:ExpSourceClassification a rdf:Property, qb:CodedProperty, qb:DimensionProperty ;
+  rdfs:label "Organization who receive the funding"@en ;
+  rdfs:comment "The organization which receives a funding for specific expenses."@en ;
   rdfs:subPropertyOf obeu-dimension:classification ;
-  qb:codeList esif-codelist:functions ;
-  rdfs:range esif:Function ;
-  rdfs:isDefinedBy <http://data.openbudgets.eu/ontology/dsd/ESIF_2014-2020> .
-
-esif-dimension:priority a rdf:Property, qb:CodedProperty, qb:DimensionProperty ;
-  rdfs:label "Priority"@en ;
-  rdfs:comment "?? ."@en ;
-  rdfs:subPropertyOf obeu-dimension:classification ;
-  qb:codeList esif-codelist:priorities ;
-  rdfs:range esif:Priority ;
-  rdfs:isDefinedBy <http://data.openbudgets.eu/ontology/dsd/ESIF_2014-2020> .
-
-esif-measure:amountEU a rdf:Property, qb:DimensionProperty ;
-  rdfs:label "amountEU"@en ;
-  rdfs:comment "Amount funded by the resp. EU fund."@en ;
-  rdfs:subPropertyOf obeu-measure:amount ;
-  rdfs:isDefinedBy <http://data.openbudgets.eu/ontology/dsd/ESIF_2014-2020> .
-
-esif-measure:amountNational a rdf:Property, qb:DimensionProperty ;
-  rdfs:label "amountNational"@en ;
-  rdfs:comment "National share for the resp. EU fund and project."@en ;
-  rdfs:subPropertyOf obeu-measure:amount ;
-  rdfs:isDefinedBy <http://data.openbudgets.eu/ontology/dsd/ESIF_2014-2020> .
-
-esif-measure:amountEU a rdf:Property, qb:DimensionProperty ;
-  rdfs:label "amountTotal"@en ;
-  rdfs:comment "Sum of the amount funded by the resp. EU fund and the national part."@en ;
-  rdfs:subPropertyOf obeu-measure:amount ;
-  rdfs:isDefinedBy <http://data.openbudgets.eu/ontology/dsd/ESIF_2014-2020> .
-
-
-
+  qb:codeList aragon-codelist:aragon-codelist-fin-exp ;
+  rdfs:range aragon-budget:Financing ;
+  rdfs:isDefinedBy <http://data.openbudgets.eu/ontology/dsd/aragon-budget> .
+  
 # ----- Code lists -----
 	
 

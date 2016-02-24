@@ -1,0 +1,155 @@
+# ----- DSD-specific namespaces -----
+
+@prefix esif:             <http://data.openbudgets.eu/ontology/european-funds/> .
+@prefix esif-codelist:    <http://data.openbudgets.eu/resource/ESIF_2014-2020/codelist/> .
+@prefix esif-dimension:   <http://data.openbudgets.eu/ontology/dsd/ESIF_2014-2020/dimension/> .
+@prefix esif-measure:     <http://data.openbudgets.eu/ontology/dsd/ESIF_2014-2020/measure/> .
+@prefix esif-operation:   <http://data.openbudgets.eu/resource/ESIF_2014-2020/codelist/operation-character/> .
+
+# ----- OpenBudgets.eu namespaces -----
+
+@prefix obeu:             <http://data.openbudgets.eu/ontology/> .
+@prefix obeu-attribute:   <http://data.openbudgets.eu/ontology/dsd/attribute/> .
+@prefix obeu-dimension:   <http://data.openbudgets.eu/ontology/dsd/dimension/> .
+@prefix obeu-measure:     <http://data.openbudgets.eu/ontology/dsd/measure/> .
+#@prefix obeu-operation:   <http://data.openbudgets.eu/resource/codelist/operation-character/> .
+
+# ----- Generic namespaces ------
+
+@prefix org:              <http://www.w3.org/ns/org#> .
+@prefix qb:               <http://purl.org/linked-data/cube#> .
+@prefix rdf:              <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:             <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:             <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd:              <http://www.w3.org/2001/XMLSchema#> .
+
+# ----- Data -----
+
+<http://data.openbudgets.eu/resource/dataset/ESIF_2014-2020> a qb:DataSet ;
+  qb:structure <http://example.openbudgets.eu/ontology/dsd/ESIF_2014-2020> ; 
+  obeu-dimension:budgetaryUnit <http://dbpedia.org/resource/European_Union> ;
+  obeu-dimension:budgetPhase obeu-budgetphase:approved ;
+  obeu-dimension:operationCharacter obeu-operation:expenditure ;  
+  obeu-dimension:fiscalPeriod <http://data.openbudgets.eu/resource/ESIF_2014-2020/EU_2014_2020> ;                         
+  obeu-attribute:currency obeu-currency:EUR . 
+# TODO find concept for fiscalPeriod (see below)
+
+# ----- Observations -----
+
+<http://data.openbudgets.eu/resource/dataset/ESIF_2014-2020/observation/1> a qb:Observation ;
+  qb:dataSet <http://data.openbudgets.eu/resource/dataset/ESIF_2014-2020> ;
+  obeu-dimension:administrativeClassification <http://dbpedia.org/resource/Schleswig-Holstein>;
+  esif-dimension:fund esif-fund:ESF;
+  obeu-dimension:functionalClassification <http://data.openbudgets.eu/resource/codelist/esif-function/8> ;
+  esif-dimension:priority <http://data.openbudgets.eu/resource/codelist/esif-priority/A> ;
+  esif-measure:amountEU       20340426 ;
+  esif-measure:amountNational 20543257 ;
+  esif-measure:amountTotal    40883683 .
+
+<http://data.openbudgets.eu/resource/dataset/ESIF_2014-2020/observation/2> a qb:Observation ;
+  qb:dataSet <http://data.openbudgets.eu/resource/dataset/ESIF_2014-2020> ;
+  obeu-dimension:administrativeClassification <http://dbpedia.org/resource/Schleswig-Holstein>;
+  esif-dimension:fund esif-fund:ESF;
+  obeu-dimension:functionalClassification <http://data.openbudgets.eu/resource/codelist/esif-function/9> ;
+  esif-dimension:priority <http://data.openbudgets.eu/resource/codelist/esif-priority/B> ;
+  esif-measure:amountEU       17771051 ;
+  esif-measure:amountNational 18873179 ;
+  esif-measure:amountTotal    36644230 .
+
+<http://data.openbudgets.eu/resource/dataset/ESIF_2014-2020/observation/3> a qb:Observation ;
+  qb:dataSet <http://data.openbudgets.eu/resource/dataset/ESIF_2014-2020> ;
+  obeu-dimension:administrativeClassification <http://dbpedia.org/resource/Schleswig-Holstein> ;
+  esif-dimension:fund esif-fund:ESF;
+  obeu-dimension:functionalClassification <http://data.openbudgets.eu/resource/codelist/esif-function/10> ;
+  esif-dimension:priority <http://data.openbudgets.eu/resource/codelist/esif-priority/C> ;
+  esif-measure:amountEU        47127660 ;
+  esif-measure:amountNational  64574467 ;
+  esif-measure:amountTotal    111702127 .
+
+<http://data.openbudgets.eu/resource/dataset/ESIF_2014-2020/observation/4> a qb:Observation ;
+  qb:dataSet <http://data.openbudgets.eu/resource/dataset/ESIF_2014-2020> ;
+  obeu-dimension:administrativeClassification <http://dbpedia.org/resource/Schleswig-Holstein> ;
+  esif-dimension:fund esif-fund:ESF;
+  obeu-dimension:functionalClassification <http://data.openbudgets.eu/resource/codelist/esif-function/TA> ;
+  esif-dimension:priority <http://data.openbudgets.eu/resource/codelist/esif-priority/D> ;
+  esif-measure:amountEU        3551630 ;
+  esif-measure:amountNational  8450000 ;
+  esif-measure:amountTotal    12001630 .
+
+
+# ----- used Code lists ------
+
+# ----- Functions ------
+
+esif:Function a skos:Concept;
+  skos:prefLabel "Intention of expenditure"@en ;
+  skos:definition "Specifies the intention of the expenditures funded by one of the EU's structural and investment funds."@en ; 
+
+<http://data.openbudgets.eu/resource/codelist/esif-function/8> a skos:Concept, esif:Function ;
+  skos:prefLabel "Sustainable & Quality Employment"@en ;
+  skos:definition "Promoting sustainable and quality employment and supporting labour mobility"@en ;
+  skos:notation "8" ; 
+  skos:inScheme esif-codelist:functions .
+
+<http://data.openbudgets.eu/resource/codelist/esif-function/9> a skos:Concept, esif:Function ;
+  skos:prefLabel "Social Inclusion"@en ;
+  skos:definition "Promoting social inclusion, combating poverty and any discrimination"@en ;
+  skos:notation "9" ; 
+  skos:inScheme esif-codelist:functions .
+
+<http://data.openbudgets.eu/resource/codelist/esif-function/10> a skos:Concept, esif:Function ;
+  skos:prefLabel "Educational & Vocational Training"@en ;
+  skos:definition "Investing in education, training and vocational training for skills and lifelong learning"@en ;
+  skos:notation "10" ; 
+  skos:inScheme esif-codelist:functions .
+
+<http://data.openbudgets.eu/resource/codelist/esif-function/TA> a skos:Concept, esif:Function ;
+  skos:prefLabel "Technical Assistance"@en ;
+  skos:definition "Technical Assistance"@en ;
+  skos:notation "TA" ; 
+  skos:inScheme esif-codelist:functions .
+
+
+# ----- Priorities ------
+
+esif-codelist:priorities a skos:ConceptScheme ;
+  rdfs:label "A code list of the different structural and investment funds of the European Union"@en .
+
+# P1, P2, 4A, 4B, 7A, 7B, ...
+
+<http://data.openbudgets.eu/resource/codelist/esif-priority/A> a skos:Concept, esif:Priority ;
+  skos:prefLabel "A"@en ;
+  skos:notation "A" ; 
+  skos:inScheme esif-codelist:priorities .
+
+<http://data.openbudgets.eu/resource/codelist/esif-priority/B> a skos:Concept, esif:Priority ;
+  skos:prefLabel "B"@en ;
+  skos:notation "B" ; 
+  skos:inScheme esif-codelist:priorities .
+
+<http://data.openbudgets.eu/resource/codelist/esif-priority/C> a skos:Concept, esif:Priority ;
+  skos:prefLabel "C"@en ;
+  skos:notation "C" ; 
+  skos:inScheme esif-codelist:priorities .
+
+<http://data.openbudgets.eu/resource/codelist/esif-priority/D> a skos:Concept, esif:Priority ;
+  skos:prefLabel "D"@en ;
+  skos:notation "D" ; 
+  skos:inScheme esif-codelist:priorities .
+
+
+# ----- Objects -----
+
+<http://dbpedia.org/resource/European_Union> a schema:Organization ;
+  rdfs:label "European Union"@en ;
+  rdfs:comment "The European Union (EU) is a politico-economic union of 28 member states that are located primarily in Europe. The EU operates through a system of supranational institutions and intergovernmental negotiated decisions by the member states. The institutions are: the European Commission, the Council of the European Union, the European Council, the Court of Justice of the European Union, the European Central Bank, the Court of Auditors, and the European Parliament."@en .
+
+# TODO correct modelling of fiscalPeriod (see above)
+<http://data.openbudgets.eu/resource/ESIF_2014-2020/EU_2014_2020> a interval:Interval ;
+  skos:prefLabel "EU fiscal period 2014-2020"@en ;
+  rdf:comment "The EU budget is planned (roughly) in Multiannual Financial Frameworks (MFF). This is the fiscal period for one of these MFFs, covering seven years from 2014 to 2020."@en ; 
+#  interval:ordinalYear 2014, 2015, 2016, 2017, 2018, 2019, 2020 ;
+#  interval:previousInterval 2007-2013 ;
+#  interval:nextInterval 2021-2027 (?) ;
+  time:hasBeginning <http://reference.data.gov.uk/id/gregorian-instant/2014-01-01T00:00:00> ;
+  time:hasEnd <http://reference.data.gov.uk/id/gregorian-instant/2021-01-01T00:00:00> .
