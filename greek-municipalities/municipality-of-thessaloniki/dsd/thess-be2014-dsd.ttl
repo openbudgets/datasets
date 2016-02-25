@@ -1,7 +1,7 @@
 # -----DSD-specific namespaces
-@prefix thess-be2014-dimension: <http://data.openbudgets.eu/ontology/dsd/thess-budget-expenditure-2014/dimension/> .
-@prefix thess-be2014:           <http://data.openbudgets.eu/resource/dataset/thess-budget-expenditure-2014/> .
-@prefix thess-be2014-dsd-slice: <http://data.openbudgets.eu/ontology/dsd/thess-budget-expenditure-2014/slice/> .
+@prefix thess-be2014-dimension: <http://data.openbudgets.eu/ontology/dsd/budget-thess-expenditure-2014/dimension/> .
+@prefix thess-be2014:           <http://data.openbudgets.eu/resource/dataset/budget-thess-expenditure-2014/> .
+@prefix thess-be2014-dsd-slice: <http://data.openbudgets.eu/ontology/dsd/budget-thess-expenditure-2014/slice/> .
 
 # -----Thessaloniki Municipality specific namespaces
 @prefix thess-dimension: <http://data.openbudgets.eu/ontology/dsd/greek-municipalities/dimension/> .
@@ -28,7 +28,7 @@
 
 
 # DSD 
-<http://data.openbudgets.eu/ontology/dsd/thess-budget-expenditure-2014> a 
+<http://data.openbudgets.eu/ontology/dsd/budget-thess-expenditure-2014> a 
   qb:DataStructureDefinition ;
 	rdfs:label "Data structure definition for the budget of Greek Municipalities"@en ;
   qb:component
@@ -84,4 +84,4 @@ thess-be2014-dimension:functionalClassification a rdf:Property, qb:CodedProperty
 	rdfs:subPropertyOf obeu-dimension:functionalClassification ;
 	qb:codeList thess-be2014:codelist ;
 	rdfs:range skos:Concept ;
-	rdfs:isDefinedBy <http://data.openbudgets.eu/ontology/dsd/thess-budget-expenditure-2014> .
+	rdfs:isDefinedBy <http://data.openbudgets.eu/ontology/dsd/budget-thess-expenditure-2014> .

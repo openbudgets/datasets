@@ -1,7 +1,7 @@
 # -----DSD-specific namespaces
-@prefix athens-be2011-dimension: <http://data.openbudgets.eu/ontology/dsd/athens-budget-expenditure-2011/dimension/> .
-@prefix athens-be2011:           <http://data.openbudgets.eu/resource/dataset/athens-budget-expenditure-2011/> .
-@prefix athens-be2011-dsd-slice: <http://data.openbudgets.eu/ontology/dsd/athens-budget-expenditure-2011/slice/> .
+@prefix athens-be2011-dimension: <http://data.openbudgets.eu/ontology/dsd/budget-athens-expenditure-2011/dimension/> .
+@prefix athens-be2011:           <http://data.openbudgets.eu/resource/dataset/budget-athens-expenditure-2011/> .
+@prefix athens-be2011-dsd-slice: <http://data.openbudgets.eu/ontology/dsd/budget-athens-expenditure-2011/slice/> .
 # -----Thessaloniki Municipality specific namespaces
 @prefix athens-dimension: <http://data.openbudgets.eu/ontology/dsd/greek-municipalities/dimension/> .
 # -----Greek Municipalities specific namespaces
@@ -24,7 +24,7 @@
 
 
 # DSD 
-<http://data.openbudgets.eu/ontology/dsd/athens-budget-expenditure-2011> a 
+<http://data.openbudgets.eu/ontology/dsd/budget-athens-expenditure-2011> a 
   qb:DataStructureDefinition ;
 	rdfs:label "Data structure definition for the expenditure budget of Athens Municipality for year 2011"@en ;
   qb:component
@@ -80,4 +80,4 @@ athens-be2011-dimension:functionalClassification a rdf:Property, qb:CodedPropert
 	rdfs:subPropertyOf obeu-dimension:functionalClassification ;
 	qb:codeList athens-be2011:codelist ;
 	rdfs:range skos:Concept ;
-	rdfs:isDefinedBy <http://data.openbudgets.eu/ontology/dsd/athens-budget-expenditure-2011> .
+	rdfs:isDefinedBy <http://data.openbudgets.eu/ontology/dsd/budget-athens-expenditure-2011> .
