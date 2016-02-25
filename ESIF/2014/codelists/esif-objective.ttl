@@ -1,93 +1,95 @@
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix esif-codelist: <http://data.openbudgets.eu/resource/ESIF-2014-2020/codelist/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 @prefix fn: <http://www.w3.org/2005/xpath-functions#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix sesame: <http://www.openrdf.org/schema/sesame#> .
 
-<http://data.openbudgets.eu/resource/codelist/eu-funds/function/1> <http://www.w3.org/2004/02/skos/core#notation> "1" ;
-	<http://www.w3.org/2004/02/skos/core#prefLabel> "Research & Innovation"@en ;
-	<http://www.w3.org/2004/02/skos/core#definition> "Strengthening research, technological development and innovation"@en ;
-	a <http://www.w3.org/2004/02/skos/core#Concept> , <http://data.openbudgets.eu/resource/ESIF_2014-2020/Objective> ;
-	<http://www.w3.org/2004/02/skos/core#inScheme> <http://data.openbudgets.eu/resource/ESIF_2014-2020/codelist/Function> .
+<http://data.openbudgets.eu/resource/ESIF_2014-2020/codelist/function/1> skos:notation "1" ;
+	skos:prefLabel "Research & Innovation"@en ;
+	skos:definition "Strengthening research, technological development and innovation"@en ;
+	a skos:Concept , <http://data.openbudgets.eu/resource/ESIF-2014-2020/Objective> ;
+	skos:inScheme esif-codelist:Function .
 
-<http://data.openbudgets.eu/resource/codelist/eu-funds/function/2> <http://www.w3.org/2004/02/skos/core#notation> "2" ;
-	<http://www.w3.org/2004/02/skos/core#prefLabel> "Information & Communication Technologies "@en ;
-	<http://www.w3.org/2004/02/skos/core#definition> "Enhancing access to and use and quality of information and communication technologies (ICT)"@en ;
-	a <http://www.w3.org/2004/02/skos/core#Concept> , <http://data.openbudgets.eu/resource/ESIF_2014-2020/Objective> ;
-	<http://www.w3.org/2004/02/skos/core#inScheme> <http://data.openbudgets.eu/resource/ESIF_2014-2020/codelist/Function> .
+<http://data.openbudgets.eu/resource/ESIF_2014-2020/codelist/function/2> skos:notation "2" ;
+	skos:prefLabel "Information & Communication Technologies "@en ;
+	skos:definition "Enhancing access to and use and quality of information and communication technologies (ICT)"@en ;
+	a skos:Concept , <http://data.openbudgets.eu/resource/ESIF-2014-2020/Objective> ;
+	skos:inScheme esif-codelist:Function .
 
-<http://data.openbudgets.eu/resource/codelist/eu-funds/function/3> <http://www.w3.org/2004/02/skos/core#notation> "3" ;
-	<http://www.w3.org/2004/02/skos/core#prefLabel> "Competitiveness of SMEs"@en ;
-	<http://www.w3.org/2004/02/skos/core#definition> "Enhancing the competitiveness of small and medium-sized enterprises (SMEs)"@en ;
-	a <http://www.w3.org/2004/02/skos/core#Concept> , <http://data.openbudgets.eu/resource/ESIF_2014-2020/Objective> ;
-	<http://www.w3.org/2004/02/skos/core#inScheme> <http://data.openbudgets.eu/resource/ESIF_2014-2020/codelist/Function> .
+<http://data.openbudgets.eu/resource/ESIF_2014-2020/codelist/function/3> skos:notation "3" ;
+	skos:prefLabel "Competitiveness of SMEs"@en ;
+	skos:definition "Enhancing the competitiveness of small and medium-sized enterprises (SMEs)"@en ;
+	a skos:Concept , <http://data.openbudgets.eu/resource/ESIF-2014-2020/Objective> ;
+	skos:inScheme esif-codelist:Function .
 
-<http://data.openbudgets.eu/resource/codelist/eu-funds/function/4> <http://www.w3.org/2004/02/skos/core#notation> "4" ;
-	<http://www.w3.org/2004/02/skos/core#prefLabel> "Low-Carbon Economy"@en ;
-	<http://www.w3.org/2004/02/skos/core#definition> "Supporting the shift towards a low-carbon economy in all sectors"@en ;
-	a <http://www.w3.org/2004/02/skos/core#Concept> , <http://data.openbudgets.eu/resource/ESIF_2014-2020/Objective> ;
-	<http://www.w3.org/2004/02/skos/core#inScheme> <http://data.openbudgets.eu/resource/ESIF_2014-2020/codelist/Function> .
+<http://data.openbudgets.eu/resource/ESIF_2014-2020/codelist/function/4> skos:notation "4" ;
+	skos:prefLabel "Low-Carbon Economy"@en ;
+	skos:definition "Supporting the shift towards a low-carbon economy in all sectors"@en ;
+	a skos:Concept , <http://data.openbudgets.eu/resource/ESIF-2014-2020/Objective> ;
+	skos:inScheme esif-codelist:Function .
 
-<http://data.openbudgets.eu/resource/codelist/eu-funds/function/5> <http://www.w3.org/2004/02/skos/core#notation> "5" ;
-	<http://www.w3.org/2004/02/skos/core#prefLabel> "Climate Change Adaptation & Risk Prevention"@en ;
-	<http://www.w3.org/2004/02/skos/core#definition> "Promoting climate change adaptation, risk prevention and management"@en ;
-	a <http://www.w3.org/2004/02/skos/core#Concept> , <http://data.openbudgets.eu/resource/ESIF_2014-2020/Objective> ;
-	<http://www.w3.org/2004/02/skos/core#inScheme> <http://data.openbudgets.eu/resource/ESIF_2014-2020/codelist/Function> .
+<http://data.openbudgets.eu/resource/ESIF_2014-2020/codelist/function/5> skos:notation "5" ;
+	skos:prefLabel "Climate Change Adaptation & Risk Prevention"@en ;
+	skos:definition "Promoting climate change adaptation, risk prevention and management"@en ;
+	a skos:Concept , <http://data.openbudgets.eu/resource/ESIF-2014-2020/Objective> ;
+	skos:inScheme esif-codelist:Function .
 
-<http://data.openbudgets.eu/resource/codelist/eu-funds/function/6> <http://www.w3.org/2004/02/skos/core#notation> "6" ;
-	<http://www.w3.org/2004/02/skos/core#prefLabel> "Environment Protection & Resource Efficiency"@en ;
-	<http://www.w3.org/2004/02/skos/core#definition> "Preserving and protecting the environment and promoting resource efficiency"@en ;
-	a <http://www.w3.org/2004/02/skos/core#Concept> , <http://data.openbudgets.eu/resource/ESIF_2014-2020/Objective> ;
-	<http://www.w3.org/2004/02/skos/core#inScheme> <http://data.openbudgets.eu/resource/ESIF_2014-2020/codelist/Function> .
+<http://data.openbudgets.eu/resource/ESIF_2014-2020/codelist/function/6> skos:notation "6" ;
+	skos:prefLabel "Environment Protection & Resource Efficiency"@en ;
+	skos:definition "Preserving and protecting the environment and promoting resource efficiency"@en ;
+	a skos:Concept , <http://data.openbudgets.eu/resource/ESIF-2014-2020/Objective> ;
+	skos:inScheme esif-codelist:Function .
 
-<http://data.openbudgets.eu/resource/codelist/eu-funds/function/7> <http://www.w3.org/2004/02/skos/core#notation> "7" ;
-	<http://www.w3.org/2004/02/skos/core#prefLabel> "Network Infrastructures in Transport and Energy"@en ;
-	<http://www.w3.org/2004/02/skos/core#definition> "Promoting sustainable transport and removing bottlenecks in key network infrastructures"@en ;
-	a <http://www.w3.org/2004/02/skos/core#Concept> , <http://data.openbudgets.eu/resource/ESIF_2014-2020/Objective> ;
-	<http://www.w3.org/2004/02/skos/core#inScheme> <http://data.openbudgets.eu/resource/ESIF_2014-2020/codelist/Function> .
+<http://data.openbudgets.eu/resource/ESIF_2014-2020/codelist/function/7> skos:notation "7" ;
+	skos:prefLabel "Network Infrastructures in Transport and Energy"@en ;
+	skos:definition "Promoting sustainable transport and removing bottlenecks in key network infrastructures"@en ;
+	a skos:Concept , <http://data.openbudgets.eu/resource/ESIF-2014-2020/Objective> ;
+	skos:inScheme esif-codelist:Function .
 
-<http://data.openbudgets.eu/resource/codelist/eu-funds/function/8> <http://www.w3.org/2004/02/skos/core#notation> "8" ;
-	<http://www.w3.org/2004/02/skos/core#prefLabel> "Sustainable & Quality Employment"@en ;
-	<http://www.w3.org/2004/02/skos/core#definition> "Promoting sustainable and quality employment and supporting labour mobility"@en ;
-	a <http://www.w3.org/2004/02/skos/core#Concept> , <http://data.openbudgets.eu/resource/ESIF_2014-2020/Objective> ;
-	<http://www.w3.org/2004/02/skos/core#inScheme> <http://data.openbudgets.eu/resource/ESIF_2014-2020/codelist/Function> .
+<http://data.openbudgets.eu/resource/ESIF_2014-2020/codelist/function/8> skos:notation "8" ;
+	skos:prefLabel "Sustainable & Quality Employment"@en ;
+	skos:definition "Promoting sustainable and quality employment and supporting labour mobility"@en ;
+	a skos:Concept , <http://data.openbudgets.eu/resource/ESIF-2014-2020/Objective> ;
+	skos:inScheme esif-codelist:Function .
 
-<http://data.openbudgets.eu/resource/codelist/eu-funds/function/9> <http://www.w3.org/2004/02/skos/core#notation> "9" ;
-	<http://www.w3.org/2004/02/skos/core#prefLabel> "Social Inclusion"@en ;
-	<http://www.w3.org/2004/02/skos/core#definition> "Promoting social inclusion, combating poverty and any discrimination"@en ;
-	a <http://www.w3.org/2004/02/skos/core#Concept> , <http://data.openbudgets.eu/resource/ESIF_2014-2020/Objective> ;
-	<http://www.w3.org/2004/02/skos/core#inScheme> <http://data.openbudgets.eu/resource/ESIF_2014-2020/codelist/Function> .
+<http://data.openbudgets.eu/resource/ESIF_2014-2020/codelist/function/9> skos:notation "9" ;
+	skos:prefLabel "Social Inclusion"@en ;
+	skos:definition "Promoting social inclusion, combating poverty and any discrimination"@en ;
+	a skos:Concept , <http://data.openbudgets.eu/resource/ESIF-2014-2020/Objective> ;
+	skos:inScheme esif-codelist:Function .
 
-<http://data.openbudgets.eu/resource/codelist/eu-funds/function/10> <http://www.w3.org/2004/02/skos/core#notation> "10" ;
-	<http://www.w3.org/2004/02/skos/core#prefLabel> "Educational & Vocational Training"@en ;
-	<http://www.w3.org/2004/02/skos/core#definition> "Investing in education, training and vocational training for skills and lifelong learning"@en ;
-	a <http://www.w3.org/2004/02/skos/core#Concept> , <http://data.openbudgets.eu/resource/ESIF_2014-2020/Objective> ;
-	<http://www.w3.org/2004/02/skos/core#inScheme> <http://data.openbudgets.eu/resource/ESIF_2014-2020/codelist/Function> .
+<http://data.openbudgets.eu/resource/ESIF_2014-2020/codelist/function/10> skos:notation "10" ;
+	skos:prefLabel "Educational & Vocational Training"@en ;
+	skos:definition "Investing in education, training and vocational training for skills and lifelong learning"@en ;
+	a skos:Concept , <http://data.openbudgets.eu/resource/ESIF-2014-2020/Objective> ;
+	skos:inScheme esif-codelist:Function .
 
-<http://data.openbudgets.eu/resource/codelist/eu-funds/function/11> <http://www.w3.org/2004/02/skos/core#notation> "11" ;
-	<http://www.w3.org/2004/02/skos/core#prefLabel> "Efficient Public Administration"@en ;
-	<http://www.w3.org/2004/02/skos/core#definition> "Enhancing institutional capacity of public authorities and stakeholders and efficient public administration"@en ;
-	a <http://www.w3.org/2004/02/skos/core#Concept> , <http://data.openbudgets.eu/resource/ESIF_2014-2020/Objective> ;
-	<http://www.w3.org/2004/02/skos/core#inScheme> <http://data.openbudgets.eu/resource/ESIF_2014-2020/codelist/Function> .
+<http://data.openbudgets.eu/resource/ESIF_2014-2020/codelist/function/11> skos:notation "11" ;
+	skos:prefLabel "Efficient Public Administration"@en ;
+	skos:definition "Enhancing institutional capacity of public authorities and stakeholders and efficient public administration"@en ;
+	a skos:Concept , <http://data.openbudgets.eu/resource/ESIF-2014-2020/Objective> ;
+	skos:inScheme esif-codelist:Function .
 
-<http://data.openbudgets.eu/resource/codelist/eu-funds/function/12> <http://www.w3.org/2004/02/skos/core#notation> "12" ;
-	<http://www.w3.org/2004/02/skos/core#prefLabel> "Outermost & Sparsely Populated"@en ;
-	<http://www.w3.org/2004/02/skos/core#definition> "Special allocations to Outermost & sparsely populated regions "@en ;
-	a <http://www.w3.org/2004/02/skos/core#Concept> , <http://data.openbudgets.eu/resource/ESIF_2014-2020/Objective> ;
-	<http://www.w3.org/2004/02/skos/core#inScheme> <http://data.openbudgets.eu/resource/ESIF_2014-2020/codelist/Function> .
+<http://data.openbudgets.eu/resource/ESIF_2014-2020/codelist/function/12> skos:notation "12" ;
+	skos:prefLabel "Outermost & Sparsely Populated"@en ;
+	skos:definition "Special allocations to Outermost & sparsely populated regions "@en ;
+	a skos:Concept , <http://data.openbudgets.eu/resource/ESIF-2014-2020/Objective> ;
+	skos:inScheme esif-codelist:Function .
 
-<http://data.openbudgets.eu/resource/codelist/eu-funds/function/DM> <http://www.w3.org/2004/02/skos/core#notation> "DM" ;
-	<http://www.w3.org/2004/02/skos/core#prefLabel> "Discontinued Measures"@en ;
-	<http://www.w3.org/2004/02/skos/core#definition> "EAFRD Discontinued Measures from 2007-2013"@en ;
-	a <http://www.w3.org/2004/02/skos/core#Concept> , <http://data.openbudgets.eu/resource/ESIF_2014-2020/Objective> ;
-	<http://www.w3.org/2004/02/skos/core#inScheme> <http://data.openbudgets.eu/resource/ESIF_2014-2020/codelist/Function> .
+<http://data.openbudgets.eu/resource/ESIF_2014-2020/codelist/function/DM> skos:notation "DM" ;
+	skos:prefLabel "Discontinued Measures"@en ;
+	skos:definition "EAFRD Discontinued Measures from 2007-2013"@en ;
+	a skos:Concept , <http://data.openbudgets.eu/resource/ESIF-2014-2020/Objective> ;
+	skos:inScheme esif-codelist:Function .
 
-<http://data.openbudgets.eu/resource/codelist/eu-funds/function/TA> <http://www.w3.org/2004/02/skos/core#notation> "TA" ;
-	<http://www.w3.org/2004/02/skos/core#prefLabel> "Technical Assistance"@en ;
-	<http://www.w3.org/2004/02/skos/core#definition> "Technical Assistance"@en ;
-	a <http://www.w3.org/2004/02/skos/core#Concept> , <http://data.openbudgets.eu/resource/ESIF_2014-2020/Objective> ;
-	<http://www.w3.org/2004/02/skos/core#inScheme> <http://data.openbudgets.eu/resource/ESIF_2014-2020/codelist/Function> .
+<http://data.openbudgets.eu/resource/ESIF_2014-2020/codelist/function/TA> skos:notation "TA" ;
+	skos:prefLabel "Technical Assistance"@en ;
+	skos:definition "Technical Assistance"@en ;
+	a skos:Concept , <http://data.openbudgets.eu/resource/ESIF-2014-2020/Objective> ;
+	skos:inScheme esif-codelist:Function .
 
-<http://data.openbudgets.eu/resource/ESIF_2014-2020/codelist/Function> a <http://www.w3.org/2004/02/skos/core#ConceptScheme> ;
+esif-codelist:Function a skos:ConceptScheme ;
 	rdfs:label "Functional Classification for ESIF dataset" .

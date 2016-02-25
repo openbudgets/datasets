@@ -1,0 +1,105 @@
+# ----- DSD-specific namespaces -----
+
+@prefix esif:             <http://data.openbudgets.eu/ontology/european-funds/> .
+@prefix esif-codelist:    <http://data.openbudgets.eu/resource/ESIF-2014-2020/codelist/> .
+@prefix esif-dimension:   <http://data.openbudgets.eu/ontology/dsd/ESIF-2014-2020/dimension/> .
+@prefix esif-measure:     <http://data.openbudgets.eu/ontology/dsd/ESIF-2014-2020/measure/> .
+@prefix esif-operation:   <http://data.openbudgets.eu/resource/ESIF-2014-2020/codelist/operation-character/> .
+@prefix eu-funds:         <http://data.openbudgets.eu/resource/ESIF-2014-2020/codelist/eu-funds/> .
+
+# ----- OpenBudgets.eu namespaces -----
+
+@prefix obeu:             <http://data.openbudgets.eu/ontology/> .
+@prefix obeu-attribute:   <http://data.openbudgets.eu/ontology/dsd/attribute/> .
+@prefix obeu-dimension:   <http://data.openbudgets.eu/ontology/dsd/dimension/> .
+@prefix obeu-measure:     <http://data.openbudgets.eu/ontology/dsd/measure/> .
+
+# ----- Generic namespaces ------
+
+@prefix qb:               <http://purl.org/linked-data/cube#> .
+@prefix rdf:              <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:             <http://www.w3.org/2000/01/rdf-schema#> .
+
+# ----- DSD -----
+
+
+<http://example.openbudgets.eu/ontology/dsd/ESIF-2014-2020> a qb:DataStructureDefinition ;
+  rdfs:label "Data structure definition for the European Structural and Investment Funds of the years 2014-2020"@en ;  
+  qb:component [ qb:dimension obeu-dimension:budgetaryUnit ;
+                 qb:componentAttachment qb:DataSet ],
+               [ qb:dimension obeu-dimension:budgetPhase ;
+                 qb:componentAttachment qb:DataSet ],
+               [ qb:dimension obeu-dimension:operationCharacter ;
+                 qb:componentAttachment qb:DataSet ],
+               [ qb:dimension obeu-dimension:fiscalPeriod ;
+                 qb:componentAttachment qb:DataSet ],
+               [ qb:dimension obeu-dimension:administrativeClassification ],
+               [ qb:dimension esif-dimension:fund ],
+               [ qb:dimension esif-dimension:functionalClassification ],
+#               [ qb:dimension esif-dimension:priority ],
+               [ qb:attribute obeu-attribute:currency ;
+                 qb:componentRequired true ;
+                 qb:componentAttachment qb:DataSet ],
+               [ qb:measure esif-measure:amountEU ],
+               [ qb:measure esif-measure:amountNational ],
+               [ qb:measure esif-measure:amountTotal ] .
+
+
+# ----- Component properties -----
+
+esif-dimension:fund a rdf:Property, qb:CodedProperty, qb:DimensionProperty;
+  rdfs:subPropertyOf obeu-dimension:programmeClassification;
+  rdfs:label "European Structural and Investment Fund"@en ;
+  rdfs:comment "Different funds of the European Union for structural development and investment."@en ;
+  rdfs:subPropertyOf obeu-dimension:classification ;
+  qb:codeList esif-codelist:funds ;
+  rdfs:range esif:Fund ;
+  rdfs:isDefinedBy <http://data.openbudgets.eu/ontology/dsd/ESIF-2014-2020> .
+
+esif-dimension:functionalClassification a rdf:Property, qb:CodedProperty, qb:DimensionProperty ;
+  rdfs:subPropertyOf obeu-dimension:functionalClassification;
+  rdfs:label "Intention of expenditure"@en ;
+  rdfs:comment "Classifies expenditures by the purpose of the funded money."@en ;
+  rdfs:subPropertyOf obeu-dimension:classification ;
+  qb:codeList esif-codelist:functions ;
+  rdfs:range esif:Objective ;
+  rdfs:isDefinedBy <http://data.openbudgets.eu/ontology/dsd/ESIF-2014-2020> .
+
+esif-dimension:priority a rdf:Property, qb:CodedProperty, qb:DimensionProperty ;
+  rdfs:label "Priority"@en ;
+  rdfs:comment "?? ."@en ;
+  rdfs:subPropertyOf obeu-dimension:classification ;
+  qb:codeList esif-codelist:priorities ;
+  rdfs:range esif:Priority ;
+  rdfs:isDefinedBy <http://data.openbudgets.eu/ontology/dsd/ESIF-2014-2020> .
+
+esif-measure:amountEU a rdf:Property, qb:DimensionProperty ;
+  rdfs:label "Amount EU"@en ;
+  rdfs:comment "Amount funded by the resp. EU fund."@en ;
+  rdfs:subPropertyOf obeu-measure:amount ;
+  rdfs:isDefinedBy <http://data.openbudgets.eu/ontology/dsd/ESIF-2014-2020> .
+
+esif-measure:amountNational a rdf:Property, qb:DimensionProperty ;
+  rdfs:label "Amount National"@en ;
+  rdfs:comment "National share for the resp. EU fund and project."@en ;
+  rdfs:subPropertyOf obeu-measure:amount ;
+  rdfs:isDefinedBy <http://data.openbudgets.eu/ontology/dsd/ESIF-2014-2020> .
+
+esif-measure:amountTotal a rdf:Property, qb:DimensionProperty ;
+  rdfs:label "Amount Total"@en ;
+  rdfs:comment "Sum of the amount funded by the resp. EU fund and the national part."@en ;
+  rdfs:subPropertyOf obeu-measure:amount ;
+  rdfs:isDefinedBy <http://data.openbudgets.eu/ontology/dsd/ESIF-2014-2020> .
+
+#-------Needs some clarification 
+esif:Objective a rdfs:Class ;
+  rdfs:label "Objective"@en ;
+  rdfs:comment "Purpose of funded money"@en ;
+  rdfs:subClassOf skos:Concept ;
+  rdfs:isDefinedBy <http://data.openbudgets.eu/ontology/dsd/ESIF-2014-2020> .
+
+esif:Priority a rdfs:Class ;
+  rdfs:label "Priority"@en ;
+  rdfs:comment "Priority of funded money"@en ;
+  rdfs:subClassOf skos:Concept ;
+  rdfs:isDefinedBy <http://data.openbudgets.eu/ontology/dsd/ESIF-2014-2020> .  
