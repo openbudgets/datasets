@@ -153,7 +153,8 @@
           "http://linkedpipes.com/ontology/y": 320,
           "http://linkedpipes.com/ontology/configurationGraph": {
             "@id": "http://obeu.vse.cz:9080/resources/pipelines/created-1456902900419/components/5bfb1bba-c5dc-4ca0-b729-e16d7a3b59b3/configuration"
-          }
+          },
+          "http://purl.org/dc/terms/description": "DELETE non-URI \nadmClassification"
         },
         {
           "@id": "http://obeu.vse.cz:9080/resources/pipelines/created-1456902900419/connection/09cd4e6a-a66c-4f68-90ba-fd54033617f7",
@@ -174,15 +175,16 @@
           "@type": [
             "http://linkedpipes.com/ontology/Component"
           ],
-          "http://www.w3.org/2004/02/skos/core#prefLabel": "SPARQL construct - functClass",
+          "http://www.w3.org/2004/02/skos/core#prefLabel": "SPARQL construct",
           "http://linkedpipes.com/ontology/template": {
             "@id": "http://obeu.vse.cz:9080/resources/components/t-sparqlConstruct"
           },
           "http://linkedpipes.com/ontology/x": 340,
-          "http://linkedpipes.com/ontology/y": 380,
+          "http://linkedpipes.com/ontology/y": 360,
           "http://linkedpipes.com/ontology/configurationGraph": {
             "@id": "http://obeu.vse.cz:9080/resources/pipelines/created-1456902900419/components/43ccab47-b20e-426e-997e-b812041bdf4e/configuration"
-          }
+          },
+          "http://purl.org/dc/terms/description": "functClass"
         },
         {
           "@id": "http://obeu.vse.cz:9080/resources/pipelines/created-1456902900419/connection/9ab42230-81a9-414c-83e2-6d9ab0da6a71",
@@ -203,15 +205,16 @@
           "@type": [
             "http://linkedpipes.com/ontology/Component"
           ],
-          "http://www.w3.org/2004/02/skos/core#prefLabel": "SPARQL construct - Funds",
+          "http://www.w3.org/2004/02/skos/core#prefLabel": "SPARQL construct",
           "http://linkedpipes.com/ontology/template": {
             "@id": "http://obeu.vse.cz:9080/resources/components/t-sparqlConstruct"
           },
-          "http://linkedpipes.com/ontology/x": 280,
+          "http://linkedpipes.com/ontology/x": 300,
           "http://linkedpipes.com/ontology/y": 460,
           "http://linkedpipes.com/ontology/configurationGraph": {
             "@id": "http://obeu.vse.cz:9080/resources/pipelines/created-1456902900419/components/d34b4675-e96c-453d-ade8-af280673f2e1/configuration"
-          }
+          },
+          "http://purl.org/dc/terms/description": "Funds"
         },
         {
           "@id": "http://obeu.vse.cz:9080/resources/pipelines/created-1456902900419/connection/f286507f-f81c-4b3a-8d8a-26c114759129",
@@ -232,15 +235,16 @@
           "@type": [
             "http://linkedpipes.com/ontology/Component"
           ],
-          "http://www.w3.org/2004/02/skos/core#prefLabel": "SPARQL construct - admClass",
+          "http://www.w3.org/2004/02/skos/core#prefLabel": "SPARQL construct",
           "http://linkedpipes.com/ontology/template": {
             "@id": "http://obeu.vse.cz:9080/resources/components/t-sparqlConstruct"
           },
-          "http://linkedpipes.com/ontology/x": 120,
+          "http://linkedpipes.com/ontology/x": 160,
           "http://linkedpipes.com/ontology/y": 620,
           "http://linkedpipes.com/ontology/configurationGraph": {
             "@id": "http://obeu.vse.cz:9080/resources/pipelines/created-1456902900419/components/1a592df3-6c67-4ce6-aee5-a25586de2d01/configuration"
-          }
+          },
+          "http://purl.org/dc/terms/description": "admClass"
         },
         {
           "@id": "http://obeu.vse.cz:9080/resources/pipelines/created-1456902900419/connection/26e06be2-4b75-4e0a-8909-21104d412d61",
@@ -261,7 +265,7 @@
           "@type": [
             "http://linkedpipes.com/ontology/Component"
           ],
-          "http://www.w3.org/2004/02/skos/core#prefLabel": "SPARQL construct - Observation",
+          "http://www.w3.org/2004/02/skos/core#prefLabel": "SPARQL construct",
           "http://linkedpipes.com/ontology/template": {
             "@id": "http://obeu.vse.cz:9080/resources/components/t-sparqlConstruct"
           },
@@ -269,7 +273,8 @@
           "http://linkedpipes.com/ontology/y": 540,
           "http://linkedpipes.com/ontology/configurationGraph": {
             "@id": "http://obeu.vse.cz:9080/resources/pipelines/created-1456902900419/components/89ea5ba4-a59e-496d-b167-2f0c97ad705e/configuration"
-          }
+          },
+          "http://purl.org/dc/terms/description": "Observation"
         },
         {
           "@id": "http://obeu.vse.cz:9080/resources/pipelines/created-1456902900419/connection/c34df4d9-f376-4cad-ae76-c4850a4224d2",
@@ -365,7 +370,11 @@
             "@id": "http://obeu.vse.cz:9080/resources/components/t-rdfToFile"
           },
           "http://linkedpipes.com/ontology/x": 780,
-          "http://linkedpipes.com/ontology/y": 520
+          "http://linkedpipes.com/ontology/y": 520,
+          "http://purl.org/dc/terms/description": "input -> data.ttl",
+          "http://linkedpipes.com/ontology/configurationGraph": {
+            "@id": "http://obeu.vse.cz:9080/resources/pipelines/created-1456902900419/components/be7ffaa0-d478-4c7f-a396-f9a32ff6e05f/configuration"
+          }
         },
         {
           "@id": "http://obeu.vse.cz:9080/resources/pipelines/created-1456902900419/connection/2f69f548-6b6f-456f-b8fe-1b69e60074c9",
@@ -739,6 +748,20 @@
         }
       ],
       "@id": "http://obeu.vse.cz:9080/resources/pipelines/created-1456902900419/components/0a2448aa-cdb7-4186-94af-69bf5153d831/configuration"
+    },
+    {
+      "@graph": [
+        {
+          "@id": "http://localhost/resources/t-rdfToFile/configuration",
+          "@type": [
+            "http://plugins.linkedpipes.com/ontology/t-rdfToFile#Configuration"
+          ],
+          "http://plugins.linkedpipes.com/ontology/t-rdfToFile#fileName": "data.ttl",
+          "http://plugins.linkedpipes.com/ontology/t-rdfToFile#fileType": "text/turtle",
+          "http://plugins.linkedpipes.com/ontology/t-rdfToFile#graphUri": "http://localhost/default"
+        }
+      ],
+      "@id": "http://obeu.vse.cz:9080/resources/pipelines/created-1456902900419/components/be7ffaa0-d478-4c7f-a396-f9a32ff6e05f/configuration"
     }
   ]
 }
