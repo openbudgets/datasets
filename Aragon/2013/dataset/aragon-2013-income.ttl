@@ -1,0 +1,1899 @@
+@prefix aragon-codelist-fin-rev: <http://data.openbudgets.eu/resource/codelist/estructura_financiacion_i_aragon_2013/> .
+@prefix obeu-measure: <http://data.openbudgets.eu/ontology/dsd/measure/> .
+@prefix aragon-codelist-org: <http://data.openbudgets.eu/resource/codelist/estructura_organica_aragon_2013/> .
+@prefix aragon-dimension: <http://data.openbudgets.eu/ontology/dsd/aragon-budget/dimension/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix aragon-codelist-fin-exp: <http://data.openbudgets.eu/resource/codelist/estructura_financiacion_g_aragon_2013/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix aragon-budget: <http://data.openbudgets.eu/ontology/aragon-budget/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix obeu-attribute: <http://data.openbudgets.eu/ontology/dsd/attribute/> .
+@prefix obeu-dimension: <http://data.openbudgets.eu/ontology/dsd/dimension/> .
+@prefix obeu: <http://data.openbudgets.eu/ontology/> .
+@prefix qb: <http://purl.org/linked-data/cube#> .
+@prefix aragon-codelist-econ-rev: <http://data.openbudgets.eu/resource/codelist/estructura_economica_i_aragon_2013/> .
+@prefix aragon-codelist-econ-exp: <http://data.openbudgets.eu/resource/codelist/estructura_economica_g_aragon_2013/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix aragon-codelist-func: <http://data.openbudgets.eu/resource/codelist/estructura_funcional_aragon_2013/> .
+@prefix aragon-codelist: <http://data.openbudgets.eu/resource/aragon-2013-income/codelist/> .
+@prefix aragon-operation: <http://data.openbudgets.eu/resource/aragon-budget/codelist/operation-character/> .
+@prefix aragon-measure: <http://data.openbudgets.eu/ontology/dsd/aragon-budget/measure/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix fn: <http://www.w3.org/2005/xpath-functions#> .
+@prefix sesame: <http://www.openrdf.org/schema/sesame#> .
+@prefix obeu-operation: <http://data.openbudgets.eu/resource/codelist/operation-character/> .
+
+<http://example.openbudgets.eu/ontology/dsd/aragon-budget> a qb:DataStructureDefinition ;
+	rdfs:label "Data structure definition for the Aragon dataset for fiscal year 2013"@en ;
+	qb:component _:node1ad13a97tx8 , _:node1ad13a97tx9 , _:node1ad13a97tx10 , _:node1ad13a97tx11 , _:node1ad13a97tx12 , _:node1ad13a97tx13 , _:node1ad13a97tx14 , _:node1ad13a97tx15 , _:node1ad13a97tx16 , _:node1ad13a97tx17 .
+
+_:node1ad13a97tx8 qb:dimension obeu-dimension:budgetaryUnit ;
+	qb:componentAttachment qb:DataSet .
+
+_:node1ad13a97tx9 qb:dimension obeu-dimension:budgetPhase ;
+	qb:componentAttachment qb:DataSet .
+
+_:node1ad13a97tx10 qb:dimension obeu-dimension:operationCharacter ;
+	qb:componentAttachment qb:DataSet .
+
+_:node1ad13a97tx11 qb:dimension obeu-dimension:fiscalPeriod ;
+	qb:componentAttachment qb:DataSet .
+
+_:node1ad13a97tx12 qb:dimension obeu-dimension:administrativeClassification .
+
+_:node1ad13a97tx13 qb:dimension obeu-dimension:functionalClassification .
+
+_:node1ad13a97tx14 qb:dimension obeu-dimension:economicClassification .
+
+_:node1ad13a97tx15 qb:dimension aragon-dimension:RevSourceClassification .
+
+aragon-dimension:RevSourceClassification a rdf:Property , qb:CodedProperty , qb:DimensionProperty ;
+	rdfs:label "Funding source organization"@en ;
+	rdfs:comment "The organization which provides a funding for specific expenses."@en ;
+	rdfs:subPropertyOf obeu-dimension:classification ;
+	qb:codeList aragon-codelist:aragon-codelist-fin-rev ;
+	rdfs:range aragon-budget:Financing ;
+	rdfs:isDefinedBy <http://data.openbudgets.eu/ontology/dsd/aragon-budget> .
+
+_:node1ad13a97tx16 qb:componentAttachment qb:DataSet ;
+	qb:attribute obeu-attribute:currency ;
+	qb:componentRequired true .
+
+_:node1ad13a97tx17 qb:measure obeu-measure:amount .
+
+aragon-dimension:ExpSourceClassification a rdf:Property , qb:CodedProperty , qb:DimensionProperty ;
+	rdfs:label "Organization who receive the funding"@en ;
+	rdfs:comment "The organization which receives a funding for specific expenses."@en ;
+	rdfs:subPropertyOf obeu-dimension:classification ;
+	qb:codeList aragon-codelist:aragon-codelist-fin-exp ;
+	rdfs:range aragon-budget:Financing ;
+	rdfs:isDefinedBy <http://data.openbudgets.eu/ontology/dsd/aragon-budget> .
+
+<http://data.openbudgets.eu/resource/dataset/aragon-2013-income/observation/2> a qb:Observation ;
+	obeu-dimension:administrativeClassification aragon-codelist-org:12500 ;
+	obeu-dimension:economicClassification aragon-codelist-econ-rev:100000 ;
+	obeu-measure:amount "1.118.938.000,00"^^xsd:double ;
+	obeu-dimension:organization aragon-codelist-fin-rev:91003 ;
+	qb:dataSet <http://data.openbudgets.eu/resource/dataset/aragon-2013-income/> .
+
+<http://data.openbudgets.eu/resource/dataset/aragon-2013-income/observation/3> a qb:Observation ;
+	obeu-dimension:administrativeClassification aragon-codelist-org:12500 ;
+	obeu-dimension:economicClassification aragon-codelist-econ-rev:110000 ;
+	obeu-measure:amount "152.000.000,00"^^xsd:double ;
+	obeu-dimension:organization aragon-codelist-fin-rev:91003 ;
+	qb:dataSet <http://data.openbudgets.eu/resource/dataset/aragon-2013-income/> .
+
+<http://data.openbudgets.eu/resource/dataset/aragon-2013-income/observation/4> a qb:Observation ;
+	obeu-dimension:administrativeClassification aragon-codelist-org:12500 ;
+	obeu-dimension:economicClassification aragon-codelist-econ-rev:110003 ;
+	obeu-measure:amount "11.700.000,00"^^xsd:double ;
+	obeu-dimension:organization aragon-codelist-fin-rev:91003 ;
+	qb:dataSet <http://data.openbudgets.eu/resource/dataset/aragon-2013-income/> .
+
+<http://data.openbudgets.eu/resource/dataset/aragon-2013-income/observation/5> a qb:Observation ;
+	obeu-dimension:administrativeClassification aragon-codelist-org:12500 ;
+	obeu-dimension:economicClassification aragon-codelist-econ-rev:111000 ;
+	obeu-measure:amount "31.000.000,00"^^xsd:double ;
+	obeu-dimension:organization aragon-codelist-fin-rev:91003 ;
+	qb:dataSet <http://data.openbudgets.eu/resource/dataset/aragon-2013-income/> .
+
+<http://data.openbudgets.eu/resource/dataset/aragon-2013-income/observation/6> a qb:Observation ;
+	obeu-dimension:administrativeClassification aragon-codelist-org:12500 ;
+	obeu-dimension:economicClassification aragon-codelist-econ-rev:112000 ;
+	obeu-measure:amount "4.700.000,00"^^xsd:double ;
+	obeu-dimension:organization aragon-codelist-fin-rev:91003 ;
+	qb:dataSet <http://data.openbudgets.eu/resource/dataset/aragon-2013-income/> .
+
+<http://data.openbudgets.eu/resource/dataset/aragon-2013-income/observation/7> a qb:Observation ;
+	obeu-dimension:administrativeClassification aragon-codelist-org:12500 ;
+	obeu-dimension:economicClassification aragon-codelist-econ-rev:113000 ;
+	obeu-measure:amount "5.800.000,00"^^xsd:double ;
+	obeu-dimension:organization aragon-codelist-fin-rev:91003 ;
+	qb:dataSet <http://data.openbudgets.eu/resource/dataset/aragon-2013-income/> .
+
+<http://data.openbudgets.eu/resource/dataset/aragon-2013-income/observation/8> a qb:Observation ;
+	obeu-dimension:administrativeClassification aragon-codelist-org:12500 ;
+	obeu-dimension:economicClassification aragon-codelist-econ-rev:200000 ;
+	obeu-measure:amount "103.400.000,00"^^xsd:double ;
+	obeu-dimension:organization aragon-codelist-fin-rev:91003 ;
+	qb:dataSet <http://data.openbudgets.eu/resource/dataset/aragon-2013-income/> .
+
+<http://data.openbudgets.eu/resource/dataset/aragon-2013-income/observation/9> a qb:Observation ;
+	obeu-dimension:administrativeClassification aragon-codelist-org:12500 ;
+	obeu-dimension:economicClassification aragon-codelist-econ-rev:200001 ;
+	obeu-measure:amount "11.700.000,00"^^xsd:double ;
+	obeu-dimension:organization aragon-codelist-fin-rev:91003 ;
+	qb:dataSet <http://data.openbudgets.eu/resource/dataset/aragon-2013-income/> .
+
+<http://data.openbudgets.eu/resource/dataset/aragon-2013-income/observation/10> a qb:Observation ;
+	obeu-dimension:administrativeClassification aragon-codelist-org:12500 ;
+	obeu-dimension:economicClassification aragon-codelist-econ-rev:200002 ;
+	obeu-measure:amount "2.300.000,00"^^xsd:double ;
+	obeu-dimension:organization aragon-codelist-fin-rev:91003 ;
+	qb:dataSet <http://data.openbudgets.eu/resource/dataset/aragon-2013-income/> .
+
+<http://data.openbudgets.eu/resource/dataset/aragon-2013-income/observation/11> a qb:Observation ;
+	obeu-dimension:administrativeClassification aragon-codelist-org:12500 ;
+	obeu-dimension:economicClassification aragon-codelist-econ-rev:201000 ;
+	obeu-measure:amount "43.500.000,00"^^xsd:double ;
+	obeu-dimension:organization aragon-codelist-fin-rev:91003 ;
+	qb:dataSet <http://data.openbudgets.eu/resource/dataset/aragon-2013-income/> .
+
+<http://data.openbudgets.eu/resource/dataset/aragon-2013-income/observation/12> a qb:Observation ;
+	obeu-dimension:administrativeClassification aragon-codelist-org:12500 ;
+	obeu-dimension:economicClassification aragon-codelist-econ-rev:201001 ;
+	obeu-measure:amount "50.000,00"^^xsd:double ;
+	obeu-dimension:organization aragon-codelist-fin-rev:91003 ;
+	qb:dataSet <http://data.openbudgets.eu/resource/dataset/aragon-2013-income/> .
+
+<http://data.openbudgets.eu/resource/dataset/aragon-2013-income/observation/13> a qb:Observation ;
+	obeu-dimension:administrativeClassification aragon-codelist-org:12500 ;
+	obeu-dimension:economicClassification aragon-codelist-econ-rev:201002 ;
+	obeu-measure:amount "3.500.000,00"^^xsd:double ;
+	obeu-dimension:organization aragon-codelist-fin-rev:91003 ;
+	qb:dataSet <http://data.openbudgets.eu/resource/dataset/aragon-2013-income/> .
+
+<http://data.openbudgets.eu/resource/dataset/aragon-2013-income/observation/14> a qb:Observation ;
+	obeu-dimension:administrativeClassification aragon-codelist-org:12500 ;
+	obeu-dimension:economicClassification aragon-codelist-econ-rev:210001 ;
+	obeu-measure:amount "874.572.000,00"^^xsd:double ;
+	obeu-dimension:organization aragon-codelist-fin-rev:91003 ;
+	qb:dataSet <http://data.openbudgets.eu/resource/dataset/aragon-2013-income/> .
+
+<http://data.openbudgets.eu/resource/dataset/aragon-2013-income/observation/15> a qb:Observation ;
+	obeu-dimension:administrativeClassification aragon-codelist-org:12500 ;
+	obeu-dimension:economicClassification aragon-codelist-econ-rev:220000 ;
+	obeu-measure:amount "13.397.000,00"^^xsd:double ;
+	obeu-dimension:organization aragon-codelist-fin-rev:91003 ;
+	qb:dataSet <http://data.openbudgets.eu/resource/dataset/aragon-2013-income/> .
+
+<http://data.openbudgets.eu/resource/dataset/aragon-2013-income/observation/16> a qb:Observation ;
+	obeu-dimension:administrativeClassification aragon-codelist-org:12500 ;
+	obeu-dimension:economicClassification aragon-codelist-econ-rev:220001 ;
+	obeu-measure:amount "4.676.000,00"^^xsd:double ;
+	obeu-dimension:organization aragon-codelist-fin-rev:91003 ;
+	qb:dataSet <http://data.openbudgets.eu/resource/dataset/aragon-2013-income/> .
+
+<http://data.openbudgets.eu/resource/dataset/aragon-2013-income/observation/17> a qb:Observation ;
+	obeu-dimension:administrativeClassification aragon-codelist-org:12500 ;
+	obeu-dimension:economicClassification aragon-codelist-econ-rev:220003 ;
+	obeu-measure:amount "134.885.000,00"^^xsd:double ;
+	obeu-dimension:organization aragon-codelist-fin-rev:91003 ;
+	qb:dataSet <http://data.openbudgets.eu/resource/dataset/aragon-2013-income/> .
+
+<http://data.openbudgets.eu/resource/dataset/aragon-2013-income/observation/18> a qb:Observation ;
+	obeu-dimension:administrativeClassification aragon-codelist-org:12500 ;
+	obeu-dimension:economicClassification aragon-codelist-econ-rev:220004 ;
+	obeu-measure:amount "37.000.000,00"^^xsd:double ;
+	obeu-dimension:organization aragon-codelist-fin-rev:91003 ;
+	qb:dataSet <http://data.openbudgets.eu/resource/dataset/aragon-2013-income/> .
+
+<http://data.openbudgets.eu/resource/dataset/aragon-2013-income/observation/19> a qb:Observation ;
+	obeu-dimension:administrativeClassification aragon-codelist-org:12500 ;
+	obeu-dimension:economicClassification aragon-codelist-econ-rev:220005 ;
+	obeu-measure:amount "11.000.000,00"^^xsd:double ;
+	obeu-dimension:organization aragon-codelist-fin-rev:91003 ;
+	qb:dataSet <http://data.openbudgets.eu/resource/dataset/aragon-2013-income/> .
+
+<http://data.openbudgets.eu/resource/dataset/aragon-2013-income/observation/20> a qb:Observation ;
+	obeu-dimension:administrativeClassification aragon-codelist-org:12500 ;
+	obeu-dimension:economicClassification aragon-codelist-econ-rev:220006 ;
+	obeu-measure:amount "285.000,00"^^xsd:double ;
+	obeu-dimension:organization aragon-codelist-fin-rev:91003 ;
+	qb:dataSet <http://data.openbudgets.eu/resource/dataset/aragon-2013-income/> .
+
+<http://data.openbudgets.eu/resource/dataset/aragon-2013-income/observation/21> a qb:Observation ;
+	obeu-dimension:administrativeClassification aragon-codelist-org:12500 ;
+	obeu-dimension:economicClassification aragon-codelist-econ-rev:220007 ;
+	obeu-measure:amount "66.010.000,00"^^xsd:double ;
+	obeu-dimension:organization aragon-codelist-fin-rev:91003 ;
+	qb:dataSet <http://data.openbudgets.eu/resource/dataset/aragon-2013-income/> .
+
+<http://data.openbudgets.eu/resource/dataset/aragon-2013-income/observation/22> a qb:Observation ;
+	obeu-dimension:administrativeClassification aragon-codelist-org:12500 ;
+	obeu-dimension:economicClassification aragon-codelist-econ-rev:220008 ;
+	obeu-measure:amount "260.870.000,00"^^xsd:double ;
+	obeu-dimension:organization aragon-codelist-fin-rev:91003 ;
+	qb:dataSet <http://data.openbudgets.eu/resource/dataset/aragon-2013-income/> .
+
+<http://data.openbudgets.eu/resource/dataset/aragon-2013-income/observation/23> a qb:Observation ;
+	obeu-dimension:administrativeClassification aragon-codelist-org:12500 ;
+	obeu-dimension:economicClassification aragon-codelist-econ-rev:220029 ;
+	obeu-measure:amount "40.000.000,00"^^xsd:double ;
+	obeu-dimension:organization aragon-codelist-fin-rev:91003 ;
+	qb:dataSet <http://data.openbudgets.eu/resource/dataset/aragon-2013-income/> .
+
+<http://data.openbudgets.eu/resource/dataset/aragon-2013-income/observation/24> a qb:Observation ;
+	obeu-dimension:administrativeClassification aragon-codelist-org:12500 ;
+	obeu-dimension:economicClassification aragon-codelist-econ-rev:300050 ;
+	obeu-measure:amount "36.000,00"^^xsd:double ;
+	obeu-dimension:organization aragon-codelist-fin-rev:91003 ;
+	qb:dataSet <http://data.openbudgets.eu/resource/dataset/aragon-2013-income/> .
+
+<http://data.openbudgets.eu/resource/dataset/aragon-2013-income/observation/25> a qb:Observation ;
+	obeu-dimension:administrativeClassification aragon-codelist-org:12500 ;
+	obeu-dimension:economicClassification aragon-codelist-econ-rev:301006 ;
+	obeu-measure:amount "20.000,00"^^xsd:double ;
+	obeu-dimension:organization aragon-codelist-fin-rev:91003 ;
+	qb:dataSet <http://data.openbudgets.eu/resource/dataset/aragon-2013-income/> .
+
+<http://data.openbudgets.eu/resource/dataset/aragon-2013-income/observation/26> a qb:Observation ;
+	obeu-dimension:administrativeClassification aragon-codelist-org:12500 ;
+	obeu-dimension:economicClassification aragon-codelist-econ-rev:301050 ;
+	obeu-measure:amount "15.000,00"^^xsd:double ;
+	obeu-dimension:organization aragon-codelist-fin-rev:91003 ;
+	qb:dataSet <http://data.openbudgets.eu/resource/dataset/aragon-2013-income/> .
+
+<http://data.openbudgets.eu/resource/dataset/aragon-2013-income/observation/27> a qb:Observation ;
+	obeu-dimension:administrativeClassification aragon-codelist-org:12500 ;
+	obeu-dimension:economicClassification aragon-codelist-econ-rev:302000 ;
+	obeu-measure:amount "260.000,00"^^xsd:double ;
+	obeu-dimension:organization aragon-codelist-fin-rev:91003 ;
+	qb:dataSet <http://data.openbudgets.eu/resource/dataset/aragon-2013-income/> .
+
+<http://data.openbudgets.eu/resource/dataset/aragon-2013-income/observation/28> a qb:Observation ;
+	obeu-dimension:administrativeClassification aragon-codelist-org:12500 ;
+	obeu-dimension:economicClassification aragon-codelist-econ-rev:310050 ;
+	obeu-measure:amount "255.000,00"^^xsd:double ;
+	obeu-dimension:organization aragon-codelist-fin-rev:91003 ;
+	qb:dataSet <http://data.openbudgets.eu/resource/dataset/aragon-2013-income/> .
+
+<http://data.openbudgets.eu/resource/dataset/aragon-2013-income/observation/29> a qb:Observation ;
+	obeu-dimension:administrativeClassification aragon-codelist-org:12500 ;
+	obeu-dimension:economicClassification aragon-codelist-econ-rev:319006 ;
+	obeu-measure:amount "1.800.000,00"^^xsd:double ;
+	obeu-dimension:organization aragon-codelist-fin-rev:91003 ;
+	qb:dataSet <http://data.openbudgets.eu/resource/dataset/aragon-2013-income/> .
+
+<http://data.openbudgets.eu/resource/dataset/aragon-2013-income/observation/30> a qb:Observation ;
+	obeu-dimension:administrativeClassification aragon-codelist-org:12500 ;
+	obeu-dimension:economicClassification aragon-codelist-econ-rev:319103 ;
+	obeu-measure:amount "806.600,00"^^xsd:double ;
+	obeu-dimension:organization aragon-codelist-fin-rev:91003 ;
+	qb:dataSet <http://data.openbudgets.eu/resource/dataset/aragon-2013-income/> .
+
+<http://data.openbudgets.eu/resource/dataset/aragon-2013-income/observation/31> a qb:Observation ;
+	obeu-dimension:administrativeClassification aragon-codelist-org:12500 ;
+	obeu-dimension:economicClassification aragon-codelist-econ-rev:319109 ;
+	obeu-measure:amount "1.000,00"^^xsd:double ;
+	obeu-dimension:organization aragon-codelist-fin-rev:91003 ;
+	qb:dataSet <http://data.openbudgets.eu/resource/dataset/aragon-2013-income/> .
+
+<http://data.openbudgets.eu/resource/dataset/aragon-2013-income/observation/32> a qb:Observation ;
+	obeu-dimension:administrativeClassification aragon-codelist-org:12500 ;
+	obeu-dimension:economicClassification aragon-codelist-econ-rev:319111 ;
+	obeu-measure:amount "200.000,00"^^xsd:double ;
+	obeu-dimension:organization aragon-codelist-fin-rev:91003 ;
+	qb:dataSet <http://data.openbudgets.eu/resource/dataset/aragon-2013-income/> .
+
+<http://data.openbudgets.eu/resource/dataset/aragon-2013-income/observation/33> a qb:Observation ;
+	obeu-dimension:administrativeClassification aragon-codelist-org:12500 ;
+	obeu-dimension:economicClassification aragon-codelist-econ-rev:319116 ;
+	obeu-measure:amount "780.000,00"^^xsd:double ;
+	obeu-dimension:organization aragon-codelist-fin-rev:91003 ;
+	qb:dataSet <http://data.openbudgets.eu/resource/dataset/aragon-2013-income/> .
+
+<http://data.openbudgets.eu/resource/dataset/aragon-2013-income/observation/34> a qb:Observation ;
+	obeu-dimension:administrativeClassification aragon-codelist-org:12500 ;
+	obeu-dimension:economicClassification aragon-codelist-econ-rev:319117 ;
+	obeu-measure:amount "1.450.000,00"^^xsd:double ;
+	obeu-dimension:organization aragon-codelist-fin-rev:91003 ;
+	qb:dataSet <http://data.openbudgets.eu/resource/dataset/aragon-2013-income/> .
+
+<http://data.openbudgets.eu/resource/dataset/aragon-2013-income/observation/35> a qb:Observation ;
+	obeu-dimension:administrativeClassification aragon-codelist-org:12500 ;
+	obeu-dimension:economicClassification aragon-codelist-econ-rev:319118 ;
+	obeu-measure:amount "110.000,00"^^xsd:double ;
+	obeu-dimension:organization aragon-codelist-fin-rev:91003 ;
+	qb:dataSet <http://data.openbudgets.eu/resource/dataset/aragon-2013-income/> .
+
+<http://data.openbudgets.eu/resource/dataset/aragon-2013-income/observation/36> a qb:Observation ;
+	obeu-dimension:administrativeClassification aragon-codelist-org:12500 ;
+	obeu-dimension:economicClassification aragon-codelist-econ-rev:319321 ;
+	obeu-measure:amount "92.783,00"^^xsd:double ;
+	obeu-dimension:organization aragon-codelist-fin-rev:91003 ;
+	qb:dataSet <http://data.openbudgets.eu/resource/dataset/aragon-2013-income/> .
+
+<http://data.openbudgets.eu/resource/dataset/aragon-2013-income/observation/37> a qb:Observation ;
+	obeu-dimension:administrativeClassification aragon-codelist-org:12500 ;
+	obeu-dimension:economicClassification aragon-codelist-econ-rev:329001 ;
+	obeu-measure:amount "3.206.000,00"^^xsd:double ;
+	obeu-dimension:organization aragon-codelist-fin-rev:91003 ;
+	qb:dataSet <http://data.openbudgets.eu/resource/dataset/aragon-2013-income/> .
+
+<http://data.openbudgets.eu/resource/dataset/aragon-2013-income/observation/38> a qb:Observation ;
+	obeu-dimension:administrativeClassification aragon-codelist-org:12500 ;
+	obeu-dimension:economicClassification aragon-codelist-econ-rev:329003 ;
+	obeu-measure:amount "61.000,00"^^xsd:double ;
+	obeu-dimension:organization aragon-codelist-fin-rev:91003 ;
+	qb:dataSet <http://data.openbudgets.eu/resource/dataset/aragon-2013-income/> .
+
+<http://data.openbudgets.eu/resource/dataset/aragon-2013-income/observation/39> a qb:Observation ;
+	obeu-dimension:administrativeClassification aragon-codelist-org:12500 ;
+	obeu-dimension:economicClassification aragon-codelist-econ-rev:329004 ;
+	obeu-measure:amount "17.100,23"^^xsd:double ;
+	obeu-dimension:organization aragon-codelist-fin-rev:91003 ;
+	qb:dataSet <http://data.openbudgets.eu/resource/dataset/aragon-2013-income/> .
+
+<http://data.openbudgets.eu/resource/dataset/aragon-2013-income/observation/40> a qb:Observation ;
+	obeu-dimension:administrativeClassification aragon-codelist-org:12500 ;
+	obeu-dimension:economicClassification aragon-codelist-econ-rev:329005 ;
+	obeu-measure:amount "900.000,00"^^xsd:double ;
+	obeu-dimension:organization aragon-codelist-fin-rev:91003 ;
+	qb:dataSet <http://data.openbudgets.eu/resource/dataset/aragon-2013-income/> .
+
+<http://data.openbudgets.eu/resource/dataset/aragon-2013-income/observation/41> a qb:Observation ;
+	obeu-dimension:administrativeClassification aragon-codelist-org:12500 ;
+	obeu-dimension:economicClassification aragon-codelist-econ-rev:329006 ;
+	obeu-measure:amount "45.000,00"^^xsd:double ;
+	obeu-dimension:organization aragon-codelist-fin-rev:91003 ;
+	qb:dataSet <http://data.openbudgets.eu/resource/dataset/aragon-2013-income/> .
+
+<http://data.openbudgets.eu/resource/dataset/aragon-2013-income/observation/42> a qb:Observation ;
+	obeu-dimension:administrativeClassification aragon-codelist-org:12500 ;
+	obeu-dimension:economicClassification aragon-codelist-econ-rev:329007 ;
+	obeu-measure:amount "4.000,00"^^xsd:double ;
+	obeu-dimension:organization aragon-codelist-fin-rev:91003 ;
+	qb:dataSet <http://data.openbudgets.eu/resource/dataset/aragon-2013-income/> .
+
+<http://data.openbudgets.eu/resource/dataset/aragon-2013-income/observation/43> a qb:Observation ;
+	obeu-dimension:administrativeClassification aragon-codelist-org:12500 ;
+	obeu-dimension:economicClassification aragon-codelist-econ-rev:329010 ;
+	obeu-measure:amount "10.000,00"^^xsd:double ;
+	obeu-dimension:organization aragon-codelist-fin-rev:91003 ;
+	qb:dataSet <http://data.openbudgets.eu/resource/dataset/aragon-2013-income/> .
+
+<http://data.openbudgets.eu/resource/dataset/aragon-2013-income/observation/44> a qb:Observation ;
+	obeu-dimension:administrativeClassification aragon-codelist-org:12500 ;
+	obeu-dimension:economicClassification aragon-codelist-econ-rev:329011 ;
+	obeu-measure:amount "600.000,00"^^xsd:double ;
+	obeu-dimension:organization aragon-codelist-fin-rev:91003 ;
+	qb:dataSet <http://data.openbudgets.eu/resource/dataset/aragon-2013-income/> .
+
+<http://data.openbudgets.eu/resource/dataset/aragon-2013-income/observation/45> a qb:Observation ;
+	obeu-dimension:administrativeClassification aragon-codelist-org:12500 ;
+	obeu-dimension:economicClassification aragon-codelist-econ-rev:329012 ;
+	obeu-measure:amount "3.600,00"^^xsd:double ;
+	obeu-dimension:organization aragon-codelist-fin-rev:91003 ;
+	qb:dataSet <http://data.openbudgets.eu/resource/dataset/aragon-2013-income/> .
+
+<http://data.openbudgets.eu/resource/dataset/aragon-2013-income/observation/46> a qb:Observation ;
+	obeu-dimension:administrativeClassification aragon-codelist-org:12500 ;
+	obeu-dimension:economicClassification aragon-codelist-econ-rev:329013 ;
+	obeu-measure:amount "120.000,00"^^xsd:double ;
+	obeu-dimension:organization aragon-codelist-fin-rev:91003 ;
+	qb:dataSet <http://data.openbudgets.eu/resource/dataset/aragon-2013-income/> .
+
+<http://data.openbudgets.eu/resource/dataset/aragon-2013-income/observation/47> a qb:Observation ;
+	obeu-dimension:administrativeClassification aragon-codelist-org:12500 ;
+	obeu-dimension:economicClassification aragon-codelist-econ-rev:329014 ;
+	obeu-measure:amount "2.380.666,00"^^xsd:double ;
+	obeu-dimension:organization aragon-codelist-fin-rev:91003 ;
+	qb:dataSet <http://data.openbudgets.eu/resource/dataset/aragon-2013-income/> .
+
+<http://data.openbudgets.eu/resource/dataset/aragon-2013-income/observation/48> a qb:Observation ;
+	obeu-dimension:administrativeClassification aragon-codelist-org:12500 ;
+	obeu-dimension:economicClassification aragon-codelist-econ-rev:329015 ;
+	obeu-measure:amount "587.000,00"^^xsd:double ;
+	obeu-dimension:organization aragon-codelist-fin-rev:91003 ;
+	qb:dataSet <http://data.openbudgets.eu/resource/dataset/aragon-2013-income/> .
+
+<http://data.openbudgets.eu/resource/dataset/aragon-2013-income/observation/49> a qb:Observation ;
+	obeu-dimension:administrativeClassification aragon-codelist-org:12500 ;
+	obeu-dimension:economicClassification aragon-codelist-econ-rev:329017 ;
+	obeu-measure:amount "400.000,00"^^xsd:double ;
+	obeu-dimension:organization aragon-codelist-fin-rev:91003 ;
+	qb:dataSet <http://data.openbudgets.eu/resource/dataset/aragon-2013-income/> .
+
+<http://data.openbudgets.eu/resource/dataset/aragon-2013-income/observation/50> a qb:Observation ;
+	obeu-dimension:administrativeClassification aragon-codelist-org:12500 ;
+	obeu-dimension:economicClassification aragon-codelist-econ-rev:329019 ;
+	obeu-measure:amount "500.000,00"^^xsd:double ;
+	obeu-dimension:organization aragon-codelist-fin-rev:91003 ;
+	qb:dataSet <http://data.openbudgets.eu/resource/dataset/aragon-2013-income/> .
+
+<http://data.openbudgets.eu/resource/dataset/aragon-2013-income/observation/51> a qb:Observation ;
+	obeu-dimension:administrativeClassification aragon-codelist-org:12500 ;
+	obeu-dimension:economicClassification aragon-codelist-econ-rev:329020 ;
+	obeu-measure:amount "50.000,00"^^xsd:double ;
+	obeu-dimension:organization aragon-codelist-fin-rev:91003 ;
+	qb:dataSet <http://data.openbudgets.eu/resource/dataset/aragon-2013-income/> .
+
+<http://data.openbudgets.eu/resource/dataset/aragon-2013-income/observation/52> a qb:Observation ;
+	obeu-dimension:administrativeClassification aragon-codelist-org:12500 ;
+	obeu-dimension:economicClassification aragon-codelist-econ-rev:329021 ;
+	obeu-measure:amount "20.000,00"^^xsd:double ;
+	obeu-dimension:organization aragon-codelist-fin-rev:91003 ;
+	qb:dataSet <http://data.openbudgets.eu/resource/dataset/aragon-2013-income/> .
+
+<http://data.openbudgets.eu/resource/dataset/aragon-2013-income/observation/53> a qb:Observation ;
+	obeu-dimension:administrativeClassification aragon-codelist-org:12500 ;
+	obeu-dimension:economicClassification aragon-codelist-econ-rev:329022 ;
+	obeu-measure:amount "776.157,99"^^xsd:double ;
+	obeu-dimension:organization aragon-codelist-fin-rev:91003 ;
+	qb:dataSet <http://data.openbudgets.eu/resource/dataset/aragon-2013-income/> .
+
+<http://data.openbudgets.eu/resource/dataset/aragon-2013-income/observation/54> a qb:Observation ;
+	obeu-dimension:administrativeClassification aragon-codelist-org:12500 ;
+	obeu-dimension:economicClassification aragon-codelist-econ-rev:329023 ;
+	obeu-measure:amount "29.060,00"^^xsd:double ;
+	obeu-dimension:organization aragon-codelist-fin-rev:91003 ;
+	qb:dataSet <http://data.openbudgets.eu/resource/dataset/aragon-2013-income/> .
+
+<http://data.openbudgets.eu/resource/dataset/aragon-2013-income/observation/55> a qb:Observation ;
+	obeu-dimension:administrativeClassification aragon-codelist-org:12500 ;
+	obeu-dimension:economicClassification aragon-codelist-econ-rev:329025 ;
+	obeu-measure:amount "9.500,00"^^xsd:double ;
+	obeu-dimension:organization aragon-codelist-fin-rev:91003 ;
+	qb:dataSet <http://data.openbudgets.eu/resource/dataset/aragon-2013-income/> .
+
+<http://data.openbudgets.eu/resource/dataset/aragon-2013-income/observation/56> a qb:Observation ;
+	obeu-dimension:administrativeClassification aragon-codelist-org:12500 ;
+	obeu-dimension:economicClassification aragon-codelist-econ-rev:329030 ;
+	obeu-measure:amount "12.000,00"^^xsd:double ;
+	obeu-dimension:organization aragon-codelist-fin-rev:91003 ;
+	qb:dataSet <http://data.openbudgets.eu/resource/dataset/aragon-2013-income/> .
+
+<http://data.openbudgets.eu/resource/dataset/aragon-2013-income/observation/57> a qb:Observation ;
+	obeu-dimension:administrativeClassification aragon-codelist-org:12500 ;
+	obeu-dimension:economicClassification aragon-codelist-econ-rev:329037 ;
+	obeu-measure:amount "185.400,00"^^xsd:double ;
+	obeu-dimension:organization aragon-codelist-fin-rev:91003 ;
+	qb:dataSet <http://data.openbudgets.eu/resource/dataset/aragon-2013-income/> .
+
+<http://data.openbudgets.eu/resource/dataset/aragon-2013-income/observation/58> a qb:Observation ;
+	obeu-dimension:administrativeClassification aragon-codelist-org:12500 ;
+	obeu-dimension:economicClassification aragon-codelist-econ-rev:329038 ;
+	obeu-measure:amount "5.400,00"^^xsd:double ;
+	obeu-dimension:organization aragon-codelist-fin-rev:91003 ;
+	qb:dataSet <http://data.openbudgets.eu/resource/dataset/aragon-2013-income/> .
+
+<http://data.openbudgets.eu/resource/dataset/aragon-2013-income/observation/59> a qb:Observation ;
+	obeu-dimension:administrativeClassification aragon-codelist-org:12500 ;
+	obeu-dimension:economicClassification aragon-codelist-econ-rev:329039 ;
+	obeu-measure:amount "133.200,00"^^xsd:double ;
+	obeu-dimension:organization aragon-codelist-fin-rev:91003 ;
+	qb:dataSet <http://data.openbudgets.eu/resource/dataset/aragon-2013-income/> .
+
+<http://data.openbudgets.eu/resource/dataset/aragon-2013-income/observation/60> a qb:Observation ;
+	obeu-dimension:administrativeClassification aragon-codelist-org:12500 ;
+	obeu-dimension:economicClassification aragon-codelist-econ-rev:330000 ;
+	obeu-measure:amount "26.000,00"^^xsd:double ;
+	obeu-dimension:organization aragon-codelist-fin-rev:91003 ;
+	qb:dataSet <http://data.openbudgets.eu/resource/dataset/aragon-2013-income/> .
+
+<http://data.openbudgets.eu/resource/dataset/aragon-2013-income/observation/61> a qb:Observation ;
+	obeu-dimension:administrativeClassification aragon-codelist-org:12500 ;
+	obeu-dimension:economicClassification aragon-codelist-econ-rev:330006 ;
+	obeu-measure:amount "166.000,00"^^xsd:double ;
+	obeu-dimension:organization aragon-codelist-fin-rev:91003 ;
+	qb:dataSet <http://data.openbudgets.eu/resource/dataset/aragon-2013-income/> .
+
+<http://data.openbudgets.eu/resource/dataset/aragon-2013-income/observation/62> a qb:Observation ;
+	obeu-dimension:administrativeClassification aragon-codelist-org:12500 ;
+	obeu-dimension:economicClassification aragon-codelist-econ-rev:330007 ;
+	obeu-measure:amount "33.800,00"^^xsd:double ;
+	obeu-dimension:organization aragon-codelist-fin-rev:91003 ;
+	qb:dataSet <http://data.openbudgets.eu/resource/dataset/aragon-2013-income/> .
+
+<http://data.openbudgets.eu/resource/dataset/aragon-2013-income/observation/63> a qb:Observation ;
+	obeu-dimension:administrativeClassification aragon-codelist-org:12500 ;
+	obeu-dimension:economicClassification aragon-codelist-econ-rev:335000 ;
+	obeu-measure:amount "20.600,00"^^xsd:double ;
+	obeu-dimension:organization aragon-codelist-fin-rev:91003 ;
+	qb:dataSet <http://data.openbudgets.eu/resource/dataset/aragon-2013-income/> .
+
+<http://data.openbudgets.eu/resource/dataset/aragon-2013-income/observation/64> a qb:Observation ;
+	obeu-dimension:administrativeClassification aragon-codelist-org:12500 ;
+	obeu-dimension:economicClassification aragon-codelist-econ-rev:370000 ;
+	obeu-measure:amount "2.400.000,00"^^xsd:double ;
+	obeu-dimension:organization aragon-codelist-fin-rev:91003 ;
+	qb:dataSet <http://data.openbudgets.eu/resource/dataset/aragon-2013-income/> .
+
+<http://data.openbudgets.eu/resource/dataset/aragon-2013-income/observation/65> a qb:Observation ;
+	obeu-dimension:administrativeClassification aragon-codelist-org:12500 ;
+	obeu-dimension:economicClassification aragon-codelist-econ-rev:370001 ;
+	obeu-measure:amount "18.800.000,00"^^xsd:double ;
+	obeu-dimension:organization aragon-codelist-fin-rev:91003 ;
+	qb:dataSet <http://data.openbudgets.eu/resource/dataset/aragon-2013-income/> .
+
+<http://data.openbudgets.eu/resource/dataset/aragon-2013-income/observation/66> a qb:Observation ;
+	obeu-dimension:administrativeClassification aragon-codelist-org:12500 ;
+	obeu-dimension:economicClassification aragon-codelist-econ-rev:370002 ;
+	obeu-measure:amount "23.500.000,00"^^xsd:double ;
+	obeu-dimension:organization aragon-codelist-fin-rev:91003 ;
+	qb:dataSet <http://data.openbudgets.eu/resource/dataset/aragon-2013-income/> .
+
+<http://data.openbudgets.eu/resource/dataset/aragon-2013-income/observation/67> a qb:Observation ;
+	obeu-dimension:administrativeClassification aragon-codelist-org:12500 ;
+	obeu-dimension:economicClassification aragon-codelist-econ-rev:370003 ;
+	obeu-measure:amount "15.000,00"^^xsd:double ;
+	obeu-dimension:organization aragon-codelist-fin-rev:91003 ;
+	qb:dataSet <http://data.openbudgets.eu/resource/dataset/aragon-2013-income/> .
+
+<http://data.openbudgets.eu/resource/dataset/aragon-2013-income/observation/68> a qb:Observation ;
+	obeu-dimension:administrativeClassification aragon-codelist-org:12500 ;
+	obeu-dimension:economicClassification aragon-codelist-econ-rev:380100 ;
+	obeu-measure:amount "3.600.000,00"^^xsd:double ;
+	obeu-dimension:organization aragon-codelist-fin-rev:91003 ;
+	qb:dataSet <http://data.openbudgets.eu/resource/dataset/aragon-2013-income/> .
+
+<http://data.openbudgets.eu/resource/dataset/aragon-2013-income/observation/69> a qb:Observation ;
+	obeu-dimension:administrativeClassification aragon-codelist-org:12500 ;
+	obeu-dimension:economicClassification aragon-codelist-econ-rev:390001 ;
+	obeu-measure:amount "110.000,00"^^xsd:double ;
+	obeu-dimension:organization aragon-codelist-fin-rev:91003 ;
+	qb:dataSet <http://data.openbudgets.eu/resource/dataset/aragon-2013-income/> .
+
+<http://data.openbudgets.eu/resource/dataset/aragon-2013-income/observation/70> a qb:Observation ;
+	obeu-dimension:administrativeClassification aragon-codelist-org:12500 ;
+	obeu-dimension:economicClassification aragon-codelist-econ-rev:395008 ;
+	obeu-measure:amount "18.000,00"^^xsd:double ;
+	obeu-dimension:organization aragon-codelist-fin-rev:91003 ;
+	qb:dataSet <http://data.openbudgets.eu/resource/dataset/aragon-2013-income/> .
+
+<http://data.openbudgets.eu/resource/dataset/aragon-2013-income/observation/71> a qb:Observation ;
+	obeu-dimension:administrativeClassification aragon-codelist-org:12500 ;
+	obeu-dimension:economicClassification aragon-codelist-econ-rev:395099 ;
+	obeu-measure:amount "5.000.000,00"^^xsd:double ;
+	obeu-dimension:organization aragon-codelist-fin-rev:91003 ;
+	qb:dataSet <http://data.openbudgets.eu/resource/dataset/aragon-2013-income/> .
+
+<http://data.openbudgets.eu/resource/dataset/aragon-2013-income/observation/72> a qb:Observation ;
+	obeu-dimension:administrativeClassification aragon-codelist-org:12500 ;
+	obeu-dimension:economicClassification aragon-codelist-econ-rev:395100 ;
+	obeu-measure:amount "8.328.500,00"^^xsd:double ;
+	obeu-dimension:organization aragon-codelist-fin-rev:91003 ;
+	qb:dataSet <http://data.openbudgets.eu/resource/dataset/aragon-2013-income/> .
+
+<http://data.openbudgets.eu/resource/dataset/aragon-2013-income/observation/73> a qb:Observation ;
+	obeu-dimension:administrativeClassification aragon-codelist-org:12500 ;
+	obeu-dimension:economicClassification aragon-codelist-econ-rev:396100 ;
+	obeu-measure:amount "340.590,21"^^xsd:double ;
+	obeu-dimension:organization aragon-codelist-fin-rev:91003 ;
+	qb:dataSet <http://data.openbudgets.eu/resource/dataset/aragon-2013-income/> .
+
+<http://data.openbudgets.eu/resource/dataset/aragon-2013-income/observation/74> a qb:Observation ;
+	obeu-dimension:administrativeClassification aragon-codelist-org:12500 ;
+	obeu-dimension:economicClassification aragon-codelist-econ-rev:400050 ;
+	obeu-measure:amount "252.357.000,00"^^xsd:double ;
+	obeu-dimension:organization aragon-codelist-fin-rev:91003 ;
+	qb:dataSet <http://data.openbudgets.eu/resource/dataset/aragon-2013-income/> .
+
+<http://data.openbudgets.eu/resource/dataset/aragon-2013-income/observation/75> a qb:Observation ;
+	obeu-dimension:administrativeClassification aragon-codelist-org:12500 ;
+	obeu-dimension:economicClassification aragon-codelist-econ-rev:400051 ;
+	obeu-measure:amount "58.390.000,00"^^xsd:double ;
+	obeu-dimension:organization aragon-codelist-fin-rev:91003 ;
+	qb:dataSet <http://data.openbudgets.eu/resource/dataset/aragon-2013-income/> .
+
+<http://data.openbudgets.eu/resource/dataset/aragon-2013-income/observation/76> a qb:Observation ;
+	obeu-dimension:administrativeClassification aragon-codelist-org:12500 ;
+	obeu-dimension:economicClassification aragon-codelist-econ-rev:400151 ;
+	obeu-measure:amount "52.170.000,00"^^xsd:double ;
+	obeu-dimension:organization aragon-codelist-fin-rev:91003 ;
+	qb:dataSet <http://data.openbudgets.eu/resource/dataset/aragon-2013-income/> .
+
+<http://data.openbudgets.eu/resource/dataset/aragon-2013-income/observation/77> a qb:Observation ;
+	obeu-dimension:administrativeClassification aragon-codelist-org:12500 ;
+	obeu-dimension:economicClassification aragon-codelist-econ-rev:400152 ;
+	obeu-measure:amount "66.980.000,00"^^xsd:double ;
+	obeu-dimension:organization aragon-codelist-fin-rev:91003 ;
+	qb:dataSet <http://data.openbudgets.eu/resource/dataset/aragon-2013-income/> .
+
+<http://data.openbudgets.eu/resource/dataset/aragon-2013-income/observation/78> a qb:Observation ;
+	obeu-dimension:administrativeClassification aragon-codelist-org:12500 ;
+	obeu-dimension:economicClassification aragon-codelist-econ-rev:403000 ;
+	obeu-measure:amount "740.000,00"^^xsd:double ;
+	obeu-dimension:organization aragon-codelist-fin-rev:34001 ;
+	qb:dataSet <http://data.openbudgets.eu/resource/dataset/aragon-2013-income/> .
+
+<http://data.openbudgets.eu/resource/dataset/aragon-2013-income/observation/79> a qb:Observation ;
+	obeu-dimension:administrativeClassification aragon-codelist-org:12500 ;
+	obeu-dimension:economicClassification aragon-codelist-econ-rev:403004 ;
+	obeu-measure:amount "52.016,70"^^xsd:double ;
+	obeu-dimension:organization aragon-codelist-fin-rev:91003 ;
+	qb:dataSet <http://data.openbudgets.eu/resource/dataset/aragon-2013-income/> .
+
+<http://data.openbudgets.eu/resource/dataset/aragon-2013-income/observation/80> a qb:Observation ;
+	obeu-dimension:administrativeClassification aragon-codelist-org:12500 ;
+	obeu-dimension:economicClassification aragon-codelist-econ-rev:403099 ;
+	obeu-measure:amount "240.000,00"^^xsd:double ;
+	obeu-dimension:organization aragon-codelist-fin-rev:34011 ;
+	qb:dataSet <http://data.openbudgets.eu/resource/dataset/aragon-2013-income/> .
+
+<http://data.openbudgets.eu/resource/dataset/aragon-2013-income/observation/81> a qb:Observation ;
+	obeu-dimension:administrativeClassification aragon-codelist-org:12500 ;
+	obeu-dimension:economicClassification aragon-codelist-econ-rev:403099 ;
+	obeu-measure:amount "46.500,00"^^xsd:double ;
+	obeu-dimension:organization aragon-codelist-fin-rev:34045 ;
+	qb:dataSet <http://data.openbudgets.eu/resource/dataset/aragon-2013-income/> .
+
+<http://data.openbudgets.eu/resource/dataset/aragon-2013-income/observation/82> a qb:Observation ;
+	obeu-dimension:administrativeClassification aragon-codelist-org:12500 ;
+	obeu-dimension:economicClassification aragon-codelist-econ-rev:404000 ;
+	obeu-measure:amount "64.710,00"^^xsd:double ;
+	obeu-dimension:organization aragon-codelist-fin-rev:39005 ;
+	qb:dataSet <http://data.openbudgets.eu/resource/dataset/aragon-2013-income/> .
+
+<http://data.openbudgets.eu/resource/dataset/aragon-2013-income/observation/83> a qb:Observation ;
+	obeu-dimension:administrativeClassification aragon-codelist-org:12500 ;
+	obeu-dimension:economicClassification aragon-codelist-econ-rev:404003 ;
+	obeu-measure:amount "52.500,00"^^xsd:double ;
+	obeu-dimension:organization aragon-codelist-fin-rev:35005 ;
+	qb:dataSet <http://data.openbudgets.eu/resource/dataset/aragon-2013-income/> .
+
+<http://data.openbudgets.eu/resource/dataset/aragon-2013-income/observation/84> a qb:Observation ;
+	obeu-dimension:administrativeClassification aragon-codelist-org:12500 ;
+	obeu-dimension:economicClassification aragon-codelist-econ-rev:404020 ;
+	obeu-measure:amount "30.000.000,00"^^xsd:double ;
+	obeu-dimension:organization aragon-codelist-fin-rev:91003 ;
+	qb:dataSet <http://data.openbudgets.eu/resource/dataset/aragon-2013-income/> .
+
+<http://data.openbudgets.eu/resource/dataset/aragon-2013-income/observation/85> a qb:Observation ;
+	obeu-dimension:administrativeClassification aragon-codelist-org:12500 ;
+	obeu-dimension:economicClassification aragon-codelist-econ-rev:404021 ;
+	obeu-measure:amount "100.000,00"^^xsd:double ;
+	obeu-dimension:organization aragon-codelist-fin-rev:39054 ;
+	qb:dataSet <http://data.openbudgets.eu/resource/dataset/aragon-2013-income/> .
+
+<http://data.openbudgets.eu/resource/dataset/aragon-2013-income/observation/86> a qb:Observation ;
+	obeu-dimension:administrativeClassification aragon-codelist-org:12500 ;
+	obeu-dimension:economicClassification aragon-codelist-econ-rev:404021 ;
+	obeu-measure:amount "219.823,00"^^xsd:double ;
+	obeu-dimension:organization aragon-codelist-fin-rev:39092 ;
+	qb:dataSet <http://data.openbudgets.eu/resource/dataset/aragon-2013-income/> .
+
+<http://data.openbudgets.eu/resource/dataset/aragon-2013-income/observation/87> a qb:Observation ;
+	obeu-dimension:administrativeClassification aragon-codelist-org:12500 ;
+	obeu-dimension:economicClassification aragon-codelist-econ-rev:405001 ;
+	obeu-measure:amount "76.738,27"^^xsd:double ;
+	obeu-dimension:organization aragon-codelist-fin-rev:39015 ;
+	qb:dataSet <http://data.openbudgets.eu/resource/dataset/aragon-2013-income/> .
+
+<http://data.openbudgets.eu/resource/dataset/aragon-2013-income/observation/88> a qb:Observation ;
+	obeu-dimension:administrativeClassification aragon-codelist-org:12500 ;
+	obeu-dimension:economicClassification aragon-codelist-econ-rev:405002 ;
+	obeu-measure:amount "141.258,60"^^xsd:double ;
+	obeu-dimension:organization aragon-codelist-fin-rev:39017 ;
+	qb:dataSet <http://data.openbudgets.eu/resource/dataset/aragon-2013-income/> .
+
+<http://data.openbudgets.eu/resource/dataset/aragon-2013-income/observation/89> a qb:Observation ;
+	obeu-dimension:administrativeClassification aragon-codelist-org:12500 ;
+	obeu-dimension:economicClassification aragon-codelist-econ-rev:405003 ;
+	obeu-measure:amount "756.810,47"^^xsd:double ;
+	obeu-dimension:organization aragon-codelist-fin-rev:39018 ;
+	qb:dataSet <http://data.openbudgets.eu/resource/dataset/aragon-2013-income/> .
+
+<http://data.openbudgets.eu/resource/dataset/aragon-2013-income/observation/90> a qb:Observation ;
+	obeu-dimension:administrativeClassification aragon-codelist-org:12500 ;
+	obeu-dimension:economicClassification aragon-codelist-econ-rev:405004 ;
+	obeu-measure:amount "64.032,53"^^xsd:double ;
+	obeu-dimension:organization aragon-codelist-fin-rev:39019 ;
+	qb:dataSet <http://data.openbudgets.eu/resource/dataset/aragon-2013-income/> .
+
+<http://data.openbudgets.eu/resource/dataset/aragon-2013-income/observation/91> a qb:Observation ;
+	obeu-dimension:administrativeClassification aragon-codelist-org:12500 ;
+	obeu-dimension:economicClassification aragon-codelist-econ-rev:405005 ;
+	obeu-measure:amount "17.389,59"^^xsd:double ;
+	obeu-dimension:organization aragon-codelist-fin-rev:39016 ;
+	qb:dataSet <http://data.openbudgets.eu/resource/dataset/aragon-2013-income/> .
+
+<http://data.openbudgets.eu/resource/dataset/aragon-2013-income/observation/92> a qb:Observation ;
+	obeu-dimension:administrativeClassification aragon-codelist-org:12500 ;
+	obeu-dimension:economicClassification aragon-codelist-econ-rev:405006 ;
+	obeu-measure:amount "542.856,60"^^xsd:double ;
+	obeu-dimension:organization aragon-codelist-fin-rev:39027 ;
+	qb:dataSet <http://data.openbudgets.eu/resource/dataset/aragon-2013-income/> .
+
+<http://data.openbudgets.eu/resource/dataset/aragon-2013-income/observation/93> a qb:Observation ;
+	obeu-dimension:administrativeClassification aragon-codelist-org:12500 ;
+	obeu-dimension:economicClassification aragon-codelist-econ-rev:405007 ;
+	obeu-measure:amount "504.179,69"^^xsd:double ;
+	obeu-dimension:organization aragon-codelist-fin-rev:39049 ;
+	qb:dataSet <http://data.openbudgets.eu/resource/dataset/aragon-2013-income/> .
+
+<http://data.openbudgets.eu/resource/dataset/aragon-2013-income/observation/94> a qb:Observation ;
+	obeu-dimension:administrativeClassification aragon-codelist-org:12500 ;
+	obeu-dimension:economicClassification aragon-codelist-econ-rev:407008 ;
+	obeu-measure:amount "39.110,86"^^xsd:double ;
+	obeu-dimension:organization aragon-codelist-fin-rev:39068 ;
+	qb:dataSet <http://data.openbudgets.eu/resource/dataset/aragon-2013-income/> .
+
+<http://data.openbudgets.eu/resource/dataset/aragon-2013-income/observation/95> a qb:Observation ;
+	obeu-dimension:administrativeClassification aragon-codelist-org:12500 ;
+	obeu-dimension:economicClassification aragon-codelist-econ-rev:407010 ;
+	obeu-measure:amount "92.116,60"^^xsd:double ;
+	obeu-dimension:organization aragon-codelist-fin-rev:39024 ;
+	qb:dataSet <http://data.openbudgets.eu/resource/dataset/aragon-2013-income/> .
+
+<http://data.openbudgets.eu/resource/dataset/aragon-2013-income/observation/96> a qb:Observation ;
+	obeu-dimension:administrativeClassification aragon-codelist-org:12500 ;
+	obeu-dimension:economicClassification aragon-codelist-econ-rev:407013 ;
+	obeu-measure:amount "24.780,00"^^xsd:double ;
+	obeu-dimension:organization aragon-codelist-fin-rev:39025 ;
+	qb:dataSet <http://data.openbudgets.eu/resource/dataset/aragon-2013-income/> .
+
+<http://data.openbudgets.eu/resource/dataset/aragon-2013-income/observation/97> a qb:Observation ;
+	obeu-dimension:administrativeClassification aragon-codelist-org:12500 ;
+	obeu-dimension:economicClassification aragon-codelist-econ-rev:407014 ;
+	obeu-measure:amount "35.081,00"^^xsd:double ;
+	obeu-dimension:organization aragon-codelist-fin-rev:39033 ;
+	qb:dataSet <http://data.openbudgets.eu/resource/dataset/aragon-2013-income/> .
+
+<http://data.openbudgets.eu/resource/dataset/aragon-2013-income/observation/98> a qb:Observation ;
+	obeu-dimension:administrativeClassification aragon-codelist-org:12500 ;
+	obeu-dimension:economicClassification aragon-codelist-econ-rev:407099 ;
+	obeu-measure:amount "30.875,00"^^xsd:double ;
+	obeu-dimension:organization aragon-codelist-fin-rev:14102 ;
+	qb:dataSet <http://data.openbudgets.eu/resource/dataset/aragon-2013-income/> .
+
+<http://data.openbudgets.eu/resource/dataset/aragon-2013-income/observation/99> a qb:Observation ;
+	obeu-dimension:administrativeClassification aragon-codelist-org:12500 ;
+	obeu-dimension:economicClassification aragon-codelist-econ-rev:412001 ;
+	obeu-measure:amount "113.503,53"^^xsd:double ;
+	obeu-dimension:organization aragon-codelist-fin-rev:55001 ;
+	qb:dataSet <http://data.openbudgets.eu/resource/dataset/aragon-2013-income/> .
+
+<http://data.openbudgets.eu/resource/dataset/aragon-2013-income/observation/100> a qb:Observation ;
+	obeu-dimension:administrativeClassification aragon-codelist-org:12500 ;
+	obeu-dimension:economicClassification aragon-codelist-econ-rev:420000 ;
+	obeu-measure:amount "9.430.933,87"^^xsd:double ;
+	obeu-dimension:organization aragon-codelist-fin-rev:91003 ;
+	qb:dataSet <http://data.openbudgets.eu/resource/dataset/aragon-2013-income/> .
+
+<http://data.openbudgets.eu/resource/dataset/aragon-2013-income/observation/101> a qb:Observation ;
+	obeu-dimension:administrativeClassification aragon-codelist-org:12500 ;
+	obeu-dimension:economicClassification aragon-codelist-econ-rev:420001 ;
+	obeu-measure:amount "1.631.461,39"^^xsd:double ;
+	obeu-dimension:organization aragon-codelist-fin-rev:91003 ;
+	qb:dataSet <http://data.openbudgets.eu/resource/dataset/aragon-2013-income/> .
+
+<http://data.openbudgets.eu/resource/dataset/aragon-2013-income/observation/102> a qb:Observation ;
+	obeu-dimension:administrativeClassification aragon-codelist-org:12500 ;
+	obeu-dimension:economicClassification aragon-codelist-econ-rev:421001 ;
+	obeu-measure:amount "5.000.000,00"^^xsd:double ;
+	obeu-dimension:organization aragon-codelist-fin-rev:91003 ;
+	qb:dataSet <http://data.openbudgets.eu/resource/dataset/aragon-2013-income/> .
+
+<http://data.openbudgets.eu/resource/dataset/aragon-2013-income/observation/103> a qb:Observation ;
+	obeu-dimension:administrativeClassification aragon-codelist-org:12500 ;
+	obeu-dimension:economicClassification aragon-codelist-econ-rev:440001 ;
+	obeu-measure:amount "400.000,00"^^xsd:double ;
+	obeu-dimension:organization aragon-codelist-fin-rev:39050 ;
+	qb:dataSet <http://data.openbudgets.eu/resource/dataset/aragon-2013-income/> .
+
+<http://data.openbudgets.eu/resource/dataset/aragon-2013-income/observation/104> a qb:Observation ;
+	obeu-dimension:administrativeClassification aragon-codelist-org:12500 ;
+	obeu-dimension:economicClassification aragon-codelist-econ-rev:492100 ;
+	obeu-measure:amount "314.984,60"^^xsd:double ;
+	obeu-dimension:organization aragon-codelist-fin-rev:14101 ;
+	qb:dataSet <http://data.openbudgets.eu/resource/dataset/aragon-2013-income/> .
+
+<http://data.openbudgets.eu/resource/dataset/aragon-2013-income/observation/105> a qb:Observation ;
+	obeu-dimension:administrativeClassification aragon-codelist-org:12500 ;
+	obeu-dimension:economicClassification aragon-codelist-econ-rev:493000 ;
+	obeu-measure:amount "553.357,85"^^xsd:double ;
+	obeu-dimension:organization aragon-codelist-fin-rev:11101 ;
+	qb:dataSet <http://data.openbudgets.eu/resource/dataset/aragon-2013-income/> .
+
+<http://data.openbudgets.eu/resource/dataset/aragon-2013-income/observation/106> a qb:Observation ;
+	obeu-dimension:administrativeClassification aragon-codelist-org:12500 ;
+	obeu-dimension:economicClassification aragon-codelist-econ-rev:493100 ;
+	obeu-measure:amount "11.009.075,45"^^xsd:double ;
+	obeu-dimension:organization aragon-codelist-fin-rev:11101 ;
+	qb:dataSet <http://data.openbudgets.eu/resource/dataset/aragon-2013-income/> .
+
+<http://data.openbudgets.eu/resource/dataset/aragon-2013-income/observation/107> a qb:Observation ;
+	obeu-dimension:administrativeClassification aragon-codelist-org:12500 ;
+	obeu-dimension:economicClassification aragon-codelist-econ-rev:496000 ;
+	obeu-measure:amount "440.894.119,94"^^xsd:double ;
+	obeu-dimension:organization aragon-codelist-fin-rev:12101 ;
+	qb:dataSet <http://data.openbudgets.eu/resource/dataset/aragon-2013-income/> .
+
+<http://data.openbudgets.eu/resource/dataset/aragon-2013-income/observation/108> a qb:Observation ;
+	obeu-dimension:administrativeClassification aragon-codelist-org:12500 ;
+	obeu-dimension:economicClassification aragon-codelist-econ-rev:496009 ;
+	obeu-measure:amount "110.000,00"^^xsd:double ;
+	obeu-dimension:organization aragon-codelist-fin-rev:12101 ;
+	qb:dataSet <http://data.openbudgets.eu/resource/dataset/aragon-2013-income/> .
+
+<http://data.openbudgets.eu/resource/dataset/aragon-2013-income/observation/109> a qb:Observation ;
+	obeu-dimension:administrativeClassification aragon-codelist-org:12500 ;
+	obeu-dimension:economicClassification aragon-codelist-econ-rev:497000 ;
+	obeu-measure:amount "509.167,00"^^xsd:double ;
+	obeu-dimension:organization aragon-codelist-fin-rev:12102 ;
+	qb:dataSet <http://data.openbudgets.eu/resource/dataset/aragon-2013-income/> .
+
+<http://data.openbudgets.eu/resource/dataset/aragon-2013-income/observation/110> a qb:Observation ;
+	obeu-dimension:administrativeClassification aragon-codelist-org:12500 ;
+	obeu-dimension:economicClassification aragon-codelist-econ-rev:499000 ;
+	obeu-measure:amount "25.000,00"^^xsd:double ;
+	obeu-dimension:organization aragon-codelist-fin-rev:19001 ;
+	qb:dataSet <http://data.openbudgets.eu/resource/dataset/aragon-2013-income/> .
+
+<http://data.openbudgets.eu/resource/dataset/aragon-2013-income/observation/111> a qb:Observation ;
+	obeu-dimension:administrativeClassification aragon-codelist-org:12500 ;
+	obeu-dimension:economicClassification aragon-codelist-econ-rev:499099 ;
+	obeu-measure:amount "652.949,50"^^xsd:double ;
+	obeu-dimension:organization aragon-codelist-fin-rev:19004 ;
+	qb:dataSet <http://data.openbudgets.eu/resource/dataset/aragon-2013-income/> .
+
+<http://data.openbudgets.eu/resource/dataset/aragon-2013-income/observation/112> a qb:Observation ;
+	obeu-dimension:administrativeClassification aragon-codelist-org:12500 ;
+	obeu-dimension:economicClassification aragon-codelist-econ-rev:520000 ;
+	obeu-measure:amount "4.500.000,00"^^xsd:double ;
+	obeu-dimension:organization aragon-codelist-fin-rev:91003 ;
+	qb:dataSet <http://data.openbudgets.eu/resource/dataset/aragon-2013-income/> .
+
+<http://data.openbudgets.eu/resource/dataset/aragon-2013-income/observation/113> a qb:Observation ;
+	obeu-dimension:administrativeClassification aragon-codelist-org:12500 ;
+	obeu-dimension:economicClassification aragon-codelist-econ-rev:520050 ;
+	obeu-measure:amount "48.000,00"^^xsd:double ;
+	obeu-dimension:organization aragon-codelist-fin-rev:91003 ;
+	qb:dataSet <http://data.openbudgets.eu/resource/dataset/aragon-2013-income/> .
+
+<http://data.openbudgets.eu/resource/dataset/aragon-2013-income/observation/114> a qb:Observation ;
+	obeu-dimension:administrativeClassification aragon-codelist-org:12500 ;
+	obeu-dimension:economicClassification aragon-codelist-econ-rev:540008 ;
+	obeu-measure:amount "3.000,00"^^xsd:double ;
+	obeu-dimension:organization aragon-codelist-fin-rev:91003 ;
+	qb:dataSet <http://data.openbudgets.eu/resource/dataset/aragon-2013-income/> .
+
+<http://data.openbudgets.eu/resource/dataset/aragon-2013-income/observation/115> a qb:Observation ;
+	obeu-dimension:administrativeClassification aragon-codelist-org:12500 ;
+	obeu-dimension:economicClassification aragon-codelist-econ-rev:540009 ;
+	obeu-measure:amount "360.000,00"^^xsd:double ;
+	obeu-dimension:organization aragon-codelist-fin-rev:91003 ;
+	qb:dataSet <http://data.openbudgets.eu/resource/dataset/aragon-2013-income/> .
+
+<http://data.openbudgets.eu/resource/dataset/aragon-2013-income/observation/116> a qb:Observation ;
+	obeu-dimension:administrativeClassification aragon-codelist-org:12500 ;
+	obeu-dimension:economicClassification aragon-codelist-econ-rev:550001 ;
+	obeu-measure:amount "4.800.000,00"^^xsd:double ;
+	obeu-dimension:organization aragon-codelist-fin-rev:91003 ;
+	qb:dataSet <http://data.openbudgets.eu/resource/dataset/aragon-2013-income/> .
+
+<http://data.openbudgets.eu/resource/dataset/aragon-2013-income/observation/117> a qb:Observation ;
+	obeu-dimension:administrativeClassification aragon-codelist-org:12500 ;
+	obeu-dimension:economicClassification aragon-codelist-econ-rev:552003 ;
+	obeu-measure:amount "600.000,00"^^xsd:double ;
+	obeu-dimension:organization aragon-codelist-fin-rev:91003 ;
+	qb:dataSet <http://data.openbudgets.eu/resource/dataset/aragon-2013-income/> .
+
+<http://data.openbudgets.eu/resource/dataset/aragon-2013-income/observation/118> a qb:Observation ;
+	obeu-dimension:administrativeClassification aragon-codelist-org:12500 ;
+	obeu-dimension:economicClassification aragon-codelist-econ-rev:553000 ;
+	obeu-measure:amount "4.504.966,00"^^xsd:double ;
+	obeu-dimension:organization aragon-codelist-fin-rev:91003 ;
+	qb:dataSet <http://data.openbudgets.eu/resource/dataset/aragon-2013-income/> .
+
+<http://data.openbudgets.eu/resource/dataset/aragon-2013-income/observation/119> a qb:Observation ;
+	obeu-dimension:administrativeClassification aragon-codelist-org:12500 ;
+	obeu-dimension:economicClassification aragon-codelist-econ-rev:590000 ;
+	obeu-measure:amount "2.200.000,00"^^xsd:double ;
+	obeu-dimension:organization aragon-codelist-fin-rev:91003 ;
+	qb:dataSet <http://data.openbudgets.eu/resource/dataset/aragon-2013-income/> .
+
+<http://data.openbudgets.eu/resource/dataset/aragon-2013-income/observation/120> a qb:Observation ;
+	obeu-dimension:administrativeClassification aragon-codelist-org:12500 ;
+	obeu-dimension:economicClassification aragon-codelist-econ-rev:600000 ;
+	obeu-measure:amount "800.000,00"^^xsd:double ;
+	obeu-dimension:organization aragon-codelist-fin-rev:91003 ;
+	qb:dataSet <http://data.openbudgets.eu/resource/dataset/aragon-2013-income/> .
+
+<http://data.openbudgets.eu/resource/dataset/aragon-2013-income/observation/121> a qb:Observation ;
+	obeu-dimension:administrativeClassification aragon-codelist-org:12500 ;
+	obeu-dimension:economicClassification aragon-codelist-econ-rev:610000 ;
+	obeu-measure:amount "200.000,00"^^xsd:double ;
+	obeu-dimension:organization aragon-codelist-fin-rev:91003 ;
+	qb:dataSet <http://data.openbudgets.eu/resource/dataset/aragon-2013-income/> .
+
+<http://data.openbudgets.eu/resource/dataset/aragon-2013-income/observation/122> a qb:Observation ;
+	obeu-dimension:administrativeClassification aragon-codelist-org:12500 ;
+	obeu-dimension:economicClassification aragon-codelist-econ-rev:620000 ;
+	obeu-measure:amount "11.000.000,00"^^xsd:double ;
+	obeu-dimension:organization aragon-codelist-fin-rev:91003 ;
+	qb:dataSet <http://data.openbudgets.eu/resource/dataset/aragon-2013-income/> .
+
+<http://data.openbudgets.eu/resource/dataset/aragon-2013-income/observation/123> a qb:Observation ;
+	obeu-dimension:administrativeClassification aragon-codelist-org:12500 ;
+	obeu-dimension:economicClassification aragon-codelist-econ-rev:702001 ;
+	obeu-measure:amount "2.357.694,00"^^xsd:double ;
+	obeu-dimension:organization aragon-codelist-fin-rev:36004 ;
+	qb:dataSet <http://data.openbudgets.eu/resource/dataset/aragon-2013-income/> .
+
+<http://data.openbudgets.eu/resource/dataset/aragon-2013-income/observation/124> a qb:Observation ;
+	obeu-dimension:administrativeClassification aragon-codelist-org:12500 ;
+	obeu-dimension:economicClassification aragon-codelist-econ-rev:702005 ;
+	obeu-measure:amount "8.653.546,72"^^xsd:double ;
+	obeu-dimension:organization aragon-codelist-fin-rev:39077 ;
+	qb:dataSet <http://data.openbudgets.eu/resource/dataset/aragon-2013-income/> .
+
+<http://data.openbudgets.eu/resource/dataset/aragon-2013-income/observation/125> a qb:Observation ;
+	obeu-dimension:administrativeClassification aragon-codelist-org:12500 ;
+	obeu-dimension:economicClassification aragon-codelist-econ-rev:702006 ;
+	obeu-measure:amount "673.918,00"^^xsd:double ;
+	obeu-dimension:organization aragon-codelist-fin-rev:39032 ;
+	qb:dataSet <http://data.openbudgets.eu/resource/dataset/aragon-2013-income/> .
+
+<http://data.openbudgets.eu/resource/dataset/aragon-2013-income/observation/126> a qb:Observation ;
+	obeu-dimension:administrativeClassification aragon-codelist-org:12500 ;
+	obeu-dimension:economicClassification aragon-codelist-econ-rev:702009 ;
+	obeu-measure:amount "645.000,00"^^xsd:double ;
+	obeu-dimension:organization aragon-codelist-fin-rev:36001 ;
+	qb:dataSet <http://data.openbudgets.eu/resource/dataset/aragon-2013-income/> .
+
+<http://data.openbudgets.eu/resource/dataset/aragon-2013-income/observation/127> a qb:Observation ;
+	obeu-dimension:administrativeClassification aragon-codelist-org:12500 ;
+	obeu-dimension:economicClassification aragon-codelist-econ-rev:702009 ;
+	obeu-measure:amount "8.500,00"^^xsd:double ;
+	obeu-dimension:organization aragon-codelist-fin-rev:36006 ;
+	qb:dataSet <http://data.openbudgets.eu/resource/dataset/aragon-2013-income/> .
+
+<http://data.openbudgets.eu/resource/dataset/aragon-2013-income/observation/128> a qb:Observation ;
+	obeu-dimension:administrativeClassification aragon-codelist-org:12500 ;
+	obeu-dimension:economicClassification aragon-codelist-econ-rev:704002 ;
+	obeu-measure:amount "2.474.630,00"^^xsd:double ;
+	obeu-dimension:organization aragon-codelist-fin-rev:39001 ;
+	qb:dataSet <http://data.openbudgets.eu/resource/dataset/aragon-2013-income/> .
+
+<http://data.openbudgets.eu/resource/dataset/aragon-2013-income/observation/129> a qb:Observation ;
+	obeu-dimension:administrativeClassification aragon-codelist-org:12500 ;
+	obeu-dimension:economicClassification aragon-codelist-econ-rev:705006 ;
+	obeu-measure:amount "150.000,00"^^xsd:double ;
+	obeu-dimension:organization aragon-codelist-fin-rev:34013 ;
+	qb:dataSet <http://data.openbudgets.eu/resource/dataset/aragon-2013-income/> .
+
+<http://data.openbudgets.eu/resource/dataset/aragon-2013-income/observation/130> a qb:Observation ;
+	obeu-dimension:administrativeClassification aragon-codelist-org:12500 ;
+	obeu-dimension:economicClassification aragon-codelist-econ-rev:705006 ;
+	obeu-measure:amount "800.000,00"^^xsd:double ;
+	obeu-dimension:organization aragon-codelist-fin-rev:34014 ;
+	qb:dataSet <http://data.openbudgets.eu/resource/dataset/aragon-2013-income/> .
+
+<http://data.openbudgets.eu/resource/dataset/aragon-2013-income/observation/131> a qb:Observation ;
+	obeu-dimension:administrativeClassification aragon-codelist-org:12500 ;
+	obeu-dimension:economicClassification aragon-codelist-econ-rev:705006 ;
+	obeu-measure:amount "1.000.000,00"^^xsd:double ;
+	obeu-dimension:organization aragon-codelist-fin-rev:34021 ;
+	qb:dataSet <http://data.openbudgets.eu/resource/dataset/aragon-2013-income/> .
+
+<http://data.openbudgets.eu/resource/dataset/aragon-2013-income/observation/132> a qb:Observation ;
+	obeu-dimension:administrativeClassification aragon-codelist-org:12500 ;
+	obeu-dimension:economicClassification aragon-codelist-econ-rev:705007 ;
+	obeu-measure:amount "1.000,00"^^xsd:double ;
+	obeu-dimension:organization aragon-codelist-fin-rev:34025 ;
+	qb:dataSet <http://data.openbudgets.eu/resource/dataset/aragon-2013-income/> .
+
+<http://data.openbudgets.eu/resource/dataset/aragon-2013-income/observation/133> a qb:Observation ;
+	obeu-dimension:administrativeClassification aragon-codelist-org:12500 ;
+	obeu-dimension:economicClassification aragon-codelist-econ-rev:705008 ;
+	obeu-measure:amount "100.000,00"^^xsd:double ;
+	obeu-dimension:organization aragon-codelist-fin-rev:34006 ;
+	qb:dataSet <http://data.openbudgets.eu/resource/dataset/aragon-2013-income/> .
+
+<http://data.openbudgets.eu/resource/dataset/aragon-2013-income/observation/134> a qb:Observation ;
+	obeu-dimension:administrativeClassification aragon-codelist-org:12500 ;
+	obeu-dimension:economicClassification aragon-codelist-econ-rev:705009 ;
+	obeu-measure:amount "1.600.000,00"^^xsd:double ;
+	obeu-dimension:organization aragon-codelist-fin-rev:34005 ;
+	qb:dataSet <http://data.openbudgets.eu/resource/dataset/aragon-2013-income/> .
+
+<http://data.openbudgets.eu/resource/dataset/aragon-2013-income/observation/135> a qb:Observation ;
+	obeu-dimension:administrativeClassification aragon-codelist-org:12500 ;
+	obeu-dimension:economicClassification aragon-codelist-econ-rev:705009 ;
+	obeu-measure:amount "900.000,00"^^xsd:double ;
+	obeu-dimension:organization aragon-codelist-fin-rev:34020 ;
+	qb:dataSet <http://data.openbudgets.eu/resource/dataset/aragon-2013-income/> .
+
+<http://data.openbudgets.eu/resource/dataset/aragon-2013-income/observation/136> a qb:Observation ;
+	obeu-dimension:administrativeClassification aragon-codelist-org:12500 ;
+	obeu-dimension:economicClassification aragon-codelist-econ-rev:705009 ;
+	obeu-measure:amount "75.000,00"^^xsd:double ;
+	obeu-dimension:organization aragon-codelist-fin-rev:34024 ;
+	qb:dataSet <http://data.openbudgets.eu/resource/dataset/aragon-2013-income/> .
+
+<http://data.openbudgets.eu/resource/dataset/aragon-2013-income/observation/137> a qb:Observation ;
+	obeu-dimension:administrativeClassification aragon-codelist-org:12500 ;
+	obeu-dimension:economicClassification aragon-codelist-econ-rev:705009 ;
+	obeu-measure:amount "1.475.000,00"^^xsd:double ;
+	obeu-dimension:organization aragon-codelist-fin-rev:34044 ;
+	qb:dataSet <http://data.openbudgets.eu/resource/dataset/aragon-2013-income/> .
+
+<http://data.openbudgets.eu/resource/dataset/aragon-2013-income/observation/138> a qb:Observation ;
+	obeu-dimension:administrativeClassification aragon-codelist-org:12500 ;
+	obeu-dimension:economicClassification aragon-codelist-econ-rev:705009 ;
+	obeu-measure:amount "1.219.008,26"^^xsd:double ;
+	obeu-dimension:organization aragon-codelist-fin-rev:34046 ;
+	qb:dataSet <http://data.openbudgets.eu/resource/dataset/aragon-2013-income/> .
+
+<http://data.openbudgets.eu/resource/dataset/aragon-2013-income/observation/139> a qb:Observation ;
+	obeu-dimension:administrativeClassification aragon-codelist-org:12500 ;
+	obeu-dimension:economicClassification aragon-codelist-econ-rev:705009 ;
+	obeu-measure:amount "1.250.000,00"^^xsd:double ;
+	obeu-dimension:organization aragon-codelist-fin-rev:34047 ;
+	qb:dataSet <http://data.openbudgets.eu/resource/dataset/aragon-2013-income/> .
+
+<http://data.openbudgets.eu/resource/dataset/aragon-2013-income/observation/140> a qb:Observation ;
+	obeu-dimension:administrativeClassification aragon-codelist-org:12500 ;
+	obeu-dimension:economicClassification aragon-codelist-econ-rev:705009 ;
+	obeu-measure:amount "600.000,00"^^xsd:double ;
+	obeu-dimension:organization aragon-codelist-fin-rev:34050 ;
+	qb:dataSet <http://data.openbudgets.eu/resource/dataset/aragon-2013-income/> .
+
+<http://data.openbudgets.eu/resource/dataset/aragon-2013-income/observation/141> a qb:Observation ;
+	obeu-dimension:administrativeClassification aragon-codelist-org:12500 ;
+	obeu-dimension:economicClassification aragon-codelist-econ-rev:705009 ;
+	obeu-measure:amount "900.000,00"^^xsd:double ;
+	obeu-dimension:organization aragon-codelist-fin-rev:34051 ;
+	qb:dataSet <http://data.openbudgets.eu/resource/dataset/aragon-2013-income/> .
+
+<http://data.openbudgets.eu/resource/dataset/aragon-2013-income/observation/142> a qb:Observation ;
+	obeu-dimension:administrativeClassification aragon-codelist-org:12500 ;
+	obeu-dimension:economicClassification aragon-codelist-econ-rev:705009 ;
+	obeu-measure:amount "300.000,00"^^xsd:double ;
+	obeu-dimension:organization aragon-codelist-fin-rev:34054 ;
+	qb:dataSet <http://data.openbudgets.eu/resource/dataset/aragon-2013-income/> .
+
+<http://data.openbudgets.eu/resource/dataset/aragon-2013-income/observation/143> a qb:Observation ;
+	obeu-dimension:administrativeClassification aragon-codelist-org:12500 ;
+	obeu-dimension:economicClassification aragon-codelist-econ-rev:705009 ;
+	obeu-measure:amount "3.379,53"^^xsd:double ;
+	obeu-dimension:organization aragon-codelist-fin-rev:34056 ;
+	qb:dataSet <http://data.openbudgets.eu/resource/dataset/aragon-2013-income/> .
+
+<http://data.openbudgets.eu/resource/dataset/aragon-2013-income/observation/144> a qb:Observation ;
+	obeu-dimension:administrativeClassification aragon-codelist-org:12500 ;
+	obeu-dimension:economicClassification aragon-codelist-econ-rev:705010 ;
+	obeu-measure:amount "200.000,00"^^xsd:double ;
+	obeu-dimension:organization aragon-codelist-fin-rev:34026 ;
+	qb:dataSet <http://data.openbudgets.eu/resource/dataset/aragon-2013-income/> .
+
+<http://data.openbudgets.eu/resource/dataset/aragon-2013-income/observation/145> a qb:Observation ;
+	obeu-dimension:administrativeClassification aragon-codelist-org:12500 ;
+	obeu-dimension:economicClassification aragon-codelist-econ-rev:705011 ;
+	obeu-measure:amount "100.000,00"^^xsd:double ;
+	obeu-dimension:organization aragon-codelist-fin-rev:34019 ;
+	qb:dataSet <http://data.openbudgets.eu/resource/dataset/aragon-2013-income/> .
+
+<http://data.openbudgets.eu/resource/dataset/aragon-2013-income/observation/146> a qb:Observation ;
+	obeu-dimension:administrativeClassification aragon-codelist-org:12500 ;
+	obeu-dimension:economicClassification aragon-codelist-econ-rev:705013 ;
+	obeu-measure:amount "115.000,00"^^xsd:double ;
+	obeu-dimension:organization aragon-codelist-fin-rev:34015 ;
+	qb:dataSet <http://data.openbudgets.eu/resource/dataset/aragon-2013-income/> .
+
+<http://data.openbudgets.eu/resource/dataset/aragon-2013-income/observation/147> a qb:Observation ;
+	obeu-dimension:administrativeClassification aragon-codelist-org:12500 ;
+	obeu-dimension:economicClassification aragon-codelist-econ-rev:705014 ;
+	obeu-measure:amount "1.750.000,00"^^xsd:double ;
+	obeu-dimension:organization aragon-codelist-fin-rev:34007 ;
+	qb:dataSet <http://data.openbudgets.eu/resource/dataset/aragon-2013-income/> .
+
+<http://data.openbudgets.eu/resource/dataset/aragon-2013-income/observation/148> a qb:Observation ;
+	obeu-dimension:administrativeClassification aragon-codelist-org:12500 ;
+	obeu-dimension:economicClassification aragon-codelist-econ-rev:705015 ;
+	obeu-measure:amount "4.130.000,00"^^xsd:double ;
+	obeu-dimension:organization aragon-codelist-fin-rev:34043 ;
+	qb:dataSet <http://data.openbudgets.eu/resource/dataset/aragon-2013-income/> .
+
+<http://data.openbudgets.eu/resource/dataset/aragon-2013-income/observation/149> a qb:Observation ;
+	obeu-dimension:administrativeClassification aragon-codelist-org:12500 ;
+	obeu-dimension:economicClassification aragon-codelist-econ-rev:705017 ;
+	obeu-measure:amount "595.000,00"^^xsd:double ;
+	obeu-dimension:organization aragon-codelist-fin-rev:34017 ;
+	qb:dataSet <http://data.openbudgets.eu/resource/dataset/aragon-2013-income/> .
+
+<http://data.openbudgets.eu/resource/dataset/aragon-2013-income/observation/150> a qb:Observation ;
+	obeu-dimension:administrativeClassification aragon-codelist-org:12500 ;
+	obeu-dimension:economicClassification aragon-codelist-econ-rev:705017 ;
+	obeu-measure:amount "125.000,00"^^xsd:double ;
+	obeu-dimension:organization aragon-codelist-fin-rev:34018 ;
+	qb:dataSet <http://data.openbudgets.eu/resource/dataset/aragon-2013-income/> .
+
+<http://data.openbudgets.eu/resource/dataset/aragon-2013-income/observation/151> a qb:Observation ;
+	obeu-dimension:administrativeClassification aragon-codelist-org:12500 ;
+	obeu-dimension:economicClassification aragon-codelist-econ-rev:705018 ;
+	obeu-measure:amount "70.000,00"^^xsd:double ;
+	obeu-dimension:organization aragon-codelist-fin-rev:34023 ;
+	qb:dataSet <http://data.openbudgets.eu/resource/dataset/aragon-2013-income/> .
+
+<http://data.openbudgets.eu/resource/dataset/aragon-2013-income/observation/152> a qb:Observation ;
+	obeu-dimension:administrativeClassification aragon-codelist-org:12500 ;
+	obeu-dimension:economicClassification aragon-codelist-econ-rev:705021 ;
+	obeu-measure:amount "4.487.000,00"^^xsd:double ;
+	obeu-dimension:organization aragon-codelist-fin-rev:34004 ;
+	qb:dataSet <http://data.openbudgets.eu/resource/dataset/aragon-2013-income/> .
+
+<http://data.openbudgets.eu/resource/dataset/aragon-2013-income/observation/153> a qb:Observation ;
+	obeu-dimension:administrativeClassification aragon-codelist-org:12500 ;
+	obeu-dimension:economicClassification aragon-codelist-econ-rev:705022 ;
+	obeu-measure:amount "330.000,00"^^xsd:double ;
+	obeu-dimension:organization aragon-codelist-fin-rev:34031 ;
+	qb:dataSet <http://data.openbudgets.eu/resource/dataset/aragon-2013-income/> .
+
+<http://data.openbudgets.eu/resource/dataset/aragon-2013-income/observation/154> a qb:Observation ;
+	obeu-dimension:administrativeClassification aragon-codelist-org:12500 ;
+	obeu-dimension:economicClassification aragon-codelist-econ-rev:705025 ;
+	obeu-measure:amount "1.600.000,00"^^xsd:double ;
+	obeu-dimension:organization aragon-codelist-fin-rev:34032 ;
+	qb:dataSet <http://data.openbudgets.eu/resource/dataset/aragon-2013-income/> .
+
+<http://data.openbudgets.eu/resource/dataset/aragon-2013-income/observation/155> a qb:Observation ;
+	obeu-dimension:administrativeClassification aragon-codelist-org:12500 ;
+	obeu-dimension:economicClassification aragon-codelist-econ-rev:705026 ;
+	obeu-measure:amount "43.000,00"^^xsd:double ;
+	obeu-dimension:organization aragon-codelist-fin-rev:34016 ;
+	qb:dataSet <http://data.openbudgets.eu/resource/dataset/aragon-2013-income/> .
+
+<http://data.openbudgets.eu/resource/dataset/aragon-2013-income/observation/156> a qb:Observation ;
+	obeu-dimension:administrativeClassification aragon-codelist-org:12500 ;
+	obeu-dimension:economicClassification aragon-codelist-econ-rev:705029 ;
+	obeu-measure:amount "150.000,00"^^xsd:double ;
+	obeu-dimension:organization aragon-codelist-fin-rev:34039 ;
+	qb:dataSet <http://data.openbudgets.eu/resource/dataset/aragon-2013-income/> .
+
+<http://data.openbudgets.eu/resource/dataset/aragon-2013-income/observation/157> a qb:Observation ;
+	obeu-dimension:administrativeClassification aragon-codelist-org:12500 ;
+	obeu-dimension:economicClassification aragon-codelist-econ-rev:705030 ;
+	obeu-measure:amount "1.000.000,00"^^xsd:double ;
+	obeu-dimension:organization aragon-codelist-fin-rev:34037 ;
+	qb:dataSet <http://data.openbudgets.eu/resource/dataset/aragon-2013-income/> .
+
+<http://data.openbudgets.eu/resource/dataset/aragon-2013-income/observation/158> a qb:Observation ;
+	obeu-dimension:administrativeClassification aragon-codelist-org:12500 ;
+	obeu-dimension:economicClassification aragon-codelist-econ-rev:705032 ;
+	obeu-measure:amount "44.000,00"^^xsd:double ;
+	obeu-dimension:organization aragon-codelist-fin-rev:34049 ;
+	qb:dataSet <http://data.openbudgets.eu/resource/dataset/aragon-2013-income/> .
+
+<http://data.openbudgets.eu/resource/dataset/aragon-2013-income/observation/159> a qb:Observation ;
+	obeu-dimension:administrativeClassification aragon-codelist-org:12500 ;
+	obeu-dimension:economicClassification aragon-codelist-econ-rev:705035 ;
+	obeu-measure:amount "300.000,00"^^xsd:double ;
+	obeu-dimension:organization aragon-codelist-fin-rev:34053 ;
+	qb:dataSet <http://data.openbudgets.eu/resource/dataset/aragon-2013-income/> .
+
+<http://data.openbudgets.eu/resource/dataset/aragon-2013-income/observation/160> a qb:Observation ;
+	obeu-dimension:administrativeClassification aragon-codelist-org:12500 ;
+	obeu-dimension:economicClassification aragon-codelist-econ-rev:707001 ;
+	obeu-measure:amount "30.000,00"^^xsd:double ;
+	obeu-dimension:organization aragon-codelist-fin-rev:39041 ;
+	qb:dataSet <http://data.openbudgets.eu/resource/dataset/aragon-2013-income/> .
+
+<http://data.openbudgets.eu/resource/dataset/aragon-2013-income/observation/161> a qb:Observation ;
+	obeu-dimension:administrativeClassification aragon-codelist-org:12500 ;
+	obeu-dimension:economicClassification aragon-codelist-econ-rev:707004 ;
+	obeu-measure:amount "60.000,00"^^xsd:double ;
+	obeu-dimension:organization aragon-codelist-fin-rev:39003 ;
+	qb:dataSet <http://data.openbudgets.eu/resource/dataset/aragon-2013-income/> .
+
+<http://data.openbudgets.eu/resource/dataset/aragon-2013-income/observation/162> a qb:Observation ;
+	obeu-dimension:administrativeClassification aragon-codelist-org:12500 ;
+	obeu-dimension:economicClassification aragon-codelist-econ-rev:709001 ;
+	obeu-measure:amount "30.000.000,00"^^xsd:double ;
+	obeu-dimension:organization aragon-codelist-fin-rev:32200 ;
+	qb:dataSet <http://data.openbudgets.eu/resource/dataset/aragon-2013-income/> .
+
+<http://data.openbudgets.eu/resource/dataset/aragon-2013-income/observation/163> a qb:Observation ;
+	obeu-dimension:administrativeClassification aragon-codelist-org:12500 ;
+	obeu-dimension:economicClassification aragon-codelist-econ-rev:719003 ;
+	obeu-measure:amount "1.838.432,00"^^xsd:double ;
+	obeu-dimension:organization aragon-codelist-fin-rev:32100 ;
+	qb:dataSet <http://data.openbudgets.eu/resource/dataset/aragon-2013-income/> .
+
+<http://data.openbudgets.eu/resource/dataset/aragon-2013-income/observation/164> a qb:Observation ;
+	obeu-dimension:administrativeClassification aragon-codelist-org:12500 ;
+	obeu-dimension:economicClassification aragon-codelist-econ-rev:740001 ;
+	obeu-measure:amount "5.418.602,00"^^xsd:double ;
+	obeu-dimension:organization aragon-codelist-fin-rev:39050 ;
+	qb:dataSet <http://data.openbudgets.eu/resource/dataset/aragon-2013-income/> .
+
+<http://data.openbudgets.eu/resource/dataset/aragon-2013-income/observation/165> a qb:Observation ;
+	obeu-dimension:administrativeClassification aragon-codelist-org:12500 ;
+	obeu-dimension:economicClassification aragon-codelist-econ-rev:792100 ;
+	obeu-measure:amount "6.159.682,68"^^xsd:double ;
+	obeu-dimension:organization aragon-codelist-fin-rev:14101 ;
+	qb:dataSet <http://data.openbudgets.eu/resource/dataset/aragon-2013-income/> .
+
+<http://data.openbudgets.eu/resource/dataset/aragon-2013-income/observation/166> a qb:Observation ;
+	obeu-dimension:administrativeClassification aragon-codelist-org:12500 ;
+	obeu-dimension:economicClassification aragon-codelist-econ-rev:792101 ;
+	obeu-measure:amount "829.690,84"^^xsd:double ;
+	obeu-dimension:organization aragon-codelist-fin-rev:14101 ;
+	qb:dataSet <http://data.openbudgets.eu/resource/dataset/aragon-2013-income/> .
+
+<http://data.openbudgets.eu/resource/dataset/aragon-2013-income/observation/167> a qb:Observation ;
+	obeu-dimension:administrativeClassification aragon-codelist-org:12500 ;
+	obeu-dimension:economicClassification aragon-codelist-econ-rev:793100 ;
+	obeu-measure:amount "1.123.372,50"^^xsd:double ;
+	obeu-dimension:organization aragon-codelist-fin-rev:11101 ;
+	qb:dataSet <http://data.openbudgets.eu/resource/dataset/aragon-2013-income/> .
+
+<http://data.openbudgets.eu/resource/dataset/aragon-2013-income/observation/168> a qb:Observation ;
+	obeu-dimension:administrativeClassification aragon-codelist-org:12500 ;
+	obeu-dimension:economicClassification aragon-codelist-econ-rev:796000 ;
+	obeu-measure:amount "1.320.060,00"^^xsd:double ;
+	obeu-dimension:organization aragon-codelist-fin-rev:12101 ;
+	qb:dataSet <http://data.openbudgets.eu/resource/dataset/aragon-2013-income/> .
+
+<http://data.openbudgets.eu/resource/dataset/aragon-2013-income/observation/169> a qb:Observation ;
+	obeu-dimension:administrativeClassification aragon-codelist-org:12500 ;
+	obeu-dimension:economicClassification aragon-codelist-econ-rev:796002 ;
+	obeu-measure:amount "200.000,00"^^xsd:double ;
+	obeu-dimension:organization aragon-codelist-fin-rev:12101 ;
+	qb:dataSet <http://data.openbudgets.eu/resource/dataset/aragon-2013-income/> .
+
+<http://data.openbudgets.eu/resource/dataset/aragon-2013-income/observation/170> a qb:Observation ;
+	obeu-dimension:administrativeClassification aragon-codelist-org:12500 ;
+	obeu-dimension:economicClassification aragon-codelist-econ-rev:797000 ;
+	obeu-measure:amount "1.275.000,00"^^xsd:double ;
+	obeu-dimension:organization aragon-codelist-fin-rev:12102 ;
+	qb:dataSet <http://data.openbudgets.eu/resource/dataset/aragon-2013-income/> .
+
+<http://data.openbudgets.eu/resource/dataset/aragon-2013-income/observation/171> a qb:Observation ;
+	obeu-dimension:administrativeClassification aragon-codelist-org:12500 ;
+	obeu-dimension:economicClassification aragon-codelist-econ-rev:797001 ;
+	obeu-measure:amount "8.974.000,00"^^xsd:double ;
+	obeu-dimension:organization aragon-codelist-fin-rev:12102 ;
+	qb:dataSet <http://data.openbudgets.eu/resource/dataset/aragon-2013-income/> .
+
+<http://data.openbudgets.eu/resource/dataset/aragon-2013-income/observation/172> a qb:Observation ;
+	obeu-dimension:administrativeClassification aragon-codelist-org:12500 ;
+	obeu-dimension:economicClassification aragon-codelist-econ-rev:797002 ;
+	obeu-measure:amount "660.000,00"^^xsd:double ;
+	obeu-dimension:organization aragon-codelist-fin-rev:12102 ;
+	qb:dataSet <http://data.openbudgets.eu/resource/dataset/aragon-2013-income/> .
+
+<http://data.openbudgets.eu/resource/dataset/aragon-2013-income/observation/173> a qb:Observation ;
+	obeu-dimension:administrativeClassification aragon-codelist-org:12500 ;
+	obeu-dimension:economicClassification aragon-codelist-econ-rev:797003 ;
+	obeu-measure:amount "3.200.000,00"^^xsd:double ;
+	obeu-dimension:organization aragon-codelist-fin-rev:12102 ;
+	qb:dataSet <http://data.openbudgets.eu/resource/dataset/aragon-2013-income/> .
+
+<http://data.openbudgets.eu/resource/dataset/aragon-2013-income/observation/174> a qb:Observation ;
+	obeu-dimension:administrativeClassification aragon-codelist-org:12500 ;
+	obeu-dimension:economicClassification aragon-codelist-econ-rev:797004 ;
+	obeu-measure:amount "11.210.000,00"^^xsd:double ;
+	obeu-dimension:organization aragon-codelist-fin-rev:12102 ;
+	qb:dataSet <http://data.openbudgets.eu/resource/dataset/aragon-2013-income/> .
+
+<http://data.openbudgets.eu/resource/dataset/aragon-2013-income/observation/175> a qb:Observation ;
+	obeu-dimension:administrativeClassification aragon-codelist-org:12500 ;
+	obeu-dimension:economicClassification aragon-codelist-econ-rev:797006 ;
+	obeu-measure:amount "7.500.000,00"^^xsd:double ;
+	obeu-dimension:organization aragon-codelist-fin-rev:12102 ;
+	qb:dataSet <http://data.openbudgets.eu/resource/dataset/aragon-2013-income/> .
+
+<http://data.openbudgets.eu/resource/dataset/aragon-2013-income/observation/176> a qb:Observation ;
+	obeu-dimension:administrativeClassification aragon-codelist-org:12500 ;
+	obeu-dimension:economicClassification aragon-codelist-econ-rev:797008 ;
+	obeu-measure:amount "4.529.888,19"^^xsd:double ;
+	obeu-dimension:organization aragon-codelist-fin-rev:12102 ;
+	qb:dataSet <http://data.openbudgets.eu/resource/dataset/aragon-2013-income/> .
+
+<http://data.openbudgets.eu/resource/dataset/aragon-2013-income/observation/177> a qb:Observation ;
+	obeu-dimension:administrativeClassification aragon-codelist-org:12500 ;
+	obeu-dimension:economicClassification aragon-codelist-econ-rev:797009 ;
+	obeu-measure:amount "4.900.000,00"^^xsd:double ;
+	obeu-dimension:organization aragon-codelist-fin-rev:12102 ;
+	qb:dataSet <http://data.openbudgets.eu/resource/dataset/aragon-2013-income/> .
+
+<http://data.openbudgets.eu/resource/dataset/aragon-2013-income/observation/178> a qb:Observation ;
+	obeu-dimension:administrativeClassification aragon-codelist-org:12500 ;
+	obeu-dimension:economicClassification aragon-codelist-econ-rev:797011 ;
+	obeu-measure:amount "137.894,00"^^xsd:double ;
+	obeu-dimension:organization aragon-codelist-fin-rev:12102 ;
+	qb:dataSet <http://data.openbudgets.eu/resource/dataset/aragon-2013-income/> .
+
+<http://data.openbudgets.eu/resource/dataset/aragon-2013-income/observation/179> a qb:Observation ;
+	obeu-dimension:administrativeClassification aragon-codelist-org:12500 ;
+	obeu-dimension:economicClassification aragon-codelist-econ-rev:797012 ;
+	obeu-measure:amount "3.500.000,00"^^xsd:double ;
+	obeu-dimension:organization aragon-codelist-fin-rev:12102 ;
+	qb:dataSet <http://data.openbudgets.eu/resource/dataset/aragon-2013-income/> .
+
+<http://data.openbudgets.eu/resource/dataset/aragon-2013-income/observation/180> a qb:Observation ;
+	obeu-dimension:administrativeClassification aragon-codelist-org:12500 ;
+	obeu-dimension:economicClassification aragon-codelist-econ-rev:797013 ;
+	obeu-measure:amount "3.034.360,18"^^xsd:double ;
+	obeu-dimension:organization aragon-codelist-fin-rev:12102 ;
+	qb:dataSet <http://data.openbudgets.eu/resource/dataset/aragon-2013-income/> .
+
+<http://data.openbudgets.eu/resource/dataset/aragon-2013-income/observation/181> a qb:Observation ;
+	obeu-dimension:administrativeClassification aragon-codelist-org:12500 ;
+	obeu-dimension:economicClassification aragon-codelist-econ-rev:797014 ;
+	obeu-measure:amount "2.438.016,53"^^xsd:double ;
+	obeu-dimension:organization aragon-codelist-fin-rev:12102 ;
+	qb:dataSet <http://data.openbudgets.eu/resource/dataset/aragon-2013-income/> .
+
+<http://data.openbudgets.eu/resource/dataset/aragon-2013-income/observation/182> a qb:Observation ;
+	obeu-dimension:administrativeClassification aragon-codelist-org:12500 ;
+	obeu-dimension:economicClassification aragon-codelist-econ-rev:797018 ;
+	obeu-measure:amount "623.500,00"^^xsd:double ;
+	obeu-dimension:organization aragon-codelist-fin-rev:12102 ;
+	qb:dataSet <http://data.openbudgets.eu/resource/dataset/aragon-2013-income/> .
+
+<http://data.openbudgets.eu/resource/dataset/aragon-2013-income/observation/183> a qb:Observation ;
+	obeu-dimension:administrativeClassification aragon-codelist-org:12500 ;
+	obeu-dimension:economicClassification aragon-codelist-econ-rev:797099 ;
+	obeu-measure:amount "74.000,00"^^xsd:double ;
+	obeu-dimension:organization aragon-codelist-fin-rev:12102 ;
+	qb:dataSet <http://data.openbudgets.eu/resource/dataset/aragon-2013-income/> .
+
+<http://data.openbudgets.eu/resource/dataset/aragon-2013-income/observation/184> a qb:Observation ;
+	obeu-dimension:administrativeClassification aragon-codelist-org:12500 ;
+	obeu-dimension:economicClassification aragon-codelist-econ-rev:798000 ;
+	obeu-measure:amount "35.000,00"^^xsd:double ;
+	obeu-dimension:organization aragon-codelist-fin-rev:15101 ;
+	qb:dataSet <http://data.openbudgets.eu/resource/dataset/aragon-2013-income/> .
+
+<http://data.openbudgets.eu/resource/dataset/aragon-2013-income/observation/185> a qb:Observation ;
+	obeu-dimension:administrativeClassification aragon-codelist-org:12500 ;
+	obeu-dimension:economicClassification aragon-codelist-econ-rev:799000 ;
+	obeu-measure:amount "23.000,00"^^xsd:double ;
+	obeu-dimension:organization aragon-codelist-fin-rev:19003 ;
+	qb:dataSet <http://data.openbudgets.eu/resource/dataset/aragon-2013-income/> .
+
+<http://data.openbudgets.eu/resource/dataset/aragon-2013-income/observation/186> a qb:Observation ;
+	obeu-dimension:administrativeClassification aragon-codelist-org:12500 ;
+	obeu-dimension:economicClassification aragon-codelist-econ-rev:821001 ;
+	obeu-measure:amount "3.500.000,00"^^xsd:double ;
+	obeu-dimension:organization aragon-codelist-fin-rev:91003 ;
+	qb:dataSet <http://data.openbudgets.eu/resource/dataset/aragon-2013-income/> .
+
+<http://data.openbudgets.eu/resource/dataset/aragon-2013-income/observation/187> a qb:Observation ;
+	obeu-dimension:administrativeClassification aragon-codelist-org:12500 ;
+	obeu-dimension:economicClassification aragon-codelist-econ-rev:900000 ;
+	obeu-measure:amount "400.000.000,00"^^xsd:double ;
+	obeu-dimension:organization aragon-codelist-fin-rev:91003 ;
+	qb:dataSet <http://data.openbudgets.eu/resource/dataset/aragon-2013-income/> .
+
+<http://data.openbudgets.eu/resource/dataset/aragon-2013-income/observation/188> a qb:Observation ;
+	obeu-dimension:administrativeClassification aragon-codelist-org:12500 ;
+	obeu-dimension:economicClassification aragon-codelist-econ-rev:920000 ;
+	obeu-measure:amount "459.403.833,29"^^xsd:double ;
+	obeu-dimension:organization aragon-codelist-fin-rev:91003 ;
+	qb:dataSet <http://data.openbudgets.eu/resource/dataset/aragon-2013-income/> .
+
+<http://data.openbudgets.eu/resource/dataset/aragon-2013-income/observation/189> a qb:Observation ;
+	obeu-dimension:administrativeClassification aragon-codelist-org:51000 ;
+	obeu-dimension:economicClassification aragon-codelist-econ-rev:329001 ;
+	obeu-measure:amount "4.000,00"^^xsd:double ;
+	obeu-dimension:organization aragon-codelist-fin-rev:91003 ;
+	qb:dataSet <http://data.openbudgets.eu/resource/dataset/aragon-2013-income/> .
+
+<http://data.openbudgets.eu/resource/dataset/aragon-2013-income/observation/190> a qb:Observation ;
+	obeu-dimension:administrativeClassification aragon-codelist-org:51000 ;
+	obeu-dimension:economicClassification aragon-codelist-econ-rev:330002 ;
+	obeu-measure:amount "2.800,00"^^xsd:double ;
+	obeu-dimension:organization aragon-codelist-fin-rev:91003 ;
+	qb:dataSet <http://data.openbudgets.eu/resource/dataset/aragon-2013-income/> .
+
+<http://data.openbudgets.eu/resource/dataset/aragon-2013-income/observation/191> a qb:Observation ;
+	obeu-dimension:administrativeClassification aragon-codelist-org:51000 ;
+	obeu-dimension:economicClassification aragon-codelist-econ-rev:404099 ;
+	obeu-measure:amount "82.000,00"^^xsd:double ;
+	obeu-dimension:organization aragon-codelist-fin-rev:39071 ;
+	qb:dataSet <http://data.openbudgets.eu/resource/dataset/aragon-2013-income/> .
+
+<http://data.openbudgets.eu/resource/dataset/aragon-2013-income/observation/192> a qb:Observation ;
+	obeu-dimension:administrativeClassification aragon-codelist-org:51000 ;
+	obeu-dimension:economicClassification aragon-codelist-econ-rev:413000 ;
+	obeu-measure:amount "531.742,00"^^xsd:double ;
+	obeu-dimension:organization aragon-codelist-fin-rev:33002 ;
+	qb:dataSet <http://data.openbudgets.eu/resource/dataset/aragon-2013-income/> .
+
+<http://data.openbudgets.eu/resource/dataset/aragon-2013-income/observation/193> a qb:Observation ;
+	obeu-dimension:administrativeClassification aragon-codelist-org:51000 ;
+	obeu-dimension:economicClassification aragon-codelist-econ-rev:413000 ;
+	obeu-measure:amount "21.040.839,00"^^xsd:double ;
+	obeu-dimension:organization aragon-codelist-fin-rev:33004 ;
+	qb:dataSet <http://data.openbudgets.eu/resource/dataset/aragon-2013-income/> .
+
+<http://data.openbudgets.eu/resource/dataset/aragon-2013-income/observation/194> a qb:Observation ;
+	obeu-dimension:administrativeClassification aragon-codelist-org:51000 ;
+	obeu-dimension:economicClassification aragon-codelist-econ-rev:413000 ;
+	obeu-measure:amount "10.275.685,00"^^xsd:double ;
+	obeu-dimension:organization aragon-codelist-fin-rev:33005 ;
+	qb:dataSet <http://data.openbudgets.eu/resource/dataset/aragon-2013-income/> .
+
+<http://data.openbudgets.eu/resource/dataset/aragon-2013-income/observation/195> a qb:Observation ;
+	obeu-dimension:administrativeClassification aragon-codelist-org:51000 ;
+	obeu-dimension:economicClassification aragon-codelist-econ-rev:413001 ;
+	obeu-measure:amount "280.000,00"^^xsd:double ;
+	obeu-dimension:organization aragon-codelist-fin-rev:39008 ;
+	qb:dataSet <http://data.openbudgets.eu/resource/dataset/aragon-2013-income/> .
+
+<http://data.openbudgets.eu/resource/dataset/aragon-2013-income/observation/196> a qb:Observation ;
+	obeu-dimension:administrativeClassification aragon-codelist-org:51000 ;
+	obeu-dimension:economicClassification aragon-codelist-econ-rev:520000 ;
+	obeu-measure:amount "30.000,00"^^xsd:double ;
+	obeu-dimension:organization aragon-codelist-fin-rev:91003 ;
+	qb:dataSet <http://data.openbudgets.eu/resource/dataset/aragon-2013-income/> .
+
+<http://data.openbudgets.eu/resource/dataset/aragon-2013-income/observation/197> a qb:Observation ;
+	obeu-dimension:administrativeClassification aragon-codelist-org:51000 ;
+	obeu-dimension:economicClassification aragon-codelist-econ-rev:708000 ;
+	obeu-measure:amount "45.000,00"^^xsd:double ;
+	obeu-dimension:organization aragon-codelist-fin-rev:33002 ;
+	qb:dataSet <http://data.openbudgets.eu/resource/dataset/aragon-2013-income/> .
+
+<http://data.openbudgets.eu/resource/dataset/aragon-2013-income/observation/198> a qb:Observation ;
+	obeu-dimension:administrativeClassification aragon-codelist-org:52000 ;
+	obeu-dimension:economicClassification aragon-codelist-econ-rev:319115 ;
+	obeu-measure:amount "17.500.000,00"^^xsd:double ;
+	obeu-dimension:organization aragon-codelist-fin-rev:91003 ;
+	qb:dataSet <http://data.openbudgets.eu/resource/dataset/aragon-2013-income/> .
+
+<http://data.openbudgets.eu/resource/dataset/aragon-2013-income/observation/199> a qb:Observation ;
+	obeu-dimension:administrativeClassification aragon-codelist-org:52000 ;
+	obeu-dimension:economicClassification aragon-codelist-econ-rev:520000 ;
+	obeu-measure:amount "50.000,00"^^xsd:double ;
+	obeu-dimension:organization aragon-codelist-fin-rev:91003 ;
+	qb:dataSet <http://data.openbudgets.eu/resource/dataset/aragon-2013-income/> .
+
+<http://data.openbudgets.eu/resource/dataset/aragon-2013-income/observation/200> a qb:Observation ;
+	obeu-dimension:administrativeClassification aragon-codelist-org:53000 ;
+	obeu-dimension:economicClassification aragon-codelist-econ-rev:319100 ;
+	obeu-measure:amount "13.000.000,00"^^xsd:double ;
+	obeu-dimension:organization aragon-codelist-fin-rev:91003 ;
+	qb:dataSet <http://data.openbudgets.eu/resource/dataset/aragon-2013-income/> .
+
+<http://data.openbudgets.eu/resource/dataset/aragon-2013-income/observation/201> a qb:Observation ;
+	obeu-dimension:administrativeClassification aragon-codelist-org:53000 ;
+	obeu-dimension:economicClassification aragon-codelist-econ-rev:319102 ;
+	obeu-measure:amount "1.850.000,00"^^xsd:double ;
+	obeu-dimension:organization aragon-codelist-fin-rev:91003 ;
+	qb:dataSet <http://data.openbudgets.eu/resource/dataset/aragon-2013-income/> .
+
+<http://data.openbudgets.eu/resource/dataset/aragon-2013-income/observation/202> a qb:Observation ;
+	obeu-dimension:administrativeClassification aragon-codelist-org:53000 ;
+	obeu-dimension:economicClassification aragon-codelist-econ-rev:395100 ;
+	obeu-measure:amount "20.000,00"^^xsd:double ;
+	obeu-dimension:organization aragon-codelist-fin-rev:91003 ;
+	qb:dataSet <http://data.openbudgets.eu/resource/dataset/aragon-2013-income/> .
+
+<http://data.openbudgets.eu/resource/dataset/aragon-2013-income/observation/203> a qb:Observation ;
+	obeu-dimension:administrativeClassification aragon-codelist-org:53000 ;
+	obeu-dimension:economicClassification aragon-codelist-econ-rev:520000 ;
+	obeu-measure:amount "20.000,00"^^xsd:double ;
+	obeu-dimension:organization aragon-codelist-fin-rev:91003 ;
+	qb:dataSet <http://data.openbudgets.eu/resource/dataset/aragon-2013-income/> .
+
+<http://data.openbudgets.eu/resource/dataset/aragon-2013-income/observation/204> a qb:Observation ;
+	obeu-dimension:administrativeClassification aragon-codelist-org:54000 ;
+	obeu-dimension:economicClassification aragon-codelist-econ-rev:520000 ;
+	obeu-measure:amount "1.500,00"^^xsd:double ;
+	obeu-dimension:organization aragon-codelist-fin-rev:91003 ;
+	qb:dataSet <http://data.openbudgets.eu/resource/dataset/aragon-2013-income/> .
+
+<http://data.openbudgets.eu/resource/dataset/aragon-2013-income/observation/205> a qb:Observation ;
+	obeu-dimension:administrativeClassification aragon-codelist-org:55000 ;
+	obeu-dimension:economicClassification aragon-codelist-econ-rev:311001 ;
+	obeu-measure:amount "625.000,00"^^xsd:double ;
+	obeu-dimension:organization aragon-codelist-fin-rev:91003 ;
+	qb:dataSet <http://data.openbudgets.eu/resource/dataset/aragon-2013-income/> .
+
+<http://data.openbudgets.eu/resource/dataset/aragon-2013-income/observation/206> a qb:Observation ;
+	obeu-dimension:administrativeClassification aragon-codelist-org:55000 ;
+	obeu-dimension:economicClassification aragon-codelist-econ-rev:311003 ;
+	obeu-measure:amount "15.000,00"^^xsd:double ;
+	obeu-dimension:organization aragon-codelist-fin-rev:91003 ;
+	qb:dataSet <http://data.openbudgets.eu/resource/dataset/aragon-2013-income/> .
+
+<http://data.openbudgets.eu/resource/dataset/aragon-2013-income/observation/207> a qb:Observation ;
+	obeu-dimension:administrativeClassification aragon-codelist-org:55000 ;
+	obeu-dimension:economicClassification aragon-codelist-econ-rev:311008 ;
+	obeu-measure:amount "70.000,00"^^xsd:double ;
+	obeu-dimension:organization aragon-codelist-fin-rev:91003 ;
+	qb:dataSet <http://data.openbudgets.eu/resource/dataset/aragon-2013-income/> .
+
+<http://data.openbudgets.eu/resource/dataset/aragon-2013-income/observation/208> a qb:Observation ;
+	obeu-dimension:administrativeClassification aragon-codelist-org:55000 ;
+	obeu-dimension:economicClassification aragon-codelist-econ-rev:311009 ;
+	obeu-measure:amount "445.000,00"^^xsd:double ;
+	obeu-dimension:organization aragon-codelist-fin-rev:91003 ;
+	qb:dataSet <http://data.openbudgets.eu/resource/dataset/aragon-2013-income/> .
+
+<http://data.openbudgets.eu/resource/dataset/aragon-2013-income/observation/209> a qb:Observation ;
+	obeu-dimension:administrativeClassification aragon-codelist-org:55000 ;
+	obeu-dimension:economicClassification aragon-codelist-econ-rev:419005 ;
+	obeu-measure:amount "50.000,00"^^xsd:double ;
+	obeu-dimension:organization aragon-codelist-fin-rev:91003 ;
+	qb:dataSet <http://data.openbudgets.eu/resource/dataset/aragon-2013-income/> .
+
+<http://data.openbudgets.eu/resource/dataset/aragon-2013-income/observation/210> a qb:Observation ;
+	obeu-dimension:administrativeClassification aragon-codelist-org:55000 ;
+	obeu-dimension:economicClassification aragon-codelist-econ-rev:470009 ;
+	obeu-measure:amount "200.000,00"^^xsd:double ;
+	obeu-dimension:organization aragon-codelist-fin-rev:71006 ;
+	qb:dataSet <http://data.openbudgets.eu/resource/dataset/aragon-2013-income/> .
+
+<http://data.openbudgets.eu/resource/dataset/aragon-2013-income/observation/211> a qb:Observation ;
+	obeu-dimension:administrativeClassification aragon-codelist-org:55000 ;
+	obeu-dimension:economicClassification aragon-codelist-econ-rev:520000 ;
+	obeu-measure:amount "3.000,00"^^xsd:double ;
+	obeu-dimension:organization aragon-codelist-fin-rev:91003 ;
+	qb:dataSet <http://data.openbudgets.eu/resource/dataset/aragon-2013-income/> .
+
+<http://data.openbudgets.eu/resource/dataset/aragon-2013-income/observation/212> a qb:Observation ;
+	obeu-dimension:administrativeClassification aragon-codelist-org:71000 ;
+	obeu-dimension:economicClassification aragon-codelist-econ-rev:792100 ;
+	obeu-measure:amount "1.799.919,00"^^xsd:double ;
+	obeu-dimension:organization aragon-codelist-fin-rev:14101 ;
+	qb:dataSet <http://data.openbudgets.eu/resource/dataset/aragon-2013-income/> .
+
+<http://data.openbudgets.eu/resource/dataset/aragon-2013-income/observation/213> a qb:Observation ;
+	obeu-dimension:administrativeClassification aragon-codelist-org:72000 ;
+	obeu-dimension:economicClassification aragon-codelist-econ-rev:221000 ;
+	obeu-measure:amount "40.249.786,07"^^xsd:double ;
+	obeu-dimension:organization aragon-codelist-fin-rev:91003 ;
+	qb:dataSet <http://data.openbudgets.eu/resource/dataset/aragon-2013-income/> .
+
+<http://data.openbudgets.eu/resource/dataset/aragon-2013-income/observation/214> a qb:Observation ;
+	obeu-dimension:administrativeClassification aragon-codelist-org:72000 ;
+	obeu-dimension:economicClassification aragon-codelist-econ-rev:329001 ;
+	obeu-measure:amount "25.000,00"^^xsd:double ;
+	obeu-dimension:organization aragon-codelist-fin-rev:91003 ;
+	qb:dataSet <http://data.openbudgets.eu/resource/dataset/aragon-2013-income/> .
+
+<http://data.openbudgets.eu/resource/dataset/aragon-2013-income/observation/215> a qb:Observation ;
+	obeu-dimension:administrativeClassification aragon-codelist-org:72000 ;
+	obeu-dimension:economicClassification aragon-codelist-econ-rev:329003 ;
+	obeu-measure:amount "500,00"^^xsd:double ;
+	obeu-dimension:organization aragon-codelist-fin-rev:91003 ;
+	qb:dataSet <http://data.openbudgets.eu/resource/dataset/aragon-2013-income/> .
+
+<http://data.openbudgets.eu/resource/dataset/aragon-2013-income/observation/216> a qb:Observation ;
+	obeu-dimension:administrativeClassification aragon-codelist-org:72000 ;
+	obeu-dimension:economicClassification aragon-codelist-econ-rev:330009 ;
+	obeu-measure:amount "100.000,00"^^xsd:double ;
+	obeu-dimension:organization aragon-codelist-fin-rev:91003 ;
+	qb:dataSet <http://data.openbudgets.eu/resource/dataset/aragon-2013-income/> .
+
+<http://data.openbudgets.eu/resource/dataset/aragon-2013-income/observation/217> a qb:Observation ;
+	obeu-dimension:administrativeClassification aragon-codelist-org:72000 ;
+	obeu-dimension:economicClassification aragon-codelist-econ-rev:395100 ;
+	obeu-measure:amount "30.000,00"^^xsd:double ;
+	obeu-dimension:organization aragon-codelist-fin-rev:91003 ;
+	qb:dataSet <http://data.openbudgets.eu/resource/dataset/aragon-2013-income/> .
+
+<http://data.openbudgets.eu/resource/dataset/aragon-2013-income/observation/218> a qb:Observation ;
+	obeu-dimension:administrativeClassification aragon-codelist-org:72000 ;
+	obeu-dimension:economicClassification aragon-codelist-econ-rev:396100 ;
+	obeu-measure:amount "50.000,00"^^xsd:double ;
+	obeu-dimension:organization aragon-codelist-fin-rev:91003 ;
+	qb:dataSet <http://data.openbudgets.eu/resource/dataset/aragon-2013-income/> .
+
+<http://data.openbudgets.eu/resource/dataset/aragon-2013-income/observation/219> a qb:Observation ;
+	obeu-dimension:administrativeClassification aragon-codelist-org:72000 ;
+	obeu-dimension:economicClassification aragon-codelist-econ-rev:492100 ;
+	obeu-measure:amount "1.230,51"^^xsd:double ;
+	obeu-dimension:organization aragon-codelist-fin-rev:14101 ;
+	qb:dataSet <http://data.openbudgets.eu/resource/dataset/aragon-2013-income/> .
+
+<http://data.openbudgets.eu/resource/dataset/aragon-2013-income/observation/220> a qb:Observation ;
+	obeu-dimension:administrativeClassification aragon-codelist-org:72000 ;
+	obeu-dimension:economicClassification aragon-codelist-econ-rev:520000 ;
+	obeu-measure:amount "150.000,00"^^xsd:double ;
+	obeu-dimension:organization aragon-codelist-fin-rev:91003 ;
+	qb:dataSet <http://data.openbudgets.eu/resource/dataset/aragon-2013-income/> .
+
+<http://data.openbudgets.eu/resource/dataset/aragon-2013-income/observation/221> a qb:Observation ;
+	obeu-dimension:administrativeClassification aragon-codelist-org:72000 ;
+	obeu-dimension:economicClassification aragon-codelist-econ-rev:821001 ;
+	obeu-measure:amount "749.000,00"^^xsd:double ;
+	obeu-dimension:organization aragon-codelist-fin-rev:91003 ;
+	qb:dataSet <http://data.openbudgets.eu/resource/dataset/aragon-2013-income/> .
+
+<http://data.openbudgets.eu/resource/dataset/aragon-2013-income/observation/222> a qb:Observation ;
+	obeu-dimension:administrativeClassification aragon-codelist-org:73000 ;
+	obeu-dimension:economicClassification aragon-codelist-econ-rev:329035 ;
+	obeu-measure:amount "265.000,00"^^xsd:double ;
+	obeu-dimension:organization aragon-codelist-fin-rev:91003 ;
+	qb:dataSet <http://data.openbudgets.eu/resource/dataset/aragon-2013-income/> .
+
+<http://data.openbudgets.eu/resource/dataset/aragon-2013-income/observation/223> a qb:Observation ;
+	obeu-dimension:administrativeClassification aragon-codelist-org:73000 ;
+	obeu-dimension:economicClassification aragon-codelist-econ-rev:330010 ;
+	obeu-measure:amount "1.051.852,28"^^xsd:double ;
+	obeu-dimension:organization aragon-codelist-fin-rev:91003 ;
+	qb:dataSet <http://data.openbudgets.eu/resource/dataset/aragon-2013-income/> .
+
+<http://data.openbudgets.eu/resource/dataset/aragon-2013-income/observation/224> a qb:Observation ;
+	obeu-dimension:administrativeClassification aragon-codelist-org:73000 ;
+	obeu-dimension:economicClassification aragon-codelist-econ-rev:390002 ;
+	obeu-measure:amount "30.000,00"^^xsd:double ;
+	obeu-dimension:organization aragon-codelist-fin-rev:91003 ;
+	qb:dataSet <http://data.openbudgets.eu/resource/dataset/aragon-2013-income/> .
+
+<http://data.openbudgets.eu/resource/dataset/aragon-2013-income/observation/225> a qb:Observation ;
+	obeu-dimension:administrativeClassification aragon-codelist-org:73000 ;
+	obeu-dimension:economicClassification aragon-codelist-econ-rev:405099 ;
+	obeu-measure:amount "1.791.086,32"^^xsd:double ;
+	obeu-dimension:organization aragon-codelist-fin-rev:39020 ;
+	qb:dataSet <http://data.openbudgets.eu/resource/dataset/aragon-2013-income/> .
+
+<http://data.openbudgets.eu/resource/dataset/aragon-2013-income/observation/226> a qb:Observation ;
+	obeu-dimension:administrativeClassification aragon-codelist-org:73000 ;
+	obeu-dimension:economicClassification aragon-codelist-econ-rev:405099 ;
+	obeu-measure:amount "917.912,19"^^xsd:double ;
+	obeu-dimension:organization aragon-codelist-fin-rev:39053 ;
+	qb:dataSet <http://data.openbudgets.eu/resource/dataset/aragon-2013-income/> .
+
+<http://data.openbudgets.eu/resource/dataset/aragon-2013-income/observation/227> a qb:Observation ;
+	obeu-dimension:administrativeClassification aragon-codelist-org:73000 ;
+	obeu-dimension:economicClassification aragon-codelist-econ-rev:440002 ;
+	obeu-measure:amount "100.000,00"^^xsd:double ;
+	obeu-dimension:organization aragon-codelist-fin-rev:91003 ;
+	qb:dataSet <http://data.openbudgets.eu/resource/dataset/aragon-2013-income/> .
+
+<http://data.openbudgets.eu/resource/dataset/aragon-2013-income/observation/228> a qb:Observation ;
+	obeu-dimension:administrativeClassification aragon-codelist-org:73000 ;
+	obeu-dimension:economicClassification aragon-codelist-econ-rev:470009 ;
+	obeu-measure:amount "1.769.351,47"^^xsd:double ;
+	obeu-dimension:organization aragon-codelist-fin-rev:72009 ;
+	qb:dataSet <http://data.openbudgets.eu/resource/dataset/aragon-2013-income/> .
+
+<http://data.openbudgets.eu/resource/dataset/aragon-2013-income/observation/229> a qb:Observation ;
+	obeu-dimension:administrativeClassification aragon-codelist-org:73000 ;
+	obeu-dimension:economicClassification aragon-codelist-econ-rev:499099 ;
+	obeu-measure:amount "395.989,90"^^xsd:double ;
+	obeu-dimension:organization aragon-codelist-fin-rev:19090 ;
+	qb:dataSet <http://data.openbudgets.eu/resource/dataset/aragon-2013-income/> .
+
+<http://data.openbudgets.eu/resource/dataset/aragon-2013-income/observation/230> a qb:Observation ;
+	obeu-dimension:administrativeClassification aragon-codelist-org:73000 ;
+	obeu-dimension:economicClassification aragon-codelist-econ-rev:520000 ;
+	obeu-measure:amount "3.000,00"^^xsd:double ;
+	obeu-dimension:organization aragon-codelist-fin-rev:91003 ;
+	qb:dataSet <http://data.openbudgets.eu/resource/dataset/aragon-2013-income/> .
+
+<http://data.openbudgets.eu/resource/dataset/aragon-2013-income/observation/231> a qb:Observation ;
+	obeu-dimension:administrativeClassification aragon-codelist-org:73000 ;
+	obeu-dimension:economicClassification aragon-codelist-econ-rev:709009 ;
+	obeu-measure:amount "518.459,63"^^xsd:double ;
+	obeu-dimension:organization aragon-codelist-fin-rev:39020 ;
+	qb:dataSet <http://data.openbudgets.eu/resource/dataset/aragon-2013-income/> .
+
+<http://data.openbudgets.eu/resource/dataset/aragon-2013-income/observation/232> a qb:Observation ;
+	obeu-dimension:administrativeClassification aragon-codelist-org:73000 ;
+	obeu-dimension:economicClassification aragon-codelist-econ-rev:709009 ;
+	obeu-measure:amount "527.293,24"^^xsd:double ;
+	obeu-dimension:organization aragon-codelist-fin-rev:39053 ;
+	qb:dataSet <http://data.openbudgets.eu/resource/dataset/aragon-2013-income/> .
+
+<http://data.openbudgets.eu/resource/dataset/aragon-2013-income/observation/233> a qb:Observation ;
+	obeu-dimension:administrativeClassification aragon-codelist-org:73000 ;
+	obeu-dimension:economicClassification aragon-codelist-econ-rev:770010 ;
+	obeu-measure:amount "330.000,00"^^xsd:double ;
+	obeu-dimension:organization aragon-codelist-fin-rev:72009 ;
+	qb:dataSet <http://data.openbudgets.eu/resource/dataset/aragon-2013-income/> .
+
+<http://data.openbudgets.eu/resource/dataset/aragon-2013-income/observation/234> a qb:Observation ;
+	obeu-dimension:administrativeClassification aragon-codelist-org:73000 ;
+	obeu-dimension:economicClassification aragon-codelist-econ-rev:799000 ;
+	obeu-measure:amount "143.380,00"^^xsd:double ;
+	obeu-dimension:organization aragon-codelist-fin-rev:19090 ;
+	qb:dataSet <http://data.openbudgets.eu/resource/dataset/aragon-2013-income/> .
+
+<http://data.openbudgets.eu/resource/dataset/aragon-2013-income/observation/235> a qb:Observation ;
+	obeu-dimension:administrativeClassification aragon-codelist-org:74000 ;
+	obeu-dimension:economicClassification aragon-codelist-econ-rev:319319 ;
+	obeu-measure:amount "150.000,00"^^xsd:double ;
+	obeu-dimension:organization aragon-codelist-fin-rev:91003 ;
+	qb:dataSet <http://data.openbudgets.eu/resource/dataset/aragon-2013-income/> .
+
+<http://data.openbudgets.eu/resource/dataset/aragon-2013-income/observation/236> a qb:Observation ;
+	obeu-dimension:administrativeClassification aragon-codelist-org:74000 ;
+	obeu-dimension:economicClassification aragon-codelist-econ-rev:381100 ;
+	obeu-measure:amount "52.000,00"^^xsd:double ;
+	obeu-dimension:organization aragon-codelist-fin-rev:91003 ;
+	qb:dataSet <http://data.openbudgets.eu/resource/dataset/aragon-2013-income/> .
+
+<http://data.openbudgets.eu/resource/dataset/aragon-2013-income/observation/237> a qb:Observation ;
+	obeu-dimension:administrativeClassification aragon-codelist-org:74000 ;
+	obeu-dimension:economicClassification aragon-codelist-econ-rev:450008 ;
+	obeu-measure:amount "150.000,00"^^xsd:double ;
+	obeu-dimension:organization aragon-codelist-fin-rev:91003 ;
+	qb:dataSet <http://data.openbudgets.eu/resource/dataset/aragon-2013-income/> .
+
+<http://data.openbudgets.eu/resource/dataset/aragon-2013-income/observation/238> a qb:Observation ;
+	obeu-dimension:administrativeClassification aragon-codelist-org:74000 ;
+	obeu-dimension:economicClassification aragon-codelist-econ-rev:470009 ;
+	obeu-measure:amount "750,00"^^xsd:double ;
+	obeu-dimension:organization aragon-codelist-fin-rev:91003 ;
+	qb:dataSet <http://data.openbudgets.eu/resource/dataset/aragon-2013-income/> .
+
+<http://data.openbudgets.eu/resource/dataset/aragon-2013-income/observation/239> a qb:Observation ;
+	obeu-dimension:administrativeClassification aragon-codelist-org:74000 ;
+	obeu-dimension:economicClassification aragon-codelist-econ-rev:520000 ;
+	obeu-measure:amount "5.000,00"^^xsd:double ;
+	obeu-dimension:organization aragon-codelist-fin-rev:91003 ;
+	qb:dataSet <http://data.openbudgets.eu/resource/dataset/aragon-2013-income/> .
+
+<http://data.openbudgets.eu/resource/dataset/aragon-2013-income/observation/240> a qb:Observation ;
+	obeu-dimension:administrativeClassification aragon-codelist-org:74000 ;
+	obeu-dimension:economicClassification aragon-codelist-econ-rev:552000 ;
+	obeu-measure:amount "55.000,00"^^xsd:double ;
+	obeu-dimension:organization aragon-codelist-fin-rev:91003 ;
+	qb:dataSet <http://data.openbudgets.eu/resource/dataset/aragon-2013-income/> .
+
+<http://data.openbudgets.eu/resource/dataset/aragon-2013-income/observation/241> a qb:Observation ;
+	obeu-dimension:administrativeClassification aragon-codelist-org:74000 ;
+	obeu-dimension:economicClassification aragon-codelist-econ-rev:552005 ;
+	obeu-measure:amount "109.295,00"^^xsd:double ;
+	obeu-dimension:organization aragon-codelist-fin-rev:91003 ;
+	qb:dataSet <http://data.openbudgets.eu/resource/dataset/aragon-2013-income/> .
+
+<http://data.openbudgets.eu/resource/dataset/aragon-2013-income/observation/242> a qb:Observation ;
+	obeu-dimension:administrativeClassification aragon-codelist-org:74000 ;
+	obeu-dimension:economicClassification aragon-codelist-econ-rev:553009 ;
+	obeu-measure:amount "770,00"^^xsd:double ;
+	obeu-dimension:organization aragon-codelist-fin-rev:91003 ;
+	qb:dataSet <http://data.openbudgets.eu/resource/dataset/aragon-2013-income/> .
+
+<http://data.openbudgets.eu/resource/dataset/aragon-2013-income/observation/243> a qb:Observation ;
+	obeu-dimension:administrativeClassification aragon-codelist-org:74000 ;
+	obeu-dimension:economicClassification aragon-codelist-econ-rev:707003 ;
+	obeu-measure:amount "450.000,00"^^xsd:double ;
+	obeu-dimension:organization aragon-codelist-fin-rev:39037 ;
+	qb:dataSet <http://data.openbudgets.eu/resource/dataset/aragon-2013-income/> .
+
+<http://data.openbudgets.eu/resource/dataset/aragon-2013-income/observation/244> a qb:Observation ;
+	obeu-dimension:administrativeClassification aragon-codelist-org:74000 ;
+	obeu-dimension:economicClassification aragon-codelist-econ-rev:719009 ;
+	obeu-measure:amount "100.000,00"^^xsd:double ;
+	obeu-dimension:organization aragon-codelist-fin-rev:39105 ;
+	qb:dataSet <http://data.openbudgets.eu/resource/dataset/aragon-2013-income/> .
+
+<http://data.openbudgets.eu/resource/dataset/aragon-2013-income/observation/245> a qb:Observation ;
+	obeu-dimension:administrativeClassification aragon-codelist-org:74000 ;
+	obeu-dimension:economicClassification aragon-codelist-econ-rev:719011 ;
+	obeu-measure:amount "535.000,00"^^xsd:double ;
+	obeu-dimension:organization aragon-codelist-fin-rev:39003 ;
+	qb:dataSet <http://data.openbudgets.eu/resource/dataset/aragon-2013-income/> .
+
+<http://data.openbudgets.eu/resource/dataset/aragon-2013-income/observation/246> a qb:Observation ;
+	obeu-dimension:administrativeClassification aragon-codelist-org:74000 ;
+	obeu-dimension:economicClassification aragon-codelist-econ-rev:719011 ;
+	obeu-measure:amount "55.105,00"^^xsd:double ;
+	obeu-dimension:organization aragon-codelist-fin-rev:39035 ;
+	qb:dataSet <http://data.openbudgets.eu/resource/dataset/aragon-2013-income/> .
+
+<http://data.openbudgets.eu/resource/dataset/aragon-2013-income/observation/247> a qb:Observation ;
+	obeu-dimension:administrativeClassification aragon-codelist-org:74000 ;
+	obeu-dimension:economicClassification aragon-codelist-econ-rev:719011 ;
+	obeu-measure:amount "108.715,00"^^xsd:double ;
+	obeu-dimension:organization aragon-codelist-fin-rev:39044 ;
+	qb:dataSet <http://data.openbudgets.eu/resource/dataset/aragon-2013-income/> .
+
+<http://data.openbudgets.eu/resource/dataset/aragon-2013-income/observation/248> a qb:Observation ;
+	obeu-dimension:administrativeClassification aragon-codelist-org:74000 ;
+	obeu-dimension:economicClassification aragon-codelist-econ-rev:750008 ;
+	obeu-measure:amount "545.896,00"^^xsd:double ;
+	obeu-dimension:organization aragon-codelist-fin-rev:55007 ;
+	qb:dataSet <http://data.openbudgets.eu/resource/dataset/aragon-2013-income/> .
+
+<http://data.openbudgets.eu/resource/dataset/aragon-2013-income/observation/249> a qb:Observation ;
+	obeu-dimension:administrativeClassification aragon-codelist-org:74000 ;
+	obeu-dimension:economicClassification aragon-codelist-econ-rev:770009 ;
+	obeu-measure:amount "100.000,00"^^xsd:double ;
+	obeu-dimension:organization aragon-codelist-fin-rev:72009 ;
+	qb:dataSet <http://data.openbudgets.eu/resource/dataset/aragon-2013-income/> .
+
+<http://data.openbudgets.eu/resource/dataset/aragon-2013-income/observation/250> a qb:Observation ;
+	obeu-dimension:administrativeClassification aragon-codelist-org:74000 ;
+	obeu-dimension:economicClassification aragon-codelist-econ-rev:770010 ;
+	obeu-measure:amount "64.000,00"^^xsd:double ;
+	obeu-dimension:organization aragon-codelist-fin-rev:71008 ;
+	qb:dataSet <http://data.openbudgets.eu/resource/dataset/aragon-2013-income/> .
+
+<http://data.openbudgets.eu/resource/dataset/aragon-2013-income/observation/251> a qb:Observation ;
+	obeu-dimension:administrativeClassification aragon-codelist-org:74000 ;
+	obeu-dimension:economicClassification aragon-codelist-econ-rev:799000 ;
+	obeu-measure:amount "50.000,00"^^xsd:double ;
+	obeu-dimension:organization aragon-codelist-fin-rev:19090 ;
+	qb:dataSet <http://data.openbudgets.eu/resource/dataset/aragon-2013-income/> .
+
+<http://data.openbudgets.eu/resource/dataset/aragon-2013-income/observation/252> a qb:Observation ;
+	obeu-dimension:administrativeClassification aragon-codelist-org:75000 ;
+	obeu-dimension:economicClassification aragon-codelist-econ-rev:329016 ;
+	obeu-measure:amount "2.083.584,94"^^xsd:double ;
+	obeu-dimension:organization aragon-codelist-fin-rev:91003 ;
+	qb:dataSet <http://data.openbudgets.eu/resource/dataset/aragon-2013-income/> .
+
+<http://data.openbudgets.eu/resource/dataset/aragon-2013-income/observation/253> a qb:Observation ;
+	obeu-dimension:administrativeClassification aragon-codelist-org:75000 ;
+	obeu-dimension:economicClassification aragon-codelist-econ-rev:329017 ;
+	obeu-measure:amount "108.120,13"^^xsd:double ;
+	obeu-dimension:organization aragon-codelist-fin-rev:91003 ;
+	qb:dataSet <http://data.openbudgets.eu/resource/dataset/aragon-2013-income/> .
+
+<http://data.openbudgets.eu/resource/dataset/aragon-2013-income/observation/254> a qb:Observation ;
+	obeu-dimension:administrativeClassification aragon-codelist-org:75000 ;
+	obeu-dimension:economicClassification aragon-codelist-econ-rev:329026 ;
+	obeu-measure:amount "824.254,41"^^xsd:double ;
+	obeu-dimension:organization aragon-codelist-fin-rev:91003 ;
+	qb:dataSet <http://data.openbudgets.eu/resource/dataset/aragon-2013-income/> .
+
+<http://data.openbudgets.eu/resource/dataset/aragon-2013-income/observation/255> a qb:Observation ;
+	obeu-dimension:administrativeClassification aragon-codelist-org:75000 ;
+	obeu-dimension:economicClassification aragon-codelist-econ-rev:329028 ;
+	obeu-measure:amount "450.396,34"^^xsd:double ;
+	obeu-dimension:organization aragon-codelist-fin-rev:91003 ;
+	qb:dataSet <http://data.openbudgets.eu/resource/dataset/aragon-2013-income/> .
+
+<http://data.openbudgets.eu/resource/dataset/aragon-2013-income/observation/256> a qb:Observation ;
+	obeu-dimension:administrativeClassification aragon-codelist-org:75000 ;
+	obeu-dimension:economicClassification aragon-codelist-econ-rev:329029 ;
+	obeu-measure:amount "10.526,60"^^xsd:double ;
+	obeu-dimension:organization aragon-codelist-fin-rev:91003 ;
+	qb:dataSet <http://data.openbudgets.eu/resource/dataset/aragon-2013-income/> .
+
+<http://data.openbudgets.eu/resource/dataset/aragon-2013-income/observation/257> a qb:Observation ;
+	obeu-dimension:administrativeClassification aragon-codelist-org:75000 ;
+	obeu-dimension:economicClassification aragon-codelist-econ-rev:329030 ;
+	obeu-measure:amount "160.141,88"^^xsd:double ;
+	obeu-dimension:organization aragon-codelist-fin-rev:91003 ;
+	qb:dataSet <http://data.openbudgets.eu/resource/dataset/aragon-2013-income/> .
+
+<http://data.openbudgets.eu/resource/dataset/aragon-2013-income/observation/258> a qb:Observation ;
+	obeu-dimension:administrativeClassification aragon-codelist-org:75000 ;
+	obeu-dimension:economicClassification aragon-codelist-econ-rev:520000 ;
+	obeu-measure:amount "1.500,00"^^xsd:double ;
+	obeu-dimension:organization aragon-codelist-fin-rev:91003 ;
+	qb:dataSet <http://data.openbudgets.eu/resource/dataset/aragon-2013-income/> .
+
+<http://data.openbudgets.eu/resource/dataset/aragon-2013-income/observation/259> a qb:Observation ;
+	obeu-dimension:administrativeClassification aragon-codelist-org:76000 ;
+	obeu-dimension:economicClassification aragon-codelist-econ-rev:396100 ;
+	obeu-measure:amount "8.818.986,00"^^xsd:double ;
+	obeu-dimension:organization aragon-codelist-fin-rev:91003 ;
+	qb:dataSet <http://data.openbudgets.eu/resource/dataset/aragon-2013-income/> .
+
+<http://data.openbudgets.eu/resource/dataset/aragon-2013-income/observation/260> a qb:Observation ;
+	obeu-dimension:administrativeClassification aragon-codelist-org:76000 ;
+	obeu-dimension:economicClassification aragon-codelist-econ-rev:520000 ;
+	obeu-measure:amount "10.000,00"^^xsd:double ;
+	obeu-dimension:organization aragon-codelist-fin-rev:91003 ;
+	qb:dataSet <http://data.openbudgets.eu/resource/dataset/aragon-2013-income/> .
+
+<http://data.openbudgets.eu/resource/dataset/aragon-2013-income/observation/261> a qb:Observation ;
+	obeu-dimension:administrativeClassification aragon-codelist-org:77000 ;
+	obeu-dimension:economicClassification aragon-codelist-econ-rev:520000 ;
+	obeu-measure:amount "100,00"^^xsd:double ;
+	obeu-dimension:organization aragon-codelist-fin-rev:91003 ;
+	qb:dataSet <http://data.openbudgets.eu/resource/dataset/aragon-2013-income/> .
+
+<http://data.openbudgets.eu/resource/dataset/aragon-2013-income/observation/262> a qb:Observation .
+
+<http://data.openbudgets.eu/resource/dataset/aragon-2013-income> a qb:DataSet ;
+	obeu-dimension:budgetaryUnit <http://dbpedia.org/page/Aragon> ;
+	obeu-dimension:operationCharacter obeu-operation:revenue ;
+	obeu-attribute:currency <http://data.openbudgets.eu/codelist/currency/EUR> ;
+	qb:structure <http://example.openbudgets.eu/ontology/dsd/aragon-budget> .
