@@ -1,0 +1,827 @@
+{
+  "@graph": [
+    {
+      "@graph": [
+        {
+          "@id": "http://obeu.vse.cz:9080/resources/pipelines/eu-budget-2014",
+          "@type": [
+            "http://linkedpipes.com/ontology/Pipeline"
+          ],
+          "http://www.w3.org/2004/02/skos/core#prefLabel": "EU budget 2014"
+        },
+        {
+          "@id": "http://obeu.vse.cz:9080/resources/pipelines/eu-budget-2014/components/cd444470-efbb-4215-a4b8-0bf7d23b66ed",
+          "@type": [
+            "http://linkedpipes.com/ontology/Component"
+          ],
+          "http://www.w3.org/2004/02/skos/core#prefLabel": "HTTP get",
+          "http://linkedpipes.com/ontology/template": {
+            "@id": "http://obeu.vse.cz:9080/resources/components/e-httpGetFile"
+          },
+          "http://linkedpipes.com/ontology/x": 40,
+          "http://linkedpipes.com/ontology/y": 60,
+          "http://linkedpipes.com/ontology/configurationGraph": {
+            "@id": "http://obeu.vse.cz:9080/resources/pipelines/eu-budget-2014/components/cd444470-efbb-4215-a4b8-0bf7d23b66ed/configuration"
+          }
+        },
+        {
+          "@id": "http://obeu.vse.cz:9080/resources/pipelines/eu-budget-2014/components/d20afb12-09e1-4bd2-b4c7-8d0a2995db39",
+          "@type": [
+            "http://linkedpipes.com/ontology/Component"
+          ],
+          "http://www.w3.org/2004/02/skos/core#prefLabel": "Decompress zip archive",
+          "http://linkedpipes.com/ontology/template": {
+            "@id": "http://obeu.vse.cz:9080/resources/components/t-unpackZip"
+          },
+          "http://linkedpipes.com/ontology/x": 280,
+          "http://linkedpipes.com/ontology/y": 60,
+          "http://linkedpipes.com/ontology/configurationGraph": {
+            "@id": "http://obeu.vse.cz:9080/resources/pipelines/eu-budget-2014/components/d20afb12-09e1-4bd2-b4c7-8d0a2995db39/configuration"
+          }
+        },
+        {
+          "@id": "http://obeu.vse.cz:9080/resources/pipelines/eu-budget-2014/connection/96d92737-dcba-4951-b7cc-e902fecae0e9",
+          "@type": [
+            "http://linkedpipes.com/ontology/Connection"
+          ],
+          "http://linkedpipes.com/ontology/sourceComponent": {
+            "@id": "http://obeu.vse.cz:9080/resources/pipelines/eu-budget-2014/components/cd444470-efbb-4215-a4b8-0bf7d23b66ed"
+          },
+          "http://linkedpipes.com/ontology/sourceBinding": "FilesOutput",
+          "http://linkedpipes.com/ontology/targetComponent": {
+            "@id": "http://obeu.vse.cz:9080/resources/pipelines/eu-budget-2014/components/d20afb12-09e1-4bd2-b4c7-8d0a2995db39"
+          },
+          "http://linkedpipes.com/ontology/targetBinding": "FilesInput"
+        },
+        {
+          "@id": "http://obeu.vse.cz:9080/resources/pipelines/eu-budget-2014/components/2d5e0200-093a-4921-8f2f-e5e2a59f26c9",
+          "@type": [
+            "http://linkedpipes.com/ontology/Component"
+          ],
+          "http://www.w3.org/2004/02/skos/core#prefLabel": "Files filter",
+          "http://linkedpipes.com/ontology/template": {
+            "@id": "http://obeu.vse.cz:9080/resources/components/t-filesFilter"
+          },
+          "http://linkedpipes.com/ontology/x": 560,
+          "http://linkedpipes.com/ontology/y": 60,
+          "http://linkedpipes.com/ontology/configurationGraph": {
+            "@id": "http://obeu.vse.cz:9080/resources/pipelines/eu-budget-2014/components/2d5e0200-093a-4921-8f2f-e5e2a59f26c9/configuration"
+          },
+          "http://purl.org/dc/terms/description": "Filter budget data"
+        },
+        {
+          "@id": "http://obeu.vse.cz:9080/resources/pipelines/eu-budget-2014/connection/7b56136b-f34e-46e0-9406-500cf20d4ee3",
+          "@type": [
+            "http://linkedpipes.com/ontology/Connection"
+          ],
+          "http://linkedpipes.com/ontology/sourceComponent": {
+            "@id": "http://obeu.vse.cz:9080/resources/pipelines/eu-budget-2014/components/d20afb12-09e1-4bd2-b4c7-8d0a2995db39"
+          },
+          "http://linkedpipes.com/ontology/sourceBinding": "FilesOutput",
+          "http://linkedpipes.com/ontology/targetComponent": {
+            "@id": "http://obeu.vse.cz:9080/resources/pipelines/eu-budget-2014/components/2d5e0200-093a-4921-8f2f-e5e2a59f26c9"
+          },
+          "http://linkedpipes.com/ontology/targetBinding": "InputFiles"
+        },
+        {
+          "@id": "http://obeu.vse.cz:9080/resources/pipelines/eu-budget-2014/components/30c4b253-3711-4c28-b2d0-9ba14145bc92",
+          "@type": [
+            "http://linkedpipes.com/ontology/Component"
+          ],
+          "http://www.w3.org/2004/02/skos/core#prefLabel": "Files to SCP",
+          "http://linkedpipes.com/ontology/template": {
+            "@id": "http://obeu.vse.cz:9080/resources/components/l-filesToScp"
+          },
+          "http://linkedpipes.com/ontology/x": 840,
+          "http://linkedpipes.com/ontology/y": 340,
+          "http://linkedpipes.com/ontology/configurationGraph": {
+            "@id": "http://obeu.vse.cz:9080/resources/pipelines/eu-budget-2014/components/30c4b253-3711-4c28-b2d0-9ba14145bc92/configuration"
+          }
+        },
+        {
+          "@id": "http://obeu.vse.cz:9080/resources/pipelines/eu-budget-2014/components/fc579bba-e61d-4a76-9dd5-672cf84a26ac",
+          "@type": [
+            "http://linkedpipes.com/ontology/Component"
+          ],
+          "http://www.w3.org/2004/02/skos/core#prefLabel": "XSLT transformer",
+          "http://linkedpipes.com/ontology/template": {
+            "@id": "http://obeu.vse.cz:9080/resources/components/t-xslt"
+          },
+          "http://linkedpipes.com/ontology/x": 40,
+          "http://linkedpipes.com/ontology/y": 160,
+          "http://linkedpipes.com/ontology/configurationGraph": {
+            "@id": "http://obeu.vse.cz:9080/resources/pipelines/eu-budget-2014/components/fc579bba-e61d-4a76-9dd5-672cf84a26ac/configuration"
+          },
+          "http://purl.org/dc/terms/description": "Data Cube Vocabulary data"
+        },
+        {
+          "@id": "http://obeu.vse.cz:9080/resources/pipelines/eu-budget-2014/connection/7b0aacc1-d865-4d10-90a7-41800b44ed25",
+          "@type": [
+            "http://linkedpipes.com/ontology/Connection"
+          ],
+          "http://linkedpipes.com/ontology/sourceComponent": {
+            "@id": "http://obeu.vse.cz:9080/resources/pipelines/eu-budget-2014/components/2d5e0200-093a-4921-8f2f-e5e2a59f26c9"
+          },
+          "http://linkedpipes.com/ontology/sourceBinding": "OutputFiles",
+          "http://linkedpipes.com/ontology/targetComponent": {
+            "@id": "http://obeu.vse.cz:9080/resources/pipelines/eu-budget-2014/components/fc579bba-e61d-4a76-9dd5-672cf84a26ac"
+          },
+          "http://linkedpipes.com/ontology/targetBinding": "FilesInput",
+          "http://linkedpipes.com/ontology/vertex": [
+            {
+              "@id": "http://obeu.vse.cz:9080/resources/pipelines/eu-budget-2014/connection/7b0aacc1-d865-4d10-90a7-41800b44ed25/vertex/1"
+            },
+            {
+              "@id": "http://obeu.vse.cz:9080/resources/pipelines/eu-budget-2014/connection/7b0aacc1-d865-4d10-90a7-41800b44ed25/vertex/2"
+            }
+          ]
+        },
+        {
+          "@id": "http://obeu.vse.cz:9080/resources/pipelines/eu-budget-2014/components/39cb6a5b-3497-4d88-ab0f-9c794c4c747f",
+          "@type": [
+            "http://linkedpipes.com/ontology/Component"
+          ],
+          "http://www.w3.org/2004/02/skos/core#prefLabel": "Files to RDF",
+          "http://linkedpipes.com/ontology/template": {
+            "@id": "http://obeu.vse.cz:9080/resources/components/t-filesToRdf"
+          },
+          "http://linkedpipes.com/ontology/x": 320,
+          "http://linkedpipes.com/ontology/y": 160,
+          "http://linkedpipes.com/ontology/configurationGraph": {
+            "@id": "http://obeu.vse.cz:9080/resources/pipelines/eu-budget-2014/components/39cb6a5b-3497-4d88-ab0f-9c794c4c747f/configuration"
+          }
+        },
+        {
+          "@id": "http://obeu.vse.cz:9080/resources/pipelines/eu-budget-2014/connection/587075a8-5d22-4856-b18e-bb582ef28713",
+          "@type": [
+            "http://linkedpipes.com/ontology/Connection"
+          ],
+          "http://linkedpipes.com/ontology/sourceComponent": {
+            "@id": "http://obeu.vse.cz:9080/resources/pipelines/eu-budget-2014/components/fc579bba-e61d-4a76-9dd5-672cf84a26ac"
+          },
+          "http://linkedpipes.com/ontology/sourceBinding": "FilesOutput",
+          "http://linkedpipes.com/ontology/targetComponent": {
+            "@id": "http://obeu.vse.cz:9080/resources/pipelines/eu-budget-2014/components/39cb6a5b-3497-4d88-ab0f-9c794c4c747f"
+          },
+          "http://linkedpipes.com/ontology/targetBinding": "InputFiles"
+        },
+        {
+          "@id": "http://obeu.vse.cz:9080/resources/pipelines/eu-budget-2014/components/7e905f3c-502a-4a0d-b84c-27ddf904248b",
+          "@type": [
+            "http://linkedpipes.com/ontology/Component"
+          ],
+          "http://www.w3.org/2004/02/skos/core#prefLabel": "Graph merger",
+          "http://linkedpipes.com/ontology/template": {
+            "@id": "http://obeu.vse.cz:9080/resources/components/t-graphMerger"
+          },
+          "http://linkedpipes.com/ontology/x": 520,
+          "http://linkedpipes.com/ontology/y": 240
+        },
+        {
+          "@id": "http://obeu.vse.cz:9080/resources/pipelines/eu-budget-2014/connection/e26d7b3f-7052-4814-a4b5-c120f47bc490",
+          "@type": [
+            "http://linkedpipes.com/ontology/Connection"
+          ],
+          "http://linkedpipes.com/ontology/sourceComponent": {
+            "@id": "http://obeu.vse.cz:9080/resources/pipelines/eu-budget-2014/components/39cb6a5b-3497-4d88-ab0f-9c794c4c747f"
+          },
+          "http://linkedpipes.com/ontology/sourceBinding": "OutputRdf",
+          "http://linkedpipes.com/ontology/targetComponent": {
+            "@id": "http://obeu.vse.cz:9080/resources/pipelines/eu-budget-2014/components/7e905f3c-502a-4a0d-b84c-27ddf904248b"
+          },
+          "http://linkedpipes.com/ontology/targetBinding": "InputRdf"
+        },
+        {
+          "@id": "http://obeu.vse.cz:9080/resources/pipelines/eu-budget-2014/components/0b1d44ac-0c56-4190-a7af-2c2e0ebeacb8",
+          "@type": [
+            "http://linkedpipes.com/ontology/Component"
+          ],
+          "http://www.w3.org/2004/02/skos/core#prefLabel": "RDF to file",
+          "http://linkedpipes.com/ontology/template": {
+            "@id": "http://obeu.vse.cz:9080/resources/components/t-rdfToFile"
+          },
+          "http://linkedpipes.com/ontology/x": 840,
+          "http://linkedpipes.com/ontology/y": 240,
+          "http://linkedpipes.com/ontology/configurationGraph": {
+            "@id": "http://obeu.vse.cz:9080/resources/pipelines/eu-budget-2014/components/0b1d44ac-0c56-4190-a7af-2c2e0ebeacb8/configuration"
+          }
+        },
+        {
+          "@id": "http://obeu.vse.cz:9080/resources/pipelines/eu-budget-2014/connection/96a5f1ef-78c6-4ef8-93b6-6a8fd6aed350",
+          "@type": [
+            "http://linkedpipes.com/ontology/Connection"
+          ],
+          "http://linkedpipes.com/ontology/sourceComponent": {
+            "@id": "http://obeu.vse.cz:9080/resources/pipelines/eu-budget-2014/components/0b1d44ac-0c56-4190-a7af-2c2e0ebeacb8"
+          },
+          "http://linkedpipes.com/ontology/sourceBinding": "OutputFile",
+          "http://linkedpipes.com/ontology/targetComponent": {
+            "@id": "http://obeu.vse.cz:9080/resources/pipelines/eu-budget-2014/components/30c4b253-3711-4c28-b2d0-9ba14145bc92"
+          },
+          "http://linkedpipes.com/ontology/targetBinding": "FilesInput",
+          "http://linkedpipes.com/ontology/vertex": [
+            {
+              "@id": "http://obeu.vse.cz:9080/resources/pipelines/eu-budget-2014/connection/96a5f1ef-78c6-4ef8-93b6-6a8fd6aed350/vertex/1"
+            },
+            {
+              "@id": "http://obeu.vse.cz:9080/resources/pipelines/eu-budget-2014/connection/96a5f1ef-78c6-4ef8-93b6-6a8fd6aed350/vertex/2"
+            }
+          ]
+        },
+        {
+          "@id": "http://obeu.vse.cz:9080/resources/pipelines/eu-budget-2014/components/0c85240c-dd0f-45cb-894c-d2af346dd37d",
+          "@type": [
+            "http://linkedpipes.com/ontology/Component"
+          ],
+          "http://www.w3.org/2004/02/skos/core#prefLabel": "Virtuoso loader",
+          "http://linkedpipes.com/ontology/template": {
+            "@id": "http://obeu.vse.cz:9080/resources/components/x-virtuoso"
+          },
+          "http://linkedpipes.com/ontology/x": 520,
+          "http://linkedpipes.com/ontology/y": 340,
+          "http://linkedpipes.com/ontology/configurationGraph": {
+            "@id": "http://obeu.vse.cz:9080/resources/pipelines/eu-budget-2014/components/0c85240c-dd0f-45cb-894c-d2af346dd37d/configuration"
+          }
+        },
+        {
+          "@id": "http://obeu.vse.cz:9080/resources/pipelines/eu-budget-2014/connection/4eddae3f-f5f2-4aff-8794-e4ecc02f6cdf",
+          "@type": [
+            "http://linkedpipes.com/ontology/RunAfter"
+          ],
+          "http://linkedpipes.com/ontology/sourceComponent": {
+            "@id": "http://obeu.vse.cz:9080/resources/pipelines/eu-budget-2014/components/30c4b253-3711-4c28-b2d0-9ba14145bc92"
+          },
+          "http://linkedpipes.com/ontology/targetComponent": {
+            "@id": "http://obeu.vse.cz:9080/resources/pipelines/eu-budget-2014/components/0c85240c-dd0f-45cb-894c-d2af346dd37d"
+          }
+        },
+        {
+          "@id": "http://obeu.vse.cz:9080/resources/pipelines/eu-budget-2014/components/a0b939af-56a3-41b4-8105-b996f3db880c",
+          "@type": [
+            "http://linkedpipes.com/ontology/Component"
+          ],
+          "http://www.w3.org/2004/02/skos/core#prefLabel": "Text holder",
+          "http://linkedpipes.com/ontology/template": {
+            "@id": "http://obeu.vse.cz:9080/resources/components/e-textHolder"
+          },
+          "http://linkedpipes.com/ontology/x": 840,
+          "http://linkedpipes.com/ontology/y": 60,
+          "http://linkedpipes.com/ontology/configurationGraph": {
+            "@id": "http://obeu.vse.cz:9080/resources/pipelines/eu-budget-2014/components/a0b939af-56a3-41b4-8105-b996f3db880c/configuration"
+          }
+        },
+        {
+          "@id": "http://obeu.vse.cz:9080/resources/pipelines/eu-budget-2014/components/c68d2cbb-ec46-4279-915e-56efda0ad67e",
+          "@type": [
+            "http://linkedpipes.com/ontology/Component"
+          ],
+          "http://www.w3.org/2004/02/skos/core#prefLabel": "Files to RDF",
+          "http://linkedpipes.com/ontology/template": {
+            "@id": "http://obeu.vse.cz:9080/resources/components/t-filesToRdf"
+          },
+          "http://linkedpipes.com/ontology/x": 840,
+          "http://linkedpipes.com/ontology/y": 160,
+          "http://linkedpipes.com/ontology/configurationGraph": {
+            "@id": "http://obeu.vse.cz:9080/resources/pipelines/eu-budget-2014/components/c68d2cbb-ec46-4279-915e-56efda0ad67e/configuration"
+          }
+        },
+        {
+          "@id": "http://obeu.vse.cz:9080/resources/pipelines/eu-budget-2014/connection/243a274e-3b8c-46e4-b7c3-612247226b08",
+          "@type": [
+            "http://linkedpipes.com/ontology/Connection"
+          ],
+          "http://linkedpipes.com/ontology/sourceComponent": {
+            "@id": "http://obeu.vse.cz:9080/resources/pipelines/eu-budget-2014/components/a0b939af-56a3-41b4-8105-b996f3db880c"
+          },
+          "http://linkedpipes.com/ontology/sourceBinding": "FilesOutput",
+          "http://linkedpipes.com/ontology/targetComponent": {
+            "@id": "http://obeu.vse.cz:9080/resources/pipelines/eu-budget-2014/components/c68d2cbb-ec46-4279-915e-56efda0ad67e"
+          },
+          "http://linkedpipes.com/ontology/targetBinding": "InputFiles"
+        },
+        {
+          "@id": "http://obeu.vse.cz:9080/resources/pipelines/eu-budget-2014/connection/b51700d2-feea-484e-8088-e6a35cfbfd47",
+          "@type": [
+            "http://linkedpipes.com/ontology/Connection"
+          ],
+          "http://linkedpipes.com/ontology/sourceComponent": {
+            "@id": "http://obeu.vse.cz:9080/resources/pipelines/eu-budget-2014/components/c68d2cbb-ec46-4279-915e-56efda0ad67e"
+          },
+          "http://linkedpipes.com/ontology/sourceBinding": "OutputRdf",
+          "http://linkedpipes.com/ontology/targetComponent": {
+            "@id": "http://obeu.vse.cz:9080/resources/pipelines/eu-budget-2014/components/7e905f3c-502a-4a0d-b84c-27ddf904248b"
+          },
+          "http://linkedpipes.com/ontology/targetBinding": "InputRdf",
+          "http://linkedpipes.com/ontology/vertex": [
+            {
+              "@id": "http://obeu.vse.cz:9080/resources/pipelines/eu-budget-2014/connection/b51700d2-feea-484e-8088-e6a35cfbfd47/vertex/1"
+            },
+            {
+              "@id": "http://obeu.vse.cz:9080/resources/pipelines/eu-budget-2014/connection/b51700d2-feea-484e-8088-e6a35cfbfd47/vertex/2"
+            },
+            {
+              "@id": "http://obeu.vse.cz:9080/resources/pipelines/eu-budget-2014/connection/b51700d2-feea-484e-8088-e6a35cfbfd47/vertex/3"
+            }
+          ]
+        },
+        {
+          "@id": "http://obeu.vse.cz:9080/resources/pipelines/eu-budget-2014/connection/eff08a63-af97-4176-a153-381c3d916fc2",
+          "@type": [
+            "http://linkedpipes.com/ontology/Connection"
+          ],
+          "http://linkedpipes.com/ontology/sourceComponent": {
+            "@id": "http://obeu.vse.cz:9080/resources/pipelines/eu-budget-2014/components/7e905f3c-502a-4a0d-b84c-27ddf904248b"
+          },
+          "http://linkedpipes.com/ontology/sourceBinding": "OutputRdf",
+          "http://linkedpipes.com/ontology/targetComponent": {
+            "@id": "http://obeu.vse.cz:9080/resources/pipelines/eu-budget-2014/components/0b1d44ac-0c56-4190-a7af-2c2e0ebeacb8"
+          },
+          "http://linkedpipes.com/ontology/targetBinding": "InputRdf"
+        },
+        {
+          "@id": "http://obeu.vse.cz:9080/resources/pipelines/eu-budget-2014/components/7b014582-2d51-46c6-a8d1-89b3b1ae1c77",
+          "@type": [
+            "http://linkedpipes.com/ontology/Component"
+          ],
+          "http://www.w3.org/2004/02/skos/core#prefLabel": "Dataset metadata",
+          "http://linkedpipes.com/ontology/template": {
+            "@id": "http://obeu.vse.cz:9080/resources/components/e-datasetMetadata"
+          },
+          "http://linkedpipes.com/ontology/x": 40,
+          "http://linkedpipes.com/ontology/y": 300,
+          "http://linkedpipes.com/ontology/configurationGraph": {
+            "@id": "http://obeu.vse.cz:9080/resources/pipelines/eu-budget-2014/components/7b014582-2d51-46c6-a8d1-89b3b1ae1c77/configuration"
+          }
+        },
+        {
+          "@id": "http://obeu.vse.cz:9080/resources/pipelines/eu-budget-2014/components/35246b34-fd63-4e22-85f7-f1bc15627737",
+          "@type": [
+            "http://linkedpipes.com/ontology/Component"
+          ],
+          "http://www.w3.org/2004/02/skos/core#prefLabel": "Distribution metadata",
+          "http://linkedpipes.com/ontology/template": {
+            "@id": "http://obeu.vse.cz:9080/resources/components/e-distributionMetadata"
+          },
+          "http://linkedpipes.com/ontology/x": 40,
+          "http://linkedpipes.com/ontology/y": 400,
+          "http://linkedpipes.com/ontology/configurationGraph": {
+            "@id": "http://obeu.vse.cz:9080/resources/pipelines/eu-budget-2014/components/35246b34-fd63-4e22-85f7-f1bc15627737/configuration"
+          }
+        },
+        {
+          "@id": "http://obeu.vse.cz:9080/resources/pipelines/eu-budget-2014/connection/c766c5fd-e024-4e84-a274-2784e9cf9684",
+          "@type": [
+            "http://linkedpipes.com/ontology/Connection"
+          ],
+          "http://linkedpipes.com/ontology/sourceComponent": {
+            "@id": "http://obeu.vse.cz:9080/resources/pipelines/eu-budget-2014/components/7b014582-2d51-46c6-a8d1-89b3b1ae1c77"
+          },
+          "http://linkedpipes.com/ontology/sourceBinding": "Metadata",
+          "http://linkedpipes.com/ontology/targetComponent": {
+            "@id": "http://obeu.vse.cz:9080/resources/pipelines/eu-budget-2014/components/35246b34-fd63-4e22-85f7-f1bc15627737"
+          },
+          "http://linkedpipes.com/ontology/targetBinding": "DatasetMetadata"
+        },
+        {
+          "@id": "http://obeu.vse.cz:9080/resources/pipelines/eu-budget-2014/components/6906d5a4-6dd0-4386-92b2-4519c29aded8",
+          "@type": [
+            "http://linkedpipes.com/ontology/Component"
+          ],
+          "http://www.w3.org/2004/02/skos/core#prefLabel": "RDF to file",
+          "http://linkedpipes.com/ontology/template": {
+            "@id": "http://obeu.vse.cz:9080/resources/components/t-rdfToFile"
+          },
+          "http://linkedpipes.com/ontology/x": 340,
+          "http://linkedpipes.com/ontology/y": 300,
+          "http://linkedpipes.com/ontology/configurationGraph": {
+            "@id": "http://obeu.vse.cz:9080/resources/pipelines/eu-budget-2014/components/6906d5a4-6dd0-4386-92b2-4519c29aded8/configuration"
+          }
+        },
+        {
+          "@id": "http://obeu.vse.cz:9080/resources/pipelines/eu-budget-2014/connection/1b9bcf25-e79d-4f3a-8303-10ba896386f9",
+          "@type": [
+            "http://linkedpipes.com/ontology/Connection"
+          ],
+          "http://linkedpipes.com/ontology/sourceComponent": {
+            "@id": "http://obeu.vse.cz:9080/resources/pipelines/eu-budget-2014/components/7b014582-2d51-46c6-a8d1-89b3b1ae1c77"
+          },
+          "http://linkedpipes.com/ontology/sourceBinding": "Metadata",
+          "http://linkedpipes.com/ontology/targetComponent": {
+            "@id": "http://obeu.vse.cz:9080/resources/pipelines/eu-budget-2014/components/6906d5a4-6dd0-4386-92b2-4519c29aded8"
+          },
+          "http://linkedpipes.com/ontology/targetBinding": "InputRdf"
+        },
+        {
+          "@id": "http://obeu.vse.cz:9080/resources/pipelines/eu-budget-2014/connection/e323cef5-e524-42a5-8283-9603df4b4821",
+          "@type": [
+            "http://linkedpipes.com/ontology/Connection"
+          ],
+          "http://linkedpipes.com/ontology/sourceComponent": {
+            "@id": "http://obeu.vse.cz:9080/resources/pipelines/eu-budget-2014/components/6906d5a4-6dd0-4386-92b2-4519c29aded8"
+          },
+          "http://linkedpipes.com/ontology/sourceBinding": "OutputFile",
+          "http://linkedpipes.com/ontology/targetComponent": {
+            "@id": "http://obeu.vse.cz:9080/resources/pipelines/eu-budget-2014/components/30c4b253-3711-4c28-b2d0-9ba14145bc92"
+          },
+          "http://linkedpipes.com/ontology/targetBinding": "FilesInput",
+          "http://linkedpipes.com/ontology/vertex": [
+            {
+              "@id": "http://obeu.vse.cz:9080/resources/pipelines/eu-budget-2014/connection/e323cef5-e524-42a5-8283-9603df4b4821/vertex/1"
+            }
+          ]
+        },
+        {
+          "@id": "http://obeu.vse.cz:9080/resources/pipelines/eu-budget-2014/connection/d477671a-0380-49d2-9a07-08333a1f2891",
+          "@type": [
+            "http://linkedpipes.com/ontology/Connection"
+          ],
+          "http://linkedpipes.com/ontology/sourceComponent": {
+            "@id": "http://obeu.vse.cz:9080/resources/pipelines/eu-budget-2014/components/35246b34-fd63-4e22-85f7-f1bc15627737"
+          },
+          "http://linkedpipes.com/ontology/sourceBinding": "Metadata",
+          "http://linkedpipes.com/ontology/targetComponent": {
+            "@id": "http://obeu.vse.cz:9080/resources/pipelines/eu-budget-2014/components/6906d5a4-6dd0-4386-92b2-4519c29aded8"
+          },
+          "http://linkedpipes.com/ontology/targetBinding": "InputRdf"
+        },
+        {
+          "@id": "http://obeu.vse.cz:9080/resources/pipelines/eu-budget-2014/components/c50bfdb6-0486-49db-aed4-ae4a8d73a1f6",
+          "@type": [
+            "http://linkedpipes.com/ontology/Component"
+          ],
+          "http://www.w3.org/2004/02/skos/core#prefLabel": "DCAT-AP to CKAN",
+          "http://linkedpipes.com/ontology/template": {
+            "@id": "http://obeu.vse.cz:9080/resources/components/l-dcatApToCkan"
+          },
+          "http://linkedpipes.com/ontology/x": 360,
+          "http://linkedpipes.com/ontology/y": 400,
+          "http://linkedpipes.com/ontology/configurationGraph": {
+            "@id": "http://obeu.vse.cz:9080/resources/pipelines/eu-budget-2014/components/c50bfdb6-0486-49db-aed4-ae4a8d73a1f6/configuration"
+          }
+        },
+        {
+          "@id": "http://obeu.vse.cz:9080/resources/pipelines/eu-budget-2014/connection/a21552c9-5c2a-4854-bd19-f623f7e4985a",
+          "@type": [
+            "http://linkedpipes.com/ontology/Connection"
+          ],
+          "http://linkedpipes.com/ontology/sourceComponent": {
+            "@id": "http://obeu.vse.cz:9080/resources/pipelines/eu-budget-2014/components/7b014582-2d51-46c6-a8d1-89b3b1ae1c77"
+          },
+          "http://linkedpipes.com/ontology/sourceBinding": "Metadata",
+          "http://linkedpipes.com/ontology/targetComponent": {
+            "@id": "http://obeu.vse.cz:9080/resources/pipelines/eu-budget-2014/components/c50bfdb6-0486-49db-aed4-ae4a8d73a1f6"
+          },
+          "http://linkedpipes.com/ontology/targetBinding": "Metadata"
+        },
+        {
+          "@id": "http://obeu.vse.cz:9080/resources/pipelines/eu-budget-2014/connection/d7d93997-fe1d-4556-89d7-67701e8c0972",
+          "@type": [
+            "http://linkedpipes.com/ontology/Connection"
+          ],
+          "http://linkedpipes.com/ontology/sourceComponent": {
+            "@id": "http://obeu.vse.cz:9080/resources/pipelines/eu-budget-2014/components/35246b34-fd63-4e22-85f7-f1bc15627737"
+          },
+          "http://linkedpipes.com/ontology/sourceBinding": "Metadata",
+          "http://linkedpipes.com/ontology/targetComponent": {
+            "@id": "http://obeu.vse.cz:9080/resources/pipelines/eu-budget-2014/components/c50bfdb6-0486-49db-aed4-ae4a8d73a1f6"
+          },
+          "http://linkedpipes.com/ontology/targetBinding": "Metadata"
+        },
+        {
+          "@id": "http://obeu.vse.cz:9080/resources/pipelines/eu-budget-2014/connection/7b0aacc1-d865-4d10-90a7-41800b44ed25/vertex/1",
+          "@type": "http://linkedpipes.com/ontology/Vertex",
+          "http://linkedpipes.com/ontology/x": 740,
+          "http://linkedpipes.com/ontology/y": 140,
+          "http://linkedpipes.com/ontology/order": 1
+        },
+        {
+          "@id": "http://obeu.vse.cz:9080/resources/pipelines/eu-budget-2014/connection/7b0aacc1-d865-4d10-90a7-41800b44ed25/vertex/2",
+          "@type": "http://linkedpipes.com/ontology/Vertex",
+          "http://linkedpipes.com/ontology/x": 40,
+          "http://linkedpipes.com/ontology/y": 140,
+          "http://linkedpipes.com/ontology/order": 2
+        },
+        {
+          "@id": "http://obeu.vse.cz:9080/resources/pipelines/eu-budget-2014/connection/96a5f1ef-78c6-4ef8-93b6-6a8fd6aed350/vertex/1",
+          "@type": "http://linkedpipes.com/ontology/Vertex",
+          "http://linkedpipes.com/ontology/x": 940,
+          "http://linkedpipes.com/ontology/y": 300,
+          "http://linkedpipes.com/ontology/order": 1
+        },
+        {
+          "@id": "http://obeu.vse.cz:9080/resources/pipelines/eu-budget-2014/connection/96a5f1ef-78c6-4ef8-93b6-6a8fd6aed350/vertex/2",
+          "@type": "http://linkedpipes.com/ontology/Vertex",
+          "http://linkedpipes.com/ontology/x": 840,
+          "http://linkedpipes.com/ontology/y": 300,
+          "http://linkedpipes.com/ontology/order": 2
+        },
+        {
+          "@id": "http://obeu.vse.cz:9080/resources/pipelines/eu-budget-2014/connection/b51700d2-feea-484e-8088-e6a35cfbfd47/vertex/1",
+          "@type": "http://linkedpipes.com/ontology/Vertex",
+          "http://linkedpipes.com/ontology/x": 940,
+          "http://linkedpipes.com/ontology/y": 220,
+          "http://linkedpipes.com/ontology/order": 1
+        },
+        {
+          "@id": "http://obeu.vse.cz:9080/resources/pipelines/eu-budget-2014/connection/b51700d2-feea-484e-8088-e6a35cfbfd47/vertex/2",
+          "@type": "http://linkedpipes.com/ontology/Vertex",
+          "http://linkedpipes.com/ontology/x": 520,
+          "http://linkedpipes.com/ontology/y": 220,
+          "http://linkedpipes.com/ontology/order": 2
+        },
+        {
+          "@id": "http://obeu.vse.cz:9080/resources/pipelines/eu-budget-2014/connection/b51700d2-feea-484e-8088-e6a35cfbfd47/vertex/3",
+          "@type": "http://linkedpipes.com/ontology/Vertex",
+          "http://linkedpipes.com/ontology/x": 520,
+          "http://linkedpipes.com/ontology/y": 260,
+          "http://linkedpipes.com/ontology/order": 3
+        },
+        {
+          "@id": "http://obeu.vse.cz:9080/resources/pipelines/eu-budget-2014/connection/e323cef5-e524-42a5-8283-9603df4b4821/vertex/1",
+          "@type": "http://linkedpipes.com/ontology/Vertex",
+          "http://linkedpipes.com/ontology/x": 720,
+          "http://linkedpipes.com/ontology/y": 320,
+          "http://linkedpipes.com/ontology/order": 1
+        }
+      ],
+      "@id": "http://obeu.vse.cz:9080/resources/pipelines/eu-budget-2014"
+    },
+    {
+      "@graph": [
+        {
+          "@id": "http://localhost/resources/configuration",
+          "@type": [
+            "http://plugins.linkedpipes.com/ontology/e-httpGetFile#Configuration"
+          ],
+          "http://plugins.linkedpipes.com/ontology/e-httpGetFile#fileUri": "http://eur-lex.europa.eu/budget/data/General/2014/en/Final-budget-2014-EN.zip",
+          "http://plugins.linkedpipes.com/ontology/e-httpGetFile#fileName": "eu_budget_2014.zip"
+        }
+      ],
+      "@id": "http://obeu.vse.cz:9080/resources/pipelines/eu-budget-2014/components/cd444470-efbb-4215-a4b8-0bf7d23b66ed/configuration"
+    },
+    {
+      "@graph": [
+        {
+          "@id": "http://localhost/resources/configuration",
+          "@type": [
+            "http://plugins.linkedpipes.com/ontology/t-unpackZip#Configuration"
+          ],
+          "http://plugins.linkedpipes.com/ontology/t-unpackZip#usePrefix": false
+        }
+      ],
+      "@id": "http://obeu.vse.cz:9080/resources/pipelines/eu-budget-2014/components/d20afb12-09e1-4bd2-b4c7-8d0a2995db39/configuration"
+    },
+    {
+      "@graph": [
+        {
+          "@id": "http://localhost/resources/configuration",
+          "@type": [
+            "http://plugins.linkedpipes.com/ontology/l-filesToScp#Configuration"
+          ],
+          "http://plugins.linkedpipes.com/ontology/l-filesToScp#userName": "uploader",
+          "http://plugins.linkedpipes.com/ontology/l-filesToScp#password": "obeu",
+          "http://plugins.linkedpipes.com/ontology/l-filesToScp#host": "obeu.vse.cz",
+          "http://plugins.linkedpipes.com/ontology/l-filesToScp#port": 22,
+          "http://plugins.linkedpipes.com/ontology/l-filesToScp#targetDirectory": "/data/dump",
+          "http://plugins.linkedpipes.com/ontology/l-filesToScp#createDirectory": true
+        }
+      ],
+      "@id": "http://obeu.vse.cz:9080/resources/pipelines/eu-budget-2014/components/9a86e3fa-6da3-4621-bbec-49beb6513e86/configuration"
+    },
+    {
+      "@graph": [
+        {
+          "@id": "http://localhost/resources/configuration",
+          "@type": [
+            "http://plugins.linkedpipes.com/ontology/t-filesFilter#Configuration"
+          ],
+          "http://plugins.linkedpipes.com/ontology/t-filesFilter#fileNamePattern": "^.*c!SEC.*\\.xml$"
+        }
+      ],
+      "@id": "http://obeu.vse.cz:9080/resources/pipelines/eu-budget-2014/components/2d5e0200-093a-4921-8f2f-e5e2a59f26c9/configuration"
+    },
+    {
+      "@graph": [
+        {
+          "@id": "http://localhost/resources/configuration",
+          "@type": [
+            "http://plugins.linkedpipes.com/ontology/l-filesToScp#Configuration"
+          ],
+          "http://plugins.linkedpipes.com/ontology/l-filesToScp#userName": "uploader",
+          "http://plugins.linkedpipes.com/ontology/l-filesToScp#password": "obeu",
+          "http://plugins.linkedpipes.com/ontology/l-filesToScp#host": "obeu.vse.cz",
+          "http://plugins.linkedpipes.com/ontology/l-filesToScp#port": 22,
+          "http://plugins.linkedpipes.com/ontology/l-filesToScp#targetDirectory": "/data/dump",
+          "http://plugins.linkedpipes.com/ontology/l-filesToScp#createDirectory": true
+        }
+      ],
+      "@id": "http://obeu.vse.cz:9080/resources/pipelines/eu-budget-2014/components/30c4b253-3711-4c28-b2d0-9ba14145bc92/configuration"
+    },
+    {
+      "@graph": [
+        {
+          "@id": "http://localhost/resources/configuration",
+          "@type": [
+            "http://plugins.linkedpipes.com/ontology/t-xslt#Configuration"
+          ],
+          "http://plugins.linkedpipes.com/ontology/t-xslt#template": "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<!DOCTYPE xsl:stylesheet [\n    <!ENTITY xsd            \"http://www.w3.org/2001/XMLSchema#\">\n    <!ENTITY eu-operation   \"http://data.openbudgets.eu/resource/eu-budget-2014/codelist/operation-character/\">\n    <!ENTITY obeu-operation \"http://data.openbudgets.eu/resource/codelist/operation-character/\">\n]>\n<xsl:stylesheet\n    xmlns:dcterms=\"http://purl.org/dc/terms/\"\n    xmlns:f=\"http://opendata.cz/xslt/functions#\"\n    xmlns:eu=\"http://data.openbudgets.eu/ontology/budget-of-the-european-union/\"\n    xmlns:eu-attribute=\"http://data.openbudgets.eu/ontology/dsd/eu-budget-2014/attribute/\"\n    xmlns:eu-dimension=\"http://data.openbudgets.eu/ontology/dsd/eu-budget-2014/dimension/\"\n    xmlns:eu-optional=\"http://data.openbudgets.eu/ontology/dsd/eu-budget-2014/optional-property/\"\n    xmlns:obeu-attribute=\"http://data.openbudgets.eu/ontology/dsd/attribute/\"\n    xmlns:obeu-dimension=\"http://data.openbudgets.eu/ontology/dsd/dimension/\"\n    xmlns:obeu-measure=\"http://data.openbudgets.eu/ontology/dsd/measure/\"\n    xmlns:obeu-optional=\"http://data.openbudgets.eu/ontology/dsd/optional/\"\n    xmlns:qb=\"http://purl.org/linked-data/cube#\"\n    xmlns:rdf=\"http://www.w3.org/1999/02/22-rdf-syntax-ns#\"\n    xmlns:rdfs=\"http://www.w3.org/2000/01/rdf-schema#\"\n    xmlns:skos=\"http://www.w3.org/2004/02/skos/core#\"\n    xmlns:xsd=\"http://www.w3.org/2001/XMLSchema\"\n    xmlns:xsl=\"http://www.w3.org/1999/XSL/Transform\"\n    exclude-result-prefixes=\"f xsd\"\n    version=\"2.0\">\n    \n    <!-- Parameters -->\n    \n    <xsl:param name=\"dataset\">http://data.openbudgets.eu/resource/dataset/budget-of-the-european-union-2014</xsl:param>\n    \n    <!-- Global variables -->\n    \n    <xsl:variable name=\"namespace\" select=\"concat($dataset, '/')\"/>\n    <xsl:variable name=\"reserveDataset\" select=\"concat($dataset, '/reserves')\"/>\n    <xsl:variable name=\"reserveNs\" select=\"concat($reserveDataset, '/')\"/>\n    <xsl:variable name=\"budgetNomenclatureNs\">http://data.openbudgets.eu/resource/dataset/budget-of-the-european-union-2014/codelist/eu-budget-nomenclature-2014/</xsl:variable>\n    <xsl:variable name=\"catpolNs\">http://data.openbudgets.eu/resource/codelist/catpol/</xsl:variable>\n    <xsl:variable name=\"yearNs\">http://reference.data.gov.uk/id/year/</xsl:variable>\n    <xsl:variable name=\"budgetPhaseNs\">http://publications.europa.eu/resource/authority/eu-budget-amount-status/</xsl:variable>\n    <xsl:variable name=\"programNs\">http://publications.europa.eu/resource/authority/eu-programme/</xsl:variable>\n    <xsl:variable name=\"agencyNs\">http://publications.europa.eu/resource/authority/corporate-body/</xsl:variable>\n    \n    <xsl:variable name=\"fiscalYears\">\n        <fiscalYear key=\"n\" year=\"2014\" budgetPhase=\"ADOPTED\"/>\n        <fiscalYear key=\"nm1\" year=\"2013\" budgetPhase=\"AMENDED\"/>\n        <fiscalYear key=\"nm2\" year=\"2012\" budgetPhase=\"OUTTURN\"/>\n    </xsl:variable>\n    \n    <xsl:variable name=\"operationCharacters\">\n        <operationCharacter key=\"comm\" ns=\"&eu-operation;\">commitment</operationCharacter>\n        <operationCharacter key=\"pay\" ns=\"&eu-operation;\">payment</operationCharacter>\n        <operationCharacter key=\"default\" ns=\"&obeu-operation;\">expenditure</operationCharacter>\n    </xsl:variable>\n    \n    <!-- Functions -->\n    \n    <xsl:function name=\"f:clearAmount\" as=\"xsd:decimal\">\n        <xsl:param name=\"amount\" as=\"xsd:string\"/>\n        <xsl:choose>\n            <xsl:when test=\"$amount = '—'\">0</xsl:when>\n            <xsl:otherwise>\n                <xsl:value-of select=\"replace(replace($amount, '[\\s]|[^0-9,]', ''), ',', '.')\"/>\n            </xsl:otherwise>\n        </xsl:choose>\n    </xsl:function>\n    \n    <!-- Casts a xsd:date to xsd:dateTime -->\n    <xsl:function name=\"f:dateToDateTime\" as=\"xsd:dateTime\">\n        <xsl:param name=\"date\" as=\"xsd:date\"/>\n        <xsl:value-of select=\"concat($date, 'T00:00:00Z')\"/>\n    </xsl:function>\n    \n    <!-- Mints a new URI in namespace $ns for instance of $class identified with $key. -->\n    <xsl:function name=\"f:getInstanceUri\" as=\"xsd:anyURI\">\n        <xsl:param name=\"class\" as=\"xsd:string\"/>\n        <xsl:param name=\"key\" as=\"xsd:string\"/>\n        <xsl:value-of select=\"concat($namespace, f:kebabCase($class), '/', f:slugify($key))\"/>\n    </xsl:function>\n    \n    <xsl:function name=\"f:inferNomenclatureLevel\" as=\"xsd:string\">\n        <xsl:param name=\"nomenclature\" as=\"xsd:string\"/>\n        <xsl:variable name=\"nomenclatureLength\" select=\"count(tokenize($nomenclature, ' '))\"/>\n        <xsl:choose>\n            <xsl:when test=\"$nomenclatureLength = 1\">title</xsl:when>\n            <xsl:when test=\"$nomenclatureLength = 2\">chapter</xsl:when>\n            <xsl:when test=\"$nomenclatureLength = 3\">article</xsl:when>\n            <xsl:when test=\"$nomenclatureLength = 4\">item</xsl:when>\n            <xsl:when test=\"$nomenclatureLength = 4\">subitem</xsl:when>\n        </xsl:choose>\n    </xsl:function>\n    \n    <!-- Converts camelCase $text into kebab-case. -->\n    <xsl:function name=\"f:kebabCase\" as=\"xsd:string\">\n        <xsl:param name=\"text\" as=\"xsd:string\"/>\n        <xsl:value-of select=\"f:slugify(replace($text, '(\\p{Ll})(\\p{Lu})', '$1-$2'))\"/>\n    </xsl:function>\n    \n    <xsl:function name=\"f:normalizeAgencyCode\" as=\"xsd:string\">\n        <xsl:param name=\"code\" as=\"xsd:string\"/>\n        <xsl:choose>\n            <xsl:when test=\"$code = 'eu.LISA'\">LISA</xsl:when>\n            <xsl:when test=\"$code = 'TEN-T EA'\">TENTEA</xsl:when>\n            <xsl:otherwise><xsl:value-of select=\"$code\"/></xsl:otherwise>\n        </xsl:choose>\n    </xsl:function>\n    \n    <!-- Converts $text into URI-safe slug. -->\n    <xsl:function name=\"f:slugify\" as=\"xsd:anyURI\">\n        <xsl:param name=\"text\" as=\"xsd:string\"/>\n        <xsl:value-of select=\"encode-for-uri(translate(replace(lower-case(normalize-unicode($text, 'NFKD')), '\\P{IsBasicLatin}', ''), ' ', '-'))\" />\n    </xsl:function>\n    \n    <!-- Output -->\n    \n    <xsl:output encoding=\"UTF-8\" indent=\"yes\" method=\"xml\" normalization-form=\"NFC\" />\n    <xsl:strip-space elements=\"*\"/>\n    \n    <!-- Templates -->\n    \n    <xsl:template match=\"/\">\n        <rdf:RDF>\n            <xsl:variable name=\"sectionNumber\">\n                <xsl:analyze-string select=\"tokenize(base-uri(), '/')[last()]\" regex=\"SEC(\\d+)\">\n                    <xsl:matching-substring><xsl:value-of select=\"regex-group(1)\"/></xsl:matching-substring>\n                </xsl:analyze-string>\n            </xsl:variable>\n            <qb:DataSet rdf:about=\"{$dataset}\">\n                <qb:structure rdf:resource=\"http://data.openbudgets.eu/ontology/dsd/eu-budget-2014\"/>\n                <obeu-dimension:budgetaryUnit rdf:resource=\"http://dbpedia.org/resource/European_Union\"/>\n                <obeu-dimension:operationCharacter rdf:resource=\"http://data.openbudgets.eu/resource/codelist/operation-character/expenditure\"/>\n                <xsl:call-template name=\"defaultDatasetComponents\"/>\n            </qb:DataSet>\n            <qb:DataSet rdf:about=\"{$reserveDataset}\">\n                <qb:structure rdf:resource=\"http://data.openbudgets.eu/ontology/dsd/eu-budget-2014-reserves\"/>\n                <xsl:call-template name=\"defaultDatasetComponents\"/>\n            </qb:DataSet>\n            <xsl:apply-templates>\n                <xsl:with-param name=\"sectionNumber\" select=\"$sectionNumber\" tunnel=\"yes\"/>\n            </xsl:apply-templates>\n        </rdf:RDF>    \n    </xsl:template>\n    \n    <xsl:template match=\"*[starts-with(name(), 'nmc-')]\">\n        <xsl:param name=\"sectionNumber\" tunnel=\"yes\"/>\n        <xsl:variable name=\"level\" select=\"substring-after(name(), 'nmc-')\"/>\n        <xsl:variable name=\"notation\" select=\"@alias\"/>\n        <xsl:apply-templates>\n            <xsl:with-param name=\"nomenclature\" select=\"concat($sectionNumber, '-', $level, '-', f:slugify($notation))\" tunnel=\"yes\"/>\n            <xsl:with-param name=\"programsLink\" select=\"@programs-link\" tunnel=\"yes\"/>\n            <xsl:with-param name=\"agencyCode\" select=\"@agency-code\" tunnel=\"yes\"/>\n        </xsl:apply-templates>\n    </xsl:template>\n    \n    <xsl:template match=\"bud-data[not(@tot = 'tot')]\">\n        <xsl:apply-templates>\n            <xsl:with-param name=\"isReserve\" select=\"@type = 'reserve'\" tunnel=\"yes\"/>\n        </xsl:apply-templates>    \n    </xsl:template>\n    \n    <xsl:template match=\"amounts\">\n        <xsl:apply-templates/>\n    </xsl:template>\n    \n    <xsl:template match=\"amount\">\n        <xsl:apply-templates>\n            <xsl:with-param name=\"fiscalYear\" select=\"$fiscalYears/fiscalYear[@key = current()/@year]\" tunnel=\"yes\"/>\n            <xsl:with-param name=\"catpol\" select=\"@catpol\" tunnel=\"yes\"/>\n            <xsl:with-param name=\"compulsoryExpenditure\" select=\"@comp\" tunnel=\"yes\"/>\n            <xsl:with-param name=\"peco\" select=\"@peco\" tunnel=\"yes\"/>\n            <xsl:with-param name=\"aele\" select=\"@aele\" tunnel=\"yes\"/>\n            <xsl:with-param name=\"delegation\" select=\"@delegation\" tunnel=\"yes\"/>\n        </xsl:apply-templates>\n    </xsl:template>\n    \n    <xsl:template match=\"reserve\">\n        <xsl:apply-templates mode=\"reserve\">\n            <xsl:with-param name=\"alias\" select=\"alias/text()\"/>\n        </xsl:apply-templates>\n    </xsl:template>\n    \n    <xsl:template match=\"figure[text() != 'p.m.']\"> <!-- p.m. means \"pro memoria\" -->\n        <xsl:param name=\"nomenclature\" tunnel=\"yes\"/>\n        <xsl:param name=\"programsLink\" tunnel=\"yes\"/>\n        <xsl:param name=\"agencyCode\" tunnel=\"yes\"/>\n        <xsl:param name=\"fiscalYear\" tunnel=\"yes\"/>\n        <xsl:param name=\"isReserve\" tunnel=\"yes\"/>\n        <xsl:param name=\"catpol\" tunnel=\"yes\"/>\n        <xsl:param name=\"compulsoryExpenditure\"/>\n        <xsl:param name=\"peco\"/>\n        <xsl:param name=\"aele\"/>\n        <xsl:param name=\"delegation\"/>\n        <xsl:variable name=\"operationCharacter\" select=\"$operationCharacters/operationCharacter[@key = (if (current()/@commpay) then current()/@commpay else 'default')]\"/>\n        <xsl:variable name=\"observation\" select=\"concat($namespace, 'observation/EU/', $operationCharacter/text(), '/', $fiscalYear/@budgetPhase, '/',\n            $fiscalYear/@year, '/', $nomenclature)\"/>\n        <qb:Observation rdf:about=\"{$observation}\">\n            <qb:dataSet rdf:resource=\"{$dataset}\"/>\n            <eu-dimension:budgetNomenclature rdf:resource=\"{concat($budgetNomenclatureNs, $nomenclature)}\"/>\n            <obeu-dimension:fiscalYear rdf:resource=\"{concat($yearNs, $fiscalYear/@year)}\"/>\n            <eu-dimension:budgetPhase rdf:resource=\"{concat($budgetPhaseNs, $fiscalYear/@budgetPhase)}\"/>\n            <eu-dimension:operationCharacter rdf:resource=\"{concat($operationCharacter/@ns, $operationCharacter/text())}\"/>\n            <xsl:if test=\"$catpol\">\n                <eu-optional:catpol rdf:resource=\"{concat($catpolNs, $catpol)}\"/>\n            </xsl:if>\n            <xsl:if test=\"$programsLink\">\n                <xsl:for-each select=\"tokenize($programsLink, '\\|')\">\n                    <eu:programClassification rdf:resource=\"{concat($programNs, .)}\"/>\n                </xsl:for-each>\n            </xsl:if>\n            <xsl:if test=\"$agencyCode\">\n                <eu:agencyClassification rdf:resource=\"{concat($agencyNs, f:normalizeAgencyCode($agencyCode))}\"/>\n            </xsl:if>\n            <xsl:if test=\"$aele = 'true'\">\n                <eu:agencyClassification rdf:resource=\"http://publications.europa.eu/resource/authority/corporate-body/EFTA\"/>\n            </xsl:if>\n            <xsl:if test=\"$peco = 'true'\">\n                <obeu-optional:location rdf:resource=\"http://fr.dbpedia.org/resource/Europe_centrale_et_orientale\"/>\n            </xsl:if>\n            <xsl:if test=\"$delegation = 'true'\">\n                <eu-optional:isDelegation rdf:datatype=\"&xsd;boolean\">true</eu-optional:isDelegation>\n            </xsl:if>\n            <xsl:if test=\"$compulsoryExpenditure = 'true'\">\n                <eu-optional:compulsoryExpenditure rdf:datatype=\"&xsd;boolean\">true</eu-optional:compulsoryExpenditure>    \n            </xsl:if>\n            <xsl:if test=\"$isReserve\">\n                <eu-optional:isReserve rdf:datatype=\"&xsd;boolean\">true</eu-optional:isReserve>\n            </xsl:if>\n            <obeu-measure:amount rdf:datatype=\"&xsd;decimal\"><xsl:value-of select=\"f:clearAmount(text())\"/></obeu-measure:amount>\n        </qb:Observation>\n    </xsl:template>\n    \n    <xsl:template match=\"figure[text() != 'p.m.']\" mode=\"reserve\">\n        <xsl:param name=\"nomenclature\" tunnel=\"yes\"/>\n        <xsl:param name=\"programsLink\" tunnel=\"yes\"/>\n        <xsl:param name=\"agencyCode\" tunnel=\"yes\"/>\n        <xsl:param name=\"fiscalYear\" tunnel=\"yes\"/>\n        <xsl:param name=\"catpol\" tunnel=\"yes\"/>\n        <xsl:param name=\"alias\"/>\n        <xsl:variable name=\"operationCharacter\" select=\"$operationCharacters/operationCharacter[@key = (if (current()/@commpay) then current()/@commpay else 'default')]\"/>\n        <xsl:variable name=\"observation\" select=\"concat($namespace, 'observation/EU/', $operationCharacter/text(), '/', $fiscalYear/@budgetPhase, '/',\n            $fiscalYear/@year, '/', $nomenclature, '/', $catpol)\"/>\n        <qb:Observation rdf:about=\"{concat($reserveNs, 'observation/EU/', $operationCharacter/text(), '/', $fiscalYear/@budgetPhase, '/',\n            $fiscalYear/@year, '/', $nomenclature, '/', $catpol)}\">\n            <qb:dataSet rdf:resource=\"{$reserveDataset}\"/>\n            <eu-dimension:reservedFor rdf:resource=\"{$observation}\"/>\n            <xsl:if test=\"$alias\">\n                <xsl:variable name=\"reserveNomenclature\" select=\"concat(f:inferNomenclatureLevel($alias), '-', f:slugify($alias))\"/>\n                <eu-optional:budgetNomenclature rdf:resource=\"{concat($budgetNomenclatureNs, $reserveNomenclature)}\"/>\n            </xsl:if>\n            <obeu-measure:amount rdf:datatype=\"&xsd;decimal\"><xsl:value-of select=\"f:clearAmount(text())\"/></obeu-measure:amount>\n        </qb:Observation>\n    </xsl:template>\n    \n    <!-- Catch-all empty template -->\n    <xsl:template match=\"text()|@*|*\" mode=\"#all\"/>\n    \n    <!-- Named templates -->\n    \n    <xsl:template name=\"defaultDatasetComponents\">\n        <obeu-attribute:currency rdf:resource=\"http://data.openbudgets.eu/codelist/currency/EUR\"/>\n    </xsl:template>\n    \n</xsl:stylesheet>",
+          "http://plugins.linkedpipes.com/ontology/t-xslt#extension": "rdf"
+        }
+      ],
+      "@id": "http://obeu.vse.cz:9080/resources/pipelines/eu-budget-2014/components/fc579bba-e61d-4a76-9dd5-672cf84a26ac/configuration"
+    },
+    {
+      "@graph": [
+        {
+          "@id": "http://localhost/resources/t-rdfToFile/configuration",
+          "@type": [
+            "http://plugins.linkedpipes.com/ontology/t-rdfToFile#Configuration"
+          ],
+          "http://plugins.linkedpipes.com/ontology/t-rdfToFile#fileName": "eu_budget_2014.ttl",
+          "http://plugins.linkedpipes.com/ontology/t-rdfToFile#fileType": "text/turtle",
+          "http://plugins.linkedpipes.com/ontology/t-rdfToFile#graphUri": "http://localhost/default"
+        }
+      ],
+      "@id": "http://obeu.vse.cz:9080/resources/pipelines/eu-budget-2014/components/0b1d44ac-0c56-4190-a7af-2c2e0ebeacb8/configuration"
+    },
+    {
+      "@graph": [
+        {
+          "@id": "http://localhost/resources/configuration",
+          "@type": [
+            "http://plugins.linkedpipes.com/ontology/x-virtuoso#Configuration"
+          ],
+          "http://plugins.linkedpipes.com/ontology/x-virtuoso#uri": "jdbc:virtuoso://localhost:1111/charset=UTF-8/",
+          "http://plugins.linkedpipes.com/ontology/x-virtuoso#username": "dba",
+          "http://plugins.linkedpipes.com/ontology/x-virtuoso#password": "loddva",
+          "http://plugins.linkedpipes.com/ontology/x-virtuoso#clearGraph": true,
+          "http://plugins.linkedpipes.com/ontology/x-virtuoso#directory": "/data/dump",
+          "http://plugins.linkedpipes.com/ontology/x-virtuoso#graph": "http://data.openbudgets.eu/resource/dataset/budget-of-the-european-union-2014",
+          "http://plugins.linkedpipes.com/ontology/x-virtuoso#updateInterval": 10,
+          "http://plugins.linkedpipes.com/ontology/x-virtuoso#clearSqlLoadTable": true,
+          "http://plugins.linkedpipes.com/ontology/x-virtuoso#fileName": "eu_budget_2014.ttl"
+        }
+      ],
+      "@id": "http://obeu.vse.cz:9080/resources/pipelines/eu-budget-2014/components/0c85240c-dd0f-45cb-894c-d2af346dd37d/configuration"
+    },
+    {
+      "@graph": [
+        {
+          "@id": "http://localhost/resources/configuration",
+          "@type": [
+            "http://plugins.linkedpipes.com/ontology/e-textHolder#Configuration"
+          ],
+          "http://plugins.linkedpipes.com/ontology/e-textHolder#fileName": "dsd.ttl",
+          "http://plugins.linkedpipes.com/ontology/e-textHolder#content": "# ----- DSD-specific namespaces -----\n\n@prefix eu:               <http://data.openbudgets.eu/ontology/budget-of-the-european-union/> .\n@prefix eu-attribute:     <http://data.openbudgets.eu/ontology/dsd/eu-budget-2014/attribute/> .\n@prefix eu-codelist:      <http://data.openbudgets.eu/resource/eu-budget-2014/codelist/> .\n@prefix eu-dimension:     <http://data.openbudgets.eu/ontology/dsd/eu-budget-2014/dimension/> .\n@prefix eu-operation:     <http://data.openbudgets.eu/resource/eu-budget-2014/codelist/operation-character/> .\n@prefix eu-optional:      <http://data.openbudgets.eu/ontology/dsd/eu-budget-2014/optional-property/> .\n\n# ----- OpenBudgets.eu namespaces -----\n\n@prefix obeu:             <http://data.openbudgets.eu/ontology/> .\n@prefix obeu-attribute:   <http://data.openbudgets.eu/ontology/dsd/attribute/> .\n@prefix obeu-dimension:   <http://data.openbudgets.eu/ontology/dsd/dimension/> .\n@prefix obeu-measure:     <http://data.openbudgets.eu/ontology/dsd/measure/> .\n@prefix obeu-operation:   <http://data.openbudgets.eu/resource/codelist/operation-character/> .\n\n# ----- Generic namespaces ------\n\n@prefix org:              <http://www.w3.org/ns/org#> .\n@prefix qb:               <http://purl.org/linked-data/cube#> .\n@prefix rdf:              <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .\n@prefix rdfs:             <http://www.w3.org/2000/01/rdf-schema#> .\n@prefix skos:             <http://www.w3.org/2004/02/skos/core#> .\n@prefix xsd:              <http://www.w3.org/2001/XMLSchema#> .\n\n# ----- DSD -----\n\n<http://data.openbudgets.eu/ontology/dsd/eu-budget-2014> a qb:DataStructureDefinition ;\n  rdfs:label \"Data structure definition for the budget of the European Union from the year 2014\"@en ;\n  qb:component [ qb:dimension obeu-dimension:budgetaryUnit ;\n                 qb:componentAttachment qb:DataSet ],\n               [ qb:dimension eu-dimension:budgetPhase ],\n               [ qb:dimension eu-dimension:operationCharacter ],\n               [ qb:dimension obeu-dimension:fiscalYear ],\n               [ qb:dimension eu-dimension:budgetNomenclature ],\n               [ qb:dimension eu-dimension:catpol ],\n               [ qb:componentProperty eu-optional:compulsoryExpenditure ],\n               [ qb:componentProperty eu-optional:isDelegation ],\n               [ qb:componentProperty eu-optional:isReserve ],\n               [ qb:attribute obeu-attribute:currency ;\n                 qb:componentRequired true ;\n                 qb:componentAttachment qb:DataSet ],\n               [ qb:measure obeu-measure:amount ] .\n\n<http://data.openbudgets.eu/ontology/dsd/eu-budget-2014-reserves> a qb:DataStructureDefinition ;\n  rdfs:label \"Data structure definition for reserves in the budget of the European Union from the year 2014\"@en ;\n  qb:component [ qb:dimension eu-dimension:reservedFor ],\n               [ qb:componentProperty eu-optional:budgetNomenclature ],\n               [ qb:attribute obeu-attribute:currency ;\n                 qb:componentRequired true ;\n                 qb:componentAttachment qb:DataSet ],\n               [ qb:measure obeu-measure:amount ] .\n\n# ----- Component properties -----\n\neu-dimension:budgetNomenclature a rdf:Property, qb:CodedProperty, qb:DimensionProperty ;\n  rdfs:label \"Activity-Based Budgeting nomenclature 2014\"@en ;\n  rdfs:comment \"Concepts in the EU’s Activity-Based Budgeting nomenclature are hierarchically organized into sections, chapters, articles, items, and sub-items. Each concept may have a supplementary editorial and legal notes.\"@en ;\n  rdfs:subPropertyOf obeu-dimension:classification ;\n  qb:codeList eu-codelist:budget-nomenclature-2014 ;\n  rdfs:range eu:BudgetNomenclature ;\n  rdfs:isDefinedBy <http://data.openbudgets.eu/ontology/dsd/eu-budget-2014> .\n\neu-dimension:budgetPhase a rdf:Property, qb:CodedProperty, qb:DimensionProperty ;\n  rdfs:label \"EU budget phase\"@en ;\n  rdfs:subPropertyOf obeu-dimension:budgetPhase ;\n  qb:codeList <http://publications.europa.eu/resource/authority/eu-budget-amount-status> ;\n  rdfs:isDefinedBy <http://data.openbudgets.eu/ontology/dsd/eu-budget-2014> .\n\neu-dimension:catpol a rdf:Property, qb:CodedProperty, qb:DimensionProperty ;\n  rdfs:label \"MFF/CATPOL heading\"@en ;\n  rdfs:comment \"Multiannual Financial Framework Political Category classification of a budget line.\"@en ;\n  rdfs:subPropertyOf obeu-dimension:classification ;\n  qb:codeList eu-codelist:catpol ;\n  rdfs:range eu:CATPOL ;\n  rdfs:isDefinedBy <http://data.openbudgets.eu/ontology/dsd/eu-budget-2014> .\n\neu-dimension:operationCharacter a rdf:Property, qb:CodedProperty, qb:DimensionProperty ;\n  rdfs:label \"Operation character\"@en ;\n  rdfs:comment \"EU budget's specific operation characters\"@en ;\n  rdfs:subPropertyOf obeu-dimension:operationCharacter ;\n  qb:codeList eu-codelist:operation-character ;\n  rdfs:range obeu:OperationCharacter ;\n  rdfs:isDefinedBy <http://data.openbudgets.eu/ontology/dsd/eu-budget-2014> .\n\neu-dimension:reservedFor a rdf:Property, qb:DimensionProperty ;\n  rdfs:label \"Reserved for\"@en ;\n  rdfs:comment \"Budget line for which the reserve is allocated.\"@en ;\n  rdfs:range qb:Observation ;\n  rdfs:isDefinedBy <http://data.openbudgets.eu/ontology/dsd/eu-budget-2014> .\n\neu-optional:budgetNomenclature a rdf:Property, qb:CodedProperty, obeu:OptionalProperty ;\n  rdfs:label \"Activity-Based Budgeting nomenclature 2014\"@en ;\n  rdfs:comment \"Concepts in the EU’s Activity-Based Budgeting nomenclature are hierarchically organized into sections, chapters, articles, items, and sub-items. Each concept may have a supplementary editorial and legal notes.\"@en ;\n  qb:codeList eu-codelist:budget-nomenclature-2014 ;\n  rdfs:range eu:BudgetNomenclature ;\n  rdfs:isDefinedBy <http://data.openbudgets.eu/ontology/dsd/eu-budget-2014> .\n\neu-optional:compulsoryExpenditure a rdf:Property, obeu:OptionalProperty ;\n  rdfs:label \"Compulsory expenditure\"@en ;\n  rdfs:comment \"Indicates whether the appropriation in question is a compulsory or non-compulsory expenditure. Compulsory expenditures, such as pensions, must be spent.\"@en ;\n  rdfs:domain qb:Observation ;\n  rdfs:range xsd:boolean ;\n  rdfs:isDefinedBy <http://data.openbudgets.eu/ontology/dsd/eu-budget-2014> .\n\neu-optional:isDelegation a rdf:Property, obeu:OptionalProperty ;\n  rdfs:label \"Is delegation\"@en ;\n  rdfs:comment \"Indicates whether an expenditure is related to a delegation.\"@en ;\n  rdfs:domain qb:Observation ;\n  rdfs:range xsd:boolean ;\n  rdfs:isDefinedBy <http://data.openbudgets.eu/ontology/dsd/eu-budget-2014> .\n\neu-optional:isReserve a rdf:Property, obeu:OptionalProperty ;\n  rdfs:label \"Is reserve\"@en ;\n  rdfs:comment \"Reserves set aside for the budget line. They are not allocated to any precise purpose, i.e., there is no basic act for the action when the budget is established or there are doubts about the adequacy of the appropriation; they may be used only after approved transfer.\"@en ;\n  rdfs:domain qb:Observation ;\n  rdfs:range xsd:boolean ;\n  rdfs:isDefinedBy <http://data.openbudgets.eu/ontology/dsd/eu-budget-2014> .\n\neu:agencyClassification a rdf:Property ;\n  rdfs:label \"Agency classification\"@en ;\n  rdfs:domain qb:Observation ;\n  qb:codeList <http://publications.europa.eu/resource/authority/corporate-body> ;\n  qb:concept obeu:AdministrativeClassification ;\n  rdfs:isDefinedBy <http://data.openbudgets.eu/ontology/budget-of-the-european-union> .\n\neu:programClassification a rdf:Property ;\n  rdfs:label \"Program classification\"@en ;\n  rdfs:domain qb:Observation ;\n  rdfs:range skos:Concept ;\n  qb:codeList <http://publications.europa.eu/ontology/authority/eu-programme> ;\n  qb:concept obeu:ProgrammeClassification ;\n  rdfs:isDefinedBy <http://data.openbudgets.eu/ontology/budget-of-the-european-union> .\n\neu:BudgetNomenclature a rdfs:Class ;\n  rdfs:label \"Budget nomenclature\"@en ;\n  rdfs:comment \"Concept from the budget nomenclature for the EU budget 2014\"@en ;\n  rdfs:subClassOf skos:Concept ;\n  rdfs:isDefinedBy <http://data.openbudgets.eu/ontology/budget-of-the-european-union> .\n\neu:CATPOL a rdfs:Class ;\n  rdfs:label \"CATPOL\"@en ;\n  rdfs:comment \"Concept from the Multiannual Financial Framework's Political Category headings\"@en ;\n  rdfs:subClassOf skos:Concept ;\n  rdfs:isDefinedBy <http://data.openbudgets.eu/ontology/budget-of-the-european-union> .\n\n# ----- Code lists -----\n\neu-codelist:operation-character a skos:ConceptScheme ;\n  rdfs:label \"An extended code list of operation characters for the EU budget\"@en ;\n  skos:hasTopConcept obeu-operation:expenditure, obeu-operation:revenue .\n\neu-operation:commitment a skos:Concept, obeu:OperationCharacter ;\n  skos:prefLabel \"Commitment\"@en ;\n  skos:definition \"Total cost of the legal commitments during the current fiscal year.\"@en ;\n  skos:broader obeu-operation:expenditure ;\n  skos:inScheme eu-codelist:operation-character .\n\neu-operation:payment a skos:Concept, obeu:OperationCharacter ;\n  skos:prefLabel \"Payment\"@en ;\n  skos:definition \"Payments made to honour the legal commitments entered into in the current fiscal year and/or earlier fiscal years.\"@en ;\n  skos:broader obeu-operation:expenditure ;\n  skos:inScheme eu-codelist:operation-character ."
+        }
+      ],
+      "@id": "http://obeu.vse.cz:9080/resources/pipelines/eu-budget-2014/components/a0b939af-56a3-41b4-8105-b996f3db880c/configuration"
+    },
+    {
+      "@graph": [
+        {
+          "@id": "http://localhost/resources/configuration",
+          "@type": [
+            "http://plugins.linkedpipes.com/ontology/t-filesToRdf#Configuration"
+          ],
+          "http://plugins.linkedpipes.com/ontology/t-filesToRdf#commitSize": 50000,
+          "http://plugins.linkedpipes.com/ontology/t-filesToRdf#mimeType": ""
+        }
+      ],
+      "@id": "http://obeu.vse.cz:9080/resources/pipelines/eu-budget-2014/components/c68d2cbb-ec46-4279-915e-56efda0ad67e/configuration"
+    },
+    {
+      "@graph": [
+        {
+          "@id": "http://localhost/resources/configuration",
+          "@type": [
+            "http://plugins.linkedpipes.com/ontology/e-datasetMetadata#Configuration"
+          ],
+          "http://plugins.linkedpipes.com/ontology/e-datasetMetadata#datasetURI": "http://data.openbudgets.eu/resource/dataset/budget-of-the-european-union-2014",
+          "http://plugins.linkedpipes.com/ontology/e-datasetMetadata#language_orig": "en",
+          "http://plugins.linkedpipes.com/ontology/e-datasetMetadata#title_cs": "EU budget 2014",
+          "http://plugins.linkedpipes.com/ontology/e-datasetMetadata#publisherURI": "http://openbudgets.eu",
+          "http://plugins.linkedpipes.com/ontology/e-datasetMetadata#publisherName": "OpenBudgets.eu",
+          "http://plugins.linkedpipes.com/ontology/e-datasetMetadata#license": "http://ec.europa.eu/geninfo/legal_notices_en.htm",
+          "http://plugins.linkedpipes.com/ontology/e-datasetMetadata#periodicity": "P1Y",
+          "http://plugins.linkedpipes.com/ontology/e-datasetMetadata#identifier": "EU_BUDGET_2014",
+          "http://plugins.linkedpipes.com/ontology/e-datasetMetadata#useNow": true,
+          "http://plugins.linkedpipes.com/ontology/e-datasetMetadata#useNowTemporalEnd": false,
+          "http://plugins.linkedpipes.com/ontology/e-datasetMetadata#useTemporal": true,
+          "http://plugins.linkedpipes.com/ontology/e-datasetMetadata#sources": [
+            "http://open-data.europa.eu/data/dataset/budget-of-the-european-union-2014"
+          ],
+          "http://plugins.linkedpipes.com/ontology/e-datasetMetadata#languages": [
+            "http://id.loc.gov/vocabulary/iso639-1/en"
+          ],
+          "http://plugins.linkedpipes.com/ontology/e-datasetMetadata#keywords_orig": [
+            "eu",
+            "budget"
+          ],
+          "http://plugins.linkedpipes.com/ontology/e-datasetMetadata#title_en": "",
+          "http://plugins.linkedpipes.com/ontology/e-datasetMetadata#desc_cs": "",
+          "http://plugins.linkedpipes.com/ontology/e-datasetMetadata#desc_en": "",
+          "http://plugins.linkedpipes.com/ontology/e-datasetMetadata#contactPoint": "",
+          "http://plugins.linkedpipes.com/ontology/e-datasetMetadata#contactPointName": "",
+          "http://plugins.linkedpipes.com/ontology/e-datasetMetadata#issued": "2013-12-31T23:00:00.000Z",
+          "http://plugins.linkedpipes.com/ontology/e-datasetMetadata#landingPage": "",
+          "http://plugins.linkedpipes.com/ontology/e-datasetMetadata#temporalEnd": "2014-12-30T23:00:00.000Z",
+          "http://plugins.linkedpipes.com/ontology/e-datasetMetadata#temporalStart": "2013-12-31T23:00:00.000Z",
+          "http://plugins.linkedpipes.com/ontology/e-datasetMetadata#spatial": "",
+          "http://plugins.linkedpipes.com/ontology/e-datasetMetadata#schema": "",
+          "http://plugins.linkedpipes.com/ontology/e-datasetMetadata#authors": [
+            "http://mynarz.net/#jindrich"
+          ]
+        }
+      ],
+      "@id": "http://obeu.vse.cz:9080/resources/pipelines/eu-budget-2014/components/7b014582-2d51-46c6-a8d1-89b3b1ae1c77/configuration"
+    },
+    {
+      "@graph": [
+        {
+          "@id": "http://localhost/resources/configuration",
+          "@type": [
+            "http://plugins.linkedpipes.com/ontology/e-distributionMetadata#Configuration"
+          ],
+          "http://plugins.linkedpipes.com/ontology/e-distributionMetadata#sparqlEndpointUrl": "http://obeu.vse.cz:8890/sparql",
+          "http://plugins.linkedpipes.com/ontology/e-distributionMetadata#mediaType": "text/turtle",
+          "http://plugins.linkedpipes.com/ontology/e-distributionMetadata#downloadURL": "http://obeu.vse.cz/dump/eu_budget_2014.ttl",
+          "http://plugins.linkedpipes.com/ontology/e-distributionMetadata#schemaType": "text/turtle",
+          "http://plugins.linkedpipes.com/ontology/e-distributionMetadata#useDatasetURIfromInput": true,
+          "http://plugins.linkedpipes.com/ontology/e-distributionMetadata#titleFromDataset": true,
+          "http://plugins.linkedpipes.com/ontology/e-distributionMetadata#generateDistroURIFromDataset": true,
+          "http://plugins.linkedpipes.com/ontology/e-distributionMetadata#originalLanguageFromDataset": true,
+          "http://plugins.linkedpipes.com/ontology/e-distributionMetadata#issuedFromDataset": true,
+          "http://plugins.linkedpipes.com/ontology/e-distributionMetadata#descriptionFromDataset": true,
+          "http://plugins.linkedpipes.com/ontology/e-distributionMetadata#licenseFromDataset": true,
+          "http://plugins.linkedpipes.com/ontology/e-distributionMetadata#schemaFromDataset": true,
+          "http://plugins.linkedpipes.com/ontology/e-distributionMetadata#useTemporal": true,
+          "http://plugins.linkedpipes.com/ontology/e-distributionMetadata#useNowTemporalEnd": true,
+          "http://plugins.linkedpipes.com/ontology/e-distributionMetadata#datasetURI": "",
+          "http://plugins.linkedpipes.com/ontology/e-distributionMetadata#distributionURI": "",
+          "http://plugins.linkedpipes.com/ontology/e-distributionMetadata#language_orig": "",
+          "http://plugins.linkedpipes.com/ontology/e-distributionMetadata#title_orig": "",
+          "http://plugins.linkedpipes.com/ontology/e-distributionMetadata#title_en": "",
+          "http://plugins.linkedpipes.com/ontology/e-distributionMetadata#desc_orig": "",
+          "http://plugins.linkedpipes.com/ontology/e-distributionMetadata#desc_en": "",
+          "http://plugins.linkedpipes.com/ontology/e-distributionMetadata#license": "",
+          "http://plugins.linkedpipes.com/ontology/e-distributionMetadata#accessURL": "",
+          "http://plugins.linkedpipes.com/ontology/e-distributionMetadata#schema": "",
+          "http://plugins.linkedpipes.com/ontology/e-distributionMetadata#useNow": true,
+          "http://plugins.linkedpipes.com/ontology/e-distributionMetadata#temporalFromDataset": true
+        }
+      ],
+      "@id": "http://obeu.vse.cz:9080/resources/pipelines/eu-budget-2014/components/35246b34-fd63-4e22-85f7-f1bc15627737/configuration"
+    },
+    {
+      "@graph": [
+        {
+          "@id": "http://localhost/resources/t-rdfToFile/configuration",
+          "@type": [
+            "http://plugins.linkedpipes.com/ontology/t-rdfToFile#Configuration"
+          ],
+          "http://plugins.linkedpipes.com/ontology/t-rdfToFile#fileName": "eu_budget_2014_metadata.ttl",
+          "http://plugins.linkedpipes.com/ontology/t-rdfToFile#fileType": "text/turtle",
+          "http://plugins.linkedpipes.com/ontology/t-rdfToFile#graphUri": "http://localhost/default"
+        }
+      ],
+      "@id": "http://obeu.vse.cz:9080/resources/pipelines/eu-budget-2014/components/6906d5a4-6dd0-4386-92b2-4519c29aded8/configuration"
+    },
+    {
+      "@graph": [
+        {
+          "@id": "http://localhost/resources/configuration",
+          "@type": [
+            "http://plugins.linkedpipes.com/ontology/l-dcatApToCkan#Configuration"
+          ],
+          "http://plugins.linkedpipes.com/ontology/l-dcatApToCkan#apiUri": "http://ckan.opendata.cz/api/3/action",
+          "http://plugins.linkedpipes.com/ontology/l-dcatApToCkan#apiKey": "d2413b79-f04e-4fdf-bce7-e621c1492236",
+          "http://plugins.linkedpipes.com/ontology/l-dcatApToCkan#loadToCkan": true,
+          "http://plugins.linkedpipes.com/ontology/l-dcatApToCkan#datasetID": "eu-budget-2014",
+          "http://plugins.linkedpipes.com/ontology/l-dcatApToCkan#filename": "ckan-api.json",
+          "http://plugins.linkedpipes.com/ontology/l-dcatApToCkan#loadLanguage": "en",
+          "http://plugins.linkedpipes.com/ontology/l-dcatApToCkan#generateVirtuosoExample": true,
+          "http://plugins.linkedpipes.com/ontology/l-dcatApToCkan#generateExample": true,
+          "http://plugins.linkedpipes.com/ontology/l-dcatApToCkan#overwrite": true,
+          "http://plugins.linkedpipes.com/ontology/l-dcatApToCkan#apiUrl": "http://obeu.vse.cz/api/3/action",
+          "http://plugins.linkedpipes.com/ontology/l-dcatApToCkan#loadToCKAN": true,
+          "http://plugins.linkedpipes.com/ontology/l-dcatApToCkan#organizationId": ""
+        }
+      ],
+      "@id": "http://obeu.vse.cz:9080/resources/pipelines/eu-budget-2014/components/c50bfdb6-0486-49db-aed4-ae4a8d73a1f6/configuration"
+    },
+    {
+      "@graph": [
+        {
+          "@id": "http://localhost/resources/configuration",
+          "@type": [
+            "http://plugins.linkedpipes.com/ontology/t-filesToRdf#Configuration"
+          ],
+          "http://plugins.linkedpipes.com/ontology/t-filesToRdf#commitSize": 50000,
+          "http://plugins.linkedpipes.com/ontology/t-filesToRdf#mimeType": ""
+        }
+      ],
+      "@id": "http://obeu.vse.cz:9080/resources/pipelines/eu-budget-2014/components/39cb6a5b-3497-4d88-ab0f-9c794c4c747f/configuration"
+    }
+  ]
+}

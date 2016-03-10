@@ -1,0 +1,769 @@
+{
+  "@graph": [
+    {
+      "@graph": [
+        {
+          "@id": "http://obeu.vse.cz:9080/resources/pipelines/created-1457365756531",
+          "@type": [
+            "http://linkedpipes.com/ontology/Pipeline"
+          ],
+          "http://www.w3.org/2004/02/skos/core#prefLabel": "EU budget 2014: Nomenclature"
+        },
+        {
+          "@id": "http://obeu.vse.cz:9080/resources/pipelines/created-1457365756531/components/b63de62e-2757-4995-b239-929d9f44cd0a",
+          "@type": [
+            "http://linkedpipes.com/ontology/Component"
+          ],
+          "http://www.w3.org/2004/02/skos/core#prefLabel": "HTTP get",
+          "http://linkedpipes.com/ontology/template": {
+            "@id": "http://obeu.vse.cz:9080/resources/components/e-httpGetFile"
+          },
+          "http://linkedpipes.com/ontology/x": 40,
+          "http://linkedpipes.com/ontology/y": 40,
+          "http://linkedpipes.com/ontology/configurationGraph": {
+            "@id": "http://obeu.vse.cz:9080/resources/pipelines/created-1457365756531/components/b63de62e-2757-4995-b239-929d9f44cd0a/configuration"
+          }
+        },
+        {
+          "@id": "http://obeu.vse.cz:9080/resources/pipelines/created-1457365756531/components/20ed3aeb-6216-42dd-aa54-d2266860d26f",
+          "@type": [
+            "http://linkedpipes.com/ontology/Component"
+          ],
+          "http://www.w3.org/2004/02/skos/core#prefLabel": "Decompress zip archive",
+          "http://linkedpipes.com/ontology/template": {
+            "@id": "http://obeu.vse.cz:9080/resources/components/t-unpackZip"
+          },
+          "http://linkedpipes.com/ontology/x": 220,
+          "http://linkedpipes.com/ontology/y": 40,
+          "http://linkedpipes.com/ontology/configurationGraph": {
+            "@id": "http://obeu.vse.cz:9080/resources/pipelines/created-1457365756531/components/20ed3aeb-6216-42dd-aa54-d2266860d26f/configuration"
+          }
+        },
+        {
+          "@id": "http://obeu.vse.cz:9080/resources/pipelines/created-1457365756531/connection/06281c9f-1a8e-49d6-bb7a-69ab6883e343",
+          "@type": [
+            "http://linkedpipes.com/ontology/Connection"
+          ],
+          "http://linkedpipes.com/ontology/sourceComponent": {
+            "@id": "http://obeu.vse.cz:9080/resources/pipelines/created-1457365756531/components/b63de62e-2757-4995-b239-929d9f44cd0a"
+          },
+          "http://linkedpipes.com/ontology/sourceBinding": "FilesOutput",
+          "http://linkedpipes.com/ontology/targetComponent": {
+            "@id": "http://obeu.vse.cz:9080/resources/pipelines/created-1457365756531/components/20ed3aeb-6216-42dd-aa54-d2266860d26f"
+          },
+          "http://linkedpipes.com/ontology/targetBinding": "FilesInput"
+        },
+        {
+          "@id": "http://obeu.vse.cz:9080/resources/pipelines/created-1457365756531/components/f3653e89-8b25-490b-9a4c-b953651ccd64",
+          "@type": [
+            "http://linkedpipes.com/ontology/Component"
+          ],
+          "http://www.w3.org/2004/02/skos/core#prefLabel": "Files filter",
+          "http://linkedpipes.com/ontology/template": {
+            "@id": "http://obeu.vse.cz:9080/resources/components/t-filesFilter"
+          },
+          "http://linkedpipes.com/ontology/x": 480,
+          "http://linkedpipes.com/ontology/y": 40,
+          "http://linkedpipes.com/ontology/configurationGraph": {
+            "@id": "http://obeu.vse.cz:9080/resources/pipelines/created-1457365756531/components/f3653e89-8b25-490b-9a4c-b953651ccd64/configuration"
+          },
+          "http://purl.org/dc/terms/description": "Filter budget data"
+        },
+        {
+          "@id": "http://obeu.vse.cz:9080/resources/pipelines/created-1457365756531/connection/d37492f4-3ff9-4dd4-bda1-1a06e4a68ed0",
+          "@type": [
+            "http://linkedpipes.com/ontology/Connection"
+          ],
+          "http://linkedpipes.com/ontology/sourceComponent": {
+            "@id": "http://obeu.vse.cz:9080/resources/pipelines/created-1457365756531/components/20ed3aeb-6216-42dd-aa54-d2266860d26f"
+          },
+          "http://linkedpipes.com/ontology/sourceBinding": "FilesOutput",
+          "http://linkedpipes.com/ontology/targetComponent": {
+            "@id": "http://obeu.vse.cz:9080/resources/pipelines/created-1457365756531/components/f3653e89-8b25-490b-9a4c-b953651ccd64"
+          },
+          "http://linkedpipes.com/ontology/targetBinding": "InputFiles"
+        },
+        {
+          "@id": "http://obeu.vse.cz:9080/resources/pipelines/created-1457365756531/components/f52b79df-7e85-4278-b51f-63d8691548a8",
+          "@type": [
+            "http://linkedpipes.com/ontology/Component"
+          ],
+          "http://www.w3.org/2004/02/skos/core#prefLabel": "XSLT transformer",
+          "http://linkedpipes.com/ontology/template": {
+            "@id": "http://obeu.vse.cz:9080/resources/components/t-xslt"
+          },
+          "http://linkedpipes.com/ontology/x": 720,
+          "http://linkedpipes.com/ontology/y": 40,
+          "http://linkedpipes.com/ontology/configurationGraph": {
+            "@id": "http://obeu.vse.cz:9080/resources/pipelines/created-1457365756531/components/f52b79df-7e85-4278-b51f-63d8691548a8/configuration"
+          },
+          "http://purl.org/dc/terms/description": "EU budget nomenclature"
+        },
+        {
+          "@id": "http://obeu.vse.cz:9080/resources/pipelines/created-1457365756531/connection/a5a15e9d-e5cf-454e-a4e2-ee335cba52cb",
+          "@type": [
+            "http://linkedpipes.com/ontology/Connection"
+          ],
+          "http://linkedpipes.com/ontology/sourceComponent": {
+            "@id": "http://obeu.vse.cz:9080/resources/pipelines/created-1457365756531/components/f3653e89-8b25-490b-9a4c-b953651ccd64"
+          },
+          "http://linkedpipes.com/ontology/sourceBinding": "OutputFiles",
+          "http://linkedpipes.com/ontology/targetComponent": {
+            "@id": "http://obeu.vse.cz:9080/resources/pipelines/created-1457365756531/components/f52b79df-7e85-4278-b51f-63d8691548a8"
+          },
+          "http://linkedpipes.com/ontology/targetBinding": "FilesInput"
+        },
+        {
+          "@id": "http://obeu.vse.cz:9080/resources/pipelines/created-1457365756531/components/4b6f7d49-f3ba-4ceb-bc15-4ca7d13dea7b",
+          "@type": [
+            "http://linkedpipes.com/ontology/Component"
+          ],
+          "http://www.w3.org/2004/02/skos/core#prefLabel": "Files to RDF",
+          "http://linkedpipes.com/ontology/template": {
+            "@id": "http://obeu.vse.cz:9080/resources/components/t-filesToRdf"
+          },
+          "http://linkedpipes.com/ontology/x": 960,
+          "http://linkedpipes.com/ontology/y": 40,
+          "http://linkedpipes.com/ontology/configurationGraph": {
+            "@id": "http://obeu.vse.cz:9080/resources/pipelines/created-1457365756531/components/4b6f7d49-f3ba-4ceb-bc15-4ca7d13dea7b/configuration"
+          }
+        },
+        {
+          "@id": "http://obeu.vse.cz:9080/resources/pipelines/created-1457365756531/connection/2aceecb5-ab1a-477e-b076-a87634f90360",
+          "@type": [
+            "http://linkedpipes.com/ontology/Connection"
+          ],
+          "http://linkedpipes.com/ontology/sourceComponent": {
+            "@id": "http://obeu.vse.cz:9080/resources/pipelines/created-1457365756531/components/f52b79df-7e85-4278-b51f-63d8691548a8"
+          },
+          "http://linkedpipes.com/ontology/sourceBinding": "FilesOutput",
+          "http://linkedpipes.com/ontology/targetComponent": {
+            "@id": "http://obeu.vse.cz:9080/resources/pipelines/created-1457365756531/components/4b6f7d49-f3ba-4ceb-bc15-4ca7d13dea7b"
+          },
+          "http://linkedpipes.com/ontology/targetBinding": "InputFiles"
+        },
+        {
+          "@id": "http://obeu.vse.cz:9080/resources/pipelines/created-1457365756531/components/604cbd83-a72f-4284-8be1-c731608c6318",
+          "@type": [
+            "http://linkedpipes.com/ontology/Component"
+          ],
+          "http://www.w3.org/2004/02/skos/core#prefLabel": "Graph merger",
+          "http://linkedpipes.com/ontology/template": {
+            "@id": "http://obeu.vse.cz:9080/resources/components/t-graphMerger"
+          },
+          "http://linkedpipes.com/ontology/x": 40,
+          "http://linkedpipes.com/ontology/y": 140
+        },
+        {
+          "@id": "http://obeu.vse.cz:9080/resources/pipelines/created-1457365756531/connection/57835244-a3d6-4c38-ae79-1d5b3567ca69",
+          "@type": [
+            "http://linkedpipes.com/ontology/Connection"
+          ],
+          "http://linkedpipes.com/ontology/sourceComponent": {
+            "@id": "http://obeu.vse.cz:9080/resources/pipelines/created-1457365756531/components/4b6f7d49-f3ba-4ceb-bc15-4ca7d13dea7b"
+          },
+          "http://linkedpipes.com/ontology/sourceBinding": "OutputRdf",
+          "http://linkedpipes.com/ontology/targetComponent": {
+            "@id": "http://obeu.vse.cz:9080/resources/pipelines/created-1457365756531/components/604cbd83-a72f-4284-8be1-c731608c6318"
+          },
+          "http://linkedpipes.com/ontology/targetBinding": "InputRdf",
+          "http://linkedpipes.com/ontology/vertex": [
+            {
+              "@id": "http://obeu.vse.cz:9080/resources/pipelines/created-1457365756531/connection/57835244-a3d6-4c38-ae79-1d5b3567ca69/vertex/1"
+            },
+            {
+              "@id": "http://obeu.vse.cz:9080/resources/pipelines/created-1457365756531/connection/57835244-a3d6-4c38-ae79-1d5b3567ca69/vertex/2"
+            }
+          ]
+        },
+        {
+          "@id": "http://obeu.vse.cz:9080/resources/pipelines/created-1457365756531/components/96568736-c410-40c2-b510-f36e7f226239",
+          "@type": [
+            "http://linkedpipes.com/ontology/Component"
+          ],
+          "http://www.w3.org/2004/02/skos/core#prefLabel": "SPARQL update",
+          "http://linkedpipes.com/ontology/template": {
+            "@id": "http://obeu.vse.cz:9080/resources/components/t-sparqlUpdate"
+          },
+          "http://linkedpipes.com/ontology/x": 240,
+          "http://linkedpipes.com/ontology/y": 140,
+          "http://linkedpipes.com/ontology/configurationGraph": {
+            "@id": "http://obeu.vse.cz:9080/resources/pipelines/created-1457365756531/components/96568736-c410-40c2-b510-f36e7f226239/configuration"
+          },
+          "http://purl.org/dc/terms/description": "Mirror narrower"
+        },
+        {
+          "@id": "http://obeu.vse.cz:9080/resources/pipelines/created-1457365756531/connection/5cbc867f-b178-4a79-978c-558ec6c503b6",
+          "@type": [
+            "http://linkedpipes.com/ontology/Connection"
+          ],
+          "http://linkedpipes.com/ontology/sourceComponent": {
+            "@id": "http://obeu.vse.cz:9080/resources/pipelines/created-1457365756531/components/604cbd83-a72f-4284-8be1-c731608c6318"
+          },
+          "http://linkedpipes.com/ontology/sourceBinding": "OutputRdf",
+          "http://linkedpipes.com/ontology/targetComponent": {
+            "@id": "http://obeu.vse.cz:9080/resources/pipelines/created-1457365756531/components/96568736-c410-40c2-b510-f36e7f226239"
+          },
+          "http://linkedpipes.com/ontology/targetBinding": "InputRdf"
+        },
+        {
+          "@id": "http://obeu.vse.cz:9080/resources/pipelines/created-1457365756531/components/514e91c2-72b3-4898-9db1-16fa3e14ad5c",
+          "@type": [
+            "http://linkedpipes.com/ontology/Component"
+          ],
+          "http://www.w3.org/2004/02/skos/core#prefLabel": "SPARQL update",
+          "http://linkedpipes.com/ontology/template": {
+            "@id": "http://obeu.vse.cz:9080/resources/components/t-sparqlUpdate"
+          },
+          "http://linkedpipes.com/ontology/x": 480,
+          "http://linkedpipes.com/ontology/y": 140,
+          "http://linkedpipes.com/ontology/configurationGraph": {
+            "@id": "http://obeu.vse.cz:9080/resources/pipelines/created-1457365756531/components/514e91c2-72b3-4898-9db1-16fa3e14ad5c/configuration"
+          },
+          "http://purl.org/dc/terms/description": "Add top concepts"
+        },
+        {
+          "@id": "http://obeu.vse.cz:9080/resources/pipelines/created-1457365756531/connection/4ad8f72e-6bf1-4f84-b860-719e31735b9f",
+          "@type": [
+            "http://linkedpipes.com/ontology/Connection"
+          ],
+          "http://linkedpipes.com/ontology/sourceComponent": {
+            "@id": "http://obeu.vse.cz:9080/resources/pipelines/created-1457365756531/components/96568736-c410-40c2-b510-f36e7f226239"
+          },
+          "http://linkedpipes.com/ontology/sourceBinding": "OutputRdf",
+          "http://linkedpipes.com/ontology/targetComponent": {
+            "@id": "http://obeu.vse.cz:9080/resources/pipelines/created-1457365756531/components/514e91c2-72b3-4898-9db1-16fa3e14ad5c"
+          },
+          "http://linkedpipes.com/ontology/targetBinding": "InputRdf"
+        },
+        {
+          "@id": "http://obeu.vse.cz:9080/resources/pipelines/created-1457365756531/components/c8d34e93-599e-43ef-8ff8-4fc878062ca8",
+          "@type": [
+            "http://linkedpipes.com/ontology/Component"
+          ],
+          "http://www.w3.org/2004/02/skos/core#prefLabel": "RDF to file",
+          "http://linkedpipes.com/ontology/template": {
+            "@id": "http://obeu.vse.cz:9080/resources/components/t-rdfToFile"
+          },
+          "http://linkedpipes.com/ontology/x": 720,
+          "http://linkedpipes.com/ontology/y": 140,
+          "http://linkedpipes.com/ontology/configurationGraph": {
+            "@id": "http://obeu.vse.cz:9080/resources/pipelines/created-1457365756531/components/c8d34e93-599e-43ef-8ff8-4fc878062ca8/configuration"
+          }
+        },
+        {
+          "@id": "http://obeu.vse.cz:9080/resources/pipelines/created-1457365756531/connection/e396daa3-0087-4ac3-89a3-f1d2fa7c9c9f",
+          "@type": [
+            "http://linkedpipes.com/ontology/Connection"
+          ],
+          "http://linkedpipes.com/ontology/sourceComponent": {
+            "@id": "http://obeu.vse.cz:9080/resources/pipelines/created-1457365756531/components/514e91c2-72b3-4898-9db1-16fa3e14ad5c"
+          },
+          "http://linkedpipes.com/ontology/sourceBinding": "OutputRdf",
+          "http://linkedpipes.com/ontology/targetComponent": {
+            "@id": "http://obeu.vse.cz:9080/resources/pipelines/created-1457365756531/components/c8d34e93-599e-43ef-8ff8-4fc878062ca8"
+          },
+          "http://linkedpipes.com/ontology/targetBinding": "InputRdf"
+        },
+        {
+          "@id": "http://obeu.vse.cz:9080/resources/pipelines/created-1457365756531/components/5c4b2515-c69b-4e13-94d0-2218bc589a07",
+          "@type": [
+            "http://linkedpipes.com/ontology/Component"
+          ],
+          "http://www.w3.org/2004/02/skos/core#prefLabel": "Files to SCP",
+          "http://linkedpipes.com/ontology/template": {
+            "@id": "http://obeu.vse.cz:9080/resources/components/l-filesToScp"
+          },
+          "http://linkedpipes.com/ontology/x": 960,
+          "http://linkedpipes.com/ontology/y": 140,
+          "http://linkedpipes.com/ontology/configurationGraph": {
+            "@id": "http://obeu.vse.cz:9080/resources/pipelines/created-1457365756531/components/5c4b2515-c69b-4e13-94d0-2218bc589a07/configuration"
+          }
+        },
+        {
+          "@id": "http://obeu.vse.cz:9080/resources/pipelines/created-1457365756531/connection/812cd4d1-c78d-4b96-978f-01d63c72de70",
+          "@type": [
+            "http://linkedpipes.com/ontology/Connection"
+          ],
+          "http://linkedpipes.com/ontology/sourceComponent": {
+            "@id": "http://obeu.vse.cz:9080/resources/pipelines/created-1457365756531/components/c8d34e93-599e-43ef-8ff8-4fc878062ca8"
+          },
+          "http://linkedpipes.com/ontology/sourceBinding": "OutputFile",
+          "http://linkedpipes.com/ontology/targetComponent": {
+            "@id": "http://obeu.vse.cz:9080/resources/pipelines/created-1457365756531/components/5c4b2515-c69b-4e13-94d0-2218bc589a07"
+          },
+          "http://linkedpipes.com/ontology/targetBinding": "FilesInput"
+        },
+        {
+          "@id": "http://obeu.vse.cz:9080/resources/pipelines/created-1457365756531/components/abd55bc4-386a-4dca-8fbf-318c81236b16",
+          "@type": [
+            "http://linkedpipes.com/ontology/Component"
+          ],
+          "http://www.w3.org/2004/02/skos/core#prefLabel": "Virtuoso",
+          "http://linkedpipes.com/ontology/template": {
+            "@id": "http://obeu.vse.cz:9080/resources/components/x-virtuoso"
+          },
+          "http://linkedpipes.com/ontology/x": 40,
+          "http://linkedpipes.com/ontology/y": 220,
+          "http://linkedpipes.com/ontology/configurationGraph": {
+            "@id": "http://obeu.vse.cz:9080/resources/pipelines/created-1457365756531/components/abd55bc4-386a-4dca-8fbf-318c81236b16/configuration"
+          }
+        },
+        {
+          "@id": "http://obeu.vse.cz:9080/resources/pipelines/created-1457365756531/connection/d9ed2596-8a53-4f7f-85ac-bafa047880cd",
+          "@type": [
+            "http://linkedpipes.com/ontology/RunAfter"
+          ],
+          "http://linkedpipes.com/ontology/sourceComponent": {
+            "@id": "http://obeu.vse.cz:9080/resources/pipelines/created-1457365756531/components/abd55bc4-386a-4dca-8fbf-318c81236b16"
+          },
+          "http://linkedpipes.com/ontology/targetComponent": {
+            "@id": "http://obeu.vse.cz:9080/resources/pipelines/created-1457365756531/components/5c4b2515-c69b-4e13-94d0-2218bc589a07"
+          }
+        },
+        {
+          "@id": "http://obeu.vse.cz:9080/resources/pipelines/created-1457365756531/components/33e97d78-edb3-4595-86a6-7d53b4c5270d",
+          "@type": [
+            "http://linkedpipes.com/ontology/Component"
+          ],
+          "http://www.w3.org/2004/02/skos/core#prefLabel": "Dataset metadata",
+          "http://linkedpipes.com/ontology/template": {
+            "@id": "http://obeu.vse.cz:9080/resources/components/e-datasetMetadata"
+          },
+          "http://linkedpipes.com/ontology/x": 40,
+          "http://linkedpipes.com/ontology/y": 280,
+          "http://linkedpipes.com/ontology/configurationGraph": {
+            "@id": "http://obeu.vse.cz:9080/resources/pipelines/created-1457365756531/components/33e97d78-edb3-4595-86a6-7d53b4c5270d/configuration"
+          }
+        },
+        {
+          "@id": "http://obeu.vse.cz:9080/resources/pipelines/created-1457365756531/components/28d78aed-64b5-4feb-9bbc-54df5952e2c4",
+          "@type": [
+            "http://linkedpipes.com/ontology/Component"
+          ],
+          "http://www.w3.org/2004/02/skos/core#prefLabel": "Distribution metadata",
+          "http://linkedpipes.com/ontology/template": {
+            "@id": "http://obeu.vse.cz:9080/resources/components/e-distributionMetadata"
+          },
+          "http://linkedpipes.com/ontology/x": 40,
+          "http://linkedpipes.com/ontology/y": 340,
+          "http://linkedpipes.com/ontology/configurationGraph": {
+            "@id": "http://obeu.vse.cz:9080/resources/pipelines/created-1457365756531/components/28d78aed-64b5-4feb-9bbc-54df5952e2c4/configuration"
+          }
+        },
+        {
+          "@id": "http://obeu.vse.cz:9080/resources/pipelines/created-1457365756531/connection/1c613a0c-0bb4-415c-a451-ef318bbfedaf",
+          "@type": [
+            "http://linkedpipes.com/ontology/Connection"
+          ],
+          "http://linkedpipes.com/ontology/sourceComponent": {
+            "@id": "http://obeu.vse.cz:9080/resources/pipelines/created-1457365756531/components/33e97d78-edb3-4595-86a6-7d53b4c5270d"
+          },
+          "http://linkedpipes.com/ontology/sourceBinding": "Metadata",
+          "http://linkedpipes.com/ontology/targetComponent": {
+            "@id": "http://obeu.vse.cz:9080/resources/pipelines/created-1457365756531/components/28d78aed-64b5-4feb-9bbc-54df5952e2c4"
+          },
+          "http://linkedpipes.com/ontology/targetBinding": "DatasetMetadata"
+        },
+        {
+          "@id": "http://obeu.vse.cz:9080/resources/pipelines/created-1457365756531/components/16251c04-0766-4c43-892e-6b197e0fa1a5",
+          "@type": [
+            "http://linkedpipes.com/ontology/Component"
+          ],
+          "http://www.w3.org/2004/02/skos/core#prefLabel": "RDF to file",
+          "http://linkedpipes.com/ontology/template": {
+            "@id": "http://obeu.vse.cz:9080/resources/components/t-rdfToFile"
+          },
+          "http://linkedpipes.com/ontology/x": 300,
+          "http://linkedpipes.com/ontology/y": 280,
+          "http://linkedpipes.com/ontology/configurationGraph": {
+            "@id": "http://obeu.vse.cz:9080/resources/pipelines/created-1457365756531/components/16251c04-0766-4c43-892e-6b197e0fa1a5/configuration"
+          }
+        },
+        {
+          "@id": "http://obeu.vse.cz:9080/resources/pipelines/created-1457365756531/connection/dd9c7649-52fa-4645-a11a-45d59b032ad8",
+          "@type": [
+            "http://linkedpipes.com/ontology/Connection"
+          ],
+          "http://linkedpipes.com/ontology/sourceComponent": {
+            "@id": "http://obeu.vse.cz:9080/resources/pipelines/created-1457365756531/components/33e97d78-edb3-4595-86a6-7d53b4c5270d"
+          },
+          "http://linkedpipes.com/ontology/sourceBinding": "Metadata",
+          "http://linkedpipes.com/ontology/targetComponent": {
+            "@id": "http://obeu.vse.cz:9080/resources/pipelines/created-1457365756531/components/16251c04-0766-4c43-892e-6b197e0fa1a5"
+          },
+          "http://linkedpipes.com/ontology/targetBinding": "InputRdf"
+        },
+        {
+          "@id": "http://obeu.vse.cz:9080/resources/pipelines/created-1457365756531/connection/431c174e-5336-42b0-90e2-9bff4223cebb",
+          "@type": [
+            "http://linkedpipes.com/ontology/Connection"
+          ],
+          "http://linkedpipes.com/ontology/sourceComponent": {
+            "@id": "http://obeu.vse.cz:9080/resources/pipelines/created-1457365756531/components/28d78aed-64b5-4feb-9bbc-54df5952e2c4"
+          },
+          "http://linkedpipes.com/ontology/sourceBinding": "Metadata",
+          "http://linkedpipes.com/ontology/targetComponent": {
+            "@id": "http://obeu.vse.cz:9080/resources/pipelines/created-1457365756531/components/16251c04-0766-4c43-892e-6b197e0fa1a5"
+          },
+          "http://linkedpipes.com/ontology/targetBinding": "InputRdf"
+        },
+        {
+          "@id": "http://obeu.vse.cz:9080/resources/pipelines/created-1457365756531/components/b2d0d710-179a-44b2-af22-ca59515d1f12",
+          "@type": [
+            "http://linkedpipes.com/ontology/Component"
+          ],
+          "http://www.w3.org/2004/02/skos/core#prefLabel": "DCAT-AP to CKAN",
+          "http://linkedpipes.com/ontology/template": {
+            "@id": "http://obeu.vse.cz:9080/resources/components/l-dcatApToCkan"
+          },
+          "http://linkedpipes.com/ontology/x": 300,
+          "http://linkedpipes.com/ontology/y": 340,
+          "http://linkedpipes.com/ontology/configurationGraph": {
+            "@id": "http://obeu.vse.cz:9080/resources/pipelines/created-1457365756531/components/b2d0d710-179a-44b2-af22-ca59515d1f12/configuration"
+          }
+        },
+        {
+          "@id": "http://obeu.vse.cz:9080/resources/pipelines/created-1457365756531/connection/682ff200-c19f-4151-be50-5c84fbf3892c",
+          "@type": [
+            "http://linkedpipes.com/ontology/Connection"
+          ],
+          "http://linkedpipes.com/ontology/sourceComponent": {
+            "@id": "http://obeu.vse.cz:9080/resources/pipelines/created-1457365756531/components/33e97d78-edb3-4595-86a6-7d53b4c5270d"
+          },
+          "http://linkedpipes.com/ontology/sourceBinding": "Metadata",
+          "http://linkedpipes.com/ontology/targetComponent": {
+            "@id": "http://obeu.vse.cz:9080/resources/pipelines/created-1457365756531/components/b2d0d710-179a-44b2-af22-ca59515d1f12"
+          },
+          "http://linkedpipes.com/ontology/targetBinding": "Metadata"
+        },
+        {
+          "@id": "http://obeu.vse.cz:9080/resources/pipelines/created-1457365756531/connection/64877383-c7b4-4294-a127-0ead52c90067",
+          "@type": [
+            "http://linkedpipes.com/ontology/Connection"
+          ],
+          "http://linkedpipes.com/ontology/sourceComponent": {
+            "@id": "http://obeu.vse.cz:9080/resources/pipelines/created-1457365756531/components/28d78aed-64b5-4feb-9bbc-54df5952e2c4"
+          },
+          "http://linkedpipes.com/ontology/sourceBinding": "Metadata",
+          "http://linkedpipes.com/ontology/targetComponent": {
+            "@id": "http://obeu.vse.cz:9080/resources/pipelines/created-1457365756531/components/b2d0d710-179a-44b2-af22-ca59515d1f12"
+          },
+          "http://linkedpipes.com/ontology/targetBinding": "Metadata"
+        },
+        {
+          "@id": "http://obeu.vse.cz:9080/resources/pipelines/created-1457365756531/connection/2d402efa-5e56-443f-b8d8-7e90529ec57b",
+          "@type": [
+            "http://linkedpipes.com/ontology/Connection"
+          ],
+          "http://linkedpipes.com/ontology/sourceComponent": {
+            "@id": "http://obeu.vse.cz:9080/resources/pipelines/created-1457365756531/components/16251c04-0766-4c43-892e-6b197e0fa1a5"
+          },
+          "http://linkedpipes.com/ontology/sourceBinding": "OutputFile",
+          "http://linkedpipes.com/ontology/targetComponent": {
+            "@id": "http://obeu.vse.cz:9080/resources/pipelines/created-1457365756531/components/5c4b2515-c69b-4e13-94d0-2218bc589a07"
+          },
+          "http://linkedpipes.com/ontology/targetBinding": "FilesInput"
+        },
+        {
+          "@id": "http://obeu.vse.cz:9080/resources/pipelines/created-1457365756531/connection/57835244-a3d6-4c38-ae79-1d5b3567ca69/vertex/1",
+          "@type": "http://linkedpipes.com/ontology/Vertex",
+          "http://linkedpipes.com/ontology/x": 1100,
+          "http://linkedpipes.com/ontology/y": 100,
+          "http://linkedpipes.com/ontology/order": 1
+        },
+        {
+          "@id": "http://obeu.vse.cz:9080/resources/pipelines/created-1457365756531/connection/57835244-a3d6-4c38-ae79-1d5b3567ca69/vertex/2",
+          "@type": "http://linkedpipes.com/ontology/Vertex",
+          "http://linkedpipes.com/ontology/x": 40,
+          "http://linkedpipes.com/ontology/y": 80,
+          "http://linkedpipes.com/ontology/order": 2
+        }
+      ],
+      "@id": "http://obeu.vse.cz:9080/resources/pipelines/created-1457365756531"
+    },
+    {
+      "@graph": [
+        {
+          "@id": "http://localhost/resources/configuration",
+          "@type": [
+            "http://plugins.linkedpipes.com/ontology/e-httpGet#Configuration"
+          ]
+        },
+        {
+          "@id": "http://localhost/resources/temp/IWPjzWN",
+          "@type": [
+            "http://plugins.linkedpipes.com/ontology/e-httpGetFile#Configuration"
+          ],
+          "http://plugins.linkedpipes.com/ontology/e-httpGetFile#fileUri": "http://eur-lex.europa.eu/budget/data/General/2014/en/Final-budget-2014-EN.zip",
+          "http://plugins.linkedpipes.com/ontology/e-httpGetFile#fileName": "eu_budget_2014.zip"
+        }
+      ],
+      "@id": "http://obeu.vse.cz:9080/resources/pipelines/created-1457365756531/components/b63de62e-2757-4995-b239-929d9f44cd0a/configuration"
+    },
+    {
+      "@graph": [
+        {
+          "@id": "http://localhost/resources/configuration",
+          "@type": [
+            "http://plugins.linkedpipes.com/ontology/t-unpackZip#Configuration"
+          ],
+          "http://plugins.linkedpipes.com/ontology/t-unpackZip#usePrefix": true
+        }
+      ],
+      "@id": "http://obeu.vse.cz:9080/resources/pipelines/created-1457365756531/components/20ed3aeb-6216-42dd-aa54-d2266860d26f/configuration"
+    },
+    {
+      "@graph": [
+        {
+          "@id": "http://localhost/resources/configuration",
+          "@type": [
+            "http://plugins.linkedpipes.com/ontology/t-filesFilter#Configuration"
+          ],
+          "http://plugins.linkedpipes.com/ontology/t-filesFilter#fileNamePattern": "^.*c!SEC.*\\.xml$"
+        }
+      ],
+      "@id": "http://obeu.vse.cz:9080/resources/pipelines/created-1457365756531/components/f3653e89-8b25-490b-9a4c-b953651ccd64/configuration"
+    },
+    {
+      "@graph": [
+        {
+          "@id": "http://localhost/resources/configuration",
+          "@type": [
+            "http://plugins.linkedpipes.com/ontology/t-xslt#Configuration"
+          ],
+          "http://plugins.linkedpipes.com/ontology/t-xslt#template": "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<!DOCTYPE xsl:stylesheet [\n    <!ENTITY xsd   \"http://www.w3.org/2001/XMLSchema#\">\n]>\n<xsl:stylesheet\n    xmlns:dcterms=\"http://purl.org/dc/terms/\"\n    xmlns:f=\"http://opendata.cz/xslt/functions#\"\n    xmlns:eu=\"http://data.openbudgets.eu/ontology/budget-of-the-european-union/\"\n    xmlns:rdf=\"http://www.w3.org/1999/02/22-rdf-syntax-ns#\"\n    xmlns:rdfs=\"http://www.w3.org/2000/01/rdf-schema#\"\n    xmlns:skos=\"http://www.w3.org/2004/02/skos/core#\"\n    xmlns:xsd=\"http://www.w3.org/2001/XMLSchema\"\n    xmlns:xsl=\"http://www.w3.org/1999/XSL/Transform\"\n    exclude-result-prefixes=\"f xsd\"\n    version=\"2.0\">\n    \n    <!-- Parameters -->\n    \n    <xsl:param name=\"conceptScheme\">http://data.openbudgets.eu/resource/dataset/budget-of-the-european-union-2014/codelist/eu-budget-nomenclature-2014</xsl:param>\n    \n    <!-- Functions -->\n    \n    <!-- Casts a xsd:date to xsd:dateTime -->\n    <xsl:function name=\"f:dateToDateTime\" as=\"xsd:dateTime\">\n        <xsl:param name=\"date\" as=\"xsd:date\"/>\n        <xsl:value-of select=\"concat($date, 'T00:00:00Z')\"/>\n    </xsl:function>\n    \n    <!-- Mints a new URI in namespace $ns for instance of $class identified with $key. -->\n    <xsl:function name=\"f:getInstanceUri\" as=\"xsd:anyURI\">\n        <xsl:param name=\"key\" as=\"xsd:string\"/>\n        <xsl:value-of select=\"concat($conceptScheme, '/', f:slugify($key))\"/>\n    </xsl:function>\n    \n    <!-- Converts camelCase $text into kebab-case. -->\n    <xsl:function name=\"f:kebabCase\" as=\"xsd:string\">\n        <xsl:param name=\"text\" as=\"xsd:string\"/>\n        <xsl:value-of select=\"f:slugify(replace($text, '(\\p{Ll})(\\p{Lu})', '$1-$2'))\"/>\n    </xsl:function>\n    \n    <!-- Converts $text into URI-safe slug. -->\n    <xsl:function name=\"f:slugify\" as=\"xsd:anyURI\">\n        <xsl:param name=\"text\" as=\"xsd:string\"/>\n        <xsl:value-of select=\"encode-for-uri(translate(replace(lower-case(normalize-unicode($text, 'NFKD')), '\\P{IsBasicLatin}', ''), ' ', '-'))\" />\n    </xsl:function>\n    \n    <!-- Output -->\n    \n    <xsl:output encoding=\"UTF-8\" indent=\"yes\" method=\"xml\" normalization-form=\"NFC\" />\n    <xsl:strip-space elements=\"*\"/>\n    \n    <!-- Templates -->\n    \n    <xsl:template match=\"/\">\n        <rdf:RDF>\n            <skos:ConceptScheme rdf:about=\"{$conceptScheme}\">\n                <rdfs:label xml:lang=\"en\">Activity-based budget nomenclature 2014</rdfs:label>\n            </skos:ConceptScheme>\n            <xsl:apply-templates/>\n        </rdf:RDF>\n    </xsl:template>\n    \n    <xsl:template match=\"nmc-expenditure\">\n        <xsl:variable name=\"sectionNumber\">\n            <xsl:analyze-string select=\"tokenize(base-uri(), '/')[last()]\" regex=\"SEC(\\d+)\">\n                <xsl:matching-substring><xsl:value-of select=\"regex-group(1)\"/></xsl:matching-substring>\n            </xsl:analyze-string>\n        </xsl:variable>\n        <skos:Concept rdf:about=\"{f:getInstanceUri(concat('section-', $sectionNumber))}\">\n            <skos:notation><xsl:value-of select=\"$sectionNumber\"/></skos:notation>\n            <xsl:call-template name=\"conceptScheme\"/>\n            <xsl:apply-templates select=\"*[starts-with(name(), 'nmc-')]\">\n                <xsl:with-param name=\"sectionNumber\" select=\"$sectionNumber\" tunnel=\"yes\"/>\n            </xsl:apply-templates>\n        </skos:Concept>\n    </xsl:template>\n    \n    <xsl:template match=\"nmc-title|nmc-chapter|nmc-article|nmc-heading|nmc-item|nmc-subitem\">\n        <xsl:param name=\"sectionNumber\" tunnel=\"yes\"/>\n        <xsl:variable name=\"notation\" select=\"@alias\"/>\n        <xsl:variable name=\"level\" select=\"substring-after(name(), 'nmc-')\"/>\n        <skos:narrower>\n            <skos:Concept rdf:about=\"{concat($conceptScheme, '/', $sectionNumber, '-', $level, '-', f:slugify($notation))}\">\n                <xsl:call-template name=\"conceptScheme\"/>\n                <skos:notation><xsl:value-of select=\"$notation\"/></skos:notation>\n                <xsl:apply-templates select=\"*[starts-with(name(), 'bud-')]\"/>\n                <xsl:apply-templates select=\"*[starts-with(name(), 'nmc-')]\"/>\n            </skos:Concept>\n        </skos:narrower>\n    </xsl:template>\n    \n    <xsl:template match=\"bud-heading/p\">\n        <skos:prefLabel>\n            <xsl:if test=\"@lang\">\n                <xsl:attribute name=\"xml:lang\" select=\"@lang\"/>\n            </xsl:if>\n            <xsl:value-of select=\"normalize-space(.)\"/>\n        </skos:prefLabel>\n    </xsl:template>\n    \n    <xsl:template match=\"bud-remark[*]\">\n        <rdfs:comment rdf:parseType=\"Literal\">\n            <xsl:copy-of select=\"*\"/>\n        </rdfs:comment>\n    </xsl:template>\n    \n    <xsl:template match=\"bud-legal[*]\">\n        <eu:legalNote rdf:parseType=\"Literal\">\n            <xsl:copy-of select=\"*\"/>\n        </eu:legalNote>\n    </xsl:template>\n    \n    <xsl:template match=\"bud-reference[*]\">\n        <dcterms:references rdf:parseType=\"Literal\">\n            <xsl:copy-of select=\"*\"/>\n        </dcterms:references>\n    </xsl:template>\n    \n    <xsl:template match=\"bud-res-cond[*]\">\n        <eu:reserveCondition rdf:parseType=\"Literal\">\n            <xsl:copy-of select=\"*\"/>\n        </eu:reserveCondition>\n    </xsl:template>\n    \n    <!-- Catch-all empty template -->\n    <xsl:template match=\"text()|@*\" mode=\"#all\"/>\n    \n    <!-- Named templates -->\n    \n    <xsl:template name=\"conceptScheme\">\n        <skos:inScheme rdf:resource=\"{$conceptScheme}\"/>\n    </xsl:template>\n    \n</xsl:stylesheet>",
+          "http://plugins.linkedpipes.com/ontology/t-xslt#extension": "rdf"
+        }
+      ],
+      "@id": "http://obeu.vse.cz:9080/resources/pipelines/created-1457365756531/components/f52b79df-7e85-4278-b51f-63d8691548a8/configuration"
+    },
+    {
+      "@graph": [
+        {
+          "@id": "http://localhost/resources/configuration",
+          "@type": [
+            "http://plugins.linkedpipes.com/ontology/t-filesToRdf#Configuration"
+          ],
+          "http://plugins.linkedpipes.com/ontology/t-filesToRdf#commitSize": 50000,
+          "http://plugins.linkedpipes.com/ontology/t-filesToRdf#mimeType": ""
+        }
+      ],
+      "@id": "http://obeu.vse.cz:9080/resources/pipelines/created-1457365756531/components/4b6f7d49-f3ba-4ceb-bc15-4ca7d13dea7b/configuration"
+    },
+    {
+      "@graph": [
+        {
+          "@id": "http://localhost/resources/configuration",
+          "@type": [
+            "http://plugins.linkedpipes.com/ontology/t-sparqlUpdate#Configuration"
+          ],
+          "http://plugins.linkedpipes.com/ontology/t-sparqlUpdate#query": "PREFIX skos: <http://www.w3.org/2004/02/skos/core#>\n\nINSERT {\n  ?narrower skos:broader ?broader .\n}\nWHERE {\n  ?broader skos:narrower ?narrower .\n}"
+        }
+      ],
+      "@id": "http://obeu.vse.cz:9080/resources/pipelines/created-1457365756531/components/96568736-c410-40c2-b510-f36e7f226239/configuration"
+    },
+    {
+      "@graph": [
+        {
+          "@id": "http://localhost/resources/configuration",
+          "@type": [
+            "http://plugins.linkedpipes.com/ontology/t-sparqlUpdate#Configuration"
+          ],
+          "http://plugins.linkedpipes.com/ontology/t-sparqlUpdate#query": "PREFIX skos: <http://www.w3.org/2004/02/skos/core#>\n\nINSERT {\n  ?scheme skos:hasTopConcept ?topConcept .\n  ?topConcept skos:topConceptOf ?scheme .\n}\nWHERE {\n  ?topConcept a skos:Concept ;\n    skos:inScheme ?scheme .\n  FILTER NOT EXISTS {\n    ?topConcept skos:broader [] .\n  }\n}"
+        }
+      ],
+      "@id": "http://obeu.vse.cz:9080/resources/pipelines/created-1457365756531/components/514e91c2-72b3-4898-9db1-16fa3e14ad5c/configuration"
+    },
+    {
+      "@graph": [
+        {
+          "@id": "http://localhost/resources/t-rdfToFile/configuration",
+          "@type": [
+            "http://plugins.linkedpipes.com/ontology/t-rdfToFile#Configuration"
+          ],
+          "http://plugins.linkedpipes.com/ontology/t-rdfToFile#fileName": "eu_budget_2014_nomenclature.ttl",
+          "http://plugins.linkedpipes.com/ontology/t-rdfToFile#fileType": "text/turtle",
+          "http://plugins.linkedpipes.com/ontology/t-rdfToFile#graphUri": "http://localhost/default"
+        }
+      ],
+      "@id": "http://obeu.vse.cz:9080/resources/pipelines/created-1457365756531/components/c8d34e93-599e-43ef-8ff8-4fc878062ca8/configuration"
+    },
+    {
+      "@graph": [
+        {
+          "@id": "http://localhost/resources/configuration",
+          "@type": [
+            "http://plugins.linkedpipes.com/ontology/l-filesToScp#Configuration"
+          ],
+          "http://plugins.linkedpipes.com/ontology/l-filesToScp#userName": "uploader",
+          "http://plugins.linkedpipes.com/ontology/l-filesToScp#password": "obeu",
+          "http://plugins.linkedpipes.com/ontology/l-filesToScp#host": "obeu.vse.cz",
+          "http://plugins.linkedpipes.com/ontology/l-filesToScp#port": 22,
+          "http://plugins.linkedpipes.com/ontology/l-filesToScp#targetDirectory": "/data/dump",
+          "http://plugins.linkedpipes.com/ontology/l-filesToScp#createDirectory": true
+        }
+      ],
+      "@id": "http://obeu.vse.cz:9080/resources/pipelines/created-1457365756531/components/5c4b2515-c69b-4e13-94d0-2218bc589a07/configuration"
+    },
+    {
+      "@graph": [
+        {
+          "@id": "http://localhost/resources/configuration",
+          "@type": [
+            "http://plugins.linkedpipes.com/ontology/x-virtuoso#Configuration"
+          ],
+          "http://plugins.linkedpipes.com/ontology/x-virtuoso#uri": "jdbc:virtuoso://localhost:1111/charset=UTF-8/",
+          "http://plugins.linkedpipes.com/ontology/x-virtuoso#username": "dba",
+          "http://plugins.linkedpipes.com/ontology/x-virtuoso#password": "loddva",
+          "http://plugins.linkedpipes.com/ontology/x-virtuoso#clearGraph": true,
+          "http://plugins.linkedpipes.com/ontology/x-virtuoso#directory": "/data/dump",
+          "http://plugins.linkedpipes.com/ontology/x-virtuoso#graph": "http://data.openbudgets.eu/resource/dataset/budget-of-the-european-union-2014/code-list/eu-budget-nomenclature-2014",
+          "http://plugins.linkedpipes.com/ontology/x-virtuoso#updateInterval": 10,
+          "http://plugins.linkedpipes.com/ontology/x-virtuoso#clearSqlLoadTable": true,
+          "http://plugins.linkedpipes.com/ontology/x-virtuoso#fileName": "eu_budget_2014_nomenclature.ttl"
+        }
+      ],
+      "@id": "http://obeu.vse.cz:9080/resources/pipelines/created-1457365756531/components/abd55bc4-386a-4dca-8fbf-318c81236b16/configuration"
+    },
+    {
+      "@graph": [
+        {
+          "@id": "http://localhost/resources/configuration",
+          "@type": [
+            "http://plugins.linkedpipes.com/ontology/x-virtuoso#Configuration"
+          ],
+          "http://plugins.linkedpipes.com/ontology/x-virtuoso#uri": "jdbc:virtuoso://localhost:1111/charset=UTF-8/",
+          "http://plugins.linkedpipes.com/ontology/x-virtuoso#username": "dba",
+          "http://plugins.linkedpipes.com/ontology/x-virtuoso#password": "loddva",
+          "http://plugins.linkedpipes.com/ontology/x-virtuoso#clearGraph": true,
+          "http://plugins.linkedpipes.com/ontology/x-virtuoso#directory": "/data/dump",
+          "http://plugins.linkedpipes.com/ontology/x-virtuoso#graph": "http://data.openbudgets.eu/resource/dataset/budget-of-the-european-union-2014/code-list/eu-budget-nomenclature-2014",
+          "http://plugins.linkedpipes.com/ontology/x-virtuoso#updateInterval": 10,
+          "http://plugins.linkedpipes.com/ontology/x-virtuoso#clearSqlLoadTable": true,
+          "http://plugins.linkedpipes.com/ontology/x-virtuoso#fileName": "eu_budget_2014_nomenclature.ttl"
+        }
+      ],
+      "@id": "http://obeu.vse.cz:9080/resources/pipelines/created-1457365756531/components/1dda275c-1f4f-48e6-bbd0-608a0e9d5be2/configuration"
+    },
+    {
+      "@graph": [
+        {
+          "@id": "http://localhost/resources/configuration",
+          "@type": [
+            "http://plugins.linkedpipes.com/ontology/e-datasetMetadata#Configuration"
+          ],
+          "http://plugins.linkedpipes.com/ontology/e-datasetMetadata#datasetURI": "http://data.openbudgets.eu/resource/dataset/budget-of-the-european-union-2014/code-list/eu-budget-nomenclature-2014",
+          "http://plugins.linkedpipes.com/ontology/e-datasetMetadata#language_orig": "en",
+          "http://plugins.linkedpipes.com/ontology/e-datasetMetadata#title_cs": "Budget nomenclature of the EU budget 2014",
+          "http://plugins.linkedpipes.com/ontology/e-datasetMetadata#title_en": "",
+          "http://plugins.linkedpipes.com/ontology/e-datasetMetadata#desc_cs": "",
+          "http://plugins.linkedpipes.com/ontology/e-datasetMetadata#desc_en": "",
+          "http://plugins.linkedpipes.com/ontology/e-datasetMetadata#publisherURI": "http://openbudgets.eu",
+          "http://plugins.linkedpipes.com/ontology/e-datasetMetadata#publisherName": "OpenBudgets.eu",
+          "http://plugins.linkedpipes.com/ontology/e-datasetMetadata#license": "http://ec.europa.eu/geninfo/legal_notices_en.htm",
+          "http://plugins.linkedpipes.com/ontology/e-datasetMetadata#contactPoint": "",
+          "http://plugins.linkedpipes.com/ontology/e-datasetMetadata#contactPointName": "",
+          "http://plugins.linkedpipes.com/ontology/e-datasetMetadata#periodicity": "P1Y",
+          "http://plugins.linkedpipes.com/ontology/e-datasetMetadata#issued": "2013-12-31T23:00:00.000Z",
+          "http://plugins.linkedpipes.com/ontology/e-datasetMetadata#identifier": "EU_BUDGET_2014_NOMENCLATURE_CLASSIFICATION",
+          "http://plugins.linkedpipes.com/ontology/e-datasetMetadata#landingPage": "",
+          "http://plugins.linkedpipes.com/ontology/e-datasetMetadata#temporalEnd": "2014-12-30T23:00:00.000Z",
+          "http://plugins.linkedpipes.com/ontology/e-datasetMetadata#temporalStart": "2013-12-31T23:00:00.000Z",
+          "http://plugins.linkedpipes.com/ontology/e-datasetMetadata#spatial": "",
+          "http://plugins.linkedpipes.com/ontology/e-datasetMetadata#schema": "",
+          "http://plugins.linkedpipes.com/ontology/e-datasetMetadata#useNow": true,
+          "http://plugins.linkedpipes.com/ontology/e-datasetMetadata#useTemporal": true,
+          "http://plugins.linkedpipes.com/ontology/e-datasetMetadata#authors": [
+            "http://mynarz.net/#jindrich"
+          ],
+          "http://plugins.linkedpipes.com/ontology/e-datasetMetadata#sources": [
+            "http://open-data.europa.eu/data/dataset/budget-of-the-european-union-2014"
+          ],
+          "http://plugins.linkedpipes.com/ontology/e-datasetMetadata#languages": [
+            "http://id.loc.gov/vocabulary/iso639-1/en"
+          ],
+          "http://plugins.linkedpipes.com/ontology/e-datasetMetadata#keywords_orig": [
+            "eu",
+            "budget",
+            "code list",
+            "programme classification"
+          ]
+        }
+      ],
+      "@id": "http://obeu.vse.cz:9080/resources/pipelines/created-1457365756531/components/33e97d78-edb3-4595-86a6-7d53b4c5270d/configuration"
+    },
+    {
+      "@graph": [
+        {
+          "@id": "http://localhost/resources/configuration",
+          "@type": [
+            "http://plugins.linkedpipes.com/ontology/e-distributionMetadata#Configuration"
+          ],
+          "http://plugins.linkedpipes.com/ontology/e-distributionMetadata#datasetURI": "",
+          "http://plugins.linkedpipes.com/ontology/e-distributionMetadata#distributionURI": "",
+          "http://plugins.linkedpipes.com/ontology/e-distributionMetadata#language_orig": "",
+          "http://plugins.linkedpipes.com/ontology/e-distributionMetadata#title_orig": "",
+          "http://plugins.linkedpipes.com/ontology/e-distributionMetadata#title_en": "",
+          "http://plugins.linkedpipes.com/ontology/e-distributionMetadata#desc_orig": "",
+          "http://plugins.linkedpipes.com/ontology/e-distributionMetadata#desc_en": "",
+          "http://plugins.linkedpipes.com/ontology/e-distributionMetadata#license": "",
+          "http://plugins.linkedpipes.com/ontology/e-distributionMetadata#sparqlEndpointUrl": "http://obeu.vse.cz:8890/sparql",
+          "http://plugins.linkedpipes.com/ontology/e-distributionMetadata#mediaType": "text/turtle",
+          "http://plugins.linkedpipes.com/ontology/e-distributionMetadata#downloadURL": "http://obeu.vse.cz/dump/eu_budget_2014_nomenclature.ttl",
+          "http://plugins.linkedpipes.com/ontology/e-distributionMetadata#accessURL": "",
+          "http://plugins.linkedpipes.com/ontology/e-distributionMetadata#schema": "",
+          "http://plugins.linkedpipes.com/ontology/e-distributionMetadata#schemaType": "text/turtle",
+          "http://plugins.linkedpipes.com/ontology/e-distributionMetadata#useDatasetURIfromInput": true,
+          "http://plugins.linkedpipes.com/ontology/e-distributionMetadata#useNow": true,
+          "http://plugins.linkedpipes.com/ontology/e-distributionMetadata#titleFromDataset": true,
+          "http://plugins.linkedpipes.com/ontology/e-distributionMetadata#generateDistroURIFromDataset": true,
+          "http://plugins.linkedpipes.com/ontology/e-distributionMetadata#originalLanguageFromDataset": true,
+          "http://plugins.linkedpipes.com/ontology/e-distributionMetadata#issuedFromDataset": true,
+          "http://plugins.linkedpipes.com/ontology/e-distributionMetadata#descriptionFromDataset": true,
+          "http://plugins.linkedpipes.com/ontology/e-distributionMetadata#licenseFromDataset": true,
+          "http://plugins.linkedpipes.com/ontology/e-distributionMetadata#useTemporal": true,
+          "http://plugins.linkedpipes.com/ontology/e-distributionMetadata#temporalFromDataset": true
+        }
+      ],
+      "@id": "http://obeu.vse.cz:9080/resources/pipelines/created-1457365756531/components/28d78aed-64b5-4feb-9bbc-54df5952e2c4/configuration"
+    },
+    {
+      "@graph": [
+        {
+          "@id": "http://localhost/resources/configuration",
+          "@type": [
+            "http://plugins.linkedpipes.com/ontology/l-dcatApToCkan#Configuration"
+          ],
+          "http://plugins.linkedpipes.com/ontology/l-dcatApToCkan#apiUri": "",
+          "http://plugins.linkedpipes.com/ontology/l-dcatApToCkan#apiKey": "d2413b79-f04e-4fdf-bce7-e621c1492236",
+          "http://plugins.linkedpipes.com/ontology/l-dcatApToCkan#loadToCkan": true,
+          "http://plugins.linkedpipes.com/ontology/l-dcatApToCkan#datasetID": "eu-budget-2014-nomenclature",
+          "http://plugins.linkedpipes.com/ontology/l-dcatApToCkan#filename": "ckan-api.json",
+          "http://plugins.linkedpipes.com/ontology/l-dcatApToCkan#organizationId": "",
+          "http://plugins.linkedpipes.com/ontology/l-dcatApToCkan#loadLanguage": "en",
+          "http://plugins.linkedpipes.com/ontology/l-dcatApToCkan#generateVirtuosoExample": true,
+          "http://plugins.linkedpipes.com/ontology/l-dcatApToCkan#generateExample": true,
+          "http://plugins.linkedpipes.com/ontology/l-dcatApToCkan#overwrite": true,
+          "http://plugins.linkedpipes.com/ontology/l-dcatApToCkan#apiUrl": "http://obeu.vse.cz/api/3/action",
+          "http://plugins.linkedpipes.com/ontology/l-dcatApToCkan#loadToCKAN": true
+        }
+      ],
+      "@id": "http://obeu.vse.cz:9080/resources/pipelines/created-1457365756531/components/b2d0d710-179a-44b2-af22-ca59515d1f12/configuration"
+    },
+    {
+      "@graph": [
+        {
+          "@id": "http://localhost/resources/t-rdfToFile/configuration",
+          "@type": [
+            "http://plugins.linkedpipes.com/ontology/t-rdfToFile#Configuration"
+          ],
+          "http://plugins.linkedpipes.com/ontology/t-rdfToFile#fileName": "eu_budget_2014_nomenclature_metadata.ttl",
+          "http://plugins.linkedpipes.com/ontology/t-rdfToFile#fileType": "text/turtle",
+          "http://plugins.linkedpipes.com/ontology/t-rdfToFile#graphUri": "http://localhost/default"
+        }
+      ],
+      "@id": "http://obeu.vse.cz:9080/resources/pipelines/created-1457365756531/components/16251c04-0766-4c43-892e-6b197e0fa1a5/configuration"
+    }
+  ]
+}
