@@ -3,318 +3,318 @@
     {
       "@graph": [
         {
-          "@id": "http://obeu.vse.cz:9080/resources/pipelines/created-1459151601735",
+          "@id": "http://localhost:8080/resources/pipelines/created-1459248505859",
           "@type": [
             "http://linkedpipes.com/ontology/Pipeline"
           ],
           "http://www.w3.org/2004/02/skos/core#prefLabel": "Copy of Děčín 2014 - XI"
         },
         {
-          "@id": "http://obeu.vse.cz:9080/resources/pipelines/created-1459151601735/components/809382c4-46e6-4dd7-a923-53a30dd688f1",
+          "@id": "http://localhost:8080/resources/pipelines/created-1459248505859/components/809382c4-46e6-4dd7-a923-53a30dd688f1",
           "@type": [
             "http://linkedpipes.com/ontology/Component"
           ],
           "http://www.w3.org/2004/02/skos/core#prefLabel": "HTTP get",
           "http://linkedpipes.com/ontology/template": {
-            "@id": "http://obeu.vse.cz:9080/resources/components/e-httpGetFile"
+            "@id": "http://localhost:8080/resources/components/e-httpGetFile"
           },
           "http://linkedpipes.com/ontology/x": 20,
           "http://linkedpipes.com/ontology/y": 40,
           "http://linkedpipes.com/ontology/configurationGraph": {
-            "@id": "http://obeu.vse.cz:9080/resources/pipelines/created-1459151601735/components/809382c4-46e6-4dd7-a923-53a30dd688f1/configuration"
+            "@id": "http://localhost:8080/resources/pipelines/created-1459248505859/components/809382c4-46e6-4dd7-a923-53a30dd688f1/configuration"
           },
           "http://purl.org/dc/terms/description": "Source data"
         },
         {
-          "@id": "http://obeu.vse.cz:9080/resources/pipelines/created-1459151601735/components/47366fcd-cb4c-42a0-9180-1f77d627c17f",
+          "@id": "http://localhost:8080/resources/pipelines/created-1459248505859/components/47366fcd-cb4c-42a0-9180-1f77d627c17f",
           "@type": [
             "http://linkedpipes.com/ontology/Component"
           ],
           "http://www.w3.org/2004/02/skos/core#prefLabel": "Excel to CSV",
           "http://linkedpipes.com/ontology/template": {
-            "@id": "http://obeu.vse.cz:9080/resources/components/t-excelToCsv"
+            "@id": "http://localhost:8080/resources/components/t-excelToCsv"
           },
           "http://linkedpipes.com/ontology/x": 200,
           "http://linkedpipes.com/ontology/y": 40,
           "http://linkedpipes.com/ontology/configurationGraph": {
-            "@id": "http://obeu.vse.cz:9080/resources/pipelines/created-1459151601735/components/47366fcd-cb4c-42a0-9180-1f77d627c17f/configuration"
+            "@id": "http://localhost:8080/resources/pipelines/created-1459248505859/components/47366fcd-cb4c-42a0-9180-1f77d627c17f/configuration"
           }
         },
         {
-          "@id": "http://obeu.vse.cz:9080/resources/pipelines/created-1459151601735/connection/5418ca6b-a47e-4c2c-ac8c-74da60965f36",
+          "@id": "http://localhost:8080/resources/pipelines/created-1459248505859/connection/5418ca6b-a47e-4c2c-ac8c-74da60965f36",
           "@type": [
             "http://linkedpipes.com/ontology/Connection"
           ],
           "http://linkedpipes.com/ontology/sourceComponent": {
-            "@id": "http://obeu.vse.cz:9080/resources/pipelines/created-1459151601735/components/809382c4-46e6-4dd7-a923-53a30dd688f1"
+            "@id": "http://localhost:8080/resources/pipelines/created-1459248505859/components/809382c4-46e6-4dd7-a923-53a30dd688f1"
           },
           "http://linkedpipes.com/ontology/sourceBinding": "FilesOutput",
           "http://linkedpipes.com/ontology/targetComponent": {
-            "@id": "http://obeu.vse.cz:9080/resources/pipelines/created-1459151601735/components/47366fcd-cb4c-42a0-9180-1f77d627c17f"
+            "@id": "http://localhost:8080/resources/pipelines/created-1459248505859/components/47366fcd-cb4c-42a0-9180-1f77d627c17f"
           },
           "http://linkedpipes.com/ontology/targetBinding": "InputFiles"
         },
         {
-          "@id": "http://obeu.vse.cz:9080/resources/pipelines/created-1459151601735/components/c4a8d4df-0137-4c1d-a57f-d539ce099629",
+          "@id": "http://localhost:8080/resources/pipelines/created-1459248505859/components/c4a8d4df-0137-4c1d-a57f-d539ce099629",
           "@type": [
             "http://linkedpipes.com/ontology/Component"
           ],
           "http://www.w3.org/2004/02/skos/core#prefLabel": "Tabular",
           "http://linkedpipes.com/ontology/template": {
-            "@id": "http://obeu.vse.cz:9080/resources/components/t-tabular"
+            "@id": "http://localhost:8080/resources/components/t-tabular"
           },
           "http://linkedpipes.com/ontology/x": 420,
           "http://linkedpipes.com/ontology/y": 40,
           "http://linkedpipes.com/ontology/configurationGraph": {
-            "@id": "http://obeu.vse.cz:9080/resources/pipelines/created-1459151601735/components/c4a8d4df-0137-4c1d-a57f-d539ce099629/configuration"
+            "@id": "http://localhost:8080/resources/pipelines/created-1459248505859/components/c4a8d4df-0137-4c1d-a57f-d539ce099629/configuration"
           }
         },
         {
-          "@id": "http://obeu.vse.cz:9080/resources/pipelines/created-1459151601735/connection/47936cd1-09ea-4950-807f-549a1d5fd836",
+          "@id": "http://localhost:8080/resources/pipelines/created-1459248505859/connection/47936cd1-09ea-4950-807f-549a1d5fd836",
           "@type": [
             "http://linkedpipes.com/ontology/Connection"
           ],
           "http://linkedpipes.com/ontology/sourceComponent": {
-            "@id": "http://obeu.vse.cz:9080/resources/pipelines/created-1459151601735/components/47366fcd-cb4c-42a0-9180-1f77d627c17f"
+            "@id": "http://localhost:8080/resources/pipelines/created-1459248505859/components/47366fcd-cb4c-42a0-9180-1f77d627c17f"
           },
           "http://linkedpipes.com/ontology/sourceBinding": "OutputFiles",
           "http://linkedpipes.com/ontology/targetComponent": {
-            "@id": "http://obeu.vse.cz:9080/resources/pipelines/created-1459151601735/components/c4a8d4df-0137-4c1d-a57f-d539ce099629"
+            "@id": "http://localhost:8080/resources/pipelines/created-1459248505859/components/c4a8d4df-0137-4c1d-a57f-d539ce099629"
           },
           "http://linkedpipes.com/ontology/targetBinding": "InputFiles"
         },
         {
-          "@id": "http://obeu.vse.cz:9080/resources/pipelines/created-1459151601735/components/a20a89d7-507a-4a15-a49b-7233c918235a",
+          "@id": "http://localhost:8080/resources/pipelines/created-1459248505859/components/a20a89d7-507a-4a15-a49b-7233c918235a",
           "@type": [
             "http://linkedpipes.com/ontology/Component"
           ],
           "http://www.w3.org/2004/02/skos/core#prefLabel": "SPARQL construct",
           "http://linkedpipes.com/ontology/template": {
-            "@id": "http://obeu.vse.cz:9080/resources/components/t-sparqlConstruct"
+            "@id": "http://localhost:8080/resources/components/t-sparqlConstruct"
           },
           "http://linkedpipes.com/ontology/x": 580,
           "http://linkedpipes.com/ontology/y": 40,
           "http://linkedpipes.com/ontology/configurationGraph": {
-            "@id": "http://obeu.vse.cz:9080/resources/pipelines/created-1459151601735/components/a20a89d7-507a-4a15-a49b-7233c918235a/configuration"
+            "@id": "http://localhost:8080/resources/pipelines/created-1459248505859/components/a20a89d7-507a-4a15-a49b-7233c918235a/configuration"
           }
         },
         {
-          "@id": "http://obeu.vse.cz:9080/resources/pipelines/created-1459151601735/components/eae12082-7459-460a-9233-6c2fc49e4bd2",
+          "@id": "http://localhost:8080/resources/pipelines/created-1459248505859/components/eae12082-7459-460a-9233-6c2fc49e4bd2",
           "@type": [
             "http://linkedpipes.com/ontology/Component"
           ],
           "http://www.w3.org/2004/02/skos/core#prefLabel": "RDF to file",
           "http://linkedpipes.com/ontology/template": {
-            "@id": "http://obeu.vse.cz:9080/resources/components/t-rdfToFile"
+            "@id": "http://localhost:8080/resources/components/t-rdfToFile"
           },
           "http://linkedpipes.com/ontology/x": 820,
           "http://linkedpipes.com/ontology/y": 40,
           "http://linkedpipes.com/ontology/configurationGraph": {
-            "@id": "http://obeu.vse.cz:9080/resources/pipelines/created-1459151601735/components/eae12082-7459-460a-9233-6c2fc49e4bd2/configuration"
+            "@id": "http://localhost:8080/resources/pipelines/created-1459248505859/components/eae12082-7459-460a-9233-6c2fc49e4bd2/configuration"
           }
         },
         {
-          "@id": "http://obeu.vse.cz:9080/resources/pipelines/created-1459151601735/connection/8ee82fd1-ced9-487a-b0aa-d0bfee43431e",
+          "@id": "http://localhost:8080/resources/pipelines/created-1459248505859/connection/8ee82fd1-ced9-487a-b0aa-d0bfee43431e",
           "@type": [
             "http://linkedpipes.com/ontology/Connection"
           ],
           "http://linkedpipes.com/ontology/sourceComponent": {
-            "@id": "http://obeu.vse.cz:9080/resources/pipelines/created-1459151601735/components/a20a89d7-507a-4a15-a49b-7233c918235a"
+            "@id": "http://localhost:8080/resources/pipelines/created-1459248505859/components/a20a89d7-507a-4a15-a49b-7233c918235a"
           },
           "http://linkedpipes.com/ontology/sourceBinding": "OutputRdf",
           "http://linkedpipes.com/ontology/targetComponent": {
-            "@id": "http://obeu.vse.cz:9080/resources/pipelines/created-1459151601735/components/eae12082-7459-460a-9233-6c2fc49e4bd2"
+            "@id": "http://localhost:8080/resources/pipelines/created-1459248505859/components/eae12082-7459-460a-9233-6c2fc49e4bd2"
           },
           "http://linkedpipes.com/ontology/targetBinding": "InputRdf"
         },
         {
-          "@id": "http://obeu.vse.cz:9080/resources/pipelines/created-1459151601735/components/9a907f20-3289-44fc-99f1-7e9e889d8d59",
+          "@id": "http://localhost:8080/resources/pipelines/created-1459248505859/components/9a907f20-3289-44fc-99f1-7e9e889d8d59",
           "@type": [
             "http://linkedpipes.com/ontology/Component"
           ],
           "http://www.w3.org/2004/02/skos/core#prefLabel": "HTTP get",
           "http://linkedpipes.com/ontology/template": {
-            "@id": "http://obeu.vse.cz:9080/resources/components/e-httpGetFile"
+            "@id": "http://localhost:8080/resources/components/e-httpGetFile"
           },
           "http://linkedpipes.com/ontology/x": 20,
           "http://linkedpipes.com/ontology/y": 120,
           "http://purl.org/dc/terms/description": "DSD",
           "http://linkedpipes.com/ontology/configurationGraph": {
-            "@id": "http://obeu.vse.cz:9080/resources/pipelines/created-1459151601735/components/9a907f20-3289-44fc-99f1-7e9e889d8d59/configuration"
+            "@id": "http://localhost:8080/resources/pipelines/created-1459248505859/components/9a907f20-3289-44fc-99f1-7e9e889d8d59/configuration"
           }
         },
         {
-          "@id": "http://obeu.vse.cz:9080/resources/pipelines/created-1459151601735/components/069d85d3-fac7-4921-8ccd-ce0a59d9b483",
+          "@id": "http://localhost:8080/resources/pipelines/created-1459248505859/components/069d85d3-fac7-4921-8ccd-ce0a59d9b483",
           "@type": [
             "http://linkedpipes.com/ontology/Component"
           ],
           "http://www.w3.org/2004/02/skos/core#prefLabel": "Files to RDF",
           "http://linkedpipes.com/ontology/template": {
-            "@id": "http://obeu.vse.cz:9080/resources/components/t-filesToRdf"
+            "@id": "http://localhost:8080/resources/components/t-filesToRdf"
           },
           "http://linkedpipes.com/ontology/x": 200,
           "http://linkedpipes.com/ontology/y": 120,
           "http://linkedpipes.com/ontology/configurationGraph": {
-            "@id": "http://obeu.vse.cz:9080/resources/pipelines/created-1459151601735/components/069d85d3-fac7-4921-8ccd-ce0a59d9b483/configuration"
+            "@id": "http://localhost:8080/resources/pipelines/created-1459248505859/components/069d85d3-fac7-4921-8ccd-ce0a59d9b483/configuration"
           }
         },
         {
-          "@id": "http://obeu.vse.cz:9080/resources/pipelines/created-1459151601735/connection/eff75c1e-ce5a-4695-84f1-705f0ac986b2",
+          "@id": "http://localhost:8080/resources/pipelines/created-1459248505859/connection/eff75c1e-ce5a-4695-84f1-705f0ac986b2",
           "@type": [
             "http://linkedpipes.com/ontology/Connection"
           ],
           "http://linkedpipes.com/ontology/sourceComponent": {
-            "@id": "http://obeu.vse.cz:9080/resources/pipelines/created-1459151601735/components/9a907f20-3289-44fc-99f1-7e9e889d8d59"
+            "@id": "http://localhost:8080/resources/pipelines/created-1459248505859/components/9a907f20-3289-44fc-99f1-7e9e889d8d59"
           },
           "http://linkedpipes.com/ontology/sourceBinding": "FilesOutput",
           "http://linkedpipes.com/ontology/targetComponent": {
-            "@id": "http://obeu.vse.cz:9080/resources/pipelines/created-1459151601735/components/069d85d3-fac7-4921-8ccd-ce0a59d9b483"
+            "@id": "http://localhost:8080/resources/pipelines/created-1459248505859/components/069d85d3-fac7-4921-8ccd-ce0a59d9b483"
           },
           "http://linkedpipes.com/ontology/targetBinding": "InputFiles"
         },
         {
-          "@id": "http://obeu.vse.cz:9080/resources/pipelines/created-1459151601735/components/ef62c0fe-3b7f-4d64-bcdf-a4743bf007cf",
+          "@id": "http://localhost:8080/resources/pipelines/created-1459248505859/components/ef62c0fe-3b7f-4d64-bcdf-a4743bf007cf",
           "@type": [
             "http://linkedpipes.com/ontology/Component"
           ],
           "http://www.w3.org/2004/02/skos/core#prefLabel": "Graph merger",
           "http://linkedpipes.com/ontology/template": {
-            "@id": "http://obeu.vse.cz:9080/resources/components/t-graphMerger"
+            "@id": "http://localhost:8080/resources/components/t-graphMerger"
           },
           "http://linkedpipes.com/ontology/x": 420,
           "http://linkedpipes.com/ontology/y": 120
         },
         {
-          "@id": "http://obeu.vse.cz:9080/resources/pipelines/created-1459151601735/connection/a5b78700-3599-495d-8284-3e6756835aee",
+          "@id": "http://localhost:8080/resources/pipelines/created-1459248505859/connection/a5b78700-3599-495d-8284-3e6756835aee",
           "@type": [
             "http://linkedpipes.com/ontology/Connection"
           ],
           "http://linkedpipes.com/ontology/sourceComponent": {
-            "@id": "http://obeu.vse.cz:9080/resources/pipelines/created-1459151601735/components/069d85d3-fac7-4921-8ccd-ce0a59d9b483"
+            "@id": "http://localhost:8080/resources/pipelines/created-1459248505859/components/069d85d3-fac7-4921-8ccd-ce0a59d9b483"
           },
           "http://linkedpipes.com/ontology/sourceBinding": "OutputRdf",
           "http://linkedpipes.com/ontology/targetComponent": {
-            "@id": "http://obeu.vse.cz:9080/resources/pipelines/created-1459151601735/components/ef62c0fe-3b7f-4d64-bcdf-a4743bf007cf"
+            "@id": "http://localhost:8080/resources/pipelines/created-1459248505859/components/ef62c0fe-3b7f-4d64-bcdf-a4743bf007cf"
           },
           "http://linkedpipes.com/ontology/targetBinding": "InputRdf"
         },
         {
-          "@id": "http://obeu.vse.cz:9080/resources/pipelines/created-1459151601735/connection/1aff86af-bd6d-4c36-9bc9-9db99d8c99fe",
+          "@id": "http://localhost:8080/resources/pipelines/created-1459248505859/connection/1aff86af-bd6d-4c36-9bc9-9db99d8c99fe",
           "@type": [
             "http://linkedpipes.com/ontology/Connection"
           ],
           "http://linkedpipes.com/ontology/sourceComponent": {
-            "@id": "http://obeu.vse.cz:9080/resources/pipelines/created-1459151601735/components/ef62c0fe-3b7f-4d64-bcdf-a4743bf007cf"
+            "@id": "http://localhost:8080/resources/pipelines/created-1459248505859/components/ef62c0fe-3b7f-4d64-bcdf-a4743bf007cf"
           },
           "http://linkedpipes.com/ontology/sourceBinding": "OutputRdf",
           "http://linkedpipes.com/ontology/targetComponent": {
-            "@id": "http://obeu.vse.cz:9080/resources/pipelines/created-1459151601735/components/eae12082-7459-460a-9233-6c2fc49e4bd2"
+            "@id": "http://localhost:8080/resources/pipelines/created-1459248505859/components/eae12082-7459-460a-9233-6c2fc49e4bd2"
           },
           "http://linkedpipes.com/ontology/targetBinding": "InputRdf"
         },
         {
-          "@id": "http://obeu.vse.cz:9080/resources/pipelines/created-1459151601735/connection/d85d2513-13a4-484b-a19b-6af986f19193",
+          "@id": "http://localhost:8080/resources/pipelines/created-1459248505859/connection/d85d2513-13a4-484b-a19b-6af986f19193",
           "@type": [
             "http://linkedpipes.com/ontology/Connection"
           ],
           "http://linkedpipes.com/ontology/sourceComponent": {
-            "@id": "http://obeu.vse.cz:9080/resources/pipelines/created-1459151601735/components/c4a8d4df-0137-4c1d-a57f-d539ce099629"
+            "@id": "http://localhost:8080/resources/pipelines/created-1459248505859/components/c4a8d4df-0137-4c1d-a57f-d539ce099629"
           },
           "http://linkedpipes.com/ontology/sourceBinding": "OutputRdf",
           "http://linkedpipes.com/ontology/targetComponent": {
-            "@id": "http://obeu.vse.cz:9080/resources/pipelines/created-1459151601735/components/a20a89d7-507a-4a15-a49b-7233c918235a"
+            "@id": "http://localhost:8080/resources/pipelines/created-1459248505859/components/a20a89d7-507a-4a15-a49b-7233c918235a"
           },
           "http://linkedpipes.com/ontology/targetBinding": "InputRdf"
         },
         {
-          "@id": "http://obeu.vse.cz:9080/resources/pipelines/created-1459151601735/components/908523c8-8ede-401d-a141-2d3dddae4c92",
+          "@id": "http://localhost:8080/resources/pipelines/created-1459248505859/components/908523c8-8ede-401d-a141-2d3dddae4c92",
           "@type": [
             "http://linkedpipes.com/ontology/Component"
           ],
           "http://www.w3.org/2004/02/skos/core#prefLabel": "Dataset metadata",
           "http://linkedpipes.com/ontology/template": {
-            "@id": "http://obeu.vse.cz:9080/resources/components/e-datasetMetadata"
+            "@id": "http://localhost:8080/resources/components/e-datasetMetadata"
           },
           "http://linkedpipes.com/ontology/x": 20,
           "http://linkedpipes.com/ontology/y": 200,
           "http://linkedpipes.com/ontology/configurationGraph": {
-            "@id": "http://obeu.vse.cz:9080/resources/pipelines/created-1459151601735/components/908523c8-8ede-401d-a141-2d3dddae4c92/configuration"
+            "@id": "http://localhost:8080/resources/pipelines/created-1459248505859/components/908523c8-8ede-401d-a141-2d3dddae4c92/configuration"
           }
         },
         {
-          "@id": "http://obeu.vse.cz:9080/resources/pipelines/created-1459151601735/components/91d36354-d8d9-4413-a23d-d4049ff0cdbf",
+          "@id": "http://localhost:8080/resources/pipelines/created-1459248505859/components/91d36354-d8d9-4413-a23d-d4049ff0cdbf",
           "@type": [
             "http://linkedpipes.com/ontology/Component"
           ],
           "http://www.w3.org/2004/02/skos/core#prefLabel": "Distribution metadata",
           "http://linkedpipes.com/ontology/template": {
-            "@id": "http://obeu.vse.cz:9080/resources/components/e-distributionMetadata"
+            "@id": "http://localhost:8080/resources/components/e-distributionMetadata"
           },
           "http://linkedpipes.com/ontology/x": 20,
           "http://linkedpipes.com/ontology/y": 280,
           "http://linkedpipes.com/ontology/configurationGraph": {
-            "@id": "http://obeu.vse.cz:9080/resources/pipelines/created-1459151601735/components/91d36354-d8d9-4413-a23d-d4049ff0cdbf/configuration"
+            "@id": "http://localhost:8080/resources/pipelines/created-1459248505859/components/91d36354-d8d9-4413-a23d-d4049ff0cdbf/configuration"
           }
         },
         {
-          "@id": "http://obeu.vse.cz:9080/resources/pipelines/created-1459151601735/connection/39c58a79-748b-47ed-89f0-bef30b066db7",
+          "@id": "http://localhost:8080/resources/pipelines/created-1459248505859/connection/39c58a79-748b-47ed-89f0-bef30b066db7",
           "@type": [
             "http://linkedpipes.com/ontology/Connection"
           ],
           "http://linkedpipes.com/ontology/sourceComponent": {
-            "@id": "http://obeu.vse.cz:9080/resources/pipelines/created-1459151601735/components/908523c8-8ede-401d-a141-2d3dddae4c92"
+            "@id": "http://localhost:8080/resources/pipelines/created-1459248505859/components/908523c8-8ede-401d-a141-2d3dddae4c92"
           },
           "http://linkedpipes.com/ontology/sourceBinding": "Metadata",
           "http://linkedpipes.com/ontology/targetComponent": {
-            "@id": "http://obeu.vse.cz:9080/resources/pipelines/created-1459151601735/components/91d36354-d8d9-4413-a23d-d4049ff0cdbf"
+            "@id": "http://localhost:8080/resources/pipelines/created-1459248505859/components/91d36354-d8d9-4413-a23d-d4049ff0cdbf"
           },
           "http://linkedpipes.com/ontology/targetBinding": "DatasetMetadata"
         },
         {
-          "@id": "http://obeu.vse.cz:9080/resources/pipelines/created-1459151601735/components/8f77bd3e-0489-4221-8fbd-488d56944b82",
+          "@id": "http://localhost:8080/resources/pipelines/created-1459248505859/components/8f77bd3e-0489-4221-8fbd-488d56944b82",
           "@type": [
             "http://linkedpipes.com/ontology/Component"
           ],
           "http://www.w3.org/2004/02/skos/core#prefLabel": "RDF to file",
           "http://linkedpipes.com/ontology/template": {
-            "@id": "http://obeu.vse.cz:9080/resources/components/t-rdfToFile"
+            "@id": "http://localhost:8080/resources/components/t-rdfToFile"
           },
           "http://linkedpipes.com/ontology/x": 260,
           "http://linkedpipes.com/ontology/y": 200,
           "http://linkedpipes.com/ontology/configurationGraph": {
-            "@id": "http://obeu.vse.cz:9080/resources/pipelines/created-1459151601735/components/8f77bd3e-0489-4221-8fbd-488d56944b82/configuration"
+            "@id": "http://localhost:8080/resources/pipelines/created-1459248505859/components/8f77bd3e-0489-4221-8fbd-488d56944b82/configuration"
           }
         },
         {
-          "@id": "http://obeu.vse.cz:9080/resources/pipelines/created-1459151601735/connection/a4bdaa2d-58f2-440d-b0b6-e2d9c015259a",
+          "@id": "http://localhost:8080/resources/pipelines/created-1459248505859/connection/a4bdaa2d-58f2-440d-b0b6-e2d9c015259a",
           "@type": [
             "http://linkedpipes.com/ontology/Connection"
           ],
           "http://linkedpipes.com/ontology/sourceComponent": {
-            "@id": "http://obeu.vse.cz:9080/resources/pipelines/created-1459151601735/components/908523c8-8ede-401d-a141-2d3dddae4c92"
+            "@id": "http://localhost:8080/resources/pipelines/created-1459248505859/components/908523c8-8ede-401d-a141-2d3dddae4c92"
           },
           "http://linkedpipes.com/ontology/sourceBinding": "Metadata",
           "http://linkedpipes.com/ontology/targetComponent": {
-            "@id": "http://obeu.vse.cz:9080/resources/pipelines/created-1459151601735/components/8f77bd3e-0489-4221-8fbd-488d56944b82"
+            "@id": "http://localhost:8080/resources/pipelines/created-1459248505859/components/8f77bd3e-0489-4221-8fbd-488d56944b82"
           },
           "http://linkedpipes.com/ontology/targetBinding": "InputRdf"
         },
         {
-          "@id": "http://obeu.vse.cz:9080/resources/pipelines/created-1459151601735/connection/8a65c791-1192-4783-83b1-232393a9c6c5",
+          "@id": "http://localhost:8080/resources/pipelines/created-1459248505859/connection/8a65c791-1192-4783-83b1-232393a9c6c5",
           "@type": [
             "http://linkedpipes.com/ontology/Connection"
           ],
           "http://linkedpipes.com/ontology/sourceComponent": {
-            "@id": "http://obeu.vse.cz:9080/resources/pipelines/created-1459151601735/components/91d36354-d8d9-4413-a23d-d4049ff0cdbf"
+            "@id": "http://localhost:8080/resources/pipelines/created-1459248505859/components/91d36354-d8d9-4413-a23d-d4049ff0cdbf"
           },
           "http://linkedpipes.com/ontology/sourceBinding": "Metadata",
           "http://linkedpipes.com/ontology/targetComponent": {
-            "@id": "http://obeu.vse.cz:9080/resources/pipelines/created-1459151601735/components/8f77bd3e-0489-4221-8fbd-488d56944b82"
+            "@id": "http://localhost:8080/resources/pipelines/created-1459248505859/components/8f77bd3e-0489-4221-8fbd-488d56944b82"
           },
           "http://linkedpipes.com/ontology/targetBinding": "InputRdf"
         }
       ],
-      "@id": "http://obeu.vse.cz:9080/resources/pipelines/created-1459151601735"
+      "@id": "http://localhost:8080/resources/pipelines/created-1459248505859"
     },
     {
       "@graph": [
@@ -333,7 +333,7 @@
           "http://plugins.linkedpipes.com/ontology/e-httpGetFile#fileName": "decin_2014_XI.xls"
         }
       ],
-      "@id": "http://obeu.vse.cz:9080/resources/pipelines/created-1459151601735/components/809382c4-46e6-4dd7-a923-53a30dd688f1/configuration"
+      "@id": "http://localhost:8080/resources/pipelines/created-1459248505859/components/809382c4-46e6-4dd7-a923-53a30dd688f1/configuration"
     },
     {
       "@graph": [
@@ -373,7 +373,7 @@
           "http://www.w3.org/ns/csvw#trim": true
         }
       ],
-      "@id": "http://obeu.vse.cz:9080/resources/pipelines/created-1459151601735/components/1c61d10a-080a-4fec-abe6-a38292c67475/configuration"
+      "@id": "http://localhost:8080/resources/pipelines/created-1459248505859/components/1c61d10a-080a-4fec-abe6-a38292c67475/configuration"
     },
     {
       "@graph": [
@@ -387,7 +387,7 @@
           "http://plugins.linkedpipes.com/ontology/t-rdfToFile#graphUri": "http://localhost/default"
         }
       ],
-      "@id": "http://obeu.vse.cz:9080/resources/pipelines/created-1459151601735/components/765cfcd3-c100-4059-90a2-9863b3e1eccb/configuration"
+      "@id": "http://localhost:8080/resources/pipelines/created-1459248505859/components/765cfcd3-c100-4059-90a2-9863b3e1eccb/configuration"
     },
     {
       "@graph": [
@@ -404,7 +404,7 @@
           "http://plugins.linkedpipes.com/ontology/l-filesToScp#createDirectory": true
         }
       ],
-      "@id": "http://obeu.vse.cz:9080/resources/pipelines/created-1459151601735/components/98e0eb4b-6fa2-4bd8-8827-65eb5e4ff072/configuration"
+      "@id": "http://localhost:8080/resources/pipelines/created-1459248505859/components/98e0eb4b-6fa2-4bd8-8827-65eb5e4ff072/configuration"
     },
     {
       "@graph": [
@@ -424,7 +424,7 @@
           "http://plugins.linkedpipes.com/ontology/t-excelToCsv#skipEmptyRows": false
         }
       ],
-      "@id": "http://obeu.vse.cz:9080/resources/pipelines/created-1459151601735/components/47366fcd-cb4c-42a0-9180-1f77d627c17f/configuration"
+      "@id": "http://localhost:8080/resources/pipelines/created-1459248505859/components/47366fcd-cb4c-42a0-9180-1f77d627c17f/configuration"
     },
     {
       "@graph": [
@@ -560,7 +560,7 @@
           "http://www.w3.org/ns/csvw#valueUrl": ""
         }
       ],
-      "@id": "http://obeu.vse.cz:9080/resources/pipelines/created-1459151601735/components/c4a8d4df-0137-4c1d-a57f-d539ce099629/configuration"
+      "@id": "http://localhost:8080/resources/pipelines/created-1459248505859/components/c4a8d4df-0137-4c1d-a57f-d539ce099629/configuration"
     },
     {
       "@graph": [
@@ -574,7 +574,7 @@
           "http://plugins.linkedpipes.com/ontology/t-rdfToFile#graphUri": "http://localhost/default"
         }
       ],
-      "@id": "http://obeu.vse.cz:9080/resources/pipelines/created-1459151601735/components/05228965-4857-4c2a-8a4a-f0c26d0e93ca/configuration"
+      "@id": "http://localhost:8080/resources/pipelines/created-1459248505859/components/05228965-4857-4c2a-8a4a-f0c26d0e93ca/configuration"
     },
     {
       "@graph": [
@@ -583,10 +583,10 @@
           "@type": [
             "http://plugins.linkedpipes.com/ontology/t-sparqlConstruct#Configuration"
           ],
-          "http://plugins.linkedpipes.com/ontology/t-sparqlConstruct#query": "PREFIX cz-dimension:     <http://data.openbudgets.eu/ontology/czech-republic/dimension/>\nPREFIX local:            <http://localhost/>\nPREFIX obeu-attribute:   <http://data.openbudgets.eu/ontology/dsd/attribute/>\nPREFIX obeu-budgetphase: <http://data.openbudgets.eu/resource/codelist/budget-phase/>\nPREFIX obeu-dimension:   <http://data.openbudgets.eu/ontology/dsd/dimension/>\nPREFIX obeu-measure:     <http://data.openbudgets.eu/ontology/dsd/measure/>\nPREFIX qb:               <http://purl.org/linked-data/cube#>\nPREFIX xsd:              <http://www.w3.org/2001/XMLSchema#>\n\nCONSTRUCT {\n  ?dataSet a qb:DataSet ;\n    qb:structure <http://data.openbudgets.eu/ontology/dsd/decin-2014-xi> ; \n    obeu-dimension:budgetaryUnit <http://linked.opendata.cz/resource/domain/mfcr/monitor/ciselniky/UcetniJednotka/00261238> ;\n    obeu-dimension:fiscalYear <http://reference.data.gov.uk/id/year/2014> ;\n    obeu-attribute:currency <http://data.openbudgets.eu/codelist/currency/CZK> .\n\n  ?revisedBudgetLine a qb:Observation ;\n    cz-dimension:budgetParagraph ?budgetParagraph ;\n    cz-dimension:budgetItem ?budgetItem ;\n    cz-dimension:budgetInstrument ?budgetInstrument ;\n    cz-dimension:spatialUnit ?spatialUnit ;\n    obeu-dimension:budgetPhase obeu-budgetphase:revised ;\n    obeu-measure:amount ?revisedAmount ;\n    qb:dataSet ?dataSet .\n\n  ?executedBudgetLine a qb:Observation ;\n    cz-dimension:budgetParagraph ?budgetParagraph ;\n    cz-dimension:budgetItem ?budgetItem ;\n    cz-dimension:budgetInstrument ?budgetInstrument ;\n    cz-dimension:spatialUnit ?spatialUnit ;\n    obeu-dimension:budgetPhase obeu-budgetphase:executed ;\n    obeu-measure:amount ?executedAmount ;\n    qb:dataSet ?dataSet .\n}\nWHERE {\n  ?budgetLine local:column_1 ?_budgetParagraph .\n  BIND (IRI(CONCAT(\"http://linked.opendata.cz/resource/domain/mfcr/monitor/ciselniky/Paragraf/\",\n       ?_budgetParagraph)) AS ?budgetParagraph)\n\n  ?budgetLine local:column_4 ?_budgetItem .\n  BIND (IRI(CONCAT(\"http://linked.opendata.cz/resource/domain/mfcr/monitor/ciselniky/Polozka/\",\n      ?_budgetItem)) AS ?budgetItem)\n\n  ?budgetLine local:column_5 ?_budgetInstrument .\n  BIND (REPLACE(?_budgetInstrument, \"^0+\", \"\") AS ?budgetInstrumentNotation) # Trim leading zeros\n  BIND (IRI(CONCAT(\"http://linked.opendata.cz/resource/domain/mfcr/monitor/ciselniky/Nastroj/\",\n      ?budgetInstrumentNotation)) AS ?budgetInstrument)\n\n  ?budgetLine local:column_7 ?_spatialUnit .\n  BIND (IRI(CONCAT(\"http://linked.opendata.cz/resource/domain/mfcr/monitor/ciselniky/ProstorovaJednotka/\",\n      ?_spatialUnit)) AS ?spatialUnit)\n\n  ?budgetLine local:column_16 ?_revisedAmount .\n  BIND (xsd:decimal(xsd:double(?_revisedAmount)) AS ?revisedAmount)\n\n  ?budgetLine local:column_20 ?_executedAmount .\n  BIND (xsd:decimal(xsd:double(?_executedAmount)) AS ?executedAmount)\n\n  BIND (<http://data.openbudgets.eu/resource/dataset/decin-2014-xi> AS ?dataSet)\n  BIND (\"http://data.openbudgets.eu/resource/decin-2014-xi/\" AS ?baseIri)\n  BIND (CONCAT(?baseIri,\n               \"observation/00261238/2014/\",\n               ?_budgetParagraph,\n               \"/\",\n               ?_budgetItem,\n               \"/\",\n               ?budgetInstrumentNotation,\n               \"/\",\n               ?_spatialUnit,\n               \"/\") AS ?observationBase)\n  BIND (IRI(CONCAT(?observationBase, \"revised\")) AS ?revisedBudgetLine)\n  BIND (IRI(CONCAT(?observationBase, \"executed\")) AS ?executedBudgetLine)\n}"
+          "http://plugins.linkedpipes.com/ontology/t-sparqlConstruct#query": "PREFIX cz-dimension:     <http://data.openbudgets.eu/ontology/czech-republic/dimension/>\nPREFIX local:            <http://localhost/>\nPREFIX obeu-attribute:   <http://data.openbudgets.eu/ontology/dsd/attribute/>\nPREFIX obeu-budgetphase: <http://data.openbudgets.eu/resource/codelist/budget-phase/>\nPREFIX obeu-dimension:   <http://data.openbudgets.eu/ontology/dsd/dimension/>\nPREFIX obeu-measure:     <http://data.openbudgets.eu/ontology/dsd/measure/>\nPREFIX qb:               <http://purl.org/linked-data/cube#>\nPREFIX xsd:              <http://www.w3.org/2001/XMLSchema#>\n\nCONSTRUCT {\n  ?dataSet a qb:DataSet ;\n    qb:structure <http://data.openbudgets.eu/ontology/dsd/czech-republic-report-xi> ; \n    obeu-dimension:budgetaryUnit <http://linked.opendata.cz/resource/domain/mfcr/monitor/ciselniky/UcetniJednotka/00261238> ;\n    obeu-dimension:fiscalYear <http://reference.data.gov.uk/id/year/2014> ;\n    obeu-attribute:currency <http://data.openbudgets.eu/codelist/currency/CZK> .\n\n  ?revisedBudgetLine a qb:Observation ;\n    cz-dimension:budgetParagraph ?budgetParagraph ;\n    cz-dimension:budgetItem ?budgetItem ;\n    cz-dimension:budgetInstrument ?budgetInstrument ;\n    cz-dimension:spatialUnit ?spatialUnit ;\n    obeu-dimension:budgetPhase obeu-budgetphase:revised ;\n    obeu-measure:amount ?revisedAmount ;\n    qb:dataSet ?dataSet .\n\n  ?executedBudgetLine a qb:Observation ;\n    cz-dimension:budgetParagraph ?budgetParagraph ;\n    cz-dimension:budgetItem ?budgetItem ;\n    cz-dimension:budgetInstrument ?budgetInstrument ;\n    cz-dimension:spatialUnit ?spatialUnit ;\n    obeu-dimension:budgetPhase obeu-budgetphase:executed ;\n    obeu-measure:amount ?executedAmount ;\n    qb:dataSet ?dataSet .\n}\nWHERE {\n  ?budgetLine local:column_1 ?_budgetParagraph .\n  BIND (IRI(CONCAT(\"http://linked.opendata.cz/resource/domain/mfcr/monitor/ciselniky/Paragraf/\",\n       ?_budgetParagraph)) AS ?budgetParagraph)\n\n  ?budgetLine local:column_4 ?_budgetItem .\n  BIND (IRI(CONCAT(\"http://linked.opendata.cz/resource/domain/mfcr/monitor/ciselniky/Polozka/\",\n      ?_budgetItem)) AS ?budgetItem)\n\n  ?budgetLine local:column_5 ?_budgetInstrument .\n  BIND (REPLACE(?_budgetInstrument, \"^0+\", \"\") AS ?budgetInstrumentNotation) # Trim leading zeros\n  BIND (IRI(CONCAT(\"http://linked.opendata.cz/resource/domain/mfcr/monitor/ciselniky/Nastroj/\",\n      ?budgetInstrumentNotation)) AS ?budgetInstrument)\n\n  ?budgetLine local:column_7 ?_spatialUnit .\n  BIND (IRI(CONCAT(\"http://linked.opendata.cz/resource/domain/mfcr/monitor/ciselniky/ProstorovaJednotka/\",\n      ?_spatialUnit)) AS ?spatialUnit)\n\n  ?budgetLine local:column_16 ?_revisedAmount .\n  BIND (xsd:decimal(xsd:double(?_revisedAmount)) AS ?revisedAmount)\n\n  ?budgetLine local:column_20 ?_executedAmount .\n  BIND (xsd:decimal(xsd:double(?_executedAmount)) AS ?executedAmount)\n\n  BIND (<http://data.openbudgets.eu/resource/dataset/decin-2014-xi> AS ?dataSet)\n  BIND (\"http://data.openbudgets.eu/resource/decin-2014-xi/\" AS ?baseIri)\n  BIND (CONCAT(?baseIri,\n               \"observation/00261238/2014/\",\n               ?_budgetParagraph,\n               \"/\",\n               ?_budgetItem,\n               \"/\",\n               ?budgetInstrumentNotation,\n               \"/\",\n               ?_spatialUnit,\n               \"/\") AS ?observationBase)\n  BIND (IRI(CONCAT(?observationBase, \"revised\")) AS ?revisedBudgetLine)\n  BIND (IRI(CONCAT(?observationBase, \"executed\")) AS ?executedBudgetLine)\n}"
         }
       ],
-      "@id": "http://obeu.vse.cz:9080/resources/pipelines/created-1459151601735/components/a20a89d7-507a-4a15-a49b-7233c918235a/configuration"
+      "@id": "http://localhost:8080/resources/pipelines/created-1459248505859/components/a20a89d7-507a-4a15-a49b-7233c918235a/configuration"
     },
     {
       "@graph": [
@@ -600,7 +600,7 @@
           "http://plugins.linkedpipes.com/ontology/t-rdfToFile#graphUri": "http://localhost/default"
         }
       ],
-      "@id": "http://obeu.vse.cz:9080/resources/pipelines/created-1459151601735/components/eae12082-7459-460a-9233-6c2fc49e4bd2/configuration"
+      "@id": "http://localhost:8080/resources/pipelines/created-1459248505859/components/eae12082-7459-460a-9233-6c2fc49e4bd2/configuration"
     },
     {
       "@graph": [
@@ -617,7 +617,7 @@
           "http://plugins.linkedpipes.com/ontology/l-filesToScp#createDirectory": true
         }
       ],
-      "@id": "http://obeu.vse.cz:9080/resources/pipelines/created-1459151601735/components/10e866c4-547a-46e1-ac3c-75f7533354d8/configuration"
+      "@id": "http://localhost:8080/resources/pipelines/created-1459248505859/components/10e866c4-547a-46e1-ac3c-75f7533354d8/configuration"
     },
     {
       "@graph": [
@@ -637,7 +637,7 @@
           "http://plugins.linkedpipes.com/ontology/x-virtuoso#fileName": "decin_2014_xi.ttl"
         }
       ],
-      "@id": "http://obeu.vse.cz:9080/resources/pipelines/created-1459151601735/components/2a4c5100-20ad-4c24-8806-a23a6bedf263/configuration"
+      "@id": "http://localhost:8080/resources/pipelines/created-1459248505859/components/2a4c5100-20ad-4c24-8806-a23a6bedf263/configuration"
     },
     {
       "@graph": [
@@ -656,7 +656,7 @@
           "http://plugins.linkedpipes.com/ontology/e-httpGetFile#fileName": "decin_2014_xi_dsd.ttl"
         }
       ],
-      "@id": "http://obeu.vse.cz:9080/resources/pipelines/created-1459151601735/components/9a907f20-3289-44fc-99f1-7e9e889d8d59/configuration"
+      "@id": "http://localhost:8080/resources/pipelines/created-1459248505859/components/9a907f20-3289-44fc-99f1-7e9e889d8d59/configuration"
     },
     {
       "@graph": [
@@ -669,7 +669,7 @@
           "http://plugins.linkedpipes.com/ontology/t-filesToRdf#mimeType": "text/turtle"
         }
       ],
-      "@id": "http://obeu.vse.cz:9080/resources/pipelines/created-1459151601735/components/069d85d3-fac7-4921-8ccd-ce0a59d9b483/configuration"
+      "@id": "http://localhost:8080/resources/pipelines/created-1459248505859/components/069d85d3-fac7-4921-8ccd-ce0a59d9b483/configuration"
     },
     {
       "@graph": [
@@ -711,7 +711,7 @@
           ]
         }
       ],
-      "@id": "http://obeu.vse.cz:9080/resources/pipelines/created-1459151601735/components/908523c8-8ede-401d-a141-2d3dddae4c92/configuration"
+      "@id": "http://localhost:8080/resources/pipelines/created-1459248505859/components/908523c8-8ede-401d-a141-2d3dddae4c92/configuration"
     },
     {
       "@graph": [
@@ -747,7 +747,7 @@
           "http://plugins.linkedpipes.com/ontology/e-distributionMetadata#temporalFromDataset": true
         }
       ],
-      "@id": "http://obeu.vse.cz:9080/resources/pipelines/created-1459151601735/components/91d36354-d8d9-4413-a23d-d4049ff0cdbf/configuration"
+      "@id": "http://localhost:8080/resources/pipelines/created-1459248505859/components/91d36354-d8d9-4413-a23d-d4049ff0cdbf/configuration"
     },
     {
       "@graph": [
@@ -761,7 +761,7 @@
           "http://plugins.linkedpipes.com/ontology/t-rdfToFile#graphUri": "http://localhost/default"
         }
       ],
-      "@id": "http://obeu.vse.cz:9080/resources/pipelines/created-1459151601735/components/8f77bd3e-0489-4221-8fbd-488d56944b82/configuration"
+      "@id": "http://localhost:8080/resources/pipelines/created-1459248505859/components/8f77bd3e-0489-4221-8fbd-488d56944b82/configuration"
     },
     {
       "@graph": [
@@ -784,7 +784,7 @@
           "http://plugins.linkedpipes.com/ontology/l-dcatApToCkan#loadToCKAN": true
         }
       ],
-      "@id": "http://obeu.vse.cz:9080/resources/pipelines/created-1459151601735/components/b548f7de-beb8-43ca-aed0-d0d89400e2e2/configuration"
+      "@id": "http://localhost:8080/resources/pipelines/created-1459248505859/components/b548f7de-beb8-43ca-aed0-d0d89400e2e2/configuration"
     }
   ]
 }
