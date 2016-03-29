@@ -1,0 +1,1055 @@
+
+<http://data.openbudgets.eu/resource/dataset/ustecky-region-2014-xi> a <http://purl.org/linked-data/cube#DataSet> ;
+	<http://data.openbudgets.eu/ontology/dsd/dimension/budgetaryUnit> <http://linked.opendata.cz/resource/domain/mfcr/monitor/ciselniky/UcetniJednotka/70892156> ;
+	<http://data.openbudgets.eu/ontology/dsd/dimension/fiscalYear> <http://reference.data.gov.uk/id/year/2014> ;
+	<http://data.openbudgets.eu/ontology/dsd/attribute/currency> <http://data.openbudgets.eu/codelist/currency/CZK> ;
+	<http://purl.org/linked-data/cube#structure> <http://data.openbudgets.eu/ontology/dsd/czech-republic-report-xi> .
+
+_:node1af0vajdlx873 <http://purl.org/linked-data/cube#componentAttachment> <http://purl.org/linked-data/cube#DataSet> ;
+	<http://purl.org/linked-data/cube#dimension> <http://data.openbudgets.eu/ontology/dsd/dimension/budgetaryUnit> .
+
+_:node1af0vajdlx874 <http://purl.org/linked-data/cube#componentAttachment> <http://purl.org/linked-data/cube#DataSet> ;
+	<http://purl.org/linked-data/cube#dimension> <http://data.openbudgets.eu/ontology/dsd/dimension/fiscalYear> .
+
+_:node1af0vajdlx875 <http://purl.org/linked-data/cube#dimension> <http://data.openbudgets.eu/ontology/czech-republic/dimension/budgetParagraph> .
+
+<http://data.openbudgets.eu/ontology/czech-republic/dimension/budgetParagraph> a <http://purl.org/linked-data/cube#CodedProperty> , <http://purl.org/linked-data/cube#DimensionProperty> , <http://www.w3.org/1999/02/22-rdf-syntax-ns#Property> ;
+	<http://purl.org/linked-data/cube#codeList> <http://linked.opendata.cz/resource/domain/mfcr/monitor/ciselniky/Paragraf> ;
+	<http://www.w3.org/2000/01/rdf-schema#label> "Paragraf rozpočtové skladby"@cs , "Budget paragraph"@en ;
+	<http://www.w3.org/2000/01/rdf-schema#range> <http://linked.opendata.cz/ontology/domain/mfcr/monitor/ciselniky/Paragraf> ;
+	<http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://data.openbudgets.eu/ontology/dsd/dimension/functionalClassification> .
+
+_:node1af0vajdlx876 <http://purl.org/linked-data/cube#dimension> <http://data.openbudgets.eu/ontology/czech-republic/dimension/budgetItem> .
+
+<http://data.openbudgets.eu/ontology/czech-republic/dimension/budgetItem> a <http://purl.org/linked-data/cube#CodedProperty> , <http://purl.org/linked-data/cube#DimensionProperty> , <http://www.w3.org/1999/02/22-rdf-syntax-ns#Property> ;
+	<http://purl.org/linked-data/cube#codeList> <http://linked.opendata.cz/resource/domain/mfcr/monitor/ciselniky/Polozka> ;
+	<http://www.w3.org/2000/01/rdf-schema#label> "Rozpočtová položka"@cs , "Budget item"@en ;
+	<http://www.w3.org/2000/01/rdf-schema#range> <http://linked.opendata.cz/ontology/domain/mfcr/monitor/ciselniky/Polozka> ;
+	<http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://data.openbudgets.eu/ontology/dsd/dimension/economicClassification> .
+
+_:node1af0vajdlx877 <http://purl.org/linked-data/cube#dimension> <http://data.openbudgets.eu/ontology/czech-republic/dimension/budgetInstrument> .
+
+<http://data.openbudgets.eu/ontology/czech-republic/dimension/budgetInstrument> a <http://purl.org/linked-data/cube#CodedProperty> , <http://purl.org/linked-data/cube#DimensionProperty> , <http://www.w3.org/1999/02/22-rdf-syntax-ns#Property> ;
+	<http://purl.org/linked-data/cube#codeList> <http://linked.opendata.cz/resource/domain/mfcr/monitor/ciselniky/Nastroj> ;
+	<http://www.w3.org/2000/01/rdf-schema#label> "Nástrojové třídění"@cs , "Budget instrument"@en ;
+	<http://www.w3.org/2000/01/rdf-schema#range> <http://linked.opendata.cz/ontology/domain/mfcr/monitor/ciselniky/Nastroj> ;
+	<http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://data.openbudgets.eu/ontology/dsd/dimension/programmeClassification> .
+
+_:node1af0vajdlx878 <http://purl.org/linked-data/cube#dimension> <http://data.openbudgets.eu/ontology/czech-republic/dimension/spatialUnit> .
+
+<http://data.openbudgets.eu/ontology/czech-republic/dimension/spatialUnit> a <http://purl.org/linked-data/cube#CodedProperty> , <http://purl.org/linked-data/cube#DimensionProperty> , <http://www.w3.org/1999/02/22-rdf-syntax-ns#Property> ;
+	<http://purl.org/linked-data/cube#codeList> <http://linked.opendata.cz/resource/domain/mfcr/monitor/ciselniky/ProstorovaJednotka> ;
+	<http://www.w3.org/2000/01/rdf-schema#label> "Prostorová dimenze"@cs , "Spatial unit"@en ;
+	<http://www.w3.org/2000/01/rdf-schema#range> <http://linked.opendata.cz/ontology/domain/mfcr/monitor/ciselniky/ProstorovaJednotka> ;
+	<http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://data.openbudgets.eu/ontology/dsd/dimension/classification> .
+
+_:node1af0vajdlx879 <http://purl.org/linked-data/cube#dimension> <http://data.openbudgets.eu/ontology/dsd/dimension/budgetPhase> .
+
+_:node1af0vajdlx880 <http://purl.org/linked-data/cube#componentAttachment> <http://purl.org/linked-data/cube#DataSet> ;
+	<http://purl.org/linked-data/cube#attribute> <http://data.openbudgets.eu/ontology/dsd/attribute/currency> ;
+	<http://purl.org/linked-data/cube#componentRequired> true .
+
+_:node1af0vajdlx881 <http://purl.org/linked-data/cube#measure> <http://data.openbudgets.eu/ontology/dsd/measure/amount> .
+
+<http://data.openbudgets.eu/ontology/dsd/czech-republic-report-xi> a <http://purl.org/linked-data/cube#DataStructureDefinition> ;
+	<http://www.w3.org/2000/01/rdf-schema#label> "Příjmy z rozpočtu Evropské unie a související příjmy v členění podle jednotlivých nástrojů a prostorových jednotek"@cs ;
+	<http://purl.org/linked-data/cube#component> _:node1af0vajdlx873 , _:node1af0vajdlx874 , _:node1af0vajdlx875 , _:node1af0vajdlx876 , _:node1af0vajdlx877 , _:node1af0vajdlx878 , _:node1af0vajdlx879 , _:node1af0vajdlx880 , _:node1af0vajdlx881 .
+
+<http://data.openbudgets.eu/resource/ustecky-region-2014-xi/observation/70892156/2014/0000/4113/53/1/approved> a <http://purl.org/linked-data/cube#Observation> ;
+	<http://data.openbudgets.eu/ontology/czech-republic/dimension/budgetParagraph> <http://linked.opendata.cz/resource/domain/mfcr/monitor/ciselniky/Paragraf/0000> ;
+	<http://data.openbudgets.eu/ontology/czech-republic/dimension/budgetItem> <http://linked.opendata.cz/resource/domain/mfcr/monitor/ciselniky/Polozka/4113> ;
+	<http://data.openbudgets.eu/ontology/czech-republic/dimension/budgetInstrument> <http://linked.opendata.cz/resource/domain/mfcr/monitor/ciselniky/Nastroj/53> ;
+	<http://data.openbudgets.eu/ontology/czech-republic/dimension/spatialUnit> <http://linked.opendata.cz/resource/domain/mfcr/monitor/ciselniky/ProstorovaJednotka/1> ;
+	<http://data.openbudgets.eu/ontology/dsd/dimension/budgetPhase> <http://data.openbudgets.eu/resource/codelist/budget-phase/approved> ;
+	<http://data.openbudgets.eu/ontology/dsd/measure/amount> 572000.0 ;
+	<http://purl.org/linked-data/cube#dataSet> <http://data.openbudgets.eu/resource/dataset/ustecky-region-2014-xi> .
+
+<http://data.openbudgets.eu/resource/ustecky-region-2014-xi/observation/70892156/2014/0000/4113/53/1/executed> a <http://purl.org/linked-data/cube#Observation> ;
+	<http://data.openbudgets.eu/ontology/czech-republic/dimension/budgetParagraph> <http://linked.opendata.cz/resource/domain/mfcr/monitor/ciselniky/Paragraf/0000> ;
+	<http://data.openbudgets.eu/ontology/czech-republic/dimension/budgetItem> <http://linked.opendata.cz/resource/domain/mfcr/monitor/ciselniky/Polozka/4113> ;
+	<http://data.openbudgets.eu/ontology/czech-republic/dimension/budgetInstrument> <http://linked.opendata.cz/resource/domain/mfcr/monitor/ciselniky/Nastroj/53> ;
+	<http://data.openbudgets.eu/ontology/czech-republic/dimension/spatialUnit> <http://linked.opendata.cz/resource/domain/mfcr/monitor/ciselniky/ProstorovaJednotka/1> ;
+	<http://data.openbudgets.eu/ontology/dsd/dimension/budgetPhase> <http://data.openbudgets.eu/resource/codelist/budget-phase/executed> ;
+	<http://data.openbudgets.eu/ontology/dsd/measure/amount> 414139.47 ;
+	<http://purl.org/linked-data/cube#dataSet> <http://data.openbudgets.eu/resource/dataset/ustecky-region-2014-xi> .
+
+<http://data.openbudgets.eu/resource/ustecky-region-2014-xi/observation/70892156/2014/0000/4113/53/1/revised> a <http://purl.org/linked-data/cube#Observation> ;
+	<http://data.openbudgets.eu/ontology/czech-republic/dimension/budgetParagraph> <http://linked.opendata.cz/resource/domain/mfcr/monitor/ciselniky/Paragraf/0000> ;
+	<http://data.openbudgets.eu/ontology/czech-republic/dimension/budgetItem> <http://linked.opendata.cz/resource/domain/mfcr/monitor/ciselniky/Polozka/4113> ;
+	<http://data.openbudgets.eu/ontology/czech-republic/dimension/budgetInstrument> <http://linked.opendata.cz/resource/domain/mfcr/monitor/ciselniky/Nastroj/53> ;
+	<http://data.openbudgets.eu/ontology/czech-republic/dimension/spatialUnit> <http://linked.opendata.cz/resource/domain/mfcr/monitor/ciselniky/ProstorovaJednotka/1> ;
+	<http://data.openbudgets.eu/ontology/dsd/dimension/budgetPhase> <http://data.openbudgets.eu/resource/codelist/budget-phase/revised> ;
+	<http://data.openbudgets.eu/ontology/dsd/measure/amount> 54000.0 ;
+	<http://purl.org/linked-data/cube#dataSet> <http://data.openbudgets.eu/resource/dataset/ustecky-region-2014-xi> .
+
+<http://data.openbudgets.eu/resource/ustecky-region-2014-xi/observation/70892156/2014/0000/4116/32/1/approved> a <http://purl.org/linked-data/cube#Observation> ;
+	<http://data.openbudgets.eu/ontology/czech-republic/dimension/budgetParagraph> <http://linked.opendata.cz/resource/domain/mfcr/monitor/ciselniky/Paragraf/0000> ;
+	<http://data.openbudgets.eu/ontology/czech-republic/dimension/budgetItem> <http://linked.opendata.cz/resource/domain/mfcr/monitor/ciselniky/Polozka/4116> ;
+	<http://data.openbudgets.eu/ontology/czech-republic/dimension/budgetInstrument> <http://linked.opendata.cz/resource/domain/mfcr/monitor/ciselniky/Nastroj/32> ;
+	<http://data.openbudgets.eu/ontology/czech-republic/dimension/spatialUnit> <http://linked.opendata.cz/resource/domain/mfcr/monitor/ciselniky/ProstorovaJednotka/1> ;
+	<http://data.openbudgets.eu/ontology/dsd/dimension/budgetPhase> <http://data.openbudgets.eu/resource/codelist/budget-phase/approved> ;
+	<http://data.openbudgets.eu/ontology/dsd/measure/amount> 0.0 ;
+	<http://purl.org/linked-data/cube#dataSet> <http://data.openbudgets.eu/resource/dataset/ustecky-region-2014-xi> .
+
+<http://data.openbudgets.eu/resource/ustecky-region-2014-xi/observation/70892156/2014/0000/4116/32/1/executed> a <http://purl.org/linked-data/cube#Observation> ;
+	<http://data.openbudgets.eu/ontology/czech-republic/dimension/budgetParagraph> <http://linked.opendata.cz/resource/domain/mfcr/monitor/ciselniky/Paragraf/0000> ;
+	<http://data.openbudgets.eu/ontology/czech-republic/dimension/budgetItem> <http://linked.opendata.cz/resource/domain/mfcr/monitor/ciselniky/Polozka/4116> ;
+	<http://data.openbudgets.eu/ontology/czech-republic/dimension/budgetInstrument> <http://linked.opendata.cz/resource/domain/mfcr/monitor/ciselniky/Nastroj/32> ;
+	<http://data.openbudgets.eu/ontology/czech-republic/dimension/spatialUnit> <http://linked.opendata.cz/resource/domain/mfcr/monitor/ciselniky/ProstorovaJednotka/1> ;
+	<http://data.openbudgets.eu/ontology/dsd/dimension/budgetPhase> <http://data.openbudgets.eu/resource/codelist/budget-phase/executed> ;
+	<http://data.openbudgets.eu/ontology/dsd/measure/amount> 20229114.95 ;
+	<http://purl.org/linked-data/cube#dataSet> <http://data.openbudgets.eu/resource/dataset/ustecky-region-2014-xi> .
+
+<http://data.openbudgets.eu/resource/ustecky-region-2014-xi/observation/70892156/2014/0000/4116/32/1/revised> a <http://purl.org/linked-data/cube#Observation> ;
+	<http://data.openbudgets.eu/ontology/czech-republic/dimension/budgetParagraph> <http://linked.opendata.cz/resource/domain/mfcr/monitor/ciselniky/Paragraf/0000> ;
+	<http://data.openbudgets.eu/ontology/czech-republic/dimension/budgetItem> <http://linked.opendata.cz/resource/domain/mfcr/monitor/ciselniky/Polozka/4116> ;
+	<http://data.openbudgets.eu/ontology/czech-republic/dimension/budgetInstrument> <http://linked.opendata.cz/resource/domain/mfcr/monitor/ciselniky/Nastroj/32> ;
+	<http://data.openbudgets.eu/ontology/czech-republic/dimension/spatialUnit> <http://linked.opendata.cz/resource/domain/mfcr/monitor/ciselniky/ProstorovaJednotka/1> ;
+	<http://data.openbudgets.eu/ontology/dsd/dimension/budgetPhase> <http://data.openbudgets.eu/resource/codelist/budget-phase/revised> ;
+	<http://data.openbudgets.eu/ontology/dsd/measure/amount> 13211479.0 ;
+	<http://purl.org/linked-data/cube#dataSet> <http://data.openbudgets.eu/resource/dataset/ustecky-region-2014-xi> .
+
+<http://data.openbudgets.eu/resource/ustecky-region-2014-xi/observation/70892156/2014/0000/4116/32/5/approved> a <http://purl.org/linked-data/cube#Observation> ;
+	<http://data.openbudgets.eu/ontology/czech-republic/dimension/budgetParagraph> <http://linked.opendata.cz/resource/domain/mfcr/monitor/ciselniky/Paragraf/0000> ;
+	<http://data.openbudgets.eu/ontology/czech-republic/dimension/budgetItem> <http://linked.opendata.cz/resource/domain/mfcr/monitor/ciselniky/Polozka/4116> ;
+	<http://data.openbudgets.eu/ontology/czech-republic/dimension/budgetInstrument> <http://linked.opendata.cz/resource/domain/mfcr/monitor/ciselniky/Nastroj/32> ;
+	<http://data.openbudgets.eu/ontology/czech-republic/dimension/spatialUnit> <http://linked.opendata.cz/resource/domain/mfcr/monitor/ciselniky/ProstorovaJednotka/5> ;
+	<http://data.openbudgets.eu/ontology/dsd/dimension/budgetPhase> <http://data.openbudgets.eu/resource/codelist/budget-phase/approved> ;
+	<http://data.openbudgets.eu/ontology/dsd/measure/amount> 0.0 ;
+	<http://purl.org/linked-data/cube#dataSet> <http://data.openbudgets.eu/resource/dataset/ustecky-region-2014-xi> .
+
+<http://data.openbudgets.eu/resource/ustecky-region-2014-xi/observation/70892156/2014/0000/4116/32/5/executed> a <http://purl.org/linked-data/cube#Observation> ;
+	<http://data.openbudgets.eu/ontology/czech-republic/dimension/budgetParagraph> <http://linked.opendata.cz/resource/domain/mfcr/monitor/ciselniky/Paragraf/0000> ;
+	<http://data.openbudgets.eu/ontology/czech-republic/dimension/budgetItem> <http://linked.opendata.cz/resource/domain/mfcr/monitor/ciselniky/Polozka/4116> ;
+	<http://data.openbudgets.eu/ontology/czech-republic/dimension/budgetInstrument> <http://linked.opendata.cz/resource/domain/mfcr/monitor/ciselniky/Nastroj/32> ;
+	<http://data.openbudgets.eu/ontology/czech-republic/dimension/spatialUnit> <http://linked.opendata.cz/resource/domain/mfcr/monitor/ciselniky/ProstorovaJednotka/5> ;
+	<http://data.openbudgets.eu/ontology/dsd/dimension/budgetPhase> <http://data.openbudgets.eu/resource/codelist/budget-phase/executed> ;
+	<http://data.openbudgets.eu/ontology/dsd/measure/amount> 114631656.12 ;
+	<http://purl.org/linked-data/cube#dataSet> <http://data.openbudgets.eu/resource/dataset/ustecky-region-2014-xi> .
+
+<http://data.openbudgets.eu/resource/ustecky-region-2014-xi/observation/70892156/2014/0000/4116/32/5/revised> a <http://purl.org/linked-data/cube#Observation> ;
+	<http://data.openbudgets.eu/ontology/czech-republic/dimension/budgetParagraph> <http://linked.opendata.cz/resource/domain/mfcr/monitor/ciselniky/Paragraf/0000> ;
+	<http://data.openbudgets.eu/ontology/czech-republic/dimension/budgetItem> <http://linked.opendata.cz/resource/domain/mfcr/monitor/ciselniky/Polozka/4116> ;
+	<http://data.openbudgets.eu/ontology/czech-republic/dimension/budgetInstrument> <http://linked.opendata.cz/resource/domain/mfcr/monitor/ciselniky/Nastroj/32> ;
+	<http://data.openbudgets.eu/ontology/czech-republic/dimension/spatialUnit> <http://linked.opendata.cz/resource/domain/mfcr/monitor/ciselniky/ProstorovaJednotka/5> ;
+	<http://data.openbudgets.eu/ontology/dsd/dimension/budgetPhase> <http://data.openbudgets.eu/resource/codelist/budget-phase/revised> ;
+	<http://data.openbudgets.eu/ontology/dsd/measure/amount> 74865028.0 ;
+	<http://purl.org/linked-data/cube#dataSet> <http://data.openbudgets.eu/resource/dataset/ustecky-region-2014-xi> .
+
+<http://data.openbudgets.eu/resource/ustecky-region-2014-xi/observation/70892156/2014/0000/4116/33/1/approved> a <http://purl.org/linked-data/cube#Observation> ;
+	<http://data.openbudgets.eu/ontology/czech-republic/dimension/budgetParagraph> <http://linked.opendata.cz/resource/domain/mfcr/monitor/ciselniky/Paragraf/0000> ;
+	<http://data.openbudgets.eu/ontology/czech-republic/dimension/budgetItem> <http://linked.opendata.cz/resource/domain/mfcr/monitor/ciselniky/Polozka/4116> ;
+	<http://data.openbudgets.eu/ontology/czech-republic/dimension/budgetInstrument> <http://linked.opendata.cz/resource/domain/mfcr/monitor/ciselniky/Nastroj/33> ;
+	<http://data.openbudgets.eu/ontology/czech-republic/dimension/spatialUnit> <http://linked.opendata.cz/resource/domain/mfcr/monitor/ciselniky/ProstorovaJednotka/1> ;
+	<http://data.openbudgets.eu/ontology/dsd/dimension/budgetPhase> <http://data.openbudgets.eu/resource/codelist/budget-phase/approved> ;
+	<http://data.openbudgets.eu/ontology/dsd/measure/amount> 0.0 ;
+	<http://purl.org/linked-data/cube#dataSet> <http://data.openbudgets.eu/resource/dataset/ustecky-region-2014-xi> .
+
+<http://data.openbudgets.eu/resource/ustecky-region-2014-xi/observation/70892156/2014/0000/4116/33/1/executed> a <http://purl.org/linked-data/cube#Observation> ;
+	<http://data.openbudgets.eu/ontology/czech-republic/dimension/budgetParagraph> <http://linked.opendata.cz/resource/domain/mfcr/monitor/ciselniky/Paragraf/0000> ;
+	<http://data.openbudgets.eu/ontology/czech-republic/dimension/budgetItem> <http://linked.opendata.cz/resource/domain/mfcr/monitor/ciselniky/Polozka/4116> ;
+	<http://data.openbudgets.eu/ontology/czech-republic/dimension/budgetInstrument> <http://linked.opendata.cz/resource/domain/mfcr/monitor/ciselniky/Nastroj/33> ;
+	<http://data.openbudgets.eu/ontology/czech-republic/dimension/spatialUnit> <http://linked.opendata.cz/resource/domain/mfcr/monitor/ciselniky/ProstorovaJednotka/1> ;
+	<http://data.openbudgets.eu/ontology/dsd/dimension/budgetPhase> <http://data.openbudgets.eu/resource/codelist/budget-phase/executed> ;
+	<http://data.openbudgets.eu/ontology/dsd/measure/amount> 13717488.03 ;
+	<http://purl.org/linked-data/cube#dataSet> <http://data.openbudgets.eu/resource/dataset/ustecky-region-2014-xi> .
+
+<http://data.openbudgets.eu/resource/ustecky-region-2014-xi/observation/70892156/2014/0000/4116/33/1/revised> a <http://purl.org/linked-data/cube#Observation> ;
+	<http://data.openbudgets.eu/ontology/czech-republic/dimension/budgetParagraph> <http://linked.opendata.cz/resource/domain/mfcr/monitor/ciselniky/Paragraf/0000> ;
+	<http://data.openbudgets.eu/ontology/czech-republic/dimension/budgetItem> <http://linked.opendata.cz/resource/domain/mfcr/monitor/ciselniky/Polozka/4116> ;
+	<http://data.openbudgets.eu/ontology/czech-republic/dimension/budgetInstrument> <http://linked.opendata.cz/resource/domain/mfcr/monitor/ciselniky/Nastroj/33> ;
+	<http://data.openbudgets.eu/ontology/czech-republic/dimension/spatialUnit> <http://linked.opendata.cz/resource/domain/mfcr/monitor/ciselniky/ProstorovaJednotka/1> ;
+	<http://data.openbudgets.eu/ontology/dsd/dimension/budgetPhase> <http://data.openbudgets.eu/resource/codelist/budget-phase/revised> ;
+	<http://data.openbudgets.eu/ontology/dsd/measure/amount> 13280180.0 ;
+	<http://purl.org/linked-data/cube#dataSet> <http://data.openbudgets.eu/resource/dataset/ustecky-region-2014-xi> .
+
+<http://data.openbudgets.eu/resource/ustecky-region-2014-xi/observation/70892156/2014/0000/4116/33/5/approved> a <http://purl.org/linked-data/cube#Observation> ;
+	<http://data.openbudgets.eu/ontology/czech-republic/dimension/budgetParagraph> <http://linked.opendata.cz/resource/domain/mfcr/monitor/ciselniky/Paragraf/0000> ;
+	<http://data.openbudgets.eu/ontology/czech-republic/dimension/budgetItem> <http://linked.opendata.cz/resource/domain/mfcr/monitor/ciselniky/Polozka/4116> ;
+	<http://data.openbudgets.eu/ontology/czech-republic/dimension/budgetInstrument> <http://linked.opendata.cz/resource/domain/mfcr/monitor/ciselniky/Nastroj/33> ;
+	<http://data.openbudgets.eu/ontology/czech-republic/dimension/spatialUnit> <http://linked.opendata.cz/resource/domain/mfcr/monitor/ciselniky/ProstorovaJednotka/5> ;
+	<http://data.openbudgets.eu/ontology/dsd/dimension/budgetPhase> <http://data.openbudgets.eu/resource/codelist/budget-phase/approved> ;
+	<http://data.openbudgets.eu/ontology/dsd/measure/amount> 0.0 ;
+	<http://purl.org/linked-data/cube#dataSet> <http://data.openbudgets.eu/resource/dataset/ustecky-region-2014-xi> .
+
+<http://data.openbudgets.eu/resource/ustecky-region-2014-xi/observation/70892156/2014/0000/4116/33/5/executed> a <http://purl.org/linked-data/cube#Observation> ;
+	<http://data.openbudgets.eu/ontology/czech-republic/dimension/budgetParagraph> <http://linked.opendata.cz/resource/domain/mfcr/monitor/ciselniky/Paragraf/0000> ;
+	<http://data.openbudgets.eu/ontology/czech-republic/dimension/budgetItem> <http://linked.opendata.cz/resource/domain/mfcr/monitor/ciselniky/Polozka/4116> ;
+	<http://data.openbudgets.eu/ontology/czech-republic/dimension/budgetInstrument> <http://linked.opendata.cz/resource/domain/mfcr/monitor/ciselniky/Nastroj/33> ;
+	<http://data.openbudgets.eu/ontology/czech-republic/dimension/spatialUnit> <http://linked.opendata.cz/resource/domain/mfcr/monitor/ciselniky/ProstorovaJednotka/5> ;
+	<http://data.openbudgets.eu/ontology/dsd/dimension/budgetPhase> <http://data.openbudgets.eu/resource/codelist/budget-phase/executed> ;
+	<http://data.openbudgets.eu/ontology/dsd/measure/amount> 79398932.95 ;
+	<http://purl.org/linked-data/cube#dataSet> <http://data.openbudgets.eu/resource/dataset/ustecky-region-2014-xi> .
+
+<http://data.openbudgets.eu/resource/ustecky-region-2014-xi/observation/70892156/2014/0000/4116/33/5/revised> a <http://purl.org/linked-data/cube#Observation> ;
+	<http://data.openbudgets.eu/ontology/czech-republic/dimension/budgetParagraph> <http://linked.opendata.cz/resource/domain/mfcr/monitor/ciselniky/Paragraf/0000> ;
+	<http://data.openbudgets.eu/ontology/czech-republic/dimension/budgetItem> <http://linked.opendata.cz/resource/domain/mfcr/monitor/ciselniky/Polozka/4116> ;
+	<http://data.openbudgets.eu/ontology/czech-republic/dimension/budgetInstrument> <http://linked.opendata.cz/resource/domain/mfcr/monitor/ciselniky/Nastroj/33> ;
+	<http://data.openbudgets.eu/ontology/czech-republic/dimension/spatialUnit> <http://linked.opendata.cz/resource/domain/mfcr/monitor/ciselniky/ProstorovaJednotka/5> ;
+	<http://data.openbudgets.eu/ontology/dsd/dimension/budgetPhase> <http://data.openbudgets.eu/resource/codelist/budget-phase/revised> ;
+	<http://data.openbudgets.eu/ontology/dsd/measure/amount> 76920793.0 ;
+	<http://purl.org/linked-data/cube#dataSet> <http://data.openbudgets.eu/resource/dataset/ustecky-region-2014-xi> .
+
+<http://data.openbudgets.eu/resource/ustecky-region-2014-xi/observation/70892156/2014/0000/4116/36/1/approved> a <http://purl.org/linked-data/cube#Observation> ;
+	<http://data.openbudgets.eu/ontology/czech-republic/dimension/budgetParagraph> <http://linked.opendata.cz/resource/domain/mfcr/monitor/ciselniky/Paragraf/0000> ;
+	<http://data.openbudgets.eu/ontology/czech-republic/dimension/budgetItem> <http://linked.opendata.cz/resource/domain/mfcr/monitor/ciselniky/Polozka/4116> ;
+	<http://data.openbudgets.eu/ontology/czech-republic/dimension/budgetInstrument> <http://linked.opendata.cz/resource/domain/mfcr/monitor/ciselniky/Nastroj/36> ;
+	<http://data.openbudgets.eu/ontology/czech-republic/dimension/spatialUnit> <http://linked.opendata.cz/resource/domain/mfcr/monitor/ciselniky/ProstorovaJednotka/1> ;
+	<http://data.openbudgets.eu/ontology/dsd/dimension/budgetPhase> <http://data.openbudgets.eu/resource/codelist/budget-phase/approved> ;
+	<http://data.openbudgets.eu/ontology/dsd/measure/amount> 40000.0 ;
+	<http://purl.org/linked-data/cube#dataSet> <http://data.openbudgets.eu/resource/dataset/ustecky-region-2014-xi> .
+
+<http://data.openbudgets.eu/resource/ustecky-region-2014-xi/observation/70892156/2014/0000/4116/36/1/executed> a <http://purl.org/linked-data/cube#Observation> ;
+	<http://data.openbudgets.eu/ontology/czech-republic/dimension/budgetParagraph> <http://linked.opendata.cz/resource/domain/mfcr/monitor/ciselniky/Paragraf/0000> ;
+	<http://data.openbudgets.eu/ontology/czech-republic/dimension/budgetItem> <http://linked.opendata.cz/resource/domain/mfcr/monitor/ciselniky/Polozka/4116> ;
+	<http://data.openbudgets.eu/ontology/czech-republic/dimension/budgetInstrument> <http://linked.opendata.cz/resource/domain/mfcr/monitor/ciselniky/Nastroj/36> ;
+	<http://data.openbudgets.eu/ontology/czech-republic/dimension/spatialUnit> <http://linked.opendata.cz/resource/domain/mfcr/monitor/ciselniky/ProstorovaJednotka/1> ;
+	<http://data.openbudgets.eu/ontology/dsd/dimension/budgetPhase> <http://data.openbudgets.eu/resource/codelist/budget-phase/executed> ;
+	<http://data.openbudgets.eu/ontology/dsd/measure/amount> 357981.58 ;
+	<http://purl.org/linked-data/cube#dataSet> <http://data.openbudgets.eu/resource/dataset/ustecky-region-2014-xi> .
+
+<http://data.openbudgets.eu/resource/ustecky-region-2014-xi/observation/70892156/2014/0000/4116/36/1/revised> a <http://purl.org/linked-data/cube#Observation> ;
+	<http://data.openbudgets.eu/ontology/czech-republic/dimension/budgetParagraph> <http://linked.opendata.cz/resource/domain/mfcr/monitor/ciselniky/Paragraf/0000> ;
+	<http://data.openbudgets.eu/ontology/czech-republic/dimension/budgetItem> <http://linked.opendata.cz/resource/domain/mfcr/monitor/ciselniky/Polozka/4116> ;
+	<http://data.openbudgets.eu/ontology/czech-republic/dimension/budgetInstrument> <http://linked.opendata.cz/resource/domain/mfcr/monitor/ciselniky/Nastroj/36> ;
+	<http://data.openbudgets.eu/ontology/czech-republic/dimension/spatialUnit> <http://linked.opendata.cz/resource/domain/mfcr/monitor/ciselniky/ProstorovaJednotka/1> ;
+	<http://data.openbudgets.eu/ontology/dsd/dimension/budgetPhase> <http://data.openbudgets.eu/resource/codelist/budget-phase/revised> ;
+	<http://data.openbudgets.eu/ontology/dsd/measure/amount> 357983.0 ;
+	<http://purl.org/linked-data/cube#dataSet> <http://data.openbudgets.eu/resource/dataset/ustecky-region-2014-xi> .
+
+<http://data.openbudgets.eu/resource/ustecky-region-2014-xi/observation/70892156/2014/0000/4116/36/5/approved> a <http://purl.org/linked-data/cube#Observation> ;
+	<http://data.openbudgets.eu/ontology/czech-republic/dimension/budgetParagraph> <http://linked.opendata.cz/resource/domain/mfcr/monitor/ciselniky/Paragraf/0000> ;
+	<http://data.openbudgets.eu/ontology/czech-republic/dimension/budgetItem> <http://linked.opendata.cz/resource/domain/mfcr/monitor/ciselniky/Polozka/4116> ;
+	<http://data.openbudgets.eu/ontology/czech-republic/dimension/budgetInstrument> <http://linked.opendata.cz/resource/domain/mfcr/monitor/ciselniky/Nastroj/36> ;
+	<http://data.openbudgets.eu/ontology/czech-republic/dimension/spatialUnit> <http://linked.opendata.cz/resource/domain/mfcr/monitor/ciselniky/ProstorovaJednotka/5> ;
+	<http://data.openbudgets.eu/ontology/dsd/dimension/budgetPhase> <http://data.openbudgets.eu/resource/codelist/budget-phase/approved> ;
+	<http://data.openbudgets.eu/ontology/dsd/measure/amount> 11492000.0 ;
+	<http://purl.org/linked-data/cube#dataSet> <http://data.openbudgets.eu/resource/dataset/ustecky-region-2014-xi> .
+
+<http://data.openbudgets.eu/resource/ustecky-region-2014-xi/observation/70892156/2014/0000/4116/36/5/executed> a <http://purl.org/linked-data/cube#Observation> ;
+	<http://data.openbudgets.eu/ontology/czech-republic/dimension/budgetParagraph> <http://linked.opendata.cz/resource/domain/mfcr/monitor/ciselniky/Paragraf/0000> ;
+	<http://data.openbudgets.eu/ontology/czech-republic/dimension/budgetItem> <http://linked.opendata.cz/resource/domain/mfcr/monitor/ciselniky/Polozka/4116> ;
+	<http://data.openbudgets.eu/ontology/czech-republic/dimension/budgetInstrument> <http://linked.opendata.cz/resource/domain/mfcr/monitor/ciselniky/Nastroj/36> ;
+	<http://data.openbudgets.eu/ontology/czech-republic/dimension/spatialUnit> <http://linked.opendata.cz/resource/domain/mfcr/monitor/ciselniky/ProstorovaJednotka/5> ;
+	<http://data.openbudgets.eu/ontology/dsd/dimension/budgetPhase> <http://data.openbudgets.eu/resource/codelist/budget-phase/executed> ;
+	<http://data.openbudgets.eu/ontology/dsd/measure/amount> 14132624.46 ;
+	<http://purl.org/linked-data/cube#dataSet> <http://data.openbudgets.eu/resource/dataset/ustecky-region-2014-xi> .
+
+<http://data.openbudgets.eu/resource/ustecky-region-2014-xi/observation/70892156/2014/0000/4116/36/5/revised> a <http://purl.org/linked-data/cube#Observation> ;
+	<http://data.openbudgets.eu/ontology/czech-republic/dimension/budgetParagraph> <http://linked.opendata.cz/resource/domain/mfcr/monitor/ciselniky/Paragraf/0000> ;
+	<http://data.openbudgets.eu/ontology/czech-republic/dimension/budgetItem> <http://linked.opendata.cz/resource/domain/mfcr/monitor/ciselniky/Polozka/4116> ;
+	<http://data.openbudgets.eu/ontology/czech-republic/dimension/budgetInstrument> <http://linked.opendata.cz/resource/domain/mfcr/monitor/ciselniky/Nastroj/36> ;
+	<http://data.openbudgets.eu/ontology/czech-republic/dimension/spatialUnit> <http://linked.opendata.cz/resource/domain/mfcr/monitor/ciselniky/ProstorovaJednotka/5> ;
+	<http://data.openbudgets.eu/ontology/dsd/dimension/budgetPhase> <http://data.openbudgets.eu/resource/codelist/budget-phase/revised> ;
+	<http://data.openbudgets.eu/ontology/dsd/measure/amount> 14132627.0 ;
+	<http://purl.org/linked-data/cube#dataSet> <http://data.openbudgets.eu/resource/dataset/ustecky-region-2014-xi> .
+
+<http://data.openbudgets.eu/resource/ustecky-region-2014-xi/observation/70892156/2014/0000/4116/41/1/approved> a <http://purl.org/linked-data/cube#Observation> ;
+	<http://data.openbudgets.eu/ontology/czech-republic/dimension/budgetParagraph> <http://linked.opendata.cz/resource/domain/mfcr/monitor/ciselniky/Paragraf/0000> ;
+	<http://data.openbudgets.eu/ontology/czech-republic/dimension/budgetItem> <http://linked.opendata.cz/resource/domain/mfcr/monitor/ciselniky/Polozka/4116> ;
+	<http://data.openbudgets.eu/ontology/czech-republic/dimension/budgetInstrument> <http://linked.opendata.cz/resource/domain/mfcr/monitor/ciselniky/Nastroj/41> ;
+	<http://data.openbudgets.eu/ontology/czech-republic/dimension/spatialUnit> <http://linked.opendata.cz/resource/domain/mfcr/monitor/ciselniky/ProstorovaJednotka/1> ;
+	<http://data.openbudgets.eu/ontology/dsd/dimension/budgetPhase> <http://data.openbudgets.eu/resource/codelist/budget-phase/approved> ;
+	<http://data.openbudgets.eu/ontology/dsd/measure/amount> 927000.0 ;
+	<http://purl.org/linked-data/cube#dataSet> <http://data.openbudgets.eu/resource/dataset/ustecky-region-2014-xi> .
+
+<http://data.openbudgets.eu/resource/ustecky-region-2014-xi/observation/70892156/2014/0000/4116/41/1/executed> a <http://purl.org/linked-data/cube#Observation> ;
+	<http://data.openbudgets.eu/ontology/czech-republic/dimension/budgetParagraph> <http://linked.opendata.cz/resource/domain/mfcr/monitor/ciselniky/Paragraf/0000> ;
+	<http://data.openbudgets.eu/ontology/czech-republic/dimension/budgetItem> <http://linked.opendata.cz/resource/domain/mfcr/monitor/ciselniky/Polozka/4116> ;
+	<http://data.openbudgets.eu/ontology/czech-republic/dimension/budgetInstrument> <http://linked.opendata.cz/resource/domain/mfcr/monitor/ciselniky/Nastroj/41> ;
+	<http://data.openbudgets.eu/ontology/czech-republic/dimension/spatialUnit> <http://linked.opendata.cz/resource/domain/mfcr/monitor/ciselniky/ProstorovaJednotka/1> ;
+	<http://data.openbudgets.eu/ontology/dsd/dimension/budgetPhase> <http://data.openbudgets.eu/resource/codelist/budget-phase/executed> ;
+	<http://data.openbudgets.eu/ontology/dsd/measure/amount> 3656720.74 ;
+	<http://purl.org/linked-data/cube#dataSet> <http://data.openbudgets.eu/resource/dataset/ustecky-region-2014-xi> .
+
+<http://data.openbudgets.eu/resource/ustecky-region-2014-xi/observation/70892156/2014/0000/4116/41/1/revised> a <http://purl.org/linked-data/cube#Observation> ;
+	<http://data.openbudgets.eu/ontology/czech-republic/dimension/budgetParagraph> <http://linked.opendata.cz/resource/domain/mfcr/monitor/ciselniky/Paragraf/0000> ;
+	<http://data.openbudgets.eu/ontology/czech-republic/dimension/budgetItem> <http://linked.opendata.cz/resource/domain/mfcr/monitor/ciselniky/Polozka/4116> ;
+	<http://data.openbudgets.eu/ontology/czech-republic/dimension/budgetInstrument> <http://linked.opendata.cz/resource/domain/mfcr/monitor/ciselniky/Nastroj/41> ;
+	<http://data.openbudgets.eu/ontology/czech-republic/dimension/spatialUnit> <http://linked.opendata.cz/resource/domain/mfcr/monitor/ciselniky/ProstorovaJednotka/1> ;
+	<http://data.openbudgets.eu/ontology/dsd/dimension/budgetPhase> <http://data.openbudgets.eu/resource/codelist/budget-phase/revised> ;
+	<http://data.openbudgets.eu/ontology/dsd/measure/amount> 2139104.0 ;
+	<http://purl.org/linked-data/cube#dataSet> <http://data.openbudgets.eu/resource/dataset/ustecky-region-2014-xi> .
+
+<http://data.openbudgets.eu/resource/ustecky-region-2014-xi/observation/70892156/2014/0000/4116/53/5/approved> a <http://purl.org/linked-data/cube#Observation> ;
+	<http://data.openbudgets.eu/ontology/czech-republic/dimension/budgetParagraph> <http://linked.opendata.cz/resource/domain/mfcr/monitor/ciselniky/Paragraf/0000> ;
+	<http://data.openbudgets.eu/ontology/czech-republic/dimension/budgetItem> <http://linked.opendata.cz/resource/domain/mfcr/monitor/ciselniky/Polozka/4116> ;
+	<http://data.openbudgets.eu/ontology/czech-republic/dimension/budgetInstrument> <http://linked.opendata.cz/resource/domain/mfcr/monitor/ciselniky/Nastroj/53> ;
+	<http://data.openbudgets.eu/ontology/czech-republic/dimension/spatialUnit> <http://linked.opendata.cz/resource/domain/mfcr/monitor/ciselniky/ProstorovaJednotka/5> ;
+	<http://data.openbudgets.eu/ontology/dsd/dimension/budgetPhase> <http://data.openbudgets.eu/resource/codelist/budget-phase/approved> ;
+	<http://data.openbudgets.eu/ontology/dsd/measure/amount> 6031000.0 ;
+	<http://purl.org/linked-data/cube#dataSet> <http://data.openbudgets.eu/resource/dataset/ustecky-region-2014-xi> .
+
+<http://data.openbudgets.eu/resource/ustecky-region-2014-xi/observation/70892156/2014/0000/4116/53/5/executed> a <http://purl.org/linked-data/cube#Observation> ;
+	<http://data.openbudgets.eu/ontology/czech-republic/dimension/budgetParagraph> <http://linked.opendata.cz/resource/domain/mfcr/monitor/ciselniky/Paragraf/0000> ;
+	<http://data.openbudgets.eu/ontology/czech-republic/dimension/budgetItem> <http://linked.opendata.cz/resource/domain/mfcr/monitor/ciselniky/Polozka/4116> ;
+	<http://data.openbudgets.eu/ontology/czech-republic/dimension/budgetInstrument> <http://linked.opendata.cz/resource/domain/mfcr/monitor/ciselniky/Nastroj/53> ;
+	<http://data.openbudgets.eu/ontology/czech-republic/dimension/spatialUnit> <http://linked.opendata.cz/resource/domain/mfcr/monitor/ciselniky/ProstorovaJednotka/5> ;
+	<http://data.openbudgets.eu/ontology/dsd/dimension/budgetPhase> <http://data.openbudgets.eu/resource/codelist/budget-phase/executed> ;
+	<http://data.openbudgets.eu/ontology/dsd/measure/amount> 2646721.75 ;
+	<http://purl.org/linked-data/cube#dataSet> <http://data.openbudgets.eu/resource/dataset/ustecky-region-2014-xi> .
+
+<http://data.openbudgets.eu/resource/ustecky-region-2014-xi/observation/70892156/2014/0000/4116/53/5/revised> a <http://purl.org/linked-data/cube#Observation> ;
+	<http://data.openbudgets.eu/ontology/czech-republic/dimension/budgetParagraph> <http://linked.opendata.cz/resource/domain/mfcr/monitor/ciselniky/Paragraf/0000> ;
+	<http://data.openbudgets.eu/ontology/czech-republic/dimension/budgetItem> <http://linked.opendata.cz/resource/domain/mfcr/monitor/ciselniky/Polozka/4116> ;
+	<http://data.openbudgets.eu/ontology/czech-republic/dimension/budgetInstrument> <http://linked.opendata.cz/resource/domain/mfcr/monitor/ciselniky/Nastroj/53> ;
+	<http://data.openbudgets.eu/ontology/czech-republic/dimension/spatialUnit> <http://linked.opendata.cz/resource/domain/mfcr/monitor/ciselniky/ProstorovaJednotka/5> ;
+	<http://data.openbudgets.eu/ontology/dsd/dimension/budgetPhase> <http://data.openbudgets.eu/resource/codelist/budget-phase/revised> ;
+	<http://data.openbudgets.eu/ontology/dsd/measure/amount> 909000.0 ;
+	<http://purl.org/linked-data/cube#dataSet> <http://data.openbudgets.eu/resource/dataset/ustecky-region-2014-xi> .
+
+<http://data.openbudgets.eu/resource/ustecky-region-2014-xi/observation/70892156/2014/0000/4118/20/5/approved> a <http://purl.org/linked-data/cube#Observation> ;
+	<http://data.openbudgets.eu/ontology/czech-republic/dimension/budgetParagraph> <http://linked.opendata.cz/resource/domain/mfcr/monitor/ciselniky/Paragraf/0000> ;
+	<http://data.openbudgets.eu/ontology/czech-republic/dimension/budgetItem> <http://linked.opendata.cz/resource/domain/mfcr/monitor/ciselniky/Polozka/4118> ;
+	<http://data.openbudgets.eu/ontology/czech-republic/dimension/budgetInstrument> <http://linked.opendata.cz/resource/domain/mfcr/monitor/ciselniky/Nastroj/20> ;
+	<http://data.openbudgets.eu/ontology/czech-republic/dimension/spatialUnit> <http://linked.opendata.cz/resource/domain/mfcr/monitor/ciselniky/ProstorovaJednotka/5> ;
+	<http://data.openbudgets.eu/ontology/dsd/dimension/budgetPhase> <http://data.openbudgets.eu/resource/codelist/budget-phase/approved> ;
+	<http://data.openbudgets.eu/ontology/dsd/measure/amount> 0.0 ;
+	<http://purl.org/linked-data/cube#dataSet> <http://data.openbudgets.eu/resource/dataset/ustecky-region-2014-xi> .
+
+<http://data.openbudgets.eu/resource/ustecky-region-2014-xi/observation/70892156/2014/0000/4118/20/5/executed> a <http://purl.org/linked-data/cube#Observation> ;
+	<http://data.openbudgets.eu/ontology/czech-republic/dimension/budgetParagraph> <http://linked.opendata.cz/resource/domain/mfcr/monitor/ciselniky/Paragraf/0000> ;
+	<http://data.openbudgets.eu/ontology/czech-republic/dimension/budgetItem> <http://linked.opendata.cz/resource/domain/mfcr/monitor/ciselniky/Polozka/4118> ;
+	<http://data.openbudgets.eu/ontology/czech-republic/dimension/budgetInstrument> <http://linked.opendata.cz/resource/domain/mfcr/monitor/ciselniky/Nastroj/20> ;
+	<http://data.openbudgets.eu/ontology/czech-republic/dimension/spatialUnit> <http://linked.opendata.cz/resource/domain/mfcr/monitor/ciselniky/ProstorovaJednotka/5> ;
+	<http://data.openbudgets.eu/ontology/dsd/dimension/budgetPhase> <http://data.openbudgets.eu/resource/codelist/budget-phase/executed> ;
+	<http://data.openbudgets.eu/ontology/dsd/measure/amount> 30781673.08 ;
+	<http://purl.org/linked-data/cube#dataSet> <http://data.openbudgets.eu/resource/dataset/ustecky-region-2014-xi> .
+
+<http://data.openbudgets.eu/resource/ustecky-region-2014-xi/observation/70892156/2014/0000/4118/20/5/revised> a <http://purl.org/linked-data/cube#Observation> ;
+	<http://data.openbudgets.eu/ontology/czech-republic/dimension/budgetParagraph> <http://linked.opendata.cz/resource/domain/mfcr/monitor/ciselniky/Paragraf/0000> ;
+	<http://data.openbudgets.eu/ontology/czech-republic/dimension/budgetItem> <http://linked.opendata.cz/resource/domain/mfcr/monitor/ciselniky/Polozka/4118> ;
+	<http://data.openbudgets.eu/ontology/czech-republic/dimension/budgetInstrument> <http://linked.opendata.cz/resource/domain/mfcr/monitor/ciselniky/Nastroj/20> ;
+	<http://data.openbudgets.eu/ontology/czech-republic/dimension/spatialUnit> <http://linked.opendata.cz/resource/domain/mfcr/monitor/ciselniky/ProstorovaJednotka/5> ;
+	<http://data.openbudgets.eu/ontology/dsd/dimension/budgetPhase> <http://data.openbudgets.eu/resource/codelist/budget-phase/revised> ;
+	<http://data.openbudgets.eu/ontology/dsd/measure/amount> 30781678.0 ;
+	<http://purl.org/linked-data/cube#dataSet> <http://data.openbudgets.eu/resource/dataset/ustecky-region-2014-xi> .
+
+<http://data.openbudgets.eu/resource/ustecky-region-2014-xi/observation/70892156/2014/0000/4123/38/5/approved> a <http://purl.org/linked-data/cube#Observation> ;
+	<http://data.openbudgets.eu/ontology/czech-republic/dimension/budgetParagraph> <http://linked.opendata.cz/resource/domain/mfcr/monitor/ciselniky/Paragraf/0000> ;
+	<http://data.openbudgets.eu/ontology/czech-republic/dimension/budgetItem> <http://linked.opendata.cz/resource/domain/mfcr/monitor/ciselniky/Polozka/4123> ;
+	<http://data.openbudgets.eu/ontology/czech-republic/dimension/budgetInstrument> <http://linked.opendata.cz/resource/domain/mfcr/monitor/ciselniky/Nastroj/38> ;
+	<http://data.openbudgets.eu/ontology/czech-republic/dimension/spatialUnit> <http://linked.opendata.cz/resource/domain/mfcr/monitor/ciselniky/ProstorovaJednotka/5> ;
+	<http://data.openbudgets.eu/ontology/dsd/dimension/budgetPhase> <http://data.openbudgets.eu/resource/codelist/budget-phase/approved> ;
+	<http://data.openbudgets.eu/ontology/dsd/measure/amount> 0.0 ;
+	<http://purl.org/linked-data/cube#dataSet> <http://data.openbudgets.eu/resource/dataset/ustecky-region-2014-xi> .
+
+<http://data.openbudgets.eu/resource/ustecky-region-2014-xi/observation/70892156/2014/0000/4123/38/5/executed> a <http://purl.org/linked-data/cube#Observation> ;
+	<http://data.openbudgets.eu/ontology/czech-republic/dimension/budgetParagraph> <http://linked.opendata.cz/resource/domain/mfcr/monitor/ciselniky/Paragraf/0000> ;
+	<http://data.openbudgets.eu/ontology/czech-republic/dimension/budgetItem> <http://linked.opendata.cz/resource/domain/mfcr/monitor/ciselniky/Polozka/4123> ;
+	<http://data.openbudgets.eu/ontology/czech-republic/dimension/budgetInstrument> <http://linked.opendata.cz/resource/domain/mfcr/monitor/ciselniky/Nastroj/38> ;
+	<http://data.openbudgets.eu/ontology/czech-republic/dimension/spatialUnit> <http://linked.opendata.cz/resource/domain/mfcr/monitor/ciselniky/ProstorovaJednotka/5> ;
+	<http://data.openbudgets.eu/ontology/dsd/dimension/budgetPhase> <http://data.openbudgets.eu/resource/codelist/budget-phase/executed> ;
+	<http://data.openbudgets.eu/ontology/dsd/measure/amount> 21185.31 ;
+	<http://purl.org/linked-data/cube#dataSet> <http://data.openbudgets.eu/resource/dataset/ustecky-region-2014-xi> .
+
+<http://data.openbudgets.eu/resource/ustecky-region-2014-xi/observation/70892156/2014/0000/4123/38/5/revised> a <http://purl.org/linked-data/cube#Observation> ;
+	<http://data.openbudgets.eu/ontology/czech-republic/dimension/budgetParagraph> <http://linked.opendata.cz/resource/domain/mfcr/monitor/ciselniky/Paragraf/0000> ;
+	<http://data.openbudgets.eu/ontology/czech-republic/dimension/budgetItem> <http://linked.opendata.cz/resource/domain/mfcr/monitor/ciselniky/Polozka/4123> ;
+	<http://data.openbudgets.eu/ontology/czech-republic/dimension/budgetInstrument> <http://linked.opendata.cz/resource/domain/mfcr/monitor/ciselniky/Nastroj/38> ;
+	<http://data.openbudgets.eu/ontology/czech-republic/dimension/spatialUnit> <http://linked.opendata.cz/resource/domain/mfcr/monitor/ciselniky/ProstorovaJednotka/5> ;
+	<http://data.openbudgets.eu/ontology/dsd/dimension/budgetPhase> <http://data.openbudgets.eu/resource/codelist/budget-phase/revised> ;
+	<http://data.openbudgets.eu/ontology/dsd/measure/amount> 0.0 ;
+	<http://purl.org/linked-data/cube#dataSet> <http://data.openbudgets.eu/resource/dataset/ustecky-region-2014-xi> .
+
+<http://data.openbudgets.eu/resource/ustecky-region-2014-xi/observation/70892156/2014/0000/4152/23/5/approved> a <http://purl.org/linked-data/cube#Observation> ;
+	<http://data.openbudgets.eu/ontology/czech-republic/dimension/budgetParagraph> <http://linked.opendata.cz/resource/domain/mfcr/monitor/ciselniky/Paragraf/0000> ;
+	<http://data.openbudgets.eu/ontology/czech-republic/dimension/budgetItem> <http://linked.opendata.cz/resource/domain/mfcr/monitor/ciselniky/Polozka/4152> ;
+	<http://data.openbudgets.eu/ontology/czech-republic/dimension/budgetInstrument> <http://linked.opendata.cz/resource/domain/mfcr/monitor/ciselniky/Nastroj/23> ;
+	<http://data.openbudgets.eu/ontology/czech-republic/dimension/spatialUnit> <http://linked.opendata.cz/resource/domain/mfcr/monitor/ciselniky/ProstorovaJednotka/5> ;
+	<http://data.openbudgets.eu/ontology/dsd/dimension/budgetPhase> <http://data.openbudgets.eu/resource/codelist/budget-phase/approved> ;
+	<http://data.openbudgets.eu/ontology/dsd/measure/amount> 1350000.0 ;
+	<http://purl.org/linked-data/cube#dataSet> <http://data.openbudgets.eu/resource/dataset/ustecky-region-2014-xi> .
+
+<http://data.openbudgets.eu/resource/ustecky-region-2014-xi/observation/70892156/2014/0000/4152/23/5/executed> a <http://purl.org/linked-data/cube#Observation> ;
+	<http://data.openbudgets.eu/ontology/czech-republic/dimension/budgetParagraph> <http://linked.opendata.cz/resource/domain/mfcr/monitor/ciselniky/Paragraf/0000> ;
+	<http://data.openbudgets.eu/ontology/czech-republic/dimension/budgetItem> <http://linked.opendata.cz/resource/domain/mfcr/monitor/ciselniky/Polozka/4152> ;
+	<http://data.openbudgets.eu/ontology/czech-republic/dimension/budgetInstrument> <http://linked.opendata.cz/resource/domain/mfcr/monitor/ciselniky/Nastroj/23> ;
+	<http://data.openbudgets.eu/ontology/czech-republic/dimension/spatialUnit> <http://linked.opendata.cz/resource/domain/mfcr/monitor/ciselniky/ProstorovaJednotka/5> ;
+	<http://data.openbudgets.eu/ontology/dsd/dimension/budgetPhase> <http://data.openbudgets.eu/resource/codelist/budget-phase/executed> ;
+	<http://data.openbudgets.eu/ontology/dsd/measure/amount> 1086016.19 ;
+	<http://purl.org/linked-data/cube#dataSet> <http://data.openbudgets.eu/resource/dataset/ustecky-region-2014-xi> .
+
+<http://data.openbudgets.eu/resource/ustecky-region-2014-xi/observation/70892156/2014/0000/4152/23/5/revised> a <http://purl.org/linked-data/cube#Observation> ;
+	<http://data.openbudgets.eu/ontology/czech-republic/dimension/budgetParagraph> <http://linked.opendata.cz/resource/domain/mfcr/monitor/ciselniky/Paragraf/0000> ;
+	<http://data.openbudgets.eu/ontology/czech-republic/dimension/budgetItem> <http://linked.opendata.cz/resource/domain/mfcr/monitor/ciselniky/Polozka/4152> ;
+	<http://data.openbudgets.eu/ontology/czech-republic/dimension/budgetInstrument> <http://linked.opendata.cz/resource/domain/mfcr/monitor/ciselniky/Nastroj/23> ;
+	<http://data.openbudgets.eu/ontology/czech-republic/dimension/spatialUnit> <http://linked.opendata.cz/resource/domain/mfcr/monitor/ciselniky/ProstorovaJednotka/5> ;
+	<http://data.openbudgets.eu/ontology/dsd/dimension/budgetPhase> <http://data.openbudgets.eu/resource/codelist/budget-phase/revised> ;
+	<http://data.openbudgets.eu/ontology/dsd/measure/amount> 2220752.0 ;
+	<http://purl.org/linked-data/cube#dataSet> <http://data.openbudgets.eu/resource/dataset/ustecky-region-2014-xi> .
+
+<http://data.openbudgets.eu/resource/ustecky-region-2014-xi/observation/70892156/2014/0000/4152/41/5/approved> a <http://purl.org/linked-data/cube#Observation> ;
+	<http://data.openbudgets.eu/ontology/czech-republic/dimension/budgetParagraph> <http://linked.opendata.cz/resource/domain/mfcr/monitor/ciselniky/Paragraf/0000> ;
+	<http://data.openbudgets.eu/ontology/czech-republic/dimension/budgetItem> <http://linked.opendata.cz/resource/domain/mfcr/monitor/ciselniky/Polozka/4152> ;
+	<http://data.openbudgets.eu/ontology/czech-republic/dimension/budgetInstrument> <http://linked.opendata.cz/resource/domain/mfcr/monitor/ciselniky/Nastroj/41> ;
+	<http://data.openbudgets.eu/ontology/czech-republic/dimension/spatialUnit> <http://linked.opendata.cz/resource/domain/mfcr/monitor/ciselniky/ProstorovaJednotka/5> ;
+	<http://data.openbudgets.eu/ontology/dsd/dimension/budgetPhase> <http://data.openbudgets.eu/resource/codelist/budget-phase/approved> ;
+	<http://data.openbudgets.eu/ontology/dsd/measure/amount> 15533000.0 ;
+	<http://purl.org/linked-data/cube#dataSet> <http://data.openbudgets.eu/resource/dataset/ustecky-region-2014-xi> .
+
+<http://data.openbudgets.eu/resource/ustecky-region-2014-xi/observation/70892156/2014/0000/4152/41/5/executed> a <http://purl.org/linked-data/cube#Observation> ;
+	<http://data.openbudgets.eu/ontology/czech-republic/dimension/budgetParagraph> <http://linked.opendata.cz/resource/domain/mfcr/monitor/ciselniky/Paragraf/0000> ;
+	<http://data.openbudgets.eu/ontology/czech-republic/dimension/budgetItem> <http://linked.opendata.cz/resource/domain/mfcr/monitor/ciselniky/Polozka/4152> ;
+	<http://data.openbudgets.eu/ontology/czech-republic/dimension/budgetInstrument> <http://linked.opendata.cz/resource/domain/mfcr/monitor/ciselniky/Nastroj/41> ;
+	<http://data.openbudgets.eu/ontology/czech-republic/dimension/spatialUnit> <http://linked.opendata.cz/resource/domain/mfcr/monitor/ciselniky/ProstorovaJednotka/5> ;
+	<http://data.openbudgets.eu/ontology/dsd/dimension/budgetPhase> <http://data.openbudgets.eu/resource/codelist/budget-phase/executed> ;
+	<http://data.openbudgets.eu/ontology/dsd/measure/amount> 81269249.5 ;
+	<http://purl.org/linked-data/cube#dataSet> <http://data.openbudgets.eu/resource/dataset/ustecky-region-2014-xi> .
+
+<http://data.openbudgets.eu/resource/ustecky-region-2014-xi/observation/70892156/2014/0000/4152/41/5/revised> a <http://purl.org/linked-data/cube#Observation> ;
+	<http://data.openbudgets.eu/ontology/czech-republic/dimension/budgetParagraph> <http://linked.opendata.cz/resource/domain/mfcr/monitor/ciselniky/Paragraf/0000> ;
+	<http://data.openbudgets.eu/ontology/czech-republic/dimension/budgetItem> <http://linked.opendata.cz/resource/domain/mfcr/monitor/ciselniky/Polozka/4152> ;
+	<http://data.openbudgets.eu/ontology/czech-republic/dimension/budgetInstrument> <http://linked.opendata.cz/resource/domain/mfcr/monitor/ciselniky/Nastroj/41> ;
+	<http://data.openbudgets.eu/ontology/czech-republic/dimension/spatialUnit> <http://linked.opendata.cz/resource/domain/mfcr/monitor/ciselniky/ProstorovaJednotka/5> ;
+	<http://data.openbudgets.eu/ontology/dsd/dimension/budgetPhase> <http://data.openbudgets.eu/resource/codelist/budget-phase/revised> ;
+	<http://data.openbudgets.eu/ontology/dsd/measure/amount> 84260657.0 ;
+	<http://purl.org/linked-data/cube#dataSet> <http://data.openbudgets.eu/resource/dataset/ustecky-region-2014-xi> .
+
+<http://data.openbudgets.eu/resource/ustecky-region-2014-xi/observation/70892156/2014/0000/4152/42/5/approved> a <http://purl.org/linked-data/cube#Observation> ;
+	<http://data.openbudgets.eu/ontology/czech-republic/dimension/budgetParagraph> <http://linked.opendata.cz/resource/domain/mfcr/monitor/ciselniky/Paragraf/0000> ;
+	<http://data.openbudgets.eu/ontology/czech-republic/dimension/budgetItem> <http://linked.opendata.cz/resource/domain/mfcr/monitor/ciselniky/Polozka/4152> ;
+	<http://data.openbudgets.eu/ontology/czech-republic/dimension/budgetInstrument> <http://linked.opendata.cz/resource/domain/mfcr/monitor/ciselniky/Nastroj/42> ;
+	<http://data.openbudgets.eu/ontology/czech-republic/dimension/spatialUnit> <http://linked.opendata.cz/resource/domain/mfcr/monitor/ciselniky/ProstorovaJednotka/5> ;
+	<http://data.openbudgets.eu/ontology/dsd/dimension/budgetPhase> <http://data.openbudgets.eu/resource/codelist/budget-phase/approved> ;
+	<http://data.openbudgets.eu/ontology/dsd/measure/amount> 755000.0 ;
+	<http://purl.org/linked-data/cube#dataSet> <http://data.openbudgets.eu/resource/dataset/ustecky-region-2014-xi> .
+
+<http://data.openbudgets.eu/resource/ustecky-region-2014-xi/observation/70892156/2014/0000/4152/42/5/executed> a <http://purl.org/linked-data/cube#Observation> ;
+	<http://data.openbudgets.eu/ontology/czech-republic/dimension/budgetParagraph> <http://linked.opendata.cz/resource/domain/mfcr/monitor/ciselniky/Paragraf/0000> ;
+	<http://data.openbudgets.eu/ontology/czech-republic/dimension/budgetItem> <http://linked.opendata.cz/resource/domain/mfcr/monitor/ciselniky/Polozka/4152> ;
+	<http://data.openbudgets.eu/ontology/czech-republic/dimension/budgetInstrument> <http://linked.opendata.cz/resource/domain/mfcr/monitor/ciselniky/Nastroj/42> ;
+	<http://data.openbudgets.eu/ontology/czech-republic/dimension/spatialUnit> <http://linked.opendata.cz/resource/domain/mfcr/monitor/ciselniky/ProstorovaJednotka/5> ;
+	<http://data.openbudgets.eu/ontology/dsd/dimension/budgetPhase> <http://data.openbudgets.eu/resource/codelist/budget-phase/executed> ;
+	<http://data.openbudgets.eu/ontology/dsd/measure/amount> 1823354.33 ;
+	<http://purl.org/linked-data/cube#dataSet> <http://data.openbudgets.eu/resource/dataset/ustecky-region-2014-xi> .
+
+<http://data.openbudgets.eu/resource/ustecky-region-2014-xi/observation/70892156/2014/0000/4152/42/5/revised> a <http://purl.org/linked-data/cube#Observation> ;
+	<http://data.openbudgets.eu/ontology/czech-republic/dimension/budgetParagraph> <http://linked.opendata.cz/resource/domain/mfcr/monitor/ciselniky/Paragraf/0000> ;
+	<http://data.openbudgets.eu/ontology/czech-republic/dimension/budgetItem> <http://linked.opendata.cz/resource/domain/mfcr/monitor/ciselniky/Polozka/4152> ;
+	<http://data.openbudgets.eu/ontology/czech-republic/dimension/budgetInstrument> <http://linked.opendata.cz/resource/domain/mfcr/monitor/ciselniky/Nastroj/42> ;
+	<http://data.openbudgets.eu/ontology/czech-republic/dimension/spatialUnit> <http://linked.opendata.cz/resource/domain/mfcr/monitor/ciselniky/ProstorovaJednotka/5> ;
+	<http://data.openbudgets.eu/ontology/dsd/dimension/budgetPhase> <http://data.openbudgets.eu/resource/codelist/budget-phase/revised> ;
+	<http://data.openbudgets.eu/ontology/dsd/measure/amount> 1823356.0 ;
+	<http://purl.org/linked-data/cube#dataSet> <http://data.openbudgets.eu/resource/dataset/ustecky-region-2014-xi> .
+
+<http://data.openbudgets.eu/resource/ustecky-region-2014-xi/observation/70892156/2014/0000/4152/43/5/approved> a <http://purl.org/linked-data/cube#Observation> ;
+	<http://data.openbudgets.eu/ontology/czech-republic/dimension/budgetParagraph> <http://linked.opendata.cz/resource/domain/mfcr/monitor/ciselniky/Paragraf/0000> ;
+	<http://data.openbudgets.eu/ontology/czech-republic/dimension/budgetItem> <http://linked.opendata.cz/resource/domain/mfcr/monitor/ciselniky/Polozka/4152> ;
+	<http://data.openbudgets.eu/ontology/czech-republic/dimension/budgetInstrument> <http://linked.opendata.cz/resource/domain/mfcr/monitor/ciselniky/Nastroj/43> ;
+	<http://data.openbudgets.eu/ontology/czech-republic/dimension/spatialUnit> <http://linked.opendata.cz/resource/domain/mfcr/monitor/ciselniky/ProstorovaJednotka/5> ;
+	<http://data.openbudgets.eu/ontology/dsd/dimension/budgetPhase> <http://data.openbudgets.eu/resource/codelist/budget-phase/approved> ;
+	<http://data.openbudgets.eu/ontology/dsd/measure/amount> 6666000.0 ;
+	<http://purl.org/linked-data/cube#dataSet> <http://data.openbudgets.eu/resource/dataset/ustecky-region-2014-xi> .
+
+<http://data.openbudgets.eu/resource/ustecky-region-2014-xi/observation/70892156/2014/0000/4152/43/5/executed> a <http://purl.org/linked-data/cube#Observation> ;
+	<http://data.openbudgets.eu/ontology/czech-republic/dimension/budgetParagraph> <http://linked.opendata.cz/resource/domain/mfcr/monitor/ciselniky/Paragraf/0000> ;
+	<http://data.openbudgets.eu/ontology/czech-republic/dimension/budgetItem> <http://linked.opendata.cz/resource/domain/mfcr/monitor/ciselniky/Polozka/4152> ;
+	<http://data.openbudgets.eu/ontology/czech-republic/dimension/budgetInstrument> <http://linked.opendata.cz/resource/domain/mfcr/monitor/ciselniky/Nastroj/43> ;
+	<http://data.openbudgets.eu/ontology/czech-republic/dimension/spatialUnit> <http://linked.opendata.cz/resource/domain/mfcr/monitor/ciselniky/ProstorovaJednotka/5> ;
+	<http://data.openbudgets.eu/ontology/dsd/dimension/budgetPhase> <http://data.openbudgets.eu/resource/codelist/budget-phase/executed> ;
+	<http://data.openbudgets.eu/ontology/dsd/measure/amount> 7704959.19 ;
+	<http://purl.org/linked-data/cube#dataSet> <http://data.openbudgets.eu/resource/dataset/ustecky-region-2014-xi> .
+
+<http://data.openbudgets.eu/resource/ustecky-region-2014-xi/observation/70892156/2014/0000/4152/43/5/revised> a <http://purl.org/linked-data/cube#Observation> ;
+	<http://data.openbudgets.eu/ontology/czech-republic/dimension/budgetParagraph> <http://linked.opendata.cz/resource/domain/mfcr/monitor/ciselniky/Paragraf/0000> ;
+	<http://data.openbudgets.eu/ontology/czech-republic/dimension/budgetItem> <http://linked.opendata.cz/resource/domain/mfcr/monitor/ciselniky/Polozka/4152> ;
+	<http://data.openbudgets.eu/ontology/czech-republic/dimension/budgetInstrument> <http://linked.opendata.cz/resource/domain/mfcr/monitor/ciselniky/Nastroj/43> ;
+	<http://data.openbudgets.eu/ontology/czech-republic/dimension/spatialUnit> <http://linked.opendata.cz/resource/domain/mfcr/monitor/ciselniky/ProstorovaJednotka/5> ;
+	<http://data.openbudgets.eu/ontology/dsd/dimension/budgetPhase> <http://data.openbudgets.eu/resource/codelist/budget-phase/revised> ;
+	<http://data.openbudgets.eu/ontology/dsd/measure/amount> 7985645.0 ;
+	<http://purl.org/linked-data/cube#dataSet> <http://data.openbudgets.eu/resource/dataset/ustecky-region-2014-xi> .
+
+<http://data.openbudgets.eu/resource/ustecky-region-2014-xi/observation/70892156/2014/0000/4213/53/1/approved> a <http://purl.org/linked-data/cube#Observation> ;
+	<http://data.openbudgets.eu/ontology/czech-republic/dimension/budgetParagraph> <http://linked.opendata.cz/resource/domain/mfcr/monitor/ciselniky/Paragraf/0000> ;
+	<http://data.openbudgets.eu/ontology/czech-republic/dimension/budgetItem> <http://linked.opendata.cz/resource/domain/mfcr/monitor/ciselniky/Polozka/4213> ;
+	<http://data.openbudgets.eu/ontology/czech-republic/dimension/budgetInstrument> <http://linked.opendata.cz/resource/domain/mfcr/monitor/ciselniky/Nastroj/53> ;
+	<http://data.openbudgets.eu/ontology/czech-republic/dimension/spatialUnit> <http://linked.opendata.cz/resource/domain/mfcr/monitor/ciselniky/ProstorovaJednotka/1> ;
+	<http://data.openbudgets.eu/ontology/dsd/dimension/budgetPhase> <http://data.openbudgets.eu/resource/codelist/budget-phase/approved> ;
+	<http://data.openbudgets.eu/ontology/dsd/measure/amount> 0.0 ;
+	<http://purl.org/linked-data/cube#dataSet> <http://data.openbudgets.eu/resource/dataset/ustecky-region-2014-xi> .
+
+<http://data.openbudgets.eu/resource/ustecky-region-2014-xi/observation/70892156/2014/0000/4213/53/1/executed> a <http://purl.org/linked-data/cube#Observation> ;
+	<http://data.openbudgets.eu/ontology/czech-republic/dimension/budgetParagraph> <http://linked.opendata.cz/resource/domain/mfcr/monitor/ciselniky/Paragraf/0000> ;
+	<http://data.openbudgets.eu/ontology/czech-republic/dimension/budgetItem> <http://linked.opendata.cz/resource/domain/mfcr/monitor/ciselniky/Polozka/4213> ;
+	<http://data.openbudgets.eu/ontology/czech-republic/dimension/budgetInstrument> <http://linked.opendata.cz/resource/domain/mfcr/monitor/ciselniky/Nastroj/53> ;
+	<http://data.openbudgets.eu/ontology/czech-republic/dimension/spatialUnit> <http://linked.opendata.cz/resource/domain/mfcr/monitor/ciselniky/ProstorovaJednotka/1> ;
+	<http://data.openbudgets.eu/ontology/dsd/dimension/budgetPhase> <http://data.openbudgets.eu/resource/codelist/budget-phase/executed> ;
+	<http://data.openbudgets.eu/ontology/dsd/measure/amount> 417151.23 ;
+	<http://purl.org/linked-data/cube#dataSet> <http://data.openbudgets.eu/resource/dataset/ustecky-region-2014-xi> .
+
+<http://data.openbudgets.eu/resource/ustecky-region-2014-xi/observation/70892156/2014/0000/4213/53/1/revised> a <http://purl.org/linked-data/cube#Observation> ;
+	<http://data.openbudgets.eu/ontology/czech-republic/dimension/budgetParagraph> <http://linked.opendata.cz/resource/domain/mfcr/monitor/ciselniky/Paragraf/0000> ;
+	<http://data.openbudgets.eu/ontology/czech-republic/dimension/budgetItem> <http://linked.opendata.cz/resource/domain/mfcr/monitor/ciselniky/Polozka/4213> ;
+	<http://data.openbudgets.eu/ontology/czech-republic/dimension/budgetInstrument> <http://linked.opendata.cz/resource/domain/mfcr/monitor/ciselniky/Nastroj/53> ;
+	<http://data.openbudgets.eu/ontology/czech-republic/dimension/spatialUnit> <http://linked.opendata.cz/resource/domain/mfcr/monitor/ciselniky/ProstorovaJednotka/1> ;
+	<http://data.openbudgets.eu/ontology/dsd/dimension/budgetPhase> <http://data.openbudgets.eu/resource/codelist/budget-phase/revised> ;
+	<http://data.openbudgets.eu/ontology/dsd/measure/amount> 0.0 ;
+	<http://purl.org/linked-data/cube#dataSet> <http://data.openbudgets.eu/resource/dataset/ustecky-region-2014-xi> .
+
+<http://data.openbudgets.eu/resource/ustecky-region-2014-xi/observation/70892156/2014/0000/4216/32/1/approved> a <http://purl.org/linked-data/cube#Observation> ;
+	<http://data.openbudgets.eu/ontology/czech-republic/dimension/budgetParagraph> <http://linked.opendata.cz/resource/domain/mfcr/monitor/ciselniky/Paragraf/0000> ;
+	<http://data.openbudgets.eu/ontology/czech-republic/dimension/budgetItem> <http://linked.opendata.cz/resource/domain/mfcr/monitor/ciselniky/Polozka/4216> ;
+	<http://data.openbudgets.eu/ontology/czech-republic/dimension/budgetInstrument> <http://linked.opendata.cz/resource/domain/mfcr/monitor/ciselniky/Nastroj/32> ;
+	<http://data.openbudgets.eu/ontology/czech-republic/dimension/spatialUnit> <http://linked.opendata.cz/resource/domain/mfcr/monitor/ciselniky/ProstorovaJednotka/1> ;
+	<http://data.openbudgets.eu/ontology/dsd/dimension/budgetPhase> <http://data.openbudgets.eu/resource/codelist/budget-phase/approved> ;
+	<http://data.openbudgets.eu/ontology/dsd/measure/amount> 0.0 ;
+	<http://purl.org/linked-data/cube#dataSet> <http://data.openbudgets.eu/resource/dataset/ustecky-region-2014-xi> .
+
+<http://data.openbudgets.eu/resource/ustecky-region-2014-xi/observation/70892156/2014/0000/4216/32/1/executed> a <http://purl.org/linked-data/cube#Observation> ;
+	<http://data.openbudgets.eu/ontology/czech-republic/dimension/budgetParagraph> <http://linked.opendata.cz/resource/domain/mfcr/monitor/ciselniky/Paragraf/0000> ;
+	<http://data.openbudgets.eu/ontology/czech-republic/dimension/budgetItem> <http://linked.opendata.cz/resource/domain/mfcr/monitor/ciselniky/Polozka/4216> ;
+	<http://data.openbudgets.eu/ontology/czech-republic/dimension/budgetInstrument> <http://linked.opendata.cz/resource/domain/mfcr/monitor/ciselniky/Nastroj/32> ;
+	<http://data.openbudgets.eu/ontology/czech-republic/dimension/spatialUnit> <http://linked.opendata.cz/resource/domain/mfcr/monitor/ciselniky/ProstorovaJednotka/1> ;
+	<http://data.openbudgets.eu/ontology/dsd/dimension/budgetPhase> <http://data.openbudgets.eu/resource/codelist/budget-phase/executed> ;
+	<http://data.openbudgets.eu/ontology/dsd/measure/amount> 2747289.74 ;
+	<http://purl.org/linked-data/cube#dataSet> <http://data.openbudgets.eu/resource/dataset/ustecky-region-2014-xi> .
+
+<http://data.openbudgets.eu/resource/ustecky-region-2014-xi/observation/70892156/2014/0000/4216/32/1/revised> a <http://purl.org/linked-data/cube#Observation> ;
+	<http://data.openbudgets.eu/ontology/czech-republic/dimension/budgetParagraph> <http://linked.opendata.cz/resource/domain/mfcr/monitor/ciselniky/Paragraf/0000> ;
+	<http://data.openbudgets.eu/ontology/czech-republic/dimension/budgetItem> <http://linked.opendata.cz/resource/domain/mfcr/monitor/ciselniky/Polozka/4216> ;
+	<http://data.openbudgets.eu/ontology/czech-republic/dimension/budgetInstrument> <http://linked.opendata.cz/resource/domain/mfcr/monitor/ciselniky/Nastroj/32> ;
+	<http://data.openbudgets.eu/ontology/czech-republic/dimension/spatialUnit> <http://linked.opendata.cz/resource/domain/mfcr/monitor/ciselniky/ProstorovaJednotka/1> ;
+	<http://data.openbudgets.eu/ontology/dsd/dimension/budgetPhase> <http://data.openbudgets.eu/resource/codelist/budget-phase/revised> ;
+	<http://data.openbudgets.eu/ontology/dsd/measure/amount> 2747290.0 ;
+	<http://purl.org/linked-data/cube#dataSet> <http://data.openbudgets.eu/resource/dataset/ustecky-region-2014-xi> .
+
+<http://data.openbudgets.eu/resource/ustecky-region-2014-xi/observation/70892156/2014/0000/4216/32/5/approved> a <http://purl.org/linked-data/cube#Observation> ;
+	<http://data.openbudgets.eu/ontology/czech-republic/dimension/budgetParagraph> <http://linked.opendata.cz/resource/domain/mfcr/monitor/ciselniky/Paragraf/0000> ;
+	<http://data.openbudgets.eu/ontology/czech-republic/dimension/budgetItem> <http://linked.opendata.cz/resource/domain/mfcr/monitor/ciselniky/Polozka/4216> ;
+	<http://data.openbudgets.eu/ontology/czech-republic/dimension/budgetInstrument> <http://linked.opendata.cz/resource/domain/mfcr/monitor/ciselniky/Nastroj/32> ;
+	<http://data.openbudgets.eu/ontology/czech-republic/dimension/spatialUnit> <http://linked.opendata.cz/resource/domain/mfcr/monitor/ciselniky/ProstorovaJednotka/5> ;
+	<http://data.openbudgets.eu/ontology/dsd/dimension/budgetPhase> <http://data.openbudgets.eu/resource/codelist/budget-phase/approved> ;
+	<http://data.openbudgets.eu/ontology/dsd/measure/amount> 0.0 ;
+	<http://purl.org/linked-data/cube#dataSet> <http://data.openbudgets.eu/resource/dataset/ustecky-region-2014-xi> .
+
+<http://data.openbudgets.eu/resource/ustecky-region-2014-xi/observation/70892156/2014/0000/4216/32/5/executed> a <http://purl.org/linked-data/cube#Observation> ;
+	<http://data.openbudgets.eu/ontology/czech-republic/dimension/budgetParagraph> <http://linked.opendata.cz/resource/domain/mfcr/monitor/ciselniky/Paragraf/0000> ;
+	<http://data.openbudgets.eu/ontology/czech-republic/dimension/budgetItem> <http://linked.opendata.cz/resource/domain/mfcr/monitor/ciselniky/Polozka/4216> ;
+	<http://data.openbudgets.eu/ontology/czech-republic/dimension/budgetInstrument> <http://linked.opendata.cz/resource/domain/mfcr/monitor/ciselniky/Nastroj/32> ;
+	<http://data.openbudgets.eu/ontology/czech-republic/dimension/spatialUnit> <http://linked.opendata.cz/resource/domain/mfcr/monitor/ciselniky/ProstorovaJednotka/5> ;
+	<http://data.openbudgets.eu/ontology/dsd/dimension/budgetPhase> <http://data.openbudgets.eu/resource/codelist/budget-phase/executed> ;
+	<http://data.openbudgets.eu/ontology/dsd/measure/amount> 15567975.16 ;
+	<http://purl.org/linked-data/cube#dataSet> <http://data.openbudgets.eu/resource/dataset/ustecky-region-2014-xi> .
+
+<http://data.openbudgets.eu/resource/ustecky-region-2014-xi/observation/70892156/2014/0000/4216/32/5/revised> a <http://purl.org/linked-data/cube#Observation> ;
+	<http://data.openbudgets.eu/ontology/czech-republic/dimension/budgetParagraph> <http://linked.opendata.cz/resource/domain/mfcr/monitor/ciselniky/Paragraf/0000> ;
+	<http://data.openbudgets.eu/ontology/czech-republic/dimension/budgetItem> <http://linked.opendata.cz/resource/domain/mfcr/monitor/ciselniky/Polozka/4216> ;
+	<http://data.openbudgets.eu/ontology/czech-republic/dimension/budgetInstrument> <http://linked.opendata.cz/resource/domain/mfcr/monitor/ciselniky/Nastroj/32> ;
+	<http://data.openbudgets.eu/ontology/czech-republic/dimension/spatialUnit> <http://linked.opendata.cz/resource/domain/mfcr/monitor/ciselniky/ProstorovaJednotka/5> ;
+	<http://data.openbudgets.eu/ontology/dsd/dimension/budgetPhase> <http://data.openbudgets.eu/resource/codelist/budget-phase/revised> ;
+	<http://data.openbudgets.eu/ontology/dsd/measure/amount> 15567976.0 ;
+	<http://purl.org/linked-data/cube#dataSet> <http://data.openbudgets.eu/resource/dataset/ustecky-region-2014-xi> .
+
+<http://data.openbudgets.eu/resource/ustecky-region-2014-xi/observation/70892156/2014/0000/4216/36/1/approved> a <http://purl.org/linked-data/cube#Observation> ;
+	<http://data.openbudgets.eu/ontology/czech-republic/dimension/budgetParagraph> <http://linked.opendata.cz/resource/domain/mfcr/monitor/ciselniky/Paragraf/0000> ;
+	<http://data.openbudgets.eu/ontology/czech-republic/dimension/budgetItem> <http://linked.opendata.cz/resource/domain/mfcr/monitor/ciselniky/Polozka/4216> ;
+	<http://data.openbudgets.eu/ontology/czech-republic/dimension/budgetInstrument> <http://linked.opendata.cz/resource/domain/mfcr/monitor/ciselniky/Nastroj/36> ;
+	<http://data.openbudgets.eu/ontology/czech-republic/dimension/spatialUnit> <http://linked.opendata.cz/resource/domain/mfcr/monitor/ciselniky/ProstorovaJednotka/1> ;
+	<http://data.openbudgets.eu/ontology/dsd/dimension/budgetPhase> <http://data.openbudgets.eu/resource/codelist/budget-phase/approved> ;
+	<http://data.openbudgets.eu/ontology/dsd/measure/amount> 1575000.0 ;
+	<http://purl.org/linked-data/cube#dataSet> <http://data.openbudgets.eu/resource/dataset/ustecky-region-2014-xi> .
+
+<http://data.openbudgets.eu/resource/ustecky-region-2014-xi/observation/70892156/2014/0000/4216/36/1/executed> a <http://purl.org/linked-data/cube#Observation> ;
+	<http://data.openbudgets.eu/ontology/czech-republic/dimension/budgetParagraph> <http://linked.opendata.cz/resource/domain/mfcr/monitor/ciselniky/Paragraf/0000> ;
+	<http://data.openbudgets.eu/ontology/czech-republic/dimension/budgetItem> <http://linked.opendata.cz/resource/domain/mfcr/monitor/ciselniky/Polozka/4216> ;
+	<http://data.openbudgets.eu/ontology/czech-republic/dimension/budgetInstrument> <http://linked.opendata.cz/resource/domain/mfcr/monitor/ciselniky/Nastroj/36> ;
+	<http://data.openbudgets.eu/ontology/czech-republic/dimension/spatialUnit> <http://linked.opendata.cz/resource/domain/mfcr/monitor/ciselniky/ProstorovaJednotka/1> ;
+	<http://data.openbudgets.eu/ontology/dsd/dimension/budgetPhase> <http://data.openbudgets.eu/resource/codelist/budget-phase/executed> ;
+	<http://data.openbudgets.eu/ontology/dsd/measure/amount> 8841077.79 ;
+	<http://purl.org/linked-data/cube#dataSet> <http://data.openbudgets.eu/resource/dataset/ustecky-region-2014-xi> .
+
+<http://data.openbudgets.eu/resource/ustecky-region-2014-xi/observation/70892156/2014/0000/4216/36/1/revised> a <http://purl.org/linked-data/cube#Observation> ;
+	<http://data.openbudgets.eu/ontology/czech-republic/dimension/budgetParagraph> <http://linked.opendata.cz/resource/domain/mfcr/monitor/ciselniky/Paragraf/0000> ;
+	<http://data.openbudgets.eu/ontology/czech-republic/dimension/budgetItem> <http://linked.opendata.cz/resource/domain/mfcr/monitor/ciselniky/Polozka/4216> ;
+	<http://data.openbudgets.eu/ontology/czech-republic/dimension/budgetInstrument> <http://linked.opendata.cz/resource/domain/mfcr/monitor/ciselniky/Nastroj/36> ;
+	<http://data.openbudgets.eu/ontology/czech-republic/dimension/spatialUnit> <http://linked.opendata.cz/resource/domain/mfcr/monitor/ciselniky/ProstorovaJednotka/1> ;
+	<http://data.openbudgets.eu/ontology/dsd/dimension/budgetPhase> <http://data.openbudgets.eu/resource/codelist/budget-phase/revised> ;
+	<http://data.openbudgets.eu/ontology/dsd/measure/amount> 8842129.0 ;
+	<http://purl.org/linked-data/cube#dataSet> <http://data.openbudgets.eu/resource/dataset/ustecky-region-2014-xi> .
+
+<http://data.openbudgets.eu/resource/ustecky-region-2014-xi/observation/70892156/2014/0000/4216/36/5/approved> a <http://purl.org/linked-data/cube#Observation> ;
+	<http://data.openbudgets.eu/ontology/czech-republic/dimension/budgetParagraph> <http://linked.opendata.cz/resource/domain/mfcr/monitor/ciselniky/Paragraf/0000> ;
+	<http://data.openbudgets.eu/ontology/czech-republic/dimension/budgetItem> <http://linked.opendata.cz/resource/domain/mfcr/monitor/ciselniky/Polozka/4216> ;
+	<http://data.openbudgets.eu/ontology/czech-republic/dimension/budgetInstrument> <http://linked.opendata.cz/resource/domain/mfcr/monitor/ciselniky/Nastroj/36> ;
+	<http://data.openbudgets.eu/ontology/czech-republic/dimension/spatialUnit> <http://linked.opendata.cz/resource/domain/mfcr/monitor/ciselniky/ProstorovaJednotka/5> ;
+	<http://data.openbudgets.eu/ontology/dsd/dimension/budgetPhase> <http://data.openbudgets.eu/resource/codelist/budget-phase/approved> ;
+	<http://data.openbudgets.eu/ontology/dsd/measure/amount> 17174000.0 ;
+	<http://purl.org/linked-data/cube#dataSet> <http://data.openbudgets.eu/resource/dataset/ustecky-region-2014-xi> .
+
+<http://data.openbudgets.eu/resource/ustecky-region-2014-xi/observation/70892156/2014/0000/4216/36/5/executed> a <http://purl.org/linked-data/cube#Observation> ;
+	<http://data.openbudgets.eu/ontology/czech-republic/dimension/budgetParagraph> <http://linked.opendata.cz/resource/domain/mfcr/monitor/ciselniky/Paragraf/0000> ;
+	<http://data.openbudgets.eu/ontology/czech-republic/dimension/budgetItem> <http://linked.opendata.cz/resource/domain/mfcr/monitor/ciselniky/Polozka/4216> ;
+	<http://data.openbudgets.eu/ontology/czech-republic/dimension/budgetInstrument> <http://linked.opendata.cz/resource/domain/mfcr/monitor/ciselniky/Nastroj/36> ;
+	<http://data.openbudgets.eu/ontology/czech-republic/dimension/spatialUnit> <http://linked.opendata.cz/resource/domain/mfcr/monitor/ciselniky/ProstorovaJednotka/5> ;
+	<http://data.openbudgets.eu/ontology/dsd/dimension/budgetPhase> <http://data.openbudgets.eu/resource/codelist/budget-phase/executed> ;
+	<http://data.openbudgets.eu/ontology/dsd/measure/amount> 89923316.31 ;
+	<http://purl.org/linked-data/cube#dataSet> <http://data.openbudgets.eu/resource/dataset/ustecky-region-2014-xi> .
+
+<http://data.openbudgets.eu/resource/ustecky-region-2014-xi/observation/70892156/2014/0000/4216/36/5/revised> a <http://purl.org/linked-data/cube#Observation> ;
+	<http://data.openbudgets.eu/ontology/czech-republic/dimension/budgetParagraph> <http://linked.opendata.cz/resource/domain/mfcr/monitor/ciselniky/Paragraf/0000> ;
+	<http://data.openbudgets.eu/ontology/czech-republic/dimension/budgetItem> <http://linked.opendata.cz/resource/domain/mfcr/monitor/ciselniky/Polozka/4216> ;
+	<http://data.openbudgets.eu/ontology/czech-republic/dimension/budgetInstrument> <http://linked.opendata.cz/resource/domain/mfcr/monitor/ciselniky/Nastroj/36> ;
+	<http://data.openbudgets.eu/ontology/czech-republic/dimension/spatialUnit> <http://linked.opendata.cz/resource/domain/mfcr/monitor/ciselniky/ProstorovaJednotka/5> ;
+	<http://data.openbudgets.eu/ontology/dsd/dimension/budgetPhase> <http://data.openbudgets.eu/resource/codelist/budget-phase/revised> ;
+	<http://data.openbudgets.eu/ontology/dsd/measure/amount> 89960110.0 ;
+	<http://purl.org/linked-data/cube#dataSet> <http://data.openbudgets.eu/resource/dataset/ustecky-region-2014-xi> .
+
+<http://data.openbudgets.eu/resource/ustecky-region-2014-xi/observation/70892156/2014/0000/4216/41/1/approved> a <http://purl.org/linked-data/cube#Observation> ;
+	<http://data.openbudgets.eu/ontology/czech-republic/dimension/budgetParagraph> <http://linked.opendata.cz/resource/domain/mfcr/monitor/ciselniky/Paragraf/0000> ;
+	<http://data.openbudgets.eu/ontology/czech-republic/dimension/budgetItem> <http://linked.opendata.cz/resource/domain/mfcr/monitor/ciselniky/Polozka/4216> ;
+	<http://data.openbudgets.eu/ontology/czech-republic/dimension/budgetInstrument> <http://linked.opendata.cz/resource/domain/mfcr/monitor/ciselniky/Nastroj/41> ;
+	<http://data.openbudgets.eu/ontology/czech-republic/dimension/spatialUnit> <http://linked.opendata.cz/resource/domain/mfcr/monitor/ciselniky/ProstorovaJednotka/1> ;
+	<http://data.openbudgets.eu/ontology/dsd/dimension/budgetPhase> <http://data.openbudgets.eu/resource/codelist/budget-phase/approved> ;
+	<http://data.openbudgets.eu/ontology/dsd/measure/amount> 3000000.0 ;
+	<http://purl.org/linked-data/cube#dataSet> <http://data.openbudgets.eu/resource/dataset/ustecky-region-2014-xi> .
+
+<http://data.openbudgets.eu/resource/ustecky-region-2014-xi/observation/70892156/2014/0000/4216/41/1/executed> a <http://purl.org/linked-data/cube#Observation> ;
+	<http://data.openbudgets.eu/ontology/czech-republic/dimension/budgetParagraph> <http://linked.opendata.cz/resource/domain/mfcr/monitor/ciselniky/Paragraf/0000> ;
+	<http://data.openbudgets.eu/ontology/czech-republic/dimension/budgetItem> <http://linked.opendata.cz/resource/domain/mfcr/monitor/ciselniky/Polozka/4216> ;
+	<http://data.openbudgets.eu/ontology/czech-republic/dimension/budgetInstrument> <http://linked.opendata.cz/resource/domain/mfcr/monitor/ciselniky/Nastroj/41> ;
+	<http://data.openbudgets.eu/ontology/czech-republic/dimension/spatialUnit> <http://linked.opendata.cz/resource/domain/mfcr/monitor/ciselniky/ProstorovaJednotka/1> ;
+	<http://data.openbudgets.eu/ontology/dsd/dimension/budgetPhase> <http://data.openbudgets.eu/resource/codelist/budget-phase/executed> ;
+	<http://data.openbudgets.eu/ontology/dsd/measure/amount> 1205136.4 ;
+	<http://purl.org/linked-data/cube#dataSet> <http://data.openbudgets.eu/resource/dataset/ustecky-region-2014-xi> .
+
+<http://data.openbudgets.eu/resource/ustecky-region-2014-xi/observation/70892156/2014/0000/4216/41/1/revised> a <http://purl.org/linked-data/cube#Observation> ;
+	<http://data.openbudgets.eu/ontology/czech-republic/dimension/budgetParagraph> <http://linked.opendata.cz/resource/domain/mfcr/monitor/ciselniky/Paragraf/0000> ;
+	<http://data.openbudgets.eu/ontology/czech-republic/dimension/budgetItem> <http://linked.opendata.cz/resource/domain/mfcr/monitor/ciselniky/Polozka/4216> ;
+	<http://data.openbudgets.eu/ontology/czech-republic/dimension/budgetInstrument> <http://linked.opendata.cz/resource/domain/mfcr/monitor/ciselniky/Nastroj/41> ;
+	<http://data.openbudgets.eu/ontology/czech-republic/dimension/spatialUnit> <http://linked.opendata.cz/resource/domain/mfcr/monitor/ciselniky/ProstorovaJednotka/1> ;
+	<http://data.openbudgets.eu/ontology/dsd/dimension/budgetPhase> <http://data.openbudgets.eu/resource/codelist/budget-phase/revised> ;
+	<http://data.openbudgets.eu/ontology/dsd/measure/amount> 428548.0 ;
+	<http://purl.org/linked-data/cube#dataSet> <http://data.openbudgets.eu/resource/dataset/ustecky-region-2014-xi> .
+
+<http://data.openbudgets.eu/resource/ustecky-region-2014-xi/observation/70892156/2014/0000/4216/53/5/approved> a <http://purl.org/linked-data/cube#Observation> ;
+	<http://data.openbudgets.eu/ontology/czech-republic/dimension/budgetParagraph> <http://linked.opendata.cz/resource/domain/mfcr/monitor/ciselniky/Paragraf/0000> ;
+	<http://data.openbudgets.eu/ontology/czech-republic/dimension/budgetItem> <http://linked.opendata.cz/resource/domain/mfcr/monitor/ciselniky/Polozka/4216> ;
+	<http://data.openbudgets.eu/ontology/czech-republic/dimension/budgetInstrument> <http://linked.opendata.cz/resource/domain/mfcr/monitor/ciselniky/Nastroj/53> ;
+	<http://data.openbudgets.eu/ontology/czech-republic/dimension/spatialUnit> <http://linked.opendata.cz/resource/domain/mfcr/monitor/ciselniky/ProstorovaJednotka/5> ;
+	<http://data.openbudgets.eu/ontology/dsd/dimension/budgetPhase> <http://data.openbudgets.eu/resource/codelist/budget-phase/approved> ;
+	<http://data.openbudgets.eu/ontology/dsd/measure/amount> 0.0 ;
+	<http://purl.org/linked-data/cube#dataSet> <http://data.openbudgets.eu/resource/dataset/ustecky-region-2014-xi> .
+
+<http://data.openbudgets.eu/resource/ustecky-region-2014-xi/observation/70892156/2014/0000/4216/53/5/executed> a <http://purl.org/linked-data/cube#Observation> ;
+	<http://data.openbudgets.eu/ontology/czech-republic/dimension/budgetParagraph> <http://linked.opendata.cz/resource/domain/mfcr/monitor/ciselniky/Paragraf/0000> ;
+	<http://data.openbudgets.eu/ontology/czech-republic/dimension/budgetItem> <http://linked.opendata.cz/resource/domain/mfcr/monitor/ciselniky/Polozka/4216> ;
+	<http://data.openbudgets.eu/ontology/czech-republic/dimension/budgetInstrument> <http://linked.opendata.cz/resource/domain/mfcr/monitor/ciselniky/Nastroj/53> ;
+	<http://data.openbudgets.eu/ontology/czech-republic/dimension/spatialUnit> <http://linked.opendata.cz/resource/domain/mfcr/monitor/ciselniky/ProstorovaJednotka/5> ;
+	<http://data.openbudgets.eu/ontology/dsd/dimension/budgetPhase> <http://data.openbudgets.eu/resource/codelist/budget-phase/executed> ;
+	<http://data.openbudgets.eu/ontology/dsd/measure/amount> 7091570.98 ;
+	<http://purl.org/linked-data/cube#dataSet> <http://data.openbudgets.eu/resource/dataset/ustecky-region-2014-xi> .
+
+<http://data.openbudgets.eu/resource/ustecky-region-2014-xi/observation/70892156/2014/0000/4216/53/5/revised> a <http://purl.org/linked-data/cube#Observation> ;
+	<http://data.openbudgets.eu/ontology/czech-republic/dimension/budgetParagraph> <http://linked.opendata.cz/resource/domain/mfcr/monitor/ciselniky/Paragraf/0000> ;
+	<http://data.openbudgets.eu/ontology/czech-republic/dimension/budgetItem> <http://linked.opendata.cz/resource/domain/mfcr/monitor/ciselniky/Polozka/4216> ;
+	<http://data.openbudgets.eu/ontology/czech-republic/dimension/budgetInstrument> <http://linked.opendata.cz/resource/domain/mfcr/monitor/ciselniky/Nastroj/53> ;
+	<http://data.openbudgets.eu/ontology/czech-republic/dimension/spatialUnit> <http://linked.opendata.cz/resource/domain/mfcr/monitor/ciselniky/ProstorovaJednotka/5> ;
+	<http://data.openbudgets.eu/ontology/dsd/dimension/budgetPhase> <http://data.openbudgets.eu/resource/codelist/budget-phase/revised> ;
+	<http://data.openbudgets.eu/ontology/dsd/measure/amount> 0.0 ;
+	<http://purl.org/linked-data/cube#dataSet> <http://data.openbudgets.eu/resource/dataset/ustecky-region-2014-xi> .
+
+<http://data.openbudgets.eu/resource/ustecky-region-2014-xi/observation/70892156/2014/0000/4223/38/5/approved> a <http://purl.org/linked-data/cube#Observation> ;
+	<http://data.openbudgets.eu/ontology/czech-republic/dimension/budgetParagraph> <http://linked.opendata.cz/resource/domain/mfcr/monitor/ciselniky/Paragraf/0000> ;
+	<http://data.openbudgets.eu/ontology/czech-republic/dimension/budgetItem> <http://linked.opendata.cz/resource/domain/mfcr/monitor/ciselniky/Polozka/4223> ;
+	<http://data.openbudgets.eu/ontology/czech-republic/dimension/budgetInstrument> <http://linked.opendata.cz/resource/domain/mfcr/monitor/ciselniky/Nastroj/38> ;
+	<http://data.openbudgets.eu/ontology/czech-republic/dimension/spatialUnit> <http://linked.opendata.cz/resource/domain/mfcr/monitor/ciselniky/ProstorovaJednotka/5> ;
+	<http://data.openbudgets.eu/ontology/dsd/dimension/budgetPhase> <http://data.openbudgets.eu/resource/codelist/budget-phase/approved> ;
+	<http://data.openbudgets.eu/ontology/dsd/measure/amount> 320000000.0 ;
+	<http://purl.org/linked-data/cube#dataSet> <http://data.openbudgets.eu/resource/dataset/ustecky-region-2014-xi> .
+
+<http://data.openbudgets.eu/resource/ustecky-region-2014-xi/observation/70892156/2014/0000/4223/38/5/executed> a <http://purl.org/linked-data/cube#Observation> ;
+	<http://data.openbudgets.eu/ontology/czech-republic/dimension/budgetParagraph> <http://linked.opendata.cz/resource/domain/mfcr/monitor/ciselniky/Paragraf/0000> ;
+	<http://data.openbudgets.eu/ontology/czech-republic/dimension/budgetItem> <http://linked.opendata.cz/resource/domain/mfcr/monitor/ciselniky/Polozka/4223> ;
+	<http://data.openbudgets.eu/ontology/czech-republic/dimension/budgetInstrument> <http://linked.opendata.cz/resource/domain/mfcr/monitor/ciselniky/Nastroj/38> ;
+	<http://data.openbudgets.eu/ontology/czech-republic/dimension/spatialUnit> <http://linked.opendata.cz/resource/domain/mfcr/monitor/ciselniky/ProstorovaJednotka/5> ;
+	<http://data.openbudgets.eu/ontology/dsd/dimension/budgetPhase> <http://data.openbudgets.eu/resource/codelist/budget-phase/executed> ;
+	<http://data.openbudgets.eu/ontology/dsd/measure/amount> 295253376.78 ;
+	<http://purl.org/linked-data/cube#dataSet> <http://data.openbudgets.eu/resource/dataset/ustecky-region-2014-xi> .
+
+<http://data.openbudgets.eu/resource/ustecky-region-2014-xi/observation/70892156/2014/0000/4223/38/5/revised> a <http://purl.org/linked-data/cube#Observation> ;
+	<http://data.openbudgets.eu/ontology/czech-republic/dimension/budgetParagraph> <http://linked.opendata.cz/resource/domain/mfcr/monitor/ciselniky/Paragraf/0000> ;
+	<http://data.openbudgets.eu/ontology/czech-republic/dimension/budgetItem> <http://linked.opendata.cz/resource/domain/mfcr/monitor/ciselniky/Polozka/4223> ;
+	<http://data.openbudgets.eu/ontology/czech-republic/dimension/budgetInstrument> <http://linked.opendata.cz/resource/domain/mfcr/monitor/ciselniky/Nastroj/38> ;
+	<http://data.openbudgets.eu/ontology/czech-republic/dimension/spatialUnit> <http://linked.opendata.cz/resource/domain/mfcr/monitor/ciselniky/ProstorovaJednotka/5> ;
+	<http://data.openbudgets.eu/ontology/dsd/dimension/budgetPhase> <http://data.openbudgets.eu/resource/codelist/budget-phase/revised> ;
+	<http://data.openbudgets.eu/ontology/dsd/measure/amount> 294234636.0 ;
+	<http://purl.org/linked-data/cube#dataSet> <http://data.openbudgets.eu/resource/dataset/ustecky-region-2014-xi> .
+
+<http://data.openbudgets.eu/resource/ustecky-region-2014-xi/observation/70892156/2014/0000/4232/41/5/approved> a <http://purl.org/linked-data/cube#Observation> ;
+	<http://data.openbudgets.eu/ontology/czech-republic/dimension/budgetParagraph> <http://linked.opendata.cz/resource/domain/mfcr/monitor/ciselniky/Paragraf/0000> ;
+	<http://data.openbudgets.eu/ontology/czech-republic/dimension/budgetItem> <http://linked.opendata.cz/resource/domain/mfcr/monitor/ciselniky/Polozka/4232> ;
+	<http://data.openbudgets.eu/ontology/czech-republic/dimension/budgetInstrument> <http://linked.opendata.cz/resource/domain/mfcr/monitor/ciselniky/Nastroj/41> ;
+	<http://data.openbudgets.eu/ontology/czech-republic/dimension/spatialUnit> <http://linked.opendata.cz/resource/domain/mfcr/monitor/ciselniky/ProstorovaJednotka/5> ;
+	<http://data.openbudgets.eu/ontology/dsd/dimension/budgetPhase> <http://data.openbudgets.eu/resource/codelist/budget-phase/approved> ;
+	<http://data.openbudgets.eu/ontology/dsd/measure/amount> 0.0 ;
+	<http://purl.org/linked-data/cube#dataSet> <http://data.openbudgets.eu/resource/dataset/ustecky-region-2014-xi> .
+
+<http://data.openbudgets.eu/resource/ustecky-region-2014-xi/observation/70892156/2014/0000/4232/41/5/executed> a <http://purl.org/linked-data/cube#Observation> ;
+	<http://data.openbudgets.eu/ontology/czech-republic/dimension/budgetParagraph> <http://linked.opendata.cz/resource/domain/mfcr/monitor/ciselniky/Paragraf/0000> ;
+	<http://data.openbudgets.eu/ontology/czech-republic/dimension/budgetItem> <http://linked.opendata.cz/resource/domain/mfcr/monitor/ciselniky/Polozka/4232> ;
+	<http://data.openbudgets.eu/ontology/czech-republic/dimension/budgetInstrument> <http://linked.opendata.cz/resource/domain/mfcr/monitor/ciselniky/Nastroj/41> ;
+	<http://data.openbudgets.eu/ontology/czech-republic/dimension/spatialUnit> <http://linked.opendata.cz/resource/domain/mfcr/monitor/ciselniky/ProstorovaJednotka/5> ;
+	<http://data.openbudgets.eu/ontology/dsd/dimension/budgetPhase> <http://data.openbudgets.eu/resource/codelist/budget-phase/executed> ;
+	<http://data.openbudgets.eu/ontology/dsd/measure/amount> 14592414.49 ;
+	<http://purl.org/linked-data/cube#dataSet> <http://data.openbudgets.eu/resource/dataset/ustecky-region-2014-xi> .
+
+<http://data.openbudgets.eu/resource/ustecky-region-2014-xi/observation/70892156/2014/0000/4232/41/5/revised> a <http://purl.org/linked-data/cube#Observation> ;
+	<http://data.openbudgets.eu/ontology/czech-republic/dimension/budgetParagraph> <http://linked.opendata.cz/resource/domain/mfcr/monitor/ciselniky/Paragraf/0000> ;
+	<http://data.openbudgets.eu/ontology/czech-republic/dimension/budgetItem> <http://linked.opendata.cz/resource/domain/mfcr/monitor/ciselniky/Polozka/4232> ;
+	<http://data.openbudgets.eu/ontology/czech-republic/dimension/budgetInstrument> <http://linked.opendata.cz/resource/domain/mfcr/monitor/ciselniky/Nastroj/41> ;
+	<http://data.openbudgets.eu/ontology/czech-republic/dimension/spatialUnit> <http://linked.opendata.cz/resource/domain/mfcr/monitor/ciselniky/ProstorovaJednotka/5> ;
+	<http://data.openbudgets.eu/ontology/dsd/dimension/budgetPhase> <http://data.openbudgets.eu/resource/codelist/budget-phase/revised> ;
+	<http://data.openbudgets.eu/ontology/dsd/measure/amount> 14592416.0 ;
+	<http://purl.org/linked-data/cube#dataSet> <http://data.openbudgets.eu/resource/dataset/ustecky-region-2014-xi> .
+
+<http://data.openbudgets.eu/resource/ustecky-region-2014-xi/observation/70892156/2014/0000/4233/41/5/approved> a <http://purl.org/linked-data/cube#Observation> ;
+	<http://data.openbudgets.eu/ontology/czech-republic/dimension/budgetParagraph> <http://linked.opendata.cz/resource/domain/mfcr/monitor/ciselniky/Paragraf/0000> ;
+	<http://data.openbudgets.eu/ontology/czech-republic/dimension/budgetItem> <http://linked.opendata.cz/resource/domain/mfcr/monitor/ciselniky/Polozka/4233> ;
+	<http://data.openbudgets.eu/ontology/czech-republic/dimension/budgetInstrument> <http://linked.opendata.cz/resource/domain/mfcr/monitor/ciselniky/Nastroj/41> ;
+	<http://data.openbudgets.eu/ontology/czech-republic/dimension/spatialUnit> <http://linked.opendata.cz/resource/domain/mfcr/monitor/ciselniky/ProstorovaJednotka/5> ;
+	<http://data.openbudgets.eu/ontology/dsd/dimension/budgetPhase> <http://data.openbudgets.eu/resource/codelist/budget-phase/approved> ;
+	<http://data.openbudgets.eu/ontology/dsd/measure/amount> 17000000.0 ;
+	<http://purl.org/linked-data/cube#dataSet> <http://data.openbudgets.eu/resource/dataset/ustecky-region-2014-xi> .
+
+<http://data.openbudgets.eu/resource/ustecky-region-2014-xi/observation/70892156/2014/0000/4233/41/5/executed> a <http://purl.org/linked-data/cube#Observation> ;
+	<http://data.openbudgets.eu/ontology/czech-republic/dimension/budgetParagraph> <http://linked.opendata.cz/resource/domain/mfcr/monitor/ciselniky/Paragraf/0000> ;
+	<http://data.openbudgets.eu/ontology/czech-republic/dimension/budgetItem> <http://linked.opendata.cz/resource/domain/mfcr/monitor/ciselniky/Polozka/4233> ;
+	<http://data.openbudgets.eu/ontology/czech-republic/dimension/budgetInstrument> <http://linked.opendata.cz/resource/domain/mfcr/monitor/ciselniky/Nastroj/41> ;
+	<http://data.openbudgets.eu/ontology/czech-republic/dimension/spatialUnit> <http://linked.opendata.cz/resource/domain/mfcr/monitor/ciselniky/ProstorovaJednotka/5> ;
+	<http://data.openbudgets.eu/ontology/dsd/dimension/budgetPhase> <http://data.openbudgets.eu/resource/codelist/budget-phase/executed> ;
+	<http://data.openbudgets.eu/ontology/dsd/measure/amount> 0.0 ;
+	<http://purl.org/linked-data/cube#dataSet> <http://data.openbudgets.eu/resource/dataset/ustecky-region-2014-xi> .
+
+<http://data.openbudgets.eu/resource/ustecky-region-2014-xi/observation/70892156/2014/0000/4233/41/5/revised> a <http://purl.org/linked-data/cube#Observation> ;
+	<http://data.openbudgets.eu/ontology/czech-republic/dimension/budgetParagraph> <http://linked.opendata.cz/resource/domain/mfcr/monitor/ciselniky/Paragraf/0000> ;
+	<http://data.openbudgets.eu/ontology/czech-republic/dimension/budgetItem> <http://linked.opendata.cz/resource/domain/mfcr/monitor/ciselniky/Polozka/4233> ;
+	<http://data.openbudgets.eu/ontology/czech-republic/dimension/budgetInstrument> <http://linked.opendata.cz/resource/domain/mfcr/monitor/ciselniky/Nastroj/41> ;
+	<http://data.openbudgets.eu/ontology/czech-republic/dimension/spatialUnit> <http://linked.opendata.cz/resource/domain/mfcr/monitor/ciselniky/ProstorovaJednotka/5> ;
+	<http://data.openbudgets.eu/ontology/dsd/dimension/budgetPhase> <http://data.openbudgets.eu/resource/codelist/budget-phase/revised> ;
+	<http://data.openbudgets.eu/ontology/dsd/measure/amount> 0.0 ;
+	<http://purl.org/linked-data/cube#dataSet> <http://data.openbudgets.eu/resource/dataset/ustecky-region-2014-xi> .
+
+<http://data.openbudgets.eu/resource/ustecky-region-2014-xi/observation/70892156/2014/3299/2229/32/1/approved> a <http://purl.org/linked-data/cube#Observation> ;
+	<http://data.openbudgets.eu/ontology/czech-republic/dimension/budgetParagraph> <http://linked.opendata.cz/resource/domain/mfcr/monitor/ciselniky/Paragraf/3299> ;
+	<http://data.openbudgets.eu/ontology/czech-republic/dimension/budgetItem> <http://linked.opendata.cz/resource/domain/mfcr/monitor/ciselniky/Polozka/2229> ;
+	<http://data.openbudgets.eu/ontology/czech-republic/dimension/budgetInstrument> <http://linked.opendata.cz/resource/domain/mfcr/monitor/ciselniky/Nastroj/32> ;
+	<http://data.openbudgets.eu/ontology/czech-republic/dimension/spatialUnit> <http://linked.opendata.cz/resource/domain/mfcr/monitor/ciselniky/ProstorovaJednotka/1> ;
+	<http://data.openbudgets.eu/ontology/dsd/dimension/budgetPhase> <http://data.openbudgets.eu/resource/codelist/budget-phase/approved> ;
+	<http://data.openbudgets.eu/ontology/dsd/measure/amount> 0.0 ;
+	<http://purl.org/linked-data/cube#dataSet> <http://data.openbudgets.eu/resource/dataset/ustecky-region-2014-xi> .
+
+<http://data.openbudgets.eu/resource/ustecky-region-2014-xi/observation/70892156/2014/3299/2229/32/1/executed> a <http://purl.org/linked-data/cube#Observation> ;
+	<http://data.openbudgets.eu/ontology/czech-republic/dimension/budgetParagraph> <http://linked.opendata.cz/resource/domain/mfcr/monitor/ciselniky/Paragraf/3299> ;
+	<http://data.openbudgets.eu/ontology/czech-republic/dimension/budgetItem> <http://linked.opendata.cz/resource/domain/mfcr/monitor/ciselniky/Polozka/2229> ;
+	<http://data.openbudgets.eu/ontology/czech-republic/dimension/budgetInstrument> <http://linked.opendata.cz/resource/domain/mfcr/monitor/ciselniky/Nastroj/32> ;
+	<http://data.openbudgets.eu/ontology/czech-republic/dimension/spatialUnit> <http://linked.opendata.cz/resource/domain/mfcr/monitor/ciselniky/ProstorovaJednotka/1> ;
+	<http://data.openbudgets.eu/ontology/dsd/dimension/budgetPhase> <http://data.openbudgets.eu/resource/codelist/budget-phase/executed> ;
+	<http://data.openbudgets.eu/ontology/dsd/measure/amount> 67596.45 ;
+	<http://purl.org/linked-data/cube#dataSet> <http://data.openbudgets.eu/resource/dataset/ustecky-region-2014-xi> .
+
+<http://data.openbudgets.eu/resource/ustecky-region-2014-xi/observation/70892156/2014/3299/2229/32/1/revised> a <http://purl.org/linked-data/cube#Observation> ;
+	<http://data.openbudgets.eu/ontology/czech-republic/dimension/budgetParagraph> <http://linked.opendata.cz/resource/domain/mfcr/monitor/ciselniky/Paragraf/3299> ;
+	<http://data.openbudgets.eu/ontology/czech-republic/dimension/budgetItem> <http://linked.opendata.cz/resource/domain/mfcr/monitor/ciselniky/Polozka/2229> ;
+	<http://data.openbudgets.eu/ontology/czech-republic/dimension/budgetInstrument> <http://linked.opendata.cz/resource/domain/mfcr/monitor/ciselniky/Nastroj/32> ;
+	<http://data.openbudgets.eu/ontology/czech-republic/dimension/spatialUnit> <http://linked.opendata.cz/resource/domain/mfcr/monitor/ciselniky/ProstorovaJednotka/1> ;
+	<http://data.openbudgets.eu/ontology/dsd/dimension/budgetPhase> <http://data.openbudgets.eu/resource/codelist/budget-phase/revised> ;
+	<http://data.openbudgets.eu/ontology/dsd/measure/amount> 67599.0 ;
+	<http://purl.org/linked-data/cube#dataSet> <http://data.openbudgets.eu/resource/dataset/ustecky-region-2014-xi> .
+
+<http://data.openbudgets.eu/resource/ustecky-region-2014-xi/observation/70892156/2014/3299/2229/32/5/approved> a <http://purl.org/linked-data/cube#Observation> ;
+	<http://data.openbudgets.eu/ontology/czech-republic/dimension/budgetParagraph> <http://linked.opendata.cz/resource/domain/mfcr/monitor/ciselniky/Paragraf/3299> ;
+	<http://data.openbudgets.eu/ontology/czech-republic/dimension/budgetItem> <http://linked.opendata.cz/resource/domain/mfcr/monitor/ciselniky/Polozka/2229> ;
+	<http://data.openbudgets.eu/ontology/czech-republic/dimension/budgetInstrument> <http://linked.opendata.cz/resource/domain/mfcr/monitor/ciselniky/Nastroj/32> ;
+	<http://data.openbudgets.eu/ontology/czech-republic/dimension/spatialUnit> <http://linked.opendata.cz/resource/domain/mfcr/monitor/ciselniky/ProstorovaJednotka/5> ;
+	<http://data.openbudgets.eu/ontology/dsd/dimension/budgetPhase> <http://data.openbudgets.eu/resource/codelist/budget-phase/approved> ;
+	<http://data.openbudgets.eu/ontology/dsd/measure/amount> 0.0 ;
+	<http://purl.org/linked-data/cube#dataSet> <http://data.openbudgets.eu/resource/dataset/ustecky-region-2014-xi> .
+
+<http://data.openbudgets.eu/resource/ustecky-region-2014-xi/observation/70892156/2014/3299/2229/32/5/executed> a <http://purl.org/linked-data/cube#Observation> ;
+	<http://data.openbudgets.eu/ontology/czech-republic/dimension/budgetParagraph> <http://linked.opendata.cz/resource/domain/mfcr/monitor/ciselniky/Paragraf/3299> ;
+	<http://data.openbudgets.eu/ontology/czech-republic/dimension/budgetItem> <http://linked.opendata.cz/resource/domain/mfcr/monitor/ciselniky/Polozka/2229> ;
+	<http://data.openbudgets.eu/ontology/czech-republic/dimension/budgetInstrument> <http://linked.opendata.cz/resource/domain/mfcr/monitor/ciselniky/Nastroj/32> ;
+	<http://data.openbudgets.eu/ontology/czech-republic/dimension/spatialUnit> <http://linked.opendata.cz/resource/domain/mfcr/monitor/ciselniky/ProstorovaJednotka/5> ;
+	<http://data.openbudgets.eu/ontology/dsd/dimension/budgetPhase> <http://data.openbudgets.eu/resource/codelist/budget-phase/executed> ;
+	<http://data.openbudgets.eu/ontology/dsd/measure/amount> 383046.56 ;
+	<http://purl.org/linked-data/cube#dataSet> <http://data.openbudgets.eu/resource/dataset/ustecky-region-2014-xi> .
+
+<http://data.openbudgets.eu/resource/ustecky-region-2014-xi/observation/70892156/2014/3299/2229/32/5/revised> a <http://purl.org/linked-data/cube#Observation> ;
+	<http://data.openbudgets.eu/ontology/czech-republic/dimension/budgetParagraph> <http://linked.opendata.cz/resource/domain/mfcr/monitor/ciselniky/Paragraf/3299> ;
+	<http://data.openbudgets.eu/ontology/czech-republic/dimension/budgetItem> <http://linked.opendata.cz/resource/domain/mfcr/monitor/ciselniky/Polozka/2229> ;
+	<http://data.openbudgets.eu/ontology/czech-republic/dimension/budgetInstrument> <http://linked.opendata.cz/resource/domain/mfcr/monitor/ciselniky/Nastroj/32> ;
+	<http://data.openbudgets.eu/ontology/czech-republic/dimension/spatialUnit> <http://linked.opendata.cz/resource/domain/mfcr/monitor/ciselniky/ProstorovaJednotka/5> ;
+	<http://data.openbudgets.eu/ontology/dsd/dimension/budgetPhase> <http://data.openbudgets.eu/resource/codelist/budget-phase/revised> ;
+	<http://data.openbudgets.eu/ontology/dsd/measure/amount> 383048.0 ;
+	<http://purl.org/linked-data/cube#dataSet> <http://data.openbudgets.eu/resource/dataset/ustecky-region-2014-xi> .
+
+<http://data.openbudgets.eu/resource/ustecky-region-2014-xi/observation/70892156/2014/3636/3129/43/1/approved> a <http://purl.org/linked-data/cube#Observation> ;
+	<http://data.openbudgets.eu/ontology/czech-republic/dimension/budgetParagraph> <http://linked.opendata.cz/resource/domain/mfcr/monitor/ciselniky/Paragraf/3636> ;
+	<http://data.openbudgets.eu/ontology/czech-republic/dimension/budgetItem> <http://linked.opendata.cz/resource/domain/mfcr/monitor/ciselniky/Polozka/3129> ;
+	<http://data.openbudgets.eu/ontology/czech-republic/dimension/budgetInstrument> <http://linked.opendata.cz/resource/domain/mfcr/monitor/ciselniky/Nastroj/43> ;
+	<http://data.openbudgets.eu/ontology/czech-republic/dimension/spatialUnit> <http://linked.opendata.cz/resource/domain/mfcr/monitor/ciselniky/ProstorovaJednotka/1> ;
+	<http://data.openbudgets.eu/ontology/dsd/dimension/budgetPhase> <http://data.openbudgets.eu/resource/codelist/budget-phase/approved> ;
+	<http://data.openbudgets.eu/ontology/dsd/measure/amount> 0.0 ;
+	<http://purl.org/linked-data/cube#dataSet> <http://data.openbudgets.eu/resource/dataset/ustecky-region-2014-xi> .
+
+<http://data.openbudgets.eu/resource/ustecky-region-2014-xi/observation/70892156/2014/3636/3129/43/1/executed> a <http://purl.org/linked-data/cube#Observation> ;
+	<http://data.openbudgets.eu/ontology/czech-republic/dimension/budgetParagraph> <http://linked.opendata.cz/resource/domain/mfcr/monitor/ciselniky/Paragraf/3636> ;
+	<http://data.openbudgets.eu/ontology/czech-republic/dimension/budgetItem> <http://linked.opendata.cz/resource/domain/mfcr/monitor/ciselniky/Polozka/3129> ;
+	<http://data.openbudgets.eu/ontology/czech-republic/dimension/budgetInstrument> <http://linked.opendata.cz/resource/domain/mfcr/monitor/ciselniky/Nastroj/43> ;
+	<http://data.openbudgets.eu/ontology/czech-republic/dimension/spatialUnit> <http://linked.opendata.cz/resource/domain/mfcr/monitor/ciselniky/ProstorovaJednotka/1> ;
+	<http://data.openbudgets.eu/ontology/dsd/dimension/budgetPhase> <http://data.openbudgets.eu/resource/codelist/budget-phase/executed> ;
+	<http://data.openbudgets.eu/ontology/dsd/measure/amount> 1815.0 ;
+	<http://purl.org/linked-data/cube#dataSet> <http://data.openbudgets.eu/resource/dataset/ustecky-region-2014-xi> .
+
+<http://data.openbudgets.eu/resource/ustecky-region-2014-xi/observation/70892156/2014/3636/3129/43/1/revised> a <http://purl.org/linked-data/cube#Observation> ;
+	<http://data.openbudgets.eu/ontology/czech-republic/dimension/budgetParagraph> <http://linked.opendata.cz/resource/domain/mfcr/monitor/ciselniky/Paragraf/3636> ;
+	<http://data.openbudgets.eu/ontology/czech-republic/dimension/budgetItem> <http://linked.opendata.cz/resource/domain/mfcr/monitor/ciselniky/Polozka/3129> ;
+	<http://data.openbudgets.eu/ontology/czech-republic/dimension/budgetInstrument> <http://linked.opendata.cz/resource/domain/mfcr/monitor/ciselniky/Nastroj/43> ;
+	<http://data.openbudgets.eu/ontology/czech-republic/dimension/spatialUnit> <http://linked.opendata.cz/resource/domain/mfcr/monitor/ciselniky/ProstorovaJednotka/1> ;
+	<http://data.openbudgets.eu/ontology/dsd/dimension/budgetPhase> <http://data.openbudgets.eu/resource/codelist/budget-phase/revised> ;
+	<http://data.openbudgets.eu/ontology/dsd/measure/amount> 0.0 ;
+	<http://purl.org/linked-data/cube#dataSet> <http://data.openbudgets.eu/resource/dataset/ustecky-region-2014-xi> .
+
+<http://data.openbudgets.eu/resource/ustecky-region-2014-xi/observation/70892156/2014/3636/3129/43/5/approved> a <http://purl.org/linked-data/cube#Observation> ;
+	<http://data.openbudgets.eu/ontology/czech-republic/dimension/budgetParagraph> <http://linked.opendata.cz/resource/domain/mfcr/monitor/ciselniky/Paragraf/3636> ;
+	<http://data.openbudgets.eu/ontology/czech-republic/dimension/budgetItem> <http://linked.opendata.cz/resource/domain/mfcr/monitor/ciselniky/Polozka/3129> ;
+	<http://data.openbudgets.eu/ontology/czech-republic/dimension/budgetInstrument> <http://linked.opendata.cz/resource/domain/mfcr/monitor/ciselniky/Nastroj/43> ;
+	<http://data.openbudgets.eu/ontology/czech-republic/dimension/spatialUnit> <http://linked.opendata.cz/resource/domain/mfcr/monitor/ciselniky/ProstorovaJednotka/5> ;
+	<http://data.openbudgets.eu/ontology/dsd/dimension/budgetPhase> <http://data.openbudgets.eu/resource/codelist/budget-phase/approved> ;
+	<http://data.openbudgets.eu/ontology/dsd/measure/amount> 0.0 ;
+	<http://purl.org/linked-data/cube#dataSet> <http://data.openbudgets.eu/resource/dataset/ustecky-region-2014-xi> .
+
+<http://data.openbudgets.eu/resource/ustecky-region-2014-xi/observation/70892156/2014/3636/3129/43/5/executed> a <http://purl.org/linked-data/cube#Observation> ;
+	<http://data.openbudgets.eu/ontology/czech-republic/dimension/budgetParagraph> <http://linked.opendata.cz/resource/domain/mfcr/monitor/ciselniky/Paragraf/3636> ;
+	<http://data.openbudgets.eu/ontology/czech-republic/dimension/budgetItem> <http://linked.opendata.cz/resource/domain/mfcr/monitor/ciselniky/Polozka/3129> ;
+	<http://data.openbudgets.eu/ontology/czech-republic/dimension/budgetInstrument> <http://linked.opendata.cz/resource/domain/mfcr/monitor/ciselniky/Nastroj/43> ;
+	<http://data.openbudgets.eu/ontology/czech-republic/dimension/spatialUnit> <http://linked.opendata.cz/resource/domain/mfcr/monitor/ciselniky/ProstorovaJednotka/5> ;
+	<http://data.openbudgets.eu/ontology/dsd/dimension/budgetPhase> <http://data.openbudgets.eu/resource/codelist/budget-phase/executed> ;
+	<http://data.openbudgets.eu/ontology/dsd/measure/amount> 10285.0 ;
+	<http://purl.org/linked-data/cube#dataSet> <http://data.openbudgets.eu/resource/dataset/ustecky-region-2014-xi> .
+
+<http://data.openbudgets.eu/resource/ustecky-region-2014-xi/observation/70892156/2014/3636/3129/43/5/revised> a <http://purl.org/linked-data/cube#Observation> ;
+	<http://data.openbudgets.eu/ontology/czech-republic/dimension/budgetParagraph> <http://linked.opendata.cz/resource/domain/mfcr/monitor/ciselniky/Paragraf/3636> ;
+	<http://data.openbudgets.eu/ontology/czech-republic/dimension/budgetItem> <http://linked.opendata.cz/resource/domain/mfcr/monitor/ciselniky/Polozka/3129> ;
+	<http://data.openbudgets.eu/ontology/czech-republic/dimension/budgetInstrument> <http://linked.opendata.cz/resource/domain/mfcr/monitor/ciselniky/Nastroj/43> ;
+	<http://data.openbudgets.eu/ontology/czech-republic/dimension/spatialUnit> <http://linked.opendata.cz/resource/domain/mfcr/monitor/ciselniky/ProstorovaJednotka/5> ;
+	<http://data.openbudgets.eu/ontology/dsd/dimension/budgetPhase> <http://data.openbudgets.eu/resource/codelist/budget-phase/revised> ;
+	<http://data.openbudgets.eu/ontology/dsd/measure/amount> 0.0 ;
+	<http://purl.org/linked-data/cube#dataSet> <http://data.openbudgets.eu/resource/dataset/ustecky-region-2014-xi> .
+
+<http://data.openbudgets.eu/resource/ustecky-region-2014-xi/observation/70892156/2014/4399/2324/33/1/approved> a <http://purl.org/linked-data/cube#Observation> ;
+	<http://data.openbudgets.eu/ontology/czech-republic/dimension/budgetParagraph> <http://linked.opendata.cz/resource/domain/mfcr/monitor/ciselniky/Paragraf/4399> ;
+	<http://data.openbudgets.eu/ontology/czech-republic/dimension/budgetItem> <http://linked.opendata.cz/resource/domain/mfcr/monitor/ciselniky/Polozka/2324> ;
+	<http://data.openbudgets.eu/ontology/czech-republic/dimension/budgetInstrument> <http://linked.opendata.cz/resource/domain/mfcr/monitor/ciselniky/Nastroj/33> ;
+	<http://data.openbudgets.eu/ontology/czech-republic/dimension/spatialUnit> <http://linked.opendata.cz/resource/domain/mfcr/monitor/ciselniky/ProstorovaJednotka/1> ;
+	<http://data.openbudgets.eu/ontology/dsd/dimension/budgetPhase> <http://data.openbudgets.eu/resource/codelist/budget-phase/approved> ;
+	<http://data.openbudgets.eu/ontology/dsd/measure/amount> 0.0 ;
+	<http://purl.org/linked-data/cube#dataSet> <http://data.openbudgets.eu/resource/dataset/ustecky-region-2014-xi> .
+
+<http://data.openbudgets.eu/resource/ustecky-region-2014-xi/observation/70892156/2014/4399/2324/33/1/executed> a <http://purl.org/linked-data/cube#Observation> ;
+	<http://data.openbudgets.eu/ontology/czech-republic/dimension/budgetParagraph> <http://linked.opendata.cz/resource/domain/mfcr/monitor/ciselniky/Paragraf/4399> ;
+	<http://data.openbudgets.eu/ontology/czech-republic/dimension/budgetItem> <http://linked.opendata.cz/resource/domain/mfcr/monitor/ciselniky/Polozka/2324> ;
+	<http://data.openbudgets.eu/ontology/czech-republic/dimension/budgetInstrument> <http://linked.opendata.cz/resource/domain/mfcr/monitor/ciselniky/Nastroj/33> ;
+	<http://data.openbudgets.eu/ontology/czech-republic/dimension/spatialUnit> <http://linked.opendata.cz/resource/domain/mfcr/monitor/ciselniky/ProstorovaJednotka/1> ;
+	<http://data.openbudgets.eu/ontology/dsd/dimension/budgetPhase> <http://data.openbudgets.eu/resource/codelist/budget-phase/executed> ;
+	<http://data.openbudgets.eu/ontology/dsd/measure/amount> 315229.26 ;
+	<http://purl.org/linked-data/cube#dataSet> <http://data.openbudgets.eu/resource/dataset/ustecky-region-2014-xi> .
+
+<http://data.openbudgets.eu/resource/ustecky-region-2014-xi/observation/70892156/2014/4399/2324/33/1/revised> a <http://purl.org/linked-data/cube#Observation> ;
+	<http://data.openbudgets.eu/ontology/czech-republic/dimension/budgetParagraph> <http://linked.opendata.cz/resource/domain/mfcr/monitor/ciselniky/Paragraf/4399> ;
+	<http://data.openbudgets.eu/ontology/czech-republic/dimension/budgetItem> <http://linked.opendata.cz/resource/domain/mfcr/monitor/ciselniky/Polozka/2324> ;
+	<http://data.openbudgets.eu/ontology/czech-republic/dimension/budgetInstrument> <http://linked.opendata.cz/resource/domain/mfcr/monitor/ciselniky/Nastroj/33> ;
+	<http://data.openbudgets.eu/ontology/czech-republic/dimension/spatialUnit> <http://linked.opendata.cz/resource/domain/mfcr/monitor/ciselniky/ProstorovaJednotka/1> ;
+	<http://data.openbudgets.eu/ontology/dsd/dimension/budgetPhase> <http://data.openbudgets.eu/resource/codelist/budget-phase/revised> ;
+	<http://data.openbudgets.eu/ontology/dsd/measure/amount> 468175.0 ;
+	<http://purl.org/linked-data/cube#dataSet> <http://data.openbudgets.eu/resource/dataset/ustecky-region-2014-xi> .
+
+<http://data.openbudgets.eu/resource/ustecky-region-2014-xi/observation/70892156/2014/4399/2324/33/5/approved> a <http://purl.org/linked-data/cube#Observation> ;
+	<http://data.openbudgets.eu/ontology/czech-republic/dimension/budgetParagraph> <http://linked.opendata.cz/resource/domain/mfcr/monitor/ciselniky/Paragraf/4399> ;
+	<http://data.openbudgets.eu/ontology/czech-republic/dimension/budgetItem> <http://linked.opendata.cz/resource/domain/mfcr/monitor/ciselniky/Polozka/2324> ;
+	<http://data.openbudgets.eu/ontology/czech-republic/dimension/budgetInstrument> <http://linked.opendata.cz/resource/domain/mfcr/monitor/ciselniky/Nastroj/33> ;
+	<http://data.openbudgets.eu/ontology/czech-republic/dimension/spatialUnit> <http://linked.opendata.cz/resource/domain/mfcr/monitor/ciselniky/ProstorovaJednotka/5> ;
+	<http://data.openbudgets.eu/ontology/dsd/dimension/budgetPhase> <http://data.openbudgets.eu/resource/codelist/budget-phase/approved> ;
+	<http://data.openbudgets.eu/ontology/dsd/measure/amount> 0.0 ;
+	<http://purl.org/linked-data/cube#dataSet> <http://data.openbudgets.eu/resource/dataset/ustecky-region-2014-xi> .
+
+<http://data.openbudgets.eu/resource/ustecky-region-2014-xi/observation/70892156/2014/4399/2324/33/5/executed> a <http://purl.org/linked-data/cube#Observation> ;
+	<http://data.openbudgets.eu/ontology/czech-republic/dimension/budgetParagraph> <http://linked.opendata.cz/resource/domain/mfcr/monitor/ciselniky/Paragraf/4399> ;
+	<http://data.openbudgets.eu/ontology/czech-republic/dimension/budgetItem> <http://linked.opendata.cz/resource/domain/mfcr/monitor/ciselniky/Polozka/2324> ;
+	<http://data.openbudgets.eu/ontology/czech-republic/dimension/budgetInstrument> <http://linked.opendata.cz/resource/domain/mfcr/monitor/ciselniky/Nastroj/33> ;
+	<http://data.openbudgets.eu/ontology/czech-republic/dimension/spatialUnit> <http://linked.opendata.cz/resource/domain/mfcr/monitor/ciselniky/ProstorovaJednotka/5> ;
+	<http://data.openbudgets.eu/ontology/dsd/dimension/budgetPhase> <http://data.openbudgets.eu/resource/codelist/budget-phase/executed> ;
+	<http://data.openbudgets.eu/ontology/dsd/measure/amount> 1786299.16 ;
+	<http://purl.org/linked-data/cube#dataSet> <http://data.openbudgets.eu/resource/dataset/ustecky-region-2014-xi> .
+
+<http://data.openbudgets.eu/resource/ustecky-region-2014-xi/observation/70892156/2014/4399/2324/33/5/revised> a <http://purl.org/linked-data/cube#Observation> ;
+	<http://data.openbudgets.eu/ontology/czech-republic/dimension/budgetParagraph> <http://linked.opendata.cz/resource/domain/mfcr/monitor/ciselniky/Paragraf/4399> ;
+	<http://data.openbudgets.eu/ontology/czech-republic/dimension/budgetItem> <http://linked.opendata.cz/resource/domain/mfcr/monitor/ciselniky/Polozka/2324> ;
+	<http://data.openbudgets.eu/ontology/czech-republic/dimension/budgetInstrument> <http://linked.opendata.cz/resource/domain/mfcr/monitor/ciselniky/Nastroj/33> ;
+	<http://data.openbudgets.eu/ontology/czech-republic/dimension/spatialUnit> <http://linked.opendata.cz/resource/domain/mfcr/monitor/ciselniky/ProstorovaJednotka/5> ;
+	<http://data.openbudgets.eu/ontology/dsd/dimension/budgetPhase> <http://data.openbudgets.eu/resource/codelist/budget-phase/revised> ;
+	<http://data.openbudgets.eu/ontology/dsd/measure/amount> 2652989.0 ;
+	<http://purl.org/linked-data/cube#dataSet> <http://data.openbudgets.eu/resource/dataset/ustecky-region-2014-xi> .
+
+<http://data.openbudgets.eu/resource/ustecky-region-2014-xi/observation/70892156/2014/6310/2141/32/1/approved> a <http://purl.org/linked-data/cube#Observation> ;
+	<http://data.openbudgets.eu/ontology/czech-republic/dimension/budgetParagraph> <http://linked.opendata.cz/resource/domain/mfcr/monitor/ciselniky/Paragraf/6310> ;
+	<http://data.openbudgets.eu/ontology/czech-republic/dimension/budgetItem> <http://linked.opendata.cz/resource/domain/mfcr/monitor/ciselniky/Polozka/2141> ;
+	<http://data.openbudgets.eu/ontology/czech-republic/dimension/budgetInstrument> <http://linked.opendata.cz/resource/domain/mfcr/monitor/ciselniky/Nastroj/32> ;
+	<http://data.openbudgets.eu/ontology/czech-republic/dimension/spatialUnit> <http://linked.opendata.cz/resource/domain/mfcr/monitor/ciselniky/ProstorovaJednotka/1> ;
+	<http://data.openbudgets.eu/ontology/dsd/dimension/budgetPhase> <http://data.openbudgets.eu/resource/codelist/budget-phase/approved> ;
+	<http://data.openbudgets.eu/ontology/dsd/measure/amount> 0.0 ;
+	<http://purl.org/linked-data/cube#dataSet> <http://data.openbudgets.eu/resource/dataset/ustecky-region-2014-xi> .
+
+<http://data.openbudgets.eu/resource/ustecky-region-2014-xi/observation/70892156/2014/6310/2141/32/1/executed> a <http://purl.org/linked-data/cube#Observation> ;
+	<http://data.openbudgets.eu/ontology/czech-republic/dimension/budgetParagraph> <http://linked.opendata.cz/resource/domain/mfcr/monitor/ciselniky/Paragraf/6310> ;
+	<http://data.openbudgets.eu/ontology/czech-republic/dimension/budgetItem> <http://linked.opendata.cz/resource/domain/mfcr/monitor/ciselniky/Polozka/2141> ;
+	<http://data.openbudgets.eu/ontology/czech-republic/dimension/budgetInstrument> <http://linked.opendata.cz/resource/domain/mfcr/monitor/ciselniky/Nastroj/32> ;
+	<http://data.openbudgets.eu/ontology/czech-republic/dimension/spatialUnit> <http://linked.opendata.cz/resource/domain/mfcr/monitor/ciselniky/ProstorovaJednotka/1> ;
+	<http://data.openbudgets.eu/ontology/dsd/dimension/budgetPhase> <http://data.openbudgets.eu/resource/codelist/budget-phase/executed> ;
+	<http://data.openbudgets.eu/ontology/dsd/measure/amount> 58150.37 ;
+	<http://purl.org/linked-data/cube#dataSet> <http://data.openbudgets.eu/resource/dataset/ustecky-region-2014-xi> .
+
+<http://data.openbudgets.eu/resource/ustecky-region-2014-xi/observation/70892156/2014/6310/2141/32/1/revised> a <http://purl.org/linked-data/cube#Observation> ;
+	<http://data.openbudgets.eu/ontology/czech-republic/dimension/budgetParagraph> <http://linked.opendata.cz/resource/domain/mfcr/monitor/ciselniky/Paragraf/6310> ;
+	<http://data.openbudgets.eu/ontology/czech-republic/dimension/budgetItem> <http://linked.opendata.cz/resource/domain/mfcr/monitor/ciselniky/Polozka/2141> ;
+	<http://data.openbudgets.eu/ontology/czech-republic/dimension/budgetInstrument> <http://linked.opendata.cz/resource/domain/mfcr/monitor/ciselniky/Nastroj/32> ;
+	<http://data.openbudgets.eu/ontology/czech-republic/dimension/spatialUnit> <http://linked.opendata.cz/resource/domain/mfcr/monitor/ciselniky/ProstorovaJednotka/1> ;
+	<http://data.openbudgets.eu/ontology/dsd/dimension/budgetPhase> <http://data.openbudgets.eu/resource/codelist/budget-phase/revised> ;
+	<http://data.openbudgets.eu/ontology/dsd/measure/amount> 49646.0 ;
+	<http://purl.org/linked-data/cube#dataSet> <http://data.openbudgets.eu/resource/dataset/ustecky-region-2014-xi> .
+
+<http://data.openbudgets.eu/resource/ustecky-region-2014-xi/observation/70892156/2014/6310/2141/32/5/approved> a <http://purl.org/linked-data/cube#Observation> ;
+	<http://data.openbudgets.eu/ontology/czech-republic/dimension/budgetParagraph> <http://linked.opendata.cz/resource/domain/mfcr/monitor/ciselniky/Paragraf/6310> ;
+	<http://data.openbudgets.eu/ontology/czech-republic/dimension/budgetItem> <http://linked.opendata.cz/resource/domain/mfcr/monitor/ciselniky/Polozka/2141> ;
+	<http://data.openbudgets.eu/ontology/czech-republic/dimension/budgetInstrument> <http://linked.opendata.cz/resource/domain/mfcr/monitor/ciselniky/Nastroj/32> ;
+	<http://data.openbudgets.eu/ontology/czech-republic/dimension/spatialUnit> <http://linked.opendata.cz/resource/domain/mfcr/monitor/ciselniky/ProstorovaJednotka/5> ;
+	<http://data.openbudgets.eu/ontology/dsd/dimension/budgetPhase> <http://data.openbudgets.eu/resource/codelist/budget-phase/approved> ;
+	<http://data.openbudgets.eu/ontology/dsd/measure/amount> 0.0 ;
+	<http://purl.org/linked-data/cube#dataSet> <http://data.openbudgets.eu/resource/dataset/ustecky-region-2014-xi> .
+
+<http://data.openbudgets.eu/resource/ustecky-region-2014-xi/observation/70892156/2014/6310/2141/32/5/executed> a <http://purl.org/linked-data/cube#Observation> ;
+	<http://data.openbudgets.eu/ontology/czech-republic/dimension/budgetParagraph> <http://linked.opendata.cz/resource/domain/mfcr/monitor/ciselniky/Paragraf/6310> ;
+	<http://data.openbudgets.eu/ontology/czech-republic/dimension/budgetItem> <http://linked.opendata.cz/resource/domain/mfcr/monitor/ciselniky/Polozka/2141> ;
+	<http://data.openbudgets.eu/ontology/czech-republic/dimension/budgetInstrument> <http://linked.opendata.cz/resource/domain/mfcr/monitor/ciselniky/Nastroj/32> ;
+	<http://data.openbudgets.eu/ontology/czech-republic/dimension/spatialUnit> <http://linked.opendata.cz/resource/domain/mfcr/monitor/ciselniky/ProstorovaJednotka/5> ;
+	<http://data.openbudgets.eu/ontology/dsd/dimension/budgetPhase> <http://data.openbudgets.eu/resource/codelist/budget-phase/executed> ;
+	<http://data.openbudgets.eu/ontology/dsd/measure/amount> 327766.32 ;
+	<http://purl.org/linked-data/cube#dataSet> <http://data.openbudgets.eu/resource/dataset/ustecky-region-2014-xi> .
+
+<http://data.openbudgets.eu/resource/ustecky-region-2014-xi/observation/70892156/2014/6310/2141/32/5/revised> a <http://purl.org/linked-data/cube#Observation> ;
+	<http://data.openbudgets.eu/ontology/czech-republic/dimension/budgetParagraph> <http://linked.opendata.cz/resource/domain/mfcr/monitor/ciselniky/Paragraf/6310> ;
+	<http://data.openbudgets.eu/ontology/czech-republic/dimension/budgetItem> <http://linked.opendata.cz/resource/domain/mfcr/monitor/ciselniky/Polozka/2141> ;
+	<http://data.openbudgets.eu/ontology/czech-republic/dimension/budgetInstrument> <http://linked.opendata.cz/resource/domain/mfcr/monitor/ciselniky/Nastroj/32> ;
+	<http://data.openbudgets.eu/ontology/czech-republic/dimension/spatialUnit> <http://linked.opendata.cz/resource/domain/mfcr/monitor/ciselniky/ProstorovaJednotka/5> ;
+	<http://data.openbudgets.eu/ontology/dsd/dimension/budgetPhase> <http://data.openbudgets.eu/resource/codelist/budget-phase/revised> ;
+	<http://data.openbudgets.eu/ontology/dsd/measure/amount> 284615.0 ;
+	<http://purl.org/linked-data/cube#dataSet> <http://data.openbudgets.eu/resource/dataset/ustecky-region-2014-xi> .
+
+<http://data.openbudgets.eu/resource/ustecky-region-2014-xi/observation/70892156/2014/6310/2324/32/1/approved> a <http://purl.org/linked-data/cube#Observation> ;
+	<http://data.openbudgets.eu/ontology/czech-republic/dimension/budgetParagraph> <http://linked.opendata.cz/resource/domain/mfcr/monitor/ciselniky/Paragraf/6310> ;
+	<http://data.openbudgets.eu/ontology/czech-republic/dimension/budgetItem> <http://linked.opendata.cz/resource/domain/mfcr/monitor/ciselniky/Polozka/2324> ;
+	<http://data.openbudgets.eu/ontology/czech-republic/dimension/budgetInstrument> <http://linked.opendata.cz/resource/domain/mfcr/monitor/ciselniky/Nastroj/32> ;
+	<http://data.openbudgets.eu/ontology/czech-republic/dimension/spatialUnit> <http://linked.opendata.cz/resource/domain/mfcr/monitor/ciselniky/ProstorovaJednotka/1> ;
+	<http://data.openbudgets.eu/ontology/dsd/dimension/budgetPhase> <http://data.openbudgets.eu/resource/codelist/budget-phase/approved> ;
+	<http://data.openbudgets.eu/ontology/dsd/measure/amount> 0.0 ;
+	<http://purl.org/linked-data/cube#dataSet> <http://data.openbudgets.eu/resource/dataset/ustecky-region-2014-xi> .
+
+<http://data.openbudgets.eu/resource/ustecky-region-2014-xi/observation/70892156/2014/6310/2324/32/1/executed> a <http://purl.org/linked-data/cube#Observation> ;
+	<http://data.openbudgets.eu/ontology/czech-republic/dimension/budgetParagraph> <http://linked.opendata.cz/resource/domain/mfcr/monitor/ciselniky/Paragraf/6310> ;
+	<http://data.openbudgets.eu/ontology/czech-republic/dimension/budgetItem> <http://linked.opendata.cz/resource/domain/mfcr/monitor/ciselniky/Polozka/2324> ;
+	<http://data.openbudgets.eu/ontology/czech-republic/dimension/budgetInstrument> <http://linked.opendata.cz/resource/domain/mfcr/monitor/ciselniky/Nastroj/32> ;
+	<http://data.openbudgets.eu/ontology/czech-republic/dimension/spatialUnit> <http://linked.opendata.cz/resource/domain/mfcr/monitor/ciselniky/ProstorovaJednotka/1> ;
+	<http://data.openbudgets.eu/ontology/dsd/dimension/budgetPhase> <http://data.openbudgets.eu/resource/codelist/budget-phase/executed> ;
+	<http://data.openbudgets.eu/ontology/dsd/measure/amount> 75.0 ;
+	<http://purl.org/linked-data/cube#dataSet> <http://data.openbudgets.eu/resource/dataset/ustecky-region-2014-xi> .
+
+<http://data.openbudgets.eu/resource/ustecky-region-2014-xi/observation/70892156/2014/6310/2324/32/1/revised> a <http://purl.org/linked-data/cube#Observation> ;
+	<http://data.openbudgets.eu/ontology/czech-republic/dimension/budgetParagraph> <http://linked.opendata.cz/resource/domain/mfcr/monitor/ciselniky/Paragraf/6310> ;
+	<http://data.openbudgets.eu/ontology/czech-republic/dimension/budgetItem> <http://linked.opendata.cz/resource/domain/mfcr/monitor/ciselniky/Polozka/2324> ;
+	<http://data.openbudgets.eu/ontology/czech-republic/dimension/budgetInstrument> <http://linked.opendata.cz/resource/domain/mfcr/monitor/ciselniky/Nastroj/32> ;
+	<http://data.openbudgets.eu/ontology/czech-republic/dimension/spatialUnit> <http://linked.opendata.cz/resource/domain/mfcr/monitor/ciselniky/ProstorovaJednotka/1> ;
+	<http://data.openbudgets.eu/ontology/dsd/dimension/budgetPhase> <http://data.openbudgets.eu/resource/codelist/budget-phase/revised> ;
+	<http://data.openbudgets.eu/ontology/dsd/measure/amount> 0.0 ;
+	<http://purl.org/linked-data/cube#dataSet> <http://data.openbudgets.eu/resource/dataset/ustecky-region-2014-xi> .
+
+<http://data.openbudgets.eu/resource/ustecky-region-2014-xi/observation/70892156/2014/6310/2324/32/5/approved> a <http://purl.org/linked-data/cube#Observation> ;
+	<http://data.openbudgets.eu/ontology/czech-republic/dimension/budgetParagraph> <http://linked.opendata.cz/resource/domain/mfcr/monitor/ciselniky/Paragraf/6310> ;
+	<http://data.openbudgets.eu/ontology/czech-republic/dimension/budgetItem> <http://linked.opendata.cz/resource/domain/mfcr/monitor/ciselniky/Polozka/2324> ;
+	<http://data.openbudgets.eu/ontology/czech-republic/dimension/budgetInstrument> <http://linked.opendata.cz/resource/domain/mfcr/monitor/ciselniky/Nastroj/32> ;
+	<http://data.openbudgets.eu/ontology/czech-republic/dimension/spatialUnit> <http://linked.opendata.cz/resource/domain/mfcr/monitor/ciselniky/ProstorovaJednotka/5> ;
+	<http://data.openbudgets.eu/ontology/dsd/dimension/budgetPhase> <http://data.openbudgets.eu/resource/codelist/budget-phase/approved> ;
+	<http://data.openbudgets.eu/ontology/dsd/measure/amount> 0.0 ;
+	<http://purl.org/linked-data/cube#dataSet> <http://data.openbudgets.eu/resource/dataset/ustecky-region-2014-xi> .
+
+<http://data.openbudgets.eu/resource/ustecky-region-2014-xi/observation/70892156/2014/6310/2324/32/5/executed> a <http://purl.org/linked-data/cube#Observation> ;
+	<http://data.openbudgets.eu/ontology/czech-republic/dimension/budgetParagraph> <http://linked.opendata.cz/resource/domain/mfcr/monitor/ciselniky/Paragraf/6310> ;
+	<http://data.openbudgets.eu/ontology/czech-republic/dimension/budgetItem> <http://linked.opendata.cz/resource/domain/mfcr/monitor/ciselniky/Polozka/2324> ;
+	<http://data.openbudgets.eu/ontology/czech-republic/dimension/budgetInstrument> <http://linked.opendata.cz/resource/domain/mfcr/monitor/ciselniky/Nastroj/32> ;
+	<http://data.openbudgets.eu/ontology/czech-republic/dimension/spatialUnit> <http://linked.opendata.cz/resource/domain/mfcr/monitor/ciselniky/ProstorovaJednotka/5> ;
+	<http://data.openbudgets.eu/ontology/dsd/dimension/budgetPhase> <http://data.openbudgets.eu/resource/codelist/budget-phase/executed> ;
+	<http://data.openbudgets.eu/ontology/dsd/measure/amount> 425.0 ;
+	<http://purl.org/linked-data/cube#dataSet> <http://data.openbudgets.eu/resource/dataset/ustecky-region-2014-xi> .
+
+<http://data.openbudgets.eu/resource/ustecky-region-2014-xi/observation/70892156/2014/6310/2324/32/5/revised> a <http://purl.org/linked-data/cube#Observation> ;
+	<http://data.openbudgets.eu/ontology/czech-republic/dimension/budgetParagraph> <http://linked.opendata.cz/resource/domain/mfcr/monitor/ciselniky/Paragraf/6310> ;
+	<http://data.openbudgets.eu/ontology/czech-republic/dimension/budgetItem> <http://linked.opendata.cz/resource/domain/mfcr/monitor/ciselniky/Polozka/2324> ;
+	<http://data.openbudgets.eu/ontology/czech-republic/dimension/budgetInstrument> <http://linked.opendata.cz/resource/domain/mfcr/monitor/ciselniky/Nastroj/32> ;
+	<http://data.openbudgets.eu/ontology/czech-republic/dimension/spatialUnit> <http://linked.opendata.cz/resource/domain/mfcr/monitor/ciselniky/ProstorovaJednotka/5> ;
+	<http://data.openbudgets.eu/ontology/dsd/dimension/budgetPhase> <http://data.openbudgets.eu/resource/codelist/budget-phase/revised> ;
+	<http://data.openbudgets.eu/ontology/dsd/measure/amount> 0.0 ;
+	<http://purl.org/linked-data/cube#dataSet> <http://data.openbudgets.eu/resource/dataset/ustecky-region-2014-xi> .
+
+<http://data.openbudgets.eu/resource/ustecky-region-2014-xi/observation/70892156/2014/6409/2229/33/1/approved> a <http://purl.org/linked-data/cube#Observation> ;
+	<http://data.openbudgets.eu/ontology/czech-republic/dimension/budgetParagraph> <http://linked.opendata.cz/resource/domain/mfcr/monitor/ciselniky/Paragraf/6409> ;
+	<http://data.openbudgets.eu/ontology/czech-republic/dimension/budgetItem> <http://linked.opendata.cz/resource/domain/mfcr/monitor/ciselniky/Polozka/2229> ;
+	<http://data.openbudgets.eu/ontology/czech-republic/dimension/budgetInstrument> <http://linked.opendata.cz/resource/domain/mfcr/monitor/ciselniky/Nastroj/33> ;
+	<http://data.openbudgets.eu/ontology/czech-republic/dimension/spatialUnit> <http://linked.opendata.cz/resource/domain/mfcr/monitor/ciselniky/ProstorovaJednotka/1> ;
+	<http://data.openbudgets.eu/ontology/dsd/dimension/budgetPhase> <http://data.openbudgets.eu/resource/codelist/budget-phase/approved> ;
+	<http://data.openbudgets.eu/ontology/dsd/measure/amount> 0.0 ;
+	<http://purl.org/linked-data/cube#dataSet> <http://data.openbudgets.eu/resource/dataset/ustecky-region-2014-xi> .
+
+<http://data.openbudgets.eu/resource/ustecky-region-2014-xi/observation/70892156/2014/6409/2229/33/1/executed> a <http://purl.org/linked-data/cube#Observation> ;
+	<http://data.openbudgets.eu/ontology/czech-republic/dimension/budgetParagraph> <http://linked.opendata.cz/resource/domain/mfcr/monitor/ciselniky/Paragraf/6409> ;
+	<http://data.openbudgets.eu/ontology/czech-republic/dimension/budgetItem> <http://linked.opendata.cz/resource/domain/mfcr/monitor/ciselniky/Polozka/2229> ;
+	<http://data.openbudgets.eu/ontology/czech-republic/dimension/budgetInstrument> <http://linked.opendata.cz/resource/domain/mfcr/monitor/ciselniky/Nastroj/33> ;
+	<http://data.openbudgets.eu/ontology/czech-republic/dimension/spatialUnit> <http://linked.opendata.cz/resource/domain/mfcr/monitor/ciselniky/ProstorovaJednotka/1> ;
+	<http://data.openbudgets.eu/ontology/dsd/dimension/budgetPhase> <http://data.openbudgets.eu/resource/codelist/budget-phase/executed> ;
+	<http://data.openbudgets.eu/ontology/dsd/measure/amount> 3000.0 ;
+	<http://purl.org/linked-data/cube#dataSet> <http://data.openbudgets.eu/resource/dataset/ustecky-region-2014-xi> .
+
+<http://data.openbudgets.eu/resource/ustecky-region-2014-xi/observation/70892156/2014/6409/2229/33/1/revised> a <http://purl.org/linked-data/cube#Observation> ;
+	<http://data.openbudgets.eu/ontology/czech-republic/dimension/budgetParagraph> <http://linked.opendata.cz/resource/domain/mfcr/monitor/ciselniky/Paragraf/6409> ;
+	<http://data.openbudgets.eu/ontology/czech-republic/dimension/budgetItem> <http://linked.opendata.cz/resource/domain/mfcr/monitor/ciselniky/Polozka/2229> ;
+	<http://data.openbudgets.eu/ontology/czech-republic/dimension/budgetInstrument> <http://linked.opendata.cz/resource/domain/mfcr/monitor/ciselniky/Nastroj/33> ;
+	<http://data.openbudgets.eu/ontology/czech-republic/dimension/spatialUnit> <http://linked.opendata.cz/resource/domain/mfcr/monitor/ciselniky/ProstorovaJednotka/1> ;
+	<http://data.openbudgets.eu/ontology/dsd/dimension/budgetPhase> <http://data.openbudgets.eu/resource/codelist/budget-phase/revised> ;
+	<http://data.openbudgets.eu/ontology/dsd/measure/amount> 0.0 ;
+	<http://purl.org/linked-data/cube#dataSet> <http://data.openbudgets.eu/resource/dataset/ustecky-region-2014-xi> .
+
+<http://data.openbudgets.eu/resource/ustecky-region-2014-xi/observation/70892156/2014/6409/2229/33/5/approved> a <http://purl.org/linked-data/cube#Observation> ;
+	<http://data.openbudgets.eu/ontology/czech-republic/dimension/budgetParagraph> <http://linked.opendata.cz/resource/domain/mfcr/monitor/ciselniky/Paragraf/6409> ;
+	<http://data.openbudgets.eu/ontology/czech-republic/dimension/budgetItem> <http://linked.opendata.cz/resource/domain/mfcr/monitor/ciselniky/Polozka/2229> ;
+	<http://data.openbudgets.eu/ontology/czech-republic/dimension/budgetInstrument> <http://linked.opendata.cz/resource/domain/mfcr/monitor/ciselniky/Nastroj/33> ;
+	<http://data.openbudgets.eu/ontology/czech-republic/dimension/spatialUnit> <http://linked.opendata.cz/resource/domain/mfcr/monitor/ciselniky/ProstorovaJednotka/5> ;
+	<http://data.openbudgets.eu/ontology/dsd/dimension/budgetPhase> <http://data.openbudgets.eu/resource/codelist/budget-phase/approved> ;
+	<http://data.openbudgets.eu/ontology/dsd/measure/amount> 0.0 ;
+	<http://purl.org/linked-data/cube#dataSet> <http://data.openbudgets.eu/resource/dataset/ustecky-region-2014-xi> .
+
+<http://data.openbudgets.eu/resource/ustecky-region-2014-xi/observation/70892156/2014/6409/2229/33/5/executed> a <http://purl.org/linked-data/cube#Observation> ;
+	<http://data.openbudgets.eu/ontology/czech-republic/dimension/budgetParagraph> <http://linked.opendata.cz/resource/domain/mfcr/monitor/ciselniky/Paragraf/6409> ;
+	<http://data.openbudgets.eu/ontology/czech-republic/dimension/budgetItem> <http://linked.opendata.cz/resource/domain/mfcr/monitor/ciselniky/Polozka/2229> ;
+	<http://data.openbudgets.eu/ontology/czech-republic/dimension/budgetInstrument> <http://linked.opendata.cz/resource/domain/mfcr/monitor/ciselniky/Nastroj/33> ;
+	<http://data.openbudgets.eu/ontology/czech-republic/dimension/spatialUnit> <http://linked.opendata.cz/resource/domain/mfcr/monitor/ciselniky/ProstorovaJednotka/5> ;
+	<http://data.openbudgets.eu/ontology/dsd/dimension/budgetPhase> <http://data.openbudgets.eu/resource/codelist/budget-phase/executed> ;
+	<http://data.openbudgets.eu/ontology/dsd/measure/amount> 17000.0 ;
+	<http://purl.org/linked-data/cube#dataSet> <http://data.openbudgets.eu/resource/dataset/ustecky-region-2014-xi> .
+
+<http://data.openbudgets.eu/resource/ustecky-region-2014-xi/observation/70892156/2014/6409/2229/33/5/revised> a <http://purl.org/linked-data/cube#Observation> ;
+	<http://data.openbudgets.eu/ontology/czech-republic/dimension/budgetParagraph> <http://linked.opendata.cz/resource/domain/mfcr/monitor/ciselniky/Paragraf/6409> ;
+	<http://data.openbudgets.eu/ontology/czech-republic/dimension/budgetItem> <http://linked.opendata.cz/resource/domain/mfcr/monitor/ciselniky/Polozka/2229> ;
+	<http://data.openbudgets.eu/ontology/czech-republic/dimension/budgetInstrument> <http://linked.opendata.cz/resource/domain/mfcr/monitor/ciselniky/Nastroj/33> ;
+	<http://data.openbudgets.eu/ontology/czech-republic/dimension/spatialUnit> <http://linked.opendata.cz/resource/domain/mfcr/monitor/ciselniky/ProstorovaJednotka/5> ;
+	<http://data.openbudgets.eu/ontology/dsd/dimension/budgetPhase> <http://data.openbudgets.eu/resource/codelist/budget-phase/revised> ;
+	<http://data.openbudgets.eu/ontology/dsd/measure/amount> 0.0 ;
+	<http://purl.org/linked-data/cube#dataSet> <http://data.openbudgets.eu/resource/dataset/ustecky-region-2014-xi> .
