@@ -11,6 +11,15 @@
 @prefix qb: <http://purl.org/linked-data/cube#> .
 @prefix aragon-attribute: <http://data.openbudgets.eu/ontology/dsd/aragon-budget/attribute/> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix obeu-codelist: <http://data.openbudgets.eu/resource/codelist/> .
+@prefix obeu-dsd: <http://data.openbudgets.eu/resource/dsd/> .
+@prefix sdmx-measure: <http://purl.org/linked-data/sdmx/2009/measure#> .
+@prefix sdmx-concept: <http://purl.org/linked-data/sdmx/2009/concept#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix interval: <http://reference.data.gov.uk/def/intervals/> .
+@prefix time: <http://www.w3.org/2006/time#> .
+@prefix sdmx-attribute: <http://purl.org/linked-data/sdmx/2009/attribute#> .
+@prefix sdmx-dimension: <http://purl.org/linked-data/sdmx/2009/dimension#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix fn: <http://www.w3.org/2005/xpath-functions#> .
 @prefix sesame: <http://www.openrdf.org/schema/sesame#> .
@@ -18,21 +27,50 @@
 
 <http://data.openbudgets.eu/ontology/dsd/aragon-budget-exp> a qb:DataStructureDefinition ;
 	rdfs:label "Data structure definition for the expenditure part of the Aragonian budget (autonomous community in northeastern Spain)."@en ;
-	qb:component _:node1aehv13six8 , _:node1aehv13six9 , _:node1aehv13six10 , _:node1aehv13six11 , _:node1aehv13six12 , _:node1aehv13six13 , _:node1aehv13six14 , _:node1aehv13six15 , _:node1aehv13six16 , _:node1aehv13six17 .
+	qb:component _:node1af66qqsgx16 , _:node1af66qqsgx17 , _:node1af66qqsgx18 , _:node1af66qqsgx19 , _:node1af66qqsgx20 , _:node1af66qqsgx21 , _:node1af66qqsgx22 , _:node1af66qqsgx23 , _:node1af66qqsgx24 , _:node1af66qqsgx25 .
 
-_:node1aehv13six8 qb:dimension obeu-dimension:budgetaryUnit ;
+_:node1af66qqsgx16 qb:dimension obeu-dimension:budgetaryUnit ;
 	qb:componentAttachment qb:DataSet .
 
-_:node1aehv13six9 qb:dimension obeu-dimension:budgetPhase ;
+obeu-dimension:budgetaryUnit a rdf:Property , qb:CodedProperty , qb:DimensionProperty ;
+	rdfs:label "budgetary unit"@en ;
+	rdfs:comment "An economic entity that is capable, in its own right, of owning assets, incurring liabilities, and engaging in economic activities and in transactions with other entities."@en ;
+	rdfs:range org:Organization ;
+	rdfs:isDefinedBy <http://data.openbudgets.eu/ontology> ;
+	qb:concept sdmx-concept:statUnit .
+
+_:node1af66qqsgx17 qb:dimension obeu-dimension:budgetPhase ;
 	qb:componentAttachment qb:DataSet .
 
-_:node1aehv13six10 qb:dimension obeu-dimension:operationCharacter ;
+obeu-dimension:budgetPhase a rdf:Property , qb:CodedProperty , qb:DimensionProperty ;
+	rdfs:label "budget phase"@en ;
+	rdfs:comment "Major event or stage in the budget cycle."@en ;
+	rdfs:range obeu:BudgetPhase ;
+	qb:codeList obeu-codelist:budget-phase ;
+	rdfs:isDefinedBy <http://data.openbudgets.eu/ontology> .
+
+_:node1af66qqsgx18 qb:dimension obeu-dimension:operationCharacter ;
 	qb:componentAttachment qb:DataSet .
 
-_:node1aehv13six11 qb:dimension obeu-dimension:fiscalYear ;
+obeu-dimension:operationCharacter a rdf:Property , qb:CodedProperty , qb:DimensionProperty ;
+	rdfs:label "operation character"@en ;
+	rdfs:comment "Distinguishes among expenditure and revenue."@en ;
+	rdfs:range obeu:OperationCharacter ;
+	qb:codeList obeu-codelist:operation-character ;
+	rdfs:isDefinedBy <http://data.openbudgets.eu/ontology> .
+
+_:node1af66qqsgx19 qb:dimension obeu-dimension:fiscalYear ;
 	qb:componentAttachment qb:DataSet .
 
-_:node1aehv13six12 qb:dimension aragon-dimension:administrativeClassification .
+obeu-dimension:fiscalYear a rdf:Property , qb:CodedProperty , qb:DimensionProperty ;
+	rdfs:label "fiscal year"@en ;
+	rdfs:comment "The year reflected in financial statements."@en ;
+	rdfs:subPropertyOf obeu-dimension:fiscalPeriod ;
+	rdfs:range interval:Year ;
+	rdfs:isDefinedBy <http://data.openbudgets.eu/ontology> ;
+	qb:concept sdmx-concept:refPeriod .
+
+_:node1af66qqsgx20 qb:dimension aragon-dimension:administrativeClassification .
 
 aragon-dimension:administrativeClassification a rdf:Property , qb:CodedProperty , qb:DimensionProperty , obeu-dimension:administrativeClassification ;
 	rdfs:label "Organization managing the planned budget"@en ;
@@ -42,17 +80,17 @@ aragon-dimension:administrativeClassification a rdf:Property , qb:CodedProperty 
 	qb:codeList <http://data.openbudgets.eu/resource/codelist/estructura_organica_aragon_2013/> ;
 	rdfs:isDefinedBy <http://data.openbudgets.eu/ontology/dsd/aragon-budget-exp> .
 
-_:node1aehv13six13 qb:dimension aragon-dimension:functionalClassification .
+_:node1af66qqsgx21 qb:dimension aragon-dimension:functionalClassification .
 
 aragon-dimension:functionalClassification a rdf:Property , qb:CodedProperty , qb:DimensionProperty , obeu-dimension:functionalClassification ;
 	rdfs:label "Functional Classification"@en ;
 	rdfs:comment "Classifies expenditures by general government sector and by the purpose of the expenditure. The functional classification is organized hierarchical into groups, functions, sub-functions and programs."@en ;
 	rdfs:subPropertyOf obeu-dimension:classification ;
 	rdfs:range skos:Concept ;
-	qb:codeList <http://data.openbudgets.eu/resource/codelist/estructura_funcional_aragon_2013> ;
+	qb:codeList obeu-codelist:estructura_funcional_aragon_2013 ;
 	rdfs:isDefinedBy <http://data.openbudgets.eu/ontology/dsd/aragon-budget-exp> .
 
-_:node1aehv13six14 qb:dimension aragon-dimension:economicClassification .
+_:node1af66qqsgx22 qb:dimension aragon-dimension:economicClassification .
 
 aragon-dimension:economicClassification a rdf:Property , qb:CodedProperty , qb:DimensionProperty , obeu-dimension:economicClassification ;
 	rdfs:label "Economic Classification"@en ;
@@ -62,7 +100,7 @@ aragon-dimension:economicClassification a rdf:Property , qb:CodedProperty , qb:D
 	qb:codeList <http://data.openbudgets.eu/resource/codelist/estructura_economica_g_aragon_2013/> ;
 	rdfs:isDefinedBy <http://data.openbudgets.eu/ontology/dsd/aragon-budget-exp> .
 
-_:node1aehv13six15 qb:dimension aragon-dimension:fundingClassification .
+_:node1af66qqsgx23 qb:dimension aragon-dimension:fundingClassification .
 
 aragon-dimension:fundingClassification a rdf:Property , qb:CodedProperty , qb:DimensionProperty ;
 	rdfs:label "Funding Classification"@en ;
@@ -72,11 +110,58 @@ aragon-dimension:fundingClassification a rdf:Property , qb:CodedProperty , qb:Di
 	qb:codeList <http://data.openbudgets.eu/resource/codelist/estructura_financiacion_g_aragon_2013/> ;
 	rdfs:isDefinedBy <http://data.openbudgets.eu/ontology/dsd/aragon-budget-exp> .
 
-_:node1aehv13six16 qb:componentAttachment qb:DataSet ;
+_:node1af66qqsgx24 qb:componentAttachment qb:DataSet ;
 	qb:attribute obeu-attribute:currency ;
 	qb:componentRequired true .
 
-_:node1aehv13six17 qb:measure obeu-measure:amount .
+obeu-attribute:currency a rdf:Property , qb:CodedProperty , qb:AttributeProperty ;
+	rdfs:label "currency"@en ;
+	rdfs:comment "The currency of the financial amount."@en ;
+	rdfs:subPropertyOf sdmx-attribute:currency ;
+	rdfs:range obeu:Currency ;
+	rdfs:isDefinedBy <http://data.openbudgets.eu/ontology> ;
+	qb:concept sdmx-concept:currency .
+
+_:node1af66qqsgx25 qb:measure obeu-measure:amount .
+
+obeu-measure:amount a rdf:Property , qb:MeasureProperty ;
+	rdfs:label "amount"@en ;
+	rdfs:comment "Monetary amount."@en ;
+	rdfs:subPropertyOf sdmx-measure:obsValue ;
+	rdfs:range xsd:decimal ;
+	rdfs:isDefinedBy <http://data.openbudgets.eu/ontology> ;
+	qb:concept sdmx-concept:obsValue .
+
+obeu-dimension:administrativeClassification a rdf:Property , qb:CodedProperty , qb:DimensionProperty ;
+	rdfs:label "administrative classification"@en ;
+	rdfs:comment "Identifies the entity responsible for managing the public funds concerned."@en ;
+	rdfs:subPropertyOf obeu-dimension:classification ;
+	rdfs:range skos:Concept ;
+	rdfs:isDefinedBy <http://data.openbudgets.eu/ontology> ;
+	qb:concept obeu:AdministrativeClassification .
+
+obeu-dimension:classification a rdf:Property , qb:CodedProperty , qb:DimensionProperty ;
+	rdfs:label "classification"@en ;
+	rdfs:comment "Category to which observation belongs."@en ;
+	rdfs:subPropertyOf dcterms:subject ;
+	rdfs:range skos:Concept ;
+	rdfs:isDefinedBy <http://data.openbudgets.eu/ontology> .
+
+obeu-dimension:functionalClassification a rdf:Property , qb:CodedProperty , qb:DimensionProperty ;
+	rdfs:label "functional classification"@en ;
+	rdfs:comment "Classifies expenditures by general government sector and by the purpose of the expenditure."@en ;
+	rdfs:subPropertyOf obeu-dimension:classification ;
+	rdfs:range skos:Concept ;
+	rdfs:isDefinedBy <http://data.openbudgets.eu/ontology> ;
+	qb:concept obeu:FunctionalClassification .
+
+obeu-dimension:economicClassification a rdf:Property , qb:CodedProperty , qb:DimensionProperty ;
+	rdfs:label "economic classification"@en ;
+	rdfs:comment "Identifies the type of expenditure incurred or source of revenues."@en ;
+	rdfs:subPropertyOf obeu-dimension:classification ;
+	rdfs:range skos:Concept ;
+	rdfs:isDefinedBy <http://data.openbudgets.eu/ontology> ;
+	qb:concept obeu:EconomicClassification .
 
 <http://data.openbudgets.eu/resource/dataset/aragon-2013-expenditure/observation/2> a qb:Observation ;
 	aragon-dimension:administrativeClassification <http://data.openbudgets.eu/resource/codelist/estructura_organica_aragon_2013/01010> ;
@@ -39182,1547 +39267,43 @@ _:node1aehv13six17 qb:measure obeu-measure:amount .
 	obeu-measure:amount "1.500,00"^^xsd:double ;
 	qb:dataSet <http://data.openbudgets.eu/resource/dataset/aragon-2013-expenditure> .
 
-<http://data.openbudgets.eu/resource/dataset/aragon-2013-expenditure/observation/4890> a qb:Observation .
-
-<http://data.openbudgets.eu/resource/dataset/aragon-2013-expenditure/observation/4891> a qb:Observation .
-
-<http://data.openbudgets.eu/resource/dataset/aragon-2013-expenditure/observation/4892> a qb:Observation .
-
-<http://data.openbudgets.eu/resource/dataset/aragon-2013-expenditure/observation/4893> a qb:Observation .
-
-<http://data.openbudgets.eu/resource/dataset/aragon-2013-expenditure/observation/4894> a qb:Observation .
-
-<http://data.openbudgets.eu/resource/dataset/aragon-2013-expenditure/observation/4895> a qb:Observation .
-
-<http://data.openbudgets.eu/resource/dataset/aragon-2013-expenditure/observation/4896> a qb:Observation .
-
-<http://data.openbudgets.eu/resource/dataset/aragon-2013-expenditure/observation/4897> a qb:Observation .
-
-<http://data.openbudgets.eu/resource/dataset/aragon-2013-expenditure/observation/4898> a qb:Observation .
-
-<http://data.openbudgets.eu/resource/dataset/aragon-2013-expenditure/observation/4899> a qb:Observation .
-
-<http://data.openbudgets.eu/resource/dataset/aragon-2013-expenditure/observation/4900> a qb:Observation .
-
-<http://data.openbudgets.eu/resource/dataset/aragon-2013-expenditure/observation/4901> a qb:Observation .
-
-<http://data.openbudgets.eu/resource/dataset/aragon-2013-expenditure/observation/4902> a qb:Observation .
-
-<http://data.openbudgets.eu/resource/dataset/aragon-2013-expenditure/observation/4903> a qb:Observation .
-
-<http://data.openbudgets.eu/resource/dataset/aragon-2013-expenditure/observation/4904> a qb:Observation .
-
-<http://data.openbudgets.eu/resource/dataset/aragon-2013-expenditure/observation/4905> a qb:Observation .
-
-<http://data.openbudgets.eu/resource/dataset/aragon-2013-expenditure/observation/4906> a qb:Observation .
-
-<http://data.openbudgets.eu/resource/dataset/aragon-2013-expenditure/observation/4907> a qb:Observation .
-
-<http://data.openbudgets.eu/resource/dataset/aragon-2013-expenditure/observation/4908> a qb:Observation .
-
-<http://data.openbudgets.eu/resource/dataset/aragon-2013-expenditure/observation/4909> a qb:Observation .
-
-<http://data.openbudgets.eu/resource/dataset/aragon-2013-expenditure/observation/4910> a qb:Observation .
-
-<http://data.openbudgets.eu/resource/dataset/aragon-2013-expenditure/observation/4911> a qb:Observation .
-
-<http://data.openbudgets.eu/resource/dataset/aragon-2013-expenditure/observation/4912> a qb:Observation .
-
-<http://data.openbudgets.eu/resource/dataset/aragon-2013-expenditure/observation/4913> a qb:Observation .
-
-<http://data.openbudgets.eu/resource/dataset/aragon-2013-expenditure/observation/4914> a qb:Observation .
-
-<http://data.openbudgets.eu/resource/dataset/aragon-2013-expenditure/observation/4915> a qb:Observation .
-
-<http://data.openbudgets.eu/resource/dataset/aragon-2013-expenditure/observation/4916> a qb:Observation .
-
-<http://data.openbudgets.eu/resource/dataset/aragon-2013-expenditure/observation/4917> a qb:Observation .
-
-<http://data.openbudgets.eu/resource/dataset/aragon-2013-expenditure/observation/4918> a qb:Observation .
-
-<http://data.openbudgets.eu/resource/dataset/aragon-2013-expenditure/observation/4919> a qb:Observation .
-
-<http://data.openbudgets.eu/resource/dataset/aragon-2013-expenditure/observation/4920> a qb:Observation .
-
-<http://data.openbudgets.eu/resource/dataset/aragon-2013-expenditure/observation/4921> a qb:Observation .
-
-<http://data.openbudgets.eu/resource/dataset/aragon-2013-expenditure/observation/4922> a qb:Observation .
-
-<http://data.openbudgets.eu/resource/dataset/aragon-2013-expenditure/observation/4923> a qb:Observation .
-
-<http://data.openbudgets.eu/resource/dataset/aragon-2013-expenditure/observation/4924> a qb:Observation .
-
-<http://data.openbudgets.eu/resource/dataset/aragon-2013-expenditure/observation/4925> a qb:Observation .
-
-<http://data.openbudgets.eu/resource/dataset/aragon-2013-expenditure/observation/4926> a qb:Observation .
-
-<http://data.openbudgets.eu/resource/dataset/aragon-2013-expenditure/observation/4927> a qb:Observation .
-
-<http://data.openbudgets.eu/resource/dataset/aragon-2013-expenditure/observation/4928> a qb:Observation .
-
-<http://data.openbudgets.eu/resource/dataset/aragon-2013-expenditure/observation/4929> a qb:Observation .
-
-<http://data.openbudgets.eu/resource/dataset/aragon-2013-expenditure/observation/4930> a qb:Observation .
-
-<http://data.openbudgets.eu/resource/dataset/aragon-2013-expenditure/observation/4931> a qb:Observation .
-
-<http://data.openbudgets.eu/resource/dataset/aragon-2013-expenditure/observation/4932> a qb:Observation .
-
-<http://data.openbudgets.eu/resource/dataset/aragon-2013-expenditure/observation/4933> a qb:Observation .
-
-<http://data.openbudgets.eu/resource/dataset/aragon-2013-expenditure/observation/4934> a qb:Observation .
-
-<http://data.openbudgets.eu/resource/dataset/aragon-2013-expenditure/observation/4935> a qb:Observation .
-
-<http://data.openbudgets.eu/resource/dataset/aragon-2013-expenditure/observation/4936> a qb:Observation .
-
-<http://data.openbudgets.eu/resource/dataset/aragon-2013-expenditure/observation/4937> a qb:Observation .
-
-<http://data.openbudgets.eu/resource/dataset/aragon-2013-expenditure/observation/4938> a qb:Observation .
-
-<http://data.openbudgets.eu/resource/dataset/aragon-2013-expenditure/observation/4939> a qb:Observation .
-
-<http://data.openbudgets.eu/resource/dataset/aragon-2013-expenditure/observation/4940> a qb:Observation .
-
-<http://data.openbudgets.eu/resource/dataset/aragon-2013-expenditure/observation/4941> a qb:Observation .
-
-<http://data.openbudgets.eu/resource/dataset/aragon-2013-expenditure/observation/4942> a qb:Observation .
-
-<http://data.openbudgets.eu/resource/dataset/aragon-2013-expenditure/observation/4943> a qb:Observation .
-
-<http://data.openbudgets.eu/resource/dataset/aragon-2013-expenditure/observation/4944> a qb:Observation .
-
-<http://data.openbudgets.eu/resource/dataset/aragon-2013-expenditure/observation/4945> a qb:Observation .
-
-<http://data.openbudgets.eu/resource/dataset/aragon-2013-expenditure/observation/4946> a qb:Observation .
-
-<http://data.openbudgets.eu/resource/dataset/aragon-2013-expenditure/observation/4947> a qb:Observation .
-
-<http://data.openbudgets.eu/resource/dataset/aragon-2013-expenditure/observation/4948> a qb:Observation .
-
-<http://data.openbudgets.eu/resource/dataset/aragon-2013-expenditure/observation/4949> a qb:Observation .
-
-<http://data.openbudgets.eu/resource/dataset/aragon-2013-expenditure/observation/4950> a qb:Observation .
-
-<http://data.openbudgets.eu/resource/dataset/aragon-2013-expenditure/observation/4951> a qb:Observation .
-
-<http://data.openbudgets.eu/resource/dataset/aragon-2013-expenditure/observation/4952> a qb:Observation .
-
-<http://data.openbudgets.eu/resource/dataset/aragon-2013-expenditure/observation/4953> a qb:Observation .
-
-<http://data.openbudgets.eu/resource/dataset/aragon-2013-expenditure/observation/4954> a qb:Observation .
-
-<http://data.openbudgets.eu/resource/dataset/aragon-2013-expenditure/observation/4955> a qb:Observation .
-
-<http://data.openbudgets.eu/resource/dataset/aragon-2013-expenditure/observation/4956> a qb:Observation .
-
-<http://data.openbudgets.eu/resource/dataset/aragon-2013-expenditure/observation/4957> a qb:Observation .
-
-<http://data.openbudgets.eu/resource/dataset/aragon-2013-expenditure/observation/4958> a qb:Observation .
-
-<http://data.openbudgets.eu/resource/dataset/aragon-2013-expenditure/observation/4959> a qb:Observation .
-
-<http://data.openbudgets.eu/resource/dataset/aragon-2013-expenditure/observation/4960> a qb:Observation .
-
-<http://data.openbudgets.eu/resource/dataset/aragon-2013-expenditure/observation/4961> a qb:Observation .
-
-<http://data.openbudgets.eu/resource/dataset/aragon-2013-expenditure/observation/4962> a qb:Observation .
-
-<http://data.openbudgets.eu/resource/dataset/aragon-2013-expenditure/observation/4963> a qb:Observation .
-
-<http://data.openbudgets.eu/resource/dataset/aragon-2013-expenditure/observation/4964> a qb:Observation .
-
-<http://data.openbudgets.eu/resource/dataset/aragon-2013-expenditure/observation/4965> a qb:Observation .
-
-<http://data.openbudgets.eu/resource/dataset/aragon-2013-expenditure/observation/4966> a qb:Observation .
-
-<http://data.openbudgets.eu/resource/dataset/aragon-2013-expenditure/observation/4967> a qb:Observation .
-
-<http://data.openbudgets.eu/resource/dataset/aragon-2013-expenditure/observation/4968> a qb:Observation .
-
-<http://data.openbudgets.eu/resource/dataset/aragon-2013-expenditure/observation/4969> a qb:Observation .
-
-<http://data.openbudgets.eu/resource/dataset/aragon-2013-expenditure/observation/4970> a qb:Observation .
-
-<http://data.openbudgets.eu/resource/dataset/aragon-2013-expenditure/observation/4971> a qb:Observation .
-
-<http://data.openbudgets.eu/resource/dataset/aragon-2013-expenditure/observation/4972> a qb:Observation .
-
-<http://data.openbudgets.eu/resource/dataset/aragon-2013-expenditure/observation/4973> a qb:Observation .
-
-<http://data.openbudgets.eu/resource/dataset/aragon-2013-expenditure/observation/4974> a qb:Observation .
-
-<http://data.openbudgets.eu/resource/dataset/aragon-2013-expenditure/observation/4975> a qb:Observation .
-
-<http://data.openbudgets.eu/resource/dataset/aragon-2013-expenditure/observation/4976> a qb:Observation .
-
-<http://data.openbudgets.eu/resource/dataset/aragon-2013-expenditure/observation/4977> a qb:Observation .
-
-<http://data.openbudgets.eu/resource/dataset/aragon-2013-expenditure/observation/4978> a qb:Observation .
-
-<http://data.openbudgets.eu/resource/dataset/aragon-2013-expenditure/observation/4979> a qb:Observation .
-
-<http://data.openbudgets.eu/resource/dataset/aragon-2013-expenditure/observation/4980> a qb:Observation .
-
-<http://data.openbudgets.eu/resource/dataset/aragon-2013-expenditure/observation/4981> a qb:Observation .
-
-<http://data.openbudgets.eu/resource/dataset/aragon-2013-expenditure/observation/4982> a qb:Observation .
-
-<http://data.openbudgets.eu/resource/dataset/aragon-2013-expenditure/observation/4983> a qb:Observation .
-
-<http://data.openbudgets.eu/resource/dataset/aragon-2013-expenditure/observation/4984> a qb:Observation .
-
-<http://data.openbudgets.eu/resource/dataset/aragon-2013-expenditure/observation/4985> a qb:Observation .
-
-<http://data.openbudgets.eu/resource/dataset/aragon-2013-expenditure/observation/4986> a qb:Observation .
-
-<http://data.openbudgets.eu/resource/dataset/aragon-2013-expenditure/observation/4987> a qb:Observation .
-
-<http://data.openbudgets.eu/resource/dataset/aragon-2013-expenditure/observation/4988> a qb:Observation .
-
-<http://data.openbudgets.eu/resource/dataset/aragon-2013-expenditure/observation/4989> a qb:Observation .
-
-<http://data.openbudgets.eu/resource/dataset/aragon-2013-expenditure/observation/4990> a qb:Observation .
-
-<http://data.openbudgets.eu/resource/dataset/aragon-2013-expenditure/observation/4991> a qb:Observation .
-
-<http://data.openbudgets.eu/resource/dataset/aragon-2013-expenditure/observation/4992> a qb:Observation .
-
-<http://data.openbudgets.eu/resource/dataset/aragon-2013-expenditure/observation/4993> a qb:Observation .
-
-<http://data.openbudgets.eu/resource/dataset/aragon-2013-expenditure/observation/4994> a qb:Observation .
-
-<http://data.openbudgets.eu/resource/dataset/aragon-2013-expenditure/observation/4995> a qb:Observation .
-
-<http://data.openbudgets.eu/resource/dataset/aragon-2013-expenditure/observation/4996> a qb:Observation .
-
-<http://data.openbudgets.eu/resource/dataset/aragon-2013-expenditure/observation/4997> a qb:Observation .
-
-<http://data.openbudgets.eu/resource/dataset/aragon-2013-expenditure/observation/4998> a qb:Observation .
-
-<http://data.openbudgets.eu/resource/dataset/aragon-2013-expenditure/observation/4999> a qb:Observation .
-
-<http://data.openbudgets.eu/resource/dataset/aragon-2013-expenditure/observation/5000> a qb:Observation .
-
-<http://data.openbudgets.eu/resource/dataset/aragon-2013-expenditure/observation/5001> a qb:Observation .
-
-<http://data.openbudgets.eu/resource/dataset/aragon-2013-expenditure/observation/5002> a qb:Observation .
-
-<http://data.openbudgets.eu/resource/dataset/aragon-2013-expenditure/observation/5003> a qb:Observation .
-
-<http://data.openbudgets.eu/resource/dataset/aragon-2013-expenditure/observation/5004> a qb:Observation .
-
-<http://data.openbudgets.eu/resource/dataset/aragon-2013-expenditure/observation/5005> a qb:Observation .
-
-<http://data.openbudgets.eu/resource/dataset/aragon-2013-expenditure/observation/5006> a qb:Observation .
-
-<http://data.openbudgets.eu/resource/dataset/aragon-2013-expenditure/observation/5007> a qb:Observation .
-
-<http://data.openbudgets.eu/resource/dataset/aragon-2013-expenditure/observation/5008> a qb:Observation .
-
-<http://data.openbudgets.eu/resource/dataset/aragon-2013-expenditure/observation/5009> a qb:Observation .
-
-<http://data.openbudgets.eu/resource/dataset/aragon-2013-expenditure/observation/5010> a qb:Observation .
-
-<http://data.openbudgets.eu/resource/dataset/aragon-2013-expenditure/observation/5011> a qb:Observation .
-
-<http://data.openbudgets.eu/resource/dataset/aragon-2013-expenditure/observation/5012> a qb:Observation .
-
-<http://data.openbudgets.eu/resource/dataset/aragon-2013-expenditure/observation/5013> a qb:Observation .
-
-<http://data.openbudgets.eu/resource/dataset/aragon-2013-expenditure/observation/5014> a qb:Observation .
-
-<http://data.openbudgets.eu/resource/dataset/aragon-2013-expenditure/observation/5015> a qb:Observation .
-
-<http://data.openbudgets.eu/resource/dataset/aragon-2013-expenditure/observation/5016> a qb:Observation .
-
-<http://data.openbudgets.eu/resource/dataset/aragon-2013-expenditure/observation/5017> a qb:Observation .
-
-<http://data.openbudgets.eu/resource/dataset/aragon-2013-expenditure/observation/5018> a qb:Observation .
-
-<http://data.openbudgets.eu/resource/dataset/aragon-2013-expenditure/observation/5019> a qb:Observation .
-
-<http://data.openbudgets.eu/resource/dataset/aragon-2013-expenditure/observation/5020> a qb:Observation .
-
-<http://data.openbudgets.eu/resource/dataset/aragon-2013-expenditure/observation/5021> a qb:Observation .
-
-<http://data.openbudgets.eu/resource/dataset/aragon-2013-expenditure/observation/5022> a qb:Observation .
-
-<http://data.openbudgets.eu/resource/dataset/aragon-2013-expenditure/observation/5023> a qb:Observation .
-
-<http://data.openbudgets.eu/resource/dataset/aragon-2013-expenditure/observation/5024> a qb:Observation .
-
-<http://data.openbudgets.eu/resource/dataset/aragon-2013-expenditure/observation/5025> a qb:Observation .
-
-<http://data.openbudgets.eu/resource/dataset/aragon-2013-expenditure/observation/5026> a qb:Observation .
-
-<http://data.openbudgets.eu/resource/dataset/aragon-2013-expenditure/observation/5027> a qb:Observation .
-
-<http://data.openbudgets.eu/resource/dataset/aragon-2013-expenditure/observation/5028> a qb:Observation .
-
-<http://data.openbudgets.eu/resource/dataset/aragon-2013-expenditure/observation/5029> a qb:Observation .
-
-<http://data.openbudgets.eu/resource/dataset/aragon-2013-expenditure/observation/5030> a qb:Observation .
-
-<http://data.openbudgets.eu/resource/dataset/aragon-2013-expenditure/observation/5031> a qb:Observation .
-
-<http://data.openbudgets.eu/resource/dataset/aragon-2013-expenditure/observation/5032> a qb:Observation .
-
-<http://data.openbudgets.eu/resource/dataset/aragon-2013-expenditure/observation/5033> a qb:Observation .
-
-<http://data.openbudgets.eu/resource/dataset/aragon-2013-expenditure/observation/5034> a qb:Observation .
-
-<http://data.openbudgets.eu/resource/dataset/aragon-2013-expenditure/observation/5035> a qb:Observation .
-
-<http://data.openbudgets.eu/resource/dataset/aragon-2013-expenditure/observation/5036> a qb:Observation .
-
-<http://data.openbudgets.eu/resource/dataset/aragon-2013-expenditure/observation/5037> a qb:Observation .
-
-<http://data.openbudgets.eu/resource/dataset/aragon-2013-expenditure/observation/5038> a qb:Observation .
-
-<http://data.openbudgets.eu/resource/dataset/aragon-2013-expenditure/observation/5039> a qb:Observation .
-
-<http://data.openbudgets.eu/resource/dataset/aragon-2013-expenditure/observation/5040> a qb:Observation .
-
-<http://data.openbudgets.eu/resource/dataset/aragon-2013-expenditure/observation/5041> a qb:Observation .
-
-<http://data.openbudgets.eu/resource/dataset/aragon-2013-expenditure/observation/5042> a qb:Observation .
-
-<http://data.openbudgets.eu/resource/dataset/aragon-2013-expenditure/observation/5043> a qb:Observation .
-
-<http://data.openbudgets.eu/resource/dataset/aragon-2013-expenditure/observation/5044> a qb:Observation .
-
-<http://data.openbudgets.eu/resource/dataset/aragon-2013-expenditure/observation/5045> a qb:Observation .
-
-<http://data.openbudgets.eu/resource/dataset/aragon-2013-expenditure/observation/5046> a qb:Observation .
-
-<http://data.openbudgets.eu/resource/dataset/aragon-2013-expenditure/observation/5047> a qb:Observation .
-
-<http://data.openbudgets.eu/resource/dataset/aragon-2013-expenditure/observation/5048> a qb:Observation .
-
-<http://data.openbudgets.eu/resource/dataset/aragon-2013-expenditure/observation/5049> a qb:Observation .
-
-<http://data.openbudgets.eu/resource/dataset/aragon-2013-expenditure/observation/5050> a qb:Observation .
-
-<http://data.openbudgets.eu/resource/dataset/aragon-2013-expenditure/observation/5051> a qb:Observation .
-
-<http://data.openbudgets.eu/resource/dataset/aragon-2013-expenditure/observation/5052> a qb:Observation .
-
-<http://data.openbudgets.eu/resource/dataset/aragon-2013-expenditure/observation/5053> a qb:Observation .
-
-<http://data.openbudgets.eu/resource/dataset/aragon-2013-expenditure/observation/5054> a qb:Observation .
-
-<http://data.openbudgets.eu/resource/dataset/aragon-2013-expenditure/observation/5055> a qb:Observation .
-
-<http://data.openbudgets.eu/resource/dataset/aragon-2013-expenditure/observation/5056> a qb:Observation .
-
-<http://data.openbudgets.eu/resource/dataset/aragon-2013-expenditure/observation/5057> a qb:Observation .
-
-<http://data.openbudgets.eu/resource/dataset/aragon-2013-expenditure/observation/5058> a qb:Observation .
-
-<http://data.openbudgets.eu/resource/dataset/aragon-2013-expenditure/observation/5059> a qb:Observation .
-
-<http://data.openbudgets.eu/resource/dataset/aragon-2013-expenditure/observation/5060> a qb:Observation .
-
-<http://data.openbudgets.eu/resource/dataset/aragon-2013-expenditure/observation/5061> a qb:Observation .
-
-<http://data.openbudgets.eu/resource/dataset/aragon-2013-expenditure/observation/5062> a qb:Observation .
-
-<http://data.openbudgets.eu/resource/dataset/aragon-2013-expenditure/observation/5063> a qb:Observation .
-
-<http://data.openbudgets.eu/resource/dataset/aragon-2013-expenditure/observation/5064> a qb:Observation .
-
-<http://data.openbudgets.eu/resource/dataset/aragon-2013-expenditure/observation/5065> a qb:Observation .
-
-<http://data.openbudgets.eu/resource/dataset/aragon-2013-expenditure/observation/5066> a qb:Observation .
-
-<http://data.openbudgets.eu/resource/dataset/aragon-2013-expenditure/observation/5067> a qb:Observation .
-
-<http://data.openbudgets.eu/resource/dataset/aragon-2013-expenditure/observation/5068> a qb:Observation .
-
-<http://data.openbudgets.eu/resource/dataset/aragon-2013-expenditure/observation/5069> a qb:Observation .
-
-<http://data.openbudgets.eu/resource/dataset/aragon-2013-expenditure/observation/5070> a qb:Observation .
-
-<http://data.openbudgets.eu/resource/dataset/aragon-2013-expenditure/observation/5071> a qb:Observation .
-
-<http://data.openbudgets.eu/resource/dataset/aragon-2013-expenditure/observation/5072> a qb:Observation .
-
-<http://data.openbudgets.eu/resource/dataset/aragon-2013-expenditure/observation/5073> a qb:Observation .
-
-<http://data.openbudgets.eu/resource/dataset/aragon-2013-expenditure/observation/5074> a qb:Observation .
-
-<http://data.openbudgets.eu/resource/dataset/aragon-2013-expenditure/observation/5075> a qb:Observation .
-
-<http://data.openbudgets.eu/resource/dataset/aragon-2013-expenditure/observation/5076> a qb:Observation .
-
-<http://data.openbudgets.eu/resource/dataset/aragon-2013-expenditure/observation/5077> a qb:Observation .
-
-<http://data.openbudgets.eu/resource/dataset/aragon-2013-expenditure/observation/5078> a qb:Observation .
-
-<http://data.openbudgets.eu/resource/dataset/aragon-2013-expenditure/observation/5079> a qb:Observation .
-
-<http://data.openbudgets.eu/resource/dataset/aragon-2013-expenditure/observation/5080> a qb:Observation .
-
-<http://data.openbudgets.eu/resource/dataset/aragon-2013-expenditure/observation/5081> a qb:Observation .
-
-<http://data.openbudgets.eu/resource/dataset/aragon-2013-expenditure/observation/5082> a qb:Observation .
-
-<http://data.openbudgets.eu/resource/dataset/aragon-2013-expenditure/observation/5083> a qb:Observation .
-
-<http://data.openbudgets.eu/resource/dataset/aragon-2013-expenditure/observation/5084> a qb:Observation .
-
-<http://data.openbudgets.eu/resource/dataset/aragon-2013-expenditure/observation/5085> a qb:Observation .
-
-<http://data.openbudgets.eu/resource/dataset/aragon-2013-expenditure/observation/5086> a qb:Observation .
-
-<http://data.openbudgets.eu/resource/dataset/aragon-2013-expenditure/observation/5087> a qb:Observation .
-
-<http://data.openbudgets.eu/resource/dataset/aragon-2013-expenditure/observation/5088> a qb:Observation .
-
-<http://data.openbudgets.eu/resource/dataset/aragon-2013-expenditure/observation/5089> a qb:Observation .
-
-<http://data.openbudgets.eu/resource/dataset/aragon-2013-expenditure/observation/5090> a qb:Observation .
-
-<http://data.openbudgets.eu/resource/dataset/aragon-2013-expenditure/observation/5091> a qb:Observation .
-
-<http://data.openbudgets.eu/resource/dataset/aragon-2013-expenditure/observation/5092> a qb:Observation .
-
-<http://data.openbudgets.eu/resource/dataset/aragon-2013-expenditure/observation/5093> a qb:Observation .
-
-<http://data.openbudgets.eu/resource/dataset/aragon-2013-expenditure/observation/5094> a qb:Observation .
-
-<http://data.openbudgets.eu/resource/dataset/aragon-2013-expenditure/observation/5095> a qb:Observation .
-
-<http://data.openbudgets.eu/resource/dataset/aragon-2013-expenditure/observation/5096> a qb:Observation .
-
-<http://data.openbudgets.eu/resource/dataset/aragon-2013-expenditure/observation/5097> a qb:Observation .
-
-<http://data.openbudgets.eu/resource/dataset/aragon-2013-expenditure/observation/5098> a qb:Observation .
-
-<http://data.openbudgets.eu/resource/dataset/aragon-2013-expenditure/observation/5099> a qb:Observation .
-
-<http://data.openbudgets.eu/resource/dataset/aragon-2013-expenditure/observation/5100> a qb:Observation .
-
-<http://data.openbudgets.eu/resource/dataset/aragon-2013-expenditure/observation/5101> a qb:Observation .
-
-<http://data.openbudgets.eu/resource/dataset/aragon-2013-expenditure/observation/5102> a qb:Observation .
-
-<http://data.openbudgets.eu/resource/dataset/aragon-2013-expenditure/observation/5103> a qb:Observation .
-
-<http://data.openbudgets.eu/resource/dataset/aragon-2013-expenditure/observation/5104> a qb:Observation .
-
-<http://data.openbudgets.eu/resource/dataset/aragon-2013-expenditure/observation/5105> a qb:Observation .
-
-<http://data.openbudgets.eu/resource/dataset/aragon-2013-expenditure/observation/5106> a qb:Observation .
-
-<http://data.openbudgets.eu/resource/dataset/aragon-2013-expenditure/observation/5107> a qb:Observation .
-
-<http://data.openbudgets.eu/resource/dataset/aragon-2013-expenditure/observation/5108> a qb:Observation .
-
-<http://data.openbudgets.eu/resource/dataset/aragon-2013-expenditure/observation/5109> a qb:Observation .
-
-<http://data.openbudgets.eu/resource/dataset/aragon-2013-expenditure/observation/5110> a qb:Observation .
-
-<http://data.openbudgets.eu/resource/dataset/aragon-2013-expenditure/observation/5111> a qb:Observation .
-
-<http://data.openbudgets.eu/resource/dataset/aragon-2013-expenditure/observation/5112> a qb:Observation .
-
-<http://data.openbudgets.eu/resource/dataset/aragon-2013-expenditure/observation/5113> a qb:Observation .
-
-<http://data.openbudgets.eu/resource/dataset/aragon-2013-expenditure/observation/5114> a qb:Observation .
-
-<http://data.openbudgets.eu/resource/dataset/aragon-2013-expenditure/observation/5115> a qb:Observation .
-
-<http://data.openbudgets.eu/resource/dataset/aragon-2013-expenditure/observation/5116> a qb:Observation .
-
-<http://data.openbudgets.eu/resource/dataset/aragon-2013-expenditure/observation/5117> a qb:Observation .
-
-<http://data.openbudgets.eu/resource/dataset/aragon-2013-expenditure/observation/5118> a qb:Observation .
-
-<http://data.openbudgets.eu/resource/dataset/aragon-2013-expenditure/observation/5119> a qb:Observation .
-
-<http://data.openbudgets.eu/resource/dataset/aragon-2013-expenditure/observation/5120> a qb:Observation .
-
-<http://data.openbudgets.eu/resource/dataset/aragon-2013-expenditure/observation/5121> a qb:Observation .
-
-<http://data.openbudgets.eu/resource/dataset/aragon-2013-expenditure/observation/5122> a qb:Observation .
-
-<http://data.openbudgets.eu/resource/dataset/aragon-2013-expenditure/observation/5123> a qb:Observation .
-
-<http://data.openbudgets.eu/resource/dataset/aragon-2013-expenditure/observation/5124> a qb:Observation .
-
-<http://data.openbudgets.eu/resource/dataset/aragon-2013-expenditure/observation/5125> a qb:Observation .
-
-<http://data.openbudgets.eu/resource/dataset/aragon-2013-expenditure/observation/5126> a qb:Observation .
-
-<http://data.openbudgets.eu/resource/dataset/aragon-2013-expenditure/observation/5127> a qb:Observation .
-
-<http://data.openbudgets.eu/resource/dataset/aragon-2013-expenditure/observation/5128> a qb:Observation .
-
-<http://data.openbudgets.eu/resource/dataset/aragon-2013-expenditure/observation/5129> a qb:Observation .
-
-<http://data.openbudgets.eu/resource/dataset/aragon-2013-expenditure/observation/5130> a qb:Observation .
-
-<http://data.openbudgets.eu/resource/dataset/aragon-2013-expenditure/observation/5131> a qb:Observation .
-
-<http://data.openbudgets.eu/resource/dataset/aragon-2013-expenditure/observation/5132> a qb:Observation .
-
-<http://data.openbudgets.eu/resource/dataset/aragon-2013-expenditure/observation/5133> a qb:Observation .
-
-<http://data.openbudgets.eu/resource/dataset/aragon-2013-expenditure/observation/5134> a qb:Observation .
-
-<http://data.openbudgets.eu/resource/dataset/aragon-2013-expenditure/observation/5135> a qb:Observation .
-
-<http://data.openbudgets.eu/resource/dataset/aragon-2013-expenditure/observation/5136> a qb:Observation .
-
-<http://data.openbudgets.eu/resource/dataset/aragon-2013-expenditure/observation/5137> a qb:Observation .
-
-<http://data.openbudgets.eu/resource/dataset/aragon-2013-expenditure/observation/5138> a qb:Observation .
-
-<http://data.openbudgets.eu/resource/dataset/aragon-2013-expenditure/observation/5139> a qb:Observation .
-
-<http://data.openbudgets.eu/resource/dataset/aragon-2013-expenditure/observation/5140> a qb:Observation .
-
-<http://data.openbudgets.eu/resource/dataset/aragon-2013-expenditure/observation/5141> a qb:Observation .
-
-<http://data.openbudgets.eu/resource/dataset/aragon-2013-expenditure/observation/5142> a qb:Observation .
-
-<http://data.openbudgets.eu/resource/dataset/aragon-2013-expenditure/observation/5143> a qb:Observation .
-
-<http://data.openbudgets.eu/resource/dataset/aragon-2013-expenditure/observation/5144> a qb:Observation .
-
-<http://data.openbudgets.eu/resource/dataset/aragon-2013-expenditure/observation/5145> a qb:Observation .
-
-<http://data.openbudgets.eu/resource/dataset/aragon-2013-expenditure/observation/5146> a qb:Observation .
-
-<http://data.openbudgets.eu/resource/dataset/aragon-2013-expenditure/observation/5147> a qb:Observation .
-
-<http://data.openbudgets.eu/resource/dataset/aragon-2013-expenditure/observation/5148> a qb:Observation .
-
-<http://data.openbudgets.eu/resource/dataset/aragon-2013-expenditure/observation/5149> a qb:Observation .
-
-<http://data.openbudgets.eu/resource/dataset/aragon-2013-expenditure/observation/5150> a qb:Observation .
-
-<http://data.openbudgets.eu/resource/dataset/aragon-2013-expenditure/observation/5151> a qb:Observation .
-
-<http://data.openbudgets.eu/resource/dataset/aragon-2013-expenditure/observation/5152> a qb:Observation .
-
-<http://data.openbudgets.eu/resource/dataset/aragon-2013-expenditure/observation/5153> a qb:Observation .
-
-<http://data.openbudgets.eu/resource/dataset/aragon-2013-expenditure/observation/5154> a qb:Observation .
-
-<http://data.openbudgets.eu/resource/dataset/aragon-2013-expenditure/observation/5155> a qb:Observation .
-
-<http://data.openbudgets.eu/resource/dataset/aragon-2013-expenditure/observation/5156> a qb:Observation .
-
-<http://data.openbudgets.eu/resource/dataset/aragon-2013-expenditure/observation/5157> a qb:Observation .
-
-<http://data.openbudgets.eu/resource/dataset/aragon-2013-expenditure/observation/5158> a qb:Observation .
-
-<http://data.openbudgets.eu/resource/dataset/aragon-2013-expenditure/observation/5159> a qb:Observation .
-
-<http://data.openbudgets.eu/resource/dataset/aragon-2013-expenditure/observation/5160> a qb:Observation .
-
-<http://data.openbudgets.eu/resource/dataset/aragon-2013-expenditure/observation/5161> a qb:Observation .
-
-<http://data.openbudgets.eu/resource/dataset/aragon-2013-expenditure/observation/5162> a qb:Observation .
-
-<http://data.openbudgets.eu/resource/dataset/aragon-2013-expenditure/observation/5163> a qb:Observation .
-
-<http://data.openbudgets.eu/resource/dataset/aragon-2013-expenditure/observation/5164> a qb:Observation .
-
-<http://data.openbudgets.eu/resource/dataset/aragon-2013-expenditure/observation/5165> a qb:Observation .
-
-<http://data.openbudgets.eu/resource/dataset/aragon-2013-expenditure/observation/5166> a qb:Observation .
-
-<http://data.openbudgets.eu/resource/dataset/aragon-2013-expenditure/observation/5167> a qb:Observation .
-
-<http://data.openbudgets.eu/resource/dataset/aragon-2013-expenditure/observation/5168> a qb:Observation .
-
-<http://data.openbudgets.eu/resource/dataset/aragon-2013-expenditure/observation/5169> a qb:Observation .
-
-<http://data.openbudgets.eu/resource/dataset/aragon-2013-expenditure/observation/5170> a qb:Observation .
-
-<http://data.openbudgets.eu/resource/dataset/aragon-2013-expenditure/observation/5171> a qb:Observation .
-
-<http://data.openbudgets.eu/resource/dataset/aragon-2013-expenditure/observation/5172> a qb:Observation .
-
-<http://data.openbudgets.eu/resource/dataset/aragon-2013-expenditure/observation/5173> a qb:Observation .
-
-<http://data.openbudgets.eu/resource/dataset/aragon-2013-expenditure/observation/5174> a qb:Observation .
-
-<http://data.openbudgets.eu/resource/dataset/aragon-2013-expenditure/observation/5175> a qb:Observation .
-
-<http://data.openbudgets.eu/resource/dataset/aragon-2013-expenditure/observation/5176> a qb:Observation .
-
-<http://data.openbudgets.eu/resource/dataset/aragon-2013-expenditure/observation/5177> a qb:Observation .
-
-<http://data.openbudgets.eu/resource/dataset/aragon-2013-expenditure/observation/5178> a qb:Observation .
-
-<http://data.openbudgets.eu/resource/dataset/aragon-2013-expenditure/observation/5179> a qb:Observation .
-
-<http://data.openbudgets.eu/resource/dataset/aragon-2013-expenditure/observation/5180> a qb:Observation .
-
-<http://data.openbudgets.eu/resource/dataset/aragon-2013-expenditure/observation/5181> a qb:Observation .
-
-<http://data.openbudgets.eu/resource/dataset/aragon-2013-expenditure/observation/5182> a qb:Observation .
-
-<http://data.openbudgets.eu/resource/dataset/aragon-2013-expenditure/observation/5183> a qb:Observation .
-
-<http://data.openbudgets.eu/resource/dataset/aragon-2013-expenditure/observation/5184> a qb:Observation .
-
-<http://data.openbudgets.eu/resource/dataset/aragon-2013-expenditure/observation/5185> a qb:Observation .
-
-<http://data.openbudgets.eu/resource/dataset/aragon-2013-expenditure/observation/5186> a qb:Observation .
-
-<http://data.openbudgets.eu/resource/dataset/aragon-2013-expenditure/observation/5187> a qb:Observation .
-
-<http://data.openbudgets.eu/resource/dataset/aragon-2013-expenditure/observation/5188> a qb:Observation .
-
-<http://data.openbudgets.eu/resource/dataset/aragon-2013-expenditure/observation/5189> a qb:Observation .
-
-<http://data.openbudgets.eu/resource/dataset/aragon-2013-expenditure/observation/5190> a qb:Observation .
-
-<http://data.openbudgets.eu/resource/dataset/aragon-2013-expenditure/observation/5191> a qb:Observation .
-
-<http://data.openbudgets.eu/resource/dataset/aragon-2013-expenditure/observation/5192> a qb:Observation .
-
-<http://data.openbudgets.eu/resource/dataset/aragon-2013-expenditure/observation/5193> a qb:Observation .
-
-<http://data.openbudgets.eu/resource/dataset/aragon-2013-expenditure/observation/5194> a qb:Observation .
-
-<http://data.openbudgets.eu/resource/dataset/aragon-2013-expenditure/observation/5195> a qb:Observation .
-
-<http://data.openbudgets.eu/resource/dataset/aragon-2013-expenditure/observation/5196> a qb:Observation .
-
-<http://data.openbudgets.eu/resource/dataset/aragon-2013-expenditure/observation/5197> a qb:Observation .
-
-<http://data.openbudgets.eu/resource/dataset/aragon-2013-expenditure/observation/5198> a qb:Observation .
-
-<http://data.openbudgets.eu/resource/dataset/aragon-2013-expenditure/observation/5199> a qb:Observation .
-
-<http://data.openbudgets.eu/resource/dataset/aragon-2013-expenditure/observation/5200> a qb:Observation .
-
-<http://data.openbudgets.eu/resource/dataset/aragon-2013-expenditure/observation/5201> a qb:Observation .
-
-<http://data.openbudgets.eu/resource/dataset/aragon-2013-expenditure/observation/5202> a qb:Observation .
-
-<http://data.openbudgets.eu/resource/dataset/aragon-2013-expenditure/observation/5203> a qb:Observation .
-
-<http://data.openbudgets.eu/resource/dataset/aragon-2013-expenditure/observation/5204> a qb:Observation .
-
-<http://data.openbudgets.eu/resource/dataset/aragon-2013-expenditure/observation/5205> a qb:Observation .
-
-<http://data.openbudgets.eu/resource/dataset/aragon-2013-expenditure/observation/5206> a qb:Observation .
-
-<http://data.openbudgets.eu/resource/dataset/aragon-2013-expenditure/observation/5207> a qb:Observation .
-
-<http://data.openbudgets.eu/resource/dataset/aragon-2013-expenditure/observation/5208> a qb:Observation .
-
-<http://data.openbudgets.eu/resource/dataset/aragon-2013-expenditure/observation/5209> a qb:Observation .
-
-<http://data.openbudgets.eu/resource/dataset/aragon-2013-expenditure/observation/5210> a qb:Observation .
-
-<http://data.openbudgets.eu/resource/dataset/aragon-2013-expenditure/observation/5211> a qb:Observation .
-
-<http://data.openbudgets.eu/resource/dataset/aragon-2013-expenditure/observation/5212> a qb:Observation .
-
-<http://data.openbudgets.eu/resource/dataset/aragon-2013-expenditure/observation/5213> a qb:Observation .
-
-<http://data.openbudgets.eu/resource/dataset/aragon-2013-expenditure/observation/5214> a qb:Observation .
-
-<http://data.openbudgets.eu/resource/dataset/aragon-2013-expenditure/observation/5215> a qb:Observation .
-
-<http://data.openbudgets.eu/resource/dataset/aragon-2013-expenditure/observation/5216> a qb:Observation .
-
-<http://data.openbudgets.eu/resource/dataset/aragon-2013-expenditure/observation/5217> a qb:Observation .
-
-<http://data.openbudgets.eu/resource/dataset/aragon-2013-expenditure/observation/5218> a qb:Observation .
-
-<http://data.openbudgets.eu/resource/dataset/aragon-2013-expenditure/observation/5219> a qb:Observation .
-
-<http://data.openbudgets.eu/resource/dataset/aragon-2013-expenditure/observation/5220> a qb:Observation .
-
-<http://data.openbudgets.eu/resource/dataset/aragon-2013-expenditure/observation/5221> a qb:Observation .
-
-<http://data.openbudgets.eu/resource/dataset/aragon-2013-expenditure/observation/5222> a qb:Observation .
-
-<http://data.openbudgets.eu/resource/dataset/aragon-2013-expenditure/observation/5223> a qb:Observation .
-
-<http://data.openbudgets.eu/resource/dataset/aragon-2013-expenditure/observation/5224> a qb:Observation .
-
-<http://data.openbudgets.eu/resource/dataset/aragon-2013-expenditure/observation/5225> a qb:Observation .
-
-<http://data.openbudgets.eu/resource/dataset/aragon-2013-expenditure/observation/5226> a qb:Observation .
-
-<http://data.openbudgets.eu/resource/dataset/aragon-2013-expenditure/observation/5227> a qb:Observation .
-
-<http://data.openbudgets.eu/resource/dataset/aragon-2013-expenditure/observation/5228> a qb:Observation .
-
-<http://data.openbudgets.eu/resource/dataset/aragon-2013-expenditure/observation/5229> a qb:Observation .
-
-<http://data.openbudgets.eu/resource/dataset/aragon-2013-expenditure/observation/5230> a qb:Observation .
-
-<http://data.openbudgets.eu/resource/dataset/aragon-2013-expenditure/observation/5231> a qb:Observation .
-
-<http://data.openbudgets.eu/resource/dataset/aragon-2013-expenditure/observation/5232> a qb:Observation .
-
-<http://data.openbudgets.eu/resource/dataset/aragon-2013-expenditure/observation/5233> a qb:Observation .
-
-<http://data.openbudgets.eu/resource/dataset/aragon-2013-expenditure/observation/5234> a qb:Observation .
-
-<http://data.openbudgets.eu/resource/dataset/aragon-2013-expenditure/observation/5235> a qb:Observation .
-
-<http://data.openbudgets.eu/resource/dataset/aragon-2013-expenditure/observation/5236> a qb:Observation .
-
-<http://data.openbudgets.eu/resource/dataset/aragon-2013-expenditure/observation/5237> a qb:Observation .
-
-<http://data.openbudgets.eu/resource/dataset/aragon-2013-expenditure/observation/5238> a qb:Observation .
-
-<http://data.openbudgets.eu/resource/dataset/aragon-2013-expenditure/observation/5239> a qb:Observation .
-
-<http://data.openbudgets.eu/resource/dataset/aragon-2013-expenditure/observation/5240> a qb:Observation .
-
-<http://data.openbudgets.eu/resource/dataset/aragon-2013-expenditure/observation/5241> a qb:Observation .
-
-<http://data.openbudgets.eu/resource/dataset/aragon-2013-expenditure/observation/5242> a qb:Observation .
-
-<http://data.openbudgets.eu/resource/dataset/aragon-2013-expenditure/observation/5243> a qb:Observation .
-
-<http://data.openbudgets.eu/resource/dataset/aragon-2013-expenditure/observation/5244> a qb:Observation .
-
-<http://data.openbudgets.eu/resource/dataset/aragon-2013-expenditure/observation/5245> a qb:Observation .
-
-<http://data.openbudgets.eu/resource/dataset/aragon-2013-expenditure/observation/5246> a qb:Observation .
-
-<http://data.openbudgets.eu/resource/dataset/aragon-2013-expenditure/observation/5247> a qb:Observation .
-
-<http://data.openbudgets.eu/resource/dataset/aragon-2013-expenditure/observation/5248> a qb:Observation .
-
-<http://data.openbudgets.eu/resource/dataset/aragon-2013-expenditure/observation/5249> a qb:Observation .
-
-<http://data.openbudgets.eu/resource/dataset/aragon-2013-expenditure/observation/5250> a qb:Observation .
-
-<http://data.openbudgets.eu/resource/dataset/aragon-2013-expenditure/observation/5251> a qb:Observation .
-
-<http://data.openbudgets.eu/resource/dataset/aragon-2013-expenditure/observation/5252> a qb:Observation .
-
-<http://data.openbudgets.eu/resource/dataset/aragon-2013-expenditure/observation/5253> a qb:Observation .
-
-<http://data.openbudgets.eu/resource/dataset/aragon-2013-expenditure/observation/5254> a qb:Observation .
-
-<http://data.openbudgets.eu/resource/dataset/aragon-2013-expenditure/observation/5255> a qb:Observation .
-
-<http://data.openbudgets.eu/resource/dataset/aragon-2013-expenditure/observation/5256> a qb:Observation .
-
-<http://data.openbudgets.eu/resource/dataset/aragon-2013-expenditure/observation/5257> a qb:Observation .
-
-<http://data.openbudgets.eu/resource/dataset/aragon-2013-expenditure/observation/5258> a qb:Observation .
-
-<http://data.openbudgets.eu/resource/dataset/aragon-2013-expenditure/observation/5259> a qb:Observation .
-
-<http://data.openbudgets.eu/resource/dataset/aragon-2013-expenditure/observation/5260> a qb:Observation .
-
-<http://data.openbudgets.eu/resource/dataset/aragon-2013-expenditure/observation/5261> a qb:Observation .
-
-<http://data.openbudgets.eu/resource/dataset/aragon-2013-expenditure/observation/5262> a qb:Observation .
-
-<http://data.openbudgets.eu/resource/dataset/aragon-2013-expenditure/observation/5263> a qb:Observation .
-
-<http://data.openbudgets.eu/resource/dataset/aragon-2013-expenditure/observation/5264> a qb:Observation .
-
-<http://data.openbudgets.eu/resource/dataset/aragon-2013-expenditure/observation/5265> a qb:Observation .
-
-<http://data.openbudgets.eu/resource/dataset/aragon-2013-expenditure/observation/5266> a qb:Observation .
-
-<http://data.openbudgets.eu/resource/dataset/aragon-2013-expenditure/observation/5267> a qb:Observation .
-
-<http://data.openbudgets.eu/resource/dataset/aragon-2013-expenditure/observation/5268> a qb:Observation .
-
-<http://data.openbudgets.eu/resource/dataset/aragon-2013-expenditure/observation/5269> a qb:Observation .
-
-<http://data.openbudgets.eu/resource/dataset/aragon-2013-expenditure/observation/5270> a qb:Observation .
-
-<http://data.openbudgets.eu/resource/dataset/aragon-2013-expenditure/observation/5271> a qb:Observation .
-
-<http://data.openbudgets.eu/resource/dataset/aragon-2013-expenditure/observation/5272> a qb:Observation .
-
-<http://data.openbudgets.eu/resource/dataset/aragon-2013-expenditure/observation/5273> a qb:Observation .
-
-<http://data.openbudgets.eu/resource/dataset/aragon-2013-expenditure/observation/5274> a qb:Observation .
-
-<http://data.openbudgets.eu/resource/dataset/aragon-2013-expenditure/observation/5275> a qb:Observation .
-
-<http://data.openbudgets.eu/resource/dataset/aragon-2013-expenditure/observation/5276> a qb:Observation .
-
-<http://data.openbudgets.eu/resource/dataset/aragon-2013-expenditure/observation/5277> a qb:Observation .
-
-<http://data.openbudgets.eu/resource/dataset/aragon-2013-expenditure/observation/5278> a qb:Observation .
-
-<http://data.openbudgets.eu/resource/dataset/aragon-2013-expenditure/observation/5279> a qb:Observation .
-
-<http://data.openbudgets.eu/resource/dataset/aragon-2013-expenditure/observation/5280> a qb:Observation .
-
-<http://data.openbudgets.eu/resource/dataset/aragon-2013-expenditure/observation/5281> a qb:Observation .
-
-<http://data.openbudgets.eu/resource/dataset/aragon-2013-expenditure/observation/5282> a qb:Observation .
-
-<http://data.openbudgets.eu/resource/dataset/aragon-2013-expenditure/observation/5283> a qb:Observation .
-
-<http://data.openbudgets.eu/resource/dataset/aragon-2013-expenditure/observation/5284> a qb:Observation .
-
-<http://data.openbudgets.eu/resource/dataset/aragon-2013-expenditure/observation/5285> a qb:Observation .
-
-<http://data.openbudgets.eu/resource/dataset/aragon-2013-expenditure/observation/5286> a qb:Observation .
-
-<http://data.openbudgets.eu/resource/dataset/aragon-2013-expenditure/observation/5287> a qb:Observation .
-
-<http://data.openbudgets.eu/resource/dataset/aragon-2013-expenditure/observation/5288> a qb:Observation .
-
-<http://data.openbudgets.eu/resource/dataset/aragon-2013-expenditure/observation/5289> a qb:Observation .
-
-<http://data.openbudgets.eu/resource/dataset/aragon-2013-expenditure/observation/5290> a qb:Observation .
-
-<http://data.openbudgets.eu/resource/dataset/aragon-2013-expenditure/observation/5291> a qb:Observation .
-
-<http://data.openbudgets.eu/resource/dataset/aragon-2013-expenditure/observation/5292> a qb:Observation .
-
-<http://data.openbudgets.eu/resource/dataset/aragon-2013-expenditure/observation/5293> a qb:Observation .
-
-<http://data.openbudgets.eu/resource/dataset/aragon-2013-expenditure/observation/5294> a qb:Observation .
-
-<http://data.openbudgets.eu/resource/dataset/aragon-2013-expenditure/observation/5295> a qb:Observation .
-
-<http://data.openbudgets.eu/resource/dataset/aragon-2013-expenditure/observation/5296> a qb:Observation .
-
-<http://data.openbudgets.eu/resource/dataset/aragon-2013-expenditure/observation/5297> a qb:Observation .
-
-<http://data.openbudgets.eu/resource/dataset/aragon-2013-expenditure/observation/5298> a qb:Observation .
-
-<http://data.openbudgets.eu/resource/dataset/aragon-2013-expenditure/observation/5299> a qb:Observation .
-
-<http://data.openbudgets.eu/resource/dataset/aragon-2013-expenditure/observation/5300> a qb:Observation .
-
-<http://data.openbudgets.eu/resource/dataset/aragon-2013-expenditure/observation/5301> a qb:Observation .
-
-<http://data.openbudgets.eu/resource/dataset/aragon-2013-expenditure/observation/5302> a qb:Observation .
-
-<http://data.openbudgets.eu/resource/dataset/aragon-2013-expenditure/observation/5303> a qb:Observation .
-
-<http://data.openbudgets.eu/resource/dataset/aragon-2013-expenditure/observation/5304> a qb:Observation .
-
-<http://data.openbudgets.eu/resource/dataset/aragon-2013-expenditure/observation/5305> a qb:Observation .
-
-<http://data.openbudgets.eu/resource/dataset/aragon-2013-expenditure/observation/5306> a qb:Observation .
-
-<http://data.openbudgets.eu/resource/dataset/aragon-2013-expenditure/observation/5307> a qb:Observation .
-
-<http://data.openbudgets.eu/resource/dataset/aragon-2013-expenditure/observation/5308> a qb:Observation .
-
-<http://data.openbudgets.eu/resource/dataset/aragon-2013-expenditure/observation/5309> a qb:Observation .
-
-<http://data.openbudgets.eu/resource/dataset/aragon-2013-expenditure/observation/5310> a qb:Observation .
-
-<http://data.openbudgets.eu/resource/dataset/aragon-2013-expenditure/observation/5311> a qb:Observation .
-
-<http://data.openbudgets.eu/resource/dataset/aragon-2013-expenditure/observation/5312> a qb:Observation .
-
-<http://data.openbudgets.eu/resource/dataset/aragon-2013-expenditure/observation/5313> a qb:Observation .
-
-<http://data.openbudgets.eu/resource/dataset/aragon-2013-expenditure/observation/5314> a qb:Observation .
-
-<http://data.openbudgets.eu/resource/dataset/aragon-2013-expenditure/observation/5315> a qb:Observation .
-
-<http://data.openbudgets.eu/resource/dataset/aragon-2013-expenditure/observation/5316> a qb:Observation .
-
-<http://data.openbudgets.eu/resource/dataset/aragon-2013-expenditure/observation/5317> a qb:Observation .
-
-<http://data.openbudgets.eu/resource/dataset/aragon-2013-expenditure/observation/5318> a qb:Observation .
-
-<http://data.openbudgets.eu/resource/dataset/aragon-2013-expenditure/observation/5319> a qb:Observation .
-
-<http://data.openbudgets.eu/resource/dataset/aragon-2013-expenditure/observation/5320> a qb:Observation .
-
-<http://data.openbudgets.eu/resource/dataset/aragon-2013-expenditure/observation/5321> a qb:Observation .
-
-<http://data.openbudgets.eu/resource/dataset/aragon-2013-expenditure/observation/5322> a qb:Observation .
-
-<http://data.openbudgets.eu/resource/dataset/aragon-2013-expenditure/observation/5323> a qb:Observation .
-
-<http://data.openbudgets.eu/resource/dataset/aragon-2013-expenditure/observation/5324> a qb:Observation .
-
-<http://data.openbudgets.eu/resource/dataset/aragon-2013-expenditure/observation/5325> a qb:Observation .
-
-<http://data.openbudgets.eu/resource/dataset/aragon-2013-expenditure/observation/5326> a qb:Observation .
-
-<http://data.openbudgets.eu/resource/dataset/aragon-2013-expenditure/observation/5327> a qb:Observation .
-
-<http://data.openbudgets.eu/resource/dataset/aragon-2013-expenditure/observation/5328> a qb:Observation .
-
-<http://data.openbudgets.eu/resource/dataset/aragon-2013-expenditure/observation/5329> a qb:Observation .
-
-<http://data.openbudgets.eu/resource/dataset/aragon-2013-expenditure/observation/5330> a qb:Observation .
-
-<http://data.openbudgets.eu/resource/dataset/aragon-2013-expenditure/observation/5331> a qb:Observation .
-
-<http://data.openbudgets.eu/resource/dataset/aragon-2013-expenditure/observation/5332> a qb:Observation .
-
-<http://data.openbudgets.eu/resource/dataset/aragon-2013-expenditure/observation/5333> a qb:Observation .
-
-<http://data.openbudgets.eu/resource/dataset/aragon-2013-expenditure/observation/5334> a qb:Observation .
-
-<http://data.openbudgets.eu/resource/dataset/aragon-2013-expenditure/observation/5335> a qb:Observation .
-
-<http://data.openbudgets.eu/resource/dataset/aragon-2013-expenditure/observation/5336> a qb:Observation .
-
-<http://data.openbudgets.eu/resource/dataset/aragon-2013-expenditure/observation/5337> a qb:Observation .
-
-<http://data.openbudgets.eu/resource/dataset/aragon-2013-expenditure/observation/5338> a qb:Observation .
-
-<http://data.openbudgets.eu/resource/dataset/aragon-2013-expenditure/observation/5339> a qb:Observation .
-
-<http://data.openbudgets.eu/resource/dataset/aragon-2013-expenditure/observation/5340> a qb:Observation .
-
-<http://data.openbudgets.eu/resource/dataset/aragon-2013-expenditure/observation/5341> a qb:Observation .
-
-<http://data.openbudgets.eu/resource/dataset/aragon-2013-expenditure/observation/5342> a qb:Observation .
-
-<http://data.openbudgets.eu/resource/dataset/aragon-2013-expenditure/observation/5343> a qb:Observation .
-
-<http://data.openbudgets.eu/resource/dataset/aragon-2013-expenditure/observation/5344> a qb:Observation .
-
-<http://data.openbudgets.eu/resource/dataset/aragon-2013-expenditure/observation/5345> a qb:Observation .
-
-<http://data.openbudgets.eu/resource/dataset/aragon-2013-expenditure/observation/5346> a qb:Observation .
-
-<http://data.openbudgets.eu/resource/dataset/aragon-2013-expenditure/observation/5347> a qb:Observation .
-
-<http://data.openbudgets.eu/resource/dataset/aragon-2013-expenditure/observation/5348> a qb:Observation .
-
-<http://data.openbudgets.eu/resource/dataset/aragon-2013-expenditure/observation/5349> a qb:Observation .
-
-<http://data.openbudgets.eu/resource/dataset/aragon-2013-expenditure/observation/5350> a qb:Observation .
-
-<http://data.openbudgets.eu/resource/dataset/aragon-2013-expenditure/observation/5351> a qb:Observation .
-
-<http://data.openbudgets.eu/resource/dataset/aragon-2013-expenditure/observation/5352> a qb:Observation .
-
-<http://data.openbudgets.eu/resource/dataset/aragon-2013-expenditure/observation/5353> a qb:Observation .
-
-<http://data.openbudgets.eu/resource/dataset/aragon-2013-expenditure/observation/5354> a qb:Observation .
-
-<http://data.openbudgets.eu/resource/dataset/aragon-2013-expenditure/observation/5355> a qb:Observation .
-
-<http://data.openbudgets.eu/resource/dataset/aragon-2013-expenditure/observation/5356> a qb:Observation .
-
-<http://data.openbudgets.eu/resource/dataset/aragon-2013-expenditure/observation/5357> a qb:Observation .
-
-<http://data.openbudgets.eu/resource/dataset/aragon-2013-expenditure/observation/5358> a qb:Observation .
-
-<http://data.openbudgets.eu/resource/dataset/aragon-2013-expenditure/observation/5359> a qb:Observation .
-
-<http://data.openbudgets.eu/resource/dataset/aragon-2013-expenditure/observation/5360> a qb:Observation .
-
-<http://data.openbudgets.eu/resource/dataset/aragon-2013-expenditure/observation/5361> a qb:Observation .
-
-<http://data.openbudgets.eu/resource/dataset/aragon-2013-expenditure/observation/5362> a qb:Observation .
-
-<http://data.openbudgets.eu/resource/dataset/aragon-2013-expenditure/observation/5363> a qb:Observation .
-
-<http://data.openbudgets.eu/resource/dataset/aragon-2013-expenditure/observation/5364> a qb:Observation .
-
-<http://data.openbudgets.eu/resource/dataset/aragon-2013-expenditure/observation/5365> a qb:Observation .
-
-<http://data.openbudgets.eu/resource/dataset/aragon-2013-expenditure/observation/5366> a qb:Observation .
-
-<http://data.openbudgets.eu/resource/dataset/aragon-2013-expenditure/observation/5367> a qb:Observation .
-
-<http://data.openbudgets.eu/resource/dataset/aragon-2013-expenditure/observation/5368> a qb:Observation .
-
-<http://data.openbudgets.eu/resource/dataset/aragon-2013-expenditure/observation/5369> a qb:Observation .
-
-<http://data.openbudgets.eu/resource/dataset/aragon-2013-expenditure/observation/5370> a qb:Observation .
-
-<http://data.openbudgets.eu/resource/dataset/aragon-2013-expenditure/observation/5371> a qb:Observation .
-
-<http://data.openbudgets.eu/resource/dataset/aragon-2013-expenditure/observation/5372> a qb:Observation .
-
-<http://data.openbudgets.eu/resource/dataset/aragon-2013-expenditure/observation/5373> a qb:Observation .
-
-<http://data.openbudgets.eu/resource/dataset/aragon-2013-expenditure/observation/5374> a qb:Observation .
-
-<http://data.openbudgets.eu/resource/dataset/aragon-2013-expenditure/observation/5375> a qb:Observation .
-
-<http://data.openbudgets.eu/resource/dataset/aragon-2013-expenditure/observation/5376> a qb:Observation .
-
-<http://data.openbudgets.eu/resource/dataset/aragon-2013-expenditure/observation/5377> a qb:Observation .
-
-<http://data.openbudgets.eu/resource/dataset/aragon-2013-expenditure/observation/5378> a qb:Observation .
-
-<http://data.openbudgets.eu/resource/dataset/aragon-2013-expenditure/observation/5379> a qb:Observation .
-
-<http://data.openbudgets.eu/resource/dataset/aragon-2013-expenditure/observation/5380> a qb:Observation .
-
-<http://data.openbudgets.eu/resource/dataset/aragon-2013-expenditure/observation/5381> a qb:Observation .
-
-<http://data.openbudgets.eu/resource/dataset/aragon-2013-expenditure/observation/5382> a qb:Observation .
-
-<http://data.openbudgets.eu/resource/dataset/aragon-2013-expenditure/observation/5383> a qb:Observation .
-
-<http://data.openbudgets.eu/resource/dataset/aragon-2013-expenditure/observation/5384> a qb:Observation .
-
-<http://data.openbudgets.eu/resource/dataset/aragon-2013-expenditure/observation/5385> a qb:Observation .
-
-<http://data.openbudgets.eu/resource/dataset/aragon-2013-expenditure/observation/5386> a qb:Observation .
-
-<http://data.openbudgets.eu/resource/dataset/aragon-2013-expenditure/observation/5387> a qb:Observation .
-
-<http://data.openbudgets.eu/resource/dataset/aragon-2013-expenditure/observation/5388> a qb:Observation .
-
-<http://data.openbudgets.eu/resource/dataset/aragon-2013-expenditure/observation/5389> a qb:Observation .
-
-<http://data.openbudgets.eu/resource/dataset/aragon-2013-expenditure/observation/5390> a qb:Observation .
-
-<http://data.openbudgets.eu/resource/dataset/aragon-2013-expenditure/observation/5391> a qb:Observation .
-
-<http://data.openbudgets.eu/resource/dataset/aragon-2013-expenditure/observation/5392> a qb:Observation .
-
-<http://data.openbudgets.eu/resource/dataset/aragon-2013-expenditure/observation/5393> a qb:Observation .
-
-<http://data.openbudgets.eu/resource/dataset/aragon-2013-expenditure/observation/5394> a qb:Observation .
-
-<http://data.openbudgets.eu/resource/dataset/aragon-2013-expenditure/observation/5395> a qb:Observation .
-
-<http://data.openbudgets.eu/resource/dataset/aragon-2013-expenditure/observation/5396> a qb:Observation .
-
-<http://data.openbudgets.eu/resource/dataset/aragon-2013-expenditure/observation/5397> a qb:Observation .
-
-<http://data.openbudgets.eu/resource/dataset/aragon-2013-expenditure/observation/5398> a qb:Observation .
-
-<http://data.openbudgets.eu/resource/dataset/aragon-2013-expenditure/observation/5399> a qb:Observation .
-
-<http://data.openbudgets.eu/resource/dataset/aragon-2013-expenditure/observation/5400> a qb:Observation .
-
-<http://data.openbudgets.eu/resource/dataset/aragon-2013-expenditure/observation/5401> a qb:Observation .
-
-<http://data.openbudgets.eu/resource/dataset/aragon-2013-expenditure/observation/5402> a qb:Observation .
-
-<http://data.openbudgets.eu/resource/dataset/aragon-2013-expenditure/observation/5403> a qb:Observation .
-
-<http://data.openbudgets.eu/resource/dataset/aragon-2013-expenditure/observation/5404> a qb:Observation .
-
-<http://data.openbudgets.eu/resource/dataset/aragon-2013-expenditure/observation/5405> a qb:Observation .
-
-<http://data.openbudgets.eu/resource/dataset/aragon-2013-expenditure/observation/5406> a qb:Observation .
-
-<http://data.openbudgets.eu/resource/dataset/aragon-2013-expenditure/observation/5407> a qb:Observation .
-
-<http://data.openbudgets.eu/resource/dataset/aragon-2013-expenditure/observation/5408> a qb:Observation .
-
-<http://data.openbudgets.eu/resource/dataset/aragon-2013-expenditure/observation/5409> a qb:Observation .
-
-<http://data.openbudgets.eu/resource/dataset/aragon-2013-expenditure/observation/5410> a qb:Observation .
-
-<http://data.openbudgets.eu/resource/dataset/aragon-2013-expenditure/observation/5411> a qb:Observation .
-
-<http://data.openbudgets.eu/resource/dataset/aragon-2013-expenditure/observation/5412> a qb:Observation .
-
-<http://data.openbudgets.eu/resource/dataset/aragon-2013-expenditure/observation/5413> a qb:Observation .
-
-<http://data.openbudgets.eu/resource/dataset/aragon-2013-expenditure/observation/5414> a qb:Observation .
-
-<http://data.openbudgets.eu/resource/dataset/aragon-2013-expenditure/observation/5415> a qb:Observation .
-
-<http://data.openbudgets.eu/resource/dataset/aragon-2013-expenditure/observation/5416> a qb:Observation .
-
-<http://data.openbudgets.eu/resource/dataset/aragon-2013-expenditure/observation/5417> a qb:Observation .
-
-<http://data.openbudgets.eu/resource/dataset/aragon-2013-expenditure/observation/5418> a qb:Observation .
-
-<http://data.openbudgets.eu/resource/dataset/aragon-2013-expenditure/observation/5419> a qb:Observation .
-
-<http://data.openbudgets.eu/resource/dataset/aragon-2013-expenditure/observation/5420> a qb:Observation .
-
-<http://data.openbudgets.eu/resource/dataset/aragon-2013-expenditure/observation/5421> a qb:Observation .
-
-<http://data.openbudgets.eu/resource/dataset/aragon-2013-expenditure/observation/5422> a qb:Observation .
-
-<http://data.openbudgets.eu/resource/dataset/aragon-2013-expenditure/observation/5423> a qb:Observation .
-
-<http://data.openbudgets.eu/resource/dataset/aragon-2013-expenditure/observation/5424> a qb:Observation .
-
-<http://data.openbudgets.eu/resource/dataset/aragon-2013-expenditure/observation/5425> a qb:Observation .
-
-<http://data.openbudgets.eu/resource/dataset/aragon-2013-expenditure/observation/5426> a qb:Observation .
-
-<http://data.openbudgets.eu/resource/dataset/aragon-2013-expenditure/observation/5427> a qb:Observation .
-
-<http://data.openbudgets.eu/resource/dataset/aragon-2013-expenditure/observation/5428> a qb:Observation .
-
-<http://data.openbudgets.eu/resource/dataset/aragon-2013-expenditure/observation/5429> a qb:Observation .
-
-<http://data.openbudgets.eu/resource/dataset/aragon-2013-expenditure/observation/5430> a qb:Observation .
-
-<http://data.openbudgets.eu/resource/dataset/aragon-2013-expenditure/observation/5431> a qb:Observation .
-
-<http://data.openbudgets.eu/resource/dataset/aragon-2013-expenditure/observation/5432> a qb:Observation .
-
-<http://data.openbudgets.eu/resource/dataset/aragon-2013-expenditure/observation/5433> a qb:Observation .
-
-<http://data.openbudgets.eu/resource/dataset/aragon-2013-expenditure/observation/5434> a qb:Observation .
-
-<http://data.openbudgets.eu/resource/dataset/aragon-2013-expenditure/observation/5435> a qb:Observation .
-
-<http://data.openbudgets.eu/resource/dataset/aragon-2013-expenditure/observation/5436> a qb:Observation .
-
-<http://data.openbudgets.eu/resource/dataset/aragon-2013-expenditure/observation/5437> a qb:Observation .
-
-<http://data.openbudgets.eu/resource/dataset/aragon-2013-expenditure/observation/5438> a qb:Observation .
-
-<http://data.openbudgets.eu/resource/dataset/aragon-2013-expenditure/observation/5439> a qb:Observation .
-
-<http://data.openbudgets.eu/resource/dataset/aragon-2013-expenditure/observation/5440> a qb:Observation .
-
-<http://data.openbudgets.eu/resource/dataset/aragon-2013-expenditure/observation/5441> a qb:Observation .
-
-<http://data.openbudgets.eu/resource/dataset/aragon-2013-expenditure/observation/5442> a qb:Observation .
-
-<http://data.openbudgets.eu/resource/dataset/aragon-2013-expenditure/observation/5443> a qb:Observation .
-
-<http://data.openbudgets.eu/resource/dataset/aragon-2013-expenditure/observation/5444> a qb:Observation .
-
-<http://data.openbudgets.eu/resource/dataset/aragon-2013-expenditure/observation/5445> a qb:Observation .
-
-<http://data.openbudgets.eu/resource/dataset/aragon-2013-expenditure/observation/5446> a qb:Observation .
-
-<http://data.openbudgets.eu/resource/dataset/aragon-2013-expenditure/observation/5447> a qb:Observation .
-
-<http://data.openbudgets.eu/resource/dataset/aragon-2013-expenditure/observation/5448> a qb:Observation .
-
-<http://data.openbudgets.eu/resource/dataset/aragon-2013-expenditure/observation/5449> a qb:Observation .
-
-<http://data.openbudgets.eu/resource/dataset/aragon-2013-expenditure/observation/5450> a qb:Observation .
-
-<http://data.openbudgets.eu/resource/dataset/aragon-2013-expenditure/observation/5451> a qb:Observation .
-
-<http://data.openbudgets.eu/resource/dataset/aragon-2013-expenditure/observation/5452> a qb:Observation .
-
-<http://data.openbudgets.eu/resource/dataset/aragon-2013-expenditure/observation/5453> a qb:Observation .
-
-<http://data.openbudgets.eu/resource/dataset/aragon-2013-expenditure/observation/5454> a qb:Observation .
-
-<http://data.openbudgets.eu/resource/dataset/aragon-2013-expenditure/observation/5455> a qb:Observation .
-
-<http://data.openbudgets.eu/resource/dataset/aragon-2013-expenditure/observation/5456> a qb:Observation .
-
-<http://data.openbudgets.eu/resource/dataset/aragon-2013-expenditure/observation/5457> a qb:Observation .
-
-<http://data.openbudgets.eu/resource/dataset/aragon-2013-expenditure/observation/5458> a qb:Observation .
-
-<http://data.openbudgets.eu/resource/dataset/aragon-2013-expenditure/observation/5459> a qb:Observation .
-
-<http://data.openbudgets.eu/resource/dataset/aragon-2013-expenditure/observation/5460> a qb:Observation .
-
-<http://data.openbudgets.eu/resource/dataset/aragon-2013-expenditure/observation/5461> a qb:Observation .
-
-<http://data.openbudgets.eu/resource/dataset/aragon-2013-expenditure/observation/5462> a qb:Observation .
-
-<http://data.openbudgets.eu/resource/dataset/aragon-2013-expenditure/observation/5463> a qb:Observation .
-
-<http://data.openbudgets.eu/resource/dataset/aragon-2013-expenditure/observation/5464> a qb:Observation .
-
-<http://data.openbudgets.eu/resource/dataset/aragon-2013-expenditure/observation/5465> a qb:Observation .
-
-<http://data.openbudgets.eu/resource/dataset/aragon-2013-expenditure/observation/5466> a qb:Observation .
-
-<http://data.openbudgets.eu/resource/dataset/aragon-2013-expenditure/observation/5467> a qb:Observation .
-
-<http://data.openbudgets.eu/resource/dataset/aragon-2013-expenditure/observation/5468> a qb:Observation .
-
-<http://data.openbudgets.eu/resource/dataset/aragon-2013-expenditure/observation/5469> a qb:Observation .
-
-<http://data.openbudgets.eu/resource/dataset/aragon-2013-expenditure/observation/5470> a qb:Observation .
-
-<http://data.openbudgets.eu/resource/dataset/aragon-2013-expenditure/observation/5471> a qb:Observation .
-
-<http://data.openbudgets.eu/resource/dataset/aragon-2013-expenditure/observation/5472> a qb:Observation .
-
-<http://data.openbudgets.eu/resource/dataset/aragon-2013-expenditure/observation/5473> a qb:Observation .
-
-<http://data.openbudgets.eu/resource/dataset/aragon-2013-expenditure/observation/5474> a qb:Observation .
-
-<http://data.openbudgets.eu/resource/dataset/aragon-2013-expenditure/observation/5475> a qb:Observation .
-
-<http://data.openbudgets.eu/resource/dataset/aragon-2013-expenditure/observation/5476> a qb:Observation .
-
-<http://data.openbudgets.eu/resource/dataset/aragon-2013-expenditure/observation/5477> a qb:Observation .
-
-<http://data.openbudgets.eu/resource/dataset/aragon-2013-expenditure/observation/5478> a qb:Observation .
-
-<http://data.openbudgets.eu/resource/dataset/aragon-2013-expenditure/observation/5479> a qb:Observation .
-
-<http://data.openbudgets.eu/resource/dataset/aragon-2013-expenditure/observation/5480> a qb:Observation .
-
-<http://data.openbudgets.eu/resource/dataset/aragon-2013-expenditure/observation/5481> a qb:Observation .
-
-<http://data.openbudgets.eu/resource/dataset/aragon-2013-expenditure/observation/5482> a qb:Observation .
-
-<http://data.openbudgets.eu/resource/dataset/aragon-2013-expenditure/observation/5483> a qb:Observation .
-
-<http://data.openbudgets.eu/resource/dataset/aragon-2013-expenditure/observation/5484> a qb:Observation .
-
-<http://data.openbudgets.eu/resource/dataset/aragon-2013-expenditure/observation/5485> a qb:Observation .
-
-<http://data.openbudgets.eu/resource/dataset/aragon-2013-expenditure/observation/5486> a qb:Observation .
-
-<http://data.openbudgets.eu/resource/dataset/aragon-2013-expenditure/observation/5487> a qb:Observation .
-
-<http://data.openbudgets.eu/resource/dataset/aragon-2013-expenditure/observation/5488> a qb:Observation .
-
-<http://data.openbudgets.eu/resource/dataset/aragon-2013-expenditure/observation/5489> a qb:Observation .
-
-<http://data.openbudgets.eu/resource/dataset/aragon-2013-expenditure/observation/5490> a qb:Observation .
-
-<http://data.openbudgets.eu/resource/dataset/aragon-2013-expenditure/observation/5491> a qb:Observation .
-
-<http://data.openbudgets.eu/resource/dataset/aragon-2013-expenditure/observation/5492> a qb:Observation .
-
-<http://data.openbudgets.eu/resource/dataset/aragon-2013-expenditure/observation/5493> a qb:Observation .
-
-<http://data.openbudgets.eu/resource/dataset/aragon-2013-expenditure/observation/5494> a qb:Observation .
-
-<http://data.openbudgets.eu/resource/dataset/aragon-2013-expenditure/observation/5495> a qb:Observation .
-
-<http://data.openbudgets.eu/resource/dataset/aragon-2013-expenditure/observation/5496> a qb:Observation .
-
-<http://data.openbudgets.eu/resource/dataset/aragon-2013-expenditure/observation/5497> a qb:Observation .
-
-<http://data.openbudgets.eu/resource/dataset/aragon-2013-expenditure/observation/5498> a qb:Observation .
-
-<http://data.openbudgets.eu/resource/dataset/aragon-2013-expenditure/observation/5499> a qb:Observation .
-
-<http://data.openbudgets.eu/resource/dataset/aragon-2013-expenditure/observation/5500> a qb:Observation .
-
-<http://data.openbudgets.eu/resource/dataset/aragon-2013-expenditure/observation/5501> a qb:Observation .
-
-<http://data.openbudgets.eu/resource/dataset/aragon-2013-expenditure/observation/5502> a qb:Observation .
-
-<http://data.openbudgets.eu/resource/dataset/aragon-2013-expenditure/observation/5503> a qb:Observation .
-
-<http://data.openbudgets.eu/resource/dataset/aragon-2013-expenditure/observation/5504> a qb:Observation .
-
-<http://data.openbudgets.eu/resource/dataset/aragon-2013-expenditure/observation/5505> a qb:Observation .
-
-<http://data.openbudgets.eu/resource/dataset/aragon-2013-expenditure/observation/5506> a qb:Observation .
-
-<http://data.openbudgets.eu/resource/dataset/aragon-2013-expenditure/observation/5507> a qb:Observation .
-
-<http://data.openbudgets.eu/resource/dataset/aragon-2013-expenditure/observation/5508> a qb:Observation .
-
-<http://data.openbudgets.eu/resource/dataset/aragon-2013-expenditure/observation/5509> a qb:Observation .
-
-<http://data.openbudgets.eu/resource/dataset/aragon-2013-expenditure/observation/5510> a qb:Observation .
-
-<http://data.openbudgets.eu/resource/dataset/aragon-2013-expenditure/observation/5511> a qb:Observation .
-
-<http://data.openbudgets.eu/resource/dataset/aragon-2013-expenditure/observation/5512> a qb:Observation .
-
-<http://data.openbudgets.eu/resource/dataset/aragon-2013-expenditure/observation/5513> a qb:Observation .
-
-<http://data.openbudgets.eu/resource/dataset/aragon-2013-expenditure/observation/5514> a qb:Observation .
-
-<http://data.openbudgets.eu/resource/dataset/aragon-2013-expenditure/observation/5515> a qb:Observation .
-
-<http://data.openbudgets.eu/resource/dataset/aragon-2013-expenditure/observation/5516> a qb:Observation .
-
-<http://data.openbudgets.eu/resource/dataset/aragon-2013-expenditure/observation/5517> a qb:Observation .
-
-<http://data.openbudgets.eu/resource/dataset/aragon-2013-expenditure/observation/5518> a qb:Observation .
-
-<http://data.openbudgets.eu/resource/dataset/aragon-2013-expenditure/observation/5519> a qb:Observation .
-
-<http://data.openbudgets.eu/resource/dataset/aragon-2013-expenditure/observation/5520> a qb:Observation .
-
-<http://data.openbudgets.eu/resource/dataset/aragon-2013-expenditure/observation/5521> a qb:Observation .
-
-<http://data.openbudgets.eu/resource/dataset/aragon-2013-expenditure/observation/5522> a qb:Observation .
-
-<http://data.openbudgets.eu/resource/dataset/aragon-2013-expenditure/observation/5523> a qb:Observation .
-
-<http://data.openbudgets.eu/resource/dataset/aragon-2013-expenditure/observation/5524> a qb:Observation .
-
-<http://data.openbudgets.eu/resource/dataset/aragon-2013-expenditure/observation/5525> a qb:Observation .
-
-<http://data.openbudgets.eu/resource/dataset/aragon-2013-expenditure/observation/5526> a qb:Observation .
-
-<http://data.openbudgets.eu/resource/dataset/aragon-2013-expenditure/observation/5527> a qb:Observation .
-
-<http://data.openbudgets.eu/resource/dataset/aragon-2013-expenditure/observation/5528> a qb:Observation .
-
-<http://data.openbudgets.eu/resource/dataset/aragon-2013-expenditure/observation/5529> a qb:Observation .
-
-<http://data.openbudgets.eu/resource/dataset/aragon-2013-expenditure/observation/5530> a qb:Observation .
-
-<http://data.openbudgets.eu/resource/dataset/aragon-2013-expenditure/observation/5531> a qb:Observation .
-
-<http://data.openbudgets.eu/resource/dataset/aragon-2013-expenditure/observation/5532> a qb:Observation .
-
-<http://data.openbudgets.eu/resource/dataset/aragon-2013-expenditure/observation/5533> a qb:Observation .
-
-<http://data.openbudgets.eu/resource/dataset/aragon-2013-expenditure/observation/5534> a qb:Observation .
-
-<http://data.openbudgets.eu/resource/dataset/aragon-2013-expenditure/observation/5535> a qb:Observation .
-
-<http://data.openbudgets.eu/resource/dataset/aragon-2013-expenditure/observation/5536> a qb:Observation .
-
-<http://data.openbudgets.eu/resource/dataset/aragon-2013-expenditure/observation/5537> a qb:Observation .
-
-<http://data.openbudgets.eu/resource/dataset/aragon-2013-expenditure/observation/5538> a qb:Observation .
-
-<http://data.openbudgets.eu/resource/dataset/aragon-2013-expenditure/observation/5539> a qb:Observation .
-
-<http://data.openbudgets.eu/resource/dataset/aragon-2013-expenditure/observation/5540> a qb:Observation .
-
-<http://data.openbudgets.eu/resource/dataset/aragon-2013-expenditure/observation/5541> a qb:Observation .
-
-<http://data.openbudgets.eu/resource/dataset/aragon-2013-expenditure/observation/5542> a qb:Observation .
-
-<http://data.openbudgets.eu/resource/dataset/aragon-2013-expenditure/observation/5543> a qb:Observation .
-
-<http://data.openbudgets.eu/resource/dataset/aragon-2013-expenditure/observation/5544> a qb:Observation .
-
-<http://data.openbudgets.eu/resource/dataset/aragon-2013-expenditure/observation/5545> a qb:Observation .
-
-<http://data.openbudgets.eu/resource/dataset/aragon-2013-expenditure/observation/5546> a qb:Observation .
-
-<http://data.openbudgets.eu/resource/dataset/aragon-2013-expenditure/observation/5547> a qb:Observation .
-
-<http://data.openbudgets.eu/resource/dataset/aragon-2013-expenditure/observation/5548> a qb:Observation .
-
-<http://data.openbudgets.eu/resource/dataset/aragon-2013-expenditure/observation/5549> a qb:Observation .
-
-<http://data.openbudgets.eu/resource/dataset/aragon-2013-expenditure/observation/5550> a qb:Observation .
-
-<http://data.openbudgets.eu/resource/dataset/aragon-2013-expenditure/observation/5551> a qb:Observation .
-
-<http://data.openbudgets.eu/resource/dataset/aragon-2013-expenditure/observation/5552> a qb:Observation .
-
-<http://data.openbudgets.eu/resource/dataset/aragon-2013-expenditure/observation/5553> a qb:Observation .
-
-<http://data.openbudgets.eu/resource/dataset/aragon-2013-expenditure/observation/5554> a qb:Observation .
-
-<http://data.openbudgets.eu/resource/dataset/aragon-2013-expenditure/observation/5555> a qb:Observation .
-
-<http://data.openbudgets.eu/resource/dataset/aragon-2013-expenditure/observation/5556> a qb:Observation .
-
-<http://data.openbudgets.eu/resource/dataset/aragon-2013-expenditure/observation/5557> a qb:Observation .
-
-<http://data.openbudgets.eu/resource/dataset/aragon-2013-expenditure/observation/5558> a qb:Observation .
-
-<http://data.openbudgets.eu/resource/dataset/aragon-2013-expenditure/observation/5559> a qb:Observation .
-
-<http://data.openbudgets.eu/resource/dataset/aragon-2013-expenditure/observation/5560> a qb:Observation .
-
-<http://data.openbudgets.eu/resource/dataset/aragon-2013-expenditure/observation/5561> a qb:Observation .
-
-<http://data.openbudgets.eu/resource/dataset/aragon-2013-expenditure/observation/5562> a qb:Observation .
-
-<http://data.openbudgets.eu/resource/dataset/aragon-2013-expenditure/observation/5563> a qb:Observation .
-
-<http://data.openbudgets.eu/resource/dataset/aragon-2013-expenditure/observation/5564> a qb:Observation .
-
-<http://data.openbudgets.eu/resource/dataset/aragon-2013-expenditure/observation/5565> a qb:Observation .
-
-<http://data.openbudgets.eu/resource/dataset/aragon-2013-expenditure/observation/5566> a qb:Observation .
-
-<http://data.openbudgets.eu/resource/dataset/aragon-2013-expenditure/observation/5567> a qb:Observation .
-
-<http://data.openbudgets.eu/resource/dataset/aragon-2013-expenditure/observation/5568> a qb:Observation .
-
-<http://data.openbudgets.eu/resource/dataset/aragon-2013-expenditure/observation/5569> a qb:Observation .
-
-<http://data.openbudgets.eu/resource/dataset/aragon-2013-expenditure/observation/5570> a qb:Observation .
-
-<http://data.openbudgets.eu/resource/dataset/aragon-2013-expenditure/observation/5571> a qb:Observation .
-
-<http://data.openbudgets.eu/resource/dataset/aragon-2013-expenditure/observation/5572> a qb:Observation .
-
-<http://data.openbudgets.eu/resource/dataset/aragon-2013-expenditure/observation/5573> a qb:Observation .
-
-<http://data.openbudgets.eu/resource/dataset/aragon-2013-expenditure/observation/5574> a qb:Observation .
-
-<http://data.openbudgets.eu/resource/dataset/aragon-2013-expenditure/observation/5575> a qb:Observation .
-
-<http://data.openbudgets.eu/resource/dataset/aragon-2013-expenditure/observation/5576> a qb:Observation .
-
-<http://data.openbudgets.eu/resource/dataset/aragon-2013-expenditure/observation/5577> a qb:Observation .
-
-<http://data.openbudgets.eu/resource/dataset/aragon-2013-expenditure/observation/5578> a qb:Observation .
-
-<http://data.openbudgets.eu/resource/dataset/aragon-2013-expenditure/observation/5579> a qb:Observation .
-
-<http://data.openbudgets.eu/resource/dataset/aragon-2013-expenditure/observation/5580> a qb:Observation .
-
-<http://data.openbudgets.eu/resource/dataset/aragon-2013-expenditure/observation/5581> a qb:Observation .
-
-<http://data.openbudgets.eu/resource/dataset/aragon-2013-expenditure/observation/5582> a qb:Observation .
-
-<http://data.openbudgets.eu/resource/dataset/aragon-2013-expenditure/observation/5583> a qb:Observation .
-
-<http://data.openbudgets.eu/resource/dataset/aragon-2013-expenditure/observation/5584> a qb:Observation .
-
-<http://data.openbudgets.eu/resource/dataset/aragon-2013-expenditure/observation/5585> a qb:Observation .
-
-<http://data.openbudgets.eu/resource/dataset/aragon-2013-expenditure/observation/5586> a qb:Observation .
-
-<http://data.openbudgets.eu/resource/dataset/aragon-2013-expenditure/observation/5587> a qb:Observation .
-
-<http://data.openbudgets.eu/resource/dataset/aragon-2013-expenditure/observation/5588> a qb:Observation .
-
-<http://data.openbudgets.eu/resource/dataset/aragon-2013-expenditure/observation/5589> a qb:Observation .
-
-<http://data.openbudgets.eu/resource/dataset/aragon-2013-expenditure/observation/5590> a qb:Observation .
-
-<http://data.openbudgets.eu/resource/dataset/aragon-2013-expenditure/observation/5591> a qb:Observation .
-
-<http://data.openbudgets.eu/resource/dataset/aragon-2013-expenditure/observation/5592> a qb:Observation .
-
-<http://data.openbudgets.eu/resource/dataset/aragon-2013-expenditure/observation/5593> a qb:Observation .
-
-<http://data.openbudgets.eu/resource/dataset/aragon-2013-expenditure/observation/5594> a qb:Observation .
-
-<http://data.openbudgets.eu/resource/dataset/aragon-2013-expenditure/observation/5595> a qb:Observation .
-
-<http://data.openbudgets.eu/resource/dataset/aragon-2013-expenditure/observation/5596> a qb:Observation .
-
-<http://data.openbudgets.eu/resource/dataset/aragon-2013-expenditure/observation/5597> a qb:Observation .
-
-<http://data.openbudgets.eu/resource/dataset/aragon-2013-expenditure/observation/5598> a qb:Observation .
-
-<http://data.openbudgets.eu/resource/dataset/aragon-2013-expenditure/observation/5599> a qb:Observation .
-
-<http://data.openbudgets.eu/resource/dataset/aragon-2013-expenditure/observation/5600> a qb:Observation .
-
-<http://data.openbudgets.eu/resource/dataset/aragon-2013-expenditure/observation/5601> a qb:Observation .
-
-<http://data.openbudgets.eu/resource/dataset/aragon-2013-expenditure/observation/5602> a qb:Observation .
-
-<http://data.openbudgets.eu/resource/dataset/aragon-2013-expenditure/observation/5603> a qb:Observation .
-
-<http://data.openbudgets.eu/resource/dataset/aragon-2013-expenditure/observation/5604> a qb:Observation .
-
-<http://data.openbudgets.eu/resource/dataset/aragon-2013-expenditure/observation/5605> a qb:Observation .
-
-<http://data.openbudgets.eu/resource/dataset/aragon-2013-expenditure/observation/5606> a qb:Observation .
-
-<http://data.openbudgets.eu/resource/dataset/aragon-2013-expenditure/observation/5607> a qb:Observation .
-
-<http://data.openbudgets.eu/resource/dataset/aragon-2013-expenditure/observation/5608> a qb:Observation .
-
-<http://data.openbudgets.eu/resource/dataset/aragon-2013-expenditure/observation/5609> a qb:Observation .
-
-<http://data.openbudgets.eu/resource/dataset/aragon-2013-expenditure/observation/5610> a qb:Observation .
-
-<http://data.openbudgets.eu/resource/dataset/aragon-2013-expenditure/observation/5611> a qb:Observation .
-
-<http://data.openbudgets.eu/resource/dataset/aragon-2013-expenditure/observation/5612> a qb:Observation .
-
-<http://data.openbudgets.eu/resource/dataset/aragon-2013-expenditure/observation/5613> a qb:Observation .
-
-<http://data.openbudgets.eu/resource/dataset/aragon-2013-expenditure/observation/5614> a qb:Observation .
-
-<http://data.openbudgets.eu/resource/dataset/aragon-2013-expenditure/observation/5615> a qb:Observation .
-
-<http://data.openbudgets.eu/resource/dataset/aragon-2013-expenditure/observation/5616> a qb:Observation .
-
-<http://data.openbudgets.eu/resource/dataset/aragon-2013-expenditure/observation/5617> a qb:Observation .
-
-<http://data.openbudgets.eu/resource/dataset/aragon-2013-expenditure/observation/5618> a qb:Observation .
-
-<http://data.openbudgets.eu/resource/dataset/aragon-2013-expenditure/observation/5619> a qb:Observation .
-
-<http://data.openbudgets.eu/resource/dataset/aragon-2013-expenditure/observation/5620> a qb:Observation .
-
-<http://data.openbudgets.eu/resource/dataset/aragon-2013-expenditure/observation/5621> a qb:Observation .
-
-<http://data.openbudgets.eu/resource/dataset/aragon-2013-expenditure/observation/5622> a qb:Observation .
-
-<http://data.openbudgets.eu/resource/dataset/aragon-2013-expenditure/observation/5623> a qb:Observation .
-
-<http://data.openbudgets.eu/resource/dataset/aragon-2013-expenditure/observation/5624> a qb:Observation .
-
-<http://data.openbudgets.eu/resource/dataset/aragon-2013-expenditure/observation/5625> a qb:Observation .
-
-<http://data.openbudgets.eu/resource/dataset/aragon-2013-expenditure/observation/5626> a qb:Observation .
-
-<http://data.openbudgets.eu/resource/dataset/aragon-2013-expenditure/observation/5627> a qb:Observation .
-
-<http://data.openbudgets.eu/resource/dataset/aragon-2013-expenditure/observation/5628> a qb:Observation .
-
-<http://data.openbudgets.eu/resource/dataset/aragon-2013-expenditure/observation/5629> a qb:Observation .
-
-<http://data.openbudgets.eu/resource/dataset/aragon-2013-expenditure/observation/5630> a qb:Observation .
-
-<http://data.openbudgets.eu/resource/dataset/aragon-2013-expenditure/observation/5631> a qb:Observation .
-
-<http://data.openbudgets.eu/resource/dataset/aragon-2013-expenditure/observation/5632> a qb:Observation .
-
-<http://data.openbudgets.eu/resource/dataset/aragon-2013-expenditure/observation/5633> a qb:Observation .
-
-<http://data.openbudgets.eu/resource/dataset/aragon-2013-expenditure/observation/5634> a qb:Observation .
-
-<http://data.openbudgets.eu/resource/dataset/aragon-2013-expenditure/observation/5635> a qb:Observation .
-
-<http://data.openbudgets.eu/resource/dataset/aragon-2013-expenditure/observation/5636> a qb:Observation .
-
-<http://data.openbudgets.eu/resource/dataset/aragon-2013-expenditure/observation/5637> a qb:Observation .
-
-<http://data.openbudgets.eu/resource/dataset/aragon-2013-expenditure/observation/5638> a qb:Observation .
-
-<http://data.openbudgets.eu/resource/dataset/aragon-2013-expenditure/observation/5639> a qb:Observation .
-
-<http://data.openbudgets.eu/resource/dataset/aragon-2013-expenditure/observation/5640> a qb:Observation .
-
-<http://data.openbudgets.eu/resource/dataset/aragon-2013-expenditure/observation/5641> a qb:Observation .
-
-<http://data.openbudgets.eu/resource/dataset/aragon-2013-expenditure/observation/5642> a qb:Observation .
-
-<http://data.openbudgets.eu/resource/dataset/aragon-2013-expenditure/observation/5643> a qb:Observation .
-
-<http://data.openbudgets.eu/resource/dataset/aragon-2013-expenditure/observation/5644> a qb:Observation .
-
-<http://data.openbudgets.eu/resource/dataset/aragon-2013-expenditure/observation/5645> a qb:Observation .
-
-<http://data.openbudgets.eu/resource/dataset/aragon-2013-expenditure/observation/5646> a qb:Observation .
-
-<http://data.openbudgets.eu/resource/dataset/aragon-2013-expenditure/observation/5647> a qb:Observation .
-
-<http://data.openbudgets.eu/resource/dataset/aragon-2013-expenditure/observation/5648> a qb:Observation .
-
-<http://data.openbudgets.eu/resource/dataset/aragon-2013-expenditure/observation/5649> a qb:Observation .
-
-<http://data.openbudgets.eu/resource/dataset/aragon-2013-expenditure/observation/5650> a qb:Observation .
-
-<http://data.openbudgets.eu/resource/dataset/aragon-2013-expenditure/observation/5651> a qb:Observation .
-
-<http://data.openbudgets.eu/resource/dataset/aragon-2013-expenditure/observation/5652> a qb:Observation .
-
-<http://data.openbudgets.eu/resource/dataset/aragon-2013-expenditure/observation/5653> a qb:Observation .
-
-<http://data.openbudgets.eu/resource/dataset/aragon-2013-expenditure/observation/5654> a qb:Observation .
-
-<http://data.openbudgets.eu/resource/dataset/aragon-2013-expenditure/observation/5655> a qb:Observation .
-
-<http://data.openbudgets.eu/resource/dataset/aragon-2013-expenditure/observation/5656> a qb:Observation .
-
-<http://data.openbudgets.eu/resource/dataset/aragon-2013-expenditure/observation/5657> a qb:Observation .
-
-<http://data.openbudgets.eu/resource/dataset/aragon-2013-expenditure/observation/5658> a qb:Observation .
-
-<http://data.openbudgets.eu/resource/dataset/aragon-2013-expenditure/observation/5659> a qb:Observation .
-
-<http://data.openbudgets.eu/resource/dataset/aragon-2013-expenditure/observation/5660> a qb:Observation .
+obeu-dimension:fiscalPeriod a rdf:Property , qb:CodedProperty , qb:DimensionProperty ;
+	rdfs:label "fiscal period"@en ;
+	rdfs:comment "The period of time reflected in financial statements."@en ;
+	rdfs:subPropertyOf sdmx-dimension:refPeriod ;
+	rdfs:range time:Interval ;
+	rdfs:isDefinedBy <http://data.openbudgets.eu/ontology> ;
+	qb:concept sdmx-concept:refPeriod .
+
+obeu:FunctionalClassification a skos:Concept ;
+	rdfs:isDefinedBy <http://data.openbudgets.eu/ontology> ;
+	skos:prefLabel "Functional classification"@en .
+
+obeu-dimension:programmeClassification a rdf:Property , qb:CodedProperty , qb:DimensionProperty ;
+	rdfs:label "programme classification"@en ;
+	rdfs:comment "Grouping of expenditure by common objective for budgeting purposes."@en ;
+	rdfs:subPropertyOf obeu-dimension:classification ;
+	rdfs:range skos:Concept ;
+	rdfs:isDefinedBy <http://data.openbudgets.eu/ontology> ;
+	qb:concept obeu:ProgrammeClassification .
+
+obeu:ProgrammeClassification a skos:Concept ;
+	rdfs:isDefinedBy <http://data.openbudgets.eu/ontology> ;
+	skos:prefLabel "Programme classification"@en .
+
+obeu:EconomicClassification a skos:Concept ;
+	rdfs:isDefinedBy <http://data.openbudgets.eu/ontology> ;
+	skos:prefLabel "Economic classification"@en .
+
+obeu:AdministrativeClassification a skos:Concept ;
+	rdfs:isDefinedBy <http://data.openbudgets.eu/ontology> ;
+	skos:prefLabel "Administrative classification"@en .
+
+obeu-attribute:taxesIncluded a rdf:Property , qb:CodedProperty , qb:AttributeProperty ;
+	rdfs:label "taxes included"@en ;
+	rdfs:comment "Indicates whether the reported amount includes taxes."@en ;
+	rdfs:range xsd:boolean ;
+	rdfs:isDefinedBy <http://data.openbudgets.eu/ontology> .
 
 <http://data.openbudgets.eu/resource/dataset/aragon-2013-expenditure> a qb:DataSet ;
 	obeu-dimension:budgetaryUnit <http://dbpedia.org/page/Aragon> ;
