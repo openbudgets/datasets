@@ -39261,34 +39261,34 @@ obeu-attribute:taxesIncluded a rdf:Property , qb:CodedProperty , qb:AttributePro
 
 <http://data.openbudgets.eu/ontology/dsd/aragon-budget-exp> a qb:DataStructureDefinition ;
 	rdfs:label "Data structure definition for the expenditure part of the Aragonian budget (autonomous community in northeastern Spain)."@en ;
-	qb:component _:node1af6l5ht1x17 , _:node1af6l5ht1x18 , _:node1af6l5ht1x19 , _:node1af6l5ht1x20 , _:node1af6l5ht1x21 , _:node1af6l5ht1x22 , _:node1af6l5ht1x23 , _:node1af6l5ht1x24 , _:node1af6l5ht1x25 .
+	qb:component _:node1afguj3c5x17 , _:node1afguj3c5x18 , _:node1afguj3c5x19 , _:node1afguj3c5x20 , _:node1afguj3c5x21 , _:node1afguj3c5x22 , _:node1afguj3c5x23 , _:node1afguj3c5x24 , _:node1afguj3c5x25 .
 
-_:node1af6l5ht1x17 qb:dimension obeu-dimension:budgetaryUnit ;
+_:node1afguj3c5x17 qb:dimension obeu-dimension:budgetaryUnit ;
 	qb:componentAttachment qb:DataSet .
 
-_:node1af6l5ht1x18 qb:dimension obeu-dimension:operationCharacter ;
+_:node1afguj3c5x18 qb:dimension obeu-dimension:operationCharacter ;
 	qb:componentAttachment qb:DataSet .
 
-_:node1af6l5ht1x19 qb:dimension obeu-dimension:fiscalYear ;
+_:node1afguj3c5x19 qb:dimension obeu-dimension:fiscalYear ;
 	qb:componentAttachment qb:DataSet .
 
-_:node1af6l5ht1x20 qb:dimension aragon-dimension:administrativeClassification .
+_:node1afguj3c5x20 qb:dimension aragon-dimension:administrativeClassification .
 
-_:node1af6l5ht1x21 qb:dimension aragon-dimension:functionalClassification .
+_:node1afguj3c5x21 qb:dimension aragon-dimension:functionalClassification .
 
-_:node1af6l5ht1x22 qb:dimension aragon-dimension:economicClassification .
+_:node1afguj3c5x22 qb:dimension aragon-dimension:economicClassification .
 
-_:node1af6l5ht1x23 qb:dimension aragon-dimension:fundingClassification .
+_:node1afguj3c5x23 qb:dimension aragon-dimension:fundingClassification .
 
-_:node1af6l5ht1x24 qb:componentAttachment qb:DataSet ;
+_:node1afguj3c5x24 qb:componentAttachment qb:DataSet ;
 	qb:attribute obeu-attribute:currency ;
 	qb:componentRequired true .
 
-_:node1af6l5ht1x25 qb:measure obeu-measure:amount .
+_:node1afguj3c5x25 qb:measure obeu-measure:amount .
 
 <http://data.openbudgets.eu/resource/dataset/aragon-2013-expenditure> a qb:DataSet ;
 	obeu-dimension:budgetaryUnit <http://dbpedia.org/page/Aragon> ;
 	obeu-dimension:fiscalYear <http://reference.data.gov.uk/id/year/2013> ;
 	obeu-dimension:operationCharacter obeu-operation:Expenditure ;
 	obeu-attribute:currency <http://data.openbudgets.eu/codelist/currency/EUR> ;
-	qb:structure <http://example.openbudgets.eu/ontology/dsd/aragon-budget> .
+	qb:structure <http://data.openbudgets.eu/ontology/dsd/aragon-budget-exp> .
