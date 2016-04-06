@@ -23,7 +23,7 @@
 # ----- DSD -----
 
 
-<http://data.openbudgets.eu/ontology/dsd/aragon-budget-exp-2013> a qb:DataStructureDefinition ;
+<http://data.openbudgets.eu/ontology/dsd/aragon-budget-inc-2007> a qb:DataStructureDefinition ;
   rdfs:label "Data structure definition for the expenditure part of the Aragonian budget (autonomous community in northeastern Spain)."@en ;  
 
   qb:component [ qb:dimension obeu-dimension:budgetaryUnit ;
@@ -32,10 +32,9 @@
                  qb:componentAttachment qb:DataSet ],
                [ qb:dimension obeu-dimension:fiscalYear ;
                  qb:componentAttachment qb:DataSet ],
-               [ qb:dimension aragon-dimension:administrativeClassification ],
-               [ qb:dimension aragon-dimension:functionalClassification ],     
-         [ qb:dimension aragon-dimension:economicClassification ],
-         [ qb:dimension aragon-dimension:fundingClassification ],        
+               [ qb:dimension aragon-dimension:administrativeClassification ],  
+			   [ qb:dimension aragon-dimension:economicClassification ],
+			   [ qb:dimension aragon-dimension:fundingClassification ],			   
                [ qb:attribute obeu-attribute:currency ;
                  qb:componentRequired true ;
                  qb:componentAttachment qb:DataSet ],
@@ -44,34 +43,26 @@
 
 # ----- Component properties -----
 
-aragon-dimension:administrativeClassification a rdf:Property, qb:CodedProperty, qb:DimensionProperty;
+aragon-dimension:administrativeClassification a rdf:Property, qb:CodedProperty, qb:DimensionProperty, obeu-dimension:administrativeClassification ;
   rdfs:label "Organization managing the planned budget"@en ;
   rdfs:comment "The administrative classification is organized hierarchical in four levels."@en ;
-  rdfs:subPropertyOf obeu-dimension:administrativeClassification ;
+  rdfs:subPropertyOf obeu-dimension:classification ;
   rdfs:range skos:Concept ;
-  qb:codeList <http://data.openbudgets.eu/resource/codelist/estructura_organica_aragon_2013/> ;
+  qb:codeList <http://data.openbudgets.eu/resource/codelist/estructura_organica_aragon_2007/> ;
   rdfs:isDefinedBy <http://data.openbudgets.eu/ontology/dsd/aragon-budget-exp> .
 
-  aragon-dimension:functionalClassification a rdf:Property, qb:CodedProperty, qb:DimensionProperty;
-  rdfs:label "Functional Classification"@en ;
-  rdfs:comment "Classifies expenditures by general government sector and by the purpose of the expenditure. The functional classification is organized hierarchical into groups, functions, sub-functions and programs."@en ;
-  rdfs:subPropertyOf obeu-dimension:functionalClassification ;
-  rdfs:range skos:Concept ;
-  qb:codeList <http://data.openbudgets.eu/resource/codelist/estructura_funcional_aragon_2013> ;
-  rdfs:isDefinedBy <http://data.openbudgets.eu/ontology/dsd/aragon-budget-exp> .
-
-aragon-dimension:economicClassification a rdf:Property, qb:CodedProperty, qb:DimensionProperty;
+aragon-dimension:economicClassification a rdf:Property, qb:CodedProperty, qb:DimensionProperty, obeu-dimension:economicClassification ;
   rdfs:label "Economic Classification"@en ;
   rdfs:comment "Identifies the type of expenditure incurred or source of revenues. The economic classification is organized hierarchical into chapters, articles, concepts, and sub-concepts. This dimension is used for both, expenditure and revenue."@en ;
-  rdfs:subPropertyOf obeu-dimension:economicClassification ;
-  rdfs:range skos:Concept  ;
-  qb:codeList <http://data.openbudgets.eu/resource/codelist/estructura_economica_g_aragon_2013/> ;
+  rdfs:subPropertyOf obeu-dimension:classification ;
+  rdfs:range skos:Concept ;  
+  qb:codeList <http://data.openbudgets.eu/resource/codelist/estructura_economica_i_aragon_2007/> ;
   rdfs:isDefinedBy <http://data.openbudgets.eu/ontology/dsd/aragon-budget-exp> .
 
- aragon-dimension:fundingClassification a rdf:Property, qb:CodedProperty, qb:DimensionProperty;
+ aragon-dimension:fundingClassification a rdf:Property, qb:CodedProperty, qb:DimensionProperty ;
   rdfs:label "Funding Classification"@en ;
   rdfs:comment "Describes the origin of the funding. The funding classification is organized hierarchical into origin, fund, and program. This dimension is used for both, expenditure and revenue."@en ;
   rdfs:subPropertyOf obeu-dimension:classification ;
-  rdfs:range skos:Concept ;
-  qb:codeList <http://data.openbudgets.eu/resource/codelist/estructura_financiacion_g_aragon_2013/> ;
+  rdfs:range skos:Concept ;  
+  qb:codeList <http://data.openbudgets.eu/resource/codelist/estructura_financiacion_i_aragon_2007/> ;
   rdfs:isDefinedBy <http://data.openbudgets.eu/ontology/dsd/aragon-budget-exp> .
