@@ -1,0 +1,645 @@
+{
+  "@graph": [
+    {
+      "@graph": [
+        {
+          "@id": "http://demo.etl.linkedpipes.com/resources/pipelines/created-1459954551242",
+          "@type": [
+            "http://linkedpipes.com/ontology/Pipeline"
+          ],
+          "http://www.w3.org/2004/02/skos/core#prefLabel": "ECB currency exchange rates"
+        },
+        {
+          "@id": "http://demo.etl.linkedpipes.com/resources/pipelines/created-1459954551242/components/f0e132c4-bdd2-4344-a511-afa5a7bca521",
+          "@type": [
+            "http://linkedpipes.com/ontology/Component"
+          ],
+          "http://www.w3.org/2004/02/skos/core#prefLabel": "HTTP get",
+          "http://linkedpipes.com/ontology/template": {
+            "@id": "http://demo.etl.linkedpipes.com/resources/components/e-httpGetFile"
+          },
+          "http://linkedpipes.com/ontology/x": 180,
+          "http://linkedpipes.com/ontology/y": 60,
+          "http://linkedpipes.com/ontology/configurationGraph": {
+            "@id": "http://demo.etl.linkedpipes.com/resources/pipelines/created-1459954551242/components/f0e132c4-bdd2-4344-a511-afa5a7bca521/configuration"
+          }
+        },
+        {
+          "@id": "http://demo.etl.linkedpipes.com/resources/pipelines/created-1459954551242/components/a4fb8fe2-9415-4a96-9ffe-18b5b06caac2",
+          "@type": [
+            "http://linkedpipes.com/ontology/Component"
+          ],
+          "http://www.w3.org/2004/02/skos/core#prefLabel": "Decompress archive",
+          "http://linkedpipes.com/ontology/template": {
+            "@id": "http://demo.etl.linkedpipes.com/resources/components/t-unpack"
+          },
+          "http://linkedpipes.com/ontology/x": 340,
+          "http://linkedpipes.com/ontology/y": 60,
+          "http://linkedpipes.com/ontology/configurationGraph": {
+            "@id": "http://demo.etl.linkedpipes.com/resources/pipelines/created-1459954551242/components/a4fb8fe2-9415-4a96-9ffe-18b5b06caac2/configuration"
+          }
+        },
+        {
+          "@id": "http://demo.etl.linkedpipes.com/resources/pipelines/created-1459954551242/connection/bbe48c42-f821-4ce0-bfbe-fdd01a57ad70",
+          "@type": [
+            "http://linkedpipes.com/ontology/Connection"
+          ],
+          "http://linkedpipes.com/ontology/sourceComponent": {
+            "@id": "http://demo.etl.linkedpipes.com/resources/pipelines/created-1459954551242/components/f0e132c4-bdd2-4344-a511-afa5a7bca521"
+          },
+          "http://linkedpipes.com/ontology/sourceBinding": "FilesOutput",
+          "http://linkedpipes.com/ontology/targetComponent": {
+            "@id": "http://demo.etl.linkedpipes.com/resources/pipelines/created-1459954551242/components/a4fb8fe2-9415-4a96-9ffe-18b5b06caac2"
+          },
+          "http://linkedpipes.com/ontology/targetBinding": "FilesInput"
+        },
+        {
+          "@id": "http://demo.etl.linkedpipes.com/resources/pipelines/created-1459954551242/components/192a43e1-65b8-4f3d-bdd0-c269a865a319",
+          "@type": [
+            "http://linkedpipes.com/ontology/Component"
+          ],
+          "http://www.w3.org/2004/02/skos/core#prefLabel": "Tabular",
+          "http://linkedpipes.com/ontology/template": {
+            "@id": "http://demo.etl.linkedpipes.com/resources/components/t-tabular"
+          },
+          "http://linkedpipes.com/ontology/x": 600,
+          "http://linkedpipes.com/ontology/y": 60,
+          "http://linkedpipes.com/ontology/configurationGraph": {
+            "@id": "http://demo.etl.linkedpipes.com/resources/pipelines/created-1459954551242/components/192a43e1-65b8-4f3d-bdd0-c269a865a319/configuration"
+          }
+        },
+        {
+          "@id": "http://demo.etl.linkedpipes.com/resources/pipelines/created-1459954551242/connection/01c68ab3-115b-4bf7-aa28-9c2a0351fe33",
+          "@type": [
+            "http://linkedpipes.com/ontology/Connection"
+          ],
+          "http://linkedpipes.com/ontology/sourceComponent": {
+            "@id": "http://demo.etl.linkedpipes.com/resources/pipelines/created-1459954551242/components/a4fb8fe2-9415-4a96-9ffe-18b5b06caac2"
+          },
+          "http://linkedpipes.com/ontology/sourceBinding": "FilesOutput",
+          "http://linkedpipes.com/ontology/targetComponent": {
+            "@id": "http://demo.etl.linkedpipes.com/resources/pipelines/created-1459954551242/components/192a43e1-65b8-4f3d-bdd0-c269a865a319"
+          },
+          "http://linkedpipes.com/ontology/targetBinding": "InputFiles"
+        },
+        {
+          "@id": "http://demo.etl.linkedpipes.com/resources/pipelines/created-1459954551242/components/41a03f5e-e1ce-408e-a747-dc4cb22101f4",
+          "@type": [
+            "http://linkedpipes.com/ontology/Component"
+          ],
+          "http://www.w3.org/2004/02/skos/core#prefLabel": "SPARQL construct",
+          "http://linkedpipes.com/ontology/template": {
+            "@id": "http://demo.etl.linkedpipes.com/resources/components/t-sparqlConstruct"
+          },
+          "http://linkedpipes.com/ontology/x": 760,
+          "http://linkedpipes.com/ontology/y": 60,
+          "http://linkedpipes.com/ontology/configurationGraph": {
+            "@id": "http://demo.etl.linkedpipes.com/resources/pipelines/created-1459954551242/components/41a03f5e-e1ce-408e-a747-dc4cb22101f4/configuration"
+          }
+        },
+        {
+          "@id": "http://demo.etl.linkedpipes.com/resources/pipelines/created-1459954551242/connection/7cf35fd4-40ee-4d61-9c25-b2e4d82be051",
+          "@type": [
+            "http://linkedpipes.com/ontology/Connection"
+          ],
+          "http://linkedpipes.com/ontology/sourceComponent": {
+            "@id": "http://demo.etl.linkedpipes.com/resources/pipelines/created-1459954551242/components/192a43e1-65b8-4f3d-bdd0-c269a865a319"
+          },
+          "http://linkedpipes.com/ontology/sourceBinding": "OutputRdf",
+          "http://linkedpipes.com/ontology/targetComponent": {
+            "@id": "http://demo.etl.linkedpipes.com/resources/pipelines/created-1459954551242/components/41a03f5e-e1ce-408e-a747-dc4cb22101f4"
+          },
+          "http://linkedpipes.com/ontology/targetBinding": "InputRdf"
+        },
+        {
+          "@id": "http://demo.etl.linkedpipes.com/resources/pipelines/created-1459954551242/components/b95c79a7-f1a9-44cb-a082-9d1fe85b3dc5",
+          "@type": [
+            "http://linkedpipes.com/ontology/Component"
+          ],
+          "http://www.w3.org/2004/02/skos/core#prefLabel": "Text holder",
+          "http://linkedpipes.com/ontology/template": {
+            "@id": "http://demo.etl.linkedpipes.com/resources/components/e-textHolder"
+          },
+          "http://linkedpipes.com/ontology/x": 180,
+          "http://linkedpipes.com/ontology/y": 160,
+          "http://linkedpipes.com/ontology/configurationGraph": {
+            "@id": "http://demo.etl.linkedpipes.com/resources/pipelines/created-1459954551242/components/b95c79a7-f1a9-44cb-a082-9d1fe85b3dc5/configuration"
+          }
+        },
+        {
+          "@id": "http://demo.etl.linkedpipes.com/resources/pipelines/created-1459954551242/components/f617e186-6cf9-43da-9263-39d16d8649d4",
+          "@type": [
+            "http://linkedpipes.com/ontology/Component"
+          ],
+          "http://www.w3.org/2004/02/skos/core#prefLabel": "Files to RDF",
+          "http://linkedpipes.com/ontology/template": {
+            "@id": "http://demo.etl.linkedpipes.com/resources/components/t-filesToRdf"
+          },
+          "http://linkedpipes.com/ontology/x": 340,
+          "http://linkedpipes.com/ontology/y": 160
+        },
+        {
+          "@id": "http://demo.etl.linkedpipes.com/resources/pipelines/created-1459954551242/connection/52528d5b-bdf9-45ef-a4bd-2bc2ad433e79",
+          "@type": [
+            "http://linkedpipes.com/ontology/Connection"
+          ],
+          "http://linkedpipes.com/ontology/sourceComponent": {
+            "@id": "http://demo.etl.linkedpipes.com/resources/pipelines/created-1459954551242/components/b95c79a7-f1a9-44cb-a082-9d1fe85b3dc5"
+          },
+          "http://linkedpipes.com/ontology/sourceBinding": "FilesOutput",
+          "http://linkedpipes.com/ontology/targetComponent": {
+            "@id": "http://demo.etl.linkedpipes.com/resources/pipelines/created-1459954551242/components/f617e186-6cf9-43da-9263-39d16d8649d4"
+          },
+          "http://linkedpipes.com/ontology/targetBinding": "InputFiles"
+        },
+        {
+          "@id": "http://demo.etl.linkedpipes.com/resources/pipelines/created-1459954551242/components/0800b28b-c290-45e1-85ba-792d256df711",
+          "@type": [
+            "http://linkedpipes.com/ontology/Component"
+          ],
+          "http://www.w3.org/2004/02/skos/core#prefLabel": "Graph merger",
+          "http://linkedpipes.com/ontology/template": {
+            "@id": "http://demo.etl.linkedpipes.com/resources/components/t-graphMerger"
+          },
+          "http://linkedpipes.com/ontology/x": 540,
+          "http://linkedpipes.com/ontology/y": 160
+        },
+        {
+          "@id": "http://demo.etl.linkedpipes.com/resources/pipelines/created-1459954551242/connection/69f2b5a4-ebdb-4894-9f2a-994c24fa7255",
+          "@type": [
+            "http://linkedpipes.com/ontology/Connection"
+          ],
+          "http://linkedpipes.com/ontology/sourceComponent": {
+            "@id": "http://demo.etl.linkedpipes.com/resources/pipelines/created-1459954551242/components/f617e186-6cf9-43da-9263-39d16d8649d4"
+          },
+          "http://linkedpipes.com/ontology/sourceBinding": "OutputRdf",
+          "http://linkedpipes.com/ontology/targetComponent": {
+            "@id": "http://demo.etl.linkedpipes.com/resources/pipelines/created-1459954551242/components/0800b28b-c290-45e1-85ba-792d256df711"
+          },
+          "http://linkedpipes.com/ontology/targetBinding": "InputRdf"
+        },
+        {
+          "@id": "http://demo.etl.linkedpipes.com/resources/pipelines/created-1459954551242/components/35b19f23-ee93-4c58-8d57-efa6e521b3bf",
+          "@type": [
+            "http://linkedpipes.com/ontology/Component"
+          ],
+          "http://www.w3.org/2004/02/skos/core#prefLabel": "RDF to file",
+          "http://linkedpipes.com/ontology/template": {
+            "@id": "http://demo.etl.linkedpipes.com/resources/components/t-rdfToFile"
+          },
+          "http://linkedpipes.com/ontology/x": 980,
+          "http://linkedpipes.com/ontology/y": 160,
+          "http://linkedpipes.com/ontology/configurationGraph": {
+            "@id": "http://demo.etl.linkedpipes.com/resources/pipelines/created-1459954551242/components/35b19f23-ee93-4c58-8d57-efa6e521b3bf/configuration"
+          }
+        },
+        {
+          "@id": "http://demo.etl.linkedpipes.com/resources/pipelines/created-1459954551242/connection/100aaf66-3046-45f1-b710-f95e1437010a",
+          "@type": [
+            "http://linkedpipes.com/ontology/Connection"
+          ],
+          "http://linkedpipes.com/ontology/sourceComponent": {
+            "@id": "http://demo.etl.linkedpipes.com/resources/pipelines/created-1459954551242/components/0800b28b-c290-45e1-85ba-792d256df711"
+          },
+          "http://linkedpipes.com/ontology/sourceBinding": "OutputRdf",
+          "http://linkedpipes.com/ontology/targetComponent": {
+            "@id": "http://demo.etl.linkedpipes.com/resources/pipelines/created-1459954551242/components/35b19f23-ee93-4c58-8d57-efa6e521b3bf"
+          },
+          "http://linkedpipes.com/ontology/targetBinding": "InputRdf"
+        },
+        {
+          "@id": "http://demo.etl.linkedpipes.com/resources/pipelines/created-1459954551242/components/47c215a4-201e-4ec8-bf4b-e1d88191e4ed",
+          "@type": [
+            "http://linkedpipes.com/ontology/Component"
+          ],
+          "http://www.w3.org/2004/02/skos/core#prefLabel": "RDF to file",
+          "http://linkedpipes.com/ontology/template": {
+            "@id": "http://demo.etl.linkedpipes.com/resources/components/t-rdfToFile"
+          },
+          "http://linkedpipes.com/ontology/x": 980,
+          "http://linkedpipes.com/ontology/y": 60,
+          "http://linkedpipes.com/ontology/configurationGraph": {
+            "@id": "http://demo.etl.linkedpipes.com/resources/pipelines/created-1459954551242/components/47c215a4-201e-4ec8-bf4b-e1d88191e4ed/configuration"
+          }
+        },
+        {
+          "@id": "http://demo.etl.linkedpipes.com/resources/pipelines/created-1459954551242/connection/6975f73a-b493-4dfb-92dc-9895b64e9094",
+          "@type": [
+            "http://linkedpipes.com/ontology/Connection"
+          ],
+          "http://linkedpipes.com/ontology/sourceComponent": {
+            "@id": "http://demo.etl.linkedpipes.com/resources/pipelines/created-1459954551242/components/41a03f5e-e1ce-408e-a747-dc4cb22101f4"
+          },
+          "http://linkedpipes.com/ontology/sourceBinding": "OutputRdf",
+          "http://linkedpipes.com/ontology/targetComponent": {
+            "@id": "http://demo.etl.linkedpipes.com/resources/pipelines/created-1459954551242/components/47c215a4-201e-4ec8-bf4b-e1d88191e4ed"
+          },
+          "http://linkedpipes.com/ontology/targetBinding": "InputRdf"
+        },
+        {
+          "@id": "http://demo.etl.linkedpipes.com/resources/pipelines/created-1459954551242/components/1e20d3ab-fdcb-4f10-b1b9-c589eef21b03",
+          "@type": [
+            "http://linkedpipes.com/ontology/Component"
+          ],
+          "http://www.w3.org/2004/02/skos/core#prefLabel": "Dataset metadata",
+          "http://linkedpipes.com/ontology/template": {
+            "@id": "http://demo.etl.linkedpipes.com/resources/components/e-datasetMetadata"
+          },
+          "http://linkedpipes.com/ontology/x": 760,
+          "http://linkedpipes.com/ontology/y": 220,
+          "http://linkedpipes.com/ontology/configurationGraph": {
+            "@id": "http://demo.etl.linkedpipes.com/resources/pipelines/created-1459954551242/components/1e20d3ab-fdcb-4f10-b1b9-c589eef21b03/configuration"
+          }
+        },
+        {
+          "@id": "http://demo.etl.linkedpipes.com/resources/pipelines/created-1459954551242/components/dd1186e1-4d6a-452c-8090-e8ca266921cb",
+          "@type": [
+            "http://linkedpipes.com/ontology/Component"
+          ],
+          "http://www.w3.org/2004/02/skos/core#prefLabel": "Distribution metadata",
+          "http://linkedpipes.com/ontology/template": {
+            "@id": "http://demo.etl.linkedpipes.com/resources/components/e-distributionMetadata"
+          },
+          "http://linkedpipes.com/ontology/x": 760,
+          "http://linkedpipes.com/ontology/y": 300,
+          "http://linkedpipes.com/ontology/configurationGraph": {
+            "@id": "http://demo.etl.linkedpipes.com/resources/pipelines/created-1459954551242/components/dd1186e1-4d6a-452c-8090-e8ca266921cb/configuration"
+          }
+        },
+        {
+          "@id": "http://demo.etl.linkedpipes.com/resources/pipelines/created-1459954551242/connection/1a3d6d63-bfb6-4f4d-9a40-88632dcccc90",
+          "@type": [
+            "http://linkedpipes.com/ontology/Connection"
+          ],
+          "http://linkedpipes.com/ontology/sourceComponent": {
+            "@id": "http://demo.etl.linkedpipes.com/resources/pipelines/created-1459954551242/components/1e20d3ab-fdcb-4f10-b1b9-c589eef21b03"
+          },
+          "http://linkedpipes.com/ontology/sourceBinding": "Metadata",
+          "http://linkedpipes.com/ontology/targetComponent": {
+            "@id": "http://demo.etl.linkedpipes.com/resources/pipelines/created-1459954551242/components/dd1186e1-4d6a-452c-8090-e8ca266921cb"
+          },
+          "http://linkedpipes.com/ontology/targetBinding": "DatasetMetadata"
+        },
+        {
+          "@id": "http://demo.etl.linkedpipes.com/resources/pipelines/created-1459954551242/components/68150cee-f0d6-4715-bdb7-4fe04cba22cd",
+          "@type": [
+            "http://linkedpipes.com/ontology/Component"
+          ],
+          "http://www.w3.org/2004/02/skos/core#prefLabel": "RDF to file",
+          "http://linkedpipes.com/ontology/template": {
+            "@id": "http://demo.etl.linkedpipes.com/resources/components/t-rdfToFile"
+          },
+          "http://linkedpipes.com/ontology/x": 980,
+          "http://linkedpipes.com/ontology/y": 260,
+          "http://linkedpipes.com/ontology/configurationGraph": {
+            "@id": "http://demo.etl.linkedpipes.com/resources/pipelines/created-1459954551242/components/68150cee-f0d6-4715-bdb7-4fe04cba22cd/configuration"
+          }
+        },
+        {
+          "@id": "http://demo.etl.linkedpipes.com/resources/pipelines/created-1459954551242/connection/76cfa81b-3159-4e8f-8617-2e5c532f7f25",
+          "@type": [
+            "http://linkedpipes.com/ontology/Connection"
+          ],
+          "http://linkedpipes.com/ontology/sourceComponent": {
+            "@id": "http://demo.etl.linkedpipes.com/resources/pipelines/created-1459954551242/components/1e20d3ab-fdcb-4f10-b1b9-c589eef21b03"
+          },
+          "http://linkedpipes.com/ontology/sourceBinding": "Metadata",
+          "http://linkedpipes.com/ontology/targetComponent": {
+            "@id": "http://demo.etl.linkedpipes.com/resources/pipelines/created-1459954551242/components/68150cee-f0d6-4715-bdb7-4fe04cba22cd"
+          },
+          "http://linkedpipes.com/ontology/targetBinding": "InputRdf"
+        },
+        {
+          "@id": "http://demo.etl.linkedpipes.com/resources/pipelines/created-1459954551242/connection/dc9ba935-e9bc-4113-bea4-54275fb04d47",
+          "@type": [
+            "http://linkedpipes.com/ontology/Connection"
+          ],
+          "http://linkedpipes.com/ontology/sourceComponent": {
+            "@id": "http://demo.etl.linkedpipes.com/resources/pipelines/created-1459954551242/components/dd1186e1-4d6a-452c-8090-e8ca266921cb"
+          },
+          "http://linkedpipes.com/ontology/sourceBinding": "Metadata",
+          "http://linkedpipes.com/ontology/targetComponent": {
+            "@id": "http://demo.etl.linkedpipes.com/resources/pipelines/created-1459954551242/components/68150cee-f0d6-4715-bdb7-4fe04cba22cd"
+          },
+          "http://linkedpipes.com/ontology/targetBinding": "InputRdf"
+        },
+        {
+          "@id": "http://demo.etl.linkedpipes.com/resources/pipelines/created-1459954551242/components/d52a0554-b6f6-4e0d-a380-d833d29bf909",
+          "@type": [
+            "http://linkedpipes.com/ontology/Component"
+          ],
+          "http://www.w3.org/2004/02/skos/core#prefLabel": "Files to SCP",
+          "http://linkedpipes.com/ontology/template": {
+            "@id": "http://demo.etl.linkedpipes.com/resources/components/l-filesToScp"
+          },
+          "http://linkedpipes.com/ontology/x": 1240,
+          "http://linkedpipes.com/ontology/y": 160,
+          "http://linkedpipes.com/ontology/configurationGraph": {
+            "@id": "http://demo.etl.linkedpipes.com/resources/pipelines/created-1459954551242/components/d52a0554-b6f6-4e0d-a380-d833d29bf909/configuration"
+          }
+        },
+        {
+          "@id": "http://demo.etl.linkedpipes.com/resources/pipelines/created-1459954551242/connection/26461571-70d6-4cb4-829f-94a9b295b973",
+          "@type": [
+            "http://linkedpipes.com/ontology/Connection"
+          ],
+          "http://linkedpipes.com/ontology/sourceComponent": {
+            "@id": "http://demo.etl.linkedpipes.com/resources/pipelines/created-1459954551242/components/47c215a4-201e-4ec8-bf4b-e1d88191e4ed"
+          },
+          "http://linkedpipes.com/ontology/sourceBinding": "OutputFile",
+          "http://linkedpipes.com/ontology/targetComponent": {
+            "@id": "http://demo.etl.linkedpipes.com/resources/pipelines/created-1459954551242/components/d52a0554-b6f6-4e0d-a380-d833d29bf909"
+          },
+          "http://linkedpipes.com/ontology/targetBinding": "FilesInput"
+        },
+        {
+          "@id": "http://demo.etl.linkedpipes.com/resources/pipelines/created-1459954551242/connection/62308587-e5fe-4328-838f-be2fa4c3d20a",
+          "@type": [
+            "http://linkedpipes.com/ontology/Connection"
+          ],
+          "http://linkedpipes.com/ontology/sourceComponent": {
+            "@id": "http://demo.etl.linkedpipes.com/resources/pipelines/created-1459954551242/components/35b19f23-ee93-4c58-8d57-efa6e521b3bf"
+          },
+          "http://linkedpipes.com/ontology/sourceBinding": "OutputFile",
+          "http://linkedpipes.com/ontology/targetComponent": {
+            "@id": "http://demo.etl.linkedpipes.com/resources/pipelines/created-1459954551242/components/d52a0554-b6f6-4e0d-a380-d833d29bf909"
+          },
+          "http://linkedpipes.com/ontology/targetBinding": "FilesInput"
+        },
+        {
+          "@id": "http://demo.etl.linkedpipes.com/resources/pipelines/created-1459954551242/connection/a84b99db-b122-4cbe-835f-79311920838d",
+          "@type": [
+            "http://linkedpipes.com/ontology/Connection"
+          ],
+          "http://linkedpipes.com/ontology/sourceComponent": {
+            "@id": "http://demo.etl.linkedpipes.com/resources/pipelines/created-1459954551242/components/68150cee-f0d6-4715-bdb7-4fe04cba22cd"
+          },
+          "http://linkedpipes.com/ontology/sourceBinding": "OutputFile",
+          "http://linkedpipes.com/ontology/targetComponent": {
+            "@id": "http://demo.etl.linkedpipes.com/resources/pipelines/created-1459954551242/components/d52a0554-b6f6-4e0d-a380-d833d29bf909"
+          },
+          "http://linkedpipes.com/ontology/targetBinding": "FilesInput"
+        }
+      ],
+      "@id": "http://demo.etl.linkedpipes.com/resources/pipelines/created-1459954551242"
+    },
+    {
+      "@graph": [
+        {
+          "@id": "http://localhost/resources/configuration",
+          "@type": [
+            "http://plugins.linkedpipes.com/ontology/e-httpGet#Configuration"
+          ]
+        },
+        {
+          "@id": "http://localhost/resources/temp/2YSNl98",
+          "@type": [
+            "http://plugins.linkedpipes.com/ontology/e-httpGetFile#Configuration"
+          ],
+          "http://plugins.linkedpipes.com/ontology/e-httpGetFile#fileUri": "https://www.ecb.europa.eu/stats/eurofxref/eurofxref-hist.zip",
+          "http://plugins.linkedpipes.com/ontology/e-httpGetFile#fileName": "eurofxref-hist.zip"
+        }
+      ],
+      "@id": "http://demo.etl.linkedpipes.com/resources/pipelines/created-1459954551242/components/f0e132c4-bdd2-4344-a511-afa5a7bca521/configuration"
+    },
+    {
+      "@graph": [
+        {
+          "@id": "http://localhost/resources/configuration",
+          "@type": [
+            "http://plugins.linkedpipes.com/ontology/t-unpack#Configuration"
+          ],
+          "http://plugins.linkedpipes.com/ontology/t-unpack#usePrefix": false,
+          "http://plugins.linkedpipes.com/ontology/t-unpack#format": "http://plugins.linkedpipes.com/ontology/t-unpack#auto"
+        }
+      ],
+      "@id": "http://demo.etl.linkedpipes.com/resources/pipelines/created-1459954551242/components/a4fb8fe2-9415-4a96-9ffe-18b5b06caac2/configuration"
+    },
+    {
+      "@graph": [
+        {
+          "@id": "http://localhost/resources/configuration",
+          "@type": [
+            "http://www.w3.org/ns/csvw#Table"
+          ],
+          "http://www.w3.org/ns/csvw#tableSchema": {
+            "@id": "http://localhost/resources/configuration/schema"
+          },
+          "http://www.w3.org/ns/csvw#dialect": {
+            "@id": "http://localhost/resources/configuration/dialect"
+          },
+          "http://plugins.linkedpipes.com/ontology/t-tabular#useBaseUri": true,
+          "http://plugins.linkedpipes.com/ontology/t-tabular#baseUri": "http://data.openbudgets.eu/ontology/temp/",
+          "http://plugins.linkedpipes.com/ontology/t-tabular#fullMapping": true,
+          "http://plugins.linkedpipes.com/ontology/t-tabular#generateNullHeaderNames": true
+        },
+        {
+          "@id": "http://localhost/resources/configuration/schema",
+          "@type": [
+            "http://www.w3.org/ns/csvw#Schema"
+          ],
+          "http://www.w3.org/ns/csvw#aboutUrl": "",
+          "http://www.w3.org/ns/csvw#column": [
+            {
+              "@id": "http://localhost/resources/temp/3h0XvOq"
+            },
+            {
+              "@id": "http://localhost/resources/temp/6rj1N05"
+            }
+          ]
+        },
+        {
+          "@id": "http://localhost/resources/configuration/dialect",
+          "@type": [
+            "http://www.w3.org/ns/csvw#Dialect"
+          ],
+          "http://www.w3.org/ns/csvw#delimeter": ",",
+          "http://www.w3.org/ns/csvw#encoding": "UTF-8",
+          "http://www.w3.org/ns/csvw#header": true,
+          "http://www.w3.org/ns/csvw#quoteChar": "\""
+        },
+        {
+          "@id": "http://localhost/resources/temp/3h0XvOq",
+          "@type": [
+            "http://www.w3.org/ns/csvw#Column"
+          ],
+          "http://www.w3.org/ns/csvw#name": "Date",
+          "http://www.w3.org/ns/csvw#supressOutput": false,
+          "http://www.w3.org/ns/csvw#propertyUrl": "Date",
+          "http://www.w3.org/ns/csvw#aboutUrl": "",
+          "http://www.w3.org/ns/csvw#lang": "",
+          "http://www.w3.org/ns/csvw#datatype": "http://www.w3.org/2001/XMLSchema#string",
+          "http://www.w3.org/ns/csvw#valueUrl": ""
+        },
+        {
+          "@id": "http://localhost/resources/temp/6rj1N05",
+          "@type": [
+            "http://www.w3.org/ns/csvw#Column"
+          ],
+          "http://www.w3.org/ns/csvw#name": "USD",
+          "http://www.w3.org/ns/csvw#supressOutput": false,
+          "http://www.w3.org/ns/csvw#propertyUrl": "USD",
+          "http://www.w3.org/ns/csvw#aboutUrl": "",
+          "http://www.w3.org/ns/csvw#lang": "",
+          "http://www.w3.org/ns/csvw#datatype": "http://www.w3.org/2001/XMLSchema#string",
+          "http://www.w3.org/ns/csvw#valueUrl": ""
+        }
+      ],
+      "@id": "http://demo.etl.linkedpipes.com/resources/pipelines/created-1459954551242/components/192a43e1-65b8-4f3d-bdd0-c269a865a319/configuration"
+    },
+    {
+      "@graph": [
+        {
+          "@id": "http://localhost/resources/configuration",
+          "@type": [
+            "http://plugins.linkedpipes.com/ontology/t-sparqlConstruct#Configuration"
+          ],
+          "http://plugins.linkedpipes.com/ontology/t-sparqlConstruct#query": "PREFIX temp:                   <http://data.openbudgets.eu/ontology/temp/>\nPREFIX qb:                       <http://purl.org/linked-data/cube#>\nPREFIX sdmx-dimension: <http://purl.org/linked-data/sdmx/2009/dimension#>\nPREFIX sdmx-measure:    <http://purl.org/linked-data/sdmx/2009/measure#>\nPREFIX xsd:                      <http://www.w3.org/2001/XMLSchema#>\nPREFIX rdfs:                      <http://www.w3.org/2000/01/rdf-schema#>\n\nPREFIX dataset:                <http://data.openbudgets.eu/resource/dataset/ecb-exchange-rates/dataset>\nPREFIX dsd:                      <http://data.openbudgets.eu/resource/dataset/ecb-exchange-rates/dsd>\n\nCONSTRUCT\n{ \ndataset: a qb:DataSet ;\n     rdfs:label \"European Central Bank currency exchange rates\"@en ;\n     qb:structure dsd: .\n\n?obs a qb:Observation ;\n     qb:dataSet dataset: ;\n     sdmx-dimension:refPeriod ?date ;\n     sdmx-dimension:currency ?currIRI ;\n     sdmx-measure:obsValue ?vdec .\n} \nWHERE \n{ \n?s temp:Date ?date_orig;\n       ?p ?v .\n\nFILTER(?p != temp:Date)\n\nBIND(IRI(CONCAT(\"http://reference.data.gov.uk/id/gregorian-day/\", ?date_orig)) as ?date)\nBIND(REPLACE(str(?p), \".*(...)\", \"$1\") as ?currency)\nBIND(IRI(CONCAT(\"http://data.openbudgets.eu/codelist/currency/\", ?currency)) as ?currIRI)\nBIND(IRI(CONCAT(\"http://data.openbudgets.eu/resource/dataset/ecb-exchange-rates/observation/\", ?currency, \"/\", ?date_orig )) as ?obs)\n  BIND(IF(?v = \"N/A\", 0 ,strdt(?v, xsd:decimal)) as ?vdec)\n}"
+        }
+      ],
+      "@id": "http://demo.etl.linkedpipes.com/resources/pipelines/created-1459954551242/components/41a03f5e-e1ce-408e-a747-dc4cb22101f4/configuration"
+    },
+    {
+      "@graph": [
+        {
+          "@id": "http://localhost/resources/configuration",
+          "@type": [
+            "http://plugins.linkedpipes.com/ontology/e-textHolder#Configuration"
+          ],
+          "http://plugins.linkedpipes.com/ontology/e-textHolder#fileName": "dsd.ttl",
+          "http://plugins.linkedpipes.com/ontology/e-textHolder#content": "@prefix foaf:             <http://xmlns.com/foaf/0.1/> .\n@prefix owl:              <http://www.w3.org/2002/07/owl#> .\n@prefix qb:               <http://purl.org/linked-data/cube#> .\n@prefix rdf:              <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .\n@prefix rdfs:             <http://www.w3.org/2000/01/rdf-schema#> .\n@prefix skos:             <http://www.w3.org/2004/02/skos/core#> .\n@prefix xsd:              <http://www.w3.org/2001/XMLSchema#> .\n\n@prefix sdmx-dimension: <http://purl.org/linked-data/sdmx/2009/dimension#> .\n@prefix sdmx-measure:    <http://purl.org/linked-data/sdmx/2009/measure#> .\n\n<http://data.openbudgets.eu/resource/dataset/ecb-exchange-rates/dsd> a qb:DataStructureDefinition ;\n\trdfs:label \"DSD of ECB exchange rates\"@en;\n\tqb:component  [ qb:dimension sdmx-dimension:refPeriod ] ,\n\t\t\t\t [ qb:dimension sdmx-dimension:currency ] ,\n\t\t\t\t [ qb:measure sdmx-measure:obsValue ]\n\t\t\t\t ."
+        }
+      ],
+      "@id": "http://demo.etl.linkedpipes.com/resources/pipelines/created-1459954551242/components/b95c79a7-f1a9-44cb-a082-9d1fe85b3dc5/configuration"
+    },
+    {
+      "@graph": [
+        {
+          "@id": "http://localhost/resources/t-rdfToFile/configuration",
+          "@type": [
+            "http://plugins.linkedpipes.com/ontology/t-rdfToFile#Configuration"
+          ],
+          "http://plugins.linkedpipes.com/ontology/t-rdfToFile#fileName": "ecb-exchange-rates-dsd.ttl",
+          "http://plugins.linkedpipes.com/ontology/t-rdfToFile#fileType": "text/turtle",
+          "http://plugins.linkedpipes.com/ontology/t-rdfToFile#graphUri": "http://data.openbudgets.eu/resource/dataset/ecb-exchange-rates/dsd"
+        }
+      ],
+      "@id": "http://demo.etl.linkedpipes.com/resources/pipelines/created-1459954551242/components/35b19f23-ee93-4c58-8d57-efa6e521b3bf/configuration"
+    },
+    {
+      "@graph": [
+        {
+          "@id": "http://localhost/resources/t-rdfToFile/configuration",
+          "@type": [
+            "http://plugins.linkedpipes.com/ontology/t-rdfToFile#Configuration"
+          ],
+          "http://plugins.linkedpipes.com/ontology/t-rdfToFile#fileName": "ecb-exchange-rates.ttl",
+          "http://plugins.linkedpipes.com/ontology/t-rdfToFile#fileType": "text/turtle",
+          "http://plugins.linkedpipes.com/ontology/t-rdfToFile#graphUri": "http://data.openbudgets.eu/resource/dataset/ecb-exchange-rates"
+        }
+      ],
+      "@id": "http://demo.etl.linkedpipes.com/resources/pipelines/created-1459954551242/components/47c215a4-201e-4ec8-bf4b-e1d88191e4ed/configuration"
+    },
+    {
+      "@graph": [
+        {
+          "@id": "http://localhost/resources/t-rdfToFile/configuration",
+          "@type": [
+            "http://plugins.linkedpipes.com/ontology/t-rdfToFile#Configuration"
+          ],
+          "http://plugins.linkedpipes.com/ontology/t-rdfToFile#fileName": "ecb-exchange-rates-metadata.ttl",
+          "http://plugins.linkedpipes.com/ontology/t-rdfToFile#fileType": "text/turtle",
+          "http://plugins.linkedpipes.com/ontology/t-rdfToFile#graphUri": "http://data.openbudgets.eu/resource/dataset/ecb-exchange-rates/metadata"
+        }
+      ],
+      "@id": "http://demo.etl.linkedpipes.com/resources/pipelines/created-1459954551242/components/68150cee-f0d6-4715-bdb7-4fe04cba22cd/configuration"
+    },
+    {
+      "@graph": [
+        {
+          "@id": "http://localhost/resources/configuration",
+          "@type": [
+            "http://plugins.linkedpipes.com/ontology/e-datasetMetadata#Configuration"
+          ],
+          "http://plugins.linkedpipes.com/ontology/e-datasetMetadata#datasetURI": "http://data.openbudgets.eu/resource/dataset/ecb-exchange-rates",
+          "http://plugins.linkedpipes.com/ontology/e-datasetMetadata#language_orig": "en",
+          "http://plugins.linkedpipes.com/ontology/e-datasetMetadata#title_cs": "ECB Exchange rates",
+          "http://plugins.linkedpipes.com/ontology/e-datasetMetadata#title_en": "ECB Exchange rates",
+          "http://plugins.linkedpipes.com/ontology/e-datasetMetadata#desc_cs": "ECB Exchange rates",
+          "http://plugins.linkedpipes.com/ontology/e-datasetMetadata#desc_en": "ECB Exchange rates",
+          "http://plugins.linkedpipes.com/ontology/e-datasetMetadata#publisherURI": "",
+          "http://plugins.linkedpipes.com/ontology/e-datasetMetadata#publisherName": "",
+          "http://plugins.linkedpipes.com/ontology/e-datasetMetadata#license": "",
+          "http://plugins.linkedpipes.com/ontology/e-datasetMetadata#contactPoint": "",
+          "http://plugins.linkedpipes.com/ontology/e-datasetMetadata#contactPointName": "",
+          "http://plugins.linkedpipes.com/ontology/e-datasetMetadata#periodicity": "R/P1D",
+          "http://plugins.linkedpipes.com/ontology/e-datasetMetadata#issued": "1999-11-30T23:00:00.000Z",
+          "http://plugins.linkedpipes.com/ontology/e-datasetMetadata#identifier": "",
+          "http://plugins.linkedpipes.com/ontology/e-datasetMetadata#landingPage": "",
+          "http://plugins.linkedpipes.com/ontology/e-datasetMetadata#temporalStart": "1999-11-30T23:00:00.000Z",
+          "http://plugins.linkedpipes.com/ontology/e-datasetMetadata#spatial": "",
+          "http://plugins.linkedpipes.com/ontology/e-datasetMetadata#schema": "",
+          "http://plugins.linkedpipes.com/ontology/e-datasetMetadata#useNow": true,
+          "http://plugins.linkedpipes.com/ontology/e-datasetMetadata#useNowTemporalEnd": true,
+          "http://plugins.linkedpipes.com/ontology/e-datasetMetadata#useTemporal": true,
+          "http://plugins.linkedpipes.com/ontology/e-datasetMetadata#keywords_orig": [
+            "exchange rates"
+          ],
+          "http://plugins.linkedpipes.com/ontology/e-datasetMetadata#keywords_en": [
+            "exchange rates"
+          ]
+        }
+      ],
+      "@id": "http://demo.etl.linkedpipes.com/resources/pipelines/created-1459954551242/components/1e20d3ab-fdcb-4f10-b1b9-c589eef21b03/configuration"
+    },
+    {
+      "@graph": [
+        {
+          "@id": "http://localhost/resources/configuration",
+          "@type": [
+            "http://plugins.linkedpipes.com/ontology/e-distributionMetadata#Configuration"
+          ],
+          "http://plugins.linkedpipes.com/ontology/e-distributionMetadata#datasetURI": "",
+          "http://plugins.linkedpipes.com/ontology/e-distributionMetadata#distributionURI": "",
+          "http://plugins.linkedpipes.com/ontology/e-distributionMetadata#language_orig": "",
+          "http://plugins.linkedpipes.com/ontology/e-distributionMetadata#title_orig": "",
+          "http://plugins.linkedpipes.com/ontology/e-distributionMetadata#title_en": "",
+          "http://plugins.linkedpipes.com/ontology/e-distributionMetadata#desc_orig": "",
+          "http://plugins.linkedpipes.com/ontology/e-distributionMetadata#desc_en": "",
+          "http://plugins.linkedpipes.com/ontology/e-distributionMetadata#license": "",
+          "http://plugins.linkedpipes.com/ontology/e-distributionMetadata#sparqlEndpointUrl": "",
+          "http://plugins.linkedpipes.com/ontology/e-distributionMetadata#mediaType": "",
+          "http://plugins.linkedpipes.com/ontology/e-distributionMetadata#downloadURL": "",
+          "http://plugins.linkedpipes.com/ontology/e-distributionMetadata#accessURL": "",
+          "http://plugins.linkedpipes.com/ontology/e-distributionMetadata#schema": "",
+          "http://plugins.linkedpipes.com/ontology/e-distributionMetadata#schemaType": "",
+          "http://plugins.linkedpipes.com/ontology/e-distributionMetadata#useDatasetURIfromInput": true,
+          "http://plugins.linkedpipes.com/ontology/e-distributionMetadata#useNow": true,
+          "http://plugins.linkedpipes.com/ontology/e-distributionMetadata#titleFromDataset": true,
+          "http://plugins.linkedpipes.com/ontology/e-distributionMetadata#generateDistroURIFromDataset": true,
+          "http://plugins.linkedpipes.com/ontology/e-distributionMetadata#originalLanguageFromDataset": true,
+          "http://plugins.linkedpipes.com/ontology/e-distributionMetadata#issuedFromDataset": true,
+          "http://plugins.linkedpipes.com/ontology/e-distributionMetadata#descriptionFromDataset": true,
+          "http://plugins.linkedpipes.com/ontology/e-distributionMetadata#licenseFromDataset": true,
+          "http://plugins.linkedpipes.com/ontology/e-distributionMetadata#schemaFromDataset": true,
+          "http://plugins.linkedpipes.com/ontology/e-distributionMetadata#useTemporal": true,
+          "http://plugins.linkedpipes.com/ontology/e-distributionMetadata#temporalFromDataset": true
+        }
+      ],
+      "@id": "http://demo.etl.linkedpipes.com/resources/pipelines/created-1459954551242/components/dd1186e1-4d6a-452c-8090-e8ca266921cb/configuration"
+    },
+    {
+      "@graph": [
+        {
+          "@id": "http://localhost/resources/configuration",
+          "@type": [
+            "http://plugins.linkedpipes.com/ontology/l-filesToScp#Configuration"
+          ],
+          "http://plugins.linkedpipes.com/ontology/l-filesToScp#targetDirectory": "/data/dump",
+          "http://plugins.linkedpipes.com/ontology/l-filesToScp#createDirectory": true
+        }
+      ],
+      "@id": "http://demo.etl.linkedpipes.com/resources/pipelines/created-1459954551242/components/d52a0554-b6f6-4e0d-a380-d833d29bf909/configuration"
+    }
+  ]
+}
