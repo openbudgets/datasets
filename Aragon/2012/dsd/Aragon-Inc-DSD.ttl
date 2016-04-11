@@ -2,7 +2,7 @@
 
 @prefix aragon:            <http://data.openbudgets.eu/ontology/aragon-budget/> .
 @prefix aragon-attribute:  <http://data.openbudgets.eu/ontology/dsd/aragon-budget/attribute/> .
-@prefix aragon-dimension:  <http://data.openbudgets.eu/ontology/dsd/aragon-budget/dimension/> .
+@prefix aragon-dimension:  <http://data.openbudgets.eu/ontology/dsd/aragon-budget-inc-2012/dimension/> .
 
 # ----- OpenBudgets.eu namespaces -----
 
@@ -49,7 +49,7 @@ aragon-dimension:administrativeClassification a rdf:Property, qb:CodedProperty, 
   rdfs:subPropertyOf obeu-dimension:classification ;
   rdfs:range skos:Concept ;
   qb:codeList <http://data.openbudgets.eu/resource/codelist/estructura_organica_aragon_2012/> ;
-  rdfs:isDefinedBy <http://data.openbudgets.eu/ontology/dsd/aragon-budget-exp> .
+  rdfs:isDefinedBy <http://data.openbudgets.eu/ontology/dsd/aragon-budget-inc-2012> .
 
 aragon-dimension:economicClassification a rdf:Property, qb:CodedProperty, qb:DimensionProperty, obeu-dimension:economicClassification ;
   rdfs:label "Economic Classification"@en ;
@@ -57,7 +57,7 @@ aragon-dimension:economicClassification a rdf:Property, qb:CodedProperty, qb:Dim
   rdfs:subPropertyOf obeu-dimension:classification ;
   rdfs:range skos:Concept ;  
   qb:codeList <http://data.openbudgets.eu/resource/codelist/estructura_economica_i_aragon_2012/> ;
-  rdfs:isDefinedBy <http://data.openbudgets.eu/ontology/dsd/aragon-budget-exp> .
+  rdfs:isDefinedBy <http://data.openbudgets.eu/ontology/dsd/aragon-budget-inc-2012> .
 
  aragon-dimension:fundingClassification a rdf:Property, qb:CodedProperty, qb:DimensionProperty ;
   rdfs:label "Funding Classification"@en ;
@@ -65,4 +65,4 @@ aragon-dimension:economicClassification a rdf:Property, qb:CodedProperty, qb:Dim
   rdfs:subPropertyOf obeu-dimension:classification ;
   rdfs:range skos:Concept ;  
   qb:codeList <http://data.openbudgets.eu/resource/codelist/estructura_financiacion_i_aragon_2012/> ;
-  rdfs:isDefinedBy <http://data.openbudgets.eu/ontology/dsd/aragon-budget-exp> .
+  rdfs:isDefinedBy <http://data.openbudgets.eu/ontology/dsd/aragon-budget-inc-2012> .
