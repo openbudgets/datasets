@@ -17,9 +17,9 @@
 @prefix time: <http://www.w3.org/2006/time#> .
 @prefix sdmx-attribute: <http://purl.org/linked-data/sdmx/2009/attribute#> .
 @prefix sdmx-dimension: <http://purl.org/linked-data/sdmx/2009/dimension#> .
-@prefix aragon-dimension: <http://data.openbudgets.eu/ontology/dsd/aragon-budget/dimension/> .
+@prefix aragon-dimension: <http://data.openbudgets.eu/ontology/dsd/aragon-budget-exp-2013/dimension/> .
 @prefix aragon: <http://data.openbudgets.eu/ontology/aragon-budget/> .
-@prefix aragon-attribute: <http://data.openbudgets.eu/ontology/dsd/aragon-budget/attribute/> .
+@prefix aragon-attribute: <http://data.openbudgets.eu/ontology/dsd/aragon-budget-exp-2013/attribute/> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix fn: <http://www.w3.org/2005/xpath-functions#> .
 @prefix sesame: <http://www.openrdf.org/schema/sesame#> .
@@ -37,7 +37,7 @@ aragon-dimension:administrativeClassification a rdf:Property , qb:DimensionPrope
 	rdfs:label "Organization managing the planned budget"@en ;
 	rdfs:comment "The administrative classification is organized hierarchical in four levels."@en ;
 	rdfs:range skos:Concept ;
-	rdfs:isDefinedBy <http://data.openbudgets.eu/ontology/dsd/aragon-budget-exp> ;
+	rdfs:isDefinedBy <http://data.openbudgets.eu/ontology/dsd/aragon-budget-exp-2013> ;
 	rdfs:subPropertyOf obeu-dimension:administrativeClassification ;
 	qb:codeList <http://data.openbudgets.eu/resource/codelist/estructura_organica_aragon_2013/> .
 
@@ -45,7 +45,7 @@ aragon-dimension:functionalClassification a rdf:Property , qb:DimensionProperty 
 	rdfs:label "Functional Classification"@en ;
 	rdfs:comment "Classifies expenditures by general government sector and by the purpose of the expenditure. The functional classification is organized hierarchical into groups, functions, sub-functions and programs."@en ;
 	rdfs:range skos:Concept ;
-	rdfs:isDefinedBy <http://data.openbudgets.eu/ontology/dsd/aragon-budget-exp> ;
+	rdfs:isDefinedBy <http://data.openbudgets.eu/ontology/dsd/aragon-budget-exp-2013> ;
 	rdfs:subPropertyOf obeu-dimension:functionalClassification ;
 	qb:codeList obeu-codelist:estructura_funcional_aragon_2013 .
 
@@ -53,7 +53,7 @@ aragon-dimension:economicClassification a rdf:Property , qb:DimensionProperty , 
 	rdfs:label "Economic Classification"@en ;
 	rdfs:comment "Identifies the type of expenditure incurred or source of revenues. The economic classification is organized hierarchical into chapters, articles, concepts, and sub-concepts. This dimension is used for both, expenditure and revenue."@en ;
 	rdfs:range skos:Concept ;
-	rdfs:isDefinedBy <http://data.openbudgets.eu/ontology/dsd/aragon-budget-exp> ;
+	rdfs:isDefinedBy <http://data.openbudgets.eu/ontology/dsd/aragon-budget-exp-2013> ;
 	rdfs:subPropertyOf obeu-dimension:economicClassification ;
 	qb:codeList <http://data.openbudgets.eu/resource/codelist/estructura_economica_g_aragon_2013/> .
 
@@ -61,7 +61,7 @@ aragon-dimension:fundingClassification a rdf:Property , qb:DimensionProperty , q
 	rdfs:label "Funding Classification"@en ;
 	rdfs:comment "Describes the origin of the funding. The funding classification is organized hierarchical into origin, fund, and program. This dimension is used for both, expenditure and revenue."@en ;
 	rdfs:range skos:Concept ;
-	rdfs:isDefinedBy <http://data.openbudgets.eu/ontology/dsd/aragon-budget-exp> ;
+	rdfs:isDefinedBy <http://data.openbudgets.eu/ontology/dsd/aragon-budget-exp-2013> ;
 	rdfs:subPropertyOf obeu-dimension:classification ;
 	qb:codeList <http://data.openbudgets.eu/resource/codelist/estructura_financiacion_g_aragon_2013/> .
 
@@ -39259,36 +39259,36 @@ obeu-attribute:taxesIncluded a rdf:Property , qb:CodedProperty , qb:AttributePro
 	rdfs:range xsd:boolean ;
 	rdfs:isDefinedBy <http://data.openbudgets.eu/ontology> .
 
-<http://data.openbudgets.eu/ontology/dsd/aragon-budget-exp> a qb:DataStructureDefinition ;
+<http://data.openbudgets.eu/ontology/dsd/aragon-budget-exp-2013> a qb:DataStructureDefinition ;
 	rdfs:label "Data structure definition for the expenditure part of the Aragonian budget (autonomous community in northeastern Spain)."@en ;
-	qb:component _:node1afguj3c5x17 , _:node1afguj3c5x18 , _:node1afguj3c5x19 , _:node1afguj3c5x20 , _:node1afguj3c5x21 , _:node1afguj3c5x22 , _:node1afguj3c5x23 , _:node1afguj3c5x24 , _:node1afguj3c5x25 .
+	qb:component _:node1ag2b5mlax17 , _:node1ag2b5mlax18 , _:node1ag2b5mlax19 , _:node1ag2b5mlax20 , _:node1ag2b5mlax21 , _:node1ag2b5mlax22 , _:node1ag2b5mlax23 , _:node1ag2b5mlax24 , _:node1ag2b5mlax25 .
 
-_:node1afguj3c5x17 qb:dimension obeu-dimension:budgetaryUnit ;
+_:node1ag2b5mlax17 qb:dimension obeu-dimension:budgetaryUnit ;
 	qb:componentAttachment qb:DataSet .
 
-_:node1afguj3c5x18 qb:dimension obeu-dimension:operationCharacter ;
+_:node1ag2b5mlax18 qb:dimension obeu-dimension:operationCharacter ;
 	qb:componentAttachment qb:DataSet .
 
-_:node1afguj3c5x19 qb:dimension obeu-dimension:fiscalYear ;
+_:node1ag2b5mlax19 qb:dimension obeu-dimension:fiscalYear ;
 	qb:componentAttachment qb:DataSet .
 
-_:node1afguj3c5x20 qb:dimension aragon-dimension:administrativeClassification .
+_:node1ag2b5mlax20 qb:dimension aragon-dimension:administrativeClassification .
 
-_:node1afguj3c5x21 qb:dimension aragon-dimension:functionalClassification .
+_:node1ag2b5mlax21 qb:dimension aragon-dimension:functionalClassification .
 
-_:node1afguj3c5x22 qb:dimension aragon-dimension:economicClassification .
+_:node1ag2b5mlax22 qb:dimension aragon-dimension:economicClassification .
 
-_:node1afguj3c5x23 qb:dimension aragon-dimension:fundingClassification .
+_:node1ag2b5mlax23 qb:dimension aragon-dimension:fundingClassification .
 
-_:node1afguj3c5x24 qb:componentAttachment qb:DataSet ;
+_:node1ag2b5mlax24 qb:componentAttachment qb:DataSet ;
 	qb:attribute obeu-attribute:currency ;
 	qb:componentRequired true .
 
-_:node1afguj3c5x25 qb:measure obeu-measure:amount .
+_:node1ag2b5mlax25 qb:measure obeu-measure:amount .
 
 <http://data.openbudgets.eu/resource/dataset/aragon-2013-expenditure> a qb:DataSet ;
 	obeu-dimension:budgetaryUnit <http://dbpedia.org/page/Aragon> ;
 	obeu-dimension:fiscalYear <http://reference.data.gov.uk/id/year/2013> ;
 	obeu-dimension:operationCharacter obeu-operation:Expenditure ;
 	obeu-attribute:currency <http://data.openbudgets.eu/codelist/currency/EUR> ;
-	qb:structure <http://data.openbudgets.eu/ontology/dsd/aragon-budget-exp> .
+	qb:structure <http://data.openbudgets.eu/ontology/dsd/aragon-budget-exp-2013> .
