@@ -1,0 +1,87 @@
+# -----DSD-specific namespaces
+@prefix thess-br2011-dimension: <http://data.openbudgets.eu/ontology/dsd/budget-thessaloniki-revenue-2011/dimension/> .
+@prefix thess-br2011:           <http://data.openbudgets.eu/resource/dataset/budget-thessaloniki-revenue-2011/> .
+@prefix thess-br2011-dsd-slice: <http://data.openbudgets.eu/ontology/dsd/budget-thessaloniki-revenue-2011/slice/> .
+
+# -----Thessaloniki Municipality specific namespaces
+@prefix thess-dimension: <http://data.openbudgets.eu/ontology/dsd/municipality-of-thessaloniki/dimension/> .
+@prefix thess-codelist: <http://data.openbudgets.eu/resource/dataset/greek-municipalities/codelist/> .
+
+# -----Greek Municipalities specific namespaces
+@prefix gr-dimension: <http://data.openbudgets.eu/ontology/dsd/greek-municipalities/dimension/> .
+@prefix gr-budgetPhase: <http://data.openbudgets.eu/resource/dataset/greek-municipalities/codelist/budget-phase> .
+
+# -----OpenBudgets.eu namespaces -----
+@prefix obeu:             <http://data.openbudgets.eu/ontology/> .
+@prefix obeu-attribute:   <http://data.openbudgets.eu/ontology/dsd/attribute/> .
+@prefix obeu-dimension:   <http://data.openbudgets.eu/ontology/dsd/dimension/>.
+@prefix obeu-measure:     <http://data.openbudgets.eu/ontology/dsd/measure/> .
+@prefix obeu-budgetphase: <http://data.openbudgets.eu/resource/codelist/budget-phase/> .
+@prefix obeu-codelist:    <http://data.openbudgets.eu/resource/codelist/> .
+
+# -----Generic namespaces ------
+@prefix qb:               <http://purl.org/linked-data/cube#> .
+@prefix rdf:              <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:             <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:             <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd:              <http://www.w3.org/2001/XMLSchema#> .
+
+
+# DSD 
+<http://data.openbudgets.eu/ontology/dsd/budget-thessaloniki-revenue-2011> a 
+  qb:DataStructureDefinition ;
+	rdfs:label "Data structure definition for the Municipality of Thessaloniki Revenue Budget 2011 dataset"@en ;
+  qb:component
+	[ qb:dimension obeu-dimension:organization ;
+		qb:componentAttachment qb:DataSet ],
+	[ qb:dimension obeu-dimension:operationCharacter ;
+		qb:componentAttachment qb:DataSet ],
+	[ qb:dimension obeu-dimension:fiscalYear;
+		qb:componentAttachment qb:DataSet ],
+	[ qb:dimension thess-dimension:administrativeClassification ;
+                qb:componentAttachment qb:Slice ],
+	[ qb:dimension gr-dimension:economicClassification ;
+                qb:componentAttachment qb:Slice],
+	[ qb:dimension thess-br2011-dimension:functionalClassification;
+		qb:componentAttachment qb:Slice ],
+	[ qb:dimension gr-dimension:budgetPhase], 
+	[ qb:attribute obeu-attribute:currency ;
+	  qb:componentRequired "true"^^xsd:boolean ;
+	  qb:componentAttachment qb:DataSet ],
+	[ qb:measure obeu-measure:amount ] ;
+	
+	qb:sliceKey  thess-br2011-dsd-slice:slice-by-functionalCode.
+
+	
+# Slice key definition
+thess-br2011-dsd-slice:slice-by-functionalCode a qb:SliceKey ;
+	rdfs:label "slice by functional code"@en ;
+	rdfs:comment "Slice grouping observations of the same functional code for all budget phases."@en ;
+	qb:componentProperty thess-br2011-dimension:functionalClassification ;
+	qb:componentProperty thess-dimension:administrativeClassification ;
+	qb:componentProperty gr-dimension:economicClassification .
+
+#dimension definition	
+gr-dimension:economicClassification a rdf:Property, qb:CodedProperty, qb:DimensionProperty ;
+	rdfs:label "KA of Expenditure"@en ;
+	rdfs:comment "Budget revenue codes (KAE) for greek municipalities"@en ;
+	rdfs:subPropertyOf obeu-dimension:economicClassification ;
+	qb:codeList obeu-codelist:kae-ota-esodwn-2014 ;
+	rdfs:range skos:Concept ;
+	rdfs:isDefinedBy <http://data.openbudgets.eu/ontology/dsd/greek-municipalities> . 
+
+thess-dimension:administrativeClassification a rdf:Property, qb:CodedProperty, qb:DimensionProperty ;
+	rdfs:label "Municipality Office"@en ;
+	rdfs:comment "The organization unit (office) of the municipality of Thessaloniki that is responsible for the budget amount."@en ;
+	rdfs:subPropertyOf obeu-dimension:administrativeClassification ;
+	qb:codeList obeu-codelist:kae-ota-administration-2014 ;
+	rdfs:range skos:Concept ;
+	rdfs:isDefinedBy <http://data.openbudgets.eu/ontology/dsd/municipality-of-thessaloniki> .
+	
+thess-br2011-dimension:functionalClassification a rdf:Property, qb:CodedProperty, qb:DimensionProperty ;
+	rdfs:label "Municipality Office - KAE Programme"@en ;
+	rdfs:comment "Specific function of revenue budget per office for Municipality of Thessaloniki revenue Budget of year 2011"@en ;
+	rdfs:subPropertyOf obeu-dimension:functionalClassification ;
+	qb:codeList thess-br2011:codelist ;
+	rdfs:range skos:Concept ;
+	rdfs:isDefinedBy <http://data.openbudgets.eu/ontology/dsd/budget-thessaloniki-revenue-2011> .
