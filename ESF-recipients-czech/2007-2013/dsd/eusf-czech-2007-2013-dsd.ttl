@@ -1,102 +1,129 @@
+@prefix foaf:             <http://xmlns.com/foaf/0.1/> .
+@prefix owl:              <http://www.w3.org/2002/07/owl#> .
+@prefix qb:               <http://purl.org/linked-data/cube#> .
+@prefix rdf:              <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:             <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:             <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd:              <http://www.w3.org/2001/XMLSchema#> .
 
-_:node1af8juogcx496355 <http://purl.org/linked-data/cube#componentAttachment> <http://purl.org/linked-data/cube#DataSet> ;
-	<http://purl.org/linked-data/cube#dimension> <http://data.openbudgets.eu/ontology/dsd/dimension/organization> .
+@prefix obeu:			  <http://data.openbudgets.eu/ontology/> .
+@prefix obeu-attribute:   <http://data.openbudgets.eu/ontology/dsd/attribute/> .
+@prefix obeu-dimension:   <http://data.openbudgets.eu/ontology/dsd/dimension/> .
+@prefix obeu-measure:     <http://data.openbudgets.eu/ontology/dsd/measure/> .
 
-_:node1af8juogcx496356 <http://purl.org/linked-data/cube#dimension> <http://data.openbudgets.eu/ontology/dsd/dimension/partner> .
+@prefix lob:             <http://data.openbudgets.eu/ontology/list-of-beneficiaries-eu-funds/cz/2007-2013/> .
+@prefix lob-codelist:    <http://data.openbudgets.eu/resource/list-of-beneficiaries-eu-funds/cz/2007-2013/codelist/> .
+@prefix lob-dimension:   <http://data.openbudgets.eu/ontology/list-of-beneficiaries-eu-funds/cz/2007-2013/dimension/> .
+@prefix lob-measure:     <http://data.openbudgets.eu/ontology/list-of-beneficiaries-eu-funds/cz/2007-2013/measure/> .
+@prefix lob-attribute:   <http://data.openbudgets.eu/ontology/list-of-beneficiaries-eu-funds/cz/2007-2013/attribute/> .
+@prefix lob-optional:    <http://data.openbudgets.eu/ontology/list-of-beneficiaries-eu-funds/cz/2007-2013/optional/> .
+@prefix lob-operational: <http://data.openbudgets.eu/resource/dataset/list-of-beneficiaries-eu-funds/cz/2007-2013/codelist/operational-programme/> .
+@prefix lob-fund:        <http://data.openbudgets.eu/resource/dataset/list-of-beneficiaries-eu-funds/cz/2007-2013/codelist/eu-fund/> .
+@prefix lob-status:      <http://data.openbudgets.eu/resource/dataset/list-of-beneficiaries-eu-funds/cz/2007-2013/codelist/status/> .
 
-_:node1af8juogcx496357 <http://purl.org/linked-data/cube#dimension> <http://data.openbudgets.eu/ontology/dsd/dimension/project> .
+### Mapping - Cube 1: amounts allocated ###
+# Name of beneficiary ... obeu-dimension:partner/schema:name
+# ID ... obeu-dimension:partner/rov:registration
+# Operation ... obeu-dimension:project
+# Operational Programme ... lob-dimension:operationalProgramme
+# EU fund ... lob-dimension:euFund
+# Date of allocation ... obeu-dimension:date
+# Amounts allocated ... obeu-measure:amount
 
-_:node1af8juogcx496358 <http://purl.org/linked-data/cube#dimension> <http://data.openbudgets.eu/ontology/list-of-beneficiaries-eu-funds/cz/2007-2013/dimension/operationalProgramme> .
+<http://data.openbudgets.eu/ontology/dsd/list-of-beneficiaries-eu-funds/cz/2007-2013/allocated> a qb:DataStructureDefinition ;
+	rdfs:label "DSD of list of beneficiaries - amounts allocated"@en, "Definice datové struktury pro seznam příjemců podpory z fondů EU - alokované částky"@cs ;
+	qb:component [ qb:dimension obeu-dimension:organization ;
+								qb:componentAttachment qb:DataSet ] ,
+				 [ qb:dimension obeu-dimension:partner ] ,
+				 [ qb:dimension obeu-dimension:project ],
+				 [ qb:dimension lob-dimension:operationalProgramme ],
+				 [ qb:dimension lob-dimension:euFund ],
+				 [ qb:dimension obeu-dimension:date ],
+                 [ qb:attribute obeu-attribute:currency ; # Fixed to CZK
+								qb:componentAttachment qb:DataSet ;
+								qb:componentRequired true ],
+				 [ qb:measure obeu-measure:amount ]
+				 .
 
-<http://data.openbudgets.eu/ontology/list-of-beneficiaries-eu-funds/cz/2007-2013/dimension/operationalProgramme> a <http://purl.org/linked-data/cube#CodedProperty> , <http://purl.org/linked-data/cube#DimensionProperty> , <http://www.w3.org/1999/02/22-rdf-syntax-ns#Property> ;
-	<http://www.w3.org/2000/01/rdf-schema#label> "Operační program"@cs , "Operational programme"@en ;
-	<http://purl.org/linked-data/cube#codeList> <http://data.openbudgets.eu/resource/list-of-beneficiaries-eu-funds/cz/2007-2013/codelist/operational-programme> ;
-	<http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://www.strukturalni-fondy.cz/getmedia/a8213c29-3263-4b99-b643-cad46b7d33f4/LIST-OF-BENEFICIARIES_Napoveda_1_a8213c29-3263-4b99-b643-cad46b7d33f4.pdf?ext=.pdf> ;
-	<http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://data.openbudgets.eu/ontology/dsd/dimension/programmeClassification> .
+### Mapping - Cube 2: amounts paid from the start of the project ###
+# Name of beneficiary ... obeu-dimension:partner/schema:name
+# ID ... obeu-dimension:partner/rov:registration
+# Operation ... obeu-dimension:project
+# Operational Programme ... lob-dimension:operationalProgramme
+# EU fund ... lob-dimension:euFund
+# Date of interim payment ... obeu-dimension:date
+# Total Amounts paid from the start of the Project ... obeu-measure:amount
 
-_:node1af8juogcx496359 <http://purl.org/linked-data/cube#dimension> <http://data.openbudgets.eu/ontology/list-of-beneficiaries-eu-funds/cz/2007-2013/dimension/euFund> .
+<http://data.openbudgets.eu/ontology/dsd/list-of-beneficiaries-eu-funds/cz/2007-2013/paid> a qb:DataStructureDefinition ;
+	rdfs:label "DSD of list of beneficiaries - total amounts paid from the start of the project"@en, "Definice datové struktury pro seznam příjemců podpory z fondů EU - celkové částky proplacené od začátku projektu"@cs ;
+	qb:component [ qb:dimension obeu-dimension:organization ;
+								qb:componentAttachment qb:DataSet ] ,
+				 [ qb:dimension obeu-dimension:partner ] ,
+				 [ qb:dimension obeu-dimension:project ],
+				 [ qb:dimension lob-dimension:operationalProgramme ],
+				 [ qb:dimension lob-dimension:euFund ],
+				 [ qb:dimension obeu-dimension:date ],
+                 [ qb:attribute obeu-attribute:currency ; # Fixed to CZK
+								qb:componentAttachment qb:DataSet ;
+								qb:componentRequired true ],
+				 [ qb:measure obeu-measure:amount ]
+				 .
 
-<http://data.openbudgets.eu/ontology/list-of-beneficiaries-eu-funds/cz/2007-2013/dimension/euFund> a <http://purl.org/linked-data/cube#CodedProperty> , <http://purl.org/linked-data/cube#DimensionProperty> , <http://www.w3.org/1999/02/22-rdf-syntax-ns#Property> ;
-	<http://www.w3.org/2000/01/rdf-schema#label> "Fond EU"@cs , "EU Fund"@en ;
-	<http://purl.org/linked-data/cube#codeList> <http://data.openbudgets.eu/resource/list-of-beneficiaries-eu-funds/cz/2007-2013/codelist/eu-fund> ;
-	<http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://www.strukturalni-fondy.cz/getmedia/a8213c29-3263-4b99-b643-cad46b7d33f4/LIST-OF-BENEFICIARIES_Napoveda_1_a8213c29-3263-4b99-b643-cad46b7d33f4.pdf?ext=.pdf> ;
-	<http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://data.openbudgets.eu/ontology/dsd/dimension/programmeClassification> .
+### Mapping - Cube 3: state of the projects  ###
+# Name of beneficiary ... obeu-dimension:partner/schema:name
+# ID ... obeu-dimension:partner/rov:registration
+# Operation ... obeu-dimension:project
+# Operational Programme ... lob-dimension:operationalProgramme
+# EU fund ... lob-dimension:euFund
+# Date generated ... obeu-dimension:date
+# Status ... lob-measure:status
 
-_:node1af8juogcx496360 <http://purl.org/linked-data/cube#dimension> <http://data.openbudgets.eu/ontology/list-of-beneficiaries-eu-funds/cz/2007-2013/dimension/date> .
+<http://data.openbudgets.eu/ontology/dsd/list-of-beneficiaries-eu-funds/cz/2007-2013/states> a qb:DataStructureDefinition ;
+	rdfs:label "DSD of list of beneficiaries - states of projects"@en, "Definice datové struktury pro seznam příjemců podpory z fondů EU - stavy projektů"@cs ;
+	qb:component [ qb:dimension obeu-dimension:organization ;
+								qb:componentAttachment qb:DataSet ] ,
+				 [ qb:dimension obeu-dimension:partner ] ,
+				 [ qb:dimension obeu-dimension:project ],
+				 [ qb:dimension lob-dimension:operationalProgramme ],
+				 [ qb:dimension lob-dimension:euFund ],
+				 [ qb:dimension obeu-dimension:date ],
+                 [ qb:attribute obeu-attribute:currency ; # Fixed to CZK
+								qb:componentAttachment qb:DataSet ;
+								qb:componentRequired true ],
+				 [ qb:measure lob-measure:status ]
+				 .
 
-_:node1af8juogcx496361 <http://purl.org/linked-data/cube#componentAttachment> <http://purl.org/linked-data/cube#DataSet> ;
-	<http://purl.org/linked-data/cube#attribute> <http://data.openbudgets.eu/ontology/dsd/attribute/currency> ;
-	<http://purl.org/linked-data/cube#componentRequired> true .
+### Vocabulary ###
+				 
+lob-dimension:operationalProgramme a rdf:Property, qb:CodedProperty, qb:DimensionProperty ;
+	rdfs:label "Operational programme"@en, "Operační program"@cs ;
+	qb:codeList lob-codelist:operational-programme ;
+	rdfs:subPropertyOf obeu-dimension:programmeClassification ;
+	rdfs:isDefinedBy <http://www.strukturalni-fondy.cz/getmedia/a8213c29-3263-4b99-b643-cad46b7d33f4/LIST-OF-BENEFICIARIES_Napoveda_1_a8213c29-3263-4b99-b643-cad46b7d33f4.pdf?ext=.pdf> .
+	
+lob-dimension:euFund a rdf:Property, qb:CodedProperty, qb:DimensionProperty ;
+	rdfs:label "EU Fund"@en, "Fond EU"@cs ;
+	qb:codeList lob-codelist:eu-fund ;
+	rdfs:subPropertyOf obeu-dimension:programmeClassification ;
+	rdfs:isDefinedBy <http://www.strukturalni-fondy.cz/getmedia/a8213c29-3263-4b99-b643-cad46b7d33f4/LIST-OF-BENEFICIARIES_Napoveda_1_a8213c29-3263-4b99-b643-cad46b7d33f4.pdf?ext=.pdf> .
 
-_:node1af8juogcx496362 <http://purl.org/linked-data/cube#measure> <http://data.openbudgets.eu/ontology/dsd/measure/amount> .
+lob-measure:status a rdf:Property, qb:MeasureProperty, qb:CodedProperty ;
+	rdfs:label "Status"@en, "Stav"@cs ;
+	qb:codeList lob-codelist:status ;
+	rdfs:range skos:ConceptScheme ;
+	rdfs:isDefinedBy <http://www.strukturalni-fondy.cz/getmedia/a8213c29-3263-4b99-b643-cad46b7d33f4/LIST-OF-BENEFICIARIES_Napoveda_1_a8213c29-3263-4b99-b643-cad46b7d33f4.pdf?ext=.pdf> .	
 
-_:node1af8juogcx496363 <http://purl.org/linked-data/cube#componentAttachment> <http://purl.org/linked-data/cube#DataSet> ;
-	<http://purl.org/linked-data/cube#dimension> <http://data.openbudgets.eu/ontology/dsd/dimension/organization> .
+lob-codelist:status a skos:ConceptScheme ;
+	rdfs:label "States of projects"@en, "Stavy projektů"@cs .
 
-_:node1af8juogcx496364 <http://purl.org/linked-data/cube#dimension> <http://data.openbudgets.eu/ontology/dsd/dimension/partner> .
-
-_:node1af8juogcx496365 <http://purl.org/linked-data/cube#dimension> <http://data.openbudgets.eu/ontology/dsd/dimension/project> .
-
-_:node1af8juogcx496366 <http://purl.org/linked-data/cube#dimension> <http://data.openbudgets.eu/ontology/list-of-beneficiaries-eu-funds/cz/2007-2013/dimension/operationalProgramme> .
-
-_:node1af8juogcx496367 <http://purl.org/linked-data/cube#dimension> <http://data.openbudgets.eu/ontology/list-of-beneficiaries-eu-funds/cz/2007-2013/dimension/euFund> .
-
-_:node1af8juogcx496368 <http://purl.org/linked-data/cube#dimension> <http://data.openbudgets.eu/ontology/list-of-beneficiaries-eu-funds/cz/2007-2013/dimension/date> .
-
-_:node1af8juogcx496369 <http://purl.org/linked-data/cube#componentAttachment> <http://purl.org/linked-data/cube#DataSet> ;
-	<http://purl.org/linked-data/cube#attribute> <http://data.openbudgets.eu/ontology/dsd/attribute/currency> ;
-	<http://purl.org/linked-data/cube#componentRequired> true .
-
-_:node1af8juogcx496370 <http://purl.org/linked-data/cube#measure> <http://data.openbudgets.eu/ontology/dsd/measure/amount> .
-
-_:node1af8juogcx496371 <http://purl.org/linked-data/cube#componentAttachment> <http://purl.org/linked-data/cube#DataSet> ;
-	<http://purl.org/linked-data/cube#dimension> <http://data.openbudgets.eu/ontology/dsd/dimension/organization> .
-
-_:node1af8juogcx496372 <http://purl.org/linked-data/cube#dimension> <http://data.openbudgets.eu/ontology/dsd/dimension/partner> .
-
-_:node1af8juogcx496373 <http://purl.org/linked-data/cube#dimension> <http://data.openbudgets.eu/ontology/dsd/dimension/project> .
-
-_:node1af8juogcx496374 <http://purl.org/linked-data/cube#dimension> <http://data.openbudgets.eu/ontology/list-of-beneficiaries-eu-funds/cz/2007-2013/dimension/operationalProgramme> .
-
-_:node1af8juogcx496375 <http://purl.org/linked-data/cube#dimension> <http://data.openbudgets.eu/ontology/list-of-beneficiaries-eu-funds/cz/2007-2013/dimension/euFund> .
-
-_:node1af8juogcx496376 <http://purl.org/linked-data/cube#dimension> <http://data.openbudgets.eu/ontology/list-of-beneficiaries-eu-funds/cz/2007-2013/dimension/date> .
-
-_:node1af8juogcx496377 <http://purl.org/linked-data/cube#componentAttachment> <http://purl.org/linked-data/cube#DataSet> ;
-	<http://purl.org/linked-data/cube#attribute> <http://data.openbudgets.eu/ontology/dsd/attribute/currency> ;
-	<http://purl.org/linked-data/cube#componentRequired> true .
-
-_:node1af8juogcx496378 <http://purl.org/linked-data/cube#measure> <http://data.openbudgets.eu/ontology/list-of-beneficiaries-eu-funds/cz/2007-2013/measure/status> .
-
-<http://data.openbudgets.eu/ontology/list-of-beneficiaries-eu-funds/cz/2007-2013/measure/status> a <http://purl.org/linked-data/cube#CodedProperty> , <http://www.w3.org/1999/02/22-rdf-syntax-ns#Property> , <http://purl.org/linked-data/cube#MeasureProperty> ;
-	<http://www.w3.org/2000/01/rdf-schema#label> "Stav"@cs , "Status"@en ;
-	<http://purl.org/linked-data/cube#codeList> <http://data.openbudgets.eu/resource/list-of-beneficiaries-eu-funds/cz/2007-2013/codelist/status> ;
-	<http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://www.strukturalni-fondy.cz/getmedia/a8213c29-3263-4b99-b643-cad46b7d33f4/LIST-OF-BENEFICIARIES_Napoveda_1_a8213c29-3263-4b99-b643-cad46b7d33f4.pdf?ext=.pdf> ;
-	<http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2004/02/skos/core#ConceptScheme> .
-
-<http://data.openbudgets.eu/ontology/dsd/list-of-beneficiaries-eu-funds/cz/2007-2013/allocated> a <http://purl.org/linked-data/cube#DataStructureDefinition> ;
-	<http://purl.org/linked-data/cube#component> _:node1af8juogcx496355 , _:node1af8juogcx496356 , _:node1af8juogcx496357 , _:node1af8juogcx496358 , _:node1af8juogcx496359 , _:node1af8juogcx496360 , _:node1af8juogcx496361 , _:node1af8juogcx496362 ;
-	<http://www.w3.org/2000/01/rdf-schema#label> "Definice datové struktury pro seznam příjemců podpory z fondů EU - alokované částky"@cs , "DSD of list of beneficiaries - amounts allocated"@en .
-
-<http://data.openbudgets.eu/ontology/dsd/list-of-beneficiaries-eu-funds/cz/2007-2013/paid> a <http://purl.org/linked-data/cube#DataStructureDefinition> ;
-	<http://purl.org/linked-data/cube#component> _:node1af8juogcx496363 , _:node1af8juogcx496364 , _:node1af8juogcx496365 , _:node1af8juogcx496366 , _:node1af8juogcx496367 , _:node1af8juogcx496368 , _:node1af8juogcx496369 , _:node1af8juogcx496370 ;
-	<http://www.w3.org/2000/01/rdf-schema#label> "Definice datové struktury pro seznam příjemců podpory z fondů EU - celkové částky proplacené od začátku projektu"@cs , "DSD of list of beneficiaries - total amounts paid from the start of the project"@en .
-
-<http://data.openbudgets.eu/ontology/dsd/list-of-beneficiaries-eu-funds/cz/2007-2013/states> a <http://purl.org/linked-data/cube#DataStructureDefinition> ;
-	<http://purl.org/linked-data/cube#component> _:node1af8juogcx496371 , _:node1af8juogcx496372 , _:node1af8juogcx496373 , _:node1af8juogcx496374 , _:node1af8juogcx496375 , _:node1af8juogcx496376 , _:node1af8juogcx496377 , _:node1af8juogcx496378 ;
-	<http://www.w3.org/2000/01/rdf-schema#label> "Definice datové struktury pro seznam příjemců podpory z fondů EU - stavy projektů"@cs , "DSD of list of beneficiaries - states of projects"@en .
-
-<http://data.openbudgets.eu/resource/list-of-beneficiaries-eu-funds/cz/2007-2013/codelist/status> a <http://www.w3.org/2004/02/skos/core#ConceptScheme> ;
-	<http://www.w3.org/2000/01/rdf-schema#label> "Stavy projektů"@cs , "States of projects"@en .
-
-<http://data.openbudgets.eu/resource/dataset/list-of-beneficiaries-eu-funds/cz/2007-2013/codelist/status/cancelled> a <http://www.w3.org/2004/02/skos/core#Concept> ;
-	<http://www.w3.org/2004/02/skos/core#inScheme> <http://data.openbudgets.eu/resource/list-of-beneficiaries-eu-funds/cz/2007-2013/codelist/status> ;
-	<http://www.w3.org/2004/02/skos/core#prefLabel> "Cancelled"@en .
-
-<http://data.openbudgets.eu/resource/dataset/list-of-beneficiaries-eu-funds/cz/2007-2013/codelist/status/finalized> a <http://www.w3.org/2004/02/skos/core#Concept> ;
-	<http://www.w3.org/2004/02/skos/core#inScheme> <http://data.openbudgets.eu/resource/list-of-beneficiaries-eu-funds/cz/2007-2013/codelist/status> ;
-	<http://www.w3.org/2004/02/skos/core#prefLabel> "Finalized"@en .
-
-<http://data.openbudgets.eu/resource/dataset/list-of-beneficiaries-eu-funds/cz/2007-2013/codelist/status/ongoing> a <http://www.w3.org/2004/02/skos/core#Concept> ;
-	<http://www.w3.org/2004/02/skos/core#inScheme> <http://data.openbudgets.eu/resource/list-of-beneficiaries-eu-funds/cz/2007-2013/codelist/status> ;
-	<http://www.w3.org/2004/02/skos/core#prefLabel> "Ongoing"@en .
+lob-status:finalized a skos:Concept ;
+	skos:prefLabel "Finalized"@en;
+	skos:inScheme lob-codelist:status .
+	
+lob-status:ongoing a skos:Concept ;
+	skos:prefLabel "Ongoing"@en;
+	skos:inScheme lob-codelist:status .
+	
+lob-status:cancelled a skos:Concept ;
+	skos:prefLabel "Cancelled"@en;
+	skos:inScheme lob-codelist:status .
