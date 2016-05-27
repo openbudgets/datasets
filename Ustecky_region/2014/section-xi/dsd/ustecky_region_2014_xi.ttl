@@ -1,0 +1,49 @@
+@prefix cz:               <http://data.openbudgets.eu/ontology/czech-republic/> .
+@prefix cz-dimension:     <http://data.openbudgets.eu/ontology/czech-republic/dimension/> .
+@prefix mfcr:             <http://linked.opendata.cz/ontology/domain/mfcr/monitor/ciselniky/> .
+@prefix obeu-attribute:   <http://data.openbudgets.eu/ontology/dsd/attribute/> .
+@prefix obeu-dimension:   <http://data.openbudgets.eu/ontology/dsd/dimension/> .
+@prefix obeu-measure:     <http://data.openbudgets.eu/ontology/dsd/measure/> .
+@prefix qb:               <http://purl.org/linked-data/cube#> .
+@prefix rdf:              <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:             <http://www.w3.org/2000/01/rdf-schema#> .
+
+<http://data.openbudgets.eu/ontology/dsd/czech-republic-report-xi> a qb:DataStructureDefinition ;
+  rdfs:label "Příjmy z rozpočtu Evropské unie a související příjmy v členění podle jednotlivých nástrojů a prostorových jednotek"@cs ;
+  qb:component [ qb:dimension obeu-dimension:budgetaryUnit ;
+                 qb:componentAttachment qb:DataSet ],
+               [ qb:dimension obeu-dimension:fiscalYear ;
+                 qb:componentAttachment qb:DataSet ],
+               [ qb:dimension cz-dimension:budgetParagraph ],
+               [ qb:dimension cz-dimension:budgetItem ],
+               [ qb:dimension cz-dimension:budgetInstrument ],
+               [ qb:dimension cz-dimension:spatialUnit ],
+               [ qb:dimension obeu-dimension:budgetPhase ],
+               [ qb:attribute obeu-attribute:currency ;
+                 qb:componentAttachment qb:DataSet ;
+                 qb:componentRequired true ],
+               [ qb:measure obeu-measure:amount ] .
+
+cz-dimension:budgetParagraph a rdf:Property, qb:CodedProperty, qb:DimensionProperty ;
+  rdfs:label "Budget paragraph"@en, "Paragraf rozpočtové skladby"@cs ;
+  rdfs:subPropertyOf obeu-dimension:functionalClassification ; 
+  rdfs:range mfcr:Paragraf ;
+  qb:codeList <http://linked.opendata.cz/resource/domain/mfcr/monitor/ciselniky/Paragraf> .
+
+cz-dimension:budgetItem a rdf:Property, qb:CodedProperty, qb:DimensionProperty ;
+  rdfs:label "Budget item"@en, "Rozpočtová položka"@cs ;
+  rdfs:subPropertyOf obeu-dimension:economicClassification ;
+  rdfs:range mfcr:Polozka ;
+  qb:codeList <http://linked.opendata.cz/resource/domain/mfcr/monitor/ciselniky/Polozka> .
+
+cz-dimension:budgetInstrument a rdf:Property, qb:CodedProperty, qb:DimensionProperty ;
+  rdfs:label "Budget instrument"@en, "Nástrojové třídění"@cs ;
+  rdfs:subPropertyOf obeu-dimension:programmeClassification ;
+  rdfs:range mfcr:Nastroj ;
+  qb:codeList <http://linked.opendata.cz/resource/domain/mfcr/monitor/ciselniky/Nastroj> .
+
+cz-dimension:spatialUnit a rdf:Property, qb:CodedProperty, qb:DimensionProperty ;
+  rdfs:label "Spatial unit"@en, "Prostorová dimenze"@cs ;
+  rdfs:subPropertyOf obeu-dimension:classification ;
+  rdfs:range mfcr:ProstorovaJednotka ;
+  qb:codeList <http://linked.opendata.cz/resource/domain/mfcr/monitor/ciselniky/ProstorovaJednotka> .
