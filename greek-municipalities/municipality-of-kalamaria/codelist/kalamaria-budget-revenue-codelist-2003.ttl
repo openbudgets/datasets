@@ -1,0 +1,1117 @@
+@prefix gr-dimension: <http://data.openbudgets.eu/ontology/dsd/greek-municipalities/dimension/> .
+@prefix kalamaria-br2003-dsd: <http://data.openbudgets.eu/ontology/dsd/budget-kalamaria-revenue-2003/> .
+@prefix kalamaria-dimension: <http://data.openbudgets.eu/ontology/dsd/municipality-of-kalamaria/dimension/> .
+@prefix kalamaria-offices_esoda: <http://data.openbudgets.eu/resource/codelist/kalamaria-administration-esoda/> .
+@prefix kalamaria-2003-dimension: <http://data.openbudgets.eu/ontology/dsd/municipality-of-kalamaria-2003/dimension/> .
+@prefix kalamaria-kae-es03: <http://data.openbudgets.eu/resource/codelist/kalamaria-kae-esoda-2003/> .
+@prefix gr-budgetPhase: <http://data.openbudgets.eu/resource/dataset/greek-municipalities/codelist/budget-phase/> .
+@prefix kalamaria-br2003-slice: <http://data.openbudgets.eu/resource/dataset/budget-kalamaria-revenue-2003/slice/> .
+@prefix kalamaria-br2003-observation: <http://data.openbudgets.eu/resource/dataset/budget-kalamaria-revenue-2003/observation/> .
+@prefix kalamaria-br2003-dimension: <http://data.openbudgets.eu/ontology/dsd/budget-kalamaria-revenue-2003/dimension/> .
+@prefix kalamaria-br2003-codelist: <http://data.openbudgets.eu/resource/dataset/budget-kalamaria-revenue-2003/codelist/> .
+@prefix dbp: <http://dbpedia.org/property/> .
+@prefix interval: <http://reference.data.gov.uk/def/intervals/> .
+@prefix obeu: <http://data.openbudgets.eu/ontology/> .
+@prefix obeu-attribute: <http://data.openbudgets.eu/ontology/dsd/attribute/> .
+@prefix obeu-codelist: <http://data.openbudgets.eu/resource/codelist/> .
+@prefix obeu-dimension: <http://data.openbudgets.eu/ontology/dsd/dimension/> .
+@prefix obeu-measure: <http://data.openbudgets.eu/ontology/dsd/measure/> .
+@prefix obeu-budgetphase: <http://data.openbudgets.eu/resource/codelist/budget-phase/> .
+@prefix obeu-currency: <http://data.openbudgets.eu/codelist/currency/> .
+@prefix obeu-operation: <http://data.openbudgets.eu/resource/codelist/operation-character/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix qb: <http://purl.org/linked-data/cube#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <http://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix time: <http://www.w3.org/2006/time#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix dcat: <http://www.w3.org/ns/dcat#> .
+@prefix terms: <http://purl.org/dc/terms/> .
+
+<http://data.openbudgets.eu/resource/dataset/budget-kalamaria-revenue-2003/codelist> a skos:ConceptScheme ;
+	skos:prefLabel "Kalamaria municipality revenue budget codelist as derived from the dataset of year 2003" ;
+	skos:hasTopConcept kalamaria-br2003-codelist:000 , kalamaria-br2003-codelist:100 , kalamaria-br2003-codelist:200 , kalamaria-br2003-codelist:300 .
+
+kalamaria-br2003-codelist:000 a skos:Concept ;
+	skos:inScheme <http://data.openbudgets.eu/resource/dataset/budget-kalamaria-revenue-2003/codelist> ;
+	skos:notation "000" ;
+	skos:prefLabel "ΤΑΚΤΙΚΑ ΕΣΟΔΑ"@el ;
+	skos:topConceptOf <http://data.openbudgets.eu/resource/dataset/budget-kalamaria-revenue-2003/codelist> ;
+	skos:narrower <http://data.openbudgets.eu/resource/dataset/budget-kalamaria-revenue-2003/codelist/000/111> , <http://data.openbudgets.eu/resource/dataset/budget-kalamaria-revenue-2003/codelist/000/112> , <http://data.openbudgets.eu/resource/dataset/budget-kalamaria-revenue-2003/codelist/000/113> , <http://data.openbudgets.eu/resource/dataset/budget-kalamaria-revenue-2003/codelist/000/119> , <http://data.openbudgets.eu/resource/dataset/budget-kalamaria-revenue-2003/codelist/000/121> , <http://data.openbudgets.eu/resource/dataset/budget-kalamaria-revenue-2003/codelist/000/122> , <http://data.openbudgets.eu/resource/dataset/budget-kalamaria-revenue-2003/codelist/000/129> , <http://data.openbudgets.eu/resource/dataset/budget-kalamaria-revenue-2003/codelist/000/131> , <http://data.openbudgets.eu/resource/dataset/budget-kalamaria-revenue-2003/codelist/000/132> , <http://data.openbudgets.eu/resource/dataset/budget-kalamaria-revenue-2003/codelist/000/133> , <http://data.openbudgets.eu/resource/dataset/budget-kalamaria-revenue-2003/codelist/000/134> , <http://data.openbudgets.eu/resource/dataset/budget-kalamaria-revenue-2003/codelist/000/135> , <http://data.openbudgets.eu/resource/dataset/budget-kalamaria-revenue-2003/codelist/000/136> , <http://data.openbudgets.eu/resource/dataset/budget-kalamaria-revenue-2003/codelist/000/139> , <http://data.openbudgets.eu/resource/dataset/budget-kalamaria-revenue-2003/codelist/000/140> , <http://data.openbudgets.eu/resource/dataset/budget-kalamaria-revenue-2003/codelist/000/141> , <http://data.openbudgets.eu/resource/dataset/budget-kalamaria-revenue-2003/codelist/000/149> , <http://data.openbudgets.eu/resource/dataset/budget-kalamaria-revenue-2003/codelist/000/151> , <http://data.openbudgets.eu/resource/dataset/budget-kalamaria-revenue-2003/codelist/000/152> , <http://data.openbudgets.eu/resource/dataset/budget-kalamaria-revenue-2003/codelist/000/153> , <http://data.openbudgets.eu/resource/dataset/budget-kalamaria-revenue-2003/codelist/000/159> , <http://data.openbudgets.eu/resource/dataset/budget-kalamaria-revenue-2003/codelist/000/161> , <http://data.openbudgets.eu/resource/dataset/budget-kalamaria-revenue-2003/codelist/000/162> , <http://data.openbudgets.eu/resource/dataset/budget-kalamaria-revenue-2003/codelist/000/163> , <http://data.openbudgets.eu/resource/dataset/budget-kalamaria-revenue-2003/codelist/000/164> , <http://data.openbudgets.eu/resource/dataset/budget-kalamaria-revenue-2003/codelist/000/169> , <http://data.openbudgets.eu/resource/dataset/budget-kalamaria-revenue-2003/codelist/000/171> , <http://data.openbudgets.eu/resource/dataset/budget-kalamaria-revenue-2003/codelist/000/179> , <http://data.openbudgets.eu/resource/dataset/budget-kalamaria-revenue-2003/codelist/000/181> , <http://data.openbudgets.eu/resource/dataset/budget-kalamaria-revenue-2003/codelist/000/182> , <http://data.openbudgets.eu/resource/dataset/budget-kalamaria-revenue-2003/codelist/000/211> , <http://data.openbudgets.eu/resource/dataset/budget-kalamaria-revenue-2003/codelist/000/212> , <http://data.openbudgets.eu/resource/dataset/budget-kalamaria-revenue-2003/codelist/000/213> , <http://data.openbudgets.eu/resource/dataset/budget-kalamaria-revenue-2003/codelist/000/214> , <http://data.openbudgets.eu/resource/dataset/budget-kalamaria-revenue-2003/codelist/000/219> , <http://data.openbudgets.eu/resource/dataset/budget-kalamaria-revenue-2003/codelist/000/311> , <http://data.openbudgets.eu/resource/dataset/budget-kalamaria-revenue-2003/codelist/000/312> , <http://data.openbudgets.eu/resource/dataset/budget-kalamaria-revenue-2003/codelist/000/313> , <http://data.openbudgets.eu/resource/dataset/budget-kalamaria-revenue-2003/codelist/000/314> , <http://data.openbudgets.eu/resource/dataset/budget-kalamaria-revenue-2003/codelist/000/319> , <http://data.openbudgets.eu/resource/dataset/budget-kalamaria-revenue-2003/codelist/000/321> , <http://data.openbudgets.eu/resource/dataset/budget-kalamaria-revenue-2003/codelist/000/322> , <http://data.openbudgets.eu/resource/dataset/budget-kalamaria-revenue-2003/codelist/000/323> , <http://data.openbudgets.eu/resource/dataset/budget-kalamaria-revenue-2003/codelist/000/329> , <http://data.openbudgets.eu/resource/dataset/budget-kalamaria-revenue-2003/codelist/000/331> , <http://data.openbudgets.eu/resource/dataset/budget-kalamaria-revenue-2003/codelist/000/339> , <http://data.openbudgets.eu/resource/dataset/budget-kalamaria-revenue-2003/codelist/000/341> , <http://data.openbudgets.eu/resource/dataset/budget-kalamaria-revenue-2003/codelist/000/349> , <http://data.openbudgets.eu/resource/dataset/budget-kalamaria-revenue-2003/codelist/000/351> , <http://data.openbudgets.eu/resource/dataset/budget-kalamaria-revenue-2003/codelist/000/352> , <http://data.openbudgets.eu/resource/dataset/budget-kalamaria-revenue-2003/codelist/000/353> , <http://data.openbudgets.eu/resource/dataset/budget-kalamaria-revenue-2003/codelist/000/359> , <http://data.openbudgets.eu/resource/dataset/budget-kalamaria-revenue-2003/codelist/000/361> , <http://data.openbudgets.eu/resource/dataset/budget-kalamaria-revenue-2003/codelist/000/362> , <http://data.openbudgets.eu/resource/dataset/budget-kalamaria-revenue-2003/codelist/000/363> , <http://data.openbudgets.eu/resource/dataset/budget-kalamaria-revenue-2003/codelist/000/364> , <http://data.openbudgets.eu/resource/dataset/budget-kalamaria-revenue-2003/codelist/000/365> , <http://data.openbudgets.eu/resource/dataset/budget-kalamaria-revenue-2003/codelist/000/366> , <http://data.openbudgets.eu/resource/dataset/budget-kalamaria-revenue-2003/codelist/000/367> , <http://data.openbudgets.eu/resource/dataset/budget-kalamaria-revenue-2003/codelist/000/368> , <http://data.openbudgets.eu/resource/dataset/budget-kalamaria-revenue-2003/codelist/000/369> , <http://data.openbudgets.eu/resource/dataset/budget-kalamaria-revenue-2003/codelist/000/411> , <http://data.openbudgets.eu/resource/dataset/budget-kalamaria-revenue-2003/codelist/000/413> , <http://data.openbudgets.eu/resource/dataset/budget-kalamaria-revenue-2003/codelist/000/414> , <http://data.openbudgets.eu/resource/dataset/budget-kalamaria-revenue-2003/codelist/000/419> , <http://data.openbudgets.eu/resource/dataset/budget-kalamaria-revenue-2003/codelist/000/421> , <http://data.openbudgets.eu/resource/dataset/budget-kalamaria-revenue-2003/codelist/000/422> , <http://data.openbudgets.eu/resource/dataset/budget-kalamaria-revenue-2003/codelist/000/423> , <http://data.openbudgets.eu/resource/dataset/budget-kalamaria-revenue-2003/codelist/000/424> , <http://data.openbudgets.eu/resource/dataset/budget-kalamaria-revenue-2003/codelist/000/425> , <http://data.openbudgets.eu/resource/dataset/budget-kalamaria-revenue-2003/codelist/000/429> , <http://data.openbudgets.eu/resource/dataset/budget-kalamaria-revenue-2003/codelist/000/431> , <http://data.openbudgets.eu/resource/dataset/budget-kalamaria-revenue-2003/codelist/000/433> , <http://data.openbudgets.eu/resource/dataset/budget-kalamaria-revenue-2003/codelist/000/434> , <http://data.openbudgets.eu/resource/dataset/budget-kalamaria-revenue-2003/codelist/000/439> , <http://data.openbudgets.eu/resource/dataset/budget-kalamaria-revenue-2003/codelist/000/511> , <http://data.openbudgets.eu/resource/dataset/budget-kalamaria-revenue-2003/codelist/000/512> , <http://data.openbudgets.eu/resource/dataset/budget-kalamaria-revenue-2003/codelist/000/519> .
+
+kalamaria-br2003-codelist:100 a skos:Concept ;
+	skos:inScheme <http://data.openbudgets.eu/resource/dataset/budget-kalamaria-revenue-2003/codelist> ;
+	skos:notation "100" ;
+	skos:prefLabel "ΕΚΤΑΚΤΑ ΕΣΟΔΑ"@el ;
+	skos:topConceptOf <http://data.openbudgets.eu/resource/dataset/budget-kalamaria-revenue-2003/codelist> ;
+	skos:narrower <http://data.openbudgets.eu/resource/dataset/budget-kalamaria-revenue-2003/codelist/100/111> , <http://data.openbudgets.eu/resource/dataset/budget-kalamaria-revenue-2003/codelist/100/112> , <http://data.openbudgets.eu/resource/dataset/budget-kalamaria-revenue-2003/codelist/100/119> , <http://data.openbudgets.eu/resource/dataset/budget-kalamaria-revenue-2003/codelist/100/121> , <http://data.openbudgets.eu/resource/dataset/budget-kalamaria-revenue-2003/codelist/100/211> , <http://data.openbudgets.eu/resource/dataset/budget-kalamaria-revenue-2003/codelist/100/212> , <http://data.openbudgets.eu/resource/dataset/budget-kalamaria-revenue-2003/codelist/100/213> , <http://data.openbudgets.eu/resource/dataset/budget-kalamaria-revenue-2003/codelist/100/219> , <http://data.openbudgets.eu/resource/dataset/budget-kalamaria-revenue-2003/codelist/100/221> , <http://data.openbudgets.eu/resource/dataset/budget-kalamaria-revenue-2003/codelist/100/311> , <http://data.openbudgets.eu/resource/dataset/budget-kalamaria-revenue-2003/codelist/100/312> , <http://data.openbudgets.eu/resource/dataset/budget-kalamaria-revenue-2003/codelist/100/313> , <http://data.openbudgets.eu/resource/dataset/budget-kalamaria-revenue-2003/codelist/100/319> , <http://data.openbudgets.eu/resource/dataset/budget-kalamaria-revenue-2003/codelist/100/321> , <http://data.openbudgets.eu/resource/dataset/budget-kalamaria-revenue-2003/codelist/100/411> , <http://data.openbudgets.eu/resource/dataset/budget-kalamaria-revenue-2003/codelist/100/421> , <http://data.openbudgets.eu/resource/dataset/budget-kalamaria-revenue-2003/codelist/100/511> , <http://data.openbudgets.eu/resource/dataset/budget-kalamaria-revenue-2003/codelist/100/521> , <http://data.openbudgets.eu/resource/dataset/budget-kalamaria-revenue-2003/codelist/100/522> , <http://data.openbudgets.eu/resource/dataset/budget-kalamaria-revenue-2003/codelist/100/523> , <http://data.openbudgets.eu/resource/dataset/budget-kalamaria-revenue-2003/codelist/100/524> , <http://data.openbudgets.eu/resource/dataset/budget-kalamaria-revenue-2003/codelist/100/525> , <http://data.openbudgets.eu/resource/dataset/budget-kalamaria-revenue-2003/codelist/100/529> , <http://data.openbudgets.eu/resource/dataset/budget-kalamaria-revenue-2003/codelist/100/531> , <http://data.openbudgets.eu/resource/dataset/budget-kalamaria-revenue-2003/codelist/100/539> , <http://data.openbudgets.eu/resource/dataset/budget-kalamaria-revenue-2003/codelist/100/611> , <http://data.openbudgets.eu/resource/dataset/budget-kalamaria-revenue-2003/codelist/100/612> , <http://data.openbudgets.eu/resource/dataset/budget-kalamaria-revenue-2003/codelist/100/613> , <http://data.openbudgets.eu/resource/dataset/budget-kalamaria-revenue-2003/codelist/100/619> , <http://data.openbudgets.eu/resource/dataset/budget-kalamaria-revenue-2003/codelist/100/621> , <http://data.openbudgets.eu/resource/dataset/budget-kalamaria-revenue-2003/codelist/100/622> , <http://data.openbudgets.eu/resource/dataset/budget-kalamaria-revenue-2003/codelist/100/623> , <http://data.openbudgets.eu/resource/dataset/budget-kalamaria-revenue-2003/codelist/100/624> , <http://data.openbudgets.eu/resource/dataset/budget-kalamaria-revenue-2003/codelist/100/625> , <http://data.openbudgets.eu/resource/dataset/budget-kalamaria-revenue-2003/codelist/100/626> , <http://data.openbudgets.eu/resource/dataset/budget-kalamaria-revenue-2003/codelist/100/627> , <http://data.openbudgets.eu/resource/dataset/budget-kalamaria-revenue-2003/codelist/100/628> , <http://data.openbudgets.eu/resource/dataset/budget-kalamaria-revenue-2003/codelist/100/629> , <http://data.openbudgets.eu/resource/dataset/budget-kalamaria-revenue-2003/codelist/100/631> , <http://data.openbudgets.eu/resource/dataset/budget-kalamaria-revenue-2003/codelist/100/632> , <http://data.openbudgets.eu/resource/dataset/budget-kalamaria-revenue-2003/codelist/100/633> , <http://data.openbudgets.eu/resource/dataset/budget-kalamaria-revenue-2003/codelist/100/639> , <http://data.openbudgets.eu/resource/dataset/budget-kalamaria-revenue-2003/codelist/100/641> , <http://data.openbudgets.eu/resource/dataset/budget-kalamaria-revenue-2003/codelist/100/649> .
+
+kalamaria-br2003-codelist:200 a skos:Concept ;
+	skos:inScheme <http://data.openbudgets.eu/resource/dataset/budget-kalamaria-revenue-2003/codelist> ;
+	skos:notation "200" ;
+	skos:prefLabel "ΕΣΟΔΑ ΠΑΡΕΛΘΟΝΤΩΝ ΕΤΩΝ"@el ;
+	skos:topConceptOf <http://data.openbudgets.eu/resource/dataset/budget-kalamaria-revenue-2003/codelist> ;
+	skos:narrower <http://data.openbudgets.eu/resource/dataset/budget-kalamaria-revenue-2003/codelist/200/111> , <http://data.openbudgets.eu/resource/dataset/budget-kalamaria-revenue-2003/codelist/200/112> , <http://data.openbudgets.eu/resource/dataset/budget-kalamaria-revenue-2003/codelist/200/113> , <http://data.openbudgets.eu/resource/dataset/budget-kalamaria-revenue-2003/codelist/200/114> , <http://data.openbudgets.eu/resource/dataset/budget-kalamaria-revenue-2003/codelist/200/115> , <http://data.openbudgets.eu/resource/dataset/budget-kalamaria-revenue-2003/codelist/200/116> , <http://data.openbudgets.eu/resource/dataset/budget-kalamaria-revenue-2003/codelist/200/119> , <http://data.openbudgets.eu/resource/dataset/budget-kalamaria-revenue-2003/codelist/200/121> , <http://data.openbudgets.eu/resource/dataset/budget-kalamaria-revenue-2003/codelist/200/122> , <http://data.openbudgets.eu/resource/dataset/budget-kalamaria-revenue-2003/codelist/200/123> , <http://data.openbudgets.eu/resource/dataset/budget-kalamaria-revenue-2003/codelist/200/124> , <http://data.openbudgets.eu/resource/dataset/budget-kalamaria-revenue-2003/codelist/200/125> , <http://data.openbudgets.eu/resource/dataset/budget-kalamaria-revenue-2003/codelist/200/126> , <http://data.openbudgets.eu/resource/dataset/budget-kalamaria-revenue-2003/codelist/200/129> , <http://data.openbudgets.eu/resource/dataset/budget-kalamaria-revenue-2003/codelist/200/211> , <http://data.openbudgets.eu/resource/dataset/budget-kalamaria-revenue-2003/codelist/200/212> .
+
+kalamaria-br2003-codelist:300 a skos:Concept ;
+	skos:inScheme <http://data.openbudgets.eu/resource/dataset/budget-kalamaria-revenue-2003/codelist> ;
+	skos:notation "300" ;
+	skos:prefLabel "ΧΡΗΜΑΤΙΚΟ ΥΠΟΛΟΙΠΟ"@el ;
+	skos:topConceptOf <http://data.openbudgets.eu/resource/dataset/budget-kalamaria-revenue-2003/codelist> ;
+	skos:narrower <http://data.openbudgets.eu/resource/dataset/budget-kalamaria-revenue-2003/codelist/300/111> .
+
+<http://data.openbudgets.eu/resource/dataset/budget-kalamaria-revenue-2003/codelist/000/111> a skos:Concept ;
+	skos:inScheme <http://data.openbudgets.eu/resource/dataset/budget-kalamaria-revenue-2003/codelist> ;
+	skos:notation "111" ;
+	skos:prefLabel "Μισθώματα εξ αστικών ακινήτων (Κτιρίων άρθρον 198 Δ.Κ.Κ)" ;
+	skos:broadMatch kalamaria-kae-es03:111 ;
+	skos:broader kalamaria-br2003-codelist:000 .
+
+<http://data.openbudgets.eu/resource/dataset/budget-kalamaria-revenue-2003/codelist/000/112> a skos:Concept ;
+	skos:inScheme <http://data.openbudgets.eu/resource/dataset/budget-kalamaria-revenue-2003/codelist> ;
+	skos:notation "112" ;
+	skos:prefLabel "Μισθώματα βοσκησίμων εκτάσεων (άρθρον 5 από 24-9-1958 Β.Δ.)" ;
+	skos:broadMatch kalamaria-kae-es03:112 ;
+	skos:broader kalamaria-br2003-codelist:000 .
+
+<http://data.openbudgets.eu/resource/dataset/budget-kalamaria-revenue-2003/codelist/000/113> a skos:Concept ;
+	skos:inScheme <http://data.openbudgets.eu/resource/dataset/budget-kalamaria-revenue-2003/codelist> ;
+	skos:notation "113" ;
+	skos:prefLabel "Δικαίωμα βοσκής (άρθρα 5-11 από 24-9-1958 Β.Δ)" ;
+	skos:broadMatch kalamaria-kae-es03:113 ;
+	skos:broader kalamaria-br2003-codelist:000 .
+
+<http://data.openbudgets.eu/resource/dataset/budget-kalamaria-revenue-2003/codelist/000/119> a skos:Concept ;
+	skos:inScheme <http://data.openbudgets.eu/resource/dataset/budget-kalamaria-revenue-2003/codelist> ;
+	skos:notation "119" ;
+	skos:prefLabel "Λοιπά έσοδα εξ αγροτικών ακινήτων" ;
+	skos:broadMatch kalamaria-kae-es03:119 ;
+	skos:broader kalamaria-br2003-codelist:000 .
+
+<http://data.openbudgets.eu/resource/dataset/budget-kalamaria-revenue-2003/codelist/000/121> a skos:Concept ;
+	skos:inScheme <http://data.openbudgets.eu/resource/dataset/budget-kalamaria-revenue-2003/codelist> ;
+	skos:notation "121" ;
+	skos:prefLabel "Μισθώματα δημοτικής αγοράς" ;
+	skos:broadMatch kalamaria-kae-es03:121 ;
+	skos:broader kalamaria-br2003-codelist:000 .
+
+<http://data.openbudgets.eu/resource/dataset/budget-kalamaria-revenue-2003/codelist/000/122> a skos:Concept ;
+	skos:inScheme <http://data.openbudgets.eu/resource/dataset/budget-kalamaria-revenue-2003/codelist> ;
+	skos:notation "122" ;
+	skos:prefLabel "Δικαιώματα ή μισθώματα εκ χρήσεως δημοτικών χώρων" ;
+	skos:broadMatch kalamaria-kae-es03:122 ;
+	skos:broader kalamaria-br2003-codelist:000 .
+
+<http://data.openbudgets.eu/resource/dataset/budget-kalamaria-revenue-2003/codelist/000/129> a skos:Concept ;
+	skos:inScheme <http://data.openbudgets.eu/resource/dataset/budget-kalamaria-revenue-2003/codelist> ;
+	skos:notation "129" ;
+	skos:prefLabel "Λοιπά έσοδα αγοράς" ;
+	skos:broadMatch kalamaria-kae-es03:129 ;
+	skos:broader kalamaria-br2003-codelist:000 .
+
+<http://data.openbudgets.eu/resource/dataset/budget-kalamaria-revenue-2003/codelist/000/131> a skos:Concept ;
+	skos:inScheme <http://data.openbudgets.eu/resource/dataset/budget-kalamaria-revenue-2003/codelist> ;
+	skos:notation "131" ;
+	skos:prefLabel "Δικαιώματα εκ κηδειών" ;
+	skos:broadMatch kalamaria-kae-es03:131 ;
+	skos:broader kalamaria-br2003-codelist:000 .
+
+<http://data.openbudgets.eu/resource/dataset/budget-kalamaria-revenue-2003/codelist/000/132> a skos:Concept ;
+	skos:inScheme <http://data.openbudgets.eu/resource/dataset/budget-kalamaria-revenue-2003/codelist> ;
+	skos:notation "132" ;
+	skos:prefLabel "Δικαιώματα εκ μνημόσυνων και λοιπών ιεροτελεστιών" ;
+	skos:broadMatch kalamaria-kae-es03:132 ;
+	skos:broader kalamaria-br2003-codelist:000 .
+
+<http://data.openbudgets.eu/resource/dataset/budget-kalamaria-revenue-2003/codelist/000/133> a skos:Concept ;
+	skos:inScheme <http://data.openbudgets.eu/resource/dataset/budget-kalamaria-revenue-2003/codelist> ;
+	skos:notation "133" ;
+	skos:prefLabel "Δικαιώματα εκ διαθέσεως τάφων τριετούς ταφής και ανανεώσεως χρόνου ταφής" ;
+	skos:broadMatch kalamaria-kae-es03:133 ;
+	skos:broader kalamaria-br2003-codelist:000 .
+
+<http://data.openbudgets.eu/resource/dataset/budget-kalamaria-revenue-2003/codelist/000/134> a skos:Concept ;
+	skos:inScheme <http://data.openbudgets.eu/resource/dataset/budget-kalamaria-revenue-2003/codelist> ;
+	skos:notation "134" ;
+	skos:prefLabel "Δικαιώματα εκ χρήσεως οστεοφυλακίων" ;
+	skos:broadMatch kalamaria-kae-es03:134 ;
+	skos:broader kalamaria-br2003-codelist:000 .
+
+<http://data.openbudgets.eu/resource/dataset/budget-kalamaria-revenue-2003/codelist/000/135> a skos:Concept ;
+	skos:inScheme <http://data.openbudgets.eu/resource/dataset/budget-kalamaria-revenue-2003/codelist> ;
+	skos:notation "135" ;
+	skos:prefLabel "Δικαιώματα εκ διαδοχικών ταφείων" ;
+	skos:broadMatch kalamaria-kae-es03:135 ;
+	skos:broader kalamaria-br2003-codelist:000 .
+
+<http://data.openbudgets.eu/resource/dataset/budget-kalamaria-revenue-2003/codelist/000/136> a skos:Concept ;
+	skos:inScheme <http://data.openbudgets.eu/resource/dataset/budget-kalamaria-revenue-2003/codelist> ;
+	skos:notation "136" ;
+	skos:prefLabel "Τέλη συντηρήσεως και αφής κανδηλιών" ;
+	skos:broadMatch kalamaria-kae-es03:136 ;
+	skos:broader kalamaria-br2003-codelist:000 .
+
+<http://data.openbudgets.eu/resource/dataset/budget-kalamaria-revenue-2003/codelist/000/139> a skos:Concept ;
+	skos:inScheme <http://data.openbudgets.eu/resource/dataset/budget-kalamaria-revenue-2003/codelist> ;
+	skos:notation "139" ;
+	skos:prefLabel "Λοιπά έσοδα νεκροταφείων" ;
+	skos:broadMatch kalamaria-kae-es03:139 ;
+	skos:broader kalamaria-br2003-codelist:000 .
+
+<http://data.openbudgets.eu/resource/dataset/budget-kalamaria-revenue-2003/codelist/000/140> a skos:Concept ;
+	skos:inScheme <http://data.openbudgets.eu/resource/dataset/budget-kalamaria-revenue-2003/codelist> ;
+	skos:notation "140" ;
+	skos:prefLabel "Έσοδα εκ σφαγείων (άρθρον 3 από 24-9-1958 Β.Δ.)" ;
+	skos:broadMatch kalamaria-kae-es03:140 ;
+	skos:broader kalamaria-br2003-codelist:000 .
+
+<http://data.openbudgets.eu/resource/dataset/budget-kalamaria-revenue-2003/codelist/000/141> a skos:Concept ;
+	skos:inScheme <http://data.openbudgets.eu/resource/dataset/budget-kalamaria-revenue-2003/codelist> ;
+	skos:notation "141" ;
+	skos:prefLabel "Δικαιώματα χρήσεως σφαγείων" ;
+	skos:broadMatch kalamaria-kae-es03:141 ;
+	skos:broader kalamaria-br2003-codelist:000 .
+
+<http://data.openbudgets.eu/resource/dataset/budget-kalamaria-revenue-2003/codelist/000/149> a skos:Concept ;
+	skos:inScheme <http://data.openbudgets.eu/resource/dataset/budget-kalamaria-revenue-2003/codelist> ;
+	skos:notation "149" ;
+	skos:prefLabel "Λοιπά έσοδα σφαγείων (εκποίησης κόπρου κλπ)" ;
+	skos:broadMatch kalamaria-kae-es03:149 ;
+	skos:broader kalamaria-br2003-codelist:000 .
+
+<http://data.openbudgets.eu/resource/dataset/budget-kalamaria-revenue-2003/codelist/000/151> a skos:Concept ;
+	skos:inScheme <http://data.openbudgets.eu/resource/dataset/budget-kalamaria-revenue-2003/codelist> ;
+	skos:notation "151" ;
+	skos:prefLabel "Δικαιώματα ή μισθώματα χρήσεως λουτρών" ;
+	skos:broadMatch kalamaria-kae-es03:151 ;
+	skos:broader kalamaria-br2003-codelist:000 .
+
+<http://data.openbudgets.eu/resource/dataset/budget-kalamaria-revenue-2003/codelist/000/152> a skos:Concept ;
+	skos:inScheme <http://data.openbudgets.eu/resource/dataset/budget-kalamaria-revenue-2003/codelist> ;
+	skos:notation "152" ;
+	skos:prefLabel "Δικαιώματα χρήσεως αφοδευτηρίων" ;
+	skos:broadMatch kalamaria-kae-es03:152 ;
+	skos:broader kalamaria-br2003-codelist:000 .
+
+<http://data.openbudgets.eu/resource/dataset/budget-kalamaria-revenue-2003/codelist/000/153> a skos:Concept ;
+	skos:inScheme <http://data.openbudgets.eu/resource/dataset/budget-kalamaria-revenue-2003/codelist> ;
+	skos:notation "153" ;
+	skos:prefLabel "Έσοδα εξ ενοικιάσεως αφοδευτηρίων" ;
+	skos:broadMatch kalamaria-kae-es03:153 ;
+	skos:broader kalamaria-br2003-codelist:000 .
+
+<http://data.openbudgets.eu/resource/dataset/budget-kalamaria-revenue-2003/codelist/000/159> a skos:Concept ;
+	skos:inScheme <http://data.openbudgets.eu/resource/dataset/budget-kalamaria-revenue-2003/codelist> ;
+	skos:notation "159" ;
+	skos:prefLabel "Λοιπά έσοδα εκ λουτρών και αφοδευτηρίων" ;
+	skos:broadMatch kalamaria-kae-es03:159 ;
+	skos:broader kalamaria-br2003-codelist:000 .
+
+<http://data.openbudgets.eu/resource/dataset/budget-kalamaria-revenue-2003/codelist/000/161> a skos:Concept ;
+	skos:inScheme <http://data.openbudgets.eu/resource/dataset/budget-kalamaria-revenue-2003/codelist> ;
+	skos:notation "161" ;
+	skos:prefLabel "Μισθώματα λατομείων, ορυχείων, μεταλλείων" ;
+	skos:broadMatch kalamaria-kae-es03:161 ;
+	skos:broader kalamaria-br2003-codelist:000 .
+
+<http://data.openbudgets.eu/resource/dataset/budget-kalamaria-revenue-2003/codelist/000/162> a skos:Concept ;
+	skos:inScheme <http://data.openbudgets.eu/resource/dataset/budget-kalamaria-revenue-2003/codelist> ;
+	skos:notation "162" ;
+	skos:prefLabel "Δικαιώματα αμμοληψίας, αξορύξεως λίθων εκ λατομείων" ;
+	skos:broadMatch kalamaria-kae-es03:162 ;
+	skos:broader kalamaria-br2003-codelist:000 .
+
+<http://data.openbudgets.eu/resource/dataset/budget-kalamaria-revenue-2003/codelist/000/163> a skos:Concept ;
+	skos:inScheme <http://data.openbudgets.eu/resource/dataset/budget-kalamaria-revenue-2003/codelist> ;
+	skos:notation "163" ;
+	skos:prefLabel "Δικαιώματα εξ ιχθυοτροφείων" ;
+	skos:broadMatch kalamaria-kae-es03:163 ;
+	skos:broader kalamaria-br2003-codelist:000 .
+
+<http://data.openbudgets.eu/resource/dataset/budget-kalamaria-revenue-2003/codelist/000/164> a skos:Concept ;
+	skos:inScheme <http://data.openbudgets.eu/resource/dataset/budget-kalamaria-revenue-2003/codelist> ;
+	skos:notation "164" ;
+	skos:prefLabel "Δικαιώματα εξ αλυκών" ;
+	skos:broadMatch kalamaria-kae-es03:164 ;
+	skos:broader kalamaria-br2003-codelist:000 .
+
+<http://data.openbudgets.eu/resource/dataset/budget-kalamaria-revenue-2003/codelist/000/169> a skos:Concept ;
+	skos:inScheme <http://data.openbudgets.eu/resource/dataset/budget-kalamaria-revenue-2003/codelist> ;
+	skos:notation "169" ;
+	skos:prefLabel "Λοιπά έσοδα εξ εκμεταλλεύσεως εδάφους, υπεδάφους, θαλάσσης" ;
+	skos:broadMatch kalamaria-kae-es03:169 ;
+	skos:broader kalamaria-br2003-codelist:000 .
+
+<http://data.openbudgets.eu/resource/dataset/budget-kalamaria-revenue-2003/codelist/000/171> a skos:Concept ;
+	skos:inScheme <http://data.openbudgets.eu/resource/dataset/budget-kalamaria-revenue-2003/codelist> ;
+	skos:notation "171" ;
+	skos:prefLabel "Δικαιώματα εκ της εμπορίας ποσίμων υδάτων ιαματικών ή μη" ;
+	skos:broadMatch kalamaria-kae-es03:171 ;
+	skos:broader kalamaria-br2003-codelist:000 .
+
+<http://data.openbudgets.eu/resource/dataset/budget-kalamaria-revenue-2003/codelist/000/179> a skos:Concept ;
+	skos:inScheme <http://data.openbudgets.eu/resource/dataset/budget-kalamaria-revenue-2003/codelist> ;
+	skos:notation "179" ;
+	skos:prefLabel "Λοιπά έσοδα εκ της εμπορίας ποσίμων υδάτων" ;
+	skos:broadMatch kalamaria-kae-es03:179 ;
+	skos:broader kalamaria-br2003-codelist:000 .
+
+<http://data.openbudgets.eu/resource/dataset/budget-kalamaria-revenue-2003/codelist/000/181> a skos:Concept ;
+	skos:inScheme <http://data.openbudgets.eu/resource/dataset/budget-kalamaria-revenue-2003/codelist> ;
+	skos:notation "181" ;
+	skos:prefLabel "Πρόσοδοι εξ ιδίων επιχειρήσεων (μικτά)" ;
+	skos:broadMatch kalamaria-kae-es03:181 ;
+	skos:broader kalamaria-br2003-codelist:000 .
+
+<http://data.openbudgets.eu/resource/dataset/budget-kalamaria-revenue-2003/codelist/000/182> a skos:Concept ;
+	skos:inScheme <http://data.openbudgets.eu/resource/dataset/budget-kalamaria-revenue-2003/codelist> ;
+	skos:notation "182" ;
+	skos:prefLabel "Πρόσοδοι εκ συμμετοχής εις επιχειρήσεις (καθαρά άρθρον 214 Δ.Κ.Κ.)" ;
+	skos:broadMatch kalamaria-kae-es03:182 ;
+	skos:broader kalamaria-br2003-codelist:000 .
+
+<http://data.openbudgets.eu/resource/dataset/budget-kalamaria-revenue-2003/codelist/000/211> a skos:Concept ;
+	skos:inScheme <http://data.openbudgets.eu/resource/dataset/budget-kalamaria-revenue-2003/codelist> ;
+	skos:notation "211" ;
+	skos:prefLabel "Τόκοι εκ καταθέσεων χρημάτων εις Τράπεζας" ;
+	skos:broadMatch kalamaria-kae-es03:211 ;
+	skos:broader kalamaria-br2003-codelist:000 .
+
+<http://data.openbudgets.eu/resource/dataset/budget-kalamaria-revenue-2003/codelist/000/212> a skos:Concept ;
+	skos:inScheme <http://data.openbudgets.eu/resource/dataset/budget-kalamaria-revenue-2003/codelist> ;
+	skos:notation "212" ;
+	skos:prefLabel "'Εσοδα εκ κινητών αξιών Κράτους και ΝΠΔΔ" ;
+	skos:broadMatch kalamaria-kae-es03:212 ;
+	skos:broader kalamaria-br2003-codelist:000 .
+
+<http://data.openbudgets.eu/resource/dataset/budget-kalamaria-revenue-2003/codelist/000/213> a skos:Concept ;
+	skos:inScheme <http://data.openbudgets.eu/resource/dataset/budget-kalamaria-revenue-2003/codelist> ;
+	skos:notation "213" ;
+	skos:prefLabel "Έσοδα εκ λοιπών κινητών αξιών" ;
+	skos:broadMatch kalamaria-kae-es03:213 ;
+	skos:broader kalamaria-br2003-codelist:000 .
+
+<http://data.openbudgets.eu/resource/dataset/budget-kalamaria-revenue-2003/codelist/000/214> a skos:Concept ;
+	skos:inScheme <http://data.openbudgets.eu/resource/dataset/budget-kalamaria-revenue-2003/codelist> ;
+	skos:notation "214" ;
+	skos:prefLabel "Μισθώματα εκ χρήσεως μηχανημάτων, επίπλων και συσκευών" ;
+	skos:broadMatch kalamaria-kae-es03:214 ;
+	skos:broader kalamaria-br2003-codelist:000 .
+
+<http://data.openbudgets.eu/resource/dataset/budget-kalamaria-revenue-2003/codelist/000/219> a skos:Concept ;
+	skos:inScheme <http://data.openbudgets.eu/resource/dataset/budget-kalamaria-revenue-2003/codelist> ;
+	skos:notation "219" ;
+	skos:prefLabel "Λοιπά έσοδα εκ κινητής περιουσίας" ;
+	skos:broadMatch kalamaria-kae-es03:219 ;
+	skos:broader kalamaria-br2003-codelist:000 .
+
+<http://data.openbudgets.eu/resource/dataset/budget-kalamaria-revenue-2003/codelist/000/311> a skos:Concept ;
+	skos:inScheme <http://data.openbudgets.eu/resource/dataset/budget-kalamaria-revenue-2003/codelist> ;
+	skos:notation "311" ;
+	skos:prefLabel "Τέλη καθαριότητας και αποκομμιδής απορριμάτων οικιών" ;
+	skos:broadMatch kalamaria-kae-es03:311 ;
+	skos:broader kalamaria-br2003-codelist:000 .
+
+<http://data.openbudgets.eu/resource/dataset/budget-kalamaria-revenue-2003/codelist/000/312> a skos:Concept ;
+	skos:inScheme <http://data.openbudgets.eu/resource/dataset/budget-kalamaria-revenue-2003/codelist> ;
+	skos:notation "312" ;
+	skos:prefLabel "Τέλη καθαριότητας και αποκομμιδής απορριμάτων καταστημάτων" ;
+	skos:broadMatch kalamaria-kae-es03:312 ;
+	skos:broader kalamaria-br2003-codelist:000 .
+
+<http://data.openbudgets.eu/resource/dataset/budget-kalamaria-revenue-2003/codelist/000/313> a skos:Concept ;
+	skos:inScheme <http://data.openbudgets.eu/resource/dataset/budget-kalamaria-revenue-2003/codelist> ;
+	skos:notation "313" ;
+	skos:prefLabel "Τέλη καθαριότητας αυτοκινήτων Δ. Χ." ;
+	skos:broadMatch kalamaria-kae-es03:313 ;
+	skos:broader kalamaria-br2003-codelist:000 .
+
+<http://data.openbudgets.eu/resource/dataset/budget-kalamaria-revenue-2003/codelist/000/314> a skos:Concept ;
+	skos:inScheme <http://data.openbudgets.eu/resource/dataset/budget-kalamaria-revenue-2003/codelist> ;
+	skos:notation "314" ;
+	skos:prefLabel "Τέλη καθαριότητας αυτοκινήτων Ι. Χ." ;
+	skos:broadMatch kalamaria-kae-es03:314 ;
+	skos:broader kalamaria-br2003-codelist:000 .
+
+<http://data.openbudgets.eu/resource/dataset/budget-kalamaria-revenue-2003/codelist/000/319> a skos:Concept ;
+	skos:inScheme <http://data.openbudgets.eu/resource/dataset/budget-kalamaria-revenue-2003/codelist> ;
+	skos:notation "319" ;
+	skos:prefLabel "Τέλη καθαριότητας & φωτισμού οικιών & καταστημάτων" ;
+	skos:broadMatch kalamaria-kae-es03:319 ;
+	skos:broader kalamaria-br2003-codelist:000 .
+
+<http://data.openbudgets.eu/resource/dataset/budget-kalamaria-revenue-2003/codelist/000/321> a skos:Concept ;
+	skos:inScheme <http://data.openbudgets.eu/resource/dataset/budget-kalamaria-revenue-2003/codelist> ;
+	skos:notation "321" ;
+	skos:prefLabel "Διακιώματα ή τέλη υδρεύσεως οικιών" ;
+	skos:broadMatch kalamaria-kae-es03:321 ;
+	skos:broader kalamaria-br2003-codelist:000 .
+
+<http://data.openbudgets.eu/resource/dataset/budget-kalamaria-revenue-2003/codelist/000/322> a skos:Concept ;
+	skos:inScheme <http://data.openbudgets.eu/resource/dataset/budget-kalamaria-revenue-2003/codelist> ;
+	skos:notation "322" ;
+	skos:prefLabel "Διακιώματα ή τέλη υδρεύσεως καταστημάτων" ;
+	skos:broadMatch kalamaria-kae-es03:322 ;
+	skos:broader kalamaria-br2003-codelist:000 .
+
+<http://data.openbudgets.eu/resource/dataset/budget-kalamaria-revenue-2003/codelist/000/323> a skos:Concept ;
+	skos:inScheme <http://data.openbudgets.eu/resource/dataset/budget-kalamaria-revenue-2003/codelist> ;
+	skos:notation "323" ;
+	skos:prefLabel "Διακιώματα παροχετεύσεων" ;
+	skos:broadMatch kalamaria-kae-es03:323 ;
+	skos:broader kalamaria-br2003-codelist:000 .
+
+<http://data.openbudgets.eu/resource/dataset/budget-kalamaria-revenue-2003/codelist/000/329> a skos:Concept ;
+	skos:inScheme <http://data.openbudgets.eu/resource/dataset/budget-kalamaria-revenue-2003/codelist> ;
+	skos:notation "329" ;
+	skos:prefLabel "Λοιπά έσοδα υπηρεσίας αρδεύσεως" ;
+	skos:broadMatch kalamaria-kae-es03:329 ;
+	skos:broader kalamaria-br2003-codelist:000 .
+
+<http://data.openbudgets.eu/resource/dataset/budget-kalamaria-revenue-2003/codelist/000/331> a skos:Concept ;
+	skos:inScheme <http://data.openbudgets.eu/resource/dataset/budget-kalamaria-revenue-2003/codelist> ;
+	skos:notation "331" ;
+	skos:prefLabel "Δικαιώματα χρήσεως αρδευτικών αυλακών" ;
+	skos:broadMatch kalamaria-kae-es03:331 ;
+	skos:broader kalamaria-br2003-codelist:000 .
+
+<http://data.openbudgets.eu/resource/dataset/budget-kalamaria-revenue-2003/codelist/000/339> a skos:Concept ;
+	skos:inScheme <http://data.openbudgets.eu/resource/dataset/budget-kalamaria-revenue-2003/codelist> ;
+	skos:notation "339" ;
+	skos:prefLabel "Λοιπά έσοδα υπηρεσίας αρδεύσεως" ;
+	skos:broadMatch kalamaria-kae-es03:339 ;
+	skos:broader kalamaria-br2003-codelist:000 .
+
+<http://data.openbudgets.eu/resource/dataset/budget-kalamaria-revenue-2003/codelist/000/341> a skos:Concept ;
+	skos:inScheme <http://data.openbudgets.eu/resource/dataset/budget-kalamaria-revenue-2003/codelist> ;
+	skos:notation "341" ;
+	skos:prefLabel "Τέλη φωτισμού δια τας δαπάνας προς φωτισμό των κοινόχρηστων χώρων" ;
+	skos:broadMatch kalamaria-kae-es03:341 ;
+	skos:broader kalamaria-br2003-codelist:000 .
+
+<http://data.openbudgets.eu/resource/dataset/budget-kalamaria-revenue-2003/codelist/000/349> a skos:Concept ;
+	skos:inScheme <http://data.openbudgets.eu/resource/dataset/budget-kalamaria-revenue-2003/codelist> ;
+	skos:notation "349" ;
+	skos:prefLabel "Λοιπά έσοδα υπηρεσίας ηλεκτροφωτισμού" ;
+	skos:broadMatch kalamaria-kae-es03:349 ;
+	skos:broader kalamaria-br2003-codelist:000 .
+
+<http://data.openbudgets.eu/resource/dataset/budget-kalamaria-revenue-2003/codelist/000/351> a skos:Concept ;
+	skos:inScheme <http://data.openbudgets.eu/resource/dataset/budget-kalamaria-revenue-2003/codelist> ;
+	skos:notation "351" ;
+	skos:prefLabel "Δικαιώματα συνδέσεως οικιών με δίκτυον υπονόμων" ;
+	skos:broadMatch kalamaria-kae-es03:351 ;
+	skos:broader kalamaria-br2003-codelist:000 .
+
+<http://data.openbudgets.eu/resource/dataset/budget-kalamaria-revenue-2003/codelist/000/352> a skos:Concept ;
+	skos:inScheme <http://data.openbudgets.eu/resource/dataset/budget-kalamaria-revenue-2003/codelist> ;
+	skos:notation "352" ;
+	skos:prefLabel "Δικαιώματα συνδέσεως καταστημάτων με δίκτυον υπονόμων" ;
+	skos:broadMatch kalamaria-kae-es03:352 ;
+	skos:broader kalamaria-br2003-codelist:000 .
+
+<http://data.openbudgets.eu/resource/dataset/budget-kalamaria-revenue-2003/codelist/000/353> a skos:Concept ;
+	skos:inScheme <http://data.openbudgets.eu/resource/dataset/budget-kalamaria-revenue-2003/codelist> ;
+	skos:notation "353" ;
+	skos:prefLabel "Δικαιώματα χρήσεως υπονόμων" ;
+	skos:broadMatch kalamaria-kae-es03:353 ;
+	skos:broader kalamaria-br2003-codelist:000 .
+
+<http://data.openbudgets.eu/resource/dataset/budget-kalamaria-revenue-2003/codelist/000/359> a skos:Concept ;
+	skos:inScheme <http://data.openbudgets.eu/resource/dataset/budget-kalamaria-revenue-2003/codelist> ;
+	skos:notation "359" ;
+	skos:prefLabel "Λοιπά έσοδα υπηρεσίας αποχετεύσεως" ;
+	skos:broadMatch kalamaria-kae-es03:359 ;
+	skos:broader kalamaria-br2003-codelist:000 .
+
+<http://data.openbudgets.eu/resource/dataset/budget-kalamaria-revenue-2003/codelist/000/361> a skos:Concept ;
+	skos:inScheme <http://data.openbudgets.eu/resource/dataset/budget-kalamaria-revenue-2003/codelist> ;
+	skos:notation "361" ;
+	skos:prefLabel "Τέλη χρήσεως πεζοδρομίων & κοινοχρήστων χώρων" ;
+	skos:broadMatch kalamaria-kae-es03:361 ;
+	skos:broader kalamaria-br2003-codelist:000 .
+
+<http://data.openbudgets.eu/resource/dataset/budget-kalamaria-revenue-2003/codelist/000/362> a skos:Concept ;
+	skos:inScheme <http://data.openbudgets.eu/resource/dataset/budget-kalamaria-revenue-2003/codelist> ;
+	skos:notation "362" ;
+	skos:prefLabel "Τέλη αδειών οικοδομών (άρθρον 23 από 24-9-1958 Β.Δ.)" ;
+	skos:broadMatch kalamaria-kae-es03:362 ;
+	skos:broader kalamaria-br2003-codelist:000 .
+
+<http://data.openbudgets.eu/resource/dataset/budget-kalamaria-revenue-2003/codelist/000/363> a skos:Concept ;
+	skos:inScheme <http://data.openbudgets.eu/resource/dataset/budget-kalamaria-revenue-2003/codelist> ;
+	skos:notation "363" ;
+	skos:prefLabel "Τέλη διαφημίσεων" ;
+	skos:broadMatch kalamaria-kae-es03:363 ;
+	skos:broader kalamaria-br2003-codelist:000 .
+
+<http://data.openbudgets.eu/resource/dataset/budget-kalamaria-revenue-2003/codelist/000/364> a skos:Concept ;
+	skos:inScheme <http://data.openbudgets.eu/resource/dataset/budget-kalamaria-revenue-2003/codelist> ;
+	skos:notation "364" ;
+	skos:prefLabel "Τέλη εισιτηρίων λεωφορείων αυτοκινήτων (άρθρον 20 από 24-9-1958 Β.Δ" ;
+	skos:broadMatch kalamaria-kae-es03:364 ;
+	skos:broader kalamaria-br2003-codelist:000 .
+
+<http://data.openbudgets.eu/resource/dataset/budget-kalamaria-revenue-2003/codelist/000/365> a skos:Concept ;
+	skos:inScheme <http://data.openbudgets.eu/resource/dataset/budget-kalamaria-revenue-2003/codelist> ;
+	skos:notation "365" ;
+	skos:prefLabel "Τέλη σταθμεύσεως αυτοκινήτων (άρθρον 19 από 25-9-1958 Β.Δ)" ;
+	skos:broadMatch kalamaria-kae-es03:365 ;
+	skos:broader kalamaria-br2003-codelist:000 .
+
+<http://data.openbudgets.eu/resource/dataset/budget-kalamaria-revenue-2003/codelist/000/366> a skos:Concept ;
+	skos:inScheme <http://data.openbudgets.eu/resource/dataset/budget-kalamaria-revenue-2003/codelist> ;
+	skos:notation "366" ;
+	skos:prefLabel "Τέλη διαμονής παρεπιδημούντων (άρθρο 24 από 24-9-1958 Β.Δ)" ;
+	skos:broadMatch kalamaria-kae-es03:366 ;
+	skos:broader kalamaria-br2003-codelist:000 .
+
+<http://data.openbudgets.eu/resource/dataset/budget-kalamaria-revenue-2003/codelist/000/367> a skos:Concept ;
+	skos:inScheme <http://data.openbudgets.eu/resource/dataset/budget-kalamaria-revenue-2003/codelist> ;
+	skos:notation "367" ;
+	skos:prefLabel "Τέλη χρήσεως αποβαθρών επιβατών" ;
+	skos:broadMatch kalamaria-kae-es03:367 ;
+	skos:broader kalamaria-br2003-codelist:000 .
+
+<http://data.openbudgets.eu/resource/dataset/budget-kalamaria-revenue-2003/codelist/000/368> a skos:Concept ;
+	skos:inScheme <http://data.openbudgets.eu/resource/dataset/budget-kalamaria-revenue-2003/codelist> ;
+	skos:notation "368" ;
+	skos:prefLabel "Τέλη χρήσεως αποβαθρών εμπορευμάτων" ;
+	skos:broadMatch kalamaria-kae-es03:368 ;
+	skos:broader kalamaria-br2003-codelist:000 .
+
+<http://data.openbudgets.eu/resource/dataset/budget-kalamaria-revenue-2003/codelist/000/369> a skos:Concept ;
+	skos:inScheme <http://data.openbudgets.eu/resource/dataset/budget-kalamaria-revenue-2003/codelist> ;
+	skos:notation "369" ;
+	skos:prefLabel "Λοιπά τέλη και δικαιώματα" ;
+	skos:narrower <http://data.openbudgets.eu/resource/dataset/budget-kalamaria-revenue-2003/codelist/000/369-1> , <http://data.openbudgets.eu/resource/dataset/budget-kalamaria-revenue-2003/codelist/000/369-2> ;
+	skos:broadMatch kalamaria-kae-es03:369 ;
+	skos:broader kalamaria-br2003-codelist:000 .
+
+<http://data.openbudgets.eu/resource/dataset/budget-kalamaria-revenue-2003/codelist/000/369-1> a skos:Concept ;
+	skos:inScheme <http://data.openbudgets.eu/resource/dataset/budget-kalamaria-revenue-2003/codelist> ;
+	skos:notation "369-1" ;
+	skos:prefLabel "Έσοδα από το ΤΑΠ" ;
+	skos:broader <http://data.openbudgets.eu/resource/dataset/budget-kalamaria-revenue-2003/codelist/000/369> .
+
+<http://data.openbudgets.eu/resource/dataset/budget-kalamaria-revenue-2003/codelist/000/369-2> a skos:Concept ;
+	skos:inScheme <http://data.openbudgets.eu/resource/dataset/budget-kalamaria-revenue-2003/codelist> ;
+	skos:notation "369-2" ;
+	skos:prefLabel "Τέλη διενέργειας ψυχαγωγικών παιγνίων" ;
+	skos:broader <http://data.openbudgets.eu/resource/dataset/budget-kalamaria-revenue-2003/codelist/000/369> .
+
+<http://data.openbudgets.eu/resource/dataset/budget-kalamaria-revenue-2003/codelist/000/411> a skos:Concept ;
+	skos:inScheme <http://data.openbudgets.eu/resource/dataset/budget-kalamaria-revenue-2003/codelist> ;
+	skos:notation "411" ;
+	skos:prefLabel "Φόρος επί της αξίας των χονδρικώς πωλούμενων αγροτικών προϊόντων" ;
+	skos:broadMatch kalamaria-kae-es03:411 ;
+	skos:broader kalamaria-br2003-codelist:000 .
+
+<http://data.openbudgets.eu/resource/dataset/budget-kalamaria-revenue-2003/codelist/000/413> a skos:Concept ;
+	skos:inScheme <http://data.openbudgets.eu/resource/dataset/budget-kalamaria-revenue-2003/codelist> ;
+	skos:notation "413" ;
+	skos:prefLabel "Φόρος ακάλυπτων χώρων (άρθρον 38 από 24-9-1958 Β.Δ.)" ;
+	skos:broadMatch kalamaria-kae-es03:413 ;
+	skos:broader kalamaria-br2003-codelist:000 .
+
+<http://data.openbudgets.eu/resource/dataset/budget-kalamaria-revenue-2003/codelist/000/414> a skos:Concept ;
+	skos:inScheme <http://data.openbudgets.eu/resource/dataset/budget-kalamaria-revenue-2003/codelist> ;
+	skos:notation "414" ;
+	skos:prefLabel "Φόρος ζύθου και οινοπνευματωδών ποτών(άρθρον 39 Β.Δ.)" ;
+	skos:broadMatch kalamaria-kae-es03:414 ;
+	skos:broader kalamaria-br2003-codelist:000 .
+
+<http://data.openbudgets.eu/resource/dataset/budget-kalamaria-revenue-2003/codelist/000/419> a skos:Concept ;
+	skos:inScheme <http://data.openbudgets.eu/resource/dataset/budget-kalamaria-revenue-2003/codelist> ;
+	skos:notation "419" ;
+	skos:prefLabel "Λοιποί αυτοτελείς φόροι" ;
+	skos:broadMatch kalamaria-kae-es03:419 ;
+	skos:broader kalamaria-br2003-codelist:000 .
+
+<http://data.openbudgets.eu/resource/dataset/budget-kalamaria-revenue-2003/codelist/000/421> a skos:Concept ;
+	skos:inScheme <http://data.openbudgets.eu/resource/dataset/budget-kalamaria-revenue-2003/codelist> ;
+	skos:notation "421" ;
+	skos:prefLabel "Φόρος των εκ της αλλοδαπής εισαγομένων εμπορευμάτων" ;
+	skos:broadMatch kalamaria-kae-es03:421 ;
+	skos:broader kalamaria-br2003-codelist:000 .
+
+<http://data.openbudgets.eu/resource/dataset/budget-kalamaria-revenue-2003/codelist/000/422> a skos:Concept ;
+	skos:inScheme <http://data.openbudgets.eu/resource/dataset/budget-kalamaria-revenue-2003/codelist> ;
+	skos:notation "422" ;
+	skos:prefLabel "Φόρος επί των εξαγομένων εμπορευμάτων Νομού Δωδεκανήσου" ;
+	skos:broadMatch kalamaria-kae-es03:422 ;
+	skos:broader kalamaria-br2003-codelist:000 .
+
+<http://data.openbudgets.eu/resource/dataset/budget-kalamaria-revenue-2003/codelist/000/423> a skos:Concept ;
+	skos:inScheme <http://data.openbudgets.eu/resource/dataset/budget-kalamaria-revenue-2003/codelist> ;
+	skos:notation "423" ;
+	skos:prefLabel "Ποσοστό επί του εισπραττομένου υπό του δημοσίου ειδικού τέλους υδρεύ" ;
+	skos:broadMatch kalamaria-kae-es03:423 ;
+	skos:broader kalamaria-br2003-codelist:000 .
+
+<http://data.openbudgets.eu/resource/dataset/budget-kalamaria-revenue-2003/codelist/000/424> a skos:Concept ;
+	skos:inScheme <http://data.openbudgets.eu/resource/dataset/budget-kalamaria-revenue-2003/codelist> ;
+	skos:notation "424" ;
+	skos:prefLabel "Συμπληρωματικός αναλογικός φόρος επί των εισοδ. εξ οικοδομών" ;
+	skos:broadMatch kalamaria-kae-es03:424 ;
+	skos:broader kalamaria-br2003-codelist:000 .
+
+<http://data.openbudgets.eu/resource/dataset/budget-kalamaria-revenue-2003/codelist/000/425> a skos:Concept ;
+	skos:inScheme <http://data.openbudgets.eu/resource/dataset/budget-kalamaria-revenue-2003/codelist> ;
+	skos:notation "425" ;
+	skos:prefLabel "Πρόσθετον ποσοτόν 3% επί των δημοσίων φόρων" ;
+	skos:broadMatch kalamaria-kae-es03:425 ;
+	skos:broader kalamaria-br2003-codelist:000 .
+
+<http://data.openbudgets.eu/resource/dataset/budget-kalamaria-revenue-2003/codelist/000/429> a skos:Concept ;
+	skos:inScheme <http://data.openbudgets.eu/resource/dataset/budget-kalamaria-revenue-2003/codelist> ;
+	skos:notation "429" ;
+	skos:prefLabel "Λοιπαί πρόσθετοι φόροι" ;
+	skos:broadMatch kalamaria-kae-es03:429 ;
+	skos:broader kalamaria-br2003-codelist:000 .
+
+<http://data.openbudgets.eu/resource/dataset/budget-kalamaria-revenue-2003/codelist/000/431> a skos:Concept ;
+	skos:inScheme <http://data.openbudgets.eu/resource/dataset/budget-kalamaria-revenue-2003/codelist> ;
+	skos:notation "431" ;
+	skos:prefLabel "Εισφορά επί των ωφελουμένων εκ της εκτελέσ. δημοτικών έργων" ;
+	skos:broadMatch kalamaria-kae-es03:431 ;
+	skos:broader kalamaria-br2003-codelist:000 .
+
+<http://data.openbudgets.eu/resource/dataset/budget-kalamaria-revenue-2003/codelist/000/433> a skos:Concept ;
+	skos:inScheme <http://data.openbudgets.eu/resource/dataset/budget-kalamaria-revenue-2003/codelist> ;
+	skos:notation "433" ;
+	skos:prefLabel "Εισφορά επί της υπεραξίας ακινήτων λόγω τροπ. σχεδίου πόλεως" ;
+	skos:broadMatch kalamaria-kae-es03:433 ;
+	skos:broader kalamaria-br2003-codelist:000 .
+
+<http://data.openbudgets.eu/resource/dataset/budget-kalamaria-revenue-2003/codelist/000/434> a skos:Concept ;
+	skos:inScheme <http://data.openbudgets.eu/resource/dataset/budget-kalamaria-revenue-2003/codelist> ;
+	skos:notation "434" ;
+	skos:prefLabel "Εκούσια εισφορά (άρθον 51 24-9-1958 Β.Δ.)" ;
+	skos:broadMatch kalamaria-kae-es03:434 ;
+	skos:broader kalamaria-br2003-codelist:000 .
+
+<http://data.openbudgets.eu/resource/dataset/budget-kalamaria-revenue-2003/codelist/000/439> a skos:Concept ;
+	skos:inScheme <http://data.openbudgets.eu/resource/dataset/budget-kalamaria-revenue-2003/codelist> ;
+	skos:notation "439" ;
+	skos:prefLabel "Λοιπαί εισφοραί" ;
+	skos:broadMatch kalamaria-kae-es03:439 ;
+	skos:broader kalamaria-br2003-codelist:000 .
+
+<http://data.openbudgets.eu/resource/dataset/budget-kalamaria-revenue-2003/codelist/000/511> a skos:Concept ;
+	skos:inScheme <http://data.openbudgets.eu/resource/dataset/budget-kalamaria-revenue-2003/codelist> ;
+	skos:notation "511" ;
+	skos:prefLabel "Κεντρικοί αυτοτελείς πόροι για την κάλυψη γενικών αναγκών" ;
+	skos:broadMatch kalamaria-kae-es03:511 ;
+	skos:broader kalamaria-br2003-codelist:000 .
+
+<http://data.openbudgets.eu/resource/dataset/budget-kalamaria-revenue-2003/codelist/000/512> a skos:Concept ;
+	skos:inScheme <http://data.openbudgets.eu/resource/dataset/budget-kalamaria-revenue-2003/codelist> ;
+	skos:notation "512" ;
+	skos:prefLabel "Εκχώρησις υπό του Δημοσίου 3% από την διάθεση δασικών προϊόντων" ;
+	skos:broadMatch kalamaria-kae-es03:512 ;
+	skos:broader kalamaria-br2003-codelist:000 .
+
+<http://data.openbudgets.eu/resource/dataset/budget-kalamaria-revenue-2003/codelist/000/519> a skos:Concept ;
+	skos:inScheme <http://data.openbudgets.eu/resource/dataset/budget-kalamaria-revenue-2003/codelist> ;
+	skos:notation "519" ;
+	skos:prefLabel "Κεντρικοί αυτοτελείς πόροι για την κάλυψη λειτουργ.αναγκών των σχολείων" ;
+	skos:narrower <http://data.openbudgets.eu/resource/dataset/budget-kalamaria-revenue-2003/codelist/000/519-1> , <http://data.openbudgets.eu/resource/dataset/budget-kalamaria-revenue-2003/codelist/000/519-2> , <http://data.openbudgets.eu/resource/dataset/budget-kalamaria-revenue-2003/codelist/000/519-3> ;
+	skos:broadMatch kalamaria-kae-es03:519 ;
+	skos:broader kalamaria-br2003-codelist:000 .
+
+<http://data.openbudgets.eu/resource/dataset/budget-kalamaria-revenue-2003/codelist/000/519-1> a skos:Concept ;
+	skos:inScheme <http://data.openbudgets.eu/resource/dataset/budget-kalamaria-revenue-2003/codelist> ;
+	skos:notation "519-1" ;
+	skos:prefLabel "Κεντρικοί αυτοτελείς πόροι για την κάλυψη λειτουργ.αναγκών των σχολείων" ;
+	skos:broader <http://data.openbudgets.eu/resource/dataset/budget-kalamaria-revenue-2003/codelist/000/519> .
+
+<http://data.openbudgets.eu/resource/dataset/budget-kalamaria-revenue-2003/codelist/000/519-2> a skos:Concept ;
+	skos:inScheme <http://data.openbudgets.eu/resource/dataset/budget-kalamaria-revenue-2003/codelist> ;
+	skos:notation "519-2" ;
+	skos:prefLabel "Κρατική επιχορήγηση για λειτουργία παιδικών και βρεφονηπιακών σταθμών" ;
+	skos:broader <http://data.openbudgets.eu/resource/dataset/budget-kalamaria-revenue-2003/codelist/000/519> .
+
+<http://data.openbudgets.eu/resource/dataset/budget-kalamaria-revenue-2003/codelist/000/519-3> a skos:Concept ;
+	skos:inScheme <http://data.openbudgets.eu/resource/dataset/budget-kalamaria-revenue-2003/codelist> ;
+	skos:notation "519-3" ;
+	skos:prefLabel "Κρατική επιχορήγηση κέντρου φροντίδας οικογένειας (ΚΕΦΟ)" ;
+	skos:broader <http://data.openbudgets.eu/resource/dataset/budget-kalamaria-revenue-2003/codelist/000/519> .
+
+<http://data.openbudgets.eu/resource/dataset/budget-kalamaria-revenue-2003/codelist/005/000> a skos:Concept ;
+	skos:inScheme <http://data.openbudgets.eu/resource/dataset/budget-kalamaria-revenue-2003/codelist> ;
+	skos:notation "000" ;
+	skos:prefLabel "Έλλειμμα Προυπολογισμού" ;
+	skos:broadMatch kalamaria-kae-es03:000 ;
+	skos:broader kalamaria-br2003-codelist:005 .
+
+<http://data.openbudgets.eu/resource/dataset/budget-kalamaria-revenue-2003/codelist/098/000> a skos:Concept ;
+	skos:inScheme <http://data.openbudgets.eu/resource/dataset/budget-kalamaria-revenue-2003/codelist> ;
+	skos:notation "000" ;
+	skos:prefLabel "Έλλειμμα Εγκεκριμμένου Προυπολογισμού" ;
+	skos:broadMatch kalamaria-kae-es03:000 ;
+	skos:broader kalamaria-br2003-codelist:098 .
+
+<http://data.openbudgets.eu/resource/dataset/budget-kalamaria-revenue-2003/codelist/099/000> a skos:Concept ;
+	skos:inScheme <http://data.openbudgets.eu/resource/dataset/budget-kalamaria-revenue-2003/codelist> ;
+	skos:notation "000" ;
+	skos:prefLabel "Πλεόνασμα Εγκεκριμμένου Προυπολογισμού" ;
+	skos:broadMatch kalamaria-kae-es03:000 ;
+	skos:broader kalamaria-br2003-codelist:099 .
+
+<http://data.openbudgets.eu/resource/dataset/budget-kalamaria-revenue-2003/codelist/100/111> a skos:Concept ;
+	skos:inScheme <http://data.openbudgets.eu/resource/dataset/budget-kalamaria-revenue-2003/codelist> ;
+	skos:notation "111" ;
+	skos:prefLabel "Προϊόν εξ εκποιήσεως οικοδομών" ;
+	skos:broadMatch kalamaria-kae-es03:111 ;
+	skos:broader kalamaria-br2003-codelist:100 .
+
+<http://data.openbudgets.eu/resource/dataset/budget-kalamaria-revenue-2003/codelist/100/112> a skos:Concept ;
+	skos:inScheme <http://data.openbudgets.eu/resource/dataset/budget-kalamaria-revenue-2003/codelist> ;
+	skos:notation "112" ;
+	skos:prefLabel "Προιόν από αναγκαστική προσκύρωση λόγω ρυμοτομίας οικοπέδων και λοιπών ακινήτων (άρθρα 34 & 46 από 17-7-23 Ν.Δ)" ;
+	skos:broadMatch kalamaria-kae-es03:112 ;
+	skos:broader kalamaria-br2003-codelist:100 .
+
+<http://data.openbudgets.eu/resource/dataset/budget-kalamaria-revenue-2003/codelist/100/119> a skos:Concept ;
+	skos:inScheme <http://data.openbudgets.eu/resource/dataset/budget-kalamaria-revenue-2003/codelist> ;
+	skos:notation "119" ;
+	skos:prefLabel "Προϊόν εξ εκποιήσεως λοιπής ακινήτου περιουσίας" ;
+	skos:broadMatch kalamaria-kae-es03:119 ;
+	skos:broader kalamaria-br2003-codelist:100 .
+
+<http://data.openbudgets.eu/resource/dataset/budget-kalamaria-revenue-2003/codelist/100/121> a skos:Concept ;
+	skos:inScheme <http://data.openbudgets.eu/resource/dataset/budget-kalamaria-revenue-2003/codelist> ;
+	skos:notation "121" ;
+	skos:prefLabel "Προϊόν εκποιήσεως κινητής περιουσίας και υλικών" ;
+	skos:broadMatch kalamaria-kae-es03:121 ;
+	skos:broader kalamaria-br2003-codelist:100 .
+
+<http://data.openbudgets.eu/resource/dataset/budget-kalamaria-revenue-2003/codelist/100/211> a skos:Concept ;
+	skos:inScheme <http://data.openbudgets.eu/resource/dataset/budget-kalamaria-revenue-2003/codelist> ;
+	skos:notation "211" ;
+	skos:prefLabel "Προϊόν ατόκου δανείου (άρθρον 83 από 24-9-1958 Β.Δ.)" ;
+	skos:broadMatch kalamaria-kae-es03:211 ;
+	skos:broader kalamaria-br2003-codelist:100 .
+
+<http://data.openbudgets.eu/resource/dataset/budget-kalamaria-revenue-2003/codelist/100/212> a skos:Concept ;
+	skos:inScheme <http://data.openbudgets.eu/resource/dataset/budget-kalamaria-revenue-2003/codelist> ;
+	skos:notation "212" ;
+	skos:prefLabel "Προϊόν δανείου δημοσίων επενδύσεων" ;
+	skos:broadMatch kalamaria-kae-es03:212 ;
+	skos:broader kalamaria-br2003-codelist:100 .
+
+<http://data.openbudgets.eu/resource/dataset/budget-kalamaria-revenue-2003/codelist/100/213> a skos:Concept ;
+	skos:inScheme <http://data.openbudgets.eu/resource/dataset/budget-kalamaria-revenue-2003/codelist> ;
+	skos:notation "213" ;
+	skos:prefLabel "Προϊόν δανείου δημοσίων επενδύσεων προγράμματος Κ.Ε." ;
+	skos:broadMatch kalamaria-kae-es03:213 ;
+	skos:broader kalamaria-br2003-codelist:100 .
+
+<http://data.openbudgets.eu/resource/dataset/budget-kalamaria-revenue-2003/codelist/100/219> a skos:Concept ;
+	skos:inScheme <http://data.openbudgets.eu/resource/dataset/budget-kalamaria-revenue-2003/codelist> ;
+	skos:notation "219" ;
+	skos:prefLabel "Προϊόν εκ λοιπών δανείων εσωτερικού" ;
+	skos:broadMatch kalamaria-kae-es03:219 ;
+	skos:broader kalamaria-br2003-codelist:100 .
+
+<http://data.openbudgets.eu/resource/dataset/budget-kalamaria-revenue-2003/codelist/100/221> a skos:Concept ;
+	skos:inScheme <http://data.openbudgets.eu/resource/dataset/budget-kalamaria-revenue-2003/codelist> ;
+	skos:notation "221" ;
+	skos:prefLabel "Προϊόν εκ λοιπών δανείων εσωτερικού" ;
+	skos:broadMatch kalamaria-kae-es03:221 ;
+	skos:broader kalamaria-br2003-codelist:100 .
+
+<http://data.openbudgets.eu/resource/dataset/budget-kalamaria-revenue-2003/codelist/100/311> a skos:Concept ;
+	skos:inScheme <http://data.openbudgets.eu/resource/dataset/budget-kalamaria-revenue-2003/codelist> ;
+	skos:notation "311" ;
+	skos:prefLabel "Επιχορηγήσεις υπό του Ο.Α.Ε.Δ. δι' εκτέλεσιν δημοτικών έργων" ;
+	skos:broadMatch kalamaria-kae-es03:311 ;
+	skos:broader kalamaria-br2003-codelist:100 .
+
+<http://data.openbudgets.eu/resource/dataset/budget-kalamaria-revenue-2003/codelist/100/312> a skos:Concept ;
+	skos:inScheme <http://data.openbudgets.eu/resource/dataset/budget-kalamaria-revenue-2003/codelist> ;
+	skos:notation "312" ;
+	skos:prefLabel "Έσοδα εξ επιχορηγήσεως Νομαρχιακού Ταμείου" ;
+	skos:broadMatch kalamaria-kae-es03:312 ;
+	skos:broader kalamaria-br2003-codelist:100 .
+
+<http://data.openbudgets.eu/resource/dataset/budget-kalamaria-revenue-2003/codelist/100/313> a skos:Concept ;
+	skos:inScheme <http://data.openbudgets.eu/resource/dataset/budget-kalamaria-revenue-2003/codelist> ;
+	skos:notation "313" ;
+	skos:prefLabel "Κρατική επιχορήγησις εκ κρατικών λαχείων" ;
+	skos:broadMatch kalamaria-kae-es03:313 ;
+	skos:broader kalamaria-br2003-codelist:100 .
+
+<http://data.openbudgets.eu/resource/dataset/budget-kalamaria-revenue-2003/codelist/100/319> a skos:Concept ;
+	skos:inScheme <http://data.openbudgets.eu/resource/dataset/budget-kalamaria-revenue-2003/codelist> ;
+	skos:notation "319" ;
+	skos:prefLabel "Λοιπές επιχορηγήσεις" ;
+	skos:broadMatch kalamaria-kae-es03:319 ;
+	skos:broader kalamaria-br2003-codelist:100 .
+
+<http://data.openbudgets.eu/resource/dataset/budget-kalamaria-revenue-2003/codelist/100/321> a skos:Concept ;
+	skos:inScheme <http://data.openbudgets.eu/resource/dataset/budget-kalamaria-revenue-2003/codelist> ;
+	skos:notation "321" ;
+	skos:prefLabel "Αντίτιμο προσωπικής εργασίας (άρθρον 56 από 24-9-1958 ΒΔ)" ;
+	skos:broadMatch kalamaria-kae-es03:321 ;
+	skos:broader kalamaria-br2003-codelist:100 .
+
+<http://data.openbudgets.eu/resource/dataset/budget-kalamaria-revenue-2003/codelist/100/411> a skos:Concept ;
+	skos:inScheme <http://data.openbudgets.eu/resource/dataset/budget-kalamaria-revenue-2003/codelist> ;
+	skos:notation "411" ;
+	skos:prefLabel "Προϊόν δωρεών" ;
+	skos:broadMatch kalamaria-kae-es03:411 ;
+	skos:broader kalamaria-br2003-codelist:100 .
+
+<http://data.openbudgets.eu/resource/dataset/budget-kalamaria-revenue-2003/codelist/100/421> a skos:Concept ;
+	skos:inScheme <http://data.openbudgets.eu/resource/dataset/budget-kalamaria-revenue-2003/codelist> ;
+	skos:notation "421" ;
+	skos:prefLabel "Έσοδα εκ κληρονομιάς,κληροδοσίας ή κληροδοτήματος" ;
+	skos:broadMatch kalamaria-kae-es03:421 ;
+	skos:broader kalamaria-br2003-codelist:100 .
+
+<http://data.openbudgets.eu/resource/dataset/budget-kalamaria-revenue-2003/codelist/100/511> a skos:Concept ;
+	skos:inScheme <http://data.openbudgets.eu/resource/dataset/budget-kalamaria-revenue-2003/codelist> ;
+	skos:notation "511" ;
+	skos:prefLabel "Προσαυξήσεις λόγω εκπρόθεσμου καταβολής διαφόρων χρεών" ;
+	skos:broadMatch kalamaria-kae-es03:511 ;
+	skos:broader kalamaria-br2003-codelist:100 .
+
+<http://data.openbudgets.eu/resource/dataset/budget-kalamaria-revenue-2003/codelist/100/521> a skos:Concept ;
+	skos:inScheme <http://data.openbudgets.eu/resource/dataset/budget-kalamaria-revenue-2003/codelist> ;
+	skos:notation "521" ;
+	skos:prefLabel "Πρόστιμα επιβαλλόμενα εις αιρετούς δημοτικούς άρχοντας" ;
+	skos:broadMatch kalamaria-kae-es03:521 ;
+	skos:broader kalamaria-br2003-codelist:100 .
+
+<http://data.openbudgets.eu/resource/dataset/budget-kalamaria-revenue-2003/codelist/100/522> a skos:Concept ;
+	skos:inScheme <http://data.openbudgets.eu/resource/dataset/budget-kalamaria-revenue-2003/codelist> ;
+	skos:notation "522" ;
+	skos:prefLabel "Πρόστιμα εκ παραβάσεων φορολογικών διατάξεων (άρθρον 73 Β.Δ)" ;
+	skos:broadMatch kalamaria-kae-es03:522 ;
+	skos:broader kalamaria-br2003-codelist:100 .
+
+<http://data.openbudgets.eu/resource/dataset/budget-kalamaria-revenue-2003/codelist/100/523> a skos:Concept ;
+	skos:inScheme <http://data.openbudgets.eu/resource/dataset/budget-kalamaria-revenue-2003/codelist> ;
+	skos:notation "523" ;
+	skos:prefLabel "Πρόστικα εις εργολάβους, ενοικιαστάς ή προμηθευτάς" ;
+	skos:broadMatch kalamaria-kae-es03:523 ;
+	skos:broader kalamaria-br2003-codelist:100 .
+
+<http://data.openbudgets.eu/resource/dataset/budget-kalamaria-revenue-2003/codelist/100/524> a skos:Concept ;
+	skos:inScheme <http://data.openbudgets.eu/resource/dataset/budget-kalamaria-revenue-2003/codelist> ;
+	skos:notation "524" ;
+	skos:prefLabel "Πρόστιμα εκ καταλογιστικών αποφάσεων διαφόρων αρχών" ;
+	skos:broadMatch kalamaria-kae-es03:524 ;
+	skos:broader kalamaria-br2003-codelist:100 .
+
+<http://data.openbudgets.eu/resource/dataset/budget-kalamaria-revenue-2003/codelist/100/525> a skos:Concept ;
+	skos:inScheme <http://data.openbudgets.eu/resource/dataset/budget-kalamaria-revenue-2003/codelist> ;
+	skos:notation "525" ;
+	skos:prefLabel "Καταπτώσεις λόγω παραβάσεων συμβάσεων" ;
+	skos:broadMatch kalamaria-kae-es03:525 ;
+	skos:broader kalamaria-br2003-codelist:100 .
+
+<http://data.openbudgets.eu/resource/dataset/budget-kalamaria-revenue-2003/codelist/100/529> a skos:Concept ;
+	skos:inScheme <http://data.openbudgets.eu/resource/dataset/budget-kalamaria-revenue-2003/codelist> ;
+	skos:notation "529" ;
+	skos:prefLabel "Πρόστιμα και χρηματικαί ποιναί εξ άλλων περιπτώσεων" ;
+	skos:narrower <http://data.openbudgets.eu/resource/dataset/budget-kalamaria-revenue-2003/codelist/100/529-1> , <http://data.openbudgets.eu/resource/dataset/budget-kalamaria-revenue-2003/codelist/100/529-2> , <http://data.openbudgets.eu/resource/dataset/budget-kalamaria-revenue-2003/codelist/100/529-3> ;
+	skos:broadMatch kalamaria-kae-es03:529 ;
+	skos:broader kalamaria-br2003-codelist:100 .
+
+<http://data.openbudgets.eu/resource/dataset/budget-kalamaria-revenue-2003/codelist/100/529-1> a skos:Concept ;
+	skos:inScheme <http://data.openbudgets.eu/resource/dataset/budget-kalamaria-revenue-2003/codelist> ;
+	skos:notation "529-1" ;
+	skos:prefLabel "Πρόστιμα για παραβιάσεις ΚΟΚ" ;
+	skos:broader <http://data.openbudgets.eu/resource/dataset/budget-kalamaria-revenue-2003/codelist/100/529> .
+
+<http://data.openbudgets.eu/resource/dataset/budget-kalamaria-revenue-2003/codelist/100/529-2> a skos:Concept ;
+	skos:inScheme <http://data.openbudgets.eu/resource/dataset/budget-kalamaria-revenue-2003/codelist> ;
+	skos:notation "529-2" ;
+	skos:prefLabel "Πρόστιμα ανέγερσης και διατήρησης αυθαίρετων κατασκευών" ;
+	skos:broader <http://data.openbudgets.eu/resource/dataset/budget-kalamaria-revenue-2003/codelist/100/529> .
+
+<http://data.openbudgets.eu/resource/dataset/budget-kalamaria-revenue-2003/codelist/100/529-3> a skos:Concept ;
+	skos:inScheme <http://data.openbudgets.eu/resource/dataset/budget-kalamaria-revenue-2003/codelist> ;
+	skos:notation "529-3" ;
+	skos:prefLabel "Πρόστιμα από παραβάσεις κανονισμού καθαριότητας" ;
+	skos:broader <http://data.openbudgets.eu/resource/dataset/budget-kalamaria-revenue-2003/codelist/100/529> .
+
+<http://data.openbudgets.eu/resource/dataset/budget-kalamaria-revenue-2003/codelist/100/531> a skos:Concept ;
+	skos:inScheme <http://data.openbudgets.eu/resource/dataset/budget-kalamaria-revenue-2003/codelist> ;
+	skos:notation "531" ;
+	skos:prefLabel "Παράβολα εξ υποβαλλόμενων προσφυγών και εφέσεων" ;
+	skos:broadMatch kalamaria-kae-es03:531 ;
+	skos:broader kalamaria-br2003-codelist:100 .
+
+<http://data.openbudgets.eu/resource/dataset/budget-kalamaria-revenue-2003/codelist/100/539> a skos:Concept ;
+	skos:inScheme <http://data.openbudgets.eu/resource/dataset/budget-kalamaria-revenue-2003/codelist> ;
+	skos:notation "539" ;
+	skos:prefLabel "Λοιπά παράβολα καταστημάτων υγειονομικού ενδιαφέροντος" ;
+	skos:broadMatch kalamaria-kae-es03:539 ;
+	skos:broader kalamaria-br2003-codelist:100 .
+
+<http://data.openbudgets.eu/resource/dataset/budget-kalamaria-revenue-2003/codelist/100/611> a skos:Concept ;
+	skos:inScheme <http://data.openbudgets.eu/resource/dataset/budget-kalamaria-revenue-2003/codelist> ;
+	skos:notation "611" ;
+	skos:prefLabel "Έσοδα δια τας υπό του δήμου γενομ. δαπάνης κατασκευής κρασπεδορεί" ;
+	skos:broadMatch kalamaria-kae-es03:611 ;
+	skos:broader kalamaria-br2003-codelist:100 .
+
+<http://data.openbudgets.eu/resource/dataset/budget-kalamaria-revenue-2003/codelist/100/612> a skos:Concept ;
+	skos:inScheme <http://data.openbudgets.eu/resource/dataset/budget-kalamaria-revenue-2003/codelist> ;
+	skos:notation "612" ;
+	skos:prefLabel "Έσοδα δια τας υπό του δήμου γενομένας δαπάνας περιφραξ. ιδ. οικοπέδ" ;
+	skos:broadMatch kalamaria-kae-es03:612 ;
+	skos:broader kalamaria-br2003-codelist:100 .
+
+<http://data.openbudgets.eu/resource/dataset/budget-kalamaria-revenue-2003/codelist/100/613> a skos:Concept ;
+	skos:inScheme <http://data.openbudgets.eu/resource/dataset/budget-kalamaria-revenue-2003/codelist> ;
+	skos:notation "613" ;
+	skos:prefLabel "Έσοδα δια τας υπό του δήμου γενομ. δαπάνας επανακ. των καταστωματ" ;
+	skos:broadMatch kalamaria-kae-es03:613 ;
+	skos:broader kalamaria-br2003-codelist:100 .
+
+<http://data.openbudgets.eu/resource/dataset/budget-kalamaria-revenue-2003/codelist/100/619> a skos:Concept ;
+	skos:inScheme <http://data.openbudgets.eu/resource/dataset/budget-kalamaria-revenue-2003/codelist> ;
+	skos:notation "619" ;
+	skos:prefLabel "Λοιπά έσοδα εκ γενομένων δαπανών δια λογαριασμό τρίτων" ;
+	skos:broadMatch kalamaria-kae-es03:619 ;
+	skos:broader kalamaria-br2003-codelist:100 .
+
+<http://data.openbudgets.eu/resource/dataset/budget-kalamaria-revenue-2003/codelist/100/621> a skos:Concept ;
+	skos:inScheme <http://data.openbudgets.eu/resource/dataset/budget-kalamaria-revenue-2003/codelist> ;
+	skos:notation "621" ;
+	skos:prefLabel "Κρατήσεις εξ ασφαλιστικών εισφορών αποδιδόμεναι εις δικαιούχους ασφαλιστικούς οργανισμούς" ;
+	skos:broadMatch kalamaria-kae-es03:621 ;
+	skos:broader kalamaria-br2003-codelist:100 .
+
+<http://data.openbudgets.eu/resource/dataset/budget-kalamaria-revenue-2003/codelist/100/622> a skos:Concept ;
+	skos:inScheme <http://data.openbudgets.eu/resource/dataset/budget-kalamaria-revenue-2003/codelist> ;
+	skos:notation "622" ;
+	skos:prefLabel "Φόρος εισοδήματος και χαρτόσημο μισθωτών υπηρεσιών" ;
+	skos:broadMatch kalamaria-kae-es03:622 ;
+	skos:broader kalamaria-br2003-codelist:100 .
+
+<http://data.openbudgets.eu/resource/dataset/budget-kalamaria-revenue-2003/codelist/100/623> a skos:Concept ;
+	skos:inScheme <http://data.openbudgets.eu/resource/dataset/budget-kalamaria-revenue-2003/codelist> ;
+	skos:notation "623" ;
+	skos:prefLabel "Κρατήσεις υπέρ ΟΓΑ" ;
+	skos:broadMatch kalamaria-kae-es03:623 ;
+	skos:broader kalamaria-br2003-codelist:100 .
+
+<http://data.openbudgets.eu/resource/dataset/budget-kalamaria-revenue-2003/codelist/100/624> a skos:Concept ;
+	skos:inScheme <http://data.openbudgets.eu/resource/dataset/budget-kalamaria-revenue-2003/codelist> ;
+	skos:notation "624" ;
+	skos:prefLabel "Εισπράξεις εξ εισφορών ετέρων δήμων ή κοινοτήτων δι' μισθοδοσίας ταμειακών βοηθών" ;
+	skos:broadMatch kalamaria-kae-es03:624 ;
+	skos:broader kalamaria-br2003-codelist:100 .
+
+<http://data.openbudgets.eu/resource/dataset/budget-kalamaria-revenue-2003/codelist/100/625> a skos:Concept ;
+	skos:inScheme <http://data.openbudgets.eu/resource/dataset/budget-kalamaria-revenue-2003/codelist> ;
+	skos:notation "625" ;
+	skos:prefLabel "Εισπράξεις εξ εισφ. ετέρεων δήμων, δι' αντιμ. μισθοδοσίας εισπρακτόρων" ;
+	skos:broadMatch kalamaria-kae-es03:625 ;
+	skos:broader kalamaria-br2003-codelist:100 .
+
+<http://data.openbudgets.eu/resource/dataset/budget-kalamaria-revenue-2003/codelist/100/626> a skos:Concept ;
+	skos:inScheme <http://data.openbudgets.eu/resource/dataset/budget-kalamaria-revenue-2003/codelist> ;
+	skos:notation "626" ;
+	skos:prefLabel "Εισπράξεις εξ εισφορών δήμων ή κοινοτήτων, δι' αποζημίωση μελών υπηρεσιακών συμβουλίων" ;
+	skos:broadMatch kalamaria-kae-es03:626 ;
+	skos:broader kalamaria-br2003-codelist:100 .
+
+<http://data.openbudgets.eu/resource/dataset/budget-kalamaria-revenue-2003/codelist/100/627> a skos:Concept ;
+	skos:inScheme <http://data.openbudgets.eu/resource/dataset/budget-kalamaria-revenue-2003/codelist> ;
+	skos:notation "627" ;
+	skos:prefLabel "Εισπράξεις εξ εισφορών δια την πληρωμή ημερομισ. Φορ. Καπνού" ;
+	skos:broadMatch kalamaria-kae-es03:627 ;
+	skos:broader kalamaria-br2003-codelist:100 .
+
+<http://data.openbudgets.eu/resource/dataset/budget-kalamaria-revenue-2003/codelist/100/628> a skos:Concept ;
+	skos:inScheme <http://data.openbudgets.eu/resource/dataset/budget-kalamaria-revenue-2003/codelist> ;
+	skos:notation "628" ;
+	skos:prefLabel "Χαρτόσημο Μισθωμάτων" ;
+	skos:broadMatch kalamaria-kae-es03:628 ;
+	skos:broader kalamaria-br2003-codelist:100 .
+
+<http://data.openbudgets.eu/resource/dataset/budget-kalamaria-revenue-2003/codelist/100/629> a skos:Concept ;
+	skos:inScheme <http://data.openbudgets.eu/resource/dataset/budget-kalamaria-revenue-2003/codelist> ;
+	skos:notation "629" ;
+	skos:prefLabel "Λοιπαί εισπράξεις υπέρ τρίτων" ;
+	skos:broadMatch kalamaria-kae-es03:629 ;
+	skos:broader kalamaria-br2003-codelist:100 .
+
+<http://data.openbudgets.eu/resource/dataset/budget-kalamaria-revenue-2003/codelist/100/631> a skos:Concept ;
+	skos:inScheme <http://data.openbudgets.eu/resource/dataset/budget-kalamaria-revenue-2003/codelist> ;
+	skos:notation "631" ;
+	skos:prefLabel "Επιστροφή χρημάτων υπό υπολόγων προς τακτοποίησιν ΧΕΠ" ;
+	skos:broadMatch kalamaria-kae-es03:631 ;
+	skos:broader kalamaria-br2003-codelist:100 .
+
+<http://data.openbudgets.eu/resource/dataset/budget-kalamaria-revenue-2003/codelist/100/632> a skos:Concept ;
+	skos:inScheme <http://data.openbudgets.eu/resource/dataset/budget-kalamaria-revenue-2003/codelist> ;
+	skos:notation "632" ;
+	skos:prefLabel "Επιστροφή παγίας προκαταβολής" ;
+	skos:broadMatch kalamaria-kae-es03:632 ;
+	skos:broader kalamaria-br2003-codelist:100 .
+
+<http://data.openbudgets.eu/resource/dataset/budget-kalamaria-revenue-2003/codelist/100/633> a skos:Concept ;
+	skos:inScheme <http://data.openbudgets.eu/resource/dataset/budget-kalamaria-revenue-2003/codelist> ;
+	skos:notation "633" ;
+	skos:prefLabel "Επιστροφή χρημάτων εγγυήσεων" ;
+	skos:broadMatch kalamaria-kae-es03:633 ;
+	skos:broader kalamaria-br2003-codelist:100 .
+
+<http://data.openbudgets.eu/resource/dataset/budget-kalamaria-revenue-2003/codelist/100/639> a skos:Concept ;
+	skos:inScheme <http://data.openbudgets.eu/resource/dataset/budget-kalamaria-revenue-2003/codelist> ;
+	skos:notation "639" ;
+	skos:prefLabel "Επιστροφή εν γένει χρημάτων" ;
+	skos:broadMatch kalamaria-kae-es03:639 ;
+	skos:broader kalamaria-br2003-codelist:100 .
+
+<http://data.openbudgets.eu/resource/dataset/budget-kalamaria-revenue-2003/codelist/100/641> a skos:Concept ;
+	skos:inScheme <http://data.openbudgets.eu/resource/dataset/budget-kalamaria-revenue-2003/codelist> ;
+	skos:notation "641" ;
+	skos:prefLabel "Κρατήσεις λόγω χορηγίας επί των εξόδων παραστάσεως Δημάρχου" ;
+	skos:broadMatch kalamaria-kae-es03:641 ;
+	skos:broader kalamaria-br2003-codelist:100 .
+
+<http://data.openbudgets.eu/resource/dataset/budget-kalamaria-revenue-2003/codelist/100/649> a skos:Concept ;
+	skos:inScheme <http://data.openbudgets.eu/resource/dataset/budget-kalamaria-revenue-2003/codelist> ;
+	skos:notation "649" ;
+	skos:prefLabel "Λοιπά έκτακτα έσοδα μη δυνάμενα να ενταχθούν εις τας ανωτέρω τάξεις" ;
+	skos:broadMatch kalamaria-kae-es03:649 ;
+	skos:broader kalamaria-br2003-codelist:100 .
+
+<http://data.openbudgets.eu/resource/dataset/budget-kalamaria-revenue-2003/codelist/200/111> a skos:Concept ;
+	skos:inScheme <http://data.openbudgets.eu/resource/dataset/budget-kalamaria-revenue-2003/codelist> ;
+	skos:notation "111" ;
+	skos:prefLabel "Εκ τελών καθαριότητας (τακτικά βεβαιωθησόμενα το πρώτον)" ;
+	skos:broadMatch kalamaria-kae-es03:111 ;
+	skos:broader kalamaria-br2003-codelist:200 .
+
+<http://data.openbudgets.eu/resource/dataset/budget-kalamaria-revenue-2003/codelist/200/112> a skos:Concept ;
+	skos:inScheme <http://data.openbudgets.eu/resource/dataset/budget-kalamaria-revenue-2003/codelist> ;
+	skos:notation "112" ;
+	skos:prefLabel "Εκ τελών υδρεύσεως (τακτικά βεβαιωθησόμενα το πρώτον)" ;
+	skos:broadMatch kalamaria-kae-es03:112 ;
+	skos:broader kalamaria-br2003-codelist:200 .
+
+<http://data.openbudgets.eu/resource/dataset/budget-kalamaria-revenue-2003/codelist/200/113> a skos:Concept ;
+	skos:inScheme <http://data.openbudgets.eu/resource/dataset/budget-kalamaria-revenue-2003/codelist> ;
+	skos:notation "113" ;
+	skos:prefLabel "Εκ τελών αδρεύσεως (τακτικά βεβαιωθησόμενα το πρώτον)" ;
+	skos:broadMatch kalamaria-kae-es03:113 ;
+	skos:broader kalamaria-br2003-codelist:200 .
+
+<http://data.openbudgets.eu/resource/dataset/budget-kalamaria-revenue-2003/codelist/200/114> a skos:Concept ;
+	skos:inScheme <http://data.openbudgets.eu/resource/dataset/budget-kalamaria-revenue-2003/codelist> ;
+	skos:notation "114" ;
+	skos:prefLabel "Εκ τελών φωτισμού (τακτικά βεβαιωθησόμενα το πρώτον)" ;
+	skos:broadMatch kalamaria-kae-es03:114 ;
+	skos:broader kalamaria-br2003-codelist:200 .
+
+<http://data.openbudgets.eu/resource/dataset/budget-kalamaria-revenue-2003/codelist/200/115> a skos:Concept ;
+	skos:inScheme <http://data.openbudgets.eu/resource/dataset/budget-kalamaria-revenue-2003/codelist> ;
+	skos:notation "115" ;
+	skos:prefLabel "Εκ τελών σταθμεύσεως αυτοκινήτων(τακτικά βεβαιωθησόμενα το πρώτον)" ;
+	skos:broadMatch kalamaria-kae-es03:115 ;
+	skos:broader kalamaria-br2003-codelist:200 .
+
+<http://data.openbudgets.eu/resource/dataset/budget-kalamaria-revenue-2003/codelist/200/116> a skos:Concept ;
+	skos:inScheme <http://data.openbudgets.eu/resource/dataset/budget-kalamaria-revenue-2003/codelist> ;
+	skos:notation "116" ;
+	skos:prefLabel "Εκ δικαιωμάτων και μισθωμάτων βοσκήσιμων εκτάσεων (τακτικά βεβαιωθησόμενα το πρώτον)" ;
+	skos:broadMatch kalamaria-kae-es03:116 ;
+	skos:broader kalamaria-br2003-codelist:200 .
+
+<http://data.openbudgets.eu/resource/dataset/budget-kalamaria-revenue-2003/codelist/200/119> a skos:Concept ;
+	skos:inScheme <http://data.openbudgets.eu/resource/dataset/budget-kalamaria-revenue-2003/codelist> ;
+	skos:notation "119" ;
+	skos:prefLabel "Εκ λοιπών περιπτώσεων  (τακτικά βεβαιωθησόμενα το πρώτον)" ;
+	skos:broadMatch kalamaria-kae-es03:119 ;
+	skos:broader kalamaria-br2003-codelist:200 .
+
+<http://data.openbudgets.eu/resource/dataset/budget-kalamaria-revenue-2003/codelist/200/121> a skos:Concept ;
+	skos:inScheme <http://data.openbudgets.eu/resource/dataset/budget-kalamaria-revenue-2003/codelist> ;
+	skos:notation "121" ;
+	skos:prefLabel "Εκ τελών καθαριότητος  (τακτικά βεβαιωθέντα)" ;
+	skos:broadMatch kalamaria-kae-es03:121 ;
+	skos:broader kalamaria-br2003-codelist:200 .
+
+<http://data.openbudgets.eu/resource/dataset/budget-kalamaria-revenue-2003/codelist/200/122> a skos:Concept ;
+	skos:inScheme <http://data.openbudgets.eu/resource/dataset/budget-kalamaria-revenue-2003/codelist> ;
+	skos:notation "122" ;
+	skos:prefLabel "Εκ τελών υδρεύσεως  (τακτικά βεβαιωθέντα)" ;
+	skos:broadMatch kalamaria-kae-es03:122 ;
+	skos:broader kalamaria-br2003-codelist:200 .
+
+<http://data.openbudgets.eu/resource/dataset/budget-kalamaria-revenue-2003/codelist/200/123> a skos:Concept ;
+	skos:inScheme <http://data.openbudgets.eu/resource/dataset/budget-kalamaria-revenue-2003/codelist> ;
+	skos:notation "123" ;
+	skos:prefLabel "Εκ τελών αδρεύσεως (τακτικά βεβαιωθέντα)" ;
+	skos:broadMatch kalamaria-kae-es03:123 ;
+	skos:broader kalamaria-br2003-codelist:200 .
+
+<http://data.openbudgets.eu/resource/dataset/budget-kalamaria-revenue-2003/codelist/200/124> a skos:Concept ;
+	skos:inScheme <http://data.openbudgets.eu/resource/dataset/budget-kalamaria-revenue-2003/codelist> ;
+	skos:notation "124" ;
+	skos:prefLabel "Εκ τελών φωτισμού (τακτικά βεβαιωθέντα)" ;
+	skos:broadMatch kalamaria-kae-es03:124 ;
+	skos:broader kalamaria-br2003-codelist:200 .
+
+<http://data.openbudgets.eu/resource/dataset/budget-kalamaria-revenue-2003/codelist/200/125> a skos:Concept ;
+	skos:inScheme <http://data.openbudgets.eu/resource/dataset/budget-kalamaria-revenue-2003/codelist> ;
+	skos:notation "125" ;
+	skos:prefLabel "Εκ τελών σταθμεύσεως αυτοκινήτων (τακτικά βεβαιωθέντα)" ;
+	skos:broadMatch kalamaria-kae-es03:125 ;
+	skos:broader kalamaria-br2003-codelist:200 .
+
+<http://data.openbudgets.eu/resource/dataset/budget-kalamaria-revenue-2003/codelist/200/126> a skos:Concept ;
+	skos:inScheme <http://data.openbudgets.eu/resource/dataset/budget-kalamaria-revenue-2003/codelist> ;
+	skos:notation "126" ;
+	skos:prefLabel "Εκ δικαιωμάτων και μισθωμάτων βοσκησίμων εκτασ (τακτικά βεβαιωθέντα)" ;
+	skos:broadMatch kalamaria-kae-es03:126 ;
+	skos:broader kalamaria-br2003-codelist:200 .
+
+<http://data.openbudgets.eu/resource/dataset/budget-kalamaria-revenue-2003/codelist/200/129> a skos:Concept ;
+	skos:inScheme <http://data.openbudgets.eu/resource/dataset/budget-kalamaria-revenue-2003/codelist> ;
+	skos:notation "129" ;
+	skos:prefLabel "Εκ λοιπών περιπτώσεων (τακτικά βεβαιωθέντα)" ;
+	skos:narrower <http://data.openbudgets.eu/resource/dataset/budget-kalamaria-revenue-2003/codelist/200/129-1> ;
+	skos:broadMatch kalamaria-kae-es03:129 ;
+	skos:broader kalamaria-br2003-codelist:200 .
+
+<http://data.openbudgets.eu/resource/dataset/budget-kalamaria-revenue-2003/codelist/200/129-1> a skos:Concept ;
+	skos:inScheme <http://data.openbudgets.eu/resource/dataset/budget-kalamaria-revenue-2003/codelist> ;
+	skos:notation "129-1" ;
+	skos:prefLabel "Έσοδα από εισφορά σε χρήμα" ;
+	skos:broader <http://data.openbudgets.eu/resource/dataset/budget-kalamaria-revenue-2003/codelist/200/129> .
+
+<http://data.openbudgets.eu/resource/dataset/budget-kalamaria-revenue-2003/codelist/200/211> a skos:Concept ;
+	skos:inScheme <http://data.openbudgets.eu/resource/dataset/budget-kalamaria-revenue-2003/codelist> ;
+	skos:notation "211" ;
+	skos:prefLabel "Έκτακτα έσοδα εκ παρελθόντων οικονομικών ετών βεβαιωσησόμενα και εισπραχθησόμενα το πρώτον" ;
+	skos:broadMatch kalamaria-kae-es03:211 ;
+	skos:broader kalamaria-br2003-codelist:200 .
+
+<http://data.openbudgets.eu/resource/dataset/budget-kalamaria-revenue-2003/codelist/200/212> a skos:Concept ;
+	skos:inScheme <http://data.openbudgets.eu/resource/dataset/budget-kalamaria-revenue-2003/codelist> ;
+	skos:notation "212" ;
+	skos:prefLabel "Εισπρακτέα υπόλοιπα εκ βεβαιωθέντων κατά τα παρελθόντα οικονομικά έτη εκτάκτων εσόδων" ;
+	skos:broadMatch kalamaria-kae-es03:212 ;
+	skos:broader kalamaria-br2003-codelist:200 .
+
+<http://data.openbudgets.eu/resource/dataset/budget-kalamaria-revenue-2003/codelist/300/111> a skos:Concept ;
+	skos:inScheme <http://data.openbudgets.eu/resource/dataset/budget-kalamaria-revenue-2003/codelist> ;
+	skos:notation "111" ;
+	skos:prefLabel "Χρηματικό υπόλοιπο προηγουμένης χρήσεως μεταφερόμενο εις νέαν" ;
+	skos:broadMatch kalamaria-kae-es03:111 ;
+	skos:broader kalamaria-br2003-codelist:300 .

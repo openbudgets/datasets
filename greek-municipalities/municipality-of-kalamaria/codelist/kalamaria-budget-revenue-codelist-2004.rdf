@@ -1,0 +1,1577 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF
+	xmlns="http://www.w3.org/2004/02/skos/core#"
+	xmlns:gr-dimension="http://data.openbudgets.eu/ontology/dsd/greek-municipalities/dimension/"
+	xmlns:kalamaria-br2004-dsd="http://data.openbudgets.eu/ontology/dsd/budget-kalamaria-revenue-2004/"
+	xmlns:kalamaria-dimension="http://data.openbudgets.eu/ontology/dsd/municipality-of-kalamaria/dimension/"
+	xmlns:kalamaria-offices_esoda="http://data.openbudgets.eu/resource/codelist/kalamaria-administration-esoda/"
+	xmlns:kalamaria-2004-dimension="http://data.openbudgets.eu/ontology/dsd/municipality-of-kalamaria-2004/dimension/"
+	xmlns:kalamaria-kae-es04="http://data.openbudgets.eu/resource/codelist/kalamaria-kae-esoda-2004/"
+	xmlns:gr-budgetPhase="http://data.openbudgets.eu/resource/dataset/greek-municipalities/codelist/budget-phase/"
+	xmlns:kalamaria-br2004-slice="http://data.openbudgets.eu/resource/dataset/budget-kalamaria-revenue-2004/slice/"
+	xmlns:kalamaria-br2004-observation="http://data.openbudgets.eu/resource/dataset/budget-kalamaria-revenue-2004/observation/"
+	xmlns:kalamaria-br2004-dimension="http://data.openbudgets.eu/ontology/dsd/budget-kalamaria-revenue-2004/dimension/"
+	xmlns:kalamaria-br2004-codelist="http://data.openbudgets.eu/resource/dataset/budget-kalamaria-revenue-2004/codelist/"
+	xmlns:dbp="http://dbpedia.org/property/"
+	xmlns:interval="http://reference.data.gov.uk/def/intervals/"
+	xmlns:obeu="http://data.openbudgets.eu/ontology/"
+	xmlns:obeu-attribute="http://data.openbudgets.eu/ontology/dsd/attribute/"
+	xmlns:obeu-codelist="http://data.openbudgets.eu/resource/codelist/"
+	xmlns:obeu-dimension="http://data.openbudgets.eu/ontology/dsd/dimension/"
+	xmlns:obeu-measure="http://data.openbudgets.eu/ontology/dsd/measure/"
+	xmlns:obeu-budgetphase="http://data.openbudgets.eu/resource/codelist/budget-phase/"
+	xmlns:obeu-currency="http://data.openbudgets.eu/codelist/currency/"
+	xmlns:obeu-operation="http://data.openbudgets.eu/resource/codelist/operation-character/"
+	xmlns:owl="http://www.w3.org/2002/07/owl#"
+	xmlns:qb="http://purl.org/linked-data/cube#"
+	xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+	xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+	xmlns:schema="http://schema.org/"
+	xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+	xmlns:time="http://www.w3.org/2006/time#"
+	xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:foaf="http://xmlns.com/foaf/0.1/"
+	xmlns:dcat="http://www.w3.org/ns/dcat#"
+	xmlns:terms="http://purl.org/dc/terms/">
+
+<rdf:Description rdf:about="http://data.openbudgets.eu/resource/dataset/budget-kalamaria-revenue-2004/codelist">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#ConceptScheme"/>
+	<prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Kalamaria municipality revenue budget codelist as derived from the dataset of year 2004</prefLabel>
+	<hasTopConcept rdf:resource="http://data.openbudgets.eu/resource/dataset/budget-kalamaria-revenue-2004/codelist/000"/>
+	<hasTopConcept rdf:resource="http://data.openbudgets.eu/resource/dataset/budget-kalamaria-revenue-2004/codelist/100"/>
+	<hasTopConcept rdf:resource="http://data.openbudgets.eu/resource/dataset/budget-kalamaria-revenue-2004/codelist/200"/>
+	<hasTopConcept rdf:resource="http://data.openbudgets.eu/resource/dataset/budget-kalamaria-revenue-2004/codelist/300"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://data.openbudgets.eu/resource/dataset/budget-kalamaria-revenue-2004/codelist/000">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<inScheme rdf:resource="http://data.openbudgets.eu/resource/dataset/budget-kalamaria-revenue-2004/codelist"/>
+	<notation rdf:datatype="http://www.w3.org/2001/XMLSchema#string">000</notation>
+	<prefLabel xml:lang="el">ΤΑΚΤΙΚΑ ΕΣΟΔΑ</prefLabel>
+	<topConceptOf rdf:resource="http://data.openbudgets.eu/resource/dataset/budget-kalamaria-revenue-2004/codelist"/>
+	<narrower rdf:resource="http://data.openbudgets.eu/resource/dataset/budget-kalamaria-revenue-2004/codelist/000/111"/>
+	<narrower rdf:resource="http://data.openbudgets.eu/resource/dataset/budget-kalamaria-revenue-2004/codelist/000/112"/>
+	<narrower rdf:resource="http://data.openbudgets.eu/resource/dataset/budget-kalamaria-revenue-2004/codelist/000/113"/>
+	<narrower rdf:resource="http://data.openbudgets.eu/resource/dataset/budget-kalamaria-revenue-2004/codelist/000/119"/>
+	<narrower rdf:resource="http://data.openbudgets.eu/resource/dataset/budget-kalamaria-revenue-2004/codelist/000/121"/>
+	<narrower rdf:resource="http://data.openbudgets.eu/resource/dataset/budget-kalamaria-revenue-2004/codelist/000/122"/>
+	<narrower rdf:resource="http://data.openbudgets.eu/resource/dataset/budget-kalamaria-revenue-2004/codelist/000/129"/>
+	<narrower rdf:resource="http://data.openbudgets.eu/resource/dataset/budget-kalamaria-revenue-2004/codelist/000/131"/>
+	<narrower rdf:resource="http://data.openbudgets.eu/resource/dataset/budget-kalamaria-revenue-2004/codelist/000/132"/>
+	<narrower rdf:resource="http://data.openbudgets.eu/resource/dataset/budget-kalamaria-revenue-2004/codelist/000/133"/>
+	<narrower rdf:resource="http://data.openbudgets.eu/resource/dataset/budget-kalamaria-revenue-2004/codelist/000/134"/>
+	<narrower rdf:resource="http://data.openbudgets.eu/resource/dataset/budget-kalamaria-revenue-2004/codelist/000/135"/>
+	<narrower rdf:resource="http://data.openbudgets.eu/resource/dataset/budget-kalamaria-revenue-2004/codelist/000/136"/>
+	<narrower rdf:resource="http://data.openbudgets.eu/resource/dataset/budget-kalamaria-revenue-2004/codelist/000/139"/>
+	<narrower rdf:resource="http://data.openbudgets.eu/resource/dataset/budget-kalamaria-revenue-2004/codelist/000/140"/>
+	<narrower rdf:resource="http://data.openbudgets.eu/resource/dataset/budget-kalamaria-revenue-2004/codelist/000/141"/>
+	<narrower rdf:resource="http://data.openbudgets.eu/resource/dataset/budget-kalamaria-revenue-2004/codelist/000/149"/>
+	<narrower rdf:resource="http://data.openbudgets.eu/resource/dataset/budget-kalamaria-revenue-2004/codelist/000/151"/>
+	<narrower rdf:resource="http://data.openbudgets.eu/resource/dataset/budget-kalamaria-revenue-2004/codelist/000/152"/>
+	<narrower rdf:resource="http://data.openbudgets.eu/resource/dataset/budget-kalamaria-revenue-2004/codelist/000/153"/>
+	<narrower rdf:resource="http://data.openbudgets.eu/resource/dataset/budget-kalamaria-revenue-2004/codelist/000/159"/>
+	<narrower rdf:resource="http://data.openbudgets.eu/resource/dataset/budget-kalamaria-revenue-2004/codelist/000/161"/>
+	<narrower rdf:resource="http://data.openbudgets.eu/resource/dataset/budget-kalamaria-revenue-2004/codelist/000/162"/>
+	<narrower rdf:resource="http://data.openbudgets.eu/resource/dataset/budget-kalamaria-revenue-2004/codelist/000/163"/>
+	<narrower rdf:resource="http://data.openbudgets.eu/resource/dataset/budget-kalamaria-revenue-2004/codelist/000/164"/>
+	<narrower rdf:resource="http://data.openbudgets.eu/resource/dataset/budget-kalamaria-revenue-2004/codelist/000/169"/>
+	<narrower rdf:resource="http://data.openbudgets.eu/resource/dataset/budget-kalamaria-revenue-2004/codelist/000/171"/>
+	<narrower rdf:resource="http://data.openbudgets.eu/resource/dataset/budget-kalamaria-revenue-2004/codelist/000/179"/>
+	<narrower rdf:resource="http://data.openbudgets.eu/resource/dataset/budget-kalamaria-revenue-2004/codelist/000/181"/>
+	<narrower rdf:resource="http://data.openbudgets.eu/resource/dataset/budget-kalamaria-revenue-2004/codelist/000/182"/>
+	<narrower rdf:resource="http://data.openbudgets.eu/resource/dataset/budget-kalamaria-revenue-2004/codelist/000/211"/>
+	<narrower rdf:resource="http://data.openbudgets.eu/resource/dataset/budget-kalamaria-revenue-2004/codelist/000/212"/>
+	<narrower rdf:resource="http://data.openbudgets.eu/resource/dataset/budget-kalamaria-revenue-2004/codelist/000/213"/>
+	<narrower rdf:resource="http://data.openbudgets.eu/resource/dataset/budget-kalamaria-revenue-2004/codelist/000/214"/>
+	<narrower rdf:resource="http://data.openbudgets.eu/resource/dataset/budget-kalamaria-revenue-2004/codelist/000/219"/>
+	<narrower rdf:resource="http://data.openbudgets.eu/resource/dataset/budget-kalamaria-revenue-2004/codelist/000/311"/>
+	<narrower rdf:resource="http://data.openbudgets.eu/resource/dataset/budget-kalamaria-revenue-2004/codelist/000/312"/>
+	<narrower rdf:resource="http://data.openbudgets.eu/resource/dataset/budget-kalamaria-revenue-2004/codelist/000/313"/>
+	<narrower rdf:resource="http://data.openbudgets.eu/resource/dataset/budget-kalamaria-revenue-2004/codelist/000/314"/>
+	<narrower rdf:resource="http://data.openbudgets.eu/resource/dataset/budget-kalamaria-revenue-2004/codelist/000/319"/>
+	<narrower rdf:resource="http://data.openbudgets.eu/resource/dataset/budget-kalamaria-revenue-2004/codelist/000/321"/>
+	<narrower rdf:resource="http://data.openbudgets.eu/resource/dataset/budget-kalamaria-revenue-2004/codelist/000/322"/>
+	<narrower rdf:resource="http://data.openbudgets.eu/resource/dataset/budget-kalamaria-revenue-2004/codelist/000/323"/>
+	<narrower rdf:resource="http://data.openbudgets.eu/resource/dataset/budget-kalamaria-revenue-2004/codelist/000/329"/>
+	<narrower rdf:resource="http://data.openbudgets.eu/resource/dataset/budget-kalamaria-revenue-2004/codelist/000/331"/>
+	<narrower rdf:resource="http://data.openbudgets.eu/resource/dataset/budget-kalamaria-revenue-2004/codelist/000/339"/>
+	<narrower rdf:resource="http://data.openbudgets.eu/resource/dataset/budget-kalamaria-revenue-2004/codelist/000/341"/>
+	<narrower rdf:resource="http://data.openbudgets.eu/resource/dataset/budget-kalamaria-revenue-2004/codelist/000/349"/>
+	<narrower rdf:resource="http://data.openbudgets.eu/resource/dataset/budget-kalamaria-revenue-2004/codelist/000/351"/>
+	<narrower rdf:resource="http://data.openbudgets.eu/resource/dataset/budget-kalamaria-revenue-2004/codelist/000/352"/>
+	<narrower rdf:resource="http://data.openbudgets.eu/resource/dataset/budget-kalamaria-revenue-2004/codelist/000/353"/>
+	<narrower rdf:resource="http://data.openbudgets.eu/resource/dataset/budget-kalamaria-revenue-2004/codelist/000/359"/>
+	<narrower rdf:resource="http://data.openbudgets.eu/resource/dataset/budget-kalamaria-revenue-2004/codelist/000/361"/>
+	<narrower rdf:resource="http://data.openbudgets.eu/resource/dataset/budget-kalamaria-revenue-2004/codelist/000/362"/>
+	<narrower rdf:resource="http://data.openbudgets.eu/resource/dataset/budget-kalamaria-revenue-2004/codelist/000/363"/>
+	<narrower rdf:resource="http://data.openbudgets.eu/resource/dataset/budget-kalamaria-revenue-2004/codelist/000/364"/>
+	<narrower rdf:resource="http://data.openbudgets.eu/resource/dataset/budget-kalamaria-revenue-2004/codelist/000/365"/>
+	<narrower rdf:resource="http://data.openbudgets.eu/resource/dataset/budget-kalamaria-revenue-2004/codelist/000/366"/>
+	<narrower rdf:resource="http://data.openbudgets.eu/resource/dataset/budget-kalamaria-revenue-2004/codelist/000/367"/>
+	<narrower rdf:resource="http://data.openbudgets.eu/resource/dataset/budget-kalamaria-revenue-2004/codelist/000/368"/>
+	<narrower rdf:resource="http://data.openbudgets.eu/resource/dataset/budget-kalamaria-revenue-2004/codelist/000/369"/>
+	<narrower rdf:resource="http://data.openbudgets.eu/resource/dataset/budget-kalamaria-revenue-2004/codelist/000/411"/>
+	<narrower rdf:resource="http://data.openbudgets.eu/resource/dataset/budget-kalamaria-revenue-2004/codelist/000/413"/>
+	<narrower rdf:resource="http://data.openbudgets.eu/resource/dataset/budget-kalamaria-revenue-2004/codelist/000/414"/>
+	<narrower rdf:resource="http://data.openbudgets.eu/resource/dataset/budget-kalamaria-revenue-2004/codelist/000/419"/>
+	<narrower rdf:resource="http://data.openbudgets.eu/resource/dataset/budget-kalamaria-revenue-2004/codelist/000/421"/>
+	<narrower rdf:resource="http://data.openbudgets.eu/resource/dataset/budget-kalamaria-revenue-2004/codelist/000/422"/>
+	<narrower rdf:resource="http://data.openbudgets.eu/resource/dataset/budget-kalamaria-revenue-2004/codelist/000/423"/>
+	<narrower rdf:resource="http://data.openbudgets.eu/resource/dataset/budget-kalamaria-revenue-2004/codelist/000/424"/>
+	<narrower rdf:resource="http://data.openbudgets.eu/resource/dataset/budget-kalamaria-revenue-2004/codelist/000/425"/>
+	<narrower rdf:resource="http://data.openbudgets.eu/resource/dataset/budget-kalamaria-revenue-2004/codelist/000/429"/>
+	<narrower rdf:resource="http://data.openbudgets.eu/resource/dataset/budget-kalamaria-revenue-2004/codelist/000/431"/>
+	<narrower rdf:resource="http://data.openbudgets.eu/resource/dataset/budget-kalamaria-revenue-2004/codelist/000/433"/>
+	<narrower rdf:resource="http://data.openbudgets.eu/resource/dataset/budget-kalamaria-revenue-2004/codelist/000/434"/>
+	<narrower rdf:resource="http://data.openbudgets.eu/resource/dataset/budget-kalamaria-revenue-2004/codelist/000/439"/>
+	<narrower rdf:resource="http://data.openbudgets.eu/resource/dataset/budget-kalamaria-revenue-2004/codelist/000/511"/>
+	<narrower rdf:resource="http://data.openbudgets.eu/resource/dataset/budget-kalamaria-revenue-2004/codelist/000/512"/>
+	<narrower rdf:resource="http://data.openbudgets.eu/resource/dataset/budget-kalamaria-revenue-2004/codelist/000/519"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://data.openbudgets.eu/resource/dataset/budget-kalamaria-revenue-2004/codelist/100">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<inScheme rdf:resource="http://data.openbudgets.eu/resource/dataset/budget-kalamaria-revenue-2004/codelist"/>
+	<notation rdf:datatype="http://www.w3.org/2001/XMLSchema#string">100</notation>
+	<prefLabel xml:lang="el">ΕΚΤΑΚΤΑ ΕΣΟΔΑ</prefLabel>
+	<topConceptOf rdf:resource="http://data.openbudgets.eu/resource/dataset/budget-kalamaria-revenue-2004/codelist"/>
+	<narrower rdf:resource="http://data.openbudgets.eu/resource/dataset/budget-kalamaria-revenue-2004/codelist/100/111"/>
+	<narrower rdf:resource="http://data.openbudgets.eu/resource/dataset/budget-kalamaria-revenue-2004/codelist/100/112"/>
+	<narrower rdf:resource="http://data.openbudgets.eu/resource/dataset/budget-kalamaria-revenue-2004/codelist/100/119"/>
+	<narrower rdf:resource="http://data.openbudgets.eu/resource/dataset/budget-kalamaria-revenue-2004/codelist/100/121"/>
+	<narrower rdf:resource="http://data.openbudgets.eu/resource/dataset/budget-kalamaria-revenue-2004/codelist/100/211"/>
+	<narrower rdf:resource="http://data.openbudgets.eu/resource/dataset/budget-kalamaria-revenue-2004/codelist/100/212"/>
+	<narrower rdf:resource="http://data.openbudgets.eu/resource/dataset/budget-kalamaria-revenue-2004/codelist/100/213"/>
+	<narrower rdf:resource="http://data.openbudgets.eu/resource/dataset/budget-kalamaria-revenue-2004/codelist/100/219"/>
+	<narrower rdf:resource="http://data.openbudgets.eu/resource/dataset/budget-kalamaria-revenue-2004/codelist/100/221"/>
+	<narrower rdf:resource="http://data.openbudgets.eu/resource/dataset/budget-kalamaria-revenue-2004/codelist/100/311"/>
+	<narrower rdf:resource="http://data.openbudgets.eu/resource/dataset/budget-kalamaria-revenue-2004/codelist/100/312"/>
+	<narrower rdf:resource="http://data.openbudgets.eu/resource/dataset/budget-kalamaria-revenue-2004/codelist/100/313"/>
+	<narrower rdf:resource="http://data.openbudgets.eu/resource/dataset/budget-kalamaria-revenue-2004/codelist/100/319"/>
+	<narrower rdf:resource="http://data.openbudgets.eu/resource/dataset/budget-kalamaria-revenue-2004/codelist/100/321"/>
+	<narrower rdf:resource="http://data.openbudgets.eu/resource/dataset/budget-kalamaria-revenue-2004/codelist/100/411"/>
+	<narrower rdf:resource="http://data.openbudgets.eu/resource/dataset/budget-kalamaria-revenue-2004/codelist/100/421"/>
+	<narrower rdf:resource="http://data.openbudgets.eu/resource/dataset/budget-kalamaria-revenue-2004/codelist/100/511"/>
+	<narrower rdf:resource="http://data.openbudgets.eu/resource/dataset/budget-kalamaria-revenue-2004/codelist/100/521"/>
+	<narrower rdf:resource="http://data.openbudgets.eu/resource/dataset/budget-kalamaria-revenue-2004/codelist/100/522"/>
+	<narrower rdf:resource="http://data.openbudgets.eu/resource/dataset/budget-kalamaria-revenue-2004/codelist/100/523"/>
+	<narrower rdf:resource="http://data.openbudgets.eu/resource/dataset/budget-kalamaria-revenue-2004/codelist/100/524"/>
+	<narrower rdf:resource="http://data.openbudgets.eu/resource/dataset/budget-kalamaria-revenue-2004/codelist/100/525"/>
+	<narrower rdf:resource="http://data.openbudgets.eu/resource/dataset/budget-kalamaria-revenue-2004/codelist/100/529"/>
+	<narrower rdf:resource="http://data.openbudgets.eu/resource/dataset/budget-kalamaria-revenue-2004/codelist/100/531"/>
+	<narrower rdf:resource="http://data.openbudgets.eu/resource/dataset/budget-kalamaria-revenue-2004/codelist/100/539"/>
+	<narrower rdf:resource="http://data.openbudgets.eu/resource/dataset/budget-kalamaria-revenue-2004/codelist/100/611"/>
+	<narrower rdf:resource="http://data.openbudgets.eu/resource/dataset/budget-kalamaria-revenue-2004/codelist/100/612"/>
+	<narrower rdf:resource="http://data.openbudgets.eu/resource/dataset/budget-kalamaria-revenue-2004/codelist/100/613"/>
+	<narrower rdf:resource="http://data.openbudgets.eu/resource/dataset/budget-kalamaria-revenue-2004/codelist/100/619"/>
+	<narrower rdf:resource="http://data.openbudgets.eu/resource/dataset/budget-kalamaria-revenue-2004/codelist/100/621"/>
+	<narrower rdf:resource="http://data.openbudgets.eu/resource/dataset/budget-kalamaria-revenue-2004/codelist/100/622"/>
+	<narrower rdf:resource="http://data.openbudgets.eu/resource/dataset/budget-kalamaria-revenue-2004/codelist/100/623"/>
+	<narrower rdf:resource="http://data.openbudgets.eu/resource/dataset/budget-kalamaria-revenue-2004/codelist/100/624"/>
+	<narrower rdf:resource="http://data.openbudgets.eu/resource/dataset/budget-kalamaria-revenue-2004/codelist/100/625"/>
+	<narrower rdf:resource="http://data.openbudgets.eu/resource/dataset/budget-kalamaria-revenue-2004/codelist/100/626"/>
+	<narrower rdf:resource="http://data.openbudgets.eu/resource/dataset/budget-kalamaria-revenue-2004/codelist/100/627"/>
+	<narrower rdf:resource="http://data.openbudgets.eu/resource/dataset/budget-kalamaria-revenue-2004/codelist/100/628"/>
+	<narrower rdf:resource="http://data.openbudgets.eu/resource/dataset/budget-kalamaria-revenue-2004/codelist/100/629"/>
+	<narrower rdf:resource="http://data.openbudgets.eu/resource/dataset/budget-kalamaria-revenue-2004/codelist/100/631"/>
+	<narrower rdf:resource="http://data.openbudgets.eu/resource/dataset/budget-kalamaria-revenue-2004/codelist/100/632"/>
+	<narrower rdf:resource="http://data.openbudgets.eu/resource/dataset/budget-kalamaria-revenue-2004/codelist/100/633"/>
+	<narrower rdf:resource="http://data.openbudgets.eu/resource/dataset/budget-kalamaria-revenue-2004/codelist/100/639"/>
+	<narrower rdf:resource="http://data.openbudgets.eu/resource/dataset/budget-kalamaria-revenue-2004/codelist/100/641"/>
+	<narrower rdf:resource="http://data.openbudgets.eu/resource/dataset/budget-kalamaria-revenue-2004/codelist/100/649"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://data.openbudgets.eu/resource/dataset/budget-kalamaria-revenue-2004/codelist/200">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<inScheme rdf:resource="http://data.openbudgets.eu/resource/dataset/budget-kalamaria-revenue-2004/codelist"/>
+	<notation rdf:datatype="http://www.w3.org/2001/XMLSchema#string">200</notation>
+	<prefLabel xml:lang="el">ΕΣΟΔΑ ΠΑΡΕΛΘΟΝΤΩΝ ΕΤΩΝ</prefLabel>
+	<topConceptOf rdf:resource="http://data.openbudgets.eu/resource/dataset/budget-kalamaria-revenue-2004/codelist"/>
+	<narrower rdf:resource="http://data.openbudgets.eu/resource/dataset/budget-kalamaria-revenue-2004/codelist/200/111"/>
+	<narrower rdf:resource="http://data.openbudgets.eu/resource/dataset/budget-kalamaria-revenue-2004/codelist/200/112"/>
+	<narrower rdf:resource="http://data.openbudgets.eu/resource/dataset/budget-kalamaria-revenue-2004/codelist/200/113"/>
+	<narrower rdf:resource="http://data.openbudgets.eu/resource/dataset/budget-kalamaria-revenue-2004/codelist/200/114"/>
+	<narrower rdf:resource="http://data.openbudgets.eu/resource/dataset/budget-kalamaria-revenue-2004/codelist/200/115"/>
+	<narrower rdf:resource="http://data.openbudgets.eu/resource/dataset/budget-kalamaria-revenue-2004/codelist/200/116"/>
+	<narrower rdf:resource="http://data.openbudgets.eu/resource/dataset/budget-kalamaria-revenue-2004/codelist/200/119"/>
+	<narrower rdf:resource="http://data.openbudgets.eu/resource/dataset/budget-kalamaria-revenue-2004/codelist/200/121"/>
+	<narrower rdf:resource="http://data.openbudgets.eu/resource/dataset/budget-kalamaria-revenue-2004/codelist/200/122"/>
+	<narrower rdf:resource="http://data.openbudgets.eu/resource/dataset/budget-kalamaria-revenue-2004/codelist/200/123"/>
+	<narrower rdf:resource="http://data.openbudgets.eu/resource/dataset/budget-kalamaria-revenue-2004/codelist/200/124"/>
+	<narrower rdf:resource="http://data.openbudgets.eu/resource/dataset/budget-kalamaria-revenue-2004/codelist/200/125"/>
+	<narrower rdf:resource="http://data.openbudgets.eu/resource/dataset/budget-kalamaria-revenue-2004/codelist/200/126"/>
+	<narrower rdf:resource="http://data.openbudgets.eu/resource/dataset/budget-kalamaria-revenue-2004/codelist/200/129"/>
+	<narrower rdf:resource="http://data.openbudgets.eu/resource/dataset/budget-kalamaria-revenue-2004/codelist/200/211"/>
+	<narrower rdf:resource="http://data.openbudgets.eu/resource/dataset/budget-kalamaria-revenue-2004/codelist/200/212"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://data.openbudgets.eu/resource/dataset/budget-kalamaria-revenue-2004/codelist/300">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<inScheme rdf:resource="http://data.openbudgets.eu/resource/dataset/budget-kalamaria-revenue-2004/codelist"/>
+	<notation rdf:datatype="http://www.w3.org/2001/XMLSchema#string">300</notation>
+	<prefLabel xml:lang="el">ΧΡΗΜΑΤΙΚΟ ΥΠΟΛΟΙΠΟ</prefLabel>
+	<topConceptOf rdf:resource="http://data.openbudgets.eu/resource/dataset/budget-kalamaria-revenue-2004/codelist"/>
+	<narrower rdf:resource="http://data.openbudgets.eu/resource/dataset/budget-kalamaria-revenue-2004/codelist/300/111"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://data.openbudgets.eu/resource/dataset/budget-kalamaria-revenue-2004/codelist/000/111">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<inScheme rdf:resource="http://data.openbudgets.eu/resource/dataset/budget-kalamaria-revenue-2004/codelist"/>
+	<notation rdf:datatype="http://www.w3.org/2001/XMLSchema#string">111</notation>
+	<prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Μισθώματα εξ αστικών ακινήτων (Κτιρίων άρθρον 198 Δ.Κ.Κ)</prefLabel>
+	<broadMatch rdf:resource="http://data.openbudgets.eu/resource/codelist/kalamaria-kae-esoda-2004/111"/>
+	<broader rdf:resource="http://data.openbudgets.eu/resource/dataset/budget-kalamaria-revenue-2004/codelist/000"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://data.openbudgets.eu/resource/dataset/budget-kalamaria-revenue-2004/codelist/000/112">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<inScheme rdf:resource="http://data.openbudgets.eu/resource/dataset/budget-kalamaria-revenue-2004/codelist"/>
+	<notation rdf:datatype="http://www.w3.org/2001/XMLSchema#string">112</notation>
+	<prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Μισθώματα βοσκησίμων εκτάσεων (άρθρον 5 από 24-9-1958 Β.Δ.)</prefLabel>
+	<broadMatch rdf:resource="http://data.openbudgets.eu/resource/codelist/kalamaria-kae-esoda-2004/112"/>
+	<broader rdf:resource="http://data.openbudgets.eu/resource/dataset/budget-kalamaria-revenue-2004/codelist/000"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://data.openbudgets.eu/resource/dataset/budget-kalamaria-revenue-2004/codelist/000/113">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<inScheme rdf:resource="http://data.openbudgets.eu/resource/dataset/budget-kalamaria-revenue-2004/codelist"/>
+	<notation rdf:datatype="http://www.w3.org/2001/XMLSchema#string">113</notation>
+	<prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Δικαίωμα βοσκής (άρθρα 5-11 από 24-9-1958 Β.Δ)</prefLabel>
+	<broadMatch rdf:resource="http://data.openbudgets.eu/resource/codelist/kalamaria-kae-esoda-2004/113"/>
+	<broader rdf:resource="http://data.openbudgets.eu/resource/dataset/budget-kalamaria-revenue-2004/codelist/000"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://data.openbudgets.eu/resource/dataset/budget-kalamaria-revenue-2004/codelist/000/119">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<inScheme rdf:resource="http://data.openbudgets.eu/resource/dataset/budget-kalamaria-revenue-2004/codelist"/>
+	<notation rdf:datatype="http://www.w3.org/2001/XMLSchema#string">119</notation>
+	<prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Λοιπά έσοδα εξ αγροτικών ακινήτων</prefLabel>
+	<broadMatch rdf:resource="http://data.openbudgets.eu/resource/codelist/kalamaria-kae-esoda-2004/119"/>
+	<broader rdf:resource="http://data.openbudgets.eu/resource/dataset/budget-kalamaria-revenue-2004/codelist/000"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://data.openbudgets.eu/resource/dataset/budget-kalamaria-revenue-2004/codelist/000/121">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<inScheme rdf:resource="http://data.openbudgets.eu/resource/dataset/budget-kalamaria-revenue-2004/codelist"/>
+	<notation rdf:datatype="http://www.w3.org/2001/XMLSchema#string">121</notation>
+	<prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Μισθώματα δημοτικής αγοράς</prefLabel>
+	<broadMatch rdf:resource="http://data.openbudgets.eu/resource/codelist/kalamaria-kae-esoda-2004/121"/>
+	<broader rdf:resource="http://data.openbudgets.eu/resource/dataset/budget-kalamaria-revenue-2004/codelist/000"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://data.openbudgets.eu/resource/dataset/budget-kalamaria-revenue-2004/codelist/000/122">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<inScheme rdf:resource="http://data.openbudgets.eu/resource/dataset/budget-kalamaria-revenue-2004/codelist"/>
+	<notation rdf:datatype="http://www.w3.org/2001/XMLSchema#string">122</notation>
+	<prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Δικαιώματα ή μισθώματα εκ χρήσεως δημοτικών χώρων</prefLabel>
+	<broadMatch rdf:resource="http://data.openbudgets.eu/resource/codelist/kalamaria-kae-esoda-2004/122"/>
+	<broader rdf:resource="http://data.openbudgets.eu/resource/dataset/budget-kalamaria-revenue-2004/codelist/000"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://data.openbudgets.eu/resource/dataset/budget-kalamaria-revenue-2004/codelist/000/129">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<inScheme rdf:resource="http://data.openbudgets.eu/resource/dataset/budget-kalamaria-revenue-2004/codelist"/>
+	<notation rdf:datatype="http://www.w3.org/2001/XMLSchema#string">129</notation>
+	<prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Λοιπά έσοδα αγοράς</prefLabel>
+	<broadMatch rdf:resource="http://data.openbudgets.eu/resource/codelist/kalamaria-kae-esoda-2004/129"/>
+	<broader rdf:resource="http://data.openbudgets.eu/resource/dataset/budget-kalamaria-revenue-2004/codelist/000"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://data.openbudgets.eu/resource/dataset/budget-kalamaria-revenue-2004/codelist/000/131">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<inScheme rdf:resource="http://data.openbudgets.eu/resource/dataset/budget-kalamaria-revenue-2004/codelist"/>
+	<notation rdf:datatype="http://www.w3.org/2001/XMLSchema#string">131</notation>
+	<prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Δικαιώματα εκ κηδειών</prefLabel>
+	<broadMatch rdf:resource="http://data.openbudgets.eu/resource/codelist/kalamaria-kae-esoda-2004/131"/>
+	<broader rdf:resource="http://data.openbudgets.eu/resource/dataset/budget-kalamaria-revenue-2004/codelist/000"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://data.openbudgets.eu/resource/dataset/budget-kalamaria-revenue-2004/codelist/000/132">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<inScheme rdf:resource="http://data.openbudgets.eu/resource/dataset/budget-kalamaria-revenue-2004/codelist"/>
+	<notation rdf:datatype="http://www.w3.org/2001/XMLSchema#string">132</notation>
+	<prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Δικαιώματα εκ μνημόσυνων και λοιπών ιεροτελεστιών</prefLabel>
+	<broadMatch rdf:resource="http://data.openbudgets.eu/resource/codelist/kalamaria-kae-esoda-2004/132"/>
+	<broader rdf:resource="http://data.openbudgets.eu/resource/dataset/budget-kalamaria-revenue-2004/codelist/000"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://data.openbudgets.eu/resource/dataset/budget-kalamaria-revenue-2004/codelist/000/133">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<inScheme rdf:resource="http://data.openbudgets.eu/resource/dataset/budget-kalamaria-revenue-2004/codelist"/>
+	<notation rdf:datatype="http://www.w3.org/2001/XMLSchema#string">133</notation>
+	<prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Δικαιώματα ταφής ανανέωση χρόνου ταφής</prefLabel>
+	<broadMatch rdf:resource="http://data.openbudgets.eu/resource/codelist/kalamaria-kae-esoda-2004/133"/>
+	<broader rdf:resource="http://data.openbudgets.eu/resource/dataset/budget-kalamaria-revenue-2004/codelist/000"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://data.openbudgets.eu/resource/dataset/budget-kalamaria-revenue-2004/codelist/000/134">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<inScheme rdf:resource="http://data.openbudgets.eu/resource/dataset/budget-kalamaria-revenue-2004/codelist"/>
+	<notation rdf:datatype="http://www.w3.org/2001/XMLSchema#string">134</notation>
+	<prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Δικαιώματα εκ χρήσεως οστεοφυλακίων</prefLabel>
+	<broadMatch rdf:resource="http://data.openbudgets.eu/resource/codelist/kalamaria-kae-esoda-2004/134"/>
+	<broader rdf:resource="http://data.openbudgets.eu/resource/dataset/budget-kalamaria-revenue-2004/codelist/000"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://data.openbudgets.eu/resource/dataset/budget-kalamaria-revenue-2004/codelist/000/135">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<inScheme rdf:resource="http://data.openbudgets.eu/resource/dataset/budget-kalamaria-revenue-2004/codelist"/>
+	<notation rdf:datatype="http://www.w3.org/2001/XMLSchema#string">135</notation>
+	<prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Δικαιώματα εκ διαδοχικών ταφείων</prefLabel>
+	<broadMatch rdf:resource="http://data.openbudgets.eu/resource/codelist/kalamaria-kae-esoda-2004/135"/>
+	<broader rdf:resource="http://data.openbudgets.eu/resource/dataset/budget-kalamaria-revenue-2004/codelist/000"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://data.openbudgets.eu/resource/dataset/budget-kalamaria-revenue-2004/codelist/000/136">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<inScheme rdf:resource="http://data.openbudgets.eu/resource/dataset/budget-kalamaria-revenue-2004/codelist"/>
+	<notation rdf:datatype="http://www.w3.org/2001/XMLSchema#string">136</notation>
+	<prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Τέλη συντηρήσεως και αφής κανδηλιών</prefLabel>
+	<broadMatch rdf:resource="http://data.openbudgets.eu/resource/codelist/kalamaria-kae-esoda-2004/136"/>
+	<broader rdf:resource="http://data.openbudgets.eu/resource/dataset/budget-kalamaria-revenue-2004/codelist/000"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://data.openbudgets.eu/resource/dataset/budget-kalamaria-revenue-2004/codelist/000/139">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<inScheme rdf:resource="http://data.openbudgets.eu/resource/dataset/budget-kalamaria-revenue-2004/codelist"/>
+	<notation rdf:datatype="http://www.w3.org/2001/XMLSchema#string">139</notation>
+	<prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Λοιπά έσοδα νεκροταφείων</prefLabel>
+	<broadMatch rdf:resource="http://data.openbudgets.eu/resource/codelist/kalamaria-kae-esoda-2004/139"/>
+	<broader rdf:resource="http://data.openbudgets.eu/resource/dataset/budget-kalamaria-revenue-2004/codelist/000"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://data.openbudgets.eu/resource/dataset/budget-kalamaria-revenue-2004/codelist/000/140">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<inScheme rdf:resource="http://data.openbudgets.eu/resource/dataset/budget-kalamaria-revenue-2004/codelist"/>
+	<notation rdf:datatype="http://www.w3.org/2001/XMLSchema#string">140</notation>
+	<prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Έσοδα εκ σφαγείων (άρθρον 3 από 24-9-1958 Β.Δ.)</prefLabel>
+	<broadMatch rdf:resource="http://data.openbudgets.eu/resource/codelist/kalamaria-kae-esoda-2004/140"/>
+	<broader rdf:resource="http://data.openbudgets.eu/resource/dataset/budget-kalamaria-revenue-2004/codelist/000"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://data.openbudgets.eu/resource/dataset/budget-kalamaria-revenue-2004/codelist/000/141">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<inScheme rdf:resource="http://data.openbudgets.eu/resource/dataset/budget-kalamaria-revenue-2004/codelist"/>
+	<notation rdf:datatype="http://www.w3.org/2001/XMLSchema#string">141</notation>
+	<prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Δικαιώματα χρήσεως σφαγείων</prefLabel>
+	<broadMatch rdf:resource="http://data.openbudgets.eu/resource/codelist/kalamaria-kae-esoda-2004/141"/>
+	<broader rdf:resource="http://data.openbudgets.eu/resource/dataset/budget-kalamaria-revenue-2004/codelist/000"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://data.openbudgets.eu/resource/dataset/budget-kalamaria-revenue-2004/codelist/000/149">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<inScheme rdf:resource="http://data.openbudgets.eu/resource/dataset/budget-kalamaria-revenue-2004/codelist"/>
+	<notation rdf:datatype="http://www.w3.org/2001/XMLSchema#string">149</notation>
+	<prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Λοιπά έσοδα σφαγείων (εκποίησης κόπρου κλπ)</prefLabel>
+	<broadMatch rdf:resource="http://data.openbudgets.eu/resource/codelist/kalamaria-kae-esoda-2004/149"/>
+	<broader rdf:resource="http://data.openbudgets.eu/resource/dataset/budget-kalamaria-revenue-2004/codelist/000"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://data.openbudgets.eu/resource/dataset/budget-kalamaria-revenue-2004/codelist/000/151">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<inScheme rdf:resource="http://data.openbudgets.eu/resource/dataset/budget-kalamaria-revenue-2004/codelist"/>
+	<notation rdf:datatype="http://www.w3.org/2001/XMLSchema#string">151</notation>
+	<prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Δικαιώματα ή μισθώματα χρήσεως λουτρών</prefLabel>
+	<broadMatch rdf:resource="http://data.openbudgets.eu/resource/codelist/kalamaria-kae-esoda-2004/151"/>
+	<broader rdf:resource="http://data.openbudgets.eu/resource/dataset/budget-kalamaria-revenue-2004/codelist/000"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://data.openbudgets.eu/resource/dataset/budget-kalamaria-revenue-2004/codelist/000/152">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<inScheme rdf:resource="http://data.openbudgets.eu/resource/dataset/budget-kalamaria-revenue-2004/codelist"/>
+	<notation rdf:datatype="http://www.w3.org/2001/XMLSchema#string">152</notation>
+	<prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Δικαιώματα χρήσεως αφοδευτηρίων</prefLabel>
+	<broadMatch rdf:resource="http://data.openbudgets.eu/resource/codelist/kalamaria-kae-esoda-2004/152"/>
+	<broader rdf:resource="http://data.openbudgets.eu/resource/dataset/budget-kalamaria-revenue-2004/codelist/000"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://data.openbudgets.eu/resource/dataset/budget-kalamaria-revenue-2004/codelist/000/153">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<inScheme rdf:resource="http://data.openbudgets.eu/resource/dataset/budget-kalamaria-revenue-2004/codelist"/>
+	<notation rdf:datatype="http://www.w3.org/2001/XMLSchema#string">153</notation>
+	<prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Έσοδα εξ ενοικιάσεως αφοδευτηρίων</prefLabel>
+	<broadMatch rdf:resource="http://data.openbudgets.eu/resource/codelist/kalamaria-kae-esoda-2004/153"/>
+	<broader rdf:resource="http://data.openbudgets.eu/resource/dataset/budget-kalamaria-revenue-2004/codelist/000"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://data.openbudgets.eu/resource/dataset/budget-kalamaria-revenue-2004/codelist/000/159">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<inScheme rdf:resource="http://data.openbudgets.eu/resource/dataset/budget-kalamaria-revenue-2004/codelist"/>
+	<notation rdf:datatype="http://www.w3.org/2001/XMLSchema#string">159</notation>
+	<prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Λοιπά έσοδα εκ λουτρών και αφοδευτηρίων</prefLabel>
+	<broadMatch rdf:resource="http://data.openbudgets.eu/resource/codelist/kalamaria-kae-esoda-2004/159"/>
+	<broader rdf:resource="http://data.openbudgets.eu/resource/dataset/budget-kalamaria-revenue-2004/codelist/000"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://data.openbudgets.eu/resource/dataset/budget-kalamaria-revenue-2004/codelist/000/161">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<inScheme rdf:resource="http://data.openbudgets.eu/resource/dataset/budget-kalamaria-revenue-2004/codelist"/>
+	<notation rdf:datatype="http://www.w3.org/2001/XMLSchema#string">161</notation>
+	<prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Μισθώματα λατομείων, ορυχείων, μεταλλείων</prefLabel>
+	<broadMatch rdf:resource="http://data.openbudgets.eu/resource/codelist/kalamaria-kae-esoda-2004/161"/>
+	<broader rdf:resource="http://data.openbudgets.eu/resource/dataset/budget-kalamaria-revenue-2004/codelist/000"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://data.openbudgets.eu/resource/dataset/budget-kalamaria-revenue-2004/codelist/000/162">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<inScheme rdf:resource="http://data.openbudgets.eu/resource/dataset/budget-kalamaria-revenue-2004/codelist"/>
+	<notation rdf:datatype="http://www.w3.org/2001/XMLSchema#string">162</notation>
+	<prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Δικαιώματα αμμοληψίας, αξορύξεως λίθων εκ λατομείων</prefLabel>
+	<broadMatch rdf:resource="http://data.openbudgets.eu/resource/codelist/kalamaria-kae-esoda-2004/162"/>
+	<broader rdf:resource="http://data.openbudgets.eu/resource/dataset/budget-kalamaria-revenue-2004/codelist/000"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://data.openbudgets.eu/resource/dataset/budget-kalamaria-revenue-2004/codelist/000/163">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<inScheme rdf:resource="http://data.openbudgets.eu/resource/dataset/budget-kalamaria-revenue-2004/codelist"/>
+	<notation rdf:datatype="http://www.w3.org/2001/XMLSchema#string">163</notation>
+	<prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Δικαιώματα εξ ιχθυοτροφείων</prefLabel>
+	<broadMatch rdf:resource="http://data.openbudgets.eu/resource/codelist/kalamaria-kae-esoda-2004/163"/>
+	<broader rdf:resource="http://data.openbudgets.eu/resource/dataset/budget-kalamaria-revenue-2004/codelist/000"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://data.openbudgets.eu/resource/dataset/budget-kalamaria-revenue-2004/codelist/000/164">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<inScheme rdf:resource="http://data.openbudgets.eu/resource/dataset/budget-kalamaria-revenue-2004/codelist"/>
+	<notation rdf:datatype="http://www.w3.org/2001/XMLSchema#string">164</notation>
+	<prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Δικαιώματα εξ αλυκών</prefLabel>
+	<broadMatch rdf:resource="http://data.openbudgets.eu/resource/codelist/kalamaria-kae-esoda-2004/164"/>
+	<broader rdf:resource="http://data.openbudgets.eu/resource/dataset/budget-kalamaria-revenue-2004/codelist/000"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://data.openbudgets.eu/resource/dataset/budget-kalamaria-revenue-2004/codelist/000/169">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<inScheme rdf:resource="http://data.openbudgets.eu/resource/dataset/budget-kalamaria-revenue-2004/codelist"/>
+	<notation rdf:datatype="http://www.w3.org/2001/XMLSchema#string">169</notation>
+	<prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Λοιπά έσοδα εξ εκμεταλλεύσεως εδάφους, υπεδάφους, θαλάσσης</prefLabel>
+	<broadMatch rdf:resource="http://data.openbudgets.eu/resource/codelist/kalamaria-kae-esoda-2004/169"/>
+	<broader rdf:resource="http://data.openbudgets.eu/resource/dataset/budget-kalamaria-revenue-2004/codelist/000"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://data.openbudgets.eu/resource/dataset/budget-kalamaria-revenue-2004/codelist/000/171">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<inScheme rdf:resource="http://data.openbudgets.eu/resource/dataset/budget-kalamaria-revenue-2004/codelist"/>
+	<notation rdf:datatype="http://www.w3.org/2001/XMLSchema#string">171</notation>
+	<prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Δικαιώματα εκ της εμπορίας ποσίμων υδάτων ιαματικών ή μη</prefLabel>
+	<broadMatch rdf:resource="http://data.openbudgets.eu/resource/codelist/kalamaria-kae-esoda-2004/171"/>
+	<broader rdf:resource="http://data.openbudgets.eu/resource/dataset/budget-kalamaria-revenue-2004/codelist/000"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://data.openbudgets.eu/resource/dataset/budget-kalamaria-revenue-2004/codelist/000/179">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<inScheme rdf:resource="http://data.openbudgets.eu/resource/dataset/budget-kalamaria-revenue-2004/codelist"/>
+	<notation rdf:datatype="http://www.w3.org/2001/XMLSchema#string">179</notation>
+	<prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Λοιπά έσοδα εκ της εμπορίας ποσίμων υδάτων</prefLabel>
+	<broadMatch rdf:resource="http://data.openbudgets.eu/resource/codelist/kalamaria-kae-esoda-2004/179"/>
+	<broader rdf:resource="http://data.openbudgets.eu/resource/dataset/budget-kalamaria-revenue-2004/codelist/000"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://data.openbudgets.eu/resource/dataset/budget-kalamaria-revenue-2004/codelist/000/181">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<inScheme rdf:resource="http://data.openbudgets.eu/resource/dataset/budget-kalamaria-revenue-2004/codelist"/>
+	<notation rdf:datatype="http://www.w3.org/2001/XMLSchema#string">181</notation>
+	<prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Πρόσοδοι εξ ιδίων επιχειρήσεων (μικτά)</prefLabel>
+	<broadMatch rdf:resource="http://data.openbudgets.eu/resource/codelist/kalamaria-kae-esoda-2004/181"/>
+	<broader rdf:resource="http://data.openbudgets.eu/resource/dataset/budget-kalamaria-revenue-2004/codelist/000"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://data.openbudgets.eu/resource/dataset/budget-kalamaria-revenue-2004/codelist/000/182">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<inScheme rdf:resource="http://data.openbudgets.eu/resource/dataset/budget-kalamaria-revenue-2004/codelist"/>
+	<notation rdf:datatype="http://www.w3.org/2001/XMLSchema#string">182</notation>
+	<prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Πρόσοδοι εκ συμμετοχής εις επιχειρήσεις (καθαρά άρθρον 214 Δ.Κ.Κ.)</prefLabel>
+	<broadMatch rdf:resource="http://data.openbudgets.eu/resource/codelist/kalamaria-kae-esoda-2004/182"/>
+	<broader rdf:resource="http://data.openbudgets.eu/resource/dataset/budget-kalamaria-revenue-2004/codelist/000"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://data.openbudgets.eu/resource/dataset/budget-kalamaria-revenue-2004/codelist/000/211">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<inScheme rdf:resource="http://data.openbudgets.eu/resource/dataset/budget-kalamaria-revenue-2004/codelist"/>
+	<notation rdf:datatype="http://www.w3.org/2001/XMLSchema#string">211</notation>
+	<prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Τόκοι εκ καταθέσεων χρημάτων εις Τράπεζας</prefLabel>
+	<broadMatch rdf:resource="http://data.openbudgets.eu/resource/codelist/kalamaria-kae-esoda-2004/211"/>
+	<broader rdf:resource="http://data.openbudgets.eu/resource/dataset/budget-kalamaria-revenue-2004/codelist/000"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://data.openbudgets.eu/resource/dataset/budget-kalamaria-revenue-2004/codelist/000/212">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<inScheme rdf:resource="http://data.openbudgets.eu/resource/dataset/budget-kalamaria-revenue-2004/codelist"/>
+	<notation rdf:datatype="http://www.w3.org/2001/XMLSchema#string">212</notation>
+	<prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">'Εσοδα εκ κινητών αξιών Κράτους και ΝΠΔΔ</prefLabel>
+	<broadMatch rdf:resource="http://data.openbudgets.eu/resource/codelist/kalamaria-kae-esoda-2004/212"/>
+	<broader rdf:resource="http://data.openbudgets.eu/resource/dataset/budget-kalamaria-revenue-2004/codelist/000"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://data.openbudgets.eu/resource/dataset/budget-kalamaria-revenue-2004/codelist/000/213">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<inScheme rdf:resource="http://data.openbudgets.eu/resource/dataset/budget-kalamaria-revenue-2004/codelist"/>
+	<notation rdf:datatype="http://www.w3.org/2001/XMLSchema#string">213</notation>
+	<prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Έσοδα εκ λοιπών κινητών αξιών</prefLabel>
+	<broadMatch rdf:resource="http://data.openbudgets.eu/resource/codelist/kalamaria-kae-esoda-2004/213"/>
+	<broader rdf:resource="http://data.openbudgets.eu/resource/dataset/budget-kalamaria-revenue-2004/codelist/000"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://data.openbudgets.eu/resource/dataset/budget-kalamaria-revenue-2004/codelist/000/214">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<inScheme rdf:resource="http://data.openbudgets.eu/resource/dataset/budget-kalamaria-revenue-2004/codelist"/>
+	<notation rdf:datatype="http://www.w3.org/2001/XMLSchema#string">214</notation>
+	<prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Μισθώματα εκ χρήσεως μηχανημάτων, επίπλων και συσκευών</prefLabel>
+	<broadMatch rdf:resource="http://data.openbudgets.eu/resource/codelist/kalamaria-kae-esoda-2004/214"/>
+	<broader rdf:resource="http://data.openbudgets.eu/resource/dataset/budget-kalamaria-revenue-2004/codelist/000"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://data.openbudgets.eu/resource/dataset/budget-kalamaria-revenue-2004/codelist/000/219">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<inScheme rdf:resource="http://data.openbudgets.eu/resource/dataset/budget-kalamaria-revenue-2004/codelist"/>
+	<notation rdf:datatype="http://www.w3.org/2001/XMLSchema#string">219</notation>
+	<prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Λοιπά έσοδα εκ κινητής περιουσίας</prefLabel>
+	<broadMatch rdf:resource="http://data.openbudgets.eu/resource/codelist/kalamaria-kae-esoda-2004/219"/>
+	<broader rdf:resource="http://data.openbudgets.eu/resource/dataset/budget-kalamaria-revenue-2004/codelist/000"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://data.openbudgets.eu/resource/dataset/budget-kalamaria-revenue-2004/codelist/000/311">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<inScheme rdf:resource="http://data.openbudgets.eu/resource/dataset/budget-kalamaria-revenue-2004/codelist"/>
+	<notation rdf:datatype="http://www.w3.org/2001/XMLSchema#string">311</notation>
+	<prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Τέλη καθαριότητας και αποκομμιδής απορριμάτων οικιών</prefLabel>
+	<broadMatch rdf:resource="http://data.openbudgets.eu/resource/codelist/kalamaria-kae-esoda-2004/311"/>
+	<broader rdf:resource="http://data.openbudgets.eu/resource/dataset/budget-kalamaria-revenue-2004/codelist/000"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://data.openbudgets.eu/resource/dataset/budget-kalamaria-revenue-2004/codelist/000/312">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<inScheme rdf:resource="http://data.openbudgets.eu/resource/dataset/budget-kalamaria-revenue-2004/codelist"/>
+	<notation rdf:datatype="http://www.w3.org/2001/XMLSchema#string">312</notation>
+	<prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Τέλη καθαριότητας και αποκομμιδής απορριμάτων καταστημάτων</prefLabel>
+	<broadMatch rdf:resource="http://data.openbudgets.eu/resource/codelist/kalamaria-kae-esoda-2004/312"/>
+	<broader rdf:resource="http://data.openbudgets.eu/resource/dataset/budget-kalamaria-revenue-2004/codelist/000"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://data.openbudgets.eu/resource/dataset/budget-kalamaria-revenue-2004/codelist/000/313">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<inScheme rdf:resource="http://data.openbudgets.eu/resource/dataset/budget-kalamaria-revenue-2004/codelist"/>
+	<notation rdf:datatype="http://www.w3.org/2001/XMLSchema#string">313</notation>
+	<prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Τέλη καθαριότητας αυτοκινήτων Δ. Χ.</prefLabel>
+	<broadMatch rdf:resource="http://data.openbudgets.eu/resource/codelist/kalamaria-kae-esoda-2004/313"/>
+	<broader rdf:resource="http://data.openbudgets.eu/resource/dataset/budget-kalamaria-revenue-2004/codelist/000"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://data.openbudgets.eu/resource/dataset/budget-kalamaria-revenue-2004/codelist/000/314">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<inScheme rdf:resource="http://data.openbudgets.eu/resource/dataset/budget-kalamaria-revenue-2004/codelist"/>
+	<notation rdf:datatype="http://www.w3.org/2001/XMLSchema#string">314</notation>
+	<prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Τέλη καθαριότητας αυτοκινήτων Ι. Χ.</prefLabel>
+	<broadMatch rdf:resource="http://data.openbudgets.eu/resource/codelist/kalamaria-kae-esoda-2004/314"/>
+	<broader rdf:resource="http://data.openbudgets.eu/resource/dataset/budget-kalamaria-revenue-2004/codelist/000"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://data.openbudgets.eu/resource/dataset/budget-kalamaria-revenue-2004/codelist/000/319">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<inScheme rdf:resource="http://data.openbudgets.eu/resource/dataset/budget-kalamaria-revenue-2004/codelist"/>
+	<notation rdf:datatype="http://www.w3.org/2001/XMLSchema#string">319</notation>
+	<prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Τέλη καθαριότητας &amp; φωτισμού οικιών &amp; καταστημάτων</prefLabel>
+	<broadMatch rdf:resource="http://data.openbudgets.eu/resource/codelist/kalamaria-kae-esoda-2004/319"/>
+	<broader rdf:resource="http://data.openbudgets.eu/resource/dataset/budget-kalamaria-revenue-2004/codelist/000"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://data.openbudgets.eu/resource/dataset/budget-kalamaria-revenue-2004/codelist/000/321">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<inScheme rdf:resource="http://data.openbudgets.eu/resource/dataset/budget-kalamaria-revenue-2004/codelist"/>
+	<notation rdf:datatype="http://www.w3.org/2001/XMLSchema#string">321</notation>
+	<prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Διακιώματα ή τέλη υδρεύσεως οικιών</prefLabel>
+	<broadMatch rdf:resource="http://data.openbudgets.eu/resource/codelist/kalamaria-kae-esoda-2004/321"/>
+	<broader rdf:resource="http://data.openbudgets.eu/resource/dataset/budget-kalamaria-revenue-2004/codelist/000"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://data.openbudgets.eu/resource/dataset/budget-kalamaria-revenue-2004/codelist/000/322">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<inScheme rdf:resource="http://data.openbudgets.eu/resource/dataset/budget-kalamaria-revenue-2004/codelist"/>
+	<notation rdf:datatype="http://www.w3.org/2001/XMLSchema#string">322</notation>
+	<prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Διακιώματα ή τέλη υδρεύσεως καταστημάτων</prefLabel>
+	<broadMatch rdf:resource="http://data.openbudgets.eu/resource/codelist/kalamaria-kae-esoda-2004/322"/>
+	<broader rdf:resource="http://data.openbudgets.eu/resource/dataset/budget-kalamaria-revenue-2004/codelist/000"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://data.openbudgets.eu/resource/dataset/budget-kalamaria-revenue-2004/codelist/000/323">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<inScheme rdf:resource="http://data.openbudgets.eu/resource/dataset/budget-kalamaria-revenue-2004/codelist"/>
+	<notation rdf:datatype="http://www.w3.org/2001/XMLSchema#string">323</notation>
+	<prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Διακιώματα παροχετεύσεων</prefLabel>
+	<broadMatch rdf:resource="http://data.openbudgets.eu/resource/codelist/kalamaria-kae-esoda-2004/323"/>
+	<broader rdf:resource="http://data.openbudgets.eu/resource/dataset/budget-kalamaria-revenue-2004/codelist/000"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://data.openbudgets.eu/resource/dataset/budget-kalamaria-revenue-2004/codelist/000/329">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<inScheme rdf:resource="http://data.openbudgets.eu/resource/dataset/budget-kalamaria-revenue-2004/codelist"/>
+	<notation rdf:datatype="http://www.w3.org/2001/XMLSchema#string">329</notation>
+	<prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Λοιπά έσοδα υπηρεσίας αρδεύσεως</prefLabel>
+	<broadMatch rdf:resource="http://data.openbudgets.eu/resource/codelist/kalamaria-kae-esoda-2004/329"/>
+	<broader rdf:resource="http://data.openbudgets.eu/resource/dataset/budget-kalamaria-revenue-2004/codelist/000"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://data.openbudgets.eu/resource/dataset/budget-kalamaria-revenue-2004/codelist/000/331">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<inScheme rdf:resource="http://data.openbudgets.eu/resource/dataset/budget-kalamaria-revenue-2004/codelist"/>
+	<notation rdf:datatype="http://www.w3.org/2001/XMLSchema#string">331</notation>
+	<prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Δικαιώματα χρήσεως αρδευτικών αυλακών</prefLabel>
+	<broadMatch rdf:resource="http://data.openbudgets.eu/resource/codelist/kalamaria-kae-esoda-2004/331"/>
+	<broader rdf:resource="http://data.openbudgets.eu/resource/dataset/budget-kalamaria-revenue-2004/codelist/000"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://data.openbudgets.eu/resource/dataset/budget-kalamaria-revenue-2004/codelist/000/339">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<inScheme rdf:resource="http://data.openbudgets.eu/resource/dataset/budget-kalamaria-revenue-2004/codelist"/>
+	<notation rdf:datatype="http://www.w3.org/2001/XMLSchema#string">339</notation>
+	<prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Λοιπά έσοδα υπηρεσίας αρδεύσεως</prefLabel>
+	<broadMatch rdf:resource="http://data.openbudgets.eu/resource/codelist/kalamaria-kae-esoda-2004/339"/>
+	<broader rdf:resource="http://data.openbudgets.eu/resource/dataset/budget-kalamaria-revenue-2004/codelist/000"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://data.openbudgets.eu/resource/dataset/budget-kalamaria-revenue-2004/codelist/000/341">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<inScheme rdf:resource="http://data.openbudgets.eu/resource/dataset/budget-kalamaria-revenue-2004/codelist"/>
+	<notation rdf:datatype="http://www.w3.org/2001/XMLSchema#string">341</notation>
+	<prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Τέλη φωτισμού δια τας δαπάνας προς φωτισμό των κοινόχρηστων χώρων</prefLabel>
+	<broadMatch rdf:resource="http://data.openbudgets.eu/resource/codelist/kalamaria-kae-esoda-2004/341"/>
+	<broader rdf:resource="http://data.openbudgets.eu/resource/dataset/budget-kalamaria-revenue-2004/codelist/000"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://data.openbudgets.eu/resource/dataset/budget-kalamaria-revenue-2004/codelist/000/349">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<inScheme rdf:resource="http://data.openbudgets.eu/resource/dataset/budget-kalamaria-revenue-2004/codelist"/>
+	<notation rdf:datatype="http://www.w3.org/2001/XMLSchema#string">349</notation>
+	<prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Λοιπά έσοδα υπηρεσίας ηλεκτροφωτισμού</prefLabel>
+	<broadMatch rdf:resource="http://data.openbudgets.eu/resource/codelist/kalamaria-kae-esoda-2004/349"/>
+	<broader rdf:resource="http://data.openbudgets.eu/resource/dataset/budget-kalamaria-revenue-2004/codelist/000"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://data.openbudgets.eu/resource/dataset/budget-kalamaria-revenue-2004/codelist/000/351">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<inScheme rdf:resource="http://data.openbudgets.eu/resource/dataset/budget-kalamaria-revenue-2004/codelist"/>
+	<notation rdf:datatype="http://www.w3.org/2001/XMLSchema#string">351</notation>
+	<prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Δικαιώματα συνδέσεως οικιών με δίκτυον υπονόμων</prefLabel>
+	<broadMatch rdf:resource="http://data.openbudgets.eu/resource/codelist/kalamaria-kae-esoda-2004/351"/>
+	<broader rdf:resource="http://data.openbudgets.eu/resource/dataset/budget-kalamaria-revenue-2004/codelist/000"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://data.openbudgets.eu/resource/dataset/budget-kalamaria-revenue-2004/codelist/000/352">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<inScheme rdf:resource="http://data.openbudgets.eu/resource/dataset/budget-kalamaria-revenue-2004/codelist"/>
+	<notation rdf:datatype="http://www.w3.org/2001/XMLSchema#string">352</notation>
+	<prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Δικαιώματα συνδέσεως καταστημάτων με δίκτυον υπονόμων</prefLabel>
+	<broadMatch rdf:resource="http://data.openbudgets.eu/resource/codelist/kalamaria-kae-esoda-2004/352"/>
+	<broader rdf:resource="http://data.openbudgets.eu/resource/dataset/budget-kalamaria-revenue-2004/codelist/000"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://data.openbudgets.eu/resource/dataset/budget-kalamaria-revenue-2004/codelist/000/353">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<inScheme rdf:resource="http://data.openbudgets.eu/resource/dataset/budget-kalamaria-revenue-2004/codelist"/>
+	<notation rdf:datatype="http://www.w3.org/2001/XMLSchema#string">353</notation>
+	<prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Δικαιώματα χρήσεως υπονόμων</prefLabel>
+	<broadMatch rdf:resource="http://data.openbudgets.eu/resource/codelist/kalamaria-kae-esoda-2004/353"/>
+	<broader rdf:resource="http://data.openbudgets.eu/resource/dataset/budget-kalamaria-revenue-2004/codelist/000"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://data.openbudgets.eu/resource/dataset/budget-kalamaria-revenue-2004/codelist/000/359">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<inScheme rdf:resource="http://data.openbudgets.eu/resource/dataset/budget-kalamaria-revenue-2004/codelist"/>
+	<notation rdf:datatype="http://www.w3.org/2001/XMLSchema#string">359</notation>
+	<prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Λοιπά έσοδα υπηρεσίας αποχετεύσεως</prefLabel>
+	<broadMatch rdf:resource="http://data.openbudgets.eu/resource/codelist/kalamaria-kae-esoda-2004/359"/>
+	<broader rdf:resource="http://data.openbudgets.eu/resource/dataset/budget-kalamaria-revenue-2004/codelist/000"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://data.openbudgets.eu/resource/dataset/budget-kalamaria-revenue-2004/codelist/000/361">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<inScheme rdf:resource="http://data.openbudgets.eu/resource/dataset/budget-kalamaria-revenue-2004/codelist"/>
+	<notation rdf:datatype="http://www.w3.org/2001/XMLSchema#string">361</notation>
+	<prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Τέλη χρήσεως πεζοδρομίων &amp; κοινοχρήστων χώρων</prefLabel>
+	<broadMatch rdf:resource="http://data.openbudgets.eu/resource/codelist/kalamaria-kae-esoda-2004/361"/>
+	<broader rdf:resource="http://data.openbudgets.eu/resource/dataset/budget-kalamaria-revenue-2004/codelist/000"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://data.openbudgets.eu/resource/dataset/budget-kalamaria-revenue-2004/codelist/000/362">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<inScheme rdf:resource="http://data.openbudgets.eu/resource/dataset/budget-kalamaria-revenue-2004/codelist"/>
+	<notation rdf:datatype="http://www.w3.org/2001/XMLSchema#string">362</notation>
+	<prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Τέλη αδειών οικοδομών (άρθρον 23 από 24-9-1958 Β.Δ.)</prefLabel>
+	<broadMatch rdf:resource="http://data.openbudgets.eu/resource/codelist/kalamaria-kae-esoda-2004/362"/>
+	<broader rdf:resource="http://data.openbudgets.eu/resource/dataset/budget-kalamaria-revenue-2004/codelist/000"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://data.openbudgets.eu/resource/dataset/budget-kalamaria-revenue-2004/codelist/000/363">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<inScheme rdf:resource="http://data.openbudgets.eu/resource/dataset/budget-kalamaria-revenue-2004/codelist"/>
+	<notation rdf:datatype="http://www.w3.org/2001/XMLSchema#string">363</notation>
+	<prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Τέλη διαφημίσεων</prefLabel>
+	<broadMatch rdf:resource="http://data.openbudgets.eu/resource/codelist/kalamaria-kae-esoda-2004/363"/>
+	<broader rdf:resource="http://data.openbudgets.eu/resource/dataset/budget-kalamaria-revenue-2004/codelist/000"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://data.openbudgets.eu/resource/dataset/budget-kalamaria-revenue-2004/codelist/000/364">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<inScheme rdf:resource="http://data.openbudgets.eu/resource/dataset/budget-kalamaria-revenue-2004/codelist"/>
+	<notation rdf:datatype="http://www.w3.org/2001/XMLSchema#string">364</notation>
+	<prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Τέλη εισιτηρίων λεωφορείων αυτοκινήτων (άρθρον 20 από 24-9-1958 Β.Δ</prefLabel>
+	<broadMatch rdf:resource="http://data.openbudgets.eu/resource/codelist/kalamaria-kae-esoda-2004/364"/>
+	<broader rdf:resource="http://data.openbudgets.eu/resource/dataset/budget-kalamaria-revenue-2004/codelist/000"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://data.openbudgets.eu/resource/dataset/budget-kalamaria-revenue-2004/codelist/000/365">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<inScheme rdf:resource="http://data.openbudgets.eu/resource/dataset/budget-kalamaria-revenue-2004/codelist"/>
+	<notation rdf:datatype="http://www.w3.org/2001/XMLSchema#string">365</notation>
+	<prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Τέλη σταθμεύσεως αυτοκινήτων (άρθρον 19 από 25-9-1958 Β.Δ)</prefLabel>
+	<broadMatch rdf:resource="http://data.openbudgets.eu/resource/codelist/kalamaria-kae-esoda-2004/365"/>
+	<broader rdf:resource="http://data.openbudgets.eu/resource/dataset/budget-kalamaria-revenue-2004/codelist/000"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://data.openbudgets.eu/resource/dataset/budget-kalamaria-revenue-2004/codelist/000/366">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<inScheme rdf:resource="http://data.openbudgets.eu/resource/dataset/budget-kalamaria-revenue-2004/codelist"/>
+	<notation rdf:datatype="http://www.w3.org/2001/XMLSchema#string">366</notation>
+	<prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Τέλη διαμονής παρεπιδημούντων (άρθρο 24 από 24-9-1958 Β.Δ)</prefLabel>
+	<broadMatch rdf:resource="http://data.openbudgets.eu/resource/codelist/kalamaria-kae-esoda-2004/366"/>
+	<broader rdf:resource="http://data.openbudgets.eu/resource/dataset/budget-kalamaria-revenue-2004/codelist/000"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://data.openbudgets.eu/resource/dataset/budget-kalamaria-revenue-2004/codelist/000/367">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<inScheme rdf:resource="http://data.openbudgets.eu/resource/dataset/budget-kalamaria-revenue-2004/codelist"/>
+	<notation rdf:datatype="http://www.w3.org/2001/XMLSchema#string">367</notation>
+	<prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Τέλη χρήσεως αποβαθρών επιβατών</prefLabel>
+	<broadMatch rdf:resource="http://data.openbudgets.eu/resource/codelist/kalamaria-kae-esoda-2004/367"/>
+	<broader rdf:resource="http://data.openbudgets.eu/resource/dataset/budget-kalamaria-revenue-2004/codelist/000"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://data.openbudgets.eu/resource/dataset/budget-kalamaria-revenue-2004/codelist/000/368">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<inScheme rdf:resource="http://data.openbudgets.eu/resource/dataset/budget-kalamaria-revenue-2004/codelist"/>
+	<notation rdf:datatype="http://www.w3.org/2001/XMLSchema#string">368</notation>
+	<prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Τέλη χρήσεως αποβαθρών εμπορευμάτων</prefLabel>
+	<broadMatch rdf:resource="http://data.openbudgets.eu/resource/codelist/kalamaria-kae-esoda-2004/368"/>
+	<broader rdf:resource="http://data.openbudgets.eu/resource/dataset/budget-kalamaria-revenue-2004/codelist/000"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://data.openbudgets.eu/resource/dataset/budget-kalamaria-revenue-2004/codelist/000/369">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<inScheme rdf:resource="http://data.openbudgets.eu/resource/dataset/budget-kalamaria-revenue-2004/codelist"/>
+	<notation rdf:datatype="http://www.w3.org/2001/XMLSchema#string">369</notation>
+	<prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Λοιπά τέλη και δικαιώματα</prefLabel>
+	<narrower rdf:resource="http://data.openbudgets.eu/resource/dataset/budget-kalamaria-revenue-2004/codelist/000/369-1"/>
+	<narrower rdf:resource="http://data.openbudgets.eu/resource/dataset/budget-kalamaria-revenue-2004/codelist/000/369-2"/>
+	<broadMatch rdf:resource="http://data.openbudgets.eu/resource/codelist/kalamaria-kae-esoda-2004/369"/>
+	<broader rdf:resource="http://data.openbudgets.eu/resource/dataset/budget-kalamaria-revenue-2004/codelist/000"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://data.openbudgets.eu/resource/dataset/budget-kalamaria-revenue-2004/codelist/000/369-1">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<inScheme rdf:resource="http://data.openbudgets.eu/resource/dataset/budget-kalamaria-revenue-2004/codelist"/>
+	<notation rdf:datatype="http://www.w3.org/2001/XMLSchema#string">369-1</notation>
+	<prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Έσοδα από το ΤΑΠ</prefLabel>
+	<broader rdf:resource="http://data.openbudgets.eu/resource/dataset/budget-kalamaria-revenue-2004/codelist/000/369"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://data.openbudgets.eu/resource/dataset/budget-kalamaria-revenue-2004/codelist/000/369-2">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<inScheme rdf:resource="http://data.openbudgets.eu/resource/dataset/budget-kalamaria-revenue-2004/codelist"/>
+	<notation rdf:datatype="http://www.w3.org/2001/XMLSchema#string">369-2</notation>
+	<prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Τέλη διενέργειας ψυχαγωγικών παιγνίων</prefLabel>
+	<broader rdf:resource="http://data.openbudgets.eu/resource/dataset/budget-kalamaria-revenue-2004/codelist/000/369"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://data.openbudgets.eu/resource/dataset/budget-kalamaria-revenue-2004/codelist/000/411">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<inScheme rdf:resource="http://data.openbudgets.eu/resource/dataset/budget-kalamaria-revenue-2004/codelist"/>
+	<notation rdf:datatype="http://www.w3.org/2001/XMLSchema#string">411</notation>
+	<prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Φόρος επί της αξίας των χονδρικώς πωλούμενων αγροτικών προϊόντων</prefLabel>
+	<broadMatch rdf:resource="http://data.openbudgets.eu/resource/codelist/kalamaria-kae-esoda-2004/411"/>
+	<broader rdf:resource="http://data.openbudgets.eu/resource/dataset/budget-kalamaria-revenue-2004/codelist/000"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://data.openbudgets.eu/resource/dataset/budget-kalamaria-revenue-2004/codelist/000/413">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<inScheme rdf:resource="http://data.openbudgets.eu/resource/dataset/budget-kalamaria-revenue-2004/codelist"/>
+	<notation rdf:datatype="http://www.w3.org/2001/XMLSchema#string">413</notation>
+	<prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Φόρος ακάλυπτων χώρων (άρθρον 38 από 24-9-1958 Β.Δ.)</prefLabel>
+	<broadMatch rdf:resource="http://data.openbudgets.eu/resource/codelist/kalamaria-kae-esoda-2004/413"/>
+	<broader rdf:resource="http://data.openbudgets.eu/resource/dataset/budget-kalamaria-revenue-2004/codelist/000"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://data.openbudgets.eu/resource/dataset/budget-kalamaria-revenue-2004/codelist/000/414">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<inScheme rdf:resource="http://data.openbudgets.eu/resource/dataset/budget-kalamaria-revenue-2004/codelist"/>
+	<notation rdf:datatype="http://www.w3.org/2001/XMLSchema#string">414</notation>
+	<prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Φόρος ζύθου και οινοπνευματωδών ποτών(άρθρον 39 Β.Δ.)</prefLabel>
+	<broadMatch rdf:resource="http://data.openbudgets.eu/resource/codelist/kalamaria-kae-esoda-2004/414"/>
+	<broader rdf:resource="http://data.openbudgets.eu/resource/dataset/budget-kalamaria-revenue-2004/codelist/000"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://data.openbudgets.eu/resource/dataset/budget-kalamaria-revenue-2004/codelist/000/419">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<inScheme rdf:resource="http://data.openbudgets.eu/resource/dataset/budget-kalamaria-revenue-2004/codelist"/>
+	<notation rdf:datatype="http://www.w3.org/2001/XMLSchema#string">419</notation>
+	<prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Λοιποί αυτοτελείς φόροι</prefLabel>
+	<broadMatch rdf:resource="http://data.openbudgets.eu/resource/codelist/kalamaria-kae-esoda-2004/419"/>
+	<broader rdf:resource="http://data.openbudgets.eu/resource/dataset/budget-kalamaria-revenue-2004/codelist/000"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://data.openbudgets.eu/resource/dataset/budget-kalamaria-revenue-2004/codelist/000/421">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<inScheme rdf:resource="http://data.openbudgets.eu/resource/dataset/budget-kalamaria-revenue-2004/codelist"/>
+	<notation rdf:datatype="http://www.w3.org/2001/XMLSchema#string">421</notation>
+	<prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Φόρος των εκ της αλλοδαπής εισαγομένων εμπορευμάτων</prefLabel>
+	<broadMatch rdf:resource="http://data.openbudgets.eu/resource/codelist/kalamaria-kae-esoda-2004/421"/>
+	<broader rdf:resource="http://data.openbudgets.eu/resource/dataset/budget-kalamaria-revenue-2004/codelist/000"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://data.openbudgets.eu/resource/dataset/budget-kalamaria-revenue-2004/codelist/000/422">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<inScheme rdf:resource="http://data.openbudgets.eu/resource/dataset/budget-kalamaria-revenue-2004/codelist"/>
+	<notation rdf:datatype="http://www.w3.org/2001/XMLSchema#string">422</notation>
+	<prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Φόρος επί των εξαγομένων εμπορευμάτων Νομού Δωδεκανήσου</prefLabel>
+	<broadMatch rdf:resource="http://data.openbudgets.eu/resource/codelist/kalamaria-kae-esoda-2004/422"/>
+	<broader rdf:resource="http://data.openbudgets.eu/resource/dataset/budget-kalamaria-revenue-2004/codelist/000"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://data.openbudgets.eu/resource/dataset/budget-kalamaria-revenue-2004/codelist/000/423">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<inScheme rdf:resource="http://data.openbudgets.eu/resource/dataset/budget-kalamaria-revenue-2004/codelist"/>
+	<notation rdf:datatype="http://www.w3.org/2001/XMLSchema#string">423</notation>
+	<prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ποσοστό επί του εισπραττομένου υπό του δημοσίου ειδικού τέλους υδρεύ</prefLabel>
+	<broadMatch rdf:resource="http://data.openbudgets.eu/resource/codelist/kalamaria-kae-esoda-2004/423"/>
+	<broader rdf:resource="http://data.openbudgets.eu/resource/dataset/budget-kalamaria-revenue-2004/codelist/000"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://data.openbudgets.eu/resource/dataset/budget-kalamaria-revenue-2004/codelist/000/424">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<inScheme rdf:resource="http://data.openbudgets.eu/resource/dataset/budget-kalamaria-revenue-2004/codelist"/>
+	<notation rdf:datatype="http://www.w3.org/2001/XMLSchema#string">424</notation>
+	<prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Συμπληρωματικός αναλογικός φόρος επί των εισοδ. εξ οικοδομών</prefLabel>
+	<broadMatch rdf:resource="http://data.openbudgets.eu/resource/codelist/kalamaria-kae-esoda-2004/424"/>
+	<broader rdf:resource="http://data.openbudgets.eu/resource/dataset/budget-kalamaria-revenue-2004/codelist/000"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://data.openbudgets.eu/resource/dataset/budget-kalamaria-revenue-2004/codelist/000/425">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<inScheme rdf:resource="http://data.openbudgets.eu/resource/dataset/budget-kalamaria-revenue-2004/codelist"/>
+	<notation rdf:datatype="http://www.w3.org/2001/XMLSchema#string">425</notation>
+	<prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Πρόσθετον ποσοτόν 3% επί των δημοσίων φόρων</prefLabel>
+	<broadMatch rdf:resource="http://data.openbudgets.eu/resource/codelist/kalamaria-kae-esoda-2004/425"/>
+	<broader rdf:resource="http://data.openbudgets.eu/resource/dataset/budget-kalamaria-revenue-2004/codelist/000"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://data.openbudgets.eu/resource/dataset/budget-kalamaria-revenue-2004/codelist/000/429">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<inScheme rdf:resource="http://data.openbudgets.eu/resource/dataset/budget-kalamaria-revenue-2004/codelist"/>
+	<notation rdf:datatype="http://www.w3.org/2001/XMLSchema#string">429</notation>
+	<prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Λοιπαί πρόσθετοι φόροι</prefLabel>
+	<broadMatch rdf:resource="http://data.openbudgets.eu/resource/codelist/kalamaria-kae-esoda-2004/429"/>
+	<broader rdf:resource="http://data.openbudgets.eu/resource/dataset/budget-kalamaria-revenue-2004/codelist/000"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://data.openbudgets.eu/resource/dataset/budget-kalamaria-revenue-2004/codelist/000/431">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<inScheme rdf:resource="http://data.openbudgets.eu/resource/dataset/budget-kalamaria-revenue-2004/codelist"/>
+	<notation rdf:datatype="http://www.w3.org/2001/XMLSchema#string">431</notation>
+	<prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Εισφορά επί των ωφελουμένων εκ της εκτελέσ. δημοτικών έργων</prefLabel>
+	<broadMatch rdf:resource="http://data.openbudgets.eu/resource/codelist/kalamaria-kae-esoda-2004/431"/>
+	<broader rdf:resource="http://data.openbudgets.eu/resource/dataset/budget-kalamaria-revenue-2004/codelist/000"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://data.openbudgets.eu/resource/dataset/budget-kalamaria-revenue-2004/codelist/000/433">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<inScheme rdf:resource="http://data.openbudgets.eu/resource/dataset/budget-kalamaria-revenue-2004/codelist"/>
+	<notation rdf:datatype="http://www.w3.org/2001/XMLSchema#string">433</notation>
+	<prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Εισφορά επί της υπεραξίας ακινήτων λόγω τροπ. σχεδίου πόλεως</prefLabel>
+	<broadMatch rdf:resource="http://data.openbudgets.eu/resource/codelist/kalamaria-kae-esoda-2004/433"/>
+	<broader rdf:resource="http://data.openbudgets.eu/resource/dataset/budget-kalamaria-revenue-2004/codelist/000"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://data.openbudgets.eu/resource/dataset/budget-kalamaria-revenue-2004/codelist/000/434">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<inScheme rdf:resource="http://data.openbudgets.eu/resource/dataset/budget-kalamaria-revenue-2004/codelist"/>
+	<notation rdf:datatype="http://www.w3.org/2001/XMLSchema#string">434</notation>
+	<prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Εκούσια εισφορά (άρθον 51 24-9-1958 Β.Δ.)</prefLabel>
+	<broadMatch rdf:resource="http://data.openbudgets.eu/resource/codelist/kalamaria-kae-esoda-2004/434"/>
+	<broader rdf:resource="http://data.openbudgets.eu/resource/dataset/budget-kalamaria-revenue-2004/codelist/000"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://data.openbudgets.eu/resource/dataset/budget-kalamaria-revenue-2004/codelist/000/439">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<inScheme rdf:resource="http://data.openbudgets.eu/resource/dataset/budget-kalamaria-revenue-2004/codelist"/>
+	<notation rdf:datatype="http://www.w3.org/2001/XMLSchema#string">439</notation>
+	<prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Λοιπαί εισφοραί</prefLabel>
+	<broadMatch rdf:resource="http://data.openbudgets.eu/resource/codelist/kalamaria-kae-esoda-2004/439"/>
+	<broader rdf:resource="http://data.openbudgets.eu/resource/dataset/budget-kalamaria-revenue-2004/codelist/000"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://data.openbudgets.eu/resource/dataset/budget-kalamaria-revenue-2004/codelist/000/511">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<inScheme rdf:resource="http://data.openbudgets.eu/resource/dataset/budget-kalamaria-revenue-2004/codelist"/>
+	<notation rdf:datatype="http://www.w3.org/2001/XMLSchema#string">511</notation>
+	<prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Κεντρικοί αυτοτελείς πόροι για την κάλυψη γενικών αναγκών</prefLabel>
+	<broadMatch rdf:resource="http://data.openbudgets.eu/resource/codelist/kalamaria-kae-esoda-2004/511"/>
+	<broader rdf:resource="http://data.openbudgets.eu/resource/dataset/budget-kalamaria-revenue-2004/codelist/000"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://data.openbudgets.eu/resource/dataset/budget-kalamaria-revenue-2004/codelist/000/512">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<inScheme rdf:resource="http://data.openbudgets.eu/resource/dataset/budget-kalamaria-revenue-2004/codelist"/>
+	<notation rdf:datatype="http://www.w3.org/2001/XMLSchema#string">512</notation>
+	<prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Εκχώρησις υπό του Δημοσίου 3% από την διάθεση δασικών προϊόντων</prefLabel>
+	<broadMatch rdf:resource="http://data.openbudgets.eu/resource/codelist/kalamaria-kae-esoda-2004/512"/>
+	<broader rdf:resource="http://data.openbudgets.eu/resource/dataset/budget-kalamaria-revenue-2004/codelist/000"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://data.openbudgets.eu/resource/dataset/budget-kalamaria-revenue-2004/codelist/000/519">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<inScheme rdf:resource="http://data.openbudgets.eu/resource/dataset/budget-kalamaria-revenue-2004/codelist"/>
+	<notation rdf:datatype="http://www.w3.org/2001/XMLSchema#string">519</notation>
+	<prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Κεντρικοί αυτοτελείς πόροι για την κάλυψη λειτουργ.αναγκών των σχολείων</prefLabel>
+	<narrower rdf:resource="http://data.openbudgets.eu/resource/dataset/budget-kalamaria-revenue-2004/codelist/000/519-1"/>
+	<narrower rdf:resource="http://data.openbudgets.eu/resource/dataset/budget-kalamaria-revenue-2004/codelist/000/519-2"/>
+	<narrower rdf:resource="http://data.openbudgets.eu/resource/dataset/budget-kalamaria-revenue-2004/codelist/000/519-3"/>
+	<broadMatch rdf:resource="http://data.openbudgets.eu/resource/codelist/kalamaria-kae-esoda-2004/519"/>
+	<broader rdf:resource="http://data.openbudgets.eu/resource/dataset/budget-kalamaria-revenue-2004/codelist/000"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://data.openbudgets.eu/resource/dataset/budget-kalamaria-revenue-2004/codelist/000/519-1">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<inScheme rdf:resource="http://data.openbudgets.eu/resource/dataset/budget-kalamaria-revenue-2004/codelist"/>
+	<notation rdf:datatype="http://www.w3.org/2001/XMLSchema#string">519-1</notation>
+	<prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Κεντρικοί αυτοτελείς πόροι για την κάλυψη λειτουργ.αναγκών των σχολείων</prefLabel>
+	<broader rdf:resource="http://data.openbudgets.eu/resource/dataset/budget-kalamaria-revenue-2004/codelist/000/519"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://data.openbudgets.eu/resource/dataset/budget-kalamaria-revenue-2004/codelist/000/519-2">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<inScheme rdf:resource="http://data.openbudgets.eu/resource/dataset/budget-kalamaria-revenue-2004/codelist"/>
+	<notation rdf:datatype="http://www.w3.org/2001/XMLSchema#string">519-2</notation>
+	<prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Κρατική επιχορήγηση για λειτουργία παιδικών και βρεφονηπιακών σταθμών</prefLabel>
+	<broader rdf:resource="http://data.openbudgets.eu/resource/dataset/budget-kalamaria-revenue-2004/codelist/000/519"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://data.openbudgets.eu/resource/dataset/budget-kalamaria-revenue-2004/codelist/000/519-3">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<inScheme rdf:resource="http://data.openbudgets.eu/resource/dataset/budget-kalamaria-revenue-2004/codelist"/>
+	<notation rdf:datatype="http://www.w3.org/2001/XMLSchema#string">519-3</notation>
+	<prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Κρατική επιχορήγηση κέντρου φροντίδας οικογένειας (ΚΕΦΟ)</prefLabel>
+	<broader rdf:resource="http://data.openbudgets.eu/resource/dataset/budget-kalamaria-revenue-2004/codelist/000/519"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://data.openbudgets.eu/resource/dataset/budget-kalamaria-revenue-2004/codelist/005/000">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<inScheme rdf:resource="http://data.openbudgets.eu/resource/dataset/budget-kalamaria-revenue-2004/codelist"/>
+	<notation rdf:datatype="http://www.w3.org/2001/XMLSchema#string">000</notation>
+	<prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Έλλειμμα Προυπολογισμού</prefLabel>
+	<broadMatch rdf:resource="http://data.openbudgets.eu/resource/codelist/kalamaria-kae-esoda-2004/000"/>
+	<broader rdf:resource="http://data.openbudgets.eu/resource/dataset/budget-kalamaria-revenue-2004/codelist/005"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://data.openbudgets.eu/resource/dataset/budget-kalamaria-revenue-2004/codelist/098/000">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<inScheme rdf:resource="http://data.openbudgets.eu/resource/dataset/budget-kalamaria-revenue-2004/codelist"/>
+	<notation rdf:datatype="http://www.w3.org/2001/XMLSchema#string">000</notation>
+	<prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Έλλειμμα Εγκεκριμμένου Προυπολογισμού</prefLabel>
+	<broadMatch rdf:resource="http://data.openbudgets.eu/resource/codelist/kalamaria-kae-esoda-2004/000"/>
+	<broader rdf:resource="http://data.openbudgets.eu/resource/dataset/budget-kalamaria-revenue-2004/codelist/098"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://data.openbudgets.eu/resource/dataset/budget-kalamaria-revenue-2004/codelist/099/000">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<inScheme rdf:resource="http://data.openbudgets.eu/resource/dataset/budget-kalamaria-revenue-2004/codelist"/>
+	<notation rdf:datatype="http://www.w3.org/2001/XMLSchema#string">000</notation>
+	<prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Πλεόνασμα Εγκεκριμμένου Προυπολογισμού</prefLabel>
+	<broadMatch rdf:resource="http://data.openbudgets.eu/resource/codelist/kalamaria-kae-esoda-2004/000"/>
+	<broader rdf:resource="http://data.openbudgets.eu/resource/dataset/budget-kalamaria-revenue-2004/codelist/099"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://data.openbudgets.eu/resource/dataset/budget-kalamaria-revenue-2004/codelist/100/111">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<inScheme rdf:resource="http://data.openbudgets.eu/resource/dataset/budget-kalamaria-revenue-2004/codelist"/>
+	<notation rdf:datatype="http://www.w3.org/2001/XMLSchema#string">111</notation>
+	<prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Προϊόν εξ εκποιήσεως οικοδομών</prefLabel>
+	<broadMatch rdf:resource="http://data.openbudgets.eu/resource/codelist/kalamaria-kae-esoda-2004/111"/>
+	<broader rdf:resource="http://data.openbudgets.eu/resource/dataset/budget-kalamaria-revenue-2004/codelist/100"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://data.openbudgets.eu/resource/dataset/budget-kalamaria-revenue-2004/codelist/100/112">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<inScheme rdf:resource="http://data.openbudgets.eu/resource/dataset/budget-kalamaria-revenue-2004/codelist"/>
+	<notation rdf:datatype="http://www.w3.org/2001/XMLSchema#string">112</notation>
+	<prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Προιόν από αναγκαστική προσκύρωση λόγω ρυμοτομίας οικοπέδων και λοιπών ακινήτων (άρθρα 34 &amp; 46 από 17-7-23 Ν.Δ)</prefLabel>
+	<broadMatch rdf:resource="http://data.openbudgets.eu/resource/codelist/kalamaria-kae-esoda-2004/112"/>
+	<broader rdf:resource="http://data.openbudgets.eu/resource/dataset/budget-kalamaria-revenue-2004/codelist/100"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://data.openbudgets.eu/resource/dataset/budget-kalamaria-revenue-2004/codelist/100/119">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<inScheme rdf:resource="http://data.openbudgets.eu/resource/dataset/budget-kalamaria-revenue-2004/codelist"/>
+	<notation rdf:datatype="http://www.w3.org/2001/XMLSchema#string">119</notation>
+	<prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Προϊόν εξ εκποιήσεως λοιπής ακινήτου περιουσίας</prefLabel>
+	<broadMatch rdf:resource="http://data.openbudgets.eu/resource/codelist/kalamaria-kae-esoda-2004/119"/>
+	<broader rdf:resource="http://data.openbudgets.eu/resource/dataset/budget-kalamaria-revenue-2004/codelist/100"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://data.openbudgets.eu/resource/dataset/budget-kalamaria-revenue-2004/codelist/100/121">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<inScheme rdf:resource="http://data.openbudgets.eu/resource/dataset/budget-kalamaria-revenue-2004/codelist"/>
+	<notation rdf:datatype="http://www.w3.org/2001/XMLSchema#string">121</notation>
+	<prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Προϊόν εκποιήσεως κινητής περιουσίας και υλικών</prefLabel>
+	<broadMatch rdf:resource="http://data.openbudgets.eu/resource/codelist/kalamaria-kae-esoda-2004/121"/>
+	<broader rdf:resource="http://data.openbudgets.eu/resource/dataset/budget-kalamaria-revenue-2004/codelist/100"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://data.openbudgets.eu/resource/dataset/budget-kalamaria-revenue-2004/codelist/100/211">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<inScheme rdf:resource="http://data.openbudgets.eu/resource/dataset/budget-kalamaria-revenue-2004/codelist"/>
+	<notation rdf:datatype="http://www.w3.org/2001/XMLSchema#string">211</notation>
+	<prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Προϊόν ατόκου δανείου (άρθρον 83 από 24-9-1958 Β.Δ.)</prefLabel>
+	<broadMatch rdf:resource="http://data.openbudgets.eu/resource/codelist/kalamaria-kae-esoda-2004/211"/>
+	<broader rdf:resource="http://data.openbudgets.eu/resource/dataset/budget-kalamaria-revenue-2004/codelist/100"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://data.openbudgets.eu/resource/dataset/budget-kalamaria-revenue-2004/codelist/100/212">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<inScheme rdf:resource="http://data.openbudgets.eu/resource/dataset/budget-kalamaria-revenue-2004/codelist"/>
+	<notation rdf:datatype="http://www.w3.org/2001/XMLSchema#string">212</notation>
+	<prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Προϊόν δανείου δημοσίων επενδύσεων</prefLabel>
+	<broadMatch rdf:resource="http://data.openbudgets.eu/resource/codelist/kalamaria-kae-esoda-2004/212"/>
+	<broader rdf:resource="http://data.openbudgets.eu/resource/dataset/budget-kalamaria-revenue-2004/codelist/100"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://data.openbudgets.eu/resource/dataset/budget-kalamaria-revenue-2004/codelist/100/213">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<inScheme rdf:resource="http://data.openbudgets.eu/resource/dataset/budget-kalamaria-revenue-2004/codelist"/>
+	<notation rdf:datatype="http://www.w3.org/2001/XMLSchema#string">213</notation>
+	<prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Προϊόν δανείου δημοσίων επενδύσεων προγράμματος Κ.Ε.</prefLabel>
+	<broadMatch rdf:resource="http://data.openbudgets.eu/resource/codelist/kalamaria-kae-esoda-2004/213"/>
+	<broader rdf:resource="http://data.openbudgets.eu/resource/dataset/budget-kalamaria-revenue-2004/codelist/100"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://data.openbudgets.eu/resource/dataset/budget-kalamaria-revenue-2004/codelist/100/219">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<inScheme rdf:resource="http://data.openbudgets.eu/resource/dataset/budget-kalamaria-revenue-2004/codelist"/>
+	<notation rdf:datatype="http://www.w3.org/2001/XMLSchema#string">219</notation>
+	<prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Προϊόν εκ λοιπών δανείων εσωτερικού</prefLabel>
+	<broadMatch rdf:resource="http://data.openbudgets.eu/resource/codelist/kalamaria-kae-esoda-2004/219"/>
+	<broader rdf:resource="http://data.openbudgets.eu/resource/dataset/budget-kalamaria-revenue-2004/codelist/100"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://data.openbudgets.eu/resource/dataset/budget-kalamaria-revenue-2004/codelist/100/221">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<inScheme rdf:resource="http://data.openbudgets.eu/resource/dataset/budget-kalamaria-revenue-2004/codelist"/>
+	<notation rdf:datatype="http://www.w3.org/2001/XMLSchema#string">221</notation>
+	<prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Προϊόν εκ λοιπών δανείων εσωτερικού</prefLabel>
+	<broadMatch rdf:resource="http://data.openbudgets.eu/resource/codelist/kalamaria-kae-esoda-2004/221"/>
+	<broader rdf:resource="http://data.openbudgets.eu/resource/dataset/budget-kalamaria-revenue-2004/codelist/100"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://data.openbudgets.eu/resource/dataset/budget-kalamaria-revenue-2004/codelist/100/311">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<inScheme rdf:resource="http://data.openbudgets.eu/resource/dataset/budget-kalamaria-revenue-2004/codelist"/>
+	<notation rdf:datatype="http://www.w3.org/2001/XMLSchema#string">311</notation>
+	<prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Επιχορηγήσεις υπό του Ο.Α.Ε.Δ. δι' εκτέλεσιν δημοτικών έργων</prefLabel>
+	<broadMatch rdf:resource="http://data.openbudgets.eu/resource/codelist/kalamaria-kae-esoda-2004/311"/>
+	<broader rdf:resource="http://data.openbudgets.eu/resource/dataset/budget-kalamaria-revenue-2004/codelist/100"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://data.openbudgets.eu/resource/dataset/budget-kalamaria-revenue-2004/codelist/100/312">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<inScheme rdf:resource="http://data.openbudgets.eu/resource/dataset/budget-kalamaria-revenue-2004/codelist"/>
+	<notation rdf:datatype="http://www.w3.org/2001/XMLSchema#string">312</notation>
+	<prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Έσοδα εξ επιχορηγήσεως Νομαρχιακού Ταμείου</prefLabel>
+	<broadMatch rdf:resource="http://data.openbudgets.eu/resource/codelist/kalamaria-kae-esoda-2004/312"/>
+	<broader rdf:resource="http://data.openbudgets.eu/resource/dataset/budget-kalamaria-revenue-2004/codelist/100"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://data.openbudgets.eu/resource/dataset/budget-kalamaria-revenue-2004/codelist/100/313">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<inScheme rdf:resource="http://data.openbudgets.eu/resource/dataset/budget-kalamaria-revenue-2004/codelist"/>
+	<notation rdf:datatype="http://www.w3.org/2001/XMLSchema#string">313</notation>
+	<prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Κρατική επιχορήγησις εκ κρατικών λαχείων</prefLabel>
+	<broadMatch rdf:resource="http://data.openbudgets.eu/resource/codelist/kalamaria-kae-esoda-2004/313"/>
+	<broader rdf:resource="http://data.openbudgets.eu/resource/dataset/budget-kalamaria-revenue-2004/codelist/100"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://data.openbudgets.eu/resource/dataset/budget-kalamaria-revenue-2004/codelist/100/319">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<inScheme rdf:resource="http://data.openbudgets.eu/resource/dataset/budget-kalamaria-revenue-2004/codelist"/>
+	<notation rdf:datatype="http://www.w3.org/2001/XMLSchema#string">319</notation>
+	<prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Λοιπές επιχορηγήσεις</prefLabel>
+	<broadMatch rdf:resource="http://data.openbudgets.eu/resource/codelist/kalamaria-kae-esoda-2004/319"/>
+	<broader rdf:resource="http://data.openbudgets.eu/resource/dataset/budget-kalamaria-revenue-2004/codelist/100"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://data.openbudgets.eu/resource/dataset/budget-kalamaria-revenue-2004/codelist/100/321">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<inScheme rdf:resource="http://data.openbudgets.eu/resource/dataset/budget-kalamaria-revenue-2004/codelist"/>
+	<notation rdf:datatype="http://www.w3.org/2001/XMLSchema#string">321</notation>
+	<prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Αντίτιμο προσωπικής εργασίας (άρθρον 56 από 24-9-1958 ΒΔ)</prefLabel>
+	<broadMatch rdf:resource="http://data.openbudgets.eu/resource/codelist/kalamaria-kae-esoda-2004/321"/>
+	<broader rdf:resource="http://data.openbudgets.eu/resource/dataset/budget-kalamaria-revenue-2004/codelist/100"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://data.openbudgets.eu/resource/dataset/budget-kalamaria-revenue-2004/codelist/100/411">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<inScheme rdf:resource="http://data.openbudgets.eu/resource/dataset/budget-kalamaria-revenue-2004/codelist"/>
+	<notation rdf:datatype="http://www.w3.org/2001/XMLSchema#string">411</notation>
+	<prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Προϊόν δωρεών</prefLabel>
+	<broadMatch rdf:resource="http://data.openbudgets.eu/resource/codelist/kalamaria-kae-esoda-2004/411"/>
+	<broader rdf:resource="http://data.openbudgets.eu/resource/dataset/budget-kalamaria-revenue-2004/codelist/100"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://data.openbudgets.eu/resource/dataset/budget-kalamaria-revenue-2004/codelist/100/421">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<inScheme rdf:resource="http://data.openbudgets.eu/resource/dataset/budget-kalamaria-revenue-2004/codelist"/>
+	<notation rdf:datatype="http://www.w3.org/2001/XMLSchema#string">421</notation>
+	<prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Έσοδα εκ κληρονομιάς,κληροδοσίας ή κληροδοτήματος</prefLabel>
+	<broadMatch rdf:resource="http://data.openbudgets.eu/resource/codelist/kalamaria-kae-esoda-2004/421"/>
+	<broader rdf:resource="http://data.openbudgets.eu/resource/dataset/budget-kalamaria-revenue-2004/codelist/100"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://data.openbudgets.eu/resource/dataset/budget-kalamaria-revenue-2004/codelist/100/511">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<inScheme rdf:resource="http://data.openbudgets.eu/resource/dataset/budget-kalamaria-revenue-2004/codelist"/>
+	<notation rdf:datatype="http://www.w3.org/2001/XMLSchema#string">511</notation>
+	<prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Προσαυξήσεις λόγω εκπρόθεσμου καταβολής διαφόρων χρεών</prefLabel>
+	<broadMatch rdf:resource="http://data.openbudgets.eu/resource/codelist/kalamaria-kae-esoda-2004/511"/>
+	<broader rdf:resource="http://data.openbudgets.eu/resource/dataset/budget-kalamaria-revenue-2004/codelist/100"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://data.openbudgets.eu/resource/dataset/budget-kalamaria-revenue-2004/codelist/100/521">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<inScheme rdf:resource="http://data.openbudgets.eu/resource/dataset/budget-kalamaria-revenue-2004/codelist"/>
+	<notation rdf:datatype="http://www.w3.org/2001/XMLSchema#string">521</notation>
+	<prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Πρόστιμα επιβαλλόμενα εις αιρετούς δημοτικούς άρχοντας</prefLabel>
+	<broadMatch rdf:resource="http://data.openbudgets.eu/resource/codelist/kalamaria-kae-esoda-2004/521"/>
+	<broader rdf:resource="http://data.openbudgets.eu/resource/dataset/budget-kalamaria-revenue-2004/codelist/100"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://data.openbudgets.eu/resource/dataset/budget-kalamaria-revenue-2004/codelist/100/522">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<inScheme rdf:resource="http://data.openbudgets.eu/resource/dataset/budget-kalamaria-revenue-2004/codelist"/>
+	<notation rdf:datatype="http://www.w3.org/2001/XMLSchema#string">522</notation>
+	<prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Πρόστιμα εκ παραβάσεων φορολογικών διατάξεων (άρθρον 73 Β.Δ)</prefLabel>
+	<broadMatch rdf:resource="http://data.openbudgets.eu/resource/codelist/kalamaria-kae-esoda-2004/522"/>
+	<broader rdf:resource="http://data.openbudgets.eu/resource/dataset/budget-kalamaria-revenue-2004/codelist/100"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://data.openbudgets.eu/resource/dataset/budget-kalamaria-revenue-2004/codelist/100/523">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<inScheme rdf:resource="http://data.openbudgets.eu/resource/dataset/budget-kalamaria-revenue-2004/codelist"/>
+	<notation rdf:datatype="http://www.w3.org/2001/XMLSchema#string">523</notation>
+	<prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Πρόστικα εις εργολάβους, ενοικιαστάς ή προμηθευτάς</prefLabel>
+	<broadMatch rdf:resource="http://data.openbudgets.eu/resource/codelist/kalamaria-kae-esoda-2004/523"/>
+	<broader rdf:resource="http://data.openbudgets.eu/resource/dataset/budget-kalamaria-revenue-2004/codelist/100"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://data.openbudgets.eu/resource/dataset/budget-kalamaria-revenue-2004/codelist/100/524">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<inScheme rdf:resource="http://data.openbudgets.eu/resource/dataset/budget-kalamaria-revenue-2004/codelist"/>
+	<notation rdf:datatype="http://www.w3.org/2001/XMLSchema#string">524</notation>
+	<prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Πρόστιμα εκ καταλογιστικών αποφάσεων διαφόρων αρχών</prefLabel>
+	<broadMatch rdf:resource="http://data.openbudgets.eu/resource/codelist/kalamaria-kae-esoda-2004/524"/>
+	<broader rdf:resource="http://data.openbudgets.eu/resource/dataset/budget-kalamaria-revenue-2004/codelist/100"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://data.openbudgets.eu/resource/dataset/budget-kalamaria-revenue-2004/codelist/100/525">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<inScheme rdf:resource="http://data.openbudgets.eu/resource/dataset/budget-kalamaria-revenue-2004/codelist"/>
+	<notation rdf:datatype="http://www.w3.org/2001/XMLSchema#string">525</notation>
+	<prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Καταπτώσεις λόγω παραβάσεων συμβάσεων</prefLabel>
+	<broadMatch rdf:resource="http://data.openbudgets.eu/resource/codelist/kalamaria-kae-esoda-2004/525"/>
+	<broader rdf:resource="http://data.openbudgets.eu/resource/dataset/budget-kalamaria-revenue-2004/codelist/100"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://data.openbudgets.eu/resource/dataset/budget-kalamaria-revenue-2004/codelist/100/529">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<inScheme rdf:resource="http://data.openbudgets.eu/resource/dataset/budget-kalamaria-revenue-2004/codelist"/>
+	<notation rdf:datatype="http://www.w3.org/2001/XMLSchema#string">529</notation>
+	<prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Πρόστιμα και χρηματικαί ποιναί εξ άλλων περιπτώσεων</prefLabel>
+	<narrower rdf:resource="http://data.openbudgets.eu/resource/dataset/budget-kalamaria-revenue-2004/codelist/100/529-1"/>
+	<narrower rdf:resource="http://data.openbudgets.eu/resource/dataset/budget-kalamaria-revenue-2004/codelist/100/529-2"/>
+	<narrower rdf:resource="http://data.openbudgets.eu/resource/dataset/budget-kalamaria-revenue-2004/codelist/100/529-3"/>
+	<broadMatch rdf:resource="http://data.openbudgets.eu/resource/codelist/kalamaria-kae-esoda-2004/529"/>
+	<broader rdf:resource="http://data.openbudgets.eu/resource/dataset/budget-kalamaria-revenue-2004/codelist/100"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://data.openbudgets.eu/resource/dataset/budget-kalamaria-revenue-2004/codelist/100/529-1">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<inScheme rdf:resource="http://data.openbudgets.eu/resource/dataset/budget-kalamaria-revenue-2004/codelist"/>
+	<notation rdf:datatype="http://www.w3.org/2001/XMLSchema#string">529-1</notation>
+	<prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Πρόστιμα για παραβιάσεις ΚΟΚ</prefLabel>
+	<broader rdf:resource="http://data.openbudgets.eu/resource/dataset/budget-kalamaria-revenue-2004/codelist/100/529"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://data.openbudgets.eu/resource/dataset/budget-kalamaria-revenue-2004/codelist/100/529-2">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<inScheme rdf:resource="http://data.openbudgets.eu/resource/dataset/budget-kalamaria-revenue-2004/codelist"/>
+	<notation rdf:datatype="http://www.w3.org/2001/XMLSchema#string">529-2</notation>
+	<prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Πρόστιμα ανέγερσης και διατήρησης αυθαίρετων κατασκευών</prefLabel>
+	<broader rdf:resource="http://data.openbudgets.eu/resource/dataset/budget-kalamaria-revenue-2004/codelist/100/529"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://data.openbudgets.eu/resource/dataset/budget-kalamaria-revenue-2004/codelist/100/529-3">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<inScheme rdf:resource="http://data.openbudgets.eu/resource/dataset/budget-kalamaria-revenue-2004/codelist"/>
+	<notation rdf:datatype="http://www.w3.org/2001/XMLSchema#string">529-3</notation>
+	<prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Πρόστιμα από παραβάσεις κανονισμού καθαριότητας</prefLabel>
+	<broader rdf:resource="http://data.openbudgets.eu/resource/dataset/budget-kalamaria-revenue-2004/codelist/100/529"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://data.openbudgets.eu/resource/dataset/budget-kalamaria-revenue-2004/codelist/100/531">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<inScheme rdf:resource="http://data.openbudgets.eu/resource/dataset/budget-kalamaria-revenue-2004/codelist"/>
+	<notation rdf:datatype="http://www.w3.org/2001/XMLSchema#string">531</notation>
+	<prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Παράβολα εξ υποβαλλόμενων προσφυγών και εφέσεων</prefLabel>
+	<broadMatch rdf:resource="http://data.openbudgets.eu/resource/codelist/kalamaria-kae-esoda-2004/531"/>
+	<broader rdf:resource="http://data.openbudgets.eu/resource/dataset/budget-kalamaria-revenue-2004/codelist/100"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://data.openbudgets.eu/resource/dataset/budget-kalamaria-revenue-2004/codelist/100/539">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<inScheme rdf:resource="http://data.openbudgets.eu/resource/dataset/budget-kalamaria-revenue-2004/codelist"/>
+	<notation rdf:datatype="http://www.w3.org/2001/XMLSchema#string">539</notation>
+	<prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Λοιπά παράβολα καταστημάτων υγειονομικού ενδιαφέροντος</prefLabel>
+	<broadMatch rdf:resource="http://data.openbudgets.eu/resource/codelist/kalamaria-kae-esoda-2004/539"/>
+	<broader rdf:resource="http://data.openbudgets.eu/resource/dataset/budget-kalamaria-revenue-2004/codelist/100"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://data.openbudgets.eu/resource/dataset/budget-kalamaria-revenue-2004/codelist/100/611">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<inScheme rdf:resource="http://data.openbudgets.eu/resource/dataset/budget-kalamaria-revenue-2004/codelist"/>
+	<notation rdf:datatype="http://www.w3.org/2001/XMLSchema#string">611</notation>
+	<prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Έσοδα δια τας υπό του δήμου γενομ. δαπάνης κατασκευής κρασπεδορεί</prefLabel>
+	<broadMatch rdf:resource="http://data.openbudgets.eu/resource/codelist/kalamaria-kae-esoda-2004/611"/>
+	<broader rdf:resource="http://data.openbudgets.eu/resource/dataset/budget-kalamaria-revenue-2004/codelist/100"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://data.openbudgets.eu/resource/dataset/budget-kalamaria-revenue-2004/codelist/100/612">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<inScheme rdf:resource="http://data.openbudgets.eu/resource/dataset/budget-kalamaria-revenue-2004/codelist"/>
+	<notation rdf:datatype="http://www.w3.org/2001/XMLSchema#string">612</notation>
+	<prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Έσοδα δια τας υπό του δήμου γενομένας δαπάνας περιφραξ. ιδ. οικοπέδ</prefLabel>
+	<broadMatch rdf:resource="http://data.openbudgets.eu/resource/codelist/kalamaria-kae-esoda-2004/612"/>
+	<broader rdf:resource="http://data.openbudgets.eu/resource/dataset/budget-kalamaria-revenue-2004/codelist/100"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://data.openbudgets.eu/resource/dataset/budget-kalamaria-revenue-2004/codelist/100/613">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<inScheme rdf:resource="http://data.openbudgets.eu/resource/dataset/budget-kalamaria-revenue-2004/codelist"/>
+	<notation rdf:datatype="http://www.w3.org/2001/XMLSchema#string">613</notation>
+	<prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Έσοδα δια τας υπό του δήμου γενομ. δαπάνας επανακ. των καταστωματ</prefLabel>
+	<broadMatch rdf:resource="http://data.openbudgets.eu/resource/codelist/kalamaria-kae-esoda-2004/613"/>
+	<broader rdf:resource="http://data.openbudgets.eu/resource/dataset/budget-kalamaria-revenue-2004/codelist/100"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://data.openbudgets.eu/resource/dataset/budget-kalamaria-revenue-2004/codelist/100/619">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<inScheme rdf:resource="http://data.openbudgets.eu/resource/dataset/budget-kalamaria-revenue-2004/codelist"/>
+	<notation rdf:datatype="http://www.w3.org/2001/XMLSchema#string">619</notation>
+	<prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Λοιπά έσοδα εκ γενομένων δαπανών δια λογαριασμό τρίτων</prefLabel>
+	<broadMatch rdf:resource="http://data.openbudgets.eu/resource/codelist/kalamaria-kae-esoda-2004/619"/>
+	<broader rdf:resource="http://data.openbudgets.eu/resource/dataset/budget-kalamaria-revenue-2004/codelist/100"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://data.openbudgets.eu/resource/dataset/budget-kalamaria-revenue-2004/codelist/100/621">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<inScheme rdf:resource="http://data.openbudgets.eu/resource/dataset/budget-kalamaria-revenue-2004/codelist"/>
+	<notation rdf:datatype="http://www.w3.org/2001/XMLSchema#string">621</notation>
+	<prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Κρατήσεις εξ ασφαλιστικών εισφορών αποδιδόμεναι εις δικαιούχους ασφαλιστικούς οργανισμούς</prefLabel>
+	<broadMatch rdf:resource="http://data.openbudgets.eu/resource/codelist/kalamaria-kae-esoda-2004/621"/>
+	<broader rdf:resource="http://data.openbudgets.eu/resource/dataset/budget-kalamaria-revenue-2004/codelist/100"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://data.openbudgets.eu/resource/dataset/budget-kalamaria-revenue-2004/codelist/100/622">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<inScheme rdf:resource="http://data.openbudgets.eu/resource/dataset/budget-kalamaria-revenue-2004/codelist"/>
+	<notation rdf:datatype="http://www.w3.org/2001/XMLSchema#string">622</notation>
+	<prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Φόρος εισοδήματος και χαρτόσημο μισθωτών υπηρεσιών</prefLabel>
+	<broadMatch rdf:resource="http://data.openbudgets.eu/resource/codelist/kalamaria-kae-esoda-2004/622"/>
+	<broader rdf:resource="http://data.openbudgets.eu/resource/dataset/budget-kalamaria-revenue-2004/codelist/100"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://data.openbudgets.eu/resource/dataset/budget-kalamaria-revenue-2004/codelist/100/623">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<inScheme rdf:resource="http://data.openbudgets.eu/resource/dataset/budget-kalamaria-revenue-2004/codelist"/>
+	<notation rdf:datatype="http://www.w3.org/2001/XMLSchema#string">623</notation>
+	<prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Κρατήσεις υπέρ ΟΓΑ</prefLabel>
+	<broadMatch rdf:resource="http://data.openbudgets.eu/resource/codelist/kalamaria-kae-esoda-2004/623"/>
+	<broader rdf:resource="http://data.openbudgets.eu/resource/dataset/budget-kalamaria-revenue-2004/codelist/100"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://data.openbudgets.eu/resource/dataset/budget-kalamaria-revenue-2004/codelist/100/624">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<inScheme rdf:resource="http://data.openbudgets.eu/resource/dataset/budget-kalamaria-revenue-2004/codelist"/>
+	<notation rdf:datatype="http://www.w3.org/2001/XMLSchema#string">624</notation>
+	<prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Εισπράξεις εξ εισφορών ετέρων δήμων ή κοινοτήτων δι' μισθοδοσίας ταμειακών βοηθών</prefLabel>
+	<broadMatch rdf:resource="http://data.openbudgets.eu/resource/codelist/kalamaria-kae-esoda-2004/624"/>
+	<broader rdf:resource="http://data.openbudgets.eu/resource/dataset/budget-kalamaria-revenue-2004/codelist/100"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://data.openbudgets.eu/resource/dataset/budget-kalamaria-revenue-2004/codelist/100/625">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<inScheme rdf:resource="http://data.openbudgets.eu/resource/dataset/budget-kalamaria-revenue-2004/codelist"/>
+	<notation rdf:datatype="http://www.w3.org/2001/XMLSchema#string">625</notation>
+	<prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Εισπράξεις εξ εισφ. ετέρεων δήμων, δι' αντιμ. μισθοδοσίας εισπρακτόρων</prefLabel>
+	<broadMatch rdf:resource="http://data.openbudgets.eu/resource/codelist/kalamaria-kae-esoda-2004/625"/>
+	<broader rdf:resource="http://data.openbudgets.eu/resource/dataset/budget-kalamaria-revenue-2004/codelist/100"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://data.openbudgets.eu/resource/dataset/budget-kalamaria-revenue-2004/codelist/100/626">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<inScheme rdf:resource="http://data.openbudgets.eu/resource/dataset/budget-kalamaria-revenue-2004/codelist"/>
+	<notation rdf:datatype="http://www.w3.org/2001/XMLSchema#string">626</notation>
+	<prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Εισπράξεις εξ εισφορών δήμων ή κοινοτήτων, δι' αποζημίωση μελών υπηρεσιακών συμβουλίων</prefLabel>
+	<broadMatch rdf:resource="http://data.openbudgets.eu/resource/codelist/kalamaria-kae-esoda-2004/626"/>
+	<broader rdf:resource="http://data.openbudgets.eu/resource/dataset/budget-kalamaria-revenue-2004/codelist/100"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://data.openbudgets.eu/resource/dataset/budget-kalamaria-revenue-2004/codelist/100/627">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<inScheme rdf:resource="http://data.openbudgets.eu/resource/dataset/budget-kalamaria-revenue-2004/codelist"/>
+	<notation rdf:datatype="http://www.w3.org/2001/XMLSchema#string">627</notation>
+	<prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Εισπράξεις εξ εισφορών δια την πληρωμή ημερομισ. Φορ. Καπνού</prefLabel>
+	<broadMatch rdf:resource="http://data.openbudgets.eu/resource/codelist/kalamaria-kae-esoda-2004/627"/>
+	<broader rdf:resource="http://data.openbudgets.eu/resource/dataset/budget-kalamaria-revenue-2004/codelist/100"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://data.openbudgets.eu/resource/dataset/budget-kalamaria-revenue-2004/codelist/100/628">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<inScheme rdf:resource="http://data.openbudgets.eu/resource/dataset/budget-kalamaria-revenue-2004/codelist"/>
+	<notation rdf:datatype="http://www.w3.org/2001/XMLSchema#string">628</notation>
+	<prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Χαρτόσημο Μισθωμάτων</prefLabel>
+	<broadMatch rdf:resource="http://data.openbudgets.eu/resource/codelist/kalamaria-kae-esoda-2004/628"/>
+	<broader rdf:resource="http://data.openbudgets.eu/resource/dataset/budget-kalamaria-revenue-2004/codelist/100"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://data.openbudgets.eu/resource/dataset/budget-kalamaria-revenue-2004/codelist/100/629">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<inScheme rdf:resource="http://data.openbudgets.eu/resource/dataset/budget-kalamaria-revenue-2004/codelist"/>
+	<notation rdf:datatype="http://www.w3.org/2001/XMLSchema#string">629</notation>
+	<prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Λοιπαί εισπράξεις υπέρ τρίτων</prefLabel>
+	<broadMatch rdf:resource="http://data.openbudgets.eu/resource/codelist/kalamaria-kae-esoda-2004/629"/>
+	<broader rdf:resource="http://data.openbudgets.eu/resource/dataset/budget-kalamaria-revenue-2004/codelist/100"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://data.openbudgets.eu/resource/dataset/budget-kalamaria-revenue-2004/codelist/100/631">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<inScheme rdf:resource="http://data.openbudgets.eu/resource/dataset/budget-kalamaria-revenue-2004/codelist"/>
+	<notation rdf:datatype="http://www.w3.org/2001/XMLSchema#string">631</notation>
+	<prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Επιστροφή χρημάτων υπό υπολόγων προς τακτοποίησιν ΧΕΠ</prefLabel>
+	<broadMatch rdf:resource="http://data.openbudgets.eu/resource/codelist/kalamaria-kae-esoda-2004/631"/>
+	<broader rdf:resource="http://data.openbudgets.eu/resource/dataset/budget-kalamaria-revenue-2004/codelist/100"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://data.openbudgets.eu/resource/dataset/budget-kalamaria-revenue-2004/codelist/100/632">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<inScheme rdf:resource="http://data.openbudgets.eu/resource/dataset/budget-kalamaria-revenue-2004/codelist"/>
+	<notation rdf:datatype="http://www.w3.org/2001/XMLSchema#string">632</notation>
+	<prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Επιστροφή παγίας προκαταβολής</prefLabel>
+	<broadMatch rdf:resource="http://data.openbudgets.eu/resource/codelist/kalamaria-kae-esoda-2004/632"/>
+	<broader rdf:resource="http://data.openbudgets.eu/resource/dataset/budget-kalamaria-revenue-2004/codelist/100"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://data.openbudgets.eu/resource/dataset/budget-kalamaria-revenue-2004/codelist/100/633">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<inScheme rdf:resource="http://data.openbudgets.eu/resource/dataset/budget-kalamaria-revenue-2004/codelist"/>
+	<notation rdf:datatype="http://www.w3.org/2001/XMLSchema#string">633</notation>
+	<prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Επιστροφή χρημάτων εγγυήσεων</prefLabel>
+	<broadMatch rdf:resource="http://data.openbudgets.eu/resource/codelist/kalamaria-kae-esoda-2004/633"/>
+	<broader rdf:resource="http://data.openbudgets.eu/resource/dataset/budget-kalamaria-revenue-2004/codelist/100"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://data.openbudgets.eu/resource/dataset/budget-kalamaria-revenue-2004/codelist/100/639">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<inScheme rdf:resource="http://data.openbudgets.eu/resource/dataset/budget-kalamaria-revenue-2004/codelist"/>
+	<notation rdf:datatype="http://www.w3.org/2001/XMLSchema#string">639</notation>
+	<prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Επιστροφή εν γένει χρημάτων</prefLabel>
+	<broadMatch rdf:resource="http://data.openbudgets.eu/resource/codelist/kalamaria-kae-esoda-2004/639"/>
+	<broader rdf:resource="http://data.openbudgets.eu/resource/dataset/budget-kalamaria-revenue-2004/codelist/100"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://data.openbudgets.eu/resource/dataset/budget-kalamaria-revenue-2004/codelist/100/641">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<inScheme rdf:resource="http://data.openbudgets.eu/resource/dataset/budget-kalamaria-revenue-2004/codelist"/>
+	<notation rdf:datatype="http://www.w3.org/2001/XMLSchema#string">641</notation>
+	<prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Κρατήσεις λόγω χορηγίας επί των εξόδων παραστάσεως Δημάρχου</prefLabel>
+	<broadMatch rdf:resource="http://data.openbudgets.eu/resource/codelist/kalamaria-kae-esoda-2004/641"/>
+	<broader rdf:resource="http://data.openbudgets.eu/resource/dataset/budget-kalamaria-revenue-2004/codelist/100"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://data.openbudgets.eu/resource/dataset/budget-kalamaria-revenue-2004/codelist/100/649">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<inScheme rdf:resource="http://data.openbudgets.eu/resource/dataset/budget-kalamaria-revenue-2004/codelist"/>
+	<notation rdf:datatype="http://www.w3.org/2001/XMLSchema#string">649</notation>
+	<prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Λοιπά έκτακτα έσοδα μη δυνάμενα να ενταχθούν εις τας ανωτέρω τάξεις</prefLabel>
+	<broadMatch rdf:resource="http://data.openbudgets.eu/resource/codelist/kalamaria-kae-esoda-2004/649"/>
+	<broader rdf:resource="http://data.openbudgets.eu/resource/dataset/budget-kalamaria-revenue-2004/codelist/100"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://data.openbudgets.eu/resource/dataset/budget-kalamaria-revenue-2004/codelist/200/111">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<inScheme rdf:resource="http://data.openbudgets.eu/resource/dataset/budget-kalamaria-revenue-2004/codelist"/>
+	<notation rdf:datatype="http://www.w3.org/2001/XMLSchema#string">111</notation>
+	<prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Εκ τελών καθαριότητας (τακτικά βεβαιωθησόμενα το πρώτον)</prefLabel>
+	<broadMatch rdf:resource="http://data.openbudgets.eu/resource/codelist/kalamaria-kae-esoda-2004/111"/>
+	<broader rdf:resource="http://data.openbudgets.eu/resource/dataset/budget-kalamaria-revenue-2004/codelist/200"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://data.openbudgets.eu/resource/dataset/budget-kalamaria-revenue-2004/codelist/200/112">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<inScheme rdf:resource="http://data.openbudgets.eu/resource/dataset/budget-kalamaria-revenue-2004/codelist"/>
+	<notation rdf:datatype="http://www.w3.org/2001/XMLSchema#string">112</notation>
+	<prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Εκ τελών υδρεύσεως (τακτικά βεβαιωθησόμενα το πρώτον)</prefLabel>
+	<broadMatch rdf:resource="http://data.openbudgets.eu/resource/codelist/kalamaria-kae-esoda-2004/112"/>
+	<broader rdf:resource="http://data.openbudgets.eu/resource/dataset/budget-kalamaria-revenue-2004/codelist/200"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://data.openbudgets.eu/resource/dataset/budget-kalamaria-revenue-2004/codelist/200/113">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<inScheme rdf:resource="http://data.openbudgets.eu/resource/dataset/budget-kalamaria-revenue-2004/codelist"/>
+	<notation rdf:datatype="http://www.w3.org/2001/XMLSchema#string">113</notation>
+	<prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Εκ τελών αδρεύσεως (τακτικά βεβαιωθησόμενα το πρώτον)</prefLabel>
+	<broadMatch rdf:resource="http://data.openbudgets.eu/resource/codelist/kalamaria-kae-esoda-2004/113"/>
+	<broader rdf:resource="http://data.openbudgets.eu/resource/dataset/budget-kalamaria-revenue-2004/codelist/200"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://data.openbudgets.eu/resource/dataset/budget-kalamaria-revenue-2004/codelist/200/114">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<inScheme rdf:resource="http://data.openbudgets.eu/resource/dataset/budget-kalamaria-revenue-2004/codelist"/>
+	<notation rdf:datatype="http://www.w3.org/2001/XMLSchema#string">114</notation>
+	<prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Εκ τελών φωτισμού (τακτικά βεβαιωθησόμενα το πρώτον)</prefLabel>
+	<broadMatch rdf:resource="http://data.openbudgets.eu/resource/codelist/kalamaria-kae-esoda-2004/114"/>
+	<broader rdf:resource="http://data.openbudgets.eu/resource/dataset/budget-kalamaria-revenue-2004/codelist/200"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://data.openbudgets.eu/resource/dataset/budget-kalamaria-revenue-2004/codelist/200/115">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<inScheme rdf:resource="http://data.openbudgets.eu/resource/dataset/budget-kalamaria-revenue-2004/codelist"/>
+	<notation rdf:datatype="http://www.w3.org/2001/XMLSchema#string">115</notation>
+	<prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Εκ τελών σταθμεύσεως αυτοκινήτων(τακτικά βεβαιωθησόμενα το πρώτον)</prefLabel>
+	<broadMatch rdf:resource="http://data.openbudgets.eu/resource/codelist/kalamaria-kae-esoda-2004/115"/>
+	<broader rdf:resource="http://data.openbudgets.eu/resource/dataset/budget-kalamaria-revenue-2004/codelist/200"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://data.openbudgets.eu/resource/dataset/budget-kalamaria-revenue-2004/codelist/200/116">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<inScheme rdf:resource="http://data.openbudgets.eu/resource/dataset/budget-kalamaria-revenue-2004/codelist"/>
+	<notation rdf:datatype="http://www.w3.org/2001/XMLSchema#string">116</notation>
+	<prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Εκ δικαιωμάτων και μισθωμάτων βοσκήσιμων εκτάσεων (τακτικά βεβαιωθησόμενα το πρώτον)</prefLabel>
+	<broadMatch rdf:resource="http://data.openbudgets.eu/resource/codelist/kalamaria-kae-esoda-2004/116"/>
+	<broader rdf:resource="http://data.openbudgets.eu/resource/dataset/budget-kalamaria-revenue-2004/codelist/200"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://data.openbudgets.eu/resource/dataset/budget-kalamaria-revenue-2004/codelist/200/119">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<inScheme rdf:resource="http://data.openbudgets.eu/resource/dataset/budget-kalamaria-revenue-2004/codelist"/>
+	<notation rdf:datatype="http://www.w3.org/2001/XMLSchema#string">119</notation>
+	<prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Εκ λοιπών περιπτώσεων  (τακτικά βεβαιωθησόμενα το πρώτον)</prefLabel>
+	<broadMatch rdf:resource="http://data.openbudgets.eu/resource/codelist/kalamaria-kae-esoda-2004/119"/>
+	<broader rdf:resource="http://data.openbudgets.eu/resource/dataset/budget-kalamaria-revenue-2004/codelist/200"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://data.openbudgets.eu/resource/dataset/budget-kalamaria-revenue-2004/codelist/200/121">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<inScheme rdf:resource="http://data.openbudgets.eu/resource/dataset/budget-kalamaria-revenue-2004/codelist"/>
+	<notation rdf:datatype="http://www.w3.org/2001/XMLSchema#string">121</notation>
+	<prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Εκ τελών καθαριότητος  (τακτικά βεβαιωθέντα)</prefLabel>
+	<broadMatch rdf:resource="http://data.openbudgets.eu/resource/codelist/kalamaria-kae-esoda-2004/121"/>
+	<broader rdf:resource="http://data.openbudgets.eu/resource/dataset/budget-kalamaria-revenue-2004/codelist/200"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://data.openbudgets.eu/resource/dataset/budget-kalamaria-revenue-2004/codelist/200/122">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<inScheme rdf:resource="http://data.openbudgets.eu/resource/dataset/budget-kalamaria-revenue-2004/codelist"/>
+	<notation rdf:datatype="http://www.w3.org/2001/XMLSchema#string">122</notation>
+	<prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Εκ τελών υδρεύσεως  (τακτικά βεβαιωθέντα)</prefLabel>
+	<broadMatch rdf:resource="http://data.openbudgets.eu/resource/codelist/kalamaria-kae-esoda-2004/122"/>
+	<broader rdf:resource="http://data.openbudgets.eu/resource/dataset/budget-kalamaria-revenue-2004/codelist/200"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://data.openbudgets.eu/resource/dataset/budget-kalamaria-revenue-2004/codelist/200/123">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<inScheme rdf:resource="http://data.openbudgets.eu/resource/dataset/budget-kalamaria-revenue-2004/codelist"/>
+	<notation rdf:datatype="http://www.w3.org/2001/XMLSchema#string">123</notation>
+	<prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Εκ τελών αδρεύσεως (τακτικά βεβαιωθέντα)</prefLabel>
+	<broadMatch rdf:resource="http://data.openbudgets.eu/resource/codelist/kalamaria-kae-esoda-2004/123"/>
+	<broader rdf:resource="http://data.openbudgets.eu/resource/dataset/budget-kalamaria-revenue-2004/codelist/200"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://data.openbudgets.eu/resource/dataset/budget-kalamaria-revenue-2004/codelist/200/124">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<inScheme rdf:resource="http://data.openbudgets.eu/resource/dataset/budget-kalamaria-revenue-2004/codelist"/>
+	<notation rdf:datatype="http://www.w3.org/2001/XMLSchema#string">124</notation>
+	<prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Εκ τελών φωτισμού (τακτικά βεβαιωθέντα)</prefLabel>
+	<broadMatch rdf:resource="http://data.openbudgets.eu/resource/codelist/kalamaria-kae-esoda-2004/124"/>
+	<broader rdf:resource="http://data.openbudgets.eu/resource/dataset/budget-kalamaria-revenue-2004/codelist/200"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://data.openbudgets.eu/resource/dataset/budget-kalamaria-revenue-2004/codelist/200/125">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<inScheme rdf:resource="http://data.openbudgets.eu/resource/dataset/budget-kalamaria-revenue-2004/codelist"/>
+	<notation rdf:datatype="http://www.w3.org/2001/XMLSchema#string">125</notation>
+	<prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Εκ τελών σταθμεύσεως αυτοκινήτων (τακτικά βεβαιωθέντα)</prefLabel>
+	<broadMatch rdf:resource="http://data.openbudgets.eu/resource/codelist/kalamaria-kae-esoda-2004/125"/>
+	<broader rdf:resource="http://data.openbudgets.eu/resource/dataset/budget-kalamaria-revenue-2004/codelist/200"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://data.openbudgets.eu/resource/dataset/budget-kalamaria-revenue-2004/codelist/200/126">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<inScheme rdf:resource="http://data.openbudgets.eu/resource/dataset/budget-kalamaria-revenue-2004/codelist"/>
+	<notation rdf:datatype="http://www.w3.org/2001/XMLSchema#string">126</notation>
+	<prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Εκ δικαιωμάτων και μισθωμάτων βοσκησίμων εκτασ (τακτικά βεβαιωθέντα)</prefLabel>
+	<broadMatch rdf:resource="http://data.openbudgets.eu/resource/codelist/kalamaria-kae-esoda-2004/126"/>
+	<broader rdf:resource="http://data.openbudgets.eu/resource/dataset/budget-kalamaria-revenue-2004/codelist/200"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://data.openbudgets.eu/resource/dataset/budget-kalamaria-revenue-2004/codelist/200/129">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<inScheme rdf:resource="http://data.openbudgets.eu/resource/dataset/budget-kalamaria-revenue-2004/codelist"/>
+	<notation rdf:datatype="http://www.w3.org/2001/XMLSchema#string">129</notation>
+	<prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Εκ λοιπών περιπτώσεων (τακτικά βεβαιωθέντα)</prefLabel>
+	<narrower rdf:resource="http://data.openbudgets.eu/resource/dataset/budget-kalamaria-revenue-2004/codelist/200/129-1"/>
+	<broadMatch rdf:resource="http://data.openbudgets.eu/resource/codelist/kalamaria-kae-esoda-2004/129"/>
+	<broader rdf:resource="http://data.openbudgets.eu/resource/dataset/budget-kalamaria-revenue-2004/codelist/200"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://data.openbudgets.eu/resource/dataset/budget-kalamaria-revenue-2004/codelist/200/129-1">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<inScheme rdf:resource="http://data.openbudgets.eu/resource/dataset/budget-kalamaria-revenue-2004/codelist"/>
+	<notation rdf:datatype="http://www.w3.org/2001/XMLSchema#string">129-1</notation>
+	<prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Έσοδα από εισφορά σε χρήμα</prefLabel>
+	<broader rdf:resource="http://data.openbudgets.eu/resource/dataset/budget-kalamaria-revenue-2004/codelist/200/129"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://data.openbudgets.eu/resource/dataset/budget-kalamaria-revenue-2004/codelist/200/211">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<inScheme rdf:resource="http://data.openbudgets.eu/resource/dataset/budget-kalamaria-revenue-2004/codelist"/>
+	<notation rdf:datatype="http://www.w3.org/2001/XMLSchema#string">211</notation>
+	<prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Έκτακτα έσοδα εκ παρελθόντων οικονομικών ετών βεβαιωσησόμενα και εισπραχθησόμενα το πρώτον</prefLabel>
+	<broadMatch rdf:resource="http://data.openbudgets.eu/resource/codelist/kalamaria-kae-esoda-2004/211"/>
+	<broader rdf:resource="http://data.openbudgets.eu/resource/dataset/budget-kalamaria-revenue-2004/codelist/200"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://data.openbudgets.eu/resource/dataset/budget-kalamaria-revenue-2004/codelist/200/212">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<inScheme rdf:resource="http://data.openbudgets.eu/resource/dataset/budget-kalamaria-revenue-2004/codelist"/>
+	<notation rdf:datatype="http://www.w3.org/2001/XMLSchema#string">212</notation>
+	<prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Εισπρακτέα υπόλοιπα εκ βεβαιωθέντων κατά τα παρελθόντα οικονομικά έτη εκτάκτων εσόδων</prefLabel>
+	<broadMatch rdf:resource="http://data.openbudgets.eu/resource/codelist/kalamaria-kae-esoda-2004/212"/>
+	<broader rdf:resource="http://data.openbudgets.eu/resource/dataset/budget-kalamaria-revenue-2004/codelist/200"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://data.openbudgets.eu/resource/dataset/budget-kalamaria-revenue-2004/codelist/300/111">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<inScheme rdf:resource="http://data.openbudgets.eu/resource/dataset/budget-kalamaria-revenue-2004/codelist"/>
+	<notation rdf:datatype="http://www.w3.org/2001/XMLSchema#string">111</notation>
+	<prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Χρηματικό υπόλοιπο προηγουμένης χρήσεως μεταφερόμενο εις νέαν</prefLabel>
+	<broadMatch rdf:resource="http://data.openbudgets.eu/resource/codelist/kalamaria-kae-esoda-2004/111"/>
+	<broader rdf:resource="http://data.openbudgets.eu/resource/dataset/budget-kalamaria-revenue-2004/codelist/300"/>
+</rdf:Description>
+
+</rdf:RDF>
