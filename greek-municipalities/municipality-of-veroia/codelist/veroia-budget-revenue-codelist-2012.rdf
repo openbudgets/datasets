@@ -1,0 +1,2102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF
+	xmlns="http://www.w3.org/2004/02/skos/core#"
+	xmlns:gr-dimension="http://data.openbudgets.eu/ontology/dsd/greek-municipalities/dimension/"
+	xmlns:kae-ota-es14="http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014/"
+	xmlns:gr-administrations="http://data.openbudgets.eu/resource/codelist/kae-ota-administration-2014/"
+	xmlns:gr-budgetPhase="http://data.openbudgets.eu/resource/dataset/greek-municipalities/codelist/budget-phase/"
+	xmlns:veroia-br2012-slice="http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/slice/"
+	xmlns:veroia-br2012-dsd="http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/"
+	xmlns:veroia-br2012-observation="http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/observation/"
+	xmlns:veroia-br2012-dimension="http://data.openbudgets.eu/ontology/dsd/budget-veroia-revenue-2012/dimension/"
+	xmlns:veroia-br2012-codelist="http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist/"
+	xmlns:dbp="http://dbpedia.org/property/"
+	xmlns:interval="http://reference.data.gov.uk/def/intervals/"
+	xmlns:obeu="http://data.openbudgets.eu/ontology/"
+	xmlns:obeu-attribute="http://data.openbudgets.eu/ontology/dsd/attribute/"
+	xmlns:obeu-codelist="http://data.openbudgets.eu/resource/codelist/"
+	xmlns:obeu-dimension="http://data.openbudgets.eu/ontology/dsd/dimension/"
+	xmlns:obeu-measure="http://data.openbudgets.eu/ontology/dsd/measure/"
+	xmlns:obeu-budgetphase="http://data.openbudgets.eu/resource/codelist/budget-phase/"
+	xmlns:obeu-currency="http://data.openbudgets.eu/codelist/currency/"
+	xmlns:obeu-operation="http://data.openbudgets.eu/resource/codelist/operation-character/"
+	xmlns:owl="http://www.w3.org/2002/07/owl#"
+	xmlns:qb="http://purl.org/linked-data/cube#"
+	xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+	xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+	xmlns:schema="http://schema.org/"
+	xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+	xmlns:time="http://www.w3.org/2006/time#"
+	xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:foaf="http://xmlns.com/foaf/0.1/"
+	xmlns:dcat="http://www.w3.org/ns/dcat#"
+	xmlns:terms="http://purl.org/dc/terms/"
+	xmlns:sesame="http://www.openrdf.org/schema/sesame#"
+	xmlns:fn="http://www.w3.org/2005/xpath-functions#">
+
+<rdf:Description rdf:about="http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#ConceptScheme"/>
+	<hasTopConcept rdf:resource="http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist/00"/>
+	<prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Veroia municipality revenue budget codelist as derived from the dataset of year 2012</prefLabel>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist/00">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<inScheme rdf:resource="http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist"/>
+	<narrower rdf:resource="http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist/00/0111"/>
+	<narrower rdf:resource="http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist/00/0112"/>
+	<narrower rdf:resource="http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist/00/0113"/>
+	<narrower rdf:resource="http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist/00/0114"/>
+	<narrower rdf:resource="http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist/00/0115"/>
+	<narrower rdf:resource="http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist/00/0116"/>
+	<narrower rdf:resource="http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist/00/0117"/>
+	<narrower rdf:resource="http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist/00/0121"/>
+	<narrower rdf:resource="http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist/00/0122"/>
+	<narrower rdf:resource="http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist/00/0123"/>
+	<narrower rdf:resource="http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist/00/0124"/>
+	<narrower rdf:resource="http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist/00/0125"/>
+	<narrower rdf:resource="http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist/00/0126"/>
+	<narrower rdf:resource="http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist/00/0127"/>
+	<narrower rdf:resource="http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist/00/0129"/>
+	<narrower rdf:resource="http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist/00/0211"/>
+	<narrower rdf:resource="http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist/00/0213"/>
+	<narrower rdf:resource="http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist/00/0221"/>
+	<narrower rdf:resource="http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist/00/0223"/>
+	<narrower rdf:resource="http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist/00/0311"/>
+	<narrower rdf:resource="http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist/00/0322"/>
+	<narrower rdf:resource="http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist/00/0331"/>
+	<narrower rdf:resource="http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist/00/0411"/>
+	<narrower rdf:resource="http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist/00/0412"/>
+	<narrower rdf:resource="http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist/00/0413"/>
+	<narrower rdf:resource="http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist/00/0414"/>
+	<narrower rdf:resource="http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist/00/0415"/>
+	<narrower rdf:resource="http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist/00/0431"/>
+	<narrower rdf:resource="http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist/00/0441"/>
+	<narrower rdf:resource="http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist/00/0451"/>
+	<narrower rdf:resource="http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist/00/0452"/>
+	<narrower rdf:resource="http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist/00/0461"/>
+	<narrower rdf:resource="http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist/00/0462"/>
+	<narrower rdf:resource="http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist/00/0464"/>
+	<narrower rdf:resource="http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist/00/0465"/>
+	<narrower rdf:resource="http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist/00/0468"/>
+	<narrower rdf:resource="http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist/00/0469"/>
+	<narrower rdf:resource="http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist/00/0471"/>
+	<narrower rdf:resource="http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist/00/0511"/>
+	<narrower rdf:resource="http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist/00/0512"/>
+	<narrower rdf:resource="http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist/00/0514"/>
+	<narrower rdf:resource="http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist/00/0521"/>
+	<narrower rdf:resource="http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist/00/0522"/>
+	<narrower rdf:resource="http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist/00/0523"/>
+	<narrower rdf:resource="http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist/00/0611"/>
+	<narrower rdf:resource="http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist/00/0612"/>
+	<narrower rdf:resource="http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist/00/0613"/>
+	<narrower rdf:resource="http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist/00/0614"/>
+	<narrower rdf:resource="http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist/00/0615"/>
+	<narrower rdf:resource="http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist/00/0619"/>
+	<narrower rdf:resource="http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist/00/0621"/>
+	<narrower rdf:resource="http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist/00/0711"/>
+	<narrower rdf:resource="http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist/00/0713"/>
+	<narrower rdf:resource="http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist/00/0714"/>
+	<narrower rdf:resource="http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist/00/0715"/>
+	<narrower rdf:resource="http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist/00/0716"/>
+	<narrower rdf:resource="http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist/00/0718"/>
+	<narrower rdf:resource="http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist/00/1115"/>
+	<narrower rdf:resource="http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist/00/1116"/>
+	<narrower rdf:resource="http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist/00/1121"/>
+	<narrower rdf:resource="http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist/00/1122"/>
+	<narrower rdf:resource="http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist/00/1211"/>
+	<narrower rdf:resource="http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist/00/1212"/>
+	<narrower rdf:resource="http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist/00/1213"/>
+	<narrower rdf:resource="http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist/00/1214"/>
+	<narrower rdf:resource="http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist/00/1311"/>
+	<narrower rdf:resource="http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist/00/1312"/>
+	<narrower rdf:resource="http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist/00/1313"/>
+	<narrower rdf:resource="http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist/00/1314"/>
+	<narrower rdf:resource="http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist/00/1319"/>
+	<narrower rdf:resource="http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist/00/1321"/>
+	<narrower rdf:resource="http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist/00/1322"/>
+	<narrower rdf:resource="http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist/00/1325"/>
+	<narrower rdf:resource="http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist/00/1326"/>
+	<narrower rdf:resource="http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist/00/1327"/>
+	<narrower rdf:resource="http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist/00/1411"/>
+	<narrower rdf:resource="http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist/00/1511"/>
+	<narrower rdf:resource="http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist/00/1512"/>
+	<narrower rdf:resource="http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist/00/1513"/>
+	<narrower rdf:resource="http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist/00/1514"/>
+	<narrower rdf:resource="http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist/00/1515"/>
+	<narrower rdf:resource="http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist/00/1516"/>
+	<narrower rdf:resource="http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist/00/1517"/>
+	<narrower rdf:resource="http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist/00/1518"/>
+	<narrower rdf:resource="http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist/00/1519"/>
+	<narrower rdf:resource="http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist/00/1521"/>
+	<narrower rdf:resource="http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist/00/1522"/>
+	<narrower rdf:resource="http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist/00/1611"/>
+	<narrower rdf:resource="http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist/00/1612"/>
+	<narrower rdf:resource="http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist/00/1613"/>
+	<narrower rdf:resource="http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist/00/1614"/>
+	<narrower rdf:resource="http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist/00/1615"/>
+	<narrower rdf:resource="http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist/00/1616"/>
+	<narrower rdf:resource="http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist/00/1617"/>
+	<narrower rdf:resource="http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist/00/1619"/>
+	<narrower rdf:resource="http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist/00/1622"/>
+	<narrower rdf:resource="http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist/00/1623"/>
+	<narrower rdf:resource="http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist/00/1624"/>
+	<narrower rdf:resource="http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist/00/1626"/>
+	<narrower rdf:resource="http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist/00/1627"/>
+	<narrower rdf:resource="http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist/00/1699"/>
+	<narrower rdf:resource="http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist/00/2111"/>
+	<narrower rdf:resource="http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist/00/2112"/>
+	<narrower rdf:resource="http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist/00/2113"/>
+	<narrower rdf:resource="http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist/00/2114"/>
+	<narrower rdf:resource="http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist/00/2115"/>
+	<narrower rdf:resource="http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist/00/2117"/>
+	<narrower rdf:resource="http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist/00/2118"/>
+	<narrower rdf:resource="http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist/00/2119"/>
+	<narrower rdf:resource="http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist/00/2211"/>
+	<narrower rdf:resource="http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist/00/2212"/>
+	<narrower rdf:resource="http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist/00/3111"/>
+	<narrower rdf:resource="http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist/00/3112"/>
+	<narrower rdf:resource="http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist/00/3121"/>
+	<narrower rdf:resource="http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist/00/3122"/>
+	<narrower rdf:resource="http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist/00/3211"/>
+	<narrower rdf:resource="http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist/00/3212"/>
+	<narrower rdf:resource="http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist/00/3213"/>
+	<narrower rdf:resource="http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist/00/3214"/>
+	<narrower rdf:resource="http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist/00/3215"/>
+	<narrower rdf:resource="http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist/00/3217"/>
+	<narrower rdf:resource="http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist/00/3218"/>
+	<narrower rdf:resource="http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist/00/3219"/>
+	<narrower rdf:resource="http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist/00/3221"/>
+	<narrower rdf:resource="http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist/00/3222"/>
+	<narrower rdf:resource="http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist/00/4111"/>
+	<narrower rdf:resource="http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist/00/4112"/>
+	<narrower rdf:resource="http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist/00/4121"/>
+	<narrower rdf:resource="http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist/00/4122"/>
+	<narrower rdf:resource="http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist/00/4123"/>
+	<narrower rdf:resource="http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist/00/4124"/>
+	<narrower rdf:resource="http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist/00/4131"/>
+	<narrower rdf:resource="http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist/00/4141"/>
+	<narrower rdf:resource="http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist/00/4142"/>
+	<narrower rdf:resource="http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist/00/4211"/>
+	<narrower rdf:resource="http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist/00/4212"/>
+	<narrower rdf:resource="http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist/00/4213"/>
+	<narrower rdf:resource="http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist/00/4214"/>
+	<narrower rdf:resource="http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist/00/5111"/>
+	<narrower rdf:resource="http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist/00/5112"/>
+	<narrower rdf:resource="http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist/00/5121"/>
+	<narrower rdf:resource="http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist/00/5122"/>
+	<notation rdf:datatype="http://www.w3.org/2001/XMLSchema#string">00</notation>
+	<prefLabel xml:lang="el">ΓΕΝΙΚΕΣ ΥΠΗΡΕΣΙΕΣ</prefLabel>
+	<topConceptOf rdf:resource="http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist/00/0111">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<inScheme rdf:resource="http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist"/>
+	<notation rdf:datatype="http://www.w3.org/2001/XMLSchema#string">0111</notation>
+	<prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Μισθώματα από αστικά ακίνητα (άρθρο 253 ΔΚΚ)</prefLabel>
+	<broader rdf:resource="http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist/00"/>
+	<broadMatch rdf:resource="http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014/0111"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist/00/0112">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<inScheme rdf:resource="http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist"/>
+	<notation rdf:datatype="http://www.w3.org/2001/XMLSchema#string">0112</notation>
+	<prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Μισθώματα βοσκησίμων εκτάσεων (άρθρο 5 ΒΔ 24/9-20/1958, άρθρο 31ΝΔ 4260/62)</prefLabel>
+	<broader rdf:resource="http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist/00"/>
+	<broadMatch rdf:resource="http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014/0112"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist/00/0113">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<inScheme rdf:resource="http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist"/>
+	<notation rdf:datatype="http://www.w3.org/2001/XMLSchema#string">0113</notation>
+	<prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Μισθώματα καλλιεργήσιμης γης (άρθρο 255 ΔΚΚ)</prefLabel>
+	<broader rdf:resource="http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist/00"/>
+	<broadMatch rdf:resource="http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014/0113"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist/00/0114">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<inScheme rdf:resource="http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist"/>
+	<notation rdf:datatype="http://www.w3.org/2001/XMLSchema#string">0114</notation>
+	<prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Μισθώματα δημοτικής αγοράς (άρθρο 2 ΒΔ 24/9-20/10/1958)</prefLabel>
+	<broader rdf:resource="http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist/00"/>
+	<broadMatch rdf:resource="http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014/0114"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist/00/0115">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<inScheme rdf:resource="http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist"/>
+	<notation rdf:datatype="http://www.w3.org/2001/XMLSchema#string">0115</notation>
+	<prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Μισθώματα από την παραχώρηση κοινόχρηστων χώρων για την τοποθέτηση διαφημιστικών μέσων (άρθρο 3Ν 2946/2001)</prefLabel>
+	<broader rdf:resource="http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist/00"/>
+	<broadMatch rdf:resource="http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014/0115"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist/00/0116">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<inScheme rdf:resource="http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist"/>
+	<notation rdf:datatype="http://www.w3.org/2001/XMLSchema#string">0116</notation>
+	<prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Μισθώματα δημοτικών και κοινοτικών λατομείων (άρθρο 20 Ν 669/77, άρθρο 7 Ν 1428/84)</prefLabel>
+	<broader rdf:resource="http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist/00"/>
+	<broadMatch rdf:resource="http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014/0116"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist/00/0117">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<inScheme rdf:resource="http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist"/>
+	<notation rdf:datatype="http://www.w3.org/2001/XMLSchema#string">0117</notation>
+	<prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Μισθώματα δασών και δασικών εκτάσεων (άρθρο 257 ΔΚΚ, άρθρο 39 Ν 998/79)</prefLabel>
+	<broader rdf:resource="http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist/00"/>
+	<broadMatch rdf:resource="http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014/0117"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist/00/0121">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<inScheme rdf:resource="http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist"/>
+	<notation rdf:datatype="http://www.w3.org/2001/XMLSchema#string">0121</notation>
+	<prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Έσοδα από την εκμετάλλευση διαφημιστικών χώρων σε αθλητικές εγκαταστάσεις (άρθρο 56 Ν 2725/99) και στέγαστρα αστικών και υπεραστικών συγκοινωνιών (άρθρο 21 Ν 2963/2001)</prefLabel>
+	<broader rdf:resource="http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist/00"/>
+	<broadMatch rdf:resource="http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014/0121"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist/00/0122">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<inScheme rdf:resource="http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist"/>
+	<notation rdf:datatype="http://www.w3.org/2001/XMLSchema#string">0122</notation>
+	<prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Τέλη και δικαιώματα από εμποροπανηγύρεις, παζάρια και λαϊκές αγορές (άρθρο 19 ΒΔ 24/9-20/10/1958)</prefLabel>
+	<broader rdf:resource="http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist/00"/>
+	<broadMatch rdf:resource="http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014/0122"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist/00/0123">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<inScheme rdf:resource="http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist"/>
+	<notation rdf:datatype="http://www.w3.org/2001/XMLSchema#string">0123</notation>
+	<prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Δικαίωμα αμμοληψίας (άρθρο 19 ΒΔ 24/9-20/10/1958)</prefLabel>
+	<broader rdf:resource="http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist/00"/>
+	<broadMatch rdf:resource="http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014/0123"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist/00/0124">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<inScheme rdf:resource="http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist"/>
+	<notation rdf:datatype="http://www.w3.org/2001/XMLSchema#string">0124</notation>
+	<prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Έσοδα από την εκμετάλλευση αναδασομένων εκτάσεων (άρθρο 40 Ν 998/79)</prefLabel>
+	<broader rdf:resource="http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist/00"/>
+	<broadMatch rdf:resource="http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014/0124"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist/00/0125">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<inScheme rdf:resource="http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist"/>
+	<notation rdf:datatype="http://www.w3.org/2001/XMLSchema#string">0125</notation>
+	<prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Δικαίωμα βοσκής (άρθρο 5 ΒΔ 24/9-20/10/1958, άρθρο 16 Ν 2130/93)</prefLabel>
+	<broader rdf:resource="http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist/00"/>
+	<broadMatch rdf:resource="http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014/0125"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist/00/0126">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<inScheme rdf:resource="http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist"/>
+	<notation rdf:datatype="http://www.w3.org/2001/XMLSchema#string">0126</notation>
+	<prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ειδικό δικαίωμα χρήσεως βελτιωμένων βοσκοτόπων (άρθρο 8 Ν 994/79)</prefLabel>
+	<broader rdf:resource="http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist/00"/>
+	<broadMatch rdf:resource="http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014/0126"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist/00/0127">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<inScheme rdf:resource="http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist"/>
+	<notation rdf:datatype="http://www.w3.org/2001/XMLSchema#string">0127</notation>
+	<prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Δικαίωμα χρήσης αποκαλυπτόμενων καλλιεργητικών εκτάσεων (άρθρο 250 ΔΚΚ)</prefLabel>
+	<broader rdf:resource="http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist/00"/>
+	<broadMatch rdf:resource="http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014/0127"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist/00/0129">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<inScheme rdf:resource="http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist"/>
+	<narrower rdf:resource="http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist/00/0129.001"/>
+	<narrower rdf:resource="http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist/00/0129.002"/>
+	<narrower rdf:resource="http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist/00/0129.003"/>
+	<notation rdf:datatype="http://www.w3.org/2001/XMLSchema#string">0129</notation>
+	<prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Λοιπά έσοδα από ακίνητα</prefLabel>
+	<broader rdf:resource="http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist/00"/>
+	<broadMatch rdf:resource="http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014/0129"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist/00/0129.001">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<inScheme rdf:resource="http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist"/>
+	<notation rdf:datatype="http://www.w3.org/2001/XMLSchema#string">0129.001</notation>
+	<prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Έσοδα από αυθαίρετη αγροτική καλλιέργεια</prefLabel>
+	<broader rdf:resource="http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist/00/0129"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist/00/0129.002">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<inScheme rdf:resource="http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist"/>
+	<notation rdf:datatype="http://www.w3.org/2001/XMLSchema#string">0129.002</notation>
+	<prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Έσοδα από υλοτόμηση δασικών εκτάσεων</prefLabel>
+	<broader rdf:resource="http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist/00/0129"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist/00/0129.003">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<inScheme rdf:resource="http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist"/>
+	<notation rdf:datatype="http://www.w3.org/2001/XMLSchema#string">0129.003</notation>
+	<prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Έσοδα από μίσθωση κοινόχρηστων χώρων για παραγωγή ανανεώσιμων πηγών ενέργειας</prefLabel>
+	<broader rdf:resource="http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist/00/0129"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist/00/0211">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<inScheme rdf:resource="http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist"/>
+	<notation rdf:datatype="http://www.w3.org/2001/XMLSchema#string">0211</notation>
+	<prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Τόκοι χρηματικών καταθέσεων σε τράπεζες</prefLabel>
+	<broader rdf:resource="http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist/00"/>
+	<broadMatch rdf:resource="http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014/0211"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist/00/0213">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<inScheme rdf:resource="http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist"/>
+	<notation rdf:datatype="http://www.w3.org/2001/XMLSchema#string">0213</notation>
+	<prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Mερίσματα Μετοχών Τράπεζας Ελλάδος</prefLabel>
+	<broader rdf:resource="http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist/00"/>
+	<broadMatch rdf:resource="http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014/0213"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist/00/0221">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<inScheme rdf:resource="http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist"/>
+	<notation rdf:datatype="http://www.w3.org/2001/XMLSchema#string">0221</notation>
+	<prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Έσοδα από αμιγείς Δημοτικές/Διαδημοτικές επιχειρήσεις</prefLabel>
+	<broader rdf:resource="http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist/00"/>
+	<broadMatch rdf:resource="http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014/0221"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist/00/0223">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<inScheme rdf:resource="http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist"/>
+	<notation rdf:datatype="http://www.w3.org/2001/XMLSchema#string">0223</notation>
+	<prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Έσοδα από συμμετοχή λοιπές επιχειρήσεις (κοινοπροξίες, ΑΕ, κλπ)</prefLabel>
+	<broader rdf:resource="http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist/00"/>
+	<broadMatch rdf:resource="http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014/0223"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist/00/0311">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<inScheme rdf:resource="http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist"/>
+	<notation rdf:datatype="http://www.w3.org/2001/XMLSchema#string">0311</notation>
+	<prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Τέλος καθαριότητας και φωτισμού (άρθρο 25 Ν 1828/89)</prefLabel>
+	<broader rdf:resource="http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist/00"/>
+	<broadMatch rdf:resource="http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014/0311"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist/00/0322">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<inScheme rdf:resource="http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist"/>
+	<notation rdf:datatype="http://www.w3.org/2001/XMLSchema#string">0322</notation>
+	<prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Τέλος ύδρευσης</prefLabel>
+	<broader rdf:resource="http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist/00"/>
+	<broadMatch rdf:resource="http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014/0322"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist/00/0331">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<inScheme rdf:resource="http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist"/>
+	<notation rdf:datatype="http://www.w3.org/2001/XMLSchema#string">0331</notation>
+	<prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Δικαιώματα χρήσεως αρδευτικού δικτύου.</prefLabel>
+	<broader rdf:resource="http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist/00"/>
+	<broadMatch rdf:resource="http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014/0331"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist/00/0411">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<inScheme rdf:resource="http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist"/>
+	<notation rdf:datatype="http://www.w3.org/2001/XMLSchema#string">0411</notation>
+	<prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Δικαιώματα σύστασης οικογενειακού τάφου</prefLabel>
+	<broader rdf:resource="http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist/00"/>
+	<broadMatch rdf:resource="http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014/0411"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist/00/0412">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<inScheme rdf:resource="http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist"/>
+	<notation rdf:datatype="http://www.w3.org/2001/XMLSchema#string">0412</notation>
+	<prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Δικαίωμα ενταφιασμού</prefLabel>
+	<broader rdf:resource="http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist/00"/>
+	<broadMatch rdf:resource="http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014/0412"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist/00/0413">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<inScheme rdf:resource="http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist"/>
+	<notation rdf:datatype="http://www.w3.org/2001/XMLSchema#string">0413</notation>
+	<prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Δικαίωμα ανανέωσης (παράστασης χρόνου ταφής)</prefLabel>
+	<broader rdf:resource="http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist/00"/>
+	<broadMatch rdf:resource="http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014/0413"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist/00/0414">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<inScheme rdf:resource="http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist"/>
+	<notation rdf:datatype="http://www.w3.org/2001/XMLSchema#string">0414</notation>
+	<prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Τέλος ανακομιδής</prefLabel>
+	<broader rdf:resource="http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist/00"/>
+	<broadMatch rdf:resource="http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014/0414"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist/00/0415">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<inScheme rdf:resource="http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist"/>
+	<notation rdf:datatype="http://www.w3.org/2001/XMLSchema#string">0415</notation>
+	<prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Δικαιώματα από τη χρήση οστεοφυλακίων</prefLabel>
+	<broader rdf:resource="http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist/00"/>
+	<broadMatch rdf:resource="http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014/0415"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist/00/0431">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<inScheme rdf:resource="http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist"/>
+	<notation rdf:datatype="http://www.w3.org/2001/XMLSchema#string">0431</notation>
+	<prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Έσοδα από ειδικούς χώρους στάθμευσης</prefLabel>
+	<broader rdf:resource="http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist/00"/>
+	<broadMatch rdf:resource="http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014/0431"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist/00/0441">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<inScheme rdf:resource="http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist"/>
+	<notation rdf:datatype="http://www.w3.org/2001/XMLSchema#string">0441</notation>
+	<prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Τέλος ακίνητης περιουσίας (άρθρο 24 Ν 2130/93)</prefLabel>
+	<broader rdf:resource="http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist/00"/>
+	<broadMatch rdf:resource="http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014/0441"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist/00/0451">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<inScheme rdf:resource="http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist"/>
+	<notation rdf:datatype="http://www.w3.org/2001/XMLSchema#string">0451</notation>
+	<prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Τέλος διαμονής παρεπιδημούντων (άρθρο 6 Ν 1080/80, άρθρο 27 παρ. 10 Ν 2130/93)</prefLabel>
+	<broader rdf:resource="http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist/00"/>
+	<broadMatch rdf:resource="http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014/0451"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist/00/0452">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<inScheme rdf:resource="http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist"/>
+	<notation rdf:datatype="http://www.w3.org/2001/XMLSchema#string">0452</notation>
+	<prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Τέλος επί των ακαθαρίστων εσόδων των κέντρων διασκέδασης, εστιατορίων και συναφών καταστημάτων (άρθρο 20 Ν 1080/80)</prefLabel>
+	<broader rdf:resource="http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist/00"/>
+	<broadMatch rdf:resource="http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014/0452"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist/00/0461">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<inScheme rdf:resource="http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist"/>
+	<notation rdf:datatype="http://www.w3.org/2001/XMLSchema#string">0461</notation>
+	<prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Τέλος χρήσης κοινόχρηστων χώρων (άρθρο 3 Ν 1080/80)</prefLabel>
+	<broader rdf:resource="http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist/00"/>
+	<broadMatch rdf:resource="http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014/0461"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist/00/0462">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<inScheme rdf:resource="http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist"/>
+	<notation rdf:datatype="http://www.w3.org/2001/XMLSchema#string">0462</notation>
+	<prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Τέλος διαφήμισης (άρθρο 5 Ν 1900/90)</prefLabel>
+	<broader rdf:resource="http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist/00"/>
+	<broadMatch rdf:resource="http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014/0462"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist/00/0464">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<inScheme rdf:resource="http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist"/>
+	<notation rdf:datatype="http://www.w3.org/2001/XMLSchema#string">0464</notation>
+	<prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Τέλη ελεγχόμενης στάθμευσης σε κοινόχρηστους χώρους (άρθρο 4 Ν 1990/90)</prefLabel>
+	<broader rdf:resource="http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist/00"/>
+	<broadMatch rdf:resource="http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014/0464"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist/00/0465">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<inScheme rdf:resource="http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist"/>
+	<notation rdf:datatype="http://www.w3.org/2001/XMLSchema#string">0465</notation>
+	<prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ειδικό τέλος λατομικών προϊόντων (άρθρο 15 Ν 2115/93, άρθρο 27 Ν 2130/90)</prefLabel>
+	<broader rdf:resource="http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist/00"/>
+	<broadMatch rdf:resource="http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014/0465"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist/00/0468">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<inScheme rdf:resource="http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist"/>
+	<notation rdf:datatype="http://www.w3.org/2001/XMLSchema#string">0468</notation>
+	<prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Τέλος αδειών οικοδομών (άρθρο 23 ΒΔ 24/9-20/10/1958)</prefLabel>
+	<broader rdf:resource="http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist/00"/>
+	<broadMatch rdf:resource="http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014/0468"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist/00/0469">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<inScheme rdf:resource="http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist"/>
+	<notation rdf:datatype="http://www.w3.org/2001/XMLSchema#string">0469</notation>
+	<prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Τέλος ανανεώσιμων πηγών ενέργειας (άρθρο 38 Ν 2773/99)</prefLabel>
+	<broader rdf:resource="http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist/00"/>
+	<broadMatch rdf:resource="http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014/0469"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist/00/0471">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<inScheme rdf:resource="http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist"/>
+	<narrower rdf:resource="http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist/00/0471.001"/>
+	<notation rdf:datatype="http://www.w3.org/2001/XMLSchema#string">0471</notation>
+	<prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ΛΟΙΠΑ ΔΥΝΗΤΙΚΑ ΤΕΛΗ</prefLabel>
+	<broader rdf:resource="http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist/00"/>
+	<broadMatch rdf:resource="http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014/0471"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist/00/0471.001">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<inScheme rdf:resource="http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist"/>
+	<notation rdf:datatype="http://www.w3.org/2001/XMLSchema#string">0471.001</notation>
+	<prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Τέλος τέλεσης πολιτικών γάμων</prefLabel>
+	<broader rdf:resource="http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist/00/0471"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist/00/0511">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<inScheme rdf:resource="http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist"/>
+	<notation rdf:datatype="http://www.w3.org/2001/XMLSchema#string">0511</notation>
+	<prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Φόρος ηλεκτροδοτούμενων χώρων (άρθρο 10 Ν 1080/80)</prefLabel>
+	<broader rdf:resource="http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist/00"/>
+	<broadMatch rdf:resource="http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014/0511"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist/00/0512">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<inScheme rdf:resource="http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist"/>
+	<notation rdf:datatype="http://www.w3.org/2001/XMLSchema#string">0512</notation>
+	<prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Φόρος ζύθου (άρθρο 9 ΝΔ 703/70, άρθρο 12 Ν 1080/80)</prefLabel>
+	<broader rdf:resource="http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist/00"/>
+	<broadMatch rdf:resource="http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014/0512"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist/00/0514">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<inScheme rdf:resource="http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist"/>
+	<notation rdf:datatype="http://www.w3.org/2001/XMLSchema#string">0514</notation>
+	<prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Λοιποί φόροι</prefLabel>
+	<broader rdf:resource="http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist/00"/>
+	<broadMatch rdf:resource="http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014/0514"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist/00/0521">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<inScheme rdf:resource="http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist"/>
+	<notation rdf:datatype="http://www.w3.org/2001/XMLSchema#string">0521</notation>
+	<prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Εισφορά σε χρήμα λόγω ένταξης ή επέκτασης πολεοδομικών σχεδίων (άρθρο 24 Συντ. 1975/2001, άρθρο 9 Ν 1337/83, άρθρο 21 Ν 2508/97)</prefLabel>
+	<broader rdf:resource="http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist/00"/>
+	<broadMatch rdf:resource="http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014/0521"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist/00/0522">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<inScheme rdf:resource="http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist"/>
+	<notation rdf:datatype="http://www.w3.org/2001/XMLSchema#string">0522</notation>
+	<prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Μετατροπή σε χρήμα της εισφοράς σε γή (άρθρο 8 Ν 1337/83)</prefLabel>
+	<broader rdf:resource="http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist/00"/>
+	<broadMatch rdf:resource="http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014/0522"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist/00/0523">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<inScheme rdf:resource="http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist"/>
+	<notation rdf:datatype="http://www.w3.org/2001/XMLSchema#string">0523</notation>
+	<prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Εισφορά 40% ή 75% του ΚΗ/1947 Ψηφίσματος (άρθρο 34 Ν 1337/83)</prefLabel>
+	<broader rdf:resource="http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist/00"/>
+	<broadMatch rdf:resource="http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014/0523"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist/00/0611">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<inScheme rdf:resource="http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist"/>
+	<notation rdf:datatype="http://www.w3.org/2001/XMLSchema#string">0611</notation>
+	<prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ΚΑΠ για την κάλυψη γενικών αναγκών (άρθρο 25 Ν 1828/89)</prefLabel>
+	<broader rdf:resource="http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist/00"/>
+	<broadMatch rdf:resource="http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014/0611"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist/00/0612">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<inScheme rdf:resource="http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist"/>
+	<notation rdf:datatype="http://www.w3.org/2001/XMLSchema#string">0612</notation>
+	<prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ΚΑΠ για τη λειτουργία παιδικών και βρεφονηπιακών σταθμών (άρθρο 12 Ν 2880/2001)</prefLabel>
+	<broader rdf:resource="http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist/00"/>
+	<broadMatch rdf:resource="http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014/0612"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist/00/0613">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<inScheme rdf:resource="http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist"/>
+	<notation rdf:datatype="http://www.w3.org/2001/XMLSchema#string">0613</notation>
+	<prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ΚΑΠ για τη λειτουργία δημοτικών και κοινοτικών χώρων άθλησης (άρθρο 14 Ν 2880/2001)</prefLabel>
+	<broader rdf:resource="http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist/00"/>
+	<broadMatch rdf:resource="http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014/0613"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist/00/0614">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<inScheme rdf:resource="http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist"/>
+	<notation rdf:datatype="http://www.w3.org/2001/XMLSchema#string">0614</notation>
+	<prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ΚΑΠ για την κάλυψη των λειτουργικών αναγκών των σχολειων Α/θμιας και Β/θμιας εκπαίδευσης (άρθρο 55 Ν 1946/91)</prefLabel>
+	<broader rdf:resource="http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist/00"/>
+	<broadMatch rdf:resource="http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014/0614"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist/00/0615">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<inScheme rdf:resource="http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist"/>
+	<notation rdf:datatype="http://www.w3.org/2001/XMLSchema#string">0615</notation>
+	<prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ΚΑΠ για την καταβολή αποζημίωσης σε σχολικούς τροχονόμους (άρθρο 14 Ν 2817/2000)</prefLabel>
+	<broader rdf:resource="http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist/00"/>
+	<broadMatch rdf:resource="http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014/0615"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist/00/0619">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<inScheme rdf:resource="http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist"/>
+	<narrower rdf:resource="http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist/00/0619.001"/>
+	<narrower rdf:resource="http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist/00/0619.002"/>
+	<notation rdf:datatype="http://www.w3.org/2001/XMLSchema#string">0619</notation>
+	<prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ΚΑΠ για λοιπούς σκοπούς (δεν περιλαμβάνονται πιστώσεις του ΠΔΕ)</prefLabel>
+	<broader rdf:resource="http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist/00"/>
+	<broadMatch rdf:resource="http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014/0619"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist/00/0619.001">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<inScheme rdf:resource="http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist"/>
+	<notation rdf:datatype="http://www.w3.org/2001/XMLSchema#string">0619.001</notation>
+	<prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ΚΑΠ για κάλυψη λειτουργικών και λοιπών γενικών δαπανών</prefLabel>
+	<broader rdf:resource="http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist/00/0619"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist/00/0619.002">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<inScheme rdf:resource="http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist"/>
+	<notation rdf:datatype="http://www.w3.org/2001/XMLSchema#string">0619.002</notation>
+	<prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ΚΑΠ για κάλυψη δαπάνης μεταφοράς και επιδότησης μαθητών</prefLabel>
+	<broader rdf:resource="http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist/00/0619"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist/00/0621">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<inScheme rdf:resource="http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist"/>
+	<notation rdf:datatype="http://www.w3.org/2001/XMLSchema#string">0621</notation>
+	<prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Κάλυψη δαπάνης των προνοιακών επιδομάτων</prefLabel>
+	<broader rdf:resource="http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist/00"/>
+	<broadMatch rdf:resource="http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014/0621"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist/00/0711">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<inScheme rdf:resource="http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist"/>
+	<notation rdf:datatype="http://www.w3.org/2001/XMLSchema#string">0711</notation>
+	<prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Έσοδα από μισθώματα δημόσιων λατομείων (άρθρο 21 Ν 2115/93)</prefLabel>
+	<broader rdf:resource="http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist/00"/>
+	<broadMatch rdf:resource="http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014/0711"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist/00/0713">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<inScheme rdf:resource="http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist"/>
+	<notation rdf:datatype="http://www.w3.org/2001/XMLSchema#string">0713</notation>
+	<prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Παράβολα για την έκδοση των αδειών ίδρυσης και λειτουργίας επιχειρήσεων υγειονομικού ενδιαφέροντος (άρθρο 25 ΔΚΚ)</prefLabel>
+	<broader rdf:resource="http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist/00"/>
+	<broadMatch rdf:resource="http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014/0713"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist/00/0714">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<inScheme rdf:resource="http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist"/>
+	<notation rdf:datatype="http://www.w3.org/2001/XMLSchema#string">0714</notation>
+	<prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Έσοδα από τη διάθεση δασικών προϊόντων του δημοσίου (άρθρο 37 ΝΔ 4260/62)</prefLabel>
+	<broader rdf:resource="http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist/00"/>
+	<broadMatch rdf:resource="http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014/0714"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist/00/0715">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<inScheme rdf:resource="http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist"/>
+	<notation rdf:datatype="http://www.w3.org/2001/XMLSchema#string">0715</notation>
+	<prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Τέλος διαφήμισης της κατηγορίας Δ' του άρθρου 15 του ΒΔ 24/9-20/10/1958 (άρθρο 9 Ν 2880/2001)</prefLabel>
+	<broader rdf:resource="http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist/00"/>
+	<broadMatch rdf:resource="http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014/0715"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist/00/0716">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<inScheme rdf:resource="http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist"/>
+	<notation rdf:datatype="http://www.w3.org/2001/XMLSchema#string">0716</notation>
+	<prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Έσοδα από παράβολα αδειών παραμονής αλλοδαπών (άρθρο 16 Ν 2946/2001)</prefLabel>
+	<broader rdf:resource="http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist/00"/>
+	<broadMatch rdf:resource="http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014/0716"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist/00/0718">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<inScheme rdf:resource="http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist"/>
+	<notation rdf:datatype="http://www.w3.org/2001/XMLSchema#string">0718</notation>
+	<prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Λοιπά τακτικά έσοδα που δεν εντάσσονται στις ανωτέρω τάξεις.</prefLabel>
+	<broader rdf:resource="http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist/00"/>
+	<broadMatch rdf:resource="http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014/0718"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist/00/1115">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<inScheme rdf:resource="http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist"/>
+	<notation rdf:datatype="http://www.w3.org/2001/XMLSchema#string">1115</notation>
+	<prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Προσκύρωση δημοτικών ή κοινοτικών εκτάσεων (άρθρα 300-309 ΚΒΠΝ, άρθρο 56 Ν 1416/84)</prefLabel>
+	<broader rdf:resource="http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist/00"/>
+	<broadMatch rdf:resource="http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014/1115"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist/00/1116">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<inScheme rdf:resource="http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist"/>
+	<notation rdf:datatype="http://www.w3.org/2001/XMLSchema#string">1116</notation>
+	<prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Λοιπά έσοδα από εκποίηση ακίνητης περιουσίας (άρθρο 248 ΔΚΚ)</prefLabel>
+	<broader rdf:resource="http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist/00"/>
+	<broadMatch rdf:resource="http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014/1116"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist/00/1121">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<inScheme rdf:resource="http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist"/>
+	<notation rdf:datatype="http://www.w3.org/2001/XMLSchema#string">1121</notation>
+	<prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Εκποίηση οχημάτων (άρθρο 10 Ν 2880/2001)</prefLabel>
+	<broader rdf:resource="http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist/00"/>
+	<broadMatch rdf:resource="http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014/1121"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist/00/1122">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<inScheme rdf:resource="http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist"/>
+	<narrower rdf:resource="http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist/00/1122.001"/>
+	<narrower rdf:resource="http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist/00/1122.002"/>
+	<notation rdf:datatype="http://www.w3.org/2001/XMLSchema#string">1122</notation>
+	<prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Εκποίηση άλλων κινητών πραγμάτων (άρθρο 259 ΔΚΚ)</prefLabel>
+	<broader rdf:resource="http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist/00"/>
+	<broadMatch rdf:resource="http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014/1122"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist/00/1122.001">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<inScheme rdf:resource="http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist"/>
+	<notation rdf:datatype="http://www.w3.org/2001/XMLSchema#string">1122.001</notation>
+	<prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Εκποίηση άλλων κινητών πραγμάτων (άρθρο 259 ΔΚΚ)</prefLabel>
+	<broader rdf:resource="http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist/00/1122"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist/00/1122.002">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<inScheme rdf:resource="http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist"/>
+	<notation rdf:datatype="http://www.w3.org/2001/XMLSchema#string">1122.002</notation>
+	<prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Έσοδα από εκποίηση υλικών ανακύκλωσης</prefLabel>
+	<broader rdf:resource="http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist/00/1122"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist/00/1211">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<inScheme rdf:resource="http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist"/>
+	<narrower rdf:resource="http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist/00/1211.001"/>
+	<narrower rdf:resource="http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist/00/1211.002"/>
+	<narrower rdf:resource="http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist/00/1211.003"/>
+	<narrower rdf:resource="http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist/00/1211.004"/>
+	<notation rdf:datatype="http://www.w3.org/2001/XMLSchema#string">1211</notation>
+	<prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Από εθνικούς πόρους</prefLabel>
+	<broader rdf:resource="http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist/00"/>
+	<broadMatch rdf:resource="http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014/1211"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist/00/1211.001">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<inScheme rdf:resource="http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist"/>
+	<notation rdf:datatype="http://www.w3.org/2001/XMLSchema#string">1211.001</notation>
+	<prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Επιχορήγηση ΥΠΕΣ για ΚΕΠ</prefLabel>
+	<broader rdf:resource="http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist/00/1211"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist/00/1211.002">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<inScheme rdf:resource="http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist"/>
+	<notation rdf:datatype="http://www.w3.org/2001/XMLSchema#string">1211.002</notation>
+	<prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Επιχορήγηση ΥΠΕΣ για κάλυψη λειτουργικών δαπανών</prefLabel>
+	<broader rdf:resource="http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist/00/1211"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist/00/1211.003">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<inScheme rdf:resource="http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist"/>
+	<notation rdf:datatype="http://www.w3.org/2001/XMLSchema#string">1211.003</notation>
+	<prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Επιχορήγηση ΥΠΕΣ για κάλυψη δαπάνης σίτισης μαθητών Μουσικού Σχολείου Βέροιας</prefLabel>
+	<broader rdf:resource="http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist/00/1211"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist/00/1211.004">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<inScheme rdf:resource="http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist"/>
+	<notation rdf:datatype="http://www.w3.org/2001/XMLSchema#string">1211.004</notation>
+	<prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Επιχορήγηση ΥΠΕΣ γισ κάλυψη δαπάνης προπαρασκευής και διεξαγωγής βουλευτικών εκλογών</prefLabel>
+	<broader rdf:resource="http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist/00/1211"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist/00/1212">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<inScheme rdf:resource="http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist"/>
+	<notation rdf:datatype="http://www.w3.org/2001/XMLSchema#string">1212</notation>
+	<prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Από Συγχρηματοδοτούμενα προγράμματα</prefLabel>
+	<broader rdf:resource="http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist/00"/>
+	<broadMatch rdf:resource="http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014/1212"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist/00/1213">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<inScheme rdf:resource="http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist"/>
+	<narrower rdf:resource="http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist/00/1213.001"/>
+	<notation rdf:datatype="http://www.w3.org/2001/XMLSchema#string">1213</notation>
+	<prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Έσοδα από προγραμματικές συμβάσεις για υλοποίηση τοπικών πολιτικών</prefLabel>
+	<broader rdf:resource="http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist/00"/>
+	<broadMatch rdf:resource="http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014/1213"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist/00/1213.001">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<inScheme rdf:resource="http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist"/>
+	<notation rdf:datatype="http://www.w3.org/2001/XMLSchema#string">1213.001</notation>
+	<prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Επιχορήγηση ΥΠΕΣ για πρόγρ. ΣΥΝ+ΚΟΙΝΩΝΙΑ</prefLabel>
+	<broader rdf:resource="http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist/00/1213"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist/00/1214">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<inScheme rdf:resource="http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist"/>
+	<narrower rdf:resource="http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist/00/1214.001"/>
+	<narrower rdf:resource="http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist/00/1214.002"/>
+	<narrower rdf:resource="http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist/00/1214.003"/>
+	<narrower rdf:resource="http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist/00/1214.004"/>
+	<narrower rdf:resource="http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist/00/1214.005"/>
+	<narrower rdf:resource="http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist/00/1214.007"/>
+	<narrower rdf:resource="http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist/00/1214.008"/>
+	<notation rdf:datatype="http://www.w3.org/2001/XMLSchema#string">1214</notation>
+	<prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Λοιπές επιχορηγήσεις</prefLabel>
+	<broader rdf:resource="http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist/00"/>
+	<broadMatch rdf:resource="http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014/1214"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist/00/1214.001">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<inScheme rdf:resource="http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist"/>
+	<notation rdf:datatype="http://www.w3.org/2001/XMLSchema#string">1214.001</notation>
+	<prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Επιχορήγηση για το πρόγραμμα YOUTH IN ACTION</prefLabel>
+	<broader rdf:resource="http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist/00/1214"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist/00/1214.002">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<inScheme rdf:resource="http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist"/>
+	<notation rdf:datatype="http://www.w3.org/2001/XMLSchema#string">1214.002</notation>
+	<prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Επιχορήγηση προγράμματος URBACT II</prefLabel>
+	<broader rdf:resource="http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist/00/1214"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist/00/1214.003">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<inScheme rdf:resource="http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist"/>
+	<notation rdf:datatype="http://www.w3.org/2001/XMLSchema#string">1214.003</notation>
+	<prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Επιχορήγηση ΥΠΕΣ για βοηθήματα ένδειας και αντιμετώπιση άμεσων βιοτικών αναγκών</prefLabel>
+	<broader rdf:resource="http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist/00/1214"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist/00/1214.004">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<inScheme rdf:resource="http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist"/>
+	<notation rdf:datatype="http://www.w3.org/2001/XMLSchema#string">1214.004</notation>
+	<prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Επιχορήγηση Ι. Μητρόπολης και λοιπών φορέων για βοηθήματα ένδειας και αντιμετώπιση άμεσων βιοτικών αναγκών</prefLabel>
+	<broader rdf:resource="http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist/00/1214"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist/00/1214.005">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<inScheme rdf:resource="http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist"/>
+	<notation rdf:datatype="http://www.w3.org/2001/XMLSchema#string">1214.005</notation>
+	<prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Επιχορήγηση Υπουργείου Παιδείας του τομεακού προγράμματος LEONARDO DA VINCI με τίτλο 'Βιολογικές καλλιέργειες: Οπωροκηπευτικά- Οίνος</prefLabel>
+	<broader rdf:resource="http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist/00/1214"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist/00/1214.007">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<inScheme rdf:resource="http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist"/>
+	<notation rdf:datatype="http://www.w3.org/2001/XMLSchema#string">1214.007</notation>
+	<prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Επιχορήγηση Υπουργείου Παιδείας του τομεακού προγράμματος LEONARDO DA VINCI με τίτλο 'Ολοκληρωμένο σχέδιο αναβάθμισης υπηρεσιών τουρισμού</prefLabel>
+	<broader rdf:resource="http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist/00/1214"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist/00/1214.008">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<inScheme rdf:resource="http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist"/>
+	<notation rdf:datatype="http://www.w3.org/2001/XMLSchema#string">1214.008</notation>
+	<prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Επιχορήγηση Υπουργείου Παιδείας του τομεακού προγράμματος LEONARDO DA VINCI με τίτλο 'Βιοκλιματικές παρεμβάσεις σε κτίρια και κοινόχρηστους χώρους</prefLabel>
+	<broader rdf:resource="http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist/00/1214"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist/00/1311">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<inScheme rdf:resource="http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist"/>
+	<notation rdf:datatype="http://www.w3.org/2001/XMLSchema#string">1311</notation>
+	<prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Κεντρικοί αυτοτελείς πόροι από το Πρόγραμμα Δημοσίων Επενδύσεων (ΣΑΤΑ)</prefLabel>
+	<broader rdf:resource="http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist/00"/>
+	<broadMatch rdf:resource="http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014/1311"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist/00/1312">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<inScheme rdf:resource="http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist"/>
+	<narrower rdf:resource="http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist/00/1312.001"/>
+	<narrower rdf:resource="http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist/00/1312.002"/>
+	<narrower rdf:resource="http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist/00/1312.003"/>
+	<notation rdf:datatype="http://www.w3.org/2001/XMLSchema#string">1312</notation>
+	<prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Επιχορήγηση και συντήρηση σχολικών κτιρίων (άρθρο 13 Ν. 2880/2001)</prefLabel>
+	<broader rdf:resource="http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist/00"/>
+	<broadMatch rdf:resource="http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014/1312"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist/00/1312.001">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<inScheme rdf:resource="http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist"/>
+	<notation rdf:datatype="http://www.w3.org/2001/XMLSchema#string">1312.001</notation>
+	<prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Επισκευή και συντήρηση σχολικών κτιρίων ΣΑΤΑ</prefLabel>
+	<broader rdf:resource="http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist/00/1312"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist/00/1312.002">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<inScheme rdf:resource="http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist"/>
+	<notation rdf:datatype="http://www.w3.org/2001/XMLSchema#string">1312.002</notation>
+	<prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Επιχορήγηση για κάλυψη δαπανών πυροπροστασίας ΣΑΤΑ</prefLabel>
+	<broader rdf:resource="http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist/00/1312"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist/00/1312.003">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<inScheme rdf:resource="http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist"/>
+	<notation rdf:datatype="http://www.w3.org/2001/XMLSchema#string">1312.003</notation>
+	<prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Επιχορήγηση για κάλυψη δαπανών πολιτικής δασοπροστασίας ΣΑΤΑ</prefLabel>
+	<broader rdf:resource="http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist/00/1312"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist/00/1313">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<inScheme rdf:resource="http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist"/>
+	<notation rdf:datatype="http://www.w3.org/2001/XMLSchema#string">1313</notation>
+	<prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Επιχορηγήσεις του Ειδικού προγράμματος Τοπικής Αυτοδιοίκησης (ΕΠΤΑ, άρθρο 13 Ν 2539/97)</prefLabel>
+	<broader rdf:resource="http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist/00"/>
+	<broadMatch rdf:resource="http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014/1313"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist/00/1314">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<inScheme rdf:resource="http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist"/>
+	<narrower rdf:resource="http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist/00/1314.001"/>
+	<notation rdf:datatype="http://www.w3.org/2001/XMLSchema#string">1314</notation>
+	<prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Λοιπά ειδικά προγράμματα</prefLabel>
+	<broader rdf:resource="http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist/00"/>
+	<broadMatch rdf:resource="http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014/1314"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist/00/1314.001">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<inScheme rdf:resource="http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist"/>
+	<notation rdf:datatype="http://www.w3.org/2001/XMLSchema#string">1314.001</notation>
+	<prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Επιχορήγηση Προγράμματος ¨Αλέξανδρος Μπαλτατζής'</prefLabel>
+	<broader rdf:resource="http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist/00/1314"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist/00/1319">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<inScheme rdf:resource="http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist"/>
+	<narrower rdf:resource="http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist/00/1319.001"/>
+	<narrower rdf:resource="http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist/00/1319.002"/>
+	<notation rdf:datatype="http://www.w3.org/2001/XMLSchema#string">1319</notation>
+	<prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Λοιπά ειδικά προγράμματα</prefLabel>
+	<broader rdf:resource="http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist/00"/>
+	<broadMatch rdf:resource="http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014/1319"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist/00/1319.001">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<inScheme rdf:resource="http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist"/>
+	<notation rdf:datatype="http://www.w3.org/2001/XMLSchema#string">1319.001</notation>
+	<prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Επιχορήγηση Γ.Γ.Μακεδονίας-Θράκης</prefLabel>
+	<broader rdf:resource="http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist/00/1319"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist/00/1319.002">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<inScheme rdf:resource="http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist"/>
+	<notation rdf:datatype="http://www.w3.org/2001/XMLSchema#string">1319.002</notation>
+	<prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Επιχορηγήση Προγράμματος Παραμεθορίων</prefLabel>
+	<broader rdf:resource="http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist/00/1319"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist/00/1321">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<inScheme rdf:resource="http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist"/>
+	<narrower rdf:resource="http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist/00/1321.001"/>
+	<narrower rdf:resource="http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist/00/1321.002"/>
+	<narrower rdf:resource="http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist/00/1321.003"/>
+	<notation rdf:datatype="http://www.w3.org/2001/XMLSchema#string">1321</notation>
+	<prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Χρηματοδοτήσεις από Περιφερειακά επιχειρησιακά προγράμματα</prefLabel>
+	<broader rdf:resource="http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist/00"/>
+	<broadMatch rdf:resource="http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014/1321"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist/00/1321.001">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<inScheme rdf:resource="http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist"/>
+	<notation rdf:datatype="http://www.w3.org/2001/XMLSchema#string">1321.001</notation>
+	<prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Επιχορήγηση ΠΕΠ Κ. Μακεδονίας</prefLabel>
+	<broader rdf:resource="http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist/00/1321"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist/00/1321.002">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<inScheme rdf:resource="http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist"/>
+	<notation rdf:datatype="http://www.w3.org/2001/XMLSchema#string">1321.002</notation>
+	<prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Επιχορήγηση προγράμματος Αλ. Μπαλτατζής</prefLabel>
+	<broader rdf:resource="http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist/00/1321"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist/00/1321.003">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<inScheme rdf:resource="http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist"/>
+	<notation rdf:datatype="http://www.w3.org/2001/XMLSchema#string">1321.003</notation>
+	<prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Επιχορήγηση Ε.Π. 'Μακεδονία - Θράκη'</prefLabel>
+	<broader rdf:resource="http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist/00/1321"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist/00/1322">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<inScheme rdf:resource="http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist"/>
+	<narrower rdf:resource="http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist/00/1322.001"/>
+	<narrower rdf:resource="http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist/00/1322.002"/>
+	<narrower rdf:resource="http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist/00/1322.003"/>
+	<narrower rdf:resource="http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist/00/1322.004"/>
+	<narrower rdf:resource="http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist/00/1322.005"/>
+	<narrower rdf:resource="http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist/00/1322.006"/>
+	<narrower rdf:resource="http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist/00/1322.007"/>
+	<narrower rdf:resource="http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist/00/1322.008"/>
+	<narrower rdf:resource="http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist/00/1322.010"/>
+	<narrower rdf:resource="http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist/00/1322.011"/>
+	<narrower rdf:resource="http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist/00/1322.012"/>
+	<narrower rdf:resource="http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist/00/1322.013"/>
+	<narrower rdf:resource="http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist/00/1322.014"/>
+	<narrower rdf:resource="http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist/00/1322.015"/>
+	<narrower rdf:resource="http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist/00/1322.016"/>
+	<narrower rdf:resource="http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist/00/1322.017"/>
+	<notation rdf:datatype="http://www.w3.org/2001/XMLSchema#string">1322</notation>
+	<prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Χρηματοδοτήσεις από Κεντρικούς φορείς</prefLabel>
+	<broader rdf:resource="http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist/00"/>
+	<broadMatch rdf:resource="http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014/1322"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist/00/1322.001">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<inScheme rdf:resource="http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist"/>
+	<notation rdf:datatype="http://www.w3.org/2001/XMLSchema#string">1322.001</notation>
+	<prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Επιχορηγήσεις  Γ.Γ.Α. για κλειστό κολυμβητήριο</prefLabel>
+	<broader rdf:resource="http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist/00/1322"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist/00/1322.002">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<inScheme rdf:resource="http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist"/>
+	<notation rdf:datatype="http://www.w3.org/2001/XMLSchema#string">1322.002</notation>
+	<prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Επιχορήγηση  ΟΠΑΑΧ</prefLabel>
+	<broader rdf:resource="http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist/00/1322"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist/00/1322.003">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<inScheme rdf:resource="http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist"/>
+	<notation rdf:datatype="http://www.w3.org/2001/XMLSchema#string">1322.003</notation>
+	<prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Επιχορηγήση προγράμματος ΘΗΣΕΑΣ</prefLabel>
+	<broader rdf:resource="http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist/00/1322"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist/00/1322.004">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<inScheme rdf:resource="http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist"/>
+	<notation rdf:datatype="http://www.w3.org/2001/XMLSchema#string">1322.004</notation>
+	<prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Επιχορήγηση ΟΣΚ</prefLabel>
+	<broader rdf:resource="http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist/00/1322"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist/00/1322.005">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<inScheme rdf:resource="http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist"/>
+	<notation rdf:datatype="http://www.w3.org/2001/XMLSchema#string">1322.005</notation>
+	<prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Επιχορήγηση ΥΠΕΣ</prefLabel>
+	<broader rdf:resource="http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist/00/1322"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist/00/1322.006">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<inScheme rdf:resource="http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist"/>
+	<notation rdf:datatype="http://www.w3.org/2001/XMLSchema#string">1322.006</notation>
+	<prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Επιχορήγηση ΕΣΠΑ</prefLabel>
+	<broader rdf:resource="http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist/00/1322"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist/00/1322.007">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<inScheme rdf:resource="http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist"/>
+	<notation rdf:datatype="http://www.w3.org/2001/XMLSchema#string">1322.007</notation>
+	<prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Επιχορήγηση ΥΠ.Α.Α.Τ. για το έργο Ανάδειξη Οικισμού Σελίου</prefLabel>
+	<broader rdf:resource="http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist/00/1322"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist/00/1322.008">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<inScheme rdf:resource="http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist"/>
+	<notation rdf:datatype="http://www.w3.org/2001/XMLSchema#string">1322.008</notation>
+	<prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Επιχορήγηση ΥΠ.Α.Α.Τ.για το έργο 'Προμήθεια πινακίδων για την σήμανση των αξιοθέατων και μνημείων στη Βεργίνα'</prefLabel>
+	<broader rdf:resource="http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist/00/1322"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist/00/1322.010">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<inScheme rdf:resource="http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist"/>
+	<notation rdf:datatype="http://www.w3.org/2001/XMLSchema#string">1322.010</notation>
+	<prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Επιχορήγηση ΥΠΕΣ για το έργο Καινοτόμο σύστημα εξοικονόμησης καυσίμων με εφαρμογή στα δημοτικά οχήματακαι τα δημοτικά κτίρια του Δήμου Βέροιαςκαι σύστημα βελτιστοποίησης της αποκομιδής απορριμμάτων</prefLabel>
+	<broader rdf:resource="http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist/00/1322"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist/00/1322.011">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<inScheme rdf:resource="http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist"/>
+	<notation rdf:datatype="http://www.w3.org/2001/XMLSchema#string">1322.011</notation>
+	<prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Επιχορήγηση ΥΠΑΑΝ για το έργο Τεχνική Βοήθεια Δήμου Βέροιας</prefLabel>
+	<broader rdf:resource="http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist/00/1322"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist/00/1322.012">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<inScheme rdf:resource="http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist"/>
+	<notation rdf:datatype="http://www.w3.org/2001/XMLSchema#string">1322.012</notation>
+	<prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Επιχορήγηση έργου Εξοικονόμηση ενέργειας Βέροιας</prefLabel>
+	<broader rdf:resource="http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist/00/1322"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist/00/1322.013">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<inScheme rdf:resource="http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist"/>
+	<notation rdf:datatype="http://www.w3.org/2001/XMLSchema#string">1322.013</notation>
+	<prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Επιχορήγηση για προμήθεια εξοπλισμού για τη μεταφόρτωση και μεταφορά των απορριμάτων του Δήμου Βέροιας</prefLabel>
+	<broader rdf:resource="http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist/00/1322"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist/00/1322.014">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<inScheme rdf:resource="http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist"/>
+	<notation rdf:datatype="http://www.w3.org/2001/XMLSchema#string">1322.014</notation>
+	<prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Επιχορήγηση ΥΠΕΣ για το πρόγραμμα 'Ανάπτυξη δομών και υπηρεσιών της Τοπικής Αυτοδιοίκησης προς όφελος των γυναικών για την καταπολέμηση της βίας- Δημιουργία κέντρων συμβουλευτικής υποστήρηξης γυναικών'</prefLabel>
+	<broader rdf:resource="http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist/00/1322"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist/00/1322.015">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<inScheme rdf:resource="http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist"/>
+	<notation rdf:datatype="http://www.w3.org/2001/XMLSchema#string">1322.015</notation>
+	<prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Επιχορήγηση από το Πράσινο Ταμείο για το πρόγραμμα 'Αστική αναζωογώνηση πόλεων 2012-2015'</prefLabel>
+	<broader rdf:resource="http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist/00/1322"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist/00/1322.016">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<inScheme rdf:resource="http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist"/>
+	<notation rdf:datatype="http://www.w3.org/2001/XMLSchema#string">1322.016</notation>
+	<prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Επιχορήγηση Πράσινου Ταμείου για το χρηματοδοτικό πρόγραμμα 'Ολοκλήρωση Πολεοδομικού Σχεδιασμού'</prefLabel>
+	<broader rdf:resource="http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist/00/1322"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist/00/1322.017">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<inScheme rdf:resource="http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist"/>
+	<notation rdf:datatype="http://www.w3.org/2001/XMLSchema#string">1322.017</notation>
+	<prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Επιχορήγηση ΥΠΑΑΝ για το έργο 'Εκσυγχρονισμός βελτίωση αρδευτικών δικτύων στα Δ.Δ. Σφυκιάς Ριζωμάτων του Δ. Μακεδονίδος'</prefLabel>
+	<broader rdf:resource="http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist/00/1322"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist/00/1325">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<inScheme rdf:resource="http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist"/>
+	<narrower rdf:resource="http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist/00/1325.001"/>
+	<narrower rdf:resource="http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist/00/1325.002"/>
+	<notation rdf:datatype="http://www.w3.org/2001/XMLSchema#string">1325</notation>
+	<prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Επιχορηγήσεις από εθνικούς πόρους για κάλυψη έκτακτων αναγκών για έργα</prefLabel>
+	<broader rdf:resource="http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist/00"/>
+	<broadMatch rdf:resource="http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014/1325"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist/00/1325.001">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<inScheme rdf:resource="http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist"/>
+	<notation rdf:datatype="http://www.w3.org/2001/XMLSchema#string">1325.001</notation>
+	<prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Έπιχορηγήσεις ΥΠΕΣ για Επενδύσεις-Έργα</prefLabel>
+	<broader rdf:resource="http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist/00/1325"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist/00/1325.002">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<inScheme rdf:resource="http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist"/>
+	<notation rdf:datatype="http://www.w3.org/2001/XMLSchema#string">1325.002</notation>
+	<prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Επιχορηγήσεις ΔΕΗ για αντιπλημυρική μελέτη Τριποτάμου</prefLabel>
+	<broader rdf:resource="http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist/00/1325"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist/00/1326">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<inScheme rdf:resource="http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist"/>
+	<notation rdf:datatype="http://www.w3.org/2001/XMLSchema#string">1326</notation>
+	<prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Επιχορηγήσεις ΔΕΗ για αντιπλημυρική μελέτη Τριποτάμου</prefLabel>
+	<broader rdf:resource="http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist/00"/>
+	<broadMatch rdf:resource="http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014/1326"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist/00/1327">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<inScheme rdf:resource="http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist"/>
+	<notation rdf:datatype="http://www.w3.org/2001/XMLSchema#string">1327</notation>
+	<prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Λοιπές επιχορηγήσεις για επενδύσεις και έργα</prefLabel>
+	<broader rdf:resource="http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist/00"/>
+	<broadMatch rdf:resource="http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014/1327"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist/00/1411">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<inScheme rdf:resource="http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist"/>
+	<narrower rdf:resource="http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist/00/1411.001"/>
+	<narrower rdf:resource="http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist/00/1411.002"/>
+	<narrower rdf:resource="http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist/00/1411.003"/>
+	<notation rdf:datatype="http://www.w3.org/2001/XMLSchema#string">1411</notation>
+	<prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Προϊόν δωρεών</prefLabel>
+	<broader rdf:resource="http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist/00"/>
+	<broadMatch rdf:resource="http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014/1411"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist/00/1411.001">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<inScheme rdf:resource="http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist"/>
+	<notation rdf:datatype="http://www.w3.org/2001/XMLSchema#string">1411.001</notation>
+	<prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Προιόν δωρεών</prefLabel>
+	<broader rdf:resource="http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist/00/1411"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist/00/1411.002">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<inScheme rdf:resource="http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist"/>
+	<notation rdf:datatype="http://www.w3.org/2001/XMLSchema#string">1411.002</notation>
+	<prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Προιόν δωρεών Αφών Κούσιου</prefLabel>
+	<broader rdf:resource="http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist/00/1411"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist/00/1411.003">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<inScheme rdf:resource="http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist"/>
+	<notation rdf:datatype="http://www.w3.org/2001/XMLSchema#string">1411.003</notation>
+	<prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Προιον δωρεάς CYTA Ελλάς Τηλεπικοινωνιακή Α.Ε.</prefLabel>
+	<broader rdf:resource="http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist/00/1411"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist/00/1511">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<inScheme rdf:resource="http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist"/>
+	<notation rdf:datatype="http://www.w3.org/2001/XMLSchema#string">1511</notation>
+	<prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Προσαυξήσεις εκπρόθεσμης καταβολής χρεών</prefLabel>
+	<broader rdf:resource="http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist/00"/>
+	<broadMatch rdf:resource="http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014/1511"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist/00/1512">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<inScheme rdf:resource="http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist"/>
+	<notation rdf:datatype="http://www.w3.org/2001/XMLSchema#string">1512</notation>
+	<prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Πρόστιμα του ΚΟΚ, του ΝΔ 805/71 και του ΑΝ 170/67 (άρθρο 31 Ν 2130/93)</prefLabel>
+	<broader rdf:resource="http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist/00"/>
+	<broadMatch rdf:resource="http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014/1512"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist/00/1513">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<inScheme rdf:resource="http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist"/>
+	<notation rdf:datatype="http://www.w3.org/2001/XMLSchema#string">1513</notation>
+	<prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Πρόστιμα για παραβάσεις φορολογικών διατάξεων (άρθρο 19 Ν 1080/80)</prefLabel>
+	<broader rdf:resource="http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist/00"/>
+	<broadMatch rdf:resource="http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014/1513"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist/00/1514">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<inScheme rdf:resource="http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist"/>
+	<notation rdf:datatype="http://www.w3.org/2001/XMLSchema#string">1514</notation>
+	<prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Πρόστιμα ανέγερσης και διατήρησης αυθαιρέτων κατασκευών (άρθρο 12 Ν 1647/86)</prefLabel>
+	<broader rdf:resource="http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist/00"/>
+	<broadMatch rdf:resource="http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014/1514"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist/00/1515">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<inScheme rdf:resource="http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist"/>
+	<notation rdf:datatype="http://www.w3.org/2001/XMLSchema#string">1515</notation>
+	<prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Πειθαρχικά πρόστιμα σε βάρος των υπαλλήλων (άρθρο 284 Ν 1188/81)</prefLabel>
+	<broader rdf:resource="http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist/00"/>
+	<broadMatch rdf:resource="http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014/1515"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist/00/1516">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<inScheme rdf:resource="http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist"/>
+	<notation rdf:datatype="http://www.w3.org/2001/XMLSchema#string">1516</notation>
+	<prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Έσοδα από διάφορες καταλογιστικές αποφάσεις</prefLabel>
+	<broader rdf:resource="http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist/00"/>
+	<broadMatch rdf:resource="http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014/1516"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist/00/1517">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<inScheme rdf:resource="http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist"/>
+	<notation rdf:datatype="http://www.w3.org/2001/XMLSchema#string">1517</notation>
+	<prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Πρόστιμα και ποινικές ρήτρες που επιβάλλονται σε βάρος προμηθευτών και εργολάβων</prefLabel>
+	<broader rdf:resource="http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist/00"/>
+	<broadMatch rdf:resource="http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014/1517"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist/00/1518">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<inScheme rdf:resource="http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist"/>
+	<notation rdf:datatype="http://www.w3.org/2001/XMLSchema#string">1518</notation>
+	<prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Καταπτώσεις εγγυήσεων</prefLabel>
+	<broader rdf:resource="http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist/00"/>
+	<broadMatch rdf:resource="http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014/1518"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist/00/1519">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<inScheme rdf:resource="http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist"/>
+	<notation rdf:datatype="http://www.w3.org/2001/XMLSchema#string">1519</notation>
+	<prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Λοιπά πρόστιμα και χρηματικές ποινές</prefLabel>
+	<broader rdf:resource="http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist/00"/>
+	<broadMatch rdf:resource="http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014/1519"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist/00/1521">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<inScheme rdf:resource="http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist"/>
+	<notation rdf:datatype="http://www.w3.org/2001/XMLSchema#string">1521</notation>
+	<prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Παράβολα πλειστηριασμών (άρθρα 932 και 959 ΚΠολΔ)</prefLabel>
+	<broader rdf:resource="http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist/00"/>
+	<broadMatch rdf:resource="http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014/1521"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist/00/1522">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<inScheme rdf:resource="http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist"/>
+	<notation rdf:datatype="http://www.w3.org/2001/XMLSchema#string">1522</notation>
+	<prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Παράβολα υποβαλλόμενα για τη χορήγηση διευκολύνσεων τμηματικής καταβολής χρεών (άρθρο 18 Ν 2648/98)</prefLabel>
+	<broader rdf:resource="http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist/00"/>
+	<broadMatch rdf:resource="http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014/1522"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist/00/1611">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<inScheme rdf:resource="http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist"/>
+	<notation rdf:datatype="http://www.w3.org/2001/XMLSchema#string">1611</notation>
+	<prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Δαπάνες αφαίρεσης παράνομων διαφημιστικών μέσων (άρθρο 9 Ν 2946/2001, άρθρο 11 Ν 2696/99)</prefLabel>
+	<broader rdf:resource="http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist/00"/>
+	<broadMatch rdf:resource="http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014/1611"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist/00/1612">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<inScheme rdf:resource="http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist"/>
+	<notation rdf:datatype="http://www.w3.org/2001/XMLSchema#string">1612</notation>
+	<prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Έσοδα από δαπάνες  ακινητοποίησης και μεταφοράς παρανόμως σταθμευμένων οχημάτων (άρθρο 45 Ν 2218/94)</prefLabel>
+	<broader rdf:resource="http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist/00"/>
+	<broadMatch rdf:resource="http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014/1612"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist/00/1613">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<inScheme rdf:resource="http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist"/>
+	<notation rdf:datatype="http://www.w3.org/2001/XMLSchema#string">1613</notation>
+	<prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Έσοδα από δαπάνες απομάκρυνσης και φύλαξης εγκαταλελειμμένων οχημάτων (ΚΥΑ 1002901/67/2002)</prefLabel>
+	<broader rdf:resource="http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist/00"/>
+	<broadMatch rdf:resource="http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014/1613"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist/00/1614">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<inScheme rdf:resource="http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist"/>
+	<notation rdf:datatype="http://www.w3.org/2001/XMLSchema#string">1614</notation>
+	<prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Έσοδα από την κατασκευή, επισκευή και συντήρηση οδών και πεζοδρομίων (άρθρο 47 Ν 2696/99, άρθρο 367 ΚΒΠΝ)</prefLabel>
+	<broader rdf:resource="http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist/00"/>
+	<broadMatch rdf:resource="http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014/1614"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist/00/1615">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<inScheme rdf:resource="http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist"/>
+	<notation rdf:datatype="http://www.w3.org/2001/XMLSchema#string">1615</notation>
+	<prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Αποζημίωση καταβληθείσα για λογαρισμό των υπόχρεων, λόγω προσκύρωσης ή ρυμοτόμησης ακινήτων (άρθρο 26 Ν 2539/97)</prefLabel>
+	<broader rdf:resource="http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist/00"/>
+	<broadMatch rdf:resource="http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014/1615"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist/00/1616">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<inScheme rdf:resource="http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist"/>
+	<notation rdf:datatype="http://www.w3.org/2001/XMLSchema#string">1616</notation>
+	<prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Έσοδα από συμβάσεις διαδημοτικής συνεργασίας (άρθρο 23 Ν 2539/97)</prefLabel>
+	<broader rdf:resource="http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist/00"/>
+	<broadMatch rdf:resource="http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014/1616"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist/00/1617">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<inScheme rdf:resource="http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist"/>
+	<notation rdf:datatype="http://www.w3.org/2001/XMLSchema#string">1617</notation>
+	<prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Εισφορές άλλων ΟΤΑ για την καταβολή αποζημίωσης στα μέλη υπηρεσιακού συμβουλίου (άρθρο 12 Ν 2130/93)</prefLabel>
+	<broader rdf:resource="http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist/00"/>
+	<broadMatch rdf:resource="http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014/1617"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist/00/1619">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<inScheme rdf:resource="http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist"/>
+	<notation rdf:datatype="http://www.w3.org/2001/XMLSchema#string">1619</notation>
+	<prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Λοιπά έσοδα από δαπάνες πραγματοποιηθείσες για λογαρισμό τρίτων</prefLabel>
+	<broader rdf:resource="http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist/00"/>
+	<broadMatch rdf:resource="http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014/1619"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist/00/1622">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<inScheme rdf:resource="http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist"/>
+	<notation rdf:datatype="http://www.w3.org/2001/XMLSchema#string">1622</notation>
+	<prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Έσοδα από δαπάνες ακινητοποίησης και μεταφοράς παρανόμως σταθμευμένων οχημάτων</prefLabel>
+	<broader rdf:resource="http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist/00"/>
+	<broadMatch rdf:resource="http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014/1622"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist/00/1623">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<inScheme rdf:resource="http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist"/>
+	<notation rdf:datatype="http://www.w3.org/2001/XMLSchema#string">1623</notation>
+	<prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Έσοδα από δαπάνες απομάκρυνσης και φύλαξης εγκαταλελειμένων οχημάτων</prefLabel>
+	<broader rdf:resource="http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist/00"/>
+	<broadMatch rdf:resource="http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014/1623"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist/00/1624">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<inScheme rdf:resource="http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist"/>
+	<notation rdf:datatype="http://www.w3.org/2001/XMLSchema#string">1624</notation>
+	<prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Έσοδα από κατασκευή, επισκευή και συντήρηση οδών και πεζοδρομίων</prefLabel>
+	<broader rdf:resource="http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist/00"/>
+	<broadMatch rdf:resource="http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014/1624"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist/00/1626">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<inScheme rdf:resource="http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist"/>
+	<notation rdf:datatype="http://www.w3.org/2001/XMLSchema#string">1626</notation>
+	<prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Εσοδα από συμβάσεις διαδημοτικής συνεργασίας (άρθρο 23Ν 2539/97)</prefLabel>
+	<broader rdf:resource="http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist/00"/>
+	<broadMatch rdf:resource="http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014/1626"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist/00/1627">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<inScheme rdf:resource="http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist"/>
+	<notation rdf:datatype="http://www.w3.org/2001/XMLSchema#string">1627</notation>
+	<prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Εισφορές άλλων ΟΤΑ για την καταβολή αποζημίωσης στα μέλη του υπηρεσιακού συμβουλίου</prefLabel>
+	<broader rdf:resource="http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist/00"/>
+	<broadMatch rdf:resource="http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014/1627"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist/00/1699">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<inScheme rdf:resource="http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist"/>
+	<notation rdf:datatype="http://www.w3.org/2001/XMLSchema#string">1699</notation>
+	<prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Λοιπά έκτακτα έσοδα που δεν μπορούν να ενταχθούν στις ανωτέρω τάξεις</prefLabel>
+	<broader rdf:resource="http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist/00"/>
+	<broadMatch rdf:resource="http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014/1699"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist/00/2111">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<inScheme rdf:resource="http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist"/>
+	<notation rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2111</notation>
+	<prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Τακτικά έσοδα από τέλη καθαριότητας και ηλεκτροφωτισμού που βεβαιώ</prefLabel>
+	<broader rdf:resource="http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist/00"/>
+	<broadMatch rdf:resource="http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014/2111"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist/00/2112">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<inScheme rdf:resource="http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist"/>
+	<notation rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2112</notation>
+	<prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Τακτικά έσοδα από τέλη και δικαιώματα ύδρευσης</prefLabel>
+	<broader rdf:resource="http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist/00"/>
+	<broadMatch rdf:resource="http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014/2112"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist/00/2113">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<inScheme rdf:resource="http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist"/>
+	<notation rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2113</notation>
+	<prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Τακτικά έσοδα από τέλη και δικαιώματα άρδευσης</prefLabel>
+	<broader rdf:resource="http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist/00"/>
+	<broadMatch rdf:resource="http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014/2113"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist/00/2114">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<inScheme rdf:resource="http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist"/>
+	<notation rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2114</notation>
+	<prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Τακτικά έσοδα από τέλη και δικαιώματα αποχέτευσης</prefLabel>
+	<broader rdf:resource="http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist/00"/>
+	<broadMatch rdf:resource="http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014/2114"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist/00/2115">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<inScheme rdf:resource="http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist"/>
+	<notation rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2115</notation>
+	<prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Τακτικά έσοδα από τέλος ακίνητης περιουσίας</prefLabel>
+	<broader rdf:resource="http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist/00"/>
+	<broadMatch rdf:resource="http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014/2115"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist/00/2117">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<inScheme rdf:resource="http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist"/>
+	<notation rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2117</notation>
+	<prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Τακτικά έσοδα από εισφορά λόγω ένταξης ή επέκτασης πολεοδομικών σχεδίων</prefLabel>
+	<broader rdf:resource="http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist/00"/>
+	<broadMatch rdf:resource="http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014/2117"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist/00/2118">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<inScheme rdf:resource="http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist"/>
+	<notation rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2118</notation>
+	<prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Τακτικά έσοδα επί των ακαθαρίστων εσόδων επιτηδευματιών</prefLabel>
+	<broader rdf:resource="http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist/00"/>
+	<broadMatch rdf:resource="http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014/2118"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist/00/2119">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<inScheme rdf:resource="http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist"/>
+	<notation rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2119</notation>
+	<prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Τακτικά έσοδα από λοιπά έσοδα</prefLabel>
+	<broader rdf:resource="http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist/00"/>
+	<broadMatch rdf:resource="http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014/2119"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist/00/2211">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<inScheme rdf:resource="http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist"/>
+	<notation rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2211</notation>
+	<prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Έκτακτα γενικά έσοδα</prefLabel>
+	<broader rdf:resource="http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist/00"/>
+	<broadMatch rdf:resource="http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014/2211"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist/00/2212">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<inScheme rdf:resource="http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist"/>
+	<notation rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2212</notation>
+	<prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Έκτακτα ειδικευμένα έσοδα</prefLabel>
+	<broader rdf:resource="http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist/00"/>
+	<broadMatch rdf:resource="http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014/2212"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist/00/3111">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<inScheme rdf:resource="http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist"/>
+	<notation rdf:datatype="http://www.w3.org/2001/XMLSchema#string">3111</notation>
+	<prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Δάνεια Ταμείου Παρακαταθηκών και Δανείων</prefLabel>
+	<broader rdf:resource="http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist/00"/>
+	<broadMatch rdf:resource="http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014/3111"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist/00/3112">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<inScheme rdf:resource="http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist"/>
+	<notation rdf:datatype="http://www.w3.org/2001/XMLSchema#string">3112</notation>
+	<prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Δάνεια από άλλους πιστωτικούς οργανισμούς της ημεδαπής ή της αλλοδαπής (άρθρο 11 Ν 2503/97)</prefLabel>
+	<broader rdf:resource="http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist/00"/>
+	<broadMatch rdf:resource="http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014/3112"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist/00/3121">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<inScheme rdf:resource="http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist"/>
+	<notation rdf:datatype="http://www.w3.org/2001/XMLSchema#string">3121</notation>
+	<prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Δάνεια του Ταμείου Παρακαταθηκών και Δανείων</prefLabel>
+	<broader rdf:resource="http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist/00"/>
+	<broadMatch rdf:resource="http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014/3121"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist/00/3122">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<inScheme rdf:resource="http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist"/>
+	<notation rdf:datatype="http://www.w3.org/2001/XMLSchema#string">3122</notation>
+	<prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Δάνεια από άλλους πιστωτικούς οργανισμούς της ημεδαπής ή της αλλοδαπής (άρθρο 11 Ν 2503/97)</prefLabel>
+	<broader rdf:resource="http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist/00"/>
+	<broadMatch rdf:resource="http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014/3122"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist/00/3211">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<inScheme rdf:resource="http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist"/>
+	<notation rdf:datatype="http://www.w3.org/2001/XMLSchema#string">3211</notation>
+	<prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Τέλη καθαριότητας και ηλεκτροφωτισμού</prefLabel>
+	<broader rdf:resource="http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist/00"/>
+	<broadMatch rdf:resource="http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014/3211"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist/00/3212">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<inScheme rdf:resource="http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist"/>
+	<notation rdf:datatype="http://www.w3.org/2001/XMLSchema#string">3212</notation>
+	<prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Τέλη και δικαιώματα ύδρευσης</prefLabel>
+	<broader rdf:resource="http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist/00"/>
+	<broadMatch rdf:resource="http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014/3212"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist/00/3213">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<inScheme rdf:resource="http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist"/>
+	<notation rdf:datatype="http://www.w3.org/2001/XMLSchema#string">3213</notation>
+	<prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Τέλη και δικαιώματα άρδευσης</prefLabel>
+	<broader rdf:resource="http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist/00"/>
+	<broadMatch rdf:resource="http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014/3213"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist/00/3214">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<inScheme rdf:resource="http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist"/>
+	<notation rdf:datatype="http://www.w3.org/2001/XMLSchema#string">3214</notation>
+	<prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Τέλη και δικαιωματά αποχέτευσης</prefLabel>
+	<broader rdf:resource="http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist/00"/>
+	<broadMatch rdf:resource="http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014/3214"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist/00/3215">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<inScheme rdf:resource="http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist"/>
+	<notation rdf:datatype="http://www.w3.org/2001/XMLSchema#string">3215</notation>
+	<prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Τέλος ακίνητης περιουσίας</prefLabel>
+	<broader rdf:resource="http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist/00"/>
+	<broadMatch rdf:resource="http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014/3215"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist/00/3217">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<inScheme rdf:resource="http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist"/>
+	<notation rdf:datatype="http://www.w3.org/2001/XMLSchema#string">3217</notation>
+	<prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Εισφορά λόγω ένταξης ή επέκτασης πολεοδομικών σχεδίων</prefLabel>
+	<broader rdf:resource="http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist/00"/>
+	<broadMatch rdf:resource="http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014/3217"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist/00/3218">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<inScheme rdf:resource="http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist"/>
+	<notation rdf:datatype="http://www.w3.org/2001/XMLSchema#string">3218</notation>
+	<prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Τακτικά έσοδα απί των ακαθαρίστων εσόδων επιτηδευματιών</prefLabel>
+	<broader rdf:resource="http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist/00"/>
+	<broadMatch rdf:resource="http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014/3218"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist/00/3219">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<inScheme rdf:resource="http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist"/>
+	<narrower rdf:resource="http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist/00/3219.001"/>
+	<narrower rdf:resource="http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist/00/3219.002"/>
+	<narrower rdf:resource="http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist/00/3219.003"/>
+	<narrower rdf:resource="http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist/00/3219.004"/>
+	<narrower rdf:resource="http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist/00/3219.005"/>
+	<narrower rdf:resource="http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist/00/3219.006"/>
+	<narrower rdf:resource="http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist/00/3219.007"/>
+	<narrower rdf:resource="http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist/00/3219.008"/>
+	<notation rdf:datatype="http://www.w3.org/2001/XMLSchema#string">3219</notation>
+	<prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Λοιπά έσοδα</prefLabel>
+	<broader rdf:resource="http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist/00"/>
+	<broadMatch rdf:resource="http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014/3219"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist/00/3219.001">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<inScheme rdf:resource="http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist"/>
+	<notation rdf:datatype="http://www.w3.org/2001/XMLSchema#string">3219.001</notation>
+	<prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Μισθώματα ακινητων</prefLabel>
+	<broader rdf:resource="http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist/00/3219"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist/00/3219.002">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<inScheme rdf:resource="http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist"/>
+	<notation rdf:datatype="http://www.w3.org/2001/XMLSchema#string">3219.002</notation>
+	<prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Μισθώματα Δημοτικής Αγοράς</prefLabel>
+	<broader rdf:resource="http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist/00/3219"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist/00/3219.003">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<inScheme rdf:resource="http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist"/>
+	<notation rdf:datatype="http://www.w3.org/2001/XMLSchema#string">3219.003</notation>
+	<prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Τέλος Διαφήμισης</prefLabel>
+	<broader rdf:resource="http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist/00/3219"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist/00/3219.004">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<inScheme rdf:resource="http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist"/>
+	<notation rdf:datatype="http://www.w3.org/2001/XMLSchema#string">3219.004</notation>
+	<prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Τέλη χρήσης κοινόχρηστων χώρων</prefLabel>
+	<broader rdf:resource="http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist/00/3219"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist/00/3219.005">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<inScheme rdf:resource="http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist"/>
+	<notation rdf:datatype="http://www.w3.org/2001/XMLSchema#string">3219.005</notation>
+	<prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Μισθώματα λατομείων</prefLabel>
+	<broader rdf:resource="http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist/00/3219"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist/00/3219.006">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<inScheme rdf:resource="http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist"/>
+	<notation rdf:datatype="http://www.w3.org/2001/XMLSchema#string">3219.006</notation>
+	<prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Δικαιώματα βοσκής</prefLabel>
+	<broader rdf:resource="http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist/00/3219"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist/00/3219.007">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<inScheme rdf:resource="http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist"/>
+	<notation rdf:datatype="http://www.w3.org/2001/XMLSchema#string">3219.007</notation>
+	<prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Αυθαίρετη αγροτική καλλιέργεια</prefLabel>
+	<broader rdf:resource="http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist/00/3219"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist/00/3219.008">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<inScheme rdf:resource="http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist"/>
+	<notation rdf:datatype="http://www.w3.org/2001/XMLSchema#string">3219.008</notation>
+	<prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Λοιπά τακτικά έσοδα</prefLabel>
+	<broader rdf:resource="http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist/00/3219"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist/00/3221">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<inScheme rdf:resource="http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist"/>
+	<narrower rdf:resource="http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist/00/3221.001"/>
+	<narrower rdf:resource="http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist/00/3221.002"/>
+	<narrower rdf:resource="http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist/00/3221.003"/>
+	<narrower rdf:resource="http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist/00/3221.004"/>
+	<narrower rdf:resource="http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist/00/3221.005"/>
+	<narrower rdf:resource="http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist/00/3221.010"/>
+	<notation rdf:datatype="http://www.w3.org/2001/XMLSchema#string">3221</notation>
+	<prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Έκτακτα γενικά έσοδα</prefLabel>
+	<broader rdf:resource="http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist/00"/>
+	<broadMatch rdf:resource="http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014/3221"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist/00/3221.001">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<inScheme rdf:resource="http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist"/>
+	<notation rdf:datatype="http://www.w3.org/2001/XMLSchema#string">3221.001</notation>
+	<prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Έσοδα από εκποίηση ακίνητης περιουσίας</prefLabel>
+	<broader rdf:resource="http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist/00/3221"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist/00/3221.002">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<inScheme rdf:resource="http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist"/>
+	<notation rdf:datatype="http://www.w3.org/2001/XMLSchema#string">3221.002</notation>
+	<prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Έσοδα από προσκύρωση δημοτικών εκτάσεων</prefLabel>
+	<broader rdf:resource="http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist/00/3221"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist/00/3221.003">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<inScheme rdf:resource="http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist"/>
+	<notation rdf:datatype="http://www.w3.org/2001/XMLSchema#string">3221.003</notation>
+	<prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Πρόστιμα ανέγερσης και διατήρησης αυθαιρέτων</prefLabel>
+	<broader rdf:resource="http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist/00/3221"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist/00/3221.004">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<inScheme rdf:resource="http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist"/>
+	<notation rdf:datatype="http://www.w3.org/2001/XMLSchema#string">3221.004</notation>
+	<prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Πρόστιμα Κ.Ο.Κ.</prefLabel>
+	<broader rdf:resource="http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist/00/3221"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist/00/3221.005">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<inScheme rdf:resource="http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist"/>
+	<notation rdf:datatype="http://www.w3.org/2001/XMLSchema#string">3221.005</notation>
+	<prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Λοιπά πρόστιμα</prefLabel>
+	<broader rdf:resource="http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist/00/3221"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist/00/3221.010">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<inScheme rdf:resource="http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist"/>
+	<notation rdf:datatype="http://www.w3.org/2001/XMLSchema#string">3221.010</notation>
+	<prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Καταλογισμός χρηματικού ελλείμματος</prefLabel>
+	<broader rdf:resource="http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist/00/3221"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist/00/3222">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<inScheme rdf:resource="http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist"/>
+	<notation rdf:datatype="http://www.w3.org/2001/XMLSchema#string">3222</notation>
+	<prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Έκτακτα ειδικευμένα έσοδα</prefLabel>
+	<broader rdf:resource="http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist/00"/>
+	<broadMatch rdf:resource="http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014/3222"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist/00/4111">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<inScheme rdf:resource="http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist"/>
+	<notation rdf:datatype="http://www.w3.org/2001/XMLSchema#string">4111</notation>
+	<prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Εισφορά υπέρ του Δημοσίου στις αποδοχές και τα έξοδα παράστασης</prefLabel>
+	<broader rdf:resource="http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist/00"/>
+	<broadMatch rdf:resource="http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014/4111"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist/00/4112">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<inScheme rdf:resource="http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist"/>
+	<notation rdf:datatype="http://www.w3.org/2001/XMLSchema#string">4112</notation>
+	<prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Εξαγορά συντάξιμης υπηρεσίας</prefLabel>
+	<broader rdf:resource="http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist/00"/>
+	<broadMatch rdf:resource="http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014/4112"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist/00/4121">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<inScheme rdf:resource="http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist"/>
+	<notation rdf:datatype="http://www.w3.org/2001/XMLSchema#string">4121</notation>
+	<prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Φόροι μισθωτών υπηρεσιών</prefLabel>
+	<broader rdf:resource="http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist/00"/>
+	<broadMatch rdf:resource="http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014/4121"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist/00/4122">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<inScheme rdf:resource="http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist"/>
+	<notation rdf:datatype="http://www.w3.org/2001/XMLSchema#string">4122</notation>
+	<prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Φόροι και χαρτόσημο Δημάρχων Αντιδημάρχων, μελών Δημοτικών Συμβουλίων και λοιπών συλλογικών οργάνων</prefLabel>
+	<broader rdf:resource="http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist/00"/>
+	<broadMatch rdf:resource="http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014/4122"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist/00/4123">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<inScheme rdf:resource="http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist"/>
+	<notation rdf:datatype="http://www.w3.org/2001/XMLSchema#string">4123</notation>
+	<prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Φόρων προμηθευτών εργολάβων ελ. Επαγγελματιών κλπ</prefLabel>
+	<broader rdf:resource="http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist/00"/>
+	<broadMatch rdf:resource="http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014/4123"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist/00/4124">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<inScheme rdf:resource="http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist"/>
+	<notation rdf:datatype="http://www.w3.org/2001/XMLSchema#string">4124</notation>
+	<prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Λοιπές κρατήσεις υπέρ του Δημοσίου</prefLabel>
+	<broader rdf:resource="http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist/00"/>
+	<broadMatch rdf:resource="http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014/4124"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist/00/4131">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<inScheme rdf:resource="http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist"/>
+	<notation rdf:datatype="http://www.w3.org/2001/XMLSchema#string">4131</notation>
+	<prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Εισφορές σε ασφαλιστικούς οργανισμούς και ταμεία</prefLabel>
+	<broader rdf:resource="http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist/00"/>
+	<broadMatch rdf:resource="http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014/4131"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist/00/4141">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<inScheme rdf:resource="http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist"/>
+	<notation rdf:datatype="http://www.w3.org/2001/XMLSchema#string">4141</notation>
+	<prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Κρατήσεις στις αποδοχές για την εξόφληση δανείων του ΤΠ &amp; Δ</prefLabel>
+	<broader rdf:resource="http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist/00"/>
+	<broadMatch rdf:resource="http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014/4141"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist/00/4142">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<inScheme rdf:resource="http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist"/>
+	<narrower rdf:resource="http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist/00/4142.001"/>
+	<notation rdf:datatype="http://www.w3.org/2001/XMLSchema#string">4142</notation>
+	<prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Εισπράξεις υπερ ΚΕΜΑΕΔ</prefLabel>
+	<broader rdf:resource="http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist/00"/>
+	<broadMatch rdf:resource="http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014/4142"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist/00/4142.001">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<inScheme rdf:resource="http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist"/>
+	<notation rdf:datatype="http://www.w3.org/2001/XMLSchema#string">4142.001</notation>
+	<prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Εισπράξεις υπέρ ιδρύματος ΚΑΠΠΟΥ</prefLabel>
+	<broader rdf:resource="http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist/00/4142"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist/00/4211">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<inScheme rdf:resource="http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist"/>
+	<notation rdf:datatype="http://www.w3.org/2001/XMLSchema#string">4211</notation>
+	<prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Επιστροφή χρημάτων από υπολόγους χρηματικών ενταλμάτων προπληρωμής</prefLabel>
+	<broader rdf:resource="http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist/00"/>
+	<broadMatch rdf:resource="http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014/4211"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist/00/4212">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<inScheme rdf:resource="http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist"/>
+	<narrower rdf:resource="http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist/00/4212.001"/>
+	<narrower rdf:resource="http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist/00/4212.002"/>
+	<notation rdf:datatype="http://www.w3.org/2001/XMLSchema#string">4212</notation>
+	<prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Επιστροφή πάγιας προκαταβολής</prefLabel>
+	<broader rdf:resource="http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist/00"/>
+	<broadMatch rdf:resource="http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014/4212"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist/00/4212.001">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<inScheme rdf:resource="http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist"/>
+	<notation rdf:datatype="http://www.w3.org/2001/XMLSchema#string">4212.001</notation>
+	<prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Επιστροφή πάγιας προκαταβολής</prefLabel>
+	<broader rdf:resource="http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist/00/4212"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist/00/4212.002">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<inScheme rdf:resource="http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist"/>
+	<notation rdf:datatype="http://www.w3.org/2001/XMLSchema#string">4212.002</notation>
+	<prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Επιστροφή πάγιας προκαταβολής προέδρων Δημοτικών και Τοπικών Κοινοτήτων</prefLabel>
+	<broader rdf:resource="http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist/00/4212"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist/00/4213">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<inScheme rdf:resource="http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist"/>
+	<notation rdf:datatype="http://www.w3.org/2001/XMLSchema#string">4213</notation>
+	<prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Επιστροφή αχρεωστήτως καταβληθέντων χρηματικών ποσών (άρθρο 26 Ν 318/69, Απόφ. Υπ. Οικν. 2081241/11652/1997)</prefLabel>
+	<broader rdf:resource="http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist/00"/>
+	<broadMatch rdf:resource="http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014/4213"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist/00/4214">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<inScheme rdf:resource="http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist"/>
+	<narrower rdf:resource="http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist/00/4214.001"/>
+	<narrower rdf:resource="http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist/00/4214.002"/>
+	<narrower rdf:resource="http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist/00/4214.003"/>
+	<notation rdf:datatype="http://www.w3.org/2001/XMLSchema#string">4214</notation>
+	<prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Επιστροφή εν γένει χρημάτων</prefLabel>
+	<broader rdf:resource="http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist/00"/>
+	<broadMatch rdf:resource="http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014/4214"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist/00/4214.001">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<inScheme rdf:resource="http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist"/>
+	<notation rdf:datatype="http://www.w3.org/2001/XMLSchema#string">4214.001</notation>
+	<prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Επιστροφή χρημάτων από Δημοτικές Επιχειρήσεις</prefLabel>
+	<broader rdf:resource="http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist/00/4214"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist/00/4214.002">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<inScheme rdf:resource="http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist"/>
+	<notation rdf:datatype="http://www.w3.org/2001/XMLSchema#string">4214.002</notation>
+	<prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Επιστροφή παρακράτησης δανείου  από ΔΕΥΑΒ</prefLabel>
+	<broader rdf:resource="http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist/00/4214"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist/00/4214.003">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<inScheme rdf:resource="http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist"/>
+	<notation rdf:datatype="http://www.w3.org/2001/XMLSchema#string">4214.003</notation>
+	<prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Διάφορες επιστροφές χρημάτων</prefLabel>
+	<broader rdf:resource="http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist/00/4214"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist/00/5111">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<inScheme rdf:resource="http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist"/>
+	<notation rdf:datatype="http://www.w3.org/2001/XMLSchema#string">5111</notation>
+	<prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Χρηματικό υπόλοιπο προερχόμενο από τακτικά έσοδα για την κάλυψη  υποχρεώσεων  παρελθόντων ετών</prefLabel>
+	<broader rdf:resource="http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist/00"/>
+	<broadMatch rdf:resource="http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014/5111"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist/00/5112">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<inScheme rdf:resource="http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist"/>
+	<notation rdf:datatype="http://www.w3.org/2001/XMLSchema#string">5112</notation>
+	<prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Χρηματικό υπόλοιπο προερχόμενο από τακτικά έσοδα για την κάλυψη έργων του Π.Δ.Ε. ή πιστώσεις προοριζόμενες για δημόσιες επενδύσεις</prefLabel>
+	<broader rdf:resource="http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist/00"/>
+	<broadMatch rdf:resource="http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014/5112"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist/00/5121">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<inScheme rdf:resource="http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist"/>
+	<notation rdf:datatype="http://www.w3.org/2001/XMLSchema#string">5121</notation>
+	<prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Χρηματικό υπόλοιπο προερχόμενο από έκτακτα έσοδα για την κάλυψη υποχρεώσεων  παρελθόντων ετών</prefLabel>
+	<broader rdf:resource="http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist/00"/>
+	<broadMatch rdf:resource="http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014/5121"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist/00/5122">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<inScheme rdf:resource="http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist"/>
+	<notation rdf:datatype="http://www.w3.org/2001/XMLSchema#string">5122</notation>
+	<prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Χρηματικό υπόλοιπο προερχόμενο από έκτακτα έσοδα για την κάλυψη έργων του Π.Δ.Ε. ή πιστώσεις προοριζόμενες για δημόσιες επενδύσεις</prefLabel>
+	<broader rdf:resource="http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist/00"/>
+	<broadMatch rdf:resource="http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014/5122"/>
+</rdf:Description>
+
+</rdf:RDF>

@@ -1,0 +1,2557 @@
+@prefix gr-2016-dimension: <http://data.openbudgets.eu/ontology/dsd/greek-municipalities-2016/dimension/> .
+@prefix gr-dimension: <http://data.openbudgets.eu/ontology/dsd/greek-municipalities/dimension/> .
+@prefix kae-ota-ex14: <http://data.openbudgets.eu/resource/codelist/kae-ota-exodwn-2014/> .
+@prefix gr-administrations-2016: <http://data.openbudgets.eu/resource/codelist/kae-ota-administration-2016/> .
+@prefix gr-budgetPhase: <http://data.openbudgets.eu/resource/dataset/greek-municipalities/codelist/budget-phase/> .
+@prefix veroia-be2010-slice: <http://data.openbudgets.eu/resource/dataset/budget-veroia-expenditure-2010/slice/> .
+@prefix veroia-be2010-dsd: <http://data.openbudgets.eu/resource/dataset/budget-veroia-expenditure-2010/> .
+@prefix veroia-be2010-observation: <http://data.openbudgets.eu/resource/dataset/budget-veroia-expenditure-2010/observation/> .
+@prefix veroia-be2010-dimension: <http://data.openbudgets.eu/ontology/dsd/budget-veroia-expenditure-2010/dimension/> .
+@prefix veroia-be2010-codelist: <http://data.openbudgets.eu/resource/dataset/budget-veroia-expenditure-2010/codelist/> .
+@prefix dbp: <http://dbpedia.org/property/> .
+@prefix interval: <http://reference.data.gov.uk/def/intervals/> .
+@prefix obeu: <http://data.openbudgets.eu/ontology/> .
+@prefix obeu-attribute: <http://data.openbudgets.eu/ontology/dsd/attribute/> .
+@prefix obeu-codelist: <http://data.openbudgets.eu/resource/codelist/> .
+@prefix obeu-dimension: <http://data.openbudgets.eu/ontology/dsd/dimension/> .
+@prefix obeu-measure: <http://data.openbudgets.eu/ontology/dsd/measure/> .
+@prefix obeu-budgetphase: <http://data.openbudgets.eu/resource/codelist/budget-phase/> .
+@prefix obeu-currency: <http://data.openbudgets.eu/codelist/currency/> .
+@prefix obeu-operation: <http://data.openbudgets.eu/resource/codelist/operation-character/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix qb: <http://purl.org/linked-data/cube#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <http://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix time: <http://www.w3.org/2006/time#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix dcat: <http://www.w3.org/ns/dcat#> .
+@prefix terms: <http://purl.org/dc/terms/> .
+@prefix sesame: <http://www.openrdf.org/schema/sesame#> .
+@prefix fn: <http://www.w3.org/2005/xpath-functions#> .
+
+veroia-be2010-dsd:codelist a skos:ConceptScheme ;
+	skos:hasTopConcept veroia-be2010-codelist:00 , veroia-be2010-codelist:10 , veroia-be2010-codelist:15 , veroia-be2010-codelist:20 , veroia-be2010-codelist:30 , veroia-be2010-codelist:35 , veroia-be2010-codelist:40 , veroia-be2010-codelist:45 , veroia-be2010-codelist:50 , veroia-be2010-codelist:80 , veroia-be2010-codelist:90 ;
+	skos:prefLabel "Veroia municipality expenditure budget codelist as derived from the dataset of year 2010" .
+
+veroia-be2010-codelist:00 a skos:Concept ;
+	skos:inScheme veroia-be2010-dsd:codelist ;
+	skos:narrower <http://data.openbudgets.eu/resource/dataset/budget-veroia-expenditure-2010/codelist/00/6031> , <http://data.openbudgets.eu/resource/dataset/budget-veroia-expenditure-2010/codelist/00/6039> , <http://data.openbudgets.eu/resource/dataset/budget-veroia-expenditure-2010/codelist/00/6053> , <http://data.openbudgets.eu/resource/dataset/budget-veroia-expenditure-2010/codelist/00/6056> , <http://data.openbudgets.eu/resource/dataset/budget-veroia-expenditure-2010/codelist/00/6071> , <http://data.openbudgets.eu/resource/dataset/budget-veroia-expenditure-2010/codelist/00/6073> , <http://data.openbudgets.eu/resource/dataset/budget-veroia-expenditure-2010/codelist/00/6111> , <http://data.openbudgets.eu/resource/dataset/budget-veroia-expenditure-2010/codelist/00/6117> , <http://data.openbudgets.eu/resource/dataset/budget-veroia-expenditure-2010/codelist/00/6121> , <http://data.openbudgets.eu/resource/dataset/budget-veroia-expenditure-2010/codelist/00/6122> , <http://data.openbudgets.eu/resource/dataset/budget-veroia-expenditure-2010/codelist/00/6123> , <http://data.openbudgets.eu/resource/dataset/budget-veroia-expenditure-2010/codelist/00/6124> , <http://data.openbudgets.eu/resource/dataset/budget-veroia-expenditure-2010/codelist/00/6126> , <http://data.openbudgets.eu/resource/dataset/budget-veroia-expenditure-2010/codelist/00/6131> , <http://data.openbudgets.eu/resource/dataset/budget-veroia-expenditure-2010/codelist/00/6133> , <http://data.openbudgets.eu/resource/dataset/budget-veroia-expenditure-2010/codelist/00/6134> , <http://data.openbudgets.eu/resource/dataset/budget-veroia-expenditure-2010/codelist/00/6142> , <http://data.openbudgets.eu/resource/dataset/budget-veroia-expenditure-2010/codelist/00/6151> , <http://data.openbudgets.eu/resource/dataset/budget-veroia-expenditure-2010/codelist/00/6221> , <http://data.openbudgets.eu/resource/dataset/budget-veroia-expenditure-2010/codelist/00/6222> , <http://data.openbudgets.eu/resource/dataset/budget-veroia-expenditure-2010/codelist/00/6223> , <http://data.openbudgets.eu/resource/dataset/budget-veroia-expenditure-2010/codelist/00/6311> , <http://data.openbudgets.eu/resource/dataset/budget-veroia-expenditure-2010/codelist/00/6331> , <http://data.openbudgets.eu/resource/dataset/budget-veroia-expenditure-2010/codelist/00/6421> , <http://data.openbudgets.eu/resource/dataset/budget-veroia-expenditure-2010/codelist/00/6431> , <http://data.openbudgets.eu/resource/dataset/budget-veroia-expenditure-2010/codelist/00/6433> , <http://data.openbudgets.eu/resource/dataset/budget-veroia-expenditure-2010/codelist/00/6434> , <http://data.openbudgets.eu/resource/dataset/budget-veroia-expenditure-2010/codelist/00/6441> , <http://data.openbudgets.eu/resource/dataset/budget-veroia-expenditure-2010/codelist/00/6443> , <http://data.openbudgets.eu/resource/dataset/budget-veroia-expenditure-2010/codelist/00/6444> , <http://data.openbudgets.eu/resource/dataset/budget-veroia-expenditure-2010/codelist/00/6451> , <http://data.openbudgets.eu/resource/dataset/budget-veroia-expenditure-2010/codelist/00/6463> , <http://data.openbudgets.eu/resource/dataset/budget-veroia-expenditure-2010/codelist/00/6473> , <http://data.openbudgets.eu/resource/dataset/budget-veroia-expenditure-2010/codelist/00/6492> , <http://data.openbudgets.eu/resource/dataset/budget-veroia-expenditure-2010/codelist/00/6493> , <http://data.openbudgets.eu/resource/dataset/budget-veroia-expenditure-2010/codelist/00/6494> , <http://data.openbudgets.eu/resource/dataset/budget-veroia-expenditure-2010/codelist/00/6495> , <http://data.openbudgets.eu/resource/dataset/budget-veroia-expenditure-2010/codelist/00/6515> , <http://data.openbudgets.eu/resource/dataset/budget-veroia-expenditure-2010/codelist/00/6521> , <http://data.openbudgets.eu/resource/dataset/budget-veroia-expenditure-2010/codelist/00/6524> , <http://data.openbudgets.eu/resource/dataset/budget-veroia-expenditure-2010/codelist/00/6526> , <http://data.openbudgets.eu/resource/dataset/budget-veroia-expenditure-2010/codelist/00/6711> , <http://data.openbudgets.eu/resource/dataset/budget-veroia-expenditure-2010/codelist/00/6712> , <http://data.openbudgets.eu/resource/dataset/budget-veroia-expenditure-2010/codelist/00/6713> , <http://data.openbudgets.eu/resource/dataset/budget-veroia-expenditure-2010/codelist/00/6715> , <http://data.openbudgets.eu/resource/dataset/budget-veroia-expenditure-2010/codelist/00/6721> , <http://data.openbudgets.eu/resource/dataset/budget-veroia-expenditure-2010/codelist/00/6723> , <http://data.openbudgets.eu/resource/dataset/budget-veroia-expenditure-2010/codelist/00/6733> , <http://data.openbudgets.eu/resource/dataset/budget-veroia-expenditure-2010/codelist/00/6734> , <http://data.openbudgets.eu/resource/dataset/budget-veroia-expenditure-2010/codelist/00/6735> , <http://data.openbudgets.eu/resource/dataset/budget-veroia-expenditure-2010/codelist/00/6736> , <http://data.openbudgets.eu/resource/dataset/budget-veroia-expenditure-2010/codelist/00/6737> , <http://data.openbudgets.eu/resource/dataset/budget-veroia-expenditure-2010/codelist/00/6822> ;
+	skos:notation "00" ;
+	skos:prefLabel "ΓΕΝΙΚΕΣ ΥΠΗΡΕΣΙΕΣ"@el ;
+	skos:topConceptOf veroia-be2010-dsd:codelist .
+
+veroia-be2010-codelist:10 a skos:Concept ;
+	skos:inScheme veroia-be2010-dsd:codelist ;
+	skos:narrower <http://data.openbudgets.eu/resource/dataset/budget-veroia-expenditure-2010/codelist/10/6011> , <http://data.openbudgets.eu/resource/dataset/budget-veroia-expenditure-2010/codelist/10/6012> , <http://data.openbudgets.eu/resource/dataset/budget-veroia-expenditure-2010/codelist/10/6021> , <http://data.openbudgets.eu/resource/dataset/budget-veroia-expenditure-2010/codelist/10/6022> , <http://data.openbudgets.eu/resource/dataset/budget-veroia-expenditure-2010/codelist/10/6041> , <http://data.openbudgets.eu/resource/dataset/budget-veroia-expenditure-2010/codelist/10/6051> , <http://data.openbudgets.eu/resource/dataset/budget-veroia-expenditure-2010/codelist/10/6052> , <http://data.openbudgets.eu/resource/dataset/budget-veroia-expenditure-2010/codelist/10/6054> , <http://data.openbudgets.eu/resource/dataset/budget-veroia-expenditure-2010/codelist/10/6061> , <http://data.openbudgets.eu/resource/dataset/budget-veroia-expenditure-2010/codelist/10/6062> , <http://data.openbudgets.eu/resource/dataset/budget-veroia-expenditure-2010/codelist/10/6063> , <http://data.openbudgets.eu/resource/dataset/budget-veroia-expenditure-2010/codelist/10/6115> , <http://data.openbudgets.eu/resource/dataset/budget-veroia-expenditure-2010/codelist/10/6232> , <http://data.openbudgets.eu/resource/dataset/budget-veroia-expenditure-2010/codelist/10/6251> , <http://data.openbudgets.eu/resource/dataset/budget-veroia-expenditure-2010/codelist/10/6264> , <http://data.openbudgets.eu/resource/dataset/budget-veroia-expenditure-2010/codelist/10/6265> , <http://data.openbudgets.eu/resource/dataset/budget-veroia-expenditure-2010/codelist/10/6266> , <http://data.openbudgets.eu/resource/dataset/budget-veroia-expenditure-2010/codelist/10/6271> , <http://data.openbudgets.eu/resource/dataset/budget-veroia-expenditure-2010/codelist/10/6273> , <http://data.openbudgets.eu/resource/dataset/budget-veroia-expenditure-2010/codelist/10/6414> , <http://data.openbudgets.eu/resource/dataset/budget-veroia-expenditure-2010/codelist/10/6422> , <http://data.openbudgets.eu/resource/dataset/budget-veroia-expenditure-2010/codelist/10/6461> , <http://data.openbudgets.eu/resource/dataset/budget-veroia-expenditure-2010/codelist/10/6462> , <http://data.openbudgets.eu/resource/dataset/budget-veroia-expenditure-2010/codelist/10/6463> , <http://data.openbudgets.eu/resource/dataset/budget-veroia-expenditure-2010/codelist/10/6484> , <http://data.openbudgets.eu/resource/dataset/budget-veroia-expenditure-2010/codelist/10/6611> , <http://data.openbudgets.eu/resource/dataset/budget-veroia-expenditure-2010/codelist/10/6612> , <http://data.openbudgets.eu/resource/dataset/budget-veroia-expenditure-2010/codelist/10/6613> , <http://data.openbudgets.eu/resource/dataset/budget-veroia-expenditure-2010/codelist/10/6615> , <http://data.openbudgets.eu/resource/dataset/budget-veroia-expenditure-2010/codelist/10/6634> , <http://data.openbudgets.eu/resource/dataset/budget-veroia-expenditure-2010/codelist/10/6643> , <http://data.openbudgets.eu/resource/dataset/budget-veroia-expenditure-2010/codelist/10/6652> , <http://data.openbudgets.eu/resource/dataset/budget-veroia-expenditure-2010/codelist/10/6681> , <http://data.openbudgets.eu/resource/dataset/budget-veroia-expenditure-2010/codelist/10/6691> , <http://data.openbudgets.eu/resource/dataset/budget-veroia-expenditure-2010/codelist/10/7131> , <http://data.openbudgets.eu/resource/dataset/budget-veroia-expenditure-2010/codelist/10/7133> , <http://data.openbudgets.eu/resource/dataset/budget-veroia-expenditure-2010/codelist/10/7134> , <http://data.openbudgets.eu/resource/dataset/budget-veroia-expenditure-2010/codelist/10/7413> , <http://data.openbudgets.eu/resource/dataset/budget-veroia-expenditure-2010/codelist/10/7511> , <http://data.openbudgets.eu/resource/dataset/budget-veroia-expenditure-2010/codelist/10/7513> , <http://data.openbudgets.eu/resource/dataset/budget-veroia-expenditure-2010/codelist/10/7521> ;
+	skos:notation "10" ;
+	skos:prefLabel "ΟΙΚΟΝΟΜΙΚΕΣ ΔΙΟΙΚΗΤΙΚΕΣ ΥΠΗΡΕΣΙΕΣ"@el ;
+	skos:topConceptOf veroia-be2010-dsd:codelist .
+
+veroia-be2010-codelist:15 a skos:Concept ;
+	skos:inScheme veroia-be2010-dsd:codelist ;
+	skos:narrower <http://data.openbudgets.eu/resource/dataset/budget-veroia-expenditure-2010/codelist/15/6011> , <http://data.openbudgets.eu/resource/dataset/budget-veroia-expenditure-2010/codelist/15/6012> , <http://data.openbudgets.eu/resource/dataset/budget-veroia-expenditure-2010/codelist/15/6021> ;
+	skos:notation "15" ;
+	skos:prefLabel "ΥΠΗΡΕΣΙΕΣ ΠΟΛΙΤΙΣΜΟΥ ΑΘΛΗΤΙΣΜΟΥ ΚΟΙΝΩΝΙΚΗΣ ΠΟΛΙΤΙΚΗΣ"@el ;
+	skos:topConceptOf veroia-be2010-dsd:codelist .
+
+veroia-be2010-codelist:20 a skos:Concept ;
+	skos:inScheme veroia-be2010-dsd:codelist ;
+	skos:narrower <http://data.openbudgets.eu/resource/dataset/budget-veroia-expenditure-2010/codelist/20/6011> , <http://data.openbudgets.eu/resource/dataset/budget-veroia-expenditure-2010/codelist/20/6012> , <http://data.openbudgets.eu/resource/dataset/budget-veroia-expenditure-2010/codelist/20/6021> , <http://data.openbudgets.eu/resource/dataset/budget-veroia-expenditure-2010/codelist/20/6041> , <http://data.openbudgets.eu/resource/dataset/budget-veroia-expenditure-2010/codelist/20/6051> , <http://data.openbudgets.eu/resource/dataset/budget-veroia-expenditure-2010/codelist/20/6052> , <http://data.openbudgets.eu/resource/dataset/budget-veroia-expenditure-2010/codelist/20/6054> , <http://data.openbudgets.eu/resource/dataset/budget-veroia-expenditure-2010/codelist/20/6061> , <http://data.openbudgets.eu/resource/dataset/budget-veroia-expenditure-2010/codelist/20/6062> , <http://data.openbudgets.eu/resource/dataset/budget-veroia-expenditure-2010/codelist/20/6063> , <http://data.openbudgets.eu/resource/dataset/budget-veroia-expenditure-2010/codelist/20/6162> , <http://data.openbudgets.eu/resource/dataset/budget-veroia-expenditure-2010/codelist/20/6211> , <http://data.openbudgets.eu/resource/dataset/budget-veroia-expenditure-2010/codelist/20/6253> , <http://data.openbudgets.eu/resource/dataset/budget-veroia-expenditure-2010/codelist/20/6263> , <http://data.openbudgets.eu/resource/dataset/budget-veroia-expenditure-2010/codelist/20/6264> , <http://data.openbudgets.eu/resource/dataset/budget-veroia-expenditure-2010/codelist/20/6277> , <http://data.openbudgets.eu/resource/dataset/budget-veroia-expenditure-2010/codelist/20/6322> , <http://data.openbudgets.eu/resource/dataset/budget-veroia-expenditure-2010/codelist/20/6422> , <http://data.openbudgets.eu/resource/dataset/budget-veroia-expenditure-2010/codelist/20/6462> , <http://data.openbudgets.eu/resource/dataset/budget-veroia-expenditure-2010/codelist/20/6632> , <http://data.openbudgets.eu/resource/dataset/budget-veroia-expenditure-2010/codelist/20/6634> , <http://data.openbudgets.eu/resource/dataset/budget-veroia-expenditure-2010/codelist/20/6641> , <http://data.openbudgets.eu/resource/dataset/budget-veroia-expenditure-2010/codelist/20/6671> , <http://data.openbudgets.eu/resource/dataset/budget-veroia-expenditure-2010/codelist/20/6693> , <http://data.openbudgets.eu/resource/dataset/budget-veroia-expenditure-2010/codelist/20/7132> , <http://data.openbudgets.eu/resource/dataset/budget-veroia-expenditure-2010/codelist/20/7135> , <http://data.openbudgets.eu/resource/dataset/budget-veroia-expenditure-2010/codelist/20/7321> , <http://data.openbudgets.eu/resource/dataset/budget-veroia-expenditure-2010/codelist/20/7325> , <http://data.openbudgets.eu/resource/dataset/budget-veroia-expenditure-2010/codelist/20/7326> , <http://data.openbudgets.eu/resource/dataset/budget-veroia-expenditure-2010/codelist/20/7335> , <http://data.openbudgets.eu/resource/dataset/budget-veroia-expenditure-2010/codelist/20/7336> ;
+	skos:notation "20" ;
+	skos:prefLabel "ΥΠΗΡΕΣΙΕΣ ΚΑΘΑΡΙΟΤΗΤΑΣ ΚΑΙ ΗΛΕΚΤΡΟΦΩΤΙΣΜΟΥ"@el ;
+	skos:topConceptOf veroia-be2010-dsd:codelist .
+
+veroia-be2010-codelist:30 a skos:Concept ;
+	skos:inScheme veroia-be2010-dsd:codelist ;
+	skos:narrower <http://data.openbudgets.eu/resource/dataset/budget-veroia-expenditure-2010/codelist/30/6011> , <http://data.openbudgets.eu/resource/dataset/budget-veroia-expenditure-2010/codelist/30/6012> , <http://data.openbudgets.eu/resource/dataset/budget-veroia-expenditure-2010/codelist/30/6021> , <http://data.openbudgets.eu/resource/dataset/budget-veroia-expenditure-2010/codelist/30/6041> , <http://data.openbudgets.eu/resource/dataset/budget-veroia-expenditure-2010/codelist/30/6051> , <http://data.openbudgets.eu/resource/dataset/budget-veroia-expenditure-2010/codelist/30/6052> , <http://data.openbudgets.eu/resource/dataset/budget-veroia-expenditure-2010/codelist/30/6054> , <http://data.openbudgets.eu/resource/dataset/budget-veroia-expenditure-2010/codelist/30/6061> , <http://data.openbudgets.eu/resource/dataset/budget-veroia-expenditure-2010/codelist/30/6062> , <http://data.openbudgets.eu/resource/dataset/budget-veroia-expenditure-2010/codelist/30/6063> , <http://data.openbudgets.eu/resource/dataset/budget-veroia-expenditure-2010/codelist/30/6236> , <http://data.openbudgets.eu/resource/dataset/budget-veroia-expenditure-2010/codelist/30/6253> , <http://data.openbudgets.eu/resource/dataset/budget-veroia-expenditure-2010/codelist/30/6262> , <http://data.openbudgets.eu/resource/dataset/budget-veroia-expenditure-2010/codelist/30/6263> , <http://data.openbudgets.eu/resource/dataset/budget-veroia-expenditure-2010/codelist/30/6264> , <http://data.openbudgets.eu/resource/dataset/budget-veroia-expenditure-2010/codelist/30/6265> , <http://data.openbudgets.eu/resource/dataset/budget-veroia-expenditure-2010/codelist/30/6266> , <http://data.openbudgets.eu/resource/dataset/budget-veroia-expenditure-2010/codelist/30/6321> , <http://data.openbudgets.eu/resource/dataset/budget-veroia-expenditure-2010/codelist/30/6322> , <http://data.openbudgets.eu/resource/dataset/budget-veroia-expenditure-2010/codelist/30/6422> , <http://data.openbudgets.eu/resource/dataset/budget-veroia-expenditure-2010/codelist/30/6462> , <http://data.openbudgets.eu/resource/dataset/budget-veroia-expenditure-2010/codelist/30/6463> , <http://data.openbudgets.eu/resource/dataset/budget-veroia-expenditure-2010/codelist/30/6615> , <http://data.openbudgets.eu/resource/dataset/budget-veroia-expenditure-2010/codelist/30/6641> , <http://data.openbudgets.eu/resource/dataset/budget-veroia-expenditure-2010/codelist/30/6644> , <http://data.openbudgets.eu/resource/dataset/budget-veroia-expenditure-2010/codelist/30/6651> , <http://data.openbudgets.eu/resource/dataset/budget-veroia-expenditure-2010/codelist/30/6671> , <http://data.openbudgets.eu/resource/dataset/budget-veroia-expenditure-2010/codelist/30/7112> , <http://data.openbudgets.eu/resource/dataset/budget-veroia-expenditure-2010/codelist/30/7131> , <http://data.openbudgets.eu/resource/dataset/budget-veroia-expenditure-2010/codelist/30/7134> , <http://data.openbudgets.eu/resource/dataset/budget-veroia-expenditure-2010/codelist/30/7311> , <http://data.openbudgets.eu/resource/dataset/budget-veroia-expenditure-2010/codelist/30/7321> , <http://data.openbudgets.eu/resource/dataset/budget-veroia-expenditure-2010/codelist/30/7322> , <http://data.openbudgets.eu/resource/dataset/budget-veroia-expenditure-2010/codelist/30/7323> , <http://data.openbudgets.eu/resource/dataset/budget-veroia-expenditure-2010/codelist/30/7324> , <http://data.openbudgets.eu/resource/dataset/budget-veroia-expenditure-2010/codelist/30/7326> , <http://data.openbudgets.eu/resource/dataset/budget-veroia-expenditure-2010/codelist/30/7331> , <http://data.openbudgets.eu/resource/dataset/budget-veroia-expenditure-2010/codelist/30/7333> , <http://data.openbudgets.eu/resource/dataset/budget-veroia-expenditure-2010/codelist/30/7335> , <http://data.openbudgets.eu/resource/dataset/budget-veroia-expenditure-2010/codelist/30/7336> , <http://data.openbudgets.eu/resource/dataset/budget-veroia-expenditure-2010/codelist/30/7411> ;
+	skos:notation "30" ;
+	skos:prefLabel "ΥΠΗΡΕΣΙΑ ΤΕΧΝΙΚΩΝ ΕΡΓΩΝ"@el ;
+	skos:topConceptOf veroia-be2010-dsd:codelist .
+
+veroia-be2010-codelist:35 a skos:Concept ;
+	skos:inScheme veroia-be2010-dsd:codelist ;
+	skos:narrower <http://data.openbudgets.eu/resource/dataset/budget-veroia-expenditure-2010/codelist/35/6011> , <http://data.openbudgets.eu/resource/dataset/budget-veroia-expenditure-2010/codelist/35/6012> , <http://data.openbudgets.eu/resource/dataset/budget-veroia-expenditure-2010/codelist/35/6021> , <http://data.openbudgets.eu/resource/dataset/budget-veroia-expenditure-2010/codelist/35/6051> , <http://data.openbudgets.eu/resource/dataset/budget-veroia-expenditure-2010/codelist/35/6052> , <http://data.openbudgets.eu/resource/dataset/budget-veroia-expenditure-2010/codelist/35/6061> , <http://data.openbudgets.eu/resource/dataset/budget-veroia-expenditure-2010/codelist/35/6062> , <http://data.openbudgets.eu/resource/dataset/budget-veroia-expenditure-2010/codelist/35/6063> , <http://data.openbudgets.eu/resource/dataset/budget-veroia-expenditure-2010/codelist/35/6264> , <http://data.openbudgets.eu/resource/dataset/budget-veroia-expenditure-2010/codelist/35/6422> , <http://data.openbudgets.eu/resource/dataset/budget-veroia-expenditure-2010/codelist/35/6462> , <http://data.openbudgets.eu/resource/dataset/budget-veroia-expenditure-2010/codelist/35/6644> , <http://data.openbudgets.eu/resource/dataset/budget-veroia-expenditure-2010/codelist/35/6672> , <http://data.openbudgets.eu/resource/dataset/budget-veroia-expenditure-2010/codelist/35/6692> , <http://data.openbudgets.eu/resource/dataset/budget-veroia-expenditure-2010/codelist/35/6693> , <http://data.openbudgets.eu/resource/dataset/budget-veroia-expenditure-2010/codelist/35/7131> , <http://data.openbudgets.eu/resource/dataset/budget-veroia-expenditure-2010/codelist/35/7132> , <http://data.openbudgets.eu/resource/dataset/budget-veroia-expenditure-2010/codelist/35/7322> , <http://data.openbudgets.eu/resource/dataset/budget-veroia-expenditure-2010/codelist/35/7336> , <http://data.openbudgets.eu/resource/dataset/budget-veroia-expenditure-2010/codelist/35/7411> ;
+	skos:notation "35" ;
+	skos:prefLabel "ΥΠΗΡΕΣΙΑ ΠΡΑΣΙΝΟΥ"@el ;
+	skos:topConceptOf veroia-be2010-dsd:codelist .
+
+veroia-be2010-codelist:40 a skos:Concept ;
+	skos:inScheme veroia-be2010-dsd:codelist ;
+	skos:narrower <http://data.openbudgets.eu/resource/dataset/budget-veroia-expenditure-2010/codelist/40/6011> , <http://data.openbudgets.eu/resource/dataset/budget-veroia-expenditure-2010/codelist/40/6012> , <http://data.openbudgets.eu/resource/dataset/budget-veroia-expenditure-2010/codelist/40/6051> , <http://data.openbudgets.eu/resource/dataset/budget-veroia-expenditure-2010/codelist/40/6061> , <http://data.openbudgets.eu/resource/dataset/budget-veroia-expenditure-2010/codelist/40/6063> , <http://data.openbudgets.eu/resource/dataset/budget-veroia-expenditure-2010/codelist/40/6422> , <http://data.openbudgets.eu/resource/dataset/budget-veroia-expenditure-2010/codelist/40/6463> , <http://data.openbudgets.eu/resource/dataset/budget-veroia-expenditure-2010/codelist/40/6615> , <http://data.openbudgets.eu/resource/dataset/budget-veroia-expenditure-2010/codelist/40/7112> , <http://data.openbudgets.eu/resource/dataset/budget-veroia-expenditure-2010/codelist/40/7131> , <http://data.openbudgets.eu/resource/dataset/budget-veroia-expenditure-2010/codelist/40/7134> , <http://data.openbudgets.eu/resource/dataset/budget-veroia-expenditure-2010/codelist/40/7413> , <http://data.openbudgets.eu/resource/dataset/budget-veroia-expenditure-2010/codelist/40/7421> , <http://data.openbudgets.eu/resource/dataset/budget-veroia-expenditure-2010/codelist/40/7422> , <http://data.openbudgets.eu/resource/dataset/budget-veroia-expenditure-2010/codelist/40/7423> , <http://data.openbudgets.eu/resource/dataset/budget-veroia-expenditure-2010/codelist/40/7425> ;
+	skos:notation "40" ;
+	skos:prefLabel "ΥΠΗΡΕΣΙΑ ΠΟΛΕΟΔΟΜΙΑΣ"@el ;
+	skos:topConceptOf veroia-be2010-dsd:codelist .
+
+veroia-be2010-codelist:45 a skos:Concept ;
+	skos:inScheme veroia-be2010-dsd:codelist ;
+	skos:narrower <http://data.openbudgets.eu/resource/dataset/budget-veroia-expenditure-2010/codelist/45/6011> , <http://data.openbudgets.eu/resource/dataset/budget-veroia-expenditure-2010/codelist/45/6012> , <http://data.openbudgets.eu/resource/dataset/budget-veroia-expenditure-2010/codelist/45/6041> , <http://data.openbudgets.eu/resource/dataset/budget-veroia-expenditure-2010/codelist/45/6051> , <http://data.openbudgets.eu/resource/dataset/budget-veroia-expenditure-2010/codelist/45/6054> , <http://data.openbudgets.eu/resource/dataset/budget-veroia-expenditure-2010/codelist/45/6061> , <http://data.openbudgets.eu/resource/dataset/budget-veroia-expenditure-2010/codelist/45/6063> , <http://data.openbudgets.eu/resource/dataset/budget-veroia-expenditure-2010/codelist/45/6422> , <http://data.openbudgets.eu/resource/dataset/budget-veroia-expenditure-2010/codelist/45/6633> , <http://data.openbudgets.eu/resource/dataset/budget-veroia-expenditure-2010/codelist/45/7131> , <http://data.openbudgets.eu/resource/dataset/budget-veroia-expenditure-2010/codelist/45/7326> , <http://data.openbudgets.eu/resource/dataset/budget-veroia-expenditure-2010/codelist/45/7336> , <http://data.openbudgets.eu/resource/dataset/budget-veroia-expenditure-2010/codelist/45/7411> ;
+	skos:notation "45" ;
+	skos:prefLabel "ΥΠΗΡΕΣΙΕΣ ΝΕΚΡΟΤΑΦΕΙΩΝ"@el ;
+	skos:topConceptOf veroia-be2010-dsd:codelist .
+
+veroia-be2010-codelist:50 a skos:Concept ;
+	skos:inScheme veroia-be2010-dsd:codelist ;
+	skos:narrower <http://data.openbudgets.eu/resource/dataset/budget-veroia-expenditure-2010/codelist/50/6011> , <http://data.openbudgets.eu/resource/dataset/budget-veroia-expenditure-2010/codelist/50/6012> , <http://data.openbudgets.eu/resource/dataset/budget-veroia-expenditure-2010/codelist/50/6051> , <http://data.openbudgets.eu/resource/dataset/budget-veroia-expenditure-2010/codelist/50/6061> , <http://data.openbudgets.eu/resource/dataset/budget-veroia-expenditure-2010/codelist/50/6063> , <http://data.openbudgets.eu/resource/dataset/budget-veroia-expenditure-2010/codelist/50/6422> , <http://data.openbudgets.eu/resource/dataset/budget-veroia-expenditure-2010/codelist/50/7132> ;
+	skos:notation "50" ;
+	skos:prefLabel "ΔΗΜΟΤΙΚΗ ΑΣΤΥΝΟΜΙΑ"@el ;
+	skos:topConceptOf veroia-be2010-dsd:codelist .
+
+veroia-be2010-codelist:80 a skos:Concept ;
+	skos:inScheme veroia-be2010-dsd:codelist ;
+	skos:narrower <http://data.openbudgets.eu/resource/dataset/budget-veroia-expenditure-2010/codelist/80/8117> , <http://data.openbudgets.eu/resource/dataset/budget-veroia-expenditure-2010/codelist/80/8122> , <http://data.openbudgets.eu/resource/dataset/budget-veroia-expenditure-2010/codelist/80/8211> , <http://data.openbudgets.eu/resource/dataset/budget-veroia-expenditure-2010/codelist/80/8212> , <http://data.openbudgets.eu/resource/dataset/budget-veroia-expenditure-2010/codelist/80/8221> , <http://data.openbudgets.eu/resource/dataset/budget-veroia-expenditure-2010/codelist/80/8222> , <http://data.openbudgets.eu/resource/dataset/budget-veroia-expenditure-2010/codelist/80/8223> , <http://data.openbudgets.eu/resource/dataset/budget-veroia-expenditure-2010/codelist/80/8224> , <http://data.openbudgets.eu/resource/dataset/budget-veroia-expenditure-2010/codelist/80/8231> , <http://data.openbudgets.eu/resource/dataset/budget-veroia-expenditure-2010/codelist/80/8241> , <http://data.openbudgets.eu/resource/dataset/budget-veroia-expenditure-2010/codelist/80/8242> , <http://data.openbudgets.eu/resource/dataset/budget-veroia-expenditure-2010/codelist/80/8251> , <http://data.openbudgets.eu/resource/dataset/budget-veroia-expenditure-2010/codelist/80/8261> , <http://data.openbudgets.eu/resource/dataset/budget-veroia-expenditure-2010/codelist/80/8511> ;
+	skos:notation "80" ;
+	skos:prefLabel "ΠΛΗΡΩΜΕΣ Π.Ο.Ε & ΛΟΙΠΕΣ ΑΠΟΔΟΣΕΙΣ ΚΑΙ ΠΡΟΒΛΕΨΕΙΣ"@el ;
+	skos:topConceptOf veroia-be2010-dsd:codelist .
+
+veroia-be2010-codelist:90 a skos:Concept ;
+	skos:inScheme veroia-be2010-dsd:codelist ;
+	skos:narrower <http://data.openbudgets.eu/resource/dataset/budget-veroia-expenditure-2010/codelist/90/9111> ;
+	skos:notation "90" ;
+	skos:prefLabel "ΑΠΟΘΕΜΑΤΙΚΟ"@el ;
+	skos:topConceptOf veroia-be2010-dsd:codelist .
+
+<http://data.openbudgets.eu/resource/dataset/budget-veroia-expenditure-2010/codelist/00/6031> a skos:Concept ;
+	skos:inScheme veroia-be2010-dsd:codelist ;
+	skos:narrower <http://data.openbudgets.eu/resource/dataset/budget-veroia-expenditure-2010/codelist/00/6031.001> , <http://data.openbudgets.eu/resource/dataset/budget-veroia-expenditure-2010/codelist/00/6031.002> ;
+	skos:notation "6031" ;
+	skos:broader veroia-be2010-codelist:00 ;
+	skos:broadMatch kae-ota-ex14:6031 .
+
+<http://data.openbudgets.eu/resource/dataset/budget-veroia-expenditure-2010/codelist/00/6039> a skos:Concept ;
+	skos:inScheme veroia-be2010-dsd:codelist ;
+	skos:notation "6039" ;
+	skos:broader veroia-be2010-codelist:00 ;
+	skos:broadMatch kae-ota-ex14:6039 .
+
+<http://data.openbudgets.eu/resource/dataset/budget-veroia-expenditure-2010/codelist/00/6053> a skos:Concept ;
+	skos:inScheme veroia-be2010-dsd:codelist ;
+	skos:notation "6053" ;
+	skos:broader veroia-be2010-codelist:00 ;
+	skos:broadMatch kae-ota-ex14:6053 .
+
+<http://data.openbudgets.eu/resource/dataset/budget-veroia-expenditure-2010/codelist/00/6056> a skos:Concept ;
+	skos:inScheme veroia-be2010-dsd:codelist ;
+	skos:narrower <http://data.openbudgets.eu/resource/dataset/budget-veroia-expenditure-2010/codelist/00/6056.001> , <http://data.openbudgets.eu/resource/dataset/budget-veroia-expenditure-2010/codelist/00/6056.002> ;
+	skos:notation "6056" ;
+	skos:broader veroia-be2010-codelist:00 ;
+	skos:broadMatch kae-ota-ex14:6056 .
+
+<http://data.openbudgets.eu/resource/dataset/budget-veroia-expenditure-2010/codelist/00/6071> a skos:Concept ;
+	skos:inScheme veroia-be2010-dsd:codelist ;
+	skos:notation "6071" ;
+	skos:broader veroia-be2010-codelist:00 ;
+	skos:broadMatch kae-ota-ex14:6071 .
+
+<http://data.openbudgets.eu/resource/dataset/budget-veroia-expenditure-2010/codelist/00/6073> a skos:Concept ;
+	skos:inScheme veroia-be2010-dsd:codelist ;
+	skos:notation "6073" ;
+	skos:broader veroia-be2010-codelist:00 ;
+	skos:broadMatch kae-ota-ex14:6073 .
+
+<http://data.openbudgets.eu/resource/dataset/budget-veroia-expenditure-2010/codelist/00/6111> a skos:Concept ;
+	skos:inScheme veroia-be2010-dsd:codelist ;
+	skos:notation "6111" ;
+	skos:broader veroia-be2010-codelist:00 ;
+	skos:broadMatch kae-ota-ex14:6111 .
+
+<http://data.openbudgets.eu/resource/dataset/budget-veroia-expenditure-2010/codelist/00/6117> a skos:Concept ;
+	skos:inScheme veroia-be2010-dsd:codelist ;
+	skos:narrower <http://data.openbudgets.eu/resource/dataset/budget-veroia-expenditure-2010/codelist/00/6117.001> , <http://data.openbudgets.eu/resource/dataset/budget-veroia-expenditure-2010/codelist/00/6117.002> ;
+	skos:notation "6117" ;
+	skos:broader veroia-be2010-codelist:00 ;
+	skos:broadMatch kae-ota-ex14:6117 .
+
+<http://data.openbudgets.eu/resource/dataset/budget-veroia-expenditure-2010/codelist/00/6121> a skos:Concept ;
+	skos:inScheme veroia-be2010-dsd:codelist ;
+	skos:notation "6121" ;
+	skos:broader veroia-be2010-codelist:00 ;
+	skos:broadMatch kae-ota-ex14:6121 .
+
+<http://data.openbudgets.eu/resource/dataset/budget-veroia-expenditure-2010/codelist/00/6122> a skos:Concept ;
+	skos:inScheme veroia-be2010-dsd:codelist ;
+	skos:notation "6122" ;
+	skos:broader veroia-be2010-codelist:00 ;
+	skos:broadMatch kae-ota-ex14:6122 .
+
+<http://data.openbudgets.eu/resource/dataset/budget-veroia-expenditure-2010/codelist/00/6123> a skos:Concept ;
+	skos:inScheme veroia-be2010-dsd:codelist ;
+	skos:notation "6123" ;
+	skos:broader veroia-be2010-codelist:00 ;
+	skos:broadMatch kae-ota-ex14:6123 .
+
+<http://data.openbudgets.eu/resource/dataset/budget-veroia-expenditure-2010/codelist/00/6124> a skos:Concept ;
+	skos:inScheme veroia-be2010-dsd:codelist ;
+	skos:notation "6124" ;
+	skos:broader veroia-be2010-codelist:00 ;
+	skos:broadMatch kae-ota-ex14:6124 .
+
+<http://data.openbudgets.eu/resource/dataset/budget-veroia-expenditure-2010/codelist/00/6126> a skos:Concept ;
+	skos:inScheme veroia-be2010-dsd:codelist ;
+	skos:notation "6126" ;
+	skos:broader veroia-be2010-codelist:00 ;
+	skos:broadMatch kae-ota-ex14:6126 .
+
+<http://data.openbudgets.eu/resource/dataset/budget-veroia-expenditure-2010/codelist/00/6131> a skos:Concept ;
+	skos:inScheme veroia-be2010-dsd:codelist ;
+	skos:narrower <http://data.openbudgets.eu/resource/dataset/budget-veroia-expenditure-2010/codelist/00/6131.001> ;
+	skos:notation "6131" ;
+	skos:broader veroia-be2010-codelist:00 ;
+	skos:broadMatch kae-ota-ex14:6131 .
+
+<http://data.openbudgets.eu/resource/dataset/budget-veroia-expenditure-2010/codelist/00/6133> a skos:Concept ;
+	skos:inScheme veroia-be2010-dsd:codelist ;
+	skos:notation "6133" ;
+	skos:broader veroia-be2010-codelist:00 ;
+	skos:broadMatch kae-ota-ex14:6133 .
+
+<http://data.openbudgets.eu/resource/dataset/budget-veroia-expenditure-2010/codelist/00/6134> a skos:Concept ;
+	skos:inScheme veroia-be2010-dsd:codelist ;
+	skos:notation "6134" ;
+	skos:broader veroia-be2010-codelist:00 ;
+	skos:broadMatch kae-ota-ex14:6134 .
+
+<http://data.openbudgets.eu/resource/dataset/budget-veroia-expenditure-2010/codelist/00/6142> a skos:Concept ;
+	skos:inScheme veroia-be2010-dsd:codelist ;
+	skos:narrower <http://data.openbudgets.eu/resource/dataset/budget-veroia-expenditure-2010/codelist/00/6142.001> ;
+	skos:notation "6142" ;
+	skos:broader veroia-be2010-codelist:00 ;
+	skos:broadMatch kae-ota-ex14:6142 .
+
+<http://data.openbudgets.eu/resource/dataset/budget-veroia-expenditure-2010/codelist/00/6151> a skos:Concept ;
+	skos:inScheme veroia-be2010-dsd:codelist ;
+	skos:notation "6151" ;
+	skos:broader veroia-be2010-codelist:00 ;
+	skos:broadMatch kae-ota-ex14:6151 .
+
+<http://data.openbudgets.eu/resource/dataset/budget-veroia-expenditure-2010/codelist/00/6221> a skos:Concept ;
+	skos:inScheme veroia-be2010-dsd:codelist ;
+	skos:notation "6221" ;
+	skos:broader veroia-be2010-codelist:00 ;
+	skos:broadMatch kae-ota-ex14:6221 .
+
+<http://data.openbudgets.eu/resource/dataset/budget-veroia-expenditure-2010/codelist/00/6222> a skos:Concept ;
+	skos:inScheme veroia-be2010-dsd:codelist ;
+	skos:notation "6222" ;
+	skos:broader veroia-be2010-codelist:00 ;
+	skos:broadMatch kae-ota-ex14:6222 .
+
+<http://data.openbudgets.eu/resource/dataset/budget-veroia-expenditure-2010/codelist/00/6223> a skos:Concept ;
+	skos:inScheme veroia-be2010-dsd:codelist ;
+	skos:notation "6223" ;
+	skos:broader veroia-be2010-codelist:00 ;
+	skos:broadMatch kae-ota-ex14:6223 .
+
+<http://data.openbudgets.eu/resource/dataset/budget-veroia-expenditure-2010/codelist/00/6311> a skos:Concept ;
+	skos:inScheme veroia-be2010-dsd:codelist ;
+	skos:notation "6311" ;
+	skos:broader veroia-be2010-codelist:00 ;
+	skos:broadMatch kae-ota-ex14:6311 .
+
+<http://data.openbudgets.eu/resource/dataset/budget-veroia-expenditure-2010/codelist/00/6331> a skos:Concept ;
+	skos:inScheme veroia-be2010-dsd:codelist ;
+	skos:narrower <http://data.openbudgets.eu/resource/dataset/budget-veroia-expenditure-2010/codelist/00/6331.001> ;
+	skos:notation "6331" ;
+	skos:broader veroia-be2010-codelist:00 ;
+	skos:broadMatch kae-ota-ex14:6331 .
+
+<http://data.openbudgets.eu/resource/dataset/budget-veroia-expenditure-2010/codelist/00/6421> a skos:Concept ;
+	skos:inScheme veroia-be2010-dsd:codelist ;
+	skos:notation "6421" ;
+	skos:broader veroia-be2010-codelist:00 ;
+	skos:broadMatch kae-ota-ex14:6421 .
+
+<http://data.openbudgets.eu/resource/dataset/budget-veroia-expenditure-2010/codelist/00/6431> a skos:Concept ;
+	skos:inScheme veroia-be2010-dsd:codelist ;
+	skos:notation "6431" ;
+	skos:broader veroia-be2010-codelist:00 ;
+	skos:broadMatch kae-ota-ex14:6431 .
+
+<http://data.openbudgets.eu/resource/dataset/budget-veroia-expenditure-2010/codelist/00/6433> a skos:Concept ;
+	skos:inScheme veroia-be2010-dsd:codelist ;
+	skos:notation "6433" ;
+	skos:broader veroia-be2010-codelist:00 ;
+	skos:broadMatch kae-ota-ex14:6433 .
+
+<http://data.openbudgets.eu/resource/dataset/budget-veroia-expenditure-2010/codelist/00/6434> a skos:Concept ;
+	skos:inScheme veroia-be2010-dsd:codelist ;
+	skos:narrower <http://data.openbudgets.eu/resource/dataset/budget-veroia-expenditure-2010/codelist/00/6434.001> , <http://data.openbudgets.eu/resource/dataset/budget-veroia-expenditure-2010/codelist/00/6434.004> , <http://data.openbudgets.eu/resource/dataset/budget-veroia-expenditure-2010/codelist/00/6434.005> , <http://data.openbudgets.eu/resource/dataset/budget-veroia-expenditure-2010/codelist/00/6434.006> ;
+	skos:notation "6434" ;
+	skos:broader veroia-be2010-codelist:00 ;
+	skos:broadMatch kae-ota-ex14:6434 .
+
+<http://data.openbudgets.eu/resource/dataset/budget-veroia-expenditure-2010/codelist/00/6441> a skos:Concept ;
+	skos:inScheme veroia-be2010-dsd:codelist ;
+	skos:notation "6441" ;
+	skos:broader veroia-be2010-codelist:00 ;
+	skos:broadMatch kae-ota-ex14:6441 .
+
+<http://data.openbudgets.eu/resource/dataset/budget-veroia-expenditure-2010/codelist/00/6443> a skos:Concept ;
+	skos:inScheme veroia-be2010-dsd:codelist ;
+	skos:notation "6443" ;
+	skos:broader veroia-be2010-codelist:00 ;
+	skos:broadMatch kae-ota-ex14:6443 .
+
+<http://data.openbudgets.eu/resource/dataset/budget-veroia-expenditure-2010/codelist/00/6444> a skos:Concept ;
+	skos:inScheme veroia-be2010-dsd:codelist ;
+	skos:notation "6444" ;
+	skos:broader veroia-be2010-codelist:00 ;
+	skos:broadMatch kae-ota-ex14:6444 .
+
+<http://data.openbudgets.eu/resource/dataset/budget-veroia-expenditure-2010/codelist/00/6451> a skos:Concept ;
+	skos:inScheme veroia-be2010-dsd:codelist ;
+	skos:notation "6451" ;
+	skos:broader veroia-be2010-codelist:00 ;
+	skos:broadMatch kae-ota-ex14:6451 .
+
+<http://data.openbudgets.eu/resource/dataset/budget-veroia-expenditure-2010/codelist/00/6463> a skos:Concept ;
+	skos:inScheme veroia-be2010-dsd:codelist ;
+	skos:notation "6463" ;
+	skos:broader veroia-be2010-codelist:00 ;
+	skos:broadMatch kae-ota-ex14:6463 .
+
+<http://data.openbudgets.eu/resource/dataset/budget-veroia-expenditure-2010/codelist/00/6473> a skos:Concept ;
+	skos:inScheme veroia-be2010-dsd:codelist ;
+	skos:narrower <http://data.openbudgets.eu/resource/dataset/budget-veroia-expenditure-2010/codelist/00/6473.001> , <http://data.openbudgets.eu/resource/dataset/budget-veroia-expenditure-2010/codelist/00/6473.002> ;
+	skos:notation "6473" ;
+	skos:broader veroia-be2010-codelist:00 ;
+	skos:broadMatch kae-ota-ex14:6473 .
+
+<http://data.openbudgets.eu/resource/dataset/budget-veroia-expenditure-2010/codelist/00/6492> a skos:Concept ;
+	skos:inScheme veroia-be2010-dsd:codelist ;
+	skos:notation "6492" ;
+	skos:broader veroia-be2010-codelist:00 ;
+	skos:broadMatch kae-ota-ex14:6492 .
+
+<http://data.openbudgets.eu/resource/dataset/budget-veroia-expenditure-2010/codelist/00/6493> a skos:Concept ;
+	skos:inScheme veroia-be2010-dsd:codelist ;
+	skos:notation "6493" ;
+	skos:broader veroia-be2010-codelist:00 ;
+	skos:broadMatch kae-ota-ex14:6493 .
+
+<http://data.openbudgets.eu/resource/dataset/budget-veroia-expenditure-2010/codelist/00/6494> a skos:Concept ;
+	skos:inScheme veroia-be2010-dsd:codelist ;
+	skos:notation "6494" ;
+	skos:broader veroia-be2010-codelist:00 ;
+	skos:broadMatch kae-ota-ex14:6494 .
+
+<http://data.openbudgets.eu/resource/dataset/budget-veroia-expenditure-2010/codelist/00/6495> a skos:Concept ;
+	skos:inScheme veroia-be2010-dsd:codelist ;
+	skos:notation "6495" ;
+	skos:broader veroia-be2010-codelist:00 ;
+	skos:broadMatch kae-ota-ex14:6495 .
+
+<http://data.openbudgets.eu/resource/dataset/budget-veroia-expenditure-2010/codelist/00/6515> a skos:Concept ;
+	skos:inScheme veroia-be2010-dsd:codelist ;
+	skos:notation "6515" ;
+	skos:broader veroia-be2010-codelist:00 ;
+	skos:broadMatch kae-ota-ex14:6515 .
+
+<http://data.openbudgets.eu/resource/dataset/budget-veroia-expenditure-2010/codelist/00/6521> a skos:Concept ;
+	skos:inScheme veroia-be2010-dsd:codelist ;
+	skos:narrower <http://data.openbudgets.eu/resource/dataset/budget-veroia-expenditure-2010/codelist/00/6521.001> ;
+	skos:notation "6521" ;
+	skos:broader veroia-be2010-codelist:00 ;
+	skos:broadMatch kae-ota-ex14:6521 .
+
+<http://data.openbudgets.eu/resource/dataset/budget-veroia-expenditure-2010/codelist/00/6524> a skos:Concept ;
+	skos:inScheme veroia-be2010-dsd:codelist ;
+	skos:notation "6524" ;
+	skos:broader veroia-be2010-codelist:00 ;
+	skos:broadMatch kae-ota-ex14:6524 .
+
+<http://data.openbudgets.eu/resource/dataset/budget-veroia-expenditure-2010/codelist/00/6526> a skos:Concept ;
+	skos:inScheme veroia-be2010-dsd:codelist ;
+	skos:narrower <http://data.openbudgets.eu/resource/dataset/budget-veroia-expenditure-2010/codelist/00/6526.001> , <http://data.openbudgets.eu/resource/dataset/budget-veroia-expenditure-2010/codelist/00/6526.002> ;
+	skos:notation "6526" ;
+	skos:broader veroia-be2010-codelist:00 ;
+	skos:broadMatch kae-ota-ex14:6526 .
+
+<http://data.openbudgets.eu/resource/dataset/budget-veroia-expenditure-2010/codelist/00/6711> a skos:Concept ;
+	skos:inScheme veroia-be2010-dsd:codelist ;
+	skos:notation "6711" ;
+	skos:broader veroia-be2010-codelist:00 ;
+	skos:broadMatch kae-ota-ex14:6711 .
+
+<http://data.openbudgets.eu/resource/dataset/budget-veroia-expenditure-2010/codelist/00/6712> a skos:Concept ;
+	skos:inScheme veroia-be2010-dsd:codelist ;
+	skos:narrower <http://data.openbudgets.eu/resource/dataset/budget-veroia-expenditure-2010/codelist/00/6712.001> , <http://data.openbudgets.eu/resource/dataset/budget-veroia-expenditure-2010/codelist/00/6712.002> ;
+	skos:notation "6712" ;
+	skos:broader veroia-be2010-codelist:00 ;
+	skos:broadMatch kae-ota-ex14:6712 .
+
+<http://data.openbudgets.eu/resource/dataset/budget-veroia-expenditure-2010/codelist/00/6713> a skos:Concept ;
+	skos:inScheme veroia-be2010-dsd:codelist ;
+	skos:notation "6713" ;
+	skos:broader veroia-be2010-codelist:00 ;
+	skos:broadMatch kae-ota-ex14:6713 .
+
+<http://data.openbudgets.eu/resource/dataset/budget-veroia-expenditure-2010/codelist/00/6715> a skos:Concept ;
+	skos:inScheme veroia-be2010-dsd:codelist ;
+	skos:narrower <http://data.openbudgets.eu/resource/dataset/budget-veroia-expenditure-2010/codelist/00/6715.001> , <http://data.openbudgets.eu/resource/dataset/budget-veroia-expenditure-2010/codelist/00/6715.002> , <http://data.openbudgets.eu/resource/dataset/budget-veroia-expenditure-2010/codelist/00/6715.003> , <http://data.openbudgets.eu/resource/dataset/budget-veroia-expenditure-2010/codelist/00/6715.004> , <http://data.openbudgets.eu/resource/dataset/budget-veroia-expenditure-2010/codelist/00/6715.005> ;
+	skos:notation "6715" ;
+	skos:broader veroia-be2010-codelist:00 ;
+	skos:broadMatch kae-ota-ex14:6715 .
+
+<http://data.openbudgets.eu/resource/dataset/budget-veroia-expenditure-2010/codelist/00/6721> a skos:Concept ;
+	skos:inScheme veroia-be2010-dsd:codelist ;
+	skos:notation "6721" ;
+	skos:broader veroia-be2010-codelist:00 ;
+	skos:broadMatch kae-ota-ex14:6721 .
+
+<http://data.openbudgets.eu/resource/dataset/budget-veroia-expenditure-2010/codelist/00/6723> a skos:Concept ;
+	skos:inScheme veroia-be2010-dsd:codelist ;
+	skos:notation "6723" ;
+	skos:broader veroia-be2010-codelist:00 ;
+	skos:broadMatch kae-ota-ex14:6723 .
+
+<http://data.openbudgets.eu/resource/dataset/budget-veroia-expenditure-2010/codelist/00/6733> a skos:Concept ;
+	skos:inScheme veroia-be2010-dsd:codelist ;
+	skos:notation "6733" ;
+	skos:broader veroia-be2010-codelist:00 ;
+	skos:broadMatch kae-ota-ex14:6733 .
+
+<http://data.openbudgets.eu/resource/dataset/budget-veroia-expenditure-2010/codelist/00/6734> a skos:Concept ;
+	skos:inScheme veroia-be2010-dsd:codelist ;
+	skos:notation "6734" ;
+	skos:broader veroia-be2010-codelist:00 ;
+	skos:broadMatch kae-ota-ex14:6734 .
+
+<http://data.openbudgets.eu/resource/dataset/budget-veroia-expenditure-2010/codelist/00/6735> a skos:Concept ;
+	skos:inScheme veroia-be2010-dsd:codelist ;
+	skos:notation "6735" ;
+	skos:broader veroia-be2010-codelist:00 ;
+	skos:broadMatch kae-ota-ex14:6735 .
+
+<http://data.openbudgets.eu/resource/dataset/budget-veroia-expenditure-2010/codelist/00/6736> a skos:Concept ;
+	skos:inScheme veroia-be2010-dsd:codelist ;
+	skos:narrower <http://data.openbudgets.eu/resource/dataset/budget-veroia-expenditure-2010/codelist/00/6736.001> , <http://data.openbudgets.eu/resource/dataset/budget-veroia-expenditure-2010/codelist/00/6736.002> , <http://data.openbudgets.eu/resource/dataset/budget-veroia-expenditure-2010/codelist/00/6736.003> , <http://data.openbudgets.eu/resource/dataset/budget-veroia-expenditure-2010/codelist/00/6736.004> , <http://data.openbudgets.eu/resource/dataset/budget-veroia-expenditure-2010/codelist/00/6736.005> , <http://data.openbudgets.eu/resource/dataset/budget-veroia-expenditure-2010/codelist/00/6736.006> , <http://data.openbudgets.eu/resource/dataset/budget-veroia-expenditure-2010/codelist/00/6736.007> , <http://data.openbudgets.eu/resource/dataset/budget-veroia-expenditure-2010/codelist/00/6736.008> , <http://data.openbudgets.eu/resource/dataset/budget-veroia-expenditure-2010/codelist/00/6736.009> , <http://data.openbudgets.eu/resource/dataset/budget-veroia-expenditure-2010/codelist/00/6736.010> ;
+	skos:notation "6736" ;
+	skos:broader veroia-be2010-codelist:00 ;
+	skos:broadMatch kae-ota-ex14:6736 .
+
+<http://data.openbudgets.eu/resource/dataset/budget-veroia-expenditure-2010/codelist/00/6737> a skos:Concept ;
+	skos:inScheme veroia-be2010-dsd:codelist ;
+	skos:narrower <http://data.openbudgets.eu/resource/dataset/budget-veroia-expenditure-2010/codelist/00/6737.001> , <http://data.openbudgets.eu/resource/dataset/budget-veroia-expenditure-2010/codelist/00/6737.002> , <http://data.openbudgets.eu/resource/dataset/budget-veroia-expenditure-2010/codelist/00/6737.003> ;
+	skos:notation "6737" ;
+	skos:broader veroia-be2010-codelist:00 ;
+	skos:broadMatch kae-ota-ex14:6737 .
+
+<http://data.openbudgets.eu/resource/dataset/budget-veroia-expenditure-2010/codelist/00/6822> a skos:Concept ;
+	skos:inScheme veroia-be2010-dsd:codelist ;
+	skos:notation "6822" ;
+	skos:broader veroia-be2010-codelist:00 ;
+	skos:broadMatch kae-ota-ex14:6822 .
+
+<http://data.openbudgets.eu/resource/dataset/budget-veroia-expenditure-2010/codelist/00/6031.001> a skos:Concept ;
+	skos:inScheme veroia-be2010-dsd:codelist ;
+	skos:notation "6031.001" ;
+	skos:broader <http://data.openbudgets.eu/resource/dataset/budget-veroia-expenditure-2010/codelist/00/6031> .
+
+<http://data.openbudgets.eu/resource/dataset/budget-veroia-expenditure-2010/codelist/00/6031.002> a skos:Concept ;
+	skos:inScheme veroia-be2010-dsd:codelist ;
+	skos:notation "6031.002" ;
+	skos:broader <http://data.openbudgets.eu/resource/dataset/budget-veroia-expenditure-2010/codelist/00/6031> .
+
+<http://data.openbudgets.eu/resource/dataset/budget-veroia-expenditure-2010/codelist/00/6056.001> a skos:Concept ;
+	skos:inScheme veroia-be2010-dsd:codelist ;
+	skos:notation "6056.001" ;
+	skos:broader <http://data.openbudgets.eu/resource/dataset/budget-veroia-expenditure-2010/codelist/00/6056> .
+
+<http://data.openbudgets.eu/resource/dataset/budget-veroia-expenditure-2010/codelist/00/6056.002> a skos:Concept ;
+	skos:inScheme veroia-be2010-dsd:codelist ;
+	skos:notation "6056.002" ;
+	skos:broader <http://data.openbudgets.eu/resource/dataset/budget-veroia-expenditure-2010/codelist/00/6056> .
+
+<http://data.openbudgets.eu/resource/dataset/budget-veroia-expenditure-2010/codelist/00/6117.001> a skos:Concept ;
+	skos:inScheme veroia-be2010-dsd:codelist ;
+	skos:notation "6117.001" ;
+	skos:broader <http://data.openbudgets.eu/resource/dataset/budget-veroia-expenditure-2010/codelist/00/6117> .
+
+<http://data.openbudgets.eu/resource/dataset/budget-veroia-expenditure-2010/codelist/00/6117.002> a skos:Concept ;
+	skos:inScheme veroia-be2010-dsd:codelist ;
+	skos:notation "6117.002" ;
+	skos:broader <http://data.openbudgets.eu/resource/dataset/budget-veroia-expenditure-2010/codelist/00/6117> .
+
+<http://data.openbudgets.eu/resource/dataset/budget-veroia-expenditure-2010/codelist/00/6131.001> a skos:Concept ;
+	skos:inScheme veroia-be2010-dsd:codelist ;
+	skos:notation "6131.001" ;
+	skos:broader <http://data.openbudgets.eu/resource/dataset/budget-veroia-expenditure-2010/codelist/00/6131> .
+
+<http://data.openbudgets.eu/resource/dataset/budget-veroia-expenditure-2010/codelist/00/6142.001> a skos:Concept ;
+	skos:inScheme veroia-be2010-dsd:codelist ;
+	skos:notation "6142.001" ;
+	skos:broader <http://data.openbudgets.eu/resource/dataset/budget-veroia-expenditure-2010/codelist/00/6142> .
+
+<http://data.openbudgets.eu/resource/dataset/budget-veroia-expenditure-2010/codelist/00/6331.001> a skos:Concept ;
+	skos:inScheme veroia-be2010-dsd:codelist ;
+	skos:notation "6331.001" ;
+	skos:broader <http://data.openbudgets.eu/resource/dataset/budget-veroia-expenditure-2010/codelist/00/6331> .
+
+<http://data.openbudgets.eu/resource/dataset/budget-veroia-expenditure-2010/codelist/00/6434.001> a skos:Concept ;
+	skos:inScheme veroia-be2010-dsd:codelist ;
+	skos:notation "6434.001" ;
+	skos:broader <http://data.openbudgets.eu/resource/dataset/budget-veroia-expenditure-2010/codelist/00/6434> .
+
+<http://data.openbudgets.eu/resource/dataset/budget-veroia-expenditure-2010/codelist/00/6434.004> a skos:Concept ;
+	skos:inScheme veroia-be2010-dsd:codelist ;
+	skos:notation "6434.004" ;
+	skos:broader <http://data.openbudgets.eu/resource/dataset/budget-veroia-expenditure-2010/codelist/00/6434> .
+
+<http://data.openbudgets.eu/resource/dataset/budget-veroia-expenditure-2010/codelist/00/6434.005> a skos:Concept ;
+	skos:inScheme veroia-be2010-dsd:codelist ;
+	skos:notation "6434.005" ;
+	skos:broader <http://data.openbudgets.eu/resource/dataset/budget-veroia-expenditure-2010/codelist/00/6434> .
+
+<http://data.openbudgets.eu/resource/dataset/budget-veroia-expenditure-2010/codelist/00/6434.006> a skos:Concept ;
+	skos:inScheme veroia-be2010-dsd:codelist ;
+	skos:notation "6434.006" ;
+	skos:broader <http://data.openbudgets.eu/resource/dataset/budget-veroia-expenditure-2010/codelist/00/6434> .
+
+<http://data.openbudgets.eu/resource/dataset/budget-veroia-expenditure-2010/codelist/00/6473.001> a skos:Concept ;
+	skos:inScheme veroia-be2010-dsd:codelist ;
+	skos:notation "6473.001" ;
+	skos:broader <http://data.openbudgets.eu/resource/dataset/budget-veroia-expenditure-2010/codelist/00/6473> .
+
+<http://data.openbudgets.eu/resource/dataset/budget-veroia-expenditure-2010/codelist/00/6473.002> a skos:Concept ;
+	skos:inScheme veroia-be2010-dsd:codelist ;
+	skos:notation "6473.002" ;
+	skos:broader <http://data.openbudgets.eu/resource/dataset/budget-veroia-expenditure-2010/codelist/00/6473> .
+
+<http://data.openbudgets.eu/resource/dataset/budget-veroia-expenditure-2010/codelist/00/6521.001> a skos:Concept ;
+	skos:inScheme veroia-be2010-dsd:codelist ;
+	skos:notation "6521.001" ;
+	skos:broader <http://data.openbudgets.eu/resource/dataset/budget-veroia-expenditure-2010/codelist/00/6521> .
+
+<http://data.openbudgets.eu/resource/dataset/budget-veroia-expenditure-2010/codelist/00/6526.001> a skos:Concept ;
+	skos:inScheme veroia-be2010-dsd:codelist ;
+	skos:notation "6526.001" ;
+	skos:broader <http://data.openbudgets.eu/resource/dataset/budget-veroia-expenditure-2010/codelist/00/6526> .
+
+<http://data.openbudgets.eu/resource/dataset/budget-veroia-expenditure-2010/codelist/00/6526.002> a skos:Concept ;
+	skos:inScheme veroia-be2010-dsd:codelist ;
+	skos:notation "6526.002" ;
+	skos:broader <http://data.openbudgets.eu/resource/dataset/budget-veroia-expenditure-2010/codelist/00/6526> .
+
+<http://data.openbudgets.eu/resource/dataset/budget-veroia-expenditure-2010/codelist/00/6712.001> a skos:Concept ;
+	skos:inScheme veroia-be2010-dsd:codelist ;
+	skos:notation "6712.001" ;
+	skos:broader <http://data.openbudgets.eu/resource/dataset/budget-veroia-expenditure-2010/codelist/00/6712> .
+
+<http://data.openbudgets.eu/resource/dataset/budget-veroia-expenditure-2010/codelist/00/6712.002> a skos:Concept ;
+	skos:inScheme veroia-be2010-dsd:codelist ;
+	skos:notation "6712.002" ;
+	skos:broader <http://data.openbudgets.eu/resource/dataset/budget-veroia-expenditure-2010/codelist/00/6712> .
+
+<http://data.openbudgets.eu/resource/dataset/budget-veroia-expenditure-2010/codelist/00/6715.001> a skos:Concept ;
+	skos:inScheme veroia-be2010-dsd:codelist ;
+	skos:notation "6715.001" ;
+	skos:broader <http://data.openbudgets.eu/resource/dataset/budget-veroia-expenditure-2010/codelist/00/6715> .
+
+<http://data.openbudgets.eu/resource/dataset/budget-veroia-expenditure-2010/codelist/00/6715.002> a skos:Concept ;
+	skos:inScheme veroia-be2010-dsd:codelist ;
+	skos:notation "6715.002" ;
+	skos:broader <http://data.openbudgets.eu/resource/dataset/budget-veroia-expenditure-2010/codelist/00/6715> .
+
+<http://data.openbudgets.eu/resource/dataset/budget-veroia-expenditure-2010/codelist/00/6715.003> a skos:Concept ;
+	skos:inScheme veroia-be2010-dsd:codelist ;
+	skos:notation "6715.003" ;
+	skos:broader <http://data.openbudgets.eu/resource/dataset/budget-veroia-expenditure-2010/codelist/00/6715> .
+
+<http://data.openbudgets.eu/resource/dataset/budget-veroia-expenditure-2010/codelist/00/6715.004> a skos:Concept ;
+	skos:inScheme veroia-be2010-dsd:codelist ;
+	skos:notation "6715.004" ;
+	skos:broader <http://data.openbudgets.eu/resource/dataset/budget-veroia-expenditure-2010/codelist/00/6715> .
+
+<http://data.openbudgets.eu/resource/dataset/budget-veroia-expenditure-2010/codelist/00/6715.005> a skos:Concept ;
+	skos:inScheme veroia-be2010-dsd:codelist ;
+	skos:notation "6715.005" ;
+	skos:broader <http://data.openbudgets.eu/resource/dataset/budget-veroia-expenditure-2010/codelist/00/6715> .
+
+<http://data.openbudgets.eu/resource/dataset/budget-veroia-expenditure-2010/codelist/00/6736.001> a skos:Concept ;
+	skos:inScheme veroia-be2010-dsd:codelist ;
+	skos:notation "6736.001" ;
+	skos:broader <http://data.openbudgets.eu/resource/dataset/budget-veroia-expenditure-2010/codelist/00/6736> .
+
+<http://data.openbudgets.eu/resource/dataset/budget-veroia-expenditure-2010/codelist/00/6736.002> a skos:Concept ;
+	skos:inScheme veroia-be2010-dsd:codelist ;
+	skos:notation "6736.002" ;
+	skos:broader <http://data.openbudgets.eu/resource/dataset/budget-veroia-expenditure-2010/codelist/00/6736> .
+
+<http://data.openbudgets.eu/resource/dataset/budget-veroia-expenditure-2010/codelist/00/6736.003> a skos:Concept ;
+	skos:inScheme veroia-be2010-dsd:codelist ;
+	skos:notation "6736.003" ;
+	skos:broader <http://data.openbudgets.eu/resource/dataset/budget-veroia-expenditure-2010/codelist/00/6736> .
+
+<http://data.openbudgets.eu/resource/dataset/budget-veroia-expenditure-2010/codelist/00/6736.004> a skos:Concept ;
+	skos:inScheme veroia-be2010-dsd:codelist ;
+	skos:notation "6736.004" ;
+	skos:broader <http://data.openbudgets.eu/resource/dataset/budget-veroia-expenditure-2010/codelist/00/6736> .
+
+<http://data.openbudgets.eu/resource/dataset/budget-veroia-expenditure-2010/codelist/00/6736.005> a skos:Concept ;
+	skos:inScheme veroia-be2010-dsd:codelist ;
+	skos:notation "6736.005" ;
+	skos:broader <http://data.openbudgets.eu/resource/dataset/budget-veroia-expenditure-2010/codelist/00/6736> .
+
+<http://data.openbudgets.eu/resource/dataset/budget-veroia-expenditure-2010/codelist/00/6736.006> a skos:Concept ;
+	skos:inScheme veroia-be2010-dsd:codelist ;
+	skos:notation "6736.006" ;
+	skos:broader <http://data.openbudgets.eu/resource/dataset/budget-veroia-expenditure-2010/codelist/00/6736> .
+
+<http://data.openbudgets.eu/resource/dataset/budget-veroia-expenditure-2010/codelist/00/6736.007> a skos:Concept ;
+	skos:inScheme veroia-be2010-dsd:codelist ;
+	skos:notation "6736.007" ;
+	skos:broader <http://data.openbudgets.eu/resource/dataset/budget-veroia-expenditure-2010/codelist/00/6736> .
+
+<http://data.openbudgets.eu/resource/dataset/budget-veroia-expenditure-2010/codelist/00/6736.008> a skos:Concept ;
+	skos:inScheme veroia-be2010-dsd:codelist ;
+	skos:notation "6736.008" ;
+	skos:broader <http://data.openbudgets.eu/resource/dataset/budget-veroia-expenditure-2010/codelist/00/6736> .
+
+<http://data.openbudgets.eu/resource/dataset/budget-veroia-expenditure-2010/codelist/00/6736.009> a skos:Concept ;
+	skos:inScheme veroia-be2010-dsd:codelist ;
+	skos:notation "6736.009" ;
+	skos:broader <http://data.openbudgets.eu/resource/dataset/budget-veroia-expenditure-2010/codelist/00/6736> .
+
+<http://data.openbudgets.eu/resource/dataset/budget-veroia-expenditure-2010/codelist/00/6736.010> a skos:Concept ;
+	skos:inScheme veroia-be2010-dsd:codelist ;
+	skos:notation "6736.010" ;
+	skos:broader <http://data.openbudgets.eu/resource/dataset/budget-veroia-expenditure-2010/codelist/00/6736> .
+
+<http://data.openbudgets.eu/resource/dataset/budget-veroia-expenditure-2010/codelist/00/6737.001> a skos:Concept ;
+	skos:inScheme veroia-be2010-dsd:codelist ;
+	skos:notation "6737.001" ;
+	skos:broader <http://data.openbudgets.eu/resource/dataset/budget-veroia-expenditure-2010/codelist/00/6737> .
+
+<http://data.openbudgets.eu/resource/dataset/budget-veroia-expenditure-2010/codelist/00/6737.002> a skos:Concept ;
+	skos:inScheme veroia-be2010-dsd:codelist ;
+	skos:notation "6737.002" ;
+	skos:broader <http://data.openbudgets.eu/resource/dataset/budget-veroia-expenditure-2010/codelist/00/6737> .
+
+<http://data.openbudgets.eu/resource/dataset/budget-veroia-expenditure-2010/codelist/00/6737.003> a skos:Concept ;
+	skos:inScheme veroia-be2010-dsd:codelist ;
+	skos:notation "6737.003" ;
+	skos:broader <http://data.openbudgets.eu/resource/dataset/budget-veroia-expenditure-2010/codelist/00/6737> .
+
+<http://data.openbudgets.eu/resource/dataset/budget-veroia-expenditure-2010/codelist/10/6011> a skos:Concept ;
+	skos:inScheme veroia-be2010-dsd:codelist ;
+	skos:narrower <http://data.openbudgets.eu/resource/dataset/budget-veroia-expenditure-2010/codelist/10/6011.001> , <http://data.openbudgets.eu/resource/dataset/budget-veroia-expenditure-2010/codelist/10/6011.002> ;
+	skos:notation "6011" ;
+	skos:broader veroia-be2010-codelist:10 ;
+	skos:broadMatch kae-ota-ex14:6011 .
+
+<http://data.openbudgets.eu/resource/dataset/budget-veroia-expenditure-2010/codelist/10/6012> a skos:Concept ;
+	skos:inScheme veroia-be2010-dsd:codelist ;
+	skos:notation "6012" ;
+	skos:broader veroia-be2010-codelist:10 ;
+	skos:broadMatch kae-ota-ex14:6012 .
+
+<http://data.openbudgets.eu/resource/dataset/budget-veroia-expenditure-2010/codelist/10/6021> a skos:Concept ;
+	skos:inScheme veroia-be2010-dsd:codelist ;
+	skos:narrower <http://data.openbudgets.eu/resource/dataset/budget-veroia-expenditure-2010/codelist/10/6021.001> , <http://data.openbudgets.eu/resource/dataset/budget-veroia-expenditure-2010/codelist/10/6021.002> ;
+	skos:notation "6021" ;
+	skos:broader veroia-be2010-codelist:10 ;
+	skos:broadMatch kae-ota-ex14:6021 .
+
+<http://data.openbudgets.eu/resource/dataset/budget-veroia-expenditure-2010/codelist/10/6022> a skos:Concept ;
+	skos:inScheme veroia-be2010-dsd:codelist ;
+	skos:notation "6022" ;
+	skos:broader veroia-be2010-codelist:10 ;
+	skos:broadMatch kae-ota-ex14:6022 .
+
+<http://data.openbudgets.eu/resource/dataset/budget-veroia-expenditure-2010/codelist/10/6041> a skos:Concept ;
+	skos:inScheme veroia-be2010-dsd:codelist ;
+	skos:narrower <http://data.openbudgets.eu/resource/dataset/budget-veroia-expenditure-2010/codelist/10/6041.001> , <http://data.openbudgets.eu/resource/dataset/budget-veroia-expenditure-2010/codelist/10/6041.002> ;
+	skos:notation "6041" ;
+	skos:broader veroia-be2010-codelist:10 ;
+	skos:broadMatch kae-ota-ex14:6041 .
+
+<http://data.openbudgets.eu/resource/dataset/budget-veroia-expenditure-2010/codelist/10/6051> a skos:Concept ;
+	skos:inScheme veroia-be2010-dsd:codelist ;
+	skos:notation "6051" ;
+	skos:broader veroia-be2010-codelist:10 ;
+	skos:broadMatch kae-ota-ex14:6051 .
+
+<http://data.openbudgets.eu/resource/dataset/budget-veroia-expenditure-2010/codelist/10/6052> a skos:Concept ;
+	skos:inScheme veroia-be2010-dsd:codelist ;
+	skos:notation "6052" ;
+	skos:broader veroia-be2010-codelist:10 ;
+	skos:broadMatch kae-ota-ex14:6052 .
+
+<http://data.openbudgets.eu/resource/dataset/budget-veroia-expenditure-2010/codelist/10/6054> a skos:Concept ;
+	skos:inScheme veroia-be2010-dsd:codelist ;
+	skos:notation "6054" ;
+	skos:broader veroia-be2010-codelist:10 ;
+	skos:broadMatch kae-ota-ex14:6054 .
+
+<http://data.openbudgets.eu/resource/dataset/budget-veroia-expenditure-2010/codelist/10/6061> a skos:Concept ;
+	skos:inScheme veroia-be2010-dsd:codelist ;
+	skos:notation "6061" ;
+	skos:broader veroia-be2010-codelist:10 ;
+	skos:broadMatch kae-ota-ex14:6061 .
+
+<http://data.openbudgets.eu/resource/dataset/budget-veroia-expenditure-2010/codelist/10/6062> a skos:Concept ;
+	skos:inScheme veroia-be2010-dsd:codelist ;
+	skos:notation "6062" ;
+	skos:broader veroia-be2010-codelist:10 ;
+	skos:broadMatch kae-ota-ex14:6062 .
+
+<http://data.openbudgets.eu/resource/dataset/budget-veroia-expenditure-2010/codelist/10/6063> a skos:Concept ;
+	skos:inScheme veroia-be2010-dsd:codelist ;
+	skos:notation "6063" ;
+	skos:broader veroia-be2010-codelist:10 ;
+	skos:broadMatch kae-ota-ex14:6063 .
+
+<http://data.openbudgets.eu/resource/dataset/budget-veroia-expenditure-2010/codelist/10/6115> a skos:Concept ;
+	skos:inScheme veroia-be2010-dsd:codelist ;
+	skos:notation "6115" ;
+	skos:broader veroia-be2010-codelist:10 ;
+	skos:broadMatch kae-ota-ex14:6115 .
+
+<http://data.openbudgets.eu/resource/dataset/budget-veroia-expenditure-2010/codelist/10/6232> a skos:Concept ;
+	skos:inScheme veroia-be2010-dsd:codelist ;
+	skos:notation "6232" ;
+	skos:broader veroia-be2010-codelist:10 ;
+	skos:broadMatch kae-ota-ex14:6232 .
+
+<http://data.openbudgets.eu/resource/dataset/budget-veroia-expenditure-2010/codelist/10/6251> a skos:Concept ;
+	skos:inScheme veroia-be2010-dsd:codelist ;
+	skos:notation "6251" ;
+	skos:broader veroia-be2010-codelist:10 ;
+	skos:broadMatch kae-ota-ex14:6251 .
+
+<http://data.openbudgets.eu/resource/dataset/budget-veroia-expenditure-2010/codelist/10/6264> a skos:Concept ;
+	skos:inScheme veroia-be2010-dsd:codelist ;
+	skos:narrower <http://data.openbudgets.eu/resource/dataset/budget-veroia-expenditure-2010/codelist/10/6264.001> , <http://data.openbudgets.eu/resource/dataset/budget-veroia-expenditure-2010/codelist/10/6264.002> , <http://data.openbudgets.eu/resource/dataset/budget-veroia-expenditure-2010/codelist/10/6264.003> ;
+	skos:notation "6264" ;
+	skos:broader veroia-be2010-codelist:10 ;
+	skos:broadMatch kae-ota-ex14:6264 .
+
+<http://data.openbudgets.eu/resource/dataset/budget-veroia-expenditure-2010/codelist/10/6265> a skos:Concept ;
+	skos:inScheme veroia-be2010-dsd:codelist ;
+	skos:notation "6265" ;
+	skos:broader veroia-be2010-codelist:10 ;
+	skos:broadMatch kae-ota-ex14:6265 .
+
+<http://data.openbudgets.eu/resource/dataset/budget-veroia-expenditure-2010/codelist/10/6266> a skos:Concept ;
+	skos:inScheme veroia-be2010-dsd:codelist ;
+	skos:notation "6266" ;
+	skos:broader veroia-be2010-codelist:10 ;
+	skos:broadMatch kae-ota-ex14:6266 .
+
+<http://data.openbudgets.eu/resource/dataset/budget-veroia-expenditure-2010/codelist/10/6271> a skos:Concept ;
+	skos:inScheme veroia-be2010-dsd:codelist ;
+	skos:notation "6271" ;
+	skos:broader veroia-be2010-codelist:10 ;
+	skos:broadMatch kae-ota-ex14:6271 .
+
+<http://data.openbudgets.eu/resource/dataset/budget-veroia-expenditure-2010/codelist/10/6273> a skos:Concept ;
+	skos:inScheme veroia-be2010-dsd:codelist ;
+	skos:notation "6273" ;
+	skos:broader veroia-be2010-codelist:10 ;
+	skos:broadMatch kae-ota-ex14:6273 .
+
+<http://data.openbudgets.eu/resource/dataset/budget-veroia-expenditure-2010/codelist/10/6414> a skos:Concept ;
+	skos:inScheme veroia-be2010-dsd:codelist ;
+	skos:notation "6414" ;
+	skos:broader veroia-be2010-codelist:10 ;
+	skos:broadMatch kae-ota-ex14:6414 .
+
+<http://data.openbudgets.eu/resource/dataset/budget-veroia-expenditure-2010/codelist/10/6422> a skos:Concept ;
+	skos:inScheme veroia-be2010-dsd:codelist ;
+	skos:notation "6422" ;
+	skos:broader veroia-be2010-codelist:10 ;
+	skos:broadMatch kae-ota-ex14:6422 .
+
+<http://data.openbudgets.eu/resource/dataset/budget-veroia-expenditure-2010/codelist/10/6461> a skos:Concept ;
+	skos:inScheme veroia-be2010-dsd:codelist ;
+	skos:notation "6461" ;
+	skos:broader veroia-be2010-codelist:10 ;
+	skos:broadMatch kae-ota-ex14:6461 .
+
+<http://data.openbudgets.eu/resource/dataset/budget-veroia-expenditure-2010/codelist/10/6462> a skos:Concept ;
+	skos:inScheme veroia-be2010-dsd:codelist ;
+	skos:notation "6462" ;
+	skos:broader veroia-be2010-codelist:10 ;
+	skos:broadMatch kae-ota-ex14:6462 .
+
+<http://data.openbudgets.eu/resource/dataset/budget-veroia-expenditure-2010/codelist/10/6463> a skos:Concept ;
+	skos:inScheme veroia-be2010-dsd:codelist ;
+	skos:notation "6463" ;
+	skos:broader veroia-be2010-codelist:10 ;
+	skos:broadMatch kae-ota-ex14:6463 .
+
+<http://data.openbudgets.eu/resource/dataset/budget-veroia-expenditure-2010/codelist/10/6484> a skos:Concept ;
+	skos:inScheme veroia-be2010-dsd:codelist ;
+	skos:narrower <http://data.openbudgets.eu/resource/dataset/budget-veroia-expenditure-2010/codelist/10/6484.001> ;
+	skos:notation "6484" ;
+	skos:broader veroia-be2010-codelist:10 ;
+	skos:broadMatch kae-ota-ex14:6484 .
+
+<http://data.openbudgets.eu/resource/dataset/budget-veroia-expenditure-2010/codelist/10/6611> a skos:Concept ;
+	skos:inScheme veroia-be2010-dsd:codelist ;
+	skos:notation "6611" ;
+	skos:broader veroia-be2010-codelist:10 ;
+	skos:broadMatch kae-ota-ex14:6611 .
+
+<http://data.openbudgets.eu/resource/dataset/budget-veroia-expenditure-2010/codelist/10/6612> a skos:Concept ;
+	skos:inScheme veroia-be2010-dsd:codelist ;
+	skos:notation "6612" ;
+	skos:broader veroia-be2010-codelist:10 ;
+	skos:broadMatch kae-ota-ex14:6612 .
+
+<http://data.openbudgets.eu/resource/dataset/budget-veroia-expenditure-2010/codelist/10/6613> a skos:Concept ;
+	skos:inScheme veroia-be2010-dsd:codelist ;
+	skos:notation "6613" ;
+	skos:broader veroia-be2010-codelist:10 ;
+	skos:broadMatch kae-ota-ex14:6613 .
+
+<http://data.openbudgets.eu/resource/dataset/budget-veroia-expenditure-2010/codelist/10/6615> a skos:Concept ;
+	skos:inScheme veroia-be2010-dsd:codelist ;
+	skos:notation "6615" ;
+	skos:broader veroia-be2010-codelist:10 ;
+	skos:broadMatch kae-ota-ex14:6615 .
+
+<http://data.openbudgets.eu/resource/dataset/budget-veroia-expenditure-2010/codelist/10/6634> a skos:Concept ;
+	skos:inScheme veroia-be2010-dsd:codelist ;
+	skos:notation "6634" ;
+	skos:broader veroia-be2010-codelist:10 ;
+	skos:broadMatch kae-ota-ex14:6634 .
+
+<http://data.openbudgets.eu/resource/dataset/budget-veroia-expenditure-2010/codelist/10/6643> a skos:Concept ;
+	skos:inScheme veroia-be2010-dsd:codelist ;
+	skos:notation "6643" ;
+	skos:broader veroia-be2010-codelist:10 ;
+	skos:broadMatch kae-ota-ex14:6643 .
+
+<http://data.openbudgets.eu/resource/dataset/budget-veroia-expenditure-2010/codelist/10/6652> a skos:Concept ;
+	skos:inScheme veroia-be2010-dsd:codelist ;
+	skos:notation "6652" ;
+	skos:broader veroia-be2010-codelist:10 ;
+	skos:broadMatch kae-ota-ex14:6652 .
+
+<http://data.openbudgets.eu/resource/dataset/budget-veroia-expenditure-2010/codelist/10/6681> a skos:Concept ;
+	skos:inScheme veroia-be2010-dsd:codelist ;
+	skos:notation "6681" ;
+	skos:broader veroia-be2010-codelist:10 ;
+	skos:broadMatch kae-ota-ex14:6681 .
+
+<http://data.openbudgets.eu/resource/dataset/budget-veroia-expenditure-2010/codelist/10/6691> a skos:Concept ;
+	skos:inScheme veroia-be2010-dsd:codelist ;
+	skos:notation "6691" ;
+	skos:broader veroia-be2010-codelist:10 ;
+	skos:broadMatch kae-ota-ex14:6691 .
+
+<http://data.openbudgets.eu/resource/dataset/budget-veroia-expenditure-2010/codelist/10/7131> a skos:Concept ;
+	skos:inScheme veroia-be2010-dsd:codelist ;
+	skos:notation "7131" ;
+	skos:broader veroia-be2010-codelist:10 ;
+	skos:broadMatch kae-ota-ex14:7131 .
+
+<http://data.openbudgets.eu/resource/dataset/budget-veroia-expenditure-2010/codelist/10/7133> a skos:Concept ;
+	skos:inScheme veroia-be2010-dsd:codelist ;
+	skos:notation "7133" ;
+	skos:broader veroia-be2010-codelist:10 ;
+	skos:broadMatch kae-ota-ex14:7133 .
+
+<http://data.openbudgets.eu/resource/dataset/budget-veroia-expenditure-2010/codelist/10/7134> a skos:Concept ;
+	skos:inScheme veroia-be2010-dsd:codelist ;
+	skos:narrower <http://data.openbudgets.eu/resource/dataset/budget-veroia-expenditure-2010/codelist/10/7134.001> , <http://data.openbudgets.eu/resource/dataset/budget-veroia-expenditure-2010/codelist/10/7134.002> ;
+	skos:notation "7134" ;
+	skos:broader veroia-be2010-codelist:10 ;
+	skos:broadMatch kae-ota-ex14:7134 .
+
+<http://data.openbudgets.eu/resource/dataset/budget-veroia-expenditure-2010/codelist/10/7413> a skos:Concept ;
+	skos:inScheme veroia-be2010-dsd:codelist ;
+	skos:narrower <http://data.openbudgets.eu/resource/dataset/budget-veroia-expenditure-2010/codelist/10/7413.001> ;
+	skos:notation "7413" ;
+	skos:broader veroia-be2010-codelist:10 ;
+	skos:broadMatch kae-ota-ex14:7413 .
+
+<http://data.openbudgets.eu/resource/dataset/budget-veroia-expenditure-2010/codelist/10/7511> a skos:Concept ;
+	skos:inScheme veroia-be2010-dsd:codelist ;
+	skos:notation "7511" ;
+	skos:broader veroia-be2010-codelist:10 ;
+	skos:broadMatch kae-ota-ex14:7511 .
+
+<http://data.openbudgets.eu/resource/dataset/budget-veroia-expenditure-2010/codelist/10/7513> a skos:Concept ;
+	skos:inScheme veroia-be2010-dsd:codelist ;
+	skos:narrower <http://data.openbudgets.eu/resource/dataset/budget-veroia-expenditure-2010/codelist/10/7513.001> , <http://data.openbudgets.eu/resource/dataset/budget-veroia-expenditure-2010/codelist/10/7513.002> ;
+	skos:notation "7513" ;
+	skos:broader veroia-be2010-codelist:10 ;
+	skos:broadMatch kae-ota-ex14:7513 .
+
+<http://data.openbudgets.eu/resource/dataset/budget-veroia-expenditure-2010/codelist/10/7521> a skos:Concept ;
+	skos:inScheme veroia-be2010-dsd:codelist ;
+	skos:narrower <http://data.openbudgets.eu/resource/dataset/budget-veroia-expenditure-2010/codelist/10/7521.001> ;
+	skos:notation "7521" ;
+	skos:broader veroia-be2010-codelist:10 ;
+	skos:broadMatch kae-ota-ex14:7521 .
+
+<http://data.openbudgets.eu/resource/dataset/budget-veroia-expenditure-2010/codelist/10/6011.001> a skos:Concept ;
+	skos:inScheme veroia-be2010-dsd:codelist ;
+	skos:notation "6011.001" ;
+	skos:broader <http://data.openbudgets.eu/resource/dataset/budget-veroia-expenditure-2010/codelist/10/6011> .
+
+<http://data.openbudgets.eu/resource/dataset/budget-veroia-expenditure-2010/codelist/10/6011.002> a skos:Concept ;
+	skos:inScheme veroia-be2010-dsd:codelist ;
+	skos:notation "6011.002" ;
+	skos:broader <http://data.openbudgets.eu/resource/dataset/budget-veroia-expenditure-2010/codelist/10/6011> .
+
+<http://data.openbudgets.eu/resource/dataset/budget-veroia-expenditure-2010/codelist/10/6021.001> a skos:Concept ;
+	skos:inScheme veroia-be2010-dsd:codelist ;
+	skos:notation "6021.001" ;
+	skos:broader <http://data.openbudgets.eu/resource/dataset/budget-veroia-expenditure-2010/codelist/10/6021> .
+
+<http://data.openbudgets.eu/resource/dataset/budget-veroia-expenditure-2010/codelist/10/6021.002> a skos:Concept ;
+	skos:inScheme veroia-be2010-dsd:codelist ;
+	skos:notation "6021.002" ;
+	skos:broader <http://data.openbudgets.eu/resource/dataset/budget-veroia-expenditure-2010/codelist/10/6021> .
+
+<http://data.openbudgets.eu/resource/dataset/budget-veroia-expenditure-2010/codelist/10/6041.001> a skos:Concept ;
+	skos:inScheme veroia-be2010-dsd:codelist ;
+	skos:notation "6041.001" ;
+	skos:broader <http://data.openbudgets.eu/resource/dataset/budget-veroia-expenditure-2010/codelist/10/6041> .
+
+<http://data.openbudgets.eu/resource/dataset/budget-veroia-expenditure-2010/codelist/10/6041.002> a skos:Concept ;
+	skos:inScheme veroia-be2010-dsd:codelist ;
+	skos:notation "6041.002" ;
+	skos:broader <http://data.openbudgets.eu/resource/dataset/budget-veroia-expenditure-2010/codelist/10/6041> .
+
+<http://data.openbudgets.eu/resource/dataset/budget-veroia-expenditure-2010/codelist/10/6264.001> a skos:Concept ;
+	skos:inScheme veroia-be2010-dsd:codelist ;
+	skos:notation "6264.001" ;
+	skos:broader <http://data.openbudgets.eu/resource/dataset/budget-veroia-expenditure-2010/codelist/10/6264> .
+
+<http://data.openbudgets.eu/resource/dataset/budget-veroia-expenditure-2010/codelist/10/6264.002> a skos:Concept ;
+	skos:inScheme veroia-be2010-dsd:codelist ;
+	skos:notation "6264.002" ;
+	skos:broader <http://data.openbudgets.eu/resource/dataset/budget-veroia-expenditure-2010/codelist/10/6264> .
+
+<http://data.openbudgets.eu/resource/dataset/budget-veroia-expenditure-2010/codelist/10/6264.003> a skos:Concept ;
+	skos:inScheme veroia-be2010-dsd:codelist ;
+	skos:notation "6264.003" ;
+	skos:broader <http://data.openbudgets.eu/resource/dataset/budget-veroia-expenditure-2010/codelist/10/6264> .
+
+<http://data.openbudgets.eu/resource/dataset/budget-veroia-expenditure-2010/codelist/10/6484.001> a skos:Concept ;
+	skos:inScheme veroia-be2010-dsd:codelist ;
+	skos:notation "6484.001" ;
+	skos:broader <http://data.openbudgets.eu/resource/dataset/budget-veroia-expenditure-2010/codelist/10/6484> .
+
+<http://data.openbudgets.eu/resource/dataset/budget-veroia-expenditure-2010/codelist/10/7134.001> a skos:Concept ;
+	skos:inScheme veroia-be2010-dsd:codelist ;
+	skos:notation "7134.001" ;
+	skos:broader <http://data.openbudgets.eu/resource/dataset/budget-veroia-expenditure-2010/codelist/10/7134> .
+
+<http://data.openbudgets.eu/resource/dataset/budget-veroia-expenditure-2010/codelist/10/7134.002> a skos:Concept ;
+	skos:inScheme veroia-be2010-dsd:codelist ;
+	skos:notation "7134.002" ;
+	skos:broader <http://data.openbudgets.eu/resource/dataset/budget-veroia-expenditure-2010/codelist/10/7134> .
+
+<http://data.openbudgets.eu/resource/dataset/budget-veroia-expenditure-2010/codelist/10/7413.001> a skos:Concept ;
+	skos:inScheme veroia-be2010-dsd:codelist ;
+	skos:notation "7413.001" ;
+	skos:broader <http://data.openbudgets.eu/resource/dataset/budget-veroia-expenditure-2010/codelist/10/7413> .
+
+<http://data.openbudgets.eu/resource/dataset/budget-veroia-expenditure-2010/codelist/10/7513.001> a skos:Concept ;
+	skos:inScheme veroia-be2010-dsd:codelist ;
+	skos:notation "7513.001" ;
+	skos:broader <http://data.openbudgets.eu/resource/dataset/budget-veroia-expenditure-2010/codelist/10/7513> .
+
+<http://data.openbudgets.eu/resource/dataset/budget-veroia-expenditure-2010/codelist/10/7513.002> a skos:Concept ;
+	skos:inScheme veroia-be2010-dsd:codelist ;
+	skos:notation "7513.002" ;
+	skos:broader <http://data.openbudgets.eu/resource/dataset/budget-veroia-expenditure-2010/codelist/10/7513> .
+
+<http://data.openbudgets.eu/resource/dataset/budget-veroia-expenditure-2010/codelist/10/7521.001> a skos:Concept ;
+	skos:inScheme veroia-be2010-dsd:codelist ;
+	skos:notation "7521.001" ;
+	skos:broader <http://data.openbudgets.eu/resource/dataset/budget-veroia-expenditure-2010/codelist/10/7521> .
+
+<http://data.openbudgets.eu/resource/dataset/budget-veroia-expenditure-2010/codelist/15/6011> a skos:Concept ;
+	skos:inScheme veroia-be2010-dsd:codelist ;
+	skos:narrower <http://data.openbudgets.eu/resource/dataset/budget-veroia-expenditure-2010/codelist/15/6011.001> , <http://data.openbudgets.eu/resource/dataset/budget-veroia-expenditure-2010/codelist/15/6011.002> ;
+	skos:notation "6011" ;
+	skos:broader veroia-be2010-codelist:15 ;
+	skos:broadMatch kae-ota-ex14:6011 .
+
+<http://data.openbudgets.eu/resource/dataset/budget-veroia-expenditure-2010/codelist/15/6012> a skos:Concept ;
+	skos:inScheme veroia-be2010-dsd:codelist ;
+	skos:notation "6012" ;
+	skos:broader veroia-be2010-codelist:15 ;
+	skos:broadMatch kae-ota-ex14:6012 .
+
+<http://data.openbudgets.eu/resource/dataset/budget-veroia-expenditure-2010/codelist/15/6021> a skos:Concept ;
+	skos:inScheme veroia-be2010-dsd:codelist ;
+	skos:notation "6021" ;
+	skos:broader veroia-be2010-codelist:15 ;
+	skos:broadMatch kae-ota-ex14:6021 .
+
+<http://data.openbudgets.eu/resource/dataset/budget-veroia-expenditure-2010/codelist/15/6011.001> a skos:Concept ;
+	skos:inScheme veroia-be2010-dsd:codelist ;
+	skos:notation "6011.001" ;
+	skos:broader <http://data.openbudgets.eu/resource/dataset/budget-veroia-expenditure-2010/codelist/15/6011> .
+
+<http://data.openbudgets.eu/resource/dataset/budget-veroia-expenditure-2010/codelist/15/6011.002> a skos:Concept ;
+	skos:inScheme veroia-be2010-dsd:codelist ;
+	skos:notation "6011.002" ;
+	skos:broader <http://data.openbudgets.eu/resource/dataset/budget-veroia-expenditure-2010/codelist/15/6011> .
+
+<http://data.openbudgets.eu/resource/dataset/budget-veroia-expenditure-2010/codelist/20/6011> a skos:Concept ;
+	skos:inScheme veroia-be2010-dsd:codelist ;
+	skos:narrower <http://data.openbudgets.eu/resource/dataset/budget-veroia-expenditure-2010/codelist/20/6011.001> , <http://data.openbudgets.eu/resource/dataset/budget-veroia-expenditure-2010/codelist/20/6011.002> ;
+	skos:notation "6011" ;
+	skos:broader veroia-be2010-codelist:20 ;
+	skos:broadMatch kae-ota-ex14:6011 .
+
+<http://data.openbudgets.eu/resource/dataset/budget-veroia-expenditure-2010/codelist/20/6012> a skos:Concept ;
+	skos:inScheme veroia-be2010-dsd:codelist ;
+	skos:notation "6012" ;
+	skos:broader veroia-be2010-codelist:20 ;
+	skos:broadMatch kae-ota-ex14:6012 .
+
+<http://data.openbudgets.eu/resource/dataset/budget-veroia-expenditure-2010/codelist/20/6021> a skos:Concept ;
+	skos:inScheme veroia-be2010-dsd:codelist ;
+	skos:narrower <http://data.openbudgets.eu/resource/dataset/budget-veroia-expenditure-2010/codelist/20/6021.001> , <http://data.openbudgets.eu/resource/dataset/budget-veroia-expenditure-2010/codelist/20/6021.002> ;
+	skos:notation "6021" ;
+	skos:broader veroia-be2010-codelist:20 ;
+	skos:broadMatch kae-ota-ex14:6021 .
+
+<http://data.openbudgets.eu/resource/dataset/budget-veroia-expenditure-2010/codelist/20/6041> a skos:Concept ;
+	skos:inScheme veroia-be2010-dsd:codelist ;
+	skos:narrower <http://data.openbudgets.eu/resource/dataset/budget-veroia-expenditure-2010/codelist/20/6041.001> , <http://data.openbudgets.eu/resource/dataset/budget-veroia-expenditure-2010/codelist/20/6041.002> ;
+	skos:notation "6041" ;
+	skos:broader veroia-be2010-codelist:20 ;
+	skos:broadMatch kae-ota-ex14:6041 .
+
+<http://data.openbudgets.eu/resource/dataset/budget-veroia-expenditure-2010/codelist/20/6051> a skos:Concept ;
+	skos:inScheme veroia-be2010-dsd:codelist ;
+	skos:notation "6051" ;
+	skos:broader veroia-be2010-codelist:20 ;
+	skos:broadMatch kae-ota-ex14:6051 .
+
+<http://data.openbudgets.eu/resource/dataset/budget-veroia-expenditure-2010/codelist/20/6052> a skos:Concept ;
+	skos:inScheme veroia-be2010-dsd:codelist ;
+	skos:notation "6052" ;
+	skos:broader veroia-be2010-codelist:20 ;
+	skos:broadMatch kae-ota-ex14:6052 .
+
+<http://data.openbudgets.eu/resource/dataset/budget-veroia-expenditure-2010/codelist/20/6054> a skos:Concept ;
+	skos:inScheme veroia-be2010-dsd:codelist ;
+	skos:notation "6054" ;
+	skos:broader veroia-be2010-codelist:20 ;
+	skos:broadMatch kae-ota-ex14:6054 .
+
+<http://data.openbudgets.eu/resource/dataset/budget-veroia-expenditure-2010/codelist/20/6061> a skos:Concept ;
+	skos:inScheme veroia-be2010-dsd:codelist ;
+	skos:notation "6061" ;
+	skos:broader veroia-be2010-codelist:20 ;
+	skos:broadMatch kae-ota-ex14:6061 .
+
+<http://data.openbudgets.eu/resource/dataset/budget-veroia-expenditure-2010/codelist/20/6062> a skos:Concept ;
+	skos:inScheme veroia-be2010-dsd:codelist ;
+	skos:notation "6062" ;
+	skos:broader veroia-be2010-codelist:20 ;
+	skos:broadMatch kae-ota-ex14:6062 .
+
+<http://data.openbudgets.eu/resource/dataset/budget-veroia-expenditure-2010/codelist/20/6063> a skos:Concept ;
+	skos:inScheme veroia-be2010-dsd:codelist ;
+	skos:notation "6063" ;
+	skos:broader veroia-be2010-codelist:20 ;
+	skos:broadMatch kae-ota-ex14:6063 .
+
+<http://data.openbudgets.eu/resource/dataset/budget-veroia-expenditure-2010/codelist/20/6162> a skos:Concept ;
+	skos:inScheme veroia-be2010-dsd:codelist ;
+	skos:narrower <http://data.openbudgets.eu/resource/dataset/budget-veroia-expenditure-2010/codelist/20/6162.001> ;
+	skos:notation "6162" ;
+	skos:broader veroia-be2010-codelist:20 ;
+	skos:broadMatch kae-ota-ex14:6162 .
+
+<http://data.openbudgets.eu/resource/dataset/budget-veroia-expenditure-2010/codelist/20/6211> a skos:Concept ;
+	skos:inScheme veroia-be2010-dsd:codelist ;
+	skos:notation "6211" ;
+	skos:broader veroia-be2010-codelist:20 ;
+	skos:broadMatch kae-ota-ex14:6211 .
+
+<http://data.openbudgets.eu/resource/dataset/budget-veroia-expenditure-2010/codelist/20/6253> a skos:Concept ;
+	skos:inScheme veroia-be2010-dsd:codelist ;
+	skos:notation "6253" ;
+	skos:broader veroia-be2010-codelist:20 ;
+	skos:broadMatch kae-ota-ex14:6253 .
+
+<http://data.openbudgets.eu/resource/dataset/budget-veroia-expenditure-2010/codelist/20/6263> a skos:Concept ;
+	skos:inScheme veroia-be2010-dsd:codelist ;
+	skos:notation "6263" ;
+	skos:broader veroia-be2010-codelist:20 ;
+	skos:broadMatch kae-ota-ex14:6263 .
+
+<http://data.openbudgets.eu/resource/dataset/budget-veroia-expenditure-2010/codelist/20/6264> a skos:Concept ;
+	skos:inScheme veroia-be2010-dsd:codelist ;
+	skos:notation "6264" ;
+	skos:broader veroia-be2010-codelist:20 ;
+	skos:broadMatch kae-ota-ex14:6264 .
+
+<http://data.openbudgets.eu/resource/dataset/budget-veroia-expenditure-2010/codelist/20/6277> a skos:Concept ;
+	skos:inScheme veroia-be2010-dsd:codelist ;
+	skos:narrower <http://data.openbudgets.eu/resource/dataset/budget-veroia-expenditure-2010/codelist/20/6277.001> , <http://data.openbudgets.eu/resource/dataset/budget-veroia-expenditure-2010/codelist/20/6277.002> ;
+	skos:notation "6277" ;
+	skos:broader veroia-be2010-codelist:20 ;
+	skos:broadMatch kae-ota-ex14:6277 .
+
+<http://data.openbudgets.eu/resource/dataset/budget-veroia-expenditure-2010/codelist/20/6322> a skos:Concept ;
+	skos:inScheme veroia-be2010-dsd:codelist ;
+	skos:notation "6322" ;
+	skos:broader veroia-be2010-codelist:20 ;
+	skos:broadMatch kae-ota-ex14:6322 .
+
+<http://data.openbudgets.eu/resource/dataset/budget-veroia-expenditure-2010/codelist/20/6422> a skos:Concept ;
+	skos:inScheme veroia-be2010-dsd:codelist ;
+	skos:notation "6422" ;
+	skos:broader veroia-be2010-codelist:20 ;
+	skos:broadMatch kae-ota-ex14:6422 .
+
+<http://data.openbudgets.eu/resource/dataset/budget-veroia-expenditure-2010/codelist/20/6462> a skos:Concept ;
+	skos:inScheme veroia-be2010-dsd:codelist ;
+	skos:notation "6462" ;
+	skos:broader veroia-be2010-codelist:20 ;
+	skos:broadMatch kae-ota-ex14:6462 .
+
+<http://data.openbudgets.eu/resource/dataset/budget-veroia-expenditure-2010/codelist/20/6632> a skos:Concept ;
+	skos:inScheme veroia-be2010-dsd:codelist ;
+	skos:narrower <http://data.openbudgets.eu/resource/dataset/budget-veroia-expenditure-2010/codelist/20/6632.001> ;
+	skos:notation "6632" ;
+	skos:broader veroia-be2010-codelist:20 ;
+	skos:broadMatch kae-ota-ex14:6632 .
+
+<http://data.openbudgets.eu/resource/dataset/budget-veroia-expenditure-2010/codelist/20/6634> a skos:Concept ;
+	skos:inScheme veroia-be2010-dsd:codelist ;
+	skos:notation "6634" ;
+	skos:broader veroia-be2010-codelist:20 ;
+	skos:broadMatch kae-ota-ex14:6634 .
+
+<http://data.openbudgets.eu/resource/dataset/budget-veroia-expenditure-2010/codelist/20/6641> a skos:Concept ;
+	skos:inScheme veroia-be2010-dsd:codelist ;
+	skos:notation "6641" ;
+	skos:broader veroia-be2010-codelist:20 ;
+	skos:broadMatch kae-ota-ex14:6641 .
+
+<http://data.openbudgets.eu/resource/dataset/budget-veroia-expenditure-2010/codelist/20/6671> a skos:Concept ;
+	skos:inScheme veroia-be2010-dsd:codelist ;
+	skos:notation "6671" ;
+	skos:broader veroia-be2010-codelist:20 ;
+	skos:broadMatch kae-ota-ex14:6671 .
+
+<http://data.openbudgets.eu/resource/dataset/budget-veroia-expenditure-2010/codelist/20/6693> a skos:Concept ;
+	skos:inScheme veroia-be2010-dsd:codelist ;
+	skos:narrower <http://data.openbudgets.eu/resource/dataset/budget-veroia-expenditure-2010/codelist/20/6693.001> , <http://data.openbudgets.eu/resource/dataset/budget-veroia-expenditure-2010/codelist/20/6693.002> ;
+	skos:notation "6693" ;
+	skos:broader veroia-be2010-codelist:20 ;
+	skos:broadMatch kae-ota-ex14:6693 .
+
+<http://data.openbudgets.eu/resource/dataset/budget-veroia-expenditure-2010/codelist/20/7132> a skos:Concept ;
+	skos:inScheme veroia-be2010-dsd:codelist ;
+	skos:narrower <http://data.openbudgets.eu/resource/dataset/budget-veroia-expenditure-2010/codelist/20/7132.001> , <http://data.openbudgets.eu/resource/dataset/budget-veroia-expenditure-2010/codelist/20/7132.002> ;
+	skos:notation "7132" ;
+	skos:broader veroia-be2010-codelist:20 ;
+	skos:broadMatch kae-ota-ex14:7132 .
+
+<http://data.openbudgets.eu/resource/dataset/budget-veroia-expenditure-2010/codelist/20/7135> a skos:Concept ;
+	skos:inScheme veroia-be2010-dsd:codelist ;
+	skos:narrower <http://data.openbudgets.eu/resource/dataset/budget-veroia-expenditure-2010/codelist/20/7135.001> , <http://data.openbudgets.eu/resource/dataset/budget-veroia-expenditure-2010/codelist/20/7135.002> , <http://data.openbudgets.eu/resource/dataset/budget-veroia-expenditure-2010/codelist/20/7135.005> , <http://data.openbudgets.eu/resource/dataset/budget-veroia-expenditure-2010/codelist/20/7135.006> ;
+	skos:notation "7135" ;
+	skos:broader veroia-be2010-codelist:20 ;
+	skos:broadMatch kae-ota-ex14:7135 .
+
+<http://data.openbudgets.eu/resource/dataset/budget-veroia-expenditure-2010/codelist/20/7321> a skos:Concept ;
+	skos:inScheme veroia-be2010-dsd:codelist ;
+	skos:notation "7321" ;
+	skos:broader veroia-be2010-codelist:20 ;
+	skos:broadMatch kae-ota-ex14:7321 .
+
+<http://data.openbudgets.eu/resource/dataset/budget-veroia-expenditure-2010/codelist/20/7325> a skos:Concept ;
+	skos:inScheme veroia-be2010-dsd:codelist ;
+	skos:narrower <http://data.openbudgets.eu/resource/dataset/budget-veroia-expenditure-2010/codelist/20/7325.001> , <http://data.openbudgets.eu/resource/dataset/budget-veroia-expenditure-2010/codelist/20/7325.004> ;
+	skos:notation "7325" ;
+	skos:broader veroia-be2010-codelist:20 ;
+	skos:broadMatch kae-ota-ex14:7325 .
+
+<http://data.openbudgets.eu/resource/dataset/budget-veroia-expenditure-2010/codelist/20/7326> a skos:Concept ;
+	skos:inScheme veroia-be2010-dsd:codelist ;
+	skos:narrower <http://data.openbudgets.eu/resource/dataset/budget-veroia-expenditure-2010/codelist/20/7326.001> , <http://data.openbudgets.eu/resource/dataset/budget-veroia-expenditure-2010/codelist/20/7326.002> , <http://data.openbudgets.eu/resource/dataset/budget-veroia-expenditure-2010/codelist/20/7326.004> ;
+	skos:notation "7326" ;
+	skos:broader veroia-be2010-codelist:20 ;
+	skos:broadMatch kae-ota-ex14:7326 .
+
+<http://data.openbudgets.eu/resource/dataset/budget-veroia-expenditure-2010/codelist/20/7335> a skos:Concept ;
+	skos:inScheme veroia-be2010-dsd:codelist ;
+	skos:narrower <http://data.openbudgets.eu/resource/dataset/budget-veroia-expenditure-2010/codelist/20/7335.001> , <http://data.openbudgets.eu/resource/dataset/budget-veroia-expenditure-2010/codelist/20/7335.002> ;
+	skos:notation "7335" ;
+	skos:broader veroia-be2010-codelist:20 ;
+	skos:broadMatch kae-ota-ex14:7335 .
+
+<http://data.openbudgets.eu/resource/dataset/budget-veroia-expenditure-2010/codelist/20/7336> a skos:Concept ;
+	skos:inScheme veroia-be2010-dsd:codelist ;
+	skos:notation "7336" ;
+	skos:broader veroia-be2010-codelist:20 ;
+	skos:broadMatch kae-ota-ex14:7336 .
+
+<http://data.openbudgets.eu/resource/dataset/budget-veroia-expenditure-2010/codelist/20/6011.001> a skos:Concept ;
+	skos:inScheme veroia-be2010-dsd:codelist ;
+	skos:notation "6011.001" ;
+	skos:broader <http://data.openbudgets.eu/resource/dataset/budget-veroia-expenditure-2010/codelist/20/6011> .
+
+<http://data.openbudgets.eu/resource/dataset/budget-veroia-expenditure-2010/codelist/20/6011.002> a skos:Concept ;
+	skos:inScheme veroia-be2010-dsd:codelist ;
+	skos:notation "6011.002" ;
+	skos:broader <http://data.openbudgets.eu/resource/dataset/budget-veroia-expenditure-2010/codelist/20/6011> .
+
+<http://data.openbudgets.eu/resource/dataset/budget-veroia-expenditure-2010/codelist/20/6021.001> a skos:Concept ;
+	skos:inScheme veroia-be2010-dsd:codelist ;
+	skos:notation "6021.001" ;
+	skos:broader <http://data.openbudgets.eu/resource/dataset/budget-veroia-expenditure-2010/codelist/20/6021> .
+
+<http://data.openbudgets.eu/resource/dataset/budget-veroia-expenditure-2010/codelist/20/6021.002> a skos:Concept ;
+	skos:inScheme veroia-be2010-dsd:codelist ;
+	skos:notation "6021.002" ;
+	skos:broader <http://data.openbudgets.eu/resource/dataset/budget-veroia-expenditure-2010/codelist/20/6021> .
+
+<http://data.openbudgets.eu/resource/dataset/budget-veroia-expenditure-2010/codelist/20/6041.001> a skos:Concept ;
+	skos:inScheme veroia-be2010-dsd:codelist ;
+	skos:notation "6041.001" ;
+	skos:broader <http://data.openbudgets.eu/resource/dataset/budget-veroia-expenditure-2010/codelist/20/6041> .
+
+<http://data.openbudgets.eu/resource/dataset/budget-veroia-expenditure-2010/codelist/20/6041.002> a skos:Concept ;
+	skos:inScheme veroia-be2010-dsd:codelist ;
+	skos:notation "6041.002" ;
+	skos:broader <http://data.openbudgets.eu/resource/dataset/budget-veroia-expenditure-2010/codelist/20/6041> .
+
+<http://data.openbudgets.eu/resource/dataset/budget-veroia-expenditure-2010/codelist/20/6162.001> a skos:Concept ;
+	skos:inScheme veroia-be2010-dsd:codelist ;
+	skos:notation "6162.001" ;
+	skos:broader <http://data.openbudgets.eu/resource/dataset/budget-veroia-expenditure-2010/codelist/20/6162> .
+
+<http://data.openbudgets.eu/resource/dataset/budget-veroia-expenditure-2010/codelist/20/6277.001> a skos:Concept ;
+	skos:inScheme veroia-be2010-dsd:codelist ;
+	skos:notation "6277.001" ;
+	skos:broader <http://data.openbudgets.eu/resource/dataset/budget-veroia-expenditure-2010/codelist/20/6277> .
+
+<http://data.openbudgets.eu/resource/dataset/budget-veroia-expenditure-2010/codelist/20/6277.002> a skos:Concept ;
+	skos:inScheme veroia-be2010-dsd:codelist ;
+	skos:notation "6277.002" ;
+	skos:broader <http://data.openbudgets.eu/resource/dataset/budget-veroia-expenditure-2010/codelist/20/6277> .
+
+<http://data.openbudgets.eu/resource/dataset/budget-veroia-expenditure-2010/codelist/20/6632.001> a skos:Concept ;
+	skos:inScheme veroia-be2010-dsd:codelist ;
+	skos:notation "6632.001" ;
+	skos:broader <http://data.openbudgets.eu/resource/dataset/budget-veroia-expenditure-2010/codelist/20/6632> .
+
+<http://data.openbudgets.eu/resource/dataset/budget-veroia-expenditure-2010/codelist/20/6693.001> a skos:Concept ;
+	skos:inScheme veroia-be2010-dsd:codelist ;
+	skos:notation "6693.001" ;
+	skos:broader <http://data.openbudgets.eu/resource/dataset/budget-veroia-expenditure-2010/codelist/20/6693> .
+
+<http://data.openbudgets.eu/resource/dataset/budget-veroia-expenditure-2010/codelist/20/6693.002> a skos:Concept ;
+	skos:inScheme veroia-be2010-dsd:codelist ;
+	skos:notation "6693.002" ;
+	skos:broader <http://data.openbudgets.eu/resource/dataset/budget-veroia-expenditure-2010/codelist/20/6693> .
+
+<http://data.openbudgets.eu/resource/dataset/budget-veroia-expenditure-2010/codelist/20/7132.001> a skos:Concept ;
+	skos:inScheme veroia-be2010-dsd:codelist ;
+	skos:notation "7132.001" ;
+	skos:broader <http://data.openbudgets.eu/resource/dataset/budget-veroia-expenditure-2010/codelist/20/7132> .
+
+<http://data.openbudgets.eu/resource/dataset/budget-veroia-expenditure-2010/codelist/20/7132.002> a skos:Concept ;
+	skos:inScheme veroia-be2010-dsd:codelist ;
+	skos:notation "7132.002" ;
+	skos:broader <http://data.openbudgets.eu/resource/dataset/budget-veroia-expenditure-2010/codelist/20/7132> .
+
+<http://data.openbudgets.eu/resource/dataset/budget-veroia-expenditure-2010/codelist/20/7135.001> a skos:Concept ;
+	skos:inScheme veroia-be2010-dsd:codelist ;
+	skos:notation "7135.001" ;
+	skos:broader <http://data.openbudgets.eu/resource/dataset/budget-veroia-expenditure-2010/codelist/20/7135> .
+
+<http://data.openbudgets.eu/resource/dataset/budget-veroia-expenditure-2010/codelist/20/7135.002> a skos:Concept ;
+	skos:inScheme veroia-be2010-dsd:codelist ;
+	skos:notation "7135.002" ;
+	skos:broader <http://data.openbudgets.eu/resource/dataset/budget-veroia-expenditure-2010/codelist/20/7135> .
+
+<http://data.openbudgets.eu/resource/dataset/budget-veroia-expenditure-2010/codelist/20/7135.005> a skos:Concept ;
+	skos:inScheme veroia-be2010-dsd:codelist ;
+	skos:notation "7135.005" ;
+	skos:broader <http://data.openbudgets.eu/resource/dataset/budget-veroia-expenditure-2010/codelist/20/7135> .
+
+<http://data.openbudgets.eu/resource/dataset/budget-veroia-expenditure-2010/codelist/20/7135.006> a skos:Concept ;
+	skos:inScheme veroia-be2010-dsd:codelist ;
+	skos:notation "7135.006" ;
+	skos:broader <http://data.openbudgets.eu/resource/dataset/budget-veroia-expenditure-2010/codelist/20/7135> .
+
+<http://data.openbudgets.eu/resource/dataset/budget-veroia-expenditure-2010/codelist/20/7325.001> a skos:Concept ;
+	skos:inScheme veroia-be2010-dsd:codelist ;
+	skos:notation "7325.001" ;
+	skos:broader <http://data.openbudgets.eu/resource/dataset/budget-veroia-expenditure-2010/codelist/20/7325> .
+
+<http://data.openbudgets.eu/resource/dataset/budget-veroia-expenditure-2010/codelist/20/7325.004> a skos:Concept ;
+	skos:inScheme veroia-be2010-dsd:codelist ;
+	skos:notation "7325.004" ;
+	skos:broader <http://data.openbudgets.eu/resource/dataset/budget-veroia-expenditure-2010/codelist/20/7325> .
+
+<http://data.openbudgets.eu/resource/dataset/budget-veroia-expenditure-2010/codelist/20/7326.001> a skos:Concept ;
+	skos:inScheme veroia-be2010-dsd:codelist ;
+	skos:notation "7326.001" ;
+	skos:broader <http://data.openbudgets.eu/resource/dataset/budget-veroia-expenditure-2010/codelist/20/7326> .
+
+<http://data.openbudgets.eu/resource/dataset/budget-veroia-expenditure-2010/codelist/20/7326.002> a skos:Concept ;
+	skos:inScheme veroia-be2010-dsd:codelist ;
+	skos:notation "7326.002" ;
+	skos:broader <http://data.openbudgets.eu/resource/dataset/budget-veroia-expenditure-2010/codelist/20/7326> .
+
+<http://data.openbudgets.eu/resource/dataset/budget-veroia-expenditure-2010/codelist/20/7326.004> a skos:Concept ;
+	skos:inScheme veroia-be2010-dsd:codelist ;
+	skos:notation "7326.004" ;
+	skos:broader <http://data.openbudgets.eu/resource/dataset/budget-veroia-expenditure-2010/codelist/20/7326> .
+
+<http://data.openbudgets.eu/resource/dataset/budget-veroia-expenditure-2010/codelist/20/7335.001> a skos:Concept ;
+	skos:inScheme veroia-be2010-dsd:codelist ;
+	skos:notation "7335.001" ;
+	skos:broader <http://data.openbudgets.eu/resource/dataset/budget-veroia-expenditure-2010/codelist/20/7335> .
+
+<http://data.openbudgets.eu/resource/dataset/budget-veroia-expenditure-2010/codelist/20/7335.002> a skos:Concept ;
+	skos:inScheme veroia-be2010-dsd:codelist ;
+	skos:notation "7335.002" ;
+	skos:broader <http://data.openbudgets.eu/resource/dataset/budget-veroia-expenditure-2010/codelist/20/7335> .
+
+<http://data.openbudgets.eu/resource/dataset/budget-veroia-expenditure-2010/codelist/30/6011> a skos:Concept ;
+	skos:inScheme veroia-be2010-dsd:codelist ;
+	skos:narrower <http://data.openbudgets.eu/resource/dataset/budget-veroia-expenditure-2010/codelist/30/6011.001> , <http://data.openbudgets.eu/resource/dataset/budget-veroia-expenditure-2010/codelist/30/6011.002> ;
+	skos:notation "6011" ;
+	skos:broader veroia-be2010-codelist:30 ;
+	skos:broadMatch kae-ota-ex14:6011 .
+
+<http://data.openbudgets.eu/resource/dataset/budget-veroia-expenditure-2010/codelist/30/6012> a skos:Concept ;
+	skos:inScheme veroia-be2010-dsd:codelist ;
+	skos:notation "6012" ;
+	skos:broader veroia-be2010-codelist:30 ;
+	skos:broadMatch kae-ota-ex14:6012 .
+
+<http://data.openbudgets.eu/resource/dataset/budget-veroia-expenditure-2010/codelist/30/6021> a skos:Concept ;
+	skos:inScheme veroia-be2010-dsd:codelist ;
+	skos:narrower <http://data.openbudgets.eu/resource/dataset/budget-veroia-expenditure-2010/codelist/30/6021.001> , <http://data.openbudgets.eu/resource/dataset/budget-veroia-expenditure-2010/codelist/30/6021.002> ;
+	skos:notation "6021" ;
+	skos:broader veroia-be2010-codelist:30 ;
+	skos:broadMatch kae-ota-ex14:6021 .
+
+<http://data.openbudgets.eu/resource/dataset/budget-veroia-expenditure-2010/codelist/30/6041> a skos:Concept ;
+	skos:inScheme veroia-be2010-dsd:codelist ;
+	skos:narrower <http://data.openbudgets.eu/resource/dataset/budget-veroia-expenditure-2010/codelist/30/6041.001> , <http://data.openbudgets.eu/resource/dataset/budget-veroia-expenditure-2010/codelist/30/6041.002> ;
+	skos:notation "6041" ;
+	skos:broader veroia-be2010-codelist:30 ;
+	skos:broadMatch kae-ota-ex14:6041 .
+
+<http://data.openbudgets.eu/resource/dataset/budget-veroia-expenditure-2010/codelist/30/6051> a skos:Concept ;
+	skos:inScheme veroia-be2010-dsd:codelist ;
+	skos:notation "6051" ;
+	skos:broader veroia-be2010-codelist:30 ;
+	skos:broadMatch kae-ota-ex14:6051 .
+
+<http://data.openbudgets.eu/resource/dataset/budget-veroia-expenditure-2010/codelist/30/6052> a skos:Concept ;
+	skos:inScheme veroia-be2010-dsd:codelist ;
+	skos:notation "6052" ;
+	skos:broader veroia-be2010-codelist:30 ;
+	skos:broadMatch kae-ota-ex14:6052 .
+
+<http://data.openbudgets.eu/resource/dataset/budget-veroia-expenditure-2010/codelist/30/6054> a skos:Concept ;
+	skos:inScheme veroia-be2010-dsd:codelist ;
+	skos:notation "6054" ;
+	skos:broader veroia-be2010-codelist:30 ;
+	skos:broadMatch kae-ota-ex14:6054 .
+
+<http://data.openbudgets.eu/resource/dataset/budget-veroia-expenditure-2010/codelist/30/6061> a skos:Concept ;
+	skos:inScheme veroia-be2010-dsd:codelist ;
+	skos:notation "6061" ;
+	skos:broader veroia-be2010-codelist:30 ;
+	skos:broadMatch kae-ota-ex14:6061 .
+
+<http://data.openbudgets.eu/resource/dataset/budget-veroia-expenditure-2010/codelist/30/6062> a skos:Concept ;
+	skos:inScheme veroia-be2010-dsd:codelist ;
+	skos:notation "6062" ;
+	skos:broader veroia-be2010-codelist:30 ;
+	skos:broadMatch kae-ota-ex14:6062 .
+
+<http://data.openbudgets.eu/resource/dataset/budget-veroia-expenditure-2010/codelist/30/6063> a skos:Concept ;
+	skos:inScheme veroia-be2010-dsd:codelist ;
+	skos:notation "6063" ;
+	skos:broader veroia-be2010-codelist:30 ;
+	skos:broadMatch kae-ota-ex14:6063 .
+
+<http://data.openbudgets.eu/resource/dataset/budget-veroia-expenditure-2010/codelist/30/6236> a skos:Concept ;
+	skos:inScheme veroia-be2010-dsd:codelist ;
+	skos:notation "6236" ;
+	skos:broader veroia-be2010-codelist:30 ;
+	skos:broadMatch kae-ota-ex14:6236 .
+
+<http://data.openbudgets.eu/resource/dataset/budget-veroia-expenditure-2010/codelist/30/6253> a skos:Concept ;
+	skos:inScheme veroia-be2010-dsd:codelist ;
+	skos:notation "6253" ;
+	skos:broader veroia-be2010-codelist:30 ;
+	skos:broadMatch kae-ota-ex14:6253 .
+
+<http://data.openbudgets.eu/resource/dataset/budget-veroia-expenditure-2010/codelist/30/6262> a skos:Concept ;
+	skos:inScheme veroia-be2010-dsd:codelist ;
+	skos:narrower <http://data.openbudgets.eu/resource/dataset/budget-veroia-expenditure-2010/codelist/30/6262.001> , <http://data.openbudgets.eu/resource/dataset/budget-veroia-expenditure-2010/codelist/30/6262.002> , <http://data.openbudgets.eu/resource/dataset/budget-veroia-expenditure-2010/codelist/30/6262.003> , <http://data.openbudgets.eu/resource/dataset/budget-veroia-expenditure-2010/codelist/30/6262.004> , <http://data.openbudgets.eu/resource/dataset/budget-veroia-expenditure-2010/codelist/30/6262.005> ;
+	skos:notation "6262" ;
+	skos:broader veroia-be2010-codelist:30 ;
+	skos:broadMatch kae-ota-ex14:6262 .
+
+<http://data.openbudgets.eu/resource/dataset/budget-veroia-expenditure-2010/codelist/30/6263> a skos:Concept ;
+	skos:inScheme veroia-be2010-dsd:codelist ;
+	skos:notation "6263" ;
+	skos:broader veroia-be2010-codelist:30 ;
+	skos:broadMatch kae-ota-ex14:6263 .
+
+<http://data.openbudgets.eu/resource/dataset/budget-veroia-expenditure-2010/codelist/30/6264> a skos:Concept ;
+	skos:inScheme veroia-be2010-dsd:codelist ;
+	skos:notation "6264" ;
+	skos:broader veroia-be2010-codelist:30 ;
+	skos:broadMatch kae-ota-ex14:6264 .
+
+<http://data.openbudgets.eu/resource/dataset/budget-veroia-expenditure-2010/codelist/30/6265> a skos:Concept ;
+	skos:inScheme veroia-be2010-dsd:codelist ;
+	skos:notation "6265" ;
+	skos:broader veroia-be2010-codelist:30 ;
+	skos:broadMatch kae-ota-ex14:6265 .
+
+<http://data.openbudgets.eu/resource/dataset/budget-veroia-expenditure-2010/codelist/30/6266> a skos:Concept ;
+	skos:inScheme veroia-be2010-dsd:codelist ;
+	skos:notation "6266" ;
+	skos:broader veroia-be2010-codelist:30 ;
+	skos:broadMatch kae-ota-ex14:6266 .
+
+<http://data.openbudgets.eu/resource/dataset/budget-veroia-expenditure-2010/codelist/30/6321> a skos:Concept ;
+	skos:inScheme veroia-be2010-dsd:codelist ;
+	skos:notation "6321" ;
+	skos:broader veroia-be2010-codelist:30 ;
+	skos:broadMatch kae-ota-ex14:6321 .
+
+<http://data.openbudgets.eu/resource/dataset/budget-veroia-expenditure-2010/codelist/30/6322> a skos:Concept ;
+	skos:inScheme veroia-be2010-dsd:codelist ;
+	skos:notation "6322" ;
+	skos:broader veroia-be2010-codelist:30 ;
+	skos:broadMatch kae-ota-ex14:6322 .
+
+<http://data.openbudgets.eu/resource/dataset/budget-veroia-expenditure-2010/codelist/30/6422> a skos:Concept ;
+	skos:inScheme veroia-be2010-dsd:codelist ;
+	skos:notation "6422" ;
+	skos:broader veroia-be2010-codelist:30 ;
+	skos:broadMatch kae-ota-ex14:6422 .
+
+<http://data.openbudgets.eu/resource/dataset/budget-veroia-expenditure-2010/codelist/30/6462> a skos:Concept ;
+	skos:inScheme veroia-be2010-dsd:codelist ;
+	skos:notation "6462" ;
+	skos:broader veroia-be2010-codelist:30 ;
+	skos:broadMatch kae-ota-ex14:6462 .
+
+<http://data.openbudgets.eu/resource/dataset/budget-veroia-expenditure-2010/codelist/30/6463> a skos:Concept ;
+	skos:inScheme veroia-be2010-dsd:codelist ;
+	skos:notation "6463" ;
+	skos:broader veroia-be2010-codelist:30 ;
+	skos:broadMatch kae-ota-ex14:6463 .
+
+<http://data.openbudgets.eu/resource/dataset/budget-veroia-expenditure-2010/codelist/30/6615> a skos:Concept ;
+	skos:inScheme veroia-be2010-dsd:codelist ;
+	skos:notation "6615" ;
+	skos:broader veroia-be2010-codelist:30 ;
+	skos:broadMatch kae-ota-ex14:6615 .
+
+<http://data.openbudgets.eu/resource/dataset/budget-veroia-expenditure-2010/codelist/30/6641> a skos:Concept ;
+	skos:inScheme veroia-be2010-dsd:codelist ;
+	skos:notation "6641" ;
+	skos:broader veroia-be2010-codelist:30 ;
+	skos:broadMatch kae-ota-ex14:6641 .
+
+<http://data.openbudgets.eu/resource/dataset/budget-veroia-expenditure-2010/codelist/30/6644> a skos:Concept ;
+	skos:inScheme veroia-be2010-dsd:codelist ;
+	skos:notation "6644" ;
+	skos:broader veroia-be2010-codelist:30 ;
+	skos:broadMatch kae-ota-ex14:6644 .
+
+<http://data.openbudgets.eu/resource/dataset/budget-veroia-expenditure-2010/codelist/30/6651> a skos:Concept ;
+	skos:inScheme veroia-be2010-dsd:codelist ;
+	skos:notation "6651" ;
+	skos:broader veroia-be2010-codelist:30 ;
+	skos:broadMatch kae-ota-ex14:6651 .
+
+<http://data.openbudgets.eu/resource/dataset/budget-veroia-expenditure-2010/codelist/30/6671> a skos:Concept ;
+	skos:inScheme veroia-be2010-dsd:codelist ;
+	skos:notation "6671" ;
+	skos:broader veroia-be2010-codelist:30 ;
+	skos:broadMatch kae-ota-ex14:6671 .
+
+<http://data.openbudgets.eu/resource/dataset/budget-veroia-expenditure-2010/codelist/30/7112> a skos:Concept ;
+	skos:inScheme veroia-be2010-dsd:codelist ;
+	skos:notation "7112" ;
+	skos:broader veroia-be2010-codelist:30 ;
+	skos:broadMatch kae-ota-ex14:7112 .
+
+<http://data.openbudgets.eu/resource/dataset/budget-veroia-expenditure-2010/codelist/30/7131> a skos:Concept ;
+	skos:inScheme veroia-be2010-dsd:codelist ;
+	skos:narrower <http://data.openbudgets.eu/resource/dataset/budget-veroia-expenditure-2010/codelist/30/7131.001> , <http://data.openbudgets.eu/resource/dataset/budget-veroia-expenditure-2010/codelist/30/7131.005> , <http://data.openbudgets.eu/resource/dataset/budget-veroia-expenditure-2010/codelist/30/7131.006> ;
+	skos:notation "7131" ;
+	skos:broader veroia-be2010-codelist:30 ;
+	skos:broadMatch kae-ota-ex14:7131 .
+
+<http://data.openbudgets.eu/resource/dataset/budget-veroia-expenditure-2010/codelist/30/7134> a skos:Concept ;
+	skos:inScheme veroia-be2010-dsd:codelist ;
+	skos:narrower <http://data.openbudgets.eu/resource/dataset/budget-veroia-expenditure-2010/codelist/30/7134.001> ;
+	skos:notation "7134" ;
+	skos:broader veroia-be2010-codelist:30 ;
+	skos:broadMatch kae-ota-ex14:7134 .
+
+<http://data.openbudgets.eu/resource/dataset/budget-veroia-expenditure-2010/codelist/30/7311> a skos:Concept ;
+	skos:inScheme veroia-be2010-dsd:codelist ;
+	skos:notation "7311" ;
+	skos:broader veroia-be2010-codelist:30 ;
+	skos:broadMatch kae-ota-ex14:7311 .
+
+<http://data.openbudgets.eu/resource/dataset/budget-veroia-expenditure-2010/codelist/30/7321> a skos:Concept ;
+	skos:inScheme veroia-be2010-dsd:codelist ;
+	skos:narrower <http://data.openbudgets.eu/resource/dataset/budget-veroia-expenditure-2010/codelist/30/7321.003> , <http://data.openbudgets.eu/resource/dataset/budget-veroia-expenditure-2010/codelist/30/7321.005> , <http://data.openbudgets.eu/resource/dataset/budget-veroia-expenditure-2010/codelist/30/7321.014> , <http://data.openbudgets.eu/resource/dataset/budget-veroia-expenditure-2010/codelist/30/7321.015> , <http://data.openbudgets.eu/resource/dataset/budget-veroia-expenditure-2010/codelist/30/7321.017> ;
+	skos:notation "7321" ;
+	skos:broader veroia-be2010-codelist:30 ;
+	skos:broadMatch kae-ota-ex14:7321 .
+
+<http://data.openbudgets.eu/resource/dataset/budget-veroia-expenditure-2010/codelist/30/7322> a skos:Concept ;
+	skos:inScheme veroia-be2010-dsd:codelist ;
+	skos:notation "7322" ;
+	skos:broader veroia-be2010-codelist:30 ;
+	skos:broadMatch kae-ota-ex14:7322 .
+
+<http://data.openbudgets.eu/resource/dataset/budget-veroia-expenditure-2010/codelist/30/7323> a skos:Concept ;
+	skos:inScheme veroia-be2010-dsd:codelist ;
+	skos:narrower <http://data.openbudgets.eu/resource/dataset/budget-veroia-expenditure-2010/codelist/30/7323.036> , <http://data.openbudgets.eu/resource/dataset/budget-veroia-expenditure-2010/codelist/30/7323.039> , <http://data.openbudgets.eu/resource/dataset/budget-veroia-expenditure-2010/codelist/30/7323.040> , <http://data.openbudgets.eu/resource/dataset/budget-veroia-expenditure-2010/codelist/30/7323.041> , <http://data.openbudgets.eu/resource/dataset/budget-veroia-expenditure-2010/codelist/30/7323.044> , <http://data.openbudgets.eu/resource/dataset/budget-veroia-expenditure-2010/codelist/30/7323.046> , <http://data.openbudgets.eu/resource/dataset/budget-veroia-expenditure-2010/codelist/30/7323.047> ;
+	skos:notation "7323" ;
+	skos:broader veroia-be2010-codelist:30 ;
+	skos:broadMatch kae-ota-ex14:7323 .
+
+<http://data.openbudgets.eu/resource/dataset/budget-veroia-expenditure-2010/codelist/30/7324> a skos:Concept ;
+	skos:inScheme veroia-be2010-dsd:codelist ;
+	skos:notation "7324" ;
+	skos:broader veroia-be2010-codelist:30 ;
+	skos:broadMatch kae-ota-ex14:7324 .
+
+<http://data.openbudgets.eu/resource/dataset/budget-veroia-expenditure-2010/codelist/30/7326> a skos:Concept ;
+	skos:inScheme veroia-be2010-dsd:codelist ;
+	skos:narrower <http://data.openbudgets.eu/resource/dataset/budget-veroia-expenditure-2010/codelist/30/7326.001> , <http://data.openbudgets.eu/resource/dataset/budget-veroia-expenditure-2010/codelist/30/7326.008> , <http://data.openbudgets.eu/resource/dataset/budget-veroia-expenditure-2010/codelist/30/7326.019> , <http://data.openbudgets.eu/resource/dataset/budget-veroia-expenditure-2010/codelist/30/7326.023> , <http://data.openbudgets.eu/resource/dataset/budget-veroia-expenditure-2010/codelist/30/7326.025> , <http://data.openbudgets.eu/resource/dataset/budget-veroia-expenditure-2010/codelist/30/7326.028> , <http://data.openbudgets.eu/resource/dataset/budget-veroia-expenditure-2010/codelist/30/7326.030> , <http://data.openbudgets.eu/resource/dataset/budget-veroia-expenditure-2010/codelist/30/7326.031> , <http://data.openbudgets.eu/resource/dataset/budget-veroia-expenditure-2010/codelist/30/7326.032> , <http://data.openbudgets.eu/resource/dataset/budget-veroia-expenditure-2010/codelist/30/7326.033> , <http://data.openbudgets.eu/resource/dataset/budget-veroia-expenditure-2010/codelist/30/7326.034> ;
+	skos:notation "7326" ;
+	skos:broader veroia-be2010-codelist:30 ;
+	skos:broadMatch kae-ota-ex14:7326 .
+
+<http://data.openbudgets.eu/resource/dataset/budget-veroia-expenditure-2010/codelist/30/7331> a skos:Concept ;
+	skos:inScheme veroia-be2010-dsd:codelist ;
+	skos:narrower <http://data.openbudgets.eu/resource/dataset/budget-veroia-expenditure-2010/codelist/30/7331.001> , <http://data.openbudgets.eu/resource/dataset/budget-veroia-expenditure-2010/codelist/30/7331.003> , <http://data.openbudgets.eu/resource/dataset/budget-veroia-expenditure-2010/codelist/30/7331.008> ;
+	skos:notation "7331" ;
+	skos:broader veroia-be2010-codelist:30 ;
+	skos:broadMatch kae-ota-ex14:7331 .
+
+<http://data.openbudgets.eu/resource/dataset/budget-veroia-expenditure-2010/codelist/30/7333> a skos:Concept ;
+	skos:inScheme veroia-be2010-dsd:codelist ;
+	skos:notation "7333" ;
+	skos:broader veroia-be2010-codelist:30 ;
+	skos:broadMatch kae-ota-ex14:7333 .
+
+<http://data.openbudgets.eu/resource/dataset/budget-veroia-expenditure-2010/codelist/30/7335> a skos:Concept ;
+	skos:inScheme veroia-be2010-dsd:codelist ;
+	skos:narrower <http://data.openbudgets.eu/resource/dataset/budget-veroia-expenditure-2010/codelist/30/7335.005> ;
+	skos:notation "7335" ;
+	skos:broader veroia-be2010-codelist:30 ;
+	skos:broadMatch kae-ota-ex14:7335 .
+
+<http://data.openbudgets.eu/resource/dataset/budget-veroia-expenditure-2010/codelist/30/7336> a skos:Concept ;
+	skos:inScheme veroia-be2010-dsd:codelist ;
+	skos:narrower <http://data.openbudgets.eu/resource/dataset/budget-veroia-expenditure-2010/codelist/30/7336.002> ;
+	skos:notation "7336" ;
+	skos:broader veroia-be2010-codelist:30 ;
+	skos:broadMatch kae-ota-ex14:7336 .
+
+<http://data.openbudgets.eu/resource/dataset/budget-veroia-expenditure-2010/codelist/30/7411> a skos:Concept ;
+	skos:inScheme veroia-be2010-dsd:codelist ;
+	skos:narrower <http://data.openbudgets.eu/resource/dataset/budget-veroia-expenditure-2010/codelist/30/7411.001> , <http://data.openbudgets.eu/resource/dataset/budget-veroia-expenditure-2010/codelist/30/7411.002> , <http://data.openbudgets.eu/resource/dataset/budget-veroia-expenditure-2010/codelist/30/7411.003> , <http://data.openbudgets.eu/resource/dataset/budget-veroia-expenditure-2010/codelist/30/7411.004> , <http://data.openbudgets.eu/resource/dataset/budget-veroia-expenditure-2010/codelist/30/7411.005> , <http://data.openbudgets.eu/resource/dataset/budget-veroia-expenditure-2010/codelist/30/7411.006> , <http://data.openbudgets.eu/resource/dataset/budget-veroia-expenditure-2010/codelist/30/7411.007> , <http://data.openbudgets.eu/resource/dataset/budget-veroia-expenditure-2010/codelist/30/7411.008> , <http://data.openbudgets.eu/resource/dataset/budget-veroia-expenditure-2010/codelist/30/7411.009> , <http://data.openbudgets.eu/resource/dataset/budget-veroia-expenditure-2010/codelist/30/7411.011> , <http://data.openbudgets.eu/resource/dataset/budget-veroia-expenditure-2010/codelist/30/7411.013> , <http://data.openbudgets.eu/resource/dataset/budget-veroia-expenditure-2010/codelist/30/7411.014> , <http://data.openbudgets.eu/resource/dataset/budget-veroia-expenditure-2010/codelist/30/7411.015> , <http://data.openbudgets.eu/resource/dataset/budget-veroia-expenditure-2010/codelist/30/7411.016> , <http://data.openbudgets.eu/resource/dataset/budget-veroia-expenditure-2010/codelist/30/7411.017> , <http://data.openbudgets.eu/resource/dataset/budget-veroia-expenditure-2010/codelist/30/7411.018> , <http://data.openbudgets.eu/resource/dataset/budget-veroia-expenditure-2010/codelist/30/7411.019> , <http://data.openbudgets.eu/resource/dataset/budget-veroia-expenditure-2010/codelist/30/7411.020> , <http://data.openbudgets.eu/resource/dataset/budget-veroia-expenditure-2010/codelist/30/7411.021> , <http://data.openbudgets.eu/resource/dataset/budget-veroia-expenditure-2010/codelist/30/7411.022> , <http://data.openbudgets.eu/resource/dataset/budget-veroia-expenditure-2010/codelist/30/7411.023> , <http://data.openbudgets.eu/resource/dataset/budget-veroia-expenditure-2010/codelist/30/7411.024> , <http://data.openbudgets.eu/resource/dataset/budget-veroia-expenditure-2010/codelist/30/7411.025> , <http://data.openbudgets.eu/resource/dataset/budget-veroia-expenditure-2010/codelist/30/7411.026> , <http://data.openbudgets.eu/resource/dataset/budget-veroia-expenditure-2010/codelist/30/7411.027> , <http://data.openbudgets.eu/resource/dataset/budget-veroia-expenditure-2010/codelist/30/7411.028> , <http://data.openbudgets.eu/resource/dataset/budget-veroia-expenditure-2010/codelist/30/7411.029> ;
+	skos:notation "7411" ;
+	skos:broader veroia-be2010-codelist:30 ;
+	skos:broadMatch kae-ota-ex14:7411 .
+
+<http://data.openbudgets.eu/resource/dataset/budget-veroia-expenditure-2010/codelist/30/6011.001> a skos:Concept ;
+	skos:inScheme veroia-be2010-dsd:codelist ;
+	skos:notation "6011.001" ;
+	skos:broader <http://data.openbudgets.eu/resource/dataset/budget-veroia-expenditure-2010/codelist/30/6011> .
+
+<http://data.openbudgets.eu/resource/dataset/budget-veroia-expenditure-2010/codelist/30/6011.002> a skos:Concept ;
+	skos:inScheme veroia-be2010-dsd:codelist ;
+	skos:notation "6011.002" ;
+	skos:broader <http://data.openbudgets.eu/resource/dataset/budget-veroia-expenditure-2010/codelist/30/6011> .
+
+<http://data.openbudgets.eu/resource/dataset/budget-veroia-expenditure-2010/codelist/30/6021.001> a skos:Concept ;
+	skos:inScheme veroia-be2010-dsd:codelist ;
+	skos:notation "6021.001" ;
+	skos:broader <http://data.openbudgets.eu/resource/dataset/budget-veroia-expenditure-2010/codelist/30/6021> .
+
+<http://data.openbudgets.eu/resource/dataset/budget-veroia-expenditure-2010/codelist/30/6021.002> a skos:Concept ;
+	skos:inScheme veroia-be2010-dsd:codelist ;
+	skos:notation "6021.002" ;
+	skos:broader <http://data.openbudgets.eu/resource/dataset/budget-veroia-expenditure-2010/codelist/30/6021> .
+
+<http://data.openbudgets.eu/resource/dataset/budget-veroia-expenditure-2010/codelist/30/6041.001> a skos:Concept ;
+	skos:inScheme veroia-be2010-dsd:codelist ;
+	skos:notation "6041.001" ;
+	skos:broader <http://data.openbudgets.eu/resource/dataset/budget-veroia-expenditure-2010/codelist/30/6041> .
+
+<http://data.openbudgets.eu/resource/dataset/budget-veroia-expenditure-2010/codelist/30/6041.002> a skos:Concept ;
+	skos:inScheme veroia-be2010-dsd:codelist ;
+	skos:notation "6041.002" ;
+	skos:broader <http://data.openbudgets.eu/resource/dataset/budget-veroia-expenditure-2010/codelist/30/6041> .
+
+<http://data.openbudgets.eu/resource/dataset/budget-veroia-expenditure-2010/codelist/30/6262.001> a skos:Concept ;
+	skos:inScheme veroia-be2010-dsd:codelist ;
+	skos:notation "6262.001" ;
+	skos:broader <http://data.openbudgets.eu/resource/dataset/budget-veroia-expenditure-2010/codelist/30/6262> .
+
+<http://data.openbudgets.eu/resource/dataset/budget-veroia-expenditure-2010/codelist/30/6262.002> a skos:Concept ;
+	skos:inScheme veroia-be2010-dsd:codelist ;
+	skos:notation "6262.002" ;
+	skos:broader <http://data.openbudgets.eu/resource/dataset/budget-veroia-expenditure-2010/codelist/30/6262> .
+
+<http://data.openbudgets.eu/resource/dataset/budget-veroia-expenditure-2010/codelist/30/6262.003> a skos:Concept ;
+	skos:inScheme veroia-be2010-dsd:codelist ;
+	skos:notation "6262.003" ;
+	skos:broader <http://data.openbudgets.eu/resource/dataset/budget-veroia-expenditure-2010/codelist/30/6262> .
+
+<http://data.openbudgets.eu/resource/dataset/budget-veroia-expenditure-2010/codelist/30/6262.004> a skos:Concept ;
+	skos:inScheme veroia-be2010-dsd:codelist ;
+	skos:notation "6262.004" ;
+	skos:broader <http://data.openbudgets.eu/resource/dataset/budget-veroia-expenditure-2010/codelist/30/6262> .
+
+<http://data.openbudgets.eu/resource/dataset/budget-veroia-expenditure-2010/codelist/30/6262.005> a skos:Concept ;
+	skos:inScheme veroia-be2010-dsd:codelist ;
+	skos:notation "6262.005" ;
+	skos:broader <http://data.openbudgets.eu/resource/dataset/budget-veroia-expenditure-2010/codelist/30/6262> .
+
+<http://data.openbudgets.eu/resource/dataset/budget-veroia-expenditure-2010/codelist/30/7131.001> a skos:Concept ;
+	skos:inScheme veroia-be2010-dsd:codelist ;
+	skos:notation "7131.001" ;
+	skos:broader <http://data.openbudgets.eu/resource/dataset/budget-veroia-expenditure-2010/codelist/30/7131> .
+
+<http://data.openbudgets.eu/resource/dataset/budget-veroia-expenditure-2010/codelist/30/7131.005> a skos:Concept ;
+	skos:inScheme veroia-be2010-dsd:codelist ;
+	skos:notation "7131.005" ;
+	skos:broader <http://data.openbudgets.eu/resource/dataset/budget-veroia-expenditure-2010/codelist/30/7131> .
+
+<http://data.openbudgets.eu/resource/dataset/budget-veroia-expenditure-2010/codelist/30/7131.006> a skos:Concept ;
+	skos:inScheme veroia-be2010-dsd:codelist ;
+	skos:notation "7131.006" ;
+	skos:broader <http://data.openbudgets.eu/resource/dataset/budget-veroia-expenditure-2010/codelist/30/7131> .
+
+<http://data.openbudgets.eu/resource/dataset/budget-veroia-expenditure-2010/codelist/30/7134.001> a skos:Concept ;
+	skos:inScheme veroia-be2010-dsd:codelist ;
+	skos:notation "7134.001" ;
+	skos:broader <http://data.openbudgets.eu/resource/dataset/budget-veroia-expenditure-2010/codelist/30/7134> .
+
+<http://data.openbudgets.eu/resource/dataset/budget-veroia-expenditure-2010/codelist/30/7321.003> a skos:Concept ;
+	skos:inScheme veroia-be2010-dsd:codelist ;
+	skos:notation "7321.003" ;
+	skos:broader <http://data.openbudgets.eu/resource/dataset/budget-veroia-expenditure-2010/codelist/30/7321> .
+
+<http://data.openbudgets.eu/resource/dataset/budget-veroia-expenditure-2010/codelist/30/7321.005> a skos:Concept ;
+	skos:inScheme veroia-be2010-dsd:codelist ;
+	skos:notation "7321.005" ;
+	skos:broader <http://data.openbudgets.eu/resource/dataset/budget-veroia-expenditure-2010/codelist/30/7321> .
+
+<http://data.openbudgets.eu/resource/dataset/budget-veroia-expenditure-2010/codelist/30/7321.014> a skos:Concept ;
+	skos:inScheme veroia-be2010-dsd:codelist ;
+	skos:notation "7321.014" ;
+	skos:broader <http://data.openbudgets.eu/resource/dataset/budget-veroia-expenditure-2010/codelist/30/7321> .
+
+<http://data.openbudgets.eu/resource/dataset/budget-veroia-expenditure-2010/codelist/30/7321.015> a skos:Concept ;
+	skos:inScheme veroia-be2010-dsd:codelist ;
+	skos:notation "7321.015" ;
+	skos:broader <http://data.openbudgets.eu/resource/dataset/budget-veroia-expenditure-2010/codelist/30/7321> .
+
+<http://data.openbudgets.eu/resource/dataset/budget-veroia-expenditure-2010/codelist/30/7321.017> a skos:Concept ;
+	skos:inScheme veroia-be2010-dsd:codelist ;
+	skos:notation "7321.017" ;
+	skos:broader <http://data.openbudgets.eu/resource/dataset/budget-veroia-expenditure-2010/codelist/30/7321> .
+
+<http://data.openbudgets.eu/resource/dataset/budget-veroia-expenditure-2010/codelist/30/7323.036> a skos:Concept ;
+	skos:inScheme veroia-be2010-dsd:codelist ;
+	skos:notation "7323.036" ;
+	skos:broader <http://data.openbudgets.eu/resource/dataset/budget-veroia-expenditure-2010/codelist/30/7323> .
+
+<http://data.openbudgets.eu/resource/dataset/budget-veroia-expenditure-2010/codelist/30/7323.039> a skos:Concept ;
+	skos:inScheme veroia-be2010-dsd:codelist ;
+	skos:notation "7323.039" ;
+	skos:broader <http://data.openbudgets.eu/resource/dataset/budget-veroia-expenditure-2010/codelist/30/7323> .
+
+<http://data.openbudgets.eu/resource/dataset/budget-veroia-expenditure-2010/codelist/30/7323.040> a skos:Concept ;
+	skos:inScheme veroia-be2010-dsd:codelist ;
+	skos:notation "7323.040" ;
+	skos:broader <http://data.openbudgets.eu/resource/dataset/budget-veroia-expenditure-2010/codelist/30/7323> .
+
+<http://data.openbudgets.eu/resource/dataset/budget-veroia-expenditure-2010/codelist/30/7323.041> a skos:Concept ;
+	skos:inScheme veroia-be2010-dsd:codelist ;
+	skos:notation "7323.041" ;
+	skos:broader <http://data.openbudgets.eu/resource/dataset/budget-veroia-expenditure-2010/codelist/30/7323> .
+
+<http://data.openbudgets.eu/resource/dataset/budget-veroia-expenditure-2010/codelist/30/7323.044> a skos:Concept ;
+	skos:inScheme veroia-be2010-dsd:codelist ;
+	skos:notation "7323.044" ;
+	skos:broader <http://data.openbudgets.eu/resource/dataset/budget-veroia-expenditure-2010/codelist/30/7323> .
+
+<http://data.openbudgets.eu/resource/dataset/budget-veroia-expenditure-2010/codelist/30/7323.046> a skos:Concept ;
+	skos:inScheme veroia-be2010-dsd:codelist ;
+	skos:notation "7323.046" ;
+	skos:broader <http://data.openbudgets.eu/resource/dataset/budget-veroia-expenditure-2010/codelist/30/7323> .
+
+<http://data.openbudgets.eu/resource/dataset/budget-veroia-expenditure-2010/codelist/30/7323.047> a skos:Concept ;
+	skos:inScheme veroia-be2010-dsd:codelist ;
+	skos:notation "7323.047" ;
+	skos:broader <http://data.openbudgets.eu/resource/dataset/budget-veroia-expenditure-2010/codelist/30/7323> .
+
+<http://data.openbudgets.eu/resource/dataset/budget-veroia-expenditure-2010/codelist/30/7326.001> a skos:Concept ;
+	skos:inScheme veroia-be2010-dsd:codelist ;
+	skos:notation "7326.001" ;
+	skos:broader <http://data.openbudgets.eu/resource/dataset/budget-veroia-expenditure-2010/codelist/30/7326> .
+
+<http://data.openbudgets.eu/resource/dataset/budget-veroia-expenditure-2010/codelist/30/7326.008> a skos:Concept ;
+	skos:inScheme veroia-be2010-dsd:codelist ;
+	skos:notation "7326.008" ;
+	skos:broader <http://data.openbudgets.eu/resource/dataset/budget-veroia-expenditure-2010/codelist/30/7326> .
+
+<http://data.openbudgets.eu/resource/dataset/budget-veroia-expenditure-2010/codelist/30/7326.019> a skos:Concept ;
+	skos:inScheme veroia-be2010-dsd:codelist ;
+	skos:notation "7326.019" ;
+	skos:broader <http://data.openbudgets.eu/resource/dataset/budget-veroia-expenditure-2010/codelist/30/7326> .
+
+<http://data.openbudgets.eu/resource/dataset/budget-veroia-expenditure-2010/codelist/30/7326.023> a skos:Concept ;
+	skos:inScheme veroia-be2010-dsd:codelist ;
+	skos:notation "7326.023" ;
+	skos:broader <http://data.openbudgets.eu/resource/dataset/budget-veroia-expenditure-2010/codelist/30/7326> .
+
+<http://data.openbudgets.eu/resource/dataset/budget-veroia-expenditure-2010/codelist/30/7326.025> a skos:Concept ;
+	skos:inScheme veroia-be2010-dsd:codelist ;
+	skos:notation "7326.025" ;
+	skos:broader <http://data.openbudgets.eu/resource/dataset/budget-veroia-expenditure-2010/codelist/30/7326> .
+
+<http://data.openbudgets.eu/resource/dataset/budget-veroia-expenditure-2010/codelist/30/7326.028> a skos:Concept ;
+	skos:inScheme veroia-be2010-dsd:codelist ;
+	skos:notation "7326.028" ;
+	skos:broader <http://data.openbudgets.eu/resource/dataset/budget-veroia-expenditure-2010/codelist/30/7326> .
+
+<http://data.openbudgets.eu/resource/dataset/budget-veroia-expenditure-2010/codelist/30/7326.030> a skos:Concept ;
+	skos:inScheme veroia-be2010-dsd:codelist ;
+	skos:notation "7326.030" ;
+	skos:broader <http://data.openbudgets.eu/resource/dataset/budget-veroia-expenditure-2010/codelist/30/7326> .
+
+<http://data.openbudgets.eu/resource/dataset/budget-veroia-expenditure-2010/codelist/30/7326.031> a skos:Concept ;
+	skos:inScheme veroia-be2010-dsd:codelist ;
+	skos:notation "7326.031" ;
+	skos:broader <http://data.openbudgets.eu/resource/dataset/budget-veroia-expenditure-2010/codelist/30/7326> .
+
+<http://data.openbudgets.eu/resource/dataset/budget-veroia-expenditure-2010/codelist/30/7326.032> a skos:Concept ;
+	skos:inScheme veroia-be2010-dsd:codelist ;
+	skos:notation "7326.032" ;
+	skos:broader <http://data.openbudgets.eu/resource/dataset/budget-veroia-expenditure-2010/codelist/30/7326> .
+
+<http://data.openbudgets.eu/resource/dataset/budget-veroia-expenditure-2010/codelist/30/7326.033> a skos:Concept ;
+	skos:inScheme veroia-be2010-dsd:codelist ;
+	skos:notation "7326.033" ;
+	skos:broader <http://data.openbudgets.eu/resource/dataset/budget-veroia-expenditure-2010/codelist/30/7326> .
+
+<http://data.openbudgets.eu/resource/dataset/budget-veroia-expenditure-2010/codelist/30/7326.034> a skos:Concept ;
+	skos:inScheme veroia-be2010-dsd:codelist ;
+	skos:notation "7326.034" ;
+	skos:broader <http://data.openbudgets.eu/resource/dataset/budget-veroia-expenditure-2010/codelist/30/7326> .
+
+<http://data.openbudgets.eu/resource/dataset/budget-veroia-expenditure-2010/codelist/30/7331.001> a skos:Concept ;
+	skos:inScheme veroia-be2010-dsd:codelist ;
+	skos:notation "7331.001" ;
+	skos:broader <http://data.openbudgets.eu/resource/dataset/budget-veroia-expenditure-2010/codelist/30/7331> .
+
+<http://data.openbudgets.eu/resource/dataset/budget-veroia-expenditure-2010/codelist/30/7331.003> a skos:Concept ;
+	skos:inScheme veroia-be2010-dsd:codelist ;
+	skos:notation "7331.003" ;
+	skos:broader <http://data.openbudgets.eu/resource/dataset/budget-veroia-expenditure-2010/codelist/30/7331> .
+
+<http://data.openbudgets.eu/resource/dataset/budget-veroia-expenditure-2010/codelist/30/7331.008> a skos:Concept ;
+	skos:inScheme veroia-be2010-dsd:codelist ;
+	skos:notation "7331.008" ;
+	skos:broader <http://data.openbudgets.eu/resource/dataset/budget-veroia-expenditure-2010/codelist/30/7331> .
+
+<http://data.openbudgets.eu/resource/dataset/budget-veroia-expenditure-2010/codelist/30/7335.005> a skos:Concept ;
+	skos:inScheme veroia-be2010-dsd:codelist ;
+	skos:notation "7335.005" ;
+	skos:broader <http://data.openbudgets.eu/resource/dataset/budget-veroia-expenditure-2010/codelist/30/7335> .
+
+<http://data.openbudgets.eu/resource/dataset/budget-veroia-expenditure-2010/codelist/30/7336.002> a skos:Concept ;
+	skos:inScheme veroia-be2010-dsd:codelist ;
+	skos:notation "7336.002" ;
+	skos:broader <http://data.openbudgets.eu/resource/dataset/budget-veroia-expenditure-2010/codelist/30/7336> .
+
+<http://data.openbudgets.eu/resource/dataset/budget-veroia-expenditure-2010/codelist/30/7411.001> a skos:Concept ;
+	skos:inScheme veroia-be2010-dsd:codelist ;
+	skos:notation "7411.001" ;
+	skos:broader <http://data.openbudgets.eu/resource/dataset/budget-veroia-expenditure-2010/codelist/30/7411> .
+
+<http://data.openbudgets.eu/resource/dataset/budget-veroia-expenditure-2010/codelist/30/7411.002> a skos:Concept ;
+	skos:inScheme veroia-be2010-dsd:codelist ;
+	skos:notation "7411.002" ;
+	skos:broader <http://data.openbudgets.eu/resource/dataset/budget-veroia-expenditure-2010/codelist/30/7411> .
+
+<http://data.openbudgets.eu/resource/dataset/budget-veroia-expenditure-2010/codelist/30/7411.003> a skos:Concept ;
+	skos:inScheme veroia-be2010-dsd:codelist ;
+	skos:notation "7411.003" ;
+	skos:broader <http://data.openbudgets.eu/resource/dataset/budget-veroia-expenditure-2010/codelist/30/7411> .
+
+<http://data.openbudgets.eu/resource/dataset/budget-veroia-expenditure-2010/codelist/30/7411.004> a skos:Concept ;
+	skos:inScheme veroia-be2010-dsd:codelist ;
+	skos:notation "7411.004" ;
+	skos:broader <http://data.openbudgets.eu/resource/dataset/budget-veroia-expenditure-2010/codelist/30/7411> .
+
+<http://data.openbudgets.eu/resource/dataset/budget-veroia-expenditure-2010/codelist/30/7411.005> a skos:Concept ;
+	skos:inScheme veroia-be2010-dsd:codelist ;
+	skos:notation "7411.005" ;
+	skos:broader <http://data.openbudgets.eu/resource/dataset/budget-veroia-expenditure-2010/codelist/30/7411> .
+
+<http://data.openbudgets.eu/resource/dataset/budget-veroia-expenditure-2010/codelist/30/7411.006> a skos:Concept ;
+	skos:inScheme veroia-be2010-dsd:codelist ;
+	skos:notation "7411.006" ;
+	skos:broader <http://data.openbudgets.eu/resource/dataset/budget-veroia-expenditure-2010/codelist/30/7411> .
+
+<http://data.openbudgets.eu/resource/dataset/budget-veroia-expenditure-2010/codelist/30/7411.007> a skos:Concept ;
+	skos:inScheme veroia-be2010-dsd:codelist ;
+	skos:notation "7411.007" ;
+	skos:broader <http://data.openbudgets.eu/resource/dataset/budget-veroia-expenditure-2010/codelist/30/7411> .
+
+<http://data.openbudgets.eu/resource/dataset/budget-veroia-expenditure-2010/codelist/30/7411.008> a skos:Concept ;
+	skos:inScheme veroia-be2010-dsd:codelist ;
+	skos:notation "7411.008" ;
+	skos:broader <http://data.openbudgets.eu/resource/dataset/budget-veroia-expenditure-2010/codelist/30/7411> .
+
+<http://data.openbudgets.eu/resource/dataset/budget-veroia-expenditure-2010/codelist/30/7411.009> a skos:Concept ;
+	skos:inScheme veroia-be2010-dsd:codelist ;
+	skos:notation "7411.009" ;
+	skos:broader <http://data.openbudgets.eu/resource/dataset/budget-veroia-expenditure-2010/codelist/30/7411> .
+
+<http://data.openbudgets.eu/resource/dataset/budget-veroia-expenditure-2010/codelist/30/7411.011> a skos:Concept ;
+	skos:inScheme veroia-be2010-dsd:codelist ;
+	skos:notation "7411.011" ;
+	skos:broader <http://data.openbudgets.eu/resource/dataset/budget-veroia-expenditure-2010/codelist/30/7411> .
+
+<http://data.openbudgets.eu/resource/dataset/budget-veroia-expenditure-2010/codelist/30/7411.013> a skos:Concept ;
+	skos:inScheme veroia-be2010-dsd:codelist ;
+	skos:notation "7411.013" ;
+	skos:broader <http://data.openbudgets.eu/resource/dataset/budget-veroia-expenditure-2010/codelist/30/7411> .
+
+<http://data.openbudgets.eu/resource/dataset/budget-veroia-expenditure-2010/codelist/30/7411.014> a skos:Concept ;
+	skos:inScheme veroia-be2010-dsd:codelist ;
+	skos:notation "7411.014" ;
+	skos:broader <http://data.openbudgets.eu/resource/dataset/budget-veroia-expenditure-2010/codelist/30/7411> .
+
+<http://data.openbudgets.eu/resource/dataset/budget-veroia-expenditure-2010/codelist/30/7411.015> a skos:Concept ;
+	skos:inScheme veroia-be2010-dsd:codelist ;
+	skos:notation "7411.015" ;
+	skos:broader <http://data.openbudgets.eu/resource/dataset/budget-veroia-expenditure-2010/codelist/30/7411> .
+
+<http://data.openbudgets.eu/resource/dataset/budget-veroia-expenditure-2010/codelist/30/7411.016> a skos:Concept ;
+	skos:inScheme veroia-be2010-dsd:codelist ;
+	skos:notation "7411.016" ;
+	skos:broader <http://data.openbudgets.eu/resource/dataset/budget-veroia-expenditure-2010/codelist/30/7411> .
+
+<http://data.openbudgets.eu/resource/dataset/budget-veroia-expenditure-2010/codelist/30/7411.017> a skos:Concept ;
+	skos:inScheme veroia-be2010-dsd:codelist ;
+	skos:notation "7411.017" ;
+	skos:broader <http://data.openbudgets.eu/resource/dataset/budget-veroia-expenditure-2010/codelist/30/7411> .
+
+<http://data.openbudgets.eu/resource/dataset/budget-veroia-expenditure-2010/codelist/30/7411.018> a skos:Concept ;
+	skos:inScheme veroia-be2010-dsd:codelist ;
+	skos:notation "7411.018" ;
+	skos:broader <http://data.openbudgets.eu/resource/dataset/budget-veroia-expenditure-2010/codelist/30/7411> .
+
+<http://data.openbudgets.eu/resource/dataset/budget-veroia-expenditure-2010/codelist/30/7411.019> a skos:Concept ;
+	skos:inScheme veroia-be2010-dsd:codelist ;
+	skos:notation "7411.019" ;
+	skos:broader <http://data.openbudgets.eu/resource/dataset/budget-veroia-expenditure-2010/codelist/30/7411> .
+
+<http://data.openbudgets.eu/resource/dataset/budget-veroia-expenditure-2010/codelist/30/7411.020> a skos:Concept ;
+	skos:inScheme veroia-be2010-dsd:codelist ;
+	skos:notation "7411.020" ;
+	skos:broader <http://data.openbudgets.eu/resource/dataset/budget-veroia-expenditure-2010/codelist/30/7411> .
+
+<http://data.openbudgets.eu/resource/dataset/budget-veroia-expenditure-2010/codelist/30/7411.021> a skos:Concept ;
+	skos:inScheme veroia-be2010-dsd:codelist ;
+	skos:notation "7411.021" ;
+	skos:broader <http://data.openbudgets.eu/resource/dataset/budget-veroia-expenditure-2010/codelist/30/7411> .
+
+<http://data.openbudgets.eu/resource/dataset/budget-veroia-expenditure-2010/codelist/30/7411.022> a skos:Concept ;
+	skos:inScheme veroia-be2010-dsd:codelist ;
+	skos:notation "7411.022" ;
+	skos:broader <http://data.openbudgets.eu/resource/dataset/budget-veroia-expenditure-2010/codelist/30/7411> .
+
+<http://data.openbudgets.eu/resource/dataset/budget-veroia-expenditure-2010/codelist/30/7411.023> a skos:Concept ;
+	skos:inScheme veroia-be2010-dsd:codelist ;
+	skos:notation "7411.023" ;
+	skos:broader <http://data.openbudgets.eu/resource/dataset/budget-veroia-expenditure-2010/codelist/30/7411> .
+
+<http://data.openbudgets.eu/resource/dataset/budget-veroia-expenditure-2010/codelist/30/7411.024> a skos:Concept ;
+	skos:inScheme veroia-be2010-dsd:codelist ;
+	skos:notation "7411.024" ;
+	skos:broader <http://data.openbudgets.eu/resource/dataset/budget-veroia-expenditure-2010/codelist/30/7411> .
+
+<http://data.openbudgets.eu/resource/dataset/budget-veroia-expenditure-2010/codelist/30/7411.025> a skos:Concept ;
+	skos:inScheme veroia-be2010-dsd:codelist ;
+	skos:notation "7411.025" ;
+	skos:broader <http://data.openbudgets.eu/resource/dataset/budget-veroia-expenditure-2010/codelist/30/7411> .
+
+<http://data.openbudgets.eu/resource/dataset/budget-veroia-expenditure-2010/codelist/30/7411.026> a skos:Concept ;
+	skos:inScheme veroia-be2010-dsd:codelist ;
+	skos:notation "7411.026" ;
+	skos:broader <http://data.openbudgets.eu/resource/dataset/budget-veroia-expenditure-2010/codelist/30/7411> .
+
+<http://data.openbudgets.eu/resource/dataset/budget-veroia-expenditure-2010/codelist/30/7411.027> a skos:Concept ;
+	skos:inScheme veroia-be2010-dsd:codelist ;
+	skos:notation "7411.027" ;
+	skos:broader <http://data.openbudgets.eu/resource/dataset/budget-veroia-expenditure-2010/codelist/30/7411> .
+
+<http://data.openbudgets.eu/resource/dataset/budget-veroia-expenditure-2010/codelist/30/7411.028> a skos:Concept ;
+	skos:inScheme veroia-be2010-dsd:codelist ;
+	skos:notation "7411.028" ;
+	skos:broader <http://data.openbudgets.eu/resource/dataset/budget-veroia-expenditure-2010/codelist/30/7411> .
+
+<http://data.openbudgets.eu/resource/dataset/budget-veroia-expenditure-2010/codelist/30/7411.029> a skos:Concept ;
+	skos:inScheme veroia-be2010-dsd:codelist ;
+	skos:notation "7411.029" ;
+	skos:broader <http://data.openbudgets.eu/resource/dataset/budget-veroia-expenditure-2010/codelist/30/7411> .
+
+<http://data.openbudgets.eu/resource/dataset/budget-veroia-expenditure-2010/codelist/35/6011> a skos:Concept ;
+	skos:inScheme veroia-be2010-dsd:codelist ;
+	skos:narrower <http://data.openbudgets.eu/resource/dataset/budget-veroia-expenditure-2010/codelist/35/6011.001> , <http://data.openbudgets.eu/resource/dataset/budget-veroia-expenditure-2010/codelist/35/6011.002> ;
+	skos:notation "6011" ;
+	skos:broader veroia-be2010-codelist:35 ;
+	skos:broadMatch kae-ota-ex14:6011 .
+
+<http://data.openbudgets.eu/resource/dataset/budget-veroia-expenditure-2010/codelist/35/6012> a skos:Concept ;
+	skos:inScheme veroia-be2010-dsd:codelist ;
+	skos:notation "6012" ;
+	skos:broader veroia-be2010-codelist:35 ;
+	skos:broadMatch kae-ota-ex14:6012 .
+
+<http://data.openbudgets.eu/resource/dataset/budget-veroia-expenditure-2010/codelist/35/6021> a skos:Concept ;
+	skos:inScheme veroia-be2010-dsd:codelist ;
+	skos:narrower <http://data.openbudgets.eu/resource/dataset/budget-veroia-expenditure-2010/codelist/35/6021.001> , <http://data.openbudgets.eu/resource/dataset/budget-veroia-expenditure-2010/codelist/35/6021.002> ;
+	skos:notation "6021" ;
+	skos:broader veroia-be2010-codelist:35 ;
+	skos:broadMatch kae-ota-ex14:6021 .
+
+<http://data.openbudgets.eu/resource/dataset/budget-veroia-expenditure-2010/codelist/35/6051> a skos:Concept ;
+	skos:inScheme veroia-be2010-dsd:codelist ;
+	skos:notation "6051" ;
+	skos:broader veroia-be2010-codelist:35 ;
+	skos:broadMatch kae-ota-ex14:6051 .
+
+<http://data.openbudgets.eu/resource/dataset/budget-veroia-expenditure-2010/codelist/35/6052> a skos:Concept ;
+	skos:inScheme veroia-be2010-dsd:codelist ;
+	skos:notation "6052" ;
+	skos:broader veroia-be2010-codelist:35 ;
+	skos:broadMatch kae-ota-ex14:6052 .
+
+<http://data.openbudgets.eu/resource/dataset/budget-veroia-expenditure-2010/codelist/35/6061> a skos:Concept ;
+	skos:inScheme veroia-be2010-dsd:codelist ;
+	skos:notation "6061" ;
+	skos:broader veroia-be2010-codelist:35 ;
+	skos:broadMatch kae-ota-ex14:6061 .
+
+<http://data.openbudgets.eu/resource/dataset/budget-veroia-expenditure-2010/codelist/35/6062> a skos:Concept ;
+	skos:inScheme veroia-be2010-dsd:codelist ;
+	skos:notation "6062" ;
+	skos:broader veroia-be2010-codelist:35 ;
+	skos:broadMatch kae-ota-ex14:6062 .
+
+<http://data.openbudgets.eu/resource/dataset/budget-veroia-expenditure-2010/codelist/35/6063> a skos:Concept ;
+	skos:inScheme veroia-be2010-dsd:codelist ;
+	skos:notation "6063" ;
+	skos:broader veroia-be2010-codelist:35 ;
+	skos:broadMatch kae-ota-ex14:6063 .
+
+<http://data.openbudgets.eu/resource/dataset/budget-veroia-expenditure-2010/codelist/35/6264> a skos:Concept ;
+	skos:inScheme veroia-be2010-dsd:codelist ;
+	skos:notation "6264" ;
+	skos:broader veroia-be2010-codelist:35 ;
+	skos:broadMatch kae-ota-ex14:6264 .
+
+<http://data.openbudgets.eu/resource/dataset/budget-veroia-expenditure-2010/codelist/35/6422> a skos:Concept ;
+	skos:inScheme veroia-be2010-dsd:codelist ;
+	skos:notation "6422" ;
+	skos:broader veroia-be2010-codelist:35 ;
+	skos:broadMatch kae-ota-ex14:6422 .
+
+<http://data.openbudgets.eu/resource/dataset/budget-veroia-expenditure-2010/codelist/35/6462> a skos:Concept ;
+	skos:inScheme veroia-be2010-dsd:codelist ;
+	skos:notation "6462" ;
+	skos:broader veroia-be2010-codelist:35 ;
+	skos:broadMatch kae-ota-ex14:6462 .
+
+<http://data.openbudgets.eu/resource/dataset/budget-veroia-expenditure-2010/codelist/35/6644> a skos:Concept ;
+	skos:inScheme veroia-be2010-dsd:codelist ;
+	skos:notation "6644" ;
+	skos:broader veroia-be2010-codelist:35 ;
+	skos:broadMatch kae-ota-ex14:6644 .
+
+<http://data.openbudgets.eu/resource/dataset/budget-veroia-expenditure-2010/codelist/35/6672> a skos:Concept ;
+	skos:inScheme veroia-be2010-dsd:codelist ;
+	skos:notation "6672" ;
+	skos:broader veroia-be2010-codelist:35 ;
+	skos:broadMatch kae-ota-ex14:6672 .
+
+<http://data.openbudgets.eu/resource/dataset/budget-veroia-expenditure-2010/codelist/35/6692> a skos:Concept ;
+	skos:inScheme veroia-be2010-dsd:codelist ;
+	skos:notation "6692" ;
+	skos:broader veroia-be2010-codelist:35 ;
+	skos:broadMatch kae-ota-ex14:6692 .
+
+<http://data.openbudgets.eu/resource/dataset/budget-veroia-expenditure-2010/codelist/35/6693> a skos:Concept ;
+	skos:inScheme veroia-be2010-dsd:codelist ;
+	skos:notation "6693" ;
+	skos:broader veroia-be2010-codelist:35 ;
+	skos:broadMatch kae-ota-ex14:6693 .
+
+<http://data.openbudgets.eu/resource/dataset/budget-veroia-expenditure-2010/codelist/35/7131> a skos:Concept ;
+	skos:inScheme veroia-be2010-dsd:codelist ;
+	skos:notation "7131" ;
+	skos:broader veroia-be2010-codelist:35 ;
+	skos:broadMatch kae-ota-ex14:7131 .
+
+<http://data.openbudgets.eu/resource/dataset/budget-veroia-expenditure-2010/codelist/35/7132> a skos:Concept ;
+	skos:inScheme veroia-be2010-dsd:codelist ;
+	skos:notation "7132" ;
+	skos:broader veroia-be2010-codelist:35 ;
+	skos:broadMatch kae-ota-ex14:7132 .
+
+<http://data.openbudgets.eu/resource/dataset/budget-veroia-expenditure-2010/codelist/35/7322> a skos:Concept ;
+	skos:inScheme veroia-be2010-dsd:codelist ;
+	skos:notation "7322" ;
+	skos:broader veroia-be2010-codelist:35 ;
+	skos:broadMatch kae-ota-ex14:7322 .
+
+<http://data.openbudgets.eu/resource/dataset/budget-veroia-expenditure-2010/codelist/35/7336> a skos:Concept ;
+	skos:inScheme veroia-be2010-dsd:codelist ;
+	skos:narrower <http://data.openbudgets.eu/resource/dataset/budget-veroia-expenditure-2010/codelist/35/7336.007> , <http://data.openbudgets.eu/resource/dataset/budget-veroia-expenditure-2010/codelist/35/7336.011> ;
+	skos:notation "7336" ;
+	skos:broader veroia-be2010-codelist:35 ;
+	skos:broadMatch kae-ota-ex14:7336 .
+
+<http://data.openbudgets.eu/resource/dataset/budget-veroia-expenditure-2010/codelist/35/7411> a skos:Concept ;
+	skos:inScheme veroia-be2010-dsd:codelist ;
+	skos:notation "7411" ;
+	skos:broader veroia-be2010-codelist:35 ;
+	skos:broadMatch kae-ota-ex14:7411 .
+
+<http://data.openbudgets.eu/resource/dataset/budget-veroia-expenditure-2010/codelist/35/6011.001> a skos:Concept ;
+	skos:inScheme veroia-be2010-dsd:codelist ;
+	skos:notation "6011.001" ;
+	skos:broader <http://data.openbudgets.eu/resource/dataset/budget-veroia-expenditure-2010/codelist/35/6011> .
+
+<http://data.openbudgets.eu/resource/dataset/budget-veroia-expenditure-2010/codelist/35/6011.002> a skos:Concept ;
+	skos:inScheme veroia-be2010-dsd:codelist ;
+	skos:notation "6011.002" ;
+	skos:broader <http://data.openbudgets.eu/resource/dataset/budget-veroia-expenditure-2010/codelist/35/6011> .
+
+<http://data.openbudgets.eu/resource/dataset/budget-veroia-expenditure-2010/codelist/35/6021.001> a skos:Concept ;
+	skos:inScheme veroia-be2010-dsd:codelist ;
+	skos:notation "6021.001" ;
+	skos:broader <http://data.openbudgets.eu/resource/dataset/budget-veroia-expenditure-2010/codelist/35/6021> .
+
+<http://data.openbudgets.eu/resource/dataset/budget-veroia-expenditure-2010/codelist/35/6021.002> a skos:Concept ;
+	skos:inScheme veroia-be2010-dsd:codelist ;
+	skos:notation "6021.002" ;
+	skos:broader <http://data.openbudgets.eu/resource/dataset/budget-veroia-expenditure-2010/codelist/35/6021> .
+
+<http://data.openbudgets.eu/resource/dataset/budget-veroia-expenditure-2010/codelist/35/7336.007> a skos:Concept ;
+	skos:inScheme veroia-be2010-dsd:codelist ;
+	skos:notation "7336.007" ;
+	skos:broader <http://data.openbudgets.eu/resource/dataset/budget-veroia-expenditure-2010/codelist/35/7336> .
+
+<http://data.openbudgets.eu/resource/dataset/budget-veroia-expenditure-2010/codelist/35/7336.011> a skos:Concept ;
+	skos:inScheme veroia-be2010-dsd:codelist ;
+	skos:notation "7336.011" ;
+	skos:broader <http://data.openbudgets.eu/resource/dataset/budget-veroia-expenditure-2010/codelist/35/7336> .
+
+<http://data.openbudgets.eu/resource/dataset/budget-veroia-expenditure-2010/codelist/40/6011> a skos:Concept ;
+	skos:inScheme veroia-be2010-dsd:codelist ;
+	skos:narrower <http://data.openbudgets.eu/resource/dataset/budget-veroia-expenditure-2010/codelist/40/6011.001> , <http://data.openbudgets.eu/resource/dataset/budget-veroia-expenditure-2010/codelist/40/6011.002> ;
+	skos:notation "6011" ;
+	skos:broader veroia-be2010-codelist:40 ;
+	skos:broadMatch kae-ota-ex14:6011 .
+
+<http://data.openbudgets.eu/resource/dataset/budget-veroia-expenditure-2010/codelist/40/6012> a skos:Concept ;
+	skos:inScheme veroia-be2010-dsd:codelist ;
+	skos:notation "6012" ;
+	skos:broader veroia-be2010-codelist:40 ;
+	skos:broadMatch kae-ota-ex14:6012 .
+
+<http://data.openbudgets.eu/resource/dataset/budget-veroia-expenditure-2010/codelist/40/6051> a skos:Concept ;
+	skos:inScheme veroia-be2010-dsd:codelist ;
+	skos:notation "6051" ;
+	skos:broader veroia-be2010-codelist:40 ;
+	skos:broadMatch kae-ota-ex14:6051 .
+
+<http://data.openbudgets.eu/resource/dataset/budget-veroia-expenditure-2010/codelist/40/6061> a skos:Concept ;
+	skos:inScheme veroia-be2010-dsd:codelist ;
+	skos:notation "6061" ;
+	skos:broader veroia-be2010-codelist:40 ;
+	skos:broadMatch kae-ota-ex14:6061 .
+
+<http://data.openbudgets.eu/resource/dataset/budget-veroia-expenditure-2010/codelist/40/6063> a skos:Concept ;
+	skos:inScheme veroia-be2010-dsd:codelist ;
+	skos:notation "6063" ;
+	skos:broader veroia-be2010-codelist:40 ;
+	skos:broadMatch kae-ota-ex14:6063 .
+
+<http://data.openbudgets.eu/resource/dataset/budget-veroia-expenditure-2010/codelist/40/6422> a skos:Concept ;
+	skos:inScheme veroia-be2010-dsd:codelist ;
+	skos:notation "6422" ;
+	skos:broader veroia-be2010-codelist:40 ;
+	skos:broadMatch kae-ota-ex14:6422 .
+
+<http://data.openbudgets.eu/resource/dataset/budget-veroia-expenditure-2010/codelist/40/6463> a skos:Concept ;
+	skos:inScheme veroia-be2010-dsd:codelist ;
+	skos:notation "6463" ;
+	skos:broader veroia-be2010-codelist:40 ;
+	skos:broadMatch kae-ota-ex14:6463 .
+
+<http://data.openbudgets.eu/resource/dataset/budget-veroia-expenditure-2010/codelist/40/6615> a skos:Concept ;
+	skos:inScheme veroia-be2010-dsd:codelist ;
+	skos:notation "6615" ;
+	skos:broader veroia-be2010-codelist:40 ;
+	skos:broadMatch kae-ota-ex14:6615 .
+
+<http://data.openbudgets.eu/resource/dataset/budget-veroia-expenditure-2010/codelist/40/7112> a skos:Concept ;
+	skos:inScheme veroia-be2010-dsd:codelist ;
+	skos:narrower <http://data.openbudgets.eu/resource/dataset/budget-veroia-expenditure-2010/codelist/40/7112.001> ;
+	skos:notation "7112" ;
+	skos:broader veroia-be2010-codelist:40 ;
+	skos:broadMatch kae-ota-ex14:7112 .
+
+<http://data.openbudgets.eu/resource/dataset/budget-veroia-expenditure-2010/codelist/40/7131> a skos:Concept ;
+	skos:inScheme veroia-be2010-dsd:codelist ;
+	skos:notation "7131" ;
+	skos:broader veroia-be2010-codelist:40 ;
+	skos:broadMatch kae-ota-ex14:7131 .
+
+<http://data.openbudgets.eu/resource/dataset/budget-veroia-expenditure-2010/codelist/40/7134> a skos:Concept ;
+	skos:inScheme veroia-be2010-dsd:codelist ;
+	skos:narrower <http://data.openbudgets.eu/resource/dataset/budget-veroia-expenditure-2010/codelist/40/7134.001> ;
+	skos:notation "7134" ;
+	skos:broader veroia-be2010-codelist:40 ;
+	skos:broadMatch kae-ota-ex14:7134 .
+
+<http://data.openbudgets.eu/resource/dataset/budget-veroia-expenditure-2010/codelist/40/7413> a skos:Concept ;
+	skos:inScheme veroia-be2010-dsd:codelist ;
+	skos:narrower <http://data.openbudgets.eu/resource/dataset/budget-veroia-expenditure-2010/codelist/40/7413.001> , <http://data.openbudgets.eu/resource/dataset/budget-veroia-expenditure-2010/codelist/40/7413.002> , <http://data.openbudgets.eu/resource/dataset/budget-veroia-expenditure-2010/codelist/40/7413.003> , <http://data.openbudgets.eu/resource/dataset/budget-veroia-expenditure-2010/codelist/40/7413.004> , <http://data.openbudgets.eu/resource/dataset/budget-veroia-expenditure-2010/codelist/40/7413.005> , <http://data.openbudgets.eu/resource/dataset/budget-veroia-expenditure-2010/codelist/40/7413.006> , <http://data.openbudgets.eu/resource/dataset/budget-veroia-expenditure-2010/codelist/40/7413.007> , <http://data.openbudgets.eu/resource/dataset/budget-veroia-expenditure-2010/codelist/40/7413.008> , <http://data.openbudgets.eu/resource/dataset/budget-veroia-expenditure-2010/codelist/40/7413.009> , <http://data.openbudgets.eu/resource/dataset/budget-veroia-expenditure-2010/codelist/40/7413.010> , <http://data.openbudgets.eu/resource/dataset/budget-veroia-expenditure-2010/codelist/40/7413.011> , <http://data.openbudgets.eu/resource/dataset/budget-veroia-expenditure-2010/codelist/40/7413.012> , <http://data.openbudgets.eu/resource/dataset/budget-veroia-expenditure-2010/codelist/40/7413.013> , <http://data.openbudgets.eu/resource/dataset/budget-veroia-expenditure-2010/codelist/40/7413.014> , <http://data.openbudgets.eu/resource/dataset/budget-veroia-expenditure-2010/codelist/40/7413.015> ;
+	skos:notation "7413" ;
+	skos:broader veroia-be2010-codelist:40 ;
+	skos:broadMatch kae-ota-ex14:7413 .
+
+<http://data.openbudgets.eu/resource/dataset/budget-veroia-expenditure-2010/codelist/40/7421> a skos:Concept ;
+	skos:inScheme veroia-be2010-dsd:codelist ;
+	skos:notation "7421" ;
+	skos:broader veroia-be2010-codelist:40 ;
+	skos:broadMatch kae-ota-ex14:7421 .
+
+<http://data.openbudgets.eu/resource/dataset/budget-veroia-expenditure-2010/codelist/40/7422> a skos:Concept ;
+	skos:inScheme veroia-be2010-dsd:codelist ;
+	skos:notation "7422" ;
+	skos:broader veroia-be2010-codelist:40 ;
+	skos:broadMatch kae-ota-ex14:7422 .
+
+<http://data.openbudgets.eu/resource/dataset/budget-veroia-expenditure-2010/codelist/40/7423> a skos:Concept ;
+	skos:inScheme veroia-be2010-dsd:codelist ;
+	skos:notation "7423" ;
+	skos:broader veroia-be2010-codelist:40 ;
+	skos:broadMatch kae-ota-ex14:7423 .
+
+<http://data.openbudgets.eu/resource/dataset/budget-veroia-expenditure-2010/codelist/40/7425> a skos:Concept ;
+	skos:inScheme veroia-be2010-dsd:codelist ;
+	skos:narrower <http://data.openbudgets.eu/resource/dataset/budget-veroia-expenditure-2010/codelist/40/7425.001> ;
+	skos:notation "7425" ;
+	skos:broader veroia-be2010-codelist:40 ;
+	skos:broadMatch kae-ota-ex14:7425 .
+
+<http://data.openbudgets.eu/resource/dataset/budget-veroia-expenditure-2010/codelist/40/6011.001> a skos:Concept ;
+	skos:inScheme veroia-be2010-dsd:codelist ;
+	skos:notation "6011.001" ;
+	skos:broader <http://data.openbudgets.eu/resource/dataset/budget-veroia-expenditure-2010/codelist/40/6011> .
+
+<http://data.openbudgets.eu/resource/dataset/budget-veroia-expenditure-2010/codelist/40/6011.002> a skos:Concept ;
+	skos:inScheme veroia-be2010-dsd:codelist ;
+	skos:notation "6011.002" ;
+	skos:broader <http://data.openbudgets.eu/resource/dataset/budget-veroia-expenditure-2010/codelist/40/6011> .
+
+<http://data.openbudgets.eu/resource/dataset/budget-veroia-expenditure-2010/codelist/40/7112.001> a skos:Concept ;
+	skos:inScheme veroia-be2010-dsd:codelist ;
+	skos:notation "7112.001" ;
+	skos:broader <http://data.openbudgets.eu/resource/dataset/budget-veroia-expenditure-2010/codelist/40/7112> .
+
+<http://data.openbudgets.eu/resource/dataset/budget-veroia-expenditure-2010/codelist/40/7134.001> a skos:Concept ;
+	skos:inScheme veroia-be2010-dsd:codelist ;
+	skos:notation "7134.001" ;
+	skos:broader <http://data.openbudgets.eu/resource/dataset/budget-veroia-expenditure-2010/codelist/40/7134> .
+
+<http://data.openbudgets.eu/resource/dataset/budget-veroia-expenditure-2010/codelist/40/7413.001> a skos:Concept ;
+	skos:inScheme veroia-be2010-dsd:codelist ;
+	skos:notation "7413.001" ;
+	skos:broader <http://data.openbudgets.eu/resource/dataset/budget-veroia-expenditure-2010/codelist/40/7413> .
+
+<http://data.openbudgets.eu/resource/dataset/budget-veroia-expenditure-2010/codelist/40/7413.002> a skos:Concept ;
+	skos:inScheme veroia-be2010-dsd:codelist ;
+	skos:notation "7413.002" ;
+	skos:broader <http://data.openbudgets.eu/resource/dataset/budget-veroia-expenditure-2010/codelist/40/7413> .
+
+<http://data.openbudgets.eu/resource/dataset/budget-veroia-expenditure-2010/codelist/40/7413.003> a skos:Concept ;
+	skos:inScheme veroia-be2010-dsd:codelist ;
+	skos:notation "7413.003" ;
+	skos:broader <http://data.openbudgets.eu/resource/dataset/budget-veroia-expenditure-2010/codelist/40/7413> .
+
+<http://data.openbudgets.eu/resource/dataset/budget-veroia-expenditure-2010/codelist/40/7413.004> a skos:Concept ;
+	skos:inScheme veroia-be2010-dsd:codelist ;
+	skos:notation "7413.004" ;
+	skos:broader <http://data.openbudgets.eu/resource/dataset/budget-veroia-expenditure-2010/codelist/40/7413> .
+
+<http://data.openbudgets.eu/resource/dataset/budget-veroia-expenditure-2010/codelist/40/7413.005> a skos:Concept ;
+	skos:inScheme veroia-be2010-dsd:codelist ;
+	skos:notation "7413.005" ;
+	skos:broader <http://data.openbudgets.eu/resource/dataset/budget-veroia-expenditure-2010/codelist/40/7413> .
+
+<http://data.openbudgets.eu/resource/dataset/budget-veroia-expenditure-2010/codelist/40/7413.006> a skos:Concept ;
+	skos:inScheme veroia-be2010-dsd:codelist ;
+	skos:notation "7413.006" ;
+	skos:broader <http://data.openbudgets.eu/resource/dataset/budget-veroia-expenditure-2010/codelist/40/7413> .
+
+<http://data.openbudgets.eu/resource/dataset/budget-veroia-expenditure-2010/codelist/40/7413.007> a skos:Concept ;
+	skos:inScheme veroia-be2010-dsd:codelist ;
+	skos:notation "7413.007" ;
+	skos:broader <http://data.openbudgets.eu/resource/dataset/budget-veroia-expenditure-2010/codelist/40/7413> .
+
+<http://data.openbudgets.eu/resource/dataset/budget-veroia-expenditure-2010/codelist/40/7413.008> a skos:Concept ;
+	skos:inScheme veroia-be2010-dsd:codelist ;
+	skos:notation "7413.008" ;
+	skos:broader <http://data.openbudgets.eu/resource/dataset/budget-veroia-expenditure-2010/codelist/40/7413> .
+
+<http://data.openbudgets.eu/resource/dataset/budget-veroia-expenditure-2010/codelist/40/7413.009> a skos:Concept ;
+	skos:inScheme veroia-be2010-dsd:codelist ;
+	skos:notation "7413.009" ;
+	skos:broader <http://data.openbudgets.eu/resource/dataset/budget-veroia-expenditure-2010/codelist/40/7413> .
+
+<http://data.openbudgets.eu/resource/dataset/budget-veroia-expenditure-2010/codelist/40/7413.010> a skos:Concept ;
+	skos:inScheme veroia-be2010-dsd:codelist ;
+	skos:notation "7413.010" ;
+	skos:broader <http://data.openbudgets.eu/resource/dataset/budget-veroia-expenditure-2010/codelist/40/7413> .
+
+<http://data.openbudgets.eu/resource/dataset/budget-veroia-expenditure-2010/codelist/40/7413.011> a skos:Concept ;
+	skos:inScheme veroia-be2010-dsd:codelist ;
+	skos:notation "7413.011" ;
+	skos:broader <http://data.openbudgets.eu/resource/dataset/budget-veroia-expenditure-2010/codelist/40/7413> .
+
+<http://data.openbudgets.eu/resource/dataset/budget-veroia-expenditure-2010/codelist/40/7413.012> a skos:Concept ;
+	skos:inScheme veroia-be2010-dsd:codelist ;
+	skos:notation "7413.012" ;
+	skos:broader <http://data.openbudgets.eu/resource/dataset/budget-veroia-expenditure-2010/codelist/40/7413> .
+
+<http://data.openbudgets.eu/resource/dataset/budget-veroia-expenditure-2010/codelist/40/7413.013> a skos:Concept ;
+	skos:inScheme veroia-be2010-dsd:codelist ;
+	skos:notation "7413.013" ;
+	skos:broader <http://data.openbudgets.eu/resource/dataset/budget-veroia-expenditure-2010/codelist/40/7413> .
+
+<http://data.openbudgets.eu/resource/dataset/budget-veroia-expenditure-2010/codelist/40/7413.014> a skos:Concept ;
+	skos:inScheme veroia-be2010-dsd:codelist ;
+	skos:notation "7413.014" ;
+	skos:broader <http://data.openbudgets.eu/resource/dataset/budget-veroia-expenditure-2010/codelist/40/7413> .
+
+<http://data.openbudgets.eu/resource/dataset/budget-veroia-expenditure-2010/codelist/40/7413.015> a skos:Concept ;
+	skos:inScheme veroia-be2010-dsd:codelist ;
+	skos:notation "7413.015" ;
+	skos:broader <http://data.openbudgets.eu/resource/dataset/budget-veroia-expenditure-2010/codelist/40/7413> .
+
+<http://data.openbudgets.eu/resource/dataset/budget-veroia-expenditure-2010/codelist/40/7425.001> a skos:Concept ;
+	skos:inScheme veroia-be2010-dsd:codelist ;
+	skos:notation "7425.001" ;
+	skos:broader <http://data.openbudgets.eu/resource/dataset/budget-veroia-expenditure-2010/codelist/40/7425> .
+
+<http://data.openbudgets.eu/resource/dataset/budget-veroia-expenditure-2010/codelist/45/6011> a skos:Concept ;
+	skos:inScheme veroia-be2010-dsd:codelist ;
+	skos:narrower <http://data.openbudgets.eu/resource/dataset/budget-veroia-expenditure-2010/codelist/45/6011.001> , <http://data.openbudgets.eu/resource/dataset/budget-veroia-expenditure-2010/codelist/45/6011.002> ;
+	skos:notation "6011" ;
+	skos:broader veroia-be2010-codelist:45 ;
+	skos:broadMatch kae-ota-ex14:6011 .
+
+<http://data.openbudgets.eu/resource/dataset/budget-veroia-expenditure-2010/codelist/45/6012> a skos:Concept ;
+	skos:inScheme veroia-be2010-dsd:codelist ;
+	skos:notation "6012" ;
+	skos:broader veroia-be2010-codelist:45 ;
+	skos:broadMatch kae-ota-ex14:6012 .
+
+<http://data.openbudgets.eu/resource/dataset/budget-veroia-expenditure-2010/codelist/45/6041> a skos:Concept ;
+	skos:inScheme veroia-be2010-dsd:codelist ;
+	skos:narrower <http://data.openbudgets.eu/resource/dataset/budget-veroia-expenditure-2010/codelist/45/6041.001> , <http://data.openbudgets.eu/resource/dataset/budget-veroia-expenditure-2010/codelist/45/6041.002> ;
+	skos:notation "6041" ;
+	skos:broader veroia-be2010-codelist:45 ;
+	skos:broadMatch kae-ota-ex14:6041 .
+
+<http://data.openbudgets.eu/resource/dataset/budget-veroia-expenditure-2010/codelist/45/6051> a skos:Concept ;
+	skos:inScheme veroia-be2010-dsd:codelist ;
+	skos:notation "6051" ;
+	skos:broader veroia-be2010-codelist:45 ;
+	skos:broadMatch kae-ota-ex14:6051 .
+
+<http://data.openbudgets.eu/resource/dataset/budget-veroia-expenditure-2010/codelist/45/6054> a skos:Concept ;
+	skos:inScheme veroia-be2010-dsd:codelist ;
+	skos:notation "6054" ;
+	skos:broader veroia-be2010-codelist:45 ;
+	skos:broadMatch kae-ota-ex14:6054 .
+
+<http://data.openbudgets.eu/resource/dataset/budget-veroia-expenditure-2010/codelist/45/6061> a skos:Concept ;
+	skos:inScheme veroia-be2010-dsd:codelist ;
+	skos:notation "6061" ;
+	skos:broader veroia-be2010-codelist:45 ;
+	skos:broadMatch kae-ota-ex14:6061 .
+
+<http://data.openbudgets.eu/resource/dataset/budget-veroia-expenditure-2010/codelist/45/6063> a skos:Concept ;
+	skos:inScheme veroia-be2010-dsd:codelist ;
+	skos:notation "6063" ;
+	skos:broader veroia-be2010-codelist:45 ;
+	skos:broadMatch kae-ota-ex14:6063 .
+
+<http://data.openbudgets.eu/resource/dataset/budget-veroia-expenditure-2010/codelist/45/6422> a skos:Concept ;
+	skos:inScheme veroia-be2010-dsd:codelist ;
+	skos:notation "6422" ;
+	skos:broader veroia-be2010-codelist:45 ;
+	skos:broadMatch kae-ota-ex14:6422 .
+
+<http://data.openbudgets.eu/resource/dataset/budget-veroia-expenditure-2010/codelist/45/6633> a skos:Concept ;
+	skos:inScheme veroia-be2010-dsd:codelist ;
+	skos:notation "6633" ;
+	skos:broader veroia-be2010-codelist:45 ;
+	skos:broadMatch kae-ota-ex14:6633 .
+
+<http://data.openbudgets.eu/resource/dataset/budget-veroia-expenditure-2010/codelist/45/7131> a skos:Concept ;
+	skos:inScheme veroia-be2010-dsd:codelist ;
+	skos:notation "7131" ;
+	skos:broader veroia-be2010-codelist:45 ;
+	skos:broadMatch kae-ota-ex14:7131 .
+
+<http://data.openbudgets.eu/resource/dataset/budget-veroia-expenditure-2010/codelist/45/7326> a skos:Concept ;
+	skos:inScheme veroia-be2010-dsd:codelist ;
+	skos:notation "7326" ;
+	skos:broader veroia-be2010-codelist:45 ;
+	skos:broadMatch kae-ota-ex14:7326 .
+
+<http://data.openbudgets.eu/resource/dataset/budget-veroia-expenditure-2010/codelist/45/7336> a skos:Concept ;
+	skos:inScheme veroia-be2010-dsd:codelist ;
+	skos:narrower <http://data.openbudgets.eu/resource/dataset/budget-veroia-expenditure-2010/codelist/45/7336.001> , <http://data.openbudgets.eu/resource/dataset/budget-veroia-expenditure-2010/codelist/45/7336.002> , <http://data.openbudgets.eu/resource/dataset/budget-veroia-expenditure-2010/codelist/45/7336.003> ;
+	skos:notation "7336" ;
+	skos:broader veroia-be2010-codelist:45 ;
+	skos:broadMatch kae-ota-ex14:7336 .
+
+<http://data.openbudgets.eu/resource/dataset/budget-veroia-expenditure-2010/codelist/45/7411> a skos:Concept ;
+	skos:inScheme veroia-be2010-dsd:codelist ;
+	skos:notation "7411" ;
+	skos:broader veroia-be2010-codelist:45 ;
+	skos:broadMatch kae-ota-ex14:7411 .
+
+<http://data.openbudgets.eu/resource/dataset/budget-veroia-expenditure-2010/codelist/45/6011.001> a skos:Concept ;
+	skos:inScheme veroia-be2010-dsd:codelist ;
+	skos:notation "6011.001" ;
+	skos:broader <http://data.openbudgets.eu/resource/dataset/budget-veroia-expenditure-2010/codelist/45/6011> .
+
+<http://data.openbudgets.eu/resource/dataset/budget-veroia-expenditure-2010/codelist/45/6011.002> a skos:Concept ;
+	skos:inScheme veroia-be2010-dsd:codelist ;
+	skos:notation "6011.002" ;
+	skos:broader <http://data.openbudgets.eu/resource/dataset/budget-veroia-expenditure-2010/codelist/45/6011> .
+
+<http://data.openbudgets.eu/resource/dataset/budget-veroia-expenditure-2010/codelist/45/6041.001> a skos:Concept ;
+	skos:inScheme veroia-be2010-dsd:codelist ;
+	skos:notation "6041.001" ;
+	skos:broader <http://data.openbudgets.eu/resource/dataset/budget-veroia-expenditure-2010/codelist/45/6041> .
+
+<http://data.openbudgets.eu/resource/dataset/budget-veroia-expenditure-2010/codelist/45/6041.002> a skos:Concept ;
+	skos:inScheme veroia-be2010-dsd:codelist ;
+	skos:notation "6041.002" ;
+	skos:broader <http://data.openbudgets.eu/resource/dataset/budget-veroia-expenditure-2010/codelist/45/6041> .
+
+<http://data.openbudgets.eu/resource/dataset/budget-veroia-expenditure-2010/codelist/45/7336.001> a skos:Concept ;
+	skos:inScheme veroia-be2010-dsd:codelist ;
+	skos:notation "7336.001" ;
+	skos:broader <http://data.openbudgets.eu/resource/dataset/budget-veroia-expenditure-2010/codelist/45/7336> .
+
+<http://data.openbudgets.eu/resource/dataset/budget-veroia-expenditure-2010/codelist/45/7336.002> a skos:Concept ;
+	skos:inScheme veroia-be2010-dsd:codelist ;
+	skos:notation "7336.002" ;
+	skos:broader <http://data.openbudgets.eu/resource/dataset/budget-veroia-expenditure-2010/codelist/45/7336> .
+
+<http://data.openbudgets.eu/resource/dataset/budget-veroia-expenditure-2010/codelist/45/7336.003> a skos:Concept ;
+	skos:inScheme veroia-be2010-dsd:codelist ;
+	skos:notation "7336.003" ;
+	skos:broader <http://data.openbudgets.eu/resource/dataset/budget-veroia-expenditure-2010/codelist/45/7336> .
+
+<http://data.openbudgets.eu/resource/dataset/budget-veroia-expenditure-2010/codelist/50/6011> a skos:Concept ;
+	skos:inScheme veroia-be2010-dsd:codelist ;
+	skos:narrower <http://data.openbudgets.eu/resource/dataset/budget-veroia-expenditure-2010/codelist/50/6011.001> , <http://data.openbudgets.eu/resource/dataset/budget-veroia-expenditure-2010/codelist/50/6011.002> ;
+	skos:notation "6011" ;
+	skos:broader veroia-be2010-codelist:50 ;
+	skos:broadMatch kae-ota-ex14:6011 .
+
+<http://data.openbudgets.eu/resource/dataset/budget-veroia-expenditure-2010/codelist/50/6012> a skos:Concept ;
+	skos:inScheme veroia-be2010-dsd:codelist ;
+	skos:notation "6012" ;
+	skos:broader veroia-be2010-codelist:50 ;
+	skos:broadMatch kae-ota-ex14:6012 .
+
+<http://data.openbudgets.eu/resource/dataset/budget-veroia-expenditure-2010/codelist/50/6051> a skos:Concept ;
+	skos:inScheme veroia-be2010-dsd:codelist ;
+	skos:notation "6051" ;
+	skos:broader veroia-be2010-codelist:50 ;
+	skos:broadMatch kae-ota-ex14:6051 .
+
+<http://data.openbudgets.eu/resource/dataset/budget-veroia-expenditure-2010/codelist/50/6061> a skos:Concept ;
+	skos:inScheme veroia-be2010-dsd:codelist ;
+	skos:notation "6061" ;
+	skos:broader veroia-be2010-codelist:50 ;
+	skos:broadMatch kae-ota-ex14:6061 .
+
+<http://data.openbudgets.eu/resource/dataset/budget-veroia-expenditure-2010/codelist/50/6063> a skos:Concept ;
+	skos:inScheme veroia-be2010-dsd:codelist ;
+	skos:notation "6063" ;
+	skos:broader veroia-be2010-codelist:50 ;
+	skos:broadMatch kae-ota-ex14:6063 .
+
+<http://data.openbudgets.eu/resource/dataset/budget-veroia-expenditure-2010/codelist/50/6422> a skos:Concept ;
+	skos:inScheme veroia-be2010-dsd:codelist ;
+	skos:notation "6422" ;
+	skos:broader veroia-be2010-codelist:50 ;
+	skos:broadMatch kae-ota-ex14:6422 .
+
+<http://data.openbudgets.eu/resource/dataset/budget-veroia-expenditure-2010/codelist/50/7132> a skos:Concept ;
+	skos:inScheme veroia-be2010-dsd:codelist ;
+	skos:notation "7132" ;
+	skos:broader veroia-be2010-codelist:50 ;
+	skos:broadMatch kae-ota-ex14:7132 .
+
+<http://data.openbudgets.eu/resource/dataset/budget-veroia-expenditure-2010/codelist/50/6011.001> a skos:Concept ;
+	skos:inScheme veroia-be2010-dsd:codelist ;
+	skos:notation "6011.001" ;
+	skos:broader <http://data.openbudgets.eu/resource/dataset/budget-veroia-expenditure-2010/codelist/50/6011> .
+
+<http://data.openbudgets.eu/resource/dataset/budget-veroia-expenditure-2010/codelist/50/6011.002> a skos:Concept ;
+	skos:inScheme veroia-be2010-dsd:codelist ;
+	skos:notation "6011.002" ;
+	skos:broader <http://data.openbudgets.eu/resource/dataset/budget-veroia-expenditure-2010/codelist/50/6011> .
+
+<http://data.openbudgets.eu/resource/dataset/budget-veroia-expenditure-2010/codelist/80/8117> a skos:Concept ;
+	skos:inScheme veroia-be2010-dsd:codelist ;
+	skos:notation "8117" ;
+	skos:broader veroia-be2010-codelist:80 ;
+	skos:broadMatch kae-ota-ex14:8117 .
+
+<http://data.openbudgets.eu/resource/dataset/budget-veroia-expenditure-2010/codelist/80/8122> a skos:Concept ;
+	skos:inScheme veroia-be2010-dsd:codelist ;
+	skos:notation "8122" ;
+	skos:broader veroia-be2010-codelist:80 ;
+	skos:broadMatch kae-ota-ex14:8122 .
+
+<http://data.openbudgets.eu/resource/dataset/budget-veroia-expenditure-2010/codelist/80/8211> a skos:Concept ;
+	skos:inScheme veroia-be2010-dsd:codelist ;
+	skos:notation "8211" ;
+	skos:broader veroia-be2010-codelist:80 ;
+	skos:broadMatch kae-ota-ex14:8211 .
+
+<http://data.openbudgets.eu/resource/dataset/budget-veroia-expenditure-2010/codelist/80/8212> a skos:Concept ;
+	skos:inScheme veroia-be2010-dsd:codelist ;
+	skos:notation "8212" ;
+	skos:broader veroia-be2010-codelist:80 ;
+	skos:broadMatch kae-ota-ex14:8212 .
+
+<http://data.openbudgets.eu/resource/dataset/budget-veroia-expenditure-2010/codelist/80/8221> a skos:Concept ;
+	skos:inScheme veroia-be2010-dsd:codelist ;
+	skos:notation "8221" ;
+	skos:broader veroia-be2010-codelist:80 ;
+	skos:broadMatch kae-ota-ex14:8221 .
+
+<http://data.openbudgets.eu/resource/dataset/budget-veroia-expenditure-2010/codelist/80/8222> a skos:Concept ;
+	skos:inScheme veroia-be2010-dsd:codelist ;
+	skos:notation "8222" ;
+	skos:broader veroia-be2010-codelist:80 ;
+	skos:broadMatch kae-ota-ex14:8222 .
+
+<http://data.openbudgets.eu/resource/dataset/budget-veroia-expenditure-2010/codelist/80/8223> a skos:Concept ;
+	skos:inScheme veroia-be2010-dsd:codelist ;
+	skos:notation "8223" ;
+	skos:broader veroia-be2010-codelist:80 ;
+	skos:broadMatch kae-ota-ex14:8223 .
+
+<http://data.openbudgets.eu/resource/dataset/budget-veroia-expenditure-2010/codelist/80/8224> a skos:Concept ;
+	skos:inScheme veroia-be2010-dsd:codelist ;
+	skos:notation "8224" ;
+	skos:broader veroia-be2010-codelist:80 ;
+	skos:broadMatch kae-ota-ex14:8224 .
+
+<http://data.openbudgets.eu/resource/dataset/budget-veroia-expenditure-2010/codelist/80/8231> a skos:Concept ;
+	skos:inScheme veroia-be2010-dsd:codelist ;
+	skos:notation "8231" ;
+	skos:broader veroia-be2010-codelist:80 ;
+	skos:broadMatch kae-ota-ex14:8231 .
+
+<http://data.openbudgets.eu/resource/dataset/budget-veroia-expenditure-2010/codelist/80/8241> a skos:Concept ;
+	skos:inScheme veroia-be2010-dsd:codelist ;
+	skos:notation "8241" ;
+	skos:broader veroia-be2010-codelist:80 ;
+	skos:broadMatch kae-ota-ex14:8241 .
+
+<http://data.openbudgets.eu/resource/dataset/budget-veroia-expenditure-2010/codelist/80/8242> a skos:Concept ;
+	skos:inScheme veroia-be2010-dsd:codelist ;
+	skos:narrower <http://data.openbudgets.eu/resource/dataset/budget-veroia-expenditure-2010/codelist/80/8242.001> , <http://data.openbudgets.eu/resource/dataset/budget-veroia-expenditure-2010/codelist/80/8242.002> ;
+	skos:notation "8242" ;
+	skos:broader veroia-be2010-codelist:80 ;
+	skos:broadMatch kae-ota-ex14:8242 .
+
+<http://data.openbudgets.eu/resource/dataset/budget-veroia-expenditure-2010/codelist/80/8251> a skos:Concept ;
+	skos:inScheme veroia-be2010-dsd:codelist ;
+	skos:notation "8251" ;
+	skos:broader veroia-be2010-codelist:80 ;
+	skos:broadMatch kae-ota-ex14:8251 .
+
+<http://data.openbudgets.eu/resource/dataset/budget-veroia-expenditure-2010/codelist/80/8261> a skos:Concept ;
+	skos:inScheme veroia-be2010-dsd:codelist ;
+	skos:notation "8261" ;
+	skos:broader veroia-be2010-codelist:80 ;
+	skos:broadMatch kae-ota-ex14:8261 .
+
+<http://data.openbudgets.eu/resource/dataset/budget-veroia-expenditure-2010/codelist/80/8511> a skos:Concept ;
+	skos:inScheme veroia-be2010-dsd:codelist ;
+	skos:notation "8511" ;
+	skos:broader veroia-be2010-codelist:80 ;
+	skos:broadMatch kae-ota-ex14:8511 .
+
+<http://data.openbudgets.eu/resource/dataset/budget-veroia-expenditure-2010/codelist/80/8242.001> a skos:Concept ;
+	skos:inScheme veroia-be2010-dsd:codelist ;
+	skos:notation "8242.001" ;
+	skos:broader <http://data.openbudgets.eu/resource/dataset/budget-veroia-expenditure-2010/codelist/80/8242> .
+
+<http://data.openbudgets.eu/resource/dataset/budget-veroia-expenditure-2010/codelist/80/8242.002> a skos:Concept ;
+	skos:inScheme veroia-be2010-dsd:codelist ;
+	skos:notation "8242.002" ;
+	skos:broader <http://data.openbudgets.eu/resource/dataset/budget-veroia-expenditure-2010/codelist/80/8242> .
+
+<http://data.openbudgets.eu/resource/dataset/budget-veroia-expenditure-2010/codelist/90/9111> a skos:Concept ;
+	skos:inScheme veroia-be2010-dsd:codelist ;
+	skos:notation "9111" ;
+	skos:broader veroia-be2010-codelist:90 ;
+	skos:broadMatch kae-ota-ex14:9111 .
