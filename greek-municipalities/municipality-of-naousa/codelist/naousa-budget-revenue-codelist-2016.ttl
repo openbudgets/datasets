@@ -1,0 +1,2527 @@
+@prefix gr-dimension: <http://data.openbudgets.eu/ontology/dsd/greek-municipalities/dimension/> .
+@prefix kae-ota-es14: <http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014/> .
+@prefix gr-administrations: <http://data.openbudgets.eu/resource/codelist/kae-ota-administration-2014/> .
+@prefix gr-budgetPhase: <http://data.openbudgets.eu/resource/dataset/greek-municipalities/codelist/budget-phase/> .
+@prefix naousa-br2016-slice: <http://data.openbudgets.eu/resource/dataset/budget-naousa-revenue-2016/slice/> .
+@prefix naousa-br2016-dsd: <http://data.openbudgets.eu/resource/dataset/budget-naousa-revenue-2016/> .
+@prefix naousa-br2016-observation: <http://data.openbudgets.eu/resource/dataset/budget-naousa-revenue-2016/observation/> .
+@prefix naousa-br2016-codelist: <http://data.openbudgets.eu/resource/dataset/budget-naousa-revenue-2016/codelist/> .
+@prefix naousa-br2016-dimension: <http://data.openbudgets.eu/ontology/dsd/budget-naousa-revenue-2016/dimension/> .
+@prefix dbp: <http://dbpedia.org/property/> .
+@prefix interval: <http://reference.data.gov.uk/def/intervals/> .
+@prefix obeu: <http://data.openbudgets.eu/ontology/> .
+@prefix obeu-attribute: <http://data.openbudgets.eu/ontology/dsd/attribute/> .
+@prefix obeu-codelist: <http://data.openbudgets.eu/resource/codelist/> .
+@prefix obeu-dimension: <http://data.openbudgets.eu/ontology/dsd/dimension/> .
+@prefix obeu-measure: <http://data.openbudgets.eu/ontology/dsd/measure/> .
+@prefix obeu-budgetphase: <http://data.openbudgets.eu/resource/codelist/budget-phase/> .
+@prefix obeu-currency: <http://data.openbudgets.eu/codelist/currency/> .
+@prefix obeu-operation: <http://data.openbudgets.eu/resource/codelist/operation-character/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix qb: <http://purl.org/linked-data/cube#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <http://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix time: <http://www.w3.org/2006/time#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix dcat: <http://www.w3.org/ns/dcat#> .
+@prefix terms: <http://purl.org/dc/terms/> .
+@prefix sesame: <http://www.openrdf.org/schema/sesame#> .
+@prefix fn: <http://www.w3.org/2005/xpath-functions#> .
+
+naousa-br2016-dsd:codelist a skos:ConceptScheme ;
+	skos:hasTopConcept naousa-br2016-codelist:00 ;
+	skos:prefLabel "Naousa municipality revenue budget codelist as derived from the dataset of year 2016" .
+
+naousa-br2016-codelist:00 a skos:Concept ;
+	skos:inScheme naousa-br2016-dsd:codelist ;
+	skos:narrower <http://data.openbudgets.eu/resource/dataset/budget-naousa-revenue-2016/codelist/00/0001> , <http://data.openbudgets.eu/resource/dataset/budget-naousa-revenue-2016/codelist/00/0111> , <http://data.openbudgets.eu/resource/dataset/budget-naousa-revenue-2016/codelist/00/0112> , <http://data.openbudgets.eu/resource/dataset/budget-naousa-revenue-2016/codelist/00/0113> , <http://data.openbudgets.eu/resource/dataset/budget-naousa-revenue-2016/codelist/00/0114> , <http://data.openbudgets.eu/resource/dataset/budget-naousa-revenue-2016/codelist/00/0115> , <http://data.openbudgets.eu/resource/dataset/budget-naousa-revenue-2016/codelist/00/0116> , <http://data.openbudgets.eu/resource/dataset/budget-naousa-revenue-2016/codelist/00/0117> , <http://data.openbudgets.eu/resource/dataset/budget-naousa-revenue-2016/codelist/00/0118> , <http://data.openbudgets.eu/resource/dataset/budget-naousa-revenue-2016/codelist/00/0119> , <http://data.openbudgets.eu/resource/dataset/budget-naousa-revenue-2016/codelist/00/0121> , <http://data.openbudgets.eu/resource/dataset/budget-naousa-revenue-2016/codelist/00/0122> , <http://data.openbudgets.eu/resource/dataset/budget-naousa-revenue-2016/codelist/00/0123> , <http://data.openbudgets.eu/resource/dataset/budget-naousa-revenue-2016/codelist/00/0124> , <http://data.openbudgets.eu/resource/dataset/budget-naousa-revenue-2016/codelist/00/0125> , <http://data.openbudgets.eu/resource/dataset/budget-naousa-revenue-2016/codelist/00/0126> , <http://data.openbudgets.eu/resource/dataset/budget-naousa-revenue-2016/codelist/00/0127> , <http://data.openbudgets.eu/resource/dataset/budget-naousa-revenue-2016/codelist/00/0128> , <http://data.openbudgets.eu/resource/dataset/budget-naousa-revenue-2016/codelist/00/0129> , <http://data.openbudgets.eu/resource/dataset/budget-naousa-revenue-2016/codelist/00/0211> , <http://data.openbudgets.eu/resource/dataset/budget-naousa-revenue-2016/codelist/00/0212> , <http://data.openbudgets.eu/resource/dataset/budget-naousa-revenue-2016/codelist/00/0213> , <http://data.openbudgets.eu/resource/dataset/budget-naousa-revenue-2016/codelist/00/0221> , <http://data.openbudgets.eu/resource/dataset/budget-naousa-revenue-2016/codelist/00/0222> , <http://data.openbudgets.eu/resource/dataset/budget-naousa-revenue-2016/codelist/00/0223> , <http://data.openbudgets.eu/resource/dataset/budget-naousa-revenue-2016/codelist/00/0231> , <http://data.openbudgets.eu/resource/dataset/budget-naousa-revenue-2016/codelist/00/0239> , <http://data.openbudgets.eu/resource/dataset/budget-naousa-revenue-2016/codelist/00/0311> , <http://data.openbudgets.eu/resource/dataset/budget-naousa-revenue-2016/codelist/00/0312> , <http://data.openbudgets.eu/resource/dataset/budget-naousa-revenue-2016/codelist/00/0313> , <http://data.openbudgets.eu/resource/dataset/budget-naousa-revenue-2016/codelist/00/0321> , <http://data.openbudgets.eu/resource/dataset/budget-naousa-revenue-2016/codelist/00/0322> , <http://data.openbudgets.eu/resource/dataset/budget-naousa-revenue-2016/codelist/00/0323> , <http://data.openbudgets.eu/resource/dataset/budget-naousa-revenue-2016/codelist/00/0324> , <http://data.openbudgets.eu/resource/dataset/budget-naousa-revenue-2016/codelist/00/0331> , <http://data.openbudgets.eu/resource/dataset/budget-naousa-revenue-2016/codelist/00/0332> , <http://data.openbudgets.eu/resource/dataset/budget-naousa-revenue-2016/codelist/00/0341> , <http://data.openbudgets.eu/resource/dataset/budget-naousa-revenue-2016/codelist/00/0342> , <http://data.openbudgets.eu/resource/dataset/budget-naousa-revenue-2016/codelist/00/0343> , <http://data.openbudgets.eu/resource/dataset/budget-naousa-revenue-2016/codelist/00/0411> , <http://data.openbudgets.eu/resource/dataset/budget-naousa-revenue-2016/codelist/00/0412> , <http://data.openbudgets.eu/resource/dataset/budget-naousa-revenue-2016/codelist/00/0413> , <http://data.openbudgets.eu/resource/dataset/budget-naousa-revenue-2016/codelist/00/0414> , <http://data.openbudgets.eu/resource/dataset/budget-naousa-revenue-2016/codelist/00/0415> , <http://data.openbudgets.eu/resource/dataset/budget-naousa-revenue-2016/codelist/00/0416> , <http://data.openbudgets.eu/resource/dataset/budget-naousa-revenue-2016/codelist/00/0417> , <http://data.openbudgets.eu/resource/dataset/budget-naousa-revenue-2016/codelist/00/0421> , <http://data.openbudgets.eu/resource/dataset/budget-naousa-revenue-2016/codelist/00/0422> , <http://data.openbudgets.eu/resource/dataset/budget-naousa-revenue-2016/codelist/00/0431> , <http://data.openbudgets.eu/resource/dataset/budget-naousa-revenue-2016/codelist/00/0432> , <http://data.openbudgets.eu/resource/dataset/budget-naousa-revenue-2016/codelist/00/0433> , <http://data.openbudgets.eu/resource/dataset/budget-naousa-revenue-2016/codelist/00/0434> , <http://data.openbudgets.eu/resource/dataset/budget-naousa-revenue-2016/codelist/00/0441> , <http://data.openbudgets.eu/resource/dataset/budget-naousa-revenue-2016/codelist/00/0451> , <http://data.openbudgets.eu/resource/dataset/budget-naousa-revenue-2016/codelist/00/0452> , <http://data.openbudgets.eu/resource/dataset/budget-naousa-revenue-2016/codelist/00/0461> , <http://data.openbudgets.eu/resource/dataset/budget-naousa-revenue-2016/codelist/00/0462> , <http://data.openbudgets.eu/resource/dataset/budget-naousa-revenue-2016/codelist/00/0463> , <http://data.openbudgets.eu/resource/dataset/budget-naousa-revenue-2016/codelist/00/0464> , <http://data.openbudgets.eu/resource/dataset/budget-naousa-revenue-2016/codelist/00/0465> , <http://data.openbudgets.eu/resource/dataset/budget-naousa-revenue-2016/codelist/00/0466> , <http://data.openbudgets.eu/resource/dataset/budget-naousa-revenue-2016/codelist/00/0467> , <http://data.openbudgets.eu/resource/dataset/budget-naousa-revenue-2016/codelist/00/0468> , <http://data.openbudgets.eu/resource/dataset/budget-naousa-revenue-2016/codelist/00/0469> , <http://data.openbudgets.eu/resource/dataset/budget-naousa-revenue-2016/codelist/00/0471> , <http://data.openbudgets.eu/resource/dataset/budget-naousa-revenue-2016/codelist/00/0511> , <http://data.openbudgets.eu/resource/dataset/budget-naousa-revenue-2016/codelist/00/0512> , <http://data.openbudgets.eu/resource/dataset/budget-naousa-revenue-2016/codelist/00/0513> , <http://data.openbudgets.eu/resource/dataset/budget-naousa-revenue-2016/codelist/00/0514> , <http://data.openbudgets.eu/resource/dataset/budget-naousa-revenue-2016/codelist/00/0521> , <http://data.openbudgets.eu/resource/dataset/budget-naousa-revenue-2016/codelist/00/0522> , <http://data.openbudgets.eu/resource/dataset/budget-naousa-revenue-2016/codelist/00/0523> , <http://data.openbudgets.eu/resource/dataset/budget-naousa-revenue-2016/codelist/00/0524> , <http://data.openbudgets.eu/resource/dataset/budget-naousa-revenue-2016/codelist/00/0531> , <http://data.openbudgets.eu/resource/dataset/budget-naousa-revenue-2016/codelist/00/0605> , <http://data.openbudgets.eu/resource/dataset/budget-naousa-revenue-2016/codelist/00/0611> , <http://data.openbudgets.eu/resource/dataset/budget-naousa-revenue-2016/codelist/00/0612> , <http://data.openbudgets.eu/resource/dataset/budget-naousa-revenue-2016/codelist/00/0613> , <http://data.openbudgets.eu/resource/dataset/budget-naousa-revenue-2016/codelist/00/0614> , <http://data.openbudgets.eu/resource/dataset/budget-naousa-revenue-2016/codelist/00/0615> , <http://data.openbudgets.eu/resource/dataset/budget-naousa-revenue-2016/codelist/00/0619> , <http://data.openbudgets.eu/resource/dataset/budget-naousa-revenue-2016/codelist/00/0621> , <http://data.openbudgets.eu/resource/dataset/budget-naousa-revenue-2016/codelist/00/0711> , <http://data.openbudgets.eu/resource/dataset/budget-naousa-revenue-2016/codelist/00/0712> , <http://data.openbudgets.eu/resource/dataset/budget-naousa-revenue-2016/codelist/00/0713> , <http://data.openbudgets.eu/resource/dataset/budget-naousa-revenue-2016/codelist/00/0714> , <http://data.openbudgets.eu/resource/dataset/budget-naousa-revenue-2016/codelist/00/0715> , <http://data.openbudgets.eu/resource/dataset/budget-naousa-revenue-2016/codelist/00/0716> , <http://data.openbudgets.eu/resource/dataset/budget-naousa-revenue-2016/codelist/00/0717> , <http://data.openbudgets.eu/resource/dataset/budget-naousa-revenue-2016/codelist/00/0718> , <http://data.openbudgets.eu/resource/dataset/budget-naousa-revenue-2016/codelist/00/1111> , <http://data.openbudgets.eu/resource/dataset/budget-naousa-revenue-2016/codelist/00/1112> , <http://data.openbudgets.eu/resource/dataset/budget-naousa-revenue-2016/codelist/00/1113> , <http://data.openbudgets.eu/resource/dataset/budget-naousa-revenue-2016/codelist/00/1114> , <http://data.openbudgets.eu/resource/dataset/budget-naousa-revenue-2016/codelist/00/1115> , <http://data.openbudgets.eu/resource/dataset/budget-naousa-revenue-2016/codelist/00/1116> , <http://data.openbudgets.eu/resource/dataset/budget-naousa-revenue-2016/codelist/00/1121> , <http://data.openbudgets.eu/resource/dataset/budget-naousa-revenue-2016/codelist/00/1122> , <http://data.openbudgets.eu/resource/dataset/budget-naousa-revenue-2016/codelist/00/1211> , <http://data.openbudgets.eu/resource/dataset/budget-naousa-revenue-2016/codelist/00/1212> , <http://data.openbudgets.eu/resource/dataset/budget-naousa-revenue-2016/codelist/00/1213> , <http://data.openbudgets.eu/resource/dataset/budget-naousa-revenue-2016/codelist/00/1214> , <http://data.openbudgets.eu/resource/dataset/budget-naousa-revenue-2016/codelist/00/1215> , <http://data.openbudgets.eu/resource/dataset/budget-naousa-revenue-2016/codelist/00/1216> , <http://data.openbudgets.eu/resource/dataset/budget-naousa-revenue-2016/codelist/00/1217> , <http://data.openbudgets.eu/resource/dataset/budget-naousa-revenue-2016/codelist/00/1219> , <http://data.openbudgets.eu/resource/dataset/budget-naousa-revenue-2016/codelist/00/1311> , <http://data.openbudgets.eu/resource/dataset/budget-naousa-revenue-2016/codelist/00/1312> , <http://data.openbudgets.eu/resource/dataset/budget-naousa-revenue-2016/codelist/00/1313> , <http://data.openbudgets.eu/resource/dataset/budget-naousa-revenue-2016/codelist/00/1314> , <http://data.openbudgets.eu/resource/dataset/budget-naousa-revenue-2016/codelist/00/1319> , <http://data.openbudgets.eu/resource/dataset/budget-naousa-revenue-2016/codelist/00/1321> , <http://data.openbudgets.eu/resource/dataset/budget-naousa-revenue-2016/codelist/00/1322> , <http://data.openbudgets.eu/resource/dataset/budget-naousa-revenue-2016/codelist/00/1323> , <http://data.openbudgets.eu/resource/dataset/budget-naousa-revenue-2016/codelist/00/1324> , <http://data.openbudgets.eu/resource/dataset/budget-naousa-revenue-2016/codelist/00/1325> , <http://data.openbudgets.eu/resource/dataset/budget-naousa-revenue-2016/codelist/00/1326> , <http://data.openbudgets.eu/resource/dataset/budget-naousa-revenue-2016/codelist/00/1327> , <http://data.openbudgets.eu/resource/dataset/budget-naousa-revenue-2016/codelist/00/1328> , <http://data.openbudgets.eu/resource/dataset/budget-naousa-revenue-2016/codelist/00/1329> , <http://data.openbudgets.eu/resource/dataset/budget-naousa-revenue-2016/codelist/00/1411> , <http://data.openbudgets.eu/resource/dataset/budget-naousa-revenue-2016/codelist/00/1421> , <http://data.openbudgets.eu/resource/dataset/budget-naousa-revenue-2016/codelist/00/1511> , <http://data.openbudgets.eu/resource/dataset/budget-naousa-revenue-2016/codelist/00/1512> , <http://data.openbudgets.eu/resource/dataset/budget-naousa-revenue-2016/codelist/00/1513> , <http://data.openbudgets.eu/resource/dataset/budget-naousa-revenue-2016/codelist/00/1514> , <http://data.openbudgets.eu/resource/dataset/budget-naousa-revenue-2016/codelist/00/1515> , <http://data.openbudgets.eu/resource/dataset/budget-naousa-revenue-2016/codelist/00/1516> , <http://data.openbudgets.eu/resource/dataset/budget-naousa-revenue-2016/codelist/00/1517> , <http://data.openbudgets.eu/resource/dataset/budget-naousa-revenue-2016/codelist/00/1518> , <http://data.openbudgets.eu/resource/dataset/budget-naousa-revenue-2016/codelist/00/1519> , <http://data.openbudgets.eu/resource/dataset/budget-naousa-revenue-2016/codelist/00/1521> , <http://data.openbudgets.eu/resource/dataset/budget-naousa-revenue-2016/codelist/00/1522> , <http://data.openbudgets.eu/resource/dataset/budget-naousa-revenue-2016/codelist/00/1611> , <http://data.openbudgets.eu/resource/dataset/budget-naousa-revenue-2016/codelist/00/1612> , <http://data.openbudgets.eu/resource/dataset/budget-naousa-revenue-2016/codelist/00/1613> , <http://data.openbudgets.eu/resource/dataset/budget-naousa-revenue-2016/codelist/00/1614> , <http://data.openbudgets.eu/resource/dataset/budget-naousa-revenue-2016/codelist/00/1615> , <http://data.openbudgets.eu/resource/dataset/budget-naousa-revenue-2016/codelist/00/1616> , <http://data.openbudgets.eu/resource/dataset/budget-naousa-revenue-2016/codelist/00/1617> , <http://data.openbudgets.eu/resource/dataset/budget-naousa-revenue-2016/codelist/00/1618> , <http://data.openbudgets.eu/resource/dataset/budget-naousa-revenue-2016/codelist/00/1619> , <http://data.openbudgets.eu/resource/dataset/budget-naousa-revenue-2016/codelist/00/1621> , <http://data.openbudgets.eu/resource/dataset/budget-naousa-revenue-2016/codelist/00/1622> , <http://data.openbudgets.eu/resource/dataset/budget-naousa-revenue-2016/codelist/00/1623> , <http://data.openbudgets.eu/resource/dataset/budget-naousa-revenue-2016/codelist/00/1624> , <http://data.openbudgets.eu/resource/dataset/budget-naousa-revenue-2016/codelist/00/1625> , <http://data.openbudgets.eu/resource/dataset/budget-naousa-revenue-2016/codelist/00/1626> , <http://data.openbudgets.eu/resource/dataset/budget-naousa-revenue-2016/codelist/00/1627> , <http://data.openbudgets.eu/resource/dataset/budget-naousa-revenue-2016/codelist/00/1628> , <http://data.openbudgets.eu/resource/dataset/budget-naousa-revenue-2016/codelist/00/1629> , <http://data.openbudgets.eu/resource/dataset/budget-naousa-revenue-2016/codelist/00/1691> , <http://data.openbudgets.eu/resource/dataset/budget-naousa-revenue-2016/codelist/00/1692> , <http://data.openbudgets.eu/resource/dataset/budget-naousa-revenue-2016/codelist/00/1693> , <http://data.openbudgets.eu/resource/dataset/budget-naousa-revenue-2016/codelist/00/1699> , <http://data.openbudgets.eu/resource/dataset/budget-naousa-revenue-2016/codelist/00/2111> , <http://data.openbudgets.eu/resource/dataset/budget-naousa-revenue-2016/codelist/00/2112> , <http://data.openbudgets.eu/resource/dataset/budget-naousa-revenue-2016/codelist/00/2113> , <http://data.openbudgets.eu/resource/dataset/budget-naousa-revenue-2016/codelist/00/2114> , <http://data.openbudgets.eu/resource/dataset/budget-naousa-revenue-2016/codelist/00/2115> , <http://data.openbudgets.eu/resource/dataset/budget-naousa-revenue-2016/codelist/00/2116> , <http://data.openbudgets.eu/resource/dataset/budget-naousa-revenue-2016/codelist/00/2117> , <http://data.openbudgets.eu/resource/dataset/budget-naousa-revenue-2016/codelist/00/2118> , <http://data.openbudgets.eu/resource/dataset/budget-naousa-revenue-2016/codelist/00/2119> , <http://data.openbudgets.eu/resource/dataset/budget-naousa-revenue-2016/codelist/00/2211> , <http://data.openbudgets.eu/resource/dataset/budget-naousa-revenue-2016/codelist/00/2212> , <http://data.openbudgets.eu/resource/dataset/budget-naousa-revenue-2016/codelist/00/3111> , <http://data.openbudgets.eu/resource/dataset/budget-naousa-revenue-2016/codelist/00/3112> , <http://data.openbudgets.eu/resource/dataset/budget-naousa-revenue-2016/codelist/00/3121> , <http://data.openbudgets.eu/resource/dataset/budget-naousa-revenue-2016/codelist/00/3122> , <http://data.openbudgets.eu/resource/dataset/budget-naousa-revenue-2016/codelist/00/3211> , <http://data.openbudgets.eu/resource/dataset/budget-naousa-revenue-2016/codelist/00/3212> , <http://data.openbudgets.eu/resource/dataset/budget-naousa-revenue-2016/codelist/00/3213> , <http://data.openbudgets.eu/resource/dataset/budget-naousa-revenue-2016/codelist/00/3214> , <http://data.openbudgets.eu/resource/dataset/budget-naousa-revenue-2016/codelist/00/3215> , <http://data.openbudgets.eu/resource/dataset/budget-naousa-revenue-2016/codelist/00/3216> , <http://data.openbudgets.eu/resource/dataset/budget-naousa-revenue-2016/codelist/00/3217> , <http://data.openbudgets.eu/resource/dataset/budget-naousa-revenue-2016/codelist/00/3218> , <http://data.openbudgets.eu/resource/dataset/budget-naousa-revenue-2016/codelist/00/3219> , <http://data.openbudgets.eu/resource/dataset/budget-naousa-revenue-2016/codelist/00/3221> , <http://data.openbudgets.eu/resource/dataset/budget-naousa-revenue-2016/codelist/00/3222> , <http://data.openbudgets.eu/resource/dataset/budget-naousa-revenue-2016/codelist/00/4111> , <http://data.openbudgets.eu/resource/dataset/budget-naousa-revenue-2016/codelist/00/4112> , <http://data.openbudgets.eu/resource/dataset/budget-naousa-revenue-2016/codelist/00/4121> , <http://data.openbudgets.eu/resource/dataset/budget-naousa-revenue-2016/codelist/00/4122> , <http://data.openbudgets.eu/resource/dataset/budget-naousa-revenue-2016/codelist/00/4123> , <http://data.openbudgets.eu/resource/dataset/budget-naousa-revenue-2016/codelist/00/4124> , <http://data.openbudgets.eu/resource/dataset/budget-naousa-revenue-2016/codelist/00/4131> , <http://data.openbudgets.eu/resource/dataset/budget-naousa-revenue-2016/codelist/00/4132> , <http://data.openbudgets.eu/resource/dataset/budget-naousa-revenue-2016/codelist/00/4141> , <http://data.openbudgets.eu/resource/dataset/budget-naousa-revenue-2016/codelist/00/4142> , <http://data.openbudgets.eu/resource/dataset/budget-naousa-revenue-2016/codelist/00/4211> , <http://data.openbudgets.eu/resource/dataset/budget-naousa-revenue-2016/codelist/00/4212> , <http://data.openbudgets.eu/resource/dataset/budget-naousa-revenue-2016/codelist/00/4213> , <http://data.openbudgets.eu/resource/dataset/budget-naousa-revenue-2016/codelist/00/4214> , <http://data.openbudgets.eu/resource/dataset/budget-naousa-revenue-2016/codelist/00/5111> , <http://data.openbudgets.eu/resource/dataset/budget-naousa-revenue-2016/codelist/00/5112> , <http://data.openbudgets.eu/resource/dataset/budget-naousa-revenue-2016/codelist/00/5113> , <http://data.openbudgets.eu/resource/dataset/budget-naousa-revenue-2016/codelist/00/5119> , <http://data.openbudgets.eu/resource/dataset/budget-naousa-revenue-2016/codelist/00/5121> , <http://data.openbudgets.eu/resource/dataset/budget-naousa-revenue-2016/codelist/00/5122> , <http://data.openbudgets.eu/resource/dataset/budget-naousa-revenue-2016/codelist/00/5123> , <http://data.openbudgets.eu/resource/dataset/budget-naousa-revenue-2016/codelist/00/5124> , <http://data.openbudgets.eu/resource/dataset/budget-naousa-revenue-2016/codelist/00/5129> ;
+	skos:notation "00" ;
+	skos:prefLabel "ΓΕΝΙΚΕΣ ΥΠΗΡΕΣΙΕΣ"@el ;
+	skos:topConceptOf naousa-br2016-dsd:codelist .
+
+<http://data.openbudgets.eu/resource/dataset/budget-naousa-revenue-2016/codelist/00/0001> a skos:Concept ;
+	skos:inScheme naousa-br2016-dsd:codelist ;
+	skos:notation "0001" ;
+	skos:prefLabel "Δοσμένες εγγυήσεις για δάνεια ΚΕΔΗΠΟΝ" ;
+	skos:broader naousa-br2016-codelist:00 ;
+	skos:broadMatch kae-ota-es14:0001 .
+
+<http://data.openbudgets.eu/resource/dataset/budget-naousa-revenue-2016/codelist/00/0111> a skos:Concept ;
+	skos:inScheme naousa-br2016-dsd:codelist ;
+	skos:notation "0111" ;
+	skos:prefLabel "Μισθώματα από αστικά ακίνητα (αρθ.192 ΚΔΚ)" ;
+	skos:broader naousa-br2016-codelist:00 ;
+	skos:broadMatch kae-ota-es14:0111 .
+
+<http://data.openbudgets.eu/resource/dataset/budget-naousa-revenue-2016/codelist/00/0112> a skos:Concept ;
+	skos:inScheme naousa-br2016-dsd:codelist ;
+	skos:notation "0112" ;
+	skos:prefLabel "Μισθώματα βοσκησίμων εκτάσεων (άρθρο 5 ΒΔ 24/9-20/1958, άρθρο 31ΝΔ 4260/62)" ;
+	skos:broader naousa-br2016-codelist:00 ;
+	skos:broadMatch kae-ota-es14:0112 .
+
+<http://data.openbudgets.eu/resource/dataset/budget-naousa-revenue-2016/codelist/00/0113> a skos:Concept ;
+	skos:inScheme naousa-br2016-dsd:codelist ;
+	skos:notation "0113" ;
+	skos:prefLabel "Μισθώματα καλλιεργήσιμης γης (άρθρο 195 ΔΚΚ)" ;
+	skos:broader naousa-br2016-codelist:00 ;
+	skos:broadMatch kae-ota-es14:0113 .
+
+<http://data.openbudgets.eu/resource/dataset/budget-naousa-revenue-2016/codelist/00/0114> a skos:Concept ;
+	skos:inScheme naousa-br2016-dsd:codelist ;
+	skos:notation "0114" ;
+	skos:prefLabel "Μισθώματα δημοτικής αγοράς (άρθρο 2 ΒΔ 24/9-20/10/1958)" ;
+	skos:broader naousa-br2016-codelist:00 ;
+	skos:broadMatch kae-ota-es14:0114 .
+
+<http://data.openbudgets.eu/resource/dataset/budget-naousa-revenue-2016/codelist/00/0115> a skos:Concept ;
+	skos:inScheme naousa-br2016-dsd:codelist ;
+	skos:notation "0115" ;
+	skos:prefLabel "Μισθώματα από την παραχώρηση κοινόχρηστων χώρων για την τοποθέτηση διαφημιστικών μέσων (άρθρο 3Ν 2946/2001)" ;
+	skos:broader naousa-br2016-codelist:00 ;
+	skos:broadMatch kae-ota-es14:0115 .
+
+<http://data.openbudgets.eu/resource/dataset/budget-naousa-revenue-2016/codelist/00/0116> a skos:Concept ;
+	skos:inScheme naousa-br2016-dsd:codelist ;
+	skos:notation "0116" ;
+	skos:prefLabel "Μισθώματα δημοτικών και κοινοτικών λατομείων (άρθρο 20 Ν 669/77, άρθρο 7 Ν 1428/84)" ;
+	skos:broader naousa-br2016-codelist:00 ;
+	skos:broadMatch kae-ota-es14:0116 .
+
+<http://data.openbudgets.eu/resource/dataset/budget-naousa-revenue-2016/codelist/00/0117> a skos:Concept ;
+	skos:inScheme naousa-br2016-dsd:codelist ;
+	skos:notation "0117" ;
+	skos:prefLabel "Μισθώματα δασών και δασικών εκτάσεων (άρθρο 197 ΔΚΚ, άρθρο 39 Ν 998/79)" ;
+	skos:broader naousa-br2016-codelist:00 ;
+	skos:broadMatch kae-ota-es14:0117 .
+
+<http://data.openbudgets.eu/resource/dataset/budget-naousa-revenue-2016/codelist/00/0118> a skos:Concept ;
+	skos:inScheme naousa-br2016-dsd:codelist ;
+	skos:notation "0118" ;
+	skos:prefLabel "Μισθώματα ιχθυοτροφείων (άρθρο 14 Ν 127/75, άρθρο 75 Ν 2065/92, ΚΥΑ 32489/82)" ;
+	skos:broader naousa-br2016-codelist:00 ;
+	skos:broadMatch kae-ota-es14:0118 .
+
+<http://data.openbudgets.eu/resource/dataset/budget-naousa-revenue-2016/codelist/00/0119> a skos:Concept ;
+	skos:inScheme naousa-br2016-dsd:codelist ;
+	skos:notation "0119" ;
+	skos:prefLabel "Μισθώματα από παραχώρηση εδάφους σε εταιρίες κινητής τηλεφωνίας" ;
+	skos:broader naousa-br2016-codelist:00 ;
+	skos:broadMatch kae-ota-es14:0119 .
+
+<http://data.openbudgets.eu/resource/dataset/budget-naousa-revenue-2016/codelist/00/0121> a skos:Concept ;
+	skos:inScheme naousa-br2016-dsd:codelist ;
+	skos:notation "0121" ;
+	skos:prefLabel "Έσοδα από την εκμετάλλευση διαφημιστικών χώρων σε αθλητικές εγκαταστάσεις (άρθρο 56 Ν 2725/99) και στέγαστρα αστικών και υπεραστικών συγκοινωνιών (άρθρο 21 Ν 2963/2001)" ;
+	skos:broader naousa-br2016-codelist:00 ;
+	skos:broadMatch kae-ota-es14:0121 .
+
+<http://data.openbudgets.eu/resource/dataset/budget-naousa-revenue-2016/codelist/00/0122> a skos:Concept ;
+	skos:inScheme naousa-br2016-dsd:codelist ;
+	skos:notation "0122" ;
+	skos:prefLabel "Τέλη και δικαιώματα από εμποροπανηγύρεις, παζάρια και λαϊκές αγορές (άρθρο 19 ΒΔ 24/9-20/10/1958)" ;
+	skos:broader naousa-br2016-codelist:00 ;
+	skos:broadMatch kae-ota-es14:0122 .
+
+<http://data.openbudgets.eu/resource/dataset/budget-naousa-revenue-2016/codelist/00/0123> a skos:Concept ;
+	skos:inScheme naousa-br2016-dsd:codelist ;
+	skos:notation "0123" ;
+	skos:prefLabel "Δικαίωμα αμμοληψίας (άρθρο 19 ΒΔ 24/9-20/10/1958)" ;
+	skos:broader naousa-br2016-codelist:00 ;
+	skos:broadMatch kae-ota-es14:0123 .
+
+<http://data.openbudgets.eu/resource/dataset/budget-naousa-revenue-2016/codelist/00/0124> a skos:Concept ;
+	skos:inScheme naousa-br2016-dsd:codelist ;
+	skos:notation "0124" ;
+	skos:prefLabel "Έσοδα από την εκμετάλλευση αναδασομένων εκτάσεων (άρθρο 40 Ν 998/79)" ;
+	skos:broader naousa-br2016-codelist:00 ;
+	skos:broadMatch kae-ota-es14:0124 .
+
+<http://data.openbudgets.eu/resource/dataset/budget-naousa-revenue-2016/codelist/00/0125> a skos:Concept ;
+	skos:inScheme naousa-br2016-dsd:codelist ;
+	skos:notation "0125" ;
+	skos:prefLabel "Δικαίωμα βοσκής (άρθρο 5 ΒΔ 24/9-20/10/1958, άρθρο 16 Ν 2130/93)" ;
+	skos:broader naousa-br2016-codelist:00 ;
+	skos:broadMatch kae-ota-es14:0125 .
+
+<http://data.openbudgets.eu/resource/dataset/budget-naousa-revenue-2016/codelist/00/0126> a skos:Concept ;
+	skos:inScheme naousa-br2016-dsd:codelist ;
+	skos:notation "0126" ;
+	skos:prefLabel "Ειδικό δικαίωμα χρήσεως βελτιωμένων βοσκοτόπων (άρθρο 8 Ν 994/79)" ;
+	skos:broader naousa-br2016-codelist:00 ;
+	skos:broadMatch kae-ota-es14:0126 .
+
+<http://data.openbudgets.eu/resource/dataset/budget-naousa-revenue-2016/codelist/00/0127> a skos:Concept ;
+	skos:inScheme naousa-br2016-dsd:codelist ;
+	skos:notation "0127" ;
+	skos:prefLabel "Δικαίωμα χρήσης αποκαλυπτόμενων καλλιεργητικών εκτάσεων (άρθρο 189 ΔΚΚ)" ;
+	skos:broader naousa-br2016-codelist:00 ;
+	skos:broadMatch kae-ota-es14:0127 .
+
+<http://data.openbudgets.eu/resource/dataset/budget-naousa-revenue-2016/codelist/00/0128> a skos:Concept ;
+	skos:inScheme naousa-br2016-dsd:codelist ;
+	skos:notation "0128" ;
+	skos:prefLabel "Δικαίωμα χρήσης δημοτικών και κοινοτικών κατοικιών (άρθρο 188 ΔΚΚ)" ;
+	skos:broader naousa-br2016-codelist:00 ;
+	skos:broadMatch kae-ota-es14:0128 .
+
+<http://data.openbudgets.eu/resource/dataset/budget-naousa-revenue-2016/codelist/00/0129> a skos:Concept ;
+	skos:inScheme naousa-br2016-dsd:codelist ;
+	skos:narrower <http://data.openbudgets.eu/resource/dataset/budget-naousa-revenue-2016/codelist/00/0129.001> , <http://data.openbudgets.eu/resource/dataset/budget-naousa-revenue-2016/codelist/00/0129.002> ;
+	skos:notation "0129" ;
+	skos:prefLabel "Λοιπά έσοδα από ακίνητα" ;
+	skos:broader naousa-br2016-codelist:00 ;
+	skos:broadMatch kae-ota-es14:0129 .
+
+<http://data.openbudgets.eu/resource/dataset/budget-naousa-revenue-2016/codelist/00/0129.001> a skos:Concept ;
+	skos:inScheme naousa-br2016-dsd:codelist ;
+	skos:notation "0129.001" ;
+	skos:prefLabel "¨Εσοδα  από παραχώρηση εδάφους σε εταιρίες κινητής τηλεφωνίας" ;
+	skos:broader <http://data.openbudgets.eu/resource/dataset/budget-naousa-revenue-2016/codelist/00/0129> .
+
+<http://data.openbudgets.eu/resource/dataset/budget-naousa-revenue-2016/codelist/00/0129.002> a skos:Concept ;
+	skos:inScheme naousa-br2016-dsd:codelist ;
+	skos:notation "0129.002" ;
+	skos:prefLabel "Έσοδα από αντάλλαγμα χρήσης και εκμετάλλευσης των εγκ/σεων που εποπτεύονται από το Γραφείο Πολιτισμού & Τουρισμού του Δήμου Νάουσας και παραχωρρούνται προς χρήση" ;
+	skos:broader <http://data.openbudgets.eu/resource/dataset/budget-naousa-revenue-2016/codelist/00/0129> .
+
+<http://data.openbudgets.eu/resource/dataset/budget-naousa-revenue-2016/codelist/00/0211> a skos:Concept ;
+	skos:inScheme naousa-br2016-dsd:codelist ;
+	skos:notation "0211" ;
+	skos:prefLabel "Τόκοι χρηματικών καταθέσεων σε τράπεζες" ;
+	skos:broader naousa-br2016-codelist:00 ;
+	skos:broadMatch kae-ota-es14:0211 .
+
+<http://data.openbudgets.eu/resource/dataset/budget-naousa-revenue-2016/codelist/00/0212> a skos:Concept ;
+	skos:inScheme naousa-br2016-dsd:codelist ;
+	skos:notation "0212" ;
+	skos:prefLabel "Τόκοι λοιπών περιπτώσεων" ;
+	skos:broader naousa-br2016-codelist:00 ;
+	skos:broadMatch kae-ota-es14:0212 .
+
+<http://data.openbudgets.eu/resource/dataset/budget-naousa-revenue-2016/codelist/00/0213> a skos:Concept ;
+	skos:inScheme naousa-br2016-dsd:codelist ;
+	skos:notation "0213" ;
+	skos:prefLabel "Έσοδα από λοιπές κινητές αξίες" ;
+	skos:broader naousa-br2016-codelist:00 ;
+	skos:broadMatch kae-ota-es14:0213 .
+
+<http://data.openbudgets.eu/resource/dataset/budget-naousa-revenue-2016/codelist/00/0221> a skos:Concept ;
+	skos:inScheme naousa-br2016-dsd:codelist ;
+	skos:notation "0221" ;
+	skos:prefLabel "Έσοδα από αμιγείς Δημοτικές/Διαδημοτικές επιχειρήσεις" ;
+	skos:broader naousa-br2016-codelist:00 ;
+	skos:broadMatch kae-ota-es14:0221 .
+
+<http://data.openbudgets.eu/resource/dataset/budget-naousa-revenue-2016/codelist/00/0222> a skos:Concept ;
+	skos:inScheme naousa-br2016-dsd:codelist ;
+	skos:notation "0222" ;
+	skos:prefLabel "Έσοδα από λοιπές Δημοτικές επιχειρήσεις" ;
+	skos:broader naousa-br2016-codelist:00 ;
+	skos:broadMatch kae-ota-es14:0222 .
+
+<http://data.openbudgets.eu/resource/dataset/budget-naousa-revenue-2016/codelist/00/0223> a skos:Concept ;
+	skos:inScheme naousa-br2016-dsd:codelist ;
+	skos:notation "0223" ;
+	skos:prefLabel "Έσοδα από συμμετοχή λοιπές επιχειρήσεις (κοινοπροξίες, ΑΕ, κλπ)" ;
+	skos:broader naousa-br2016-codelist:00 ;
+	skos:broadMatch kae-ota-es14:0223 .
+
+<http://data.openbudgets.eu/resource/dataset/budget-naousa-revenue-2016/codelist/00/0231> a skos:Concept ;
+	skos:inScheme naousa-br2016-dsd:codelist ;
+	skos:notation "0231" ;
+	skos:prefLabel "Μισθώματα κινητών πραγμάτων" ;
+	skos:broader naousa-br2016-codelist:00 ;
+	skos:broadMatch kae-ota-es14:0231 .
+
+<http://data.openbudgets.eu/resource/dataset/budget-naousa-revenue-2016/codelist/00/0239> a skos:Concept ;
+	skos:inScheme naousa-br2016-dsd:codelist ;
+	skos:notation "0239" ;
+	skos:prefLabel "Λοιπά έσοδα από κινητή περιουσία" ;
+	skos:broader naousa-br2016-codelist:00 ;
+	skos:broadMatch kae-ota-es14:0239 .
+
+<http://data.openbudgets.eu/resource/dataset/budget-naousa-revenue-2016/codelist/00/0311> a skos:Concept ;
+	skos:inScheme naousa-br2016-dsd:codelist ;
+	skos:notation "0311" ;
+	skos:prefLabel "Τέλος καθαριότητας και φωτισμού (άρθρο 25 Ν 1828/89)" ;
+	skos:broader naousa-br2016-codelist:00 ;
+	skos:broadMatch kae-ota-es14:0311 .
+
+<http://data.openbudgets.eu/resource/dataset/budget-naousa-revenue-2016/codelist/00/0312> a skos:Concept ;
+	skos:inScheme naousa-br2016-dsd:codelist ;
+	skos:notation "0312" ;
+	skos:prefLabel "Επιδοτήσεις επό Οργανισμούς Λιμένων και Λιμενικά Ταμεία (άρθρο 6 ΚΥΑ 69728/824/1996)" ;
+	skos:broader naousa-br2016-codelist:00 ;
+	skos:broadMatch kae-ota-es14:0312 .
+
+<http://data.openbudgets.eu/resource/dataset/budget-naousa-revenue-2016/codelist/00/0313> a skos:Concept ;
+	skos:inScheme naousa-br2016-dsd:codelist ;
+	skos:notation "0313" ;
+	skos:prefLabel "Λοιπά έσοδα των υπηρεσιών καθαριότητος και ηλεκτροφωτισμού" ;
+	skos:broader naousa-br2016-codelist:00 ;
+	skos:broadMatch kae-ota-es14:0313 .
+
+<http://data.openbudgets.eu/resource/dataset/budget-naousa-revenue-2016/codelist/00/0321> a skos:Concept ;
+	skos:inScheme naousa-br2016-dsd:codelist ;
+	skos:notation "0321" ;
+	skos:prefLabel "Διακιώματα σύνδεσης και επανασύνδεσης με το δίκτυο" ;
+	skos:broader naousa-br2016-codelist:00 ;
+	skos:broadMatch kae-ota-es14:0321 .
+
+<http://data.openbudgets.eu/resource/dataset/budget-naousa-revenue-2016/codelist/00/0322> a skos:Concept ;
+	skos:inScheme naousa-br2016-dsd:codelist ;
+	skos:notation "0322" ;
+	skos:prefLabel "Τέλος ύδρευσης" ;
+	skos:broader naousa-br2016-codelist:00 ;
+	skos:broadMatch kae-ota-es14:0322 .
+
+<http://data.openbudgets.eu/resource/dataset/budget-naousa-revenue-2016/codelist/00/0323> a skos:Concept ;
+	skos:inScheme naousa-br2016-dsd:codelist ;
+	skos:notation "0323" ;
+	skos:prefLabel "Έσοδα από γενόμενες δαπάνες για λογαρισμό των υδροληπτών" ;
+	skos:broader naousa-br2016-codelist:00 ;
+	skos:broadMatch kae-ota-es14:0323 .
+
+<http://data.openbudgets.eu/resource/dataset/budget-naousa-revenue-2016/codelist/00/0324> a skos:Concept ;
+	skos:inScheme naousa-br2016-dsd:codelist ;
+	skos:notation "0324" ;
+	skos:prefLabel "Λοιπά έσοδα της υπηρεσίας υδρεύσεως" ;
+	skos:broader naousa-br2016-codelist:00 ;
+	skos:broadMatch kae-ota-es14:0324 .
+
+<http://data.openbudgets.eu/resource/dataset/budget-naousa-revenue-2016/codelist/00/0331> a skos:Concept ;
+	skos:inScheme naousa-br2016-dsd:codelist ;
+	skos:notation "0331" ;
+	skos:prefLabel "Δικαιώματα χρήσεως αρδευτικού δικτύου" ;
+	skos:broader naousa-br2016-codelist:00 ;
+	skos:broadMatch kae-ota-es14:0331 .
+
+<http://data.openbudgets.eu/resource/dataset/budget-naousa-revenue-2016/codelist/00/0332> a skos:Concept ;
+	skos:inScheme naousa-br2016-dsd:codelist ;
+	skos:notation "0332" ;
+	skos:prefLabel "Λοιπά έσοδα υπηρεσίας αρδεύσεως" ;
+	skos:broader naousa-br2016-codelist:00 ;
+	skos:broadMatch kae-ota-es14:0332 .
+
+<http://data.openbudgets.eu/resource/dataset/budget-naousa-revenue-2016/codelist/00/0341> a skos:Concept ;
+	skos:inScheme naousa-br2016-dsd:codelist ;
+	skos:notation "0341" ;
+	skos:prefLabel "Δικαιώματα σύνδεσης με το αποχετευτικό δίκτυο" ;
+	skos:broader naousa-br2016-codelist:00 ;
+	skos:broadMatch kae-ota-es14:0341 .
+
+<http://data.openbudgets.eu/resource/dataset/budget-naousa-revenue-2016/codelist/00/0342> a skos:Concept ;
+	skos:inScheme naousa-br2016-dsd:codelist ;
+	skos:notation "0342" ;
+	skos:prefLabel "Τέλη χρήσεως υπονόμων" ;
+	skos:broader naousa-br2016-codelist:00 ;
+	skos:broadMatch kae-ota-es14:0342 .
+
+<http://data.openbudgets.eu/resource/dataset/budget-naousa-revenue-2016/codelist/00/0343> a skos:Concept ;
+	skos:inScheme naousa-br2016-dsd:codelist ;
+	skos:notation "0343" ;
+	skos:prefLabel "Λοιπά έσοδα υπηρεσίας αποχέτευσης" ;
+	skos:broader naousa-br2016-codelist:00 ;
+	skos:broadMatch kae-ota-es14:0343 .
+
+<http://data.openbudgets.eu/resource/dataset/budget-naousa-revenue-2016/codelist/00/0411> a skos:Concept ;
+	skos:inScheme naousa-br2016-dsd:codelist ;
+	skos:notation "0411" ;
+	skos:prefLabel "Δικαιώματα σύστασης οικογενειακού τάφου" ;
+	skos:broader naousa-br2016-codelist:00 ;
+	skos:broadMatch kae-ota-es14:0411 .
+
+<http://data.openbudgets.eu/resource/dataset/budget-naousa-revenue-2016/codelist/00/0412> a skos:Concept ;
+	skos:inScheme naousa-br2016-dsd:codelist ;
+	skos:notation "0412" ;
+	skos:prefLabel "Δικαίωμα ενταφιασμού" ;
+	skos:broader naousa-br2016-codelist:00 ;
+	skos:broadMatch kae-ota-es14:0412 .
+
+<http://data.openbudgets.eu/resource/dataset/budget-naousa-revenue-2016/codelist/00/0413> a skos:Concept ;
+	skos:inScheme naousa-br2016-dsd:codelist ;
+	skos:notation "0413" ;
+	skos:prefLabel "Δικαίωμα ανανέωσης (παράστασης χρόνου ταφής)" ;
+	skos:broader naousa-br2016-codelist:00 ;
+	skos:broadMatch kae-ota-es14:0413 .
+
+<http://data.openbudgets.eu/resource/dataset/budget-naousa-revenue-2016/codelist/00/0414> a skos:Concept ;
+	skos:inScheme naousa-br2016-dsd:codelist ;
+	skos:notation "0414" ;
+	skos:prefLabel "Τέλος ανακομιδής" ;
+	skos:broader naousa-br2016-codelist:00 ;
+	skos:broadMatch kae-ota-es14:0414 .
+
+<http://data.openbudgets.eu/resource/dataset/budget-naousa-revenue-2016/codelist/00/0415> a skos:Concept ;
+	skos:inScheme naousa-br2016-dsd:codelist ;
+	skos:notation "0415" ;
+	skos:prefLabel "Δικαιώματα από τη χρήση οστεοφυλακίων" ;
+	skos:broader naousa-br2016-codelist:00 ;
+	skos:broadMatch kae-ota-es14:0415 .
+
+<http://data.openbudgets.eu/resource/dataset/budget-naousa-revenue-2016/codelist/00/0416> a skos:Concept ;
+	skos:inScheme naousa-br2016-dsd:codelist ;
+	skos:notation "0416" ;
+	skos:prefLabel "Δικαιώματα ιεροπραξιών" ;
+	skos:broader naousa-br2016-codelist:00 ;
+	skos:broadMatch kae-ota-es14:0416 .
+
+<http://data.openbudgets.eu/resource/dataset/budget-naousa-revenue-2016/codelist/00/0417> a skos:Concept ;
+	skos:inScheme naousa-br2016-dsd:codelist ;
+	skos:notation "0417" ;
+	skos:prefLabel "Λοιπά έσοδα νεκροταφείων και ιερών ναών" ;
+	skos:broader naousa-br2016-codelist:00 ;
+	skos:broadMatch kae-ota-es14:0417 .
+
+<http://data.openbudgets.eu/resource/dataset/budget-naousa-revenue-2016/codelist/00/0421> a skos:Concept ;
+	skos:inScheme naousa-br2016-dsd:codelist ;
+	skos:notation "0421" ;
+	skos:prefLabel "Δικαιώματα χρήσης σφαγείων (άρθρο 3 ΒΔ 24/9-20/10/1958)" ;
+	skos:broader naousa-br2016-codelist:00 ;
+	skos:broadMatch kae-ota-es14:0421 .
+
+<http://data.openbudgets.eu/resource/dataset/budget-naousa-revenue-2016/codelist/00/0422> a skos:Concept ;
+	skos:inScheme naousa-br2016-dsd:codelist ;
+	skos:notation "0422" ;
+	skos:prefLabel "Λοιπά έσοδα σφαγείων" ;
+	skos:broader naousa-br2016-codelist:00 ;
+	skos:broadMatch kae-ota-es14:0422 .
+
+<http://data.openbudgets.eu/resource/dataset/budget-naousa-revenue-2016/codelist/00/0431> a skos:Concept ;
+	skos:inScheme naousa-br2016-dsd:codelist ;
+	skos:notation "0431" ;
+	skos:prefLabel "Έσοδα από ειδικούς χώρους στάθμευσης" ;
+	skos:broader naousa-br2016-codelist:00 ;
+	skos:broadMatch kae-ota-es14:0431 .
+
+<http://data.openbudgets.eu/resource/dataset/budget-naousa-revenue-2016/codelist/00/0432> a skos:Concept ;
+	skos:inScheme naousa-br2016-dsd:codelist ;
+	skos:notation "0432" ;
+	skos:prefLabel "Εισιτήρια θεάτρων, μουσείων κλπ" ;
+	skos:broader naousa-br2016-codelist:00 ;
+	skos:broadMatch kae-ota-es14:0432 .
+
+<http://data.openbudgets.eu/resource/dataset/budget-naousa-revenue-2016/codelist/00/0433> a skos:Concept ;
+	skos:inScheme naousa-br2016-dsd:codelist ;
+	skos:notation "0433" ;
+	skos:prefLabel "Σταθμικά και μετρικά δικαιώματα (άρθρο 14 ΒΔ 24/9-20/10/1958)" ;
+	skos:broader naousa-br2016-codelist:00 ;
+	skos:broadMatch kae-ota-es14:0433 .
+
+<http://data.openbudgets.eu/resource/dataset/budget-naousa-revenue-2016/codelist/00/0434> a skos:Concept ;
+	skos:inScheme naousa-br2016-dsd:codelist ;
+	skos:notation "0434" ;
+	skos:prefLabel "Λοιπά έσοδα από την εκμετάλλευση έργων και την παροχή υπηρεσιών" ;
+	skos:broader naousa-br2016-codelist:00 ;
+	skos:broadMatch kae-ota-es14:0434 .
+
+<http://data.openbudgets.eu/resource/dataset/budget-naousa-revenue-2016/codelist/00/0441> a skos:Concept ;
+	skos:inScheme naousa-br2016-dsd:codelist ;
+	skos:notation "0441" ;
+	skos:prefLabel "Τέλος ακίνητης περιουσίας (άρθρο 24 Ν 2130/93)" ;
+	skos:broader naousa-br2016-codelist:00 ;
+	skos:broadMatch kae-ota-es14:0441 .
+
+<http://data.openbudgets.eu/resource/dataset/budget-naousa-revenue-2016/codelist/00/0451> a skos:Concept ;
+	skos:inScheme naousa-br2016-dsd:codelist ;
+	skos:notation "0451" ;
+	skos:prefLabel "Τέλος διαμονής παρεπιδημούντων (άρθρο 6 Ν 1080/80, άρθρο 27 παρ. 10 Ν 2130/93)" ;
+	skos:broader naousa-br2016-codelist:00 ;
+	skos:broadMatch kae-ota-es14:0451 .
+
+<http://data.openbudgets.eu/resource/dataset/budget-naousa-revenue-2016/codelist/00/0452> a skos:Concept ;
+	skos:inScheme naousa-br2016-dsd:codelist ;
+	skos:notation "0452" ;
+	skos:prefLabel "Τέλος επί των ακαθαρίστων εσόδων των κέντρων διασκέδασης, εστιατορίων και συναφών καταστημάτων (άρθρο 20 Ν 1080/80)" ;
+	skos:broader naousa-br2016-codelist:00 ;
+	skos:broadMatch kae-ota-es14:0452 .
+
+<http://data.openbudgets.eu/resource/dataset/budget-naousa-revenue-2016/codelist/00/0461> a skos:Concept ;
+	skos:inScheme naousa-br2016-dsd:codelist ;
+	skos:notation "0461" ;
+	skos:prefLabel "Τέλος χρήσης κοινόχρηστων χώρων (άρθρο 3 Ν 1080/80)" ;
+	skos:broader naousa-br2016-codelist:00 ;
+	skos:broadMatch kae-ota-es14:0461 .
+
+<http://data.openbudgets.eu/resource/dataset/budget-naousa-revenue-2016/codelist/00/0462> a skos:Concept ;
+	skos:inScheme naousa-br2016-dsd:codelist ;
+	skos:notation "0462" ;
+	skos:prefLabel "Τέλος διαφήμισης (άρθρο 5 Ν 1900/90)" ;
+	skos:broader naousa-br2016-codelist:00 ;
+	skos:broadMatch kae-ota-es14:0462 .
+
+<http://data.openbudgets.eu/resource/dataset/budget-naousa-revenue-2016/codelist/00/0463> a skos:Concept ;
+	skos:inScheme naousa-br2016-dsd:codelist ;
+	skos:notation "0463" ;
+	skos:prefLabel "Δικαίωμα εμπορίας ποσίμων υδάτων (άρθρο 2 Ν 1080/80, άρθρο 26 Ν 1828/89, άρθρο 57 Ν 2218/94)" ;
+	skos:broader naousa-br2016-codelist:00 ;
+	skos:broadMatch kae-ota-es14:0463 .
+
+<http://data.openbudgets.eu/resource/dataset/budget-naousa-revenue-2016/codelist/00/0464> a skos:Concept ;
+	skos:inScheme naousa-br2016-dsd:codelist ;
+	skos:notation "0464" ;
+	skos:prefLabel "Τέλη ελεγχόμενης στάθμευσης σε κοινόχρηστους χώρους (άρθρο 4 Ν 1990/90)" ;
+	skos:broader naousa-br2016-codelist:00 ;
+	skos:broadMatch kae-ota-es14:0464 .
+
+<http://data.openbudgets.eu/resource/dataset/budget-naousa-revenue-2016/codelist/00/0465> a skos:Concept ;
+	skos:inScheme naousa-br2016-dsd:codelist ;
+	skos:notation "0465" ;
+	skos:prefLabel "Ειδικό τέλος λατομικών προϊόντων (άρθρο 15 Ν 2115/93, άρθρο 27 Ν 2130/90)" ;
+	skos:broader naousa-br2016-codelist:00 ;
+	skos:broadMatch kae-ota-es14:0465 .
+
+<http://data.openbudgets.eu/resource/dataset/budget-naousa-revenue-2016/codelist/00/0466> a skos:Concept ;
+	skos:inScheme naousa-br2016-dsd:codelist ;
+	skos:notation "0466" ;
+	skos:prefLabel "Τέλος παροπλιζόμενων πλοίων (άρθρο 3 Ν 995/79)" ;
+	skos:broader naousa-br2016-codelist:00 ;
+	skos:broadMatch kae-ota-es14:0466 .
+
+<http://data.openbudgets.eu/resource/dataset/budget-naousa-revenue-2016/codelist/00/0467> a skos:Concept ;
+	skos:inScheme naousa-br2016-dsd:codelist ;
+	skos:notation "0467" ;
+	skos:prefLabel "Τέλος οχημάτων επιβιβαζομένων σε οχηματαγωγά πλοία (άρθρο 26 Ν 1828/89)" ;
+	skos:broader naousa-br2016-codelist:00 ;
+	skos:broadMatch kae-ota-es14:0467 .
+
+<http://data.openbudgets.eu/resource/dataset/budget-naousa-revenue-2016/codelist/00/0468> a skos:Concept ;
+	skos:inScheme naousa-br2016-dsd:codelist ;
+	skos:notation "0468" ;
+	skos:prefLabel "Τέλος αδειών οικοδομών (άρθρο 23 ΒΔ 24/9-20/10/1958)" ;
+	skos:broader naousa-br2016-codelist:00 ;
+	skos:broadMatch kae-ota-es14:0468 .
+
+<http://data.openbudgets.eu/resource/dataset/budget-naousa-revenue-2016/codelist/00/0469> a skos:Concept ;
+	skos:inScheme naousa-br2016-dsd:codelist ;
+	skos:narrower <http://data.openbudgets.eu/resource/dataset/budget-naousa-revenue-2016/codelist/00/0469.001> ;
+	skos:notation "0469" ;
+	skos:prefLabel "Τέλος ανανεώσιμων πηγών ενέργειας (άρθρο 38 Ν 2773/99)" ;
+	skos:broader naousa-br2016-codelist:00 ;
+	skos:broadMatch kae-ota-es14:0469 .
+
+<http://data.openbudgets.eu/resource/dataset/budget-naousa-revenue-2016/codelist/00/0469.001> a skos:Concept ;
+	skos:inScheme naousa-br2016-dsd:codelist ;
+	skos:notation "0469.001" ;
+	skos:prefLabel "Τέλος 3% από Α.Π.Ε. από παραγωγούς ηλεκτρικής ενέργειας (Ν 3468/2006)" ;
+	skos:broader <http://data.openbudgets.eu/resource/dataset/budget-naousa-revenue-2016/codelist/00/0469> .
+
+<http://data.openbudgets.eu/resource/dataset/budget-naousa-revenue-2016/codelist/00/0471> a skos:Concept ;
+	skos:inScheme naousa-br2016-dsd:codelist ;
+	skos:notation "0471" ;
+	skos:prefLabel "Λοιπά δυνητικά τέλη" ;
+	skos:broader naousa-br2016-codelist:00 ;
+	skos:broadMatch kae-ota-es14:0471 .
+
+<http://data.openbudgets.eu/resource/dataset/budget-naousa-revenue-2016/codelist/00/0511> a skos:Concept ;
+	skos:inScheme naousa-br2016-dsd:codelist ;
+	skos:notation "0511" ;
+	skos:prefLabel "Φόρος ηλεκτροδοτούμενων χώρων (άρθρο 10 Ν 1080/80)" ;
+	skos:broader naousa-br2016-codelist:00 ;
+	skos:broadMatch kae-ota-es14:0511 .
+
+<http://data.openbudgets.eu/resource/dataset/budget-naousa-revenue-2016/codelist/00/0512> a skos:Concept ;
+	skos:inScheme naousa-br2016-dsd:codelist ;
+	skos:notation "0512" ;
+	skos:prefLabel "Φόρος ζύθου (άρθρο 9 ΝΔ 703/70, άρθρο 12 Ν 1080/80)" ;
+	skos:broader naousa-br2016-codelist:00 ;
+	skos:broadMatch kae-ota-es14:0512 .
+
+<http://data.openbudgets.eu/resource/dataset/budget-naousa-revenue-2016/codelist/00/0513> a skos:Concept ;
+	skos:inScheme naousa-br2016-dsd:codelist ;
+	skos:notation "0513" ;
+	skos:prefLabel "Δημοτικός φόρος Δωδεκανήσου (άρθρο 60 Ν 2214/94)" ;
+	skos:broader naousa-br2016-codelist:00 ;
+	skos:broadMatch kae-ota-es14:0513 .
+
+<http://data.openbudgets.eu/resource/dataset/budget-naousa-revenue-2016/codelist/00/0514> a skos:Concept ;
+	skos:inScheme naousa-br2016-dsd:codelist ;
+	skos:notation "0514" ;
+	skos:prefLabel "Λοιποί φόροι" ;
+	skos:broader naousa-br2016-codelist:00 ;
+	skos:broadMatch kae-ota-es14:0514 .
+
+<http://data.openbudgets.eu/resource/dataset/budget-naousa-revenue-2016/codelist/00/0521> a skos:Concept ;
+	skos:inScheme naousa-br2016-dsd:codelist ;
+	skos:notation "0521" ;
+	skos:prefLabel "Εισφορά σε χρήμα λόγω ένταξης ή επέκτασης πολεοδομικών σχεδίων (άρθρο 24 του Συντ. , άρθρο 9 του ν.1337/1983, άρθρο 21 του ν.2508/1997)" ;
+	skos:broader naousa-br2016-codelist:00 ;
+	skos:broadMatch kae-ota-es14:0521 .
+
+<http://data.openbudgets.eu/resource/dataset/budget-naousa-revenue-2016/codelist/00/0522> a skos:Concept ;
+	skos:inScheme naousa-br2016-dsd:codelist ;
+	skos:notation "0522" ;
+	skos:prefLabel "Μετατροπή σε χρήμα της εισφοράς σε γή (άρθρο 8 Ν 1337/83)" ;
+	skos:broader naousa-br2016-codelist:00 ;
+	skos:broadMatch kae-ota-es14:0522 .
+
+<http://data.openbudgets.eu/resource/dataset/budget-naousa-revenue-2016/codelist/00/0523> a skos:Concept ;
+	skos:inScheme naousa-br2016-dsd:codelist ;
+	skos:notation "0523" ;
+	skos:prefLabel "Εισφορά 40% ή 75% του ΚΗ/1947 Ψηφίσματος (άρθρο 34 Ν 1337/83)" ;
+	skos:broader naousa-br2016-codelist:00 ;
+	skos:broadMatch kae-ota-es14:0523 .
+
+<http://data.openbudgets.eu/resource/dataset/budget-naousa-revenue-2016/codelist/00/0524> a skos:Concept ;
+	skos:inScheme naousa-br2016-dsd:codelist ;
+	skos:notation "0524" ;
+	skos:prefLabel "Ειδική εισφορά εφαρμογής ρυμοτομικών σχεδίων (άρθρο 34 του ν.4067/2012)" ;
+	skos:broader naousa-br2016-codelist:00 ;
+	skos:broadMatch kae-ota-es14:0524 .
+
+<http://data.openbudgets.eu/resource/dataset/budget-naousa-revenue-2016/codelist/00/0531> a skos:Concept ;
+	skos:inScheme naousa-br2016-dsd:codelist ;
+	skos:notation "0531" ;
+	skos:prefLabel "Λοιπές δυνητικές εισφορές" ;
+	skos:broader naousa-br2016-codelist:00 ;
+	skos:broadMatch kae-ota-es14:0531 .
+
+<http://data.openbudgets.eu/resource/dataset/budget-naousa-revenue-2016/codelist/00/0605> a skos:Concept ;
+	skos:inScheme naousa-br2016-dsd:codelist ;
+	skos:notation "0605" ;
+	skos:prefLabel "ΛΟΙΠΕΣ ΕΠΙΧ/ΣΕΙΣ - 35.7332.607" ;
+	skos:broader naousa-br2016-codelist:00 ;
+	skos:broadMatch kae-ota-es14:0605 .
+
+<http://data.openbudgets.eu/resource/dataset/budget-naousa-revenue-2016/codelist/00/0611> a skos:Concept ;
+	skos:inScheme naousa-br2016-dsd:codelist ;
+	skos:notation "0611" ;
+	skos:prefLabel "ΚΑΠ για την κάλυψη γενικών αναγκών (άρθρο 25 Ν 1828/89)" ;
+	skos:broader naousa-br2016-codelist:00 ;
+	skos:broadMatch kae-ota-es14:0611 .
+
+<http://data.openbudgets.eu/resource/dataset/budget-naousa-revenue-2016/codelist/00/0612> a skos:Concept ;
+	skos:inScheme naousa-br2016-dsd:codelist ;
+	skos:notation "0612" ;
+	skos:prefLabel "ΚΑΠ για την καταβολή μισθωμάτων ακινήτων προς στέγαση δημοσίων σχολικών μονάδων και λοιπών υπηρεσιών" ;
+	skos:broader naousa-br2016-codelist:00 ;
+	skos:broadMatch kae-ota-es14:0612 .
+
+<http://data.openbudgets.eu/resource/dataset/budget-naousa-revenue-2016/codelist/00/0613> a skos:Concept ;
+	skos:inScheme naousa-br2016-dsd:codelist ;
+	skos:notation "0613" ;
+	skos:prefLabel "ΚΑΠ εκ του Φόρου Εισοδήματος Φυσικών και Νομικών Προσώπων σε δήμους του Ν. Δωδεκανήσου" ;
+	skos:broader naousa-br2016-codelist:00 ;
+	skos:broadMatch kae-ota-es14:0613 .
+
+<http://data.openbudgets.eu/resource/dataset/budget-naousa-revenue-2016/codelist/00/0614> a skos:Concept ;
+	skos:inScheme naousa-br2016-dsd:codelist ;
+	skos:notation "0614" ;
+	skos:prefLabel "ΚΑΠ για την κάλυψη των λειτουργικών αναγκών των σχολειων Α/θμιας και Β/θμιας εκπαίδευσης (άρθρο 55 Ν 1946/91)" ;
+	skos:broader naousa-br2016-codelist:00 ;
+	skos:broadMatch kae-ota-es14:0614 .
+
+<http://data.openbudgets.eu/resource/dataset/budget-naousa-revenue-2016/codelist/00/0615> a skos:Concept ;
+	skos:inScheme naousa-br2016-dsd:codelist ;
+	skos:notation "0615" ;
+	skos:prefLabel "ΚΑΠ για την καταβολή αποζημίωσης σε σχολικούς τροχονόμους (άρθρο 14 Ν 2817/2000)" ;
+	skos:broader naousa-br2016-codelist:00 ;
+	skos:broadMatch kae-ota-es14:0615 .
+
+<http://data.openbudgets.eu/resource/dataset/budget-naousa-revenue-2016/codelist/00/0619> a skos:Concept ;
+	skos:inScheme naousa-br2016-dsd:codelist ;
+	skos:narrower <http://data.openbudgets.eu/resource/dataset/budget-naousa-revenue-2016/codelist/00/0619.001> , <http://data.openbudgets.eu/resource/dataset/budget-naousa-revenue-2016/codelist/00/0619.002> , <http://data.openbudgets.eu/resource/dataset/budget-naousa-revenue-2016/codelist/00/0619.003> , <http://data.openbudgets.eu/resource/dataset/budget-naousa-revenue-2016/codelist/00/0619.004> , <http://data.openbudgets.eu/resource/dataset/budget-naousa-revenue-2016/codelist/00/0619.005> , <http://data.openbudgets.eu/resource/dataset/budget-naousa-revenue-2016/codelist/00/0619.006> , <http://data.openbudgets.eu/resource/dataset/budget-naousa-revenue-2016/codelist/00/0619.007> ;
+	skos:notation "0619" ;
+	skos:prefLabel "ΚΑΠ για λοιπούς σκοπούς (δεν περιλαμβάνονται πιστώσεις του ΠΔΕ)" ;
+	skos:broader naousa-br2016-codelist:00 ;
+	skos:broadMatch kae-ota-es14:0619 .
+
+<http://data.openbudgets.eu/resource/dataset/budget-naousa-revenue-2016/codelist/00/0619.001> a skos:Concept ;
+	skos:inScheme naousa-br2016-dsd:codelist ;
+	skos:notation "0619.001" ;
+	skos:prefLabel "ΚΑΠ για την κάλυψη λειτουργικών δαπανών τετραμήνων 2009" ;
+	skos:broader <http://data.openbudgets.eu/resource/dataset/budget-naousa-revenue-2016/codelist/00/0619> .
+
+<http://data.openbudgets.eu/resource/dataset/budget-naousa-revenue-2016/codelist/00/0619.002> a skos:Concept ;
+	skos:inScheme naousa-br2016-dsd:codelist ;
+	skos:notation "0619.002" ;
+	skos:prefLabel "ΚΑΠ για λειτουργικές δαπάνες αρθρου 27.Ν.3756/09 ( 8 ετήσιες δόσεις)" ;
+	skos:broader <http://data.openbudgets.eu/resource/dataset/budget-naousa-revenue-2016/codelist/00/0619> .
+
+<http://data.openbudgets.eu/resource/dataset/budget-naousa-revenue-2016/codelist/00/0619.003> a skos:Concept ;
+	skos:inScheme naousa-br2016-dsd:codelist ;
+	skos:notation "0619.003" ;
+	skos:prefLabel "ΚΑΠ για επενδύσεις - έργα αρθρου 27.Ν.3756/09 ( 8 ετήσιες δόσεις)" ;
+	skos:broader <http://data.openbudgets.eu/resource/dataset/budget-naousa-revenue-2016/codelist/00/0619> .
+
+<http://data.openbudgets.eu/resource/dataset/budget-naousa-revenue-2016/codelist/00/0619.004> a skos:Concept ;
+	skos:inScheme naousa-br2016-dsd:codelist ;
+	skos:notation "0619.004" ;
+	skos:prefLabel "ΚΑΠ για την μεταφορά των μαθητών Α/θμιας και Β/θμιας Εκπαίδευσης (σύμβαση Δήμου - ΚΤΕΛ Α.Ε.)" ;
+	skos:broader <http://data.openbudgets.eu/resource/dataset/budget-naousa-revenue-2016/codelist/00/0619> .
+
+<http://data.openbudgets.eu/resource/dataset/budget-naousa-revenue-2016/codelist/00/0619.005> a skos:Concept ;
+	skos:inScheme naousa-br2016-dsd:codelist ;
+	skos:notation "0619.005" ;
+	skos:prefLabel "ΚΑΠ για την μεταφορά των μαθητών Α/θμιας και Β/θμιας Εκπαίδευσης Δήμου Νάουσας για το σχολικό έτος 2012 - 2013" ;
+	skos:broader <http://data.openbudgets.eu/resource/dataset/budget-naousa-revenue-2016/codelist/00/0619> .
+
+<http://data.openbudgets.eu/resource/dataset/budget-naousa-revenue-2016/codelist/00/0619.006> a skos:Concept ;
+	skos:inScheme naousa-br2016-dsd:codelist ;
+	skos:notation "0619.006" ;
+	skos:prefLabel "Επιχορήγηση Δ39 για κάλυψη δαπάνης μισθοδοσίας μεταφερόμενου προσωπικού από ΕΙΝ (με μεταφορά από Κ.Α.Ε. 1214.007 του Π.Υ. 2014)" ;
+	skos:broader <http://data.openbudgets.eu/resource/dataset/budget-naousa-revenue-2016/codelist/00/0619> .
+
+<http://data.openbudgets.eu/resource/dataset/budget-naousa-revenue-2016/codelist/00/0619.007> a skos:Concept ;
+	skos:inScheme naousa-br2016-dsd:codelist ;
+	skos:notation "0619.007" ;
+	skos:prefLabel "Κάλυψη δαπανών Μισθ/σίας  Ιουλ. - Δεκ. 2015 των πρώην Δημοτικών Αστυνομικών (αρθ.19 του Ν.4325/15)" ;
+	skos:broader <http://data.openbudgets.eu/resource/dataset/budget-naousa-revenue-2016/codelist/00/0619> .
+
+<http://data.openbudgets.eu/resource/dataset/budget-naousa-revenue-2016/codelist/00/0621> a skos:Concept ;
+	skos:inScheme naousa-br2016-dsd:codelist ;
+	skos:narrower <http://data.openbudgets.eu/resource/dataset/budget-naousa-revenue-2016/codelist/00/0621.001> ;
+	skos:notation "0621" ;
+	skos:prefLabel "Έσοδα για την Κάλυψη Δαπάνης για την Χορήγηση Προνοιακών Επιδομάτων σε δικαιούχους του Δ. Νάουσας" ;
+	skos:broader naousa-br2016-codelist:00 ;
+	skos:broadMatch kae-ota-es14:0621 .
+
+<http://data.openbudgets.eu/resource/dataset/budget-naousa-revenue-2016/codelist/00/0621.001> a skos:Concept ;
+	skos:inScheme naousa-br2016-dsd:codelist ;
+	skos:notation "0621.001" ;
+	skos:prefLabel "Κάλυψη Δαπάνης για την Χορήγηση Προνοιακών Επιδομάτων σε δικαιούχους του Δ. Νάουσας" ;
+	skos:broader <http://data.openbudgets.eu/resource/dataset/budget-naousa-revenue-2016/codelist/00/0621> .
+
+<http://data.openbudgets.eu/resource/dataset/budget-naousa-revenue-2016/codelist/00/0711> a skos:Concept ;
+	skos:inScheme naousa-br2016-dsd:codelist ;
+	skos:notation "0711" ;
+	skos:prefLabel "Έσοδα από μισθώματα δημόσιων λατομείων (άρθρο 21 Ν 2115/93)" ;
+	skos:broader naousa-br2016-codelist:00 ;
+	skos:broadMatch kae-ota-es14:0711 .
+
+<http://data.openbudgets.eu/resource/dataset/budget-naousa-revenue-2016/codelist/00/0712> a skos:Concept ;
+	skos:inScheme naousa-br2016-dsd:codelist ;
+	skos:notation "0712" ;
+	skos:prefLabel "Μισθώματα θαλασσίων εκτάσεων (άρθρο 15 Ν 2130/93)" ;
+	skos:broader naousa-br2016-codelist:00 ;
+	skos:broadMatch kae-ota-es14:0712 .
+
+<http://data.openbudgets.eu/resource/dataset/budget-naousa-revenue-2016/codelist/00/0713> a skos:Concept ;
+	skos:inScheme naousa-br2016-dsd:codelist ;
+	skos:notation "0713" ;
+	skos:prefLabel "Παράβολα για την έκδοση των αδειών ίδρυσης και λειτουργίας επιχειρήσεων υγειονομικού ενδιαφέροντος (άρθρο 80 ΚΔΚ)" ;
+	skos:broader naousa-br2016-codelist:00 ;
+	skos:broadMatch kae-ota-es14:0713 .
+
+<http://data.openbudgets.eu/resource/dataset/budget-naousa-revenue-2016/codelist/00/0714> a skos:Concept ;
+	skos:inScheme naousa-br2016-dsd:codelist ;
+	skos:notation "0714" ;
+	skos:prefLabel "Έσοδα από τη διάθεση δασικών προϊόντων του δημοσίου (άρθρο 37 ΝΔ 4260/62)" ;
+	skos:broader naousa-br2016-codelist:00 ;
+	skos:broadMatch kae-ota-es14:0714 .
+
+<http://data.openbudgets.eu/resource/dataset/budget-naousa-revenue-2016/codelist/00/0715> a skos:Concept ;
+	skos:inScheme naousa-br2016-dsd:codelist ;
+	skos:notation "0715" ;
+	skos:prefLabel "Τέλος διαφήμισης της κατηγορίας Δ' του άρθρου 15 του ΒΔ 24/9-20/10/1958 (άρθρο 9 Ν 2880/2001)" ;
+	skos:broader naousa-br2016-codelist:00 ;
+	skos:broadMatch kae-ota-es14:0715 .
+
+<http://data.openbudgets.eu/resource/dataset/budget-naousa-revenue-2016/codelist/00/0716> a skos:Concept ;
+	skos:inScheme naousa-br2016-dsd:codelist ;
+	skos:notation "0716" ;
+	skos:prefLabel "Έσοδα από παράβολα αδειών παραμονής αλλοδαπών (άρθρο 16 Ν 2946/2001)" ;
+	skos:broader naousa-br2016-codelist:00 ;
+	skos:broadMatch kae-ota-es14:0716 .
+
+<http://data.openbudgets.eu/resource/dataset/budget-naousa-revenue-2016/codelist/00/0717> a skos:Concept ;
+	skos:inScheme naousa-br2016-dsd:codelist ;
+	skos:notation "0717" ;
+	skos:prefLabel "Έσοδα από τουριστικούς λιμένες και ζώνες αγκυροβολίου (άρθρο 36 Ν 2160/93, άρθρο 27 Ν 2636/98)" ;
+	skos:broader naousa-br2016-codelist:00 ;
+	skos:broadMatch kae-ota-es14:0717 .
+
+<http://data.openbudgets.eu/resource/dataset/budget-naousa-revenue-2016/codelist/00/0718> a skos:Concept ;
+	skos:inScheme naousa-br2016-dsd:codelist ;
+	skos:notation "0718" ;
+	skos:prefLabel "Λοιπά τακτικά έσοδα που δεν εντάσσονται στις ανωτέρω τάξεις." ;
+	skos:broader naousa-br2016-codelist:00 ;
+	skos:broadMatch kae-ota-es14:0718 .
+
+<http://data.openbudgets.eu/resource/dataset/budget-naousa-revenue-2016/codelist/00/1111> a skos:Concept ;
+	skos:inScheme naousa-br2016-dsd:codelist ;
+	skos:notation "1111" ;
+	skos:prefLabel "Εκποίηση οικοπέδων σε άστεγους δημότες (άρθρο 249 ΔΚΚ)" ;
+	skos:broader naousa-br2016-codelist:00 ;
+	skos:broadMatch kae-ota-es14:1111 .
+
+<http://data.openbudgets.eu/resource/dataset/budget-naousa-revenue-2016/codelist/00/1112> a skos:Concept ;
+	skos:inScheme naousa-br2016-dsd:codelist ;
+	skos:notation "1112" ;
+	skos:prefLabel "Εκποίηση οικοπέδων στν Οργανισμό Εργατικής Κατοικίας (άρθρο 2 Ν 2336/95)" ;
+	skos:broader naousa-br2016-codelist:00 ;
+	skos:broadMatch kae-ota-es14:1112 .
+
+<http://data.openbudgets.eu/resource/dataset/budget-naousa-revenue-2016/codelist/00/1113> a skos:Concept ;
+	skos:inScheme naousa-br2016-dsd:codelist ;
+	skos:notation "1113" ;
+	skos:prefLabel "Εκποίηση δημοτικών ή κοινοτικών εκτάσεων για την ίδρυση ή επέκταση βιομηχανικών ή βιοτεχνικών επιχειρήσεων και κτηνοτροφικών εκμεταλλεύσεων (άρθρα 4 και 6 ΝΔ 221/1974)" ;
+	skos:broader naousa-br2016-codelist:00 ;
+	skos:broadMatch kae-ota-es14:1113 .
+
+<http://data.openbudgets.eu/resource/dataset/budget-naousa-revenue-2016/codelist/00/1114> a skos:Concept ;
+	skos:inScheme naousa-br2016-dsd:codelist ;
+	skos:notation "1114" ;
+	skos:prefLabel "Εκποίηση ακινήτων σε Ζώνες Κοινωτικού Συντελεστή (άρθρα 215-220 ΚΒΔΝ)" ;
+	skos:broader naousa-br2016-codelist:00 ;
+	skos:broadMatch kae-ota-es14:1114 .
+
+<http://data.openbudgets.eu/resource/dataset/budget-naousa-revenue-2016/codelist/00/1115> a skos:Concept ;
+	skos:inScheme naousa-br2016-dsd:codelist ;
+	skos:notation "1115" ;
+	skos:prefLabel "Προσκύρωση δημοτικών ή κοινοτικών εκτάσεων (άρθρα 300-309 ΚΒΠΝ, άρθρο 56 Ν 1416/84)" ;
+	skos:broader naousa-br2016-codelist:00 ;
+	skos:broadMatch kae-ota-es14:1115 .
+
+<http://data.openbudgets.eu/resource/dataset/budget-naousa-revenue-2016/codelist/00/1116> a skos:Concept ;
+	skos:inScheme naousa-br2016-dsd:codelist ;
+	skos:notation "1116" ;
+	skos:prefLabel "Λοιπά έσοδα από εκποίηση ακίνητης περιουσίας (άρθρο 248 ΔΚΚ)" ;
+	skos:broader naousa-br2016-codelist:00 ;
+	skos:broadMatch kae-ota-es14:1116 .
+
+<http://data.openbudgets.eu/resource/dataset/budget-naousa-revenue-2016/codelist/00/1121> a skos:Concept ;
+	skos:inScheme naousa-br2016-dsd:codelist ;
+	skos:notation "1121" ;
+	skos:prefLabel "Εκποίηση οχημάτων (άρθρο 10 Ν 2880/2001)" ;
+	skos:broader naousa-br2016-codelist:00 ;
+	skos:broadMatch kae-ota-es14:1121 .
+
+<http://data.openbudgets.eu/resource/dataset/budget-naousa-revenue-2016/codelist/00/1122> a skos:Concept ;
+	skos:inScheme naousa-br2016-dsd:codelist ;
+	skos:notation "1122" ;
+	skos:prefLabel "Εκποίηση άλλων κινητών πραγμάτων (άρθρο 259 ΔΚΚ)" ;
+	skos:broader naousa-br2016-codelist:00 ;
+	skos:broadMatch kae-ota-es14:1122 .
+
+<http://data.openbudgets.eu/resource/dataset/budget-naousa-revenue-2016/codelist/00/1211> a skos:Concept ;
+	skos:inScheme naousa-br2016-dsd:codelist ;
+	skos:narrower <http://data.openbudgets.eu/resource/dataset/budget-naousa-revenue-2016/codelist/00/1211.001> , <http://data.openbudgets.eu/resource/dataset/budget-naousa-revenue-2016/codelist/00/1211.002> , <http://data.openbudgets.eu/resource/dataset/budget-naousa-revenue-2016/codelist/00/1211.003> , <http://data.openbudgets.eu/resource/dataset/budget-naousa-revenue-2016/codelist/00/1211.004> , <http://data.openbudgets.eu/resource/dataset/budget-naousa-revenue-2016/codelist/00/1211.005> , <http://data.openbudgets.eu/resource/dataset/budget-naousa-revenue-2016/codelist/00/1211.006> , <http://data.openbudgets.eu/resource/dataset/budget-naousa-revenue-2016/codelist/00/1211.007> , <http://data.openbudgets.eu/resource/dataset/budget-naousa-revenue-2016/codelist/00/1211.008> , <http://data.openbudgets.eu/resource/dataset/budget-naousa-revenue-2016/codelist/00/1211.009> , <http://data.openbudgets.eu/resource/dataset/budget-naousa-revenue-2016/codelist/00/1211.010> , <http://data.openbudgets.eu/resource/dataset/budget-naousa-revenue-2016/codelist/00/1211.703> , <http://data.openbudgets.eu/resource/dataset/budget-naousa-revenue-2016/codelist/00/1211.704> ;
+	skos:notation "1211" ;
+	skos:prefLabel "Από εθνικούς πόρους (μέσω του τακτικού προϋπολογισμού)" ;
+	skos:broader naousa-br2016-codelist:00 ;
+	skos:broadMatch kae-ota-es14:1211 .
+
+<http://data.openbudgets.eu/resource/dataset/budget-naousa-revenue-2016/codelist/00/1211.001> a skos:Concept ;
+	skos:inScheme naousa-br2016-dsd:codelist ;
+	skos:notation "1211.001" ;
+	skos:prefLabel "Επιχορήγηση για ΚΕΠ" ;
+	skos:broader <http://data.openbudgets.eu/resource/dataset/budget-naousa-revenue-2016/codelist/00/1211> .
+
+<http://data.openbudgets.eu/resource/dataset/budget-naousa-revenue-2016/codelist/00/1211.002> a skos:Concept ;
+	skos:inScheme naousa-br2016-dsd:codelist ;
+	skos:notation "1211.002" ;
+	skos:prefLabel "Επιχορήγηση για πρόγραμμα ΜΕΡΙΚΗΣ ΑΠΑΣΧΟΛΗΣΗΣ" ;
+	skos:broader <http://data.openbudgets.eu/resource/dataset/budget-naousa-revenue-2016/codelist/00/1211> .
+
+<http://data.openbudgets.eu/resource/dataset/budget-naousa-revenue-2016/codelist/00/1211.003> a skos:Concept ;
+	skos:inScheme naousa-br2016-dsd:codelist ;
+	skos:notation "1211.003" ;
+	skos:prefLabel "Επιχορήγηση  ΠΔ 164/2004  για  σχολικούς φύλακες" ;
+	skos:broader <http://data.openbudgets.eu/resource/dataset/budget-naousa-revenue-2016/codelist/00/1211> .
+
+<http://data.openbudgets.eu/resource/dataset/budget-naousa-revenue-2016/codelist/00/1211.004> a skos:Concept ;
+	skos:inScheme naousa-br2016-dsd:codelist ;
+	skos:notation "1211.004" ;
+	skos:prefLabel "Επιχορήγηση για εφαρμογή διπλογραφικού συστήματος" ;
+	skos:broader <http://data.openbudgets.eu/resource/dataset/budget-naousa-revenue-2016/codelist/00/1211> .
+
+<http://data.openbudgets.eu/resource/dataset/budget-naousa-revenue-2016/codelist/00/1211.005> a skos:Concept ;
+	skos:inScheme naousa-br2016-dsd:codelist ;
+	skos:notation "1211.005" ;
+	skos:prefLabel "Επιχορήγηση επιδόματος παρατετραπληγιας-ΥΠ.ΕΣ." ;
+	skos:broader <http://data.openbudgets.eu/resource/dataset/budget-naousa-revenue-2016/codelist/00/1211> .
+
+<http://data.openbudgets.eu/resource/dataset/budget-naousa-revenue-2016/codelist/00/1211.006> a skos:Concept ;
+	skos:inScheme naousa-br2016-dsd:codelist ;
+	skos:notation "1211.006" ;
+	skos:prefLabel "Επιχορήγηση Υπουργείου Εσωτερικών για καταβολή ποσών αποζημίωσης σε υπαλλήλους πρώην ΠΙΚΠΑ" ;
+	skos:broader <http://data.openbudgets.eu/resource/dataset/budget-naousa-revenue-2016/codelist/00/1211> .
+
+<http://data.openbudgets.eu/resource/dataset/budget-naousa-revenue-2016/codelist/00/1211.007> a skos:Concept ;
+	skos:inScheme naousa-br2016-dsd:codelist ;
+	skos:notation "1211.007" ;
+	skos:prefLabel "Επιχορήγηση Υπουργείου Εσωτερικών για το έργο ΟΛΟΚΛΗΡΩΣΗ ΔΙΚΤΥΟΥ ΑΠΟΧΕΤΕΥΣΗΣ ΑΚΑΘΑΡΤΩΝ Δ.Δ. ΣΤΕΝΗΜΑΧΟΥ" ;
+	skos:broader <http://data.openbudgets.eu/resource/dataset/budget-naousa-revenue-2016/codelist/00/1211> .
+
+<http://data.openbudgets.eu/resource/dataset/budget-naousa-revenue-2016/codelist/00/1211.008> a skos:Concept ;
+	skos:inScheme naousa-br2016-dsd:codelist ;
+	skos:notation "1211.008" ;
+	skos:prefLabel "Επιδότηση μαθητείας ΟΑΕΔ" ;
+	skos:broader <http://data.openbudgets.eu/resource/dataset/budget-naousa-revenue-2016/codelist/00/1211> .
+
+<http://data.openbudgets.eu/resource/dataset/budget-naousa-revenue-2016/codelist/00/1211.009> a skos:Concept ;
+	skos:inScheme naousa-br2016-dsd:codelist ;
+	skos:notation "1211.009" ;
+	skos:prefLabel "Επιχορήγηση  Προγράμματος Βοήθεια στο Σπίτι" ;
+	skos:broader <http://data.openbudgets.eu/resource/dataset/budget-naousa-revenue-2016/codelist/00/1211> .
+
+<http://data.openbudgets.eu/resource/dataset/budget-naousa-revenue-2016/codelist/00/1211.010> a skos:Concept ;
+	skos:inScheme naousa-br2016-dsd:codelist ;
+	skos:notation "1211.010" ;
+	skos:prefLabel "Επιχορήγηση από το ΥΠ.Π.Ο.Α για την ενίσχυση των πολιτιστικών εκδηλώσεων του Δήμου" ;
+	skos:broader <http://data.openbudgets.eu/resource/dataset/budget-naousa-revenue-2016/codelist/00/1211> .
+
+<http://data.openbudgets.eu/resource/dataset/budget-naousa-revenue-2016/codelist/00/1211.703> a skos:Concept ;
+	skos:inScheme naousa-br2016-dsd:codelist ;
+	skos:notation "1211.703" ;
+	skos:prefLabel "Επιχορήγηση για την κάλυψη λειτουργικών δαπανών (ανταποκριτού Ο.Α.Ε.Δ) Δ.Ε Ειρηνούπολης" ;
+	skos:broader <http://data.openbudgets.eu/resource/dataset/budget-naousa-revenue-2016/codelist/00/1211> .
+
+<http://data.openbudgets.eu/resource/dataset/budget-naousa-revenue-2016/codelist/00/1211.704> a skos:Concept ;
+	skos:inScheme naousa-br2016-dsd:codelist ;
+	skos:notation "1211.704" ;
+	skos:prefLabel "Λοιπές επιχορηγήσεις" ;
+	skos:broader <http://data.openbudgets.eu/resource/dataset/budget-naousa-revenue-2016/codelist/00/1211> .
+
+<http://data.openbudgets.eu/resource/dataset/budget-naousa-revenue-2016/codelist/00/1212> a skos:Concept ;
+	skos:inScheme naousa-br2016-dsd:codelist ;
+	skos:narrower <http://data.openbudgets.eu/resource/dataset/budget-naousa-revenue-2016/codelist/00/1212.605> ;
+	skos:notation "1212" ;
+	skos:prefLabel "Από συγχρηματοδοτούμενα προγράμματα (μέσω του ΕΣΠΑ)" ;
+	skos:broader naousa-br2016-codelist:00 ;
+	skos:broadMatch kae-ota-es14:1212 .
+
+<http://data.openbudgets.eu/resource/dataset/budget-naousa-revenue-2016/codelist/00/1212.605> a skos:Concept ;
+	skos:inScheme naousa-br2016-dsd:codelist ;
+	skos:notation "1212.605" ;
+	skos:prefLabel "Επιχορ'ηγηση από ΥΜΑΘ για αντιπλυμμηρικά έργα" ;
+	skos:broader <http://data.openbudgets.eu/resource/dataset/budget-naousa-revenue-2016/codelist/00/1212> .
+
+<http://data.openbudgets.eu/resource/dataset/budget-naousa-revenue-2016/codelist/00/1213> a skos:Concept ;
+	skos:inScheme naousa-br2016-dsd:codelist ;
+	skos:narrower <http://data.openbudgets.eu/resource/dataset/budget-naousa-revenue-2016/codelist/00/1213.001> ;
+	skos:notation "1213" ;
+	skos:prefLabel "Έσοδα από προγραμματικές συμβάσεις για υλοποίηση τοπικών πολιτικών" ;
+	skos:broader naousa-br2016-codelist:00 ;
+	skos:broadMatch kae-ota-es14:1213 .
+
+<http://data.openbudgets.eu/resource/dataset/budget-naousa-revenue-2016/codelist/00/1213.001> a skos:Concept ;
+	skos:inScheme naousa-br2016-dsd:codelist ;
+	skos:notation "1213.001" ;
+	skos:prefLabel "Έσοδα από προγραμματικές συμβάσεις για υλοποίηση τοπικών πολιτικών" ;
+	skos:broader <http://data.openbudgets.eu/resource/dataset/budget-naousa-revenue-2016/codelist/00/1213> .
+
+<http://data.openbudgets.eu/resource/dataset/budget-naousa-revenue-2016/codelist/00/1214> a skos:Concept ;
+	skos:inScheme naousa-br2016-dsd:codelist ;
+	skos:narrower <http://data.openbudgets.eu/resource/dataset/budget-naousa-revenue-2016/codelist/00/1214.001> , <http://data.openbudgets.eu/resource/dataset/budget-naousa-revenue-2016/codelist/00/1214.003> , <http://data.openbudgets.eu/resource/dataset/budget-naousa-revenue-2016/codelist/00/1214.004> , <http://data.openbudgets.eu/resource/dataset/budget-naousa-revenue-2016/codelist/00/1214.005> , <http://data.openbudgets.eu/resource/dataset/budget-naousa-revenue-2016/codelist/00/1214.006> , <http://data.openbudgets.eu/resource/dataset/budget-naousa-revenue-2016/codelist/00/1214.007> , <http://data.openbudgets.eu/resource/dataset/budget-naousa-revenue-2016/codelist/00/1214.008> , <http://data.openbudgets.eu/resource/dataset/budget-naousa-revenue-2016/codelist/00/1214.009> , <http://data.openbudgets.eu/resource/dataset/budget-naousa-revenue-2016/codelist/00/1214.010> , <http://data.openbudgets.eu/resource/dataset/budget-naousa-revenue-2016/codelist/00/1214.011> , <http://data.openbudgets.eu/resource/dataset/budget-naousa-revenue-2016/codelist/00/1214.603> , <http://data.openbudgets.eu/resource/dataset/budget-naousa-revenue-2016/codelist/00/1214.607> ;
+	skos:notation "1214" ;
+	skos:prefLabel "Επιχορηγήσεις για πυροπροστασία που προορίζονται για λειτουργικές δαπάνες" ;
+	skos:broader naousa-br2016-codelist:00 ;
+	skos:broadMatch kae-ota-es14:1214 .
+
+<http://data.openbudgets.eu/resource/dataset/budget-naousa-revenue-2016/codelist/00/1214.001> a skos:Concept ;
+	skos:inScheme naousa-br2016-dsd:codelist ;
+	skos:notation "1214.001" ;
+	skos:prefLabel "Επιχορήγηση ΥΠΕΣΔΑΑ για πολιτική προστασία - πυροπροστασία" ;
+	skos:broader <http://data.openbudgets.eu/resource/dataset/budget-naousa-revenue-2016/codelist/00/1214> .
+
+<http://data.openbudgets.eu/resource/dataset/budget-naousa-revenue-2016/codelist/00/1214.003> a skos:Concept ;
+	skos:inScheme naousa-br2016-dsd:codelist ;
+	skos:notation "1214.003" ;
+	skos:prefLabel "Επιχορήγηση ΥΠΕΣΔΔΑ για πολιτική προστασία - πυροπροστασία" ;
+	skos:broader <http://data.openbudgets.eu/resource/dataset/budget-naousa-revenue-2016/codelist/00/1214> .
+
+<http://data.openbudgets.eu/resource/dataset/budget-naousa-revenue-2016/codelist/00/1214.004> a skos:Concept ;
+	skos:inScheme naousa-br2016-dsd:codelist ;
+	skos:notation "1214.004" ;
+	skos:prefLabel "Επιχορήγηση για κάλυξη δαπανών καταβολής μισθωμάτων Σχολ.Μονάδων(Γραφείο Πολεοδομίας)" ;
+	skos:broader <http://data.openbudgets.eu/resource/dataset/budget-naousa-revenue-2016/codelist/00/1214> .
+
+<http://data.openbudgets.eu/resource/dataset/budget-naousa-revenue-2016/codelist/00/1214.005> a skos:Concept ;
+	skos:inScheme naousa-br2016-dsd:codelist ;
+	skos:notation "1214.005" ;
+	skos:prefLabel "Επιχορήγηση για κάλυξη δαπάνης έκδοσης φωτοτυπιών σχολικών βιβλίων  απο ΥΠΕΣ." ;
+	skos:broader <http://data.openbudgets.eu/resource/dataset/budget-naousa-revenue-2016/codelist/00/1214> .
+
+<http://data.openbudgets.eu/resource/dataset/budget-naousa-revenue-2016/codelist/00/1214.006> a skos:Concept ;
+	skos:inScheme naousa-br2016-dsd:codelist ;
+	skos:notation "1214.006" ;
+	skos:prefLabel "Επιχορήγηση για την καταβολή της ειδικής εκλογικής αποζημίωσης των υπαλλήλων του Δ. Νάουσας για την αντιμετώπιση των έκτακτων αναγκών κατά την προπαρασκευή και διεξαγωγή των δημοτικών και περιφερειακών εκλογών καθώς και των ευρωεκλογών του Μαϊου 2014" ;
+	skos:broader <http://data.openbudgets.eu/resource/dataset/budget-naousa-revenue-2016/codelist/00/1214> .
+
+<http://data.openbudgets.eu/resource/dataset/budget-naousa-revenue-2016/codelist/00/1214.007> a skos:Concept ;
+	skos:inScheme naousa-br2016-dsd:codelist ;
+	skos:notation "1214.007" ;
+	skos:prefLabel "Επιχορηγηση Δ39 για ΚΑΛΥΨΗ ΔΑΠΑΝΗΣ ΜΙΣΘ/ΣΙΑΣ ΜΕΤΑΦ/ΝΟΥ ΠΡΟΣΩΠΙΚΟΥ ΑΠΟ ΕΙΝ" ;
+	skos:broader <http://data.openbudgets.eu/resource/dataset/budget-naousa-revenue-2016/codelist/00/1214> .
+
+<http://data.openbudgets.eu/resource/dataset/budget-naousa-revenue-2016/codelist/00/1214.008> a skos:Concept ;
+	skos:inScheme naousa-br2016-dsd:codelist ;
+	skos:notation "1214.008" ;
+	skos:prefLabel "Επιχορήγηση απο ΥΠΕΣΑΗΔ (36800,00) για το έργο Πυροπροστασία Δημοτικού Δάσους - Δ/νση Περιβάλλοντος- Τεχν.Πρόγρ. 2013" ;
+	skos:broader <http://data.openbudgets.eu/resource/dataset/budget-naousa-revenue-2016/codelist/00/1214> .
+
+<http://data.openbudgets.eu/resource/dataset/budget-naousa-revenue-2016/codelist/00/1214.009> a skos:Concept ;
+	skos:inScheme naousa-br2016-dsd:codelist ;
+	skos:notation "1214.009" ;
+	skos:prefLabel "Επιχορήγηση ΟΑΕΔ για ασφαλιστικές εισφορές ωφελουμένων Προγράμματος Κοινωφελούς Χαρακτήρα" ;
+	skos:broader <http://data.openbudgets.eu/resource/dataset/budget-naousa-revenue-2016/codelist/00/1214> .
+
+<http://data.openbudgets.eu/resource/dataset/budget-naousa-revenue-2016/codelist/00/1214.010> a skos:Concept ;
+	skos:inScheme naousa-br2016-dsd:codelist ;
+	skos:notation "1214.010" ;
+	skos:prefLabel "Επιχορήγηση του Υπ. Εσωτερικών για την αντιμετώπιση των εκτάκτων αναγκών για την προπαρασκευή και διεξαγωγή των εκλογών" ;
+	skos:broader <http://data.openbudgets.eu/resource/dataset/budget-naousa-revenue-2016/codelist/00/1214> .
+
+<http://data.openbudgets.eu/resource/dataset/budget-naousa-revenue-2016/codelist/00/1214.011> a skos:Concept ;
+	skos:inScheme naousa-br2016-dsd:codelist ;
+	skos:notation "1214.011" ;
+	skos:prefLabel "Επιχορήγηση του Υπ. Εσωτερικών για την αντιμετώπιση των εκτάκτων αναγκών για την προπαρασκευή κια διεξαγωγή του δημοψηφίσματος της 5/7/15" ;
+	skos:broader <http://data.openbudgets.eu/resource/dataset/budget-naousa-revenue-2016/codelist/00/1214> .
+
+<http://data.openbudgets.eu/resource/dataset/budget-naousa-revenue-2016/codelist/00/1214.603> a skos:Concept ;
+	skos:inScheme naousa-br2016-dsd:codelist ;
+	skos:notation "1214.603" ;
+	skos:prefLabel "Επιχορήγηση για πριμ παραγωγικότητας" ;
+	skos:broader <http://data.openbudgets.eu/resource/dataset/budget-naousa-revenue-2016/codelist/00/1214> .
+
+<http://data.openbudgets.eu/resource/dataset/budget-naousa-revenue-2016/codelist/00/1214.607> a skos:Concept ;
+	skos:inScheme naousa-br2016-dsd:codelist ;
+	skos:notation "1214.607" ;
+	skos:prefLabel "Επιχορήγηση προγράμματος ΣΥΝ-ΚΟΙΝΩΝΙΑ Δ.Ε. Ανθεμίων" ;
+	skos:broader <http://data.openbudgets.eu/resource/dataset/budget-naousa-revenue-2016/codelist/00/1214> .
+
+<http://data.openbudgets.eu/resource/dataset/budget-naousa-revenue-2016/codelist/00/1215> a skos:Concept ;
+	skos:inScheme naousa-br2016-dsd:codelist ;
+	skos:narrower <http://data.openbudgets.eu/resource/dataset/budget-naousa-revenue-2016/codelist/00/1215.001> ;
+	skos:notation "1215" ;
+	skos:prefLabel "Επιχορηγήσεις για εξόφληση ληξιπρόθεσμων υποχρεώσεων" ;
+	skos:broader naousa-br2016-codelist:00 ;
+	skos:broadMatch kae-ota-es14:1215 .
+
+<http://data.openbudgets.eu/resource/dataset/budget-naousa-revenue-2016/codelist/00/1215.001> a skos:Concept ;
+	skos:inScheme naousa-br2016-dsd:codelist ;
+	skos:notation "1215.001" ;
+	skos:prefLabel "Επιχορηγήσεις για εξόφληση ληξιπρόθεσμων υποχρεώσεων" ;
+	skos:broader <http://data.openbudgets.eu/resource/dataset/budget-naousa-revenue-2016/codelist/00/1215> .
+
+<http://data.openbudgets.eu/resource/dataset/budget-naousa-revenue-2016/codelist/00/1216> a skos:Concept ;
+	skos:inScheme naousa-br2016-dsd:codelist ;
+	skos:notation "1216" ;
+	skos:prefLabel "Από εθνικούς πόρους (μέσω του εθνικού τμήματος του Π.Δ.Ε.)" ;
+	skos:broader naousa-br2016-codelist:00 ;
+	skos:broadMatch kae-ota-es14:1216 .
+
+<http://data.openbudgets.eu/resource/dataset/budget-naousa-revenue-2016/codelist/00/1217> a skos:Concept ;
+	skos:inScheme naousa-br2016-dsd:codelist ;
+	skos:notation "1217" ;
+	skos:prefLabel "Από προγράμματα της Ε.Ε." ;
+	skos:broader naousa-br2016-codelist:00 ;
+	skos:broadMatch kae-ota-es14:1217 .
+
+<http://data.openbudgets.eu/resource/dataset/budget-naousa-revenue-2016/codelist/00/1219> a skos:Concept ;
+	skos:inScheme naousa-br2016-dsd:codelist ;
+	skos:narrower <http://data.openbudgets.eu/resource/dataset/budget-naousa-revenue-2016/codelist/00/1219.001> , <http://data.openbudgets.eu/resource/dataset/budget-naousa-revenue-2016/codelist/00/1219.002> , <http://data.openbudgets.eu/resource/dataset/budget-naousa-revenue-2016/codelist/00/1219.003> , <http://data.openbudgets.eu/resource/dataset/budget-naousa-revenue-2016/codelist/00/1219.004> ;
+	skos:notation "1219" ;
+	skos:prefLabel "Λοιπές επιχορηγήσεις" ;
+	skos:broader naousa-br2016-codelist:00 ;
+	skos:broadMatch kae-ota-es14:1219 .
+
+<http://data.openbudgets.eu/resource/dataset/budget-naousa-revenue-2016/codelist/00/1219.001> a skos:Concept ;
+	skos:inScheme naousa-br2016-dsd:codelist ;
+	skos:notation "1219.001" ;
+	skos:prefLabel "Επιχορήγηση Δ39 για κάλυψη δαπάνης μισθοδοσίας μεταφερόμενου προσωπικού από ΕΙΝ (με μεταφορά από Κ.Α.Ε. 1214.007 του Π.Υ. 2014)" ;
+	skos:broader <http://data.openbudgets.eu/resource/dataset/budget-naousa-revenue-2016/codelist/00/1219> .
+
+<http://data.openbudgets.eu/resource/dataset/budget-naousa-revenue-2016/codelist/00/1219.002> a skos:Concept ;
+	skos:inScheme naousa-br2016-dsd:codelist ;
+	skos:notation "1219.002" ;
+	skos:prefLabel "Επιχορήγηση ΟΑΕΔ για ασφαλιστικές εισφορές ωφελουμένων προγ/τος κοινωφελούς χαρακτήρα (με μεταφορά από Κ.Α.Ε. 1214.009 του Π.Υ. 2014)" ;
+	skos:broader <http://data.openbudgets.eu/resource/dataset/budget-naousa-revenue-2016/codelist/00/1219> .
+
+<http://data.openbudgets.eu/resource/dataset/budget-naousa-revenue-2016/codelist/00/1219.003> a skos:Concept ;
+	skos:inScheme naousa-br2016-dsd:codelist ;
+	skos:notation "1219.003" ;
+	skos:prefLabel "Επιχορήγηση του Υπ. Εσωτερικών για κάλυψη δαπανών μισθοδοσίας προσωπικού των ΚΗΦΗ & ΚΕΔΗΦ" ;
+	skos:broader <http://data.openbudgets.eu/resource/dataset/budget-naousa-revenue-2016/codelist/00/1219> .
+
+<http://data.openbudgets.eu/resource/dataset/budget-naousa-revenue-2016/codelist/00/1219.004> a skos:Concept ;
+	skos:inScheme naousa-br2016-dsd:codelist ;
+	skos:notation "1219.004" ;
+	skos:prefLabel "Επιχορήγηση από Υπ. Παραγωγικής Ανασυγκρότησης & Περιβάλλοντος & Ενέργειας -Πράσινο Ταμείο για τη Απόκτηση διατηρητέου κτιρίου για τη δημιουργία κέντρου τουριστικής πληροφόρησης" ;
+	skos:broader <http://data.openbudgets.eu/resource/dataset/budget-naousa-revenue-2016/codelist/00/1219> .
+
+<http://data.openbudgets.eu/resource/dataset/budget-naousa-revenue-2016/codelist/00/1311> a skos:Concept ;
+	skos:inScheme naousa-br2016-dsd:codelist ;
+	skos:notation "1311" ;
+	skos:prefLabel "ΚΑΠ επενδυτικών δαπανών των δήμων" ;
+	skos:broader naousa-br2016-codelist:00 ;
+	skos:broadMatch kae-ota-es14:1311 .
+
+<http://data.openbudgets.eu/resource/dataset/budget-naousa-revenue-2016/codelist/00/1312> a skos:Concept ;
+	skos:inScheme naousa-br2016-dsd:codelist ;
+	skos:notation "1312" ;
+	skos:prefLabel "Επισκευή και συντήρηση σχολικών κτιρίων άρθρο (13 Ν 2880/2001)" ;
+	skos:broader naousa-br2016-codelist:00 ;
+	skos:broadMatch kae-ota-es14:1312 .
+
+<http://data.openbudgets.eu/resource/dataset/budget-naousa-revenue-2016/codelist/00/1313> a skos:Concept ;
+	skos:inScheme naousa-br2016-dsd:codelist ;
+	skos:narrower <http://data.openbudgets.eu/resource/dataset/budget-naousa-revenue-2016/codelist/00/1313.001> ;
+	skos:notation "1313" ;
+	skos:prefLabel "Επιχορηγήσεις για πυροπροστασία που προορίζονται για επενδυτικές δαπάνες" ;
+	skos:broader naousa-br2016-codelist:00 ;
+	skos:broadMatch kae-ota-es14:1313 .
+
+<http://data.openbudgets.eu/resource/dataset/budget-naousa-revenue-2016/codelist/00/1313.001> a skos:Concept ;
+	skos:inScheme naousa-br2016-dsd:codelist ;
+	skos:notation "1313.001" ;
+	skos:prefLabel "Επιχορηγήσεις για πυροπροστασία που προορίζονται για επενδυτικές δαπάνες" ;
+	skos:broader <http://data.openbudgets.eu/resource/dataset/budget-naousa-revenue-2016/codelist/00/1313> .
+
+<http://data.openbudgets.eu/resource/dataset/budget-naousa-revenue-2016/codelist/00/1314> a skos:Concept ;
+	skos:inScheme naousa-br2016-dsd:codelist ;
+	skos:narrower <http://data.openbudgets.eu/resource/dataset/budget-naousa-revenue-2016/codelist/00/1314.001> , <http://data.openbudgets.eu/resource/dataset/budget-naousa-revenue-2016/codelist/00/1314.002> , <http://data.openbudgets.eu/resource/dataset/budget-naousa-revenue-2016/codelist/00/1314.007> , <http://data.openbudgets.eu/resource/dataset/budget-naousa-revenue-2016/codelist/00/1314.008> , <http://data.openbudgets.eu/resource/dataset/budget-naousa-revenue-2016/codelist/00/1314.009> , <http://data.openbudgets.eu/resource/dataset/budget-naousa-revenue-2016/codelist/00/1314.010> , <http://data.openbudgets.eu/resource/dataset/budget-naousa-revenue-2016/codelist/00/1314.011> , <http://data.openbudgets.eu/resource/dataset/budget-naousa-revenue-2016/codelist/00/1314.012> , <http://data.openbudgets.eu/resource/dataset/budget-naousa-revenue-2016/codelist/00/1314.013> , <http://data.openbudgets.eu/resource/dataset/budget-naousa-revenue-2016/codelist/00/1314.014> , <http://data.openbudgets.eu/resource/dataset/budget-naousa-revenue-2016/codelist/00/1314.015> , <http://data.openbudgets.eu/resource/dataset/budget-naousa-revenue-2016/codelist/00/1314.016> , <http://data.openbudgets.eu/resource/dataset/budget-naousa-revenue-2016/codelist/00/1314.017> , <http://data.openbudgets.eu/resource/dataset/budget-naousa-revenue-2016/codelist/00/1314.018> , <http://data.openbudgets.eu/resource/dataset/budget-naousa-revenue-2016/codelist/00/1314.019> , <http://data.openbudgets.eu/resource/dataset/budget-naousa-revenue-2016/codelist/00/1314.020> , <http://data.openbudgets.eu/resource/dataset/budget-naousa-revenue-2016/codelist/00/1314.021> , <http://data.openbudgets.eu/resource/dataset/budget-naousa-revenue-2016/codelist/00/1314.022> , <http://data.openbudgets.eu/resource/dataset/budget-naousa-revenue-2016/codelist/00/1314.023> , <http://data.openbudgets.eu/resource/dataset/budget-naousa-revenue-2016/codelist/00/1314.024> , <http://data.openbudgets.eu/resource/dataset/budget-naousa-revenue-2016/codelist/00/1314.025> , <http://data.openbudgets.eu/resource/dataset/budget-naousa-revenue-2016/codelist/00/1314.026> , <http://data.openbudgets.eu/resource/dataset/budget-naousa-revenue-2016/codelist/00/1314.027> , <http://data.openbudgets.eu/resource/dataset/budget-naousa-revenue-2016/codelist/00/1314.028> , <http://data.openbudgets.eu/resource/dataset/budget-naousa-revenue-2016/codelist/00/1314.029> , <http://data.openbudgets.eu/resource/dataset/budget-naousa-revenue-2016/codelist/00/1314.030> , <http://data.openbudgets.eu/resource/dataset/budget-naousa-revenue-2016/codelist/00/1314.031> , <http://data.openbudgets.eu/resource/dataset/budget-naousa-revenue-2016/codelist/00/1314.032> , <http://data.openbudgets.eu/resource/dataset/budget-naousa-revenue-2016/codelist/00/1314.033> , <http://data.openbudgets.eu/resource/dataset/budget-naousa-revenue-2016/codelist/00/1314.034> , <http://data.openbudgets.eu/resource/dataset/budget-naousa-revenue-2016/codelist/00/1314.035> , <http://data.openbudgets.eu/resource/dataset/budget-naousa-revenue-2016/codelist/00/1314.036> , <http://data.openbudgets.eu/resource/dataset/budget-naousa-revenue-2016/codelist/00/1314.037> , <http://data.openbudgets.eu/resource/dataset/budget-naousa-revenue-2016/codelist/00/1314.038> , <http://data.openbudgets.eu/resource/dataset/budget-naousa-revenue-2016/codelist/00/1314.601> , <http://data.openbudgets.eu/resource/dataset/budget-naousa-revenue-2016/codelist/00/1314.701> , <http://data.openbudgets.eu/resource/dataset/budget-naousa-revenue-2016/codelist/00/1314.702> , <http://data.openbudgets.eu/resource/dataset/budget-naousa-revenue-2016/codelist/00/1314.703> , <http://data.openbudgets.eu/resource/dataset/budget-naousa-revenue-2016/codelist/00/1314.704> ;
+	skos:notation "1314" ;
+	skos:prefLabel "Επιχορηγήσεις από το πρόγραμμα  > (άρθρα 6-12 Ν.3274/2004)" ;
+	skos:broader naousa-br2016-codelist:00 ;
+	skos:broadMatch kae-ota-es14:1314 .
+
+<http://data.openbudgets.eu/resource/dataset/budget-naousa-revenue-2016/codelist/00/1314.001> a skos:Concept ;
+	skos:inScheme naousa-br2016-dsd:codelist ;
+	skos:notation "1314.001" ;
+	skos:prefLabel "Επχορήγηση ΘΗΣΕΑΣ για το έργο : Διαμόρφωση πεζοδρομίων στην οδό Φιλ.Κοκκίνου" ;
+	skos:broader <http://data.openbudgets.eu/resource/dataset/budget-naousa-revenue-2016/codelist/00/1314> .
+
+<http://data.openbudgets.eu/resource/dataset/budget-naousa-revenue-2016/codelist/00/1314.002> a skos:Concept ;
+	skos:inScheme naousa-br2016-dsd:codelist ;
+	skos:notation "1314.002" ;
+	skos:prefLabel "Επιχορήγηση προγρ.ΘΗΣΕΑΣ για την ενέργεια Προμήθεια τριαξονικού φορτηγού αυτοκινήτου" ;
+	skos:broader <http://data.openbudgets.eu/resource/dataset/budget-naousa-revenue-2016/codelist/00/1314> .
+
+<http://data.openbudgets.eu/resource/dataset/budget-naousa-revenue-2016/codelist/00/1314.007> a skos:Concept ;
+	skos:inScheme naousa-br2016-dsd:codelist ;
+	skos:notation "1314.007" ;
+	skos:prefLabel "Επιχορήγηση ΘΗΣΕΑΣ για το έργο : Ανάπλαση πλατείας Καραϊσκάκη" ;
+	skos:broader <http://data.openbudgets.eu/resource/dataset/budget-naousa-revenue-2016/codelist/00/1314> .
+
+<http://data.openbudgets.eu/resource/dataset/budget-naousa-revenue-2016/codelist/00/1314.008> a skos:Concept ;
+	skos:inScheme naousa-br2016-dsd:codelist ;
+	skos:notation "1314.008" ;
+	skos:prefLabel "Επχορήγηση ΘΗΣΕΑΣ για το έργο : Ασφαλτοστρώσεις οδών Δήμου Νάουσας" ;
+	skos:broader <http://data.openbudgets.eu/resource/dataset/budget-naousa-revenue-2016/codelist/00/1314> .
+
+<http://data.openbudgets.eu/resource/dataset/budget-naousa-revenue-2016/codelist/00/1314.009> a skos:Concept ;
+	skos:inScheme naousa-br2016-dsd:codelist ;
+	skos:notation "1314.009" ;
+	skos:prefLabel "Επιχ/ση προγρ.ΘΗΣΕΑ για το έργο ¨Προμήθεια χιονοστρωτήρα για τις ανάγκες του Χιονοδρομικού Κέντρου Τρία-Πέντε Πηγάδια¨" ;
+	skos:broader <http://data.openbudgets.eu/resource/dataset/budget-naousa-revenue-2016/codelist/00/1314> .
+
+<http://data.openbudgets.eu/resource/dataset/budget-naousa-revenue-2016/codelist/00/1314.010> a skos:Concept ;
+	skos:inScheme naousa-br2016-dsd:codelist ;
+	skos:notation "1314.010" ;
+	skos:prefLabel "Επιχ/ση προγρ.ΘΗΣΕΑ για το έργο ¨Διακοσμητικός Ηλεκτροφωτισμός Δήμου Νάουσας" ;
+	skos:broader <http://data.openbudgets.eu/resource/dataset/budget-naousa-revenue-2016/codelist/00/1314> .
+
+<http://data.openbudgets.eu/resource/dataset/budget-naousa-revenue-2016/codelist/00/1314.011> a skos:Concept ;
+	skos:inScheme naousa-br2016-dsd:codelist ;
+	skos:notation "1314.011" ;
+	skos:prefLabel "Επιχορήγηση προγράμματος ΘΗΣΕΑ για το έργο: Συντήρηση ιατρείου Γιαννακοχωρίου" ;
+	skos:broader <http://data.openbudgets.eu/resource/dataset/budget-naousa-revenue-2016/codelist/00/1314> .
+
+<http://data.openbudgets.eu/resource/dataset/budget-naousa-revenue-2016/codelist/00/1314.012> a skos:Concept ;
+	skos:inScheme naousa-br2016-dsd:codelist ;
+	skos:notation "1314.012" ;
+	skos:prefLabel "Επιχορήγηση προγράμματος ΘΗΣΕΑ για : Προμήθεια απορριμματοφόρου αυτοκινήτου - ΘΗΣΕΑΣ" ;
+	skos:broader <http://data.openbudgets.eu/resource/dataset/budget-naousa-revenue-2016/codelist/00/1314> .
+
+<http://data.openbudgets.eu/resource/dataset/budget-naousa-revenue-2016/codelist/00/1314.013> a skos:Concept ;
+	skos:inScheme naousa-br2016-dsd:codelist ;
+	skos:notation "1314.013" ;
+	skos:prefLabel "Επιχορήγηση προγράμματος ΘΗΣΕΑ για :Αξιοποίηση- εκμετάλλευση Χιονοδρομικού Κέντρου" ;
+	skos:broader <http://data.openbudgets.eu/resource/dataset/budget-naousa-revenue-2016/codelist/00/1314> .
+
+<http://data.openbudgets.eu/resource/dataset/budget-naousa-revenue-2016/codelist/00/1314.014> a skos:Concept ;
+	skos:inScheme naousa-br2016-dsd:codelist ;
+	skos:notation "1314.014" ;
+	skos:prefLabel "Επιχορήγηση προγράμματος ΘΗΣΕΑ για την Διερευνητική-προκαταρκτική μελέτη φράγματος στην περιοχή Δ.Δ. Σιασιάκι" ;
+	skos:broader <http://data.openbudgets.eu/resource/dataset/budget-naousa-revenue-2016/codelist/00/1314> .
+
+<http://data.openbudgets.eu/resource/dataset/budget-naousa-revenue-2016/codelist/00/1314.015> a skos:Concept ;
+	skos:inScheme naousa-br2016-dsd:codelist ;
+	skos:notation "1314.015" ;
+	skos:prefLabel "Επιχορήγηση προγράμματος ΘΗΣΕΑ για Διερευνητική-προκαταρκτική μελέτη φράγματος στην περιοχή Δ.Δ. Ροδοχωρίου" ;
+	skos:broader <http://data.openbudgets.eu/resource/dataset/budget-naousa-revenue-2016/codelist/00/1314> .
+
+<http://data.openbudgets.eu/resource/dataset/budget-naousa-revenue-2016/codelist/00/1314.016> a skos:Concept ;
+	skos:inScheme naousa-br2016-dsd:codelist ;
+	skos:notation "1314.016" ;
+	skos:prefLabel "Επιχορήγηση προγράμματος ΘΗΣΕΑ για το έργο Αποκατάσταση ΧΑΔΑ Αρκοχωρίου (Σιμάρι)" ;
+	skos:broader <http://data.openbudgets.eu/resource/dataset/budget-naousa-revenue-2016/codelist/00/1314> .
+
+<http://data.openbudgets.eu/resource/dataset/budget-naousa-revenue-2016/codelist/00/1314.017> a skos:Concept ;
+	skos:inScheme naousa-br2016-dsd:codelist ;
+	skos:notation "1314.017" ;
+	skos:prefLabel "Επιχορήγηση προγράμματος ΘΗΣΕΑ για το έργο Κατασκευή και τοποθέτηση υδροκινητήριου τροχού)" ;
+	skos:broader <http://data.openbudgets.eu/resource/dataset/budget-naousa-revenue-2016/codelist/00/1314> .
+
+<http://data.openbudgets.eu/resource/dataset/budget-naousa-revenue-2016/codelist/00/1314.018> a skos:Concept ;
+	skos:inScheme naousa-br2016-dsd:codelist ;
+	skos:notation "1314.018" ;
+	skos:prefLabel "Επιχορήγηση πραγράμματος ΘΗΣΕΑ για το έργο Πλακοστρώσεις πόλης Νάουσας και Δ.Δ." ;
+	skos:broader <http://data.openbudgets.eu/resource/dataset/budget-naousa-revenue-2016/codelist/00/1314> .
+
+<http://data.openbudgets.eu/resource/dataset/budget-naousa-revenue-2016/codelist/00/1314.019> a skos:Concept ;
+	skos:inScheme naousa-br2016-dsd:codelist ;
+	skos:notation "1314.019" ;
+	skos:prefLabel "Επιχορήγηση προγράμματος ΘΗΣΕΑ για το έργο  Οδοποιία Δ.Δ. Γιαννακοχωρίου" ;
+	skos:broader <http://data.openbudgets.eu/resource/dataset/budget-naousa-revenue-2016/codelist/00/1314> .
+
+<http://data.openbudgets.eu/resource/dataset/budget-naousa-revenue-2016/codelist/00/1314.020> a skos:Concept ;
+	skos:inScheme naousa-br2016-dsd:codelist ;
+	skos:notation "1314.020" ;
+	skos:prefLabel "Επιχορήγηση προγράμματος ΘΗΣΕΑ για το έργο  Οδοποιία Δ.Δ. Ροδοχωρίου" ;
+	skos:broader <http://data.openbudgets.eu/resource/dataset/budget-naousa-revenue-2016/codelist/00/1314> .
+
+<http://data.openbudgets.eu/resource/dataset/budget-naousa-revenue-2016/codelist/00/1314.021> a skos:Concept ;
+	skos:inScheme naousa-br2016-dsd:codelist ;
+	skos:notation "1314.021" ;
+	skos:prefLabel "Επιχορήγηση προγράμματος ΘΗΣΕΑ για το έργο Αγροτική Οδοποιία" ;
+	skos:broader <http://data.openbudgets.eu/resource/dataset/budget-naousa-revenue-2016/codelist/00/1314> .
+
+<http://data.openbudgets.eu/resource/dataset/budget-naousa-revenue-2016/codelist/00/1314.022> a skos:Concept ;
+	skos:inScheme naousa-br2016-dsd:codelist ;
+	skos:notation "1314.022" ;
+	skos:prefLabel "Επιχορήγηση προγράμματος ΘΗΣΕΑ για την αγορά οικοπέδου για πάρκιγκ στο Δ.Δ. Αρκοχωρίου" ;
+	skos:broader <http://data.openbudgets.eu/resource/dataset/budget-naousa-revenue-2016/codelist/00/1314> .
+
+<http://data.openbudgets.eu/resource/dataset/budget-naousa-revenue-2016/codelist/00/1314.023> a skos:Concept ;
+	skos:inScheme naousa-br2016-dsd:codelist ;
+	skos:notation "1314.023" ;
+	skos:prefLabel "Επιχορήγηση προγράμματος ΘΗΣΕΑ για το έργο Ασφαλτοστρώσεις οδών επέκτασης πόλεως Νάουσας" ;
+	skos:broader <http://data.openbudgets.eu/resource/dataset/budget-naousa-revenue-2016/codelist/00/1314> .
+
+<http://data.openbudgets.eu/resource/dataset/budget-naousa-revenue-2016/codelist/00/1314.024> a skos:Concept ;
+	skos:inScheme naousa-br2016-dsd:codelist ;
+	skos:notation "1314.024" ;
+	skos:prefLabel "Επιχορήγηση Υπουργείου Οικονομίας και Οικονομικών για δράσεις ενημέρωσης και ευαισθητοποίησης των πολιτών για την ψηφιακή Δημόσια Διοίκηση στο Δήμο Νάουσας" ;
+	skos:broader <http://data.openbudgets.eu/resource/dataset/budget-naousa-revenue-2016/codelist/00/1314> .
+
+<http://data.openbudgets.eu/resource/dataset/budget-naousa-revenue-2016/codelist/00/1314.025> a skos:Concept ;
+	skos:inScheme naousa-br2016-dsd:codelist ;
+	skos:notation "1314.025" ;
+	skos:prefLabel "Eπιχορήγηση προγράμματος ΘΗΣΕΑ για την αγορά οικοπέδου για την στέγαση του Ιστορικού και Λαογραφικού Μουσείου Νάουσας" ;
+	skos:broader <http://data.openbudgets.eu/resource/dataset/budget-naousa-revenue-2016/codelist/00/1314> .
+
+<http://data.openbudgets.eu/resource/dataset/budget-naousa-revenue-2016/codelist/00/1314.026> a skos:Concept ;
+	skos:inScheme naousa-br2016-dsd:codelist ;
+	skos:notation "1314.026" ;
+	skos:prefLabel "Επιχορήγηση ΘΗΣΕΑ για Κατασκευή πάρκινγκ στο Δ.Δ. Αρκοχωρίου" ;
+	skos:broader <http://data.openbudgets.eu/resource/dataset/budget-naousa-revenue-2016/codelist/00/1314> .
+
+<http://data.openbudgets.eu/resource/dataset/budget-naousa-revenue-2016/codelist/00/1314.027> a skos:Concept ;
+	skos:inScheme naousa-br2016-dsd:codelist ;
+	skos:notation "1314.027" ;
+	skos:prefLabel "Επιχορήγηση ΘΗΣΕΑ για το έργο Διαμόρφωση οδού Ελευθερίας Δ.Δ. Αρκοχωρίου" ;
+	skos:broader <http://data.openbudgets.eu/resource/dataset/budget-naousa-revenue-2016/codelist/00/1314> .
+
+<http://data.openbudgets.eu/resource/dataset/budget-naousa-revenue-2016/codelist/00/1314.028> a skos:Concept ;
+	skos:inScheme naousa-br2016-dsd:codelist ;
+	skos:notation "1314.028" ;
+	skos:prefLabel "Επιχορήγηση ΘΗΣΕΑ για το έργο Βελτίωση - Ασφαλτόστρωση οδών Δ.Δ. Στενημάχου" ;
+	skos:broader <http://data.openbudgets.eu/resource/dataset/budget-naousa-revenue-2016/codelist/00/1314> .
+
+<http://data.openbudgets.eu/resource/dataset/budget-naousa-revenue-2016/codelist/00/1314.029> a skos:Concept ;
+	skos:inScheme naousa-br2016-dsd:codelist ;
+	skos:notation "1314.029" ;
+	skos:prefLabel "Επιχορήγηση ΘΗΣΕΑ για το έργο Διαμόρφωση κοινόχρηστων χώρων ιστορικού κέντρου Νάουσας" ;
+	skos:broader <http://data.openbudgets.eu/resource/dataset/budget-naousa-revenue-2016/codelist/00/1314> .
+
+<http://data.openbudgets.eu/resource/dataset/budget-naousa-revenue-2016/codelist/00/1314.030> a skos:Concept ;
+	skos:inScheme naousa-br2016-dsd:codelist ;
+	skos:notation "1314.030" ;
+	skos:prefLabel "Επιχορήγηση προγράμματος ΘΗΣΕΑ για την Κατασκευή Τεχνικού στη θέση Λέφα στο Δ.Δ. Στενημάχου (56.000 ευρώ ΘΗΣΕΑΣ και 34.000 ΣΑΤΑ)" ;
+	skos:broader <http://data.openbudgets.eu/resource/dataset/budget-naousa-revenue-2016/codelist/00/1314> .
+
+<http://data.openbudgets.eu/resource/dataset/budget-naousa-revenue-2016/codelist/00/1314.031> a skos:Concept ;
+	skos:inScheme naousa-br2016-dsd:codelist ;
+	skos:notation "1314.031" ;
+	skos:prefLabel "Επιχορήγηση από το πρόγραμμα ΘΗΣΕΑΣ για την Παροχή υπηρεσιών σύνταξης φακέλου για κατάθεση πρότασης στο πρόγραμμα ΕΞΟΙΚΟΝΟΜΩ" ;
+	skos:broader <http://data.openbudgets.eu/resource/dataset/budget-naousa-revenue-2016/codelist/00/1314> .
+
+<http://data.openbudgets.eu/resource/dataset/budget-naousa-revenue-2016/codelist/00/1314.032> a skos:Concept ;
+	skos:inScheme naousa-br2016-dsd:codelist ;
+	skos:notation "1314.032" ;
+	skos:prefLabel "Επιχορήγηση προγράμματος ΘΗΣΕΑ για την ΑΠΟΚΑΤΑΣΤΑΣΗ ΖΗΜΙΩΝ ΣΤΟ ΟΔΙΚΟ ΚΑΙ ΛΟΙΠΑ ΔΙΚΤΥΑ ΤΟΥ ΔΗΜΟΥ" ;
+	skos:broader <http://data.openbudgets.eu/resource/dataset/budget-naousa-revenue-2016/codelist/00/1314> .
+
+<http://data.openbudgets.eu/resource/dataset/budget-naousa-revenue-2016/codelist/00/1314.033> a skos:Concept ;
+	skos:inScheme naousa-br2016-dsd:codelist ;
+	skos:notation "1314.033" ;
+	skos:prefLabel "Επιχορήγηση προγράμματος ΘΗΣΕΑ για την ΜΕΛΕΤΗ ΔΙΑΧΕΙΡΗΣΗΣ ΥΔΑΤΙΝΩΝ ΠΟΡΩΝ ΛΕΚΑΝΗΣ ΑΠΟΡΡΟΗΣ ΒΕΡΜΙΟΥ" ;
+	skos:broader <http://data.openbudgets.eu/resource/dataset/budget-naousa-revenue-2016/codelist/00/1314> .
+
+<http://data.openbudgets.eu/resource/dataset/budget-naousa-revenue-2016/codelist/00/1314.034> a skos:Concept ;
+	skos:inScheme naousa-br2016-dsd:codelist ;
+	skos:notation "1314.034" ;
+	skos:prefLabel "Επιχορήγηση από το πρόγραμμα ΘΗΣΕΑΣ για το έργο ΒΕΛΤΙΩΣΗ ΚΑΙ ΑΣΦΑΛΤΟΣΤΡΩΣΗ ΟΔΩΝ ΔΗΜΟΥ ΝΑΟΥΣΑΣ" ;
+	skos:broader <http://data.openbudgets.eu/resource/dataset/budget-naousa-revenue-2016/codelist/00/1314> .
+
+<http://data.openbudgets.eu/resource/dataset/budget-naousa-revenue-2016/codelist/00/1314.035> a skos:Concept ;
+	skos:inScheme naousa-br2016-dsd:codelist ;
+	skos:notation "1314.035" ;
+	skos:prefLabel "Επιχορήγηση από το πρόγραμμα ΘΗΣΕΑΣ για το έργο ΚΑΤΑΣΚΕΥΗ ΜΝΗΜΕΙΟΥ ΘΥΣΙΑΣ ΝΑΟΥΣΑΙΩΝ ΗΡΩΩΝ ΣΤΟ ΔΗΜΟΤΙΚΟ ΠΑΡΚΟ ΝΑΟΥΣΑΣ" ;
+	skos:broader <http://data.openbudgets.eu/resource/dataset/budget-naousa-revenue-2016/codelist/00/1314> .
+
+<http://data.openbudgets.eu/resource/dataset/budget-naousa-revenue-2016/codelist/00/1314.036> a skos:Concept ;
+	skos:inScheme naousa-br2016-dsd:codelist ;
+	skos:notation "1314.036" ;
+	skos:prefLabel "Επιχορήγηση για την μελέτη Κατασκευής φράγματος στη θέση ΓΚΛΟΜΠΑ - (435.000 ΘΗΣΕΑΣ και 27.140,87 ΙΔΙΑ ΕΣΟΔΑ)" ;
+	skos:broader <http://data.openbudgets.eu/resource/dataset/budget-naousa-revenue-2016/codelist/00/1314> .
+
+<http://data.openbudgets.eu/resource/dataset/budget-naousa-revenue-2016/codelist/00/1314.037> a skos:Concept ;
+	skos:inScheme naousa-br2016-dsd:codelist ;
+	skos:notation "1314.037" ;
+	skos:prefLabel "Επιχορήγηση προγράμματος ΘΗΣΕΑ για το έργο Κυκλοφοριακή μελέτη και οριστική μελέτη τριών ισόπεδων κόμβων πόλης Νάουσας" ;
+	skos:broader <http://data.openbudgets.eu/resource/dataset/budget-naousa-revenue-2016/codelist/00/1314> .
+
+<http://data.openbudgets.eu/resource/dataset/budget-naousa-revenue-2016/codelist/00/1314.038> a skos:Concept ;
+	skos:inScheme naousa-br2016-dsd:codelist ;
+	skos:notation "1314.038" ;
+	skos:prefLabel "Επιχορήγηση προγράμματος ΘΗΣΕΑ για την διοργάνωση των Αποκριάτικων Εκδηλώσεων  Νάουσα Αποκρικά 2013" ;
+	skos:broader <http://data.openbudgets.eu/resource/dataset/budget-naousa-revenue-2016/codelist/00/1314> .
+
+<http://data.openbudgets.eu/resource/dataset/budget-naousa-revenue-2016/codelist/00/1314.601> a skos:Concept ;
+	skos:inScheme naousa-br2016-dsd:codelist ;
+	skos:notation "1314.601" ;
+	skos:prefLabel "Επιχορηγήσεις από το πρόγραμμα ΘΗΣΕΑΣ (άρθρο 6-12 Ν. 3274/2001)" ;
+	skos:broader <http://data.openbudgets.eu/resource/dataset/budget-naousa-revenue-2016/codelist/00/1314> .
+
+<http://data.openbudgets.eu/resource/dataset/budget-naousa-revenue-2016/codelist/00/1314.701> a skos:Concept ;
+	skos:inScheme naousa-br2016-dsd:codelist ;
+	skos:notation "1314.701" ;
+	skos:prefLabel "Επιχορηγήσεις από το πρόγραμμα ΘΗΣΕΑΣ (άρθρο 6-12 Ν. 3274/2001) Δ.Ε. Ειρηνούπολης" ;
+	skos:broader <http://data.openbudgets.eu/resource/dataset/budget-naousa-revenue-2016/codelist/00/1314> .
+
+<http://data.openbudgets.eu/resource/dataset/budget-naousa-revenue-2016/codelist/00/1314.702> a skos:Concept ;
+	skos:inScheme naousa-br2016-dsd:codelist ;
+	skos:notation "1314.702" ;
+	skos:prefLabel "Αποκατάσταση χώρου ανεξέλεγκτης διάθεσης απορριμμάτων Δ.Δ. Ζερβοχωρίου -θέση Αρχάγγελος - Βοσκότοπος - Δ.Ε. Ειρηνούπολης" ;
+	skos:broader <http://data.openbudgets.eu/resource/dataset/budget-naousa-revenue-2016/codelist/00/1314> .
+
+<http://data.openbudgets.eu/resource/dataset/budget-naousa-revenue-2016/codelist/00/1314.703> a skos:Concept ;
+	skos:inScheme naousa-br2016-dsd:codelist ;
+	skos:notation "1314.703" ;
+	skos:prefLabel "Μελέτη εσωτερικών δικτύων αποχέτευσης Δ.Δ. Αγγελοχωρίου του Δήμου Ειρηνούπολης" ;
+	skos:broader <http://data.openbudgets.eu/resource/dataset/budget-naousa-revenue-2016/codelist/00/1314> .
+
+<http://data.openbudgets.eu/resource/dataset/budget-naousa-revenue-2016/codelist/00/1314.704> a skos:Concept ;
+	skos:inScheme naousa-br2016-dsd:codelist ;
+	skos:notation "1314.704" ;
+	skos:prefLabel "Κατασκευή αποδυτηρίων στο ποδοσφαιρικό γήπεδο Δ.Δ. Αγγελοχωρίου του Δήμου Ειρηνούπολης" ;
+	skos:broader <http://data.openbudgets.eu/resource/dataset/budget-naousa-revenue-2016/codelist/00/1314> .
+
+<http://data.openbudgets.eu/resource/dataset/budget-naousa-revenue-2016/codelist/00/1319> a skos:Concept ;
+	skos:inScheme naousa-br2016-dsd:codelist ;
+	skos:narrower <http://data.openbudgets.eu/resource/dataset/budget-naousa-revenue-2016/codelist/00/1319.601> , <http://data.openbudgets.eu/resource/dataset/budget-naousa-revenue-2016/codelist/00/1319.602> , <http://data.openbudgets.eu/resource/dataset/budget-naousa-revenue-2016/codelist/00/1319.603> , <http://data.openbudgets.eu/resource/dataset/budget-naousa-revenue-2016/codelist/00/1319.604> ;
+	skos:notation "1319" ;
+	skos:prefLabel "Λοιπά ειδικά προγράμματα" ;
+	skos:broader naousa-br2016-codelist:00 ;
+	skos:broadMatch kae-ota-es14:1319 .
+
+<http://data.openbudgets.eu/resource/dataset/budget-naousa-revenue-2016/codelist/00/1319.601> a skos:Concept ;
+	skos:inScheme naousa-br2016-dsd:codelist ;
+	skos:notation "1319.601" ;
+	skos:prefLabel "Ανάπτυξη ευρυζωνικού δικτύου τοπικής προστασίας στο Δήμο Ανθεμίων Ν. Ημαθίας" ;
+	skos:broader <http://data.openbudgets.eu/resource/dataset/budget-naousa-revenue-2016/codelist/00/1319> .
+
+<http://data.openbudgets.eu/resource/dataset/budget-naousa-revenue-2016/codelist/00/1319.602> a skos:Concept ;
+	skos:inScheme naousa-br2016-dsd:codelist ;
+	skos:notation "1319.602" ;
+	skos:prefLabel "Επιχορήγηση από Γ.Γ.Α (τάφος αθλητών)" ;
+	skos:broader <http://data.openbudgets.eu/resource/dataset/budget-naousa-revenue-2016/codelist/00/1319> .
+
+<http://data.openbudgets.eu/resource/dataset/budget-naousa-revenue-2016/codelist/00/1319.603> a skos:Concept ;
+	skos:inScheme naousa-br2016-dsd:codelist ;
+	skos:notation "1319.603" ;
+	skos:prefLabel "Επιχορήγηση για την εκβάθυνση νέας δεξαμενής συγκέντρωσης νερού για αρδευτικούς σκοπούς στο Δ.Δ. Μαρίνας Δήμου Ανθεμίων" ;
+	skos:broader <http://data.openbudgets.eu/resource/dataset/budget-naousa-revenue-2016/codelist/00/1319> .
+
+<http://data.openbudgets.eu/resource/dataset/budget-naousa-revenue-2016/codelist/00/1319.604> a skos:Concept ;
+	skos:inScheme naousa-br2016-dsd:codelist ;
+	skos:notation "1319.604" ;
+	skos:prefLabel "Επιχορήγηση για εργασίες συντήρησης στην παλιά δεξαμενή συγκέντρωσης νερού για αρδευτικούς σκοπούς στο Δ.Δ. Μαρίνας Δήμου Ανθεμίων" ;
+	skos:broader <http://data.openbudgets.eu/resource/dataset/budget-naousa-revenue-2016/codelist/00/1319> .
+
+<http://data.openbudgets.eu/resource/dataset/budget-naousa-revenue-2016/codelist/00/1321> a skos:Concept ;
+	skos:inScheme naousa-br2016-dsd:codelist ;
+	skos:narrower <http://data.openbudgets.eu/resource/dataset/budget-naousa-revenue-2016/codelist/00/1321.001> , <http://data.openbudgets.eu/resource/dataset/budget-naousa-revenue-2016/codelist/00/1321.002> , <http://data.openbudgets.eu/resource/dataset/budget-naousa-revenue-2016/codelist/00/1321.003> , <http://data.openbudgets.eu/resource/dataset/budget-naousa-revenue-2016/codelist/00/1321.004> , <http://data.openbudgets.eu/resource/dataset/budget-naousa-revenue-2016/codelist/00/1321.005> , <http://data.openbudgets.eu/resource/dataset/budget-naousa-revenue-2016/codelist/00/1321.006> , <http://data.openbudgets.eu/resource/dataset/budget-naousa-revenue-2016/codelist/00/1321.008> , <http://data.openbudgets.eu/resource/dataset/budget-naousa-revenue-2016/codelist/00/1321.009> , <http://data.openbudgets.eu/resource/dataset/budget-naousa-revenue-2016/codelist/00/1321.011> , <http://data.openbudgets.eu/resource/dataset/budget-naousa-revenue-2016/codelist/00/1321.012> , <http://data.openbudgets.eu/resource/dataset/budget-naousa-revenue-2016/codelist/00/1321.013> , <http://data.openbudgets.eu/resource/dataset/budget-naousa-revenue-2016/codelist/00/1321.014> , <http://data.openbudgets.eu/resource/dataset/budget-naousa-revenue-2016/codelist/00/1321.015> , <http://data.openbudgets.eu/resource/dataset/budget-naousa-revenue-2016/codelist/00/1321.016> , <http://data.openbudgets.eu/resource/dataset/budget-naousa-revenue-2016/codelist/00/1321.017> , <http://data.openbudgets.eu/resource/dataset/budget-naousa-revenue-2016/codelist/00/1321.018> , <http://data.openbudgets.eu/resource/dataset/budget-naousa-revenue-2016/codelist/00/1321.019> , <http://data.openbudgets.eu/resource/dataset/budget-naousa-revenue-2016/codelist/00/1321.020> ;
+	skos:notation "1321" ;
+	skos:prefLabel "Χρηματοδοτήσεις από Περιφερειακά επιχειρησιακά προγράμματα" ;
+	skos:broader naousa-br2016-codelist:00 ;
+	skos:broadMatch kae-ota-es14:1321 .
+
+<http://data.openbudgets.eu/resource/dataset/budget-naousa-revenue-2016/codelist/00/1321.001> a skos:Concept ;
+	skos:inScheme naousa-br2016-dsd:codelist ;
+	skos:notation "1321.001" ;
+	skos:prefLabel "Επιχ/ση ΠΕΠ/ΑΡΑΠΙΤΣΑ για υπηρεσίες Τεχνικού συμβούλου έργου : Ολοκληρωμένες δράσεις αστικής ανάπτυξης Δήμου Νάουσας" ;
+	skos:broader <http://data.openbudgets.eu/resource/dataset/budget-naousa-revenue-2016/codelist/00/1321> .
+
+<http://data.openbudgets.eu/resource/dataset/budget-naousa-revenue-2016/codelist/00/1321.002> a skos:Concept ;
+	skos:inScheme naousa-br2016-dsd:codelist ;
+	skos:notation "1321.002" ;
+	skos:prefLabel "Επιχορήγηση ΠΕΠ/ΑΡΑΠΙΤΣΑ για κατάρτιση στελεχών προβολής του παραδοσιακού και τουριστικού χαρακτήρα της περιοχής" ;
+	skos:broader <http://data.openbudgets.eu/resource/dataset/budget-naousa-revenue-2016/codelist/00/1321> .
+
+<http://data.openbudgets.eu/resource/dataset/budget-naousa-revenue-2016/codelist/00/1321.003> a skos:Concept ;
+	skos:inScheme naousa-br2016-dsd:codelist ;
+	skos:notation "1321.003" ;
+	skos:prefLabel "Επιχορήγηση ΠΕΠ/ΑΡΑΠΙΤΣΑ για επιμόρφωση στελεχών διοίκησης μικρομεσαίων τουριστικών επιχειρήσεων" ;
+	skos:broader <http://data.openbudgets.eu/resource/dataset/budget-naousa-revenue-2016/codelist/00/1321> .
+
+<http://data.openbudgets.eu/resource/dataset/budget-naousa-revenue-2016/codelist/00/1321.004> a skos:Concept ;
+	skos:inScheme naousa-br2016-dsd:codelist ;
+	skos:notation "1321.004" ;
+	skos:prefLabel "Επιχορήγηση ΠΕΠ/ΑΡΑΠΙΤΣΑ για κατάρτιση ειδικών ομάδων πληθυσμού (παλλινοστούντων-μεταναστών) με στόχο την εκμάθηση της ελληνικής γλώσσας και ιστορίας" ;
+	skos:broader <http://data.openbudgets.eu/resource/dataset/budget-naousa-revenue-2016/codelist/00/1321> .
+
+<http://data.openbudgets.eu/resource/dataset/budget-naousa-revenue-2016/codelist/00/1321.005> a skos:Concept ;
+	skos:inScheme naousa-br2016-dsd:codelist ;
+	skos:notation "1321.005" ;
+	skos:prefLabel "Επιχορήγηση ΠΕΠ/ΑΡΑΠΙΤΣΑ για κατάρτιση εργατοτεχνιτών για αναπλάσεις περιοχών" ;
+	skos:broader <http://data.openbudgets.eu/resource/dataset/budget-naousa-revenue-2016/codelist/00/1321> .
+
+<http://data.openbudgets.eu/resource/dataset/budget-naousa-revenue-2016/codelist/00/1321.006> a skos:Concept ;
+	skos:inScheme naousa-br2016-dsd:codelist ;
+	skos:notation "1321.006" ;
+	skos:prefLabel "Επιχορήγηση ΠΕΠ/ΑΡΑΠΙΤΣΑ για Διαμορφώσεις φυσικών διαδρομών εντός της κοίτης του ποταμού Αράπιτσα" ;
+	skos:broader <http://data.openbudgets.eu/resource/dataset/budget-naousa-revenue-2016/codelist/00/1321> .
+
+<http://data.openbudgets.eu/resource/dataset/budget-naousa-revenue-2016/codelist/00/1321.008> a skos:Concept ;
+	skos:inScheme naousa-br2016-dsd:codelist ;
+	skos:notation "1321.008" ;
+	skos:prefLabel "Επιχορήγηση για το έργο 'Διαμόρφωση περιβάλλοντος χώρου πηγής Αγ.Παύλου Νάουσας(ΠΕΠ/ΟΠΑΑΧ ΑΝ.ΒΕΡΜΙΟΥ)'" ;
+	skos:broader <http://data.openbudgets.eu/resource/dataset/budget-naousa-revenue-2016/codelist/00/1321> .
+
+<http://data.openbudgets.eu/resource/dataset/budget-naousa-revenue-2016/codelist/00/1321.009> a skos:Concept ;
+	skos:inScheme naousa-br2016-dsd:codelist ;
+	skos:notation "1321.009" ;
+	skos:prefLabel "Επιχορήγηση για το έργο 'Κατασκευή αρδευτικής υδατοδεξαμενής στον Αγ.Παύλο Νάουσας(ΠΕΠ/ΟΠΑΑΧ ΑΝ.ΒΕΡΜΙΟΥ)" ;
+	skos:broader <http://data.openbudgets.eu/resource/dataset/budget-naousa-revenue-2016/codelist/00/1321> .
+
+<http://data.openbudgets.eu/resource/dataset/budget-naousa-revenue-2016/codelist/00/1321.011> a skos:Concept ;
+	skos:inScheme naousa-br2016-dsd:codelist ;
+	skos:notation "1321.011" ;
+	skos:prefLabel "Επιχορήγηση ΠΕΠ/ΑΡΑΠΙΤΣΑ για αποκατάσταση-συντήρηση και επανάχρηση του κτιρίου ΠΙΚΠΑ σε βρεφονηπιακό σταθμό με αυλή" ;
+	skos:broader <http://data.openbudgets.eu/resource/dataset/budget-naousa-revenue-2016/codelist/00/1321> .
+
+<http://data.openbudgets.eu/resource/dataset/budget-naousa-revenue-2016/codelist/00/1321.012> a skos:Concept ;
+	skos:inScheme naousa-br2016-dsd:codelist ;
+	skos:notation "1321.012" ;
+	skos:prefLabel "Επιχορήγηση ΠΕΠ/ΑΡΑΠΙΤΣΑ για κτίριο διοίκησης και διαχείρισης του έργου στην Βέτλανς και δημιουργία εκθεσιακού χώρου" ;
+	skos:broader <http://data.openbudgets.eu/resource/dataset/budget-naousa-revenue-2016/codelist/00/1321> .
+
+<http://data.openbudgets.eu/resource/dataset/budget-naousa-revenue-2016/codelist/00/1321.013> a skos:Concept ;
+	skos:inScheme naousa-br2016-dsd:codelist ;
+	skos:notation "1321.013" ;
+	skos:prefLabel "Επιχορήγηση ΠΕΠ/ΑΡΑΠΙΤΣΑ για το έργο: Επεμβάσεις στο δίκτυο των πεζοδρόμων εκατέρωθεν του ποταμού." ;
+	skos:broader <http://data.openbudgets.eu/resource/dataset/budget-naousa-revenue-2016/codelist/00/1321> .
+
+<http://data.openbudgets.eu/resource/dataset/budget-naousa-revenue-2016/codelist/00/1321.014> a skos:Concept ;
+	skos:inScheme naousa-br2016-dsd:codelist ;
+	skos:notation "1321.014" ;
+	skos:prefLabel "Επιχορήγηση ΠΕΠ/ΟΠΑΑΧ ΑΝ.ΒΕΡΜΙΟΥ για το έργο 'Ολοκληρωμένος σχεδιασμός ανάπτυξης οικισμού Αρκοχωρίου'" ;
+	skos:broader <http://data.openbudgets.eu/resource/dataset/budget-naousa-revenue-2016/codelist/00/1321> .
+
+<http://data.openbudgets.eu/resource/dataset/budget-naousa-revenue-2016/codelist/00/1321.015> a skos:Concept ;
+	skos:inScheme naousa-br2016-dsd:codelist ;
+	skos:notation "1321.015" ;
+	skos:prefLabel "Επιχ/ση ΠΕΠ/ΑΡΑΠΙΤΣΑ για το έργο ¨Επεμβάσεις στο κτίριο του ΚΑΠΗ΄" ;
+	skos:broader <http://data.openbudgets.eu/resource/dataset/budget-naousa-revenue-2016/codelist/00/1321> .
+
+<http://data.openbudgets.eu/resource/dataset/budget-naousa-revenue-2016/codelist/00/1321.016> a skos:Concept ;
+	skos:inScheme naousa-br2016-dsd:codelist ;
+	skos:notation "1321.016" ;
+	skos:prefLabel "Επιχορήγηση ΠΕΠ ΑΡΑΠΙΤΣΑ για το έργο Ανακατασκευή και θέση σε λειτουργία του υφιστάμενου υδροηλεκτρικού σταθμού Βέτλανς" ;
+	skos:broader <http://data.openbudgets.eu/resource/dataset/budget-naousa-revenue-2016/codelist/00/1321> .
+
+<http://data.openbudgets.eu/resource/dataset/budget-naousa-revenue-2016/codelist/00/1321.017> a skos:Concept ;
+	skos:inScheme naousa-br2016-dsd:codelist ;
+	skos:notation "1321.017" ;
+	skos:prefLabel "Επιχορήγηση ΠΕΠ ΑΡΑΠΙΤΣΑ για το έργο  Διαμ/σεις στην περιοχή του  Δημ.Πάρκου &στον υπαίθριο χώρο του Πρ.Βιομ/κού Συγκ/τος ΒΕΤΛΑΝΣ" ;
+	skos:broader <http://data.openbudgets.eu/resource/dataset/budget-naousa-revenue-2016/codelist/00/1321> .
+
+<http://data.openbudgets.eu/resource/dataset/budget-naousa-revenue-2016/codelist/00/1321.018> a skos:Concept ;
+	skos:inScheme naousa-br2016-dsd:codelist ;
+	skos:notation "1321.018" ;
+	skos:prefLabel "Επιχ/ση ΠΕΠ/ΑΡΑΠΙΤΣΑ για το έργο ¨Επεμβάσεις στην περιοχή των Αγίων Πάντων και Υπαπαντής Νάουσας" ;
+	skos:broader <http://data.openbudgets.eu/resource/dataset/budget-naousa-revenue-2016/codelist/00/1321> .
+
+<http://data.openbudgets.eu/resource/dataset/budget-naousa-revenue-2016/codelist/00/1321.019> a skos:Concept ;
+	skos:inScheme naousa-br2016-dsd:codelist ;
+	skos:notation "1321.019" ;
+	skos:prefLabel "Επιχορήγηση ΠΕΠ/ΑΡΑΠΙΤΣΑ για Δράση συμβουλευτικής στήριξης σε ανέργους άνδρες και γυναίκες, καθώς και σε ΑΜΕΑ στην περιοχή της ολοκληρωμένης παρέμβασης του σχεδίου ολοκληρωμένο πρόγραμμα αστικής ανάπτυξης περιοχής ποταμού Αράπιτσα Δ.Νάουσας." ;
+	skos:broader <http://data.openbudgets.eu/resource/dataset/budget-naousa-revenue-2016/codelist/00/1321> .
+
+<http://data.openbudgets.eu/resource/dataset/budget-naousa-revenue-2016/codelist/00/1321.020> a skos:Concept ;
+	skos:inScheme naousa-br2016-dsd:codelist ;
+	skos:notation "1321.020" ;
+	skos:prefLabel "Επιχ/ση ΠΕΠ/ΑΡΑΠΙΤΣΑ για το έργο ¨Αναστήλωση και επανάχρηση διατηρητέου κτιρίου ΥΔΡΟΜΗΛΟΥ ΜΑΚΗ¨" ;
+	skos:broader <http://data.openbudgets.eu/resource/dataset/budget-naousa-revenue-2016/codelist/00/1321> .
+
+<http://data.openbudgets.eu/resource/dataset/budget-naousa-revenue-2016/codelist/00/1322> a skos:Concept ;
+	skos:inScheme naousa-br2016-dsd:codelist ;
+	skos:narrower <http://data.openbudgets.eu/resource/dataset/budget-naousa-revenue-2016/codelist/00/1322.001> , <http://data.openbudgets.eu/resource/dataset/budget-naousa-revenue-2016/codelist/00/1322.003> , <http://data.openbudgets.eu/resource/dataset/budget-naousa-revenue-2016/codelist/00/1322.004> , <http://data.openbudgets.eu/resource/dataset/budget-naousa-revenue-2016/codelist/00/1322.005> , <http://data.openbudgets.eu/resource/dataset/budget-naousa-revenue-2016/codelist/00/1322.007> , <http://data.openbudgets.eu/resource/dataset/budget-naousa-revenue-2016/codelist/00/1322.008> , <http://data.openbudgets.eu/resource/dataset/budget-naousa-revenue-2016/codelist/00/1322.009> , <http://data.openbudgets.eu/resource/dataset/budget-naousa-revenue-2016/codelist/00/1322.010> , <http://data.openbudgets.eu/resource/dataset/budget-naousa-revenue-2016/codelist/00/1322.011> , <http://data.openbudgets.eu/resource/dataset/budget-naousa-revenue-2016/codelist/00/1322.012> , <http://data.openbudgets.eu/resource/dataset/budget-naousa-revenue-2016/codelist/00/1322.013> , <http://data.openbudgets.eu/resource/dataset/budget-naousa-revenue-2016/codelist/00/1322.014> , <http://data.openbudgets.eu/resource/dataset/budget-naousa-revenue-2016/codelist/00/1322.015> , <http://data.openbudgets.eu/resource/dataset/budget-naousa-revenue-2016/codelist/00/1322.016> , <http://data.openbudgets.eu/resource/dataset/budget-naousa-revenue-2016/codelist/00/1322.017> , <http://data.openbudgets.eu/resource/dataset/budget-naousa-revenue-2016/codelist/00/1322.018> , <http://data.openbudgets.eu/resource/dataset/budget-naousa-revenue-2016/codelist/00/1322.019> , <http://data.openbudgets.eu/resource/dataset/budget-naousa-revenue-2016/codelist/00/1322.020> , <http://data.openbudgets.eu/resource/dataset/budget-naousa-revenue-2016/codelist/00/1322.021> , <http://data.openbudgets.eu/resource/dataset/budget-naousa-revenue-2016/codelist/00/1322.022> , <http://data.openbudgets.eu/resource/dataset/budget-naousa-revenue-2016/codelist/00/1322.023> , <http://data.openbudgets.eu/resource/dataset/budget-naousa-revenue-2016/codelist/00/1322.024> , <http://data.openbudgets.eu/resource/dataset/budget-naousa-revenue-2016/codelist/00/1322.025> , <http://data.openbudgets.eu/resource/dataset/budget-naousa-revenue-2016/codelist/00/1322.605> , <http://data.openbudgets.eu/resource/dataset/budget-naousa-revenue-2016/codelist/00/1322.705> ;
+	skos:notation "1322" ;
+	skos:prefLabel "Χρηματοδοτήσεις από Κεντρικούς φορείς (μέσω του εθνικού τμήματος του Π.Δ.Ε.)" ;
+	skos:broader naousa-br2016-codelist:00 ;
+	skos:broadMatch kae-ota-es14:1322 .
+
+<http://data.openbudgets.eu/resource/dataset/budget-naousa-revenue-2016/codelist/00/1322.001> a skos:Concept ;
+	skos:inScheme naousa-br2016-dsd:codelist ;
+	skos:notation "1322.001" ;
+	skos:prefLabel "Επιχορήγηση για κατασκευή κολυμβητηρίου - ΑΘΗΝΑ 2004- Ολοκλήρωση κλειστού κολυμβητηρίου στον Αγ.Νικόλαο Νάουσας" ;
+	skos:broader <http://data.openbudgets.eu/resource/dataset/budget-naousa-revenue-2016/codelist/00/1322> .
+
+<http://data.openbudgets.eu/resource/dataset/budget-naousa-revenue-2016/codelist/00/1322.003> a skos:Concept ;
+	skos:inScheme naousa-br2016-dsd:codelist ;
+	skos:notation "1322.003" ;
+	skos:prefLabel "ΕΠΙΧΟΡΉΓΗΣΗ ΓΙΑ ΤΗΝ ΣΥΝΤΑΞΗ ΓΕΝΙΚΟΥ ΠΟΛΕΟΔΟΜΙΚΟΥ ΣΧΕΔΙΑΣΜΟΥ ΔΗΜΟΥ ΝΑΟΥΣΑΣ" ;
+	skos:broader <http://data.openbudgets.eu/resource/dataset/budget-naousa-revenue-2016/codelist/00/1322> .
+
+<http://data.openbudgets.eu/resource/dataset/budget-naousa-revenue-2016/codelist/00/1322.004> a skos:Concept ;
+	skos:inScheme naousa-br2016-dsd:codelist ;
+	skos:notation "1322.004" ;
+	skos:prefLabel "Επιχορήγηση Υπ.Οικονομίας και Οικονομικών για 'Εργασίες αποκατάστασης κτιρίου για στέγαση Πανεπιστημιακού τμήματος" ;
+	skos:broader <http://data.openbudgets.eu/resource/dataset/budget-naousa-revenue-2016/codelist/00/1322> .
+
+<http://data.openbudgets.eu/resource/dataset/budget-naousa-revenue-2016/codelist/00/1322.005> a skos:Concept ;
+	skos:inScheme naousa-br2016-dsd:codelist ;
+	skos:notation "1322.005" ;
+	skos:prefLabel "ΕΠΙΧΟΡΗΓΗΣΗ LEADER+ ΓΙΑ ΣΥΝΤΗΡΗΣΗ - ΑΝΑΔΕΙΞΗ ΚΕΛΥΦΟΥΣ ΤΟΥ ΔΙΑΤΗΡ. ΚΤΙΡΙΟΥ ΥΔΡΟΜΥΛΟΣ ΡΑΪΟΥ" ;
+	skos:broader <http://data.openbudgets.eu/resource/dataset/budget-naousa-revenue-2016/codelist/00/1322> .
+
+<http://data.openbudgets.eu/resource/dataset/budget-naousa-revenue-2016/codelist/00/1322.007> a skos:Concept ;
+	skos:inScheme naousa-br2016-dsd:codelist ;
+	skos:notation "1322.007" ;
+	skos:prefLabel "Επιχορήγηση ΠΔΕ-ΓΓΑ για το έργο Κατασκευή συνθετικού τάπητα στο στίβο του Δημοτικού Σταδίου Νάουσας" ;
+	skos:broader <http://data.openbudgets.eu/resource/dataset/budget-naousa-revenue-2016/codelist/00/1322> .
+
+<http://data.openbudgets.eu/resource/dataset/budget-naousa-revenue-2016/codelist/00/1322.008> a skos:Concept ;
+	skos:inScheme naousa-br2016-dsd:codelist ;
+	skos:notation "1322.008" ;
+	skos:prefLabel "Επιχορήγηση LEADER+ για ενίσχυση των πολιτιστικών-θρησκευτικών εκδηλώσεων των Δημοτικών Διαμερισμάτων της Νάουσας." ;
+	skos:broader <http://data.openbudgets.eu/resource/dataset/budget-naousa-revenue-2016/codelist/00/1322> .
+
+<http://data.openbudgets.eu/resource/dataset/budget-naousa-revenue-2016/codelist/00/1322.009> a skos:Concept ;
+	skos:inScheme naousa-br2016-dsd:codelist ;
+	skos:notation "1322.009" ;
+	skos:prefLabel "Επιχορήγηση ΥΠ.ΟΙΚ/ΚΩΝ για το έργο Γεωγραφικό σύστημα για τον περιβαλλοντικό και πολεοδομικό σχεδιασμό του Δήμου Νάουσας. (ΜΕΤΑΦΟΡΑ ΣΕ ΝΕΟ ΚΑΕ 1327.001)" ;
+	skos:broader <http://data.openbudgets.eu/resource/dataset/budget-naousa-revenue-2016/codelist/00/1322> .
+
+<http://data.openbudgets.eu/resource/dataset/budget-naousa-revenue-2016/codelist/00/1322.010> a skos:Concept ;
+	skos:inScheme naousa-br2016-dsd:codelist ;
+	skos:notation "1322.010" ;
+	skos:prefLabel "Επιχορήγηση ΕΠ-ΚΤΠ για το έργο Μητροπολιτικό δίκτυο οπτικών ινών Δήμου Νάουσας" ;
+	skos:broader <http://data.openbudgets.eu/resource/dataset/budget-naousa-revenue-2016/codelist/00/1322> .
+
+<http://data.openbudgets.eu/resource/dataset/budget-naousa-revenue-2016/codelist/00/1322.011> a skos:Concept ;
+	skos:inScheme naousa-br2016-dsd:codelist ;
+	skos:notation "1322.011" ;
+	skos:prefLabel "Επιχ/ση Υπ.Μεταφορών για την υλοποίηση της Προγραμματικής σύμβασης μεταξύ του Δήμου Νάουσας και του ΚΤΕΛ Αστικών Γραμμών Νάουσας για την Παροχή Υπηρεσιών Συγκοινωνιακού Έργου" ;
+	skos:broader <http://data.openbudgets.eu/resource/dataset/budget-naousa-revenue-2016/codelist/00/1322> .
+
+<http://data.openbudgets.eu/resource/dataset/budget-naousa-revenue-2016/codelist/00/1322.012> a skos:Concept ;
+	skos:inScheme naousa-br2016-dsd:codelist ;
+	skos:notation "1322.012" ;
+	skos:prefLabel "Επιχορήγηση από το Πρόγραμμα Δημοσίων Επενδύσεων για το έργο Διαμόρφωση δρόμου Νάουσας - Άλσους Αγίου Νικολάου Ν. Ημαθίας  (ΠΔΕ)  (ΜΕΤΑΦΟΡΑ ΣΕ ΝΕΟ ΚΑΕ 1327.002)" ;
+	skos:broader <http://data.openbudgets.eu/resource/dataset/budget-naousa-revenue-2016/codelist/00/1322> .
+
+<http://data.openbudgets.eu/resource/dataset/budget-naousa-revenue-2016/codelist/00/1322.013> a skos:Concept ;
+	skos:inScheme naousa-br2016-dsd:codelist ;
+	skos:notation "1322.013" ;
+	skos:prefLabel "Επιχορήγηση από το πρόγραμμα Δημοσίων Επενδύσεων για το έργο ΕΠΕΚΤΑΣΗ ΜΗΤΡΟΠΟΛΙΤΙΚΟΥ ΔΙΚΤΥΟΥ ΟΠΤΙΚΩΝ ΙΝΩΝ ΔΗΜΟΥ ΝΑΟΥΣΑΣ - Ε.Π. Κ.Τ.Π" ;
+	skos:broader <http://data.openbudgets.eu/resource/dataset/budget-naousa-revenue-2016/codelist/00/1322> .
+
+<http://data.openbudgets.eu/resource/dataset/budget-naousa-revenue-2016/codelist/00/1322.014> a skos:Concept ;
+	skos:inScheme naousa-br2016-dsd:codelist ;
+	skos:notation "1322.014" ;
+	skos:prefLabel "ΕΠΙΧΟΡΗΓΗΣΗ ΠΡΟΓΡ/ΤΟΣ ΤΟΠΙΚΗΣ ΔΙΑΚΥΒΕΡΝΗΣΗΣ ΜΑΚΕΔΟΝΙΑΣ - ΘΡΑΚΗΣ ΓΙΑ ΤΗΝ ΔΙΜΟΡΦΩΣΗ ΔΡΟΜΟΥ ΑΓ. ΝΙΚΟΛΑΟΥ ΝΑΟΥΣΑΣ" ;
+	skos:broader <http://data.openbudgets.eu/resource/dataset/budget-naousa-revenue-2016/codelist/00/1322> .
+
+<http://data.openbudgets.eu/resource/dataset/budget-naousa-revenue-2016/codelist/00/1322.015> a skos:Concept ;
+	skos:inScheme naousa-br2016-dsd:codelist ;
+	skos:notation "1322.015" ;
+	skos:prefLabel "Επιχορήγηση απο το προγραμμα Δημοσίων Επενδύσεων αποφ.1855/30/3/2010 ΣΑΕ 039/2010 Ασφαλτόστρωση αγροτικών δρόμων Δήμου Ειρηνούπολης Ν. Ημαθίας  (ΜΕΤΑΦΟΡΑ ΣΕ ΝΕΟ ΚΑΕ 1327.003)" ;
+	skos:broader <http://data.openbudgets.eu/resource/dataset/budget-naousa-revenue-2016/codelist/00/1322> .
+
+<http://data.openbudgets.eu/resource/dataset/budget-naousa-revenue-2016/codelist/00/1322.016> a skos:Concept ;
+	skos:inScheme naousa-br2016-dsd:codelist ;
+	skos:notation "1322.016" ;
+	skos:prefLabel "Επιχορήγηση απο προγραμμα Δημοσίων Επενδύσεων αποφ.1855/2010 ΣΑΕ 039/2010 -Εκβάνθυνση παλαιά δεξαμενής συγκ/σης νερού για αρδευτικούς σκοπούς στο Δ.Δ. Μαρίνας Δ.Ανθεμίων Ν. Ημαθίας - ΘΗΣΕΑΣ" ;
+	skos:broader <http://data.openbudgets.eu/resource/dataset/budget-naousa-revenue-2016/codelist/00/1322> .
+
+<http://data.openbudgets.eu/resource/dataset/budget-naousa-revenue-2016/codelist/00/1322.017> a skos:Concept ;
+	skos:inScheme naousa-br2016-dsd:codelist ;
+	skos:notation "1322.017" ;
+	skos:prefLabel "Επιχορήγηση απο πρόγραμμα Δημοσίων Επενδύσεων αποφ.1855/2010 ΣΑΕ 039/2010 - Εργασίες συντήρησης στην νέα δεξαμενή σύγκ/σης νερού για αρδευτικούς σκοπούς στο Δ.Δ. Μαρίνας Δ.Ανθεμίων Ν. Ημαθίας - ΘΗΣΕΑΣ" ;
+	skos:broader <http://data.openbudgets.eu/resource/dataset/budget-naousa-revenue-2016/codelist/00/1322> .
+
+<http://data.openbudgets.eu/resource/dataset/budget-naousa-revenue-2016/codelist/00/1322.018> a skos:Concept ;
+	skos:inScheme naousa-br2016-dsd:codelist ;
+	skos:notation "1322.018" ;
+	skos:prefLabel "Επιχορήγηση για το έργο ΠΡΟΤΥΠΟ ΕΠΙΔΕΙΚΤΙΚΟ ΕΡΓΟ ΕΦΑΡΜΟΣΗΣ ΑΠΕ & ΔΡΑΣΗ ΕΞΟΙΚΟΝΟΜΗΣΗΣ ΕΝΕΡΓΕΙΑΣ ΣΤΟ 2ο  ΓΥΜΝΑΣΙΟ ΝΑΟΥΣΑΣ -  ΥΠ.ΠΕΡΙΒ/ΝΤΟΣ  (ΜΕΤΑΦΟΡΑ ΣΕ ΝΕΟ ΚΑΕ 1327.004)" ;
+	skos:broader <http://data.openbudgets.eu/resource/dataset/budget-naousa-revenue-2016/codelist/00/1322> .
+
+<http://data.openbudgets.eu/resource/dataset/budget-naousa-revenue-2016/codelist/00/1322.019> a skos:Concept ;
+	skos:inScheme naousa-br2016-dsd:codelist ;
+	skos:notation "1322.019" ;
+	skos:prefLabel "Επιχορήγηση για το έργο ΑΝΑΠΛΑΣΕΙΣ ΚΟΙΝΟΧΡΗΣΤΩΝ ΧΩΡΩΝ Τ.Κ. ΑΡΚΟΧΩΡΙΟΥ Δ. ΝΑΟΥΣΑΣ -Πρ/μα Αγροτικής Ανάπτυξης της Ελλαδας 2007-2013- Υπουργ.Αναπτυξης & Τροφίμων με συγχρ/ση του Ευρωπαϊκού  Γωργ. Ταμείου  Α.Α" ;
+	skos:broader <http://data.openbudgets.eu/resource/dataset/budget-naousa-revenue-2016/codelist/00/1322> .
+
+<http://data.openbudgets.eu/resource/dataset/budget-naousa-revenue-2016/codelist/00/1322.020> a skos:Concept ;
+	skos:inScheme naousa-br2016-dsd:codelist ;
+	skos:notation "1322.020" ;
+	skos:prefLabel "Επιχορήγηση από το ΠΔΕ για την κατασκευή πτερυγότοιχου γέφυρας από  το Τ.Κ. Μαρίνας - επιχορ. Προγρ. Δημοσίων Επενδύσεων Τ.Π. 2015  (ΜΕΤΑΦΟΡΑ ΣΕ ΝΕΟ ΚΑΕ 1327.005)" ;
+	skos:broader <http://data.openbudgets.eu/resource/dataset/budget-naousa-revenue-2016/codelist/00/1322> .
+
+<http://data.openbudgets.eu/resource/dataset/budget-naousa-revenue-2016/codelist/00/1322.021> a skos:Concept ;
+	skos:inScheme naousa-br2016-dsd:codelist ;
+	skos:notation "1322.021" ;
+	skos:prefLabel "Επιχορήγηση Υπουργείου Αγροτικής Ανάπτυξης για Εκδηλώσεις ΡΟΔΑΚΙΝΟ,  ΠΑΡΑΔΟΣΗ και  ΠΟΛΙΤΙΣΜΟΣ Δήμου Νάουσας (Υπ.Αγρ.Αναπτυξης:26.640,00 & 8.800,00 ιδια έσοδα-ΤΠ 2014)  (ΜΕΤΑΦΟΡΑ ΣΕ ΝΕΟ ΚΑΕ 1327.006)" ;
+	skos:broader <http://data.openbudgets.eu/resource/dataset/budget-naousa-revenue-2016/codelist/00/1322> .
+
+<http://data.openbudgets.eu/resource/dataset/budget-naousa-revenue-2016/codelist/00/1322.022> a skos:Concept ;
+	skos:inScheme naousa-br2016-dsd:codelist ;
+	skos:notation "1322.022" ;
+	skos:prefLabel "Επιχορ/ση Πρ/μα LEADER  Κατ/ή νέων αποδ/ρίων και λοιπών έργων υποδομής στο χώρο αθλ/κών εγκ/σεων στην περ.ΠΑΠΡΑ της ΔΕ Ανθ.ΤΠ.2015 (LEADER 300.000 & Άρθρο 27.Ν.3756/09: 69.000)  (ΜΕΤΑΦΟΡΑ ΣΕ ΝΕΟ ΚΑΕ 1327.007)" ;
+	skos:broader <http://data.openbudgets.eu/resource/dataset/budget-naousa-revenue-2016/codelist/00/1322> .
+
+<http://data.openbudgets.eu/resource/dataset/budget-naousa-revenue-2016/codelist/00/1322.023> a skos:Concept ;
+	skos:inScheme naousa-br2016-dsd:codelist ;
+	skos:notation "1322.023" ;
+	skos:prefLabel "Επιχορήγηση Πρ/μα LEADER Προμήθεια και τοποθέτηση σήμανσης αξιοθέατων μνημείων ΔΕ Ανθεμίων και Ειρ/λης ΤΠ.2015 - (LEADER 47.162,00 & Άρθρο 27.Ν.3756/09: 10.847,26)  (ΜΕΤΑΦΟΡΑ ΣΕ ΝΕΟ ΚΑΕ 1327.008)" ;
+	skos:broader <http://data.openbudgets.eu/resource/dataset/budget-naousa-revenue-2016/codelist/00/1322> .
+
+<http://data.openbudgets.eu/resource/dataset/budget-naousa-revenue-2016/codelist/00/1322.024> a skos:Concept ;
+	skos:inScheme naousa-br2016-dsd:codelist ;
+	skos:notation "1322.024" ;
+	skos:prefLabel "Επιχορήγηση Πρ/μα Αγροτικής Ανάπτυξης Ελ. 2007-2013  Ανάπλαση πλατείας στην ΤΚ Γιαννακοχωρίου  ΤΠ.2015  (ΜΕΤΑΦΟΡΑ ΣΕ ΝΕΟ ΚΑΕ 1327.009)" ;
+	skos:broader <http://data.openbudgets.eu/resource/dataset/budget-naousa-revenue-2016/codelist/00/1322> .
+
+<http://data.openbudgets.eu/resource/dataset/budget-naousa-revenue-2016/codelist/00/1322.025> a skos:Concept ;
+	skos:inScheme naousa-br2016-dsd:codelist ;
+	skos:notation "1322.025" ;
+	skos:prefLabel "Επιχορήγηση Προγρ. Αγροτική Ανάπτυξη της Ελλάδας 2007-2013 για Μετατροπή τμήματος του πρ'ωην Δημοτικού Καταστήματος Αγγελοχωρίου σε Εκθετήριο Λαογραφικής - Αγροτικής & Πολιτιστικής Κληρονομιάς του Δήμου Νάουσας" ;
+	skos:broader <http://data.openbudgets.eu/resource/dataset/budget-naousa-revenue-2016/codelist/00/1322> .
+
+<http://data.openbudgets.eu/resource/dataset/budget-naousa-revenue-2016/codelist/00/1322.605> a skos:Concept ;
+	skos:inScheme naousa-br2016-dsd:codelist ;
+	skos:notation "1322.605" ;
+	skos:prefLabel "ΛΟΙΠΕΣ ΕΠΙΧ/ΣΕΙΣ - 35.7332.607,70.7326.609" ;
+	skos:broader <http://data.openbudgets.eu/resource/dataset/budget-naousa-revenue-2016/codelist/00/1322> .
+
+<http://data.openbudgets.eu/resource/dataset/budget-naousa-revenue-2016/codelist/00/1322.705> a skos:Concept ;
+	skos:inScheme naousa-br2016-dsd:codelist ;
+	skos:notation "1322.705" ;
+	skos:prefLabel "ΛΟΙΠΕΣ ΕΠΙΧ/ΣΕΙΣ ΕΙΡΗΝΟΥΠΟΛΗΣ - 30.7323.703 &  30.7323.708" ;
+	skos:broader <http://data.openbudgets.eu/resource/dataset/budget-naousa-revenue-2016/codelist/00/1322> .
+
+<http://data.openbudgets.eu/resource/dataset/budget-naousa-revenue-2016/codelist/00/1323> a skos:Concept ;
+	skos:inScheme naousa-br2016-dsd:codelist ;
+	skos:narrower <http://data.openbudgets.eu/resource/dataset/budget-naousa-revenue-2016/codelist/00/1323.001> , <http://data.openbudgets.eu/resource/dataset/budget-naousa-revenue-2016/codelist/00/1323.002> , <http://data.openbudgets.eu/resource/dataset/budget-naousa-revenue-2016/codelist/00/1323.003> , <http://data.openbudgets.eu/resource/dataset/budget-naousa-revenue-2016/codelist/00/1323.004> , <http://data.openbudgets.eu/resource/dataset/budget-naousa-revenue-2016/codelist/00/1323.005> , <http://data.openbudgets.eu/resource/dataset/budget-naousa-revenue-2016/codelist/00/1323.006> , <http://data.openbudgets.eu/resource/dataset/budget-naousa-revenue-2016/codelist/00/1323.007> , <http://data.openbudgets.eu/resource/dataset/budget-naousa-revenue-2016/codelist/00/1323.008> , <http://data.openbudgets.eu/resource/dataset/budget-naousa-revenue-2016/codelist/00/1323.009> , <http://data.openbudgets.eu/resource/dataset/budget-naousa-revenue-2016/codelist/00/1323.010> , <http://data.openbudgets.eu/resource/dataset/budget-naousa-revenue-2016/codelist/00/1323.011> ;
+	skos:notation "1323" ;
+	skos:prefLabel "Χρηματοδοτήσεις έργων από Ε.Ε.(εκτός ΠΔΕ/ΕΣΠΑ)" ;
+	skos:broader naousa-br2016-codelist:00 ;
+	skos:broadMatch kae-ota-es14:1323 .
+
+<http://data.openbudgets.eu/resource/dataset/budget-naousa-revenue-2016/codelist/00/1323.001> a skos:Concept ;
+	skos:inScheme naousa-br2016-dsd:codelist ;
+	skos:notation "1323.001" ;
+	skos:prefLabel "Επιχορήγηση ΕΣΠΑ για το πρόγραμμα ΕΞΟΙΚΟΝΟΜΩ Δήμου Νάουσας ( 350.000 ΕΣΠΑ και 150.000 ΙΔΙΑ ΕΣΟΔΑ )" ;
+	skos:broader <http://data.openbudgets.eu/resource/dataset/budget-naousa-revenue-2016/codelist/00/1323> .
+
+<http://data.openbudgets.eu/resource/dataset/budget-naousa-revenue-2016/codelist/00/1323.002> a skos:Concept ;
+	skos:inScheme naousa-br2016-dsd:codelist ;
+	skos:notation "1323.002" ;
+	skos:prefLabel "Επιχορήγηση ΕΣΠΑ για το εργο  ΚΕΝΤΡΟ ΤΕΚΜΗΡΙΩΣΗΣ ΒΙΟΜΗΧΑΝΙΚΗΣ ΚΛΗΡΟΝΟΜΙΑΣ ΣΤΟ ΒΑΦΕΙΟ ΤΗΣ ΠΡΩΗΝ ΕΡΙΑ" ;
+	skos:broader <http://data.openbudgets.eu/resource/dataset/budget-naousa-revenue-2016/codelist/00/1323> .
+
+<http://data.openbudgets.eu/resource/dataset/budget-naousa-revenue-2016/codelist/00/1323.003> a skos:Concept ;
+	skos:inScheme naousa-br2016-dsd:codelist ;
+	skos:notation "1323.003" ;
+	skos:prefLabel "Επιχορήγηση ΕΣΠΑ για Λειτουργική ενοποίηση υφιστάμενων πληροφοριακών συστημάτων (υποδομές ΤΠΕ και εφαρμογές) και δεδομένων Δήμου Νάουσας για την εφαρμογή του Προγράμματος Καλλικράτης" ;
+	skos:broader <http://data.openbudgets.eu/resource/dataset/budget-naousa-revenue-2016/codelist/00/1323> .
+
+<http://data.openbudgets.eu/resource/dataset/budget-naousa-revenue-2016/codelist/00/1323.004> a skos:Concept ;
+	skos:inScheme naousa-br2016-dsd:codelist ;
+	skos:notation "1323.004" ;
+	skos:prefLabel "Επιχορήγηση ΕΣΠΑ για το έγο ΟΛΟΚΛΗΡΩΜΕΝΟ ΠΡΟΓΡΑΜΜΑ ΑΣΤΙΚΗΣ ΑΝΑΠΛΑΣΗΣ ΔΗΜΟΥ ΝΑΟΥΣΑΣ" ;
+	skos:broader <http://data.openbudgets.eu/resource/dataset/budget-naousa-revenue-2016/codelist/00/1323> .
+
+<http://data.openbudgets.eu/resource/dataset/budget-naousa-revenue-2016/codelist/00/1323.005> a skos:Concept ;
+	skos:inScheme naousa-br2016-dsd:codelist ;
+	skos:notation "1323.005" ;
+	skos:prefLabel "Επιχορήγηση ΕΣΠΑ για το έργο ΠΡΟΜΗΘΕΙΑ ΕΞΟΠΛΙΣΜΟΥ ΕΙΔΙΚΩΝ ΣΧΟΛΕΙΩΝ ΝΑΟΥΣΑΣ" ;
+	skos:broader <http://data.openbudgets.eu/resource/dataset/budget-naousa-revenue-2016/codelist/00/1323> .
+
+<http://data.openbudgets.eu/resource/dataset/budget-naousa-revenue-2016/codelist/00/1323.006> a skos:Concept ;
+	skos:inScheme naousa-br2016-dsd:codelist ;
+	skos:notation "1323.006" ;
+	skos:prefLabel "Επιχορήγηση ΕΣΠΑ για το έργο ΠΡΟΜΗΘΕΙΑ ΕΞΟΠΛΙΣΜΟΥ ΜΕΤΑΦΟΡΑΣ ΚΑΙ ΤΕΜΑΧΙΣΜΟΥ ΑΠΟΡΡΙΜΜΑΤΩΝ ΔΗΜΟΥ ΝΑΟΥΣΑΣ ΚΑΙ ΠΕΡΙΦΕΡΕΙΑΚΗΣ ΕΝΟΤΗΤΑΣ ΗΜΑΘΙΑΣ" ;
+	skos:broader <http://data.openbudgets.eu/resource/dataset/budget-naousa-revenue-2016/codelist/00/1323> .
+
+<http://data.openbudgets.eu/resource/dataset/budget-naousa-revenue-2016/codelist/00/1323.007> a skos:Concept ;
+	skos:inScheme naousa-br2016-dsd:codelist ;
+	skos:notation "1323.007" ;
+	skos:prefLabel "Επιχορήγηση ΕΣΠΑ για το έργο Υπηρεσίες συμβούλων τεχνικήε υποστήρηξης Δήμου Ηρωικής Πόλεως Νάουσας" ;
+	skos:broader <http://data.openbudgets.eu/resource/dataset/budget-naousa-revenue-2016/codelist/00/1323> .
+
+<http://data.openbudgets.eu/resource/dataset/budget-naousa-revenue-2016/codelist/00/1323.008> a skos:Concept ;
+	skos:inScheme naousa-br2016-dsd:codelist ;
+	skos:notation "1323.008" ;
+	skos:prefLabel "Επιχορήγηση ΕΣΠΑ για την υποβολή πρότασης χρηματοδότησης με τίτλο ΑΝΑΠΤΥΞΗ ΔΡΑΣΕΩΝ ΕΞΟΙΚΟΝΟΜΗΣΗΣ ΕΝΕΡΓΕΙΑΣ (ΕΞΕ) ΣΤΟ ΔΗΜΑΡΧΕΙΟ ΝΑΟΥΣΑΣ" ;
+	skos:broader <http://data.openbudgets.eu/resource/dataset/budget-naousa-revenue-2016/codelist/00/1323> .
+
+<http://data.openbudgets.eu/resource/dataset/budget-naousa-revenue-2016/codelist/00/1323.009> a skos:Concept ;
+	skos:inScheme naousa-br2016-dsd:codelist ;
+	skos:notation "1323.009" ;
+	skos:prefLabel "ΕΠΙΧΟΡΗΓΗΣΗ ΕΣΠΑ ΓΙΑ ΤΗΝ ΑΝΑΠΤΥΞΗ- ΑΝΑΔΕΙΞΗ & ΠΡΟΒΟΛΗ ΠΟΤΙΤΙΣΤΙΚΟΥ ΨΗΦΙΑΚΟΥ ΠΕΡ/ΜΕΝΟΥ ΜΕ ΤΗΝ ΧΡΗΣΗ ΣΥΓΧΡΟΝΩΝ ΕΦΑΡΜΟΓΩΝ & ΕΡΓΑΛΕΙΩΝ ΤΠΕ" ;
+	skos:broader <http://data.openbudgets.eu/resource/dataset/budget-naousa-revenue-2016/codelist/00/1323> .
+
+<http://data.openbudgets.eu/resource/dataset/budget-naousa-revenue-2016/codelist/00/1323.010> a skos:Concept ;
+	skos:inScheme naousa-br2016-dsd:codelist ;
+	skos:notation "1323.010" ;
+	skos:prefLabel "Επιχορήγηση ΕΣΠΑ :206.785,00 & (Ιδια ¨Εσοδα :6.000,00) για το έργο Απομακρυσμένη βοήθεια ηλικιωμένων και Ανάπτυξη ενιαίου Ολοκληρωμένου πληροφοριακού συστήματος υγείας και κοινωνικής αλληλεγγύης" ;
+	skos:broader <http://data.openbudgets.eu/resource/dataset/budget-naousa-revenue-2016/codelist/00/1323> .
+
+<http://data.openbudgets.eu/resource/dataset/budget-naousa-revenue-2016/codelist/00/1323.011> a skos:Concept ;
+	skos:inScheme naousa-br2016-dsd:codelist ;
+	skos:notation "1323.011" ;
+	skos:prefLabel "Επιχορήγηση από το Πράσινο Ταμείο του Υπ. Παραγωγικής Ανασυγκρ/σης Περιβ/ντος & Ενέργειας για τοποθέτηση υπόγειων κάδων στο εμπορικό κέντρο της Δ.Κ. Νάουσας του Δήμου Ηρωικής Πόλεως Νάουσας -Τ.Π. 2015" ;
+	skos:broader <http://data.openbudgets.eu/resource/dataset/budget-naousa-revenue-2016/codelist/00/1323> .
+
+<http://data.openbudgets.eu/resource/dataset/budget-naousa-revenue-2016/codelist/00/1324> a skos:Concept ;
+	skos:inScheme naousa-br2016-dsd:codelist ;
+	skos:notation "1324" ;
+	skos:prefLabel "Χρηματοδοτήσεις έργων από Διεθνείς οργανισμούς (εκτός ΠΔΕ/ΕΣΠΑ)" ;
+	skos:broader naousa-br2016-codelist:00 ;
+	skos:broadMatch kae-ota-es14:1324 .
+
+<http://data.openbudgets.eu/resource/dataset/budget-naousa-revenue-2016/codelist/00/1325> a skos:Concept ;
+	skos:inScheme naousa-br2016-dsd:codelist ;
+	skos:narrower <http://data.openbudgets.eu/resource/dataset/budget-naousa-revenue-2016/codelist/00/1325.701> , <http://data.openbudgets.eu/resource/dataset/budget-naousa-revenue-2016/codelist/00/1325.702> , <http://data.openbudgets.eu/resource/dataset/budget-naousa-revenue-2016/codelist/00/1325.704> ;
+	skos:notation "1325" ;
+	skos:prefLabel "Επιχορηγήσεις από εθνικούς πόρους για κάλυψη έκτακτων αναγκών για έργα (μέσω του τακτικού προϋπολογισμού συμπεριλαμβανομένων των ΚΑΠ)" ;
+	skos:broader naousa-br2016-codelist:00 ;
+	skos:broadMatch kae-ota-es14:1325 .
+
+<http://data.openbudgets.eu/resource/dataset/budget-naousa-revenue-2016/codelist/00/1325.701> a skos:Concept ;
+	skos:inScheme naousa-br2016-dsd:codelist ;
+	skos:notation "1325.701" ;
+	skos:prefLabel "Επιχορήγηση από εθνικούς πόρους για κάλυψη εκτάκτων αναγκών Θεομηνίες" ;
+	skos:broader <http://data.openbudgets.eu/resource/dataset/budget-naousa-revenue-2016/codelist/00/1325> .
+
+<http://data.openbudgets.eu/resource/dataset/budget-naousa-revenue-2016/codelist/00/1325.702> a skos:Concept ;
+	skos:inScheme naousa-br2016-dsd:codelist ;
+	skos:notation "1325.702" ;
+	skos:prefLabel "Επιχορήγηση για την πυροπροστασία τωνμ χωματερών του Δήμου Ειρηνούπολης" ;
+	skos:broader <http://data.openbudgets.eu/resource/dataset/budget-naousa-revenue-2016/codelist/00/1325> .
+
+<http://data.openbudgets.eu/resource/dataset/budget-naousa-revenue-2016/codelist/00/1325.704> a skos:Concept ;
+	skos:inScheme naousa-br2016-dsd:codelist ;
+	skos:notation "1325.704" ;
+	skos:prefLabel "Επενδύσεις - έργα αρθρου 27 Ν. 3756/09" ;
+	skos:broader <http://data.openbudgets.eu/resource/dataset/budget-naousa-revenue-2016/codelist/00/1325> .
+
+<http://data.openbudgets.eu/resource/dataset/budget-naousa-revenue-2016/codelist/00/1326> a skos:Concept ;
+	skos:inScheme naousa-br2016-dsd:codelist ;
+	skos:notation "1326" ;
+	skos:prefLabel "Έσοδα από προγραμματικές συμβάσεις για κάλυψη επενδυτικών δαπανών" ;
+	skos:broader naousa-br2016-codelist:00 ;
+	skos:broadMatch kae-ota-es14:1326 .
+
+<http://data.openbudgets.eu/resource/dataset/budget-naousa-revenue-2016/codelist/00/1327> a skos:Concept ;
+	skos:inScheme naousa-br2016-dsd:codelist ;
+	skos:narrower <http://data.openbudgets.eu/resource/dataset/budget-naousa-revenue-2016/codelist/00/1327.001> , <http://data.openbudgets.eu/resource/dataset/budget-naousa-revenue-2016/codelist/00/1327.002> , <http://data.openbudgets.eu/resource/dataset/budget-naousa-revenue-2016/codelist/00/1327.003> , <http://data.openbudgets.eu/resource/dataset/budget-naousa-revenue-2016/codelist/00/1327.004> , <http://data.openbudgets.eu/resource/dataset/budget-naousa-revenue-2016/codelist/00/1327.005> , <http://data.openbudgets.eu/resource/dataset/budget-naousa-revenue-2016/codelist/00/1327.006> , <http://data.openbudgets.eu/resource/dataset/budget-naousa-revenue-2016/codelist/00/1327.007> , <http://data.openbudgets.eu/resource/dataset/budget-naousa-revenue-2016/codelist/00/1327.008> , <http://data.openbudgets.eu/resource/dataset/budget-naousa-revenue-2016/codelist/00/1327.009> , <http://data.openbudgets.eu/resource/dataset/budget-naousa-revenue-2016/codelist/00/1327.605> , <http://data.openbudgets.eu/resource/dataset/budget-naousa-revenue-2016/codelist/00/1327.701> , <http://data.openbudgets.eu/resource/dataset/budget-naousa-revenue-2016/codelist/00/1327.702> , <http://data.openbudgets.eu/resource/dataset/budget-naousa-revenue-2016/codelist/00/1327.704> , <http://data.openbudgets.eu/resource/dataset/budget-naousa-revenue-2016/codelist/00/1327.705> ;
+	skos:notation "1327" ;
+	skos:prefLabel "Χρηματοδοτήσεις από κεντρικούς φορείς (μέσω του τακτικού προϋπολογισμού)" ;
+	skos:broader naousa-br2016-codelist:00 ;
+	skos:broadMatch kae-ota-es14:1327 .
+
+<http://data.openbudgets.eu/resource/dataset/budget-naousa-revenue-2016/codelist/00/1327.001> a skos:Concept ;
+	skos:inScheme naousa-br2016-dsd:codelist ;
+	skos:notation "1327.001" ;
+	skos:prefLabel "Επιχορήγηση ΥΠ.ΟΙΚ/ΚΩΝ για το έργο Γεωγραφικό σύστημα για τον περιβαλλοντικό και πολεοδομικό σχεδιασμό του Δήμου Νάουσας." ;
+	skos:broader <http://data.openbudgets.eu/resource/dataset/budget-naousa-revenue-2016/codelist/00/1327> .
+
+<http://data.openbudgets.eu/resource/dataset/budget-naousa-revenue-2016/codelist/00/1327.002> a skos:Concept ;
+	skos:inScheme naousa-br2016-dsd:codelist ;
+	skos:notation "1327.002" ;
+	skos:prefLabel "Επιχορήγηση από το Πρόγραμμα Δημοσίων Επενδύσεων για το έργο Διαμόρφωση δρόμου Νάουσας - Άλσους Αγίου Νικολάου Ν. Ημαθίας  (ΠΔΕ)" ;
+	skos:broader <http://data.openbudgets.eu/resource/dataset/budget-naousa-revenue-2016/codelist/00/1327> .
+
+<http://data.openbudgets.eu/resource/dataset/budget-naousa-revenue-2016/codelist/00/1327.003> a skos:Concept ;
+	skos:inScheme naousa-br2016-dsd:codelist ;
+	skos:notation "1327.003" ;
+	skos:prefLabel "Επιχορήγηση από το Πρόγραμμα Δημοσίων Επενδύσεων αποφ.1855/30/3/2010 ΣΑΕ 039/2010 ¨Ασφαλτόστρωση αγροτικών δρόμων Δήμου Ειρηνούπολης Ν. Ημαθίας" ;
+	skos:broader <http://data.openbudgets.eu/resource/dataset/budget-naousa-revenue-2016/codelist/00/1327> .
+
+<http://data.openbudgets.eu/resource/dataset/budget-naousa-revenue-2016/codelist/00/1327.004> a skos:Concept ;
+	skos:inScheme naousa-br2016-dsd:codelist ;
+	skos:notation "1327.004" ;
+	skos:prefLabel "Επιχορήγηση για το έργο ΠΡΟΤΥΠΟ ΕΠΙΔΕΙΚΤΙΚΟ ΕΡΓΟ ΕΦΑΡΜΟΣΗΣ ΑΠΕ & ΔΡΑΣΗ ΕΞΟΙΚΟΝΟΜΗΣΗΣ ΕΝΕΡΓΕΙΑΣ ΣΤΟ 2ο  ΓΥΜΝΑΣΙΟ ΝΑΟΥΣΑΣ -  ΥΠ.ΠΕΡΙΒ/ΝΤΟΣ" ;
+	skos:broader <http://data.openbudgets.eu/resource/dataset/budget-naousa-revenue-2016/codelist/00/1327> .
+
+<http://data.openbudgets.eu/resource/dataset/budget-naousa-revenue-2016/codelist/00/1327.005> a skos:Concept ;
+	skos:inScheme naousa-br2016-dsd:codelist ;
+	skos:notation "1327.005" ;
+	skos:prefLabel "Επιχορήγηση από το ΠΔΕ για την κατασκευή πτερυγότοιχου γέφυρας από  το Τ.Κ. Μαρίνας - επιχορ. Προγρ. Δημοσίων Επενδύσεων Τ.Π. 2014" ;
+	skos:broader <http://data.openbudgets.eu/resource/dataset/budget-naousa-revenue-2016/codelist/00/1327> .
+
+<http://data.openbudgets.eu/resource/dataset/budget-naousa-revenue-2016/codelist/00/1327.006> a skos:Concept ;
+	skos:inScheme naousa-br2016-dsd:codelist ;
+	skos:notation "1327.006" ;
+	skos:prefLabel "Επιχορήγηση Υπουργείου Αγροτικής Ανάπτυξης για Εκδηλώσεις ΡΟΔΑΚΙΝΟ,  ΠΑΡΑΔΟΣΗ και  ΠΟΛΙΤΙΣΜΟΣ Δήμου Νάουσας (Υπ.Αγρ.Αναπτυξης:26.640,00 & 8.800,00 ιδια έσοδα-ΤΠ 2014)" ;
+	skos:broader <http://data.openbudgets.eu/resource/dataset/budget-naousa-revenue-2016/codelist/00/1327> .
+
+<http://data.openbudgets.eu/resource/dataset/budget-naousa-revenue-2016/codelist/00/1327.007> a skos:Concept ;
+	skos:inScheme naousa-br2016-dsd:codelist ;
+	skos:notation "1327.007" ;
+	skos:prefLabel "Επιχορ/ση Πρ/μα LEADER  Κατ/ή νέων αποδ/ρίων και λοιπών έργων υποδομής στο χώρο αθλ/κών εγκ/σεων στην περ.ΠΑΠΡΑ της ΔΕ Ανθ.ΤΠ.2015 (LEADER 300.000 & Άρθρο 27.Ν.3756/09: 69.000)" ;
+	skos:broader <http://data.openbudgets.eu/resource/dataset/budget-naousa-revenue-2016/codelist/00/1327> .
+
+<http://data.openbudgets.eu/resource/dataset/budget-naousa-revenue-2016/codelist/00/1327.008> a skos:Concept ;
+	skos:inScheme naousa-br2016-dsd:codelist ;
+	skos:notation "1327.008" ;
+	skos:prefLabel "Επιχορήγηση Πρ/μα LEADER Προμήθεια και τοποθέτηση σήμανσης αξιοθέατων μνημείων ΔΕ Ανθεμίων και Ειρ/λης ΤΠ.2015 - (LEADER 47.162,00 & Άρθρο 27.Ν.3756/09: 10.847,26)" ;
+	skos:broader <http://data.openbudgets.eu/resource/dataset/budget-naousa-revenue-2016/codelist/00/1327> .
+
+<http://data.openbudgets.eu/resource/dataset/budget-naousa-revenue-2016/codelist/00/1327.009> a skos:Concept ;
+	skos:inScheme naousa-br2016-dsd:codelist ;
+	skos:notation "1327.009" ;
+	skos:prefLabel "Επιχορήγηση Πρ/μα Αγροτικής Ανάπτυξης Ελ. 2007-2013  Ανάπλαση πλατείας στην ΤΚ Γιαννακοχωρίου  ΤΠ.2015" ;
+	skos:broader <http://data.openbudgets.eu/resource/dataset/budget-naousa-revenue-2016/codelist/00/1327> .
+
+<http://data.openbudgets.eu/resource/dataset/budget-naousa-revenue-2016/codelist/00/1327.605> a skos:Concept ;
+	skos:inScheme naousa-br2016-dsd:codelist ;
+	skos:notation "1327.605" ;
+	skos:prefLabel "ΛΟΙΠΕΣ ΕΠΙΧ/ΣΕΙΣ - 35.7332.607,70.7326.609" ;
+	skos:broader <http://data.openbudgets.eu/resource/dataset/budget-naousa-revenue-2016/codelist/00/1327> .
+
+<http://data.openbudgets.eu/resource/dataset/budget-naousa-revenue-2016/codelist/00/1327.701> a skos:Concept ;
+	skos:inScheme naousa-br2016-dsd:codelist ;
+	skos:notation "1327.701" ;
+	skos:prefLabel "Επιχορήγηση από το Υπουργείο Οικονομίας Ανταγωνιστικότητας και ναυτιλίας" ;
+	skos:broader <http://data.openbudgets.eu/resource/dataset/budget-naousa-revenue-2016/codelist/00/1327> .
+
+<http://data.openbudgets.eu/resource/dataset/budget-naousa-revenue-2016/codelist/00/1327.702> a skos:Concept ;
+	skos:inScheme naousa-br2016-dsd:codelist ;
+	skos:notation "1327.702" ;
+	skos:prefLabel "Επιχορήγηση για Διαμόρφωση Αυλών Σχολικών Κτιρίων" ;
+	skos:broader <http://data.openbudgets.eu/resource/dataset/budget-naousa-revenue-2016/codelist/00/1327> .
+
+<http://data.openbudgets.eu/resource/dataset/budget-naousa-revenue-2016/codelist/00/1327.704> a skos:Concept ;
+	skos:inScheme naousa-br2016-dsd:codelist ;
+	skos:notation "1327.704" ;
+	skos:prefLabel "Επιχορήγηση από Ο.Σ.Κ." ;
+	skos:broader <http://data.openbudgets.eu/resource/dataset/budget-naousa-revenue-2016/codelist/00/1327> .
+
+<http://data.openbudgets.eu/resource/dataset/budget-naousa-revenue-2016/codelist/00/1327.705> a skos:Concept ;
+	skos:inScheme naousa-br2016-dsd:codelist ;
+	skos:notation "1327.705" ;
+	skos:prefLabel "ΛΟΙΠΕΣ ΕΠΙΧ/ΣΕΙΣ ΕΙΡΗΝΟΥΠΟΛΗΣ - 30.7323.703, 30.7323.708" ;
+	skos:broader <http://data.openbudgets.eu/resource/dataset/budget-naousa-revenue-2016/codelist/00/1327> .
+
+<http://data.openbudgets.eu/resource/dataset/budget-naousa-revenue-2016/codelist/00/1328> a skos:Concept ;
+	skos:inScheme naousa-br2016-dsd:codelist ;
+	skos:narrower <http://data.openbudgets.eu/resource/dataset/budget-naousa-revenue-2016/codelist/00/1328.001> , <http://data.openbudgets.eu/resource/dataset/budget-naousa-revenue-2016/codelist/00/1328.002> , <http://data.openbudgets.eu/resource/dataset/budget-naousa-revenue-2016/codelist/00/1328.003> ;
+	skos:notation "1328" ;
+	skos:prefLabel "Χρηματοδοτήσεις από το Εθνικό Στρατηγικό Πλαίσιο Αναφοράς (ΕΣΠΑ) εκτός Περιφερειακών Επιχειρησιακών Προγραμμάτων" ;
+	skos:broader naousa-br2016-codelist:00 ;
+	skos:broadMatch kae-ota-es14:1328 .
+
+<http://data.openbudgets.eu/resource/dataset/budget-naousa-revenue-2016/codelist/00/1328.001> a skos:Concept ;
+	skos:inScheme naousa-br2016-dsd:codelist ;
+	skos:notation "1328.001" ;
+	skos:prefLabel "Επιχορήγηση για Κατασκευή Σταθμού Μεταφόρτωσης Απορριμμάτων Νάουσας - 1ο  Υπ/γο. ΕΣΠΑ - Τ.Π. 2013" ;
+	skos:broader <http://data.openbudgets.eu/resource/dataset/budget-naousa-revenue-2016/codelist/00/1328> .
+
+<http://data.openbudgets.eu/resource/dataset/budget-naousa-revenue-2016/codelist/00/1328.002> a skos:Concept ;
+	skos:inScheme naousa-br2016-dsd:codelist ;
+	skos:notation "1328.002" ;
+	skos:prefLabel "Επιχορήγηση ΕΣΠΑ για Συμμετοχή του Δήμου μας στο πρόγραμμα Τοπικά Σχέδια για την Απασχόληση (ΤοπΣΑ) με τίτολο Σχέδιο τοπικής συνεργασίας υπέρ της απασχόλησης στο Δ. Νάουσας" ;
+	skos:broader <http://data.openbudgets.eu/resource/dataset/budget-naousa-revenue-2016/codelist/00/1328> .
+
+<http://data.openbudgets.eu/resource/dataset/budget-naousa-revenue-2016/codelist/00/1328.003> a skos:Concept ;
+	skos:inScheme naousa-br2016-dsd:codelist ;
+	skos:notation "1328.003" ;
+	skos:prefLabel "Επιχορήγηση ΕΣΠΑ για Τηλεματική διαχείριση απορριμματοφόρων Δήμου Ηρωϊκής πόλεως Νάουσας, με κωδικό MIS 482475, Επιχ/κό Πρόγραμμα Μακεδονία- Θράκη Τ.Π. 2014" ;
+	skos:broader <http://data.openbudgets.eu/resource/dataset/budget-naousa-revenue-2016/codelist/00/1328> .
+
+<http://data.openbudgets.eu/resource/dataset/budget-naousa-revenue-2016/codelist/00/1329> a skos:Concept ;
+	skos:inScheme naousa-br2016-dsd:codelist ;
+	skos:notation "1329" ;
+	skos:prefLabel "Λοιπές Επιχορηγήσεις για επενδύσεις και έργα" ;
+	skos:broader naousa-br2016-codelist:00 ;
+	skos:broadMatch kae-ota-es14:1329 .
+
+<http://data.openbudgets.eu/resource/dataset/budget-naousa-revenue-2016/codelist/00/1411> a skos:Concept ;
+	skos:inScheme naousa-br2016-dsd:codelist ;
+	skos:notation "1411" ;
+	skos:prefLabel "Προϊόν δωρεών" ;
+	skos:broader naousa-br2016-codelist:00 ;
+	skos:broadMatch kae-ota-es14:1411 .
+
+<http://data.openbudgets.eu/resource/dataset/budget-naousa-revenue-2016/codelist/00/1421> a skos:Concept ;
+	skos:inScheme naousa-br2016-dsd:codelist ;
+	skos:notation "1421" ;
+	skos:prefLabel "Έσοδα από κληρονομιές, κληροδοσίες" ;
+	skos:broader naousa-br2016-codelist:00 ;
+	skos:broadMatch kae-ota-es14:1421 .
+
+<http://data.openbudgets.eu/resource/dataset/budget-naousa-revenue-2016/codelist/00/1511> a skos:Concept ;
+	skos:inScheme naousa-br2016-dsd:codelist ;
+	skos:notation "1511" ;
+	skos:prefLabel "Προσαυξήσεις εκπρόθεσμης καταβολής χρεών (άρθρο 6 ΝΔ 356/74, άρθρο 16 Ν 2130/93)" ;
+	skos:broader naousa-br2016-codelist:00 ;
+	skos:broadMatch kae-ota-es14:1511 .
+
+<http://data.openbudgets.eu/resource/dataset/budget-naousa-revenue-2016/codelist/00/1512> a skos:Concept ;
+	skos:inScheme naousa-br2016-dsd:codelist ;
+	skos:notation "1512" ;
+	skos:prefLabel "Πρόστιμα του ΚΟΚ, του ΝΔ 805/71 και του ΑΝ 170/67 (άρθρο 31 Ν 2130/93)" ;
+	skos:broader naousa-br2016-codelist:00 ;
+	skos:broadMatch kae-ota-es14:1512 .
+
+<http://data.openbudgets.eu/resource/dataset/budget-naousa-revenue-2016/codelist/00/1513> a skos:Concept ;
+	skos:inScheme naousa-br2016-dsd:codelist ;
+	skos:narrower <http://data.openbudgets.eu/resource/dataset/budget-naousa-revenue-2016/codelist/00/1513.000> , <http://data.openbudgets.eu/resource/dataset/budget-naousa-revenue-2016/codelist/00/1513.001> ;
+	skos:notation "1513" ;
+	skos:prefLabel "Πρόστιμα για παραβάσεις φορολογικών διατάξεων (άρθρο 19 Ν 1080/80)" ;
+	skos:broader naousa-br2016-codelist:00 ;
+	skos:broadMatch kae-ota-es14:1513 .
+
+<http://data.openbudgets.eu/resource/dataset/budget-naousa-revenue-2016/codelist/00/1513.000> a skos:Concept ;
+	skos:inScheme naousa-br2016-dsd:codelist ;
+	skos:notation "1513.000" ;
+	skos:prefLabel "Πρόστιμα για παραβάσεις φορολογικών διατάξεων (άρθρο 19 Ν 1080/80)" ;
+	skos:broader <http://data.openbudgets.eu/resource/dataset/budget-naousa-revenue-2016/codelist/00/1513> .
+
+<http://data.openbudgets.eu/resource/dataset/budget-naousa-revenue-2016/codelist/00/1513.001> a skos:Concept ;
+	skos:inScheme naousa-br2016-dsd:codelist ;
+	skos:notation "1513.001" ;
+	skos:prefLabel "Πρόστιμα για παραβάσεις φορολογικών διατάξεων υπαίθριου εμπορίου Ν.4038/2012 -άρθρο 12" ;
+	skos:broader <http://data.openbudgets.eu/resource/dataset/budget-naousa-revenue-2016/codelist/00/1513> .
+
+<http://data.openbudgets.eu/resource/dataset/budget-naousa-revenue-2016/codelist/00/1514> a skos:Concept ;
+	skos:inScheme naousa-br2016-dsd:codelist ;
+	skos:notation "1514" ;
+	skos:prefLabel "Πρόστιμα ανέγερσης και διατήρησης αυθαιρέτων κατασκευών (άρθρο 12 Ν 1647/86)" ;
+	skos:broader naousa-br2016-codelist:00 ;
+	skos:broadMatch kae-ota-es14:1514 .
+
+<http://data.openbudgets.eu/resource/dataset/budget-naousa-revenue-2016/codelist/00/1515> a skos:Concept ;
+	skos:inScheme naousa-br2016-dsd:codelist ;
+	skos:notation "1515" ;
+	skos:prefLabel "Πειθαρχικά πρόστιμα σε βάρος των υπαλλήλων (άρθρο 284 Ν 1188/81)" ;
+	skos:broader naousa-br2016-codelist:00 ;
+	skos:broadMatch kae-ota-es14:1515 .
+
+<http://data.openbudgets.eu/resource/dataset/budget-naousa-revenue-2016/codelist/00/1516> a skos:Concept ;
+	skos:inScheme naousa-br2016-dsd:codelist ;
+	skos:notation "1516" ;
+	skos:prefLabel "Έσοδα από διάφορες καταλογιστικές αποφάσεις" ;
+	skos:broader naousa-br2016-codelist:00 ;
+	skos:broadMatch kae-ota-es14:1516 .
+
+<http://data.openbudgets.eu/resource/dataset/budget-naousa-revenue-2016/codelist/00/1517> a skos:Concept ;
+	skos:inScheme naousa-br2016-dsd:codelist ;
+	skos:notation "1517" ;
+	skos:prefLabel "Πρόστιμα και ποινικές ρήτρες που επιβάλλονται σε βάρος προμηθευτών και εργολάβων" ;
+	skos:broader naousa-br2016-codelist:00 ;
+	skos:broadMatch kae-ota-es14:1517 .
+
+<http://data.openbudgets.eu/resource/dataset/budget-naousa-revenue-2016/codelist/00/1518> a skos:Concept ;
+	skos:inScheme naousa-br2016-dsd:codelist ;
+	skos:notation "1518" ;
+	skos:prefLabel "Καταπτώσεις εγγυήσεων" ;
+	skos:broader naousa-br2016-codelist:00 ;
+	skos:broadMatch kae-ota-es14:1518 .
+
+<http://data.openbudgets.eu/resource/dataset/budget-naousa-revenue-2016/codelist/00/1519> a skos:Concept ;
+	skos:inScheme naousa-br2016-dsd:codelist ;
+	skos:notation "1519" ;
+	skos:prefLabel "Λοιπά πρόστιμα και χρηματικές ποινές επιβαλλόμενες βάσει ειδικών διατάξεων" ;
+	skos:broader naousa-br2016-codelist:00 ;
+	skos:broadMatch kae-ota-es14:1519 .
+
+<http://data.openbudgets.eu/resource/dataset/budget-naousa-revenue-2016/codelist/00/1521> a skos:Concept ;
+	skos:inScheme naousa-br2016-dsd:codelist ;
+	skos:notation "1521" ;
+	skos:prefLabel "Παράβολα πλειστηριασμών (άρθρα 932 και 959 ΚΠολΔ)" ;
+	skos:broader naousa-br2016-codelist:00 ;
+	skos:broadMatch kae-ota-es14:1521 .
+
+<http://data.openbudgets.eu/resource/dataset/budget-naousa-revenue-2016/codelist/00/1522> a skos:Concept ;
+	skos:inScheme naousa-br2016-dsd:codelist ;
+	skos:notation "1522" ;
+	skos:prefLabel "Παράβολα υποβαλλόμενα για τη χορήγηση διευκολύνσεων τμηματικής καταβολής χρεών (άρθρο 18 Ν 2648/98)" ;
+	skos:broader naousa-br2016-codelist:00 ;
+	skos:broadMatch kae-ota-es14:1522 .
+
+<http://data.openbudgets.eu/resource/dataset/budget-naousa-revenue-2016/codelist/00/1611> a skos:Concept ;
+	skos:inScheme naousa-br2016-dsd:codelist ;
+	skos:notation "1611" ;
+	skos:prefLabel "Έσοδα από δημοτικές  η  κοινοτικές κοινωφελείς επιχειρήσεις" ;
+	skos:broader naousa-br2016-codelist:00 ;
+	skos:broadMatch kae-ota-es14:1611 .
+
+<http://data.openbudgets.eu/resource/dataset/budget-naousa-revenue-2016/codelist/00/1612> a skos:Concept ;
+	skos:inScheme naousa-br2016-dsd:codelist ;
+	skos:notation "1612" ;
+	skos:prefLabel "Έσοδα από αμιγείς Δημοτικές/Διαδημοτικές επιχειρήσεις" ;
+	skos:broader naousa-br2016-codelist:00 ;
+	skos:broadMatch kae-ota-es14:1612 .
+
+<http://data.openbudgets.eu/resource/dataset/budget-naousa-revenue-2016/codelist/00/1613> a skos:Concept ;
+	skos:inScheme naousa-br2016-dsd:codelist ;
+	skos:notation "1613" ;
+	skos:prefLabel "Έσοδα από λοιπές Δημοτικές επιχειρήσεις" ;
+	skos:broader naousa-br2016-codelist:00 ;
+	skos:broadMatch kae-ota-es14:1613 .
+
+<http://data.openbudgets.eu/resource/dataset/budget-naousa-revenue-2016/codelist/00/1614> a skos:Concept ;
+	skos:inScheme naousa-br2016-dsd:codelist ;
+	skos:notation "1614" ;
+	skos:prefLabel "Έσοδα από συμμετοχή σε λοιπές επιχειρήσεις" ;
+	skos:broader naousa-br2016-codelist:00 ;
+	skos:broadMatch kae-ota-es14:1614 .
+
+<http://data.openbudgets.eu/resource/dataset/budget-naousa-revenue-2016/codelist/00/1615> a skos:Concept ;
+	skos:inScheme naousa-br2016-dsd:codelist ;
+	skos:notation "1615" ;
+	skos:prefLabel "Αποζημίωση καταβληθείσα για λογαρισμό των υπόχρεων, λόγω προσκύρωσης ή ρυμοτόμησης ακινήτων (άρθρο 26 Ν 2539/97)" ;
+	skos:broader naousa-br2016-codelist:00 ;
+	skos:broadMatch kae-ota-es14:1615 .
+
+<http://data.openbudgets.eu/resource/dataset/budget-naousa-revenue-2016/codelist/00/1616> a skos:Concept ;
+	skos:inScheme naousa-br2016-dsd:codelist ;
+	skos:notation "1616" ;
+	skos:prefLabel "Έσοδα από συμβάσεις διαδημοτικής συνεργασίας (άρθρο 23 Ν 2539/97)" ;
+	skos:broader naousa-br2016-codelist:00 ;
+	skos:broadMatch kae-ota-es14:1616 .
+
+<http://data.openbudgets.eu/resource/dataset/budget-naousa-revenue-2016/codelist/00/1617> a skos:Concept ;
+	skos:inScheme naousa-br2016-dsd:codelist ;
+	skos:notation "1617" ;
+	skos:prefLabel "Εισφορές άλλων ΟΤΑ για την καταβολή αποζημίωσης στα μέλη υπηρεσιακού συμβουλίου (άρθρο 12 Ν 2130/93)" ;
+	skos:broader naousa-br2016-codelist:00 ;
+	skos:broadMatch kae-ota-es14:1617 .
+
+<http://data.openbudgets.eu/resource/dataset/budget-naousa-revenue-2016/codelist/00/1618> a skos:Concept ;
+	skos:inScheme naousa-br2016-dsd:codelist ;
+	skos:notation "1618" ;
+	skos:prefLabel "Εισφορές άλλων ΟΤΑ για τη μισθοδοσία ελεγκτών εσόδων - εξόδων και εισπρακτόρων (άρθρα 227 και 229 Ν 1188/81)" ;
+	skos:broader naousa-br2016-codelist:00 ;
+	skos:broadMatch kae-ota-es14:1618 .
+
+<http://data.openbudgets.eu/resource/dataset/budget-naousa-revenue-2016/codelist/00/1619> a skos:Concept ;
+	skos:inScheme naousa-br2016-dsd:codelist ;
+	skos:notation "1619" ;
+	skos:prefLabel "Λοιπά έσοδα από δαπάνες πραγματοποιηθείσες για λογαρισμό τρίτων" ;
+	skos:broader naousa-br2016-codelist:00 ;
+	skos:broadMatch kae-ota-es14:1619 .
+
+<http://data.openbudgets.eu/resource/dataset/budget-naousa-revenue-2016/codelist/00/1621> a skos:Concept ;
+	skos:inScheme naousa-br2016-dsd:codelist ;
+	skos:notation "1621" ;
+	skos:prefLabel "Δαπάνες αφαίρεσης παράνομων διαφημιστικών μέσων (άρθρο 9 Ν 2946/2001, άρθρο 11 Ν 2696/99)" ;
+	skos:broader naousa-br2016-codelist:00 ;
+	skos:broadMatch kae-ota-es14:1621 .
+
+<http://data.openbudgets.eu/resource/dataset/budget-naousa-revenue-2016/codelist/00/1622> a skos:Concept ;
+	skos:inScheme naousa-br2016-dsd:codelist ;
+	skos:notation "1622" ;
+	skos:prefLabel "Έξοδα ακινητοποίησης και μεταφοράς παρανόμως σταθμευμένων οχημάτων (άρθρο 45 Ν 2218/94)" ;
+	skos:broader naousa-br2016-codelist:00 ;
+	skos:broadMatch kae-ota-es14:1622 .
+
+<http://data.openbudgets.eu/resource/dataset/budget-naousa-revenue-2016/codelist/00/1623> a skos:Concept ;
+	skos:inScheme naousa-br2016-dsd:codelist ;
+	skos:notation "1623" ;
+	skos:prefLabel "Δαπάνες απομάκρυνσης και φύλαξης εγκαταλελειμμένων οχημάτων (ΚΥΑ 1002901/67/2002)" ;
+	skos:broader naousa-br2016-codelist:00 ;
+	skos:broadMatch kae-ota-es14:1623 .
+
+<http://data.openbudgets.eu/resource/dataset/budget-naousa-revenue-2016/codelist/00/1624> a skos:Concept ;
+	skos:inScheme naousa-br2016-dsd:codelist ;
+	skos:notation "1624" ;
+	skos:prefLabel "Έσοδα από την κατασκευή, επισκευή και συντήρηση οδών και πεζοδρομίων (άρθρο 47 Ν 2696/99, άρθρο 367 ΚΒΠΝ)" ;
+	skos:broader naousa-br2016-codelist:00 ;
+	skos:broadMatch kae-ota-es14:1624 .
+
+<http://data.openbudgets.eu/resource/dataset/budget-naousa-revenue-2016/codelist/00/1625> a skos:Concept ;
+	skos:inScheme naousa-br2016-dsd:codelist ;
+	skos:notation "1625" ;
+	skos:prefLabel "Αποζημίωση καταβληθείσα για λογαρισμό των υπόχρεων, λόγω προσκύρωσης ή ρυμοτόμησης ακινήτων (άρθρο 26 Ν 2539/97)" ;
+	skos:broader naousa-br2016-codelist:00 ;
+	skos:broadMatch kae-ota-es14:1625 .
+
+<http://data.openbudgets.eu/resource/dataset/budget-naousa-revenue-2016/codelist/00/1626> a skos:Concept ;
+	skos:inScheme naousa-br2016-dsd:codelist ;
+	skos:notation "1626" ;
+	skos:prefLabel "Έσοδα από συμβάσεις διαδημοτικής συνεργασίας (άρθρο 23 Ν 2539/97)" ;
+	skos:broader naousa-br2016-codelist:00 ;
+	skos:broadMatch kae-ota-es14:1626 .
+
+<http://data.openbudgets.eu/resource/dataset/budget-naousa-revenue-2016/codelist/00/1627> a skos:Concept ;
+	skos:inScheme naousa-br2016-dsd:codelist ;
+	skos:notation "1627" ;
+	skos:prefLabel "Εισφορές άλλων ΟΤΑ για την καταβολή αποζημίωσης στα μέλη υπηρεσιακού συμβουλίου (άρθρο 12 Ν 2130/93)" ;
+	skos:broader naousa-br2016-codelist:00 ;
+	skos:broadMatch kae-ota-es14:1627 .
+
+<http://data.openbudgets.eu/resource/dataset/budget-naousa-revenue-2016/codelist/00/1628> a skos:Concept ;
+	skos:inScheme naousa-br2016-dsd:codelist ;
+	skos:notation "1628" ;
+	skos:prefLabel "Εισφορές άλλων ΟΤΑ για τη μισθοδοσία ελεγκτών εσόδων - εξόδων και εισπρακτόρων (άρθρα 227 και 229 Ν 1188/81)" ;
+	skos:broader naousa-br2016-codelist:00 ;
+	skos:broadMatch kae-ota-es14:1628 .
+
+<http://data.openbudgets.eu/resource/dataset/budget-naousa-revenue-2016/codelist/00/1629> a skos:Concept ;
+	skos:inScheme naousa-br2016-dsd:codelist ;
+	skos:notation "1629" ;
+	skos:prefLabel "Λοιπά έσοδα από δαπάνες πραγματοποιηθείσες για λογαρισμό τρίτων" ;
+	skos:broader naousa-br2016-codelist:00 ;
+	skos:broadMatch kae-ota-es14:1629 .
+
+<http://data.openbudgets.eu/resource/dataset/budget-naousa-revenue-2016/codelist/00/1691> a skos:Concept ;
+	skos:inScheme naousa-br2016-dsd:codelist ;
+	skos:notation "1691" ;
+	skos:prefLabel "Τέλη επιβαλλόμενα σε βάρος επιχειρήσεων για την εκτέλεση έργων και προγραμμάτων προστασίας του περιβάλλοντος(αρθρο 6.Ν.1650/1986)" ;
+	skos:broader naousa-br2016-codelist:00 ;
+	skos:broadMatch kae-ota-es14:1691 .
+
+<http://data.openbudgets.eu/resource/dataset/budget-naousa-revenue-2016/codelist/00/1692> a skos:Concept ;
+	skos:inScheme naousa-br2016-dsd:codelist ;
+	skos:notation "1692" ;
+	skos:prefLabel "Εφάπαξ ειδική εισφορά για την δημιουργία κοινόχρηστων χώρων (αρθρο 16.ν.2508/97)" ;
+	skos:broader naousa-br2016-codelist:00 ;
+	skos:broadMatch kae-ota-es14:1692 .
+
+<http://data.openbudgets.eu/resource/dataset/budget-naousa-revenue-2016/codelist/00/1693> a skos:Concept ;
+	skos:inScheme naousa-br2016-dsd:codelist ;
+	skos:notation "1693" ;
+	skos:prefLabel "Εσοδα απο την πώληση αγαθών ή την παροχή υπηρεσιών" ;
+	skos:broader naousa-br2016-codelist:00 ;
+	skos:broadMatch kae-ota-es14:1693 .
+
+<http://data.openbudgets.eu/resource/dataset/budget-naousa-revenue-2016/codelist/00/1699> a skos:Concept ;
+	skos:inScheme naousa-br2016-dsd:codelist ;
+	skos:narrower <http://data.openbudgets.eu/resource/dataset/budget-naousa-revenue-2016/codelist/00/1699.001> , <http://data.openbudgets.eu/resource/dataset/budget-naousa-revenue-2016/codelist/00/1699.002> , <http://data.openbudgets.eu/resource/dataset/budget-naousa-revenue-2016/codelist/00/1699.003> , <http://data.openbudgets.eu/resource/dataset/budget-naousa-revenue-2016/codelist/00/1699.601> ;
+	skos:notation "1699" ;
+	skos:prefLabel "ΛΟΙΠΑ ΕΚΤΑΚΤΑ ΕΣΟΔΑ" ;
+	skos:broader naousa-br2016-codelist:00 ;
+	skos:broadMatch kae-ota-es14:1699 .
+
+<http://data.openbudgets.eu/resource/dataset/budget-naousa-revenue-2016/codelist/00/1699.001> a skos:Concept ;
+	skos:inScheme naousa-br2016-dsd:codelist ;
+	skos:notation "1699.001" ;
+	skos:prefLabel "Έσοδα από παράβολα αδειών διαμονής υπέρ πρωτοβάθμιων ΟΤΑ" ;
+	skos:broader <http://data.openbudgets.eu/resource/dataset/budget-naousa-revenue-2016/codelist/00/1699> .
+
+<http://data.openbudgets.eu/resource/dataset/budget-naousa-revenue-2016/codelist/00/1699.002> a skos:Concept ;
+	skos:inScheme naousa-br2016-dsd:codelist ;
+	skos:notation "1699.002" ;
+	skos:prefLabel "Έσοδα από χορηγίες εταιριών για εκδηλώσεις" ;
+	skos:broader <http://data.openbudgets.eu/resource/dataset/budget-naousa-revenue-2016/codelist/00/1699> .
+
+<http://data.openbudgets.eu/resource/dataset/budget-naousa-revenue-2016/codelist/00/1699.003> a skos:Concept ;
+	skos:inScheme naousa-br2016-dsd:codelist ;
+	skos:notation "1699.003" ;
+	skos:prefLabel "Έσοδα από λοιπές Δημοτικές επιχειρήσεις" ;
+	skos:broader <http://data.openbudgets.eu/resource/dataset/budget-naousa-revenue-2016/codelist/00/1699> .
+
+<http://data.openbudgets.eu/resource/dataset/budget-naousa-revenue-2016/codelist/00/1699.601> a skos:Concept ;
+	skos:inScheme naousa-br2016-dsd:codelist ;
+	skos:notation "1699.601" ;
+	skos:prefLabel "Έσοδα από παράβολα αδειών διαμονής υπέρ πρωτοβαθμίων ΟΤΑ(Δ.Ε.Ανθεμίων)" ;
+	skos:broader <http://data.openbudgets.eu/resource/dataset/budget-naousa-revenue-2016/codelist/00/1699> .
+
+<http://data.openbudgets.eu/resource/dataset/budget-naousa-revenue-2016/codelist/00/2111> a skos:Concept ;
+	skos:inScheme naousa-br2016-dsd:codelist ;
+	skos:notation "2111" ;
+	skos:prefLabel "Τακτικά έσοδα από τέλη καθαριότητας και ηλεκτροφωτισμού" ;
+	skos:broader naousa-br2016-codelist:00 ;
+	skos:broadMatch kae-ota-es14:2111 .
+
+<http://data.openbudgets.eu/resource/dataset/budget-naousa-revenue-2016/codelist/00/2112> a skos:Concept ;
+	skos:inScheme naousa-br2016-dsd:codelist ;
+	skos:notation "2112" ;
+	skos:prefLabel "Τακτικά έσοδα από τέλη και δικαιώματα ύδρευσης" ;
+	skos:broader naousa-br2016-codelist:00 ;
+	skos:broadMatch kae-ota-es14:2112 .
+
+<http://data.openbudgets.eu/resource/dataset/budget-naousa-revenue-2016/codelist/00/2113> a skos:Concept ;
+	skos:inScheme naousa-br2016-dsd:codelist ;
+	skos:notation "2113" ;
+	skos:prefLabel "Τακτικά έσοδα από τέλη και δικαιώματα άρδευσης" ;
+	skos:broader naousa-br2016-codelist:00 ;
+	skos:broadMatch kae-ota-es14:2113 .
+
+<http://data.openbudgets.eu/resource/dataset/budget-naousa-revenue-2016/codelist/00/2114> a skos:Concept ;
+	skos:inScheme naousa-br2016-dsd:codelist ;
+	skos:notation "2114" ;
+	skos:prefLabel "Τακτικά έσοδα από τέλη και δικαιώματα αποχέτευσης" ;
+	skos:broader naousa-br2016-codelist:00 ;
+	skos:broadMatch kae-ota-es14:2114 .
+
+<http://data.openbudgets.eu/resource/dataset/budget-naousa-revenue-2016/codelist/00/2115> a skos:Concept ;
+	skos:inScheme naousa-br2016-dsd:codelist ;
+	skos:notation "2115" ;
+	skos:prefLabel "Τακτικά έσοδα από τέλος ακίνητης περιουσίας" ;
+	skos:broader naousa-br2016-codelist:00 ;
+	skos:broadMatch kae-ota-es14:2115 .
+
+<http://data.openbudgets.eu/resource/dataset/budget-naousa-revenue-2016/codelist/00/2116> a skos:Concept ;
+	skos:inScheme naousa-br2016-dsd:codelist ;
+	skos:notation "2116" ;
+	skos:prefLabel "Τακτικά έσοδα από δυνητικά ανταποδοτικά τέλη και εισφορές" ;
+	skos:broader naousa-br2016-codelist:00 ;
+	skos:broadMatch kae-ota-es14:2116 .
+
+<http://data.openbudgets.eu/resource/dataset/budget-naousa-revenue-2016/codelist/00/2117> a skos:Concept ;
+	skos:inScheme naousa-br2016-dsd:codelist ;
+	skos:notation "2117" ;
+	skos:prefLabel "Τακτικά έσοδα από εισφορά λόγω ένταξης ή επέκτασης πολεοδομικών σχεδίων" ;
+	skos:broader naousa-br2016-codelist:00 ;
+	skos:broadMatch kae-ota-es14:2117 .
+
+<http://data.openbudgets.eu/resource/dataset/budget-naousa-revenue-2016/codelist/00/2118> a skos:Concept ;
+	skos:inScheme naousa-br2016-dsd:codelist ;
+	skos:notation "2118" ;
+	skos:prefLabel "Τακτικά έσοδα επί των ακαθαρίστων εσόδων επιτηδευματιών" ;
+	skos:broader naousa-br2016-codelist:00 ;
+	skos:broadMatch kae-ota-es14:2118 .
+
+<http://data.openbudgets.eu/resource/dataset/budget-naousa-revenue-2016/codelist/00/2119> a skos:Concept ;
+	skos:inScheme naousa-br2016-dsd:codelist ;
+	skos:narrower <http://data.openbudgets.eu/resource/dataset/budget-naousa-revenue-2016/codelist/00/2119.001> , <http://data.openbudgets.eu/resource/dataset/budget-naousa-revenue-2016/codelist/00/2119.602> , <http://data.openbudgets.eu/resource/dataset/budget-naousa-revenue-2016/codelist/00/2119.603> , <http://data.openbudgets.eu/resource/dataset/budget-naousa-revenue-2016/codelist/00/2119.701> , <http://data.openbudgets.eu/resource/dataset/budget-naousa-revenue-2016/codelist/00/2119.702> ;
+	skos:notation "2119" ;
+	skos:prefLabel "Τακτικά έσοδα από λοιπά έσοδα" ;
+	skos:broader naousa-br2016-codelist:00 ;
+	skos:broadMatch kae-ota-es14:2119 .
+
+<http://data.openbudgets.eu/resource/dataset/budget-naousa-revenue-2016/codelist/00/2119.001> a skos:Concept ;
+	skos:inScheme naousa-br2016-dsd:codelist ;
+	skos:notation "2119.001" ;
+	skos:prefLabel "Φόρος  ηλεκτροδοτούμενων χώρων (άρθρο 10 Ν.1080/80)" ;
+	skos:broader <http://data.openbudgets.eu/resource/dataset/budget-naousa-revenue-2016/codelist/00/2119> .
+
+<http://data.openbudgets.eu/resource/dataset/budget-naousa-revenue-2016/codelist/00/2119.602> a skos:Concept ;
+	skos:inScheme naousa-br2016-dsd:codelist ;
+	skos:notation "2119.602" ;
+	skos:prefLabel "Έσοδα από μισθώματα Δ.Ε. Ανθεμίων" ;
+	skos:broader <http://data.openbudgets.eu/resource/dataset/budget-naousa-revenue-2016/codelist/00/2119> .
+
+<http://data.openbudgets.eu/resource/dataset/budget-naousa-revenue-2016/codelist/00/2119.603> a skos:Concept ;
+	skos:inScheme naousa-br2016-dsd:codelist ;
+	skos:notation "2119.603" ;
+	skos:prefLabel "Έσοδα βοσκής Δ.Ε. Ανθεμίων" ;
+	skos:broader <http://data.openbudgets.eu/resource/dataset/budget-naousa-revenue-2016/codelist/00/2119> .
+
+<http://data.openbudgets.eu/resource/dataset/budget-naousa-revenue-2016/codelist/00/2119.701> a skos:Concept ;
+	skos:inScheme naousa-br2016-dsd:codelist ;
+	skos:notation "2119.701" ;
+	skos:prefLabel "Τακτικά έσοδα από το τέλος δικαιώματος βοσκής Δ.Ε. Ειρηνούπολης" ;
+	skos:broader <http://data.openbudgets.eu/resource/dataset/budget-naousa-revenue-2016/codelist/00/2119> .
+
+<http://data.openbudgets.eu/resource/dataset/budget-naousa-revenue-2016/codelist/00/2119.702> a skos:Concept ;
+	skos:inScheme naousa-br2016-dsd:codelist ;
+	skos:notation "2119.702" ;
+	skos:prefLabel "Τακτικά έσοδα από το τέλος Νεκροταφείων Δ.Ε. Ειρηνούπολης" ;
+	skos:broader <http://data.openbudgets.eu/resource/dataset/budget-naousa-revenue-2016/codelist/00/2119> .
+
+<http://data.openbudgets.eu/resource/dataset/budget-naousa-revenue-2016/codelist/00/2211> a skos:Concept ;
+	skos:inScheme naousa-br2016-dsd:codelist ;
+	skos:notation "2211" ;
+	skos:prefLabel "Έκτακτα γενικά έσοδα (ΠΟΥ ΒΕΒΑΙΩΝΟΝΤΑΙ ΚΑΙ ΕΙΣΠΡΑΤΤΟΝΤΑΙ ΓΙΑ ΠΡΩΤΗ ΦΟΡΑ)" ;
+	skos:broader naousa-br2016-codelist:00 ;
+	skos:broadMatch kae-ota-es14:2211 .
+
+<http://data.openbudgets.eu/resource/dataset/budget-naousa-revenue-2016/codelist/00/2212> a skos:Concept ;
+	skos:inScheme naousa-br2016-dsd:codelist ;
+	skos:narrower <http://data.openbudgets.eu/resource/dataset/budget-naousa-revenue-2016/codelist/00/2212.001> ;
+	skos:notation "2212" ;
+	skos:prefLabel "Έκτακτα ειδικευμένα έσοδα" ;
+	skos:broader naousa-br2016-codelist:00 ;
+	skos:broadMatch kae-ota-es14:2212 .
+
+<http://data.openbudgets.eu/resource/dataset/budget-naousa-revenue-2016/codelist/00/2212.001> a skos:Concept ;
+	skos:inScheme naousa-br2016-dsd:codelist ;
+	skos:notation "2212.001" ;
+	skos:prefLabel "Επιχορήγηση ΣΑΤΑ 2006" ;
+	skos:broader <http://data.openbudgets.eu/resource/dataset/budget-naousa-revenue-2016/codelist/00/2212> .
+
+<http://data.openbudgets.eu/resource/dataset/budget-naousa-revenue-2016/codelist/00/3111> a skos:Concept ;
+	skos:inScheme naousa-br2016-dsd:codelist ;
+	skos:notation "3111" ;
+	skos:prefLabel "Δάνεια Ταμείου Παρακαταθηκών και Δανείων" ;
+	skos:broader naousa-br2016-codelist:00 ;
+	skos:broadMatch kae-ota-es14:3111 .
+
+<http://data.openbudgets.eu/resource/dataset/budget-naousa-revenue-2016/codelist/00/3112> a skos:Concept ;
+	skos:inScheme naousa-br2016-dsd:codelist ;
+	skos:notation "3112" ;
+	skos:prefLabel "Δάνεια από άλλους πιστωτικούς οργανισμούς της ημεδαπής ή της αλλοδαπής (άρθρο 11 Ν 2503/97)" ;
+	skos:broader naousa-br2016-codelist:00 ;
+	skos:broadMatch kae-ota-es14:3112 .
+
+<http://data.openbudgets.eu/resource/dataset/budget-naousa-revenue-2016/codelist/00/3121> a skos:Concept ;
+	skos:inScheme naousa-br2016-dsd:codelist ;
+	skos:notation "3121" ;
+	skos:prefLabel "Δάνεια του Ταμείου Παρακαταθηκών και Δανείων" ;
+	skos:broader naousa-br2016-codelist:00 ;
+	skos:broadMatch kae-ota-es14:3121 .
+
+<http://data.openbudgets.eu/resource/dataset/budget-naousa-revenue-2016/codelist/00/3122> a skos:Concept ;
+	skos:inScheme naousa-br2016-dsd:codelist ;
+	skos:notation "3122" ;
+	skos:prefLabel "Δάνεια από άλλους πιστωτικούς οργανισμούς της ημεδαπής ή της αλλοδαπής (άρθρο 11 Ν 2503/97)" ;
+	skos:broader naousa-br2016-codelist:00 ;
+	skos:broadMatch kae-ota-es14:3122 .
+
+<http://data.openbudgets.eu/resource/dataset/budget-naousa-revenue-2016/codelist/00/3211> a skos:Concept ;
+	skos:inScheme naousa-br2016-dsd:codelist ;
+	skos:notation "3211" ;
+	skos:prefLabel "Τέλη καθαριότητας και ηλεκτροφωτισμού" ;
+	skos:broader naousa-br2016-codelist:00 ;
+	skos:broadMatch kae-ota-es14:3211 .
+
+<http://data.openbudgets.eu/resource/dataset/budget-naousa-revenue-2016/codelist/00/3212> a skos:Concept ;
+	skos:inScheme naousa-br2016-dsd:codelist ;
+	skos:notation "3212" ;
+	skos:prefLabel "Τέλη και δικαιώματα ύδρευσης" ;
+	skos:broader naousa-br2016-codelist:00 ;
+	skos:broadMatch kae-ota-es14:3212 .
+
+<http://data.openbudgets.eu/resource/dataset/budget-naousa-revenue-2016/codelist/00/3213> a skos:Concept ;
+	skos:inScheme naousa-br2016-dsd:codelist ;
+	skos:notation "3213" ;
+	skos:prefLabel "Τέλη και δικαιώματα άρδευσης" ;
+	skos:broader naousa-br2016-codelist:00 ;
+	skos:broadMatch kae-ota-es14:3213 .
+
+<http://data.openbudgets.eu/resource/dataset/budget-naousa-revenue-2016/codelist/00/3214> a skos:Concept ;
+	skos:inScheme naousa-br2016-dsd:codelist ;
+	skos:notation "3214" ;
+	skos:prefLabel "Τέλη και δικαιώματα αποχέτευσης" ;
+	skos:broader naousa-br2016-codelist:00 ;
+	skos:broadMatch kae-ota-es14:3214 .
+
+<http://data.openbudgets.eu/resource/dataset/budget-naousa-revenue-2016/codelist/00/3215> a skos:Concept ;
+	skos:inScheme naousa-br2016-dsd:codelist ;
+	skos:notation "3215" ;
+	skos:prefLabel "Τέλος ακίνητης περιουσίας" ;
+	skos:broader naousa-br2016-codelist:00 ;
+	skos:broadMatch kae-ota-es14:3215 .
+
+<http://data.openbudgets.eu/resource/dataset/budget-naousa-revenue-2016/codelist/00/3216> a skos:Concept ;
+	skos:inScheme naousa-br2016-dsd:codelist ;
+	skos:notation "3216" ;
+	skos:prefLabel "Δυνητικά ανταποδοτικά τέλη και εισφορές" ;
+	skos:broader naousa-br2016-codelist:00 ;
+	skos:broadMatch kae-ota-es14:3216 .
+
+<http://data.openbudgets.eu/resource/dataset/budget-naousa-revenue-2016/codelist/00/3217> a skos:Concept ;
+	skos:inScheme naousa-br2016-dsd:codelist ;
+	skos:notation "3217" ;
+	skos:prefLabel "Εισφορά λόγω ένταξης ή επέκτασης πολεοδομικών σχεδίων" ;
+	skos:broader naousa-br2016-codelist:00 ;
+	skos:broadMatch kae-ota-es14:3217 .
+
+<http://data.openbudgets.eu/resource/dataset/budget-naousa-revenue-2016/codelist/00/3218> a skos:Concept ;
+	skos:inScheme naousa-br2016-dsd:codelist ;
+	skos:notation "3218" ;
+	skos:prefLabel "Τακτικά έσοδα απί των ακαθαρίστων εσόδων επιτηδευματιών" ;
+	skos:broader naousa-br2016-codelist:00 ;
+	skos:broadMatch kae-ota-es14:3218 .
+
+<http://data.openbudgets.eu/resource/dataset/budget-naousa-revenue-2016/codelist/00/3219> a skos:Concept ;
+	skos:inScheme naousa-br2016-dsd:codelist ;
+	skos:notation "3219" ;
+	skos:prefLabel "Λοιπά έσοδα" ;
+	skos:broader naousa-br2016-codelist:00 ;
+	skos:broadMatch kae-ota-es14:3219 .
+
+<http://data.openbudgets.eu/resource/dataset/budget-naousa-revenue-2016/codelist/00/3221> a skos:Concept ;
+	skos:inScheme naousa-br2016-dsd:codelist ;
+	skos:notation "3221" ;
+	skos:prefLabel "Έκτακτα γενικά έσοδα" ;
+	skos:broader naousa-br2016-codelist:00 ;
+	skos:broadMatch kae-ota-es14:3221 .
+
+<http://data.openbudgets.eu/resource/dataset/budget-naousa-revenue-2016/codelist/00/3222> a skos:Concept ;
+	skos:inScheme naousa-br2016-dsd:codelist ;
+	skos:notation "3222" ;
+	skos:prefLabel "Έκτακτα ειδικευμένα έσοδα" ;
+	skos:broader naousa-br2016-codelist:00 ;
+	skos:broadMatch kae-ota-es14:3222 .
+
+<http://data.openbudgets.eu/resource/dataset/budget-naousa-revenue-2016/codelist/00/4111> a skos:Concept ;
+	skos:inScheme naousa-br2016-dsd:codelist ;
+	skos:notation "4111" ;
+	skos:prefLabel "Εισφορά υπέρ του Δημοσίου στις αποδοχές και τα έξοδα παράστασης" ;
+	skos:broader naousa-br2016-codelist:00 ;
+	skos:broadMatch kae-ota-es14:4111 .
+
+<http://data.openbudgets.eu/resource/dataset/budget-naousa-revenue-2016/codelist/00/4112> a skos:Concept ;
+	skos:inScheme naousa-br2016-dsd:codelist ;
+	skos:notation "4112" ;
+	skos:prefLabel "Εξαγορά συντάξιμης υπηρεσίας" ;
+	skos:broader naousa-br2016-codelist:00 ;
+	skos:broadMatch kae-ota-es14:4112 .
+
+<http://data.openbudgets.eu/resource/dataset/budget-naousa-revenue-2016/codelist/00/4121> a skos:Concept ;
+	skos:inScheme naousa-br2016-dsd:codelist ;
+	skos:notation "4121" ;
+	skos:prefLabel "Φόροι μισθωτών υπηρεσιών" ;
+	skos:broader naousa-br2016-codelist:00 ;
+	skos:broadMatch kae-ota-es14:4121 .
+
+<http://data.openbudgets.eu/resource/dataset/budget-naousa-revenue-2016/codelist/00/4122> a skos:Concept ;
+	skos:inScheme naousa-br2016-dsd:codelist ;
+	skos:notation "4122" ;
+	skos:prefLabel "Φόροι και χαρτόσημο Δημάρχων Αντιδημάρχων, μελών Δημοτικών Συμβουλίων και λοιπών συλλογικών οργάνων" ;
+	skos:broader naousa-br2016-codelist:00 ;
+	skos:broadMatch kae-ota-es14:4122 .
+
+<http://data.openbudgets.eu/resource/dataset/budget-naousa-revenue-2016/codelist/00/4123> a skos:Concept ;
+	skos:inScheme naousa-br2016-dsd:codelist ;
+	skos:notation "4123" ;
+	skos:prefLabel "Φόρων προμηθευτών εργολάβων ελ. Επαγγελματιών κλπ" ;
+	skos:broader naousa-br2016-codelist:00 ;
+	skos:broadMatch kae-ota-es14:4123 .
+
+<http://data.openbudgets.eu/resource/dataset/budget-naousa-revenue-2016/codelist/00/4124> a skos:Concept ;
+	skos:inScheme naousa-br2016-dsd:codelist ;
+	skos:notation "4124" ;
+	skos:prefLabel "Λοιπές κρατήσεις υπέρ του Δημοσίου" ;
+	skos:broader naousa-br2016-codelist:00 ;
+	skos:broadMatch kae-ota-es14:4124 .
+
+<http://data.openbudgets.eu/resource/dataset/budget-naousa-revenue-2016/codelist/00/4131> a skos:Concept ;
+	skos:inScheme naousa-br2016-dsd:codelist ;
+	skos:notation "4131" ;
+	skos:prefLabel "Εισφορές σε ασφαλιστικούς οργανισμούς και ταμεία" ;
+	skos:broader naousa-br2016-codelist:00 ;
+	skos:broadMatch kae-ota-es14:4131 .
+
+<http://data.openbudgets.eu/resource/dataset/budget-naousa-revenue-2016/codelist/00/4132> a skos:Concept ;
+	skos:inScheme naousa-br2016-dsd:codelist ;
+	skos:notation "4132" ;
+	skos:prefLabel "Εισφορά για το εφάπαξ βοήθημα του Ν 103/75" ;
+	skos:broader naousa-br2016-codelist:00 ;
+	skos:broadMatch kae-ota-es14:4132 .
+
+<http://data.openbudgets.eu/resource/dataset/budget-naousa-revenue-2016/codelist/00/4141> a skos:Concept ;
+	skos:inScheme naousa-br2016-dsd:codelist ;
+	skos:notation "4141" ;
+	skos:prefLabel "Κρατήσεις στις αποδοχές για την εξόφληση δανείων του ΤΠ & Δ" ;
+	skos:broader naousa-br2016-codelist:00 ;
+	skos:broadMatch kae-ota-es14:4141 .
+
+<http://data.openbudgets.eu/resource/dataset/budget-naousa-revenue-2016/codelist/00/4142> a skos:Concept ;
+	skos:inScheme naousa-br2016-dsd:codelist ;
+	skos:notation "4142" ;
+	skos:prefLabel "Λοιπές κρατήσεις υπέρ τρίτων" ;
+	skos:broader naousa-br2016-codelist:00 ;
+	skos:broadMatch kae-ota-es14:4142 .
+
+<http://data.openbudgets.eu/resource/dataset/budget-naousa-revenue-2016/codelist/00/4211> a skos:Concept ;
+	skos:inScheme naousa-br2016-dsd:codelist ;
+	skos:notation "4211" ;
+	skos:prefLabel "Επιστροφή χρημάτων από υπολόγους χρηματικών ενταλμάτων προπληρωμής" ;
+	skos:broader naousa-br2016-codelist:00 ;
+	skos:broadMatch kae-ota-es14:4211 .
+
+<http://data.openbudgets.eu/resource/dataset/budget-naousa-revenue-2016/codelist/00/4212> a skos:Concept ;
+	skos:inScheme naousa-br2016-dsd:codelist ;
+	skos:notation "4212" ;
+	skos:prefLabel "Επιστροφή πάγιας προκαταβολής" ;
+	skos:broader naousa-br2016-codelist:00 ;
+	skos:broadMatch kae-ota-es14:4212 .
+
+<http://data.openbudgets.eu/resource/dataset/budget-naousa-revenue-2016/codelist/00/4213> a skos:Concept ;
+	skos:inScheme naousa-br2016-dsd:codelist ;
+	skos:notation "4213" ;
+	skos:prefLabel "Επιστροφή αχρεωστήτων καταβληθέντων χρηματικών ποσών (άρθρο 26 Ν 318/69, Απόφ. Υπ. Οικν. 2081241/11652/1997)" ;
+	skos:broader naousa-br2016-codelist:00 ;
+	skos:broadMatch kae-ota-es14:4213 .
+
+<http://data.openbudgets.eu/resource/dataset/budget-naousa-revenue-2016/codelist/00/4214> a skos:Concept ;
+	skos:inScheme naousa-br2016-dsd:codelist ;
+	skos:notation "4214" ;
+	skos:prefLabel "Επιστροφή εν γένει χρημάτων" ;
+	skos:broader naousa-br2016-codelist:00 ;
+	skos:broadMatch kae-ota-es14:4214 .
+
+<http://data.openbudgets.eu/resource/dataset/budget-naousa-revenue-2016/codelist/00/5111> a skos:Concept ;
+	skos:inScheme naousa-br2016-dsd:codelist ;
+	skos:notation "5111" ;
+	skos:prefLabel "Χρηματικό υπόλοιπο προερχόμενο από τακτικά έσοδα για την κάλυψη υποχρεώσεων παρελθόντων ετών" ;
+	skos:broader naousa-br2016-codelist:00 ;
+	skos:broadMatch kae-ota-es14:5111 .
+
+<http://data.openbudgets.eu/resource/dataset/budget-naousa-revenue-2016/codelist/00/5112> a skos:Concept ;
+	skos:inScheme naousa-br2016-dsd:codelist ;
+	skos:notation "5112" ;
+	skos:prefLabel "Χρηματικό υπόλοιπο προερχόμενο από τακτικά έσοδα για την κάλυψη έργων του ΠΔΕ ή από πιστώσεις προοριζόμενες για δημόσιες επενδύσεις" ;
+	skos:broader naousa-br2016-codelist:00 ;
+	skos:broadMatch kae-ota-es14:5112 .
+
+<http://data.openbudgets.eu/resource/dataset/budget-naousa-revenue-2016/codelist/00/5113> a skos:Concept ;
+	skos:inScheme naousa-br2016-dsd:codelist ;
+	skos:notation "5113" ;
+	skos:prefLabel "Χρηματικό υπόλοιπο προερχόμενο από τακτικά έσοδα για την κάλυψη ειδικευμένων δαπανών" ;
+	skos:broader naousa-br2016-codelist:00 ;
+	skos:broadMatch kae-ota-es14:5113 .
+
+<http://data.openbudgets.eu/resource/dataset/budget-naousa-revenue-2016/codelist/00/5119> a skos:Concept ;
+	skos:inScheme naousa-br2016-dsd:codelist ;
+	skos:notation "5119" ;
+	skos:prefLabel "Χρηματικό υπόλοιπο προερχόμενο από τακτικά έσοδα για την κάλυψη εν γένει δαπανών του Δήμου" ;
+	skos:broader naousa-br2016-codelist:00 ;
+	skos:broadMatch kae-ota-es14:5119 .
+
+<http://data.openbudgets.eu/resource/dataset/budget-naousa-revenue-2016/codelist/00/5121> a skos:Concept ;
+	skos:inScheme naousa-br2016-dsd:codelist ;
+	skos:notation "5121" ;
+	skos:prefLabel "Χρηματικό υπόλοιπο προερχόμενο από έκτακτα έσοδα για την κάλυψη υποχρεώσεων παρελθόντων ετών" ;
+	skos:broader naousa-br2016-codelist:00 ;
+	skos:broadMatch kae-ota-es14:5121 .
+
+<http://data.openbudgets.eu/resource/dataset/budget-naousa-revenue-2016/codelist/00/5122> a skos:Concept ;
+	skos:inScheme naousa-br2016-dsd:codelist ;
+	skos:notation "5122" ;
+	skos:prefLabel "Χρηματικό υπόλοιπο προερχόμενο από έκτακτα έσοδα για την κάλυψη έργων του Π.Δ.Ε. ή πιστώσεις προοριζόμενες για δημόσιες επενδύσεις" ;
+	skos:broader naousa-br2016-codelist:00 ;
+	skos:broadMatch kae-ota-es14:5122 .
+
+<http://data.openbudgets.eu/resource/dataset/budget-naousa-revenue-2016/codelist/00/5123> a skos:Concept ;
+	skos:inScheme naousa-br2016-dsd:codelist ;
+	skos:notation "5123" ;
+	skos:prefLabel "Χρηματικό υπόλοιπο προερχόμενο από έκτακτα έσοδα για την κάλυψη ειδικευμένων δαπανών" ;
+	skos:broader naousa-br2016-codelist:00 ;
+	skos:broadMatch kae-ota-es14:5123 .
+
+<http://data.openbudgets.eu/resource/dataset/budget-naousa-revenue-2016/codelist/00/5124> a skos:Concept ;
+	skos:inScheme naousa-br2016-dsd:codelist ;
+	skos:notation "5124" ;
+	skos:prefLabel "Χρηματικό υπόλοιπο προερχόμενο από το ΠΡΟΓΡΑΜΜΑ ΔΗΜΟΣΙΩΝ ΕΠΕΝΔΥΣΕΩΝ (ΕΣΠΑ και Εθνικό ΠΔΕ )" ;
+	skos:broader naousa-br2016-codelist:00 ;
+	skos:broadMatch kae-ota-es14:5124 .
+
+<http://data.openbudgets.eu/resource/dataset/budget-naousa-revenue-2016/codelist/00/5129> a skos:Concept ;
+	skos:inScheme naousa-br2016-dsd:codelist ;
+	skos:notation "5129" ;
+	skos:prefLabel "Χρηματικό υπόλοιπο προερχόμενο από έκτακτα έσοδα για την κάλυψη εν γένει δαπανών του Δήμου" ;
+	skos:broader naousa-br2016-codelist:00 ;
+	skos:broadMatch kae-ota-es14:5129 .
