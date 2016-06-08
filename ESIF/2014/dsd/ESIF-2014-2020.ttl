@@ -23,7 +23,7 @@
 # ----- DSD -----
 
 
-<http://example.openbudgets.eu/ontology/dsd/ESIF-2014-2020> a qb:DataStructureDefinition ;
+<http://data.openbudgets.eu/ontology/dsd/ESIF-2014-2020> a qb:DataStructureDefinition ;
   rdfs:label "Data structure definition for the European Structural and Investment Funds of the years 2014-2020"@en ;  
   qb:component [ qb:dimension obeu-dimension:budgetaryUnit ;
                  qb:componentAttachment qb:DataSet ],
@@ -64,6 +64,14 @@ esif-dimension:functionalClassification a rdf:Property, qb:CodedProperty, qb:Dim
   qb:codeList esif-codelist:functions ;
   rdfs:range esif:Objective ;
   rdfs:isDefinedBy <http://data.openbudgets.eu/ontology/dsd/ESIF-2014-2020> .
+
+esif-dimension:memberStates a rdf:Property, qb:CodedProperty, qb:DimensionProperty;
+  rdfs:label "EU Member States"@en ;
+  rdfs:comment "Describes the European Union member state."@en ;
+  rdfs:subPropertyOf obeu-dimension:administrativeClassification ;
+  rdfs:range skos:Concept ;
+  qb:codeList <http://data.openbudgets.eu/resource/ESIF-2014-2020/codelist/MS> ;
+  rdfs:isDefinedBy <<http://data.openbudgets.eu/ontology/dsd/ESIF-2014-2020> . 
 
 esif-dimension:priority a rdf:Property, qb:CodedProperty, qb:DimensionProperty ;
   rdfs:label "Priority"@en ;
