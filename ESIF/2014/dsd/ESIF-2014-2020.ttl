@@ -61,8 +61,7 @@ esif-dimension:functionalClassification a rdf:Property, qb:CodedProperty, qb:Dim
   rdfs:subPropertyOf obeu-dimension:functionalClassification;
   rdfs:label "Intention of expenditure"@en ;
   rdfs:comment "Classifies expenditures by the purpose of the funded money."@en ;
-  rdfs:subPropertyOf obeu-dimension:classification ;
-  qb:codeList esif-codelist:functions ;
+  qb:codeList esif-codelist:function ;
   rdfs:range esif:Objective ;
   rdfs:isDefinedBy <http://data.openbudgets.eu/ontology/dsd/ESIF-2014-2020> .
 
@@ -101,11 +100,11 @@ esif-measure:amountTotal a rdf:Property, qb:MeasureProperty ;
   rdfs:isDefinedBy <http://data.openbudgets.eu/ontology/dsd/ESIF-2014-2020> .
 
 #-------Needs some clarification 
-esif:Objective a rdfs:Class ;
-  rdfs:label "Objective"@en ;
-  rdfs:comment "Purpose of funded money"@en ;
-  rdfs:subClassOf skos:Concept ;
-  rdfs:isDefinedBy <http://data.openbudgets.eu/ontology/dsd/ESIF-2014-2020> .
+#esif:Function a rdfs:Class ;
+#  rdfs:label "Objective"@en ;
+# rdfs:comment "Purpose of funded money"@en ;
+#  rdfs:subClassOf skos:Concept ;
+# rdfs:isDefinedBy <http://data.openbudgets.eu/ontology/dsd/ESIF-2014-2020> .
 
 esif:Priority a rdfs:Class ;
   rdfs:label "Priority"@en ;
