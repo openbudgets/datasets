@@ -19,6 +19,7 @@
 @prefix qb:               <http://purl.org/linked-data/cube#> .
 @prefix rdf:              <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs:             <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:             <http://www.w3.org/2004/02/skos/core#> .
 
 # ----- DSD -----
 
@@ -71,7 +72,7 @@ esif-dimension:memberStates a rdf:Property, qb:CodedProperty, qb:DimensionProper
   rdfs:subPropertyOf obeu-dimension:administrativeClassification ;
   rdfs:range skos:Concept ;
   qb:codeList <http://data.openbudgets.eu/resource/ESIF-2014-2020/codelist/MS> ;
-  rdfs:isDefinedBy <<http://data.openbudgets.eu/ontology/dsd/ESIF-2014-2020> . 
+  rdfs:isDefinedBy <http://data.openbudgets.eu/ontology/dsd/ESIF-2014-2020> . 
 
 esif-dimension:priority a rdf:Property, qb:CodedProperty, qb:DimensionProperty ;
   rdfs:label "Priority"@en ;
