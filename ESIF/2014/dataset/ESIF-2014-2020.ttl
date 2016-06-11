@@ -49,6 +49,7 @@ esif-dimension:functionalClassification a rdf:Property , qb:CodedProperty , qb:D
 	rdfs:subPropertyOf obeu-dimension:functionalClassification ;
 	rdfs:comment "Classifies expenditures by the purpose of the funded money."@en ;
 	qb:codeList esif-codelist:function ;
+	rdfs:range skos:Concept ;
 	rdfs:isDefinedBy <http://data.openbudgets.eu/ontology/dsd/ESIF-2014-2020> .
 
 esif-measure:amountEU a rdf:Property , qb:MeasureProperty ;
@@ -68858,35 +68859,35 @@ esif-measure:amountTotal a rdf:Property , qb:MeasureProperty ;
 
 <http://data.openbudgets.eu/ontology/dsd/ESIF-2014-2020> a qb:DataStructureDefinition ;
 	rdfs:label "Data structure definition for the European Structural and Investment Funds of the years 2014-2020"@en ;
-	qb:component _:node1akvo28ldx11 , _:node1akvo28ldx12 , _:node1akvo28ldx13 , _:node1akvo28ldx14 , _:node1akvo28ldx15 , _:node1akvo28ldx16 , _:node1akvo28ldx17 , _:node1akvo28ldx18 , _:node1akvo28ldx19 , _:node1akvo28ldx20 , _:node1akvo28ldx21 .
+	qb:component _:node1akvpp3qrx11 , _:node1akvpp3qrx12 , _:node1akvpp3qrx13 , _:node1akvpp3qrx14 , _:node1akvpp3qrx15 , _:node1akvpp3qrx16 , _:node1akvpp3qrx17 , _:node1akvpp3qrx18 , _:node1akvpp3qrx19 , _:node1akvpp3qrx20 , _:node1akvpp3qrx21 .
 
-_:node1akvo28ldx11 qb:dimension obeu-dimension:budgetaryUnit ;
+_:node1akvpp3qrx11 qb:dimension obeu-dimension:budgetaryUnit ;
 	qb:componentAttachment qb:DataSet .
 
-_:node1akvo28ldx12 qb:dimension obeu-dimension:budgetPhase ;
+_:node1akvpp3qrx12 qb:dimension obeu-dimension:budgetPhase ;
 	qb:componentAttachment qb:DataSet .
 
-_:node1akvo28ldx13 qb:dimension obeu-dimension:operationCharacter ;
+_:node1akvpp3qrx13 qb:dimension obeu-dimension:operationCharacter ;
 	qb:componentAttachment qb:DataSet .
 
-_:node1akvo28ldx14 qb:dimension obeu-dimension:fiscalPeriod ;
+_:node1akvpp3qrx14 qb:dimension obeu-dimension:fiscalPeriod ;
 	qb:componentAttachment qb:DataSet .
 
-_:node1akvo28ldx15 qb:dimension obeu-dimension:administrativeClassification .
+_:node1akvpp3qrx15 qb:dimension obeu-dimension:administrativeClassification .
 
-_:node1akvo28ldx16 qb:dimension esif-dimension:fund .
+_:node1akvpp3qrx16 qb:dimension esif-dimension:fund .
 
-_:node1akvo28ldx17 qb:dimension esif-dimension:functionalClassification .
+_:node1akvpp3qrx17 qb:dimension esif-dimension:functionalClassification .
 
-_:node1akvo28ldx18 qb:componentAttachment qb:DataSet ;
+_:node1akvpp3qrx18 qb:componentAttachment qb:DataSet ;
 	qb:attribute obeu-attribute:currency ;
 	qb:componentRequired true .
 
-_:node1akvo28ldx19 qb:measure esif-measure:amountEU .
+_:node1akvpp3qrx19 qb:measure esif-measure:amountEU .
 
-_:node1akvo28ldx20 qb:measure esif-measure:amountNational .
+_:node1akvpp3qrx20 qb:measure esif-measure:amountNational .
 
-_:node1akvo28ldx21 qb:measure esif-measure:amountTotal .
+_:node1akvpp3qrx21 qb:measure esif-measure:amountTotal .
 
 esif-dimension:priority a rdf:Property , qb:CodedProperty , qb:DimensionProperty ;
 	rdfs:label "Priority"@en ;
