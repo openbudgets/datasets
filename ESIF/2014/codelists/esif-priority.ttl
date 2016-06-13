@@ -1,0 +1,184 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix fn: <http://www.w3.org/2005/xpath-functions#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sesame: <http://www.openrdf.org/schema/sesame#> .
+
+<http://data.openbudgets.eu/resource/ESIF-2014-2020/codelist/priority> a <http://www.w3.org/2004/02/skos/core#ConceptScheme> ;
+	rdfs:label "EU ESIF Priority"@en ;
+	<http://www.w3.org/2004/02/skos/core#hasTopConcept> <http://data.openbudgets.eu/resource/ESIF-2014-2020/codelist/priority/1> , <http://data.openbudgets.eu/resource/ESIF-2014-2020/codelist/priority/2> , <http://data.openbudgets.eu/resource/ESIF-2014-2020/codelist/priority/3> , <http://data.openbudgets.eu/resource/ESIF-2014-2020/codelist/priority/4> , <http://data.openbudgets.eu/resource/ESIF-2014-2020/codelist/priority/5> , <http://data.openbudgets.eu/resource/ESIF-2014-2020/codelist/priority/6> .
+
+<http://data.openbudgets.eu/resource/ESIF-2014-2020/codelist/priority/1> a <http://www.w3.org/2004/02/skos/core#Concept> ;
+	<http://linked.opendata.cz/ontology/odcs/tabular/row> "2"^^xsd:int ;
+	<http://www.w3.org/2004/02/skos/core#notation> "1" ;
+	<http://www.w3.org/2004/02/skos/core#prefLabel> "Fostering knowledge transfer and innovation in agriculture, forestry, and rural areas"@en ;
+	<http://www.w3.org/2004/02/skos/core#narrower> <http://data.openbudgets.eu/resource/ESIF-2014-2020/codelist/priority/1A> , <http://data.openbudgets.eu/resource/ESIF-2014-2020/codelist/priority/1B> , <http://data.openbudgets.eu/resource/ESIF-2014-2020/codelist/priority/1C> ;
+	<http://www.w3.org/2004/02/skos/core#topConceptOf> <http://data.openbudgets.eu/resource/ESIF-2014-2020/codelist/priority> ;
+	<http://www.w3.org/2004/02/skos/core#inScheme> <http://data.openbudgets.eu/resource/ESIF-2014-2020/codelist/priority> .
+
+<http://data.openbudgets.eu/resource/ESIF-2014-2020/codelist/priority/1A> a <http://www.w3.org/2004/02/skos/core#Concept> ;
+	<http://linked.opendata.cz/ontology/odcs/tabular/row> "8"^^xsd:int ;
+	<http://www.w3.org/2004/02/skos/core#notation> "1A" ;
+	<http://www.w3.org/2004/02/skos/core#prefLabel> "Fostering innovation, cooperation, and the development of the knowledge base in rural areas"@en ;
+	<http://www.w3.org/2004/02/skos/core#broader> <http://data.openbudgets.eu/resource/ESIF-2014-2020/codelist/priority/1> ;
+	<http://www.w3.org/2004/02/skos/core#inScheme> <http://data.openbudgets.eu/resource/ESIF-2014-2020/codelist/priority> .
+
+<http://data.openbudgets.eu/resource/ESIF-2014-2020/codelist/priority/1B> a <http://www.w3.org/2004/02/skos/core#Concept> ;
+	<http://linked.opendata.cz/ontology/odcs/tabular/row> "9"^^xsd:int ;
+	<http://www.w3.org/2004/02/skos/core#notation> "1B" ;
+	<http://www.w3.org/2004/02/skos/core#prefLabel> "Strengthening the links between agriculture, food production and forestry and research and innovation, including for the purpose of improved environmental management and performance"@en ;
+	<http://www.w3.org/2004/02/skos/core#broader> <http://data.openbudgets.eu/resource/ESIF-2014-2020/codelist/priority/1> ;
+	<http://www.w3.org/2004/02/skos/core#inScheme> <http://data.openbudgets.eu/resource/ESIF-2014-2020/codelist/priority> .
+
+<http://data.openbudgets.eu/resource/ESIF-2014-2020/codelist/priority/1C> a <http://www.w3.org/2004/02/skos/core#Concept> ;
+	<http://linked.opendata.cz/ontology/odcs/tabular/row> "10"^^xsd:int ;
+	<http://www.w3.org/2004/02/skos/core#notation> "1C" ;
+	<http://www.w3.org/2004/02/skos/core#prefLabel> "Fostering lifelong learning and vocational training in the agricultural and forestry sectors"@en ;
+	<http://www.w3.org/2004/02/skos/core#broader> <http://data.openbudgets.eu/resource/ESIF-2014-2020/codelist/priority/1> ;
+	<http://www.w3.org/2004/02/skos/core#inScheme> <http://data.openbudgets.eu/resource/ESIF-2014-2020/codelist/priority> .
+
+<http://data.openbudgets.eu/resource/ESIF-2014-2020/codelist/priority/2> a <http://www.w3.org/2004/02/skos/core#Concept> ;
+	<http://linked.opendata.cz/ontology/odcs/tabular/row> "3"^^xsd:int ;
+	<http://www.w3.org/2004/02/skos/core#notation> "2" ;
+	<http://www.w3.org/2004/02/skos/core#prefLabel> "Enhancing farm viability and competitiveness of all types of agriculture in all regions and promoting innovative farm technologies and sustainable management of forest"@en ;
+	<http://www.w3.org/2004/02/skos/core#narrower> <http://data.openbudgets.eu/resource/ESIF-2014-2020/codelist/priority/2A> , <http://data.openbudgets.eu/resource/ESIF-2014-2020/codelist/priority/2B> ;
+	<http://www.w3.org/2004/02/skos/core#topConceptOf> <http://data.openbudgets.eu/resource/ESIF-2014-2020/codelist/priority> ;
+	<http://www.w3.org/2004/02/skos/core#inScheme> <http://data.openbudgets.eu/resource/ESIF-2014-2020/codelist/priority> .
+
+<http://data.openbudgets.eu/resource/ESIF-2014-2020/codelist/priority/2A> a <http://www.w3.org/2004/02/skos/core#Concept> ;
+	<http://linked.opendata.cz/ontology/odcs/tabular/row> "11"^^xsd:int ;
+	<http://www.w3.org/2004/02/skos/core#notation> "2A" ;
+	<http://www.w3.org/2004/02/skos/core#prefLabel> "Improving the economic performance of all farms and facilitating farm restructuring and modernisation, notably with a view to increasing market participation and orientation as well as agricultural diversification"@en ;
+	<http://www.w3.org/2004/02/skos/core#broader> <http://data.openbudgets.eu/resource/ESIF-2014-2020/codelist/priority/2> ;
+	<http://www.w3.org/2004/02/skos/core#inScheme> <http://data.openbudgets.eu/resource/ESIF-2014-2020/codelist/priority> .
+
+<http://data.openbudgets.eu/resource/ESIF-2014-2020/codelist/priority/2B> a <http://www.w3.org/2004/02/skos/core#Concept> ;
+	<http://linked.opendata.cz/ontology/odcs/tabular/row> "12"^^xsd:int ;
+	<http://www.w3.org/2004/02/skos/core#notation> "2B" ;
+	<http://www.w3.org/2004/02/skos/core#prefLabel> "Facilitating the entry of adequately skilled farmers into the agricultural sector and, in particular, generational renewal"@en ;
+	<http://www.w3.org/2004/02/skos/core#broader> <http://data.openbudgets.eu/resource/ESIF-2014-2020/codelist/priority/2> ;
+	<http://www.w3.org/2004/02/skos/core#inScheme> <http://data.openbudgets.eu/resource/ESIF-2014-2020/codelist/priority> .
+
+<http://data.openbudgets.eu/resource/ESIF-2014-2020/codelist/priority/3> a <http://www.w3.org/2004/02/skos/core#Concept> ;
+	<http://linked.opendata.cz/ontology/odcs/tabular/row> "4"^^xsd:int ;
+	<http://www.w3.org/2004/02/skos/core#notation> "3" ;
+	<http://www.w3.org/2004/02/skos/core#prefLabel> "Promoting food chain organisation, including processing and marketing of agricultural products, animal welfare and risk management in agriculture"@en ;
+	<http://www.w3.org/2004/02/skos/core#narrower> <http://data.openbudgets.eu/resource/ESIF-2014-2020/codelist/priority/3A> , <http://data.openbudgets.eu/resource/ESIF-2014-2020/codelist/priority/3B> ;
+	<http://www.w3.org/2004/02/skos/core#topConceptOf> <http://data.openbudgets.eu/resource/ESIF-2014-2020/codelist/priority> ;
+	<http://www.w3.org/2004/02/skos/core#inScheme> <http://data.openbudgets.eu/resource/ESIF-2014-2020/codelist/priority> .
+
+<http://data.openbudgets.eu/resource/ESIF-2014-2020/codelist/priority/3A> a <http://www.w3.org/2004/02/skos/core#Concept> ;
+	<http://linked.opendata.cz/ontology/odcs/tabular/row> "13"^^xsd:int ;
+	<http://www.w3.org/2004/02/skos/core#notation> "3A" ;
+	<http://www.w3.org/2004/02/skos/core#prefLabel> "Improving competitiveness of primary producers by better integrating them into the agri-food chain through quality schemes, adding value to agricultural products, promotion in local markets and short supply circuits, producer groups and organisations and inter-branch organisations"@en ;
+	<http://www.w3.org/2004/02/skos/core#broader> <http://data.openbudgets.eu/resource/ESIF-2014-2020/codelist/priority/3> ;
+	<http://www.w3.org/2004/02/skos/core#inScheme> <http://data.openbudgets.eu/resource/ESIF-2014-2020/codelist/priority> .
+
+<http://data.openbudgets.eu/resource/ESIF-2014-2020/codelist/priority/3B> a <http://www.w3.org/2004/02/skos/core#Concept> ;
+	<http://linked.opendata.cz/ontology/odcs/tabular/row> "14"^^xsd:int ;
+	<http://www.w3.org/2004/02/skos/core#notation> "3B" ;
+	<http://www.w3.org/2004/02/skos/core#prefLabel> "Supporting farm risk prevention and management"@en ;
+	<http://www.w3.org/2004/02/skos/core#broader> <http://data.openbudgets.eu/resource/ESIF-2014-2020/codelist/priority/3> ;
+	<http://www.w3.org/2004/02/skos/core#inScheme> <http://data.openbudgets.eu/resource/ESIF-2014-2020/codelist/priority> .
+
+<http://data.openbudgets.eu/resource/ESIF-2014-2020/codelist/priority/4> a <http://www.w3.org/2004/02/skos/core#Concept> ;
+	<http://linked.opendata.cz/ontology/odcs/tabular/row> "5"^^xsd:int ;
+	<http://www.w3.org/2004/02/skos/core#notation> "4" ;
+	<http://www.w3.org/2004/02/skos/core#prefLabel> "Restoring, preserving and enhancing ecosystems related to agriculture and forestry"@en ;
+	<http://www.w3.org/2004/02/skos/core#narrower> <http://data.openbudgets.eu/resource/ESIF-2014-2020/codelist/priority/4A> , <http://data.openbudgets.eu/resource/ESIF-2014-2020/codelist/priority/4B> , <http://data.openbudgets.eu/resource/ESIF-2014-2020/codelist/priority/4C> ;
+	<http://www.w3.org/2004/02/skos/core#topConceptOf> <http://data.openbudgets.eu/resource/ESIF-2014-2020/codelist/priority> ;
+	<http://www.w3.org/2004/02/skos/core#inScheme> <http://data.openbudgets.eu/resource/ESIF-2014-2020/codelist/priority> .
+
+<http://data.openbudgets.eu/resource/ESIF-2014-2020/codelist/priority/4A> a <http://www.w3.org/2004/02/skos/core#Concept> ;
+	<http://linked.opendata.cz/ontology/odcs/tabular/row> "15"^^xsd:int ;
+	<http://www.w3.org/2004/02/skos/core#notation> "4A" ;
+	<http://www.w3.org/2004/02/skos/core#prefLabel> "Restoring, preserving and enhancing biodiversity, including in Natura 2000 areas, and in areas facing natural or other specific constraints, and high nature value farming, as well as the state of European landscapes"@en ;
+	<http://www.w3.org/2004/02/skos/core#broader> <http://data.openbudgets.eu/resource/ESIF-2014-2020/codelist/priority/4> ;
+	<http://www.w3.org/2004/02/skos/core#inScheme> <http://data.openbudgets.eu/resource/ESIF-2014-2020/codelist/priority> .
+
+<http://data.openbudgets.eu/resource/ESIF-2014-2020/codelist/priority/4B> a <http://www.w3.org/2004/02/skos/core#Concept> ;
+	<http://linked.opendata.cz/ontology/odcs/tabular/row> "16"^^xsd:int ;
+	<http://www.w3.org/2004/02/skos/core#notation> "4B" ;
+	<http://www.w3.org/2004/02/skos/core#prefLabel> "Improving water management, including fertiliser and pesticide management"@en ;
+	<http://www.w3.org/2004/02/skos/core#broader> <http://data.openbudgets.eu/resource/ESIF-2014-2020/codelist/priority/4> ;
+	<http://www.w3.org/2004/02/skos/core#inScheme> <http://data.openbudgets.eu/resource/ESIF-2014-2020/codelist/priority> .
+
+<http://data.openbudgets.eu/resource/ESIF-2014-2020/codelist/priority/4C> a <http://www.w3.org/2004/02/skos/core#Concept> ;
+	<http://linked.opendata.cz/ontology/odcs/tabular/row> "17"^^xsd:int ;
+	<http://www.w3.org/2004/02/skos/core#notation> "4C" ;
+	<http://www.w3.org/2004/02/skos/core#prefLabel> "Preventing soil erosion and improving soil management"@en ;
+	<http://www.w3.org/2004/02/skos/core#broader> <http://data.openbudgets.eu/resource/ESIF-2014-2020/codelist/priority/4> ;
+	<http://www.w3.org/2004/02/skos/core#inScheme> <http://data.openbudgets.eu/resource/ESIF-2014-2020/codelist/priority> .
+
+<http://data.openbudgets.eu/resource/ESIF-2014-2020/codelist/priority/5> a <http://www.w3.org/2004/02/skos/core#Concept> ;
+	<http://linked.opendata.cz/ontology/odcs/tabular/row> "6"^^xsd:int ;
+	<http://www.w3.org/2004/02/skos/core#notation> "5" ;
+	<http://www.w3.org/2004/02/skos/core#prefLabel> "Promoting resource efficiency and supporting the shift towards a low carbon and climate resilient economy in agriculture, food and forestry sectors"@en ;
+	<http://www.w3.org/2004/02/skos/core#narrower> <http://data.openbudgets.eu/resource/ESIF-2014-2020/codelist/priority/5A> , <http://data.openbudgets.eu/resource/ESIF-2014-2020/codelist/priority/5B> , <http://data.openbudgets.eu/resource/ESIF-2014-2020/codelist/priority/5C> , <http://data.openbudgets.eu/resource/ESIF-2014-2020/codelist/priority/5D> , <http://data.openbudgets.eu/resource/ESIF-2014-2020/codelist/priority/5E> ;
+	<http://www.w3.org/2004/02/skos/core#topConceptOf> <http://data.openbudgets.eu/resource/ESIF-2014-2020/codelist/priority> ;
+	<http://www.w3.org/2004/02/skos/core#inScheme> <http://data.openbudgets.eu/resource/ESIF-2014-2020/codelist/priority> .
+
+<http://data.openbudgets.eu/resource/ESIF-2014-2020/codelist/priority/5A> a <http://www.w3.org/2004/02/skos/core#Concept> ;
+	<http://linked.opendata.cz/ontology/odcs/tabular/row> "18"^^xsd:int ;
+	<http://www.w3.org/2004/02/skos/core#notation> "5A" ;
+	<http://www.w3.org/2004/02/skos/core#prefLabel> "Increasing efficiency in water use by agriculture"@en ;
+	<http://www.w3.org/2004/02/skos/core#broader> <http://data.openbudgets.eu/resource/ESIF-2014-2020/codelist/priority/5> ;
+	<http://www.w3.org/2004/02/skos/core#inScheme> <http://data.openbudgets.eu/resource/ESIF-2014-2020/codelist/priority> .
+
+<http://data.openbudgets.eu/resource/ESIF-2014-2020/codelist/priority/5B> a <http://www.w3.org/2004/02/skos/core#Concept> ;
+	<http://linked.opendata.cz/ontology/odcs/tabular/row> "19"^^xsd:int ;
+	<http://www.w3.org/2004/02/skos/core#notation> "5B" ;
+	<http://www.w3.org/2004/02/skos/core#prefLabel> "Increasing efficiency in energy use in agriculture and food processing"@en ;
+	<http://www.w3.org/2004/02/skos/core#broader> <http://data.openbudgets.eu/resource/ESIF-2014-2020/codelist/priority/5> ;
+	<http://www.w3.org/2004/02/skos/core#inScheme> <http://data.openbudgets.eu/resource/ESIF-2014-2020/codelist/priority> .
+
+<http://data.openbudgets.eu/resource/ESIF-2014-2020/codelist/priority/5C> a <http://www.w3.org/2004/02/skos/core#Concept> ;
+	<http://linked.opendata.cz/ontology/odcs/tabular/row> "20"^^xsd:int ;
+	<http://www.w3.org/2004/02/skos/core#notation> "5C" ;
+	<http://www.w3.org/2004/02/skos/core#prefLabel> "Facilitating the supply and use of renewable sources of energy, of by-products, wastes and residues and of other non-food raw material, for the purposes of the bio-economy"@en ;
+	<http://www.w3.org/2004/02/skos/core#broader> <http://data.openbudgets.eu/resource/ESIF-2014-2020/codelist/priority/5> ;
+	<http://www.w3.org/2004/02/skos/core#inScheme> <http://data.openbudgets.eu/resource/ESIF-2014-2020/codelist/priority> .
+
+<http://data.openbudgets.eu/resource/ESIF-2014-2020/codelist/priority/5D> a <http://www.w3.org/2004/02/skos/core#Concept> ;
+	<http://linked.opendata.cz/ontology/odcs/tabular/row> "21"^^xsd:int ;
+	<http://www.w3.org/2004/02/skos/core#notation> "5D" ;
+	<http://www.w3.org/2004/02/skos/core#prefLabel> "Reducing greenhouse gas and ammonia emissions from agriculture"@en ;
+	<http://www.w3.org/2004/02/skos/core#broader> <http://data.openbudgets.eu/resource/ESIF-2014-2020/codelist/priority/5> ;
+	<http://www.w3.org/2004/02/skos/core#inScheme> <http://data.openbudgets.eu/resource/ESIF-2014-2020/codelist/priority> .
+
+<http://data.openbudgets.eu/resource/ESIF-2014-2020/codelist/priority/5E> a <http://www.w3.org/2004/02/skos/core#Concept> ;
+	<http://linked.opendata.cz/ontology/odcs/tabular/row> "22"^^xsd:int ;
+	<http://www.w3.org/2004/02/skos/core#notation> "5E" ;
+	<http://www.w3.org/2004/02/skos/core#prefLabel> "Fostering carbon conservation and sequestration in agriculture and forestry"@en ;
+	<http://www.w3.org/2004/02/skos/core#broader> <http://data.openbudgets.eu/resource/ESIF-2014-2020/codelist/priority/5> ;
+	<http://www.w3.org/2004/02/skos/core#inScheme> <http://data.openbudgets.eu/resource/ESIF-2014-2020/codelist/priority> .
+
+<http://data.openbudgets.eu/resource/ESIF-2014-2020/codelist/priority/6> a <http://www.w3.org/2004/02/skos/core#Concept> ;
+	<http://linked.opendata.cz/ontology/odcs/tabular/row> "7"^^xsd:int ;
+	<http://www.w3.org/2004/02/skos/core#notation> "6" ;
+	<http://www.w3.org/2004/02/skos/core#prefLabel> "Promoting social inclusion poverty reduction and economic development in rural areas"@en ;
+	<http://www.w3.org/2004/02/skos/core#narrower> <http://data.openbudgets.eu/resource/ESIF-2014-2020/codelist/priority/6A> , <http://data.openbudgets.eu/resource/ESIF-2014-2020/codelist/priority/6B> , <http://data.openbudgets.eu/resource/ESIF-2014-2020/codelist/priority/6C> ;
+	<http://www.w3.org/2004/02/skos/core#topConceptOf> <http://data.openbudgets.eu/resource/ESIF-2014-2020/codelist/priority> ;
+	<http://www.w3.org/2004/02/skos/core#inScheme> <http://data.openbudgets.eu/resource/ESIF-2014-2020/codelist/priority> .
+
+<http://data.openbudgets.eu/resource/ESIF-2014-2020/codelist/priority/6A> a <http://www.w3.org/2004/02/skos/core#Concept> ;
+	<http://linked.opendata.cz/ontology/odcs/tabular/row> "23"^^xsd:int ;
+	<http://www.w3.org/2004/02/skos/core#notation> "6A" ;
+	<http://www.w3.org/2004/02/skos/core#prefLabel> "Facilitating diversification, creation and development of small enterprises, as well as job creation"@en ;
+	<http://www.w3.org/2004/02/skos/core#broader> <http://data.openbudgets.eu/resource/ESIF-2014-2020/codelist/priority/6> ;
+	<http://www.w3.org/2004/02/skos/core#inScheme> <http://data.openbudgets.eu/resource/ESIF-2014-2020/codelist/priority> .
+
+<http://data.openbudgets.eu/resource/ESIF-2014-2020/codelist/priority/6B> a <http://www.w3.org/2004/02/skos/core#Concept> ;
+	<http://linked.opendata.cz/ontology/odcs/tabular/row> "24"^^xsd:int ;
+	<http://www.w3.org/2004/02/skos/core#notation> "6B" ;
+	<http://www.w3.org/2004/02/skos/core#prefLabel> "Fostering local development in rural areas"@en ;
+	<http://www.w3.org/2004/02/skos/core#broader> <http://data.openbudgets.eu/resource/ESIF-2014-2020/codelist/priority/6> ;
+	<http://www.w3.org/2004/02/skos/core#inScheme> <http://data.openbudgets.eu/resource/ESIF-2014-2020/codelist/priority> .
+
+<http://data.openbudgets.eu/resource/ESIF-2014-2020/codelist/priority/6C> a <http://www.w3.org/2004/02/skos/core#Concept> ;
+	<http://linked.opendata.cz/ontology/odcs/tabular/row> "25"^^xsd:int ;
+	<http://www.w3.org/2004/02/skos/core#notation> "6C" ;
+	<http://www.w3.org/2004/02/skos/core#prefLabel> "Enhancing the accessibility, use and quality of information and communication technologies (ICT) in rural areas"@en ;
+	<http://www.w3.org/2004/02/skos/core#broader> <http://data.openbudgets.eu/resource/ESIF-2014-2020/codelist/priority/6> ;
+	<http://www.w3.org/2004/02/skos/core#inScheme> <http://data.openbudgets.eu/resource/ESIF-2014-2020/codelist/priority> .
