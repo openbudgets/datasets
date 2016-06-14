@@ -1,0 +1,574 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix fn: <http://www.w3.org/2005/xpath-functions#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sesame: <http://www.openrdf.org/schema/sesame#> .
+
+<http://data.openbudgets.eu/resource/ESIF-2014-2020/codelist/measure> a <http://www.w3.org/2004/02/skos/core#ConceptScheme> ;
+	rdfs:label "EU ESIF Measure"@en ;
+	<http://www.w3.org/2004/02/skos/core#hasTopConcept> <http://data.openbudgets.eu/resource/ESIF-2014-2020/codelist/measure/1> , <http://data.openbudgets.eu/resource/ESIF-2014-2020/codelist/measure/10> , <http://data.openbudgets.eu/resource/ESIF-2014-2020/codelist/measure/11> , <http://data.openbudgets.eu/resource/ESIF-2014-2020/codelist/measure/12> , <http://data.openbudgets.eu/resource/ESIF-2014-2020/codelist/measure/13> , <http://data.openbudgets.eu/resource/ESIF-2014-2020/codelist/measure/15> , <http://data.openbudgets.eu/resource/ESIF-2014-2020/codelist/measure/16> , <http://data.openbudgets.eu/resource/ESIF-2014-2020/codelist/measure/17> , <http://data.openbudgets.eu/resource/ESIF-2014-2020/codelist/measure/19> , <http://data.openbudgets.eu/resource/ESIF-2014-2020/codelist/measure/2> , <http://data.openbudgets.eu/resource/ESIF-2014-2020/codelist/measure/20> , <http://data.openbudgets.eu/resource/ESIF-2014-2020/codelist/measure/3> , <http://data.openbudgets.eu/resource/ESIF-2014-2020/codelist/measure/4> , <http://data.openbudgets.eu/resource/ESIF-2014-2020/codelist/measure/5> , <http://data.openbudgets.eu/resource/ESIF-2014-2020/codelist/measure/6> , <http://data.openbudgets.eu/resource/ESIF-2014-2020/codelist/measure/7> , <http://data.openbudgets.eu/resource/ESIF-2014-2020/codelist/measure/8> .
+
+<http://data.openbudgets.eu/resource/ESIF-2014-2020/codelist/measure/1> a <http://www.w3.org/2004/02/skos/core#Concept> ;
+	<http://linked.opendata.cz/ontology/odcs/tabular/row> "2"^^xsd:int ;
+	<http://www.w3.org/2004/02/skos/core#notation> "1" ;
+	<http://www.w3.org/2004/02/skos/core#prefLabel> "knowledge transfer and information actions"@en ;
+	<http://www.w3.org/2004/02/skos/core#topConceptOf> <http://data.openbudgets.eu/resource/ESIF-2014-2020/codelist/measure> .
+
+<http://data.openbudgets.eu/resource/ESIF-2014-2020/codelist/measure/1.1> a <http://www.w3.org/2004/02/skos/core#Concept> ;
+	<http://linked.opendata.cz/ontology/odcs/tabular/row> "19"^^xsd:int ;
+	<http://www.w3.org/2004/02/skos/core#notation> "1.1" ;
+	<http://www.w3.org/2004/02/skos/core#prefLabel> "support for vocational training and skills acquisition actions"@en ;
+	<http://www.w3.org/2004/02/skos/core#broader> <http://data.openbudgets.eu/resource/ESIF-2014-2020/codelist/measure/1> ;
+	<http://www.w3.org/2004/02/skos/core#inScheme> <http://data.openbudgets.eu/resource/ESIF-2014-2020/codelist/measure> .
+
+<http://data.openbudgets.eu/resource/ESIF-2014-2020/codelist/measure/1.2> a <http://www.w3.org/2004/02/skos/core#Concept> ;
+	<http://linked.opendata.cz/ontology/odcs/tabular/row> "20"^^xsd:int ;
+	<http://www.w3.org/2004/02/skos/core#notation> "1.2" ;
+	<http://www.w3.org/2004/02/skos/core#prefLabel> "support for demonstration activities and information actions"@en ;
+	<http://www.w3.org/2004/02/skos/core#broader> <http://data.openbudgets.eu/resource/ESIF-2014-2020/codelist/measure/1> ;
+	<http://www.w3.org/2004/02/skos/core#inScheme> <http://data.openbudgets.eu/resource/ESIF-2014-2020/codelist/measure> .
+
+<http://data.openbudgets.eu/resource/ESIF-2014-2020/codelist/measure/1.3> a <http://www.w3.org/2004/02/skos/core#Concept> ;
+	<http://linked.opendata.cz/ontology/odcs/tabular/row> "21"^^xsd:int ;
+	<http://www.w3.org/2004/02/skos/core#notation> "1.3" ;
+	<http://www.w3.org/2004/02/skos/core#prefLabel> "support for short-term farm and forest management exchange as well as farm and forest visits"@en ;
+	<http://www.w3.org/2004/02/skos/core#broader> <http://data.openbudgets.eu/resource/ESIF-2014-2020/codelist/measure/1> ;
+	<http://www.w3.org/2004/02/skos/core#inScheme> <http://data.openbudgets.eu/resource/ESIF-2014-2020/codelist/measure> .
+
+<http://data.openbudgets.eu/resource/ESIF-2014-2020/codelist/measure/10> a <http://www.w3.org/2004/02/skos/core#Concept> ;
+	<http://linked.opendata.cz/ontology/odcs/tabular/row> "10"^^xsd:int ;
+	<http://www.w3.org/2004/02/skos/core#notation> "10" ;
+	<http://www.w3.org/2004/02/skos/core#prefLabel> "agri-environment-climate"@en ;
+	<http://www.w3.org/2004/02/skos/core#topConceptOf> <http://data.openbudgets.eu/resource/ESIF-2014-2020/codelist/measure> .
+
+<http://data.openbudgets.eu/resource/ESIF-2014-2020/codelist/measure/10.1> a <http://www.w3.org/2004/02/skos/core#Concept> ;
+	<http://linked.opendata.cz/ontology/odcs/tabular/row> "53"^^xsd:int ;
+	<http://www.w3.org/2004/02/skos/core#notation> "10.1" ;
+	<http://www.w3.org/2004/02/skos/core#prefLabel> "payment for agri-environment-climate commitments"@en ;
+	<http://www.w3.org/2004/02/skos/core#broader> <http://data.openbudgets.eu/resource/ESIF-2014-2020/codelist/measure/10> ;
+	<http://www.w3.org/2004/02/skos/core#inScheme> <http://data.openbudgets.eu/resource/ESIF-2014-2020/codelist/measure> .
+
+<http://data.openbudgets.eu/resource/ESIF-2014-2020/codelist/measure/10.2> a <http://www.w3.org/2004/02/skos/core#Concept> ;
+	<http://linked.opendata.cz/ontology/odcs/tabular/row> "54"^^xsd:int ;
+	<http://www.w3.org/2004/02/skos/core#notation> "10.2" ;
+	<http://www.w3.org/2004/02/skos/core#prefLabel> "support for conservation and sustainable use and development of genetic resources in agriculture"@en ;
+	<http://www.w3.org/2004/02/skos/core#broader> <http://data.openbudgets.eu/resource/ESIF-2014-2020/codelist/measure/10> ;
+	<http://www.w3.org/2004/02/skos/core#inScheme> <http://data.openbudgets.eu/resource/ESIF-2014-2020/codelist/measure> .
+
+<http://data.openbudgets.eu/resource/ESIF-2014-2020/codelist/measure/11> a <http://www.w3.org/2004/02/skos/core#Concept> ;
+	<http://linked.opendata.cz/ontology/odcs/tabular/row> "11"^^xsd:int ;
+	<http://www.w3.org/2004/02/skos/core#notation> "11" ;
+	<http://www.w3.org/2004/02/skos/core#prefLabel> "organic farming"@en ;
+	<http://www.w3.org/2004/02/skos/core#topConceptOf> <http://data.openbudgets.eu/resource/ESIF-2014-2020/codelist/measure> .
+
+<http://data.openbudgets.eu/resource/ESIF-2014-2020/codelist/measure/11.1> a <http://www.w3.org/2004/02/skos/core#Concept> ;
+	<http://linked.opendata.cz/ontology/odcs/tabular/row> "55"^^xsd:int ;
+	<http://www.w3.org/2004/02/skos/core#notation> "11.1" ;
+	<http://www.w3.org/2004/02/skos/core#prefLabel> "payment to convert to organic farming practices and methods"@en ;
+	<http://www.w3.org/2004/02/skos/core#broader> <http://data.openbudgets.eu/resource/ESIF-2014-2020/codelist/measure/11> ;
+	<http://www.w3.org/2004/02/skos/core#inScheme> <http://data.openbudgets.eu/resource/ESIF-2014-2020/codelist/measure> .
+
+<http://data.openbudgets.eu/resource/ESIF-2014-2020/codelist/measure/11.2> a <http://www.w3.org/2004/02/skos/core#Concept> ;
+	<http://linked.opendata.cz/ontology/odcs/tabular/row> "56"^^xsd:int ;
+	<http://www.w3.org/2004/02/skos/core#notation> "11.2" ;
+	<http://www.w3.org/2004/02/skos/core#prefLabel> "payment to maintain organic farming practices and methods"@en ;
+	<http://www.w3.org/2004/02/skos/core#broader> <http://data.openbudgets.eu/resource/ESIF-2014-2020/codelist/measure/11> ;
+	<http://www.w3.org/2004/02/skos/core#inScheme> <http://data.openbudgets.eu/resource/ESIF-2014-2020/codelist/measure> .
+
+<http://data.openbudgets.eu/resource/ESIF-2014-2020/codelist/measure/12> a <http://www.w3.org/2004/02/skos/core#Concept> ;
+	<http://linked.opendata.cz/ontology/odcs/tabular/row> "12"^^xsd:int ;
+	<http://www.w3.org/2004/02/skos/core#notation> "12" ;
+	<http://www.w3.org/2004/02/skos/core#prefLabel> "Natura 2000 and Water Framework Directive payments"@en ;
+	<http://www.w3.org/2004/02/skos/core#topConceptOf> <http://data.openbudgets.eu/resource/ESIF-2014-2020/codelist/measure> .
+
+<http://data.openbudgets.eu/resource/ESIF-2014-2020/codelist/measure/12.1> a <http://www.w3.org/2004/02/skos/core#Concept> ;
+	<http://linked.opendata.cz/ontology/odcs/tabular/row> "57"^^xsd:int ;
+	<http://www.w3.org/2004/02/skos/core#notation> "12.1" ;
+	<http://www.w3.org/2004/02/skos/core#prefLabel> "compensation payment for Natura 2000 agricultural areas"@en ;
+	<http://www.w3.org/2004/02/skos/core#broader> <http://data.openbudgets.eu/resource/ESIF-2014-2020/codelist/measure/12> ;
+	<http://www.w3.org/2004/02/skos/core#inScheme> <http://data.openbudgets.eu/resource/ESIF-2014-2020/codelist/measure> .
+
+<http://data.openbudgets.eu/resource/ESIF-2014-2020/codelist/measure/12.2> a <http://www.w3.org/2004/02/skos/core#Concept> ;
+	<http://linked.opendata.cz/ontology/odcs/tabular/row> "58"^^xsd:int ;
+	<http://www.w3.org/2004/02/skos/core#notation> "12.2" ;
+	<http://www.w3.org/2004/02/skos/core#prefLabel> "compensation payment for Natura 2000 forest areas"@en ;
+	<http://www.w3.org/2004/02/skos/core#broader> <http://data.openbudgets.eu/resource/ESIF-2014-2020/codelist/measure/12> ;
+	<http://www.w3.org/2004/02/skos/core#inScheme> <http://data.openbudgets.eu/resource/ESIF-2014-2020/codelist/measure> .
+
+<http://data.openbudgets.eu/resource/ESIF-2014-2020/codelist/measure/12.3> a <http://www.w3.org/2004/02/skos/core#Concept> ;
+	<http://linked.opendata.cz/ontology/odcs/tabular/row> "59"^^xsd:int ;
+	<http://www.w3.org/2004/02/skos/core#notation> "12.3" ;
+	<http://www.w3.org/2004/02/skos/core#prefLabel> "compensation payment for agricultural areas included in river basin management plans"@en ;
+	<http://www.w3.org/2004/02/skos/core#broader> <http://data.openbudgets.eu/resource/ESIF-2014-2020/codelist/measure/12> ;
+	<http://www.w3.org/2004/02/skos/core#inScheme> <http://data.openbudgets.eu/resource/ESIF-2014-2020/codelist/measure> .
+
+<http://data.openbudgets.eu/resource/ESIF-2014-2020/codelist/measure/13> a <http://www.w3.org/2004/02/skos/core#Concept> ;
+	<http://linked.opendata.cz/ontology/odcs/tabular/row> "13"^^xsd:int ;
+	<http://www.w3.org/2004/02/skos/core#notation> "13" ;
+	<http://www.w3.org/2004/02/skos/core#prefLabel> "payments to areas facing natural or other specific constraints"@en ;
+	<http://www.w3.org/2004/02/skos/core#topConceptOf> <http://data.openbudgets.eu/resource/ESIF-2014-2020/codelist/measure> .
+
+<http://data.openbudgets.eu/resource/ESIF-2014-2020/codelist/measure/13.1> a <http://www.w3.org/2004/02/skos/core#Concept> ;
+	<http://linked.opendata.cz/ontology/odcs/tabular/row> "60"^^xsd:int ;
+	<http://www.w3.org/2004/02/skos/core#notation> "13.1" ;
+	<http://www.w3.org/2004/02/skos/core#prefLabel> "compensation payment in mountain areas"@en ;
+	<http://www.w3.org/2004/02/skos/core#broader> <http://data.openbudgets.eu/resource/ESIF-2014-2020/codelist/measure/13> ;
+	<http://www.w3.org/2004/02/skos/core#inScheme> <http://data.openbudgets.eu/resource/ESIF-2014-2020/codelist/measure> .
+
+<http://data.openbudgets.eu/resource/ESIF-2014-2020/codelist/measure/13.2> a <http://www.w3.org/2004/02/skos/core#Concept> ;
+	<http://linked.opendata.cz/ontology/odcs/tabular/row> "61"^^xsd:int ;
+	<http://www.w3.org/2004/02/skos/core#notation> "13.2" ;
+	<http://www.w3.org/2004/02/skos/core#prefLabel> "compensation payment for other areas facing significant natural constraints"@en ;
+	<http://www.w3.org/2004/02/skos/core#broader> <http://data.openbudgets.eu/resource/ESIF-2014-2020/codelist/measure/13> ;
+	<http://www.w3.org/2004/02/skos/core#inScheme> <http://data.openbudgets.eu/resource/ESIF-2014-2020/codelist/measure> .
+
+<http://data.openbudgets.eu/resource/ESIF-2014-2020/codelist/measure/13.3> a <http://www.w3.org/2004/02/skos/core#Concept> ;
+	<http://linked.opendata.cz/ontology/odcs/tabular/row> "62"^^xsd:int ;
+	<http://www.w3.org/2004/02/skos/core#notation> "13.3" ;
+	<http://www.w3.org/2004/02/skos/core#prefLabel> "compensation payment to other areas affected by specific constraints"@en ;
+	<http://www.w3.org/2004/02/skos/core#broader> <http://data.openbudgets.eu/resource/ESIF-2014-2020/codelist/measure/13> ;
+	<http://www.w3.org/2004/02/skos/core#inScheme> <http://data.openbudgets.eu/resource/ESIF-2014-2020/codelist/measure> .
+
+<http://data.openbudgets.eu/resource/ESIF-2014-2020/codelist/measure/14> a <http://www.w3.org/2004/02/skos/core#Concept> ;
+	<http://linked.opendata.cz/ontology/odcs/tabular/row> "63"^^xsd:int ;
+	<http://www.w3.org/2004/02/skos/core#notation> "14" ;
+	<http://www.w3.org/2004/02/skos/core#prefLabel> "payment for animal welfare"@en ;
+	<http://www.w3.org/2004/02/skos/core#broader> <http://data.openbudgets.eu/resource/ESIF-2014-2020/codelist/measure/14> ;
+	<http://www.w3.org/2004/02/skos/core#inScheme> <http://data.openbudgets.eu/resource/ESIF-2014-2020/codelist/measure> .
+
+<http://data.openbudgets.eu/resource/ESIF-2014-2020/codelist/measure/15> a <http://www.w3.org/2004/02/skos/core#Concept> ;
+	<http://linked.opendata.cz/ontology/odcs/tabular/row> "14"^^xsd:int ;
+	<http://www.w3.org/2004/02/skos/core#notation> "15" ;
+	<http://www.w3.org/2004/02/skos/core#prefLabel> "forest-environmental and climate services and forest conservation"@en ;
+	<http://www.w3.org/2004/02/skos/core#topConceptOf> <http://data.openbudgets.eu/resource/ESIF-2014-2020/codelist/measure> .
+
+<http://data.openbudgets.eu/resource/ESIF-2014-2020/codelist/measure/15.1> a <http://www.w3.org/2004/02/skos/core#Concept> ;
+	<http://linked.opendata.cz/ontology/odcs/tabular/row> "64"^^xsd:int ;
+	<http://www.w3.org/2004/02/skos/core#notation> "15.1" ;
+	<http://www.w3.org/2004/02/skos/core#prefLabel> "payment for forest-environmental and climate commitments"@en ;
+	<http://www.w3.org/2004/02/skos/core#broader> <http://data.openbudgets.eu/resource/ESIF-2014-2020/codelist/measure/15> ;
+	<http://www.w3.org/2004/02/skos/core#inScheme> <http://data.openbudgets.eu/resource/ESIF-2014-2020/codelist/measure> .
+
+<http://data.openbudgets.eu/resource/ESIF-2014-2020/codelist/measure/15.2> a <http://www.w3.org/2004/02/skos/core#Concept> ;
+	<http://linked.opendata.cz/ontology/odcs/tabular/row> "65"^^xsd:int ;
+	<http://www.w3.org/2004/02/skos/core#notation> "15.2" ;
+	<http://www.w3.org/2004/02/skos/core#prefLabel> "support for the conservation and promotion of forest genetic resources"@en ;
+	<http://www.w3.org/2004/02/skos/core#broader> <http://data.openbudgets.eu/resource/ESIF-2014-2020/codelist/measure/15> ;
+	<http://www.w3.org/2004/02/skos/core#inScheme> <http://data.openbudgets.eu/resource/ESIF-2014-2020/codelist/measure> .
+
+<http://data.openbudgets.eu/resource/ESIF-2014-2020/codelist/measure/16> a <http://www.w3.org/2004/02/skos/core#Concept> ;
+	<http://linked.opendata.cz/ontology/odcs/tabular/row> "15"^^xsd:int ;
+	<http://www.w3.org/2004/02/skos/core#notation> "16" ;
+	<http://www.w3.org/2004/02/skos/core#prefLabel> "cooperation"@en ;
+	<http://www.w3.org/2004/02/skos/core#topConceptOf> <http://data.openbudgets.eu/resource/ESIF-2014-2020/codelist/measure> .
+
+<http://data.openbudgets.eu/resource/ESIF-2014-2020/codelist/measure/16.1> a <http://www.w3.org/2004/02/skos/core#Concept> ;
+	<http://linked.opendata.cz/ontology/odcs/tabular/row> "66"^^xsd:int , "75"^^xsd:int ;
+	<http://www.w3.org/2004/02/skos/core#notation> "16.1" ;
+	<http://www.w3.org/2004/02/skos/core#prefLabel> "others"@en , "support for the establishment and operation of operational groups of the EIP for agricultural productivity and sustainability"@en ;
+	<http://www.w3.org/2004/02/skos/core#broader> <http://data.openbudgets.eu/resource/ESIF-2014-2020/codelist/measure/16> ;
+	<http://www.w3.org/2004/02/skos/core#inScheme> <http://data.openbudgets.eu/resource/ESIF-2014-2020/codelist/measure> .
+
+<http://data.openbudgets.eu/resource/ESIF-2014-2020/codelist/measure/16.2> a <http://www.w3.org/2004/02/skos/core#Concept> ;
+	<http://linked.opendata.cz/ontology/odcs/tabular/row> "67"^^xsd:int ;
+	<http://www.w3.org/2004/02/skos/core#notation> "16.2" ;
+	<http://www.w3.org/2004/02/skos/core#prefLabel> "support for pilot projects and for the development of new products, practices, processes and technologies"@en ;
+	<http://www.w3.org/2004/02/skos/core#broader> <http://data.openbudgets.eu/resource/ESIF-2014-2020/codelist/measure/16> ;
+	<http://www.w3.org/2004/02/skos/core#inScheme> <http://data.openbudgets.eu/resource/ESIF-2014-2020/codelist/measure> .
+
+<http://data.openbudgets.eu/resource/ESIF-2014-2020/codelist/measure/16.3> a <http://www.w3.org/2004/02/skos/core#Concept> ;
+	<http://linked.opendata.cz/ontology/odcs/tabular/row> "68"^^xsd:int ;
+	<http://www.w3.org/2004/02/skos/core#notation> "16.3" ;
+	<http://www.w3.org/2004/02/skos/core#prefLabel> "cooperation among small operators in organising joint work processes and sharing facilities and resources, and for developing and marketing tourism"@en ;
+	<http://www.w3.org/2004/02/skos/core#broader> <http://data.openbudgets.eu/resource/ESIF-2014-2020/codelist/measure/16> ;
+	<http://www.w3.org/2004/02/skos/core#inScheme> <http://data.openbudgets.eu/resource/ESIF-2014-2020/codelist/measure> .
+
+<http://data.openbudgets.eu/resource/ESIF-2014-2020/codelist/measure/16.4> a <http://www.w3.org/2004/02/skos/core#Concept> ;
+	<http://linked.opendata.cz/ontology/odcs/tabular/row> "69"^^xsd:int ;
+	<http://www.w3.org/2004/02/skos/core#notation> "16.4" ;
+	<http://www.w3.org/2004/02/skos/core#prefLabel> "support for horizontal and vertical cooperation among supply chain actors for the establishment and development of short supply chains and local markets and for promotion activities in a local context relating to the development of short supply chains and local markets"@en ;
+	<http://www.w3.org/2004/02/skos/core#broader> <http://data.openbudgets.eu/resource/ESIF-2014-2020/codelist/measure/16> ;
+	<http://www.w3.org/2004/02/skos/core#inScheme> <http://data.openbudgets.eu/resource/ESIF-2014-2020/codelist/measure> .
+
+<http://data.openbudgets.eu/resource/ESIF-2014-2020/codelist/measure/16.5> a <http://www.w3.org/2004/02/skos/core#Concept> ;
+	<http://linked.opendata.cz/ontology/odcs/tabular/row> "70"^^xsd:int ;
+	<http://www.w3.org/2004/02/skos/core#notation> "16.5" ;
+	<http://www.w3.org/2004/02/skos/core#prefLabel> "support for joint action undertaken with a view to mitigating or adapting to climate change and for joint approaches to environmental projects and ongoing environmental practices"@en ;
+	<http://www.w3.org/2004/02/skos/core#broader> <http://data.openbudgets.eu/resource/ESIF-2014-2020/codelist/measure/16> ;
+	<http://www.w3.org/2004/02/skos/core#inScheme> <http://data.openbudgets.eu/resource/ESIF-2014-2020/codelist/measure> .
+
+<http://data.openbudgets.eu/resource/ESIF-2014-2020/codelist/measure/16.6> a <http://www.w3.org/2004/02/skos/core#Concept> ;
+	<http://linked.opendata.cz/ontology/odcs/tabular/row> "71"^^xsd:int ;
+	<http://www.w3.org/2004/02/skos/core#notation> "16.6" ;
+	<http://www.w3.org/2004/02/skos/core#prefLabel> "support for cooperation among supply chain actors for sustainable provision of biomass for use in food and energy production and industrial processes"@en ;
+	<http://www.w3.org/2004/02/skos/core#broader> <http://data.openbudgets.eu/resource/ESIF-2014-2020/codelist/measure/16> ;
+	<http://www.w3.org/2004/02/skos/core#inScheme> <http://data.openbudgets.eu/resource/ESIF-2014-2020/codelist/measure> .
+
+<http://data.openbudgets.eu/resource/ESIF-2014-2020/codelist/measure/16.7> a <http://www.w3.org/2004/02/skos/core#Concept> ;
+	<http://linked.opendata.cz/ontology/odcs/tabular/row> "72"^^xsd:int ;
+	<http://www.w3.org/2004/02/skos/core#notation> "16.7" ;
+	<http://www.w3.org/2004/02/skos/core#prefLabel> "support for non-CLLD strategies"@en ;
+	<http://www.w3.org/2004/02/skos/core#broader> <http://data.openbudgets.eu/resource/ESIF-2014-2020/codelist/measure/16> ;
+	<http://www.w3.org/2004/02/skos/core#inScheme> <http://data.openbudgets.eu/resource/ESIF-2014-2020/codelist/measure> .
+
+<http://data.openbudgets.eu/resource/ESIF-2014-2020/codelist/measure/16.8> a <http://www.w3.org/2004/02/skos/core#Concept> ;
+	<http://linked.opendata.cz/ontology/odcs/tabular/row> "73"^^xsd:int ;
+	<http://www.w3.org/2004/02/skos/core#notation> "16.8" ;
+	<http://www.w3.org/2004/02/skos/core#prefLabel> "support for drawing up of forest management plans or equivalent instruments"@en ;
+	<http://www.w3.org/2004/02/skos/core#broader> <http://data.openbudgets.eu/resource/ESIF-2014-2020/codelist/measure/16> ;
+	<http://www.w3.org/2004/02/skos/core#inScheme> <http://data.openbudgets.eu/resource/ESIF-2014-2020/codelist/measure> .
+
+<http://data.openbudgets.eu/resource/ESIF-2014-2020/codelist/measure/16.9> a <http://www.w3.org/2004/02/skos/core#Concept> ;
+	<http://linked.opendata.cz/ontology/odcs/tabular/row> "74"^^xsd:int ;
+	<http://www.w3.org/2004/02/skos/core#notation> "16.9" ;
+	<http://www.w3.org/2004/02/skos/core#prefLabel> "support for diversification of farming activities into activities concerning health care, social integration, community-supported agriculture and education about the environment and food"@en ;
+	<http://www.w3.org/2004/02/skos/core#broader> <http://data.openbudgets.eu/resource/ESIF-2014-2020/codelist/measure/16> ;
+	<http://www.w3.org/2004/02/skos/core#inScheme> <http://data.openbudgets.eu/resource/ESIF-2014-2020/codelist/measure> .
+
+<http://data.openbudgets.eu/resource/ESIF-2014-2020/codelist/measure/17> a <http://www.w3.org/2004/02/skos/core#Concept> ;
+	<http://linked.opendata.cz/ontology/odcs/tabular/row> "16"^^xsd:int ;
+	<http://www.w3.org/2004/02/skos/core#notation> "17" ;
+	<http://www.w3.org/2004/02/skos/core#prefLabel> "risk management"@en ;
+	<http://www.w3.org/2004/02/skos/core#topConceptOf> <http://data.openbudgets.eu/resource/ESIF-2014-2020/codelist/measure> .
+
+<http://data.openbudgets.eu/resource/ESIF-2014-2020/codelist/measure/17.1> a <http://www.w3.org/2004/02/skos/core#Concept> ;
+	<http://linked.opendata.cz/ontology/odcs/tabular/row> "76"^^xsd:int ;
+	<http://www.w3.org/2004/02/skos/core#notation> "17.1" ;
+	<http://www.w3.org/2004/02/skos/core#prefLabel> "crop, animal and plant insurance premium"@en ;
+	<http://www.w3.org/2004/02/skos/core#broader> <http://data.openbudgets.eu/resource/ESIF-2014-2020/codelist/measure/17> ;
+	<http://www.w3.org/2004/02/skos/core#inScheme> <http://data.openbudgets.eu/resource/ESIF-2014-2020/codelist/measure> .
+
+<http://data.openbudgets.eu/resource/ESIF-2014-2020/codelist/measure/17.2> a <http://www.w3.org/2004/02/skos/core#Concept> ;
+	<http://linked.opendata.cz/ontology/odcs/tabular/row> "77"^^xsd:int ;
+	<http://www.w3.org/2004/02/skos/core#notation> "17.2" ;
+	<http://www.w3.org/2004/02/skos/core#prefLabel> "mutual funds for adverse climatic events, animal and plant diseases, pest infestations and environmental incidents"@en ;
+	<http://www.w3.org/2004/02/skos/core#broader> <http://data.openbudgets.eu/resource/ESIF-2014-2020/codelist/measure/17> ;
+	<http://www.w3.org/2004/02/skos/core#inScheme> <http://data.openbudgets.eu/resource/ESIF-2014-2020/codelist/measure> .
+
+<http://data.openbudgets.eu/resource/ESIF-2014-2020/codelist/measure/17.3> a <http://www.w3.org/2004/02/skos/core#Concept> ;
+	<http://linked.opendata.cz/ontology/odcs/tabular/row> "78"^^xsd:int ;
+	<http://www.w3.org/2004/02/skos/core#notation> "17.3" ;
+	<http://www.w3.org/2004/02/skos/core#prefLabel> "income stabilisation tool"@en ;
+	<http://www.w3.org/2004/02/skos/core#broader> <http://data.openbudgets.eu/resource/ESIF-2014-2020/codelist/measure/17> ;
+	<http://www.w3.org/2004/02/skos/core#inScheme> <http://data.openbudgets.eu/resource/ESIF-2014-2020/codelist/measure> .
+
+<http://data.openbudgets.eu/resource/ESIF-2014-2020/codelist/measure/18> a <http://www.w3.org/2004/02/skos/core#Concept> ;
+	<http://linked.opendata.cz/ontology/odcs/tabular/row> "79"^^xsd:int ;
+	<http://www.w3.org/2004/02/skos/core#notation> "18" ;
+	<http://www.w3.org/2004/02/skos/core#prefLabel> "financing of complementary national direct payments for Croatia"@en ;
+	<http://www.w3.org/2004/02/skos/core#broader> <http://data.openbudgets.eu/resource/ESIF-2014-2020/codelist/measure/18> ;
+	<http://www.w3.org/2004/02/skos/core#inScheme> <http://data.openbudgets.eu/resource/ESIF-2014-2020/codelist/measure> .
+
+<http://data.openbudgets.eu/resource/ESIF-2014-2020/codelist/measure/19> a <http://www.w3.org/2004/02/skos/core#Concept> ;
+	<http://linked.opendata.cz/ontology/odcs/tabular/row> "17"^^xsd:int ;
+	<http://www.w3.org/2004/02/skos/core#notation> "19" ;
+	<http://www.w3.org/2004/02/skos/core#prefLabel> "support for LEADER local development (CLLD)"@en ;
+	<http://www.w3.org/2004/02/skos/core#topConceptOf> <http://data.openbudgets.eu/resource/ESIF-2014-2020/codelist/measure> .
+
+<http://data.openbudgets.eu/resource/ESIF-2014-2020/codelist/measure/19.1> a <http://www.w3.org/2004/02/skos/core#Concept> ;
+	<http://linked.opendata.cz/ontology/odcs/tabular/row> "80"^^xsd:int ;
+	<http://www.w3.org/2004/02/skos/core#notation> "19.1" ;
+	<http://www.w3.org/2004/02/skos/core#prefLabel> "preparatory support"@en ;
+	<http://www.w3.org/2004/02/skos/core#broader> <http://data.openbudgets.eu/resource/ESIF-2014-2020/codelist/measure/19> ;
+	<http://www.w3.org/2004/02/skos/core#inScheme> <http://data.openbudgets.eu/resource/ESIF-2014-2020/codelist/measure> .
+
+<http://data.openbudgets.eu/resource/ESIF-2014-2020/codelist/measure/19.2> a <http://www.w3.org/2004/02/skos/core#Concept> ;
+	<http://linked.opendata.cz/ontology/odcs/tabular/row> "81"^^xsd:int ;
+	<http://www.w3.org/2004/02/skos/core#notation> "19.2" ;
+	<http://www.w3.org/2004/02/skos/core#prefLabel> "support for implementation of operations under the CLLD strategy"@en ;
+	<http://www.w3.org/2004/02/skos/core#broader> <http://data.openbudgets.eu/resource/ESIF-2014-2020/codelist/measure/19> ;
+	<http://www.w3.org/2004/02/skos/core#inScheme> <http://data.openbudgets.eu/resource/ESIF-2014-2020/codelist/measure> .
+
+<http://data.openbudgets.eu/resource/ESIF-2014-2020/codelist/measure/19.3> a <http://www.w3.org/2004/02/skos/core#Concept> ;
+	<http://linked.opendata.cz/ontology/odcs/tabular/row> "82"^^xsd:int ;
+	<http://www.w3.org/2004/02/skos/core#notation> "19.3" ;
+	<http://www.w3.org/2004/02/skos/core#prefLabel> "preparation and implementation of cooperation activities of the local action group"@en ;
+	<http://www.w3.org/2004/02/skos/core#broader> <http://data.openbudgets.eu/resource/ESIF-2014-2020/codelist/measure/19> ;
+	<http://www.w3.org/2004/02/skos/core#inScheme> <http://data.openbudgets.eu/resource/ESIF-2014-2020/codelist/measure> .
+
+<http://data.openbudgets.eu/resource/ESIF-2014-2020/codelist/measure/19.4> a <http://www.w3.org/2004/02/skos/core#Concept> ;
+	<http://linked.opendata.cz/ontology/odcs/tabular/row> "83"^^xsd:int ;
+	<http://www.w3.org/2004/02/skos/core#notation> "19.4" ;
+	<http://www.w3.org/2004/02/skos/core#prefLabel> "support for running costs and animation"@en ;
+	<http://www.w3.org/2004/02/skos/core#broader> <http://data.openbudgets.eu/resource/ESIF-2014-2020/codelist/measure/19> ;
+	<http://www.w3.org/2004/02/skos/core#inScheme> <http://data.openbudgets.eu/resource/ESIF-2014-2020/codelist/measure> .
+
+<http://data.openbudgets.eu/resource/ESIF-2014-2020/codelist/measure/2> a <http://www.w3.org/2004/02/skos/core#Concept> ;
+	<http://linked.opendata.cz/ontology/odcs/tabular/row> "3"^^xsd:int ;
+	<http://www.w3.org/2004/02/skos/core#notation> "2" ;
+	<http://www.w3.org/2004/02/skos/core#prefLabel> "advisory services, farm management and farm relief services"@en ;
+	<http://www.w3.org/2004/02/skos/core#topConceptOf> <http://data.openbudgets.eu/resource/ESIF-2014-2020/codelist/measure> .
+
+<http://data.openbudgets.eu/resource/ESIF-2014-2020/codelist/measure/2.1> a <http://www.w3.org/2004/02/skos/core#Concept> ;
+	<http://linked.opendata.cz/ontology/odcs/tabular/row> "22"^^xsd:int ;
+	<http://www.w3.org/2004/02/skos/core#notation> "2.1" ;
+	<http://www.w3.org/2004/02/skos/core#prefLabel> "support to help benefiting from the use of advisory services"@en ;
+	<http://www.w3.org/2004/02/skos/core#broader> <http://data.openbudgets.eu/resource/ESIF-2014-2020/codelist/measure/2> ;
+	<http://www.w3.org/2004/02/skos/core#inScheme> <http://data.openbudgets.eu/resource/ESIF-2014-2020/codelist/measure> .
+
+<http://data.openbudgets.eu/resource/ESIF-2014-2020/codelist/measure/2.2> a <http://www.w3.org/2004/02/skos/core#Concept> ;
+	<http://linked.opendata.cz/ontology/odcs/tabular/row> "23"^^xsd:int ;
+	<http://www.w3.org/2004/02/skos/core#notation> "2.2" ;
+	<http://www.w3.org/2004/02/skos/core#prefLabel> "support for the setting up of farm management, farm relief and farm advisory services as well as forestry advisory services"@en ;
+	<http://www.w3.org/2004/02/skos/core#broader> <http://data.openbudgets.eu/resource/ESIF-2014-2020/codelist/measure/2> ;
+	<http://www.w3.org/2004/02/skos/core#inScheme> <http://data.openbudgets.eu/resource/ESIF-2014-2020/codelist/measure> .
+
+<http://data.openbudgets.eu/resource/ESIF-2014-2020/codelist/measure/2.3> a <http://www.w3.org/2004/02/skos/core#Concept> ;
+	<http://linked.opendata.cz/ontology/odcs/tabular/row> "24"^^xsd:int ;
+	<http://www.w3.org/2004/02/skos/core#notation> "2.3" ;
+	<http://www.w3.org/2004/02/skos/core#prefLabel> "support for training of advisors"@en ;
+	<http://www.w3.org/2004/02/skos/core#broader> <http://data.openbudgets.eu/resource/ESIF-2014-2020/codelist/measure/2> ;
+	<http://www.w3.org/2004/02/skos/core#inScheme> <http://data.openbudgets.eu/resource/ESIF-2014-2020/codelist/measure> .
+
+<http://data.openbudgets.eu/resource/ESIF-2014-2020/codelist/measure/20> a <http://www.w3.org/2004/02/skos/core#Concept> ;
+	<http://linked.opendata.cz/ontology/odcs/tabular/row> "18"^^xsd:int ;
+	<http://www.w3.org/2004/02/skos/core#notation> "20" ;
+	<http://www.w3.org/2004/02/skos/core#prefLabel> "technical assistance"@en ;
+	<http://www.w3.org/2004/02/skos/core#topConceptOf> <http://data.openbudgets.eu/resource/ESIF-2014-2020/codelist/measure> .
+
+<http://data.openbudgets.eu/resource/ESIF-2014-2020/codelist/measure/20.1> a <http://www.w3.org/2004/02/skos/core#Concept> ;
+	<http://linked.opendata.cz/ontology/odcs/tabular/row> "84"^^xsd:int ;
+	<http://www.w3.org/2004/02/skos/core#notation> "20.1" ;
+	<http://www.w3.org/2004/02/skos/core#prefLabel> "Support for technical assistance (other than NRN)"@en ;
+	<http://www.w3.org/2004/02/skos/core#broader> <http://data.openbudgets.eu/resource/ESIF-2014-2020/codelist/measure/20> ;
+	<http://www.w3.org/2004/02/skos/core#inScheme> <http://data.openbudgets.eu/resource/ESIF-2014-2020/codelist/measure> .
+
+<http://data.openbudgets.eu/resource/ESIF-2014-2020/codelist/measure/20.2> a <http://www.w3.org/2004/02/skos/core#Concept> ;
+	<http://linked.opendata.cz/ontology/odcs/tabular/row> "85"^^xsd:int ;
+	<http://www.w3.org/2004/02/skos/core#notation> "20.2" ;
+	<http://www.w3.org/2004/02/skos/core#prefLabel> "support for establishing and operating the NRN"@en ;
+	<http://www.w3.org/2004/02/skos/core#broader> <http://data.openbudgets.eu/resource/ESIF-2014-2020/codelist/measure/20> ;
+	<http://www.w3.org/2004/02/skos/core#inScheme> <http://data.openbudgets.eu/resource/ESIF-2014-2020/codelist/measure> .
+
+<http://data.openbudgets.eu/resource/ESIF-2014-2020/codelist/measure/3> a <http://www.w3.org/2004/02/skos/core#Concept> ;
+	<http://linked.opendata.cz/ontology/odcs/tabular/row> "4"^^xsd:int ;
+	<http://www.w3.org/2004/02/skos/core#notation> "3" ;
+	<http://www.w3.org/2004/02/skos/core#prefLabel> "quality schemes for agricultural products and foodstuffs"@en ;
+	<http://www.w3.org/2004/02/skos/core#topConceptOf> <http://data.openbudgets.eu/resource/ESIF-2014-2020/codelist/measure> .
+
+<http://data.openbudgets.eu/resource/ESIF-2014-2020/codelist/measure/3.1> a <http://www.w3.org/2004/02/skos/core#Concept> ;
+	<http://linked.opendata.cz/ontology/odcs/tabular/row> "25"^^xsd:int ;
+	<http://www.w3.org/2004/02/skos/core#notation> "3.1" ;
+	<http://www.w3.org/2004/02/skos/core#prefLabel> "support for new participation in quality schemes"@en ;
+	<http://www.w3.org/2004/02/skos/core#broader> <http://data.openbudgets.eu/resource/ESIF-2014-2020/codelist/measure/3> ;
+	<http://www.w3.org/2004/02/skos/core#inScheme> <http://data.openbudgets.eu/resource/ESIF-2014-2020/codelist/measure> .
+
+<http://data.openbudgets.eu/resource/ESIF-2014-2020/codelist/measure/3.2> a <http://www.w3.org/2004/02/skos/core#Concept> ;
+	<http://linked.opendata.cz/ontology/odcs/tabular/row> "26"^^xsd:int ;
+	<http://www.w3.org/2004/02/skos/core#notation> "3.2" ;
+	<http://www.w3.org/2004/02/skos/core#prefLabel> "support for information and promotion activities implemented by groups of producers in the internal market"@en ;
+	<http://www.w3.org/2004/02/skos/core#broader> <http://data.openbudgets.eu/resource/ESIF-2014-2020/codelist/measure/3> ;
+	<http://www.w3.org/2004/02/skos/core#inScheme> <http://data.openbudgets.eu/resource/ESIF-2014-2020/codelist/measure> .
+
+<http://data.openbudgets.eu/resource/ESIF-2014-2020/codelist/measure/4> a <http://www.w3.org/2004/02/skos/core#Concept> ;
+	<http://linked.opendata.cz/ontology/odcs/tabular/row> "5"^^xsd:int ;
+	<http://www.w3.org/2004/02/skos/core#notation> "4" ;
+	<http://www.w3.org/2004/02/skos/core#prefLabel> "investments in physical assets"@en ;
+	<http://www.w3.org/2004/02/skos/core#topConceptOf> <http://data.openbudgets.eu/resource/ESIF-2014-2020/codelist/measure> .
+
+<http://data.openbudgets.eu/resource/ESIF-2014-2020/codelist/measure/4.1> a <http://www.w3.org/2004/02/skos/core#Concept> ;
+	<http://linked.opendata.cz/ontology/odcs/tabular/row> "27"^^xsd:int ;
+	<http://www.w3.org/2004/02/skos/core#notation> "4.1" ;
+	<http://www.w3.org/2004/02/skos/core#prefLabel> "support for investments in agricultural holdings"@en ;
+	<http://www.w3.org/2004/02/skos/core#broader> <http://data.openbudgets.eu/resource/ESIF-2014-2020/codelist/measure/4> ;
+	<http://www.w3.org/2004/02/skos/core#inScheme> <http://data.openbudgets.eu/resource/ESIF-2014-2020/codelist/measure> .
+
+<http://data.openbudgets.eu/resource/ESIF-2014-2020/codelist/measure/4.2> a <http://www.w3.org/2004/02/skos/core#Concept> ;
+	<http://linked.opendata.cz/ontology/odcs/tabular/row> "28"^^xsd:int ;
+	<http://www.w3.org/2004/02/skos/core#notation> "4.2" ;
+	<http://www.w3.org/2004/02/skos/core#prefLabel> "support for investments in processing/marketing and/or development of agricultural products"@en ;
+	<http://www.w3.org/2004/02/skos/core#broader> <http://data.openbudgets.eu/resource/ESIF-2014-2020/codelist/measure/4> ;
+	<http://www.w3.org/2004/02/skos/core#inScheme> <http://data.openbudgets.eu/resource/ESIF-2014-2020/codelist/measure> .
+
+<http://data.openbudgets.eu/resource/ESIF-2014-2020/codelist/measure/4.3> a <http://www.w3.org/2004/02/skos/core#Concept> ;
+	<http://linked.opendata.cz/ontology/odcs/tabular/row> "29"^^xsd:int ;
+	<http://www.w3.org/2004/02/skos/core#notation> "4.3" ;
+	<http://www.w3.org/2004/02/skos/core#prefLabel> "support for investments in infrastructure related to development, modernisation or adaptation of agriculture and forestry"@en ;
+	<http://www.w3.org/2004/02/skos/core#broader> <http://data.openbudgets.eu/resource/ESIF-2014-2020/codelist/measure/4> ;
+	<http://www.w3.org/2004/02/skos/core#inScheme> <http://data.openbudgets.eu/resource/ESIF-2014-2020/codelist/measure> .
+
+<http://data.openbudgets.eu/resource/ESIF-2014-2020/codelist/measure/4.4> a <http://www.w3.org/2004/02/skos/core#Concept> ;
+	<http://linked.opendata.cz/ontology/odcs/tabular/row> "30"^^xsd:int ;
+	<http://www.w3.org/2004/02/skos/core#notation> "4.4" ;
+	<http://www.w3.org/2004/02/skos/core#prefLabel> "support for non-productive investments linked to the achievement of agri-environment-climate objectives"@en ;
+	<http://www.w3.org/2004/02/skos/core#broader> <http://data.openbudgets.eu/resource/ESIF-2014-2020/codelist/measure/4> ;
+	<http://www.w3.org/2004/02/skos/core#inScheme> <http://data.openbudgets.eu/resource/ESIF-2014-2020/codelist/measure> .
+
+<http://data.openbudgets.eu/resource/ESIF-2014-2020/codelist/measure/5> a <http://www.w3.org/2004/02/skos/core#Concept> ;
+	<http://linked.opendata.cz/ontology/odcs/tabular/row> "6"^^xsd:int ;
+	<http://www.w3.org/2004/02/skos/core#notation> "5" ;
+	<http://www.w3.org/2004/02/skos/core#prefLabel> "restoring agricultural production potential damaged by natural disasters and introduction of appropriate prevention"@en ;
+	<http://www.w3.org/2004/02/skos/core#topConceptOf> <http://data.openbudgets.eu/resource/ESIF-2014-2020/codelist/measure> .
+
+<http://data.openbudgets.eu/resource/ESIF-2014-2020/codelist/measure/5.1> a <http://www.w3.org/2004/02/skos/core#Concept> ;
+	<http://linked.opendata.cz/ontology/odcs/tabular/row> "31"^^xsd:int ;
+	<http://www.w3.org/2004/02/skos/core#notation> "5.1" ;
+	<http://www.w3.org/2004/02/skos/core#prefLabel> "support for investments in preventive actions aimed at reducing the consequences of probable natural disasters, adverse climatic events and catastrophic events"@en ;
+	<http://www.w3.org/2004/02/skos/core#broader> <http://data.openbudgets.eu/resource/ESIF-2014-2020/codelist/measure/5> ;
+	<http://www.w3.org/2004/02/skos/core#inScheme> <http://data.openbudgets.eu/resource/ESIF-2014-2020/codelist/measure> .
+
+<http://data.openbudgets.eu/resource/ESIF-2014-2020/codelist/measure/5.2> a <http://www.w3.org/2004/02/skos/core#Concept> ;
+	<http://linked.opendata.cz/ontology/odcs/tabular/row> "32"^^xsd:int ;
+	<http://www.w3.org/2004/02/skos/core#notation> "5.2" ;
+	<http://www.w3.org/2004/02/skos/core#prefLabel> "support for investments for the restoration of agricultural land and production potential damaged by natural disasters, adverse climatic events and catastrophic events"@en ;
+	<http://www.w3.org/2004/02/skos/core#broader> <http://data.openbudgets.eu/resource/ESIF-2014-2020/codelist/measure/5> ;
+	<http://www.w3.org/2004/02/skos/core#inScheme> <http://data.openbudgets.eu/resource/ESIF-2014-2020/codelist/measure> .
+
+<http://data.openbudgets.eu/resource/ESIF-2014-2020/codelist/measure/6> a <http://www.w3.org/2004/02/skos/core#Concept> ;
+	<http://linked.opendata.cz/ontology/odcs/tabular/row> "7"^^xsd:int ;
+	<http://www.w3.org/2004/02/skos/core#notation> "6" ;
+	<http://www.w3.org/2004/02/skos/core#prefLabel> "farm and business development"@en ;
+	<http://www.w3.org/2004/02/skos/core#topConceptOf> <http://data.openbudgets.eu/resource/ESIF-2014-2020/codelist/measure> .
+
+<http://data.openbudgets.eu/resource/ESIF-2014-2020/codelist/measure/6.1> a <http://www.w3.org/2004/02/skos/core#Concept> ;
+	<http://linked.opendata.cz/ontology/odcs/tabular/row> "33"^^xsd:int ;
+	<http://www.w3.org/2004/02/skos/core#notation> "6.1" ;
+	<http://www.w3.org/2004/02/skos/core#prefLabel> "business start up aid for young farmers"@en ;
+	<http://www.w3.org/2004/02/skos/core#broader> <http://data.openbudgets.eu/resource/ESIF-2014-2020/codelist/measure/6> ;
+	<http://www.w3.org/2004/02/skos/core#inScheme> <http://data.openbudgets.eu/resource/ESIF-2014-2020/codelist/measure> .
+
+<http://data.openbudgets.eu/resource/ESIF-2014-2020/codelist/measure/6.2> a <http://www.w3.org/2004/02/skos/core#Concept> ;
+	<http://linked.opendata.cz/ontology/odcs/tabular/row> "34"^^xsd:int ;
+	<http://www.w3.org/2004/02/skos/core#notation> "6.2" ;
+	<http://www.w3.org/2004/02/skos/core#prefLabel> "business start up aid for non-agricultural activities in rural areas"@en ;
+	<http://www.w3.org/2004/02/skos/core#broader> <http://data.openbudgets.eu/resource/ESIF-2014-2020/codelist/measure/6> ;
+	<http://www.w3.org/2004/02/skos/core#inScheme> <http://data.openbudgets.eu/resource/ESIF-2014-2020/codelist/measure> .
+
+<http://data.openbudgets.eu/resource/ESIF-2014-2020/codelist/measure/6.3> a <http://www.w3.org/2004/02/skos/core#Concept> ;
+	<http://linked.opendata.cz/ontology/odcs/tabular/row> "35"^^xsd:int ;
+	<http://www.w3.org/2004/02/skos/core#notation> "6.3" ;
+	<http://www.w3.org/2004/02/skos/core#prefLabel> "business start up aid for the development of small farms"@en ;
+	<http://www.w3.org/2004/02/skos/core#broader> <http://data.openbudgets.eu/resource/ESIF-2014-2020/codelist/measure/6> ;
+	<http://www.w3.org/2004/02/skos/core#inScheme> <http://data.openbudgets.eu/resource/ESIF-2014-2020/codelist/measure> .
+
+<http://data.openbudgets.eu/resource/ESIF-2014-2020/codelist/measure/6.4> a <http://www.w3.org/2004/02/skos/core#Concept> ;
+	<http://linked.opendata.cz/ontology/odcs/tabular/row> "36"^^xsd:int ;
+	<http://www.w3.org/2004/02/skos/core#notation> "6.4" ;
+	<http://www.w3.org/2004/02/skos/core#prefLabel> "support for investments in creation and development of non-agricultural activities"@en ;
+	<http://www.w3.org/2004/02/skos/core#broader> <http://data.openbudgets.eu/resource/ESIF-2014-2020/codelist/measure/6> ;
+	<http://www.w3.org/2004/02/skos/core#inScheme> <http://data.openbudgets.eu/resource/ESIF-2014-2020/codelist/measure> .
+
+<http://data.openbudgets.eu/resource/ESIF-2014-2020/codelist/measure/6.5> a <http://www.w3.org/2004/02/skos/core#Concept> ;
+	<http://linked.opendata.cz/ontology/odcs/tabular/row> "37"^^xsd:int ;
+	<http://www.w3.org/2004/02/skos/core#notation> "6.5" ;
+	<http://www.w3.org/2004/02/skos/core#prefLabel> "payments for farmers eligible for the small farmers scheme who permanently transfer their holding to another farmer"@en ;
+	<http://www.w3.org/2004/02/skos/core#broader> <http://data.openbudgets.eu/resource/ESIF-2014-2020/codelist/measure/6> ;
+	<http://www.w3.org/2004/02/skos/core#inScheme> <http://data.openbudgets.eu/resource/ESIF-2014-2020/codelist/measure> .
+
+<http://data.openbudgets.eu/resource/ESIF-2014-2020/codelist/measure/7> a <http://www.w3.org/2004/02/skos/core#Concept> ;
+	<http://linked.opendata.cz/ontology/odcs/tabular/row> "8"^^xsd:int ;
+	<http://www.w3.org/2004/02/skos/core#notation> "7" ;
+	<http://www.w3.org/2004/02/skos/core#prefLabel> "basic services and village renewal in rural areas"@en ;
+	<http://www.w3.org/2004/02/skos/core#topConceptOf> <http://data.openbudgets.eu/resource/ESIF-2014-2020/codelist/measure> .
+
+<http://data.openbudgets.eu/resource/ESIF-2014-2020/codelist/measure/7.1> a <http://www.w3.org/2004/02/skos/core#Concept> ;
+	<http://linked.opendata.cz/ontology/odcs/tabular/row> "38"^^xsd:int ;
+	<http://www.w3.org/2004/02/skos/core#notation> "7.1" ;
+	<http://www.w3.org/2004/02/skos/core#prefLabel> "support for drawing up and updating of plans for the development of municipalities and villages in rural areas and their basic services and of protection and management plans relating to Natura 2000 sites and other areas of high nature value"@en ;
+	<http://www.w3.org/2004/02/skos/core#broader> <http://data.openbudgets.eu/resource/ESIF-2014-2020/codelist/measure/7> ;
+	<http://www.w3.org/2004/02/skos/core#inScheme> <http://data.openbudgets.eu/resource/ESIF-2014-2020/codelist/measure> .
+
+<http://data.openbudgets.eu/resource/ESIF-2014-2020/codelist/measure/7.2> a <http://www.w3.org/2004/02/skos/core#Concept> ;
+	<http://linked.opendata.cz/ontology/odcs/tabular/row> "39"^^xsd:int ;
+	<http://www.w3.org/2004/02/skos/core#notation> "7.2" ;
+	<http://www.w3.org/2004/02/skos/core#prefLabel> "support for investments in the creation, improvement or expansion of all types of small scale infrastructure, including investments in renewable energy and energy saving"@en ;
+	<http://www.w3.org/2004/02/skos/core#broader> <http://data.openbudgets.eu/resource/ESIF-2014-2020/codelist/measure/7> ;
+	<http://www.w3.org/2004/02/skos/core#inScheme> <http://data.openbudgets.eu/resource/ESIF-2014-2020/codelist/measure> .
+
+<http://data.openbudgets.eu/resource/ESIF-2014-2020/codelist/measure/7.3> a <http://www.w3.org/2004/02/skos/core#Concept> ;
+	<http://linked.opendata.cz/ontology/odcs/tabular/row> "40"^^xsd:int ;
+	<http://www.w3.org/2004/02/skos/core#notation> "7.3" ;
+	<http://www.w3.org/2004/02/skos/core#prefLabel> "support for broadband infrastructure, including its creation, improvement and expansion, passive broadband infrastructure and provision of access to broadband and public e-government"@en ;
+	<http://www.w3.org/2004/02/skos/core#broader> <http://data.openbudgets.eu/resource/ESIF-2014-2020/codelist/measure/7> ;
+	<http://www.w3.org/2004/02/skos/core#inScheme> <http://data.openbudgets.eu/resource/ESIF-2014-2020/codelist/measure> .
+
+<http://data.openbudgets.eu/resource/ESIF-2014-2020/codelist/measure/7.4> a <http://www.w3.org/2004/02/skos/core#Concept> ;
+	<http://linked.opendata.cz/ontology/odcs/tabular/row> "41"^^xsd:int ;
+	<http://www.w3.org/2004/02/skos/core#notation> "7.4" ;
+	<http://www.w3.org/2004/02/skos/core#prefLabel> "support for investments in the setting-up, improvement or expansion of local basic services for the rural population including leisure and culture, and the related infrastructure"@en ;
+	<http://www.w3.org/2004/02/skos/core#broader> <http://data.openbudgets.eu/resource/ESIF-2014-2020/codelist/measure/7> ;
+	<http://www.w3.org/2004/02/skos/core#inScheme> <http://data.openbudgets.eu/resource/ESIF-2014-2020/codelist/measure> .
+
+<http://data.openbudgets.eu/resource/ESIF-2014-2020/codelist/measure/7.5> a <http://www.w3.org/2004/02/skos/core#Concept> ;
+	<http://linked.opendata.cz/ontology/odcs/tabular/row> "42"^^xsd:int ;
+	<http://www.w3.org/2004/02/skos/core#notation> "7.5" ;
+	<http://www.w3.org/2004/02/skos/core#prefLabel> "support for investments for public use in recreational infrastructure, tourist information and small scale tourism infrastructure"@en ;
+	<http://www.w3.org/2004/02/skos/core#broader> <http://data.openbudgets.eu/resource/ESIF-2014-2020/codelist/measure/7> ;
+	<http://www.w3.org/2004/02/skos/core#inScheme> <http://data.openbudgets.eu/resource/ESIF-2014-2020/codelist/measure> .
+
+<http://data.openbudgets.eu/resource/ESIF-2014-2020/codelist/measure/7.6> a <http://www.w3.org/2004/02/skos/core#Concept> ;
+	<http://linked.opendata.cz/ontology/odcs/tabular/row> "43"^^xsd:int ;
+	<http://www.w3.org/2004/02/skos/core#notation> "7.6" ;
+	<http://www.w3.org/2004/02/skos/core#prefLabel> "support for studies/investments associated with the maintenance, restoration and upgrading of the cultural and natural heritage of villages, rural landscapes and high nature value sites including related socioeconomic aspects, as well as environmental awareness actions"@en ;
+	<http://www.w3.org/2004/02/skos/core#broader> <http://data.openbudgets.eu/resource/ESIF-2014-2020/codelist/measure/7> ;
+	<http://www.w3.org/2004/02/skos/core#inScheme> <http://data.openbudgets.eu/resource/ESIF-2014-2020/codelist/measure> .
+
+<http://data.openbudgets.eu/resource/ESIF-2014-2020/codelist/measure/7.7> a <http://www.w3.org/2004/02/skos/core#Concept> ;
+	<http://linked.opendata.cz/ontology/odcs/tabular/row> "44"^^xsd:int ;
+	<http://www.w3.org/2004/02/skos/core#notation> "7.7" ;
+	<http://www.w3.org/2004/02/skos/core#prefLabel> "support for investments targeting the relocation of activities and conversion of buildings or other facilities located inside or close to rural settlements, with a view to improving the quality of life or increasing the environmental performance of the settlement"@en ;
+	<http://www.w3.org/2004/02/skos/core#broader> <http://data.openbudgets.eu/resource/ESIF-2014-2020/codelist/measure/7> ;
+	<http://www.w3.org/2004/02/skos/core#inScheme> <http://data.openbudgets.eu/resource/ESIF-2014-2020/codelist/measure> .
+
+<http://data.openbudgets.eu/resource/ESIF-2014-2020/codelist/measure/7.8> a <http://www.w3.org/2004/02/skos/core#Concept> ;
+	<http://linked.opendata.cz/ontology/odcs/tabular/row> "45"^^xsd:int ;
+	<http://www.w3.org/2004/02/skos/core#notation> "7.8" ;
+	<http://www.w3.org/2004/02/skos/core#prefLabel> "others"@en ;
+	<http://www.w3.org/2004/02/skos/core#broader> <http://data.openbudgets.eu/resource/ESIF-2014-2020/codelist/measure/7> ;
+	<http://www.w3.org/2004/02/skos/core#inScheme> <http://data.openbudgets.eu/resource/ESIF-2014-2020/codelist/measure> .
+
+<http://data.openbudgets.eu/resource/ESIF-2014-2020/codelist/measure/8> a <http://www.w3.org/2004/02/skos/core#Concept> ;
+	<http://linked.opendata.cz/ontology/odcs/tabular/row> "9"^^xsd:int ;
+	<http://www.w3.org/2004/02/skos/core#notation> "8" ;
+	<http://www.w3.org/2004/02/skos/core#prefLabel> "investments in forest area development and improvement of the viability of forests"@en ;
+	<http://www.w3.org/2004/02/skos/core#topConceptOf> <http://data.openbudgets.eu/resource/ESIF-2014-2020/codelist/measure> .
+
+<http://data.openbudgets.eu/resource/ESIF-2014-2020/codelist/measure/8.1> a <http://www.w3.org/2004/02/skos/core#Concept> ;
+	<http://linked.opendata.cz/ontology/odcs/tabular/row> "46"^^xsd:int ;
+	<http://www.w3.org/2004/02/skos/core#notation> "8.1" ;
+	<http://www.w3.org/2004/02/skos/core#prefLabel> "support for afforestation/creation of woodland"@en ;
+	<http://www.w3.org/2004/02/skos/core#broader> <http://data.openbudgets.eu/resource/ESIF-2014-2020/codelist/measure/8> ;
+	<http://www.w3.org/2004/02/skos/core#inScheme> <http://data.openbudgets.eu/resource/ESIF-2014-2020/codelist/measure> .
+
+<http://data.openbudgets.eu/resource/ESIF-2014-2020/codelist/measure/8.2> a <http://www.w3.org/2004/02/skos/core#Concept> ;
+	<http://linked.opendata.cz/ontology/odcs/tabular/row> "47"^^xsd:int ;
+	<http://www.w3.org/2004/02/skos/core#notation> "8.2" ;
+	<http://www.w3.org/2004/02/skos/core#prefLabel> "support for establishment and maintenance of agro-forestry systems"@en ;
+	<http://www.w3.org/2004/02/skos/core#broader> <http://data.openbudgets.eu/resource/ESIF-2014-2020/codelist/measure/8> ;
+	<http://www.w3.org/2004/02/skos/core#inScheme> <http://data.openbudgets.eu/resource/ESIF-2014-2020/codelist/measure> .
+
+<http://data.openbudgets.eu/resource/ESIF-2014-2020/codelist/measure/8.3> a <http://www.w3.org/2004/02/skos/core#Concept> ;
+	<http://linked.opendata.cz/ontology/odcs/tabular/row> "48"^^xsd:int ;
+	<http://www.w3.org/2004/02/skos/core#notation> "8.3" ;
+	<http://www.w3.org/2004/02/skos/core#prefLabel> "support for prevention of damage to forests from forest fires and natural disasters and catastrophic events"@en ;
+	<http://www.w3.org/2004/02/skos/core#broader> <http://data.openbudgets.eu/resource/ESIF-2014-2020/codelist/measure/8> ;
+	<http://www.w3.org/2004/02/skos/core#inScheme> <http://data.openbudgets.eu/resource/ESIF-2014-2020/codelist/measure> .
+
+<http://data.openbudgets.eu/resource/ESIF-2014-2020/codelist/measure/8.4> a <http://www.w3.org/2004/02/skos/core#Concept> ;
+	<http://linked.opendata.cz/ontology/odcs/tabular/row> "49"^^xsd:int ;
+	<http://www.w3.org/2004/02/skos/core#notation> "8.4" ;
+	<http://www.w3.org/2004/02/skos/core#prefLabel> "support for restoration of damage to forests from forest fires and natural disasters and catastrophic events"@en ;
+	<http://www.w3.org/2004/02/skos/core#broader> <http://data.openbudgets.eu/resource/ESIF-2014-2020/codelist/measure/8> ;
+	<http://www.w3.org/2004/02/skos/core#inScheme> <http://data.openbudgets.eu/resource/ESIF-2014-2020/codelist/measure> .
+
+<http://data.openbudgets.eu/resource/ESIF-2014-2020/codelist/measure/8.5> a <http://www.w3.org/2004/02/skos/core#Concept> ;
+	<http://linked.opendata.cz/ontology/odcs/tabular/row> "50"^^xsd:int ;
+	<http://www.w3.org/2004/02/skos/core#notation> "8.5" ;
+	<http://www.w3.org/2004/02/skos/core#prefLabel> "support for investments improving the resilience and environmental value of forest ecosystems"@en ;
+	<http://www.w3.org/2004/02/skos/core#broader> <http://data.openbudgets.eu/resource/ESIF-2014-2020/codelist/measure/8> ;
+	<http://www.w3.org/2004/02/skos/core#inScheme> <http://data.openbudgets.eu/resource/ESIF-2014-2020/codelist/measure> .
+
+<http://data.openbudgets.eu/resource/ESIF-2014-2020/codelist/measure/8.6> a <http://www.w3.org/2004/02/skos/core#Concept> ;
+	<http://linked.opendata.cz/ontology/odcs/tabular/row> "51"^^xsd:int ;
+	<http://www.w3.org/2004/02/skos/core#notation> "8.6" ;
+	<http://www.w3.org/2004/02/skos/core#prefLabel> "support for investments in forestry technologies and in processing, mobilising and marketing of forest products"@en ;
+	<http://www.w3.org/2004/02/skos/core#broader> <http://data.openbudgets.eu/resource/ESIF-2014-2020/codelist/measure/8> ;
+	<http://www.w3.org/2004/02/skos/core#inScheme> <http://data.openbudgets.eu/resource/ESIF-2014-2020/codelist/measure> .
+
+<http://data.openbudgets.eu/resource/ESIF-2014-2020/codelist/measure/9> a <http://www.w3.org/2004/02/skos/core#Concept> ;
+	<http://linked.opendata.cz/ontology/odcs/tabular/row> "52"^^xsd:int ;
+	<http://www.w3.org/2004/02/skos/core#notation> "9" ;
+	<http://www.w3.org/2004/02/skos/core#prefLabel> "setting up of producer groups and organisations in the agriculture and forestry sectors"@en ;
+	<http://www.w3.org/2004/02/skos/core#broader> <http://data.openbudgets.eu/resource/ESIF-2014-2020/codelist/measure/9> ;
+	<http://www.w3.org/2004/02/skos/core#inScheme> <http://data.openbudgets.eu/resource/ESIF-2014-2020/codelist/measure> .
