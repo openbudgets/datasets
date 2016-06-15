@@ -75,11 +75,27 @@ esif-dimension:memberStates a rdf:Property, qb:CodedProperty, qb:DimensionProper
 
 esif-dimension:priority a rdf:Property, qb:CodedProperty, qb:DimensionProperty ;
   rdfs:label "Priority"@en ;
-  rdfs:comment "?? ."@en ;
+  rdfs:comment "EU ESIF Priority ."@en ;
   rdfs:subPropertyOf obeu-dimension:classification ;
-  qb:codeList esif-codelist:priorities ;
+  qb:codeList <http://data.openbudgets.eu/resource/ESIF-2014-2020/codelist/priority>;
   rdfs:range esif:Priority ;
   rdfs:isDefinedBy <http://data.openbudgets.eu/ontology/dsd/ESIF-2014-2020> .
+
+esif-dimension:measure a rdf:Property, qb:CodedProperty, qb:DimensionProperty ;
+  rdfs:label "Measure"@en ;
+  rdfs:comment "EU ESIF Measure ."@en ;
+  rdfs:subPropertyOf obeu-dimension:classification ;
+  qb:codeList <http://data.openbudgets.eu/resource/ESIF-2014-2020/codelist/measure>;
+  rdfs:range esif:Measure ;
+  rdfs:isDefinedBy <http://data.openbudgets.eu/ontology/dsd/ESIF-2014-2020> .  
+
+esif-dimension:program a rdf:Property, qb:CodedProperty, qb:DimensionProperty ;
+  rdfs:label "Program"@en ;
+  rdfs:comment "EU ESIF Program ."@en ;
+  rdfs:subPropertyOf obeu-dimension:classification ;
+  qb:codeList<http://data.openbudgets.eu/resource/ESIF-2014-2020/codelist/program> ;
+  rdfs:range esif:Program ;
+  rdfs:isDefinedBy <http://data.openbudgets.eu/ontology/dsd/ESIF-2014-2020> . 
 
 esif-measure:amountEU a rdf:Property, qb:MeasureProperty ;
   rdfs:label "Amount EU"@en ;
@@ -111,3 +127,15 @@ esif:Priority a rdfs:Class ;
   rdfs:comment "Priority of funded money"@en ;
   rdfs:subClassOf skos:Concept ;
   rdfs:isDefinedBy <http://data.openbudgets.eu/ontology/dsd/ESIF-2014-2020> .  
+
+esif:Measure a rdfs:Class ;
+  rdfs:label "Measure"@en ;
+  rdfs:comment "Measure of funded money"@en ;
+  rdfs:subClassOf skos:Concept ;
+  rdfs:isDefinedBy <http://data.openbudgets.eu/ontology/dsd/ESIF-2014-2020> .    
+
+esif:Program a rdfs:Class ;
+  rdfs:label "Program"@en ;
+  rdfs:comment "ESIF 2014-2020 Program"@en ;
+  rdfs:subClassOf skos:Concept ;
+  rdfs:isDefinedBy <http://data.openbudgets.eu/ontology/dsd/ESIF-2014-2020> .    
