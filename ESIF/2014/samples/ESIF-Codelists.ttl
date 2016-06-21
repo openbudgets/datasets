@@ -1,10 +1,11 @@
 # ----- DSD-specific namespaces -----
 
 @prefix esif:             <http://data.openbudgets.eu/ontology/european-funds/> .
-@prefix esif-codelist:    <http://data.openbudgets.eu/resource/ESIF_2014-2020/codelist/> .
-@prefix esif-dimension:   <http://data.openbudgets.eu/ontology/dsd/ESIF_2014-2020/dimension/> .
-@prefix esif-measure:     <http://data.openbudgets.eu/ontology/dsd/ESIF_2014-2020/measure/> .
-@prefix esif-operation:   <http://data.openbudgets.eu/resource/ESIF_2014-2020/codelist/operation-character/> .
+@prefix esif-codelist:    <http://data.openbudgets.eu/resource/ESIF-2014-2020/codelist/> .
+@prefix esif-dimension:   <http://data.openbudgets.eu/ontology/dsd/ESIF-2014-2020/dimension/> .
+@prefix esif-measure:     <http://data.openbudgets.eu/ontology/dsd/ESIF-2014-2020/measure/> .
+@prefix esif-operation:   <http://data.openbudgets.eu/resource/ESIF-2014-2020/codelist/operation-character/> .
+@prefix esif-fund:        <http://data.openbudgets.eu/resource/ESIF-2014-2020/codelist/eu-funds/> .
 
 # ----- OpenBudgets.eu namespaces -----
 
@@ -32,7 +33,7 @@ esif-codelist:funds a skos:ConceptScheme ;
   rdfs:label "A code list of the different structural and investment funds of the European Union"@en ;
   skos:hasTopConcept esif-fund:CF, esif-fund:EAFRD, esif-fund:EMFF, esif-fund:ERDF, esif-fund:ESF, esif-fund:YEI .
 
-esif-fund:CF a skos:Concept, esif:Fund ;
+esif-fund:cf a skos:Concept, esif:Fund ;
   skos:prefLabel "Cohesion Fund"@en ;
   skos:definition "The EU's Cohesion Fund is aimed at Member States whose Gross National Income (GNI) per inhabitant is less than 90 % of the EU average to reduce economic and social disparities."@en ;
   owl:sameAs <http://dbpedia.org/resource/Cohesion_Fund> ;
@@ -40,7 +41,7 @@ esif-fund:CF a skos:Concept, esif:Fund ;
   foaf:page <http://ec.europa.eu/regional_policy/en/funding/cohesion-fund/> ;
   skos:inScheme esif-codelist:funds .	
 
-esif-fund:EAFRD a skos:Concept, esif:Fund ;
+esif-fund:eafrd a skos:Concept, esif:Fund ;
   skos:prefLabel "European Agricultural Fund for Rural Development"@en ;
   skos:definition "The EU's Agricultural Fund for Rural Development is aimed to help the rural areas of the EU to meet the wide range of challenges and opportunities that face them in the 21st century - economical, environmental and social."@en ;
   owl:sameAs <http://dbpedia.org/resource/European_Agricultural_Fund_for_Rural_Development> ;
@@ -48,7 +49,7 @@ esif-fund:EAFRD a skos:Concept, esif:Fund ;
   foaf:page <http://ec.europa.eu/agriculture/rural-development-2014-2020/index_en.htm> ;
   skos:inScheme esif-codelist:funds .
 
-esif-fund:EMFF a skos:Concept, esif:Fund ;
+esif-fund:emff a skos:Concept, esif:Fund ;
   skos:prefLabel "European Maritime & Fisheries Fund"@en ;
   skos:definition "The EU's Maritime & Fisheries Fund is aimed at fishermen and coastal communities to support sustainable fishing and improve quality of life along European coasts."@en ;
 #  owl:sameAs <http://dbpedia.org/resource/European_Maritime_and_Fisheries_Fund> ;
@@ -56,7 +57,7 @@ esif-fund:EMFF a skos:Concept, esif:Fund ;
   foaf:page <http://ec.europa.eu/fisheries/cfp/emff/index_en.htm> ;
   skos:inScheme esif-codelist:funds .	
 
-esif-fund:ERDF a skos:Concept, esif:Fund ;
+esif-fund:erdf a skos:Concept, esif:Fund ;
   skos:prefLabel "European Regional Development Fund"@en ;
   skos:definition "The EU's Regional Development Fund aims to strengthen economic and social cohesion in the European Union by correcting imbalances between its regions."@en ;
   owl:sameAs <http://dbpedia.org/resource/Cohesion_Fund> ;
@@ -64,7 +65,7 @@ esif-fund:ERDF a skos:Concept, esif:Fund ;
   foaf:page <http://ec.europa.eu/regional_policy/en/funding/cohesion-fund/> ;
   skos:inScheme esif-codelist:funds .	
 
-esif-fund:ESF a skos:Concept, esif:Fund ;
+esif-fund:esf a skos:Concept, esif:Fund ;
   skos:prefLabel "European Social Fund"@en ;
   skos:definition "The EU's Social Fund invests in people, with a focus on improving employment and education opportunities across the EU. It also aims to improve the situation of the most vulnerable people at risk of poverty."@en ;
   owl:sameAs <http://dbpedia.org/resource/European_Social_Fund> ;
@@ -72,7 +73,7 @@ esif-fund:ESF a skos:Concept, esif:Fund ;
   foaf:page <http://ec.europa.eu/regional_policy/en/funding/social-fund/> ;
   skos:inScheme esif-codelist:funds .	
 
-esif-fund:YEI a skos:Concept, esif:Fund ;
+esif-fund:yei a skos:Concept, esif:Fund ;
   skos:prefLabel "Youth Employment Initiative"@en ;
   skos:definition "Programme to provide extra support to young people aged below 25 and living in regions where youth unemployment was higher than 25% in 2012. It will particularly support young people who are not in education, employment or training (NEETs), including long-term unemployed youngsters or those not registered as job-seekers."@en ;
 #  owl:sameAs <http://dbpedia.org/resource/Youth_Employment_Initiative> ;
