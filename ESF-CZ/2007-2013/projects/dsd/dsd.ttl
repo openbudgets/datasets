@@ -1,0 +1,87 @@
+# ----- DSD-specific namespaces -----
+
+@prefix esf-class:        <http://data.openbudgets.eu/ontology/esf-czech-projects/class/> .
+@prefix esf-codelist:     <http://data.openbudgets.eu/ontology/esf-czech-projects/code-list/> .
+@prefix esf-dimension:    <http://data.openbudgets.eu/ontology/esf-czech-projects/dimension/> .
+@prefix esf-measure:      <http://data.openbudgets.eu/ontology/esf-czech-projects/measure/> .
+
+# ----- OpenBudgets.eu namespaces -----
+
+@prefix obeu-attribute:   <http://data.openbudgets.eu/ontology/dsd/attribute/> .
+@prefix obeu-dimension:   <http://data.openbudgets.eu/ontology/dsd/dimension/> .
+@prefix obeu-measure:     <http://data.openbudgets.eu/ontology/dsd/measure/> .
+@prefix obeu-optional:    <http://data.openbudgets.eu/ontology/dsd/optional/> .
+
+# ----- Generic namespaces ------
+
+@prefix owl:              <http://www.w3.org/2002/07/owl#> .
+@prefix qb:               <http://purl.org/linked-data/cube#> .
+@prefix rdf:              <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:             <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema:           <http://schema.org/> .
+@prefix sdmx-concept:     <http://purl.org/linked-data/sdmx/2009/concept#> .
+@prefix skos:             <http://www.w3.org/2004/02/skos/core#> .
+
+# ----- DSD -----
+
+<http://data.openbudgets.eu/ontology/dsd/esf-czech-projects> a qb:DataStructureDefinition ;
+  rdfs:label "DSD of Czech ESF projects"@en ;
+  qb:component [ qb:dimension obeu-dimension:operationCharacter ;
+                 qb:componentAttachment qb:DataSet ],
+               [ qb:dimension obeu-dimension:organization ],
+               [ qb:dimension esf-dimension:operationalProgramme ],
+               [ qb:dimension obeu-dimension:partner ],
+               [ qb:dimension obeu-dimension:project ],
+               [ qb:dimension obeu-dimension:date ],
+               [ qb:dimension obeu-dimension:paymentPhase ],
+               [ qb:componentProperty obeu-optional:location ],
+               [ qb:attribute obeu-attribute:currency ;
+                 qb:componentRequired true ;
+                 qb:componentAttachment qb:DataSet ],
+               [ qb:measure obeu-measure:amount ] .
+
+<http://data.openbudgets.eu/ontology/dsd/esf-czech-project-statuses> a qb:DataStructureDefinition ;
+  rdfs:label "DSD of statuses of Czech ESF projects"@en ;
+  qb:component [ qb:dimension obeu-dimension:project ],
+               [ qb:dimension obeu-dimension:date ],
+               [ qb:measure esf-measure:projectStatus ] .
+
+# ----- Component properties -----
+
+esf-dimension:location a rdf:Property, qb:DimensionProperty, owl:ObjectProperty ;
+  rdfs:label "Location"@en ;
+  qb:concept sdmx-concept:refArea ;
+  rdfs:subPropertyOf obeu-optional:location ;
+  rdfs:range schema:Place ;
+  rdfs:isDefinedBy <http://data.openbudgets.eu/ontology/dsd/esf-czech-projects> .
+
+esf-dimension:operationalProgramme a rdf:Property, qb:DimensionProperty, owl:ObjectProperty ;
+  rdfs:label "Operational programme"@en ;
+  rdfs:subPropertyOf obeu-dimension:programmeClassification ;
+  qb:codeList esf-codelist:operational-programme ;
+  rdfs:range esf-class:OperationalProgramme ;
+  rdfs:isDefinedBy <http://data.openbudgets.eu/ontology/dsd/esf-czech-projects> .
+
+esf-measure:projectStatus a rdf:Property, qb:MeasureProperty, owl:ObjectProperty ;
+  rdfs:label "Project status"@en ;
+  qb:codeList esf-codelist:project-statuses ;
+  rdfs:range esf-class:ProjectStatus ;
+  rdfs:isDefinedBy <http://data.openbudgets.eu/ontology/dsd/esf-czech-project-statuses> .
+
+# ----- Code lists -----
+
+esf-codelist:project-statuses a skos:ConceptScheme ;
+  rdfs:label "Code list of project statuses"@en .
+
+esf-codelist:operational-programme a skos:ConceptScheme ;
+  rdfs:label "Code list of operational programmes"@en .
+
+# ----- Classes -----
+
+esf-class:ProjectStatus a rdfs:Class ;
+  rdfs:label "Project status"@en ;
+  rdfs:subClassOf skos:Concept .
+
+esf-class:OperationalProgramme a rdfs:Class ;
+  rdfs:label "Operational programme"@en ;
+  rdfs:subClassOf skos:Concept .
