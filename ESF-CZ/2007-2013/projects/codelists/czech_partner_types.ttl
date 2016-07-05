@@ -1,0 +1,335 @@
+@prefix qb: <http://purl.org/linked-data/cube#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix fn: <http://www.w3.org/2005/xpath-functions#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sesame: <http://www.openrdf.org/schema/sesame#> .
+@prefix obeu-attribute: <http://data.openbudgets.eu/ontology/dsd/attribute/> .
+@prefix obeu-dimension: <http://data.openbudgets.eu/ontology/dsd/dimension/> .
+@prefix obeu-operation: <http://data.openbudgets.eu/resource/codelist/operation-character/> .
+
+<http://data.openbudgets.eu/resource/dataset/esf-cz-projects/codelist/partner-types/013ce5856dd3d27a5ebfdd273375af1261503fa4> a <http://www.w3.org/2004/02/skos/core#Concept> ;
+	<http://www.w3.org/2004/02/skos/core#prefLabel> "Vysoká škola (veřejná, státní)"@cs ;
+	<http://www.w3.org/2004/02/skos/core#broader> <http://data.openbudgets.eu/resource/dataset/esf-cz-projects/codelist/partner-types/67441cf847e6dfce285ecdd10b722e8c8f6e9fd6> ;
+	<http://www.w3.org/2004/02/skos/core#inScheme> <http://data.openbudgets.eu/resource/dataset/esf-cz-projects/codelist/partner-types> .
+
+<http://data.openbudgets.eu/resource/dataset/esf-cz-projects/codelist/partner-types/67441cf847e6dfce285ecdd10b722e8c8f6e9fd6> a <http://www.w3.org/2004/02/skos/core#Concept> ;
+	<http://www.w3.org/2004/02/skos/core#prefLabel> "Vzdělávací a výzkumné instituce"@cs ;
+	<http://www.w3.org/2004/02/skos/core#inScheme> <http://data.openbudgets.eu/resource/dataset/esf-cz-projects/codelist/partner-types> .
+
+<http://data.openbudgets.eu/resource/dataset/esf-cz-projects/codelist/partner-types> a <http://www.w3.org/2004/02/skos/core#ConceptScheme> ;
+	rdfs:label "Code list of partner types in Czech ESF projects"@en .
+
+<http://data.openbudgets.eu/resource/dataset/esf-cz-projects/codelist/partner-types/0f221664526a5e2e919fe3ddba29c58d59d00e12> a <http://www.w3.org/2004/02/skos/core#Concept> ;
+	<http://www.w3.org/2004/02/skos/core#prefLabel> "Společen.vlast.jednot."@cs ;
+	<http://www.w3.org/2004/02/skos/core#broader> <http://data.openbudgets.eu/resource/dataset/esf-cz-projects/codelist/partner-types/281ae44a342f9902086eeccfba98a3e1fee83f99> ;
+	<http://www.w3.org/2004/02/skos/core#inScheme> <http://data.openbudgets.eu/resource/dataset/esf-cz-projects/codelist/partner-types> .
+
+<http://data.openbudgets.eu/resource/dataset/esf-cz-projects/codelist/partner-types/281ae44a342f9902086eeccfba98a3e1fee83f99> a <http://www.w3.org/2004/02/skos/core#Concept> ;
+	<http://www.w3.org/2004/02/skos/core#prefLabel> "Ostatní"@cs ;
+	<http://www.w3.org/2004/02/skos/core#inScheme> <http://data.openbudgets.eu/resource/dataset/esf-cz-projects/codelist/partner-types> .
+
+<http://data.openbudgets.eu/resource/dataset/esf-cz-projects/codelist/partner-types/10b5ad780e5208b895ab371028ff6ca36390ecbd> a <http://www.w3.org/2004/02/skos/core#Concept> ;
+	<http://www.w3.org/2004/02/skos/core#prefLabel> "Kraje"@cs ;
+	<http://www.w3.org/2004/02/skos/core#inScheme> <http://data.openbudgets.eu/resource/dataset/esf-cz-projects/codelist/partner-types> .
+
+<http://data.openbudgets.eu/resource/dataset/esf-cz-projects/codelist/partner-types/113fc1eb58919b87c830dd2f8c4c058443d9117e> a <http://www.w3.org/2004/02/skos/core#Concept> ;
+	<http://www.w3.org/2004/02/skos/core#prefLabel> "Fond (ze zákona)"@cs ;
+	<http://www.w3.org/2004/02/skos/core#broader> <http://data.openbudgets.eu/resource/dataset/esf-cz-projects/codelist/partner-types/de3e8a21400fb685237bceb67a7c471fc29697b8> ;
+	<http://www.w3.org/2004/02/skos/core#inScheme> <http://data.openbudgets.eu/resource/dataset/esf-cz-projects/codelist/partner-types> .
+
+<http://data.openbudgets.eu/resource/dataset/esf-cz-projects/codelist/partner-types/de3e8a21400fb685237bceb67a7c471fc29697b8> a <http://www.w3.org/2004/02/skos/core#Concept> ;
+	<http://www.w3.org/2004/02/skos/core#prefLabel> "Stát a jeho instituce a organizace"@cs ;
+	<http://www.w3.org/2004/02/skos/core#inScheme> <http://data.openbudgets.eu/resource/dataset/esf-cz-projects/codelist/partner-types> .
+
+<http://data.openbudgets.eu/resource/dataset/esf-cz-projects/codelist/partner-types/138d9d0124f3b15df6f826b8183b16c1fc182215> a <http://www.w3.org/2004/02/skos/core#Concept> ;
+	<http://www.w3.org/2004/02/skos/core#prefLabel> "Městská část hlavního města Prahy"@cs ;
+	<http://www.w3.org/2004/02/skos/core#broader> <http://data.openbudgets.eu/resource/dataset/esf-cz-projects/codelist/partner-types/c6cf08c828897d90b6c63aa096d5145dd037eaf3> ;
+	<http://www.w3.org/2004/02/skos/core#inScheme> <http://data.openbudgets.eu/resource/dataset/esf-cz-projects/codelist/partner-types> .
+
+<http://data.openbudgets.eu/resource/dataset/esf-cz-projects/codelist/partner-types/c6cf08c828897d90b6c63aa096d5145dd037eaf3> a <http://www.w3.org/2004/02/skos/core#Concept> ;
+	<http://www.w3.org/2004/02/skos/core#prefLabel> "Obce"@cs ;
+	<http://www.w3.org/2004/02/skos/core#inScheme> <http://data.openbudgets.eu/resource/dataset/esf-cz-projects/codelist/partner-types> .
+
+<http://data.openbudgets.eu/resource/dataset/esf-cz-projects/codelist/partner-types/15d84a260b26e600be3a705dfb4044c375264c0f> a <http://www.w3.org/2004/02/skos/core#Concept> ;
+	<http://www.w3.org/2004/02/skos/core#prefLabel> "Mezinárodní nevládní organizace"@cs ;
+	<http://www.w3.org/2004/02/skos/core#broader> <http://data.openbudgets.eu/resource/dataset/esf-cz-projects/codelist/partner-types/5e4c6a8499a66bc65ad2832e4aa66ceea432ad96> ;
+	<http://www.w3.org/2004/02/skos/core#inScheme> <http://data.openbudgets.eu/resource/dataset/esf-cz-projects/codelist/partner-types> .
+
+<http://data.openbudgets.eu/resource/dataset/esf-cz-projects/codelist/partner-types/5e4c6a8499a66bc65ad2832e4aa66ceea432ad96> a <http://www.w3.org/2004/02/skos/core#Concept> ;
+	<http://www.w3.org/2004/02/skos/core#prefLabel> "Komory, profesní a zájmové sdružení"@cs ;
+	<http://www.w3.org/2004/02/skos/core#inScheme> <http://data.openbudgets.eu/resource/dataset/esf-cz-projects/codelist/partner-types> .
+
+<http://data.openbudgets.eu/resource/dataset/esf-cz-projects/codelist/partner-types/1a0276f5b47bcb9130af6a7f406c301aeed5d798> a <http://www.w3.org/2004/02/skos/core#Concept> ;
+	<http://www.w3.org/2004/02/skos/core#prefLabel> "Podnikatelské subjekty"@cs ;
+	<http://www.w3.org/2004/02/skos/core#inScheme> <http://data.openbudgets.eu/resource/dataset/esf-cz-projects/codelist/partner-types> .
+
+<http://data.openbudgets.eu/resource/dataset/esf-cz-projects/codelist/partner-types/1b7727f0ab2ec5e537e9a527cba655018c2f5062> a <http://www.w3.org/2004/02/skos/core#Concept> ;
+	<http://www.w3.org/2004/02/skos/core#prefLabel> "Vysoká škola"@cs ;
+	<http://www.w3.org/2004/02/skos/core#broader> <http://data.openbudgets.eu/resource/dataset/esf-cz-projects/codelist/partner-types/67441cf847e6dfce285ecdd10b722e8c8f6e9fd6> ;
+	<http://www.w3.org/2004/02/skos/core#inScheme> <http://data.openbudgets.eu/resource/dataset/esf-cz-projects/codelist/partner-types> .
+
+<http://data.openbudgets.eu/resource/dataset/esf-cz-projects/codelist/partner-types/1e79a9ce0fc8d845c419b8e8b7810eff7e9f267c> a <http://www.w3.org/2004/02/skos/core#Concept> ;
+	<http://www.w3.org/2004/02/skos/core#prefLabel> "Komora (hospodářská, agrární)"@cs ;
+	<http://www.w3.org/2004/02/skos/core#broader> <http://data.openbudgets.eu/resource/dataset/esf-cz-projects/codelist/partner-types/5e4c6a8499a66bc65ad2832e4aa66ceea432ad96> ;
+	<http://www.w3.org/2004/02/skos/core#inScheme> <http://data.openbudgets.eu/resource/dataset/esf-cz-projects/codelist/partner-types> .
+
+<http://data.openbudgets.eu/resource/dataset/esf-cz-projects/codelist/partner-types/27cc52654c07f76f1672a19a5abf174dc68352fa> a <http://www.w3.org/2004/02/skos/core#Concept> ;
+	<http://www.w3.org/2004/02/skos/core#prefLabel> "Mezinár. org.a sdružení"@cs ;
+	<http://www.w3.org/2004/02/skos/core#broader> <http://data.openbudgets.eu/resource/dataset/esf-cz-projects/codelist/partner-types/5e4c6a8499a66bc65ad2832e4aa66ceea432ad96> ;
+	<http://www.w3.org/2004/02/skos/core#inScheme> <http://data.openbudgets.eu/resource/dataset/esf-cz-projects/codelist/partner-types> .
+
+<http://data.openbudgets.eu/resource/dataset/esf-cz-projects/codelist/partner-types/2abc5b10c77c798c2752a0458ffc8edd3c4784ec> a <http://www.w3.org/2004/02/skos/core#Concept> ;
+	<http://www.w3.org/2004/02/skos/core#prefLabel> "Odštěp.záv.zaps.v ob.r."@cs ;
+	<http://www.w3.org/2004/02/skos/core#broader> <http://data.openbudgets.eu/resource/dataset/esf-cz-projects/codelist/partner-types/281ae44a342f9902086eeccfba98a3e1fee83f99> ;
+	<http://www.w3.org/2004/02/skos/core#inScheme> <http://data.openbudgets.eu/resource/dataset/esf-cz-projects/codelist/partner-types> .
+
+<http://data.openbudgets.eu/resource/dataset/esf-cz-projects/codelist/partner-types/2b432ac2ebb2e9d74ecac601f5960521cec00ac0> a <http://www.w3.org/2004/02/skos/core#Concept> ;
+	<http://www.w3.org/2004/02/skos/core#prefLabel> "Sdruž.(svaz,spolek,spol"@cs ;
+	<http://www.w3.org/2004/02/skos/core#broader> <http://data.openbudgets.eu/resource/dataset/esf-cz-projects/codelist/partner-types/5e4c6a8499a66bc65ad2832e4aa66ceea432ad96> ;
+	<http://www.w3.org/2004/02/skos/core#inScheme> <http://data.openbudgets.eu/resource/dataset/esf-cz-projects/codelist/partner-types> .
+
+<http://data.openbudgets.eu/resource/dataset/esf-cz-projects/codelist/partner-types/303de134a706b1d1536fe867947c2c4ca7792a20> a <http://www.w3.org/2004/02/skos/core#Concept> ;
+	<http://www.w3.org/2004/02/skos/core#prefLabel> "Církevní organizace"@cs ;
+	<http://www.w3.org/2004/02/skos/core#broader> <http://data.openbudgets.eu/resource/dataset/esf-cz-projects/codelist/partner-types/6410fa805c75fd4edaa23ca345a4db62e8ee3bad> ;
+	<http://www.w3.org/2004/02/skos/core#inScheme> <http://data.openbudgets.eu/resource/dataset/esf-cz-projects/codelist/partner-types> .
+
+<http://data.openbudgets.eu/resource/dataset/esf-cz-projects/codelist/partner-types/6410fa805c75fd4edaa23ca345a4db62e8ee3bad> a <http://www.w3.org/2004/02/skos/core#Concept> ;
+	<http://www.w3.org/2004/02/skos/core#prefLabel> "Neziskový sektor"@cs ;
+	<http://www.w3.org/2004/02/skos/core#inScheme> <http://data.openbudgets.eu/resource/dataset/esf-cz-projects/codelist/partner-types> .
+
+<http://data.openbudgets.eu/resource/dataset/esf-cz-projects/codelist/partner-types/3794efb4d4f4113b0f8375ef087eef24ac8f8630> a <http://www.w3.org/2004/02/skos/core#Concept> ;
+	<http://www.w3.org/2004/02/skos/core#prefLabel> "Komora s vyj.prof.komor"@cs ;
+	<http://www.w3.org/2004/02/skos/core#broader> <http://data.openbudgets.eu/resource/dataset/esf-cz-projects/codelist/partner-types/5e4c6a8499a66bc65ad2832e4aa66ceea432ad96> ;
+	<http://www.w3.org/2004/02/skos/core#inScheme> <http://data.openbudgets.eu/resource/dataset/esf-cz-projects/codelist/partner-types> .
+
+<http://data.openbudgets.eu/resource/dataset/esf-cz-projects/codelist/partner-types/399d2b2b0ce4c0db5aa04d236320c301a8de6cce> a <http://www.w3.org/2004/02/skos/core#Concept> ;
+	<http://www.w3.org/2004/02/skos/core#prefLabel> "Reg.rada regionu soudr."@cs ;
+	<http://www.w3.org/2004/02/skos/core#broader> <http://data.openbudgets.eu/resource/dataset/esf-cz-projects/codelist/partner-types/281ae44a342f9902086eeccfba98a3e1fee83f99> ;
+	<http://www.w3.org/2004/02/skos/core#inScheme> <http://data.openbudgets.eu/resource/dataset/esf-cz-projects/codelist/partner-types> .
+
+<http://data.openbudgets.eu/resource/dataset/esf-cz-projects/codelist/partner-types/3b48ef5b57c221229dd178dd82f35ff7e3b44a4e> a <http://www.w3.org/2004/02/skos/core#Concept> ;
+	<http://www.w3.org/2004/02/skos/core#prefLabel> "Zájmové sdružení právnických osob"@cs ;
+	<http://www.w3.org/2004/02/skos/core#broader> <http://data.openbudgets.eu/resource/dataset/esf-cz-projects/codelist/partner-types/5e4c6a8499a66bc65ad2832e4aa66ceea432ad96> ;
+	<http://www.w3.org/2004/02/skos/core#inScheme> <http://data.openbudgets.eu/resource/dataset/esf-cz-projects/codelist/partner-types> .
+
+<http://data.openbudgets.eu/resource/dataset/esf-cz-projects/codelist/partner-types/3e7852d60d111e4888616ea3a8e4ca263f0fc0a6> a <http://www.w3.org/2004/02/skos/core#Concept> ;
+	<http://www.w3.org/2004/02/skos/core#prefLabel> "Zahraniční osoba"@cs ;
+	<http://www.w3.org/2004/02/skos/core#broader> <http://data.openbudgets.eu/resource/dataset/esf-cz-projects/codelist/partner-types/1a0276f5b47bcb9130af6a7f406c301aeed5d798> ;
+	<http://www.w3.org/2004/02/skos/core#inScheme> <http://data.openbudgets.eu/resource/dataset/esf-cz-projects/codelist/partner-types> .
+
+<http://data.openbudgets.eu/resource/dataset/esf-cz-projects/codelist/partner-types/50421469484f4c091f64f9608d906573f97bbcc0> a <http://www.w3.org/2004/02/skos/core#Concept> ;
+	<http://www.w3.org/2004/02/skos/core#prefLabel> "Družstvo"@cs ;
+	<http://www.w3.org/2004/02/skos/core#broader> <http://data.openbudgets.eu/resource/dataset/esf-cz-projects/codelist/partner-types/1a0276f5b47bcb9130af6a7f406c301aeed5d798> ;
+	<http://www.w3.org/2004/02/skos/core#inScheme> <http://data.openbudgets.eu/resource/dataset/esf-cz-projects/codelist/partner-types> .
+
+<http://data.openbudgets.eu/resource/dataset/esf-cz-projects/codelist/partner-types/5b050c68801272baceb3315867bd4f507b60706b> a <http://www.w3.org/2004/02/skos/core#Concept> ;
+	<http://www.w3.org/2004/02/skos/core#prefLabel> "Veřejná obchodní společnost"@cs ;
+	<http://www.w3.org/2004/02/skos/core#broader> <http://data.openbudgets.eu/resource/dataset/esf-cz-projects/codelist/partner-types/1a0276f5b47bcb9130af6a7f406c301aeed5d798> ;
+	<http://www.w3.org/2004/02/skos/core#inScheme> <http://data.openbudgets.eu/resource/dataset/esf-cz-projects/codelist/partner-types> .
+
+<http://data.openbudgets.eu/resource/dataset/esf-cz-projects/codelist/partner-types/5e01175ca3dbbf4d9f020d05c2593948aab182b4> a <http://www.w3.org/2004/02/skos/core#Concept> ;
+	<http://www.w3.org/2004/02/skos/core#prefLabel> "Ústav"@cs ;
+	<http://www.w3.org/2004/02/skos/core#broader> <http://data.openbudgets.eu/resource/dataset/esf-cz-projects/codelist/partner-types/281ae44a342f9902086eeccfba98a3e1fee83f99> ;
+	<http://www.w3.org/2004/02/skos/core#inScheme> <http://data.openbudgets.eu/resource/dataset/esf-cz-projects/codelist/partner-types> .
+
+<http://data.openbudgets.eu/resource/dataset/esf-cz-projects/codelist/partner-types/5ec7b553fc546fa65b2c2dce3871ff80c687a5f2> a <http://www.w3.org/2004/02/skos/core#Concept> ;
+	<http://www.w3.org/2004/02/skos/core#prefLabel> "Nadační fond"@cs ;
+	<http://www.w3.org/2004/02/skos/core#broader> <http://data.openbudgets.eu/resource/dataset/esf-cz-projects/codelist/partner-types/6410fa805c75fd4edaa23ca345a4db62e8ee3bad> ;
+	<http://www.w3.org/2004/02/skos/core#inScheme> <http://data.openbudgets.eu/resource/dataset/esf-cz-projects/codelist/partner-types> .
+
+<http://data.openbudgets.eu/resource/dataset/esf-cz-projects/codelist/partner-types/62d53234d53d1cdc80de5647cdf3fabeb6c70f4c> a <http://www.w3.org/2004/02/skos/core#Concept> ;
+	<http://www.w3.org/2004/02/skos/core#prefLabel> "Organizační složka státu"@cs ;
+	<http://www.w3.org/2004/02/skos/core#broader> <http://data.openbudgets.eu/resource/dataset/esf-cz-projects/codelist/partner-types/de3e8a21400fb685237bceb67a7c471fc29697b8> ;
+	<http://www.w3.org/2004/02/skos/core#inScheme> <http://data.openbudgets.eu/resource/dataset/esf-cz-projects/codelist/partner-types> .
+
+<http://data.openbudgets.eu/resource/dataset/esf-cz-projects/codelist/partner-types/6a6284b4cca5b3ec83553ddf941090a45a6c17a3> a <http://www.w3.org/2004/02/skos/core#Concept> ;
+	<http://www.w3.org/2004/02/skos/core#prefLabel> "Svazek obcí"@cs ;
+	<http://www.w3.org/2004/02/skos/core#broader> <http://data.openbudgets.eu/resource/dataset/esf-cz-projects/codelist/partner-types/c6cf08c828897d90b6c63aa096d5145dd037eaf3> ;
+	<http://www.w3.org/2004/02/skos/core#inScheme> <http://data.openbudgets.eu/resource/dataset/esf-cz-projects/codelist/partner-types> .
+
+<http://data.openbudgets.eu/resource/dataset/esf-cz-projects/codelist/partner-types/707894fafc9d3e5c1dbf4140c28b411fc746e563> a <http://www.w3.org/2004/02/skos/core#Concept> ;
+	<http://www.w3.org/2004/02/skos/core#prefLabel> "Církve a náboženské společnosti"@cs ;
+	<http://www.w3.org/2004/02/skos/core#broader> <http://data.openbudgets.eu/resource/dataset/esf-cz-projects/codelist/partner-types/6410fa805c75fd4edaa23ca345a4db62e8ee3bad> ;
+	<http://www.w3.org/2004/02/skos/core#inScheme> <http://data.openbudgets.eu/resource/dataset/esf-cz-projects/codelist/partner-types> .
+
+<http://data.openbudgets.eu/resource/dataset/esf-cz-projects/codelist/partner-types/7109ca3ae810187b1b1a528fa0a68be604f8ae18> a <http://www.w3.org/2004/02/skos/core#Concept> ;
+	<http://www.w3.org/2004/02/skos/core#prefLabel> "Evidované církevní právnické osoby"@cs ;
+	<http://www.w3.org/2004/02/skos/core#broader> <http://data.openbudgets.eu/resource/dataset/esf-cz-projects/codelist/partner-types/6410fa805c75fd4edaa23ca345a4db62e8ee3bad> ;
+	<http://www.w3.org/2004/02/skos/core#inScheme> <http://data.openbudgets.eu/resource/dataset/esf-cz-projects/codelist/partner-types> .
+
+<http://data.openbudgets.eu/resource/dataset/esf-cz-projects/codelist/partner-types/72dc8e554b5d419ec90f3aba949b0faa078ebcd1> a <http://www.w3.org/2004/02/skos/core#Concept> ;
+	<http://www.w3.org/2004/02/skos/core#prefLabel> "Veřejná obch.společnost"@cs ;
+	<http://www.w3.org/2004/02/skos/core#broader> <http://data.openbudgets.eu/resource/dataset/esf-cz-projects/codelist/partner-types/1a0276f5b47bcb9130af6a7f406c301aeed5d798> ;
+	<http://www.w3.org/2004/02/skos/core#inScheme> <http://data.openbudgets.eu/resource/dataset/esf-cz-projects/codelist/partner-types> .
+
+<http://data.openbudgets.eu/resource/dataset/esf-cz-projects/codelist/partner-types/73a91030b446b0c633bfc604d572d3f442b49d72> a <http://www.w3.org/2004/02/skos/core#Concept> ;
+	<http://www.w3.org/2004/02/skos/core#prefLabel> "Společnost komanditní"@cs ;
+	<http://www.w3.org/2004/02/skos/core#broader> <http://data.openbudgets.eu/resource/dataset/esf-cz-projects/codelist/partner-types/1a0276f5b47bcb9130af6a7f406c301aeed5d798> ;
+	<http://www.w3.org/2004/02/skos/core#inScheme> <http://data.openbudgets.eu/resource/dataset/esf-cz-projects/codelist/partner-types> .
+
+<http://data.openbudgets.eu/resource/dataset/esf-cz-projects/codelist/partner-types/73a92ed26c956d82e45698d8e551f8c8ffccd80e> a <http://www.w3.org/2004/02/skos/core#Concept> ;
+	<http://www.w3.org/2004/02/skos/core#prefLabel> "Česká národní banka"@cs ;
+	<http://www.w3.org/2004/02/skos/core#broader> <http://data.openbudgets.eu/resource/dataset/esf-cz-projects/codelist/partner-types/de3e8a21400fb685237bceb67a7c471fc29697b8> ;
+	<http://www.w3.org/2004/02/skos/core#inScheme> <http://data.openbudgets.eu/resource/dataset/esf-cz-projects/codelist/partner-types> .
+
+<http://data.openbudgets.eu/resource/dataset/esf-cz-projects/codelist/partner-types/84b3a8b6da4252fd7cddeb2f73daa95949e024ef> a <http://www.w3.org/2004/02/skos/core#Concept> ;
+	<http://www.w3.org/2004/02/skos/core#prefLabel> "Správa žel.dopr.cesty"@cs ;
+	<http://www.w3.org/2004/02/skos/core#broader> <http://data.openbudgets.eu/resource/dataset/esf-cz-projects/codelist/partner-types/de3e8a21400fb685237bceb67a7c471fc29697b8> ;
+	<http://www.w3.org/2004/02/skos/core#inScheme> <http://data.openbudgets.eu/resource/dataset/esf-cz-projects/codelist/partner-types> .
+
+<http://data.openbudgets.eu/resource/dataset/esf-cz-projects/codelist/partner-types/85c4b6744f5e3936f0d746f73dbe99a434425268> a <http://www.w3.org/2004/02/skos/core#Concept> ;
+	<http://www.w3.org/2004/02/skos/core#prefLabel> "Správa železniční dopravní cesty, státní organizace"@cs ;
+	<http://www.w3.org/2004/02/skos/core#broader> <http://data.openbudgets.eu/resource/dataset/esf-cz-projects/codelist/partner-types/de3e8a21400fb685237bceb67a7c471fc29697b8> ;
+	<http://www.w3.org/2004/02/skos/core#inScheme> <http://data.openbudgets.eu/resource/dataset/esf-cz-projects/codelist/partner-types> .
+
+<http://data.openbudgets.eu/resource/dataset/esf-cz-projects/codelist/partner-types/8b35f3db677a589f252b339587527580b018b683> a <http://www.w3.org/2004/02/skos/core#Concept> ;
+	<http://www.w3.org/2004/02/skos/core#prefLabel> "Společenství vlastníků jednotek"@cs ;
+	<http://www.w3.org/2004/02/skos/core#broader> <http://data.openbudgets.eu/resource/dataset/esf-cz-projects/codelist/partner-types/281ae44a342f9902086eeccfba98a3e1fee83f99> ;
+	<http://www.w3.org/2004/02/skos/core#inScheme> <http://data.openbudgets.eu/resource/dataset/esf-cz-projects/codelist/partner-types> .
+
+<http://data.openbudgets.eu/resource/dataset/esf-cz-projects/codelist/partner-types/948a44fe2af0bc9e00ff3f6a67c7d2a85421205a> a <http://www.w3.org/2004/02/skos/core#Concept> ;
+	<http://www.w3.org/2004/02/skos/core#prefLabel> "Stav.org.-profesní kom."@cs ;
+	<http://www.w3.org/2004/02/skos/core#broader> <http://data.openbudgets.eu/resource/dataset/esf-cz-projects/codelist/partner-types/5e4c6a8499a66bc65ad2832e4aa66ceea432ad96> ;
+	<http://www.w3.org/2004/02/skos/core#inScheme> <http://data.openbudgets.eu/resource/dataset/esf-cz-projects/codelist/partner-types> .
+
+<http://data.openbudgets.eu/resource/dataset/esf-cz-projects/codelist/partner-types/9812770a5423649d5265e1be497226d6c0c99fa6> a <http://www.w3.org/2004/02/skos/core#Concept> ;
+	<http://www.w3.org/2004/02/skos/core#prefLabel> "Obec"@cs ;
+	<http://www.w3.org/2004/02/skos/core#broader> <http://data.openbudgets.eu/resource/dataset/esf-cz-projects/codelist/partner-types/c6cf08c828897d90b6c63aa096d5145dd037eaf3> ;
+	<http://www.w3.org/2004/02/skos/core#inScheme> <http://data.openbudgets.eu/resource/dataset/esf-cz-projects/codelist/partner-types> .
+
+<http://data.openbudgets.eu/resource/dataset/esf-cz-projects/codelist/partner-types/a2a17581848e73f4a3d9e258216157cae7e1109c> a <http://www.w3.org/2004/02/skos/core#Concept> ;
+	<http://www.w3.org/2004/02/skos/core#prefLabel> "Příspěvková organizace"@cs ;
+	<http://www.w3.org/2004/02/skos/core#broader> <http://data.openbudgets.eu/resource/dataset/esf-cz-projects/codelist/partner-types/281ae44a342f9902086eeccfba98a3e1fee83f99> ;
+	<http://www.w3.org/2004/02/skos/core#inScheme> <http://data.openbudgets.eu/resource/dataset/esf-cz-projects/codelist/partner-types> .
+
+<http://data.openbudgets.eu/resource/dataset/esf-cz-projects/codelist/partner-types/a2d8475a356ac8d34a940d6a147956ed7a388a3b> a <http://www.w3.org/2004/02/skos/core#Concept> ;
+	<http://www.w3.org/2004/02/skos/core#prefLabel> "Dobrovolný svazek obcí"@cs ;
+	<http://www.w3.org/2004/02/skos/core#broader> <http://data.openbudgets.eu/resource/dataset/esf-cz-projects/codelist/partner-types/c6cf08c828897d90b6c63aa096d5145dd037eaf3> ;
+	<http://www.w3.org/2004/02/skos/core#inScheme> <http://data.openbudgets.eu/resource/dataset/esf-cz-projects/codelist/partner-types> .
+
+<http://data.openbudgets.eu/resource/dataset/esf-cz-projects/codelist/partner-types/ab7a3b9c8c94ab954df9e63539e875ff7bd979c0> a <http://www.w3.org/2004/02/skos/core#Concept> ;
+	<http://www.w3.org/2004/02/skos/core#prefLabel> "Státní podnik"@cs ;
+	<http://www.w3.org/2004/02/skos/core#broader> <http://data.openbudgets.eu/resource/dataset/esf-cz-projects/codelist/partner-types/de3e8a21400fb685237bceb67a7c471fc29697b8> ;
+	<http://www.w3.org/2004/02/skos/core#inScheme> <http://data.openbudgets.eu/resource/dataset/esf-cz-projects/codelist/partner-types> .
+
+<http://data.openbudgets.eu/resource/dataset/esf-cz-projects/codelist/partner-types/abc6d0f7703c5fbe93a77d58b891731c34813599> a <http://www.w3.org/2004/02/skos/core#Concept> ;
+	<http://www.w3.org/2004/02/skos/core#prefLabel> "Org. složka státu"@cs ;
+	<http://www.w3.org/2004/02/skos/core#broader> <http://data.openbudgets.eu/resource/dataset/esf-cz-projects/codelist/partner-types/de3e8a21400fb685237bceb67a7c471fc29697b8> ;
+	<http://www.w3.org/2004/02/skos/core#inScheme> <http://data.openbudgets.eu/resource/dataset/esf-cz-projects/codelist/partner-types> .
+
+<http://data.openbudgets.eu/resource/dataset/esf-cz-projects/codelist/partner-types/b55bc559775b212427f9d3b28298b950e03be4ce> a <http://www.w3.org/2004/02/skos/core#Concept> ;
+	<http://www.w3.org/2004/02/skos/core#prefLabel> "Obecně prospěšná spol."@cs ;
+	<http://www.w3.org/2004/02/skos/core#broader> <http://data.openbudgets.eu/resource/dataset/esf-cz-projects/codelist/partner-types/6410fa805c75fd4edaa23ca345a4db62e8ee3bad> ;
+	<http://www.w3.org/2004/02/skos/core#inScheme> <http://data.openbudgets.eu/resource/dataset/esf-cz-projects/codelist/partner-types> .
+
+<http://data.openbudgets.eu/resource/dataset/esf-cz-projects/codelist/partner-types/b69006d5a027bc32a07a9efbcc66a348da27b453> a <http://www.w3.org/2004/02/skos/core#Concept> ;
+	<http://www.w3.org/2004/02/skos/core#prefLabel> "Státní fond v obchodním rejstříku"@cs ;
+	<http://www.w3.org/2004/02/skos/core#broader> <http://data.openbudgets.eu/resource/dataset/esf-cz-projects/codelist/partner-types/de3e8a21400fb685237bceb67a7c471fc29697b8> ;
+	<http://www.w3.org/2004/02/skos/core#inScheme> <http://data.openbudgets.eu/resource/dataset/esf-cz-projects/codelist/partner-types> .
+
+<http://data.openbudgets.eu/resource/dataset/esf-cz-projects/codelist/partner-types/b91b74e28d40fb1ac83e3e4c71bdf10603e0173f> a <http://www.w3.org/2004/02/skos/core#Concept> ;
+	<http://www.w3.org/2004/02/skos/core#prefLabel> "Obec nebo m.část hl.m."@cs ;
+	<http://www.w3.org/2004/02/skos/core#broader> <http://data.openbudgets.eu/resource/dataset/esf-cz-projects/codelist/partner-types/c6cf08c828897d90b6c63aa096d5145dd037eaf3> ;
+	<http://www.w3.org/2004/02/skos/core#inScheme> <http://data.openbudgets.eu/resource/dataset/esf-cz-projects/codelist/partner-types> .
+
+<http://data.openbudgets.eu/resource/dataset/esf-cz-projects/codelist/partner-types/bd90daee1746faac117e5948365e0e2e1aa71ca4> a <http://www.w3.org/2004/02/skos/core#Concept> ;
+	<http://www.w3.org/2004/02/skos/core#prefLabel> "Zájm.sdružení práv.osob"@cs ;
+	<http://www.w3.org/2004/02/skos/core#broader> <http://data.openbudgets.eu/resource/dataset/esf-cz-projects/codelist/partner-types/5e4c6a8499a66bc65ad2832e4aa66ceea432ad96> ;
+	<http://www.w3.org/2004/02/skos/core#inScheme> <http://data.openbudgets.eu/resource/dataset/esf-cz-projects/codelist/partner-types> .
+
+<http://data.openbudgets.eu/resource/dataset/esf-cz-projects/codelist/partner-types/c141bfcbb13e5bedcada85406bb8655d5b9f715a> a <http://www.w3.org/2004/02/skos/core#Concept> ;
+	<http://www.w3.org/2004/02/skos/core#prefLabel> "Příspěvková organizace zřízená územním samosprávným celkem"@cs ;
+	<http://www.w3.org/2004/02/skos/core#broader> <http://data.openbudgets.eu/resource/dataset/esf-cz-projects/codelist/partner-types/281ae44a342f9902086eeccfba98a3e1fee83f99> ;
+	<http://www.w3.org/2004/02/skos/core#inScheme> <http://data.openbudgets.eu/resource/dataset/esf-cz-projects/codelist/partner-types> .
+
+<http://data.openbudgets.eu/resource/dataset/esf-cz-projects/codelist/partner-types/c6f8b66a4c000d39e89ad22f94497c0446605b97> a <http://www.w3.org/2004/02/skos/core#Concept> ;
+	<http://www.w3.org/2004/02/skos/core#prefLabel> "Státní příspěvková organizace"@cs ;
+	<http://www.w3.org/2004/02/skos/core#broader> <http://data.openbudgets.eu/resource/dataset/esf-cz-projects/codelist/partner-types/281ae44a342f9902086eeccfba98a3e1fee83f99> ;
+	<http://www.w3.org/2004/02/skos/core#inScheme> <http://data.openbudgets.eu/resource/dataset/esf-cz-projects/codelist/partner-types> .
+
+<http://data.openbudgets.eu/resource/dataset/esf-cz-projects/codelist/partner-types/c9c65a79bdee0ae90be7d1915024f107d6019ad6> a <http://www.w3.org/2004/02/skos/core#Concept> ;
+	<http://www.w3.org/2004/02/skos/core#prefLabel> "Akciová společnost"@cs ;
+	<http://www.w3.org/2004/02/skos/core#broader> <http://data.openbudgets.eu/resource/dataset/esf-cz-projects/codelist/partner-types/1a0276f5b47bcb9130af6a7f406c301aeed5d798> ;
+	<http://www.w3.org/2004/02/skos/core#inScheme> <http://data.openbudgets.eu/resource/dataset/esf-cz-projects/codelist/partner-types> .
+
+<http://data.openbudgets.eu/resource/dataset/esf-cz-projects/codelist/partner-types/cdc8474a4b552dc79687c26ee4413ff966e69e1b> a <http://www.w3.org/2004/02/skos/core#Concept> ;
+	<http://www.w3.org/2004/02/skos/core#prefLabel> "Sam.hosp.rol.nezap.o.r."@cs ;
+	<http://www.w3.org/2004/02/skos/core#broader> <http://data.openbudgets.eu/resource/dataset/esf-cz-projects/codelist/partner-types/1a0276f5b47bcb9130af6a7f406c301aeed5d798> ;
+	<http://www.w3.org/2004/02/skos/core#inScheme> <http://data.openbudgets.eu/resource/dataset/esf-cz-projects/codelist/partner-types> .
+
+<http://data.openbudgets.eu/resource/dataset/esf-cz-projects/codelist/partner-types/d33ea65efdb2decd29ebd92e9ae2b4eeb96024f3> a <http://www.w3.org/2004/02/skos/core#Concept> ;
+	<http://www.w3.org/2004/02/skos/core#prefLabel> "Nadace"@cs ;
+	<http://www.w3.org/2004/02/skos/core#broader> <http://data.openbudgets.eu/resource/dataset/esf-cz-projects/codelist/partner-types/6410fa805c75fd4edaa23ca345a4db62e8ee3bad> ;
+	<http://www.w3.org/2004/02/skos/core#inScheme> <http://data.openbudgets.eu/resource/dataset/esf-cz-projects/codelist/partner-types> .
+
+<http://data.openbudgets.eu/resource/dataset/esf-cz-projects/codelist/partner-types/d373e97a806c04cdb43912ca43cfc63dcc886f47> a <http://www.w3.org/2004/02/skos/core#Concept> ;
+	<http://www.w3.org/2004/02/skos/core#prefLabel> "Pobočný spolek"@cs ;
+	<http://www.w3.org/2004/02/skos/core#broader> <http://data.openbudgets.eu/resource/dataset/esf-cz-projects/codelist/partner-types/5e4c6a8499a66bc65ad2832e4aa66ceea432ad96> ;
+	<http://www.w3.org/2004/02/skos/core#inScheme> <http://data.openbudgets.eu/resource/dataset/esf-cz-projects/codelist/partner-types> .
+
+<http://data.openbudgets.eu/resource/dataset/esf-cz-projects/codelist/partner-types/d64be69762d5aad6bae5e016f37f9b90afd82604> a <http://www.w3.org/2004/02/skos/core#Concept> ;
+	<http://www.w3.org/2004/02/skos/core#prefLabel> "Zájmové sdružení"@cs ;
+	<http://www.w3.org/2004/02/skos/core#broader> <http://data.openbudgets.eu/resource/dataset/esf-cz-projects/codelist/partner-types/5e4c6a8499a66bc65ad2832e4aa66ceea432ad96> ;
+	<http://www.w3.org/2004/02/skos/core#inScheme> <http://data.openbudgets.eu/resource/dataset/esf-cz-projects/codelist/partner-types> .
+
+<http://data.openbudgets.eu/resource/dataset/esf-cz-projects/codelist/partner-types/d759b632fa8469236df77711e59a684c9ac18017> a <http://www.w3.org/2004/02/skos/core#Concept> ;
+	<http://www.w3.org/2004/02/skos/core#prefLabel> "Regionální rada regionu soudržnosti"@cs ;
+	<http://www.w3.org/2004/02/skos/core#broader> <http://data.openbudgets.eu/resource/dataset/esf-cz-projects/codelist/partner-types/281ae44a342f9902086eeccfba98a3e1fee83f99> ;
+	<http://www.w3.org/2004/02/skos/core#inScheme> <http://data.openbudgets.eu/resource/dataset/esf-cz-projects/codelist/partner-types> .
+
+<http://data.openbudgets.eu/resource/dataset/esf-cz-projects/codelist/partner-types/d95507907ee1386aa996be8a5b3cf2bd04384ec2> a <http://www.w3.org/2004/02/skos/core#Concept> ;
+	<http://www.w3.org/2004/02/skos/core#prefLabel> "Státní fond ze zákona"@cs ;
+	<http://www.w3.org/2004/02/skos/core#broader> <http://data.openbudgets.eu/resource/dataset/esf-cz-projects/codelist/partner-types/de3e8a21400fb685237bceb67a7c471fc29697b8> ;
+	<http://www.w3.org/2004/02/skos/core#inScheme> <http://data.openbudgets.eu/resource/dataset/esf-cz-projects/codelist/partner-types> .
+
+<http://data.openbudgets.eu/resource/dataset/esf-cz-projects/codelist/partner-types/da9be1e9d276e6ece7fe9da66b428fe708013a38> a <http://www.w3.org/2004/02/skos/core#Concept> ;
+	<http://www.w3.org/2004/02/skos/core#prefLabel> "Společnost s r.o."@cs ;
+	<http://www.w3.org/2004/02/skos/core#broader> <http://data.openbudgets.eu/resource/dataset/esf-cz-projects/codelist/partner-types/1a0276f5b47bcb9130af6a7f406c301aeed5d798> ;
+	<http://www.w3.org/2004/02/skos/core#inScheme> <http://data.openbudgets.eu/resource/dataset/esf-cz-projects/codelist/partner-types> .
+
+<http://data.openbudgets.eu/resource/dataset/esf-cz-projects/codelist/partner-types/e23c34ff0f96daa7fd1d546dd69580eca15a1a1c> a <http://www.w3.org/2004/02/skos/core#Concept> ;
+	<http://www.w3.org/2004/02/skos/core#prefLabel> "Organizační jednotka občanského sdružení"@cs ;
+	<http://www.w3.org/2004/02/skos/core#broader> <http://data.openbudgets.eu/resource/dataset/esf-cz-projects/codelist/partner-types/5e4c6a8499a66bc65ad2832e4aa66ceea432ad96> ;
+	<http://www.w3.org/2004/02/skos/core#inScheme> <http://data.openbudgets.eu/resource/dataset/esf-cz-projects/codelist/partner-types> .
+
+<http://data.openbudgets.eu/resource/dataset/esf-cz-projects/codelist/partner-types/e6ab5f78f006a82d06d4a597262e4c767a53722e> a <http://www.w3.org/2004/02/skos/core#Concept> ;
+	<http://www.w3.org/2004/02/skos/core#prefLabel> "Kraj"@cs ;
+	<http://www.w3.org/2004/02/skos/core#broader> <http://data.openbudgets.eu/resource/dataset/esf-cz-projects/codelist/partner-types/10b5ad780e5208b895ab371028ff6ca36390ecbd> ;
+	<http://www.w3.org/2004/02/skos/core#inScheme> <http://data.openbudgets.eu/resource/dataset/esf-cz-projects/codelist/partner-types> .
+
+<http://data.openbudgets.eu/resource/dataset/esf-cz-projects/codelist/partner-types/e81a380698c3b0a74dd97f4832a9389c12753339> a <http://www.w3.org/2004/02/skos/core#Concept> ;
+	<http://www.w3.org/2004/02/skos/core#prefLabel> "Org.jednotka sdružení"@cs ;
+	<http://www.w3.org/2004/02/skos/core#broader> <http://data.openbudgets.eu/resource/dataset/esf-cz-projects/codelist/partner-types/5e4c6a8499a66bc65ad2832e4aa66ceea432ad96> ;
+	<http://www.w3.org/2004/02/skos/core#inScheme> <http://data.openbudgets.eu/resource/dataset/esf-cz-projects/codelist/partner-types> .
+
+<http://data.openbudgets.eu/resource/dataset/esf-cz-projects/codelist/partner-types/e96e511b4c1d53362c22d1bbf5a2196fa57f0981> a <http://www.w3.org/2004/02/skos/core#Concept> ;
+	<http://www.w3.org/2004/02/skos/core#prefLabel> "Společnost s ručením omezeným"@cs ;
+	<http://www.w3.org/2004/02/skos/core#broader> <http://data.openbudgets.eu/resource/dataset/esf-cz-projects/codelist/partner-types/1a0276f5b47bcb9130af6a7f406c301aeed5d798> ;
+	<http://www.w3.org/2004/02/skos/core#inScheme> <http://data.openbudgets.eu/resource/dataset/esf-cz-projects/codelist/partner-types> .
+
+<http://data.openbudgets.eu/resource/dataset/esf-cz-projects/codelist/partner-types/ea690af1a6c9b1abc0e45aded658f45eaf280df2> a <http://www.w3.org/2004/02/skos/core#Concept> ;
+	<http://www.w3.org/2004/02/skos/core#prefLabel> "Veřejnoprávní instituce"@cs ;
+	<http://www.w3.org/2004/02/skos/core#broader> <http://data.openbudgets.eu/resource/dataset/esf-cz-projects/codelist/partner-types/de3e8a21400fb685237bceb67a7c471fc29697b8> ;
+	<http://www.w3.org/2004/02/skos/core#inScheme> <http://data.openbudgets.eu/resource/dataset/esf-cz-projects/codelist/partner-types> .
+
+<http://data.openbudgets.eu/resource/dataset/esf-cz-projects/codelist/partner-types/ec00703b6f26b6d35b71f3db2c0e3b603a9ecbfa> a <http://www.w3.org/2004/02/skos/core#Concept> ;
+	<http://www.w3.org/2004/02/skos/core#prefLabel> "Organizační složka zahraniční právnické osoby"@cs ;
+	<http://www.w3.org/2004/02/skos/core#broader> <http://data.openbudgets.eu/resource/dataset/esf-cz-projects/codelist/partner-types/1a0276f5b47bcb9130af6a7f406c301aeed5d798> ;
+	<http://www.w3.org/2004/02/skos/core#inScheme> <http://data.openbudgets.eu/resource/dataset/esf-cz-projects/codelist/partner-types> .
+
+<http://data.openbudgets.eu/resource/dataset/esf-cz-projects/codelist/partner-types/f1d5a416c346e5319a531e05bb538ab76a36124a> a <http://www.w3.org/2004/02/skos/core#Concept> ;
+	<http://www.w3.org/2004/02/skos/core#prefLabel> "Zatím neurčeno"@cs ;
+	<http://www.w3.org/2004/02/skos/core#broader> <http://data.openbudgets.eu/resource/dataset/esf-cz-projects/codelist/partner-types/281ae44a342f9902086eeccfba98a3e1fee83f99> ;
+	<http://www.w3.org/2004/02/skos/core#inScheme> <http://data.openbudgets.eu/resource/dataset/esf-cz-projects/codelist/partner-types> .
+
+<http://data.openbudgets.eu/resource/dataset/esf-cz-projects/codelist/partner-types/f2fe5e8ba518747244cecc29615ae350028305ba> a <http://www.w3.org/2004/02/skos/core#Concept> ;
+	<http://www.w3.org/2004/02/skos/core#prefLabel> "Spolek"@cs ;
+	<http://www.w3.org/2004/02/skos/core#broader> <http://data.openbudgets.eu/resource/dataset/esf-cz-projects/codelist/partner-types/5e4c6a8499a66bc65ad2832e4aa66ceea432ad96> ;
+	<http://www.w3.org/2004/02/skos/core#inScheme> <http://data.openbudgets.eu/resource/dataset/esf-cz-projects/codelist/partner-types> .
+
+<http://data.openbudgets.eu/resource/dataset/esf-cz-projects/codelist/partner-types/f5e7d77f2b7ff5f330789cff0d37cb953142867f> a <http://www.w3.org/2004/02/skos/core#Concept> ;
+	<http://www.w3.org/2004/02/skos/core#prefLabel> "Obecně prospěšná společnost"@cs ;
+	<http://www.w3.org/2004/02/skos/core#broader> <http://data.openbudgets.eu/resource/dataset/esf-cz-projects/codelist/partner-types/6410fa805c75fd4edaa23ca345a4db62e8ee3bad> ;
+	<http://www.w3.org/2004/02/skos/core#inScheme> <http://data.openbudgets.eu/resource/dataset/esf-cz-projects/codelist/partner-types> .
