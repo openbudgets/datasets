@@ -148,6 +148,39 @@
           "http://linkedpipes.com/ontology/sourceBinding": "OutputRdf",
           "http://linkedpipes.com/ontology/targetComponent": {
             "@id": "http://localhost:28080/resources/pipelines/created-1467813393730/components/ade48a5c-abe4-4dd3-98cf-8c7b57654d24"
+<<<<<<< HEAD
+          },
+          "http://linkedpipes.com/ontology/targetBinding": "InputRdf"
+        },
+        {
+          "@id": "http://localhost:28080/resources/pipelines/created-1467813393730/components/5d88ac95-faae-4cd1-ae6a-a6105ba671f0",
+          "@type": [
+            "http://linkedpipes.com/ontology/Component"
+          ],
+          "http://www.w3.org/2004/02/skos/core#prefLabel": "DCAT-AP Dataset",
+          "http://linkedpipes.com/ontology/template": {
+            "@id": "http://localhost:28080/resources/components/e-dcatAp11Dataset"
+          },
+          "http://linkedpipes.com/ontology/x": 1100,
+          "http://linkedpipes.com/ontology/y": 700,
+          "http://purl.org/dc/terms/description": "Metadata",
+          "http://linkedpipes.com/ontology/configurationGraph": {
+            "@id": "http://localhost:28080/resources/pipelines/created-1467813393730/components/5d88ac95-faae-4cd1-ae6a-a6105ba671f0/configuration"
+          }
+        },
+        {
+          "@id": "http://localhost:28080/resources/pipelines/created-1467813393730/connection/6460cf0f-f986-4f3c-8680-ad08a9347d3d",
+          "@type": [
+            "http://linkedpipes.com/ontology/Connection"
+          ],
+          "http://linkedpipes.com/ontology/sourceComponent": {
+            "@id": "http://localhost:28080/resources/pipelines/created-1467813393730/components/5d88ac95-faae-4cd1-ae6a-a6105ba671f0"
+          },
+          "http://linkedpipes.com/ontology/sourceBinding": "Metadata",
+          "http://linkedpipes.com/ontology/targetComponent": {
+            "@id": "http://localhost:28080/resources/pipelines/created-1467813393730/components/ade48a5c-abe4-4dd3-98cf-8c7b57654d24"
+=======
+>>>>>>> origin/master
           },
           "http://linkedpipes.com/ontology/targetBinding": "InputRdf"
         }
@@ -161,7 +194,7 @@
           "@type": [
             "http://plugins.linkedpipes.com/ontology/t-sparqlUpdate#Configuration"
           ],
-          "http://plugins.linkedpipes.com/ontology/t-sparqlUpdate#query": "INSERT { <http://data.openbudgets.eu/resource/dataset/budget-bonn-2016>  a <http://purl.org/linked-data/cube#DataSet> ;\n    <http://purl.org/dc/terms/title> \"Budget of City of Bonn for the fiscal year 2016\"@en, \"Haushalt der Stadt Bonn für 2016\"@de ;\n    <http://www.w3.org/2000/01/rdf-schema#label> \"Budget of City of Bonn (Germany) for the fiscal year 2016\"@en ;\n    <http://purl.org/dc/terms/publisher> <http://openbudgets.eu> ;\n    <http://purl.org/dc/terms/language> <http://id.loc.gov/vocabulary/iso639-1/de> ;\n\t<http://data.openbudgets.eu/ontology/dsd/dimension/budgetaryUnit> <http://dbpedia.org/resource/Bonn> ;\n\t<http://data.openbudgets.eu/ontology/dsd/attribute/currency> <http://data.openbudgets.eu/codelist/currency/EUR> ;\n\t<http://data.openbudgets.eu/ontology/dsd/dimension/budgetPhase> <http://data.openbudgets.eu/resource/codelist/budget-phase/approved> ;\n\t<http://data.openbudgets.eu/ontology/dsd/dimension/fiscalYear> <http://reference.data.gov.uk/id/year/2016> ;\n\t<http://purl.org/linked-data/cube#structure> <http://data.openbudgets.eu/ontology/dsd/bonn-budget> .}\nWHERE { ?s ?p ?o. }"
+          "http://plugins.linkedpipes.com/ontology/t-sparqlUpdate#query": "INSERT DATA {\n        <http://data.openbudgets.eu/resource/dataset/budget-bonn-2016>  a <http://purl.org/linked-data/cube#DataSet> ;\n\t<http://data.openbudgets.eu/ontology/dsd/dimension/budgetaryUnit> <http://dbpedia.org/resource/Bonn> ;\n\t<http://data.openbudgets.eu/ontology/dsd/attribute/currency> <http://data.openbudgets.eu/codelist/currency/EUR> ;\n\t<http://data.openbudgets.eu/ontology/dsd/dimension/budgetPhase> <http://data.openbudgets.eu/resource/codelist/budget-phase/approved> ;\n\t<http://data.openbudgets.eu/ontology/dsd/dimension/fiscalYear> <http://reference.data.gov.uk/id/year/2016> ;\n\t<http://purl.org/linked-data/cube#structure> <http://data.openbudgets.eu/ontology/dsd/bonn-budget> . }"
         }
       ],
       "@id": "http://localhost:28080/resources/pipelines/created-1467813393730/components/ade48a5c-abe4-4dd3-98cf-8c7b57654d24/configuration"
@@ -296,9 +329,68 @@
             "http://plugins.linkedpipes.com/ontology/t-sparqlConstruct#Configuration"
           ],
           "http://plugins.linkedpipes.com/ontology/t-sparqlConstruct#query": "CONSTRUCT {\n?newobs a <http://purl.org/linked-data/cube#Observation> ;\n     <http://data.openbudgets.eu/ontology/dsd/bonn-budget/dimension/administrativeClassification> ?URIadministrative ;\n\t <http://data.openbudgets.eu/ontology/dsd/bonn-budget/dimension/costCenter> ?URIcostCenter ;\n\t <http://data.openbudgets.eu/ontology/dsd/bonn-budget/dimension/economicClassification> ?URIeconomic ;\n     <http://data.openbudgets.eu/ontology/dsd/bonn-budget/dimension/functionalClassification> ?URIfunctional ;\n\t <http://data.openbudgets.eu/ontology/dsd/dimension/operationCharacter> ?URIopChar ;\n     <http://data.openbudgets.eu/ontology/dsd/measure/amount> ?sum ;\n<http://purl.org/linked-data/cube#dataSet>  <http://data.openbudgets.eu/resource/dataset/bonn-budget-2016>.   \n}\nWHERE {\n{SELECT  (MIN(?obs) AS ?newobs) (SUM(?amount) AS ?sum) ?administrative ?costCenter ?economic ?functional ?opChar\n  WHERE {  \n?obs <http://data.openbudgets.eu/ontology/dsd/bonn-budget/dimension/administrativeClassification> ?administrative ;\n\t <http://data.openbudgets.eu/ontology/dsd/bonn-budget/dimension/costCenter> ?costCenter ;\n\t <http://data.openbudgets.eu/ontology/dsd/bonn-budget/dimension/economicClassification> ?economic ;\n     <http://data.openbudgets.eu/ontology/dsd/bonn-budget/dimension/functionalClassification> ?functional ;\n\t <http://data.openbudgets.eu/ontology/dsd/dimension/operationCharacter> ?opChar ;\n     <http://data.openbudgets.eu/ontology/dsd/measure/amount> ?amount . \n}\nGROUP BY ?administrative ?costCenter ?economic ?functional ?opChar\n}\n\nBIND(URI(CONCAT(\"http://data.openbudgets.eu/resource/codelist/aemterhierarchie_bonn/\",?administrative)) as ?URIadministrative).\nBIND(URI(CONCAT(\"http://data.openbudgets.eu/resource/codelist/kostenstellenuebersicht_bonn/\",?costCenter)) as ?URIcostCenter) .\nBIND(URI(CONCAT(\"http://data.openbudgets.eu/resource/codelist/kostenartenuebersicht_bonn/\",?economic)) as ?URIeconomic) .\nBIND(URI(CONCAT(\"http://data.openbudgets.eu/resource/codelist/produktuebersicht_bonn/\",?functional)) as ?URIfunctional).\nBIND(URI(CONCAT(\"http://data.openbudgets.eu/resource/codelist/operation-character/\",?opChar)) as ?URIopChar) .\n}"
+<<<<<<< HEAD
         }
       ],
       "@id": "http://localhost:28080/resources/pipelines/created-1467813393730/components/75c0701b-616c-4eaf-b559-43dbf85e4167/configuration"
+    },
+    {
+      "@graph": [
+        {
+          "@id": "http://localhost/resources/configuration",
+          "@type": [
+            "http://etl.linkedpipes.com/resource/components/e-dcatAp11Dataset/Configuration"
+          ],
+          "http://etl.linkedpipes.com/resource/components/e-dcatAp11Dataset/datasetIRI": "http://data.openbudgets.eu/resource/dataset/budget-bonn-2016",
+          "http://etl.linkedpipes.com/resource/components/e-dcatAp11Dataset/titles": [
+            {
+              "@language": "en",
+              "@value": "Bonn Budget 2016"
+            },
+            {
+              "@language": "de",
+              "@value": "Haushalt der Stadt Bonn für 2016"
+            }
+          ],
+          "http://etl.linkedpipes.com/resource/components/e-dcatAp11Dataset/descriptions": [
+            {
+              "@language": "en",
+              "@value": "Budget of City of Bonn (Germany) for the fiscal year 2016"
+            },
+            {
+              "@language": "de",
+              "@value": "Haushaltdaten der Stadt Bonn für 2016"
+            }
+          ],
+          "http://etl.linkedpipes.com/resource/components/e-dcatAp11Dataset/contactPointTypeIRI": "http://www.w3.org/2006/vcard/ns#Organization",
+          "http://etl.linkedpipes.com/resource/components/e-dcatAp11Dataset/contactPointName": "",
+          "http://etl.linkedpipes.com/resource/components/e-dcatAp11Dataset/contactPointEmail": "",
+          "http://etl.linkedpipes.com/resource/components/e-dcatAp11Dataset/euThemeIRI": "",
+          "http://etl.linkedpipes.com/resource/components/e-dcatAp11Dataset/publisherIRI": "http://openbudgets.eu",
+          "http://etl.linkedpipes.com/resource/components/e-dcatAp11Dataset/publisherTypeIRI": "",
+          "http://etl.linkedpipes.com/resource/components/e-dcatAp11Dataset/languages": [
+            {
+              "@id": "http://publications.europa.eu/resource/authority/language/DEU",
+              "@types": [
+                "http://etl.linkedpipes.com/resource/components/e-dcatAp11Dataset/LanguageObject"
+              ],
+              "http://etl.linkedpipes.com/resource/components/e-dcatAp11Dataset/IRI": "http://publications.europa.eu/resource/authority/language/DEU",
+              "http://www.w3.org/2004/02/skos/core#prefLabel": "german"
+            }
+          ],
+          "http://etl.linkedpipes.com/resource/components/e-dcatAp11Dataset/accrualPeriodicityIRI": "",
+          "http://etl.linkedpipes.com/resource/components/e-dcatAp11Dataset/accessRightsIRI": "",
+          "http://etl.linkedpipes.com/resource/components/e-dcatAp11Dataset/identifier": "",
+          "http://etl.linkedpipes.com/resource/components/e-dcatAp11Dataset/datasetTypeIRI": "",
+          "http://etl.linkedpipes.com/resource/components/e-dcatAp11Dataset/version": ""
+        }
+      ],
+      "@id": "http://localhost:28080/resources/pipelines/created-1467813393730/components/5d88ac95-faae-4cd1-ae6a-a6105ba671f0/configuration"
+=======
+        }
+      ],
+      "@id": "http://localhost:28080/resources/pipelines/created-1467813393730/components/75c0701b-616c-4eaf-b559-43dbf85e4167/configuration"
+>>>>>>> origin/master
     }
   ]
 }
