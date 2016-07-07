@@ -272,7 +272,7 @@
           },
           "http://linkedpipes.com/ontology/x": 2340,
           "http://linkedpipes.com/ontology/y": 580,
-          "http://purl.org/dc/terms/description": "Insert \"inScheme\" property",
+          "http://purl.org/dc/terms/description": "Insert \"inScheme\" porperty",
           "http://linkedpipes.com/ontology/configurationGraph": {
             "@id": "http://localhost:28080/resources/pipelines/created-1467882179722/components/56d6d50a-627d-4343-a725-980b496b5a2c/configuration"
           }
@@ -325,7 +325,7 @@
           "@type": [
             "http://plugins.linkedpipes.com/ontology/t-sparqlUpdate#Configuration"
           ],
-          "http://plugins.linkedpipes.com/ontology/t-sparqlUpdate#query": "INSERT { <http://data.openbudgets.eu/resource/codelist/aemteruebersicht_bonn/> <http://www.w3.org/2004/02/skos/core#hasTopConcept> ?c .\n ?c <http://www.w3.org/2004/02/skos/core#topConceptOf> <http://data.openbudgets.eu/resource/codelist/aemteruebersicht_bonn/> .\n}\nWHERE { ?c a <http://www.w3.org/2004/02/skos/core#Concept>  .\nFILTER NOT EXISTS {?c <http://www.w3.org/2004/02/skos/core#broader> ?o . }\n }"
+          "http://plugins.linkedpipes.com/ontology/t-sparqlUpdate#query": "INSERT { <http://data.openbudgets.eu/resource/codelist/aemterhierarchie_bonn/> <http://www.w3.org/2004/02/skos/core#hasTopConcept> ?c .\n ?c <http://www.w3.org/2004/02/skos/core#topConceptOf> <http://data.openbudgets.eu/resource/codelist/aemterhierarchie_bonn/> .\n}\nWHERE { ?c a <http://www.w3.org/2004/02/skos/core#Concept>  .\nFILTER NOT EXISTS {?c <http://www.w3.org/2004/02/skos/core#broader> ?o . }\n }"
         }
       ],
       "@id": "http://localhost:28080/resources/pipelines/created-1467882179722/components/3e9573b0-1f36-49da-b10a-7d039ed171aa/configuration"
@@ -458,7 +458,7 @@
           "@type": [
             "http://plugins.linkedpipes.com/ontology/t-sparqlUpdate#Configuration"
           ],
-          "http://plugins.linkedpipes.com/ontology/t-sparqlUpdate#query": "INSERT { ?c <http://www.w3.org/2004/02/skos/core#inScheme> <http://data.openbudgets.eu/resource/codelist/aemteruebersicht_bonn/> . }\nWHERE { \n?c a <http://www.w3.org/2004/02/skos/core#Concept>  .\nFILTER NOT EXISTS {?c ?p <http://data.openbudgets.eu/resource/codelist/aemteruebersicht_bonn/>. }\n}"
+          "http://plugins.linkedpipes.com/ontology/t-sparqlUpdate#query": "INSERT { ?c <http://www.w3.org/2004/02/skos/core#inScheme> <http://data.openbudgets.eu/resource/codelist/aemterhierarchie_bonn/> . }\nWHERE { \n?c a <http://www.w3.org/2004/02/skos/core#Concept>  .\nFILTER NOT EXISTS {?c ?p <http://data.openbudgets.eu/resource/codelist/aemterhierarchie_bonn/>. }\n}"
         }
       ],
       "@id": "http://localhost:28080/resources/pipelines/created-1467882179722/components/56d6d50a-627d-4343-a725-980b496b5a2c/configuration"
