@@ -313,7 +313,7 @@
           "@type": [
             "http://plugins.linkedpipes.com/ontology/t-sparqlUpdate#Configuration"
           ],
-          "http://plugins.linkedpipes.com/ontology/t-sparqlUpdate#query": "INSERT { <http://data.openbudgets.eu/resource/codelist/produktuebersicht_bonn/> a <http://www.w3.org/2004/02/skos/core#ConceptScheme> ;\n\trdfs:label \"Produktübersicht der Stadt Bonn (Stand 2016)\"@de, \"Product categories overview of the City of Bonn\"@en ;\n\trdfs:comment \"Used as codelist in the functional classification for the Bonn budget.\"@en .}\nWHERE { ?s ?p ?o. }"
+          "http://plugins.linkedpipes.com/ontology/t-sparqlUpdate#query": "INSERT { <http://data.openbudgets.eu/resource/codelist/produktuebersicht_bonn> a <http://www.w3.org/2004/02/skos/core#ConceptScheme> ;\n\trdfs:label \"Produktübersicht der Stadt Bonn (Stand 2016)\"@de, \"Product categories overview of the City of Bonn\"@en ;\n\trdfs:comment \"Used as codelist in the functional classification for the Bonn budget.\"@en .}\nWHERE { ?s ?p ?o. }"
         }
       ],
       "@id": "http://localhost:28080/resources/pipelines/created-1467882944280/components/ed3c13c8-ded6-4c2a-ab27-ef476ab3483b/configuration"
@@ -325,7 +325,7 @@
           "@type": [
             "http://plugins.linkedpipes.com/ontology/t-sparqlUpdate#Configuration"
           ],
-          "http://plugins.linkedpipes.com/ontology/t-sparqlUpdate#query": "INSERT { <http://data.openbudgets.eu/resource/codelist/produktuebersicht_bonn/> <http://www.w3.org/2004/02/skos/core#hasTopConcept> ?c .\n ?c <http://www.w3.org/2004/02/skos/core#topConceptOf> <http://data.openbudgets.eu/resource/codelist/produktuebersicht_bonn/> .\n}\nWHERE { ?s <http://www.w3.org/2004/02/skos/core#broader> ?c}"
+          "http://plugins.linkedpipes.com/ontology/t-sparqlUpdate#query": "INSERT { <http://data.openbudgets.eu/resource/codelist/produktuebersicht_bonn> <http://www.w3.org/2004/02/skos/core#hasTopConcept> ?c .\n ?c <http://www.w3.org/2004/02/skos/core#topConceptOf> <http://data.openbudgets.eu/resource/codelist/produktuebersicht_bonn> .\n}\nWHERE { ?s <http://www.w3.org/2004/02/skos/core#broader> ?c}"
         }
       ],
       "@id": "http://localhost:28080/resources/pipelines/created-1467882944280/components/1a6285db-cb0b-4fc3-9794-051922c8fefe/configuration"
@@ -445,7 +445,7 @@
           "@type": [
             "http://plugins.linkedpipes.com/ontology/t-sparqlUpdate#Configuration"
           ],
-          "http://plugins.linkedpipes.com/ontology/t-sparqlUpdate#query": "INSERT { ?c <http://www.w3.org/2004/02/skos/core#inScheme> <http://data.openbudgets.eu/resource/codelist/produktuebersicht_bonn/> . }\nWHERE { \n?c a <http://www.w3.org/2004/02/skos/core#Concept>  .\nFILTER NOT EXISTS {?c ?p <http://data.openbudgets.eu/resource/codelist/produktuebersicht_bonn/>. }\n}"
+          "http://plugins.linkedpipes.com/ontology/t-sparqlUpdate#query": "INSERT { ?c <http://www.w3.org/2004/02/skos/core#inScheme> <http://data.openbudgets.eu/resource/codelist/produktuebersicht_bonn> . }\nWHERE { \n?c a <http://www.w3.org/2004/02/skos/core#Concept>  .\nFILTER NOT EXISTS {?c ?p <http://data.openbudgets.eu/resource/codelist/produktuebersicht_bonn>. }\n}"
         }
       ],
       "@id": "http://localhost:28080/resources/pipelines/created-1467882944280/components/4fbdc0c9-b291-4fa1-af37-6b91b602a1f8/configuration"

@@ -203,7 +203,7 @@
           "@type": [
             "http://plugins.linkedpipes.com/ontology/t-sparqlUpdate#Configuration"
           ],
-          "http://plugins.linkedpipes.com/ontology/t-sparqlUpdate#query": "INSERT { <http://data.openbudgets.eu/resource/codelist/kostenstellenuebersicht_bonn/> a <http://www.w3.org/2004/02/skos/core#ConceptScheme> ;\n\trdfs:label \"Kostenstellenübersicht der Stadt Bonn (vorläufige Version, Stand 2016)\"@de, \"Cost center overview of the City of Bonn (preliminary version)\"@en ;\n\trdfs:comment \"Used as codelist in the Bonn budget.\"@en .}\nWHERE { }"
+          "http://plugins.linkedpipes.com/ontology/t-sparqlUpdate#query": "INSERT { <http://data.openbudgets.eu/resource/codelist/kostenstellenuebersicht_bonn> a <http://www.w3.org/2004/02/skos/core#ConceptScheme> ;\n\trdfs:label \"Kostenstellenübersicht der Stadt Bonn (vorläufige Version, Stand 2016)\"@de, \"Cost center overview of the City of Bonn (preliminary version)\"@en ;\n\trdfs:comment \"Used as codelist in the Bonn budget.\"@en .}\nWHERE { }"
         }
       ],
       "@id": "http://localhost:28080/resources/pipelines/created-1467882818417/components/3cd32768-6d81-479a-a2bc-c3653756721f/configuration"
@@ -286,7 +286,7 @@
           "@type": [
             "http://plugins.linkedpipes.com/ontology/t-sparqlUpdate#Configuration"
           ],
-          "http://plugins.linkedpipes.com/ontology/t-sparqlUpdate#query": "INSERT { ?c <http://www.w3.org/2004/02/skos/core#inScheme> <http://data.openbudgets.eu/resource/codelist/kostenstellenuebersicht_bonn/> . }\nWHERE { \n?c a <http://www.w3.org/2004/02/skos/core#Concept>  .\nFILTER NOT EXISTS {?c ?p <http://data.openbudgets.eu/resource/codelist/kostenstellenuebersicht_bonn/>. }\n}"
+          "http://plugins.linkedpipes.com/ontology/t-sparqlUpdate#query": "INSERT { ?c <http://www.w3.org/2004/02/skos/core#inScheme> <http://data.openbudgets.eu/resource/codelist/kostenstellenuebersicht_bonn> . }\nWHERE { \n?c a <http://www.w3.org/2004/02/skos/core#Concept>  .\nFILTER NOT EXISTS {?c ?p <http://data.openbudgets.eu/resource/codelist/kostenstellenuebersicht_bonn>. }\n}"
         }
       ],
       "@id": "http://localhost:28080/resources/pipelines/created-1467882818417/components/e8557fa3-3287-4d20-9e18-c71ae3720374/configuration"
