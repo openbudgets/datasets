@@ -35,7 +35,9 @@
                [ qb:dimension bonn-dimension:administrativeClassification ],
                [ qb:dimension bonn-dimension:functionalClassification ],     
                [ qb:dimension bonn-dimension:economicClassification ],
-               [ qb:dimension bonn-dimension:costCenter ],              
+               [ qb:dimension bonn-dimension:costCenter ],  
+               [ qb:dimension bonn-dimension:pspElement ],
+               [ qb:dimension bonn-dimension:internalOrder ],
                [ qb:attribute obeu-attribute:currency ;
                  qb:componentRequired true ;
                  qb:componentAttachment qb:DataSet ],
@@ -74,4 +76,20 @@ bonn-dimension:costCenter a rdf:Property, qb:CodedProperty, qb:DimensionProperty
   rdfs:subPropertyOf obeu-dimension:Classification ;
   rdfs:range skos:Concept ;
   qb:codeList <http://data.openbudgets.eu/resource/codelist/kostenstellenuebersicht_bonn> ;
+  rdfs:isDefinedBy <http://data.openbudgets.eu/ontology/dsd/bonn-budget> .  
+  
+bonn-dimension:pspElement a rdf:Property, qb:CodedProperty, qb:DimensionProperty;
+  rdfs:label "PSP element"@en ;
+  rdfs:comment "???"@en ;
+  rdfs:subPropertyOf obeu-dimension:Classification ;
+  rdfs:range skos:Concept ;
+  qb:codeList <http://data.openbudgets.eu/resource/codelist/psp-elemente_bonn> ;
+  rdfs:isDefinedBy <http://data.openbudgets.eu/ontology/dsd/bonn-budget> .  
+
+bonn-dimension:internalOrder a rdf:Property, qb:CodedProperty, qb:DimensionProperty;
+  rdfs:label "Internal Order"@en ;
+  rdfs:comment "???"@en ;
+  rdfs:subPropertyOf obeu-dimension:Classification ;
+  rdfs:range skos:Concept ;
+  qb:codeList <http://data.openbudgets.eu/resource/codelist/innenauftraege_bonn> ;
   rdfs:isDefinedBy <http://data.openbudgets.eu/ontology/dsd/bonn-budget> .  
