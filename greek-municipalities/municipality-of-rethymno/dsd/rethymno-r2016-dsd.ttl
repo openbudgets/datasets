@@ -1,7 +1,7 @@
 # -----DSD-specific namespaces
-@prefix rethymno-r2016-dimension:  <http://data.openbudgets.eu/ontology/dsd/budget-rethymno-revenue-2016/dimension/> .
-@prefix rethymno-r2016:           <http://data.openbudgets.eu/resource/dataset/budget-rethymno-revenue-2016/> .
-@prefix rethymno-r2016-dsd-slice: <http://data.openbudgets.eu/ontology/dsd/budget-rethymno-revenue-2016/slice/> .
+@prefix rethymno-r2016-dimension:  <http://data.openbudgets.eu/ontology/dsd/budget-rethymno-revenues-2016/dimension/> .
+@prefix rethymno-r2016:           <http://data.openbudgets.eu/resource/dataset/budget-rethymno-revenues-2016/> .
+@prefix rethymno-r2016-dsd-slice: <http://data.openbudgets.eu/ontology/dsd/budget-rethymno-revenues-2016/slice/> .
 
 # -----Rethymno Classifications specific namespaces
 @prefix gr-dimension: <http://data.openbudgets.eu/ontology/dsd/greek-municipalities/dimension/> .
@@ -41,7 +41,7 @@
              qb:componentAttachment qb:Slice ],
 	[ qb:dimension gr-dimension:economicClassification ;
                 qb:componentAttachment qb:Slice],
-	[ qb:dimension rethymno-br2016-dimension:functionalClassification;
+	[ qb:dimension rethymno-r2016-dimension:functionalClassification;
 		qb:componentAttachment qb:Slice ],
 	[ qb:dimension gr-dimension:budgetPhase], 
 	[ qb:attribute obeu-attribute:currency ;
