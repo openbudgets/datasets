@@ -1,0 +1,54 @@
+@prefix qb: 	<http://purl.org/linked-data/cube#> .
+@prefix rdf:	<http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:   <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:   <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd:    <http://www.w3.org/2001/XMLSchema#> .
+@prefix obeu:             <http://data.openbudgets.eu/ontology/> .
+@prefix obeu-attribute:   <http://data.openbudgets.eu/ontology/dsd/attribute/> .
+@prefix obeu-dimension:   <http://data.openbudgets.eu/ontology/dsd/dimension/>.
+@prefix obeu-measure:     <http://data.openbudgets.eu/ontology/dsd/measure/> .
+@prefix obeu-budgetphase: <http://data.openbudgets.eu/resource/codelist/budget-phase/> .
+@prefix obeu-codelist:    <http://data.openbudgets.eu/resource/codelist/> .
+@prefix nsrf-gr-optional:		  <http://data.openbudgets.eu/ontology/dsd/nsrf-GR/optional-property/> .
+@prefix  nsrf-gr-dimension: <http://data.openbudgets.eu/ontology/dsd/nsrf-GR/dimension/>
+
+# DSD 
+<http://data.openbudgets.eu/ontology/dsd/nsrf-GR> a 
+  qb:DataStructureDefinition ;
+	rdfs:label "Data structure definition for the Greek National Strategic Resource Framework data"@en ;
+  qb:component
+	[ qb:dimension obeu-dimension:organization ],
+	[ qb:dimension obeu-dimension:operationCharacter ;
+		qb:componentAttachment qb:DataSet ],
+	[ qb:componentProperty nsrf-gr-optional:functionalClassification ],
+	[ qb:dimension obeu-dimension:project ],
+	[ qb:componentProperty nsrf-gr-optional:programmeClassification ],
+	[ qb:dimension obeu-dimension:budgetPhase ], 
+	[ qb:dimension nsrf-gr-dimension:region ],
+	[ qb:attribute obeu-attribute:currency ;
+	  qb:componentAttachment qb:DataSet ],
+	[ qb:measure obeu-measure:amount ] .
+	
+
+#dimension definition
+
+nsrf-gr-optional:functionalClassification a rdf:Property, qb:CodedProperty, obeu:OptionalProperty ;
+  rdfs:label "Functional classification of the Greek National Strategic Resource Framework"@en ;
+  rdfs:comment "Classifies expenditures by thematic priority"@en ;
+  qb:codeList <http://data.openbudgets.eu/resource/nsrf-GR/codelist/thematic> ;
+  rdfs:range skos:Concept ;
+  rdfs:isDefinedBy <http://data.openbudgets.eu/ontology/dsd/nrsf-GR> .
+
+nsrf-gr-optional:programmeClassification a rdf:Property, qb:CodedProperty, obeu:OptionalProperty ;
+  rdfs:label "Programme classification of the Greek National Strategic Resource Framework"@en ;
+  rdfs:comment "Classifies expenditures by operational programme"@en ;
+  qb:codeList <http://data.openbudgets.eu/resource/nsrf-GR/codelist/operational-programme> ;
+  rdfs:range skos:Concept ;
+  rdfs:isDefinedBy <http://data.openbudgets.eu/ontology/dsd/nrsf-GR> .
+  
+nsrf-gr-dimension:region a rdf:Property, qb:CodedProperty, qb:DimensionProperty ;
+  rdfs:label "Region or regions where NSRF projects and support-grants are located"@en ;
+  rdfs:comment "Region or regions where NSRF projects and support-grants are located"@en ;
+  qb:codeList <http://data.openbudgets.eu/resource/nsrf-GR/codelist/region> ;
+  rdfs:range skos:Concept ;
+  rdfs:isDefinedBy <http://data.openbudgets.eu/ontology/dsd/nrsf-GR> .

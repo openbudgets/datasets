@@ -1,0 +1,750 @@
+@prefix nsrf-gr-codelist: <http://data.openbudgets.eu/resource/dataset/nsrf-GR/codelist/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix nsrf-gr-thematic: <http://data.openbudgets.eu/resource/dataset/nsrf-GR/codelist/thematic-priority/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix fn: <http://www.w3.org/2005/xpath-functions#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sesame: <http://www.openrdf.org/schema/sesame#> .
+
+nsrf-gr-thematic:1.1 skos:note "1"^^xsd:int ;
+	skos:notation "1.1"@en ;
+	skos:prefLabel "Δράσεις περιβάλλοντος"@el ;
+	a skos:Concept ;
+	skos:narrower nsrf-gr-thematic:1.1.44 , nsrf-gr-thematic:1.1.45 , nsrf-gr-thematic:1.1.46 , nsrf-gr-thematic:1.1.47 , nsrf-gr-thematic:1.1.48 , nsrf-gr-thematic:1.1.49 , nsrf-gr-thematic:1.1.50 , nsrf-gr-thematic:1.1.51 , nsrf-gr-thematic:1.1.53 , nsrf-gr-thematic:1.1.54 ;
+	skos:inScheme nsrf-gr-codelist:thematic-priority ;
+	skos:topConceptOf nsrf-gr-codelist:thematic-priority .
+
+nsrf-gr-thematic:1.1.44 skos:note "2"^^xsd:int ;
+	skos:notation "1.1.44"@en ;
+	skos:prefLabel "Διαχείριση οικιακών και βιομηχανικών αποβλήτων"@el ;
+	a skos:Concept ;
+	skos:broader nsrf-gr-thematic:1.1 ;
+	skos:inScheme nsrf-gr-codelist:thematic-priority .
+
+nsrf-gr-thematic:1.1.45 skos:note "2"^^xsd:int ;
+	skos:notation "1.1.45"@en ;
+	skos:prefLabel "Διαχείριση και διανομή ύδατος (πόσιμο νερό)"@el ;
+	a skos:Concept ;
+	skos:broader nsrf-gr-thematic:1.1 ;
+	skos:inScheme nsrf-gr-codelist:thematic-priority .
+
+nsrf-gr-thematic:1.1.46 skos:note "2"^^xsd:int ;
+	skos:notation "1.1.46"@en ;
+	skos:prefLabel "Επεξεργασία ύδατος (λύματα)"@el ;
+	a skos:Concept ;
+	skos:broader nsrf-gr-thematic:1.1 ;
+	skos:inScheme nsrf-gr-codelist:thematic-priority .
+
+nsrf-gr-thematic:1.1.47 skos:note "2"^^xsd:int ;
+	skos:notation "1.1.47"@en ;
+	skos:prefLabel "Ποιότητα του αέρα"@el ;
+	a skos:Concept ;
+	skos:broader nsrf-gr-thematic:1.1 ;
+	skos:inScheme nsrf-gr-codelist:thematic-priority .
+
+nsrf-gr-thematic:1.1.48 skos:note "2"^^xsd:int ;
+	skos:notation "1.1.48"@en ;
+	skos:prefLabel "Ολοκληρωμένη πρόληψη και έλεγχος της ρύπανσης"@el ;
+	a skos:Concept ;
+	skos:broader nsrf-gr-thematic:1.1 ;
+	skos:inScheme nsrf-gr-codelist:thematic-priority .
+
+nsrf-gr-thematic:1.1.49 skos:note "2"^^xsd:int ;
+	skos:notation "1.1.49"@en ;
+	skos:prefLabel "Περιορισμός των κλιματικών αλλαγών και προσαρμογή σε αυτές"@el ;
+	a skos:Concept ;
+	skos:broader nsrf-gr-thematic:1.1 ;
+	skos:inScheme nsrf-gr-codelist:thematic-priority .
+
+nsrf-gr-thematic:1.1.50 skos:note "2"^^xsd:int ;
+	skos:notation "1.1.50"@en ;
+	skos:prefLabel "Αποκατάσταση βιομηχανικών χώρων και μολυσμένης γης"@el ;
+	a skos:Concept ;
+	skos:broader nsrf-gr-thematic:1.1 ;
+	skos:inScheme nsrf-gr-codelist:thematic-priority .
+
+nsrf-gr-thematic:1.1.51 skos:note "2"^^xsd:int ;
+	skos:notation "1.1.51"@en ;
+	skos:prefLabel "Προώθηση της βιοποικιλότητας και της προστασίας της φύσης (συμπεριλαμβανομένων των περιοχών του Natura 2000)"@el ;
+	a skos:Concept ;
+	skos:broader nsrf-gr-thematic:1.1 ;
+	skos:inScheme nsrf-gr-codelist:thematic-priority .
+
+nsrf-gr-thematic:1.1.53 skos:note "2"^^xsd:int ;
+	skos:notation "1.1.53"@en ;
+	skos:prefLabel "Πρόληψη κινδύνων (συμπεριλαμβανομένης της κατάρτισης και εφαρμογής σχεδίων και μέτρων για την πρόληψη και τη διαχείριση των φυσικών και των τεχνολογικών κινδύνων)"@el ;
+	a skos:Concept ;
+	skos:broader nsrf-gr-thematic:1.1 ;
+	skos:inScheme nsrf-gr-codelist:thematic-priority .
+
+nsrf-gr-thematic:1.1.54 skos:note "2"^^xsd:int ;
+	skos:notation "1.1.54"@en ;
+	skos:prefLabel "Άλλα μέτρα για την προστασία του περιβάλλοντος και την πρόληψη κινδύνων"@el ;
+	a skos:Concept ;
+	skos:broader nsrf-gr-thematic:1.1 ;
+	skos:inScheme nsrf-gr-codelist:thematic-priority .
+
+nsrf-gr-thematic:1.2 skos:note "1"^^xsd:int ;
+	skos:notation "1.2"@en ;
+	skos:prefLabel "Καθαρές αστικές μεταφορές"@el ;
+	a skos:Concept ;
+	skos:narrower nsrf-gr-thematic:1.2.52 ;
+	skos:inScheme nsrf-gr-codelist:thematic-priority ;
+	skos:topConceptOf nsrf-gr-codelist:thematic-priority .
+
+nsrf-gr-thematic:1.2.52 skos:note "2"^^xsd:int ;
+	skos:notation "1.2.52"@en ;
+	skos:prefLabel "Παραγωγή καθαρών αστικών μεταφορών"@el ;
+	a skos:Concept ;
+	skos:broader nsrf-gr-thematic:1.2 ;
+	skos:inScheme nsrf-gr-codelist:thematic-priority .
+
+nsrf-gr-thematic:2.1 skos:note "1"^^xsd:int ;
+	skos:notation "2.1"@en ;
+	skos:prefLabel "Μεταφορές"@el ;
+	a skos:Concept ;
+	skos:narrower nsrf-gr-thematic:2.1.16 , nsrf-gr-thematic:2.1.17 , nsrf-gr-thematic:2.1.18 , nsrf-gr-thematic:2.1.20 , nsrf-gr-thematic:2.1.21 , nsrf-gr-thematic:2.1.22 , nsrf-gr-thematic:2.1.23 , nsrf-gr-thematic:2.1.24 , nsrf-gr-thematic:2.1.25 , nsrf-gr-thematic:2.1.26 , nsrf-gr-thematic:2.1.27 , nsrf-gr-thematic:2.1.28 , nsrf-gr-thematic:2.1.29 ;
+	skos:inScheme nsrf-gr-codelist:thematic-priority ;
+	skos:topConceptOf nsrf-gr-codelist:thematic-priority .
+
+nsrf-gr-thematic:2.1.16 skos:note "2"^^xsd:int ;
+	skos:notation "2.1.16"@en ;
+	skos:prefLabel "Σιδηροδρομικό δίκτυο"@el ;
+	a skos:Concept ;
+	skos:broader nsrf-gr-thematic:2.1 ;
+	skos:inScheme nsrf-gr-codelist:thematic-priority .
+
+nsrf-gr-thematic:2.1.17 skos:note "2"^^xsd:int ;
+	skos:notation "2.1.17"@en ;
+	skos:prefLabel "Σιδηροδρομικό δίκτυο [διευρωπαϊκό δίκτυο μεταφορών (ΔΕΔ -Μ)]"@el ;
+	a skos:Concept ;
+	skos:broader nsrf-gr-thematic:2.1 ;
+	skos:inScheme nsrf-gr-codelist:thematic-priority .
+
+nsrf-gr-thematic:2.1.18 skos:note "2"^^xsd:int ;
+	skos:notation "2.1.18"@en ;
+	skos:prefLabel "Κινητός σιδηροδρομικός εξοπλισμός"@el ;
+	a skos:Concept ;
+	skos:broader nsrf-gr-thematic:2.1 ;
+	skos:inScheme nsrf-gr-codelist:thematic-priority .
+
+nsrf-gr-thematic:2.1.20 skos:note "2"^^xsd:int ;
+	skos:notation "2.1.20"@en ;
+	skos:prefLabel "Αυτοκινητόδρομοι"@el ;
+	a skos:Concept ;
+	skos:broader nsrf-gr-thematic:2.1 ;
+	skos:inScheme nsrf-gr-codelist:thematic-priority .
+
+nsrf-gr-thematic:2.1.21 skos:note "2"^^xsd:int ;
+	skos:notation "2.1.21"@en ;
+	skos:prefLabel "Αυτοκινητόδρομοι (ΔΕΔ -Μ)"@el ;
+	a skos:Concept ;
+	skos:broader nsrf-gr-thematic:2.1 ;
+	skos:inScheme nsrf-gr-codelist:thematic-priority .
+
+nsrf-gr-thematic:2.1.22 skos:note "2"^^xsd:int ;
+	skos:notation "2.1.22"@en ;
+	skos:prefLabel "Εθνικές οδοί"@el ;
+	a skos:Concept ;
+	skos:broader nsrf-gr-thematic:2.1 ;
+	skos:inScheme nsrf-gr-codelist:thematic-priority .
+
+nsrf-gr-thematic:2.1.23 skos:note "2"^^xsd:int ;
+	skos:notation "2.1.23"@en ;
+	skos:prefLabel "Περιφερειακές/τοπικές οδοί"@el ;
+	a skos:Concept ;
+	skos:broader nsrf-gr-thematic:2.1 ;
+	skos:inScheme nsrf-gr-codelist:thematic-priority .
+
+nsrf-gr-thematic:2.1.24 skos:note "2"^^xsd:int ;
+	skos:notation "2.1.24"@en ;
+	skos:prefLabel "Ποδηλατόδρομοι"@el ;
+	a skos:Concept ;
+	skos:broader nsrf-gr-thematic:2.1 ;
+	skos:inScheme nsrf-gr-codelist:thematic-priority .
+
+nsrf-gr-thematic:2.1.25 skos:note "2"^^xsd:int ;
+	skos:notation "2.1.25"@en ;
+	skos:prefLabel "Αστικές μεταφορές"@el ;
+	a skos:Concept ;
+	skos:broader nsrf-gr-thematic:2.1 ;
+	skos:inScheme nsrf-gr-codelist:thematic-priority .
+
+nsrf-gr-thematic:2.1.26 skos:note "2"^^xsd:int ;
+	skos:notation "2.1.26"@en ;
+	skos:prefLabel "Πολυτροπικές μεταφορές"@el ;
+	a skos:Concept ;
+	skos:broader nsrf-gr-thematic:2.1 ;
+	skos:inScheme nsrf-gr-codelist:thematic-priority .
+
+nsrf-gr-thematic:2.1.27 skos:note "2"^^xsd:int ;
+	skos:notation "2.1.27"@en ;
+	skos:prefLabel "Πολυτροπικές μεταφορές (ΔΕΔ -Μ)"@el ;
+	a skos:Concept ;
+	skos:broader nsrf-gr-thematic:2.1 ;
+	skos:inScheme nsrf-gr-codelist:thematic-priority .
+
+nsrf-gr-thematic:2.1.28 skos:note "2"^^xsd:int ;
+	skos:notation "2.1.28"@en ;
+	skos:prefLabel "Ευφυή συστήματα μεταφορών"@el ;
+	a skos:Concept ;
+	skos:broader nsrf-gr-thematic:2.1 ;
+	skos:inScheme nsrf-gr-codelist:thematic-priority .
+
+nsrf-gr-thematic:2.1.29 skos:note "2"^^xsd:int ;
+	skos:notation "2.1.29"@en ;
+	skos:prefLabel "Αερολιμένες"@el ;
+	a skos:Concept ;
+	skos:broader nsrf-gr-thematic:2.1 ;
+	skos:inScheme nsrf-gr-codelist:thematic-priority .
+
+nsrf-gr-thematic:2.2 skos:note "1"^^xsd:int ;
+	skos:notation "2.2"@en ;
+	skos:prefLabel "Ναυτιλία"@el ;
+	a skos:Concept ;
+	skos:narrower nsrf-gr-thematic:2.2.30 , nsrf-gr-thematic:2.2.31 , nsrf-gr-thematic:2.2.32 ;
+	skos:inScheme nsrf-gr-codelist:thematic-priority ;
+	skos:topConceptOf nsrf-gr-codelist:thematic-priority .
+
+nsrf-gr-thematic:2.2.30 skos:note "2"^^xsd:int ;
+	skos:notation "2.2.30"@en ;
+	skos:prefLabel "Λιμένες"@el ;
+	a skos:Concept ;
+	skos:broader nsrf-gr-thematic:2.2 ;
+	skos:inScheme nsrf-gr-codelist:thematic-priority .
+
+nsrf-gr-thematic:2.2.31 skos:note "2"^^xsd:int ;
+	skos:notation "2.2.31"@en ;
+	skos:prefLabel "Εσωτερικές πλωτές μεταφορές (περιφερειακές και τοπικές)"@el ;
+	a skos:Concept ;
+	skos:broader nsrf-gr-thematic:2.2 ;
+	skos:inScheme nsrf-gr-codelist:thematic-priority .
+
+nsrf-gr-thematic:2.2.32 skos:note "2"^^xsd:int ;
+	skos:notation "2.2.32"@en ;
+	skos:prefLabel "Εσωτερικές πλωτές μεταφορές (ΔΕΔ -Μ)"@el ;
+	a skos:Concept ;
+	skos:broader nsrf-gr-thematic:2.2 ;
+	skos:inScheme nsrf-gr-codelist:thematic-priority .
+
+nsrf-gr-thematic:3.1 skos:note "1"^^xsd:int ;
+	skos:notation "3.1"@en ;
+	skos:prefLabel "Έρευνα & τεχνολογία"@el ;
+	a skos:Concept ;
+	skos:narrower nsrf-gr-thematic:3.1.01 , nsrf-gr-thematic:3.1.02 , nsrf-gr-thematic:3.1.03 , nsrf-gr-thematic:3.1.04 ;
+	skos:inScheme nsrf-gr-codelist:thematic-priority ;
+	skos:topConceptOf nsrf-gr-codelist:thematic-priority .
+
+nsrf-gr-thematic:3.1.01 skos:note "2"^^xsd:int ;
+	skos:notation "3.1.01"@en ;
+	skos:prefLabel "Δραστηριότητες (Ε&ΤΑ) σε ερευνητικά κέντρα"@el ;
+	a skos:Concept ;
+	skos:broader nsrf-gr-thematic:3.1 ;
+	skos:inScheme nsrf-gr-codelist:thematic-priority .
+
+nsrf-gr-thematic:3.1.02 skos:note "2"^^xsd:int ;
+	skos:notation "3.1.02"@en ;
+	skos:prefLabel "Υποδομή (Ε&ΤΑ) (συμπεριλαμβανομένων των κτιρίων, των οργάνων και των δικτύων υπολογιστών μεγάλης ταχύτητας που συνδέουν ερευνητικά κέντρα) και κέντρα ικανότητας όσον αφορά συγκεκριμένες τεχνολογίες"@el ;
+	a skos:Concept ;
+	skos:broader nsrf-gr-thematic:3.1 ;
+	skos:inScheme nsrf-gr-codelist:thematic-priority .
+
+nsrf-gr-thematic:3.1.03 skos:note "2"^^xsd:int ;
+	skos:notation "3.1.03"@en ;
+	skos:prefLabel "Μεταφορά τεχνολογίας και βελτίωση των δικτύων συνεργασίας μεταξύ μικρομεσαίων επιχειρήσεων (ΜΜΕ), μεταξύ αυτών και άλλων επιχειρήσεων και πανεπιστημίων, ιδρυμάτων μεταδευτεροβάθμιας εκπαίδευσης κάθε τύπου, περιφερειακών αρχών, ερευνητικών κέντρων και επιστημονικών και τεχνολογικών πόλων (επιστημονικά και τεχνολογικά πάρκα, τεχνοπόλοι κ.λπ.)"@el ;
+	a skos:Concept ;
+	skos:broader nsrf-gr-thematic:3.1 ;
+	skos:inScheme nsrf-gr-codelist:thematic-priority .
+
+nsrf-gr-thematic:3.1.04 skos:note "2"^^xsd:int ;
+	skos:notation "3.1.04"@en ;
+	skos:prefLabel "Συνδρομή προς την Ε&ΤΑ, ιδίως των ΜΜΕ (συμπεριλαμβανομένης της πρόσβασης σε υπηρεσίες Ε&ΤΑ ερευνητικών κέντρων)"@el ;
+	a skos:Concept ;
+	skos:broader nsrf-gr-thematic:3.1 ;
+	skos:inScheme nsrf-gr-codelist:thematic-priority .
+
+nsrf-gr-thematic:3.2 skos:note "1"^^xsd:int ;
+	skos:notation "3.2"@en ;
+	skos:prefLabel "Επιχειρηματικότητα"@el ;
+	a skos:Concept ;
+	skos:narrower nsrf-gr-thematic:3.2.05 , nsrf-gr-thematic:3.2.06 , nsrf-gr-thematic:3.2.07 , nsrf-gr-thematic:3.2.08 , nsrf-gr-thematic:3.2.09 ;
+	skos:inScheme nsrf-gr-codelist:thematic-priority ;
+	skos:topConceptOf nsrf-gr-codelist:thematic-priority .
+
+nsrf-gr-thematic:3.2.05 skos:note "2"^^xsd:int ;
+	skos:notation "3.2.05"@en ;
+	skos:prefLabel "Προηγμένες υπηρεσίες υποστήριξης για επιχειρήσεις και ομίλους επιχειρήσεων"@el ;
+	a skos:Concept ;
+	skos:broader nsrf-gr-thematic:3.2 ;
+	skos:inScheme nsrf-gr-codelist:thematic-priority .
+
+nsrf-gr-thematic:3.2.06 skos:note "2"^^xsd:int ;
+	skos:notation "3.2.06"@en ;
+	skos:prefLabel "Συνδρομή προς τις ΜΜΕ για την προώθηση φιλοπεριβαλλοντικών προϊόντων και διαδικασιών παραγωγής (εισαγωγή ουσιαστικού συστήματος περιβαλλοντικής διαχείρισης, υιοθέτηση και χρήση τεχνολογιών για την πρόληψη της ρύπανσης, ενσωμάτωση καθαρών τεχνολογιών στην παραγωγή της επιχείρησης)"@el ;
+	a skos:Concept ;
+	skos:broader nsrf-gr-thematic:3.2 ;
+	skos:inScheme nsrf-gr-codelist:thematic-priority .
+
+nsrf-gr-thematic:3.2.07 skos:note "2"^^xsd:int ;
+	skos:notation "3.2.07"@en ;
+	skos:prefLabel "Επενδύσεις σε επιχειρήσεις που συνδέονται άμεσα με την έρευνα και την καινοτομία (καινοτόμες τεχνολογίες, σύσταση νέων επιχειρήσεων από τα πανεπιστήμια, υφιστάμενα κέντρα και επιχειρήσεις Ε&ΤΑ κ.λπ.)"@el ;
+	a skos:Concept ;
+	skos:broader nsrf-gr-thematic:3.2 ;
+	skos:inScheme nsrf-gr-codelist:thematic-priority .
+
+nsrf-gr-thematic:3.2.08 skos:note "2"^^xsd:int ;
+	skos:notation "3.2.08"@en ;
+	skos:prefLabel "Άλλες επενδύσεις σε επιχειρήσεις"@el ;
+	a skos:Concept ;
+	skos:broader nsrf-gr-thematic:3.2 ;
+	skos:inScheme nsrf-gr-codelist:thematic-priority .
+
+nsrf-gr-thematic:3.2.09 skos:note "2"^^xsd:int ;
+	skos:notation "3.2.09"@en ;
+	skos:prefLabel "Άλλα μέτρα για την τόνωση της έρευνας και της καινοτομίας και της επιχειρηματικότητας των ΜΜΕ"@el ;
+	a skos:Concept ;
+	skos:broader nsrf-gr-thematic:3.2 ;
+	skos:inScheme nsrf-gr-codelist:thematic-priority .
+
+nsrf-gr-thematic:3.3 skos:note "1"^^xsd:int ;
+	skos:notation "3.3"@en ;
+	skos:prefLabel "Ενέργεια"@el ;
+	a skos:Concept ;
+	skos:narrower nsrf-gr-thematic:3.3.33 , nsrf-gr-thematic:3.3.34 , nsrf-gr-thematic:3.3.35 , nsrf-gr-thematic:3.3.36 , nsrf-gr-thematic:3.3.37 , nsrf-gr-thematic:3.3.38 , nsrf-gr-thematic:3.3.39 , nsrf-gr-thematic:3.3.40 , nsrf-gr-thematic:3.3.41 , nsrf-gr-thematic:3.3.42 , nsrf-gr-thematic:3.3.43 ;
+	skos:inScheme nsrf-gr-codelist:thematic-priority ;
+	skos:topConceptOf nsrf-gr-codelist:thematic-priority .
+
+nsrf-gr-thematic:3.3.33 skos:note "2"^^xsd:int ;
+	skos:notation "3.3.33"@en ;
+	skos:prefLabel "Ηλεκτρισμός"@el ;
+	a skos:Concept ;
+	skos:broader nsrf-gr-thematic:3.3 ;
+	skos:inScheme nsrf-gr-codelist:thematic-priority .
+
+nsrf-gr-thematic:3.3.34 skos:note "2"^^xsd:int ;
+	skos:notation "3.3.34"@en ;
+	skos:prefLabel "Ηλεκτρισμός (ΔΕΔ -Η)"@el ;
+	a skos:Concept ;
+	skos:broader nsrf-gr-thematic:3.3 ;
+	skos:inScheme nsrf-gr-codelist:thematic-priority .
+
+nsrf-gr-thematic:3.3.35 skos:note "2"^^xsd:int ;
+	skos:notation "3.3.35"@en ;
+	skos:prefLabel "Φυσικό αέριο"@el ;
+	a skos:Concept ;
+	skos:broader nsrf-gr-thematic:3.3 ;
+	skos:inScheme nsrf-gr-codelist:thematic-priority .
+
+nsrf-gr-thematic:3.3.36 skos:note "2"^^xsd:int ;
+	skos:notation "3.3.36"@en ;
+	skos:prefLabel "Φυσικό αέριο (ΔΕΔ -Η)"@el ;
+	a skos:Concept ;
+	skos:broader nsrf-gr-thematic:3.3 ;
+	skos:inScheme nsrf-gr-codelist:thematic-priority .
+
+nsrf-gr-thematic:3.3.37 skos:note "2"^^xsd:int ;
+	skos:notation "3.3.37"@en ;
+	skos:prefLabel "Προϊόντα πετρελαίου"@el ;
+	a skos:Concept ;
+	skos:broader nsrf-gr-thematic:3.3 ;
+	skos:inScheme nsrf-gr-codelist:thematic-priority .
+
+nsrf-gr-thematic:3.3.38 skos:note "2"^^xsd:int ;
+	skos:notation "3.3.38"@en ;
+	skos:prefLabel "Προϊόντα πετρελαίου (ΔΕΔ -Η)"@el ;
+	a skos:Concept ;
+	skos:broader nsrf-gr-thematic:3.3 ;
+	skos:inScheme nsrf-gr-codelist:thematic-priority .
+
+nsrf-gr-thematic:3.3.39 skos:note "2"^^xsd:int ;
+	skos:notation "3.3.39"@en ;
+	skos:prefLabel "Ανανεώσιμη ενέργεια: αιολική ενέργεια"@el ;
+	a skos:Concept ;
+	skos:broader nsrf-gr-thematic:3.3 ;
+	skos:inScheme nsrf-gr-codelist:thematic-priority .
+
+nsrf-gr-thematic:3.3.40 skos:note "2"^^xsd:int ;
+	skos:notation "3.3.40"@en ;
+	skos:prefLabel "Ανανεώσιμη ενέργεια: ηλιακή ενέργεια"@el ;
+	a skos:Concept ;
+	skos:broader nsrf-gr-thematic:3.3 ;
+	skos:inScheme nsrf-gr-codelist:thematic-priority .
+
+nsrf-gr-thematic:3.3.41 skos:note "2"^^xsd:int ;
+	skos:notation "3.3.41"@en ;
+	skos:prefLabel "Ανανεώσιμη ενέργεια: βιομάζα"@el ;
+	a skos:Concept ;
+	skos:broader nsrf-gr-thematic:3.3 ;
+	skos:inScheme nsrf-gr-codelist:thematic-priority .
+
+nsrf-gr-thematic:3.3.42 skos:note "2"^^xsd:int ;
+	skos:notation "3.3.42"@en ;
+	skos:prefLabel "Ανανεώσιμη ενέργεια: υδροηλεκτρική, γεωθερμική και άλλες μορφές ενέργειας"@el ;
+	a skos:Concept ;
+	skos:broader nsrf-gr-thematic:3.3 ;
+	skos:inScheme nsrf-gr-codelist:thematic-priority .
+
+nsrf-gr-thematic:3.3.43 skos:note "2"^^xsd:int ;
+	skos:notation "3.3.43"@en ;
+	skos:prefLabel "Ενεργειακή απόδοση, συμπαραγωγή, διαχείριση ενέργειας"@el ;
+	a skos:Concept ;
+	skos:broader nsrf-gr-thematic:3.3 ;
+	skos:inScheme nsrf-gr-codelist:thematic-priority .
+
+nsrf-gr-thematic:4.0 skos:note "1"^^xsd:int ;
+	skos:notation "4.0"@en ;
+	skos:prefLabel "Ψηφιακή σύγκλιση"@el ;
+	a skos:Concept ;
+	skos:narrower nsrf-gr-thematic:4.0.10 , nsrf-gr-thematic:4.0.11 , nsrf-gr-thematic:4.0.12 , nsrf-gr-thematic:4.0.13 , nsrf-gr-thematic:4.0.14 , nsrf-gr-thematic:4.0.15 ;
+	skos:inScheme nsrf-gr-codelist:thematic-priority ;
+	skos:topConceptOf nsrf-gr-codelist:thematic-priority .
+
+nsrf-gr-thematic:4.0.10 skos:note "2"^^xsd:int ;
+	skos:notation "4.0.10"@en ;
+	skos:prefLabel "Υποδομή τηλεπικοινωνιών (συμπεριλαμβανομένων των ευρυζωνικών δικτύων)"@el ;
+	a skos:Concept ;
+	skos:broader nsrf-gr-thematic:4.0 ;
+	skos:inScheme nsrf-gr-codelist:thematic-priority .
+
+nsrf-gr-thematic:4.0.11 skos:note "2"^^xsd:int ;
+	skos:notation "4.0.11"@en ;
+	skos:prefLabel "Τεχνολογίες της πληροφορίας και της επικοινωνίας (πρόσβαση, ασφάλεια, διαλειτουργικότητα, πρόληψη κινδύνου, έρευνα, καινοτομία, ηλεκτρονικό περιεχόμενο κ.λπ.)"@el ;
+	a skos:Concept ;
+	skos:broader nsrf-gr-thematic:4.0 ;
+	skos:inScheme nsrf-gr-codelist:thematic-priority .
+
+nsrf-gr-thematic:4.0.12 skos:note "2"^^xsd:int ;
+	skos:notation "4.0.12"@en ;
+	skos:prefLabel "Τεχνολογίες της πληροφορίας και της επικοινωνίας [ΤΠΕ-ΔΕΔ (διευρωπαϊκό δίκτυο)]"@el ;
+	a skos:Concept ;
+	skos:broader nsrf-gr-thematic:4.0 ;
+	skos:inScheme nsrf-gr-codelist:thematic-priority .
+
+nsrf-gr-thematic:4.0.13 skos:note "2"^^xsd:int ;
+	skos:notation "4.0.13"@en ;
+	skos:prefLabel "Υπηρεσίες και εφαρμογές για τον πολίτη (ηλεκτρονική υγεία, ηλεκτρονική διακυβέρνηση, ηλεκτρονική μάθηση, ηλεκτρονική ενσωμάτωση κ.λπ.)"@el ;
+	a skos:Concept ;
+	skos:broader nsrf-gr-thematic:4.0 ;
+	skos:inScheme nsrf-gr-codelist:thematic-priority .
+
+nsrf-gr-thematic:4.0.14 skos:note "2"^^xsd:int ;
+	skos:notation "4.0.14"@en ;
+	skos:prefLabel "Υπηρεσίες και εφαρμογές για ΜΜΕ (ηλεκτρονικό εμπόριο, εκπαίδευση και κατάρτιση, δικτύωση κ.λπ.)"@el ;
+	a skos:Concept ;
+	skos:broader nsrf-gr-thematic:4.0 ;
+	skos:inScheme nsrf-gr-codelist:thematic-priority .
+
+nsrf-gr-thematic:4.0.15 skos:note "2"^^xsd:int ;
+	skos:notation "4.0.15"@en ;
+	skos:prefLabel "Άλλα μέτρα για τη βελτίωση της πρόσβασης των ΜΜΕ στις ΤΠΕ και την αποτελεσματική χρήση τους από τις ΜΜΕ"@el ;
+	a skos:Concept ;
+	skos:broader nsrf-gr-thematic:4.0 ;
+	skos:inScheme nsrf-gr-codelist:thematic-priority .
+
+nsrf-gr-thematic:5.0 skos:note "1"^^xsd:int ;
+	skos:notation "5.0"@en ;
+	skos:prefLabel "Ανάπτυξη ανθρώπινου δυναμικού"@el ;
+	a skos:Concept ;
+	skos:narrower nsrf-gr-thematic:5.0.62 , nsrf-gr-thematic:5.0.63 , nsrf-gr-thematic:5.0.64 , nsrf-gr-thematic:5.0.65 , nsrf-gr-thematic:5.0.66 , nsrf-gr-thematic:5.0.67 , nsrf-gr-thematic:5.0.68 , nsrf-gr-thematic:5.0.69 , nsrf-gr-thematic:5.0.70 , nsrf-gr-thematic:5.0.71 , nsrf-gr-thematic:5.0.80 ;
+	skos:inScheme nsrf-gr-codelist:thematic-priority ;
+	skos:topConceptOf nsrf-gr-codelist:thematic-priority .
+
+nsrf-gr-thematic:5.0.62 skos:note "2"^^xsd:int ;
+	skos:notation "5.0.62"@en ;
+	skos:prefLabel "Ανάπτυξη συστημάτων και στρατηγικών διά βίου μάθησης στις επιχειρήσεις· παροχή κατάρτισης και υπηρεσιών στους εργαζομένους για τη βελτίωση της προσαρμοστικότητάς τους στις μεταβολές, προαγωγή της επιχειρηματικότητας και της καινοτομίας"@el ;
+	a skos:Concept ;
+	skos:broader nsrf-gr-thematic:5.0 ;
+	skos:inScheme nsrf-gr-codelist:thematic-priority .
+
+nsrf-gr-thematic:5.0.63 skos:note "2"^^xsd:int ;
+	skos:notation "5.0.63"@en ;
+	skos:prefLabel "Σχεδιασμός και διάδοση καινοτόμων και πιο παραγωγικών τρόπων οργάνωσης της εργασίας"@el ;
+	a skos:Concept ;
+	skos:broader nsrf-gr-thematic:5.0 ;
+	skos:inScheme nsrf-gr-codelist:thematic-priority .
+
+nsrf-gr-thematic:5.0.64 skos:note "2"^^xsd:int ;
+	skos:notation "5.0.64"@en ;
+	skos:prefLabel "Ανάπτυξη ειδικών υπηρεσιών για την απασχόληση, την κατάρτιση και τη στήριξη σε συνδυασμό με την αναδιάρθρωση κλάδων και επιχειρήσεων, και ανάπτυξη συστημάτων για την πρόβλεψη των οικονομικών μεταβολών και των μελλοντικών απαιτήσεων όσον αφορά θέσεις απασχόλησης και δεξιότητες"@el ;
+	a skos:Concept ;
+	skos:broader nsrf-gr-thematic:5.0 ;
+	skos:inScheme nsrf-gr-codelist:thematic-priority .
+
+nsrf-gr-thematic:5.0.65 skos:note "2"^^xsd:int ;
+	skos:notation "5.0.65"@en ;
+	skos:prefLabel "Εκσυγχρονισμός και ενίσχυση των θεσμικών δομών της αγοράς εργασίας"@el ;
+	a skos:Concept ;
+	skos:broader nsrf-gr-thematic:5.0 ;
+	skos:inScheme nsrf-gr-codelist:thematic-priority .
+
+nsrf-gr-thematic:5.0.66 skos:note "2"^^xsd:int ;
+	skos:notation "5.0.66"@en ;
+	skos:prefLabel "Υλοποίηση ενεργών και προληπτικών μέτρων στην αγορά εργασίας"@el ;
+	a skos:Concept ;
+	skos:broader nsrf-gr-thematic:5.0 ;
+	skos:inScheme nsrf-gr-codelist:thematic-priority .
+
+nsrf-gr-thematic:5.0.67 skos:note "2"^^xsd:int ;
+	skos:notation "5.0.67"@en ;
+	skos:prefLabel "Μέτρα για την ενθάρρυνση της ενεργού συμμετοχής του γηράσκοντος εργατικού δυναμικού και την παράταση του επαγγελματικού βίου"@el ;
+	a skos:Concept ;
+	skos:broader nsrf-gr-thematic:5.0 ;
+	skos:inScheme nsrf-gr-codelist:thematic-priority .
+
+nsrf-gr-thematic:5.0.68 skos:note "2"^^xsd:int ;
+	skos:notation "5.0.68"@en ;
+	skos:prefLabel "Στήριξη της αυτοαπασχόλησης και της σύστασης επιχειρήσεων"@el ;
+	a skos:Concept ;
+	skos:broader nsrf-gr-thematic:5.0 ;
+	skos:inScheme nsrf-gr-codelist:thematic-priority .
+
+nsrf-gr-thematic:5.0.69 skos:note "2"^^xsd:int ;
+	skos:notation "5.0.69"@en ;
+	skos:prefLabel "Μέτρα για τη βελτίωση της πρόσβασης στην απασχόληση και την αύξηση της διαρκούς συμμετοχής και προόδου των γυναικών στην απασχόληση, ώστε να μειωθεί ο διαχωρισμός με βάση το φύλο στην αγορά εργασίας, και για την εναρμόνιση εργασίας και ιδιωτικής ζωής, όπως π.χ. με την ευχερέστερη πρόσβαση στη φροντίδα παιδιών και εξαρτώμενων προσώπων"@el ;
+	a skos:Concept ;
+	skos:broader nsrf-gr-thematic:5.0 ;
+	skos:inScheme nsrf-gr-codelist:thematic-priority .
+
+nsrf-gr-thematic:5.0.70 skos:note "2"^^xsd:int ;
+	skos:notation "5.0.70"@en ;
+	skos:prefLabel "Ειδικές δράσεις για την αύξηση της συμμετοχής των μετακινούμενων εργαζομένων στην απασχόληση και, συνεπώς, για την ενίσχυση της κοινωνικής τους ενσωμάτωσης"@el ;
+	a skos:Concept ;
+	skos:broader nsrf-gr-thematic:5.0 ;
+	skos:inScheme nsrf-gr-codelist:thematic-priority .
+
+nsrf-gr-thematic:5.0.71 skos:note "2"^^xsd:int ;
+	skos:notation "5.0.71"@en ;
+	skos:prefLabel "Τρόποι για την ενσωμάτωση και την επανένταξη στην απασχόληση μειονεκτούντων ατόμων · καταπολέμηση των διακρίσεων κατά την πρόσβαση και την πρόοδο στην αγορά εργασίας και προαγωγή της αποδοχής της πολυμορφίας στο χώρο εργασίας"@el ;
+	a skos:Concept ;
+	skos:broader nsrf-gr-thematic:5.0 ;
+	skos:inScheme nsrf-gr-codelist:thematic-priority .
+
+nsrf-gr-thematic:5.0.80 skos:note "2"^^xsd:int ;
+	skos:notation "5.0.80"@en ;
+	skos:prefLabel "Προώθηση συμπράξεων, συμφώνων και πρωτοβουλιών μέσω της δικτύωσης των ενδιαφερόμενων φορέων"@el ;
+	a skos:Concept ;
+	skos:broader nsrf-gr-thematic:5.0 ;
+	skos:inScheme nsrf-gr-codelist:thematic-priority .
+
+nsrf-gr-thematic:6.0 skos:note "1"^^xsd:int ;
+	skos:notation "6.0"@en ;
+	skos:prefLabel "Εκπαίδευση & δια βίου μάθηση"@el ;
+	a skos:Concept ;
+	skos:narrower nsrf-gr-thematic:6.0.72 , nsrf-gr-thematic:6.0.73 , nsrf-gr-thematic:6.0.74 , nsrf-gr-thematic:6.0.75 ;
+	skos:inScheme nsrf-gr-codelist:thematic-priority ;
+	skos:topConceptOf nsrf-gr-codelist:thematic-priority .
+
+nsrf-gr-thematic:6.0.72 skos:note "2"^^xsd:int ;
+	skos:notation "6.0.72"@en ;
+	skos:prefLabel "Σχεδιασμός, εισαγωγή και εφαρμογή μεταρρυθμίσεων στα συστήματα εκπαίδευσης και κατάρτισης με σκοπό την ανάπτυξη της απασχολησιμότητας, τη βελτίωση της σχέσης της αρχικής και της επαγγελματικής εκπαίδευσης και κατάρτισης με την αγορά εργασίας και την αναβάθμιση των προσόντων του προσωπικού κατάρτισης με στόχο μια οικονομία που να βασίζεται στη γνώση"@el ;
+	a skos:Concept ;
+	skos:broader nsrf-gr-thematic:6.0 ;
+	skos:inScheme nsrf-gr-codelist:thematic-priority .
+
+nsrf-gr-thematic:6.0.73 skos:note "2"^^xsd:int ;
+	skos:notation "6.0.73"@en ;
+	skos:prefLabel "Μέτρα για την αύξηση της συμμετοχής στη διά βίου εκπαίδευση και κατάρτιση, μεταξύ άλλων με τη λήψη μέτρων για τη μείωση του αριθμού των μαθητών που εγκαταλείπουν το σχολείο σε μικρή ηλικία και του διαχωρισμού βάσει του φύλου, και αύξηση της πρόσβασης στη βασική, επαγγελματική και τριτοβάθμια εκπαίδευση και κατάρτιση καθώς και της ποιότητάς τους"@el ;
+	a skos:Concept ;
+	skos:broader nsrf-gr-thematic:6.0 ;
+	skos:inScheme nsrf-gr-codelist:thematic-priority .
+
+nsrf-gr-thematic:6.0.74 skos:note "2"^^xsd:int ;
+	skos:notation "6.0.74"@en ;
+	skos:prefLabel "Ανάπτυξη του ανθρώπινου δυναμικού στον τομέα της έρευνας και της καινοτομίας, ιδίως μέσω των μεταπτυχιακών σπουδών και της εκπαίδευσης ερευνητών, και δραστηριότητες δικτύωσης μεταξύ πανεπιστημίων, ερευνητικών κέντρων και επιχειρήσεων"@el ;
+	a skos:Concept ;
+	skos:broader nsrf-gr-thematic:6.0 ;
+	skos:inScheme nsrf-gr-codelist:thematic-priority .
+
+nsrf-gr-thematic:6.0.75 skos:note "2"^^xsd:int ;
+	skos:notation "6.0.75"@en ;
+	skos:prefLabel "Υποδομές στον τομέα της εκπαίδευσης"@el ;
+	a skos:Concept ;
+	skos:broader nsrf-gr-thematic:6.0 ;
+	skos:inScheme nsrf-gr-codelist:thematic-priority .
+
+nsrf-gr-thematic:7.1 skos:note "1"^^xsd:int ;
+	skos:notation "7.1"@en ;
+	skos:prefLabel "Διοικητική μεταρρύθμιση"@el ;
+	a skos:Concept ;
+	skos:narrower nsrf-gr-thematic:7.1.81 , nsrf-gr-thematic:7.1.82 , nsrf-gr-thematic:7.1.83 , nsrf-gr-thematic:7.1.84 ;
+	skos:inScheme nsrf-gr-codelist:thematic-priority ;
+	skos:topConceptOf nsrf-gr-codelist:thematic-priority .
+
+nsrf-gr-thematic:7.1.81 skos:note "2"^^xsd:int ;
+	skos:notation "7.1.81"@en ;
+	skos:prefLabel "Μηχανισμοί για τη βελτίωση των ορθών πρακτικών και του προγραμματικού σχεδιασμού, παρακολούθηση και αξιολόγηση σε εθνικό, περιφερειακό και τοπικό επίπεδο και δημιουργία ικανότητας όσον αφορά την εφαρμογή πολιτικών και προγραμμάτων"@el ;
+	a skos:Concept ;
+	skos:broader nsrf-gr-thematic:7.1 ;
+	skos:inScheme nsrf-gr-codelist:thematic-priority .
+
+nsrf-gr-thematic:7.1.82 skos:note "2"^^xsd:int ;
+	skos:notation "7.1.82"@en ;
+	skos:prefLabel "Αντιστάθμιση τυχόν πρόσθετου κόστους λόγω ελλιπούς προσβασιμότητας και εδαφικού κατακερματισμού"@el ;
+	a skos:Concept ;
+	skos:broader nsrf-gr-thematic:7.1 ;
+	skos:inScheme nsrf-gr-codelist:thematic-priority .
+
+nsrf-gr-thematic:7.1.83 skos:note "2"^^xsd:int ;
+	skos:notation "7.1.83"@en ;
+	skos:prefLabel "Ειδικές δράσεις για την αντιστάθμιση του πρόσθετου κόστους που οφείλεται σε παράγοντες σχετιζόμενους με το μέγεθος της αγοράς"@el ;
+	a skos:Concept ;
+	skos:broader nsrf-gr-thematic:7.1 ;
+	skos:inScheme nsrf-gr-codelist:thematic-priority .
+
+nsrf-gr-thematic:7.1.84 skos:note "2"^^xsd:int ;
+	skos:notation "7.1.84"@en ;
+	skos:prefLabel "Ενίσχυση για την αντιστάθμιση του πρόσθετου κόστους που οφείλεται σε κλιματικές συνθήκες και δυσκολίες του γεωγραφικού τοπίου"@el ;
+	a skos:Concept ;
+	skos:broader nsrf-gr-thematic:7.1 ;
+	skos:inScheme nsrf-gr-codelist:thematic-priority .
+
+nsrf-gr-thematic:7.2 skos:note "1"^^xsd:int ;
+	skos:notation "7.2"@en ;
+	skos:prefLabel "Δημόσια διοίκηση - υποδομές"@el ;
+	a skos:Concept ;
+	skos:inScheme nsrf-gr-codelist:thematic-priority ;
+	skos:topConceptOf nsrf-gr-codelist:thematic-priority .
+
+nsrf-gr-thematic:8.0 skos:note "1"^^xsd:int ;
+	skos:notation "8.0"@en ;
+	skos:prefLabel "Τεχνική υποστήριξη"@el ;
+	a skos:Concept ;
+	skos:narrower nsrf-gr-thematic:8.0.85 , nsrf-gr-thematic:8.0.86 ;
+	skos:inScheme nsrf-gr-codelist:thematic-priority ;
+	skos:topConceptOf nsrf-gr-codelist:thematic-priority .
+
+nsrf-gr-thematic:8.0.85 skos:note "2"^^xsd:int ;
+	skos:notation "8.0.85"@en ;
+	skos:prefLabel "Προετοιμασία, εφαρμογή, παρακολούθηση, επιθεώρηση"@el ;
+	a skos:Concept ;
+	skos:broader nsrf-gr-thematic:8.0 ;
+	skos:inScheme nsrf-gr-codelist:thematic-priority .
+
+nsrf-gr-thematic:8.0.86 skos:note "2"^^xsd:int ;
+	skos:notation "8.0.86"@en ;
+	skos:prefLabel "Αξιολόγηση και μελέτες· ενημέρωση και επικοινωνία"@el ;
+	a skos:Concept ;
+	skos:broader nsrf-gr-thematic:8.0 ;
+	skos:inScheme nsrf-gr-codelist:thematic-priority .
+
+nsrf-gr-thematic:9.1 skos:note "1"^^xsd:int ;
+	skos:notation "9.1"@en ;
+	skos:prefLabel "Πολιτισμός"@el ;
+	a skos:Concept ;
+	skos:narrower nsrf-gr-thematic:9.1.58 , nsrf-gr-thematic:9.1.59 , nsrf-gr-thematic:9.1.60 ;
+	skos:inScheme nsrf-gr-codelist:thematic-priority ;
+	skos:topConceptOf nsrf-gr-codelist:thematic-priority .
+
+nsrf-gr-thematic:9.1.58 skos:note "2"^^xsd:int ;
+	skos:notation "9.1.58"@en ;
+	skos:prefLabel "Προστασία και διατήρηση της πολιτιστικής κληρονομιάς"@el ;
+	a skos:Concept ;
+	skos:broader nsrf-gr-thematic:9.1 ;
+	skos:inScheme nsrf-gr-codelist:thematic-priority .
+
+nsrf-gr-thematic:9.1.59 skos:note "2"^^xsd:int ;
+	skos:notation "9.1.59"@en ;
+	skos:prefLabel "Ανάπτυξη πολιτιστικής υποδομής"@el ;
+	a skos:Concept ;
+	skos:broader nsrf-gr-thematic:9.1 ;
+	skos:inScheme nsrf-gr-codelist:thematic-priority .
+
+nsrf-gr-thematic:9.1.60 skos:note "2"^^xsd:int ;
+	skos:notation "9.1.60"@en ;
+	skos:prefLabel "Άλλη συνδρομή για τη βελτίωση των πολιτιστικών υπηρεσιών"@el ;
+	a skos:Concept ;
+	skos:broader nsrf-gr-thematic:9.1 ;
+	skos:inScheme nsrf-gr-codelist:thematic-priority .
+
+nsrf-gr-thematic:9.2 skos:note "1"^^xsd:int ;
+	skos:notation "9.2"@en ;
+	skos:prefLabel "Τουρισμός"@el ;
+	a skos:Concept ;
+	skos:narrower nsrf-gr-thematic:9.2.55 , nsrf-gr-thematic:9.2.56 , nsrf-gr-thematic:9.2.57 ;
+	skos:inScheme nsrf-gr-codelist:thematic-priority ;
+	skos:topConceptOf nsrf-gr-codelist:thematic-priority .
+
+nsrf-gr-thematic:9.2.55 skos:note "2"^^xsd:int ;
+	skos:notation "9.2.55"@en ;
+	skos:prefLabel "Προώθηση των φυσικών πόρων"@el ;
+	a skos:Concept ;
+	skos:broader nsrf-gr-thematic:9.2 ;
+	skos:inScheme nsrf-gr-codelist:thematic-priority .
+
+nsrf-gr-thematic:9.2.56 skos:note "2"^^xsd:int ;
+	skos:notation "9.2.56"@en ;
+	skos:prefLabel "Προστασία και ανάπτυξη της φυσικής κληρονομιάς"@el ;
+	a skos:Concept ;
+	skos:broader nsrf-gr-thematic:9.2 ;
+	skos:inScheme nsrf-gr-codelist:thematic-priority .
+
+nsrf-gr-thematic:9.2.57 skos:note "2"^^xsd:int ;
+	skos:notation "9.2.57"@en ;
+	skos:prefLabel "Άλλη συνδρομή για τη βελτίωση των τουριστικών υπηρεσιών"@el ;
+	a skos:Concept ;
+	skos:broader nsrf-gr-thematic:9.2 ;
+	skos:inScheme nsrf-gr-codelist:thematic-priority .
+
+nsrf-gr-thematic:10.0 skos:note "1"^^xsd:int ;
+	skos:notation "10.0"@en ;
+	skos:prefLabel "Υγεία και κοινωνική μέριμνα"@el ;
+	a skos:Concept ;
+	skos:narrower nsrf-gr-thematic:10.0.76 , nsrf-gr-thematic:10.0.77 , nsrf-gr-thematic:10.0.78 , nsrf-gr-thematic:10.0.79 ;
+	skos:inScheme nsrf-gr-codelist:thematic-priority ;
+	skos:topConceptOf nsrf-gr-codelist:thematic-priority .
+
+nsrf-gr-thematic:10.0.76 skos:note "2"^^xsd:int ;
+	skos:notation "10.0.76"@en ;
+	skos:prefLabel "Υποδομές στον τομέα της υγείας"@el ;
+	a skos:Concept ;
+	skos:broader nsrf-gr-thematic:10.0 ;
+	skos:inScheme nsrf-gr-codelist:thematic-priority .
+
+nsrf-gr-thematic:10.0.77 skos:note "2"^^xsd:int ;
+	skos:notation "10.0.77"@en ;
+	skos:prefLabel "Υποδομές στον τομέα της φροντίδας παιδιών"@el ;
+	a skos:Concept ;
+	skos:broader nsrf-gr-thematic:10.0 ;
+	skos:inScheme nsrf-gr-codelist:thematic-priority .
+
+nsrf-gr-thematic:10.0.78 skos:note "2"^^xsd:int ;
+	skos:notation "10.0.78"@en ;
+	skos:prefLabel "Υποδομές στον τομέα της στέγασης"@el ;
+	a skos:Concept ;
+	skos:broader nsrf-gr-thematic:10.0 ;
+	skos:inScheme nsrf-gr-codelist:thematic-priority .
+
+nsrf-gr-thematic:10.0.79 skos:note "2"^^xsd:int ;
+	skos:notation "10.0.79"@en ;
+	skos:prefLabel "Άλλες κοινωνικές υποδομές"@el ;
+	a skos:Concept ;
+	skos:broader nsrf-gr-thematic:10.0 ;
+	skos:inScheme nsrf-gr-codelist:thematic-priority .
+
+nsrf-gr-thematic:11.1 skos:note "1"^^xsd:int ;
+	skos:notation "11.1"@en ;
+	skos:prefLabel "Αγροτική αναγέννηση"@el ;
+	a skos:Concept ;
+	skos:inScheme nsrf-gr-codelist:thematic-priority ;
+	skos:topConceptOf nsrf-gr-codelist:thematic-priority .
+
+nsrf-gr-thematic:11.2 skos:note "1"^^xsd:int ;
+	skos:notation "11.2"@en ;
+	skos:prefLabel "Αστική αναγέννηση"@el ;
+	a skos:Concept ;
+	skos:narrower nsrf-gr-thematic:11.2.61 ;
+	skos:inScheme nsrf-gr-codelist:thematic-priority ;
+	skos:topConceptOf nsrf-gr-codelist:thematic-priority .
+
+nsrf-gr-thematic:11.2.61 skos:note "2"^^xsd:int ;
+	skos:notation "11.2.61"@en ;
+	skos:prefLabel "Ολοκληρωμένα σχέδια για την αστική και αγροτική αναγέννηση"@el ;
+	a skos:Concept ;
+	skos:broader nsrf-gr-thematic:11.2 ;
+	skos:inScheme nsrf-gr-codelist:thematic-priority .
+
+nsrf-gr-codelist:thematic-priority a skos:ConceptScheme ;
+	rdfs:label "Αναπτυξιακές ενότητες - Θεματικές προτεραιότητες"@el , "Development sectors - Thematic Priorities"@en ;
+	skos:hasTopConcept nsrf-gr-thematic:1.1 , nsrf-gr-thematic:1.2 , nsrf-gr-thematic:2.1 , nsrf-gr-thematic:2.2 , nsrf-gr-thematic:3.1 , nsrf-gr-thematic:3.2 , nsrf-gr-thematic:3.3 , nsrf-gr-thematic:4.0 , nsrf-gr-thematic:5.0 , nsrf-gr-thematic:6.0 , nsrf-gr-thematic:7.1 , nsrf-gr-thematic:7.2 , nsrf-gr-thematic:8.0 , nsrf-gr-thematic:9.1 , nsrf-gr-thematic:9.2 , nsrf-gr-thematic:10.0 , nsrf-gr-thematic:11.1 , nsrf-gr-thematic:11.2 .
