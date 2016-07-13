@@ -1,0 +1,805 @@
+{
+  "@graph": [
+    {
+      "@graph": [
+        {
+          "@id": "http://obeu.vse.cz:9080/resources/pipelines/created-1468236643962",
+          "@type": [
+            "http://linkedpipes.com/ontology/Pipeline"
+          ],
+          "http://www.w3.org/2004/02/skos/core#prefLabel": "ESF-CZ projects"
+        },
+        {
+          "@id": "http://obeu.vse.cz:9080/resources/pipelines/created-1468236643962/components/71df9d4b-8946-4828-bbf2-379ca341f7b8",
+          "@type": [
+            "http://linkedpipes.com/ontology/Component"
+          ],
+          "http://www.w3.org/2004/02/skos/core#prefLabel": "Tabular",
+          "http://linkedpipes.com/ontology/template": [
+            {
+              "@id": "http://obeu.vse.cz:9080/resources/components/t-tabular"
+            }
+          ],
+          "http://linkedpipes.com/ontology/x": 540,
+          "http://linkedpipes.com/ontology/y": 40,
+          "http://linkedpipes.com/ontology/configurationGraph": {
+            "@id": "http://obeu.vse.cz:9080/resources/pipelines/created-1468236643962/components/71df9d4b-8946-4828-bbf2-379ca341f7b8/configuration"
+          }
+        },
+        {
+          "@id": "http://obeu.vse.cz:9080/resources/pipelines/created-1468236643962/components/19081e02-ec18-4f9c-9096-9e52740e807a",
+          "@type": [
+            "http://linkedpipes.com/ontology/Component"
+          ],
+          "http://www.w3.org/2004/02/skos/core#prefLabel": "SPARQL update",
+          "http://linkedpipes.com/ontology/template": [
+            {
+              "@id": "http://obeu.vse.cz:9080/resources/components/t-sparqlUpdate"
+            }
+          ],
+          "http://linkedpipes.com/ontology/x": 800,
+          "http://linkedpipes.com/ontology/y": 40,
+          "http://purl.org/dc/terms/description": "Add observation type",
+          "http://linkedpipes.com/ontology/configurationGraph": {
+            "@id": "http://obeu.vse.cz:9080/resources/pipelines/created-1468236643962/components/19081e02-ec18-4f9c-9096-9e52740e807a/configuration"
+          }
+        },
+        {
+          "@id": "http://obeu.vse.cz:9080/resources/pipelines/created-1468236643962/connection/45e3c556-e48f-45ba-967b-771af7b6b4a5",
+          "@type": [
+            "http://linkedpipes.com/ontology/Connection"
+          ],
+          "http://linkedpipes.com/ontology/sourceComponent": {
+            "@id": "http://obeu.vse.cz:9080/resources/pipelines/created-1468236643962/components/71df9d4b-8946-4828-bbf2-379ca341f7b8"
+          },
+          "http://linkedpipes.com/ontology/sourceBinding": "OutputRdf",
+          "http://linkedpipes.com/ontology/targetComponent": {
+            "@id": "http://obeu.vse.cz:9080/resources/pipelines/created-1468236643962/components/19081e02-ec18-4f9c-9096-9e52740e807a"
+          },
+          "http://linkedpipes.com/ontology/targetBinding": "InputRdf"
+        },
+        {
+          "@id": "http://obeu.vse.cz:9080/resources/pipelines/created-1468236643962/components/70fd5139-76f0-4fea-9fd6-a544ff0efb5d",
+          "@type": [
+            "http://linkedpipes.com/ontology/Component"
+          ],
+          "http://www.w3.org/2004/02/skos/core#prefLabel": "SPARQL construct",
+          "http://linkedpipes.com/ontology/template": [
+            {
+              "@id": "http://obeu.vse.cz:9080/resources/components/t-sparqlConstruct"
+            }
+          ],
+          "http://linkedpipes.com/ontology/x": 1060,
+          "http://linkedpipes.com/ontology/y": 40,
+          "http://purl.org/dc/terms/description": "Map columns",
+          "http://linkedpipes.com/ontology/configurationGraph": {
+            "@id": "http://obeu.vse.cz:9080/resources/pipelines/created-1468236643962/components/70fd5139-76f0-4fea-9fd6-a544ff0efb5d/configuration"
+          }
+        },
+        {
+          "@id": "http://obeu.vse.cz:9080/resources/pipelines/created-1468236643962/connection/4c762fd8-f7d6-496d-8cf3-a746b3748c48",
+          "@type": [
+            "http://linkedpipes.com/ontology/Connection"
+          ],
+          "http://linkedpipes.com/ontology/sourceComponent": {
+            "@id": "http://obeu.vse.cz:9080/resources/pipelines/created-1468236643962/components/19081e02-ec18-4f9c-9096-9e52740e807a"
+          },
+          "http://linkedpipes.com/ontology/sourceBinding": "OutputRdf",
+          "http://linkedpipes.com/ontology/targetComponent": {
+            "@id": "http://obeu.vse.cz:9080/resources/pipelines/created-1468236643962/components/70fd5139-76f0-4fea-9fd6-a544ff0efb5d"
+          },
+          "http://linkedpipes.com/ontology/targetBinding": "InputRdf"
+        },
+        {
+          "@id": "http://obeu.vse.cz:9080/resources/pipelines/created-1468236643962/components/0bcaa672-f335-4c90-9227-eb28b4134c37",
+          "@type": [
+            "http://linkedpipes.com/ontology/Component"
+          ],
+          "http://www.w3.org/2004/02/skos/core#prefLabel": "SPARQL update",
+          "http://linkedpipes.com/ontology/template": [
+            {
+              "@id": "http://obeu.vse.cz:9080/resources/components/t-sparqlUpdate"
+            }
+          ],
+          "http://linkedpipes.com/ontology/x": 200,
+          "http://linkedpipes.com/ontology/y": 140,
+          "http://purl.org/dc/terms/description": "Merged transformation",
+          "http://linkedpipes.com/ontology/configurationGraph": {
+            "@id": "http://obeu.vse.cz:9080/resources/pipelines/created-1468236643962/components/0bcaa672-f335-4c90-9227-eb28b4134c37/configuration"
+          }
+        },
+        {
+          "@id": "http://obeu.vse.cz:9080/resources/pipelines/created-1468236643962/components/313e1cda-077a-4f0d-9fc6-b4e5cd1b1ba2",
+          "@type": [
+            "http://linkedpipes.com/ontology/Component"
+          ],
+          "http://www.w3.org/2004/02/skos/core#prefLabel": "SPARQL construct",
+          "http://linkedpipes.com/ontology/template": [
+            {
+              "@id": "http://obeu.vse.cz:9080/resources/components/t-sparqlConstruct"
+            }
+          ],
+          "http://linkedpipes.com/ontology/x": 500,
+          "http://linkedpipes.com/ontology/y": 260,
+          "http://purl.org/dc/terms/description": "Extract operational programme code list",
+          "http://linkedpipes.com/ontology/configurationGraph": {
+            "@id": "http://obeu.vse.cz:9080/resources/pipelines/created-1468236643962/components/313e1cda-077a-4f0d-9fc6-b4e5cd1b1ba2/configuration"
+          }
+        },
+        {
+          "@id": "http://obeu.vse.cz:9080/resources/pipelines/created-1468236643962/connection/e10c8ef0-6c6e-4b6e-becb-615d4e507ec0",
+          "@type": [
+            "http://linkedpipes.com/ontology/Connection"
+          ],
+          "http://linkedpipes.com/ontology/sourceComponent": {
+            "@id": "http://obeu.vse.cz:9080/resources/pipelines/created-1468236643962/components/0bcaa672-f335-4c90-9227-eb28b4134c37"
+          },
+          "http://linkedpipes.com/ontology/sourceBinding": "OutputRdf",
+          "http://linkedpipes.com/ontology/targetComponent": {
+            "@id": "http://obeu.vse.cz:9080/resources/pipelines/created-1468236643962/components/313e1cda-077a-4f0d-9fc6-b4e5cd1b1ba2"
+          },
+          "http://linkedpipes.com/ontology/targetBinding": "InputRdf"
+        },
+        {
+          "@id": "http://obeu.vse.cz:9080/resources/pipelines/created-1468236643962/components/2dbfbe58-538b-48eb-abfc-814d60ae5f4b",
+          "@type": [
+            "http://linkedpipes.com/ontology/Component"
+          ],
+          "http://www.w3.org/2004/02/skos/core#prefLabel": "SPARQL update",
+          "http://linkedpipes.com/ontology/template": [
+            {
+              "@id": "http://obeu.vse.cz:9080/resources/components/t-sparqlUpdate"
+            }
+          ],
+          "http://linkedpipes.com/ontology/x": 500,
+          "http://linkedpipes.com/ontology/y": 140,
+          "http://purl.org/dc/terms/description": "Delete operational programme code list",
+          "http://linkedpipes.com/ontology/configurationGraph": {
+            "@id": "http://obeu.vse.cz:9080/resources/pipelines/created-1468236643962/components/2dbfbe58-538b-48eb-abfc-814d60ae5f4b/configuration"
+          }
+        },
+        {
+          "@id": "http://obeu.vse.cz:9080/resources/pipelines/created-1468236643962/connection/cee617bb-7404-4268-a229-c210a0bd1b0d",
+          "@type": [
+            "http://linkedpipes.com/ontology/Connection"
+          ],
+          "http://linkedpipes.com/ontology/sourceComponent": {
+            "@id": "http://obeu.vse.cz:9080/resources/pipelines/created-1468236643962/components/0bcaa672-f335-4c90-9227-eb28b4134c37"
+          },
+          "http://linkedpipes.com/ontology/sourceBinding": "OutputRdf",
+          "http://linkedpipes.com/ontology/targetComponent": {
+            "@id": "http://obeu.vse.cz:9080/resources/pipelines/created-1468236643962/components/2dbfbe58-538b-48eb-abfc-814d60ae5f4b"
+          },
+          "http://linkedpipes.com/ontology/targetBinding": "InputRdf"
+        },
+        {
+          "@id": "http://obeu.vse.cz:9080/resources/pipelines/created-1468236643962/components/c976eabc-4734-4abd-89f1-7ec08565ab76",
+          "@type": [
+            "http://linkedpipes.com/ontology/Component"
+          ],
+          "http://www.w3.org/2004/02/skos/core#prefLabel": "SPARQL construct",
+          "http://linkedpipes.com/ontology/template": [
+            {
+              "@id": "http://obeu.vse.cz:9080/resources/components/t-sparqlConstruct"
+            }
+          ],
+          "http://linkedpipes.com/ontology/x": 500,
+          "http://linkedpipes.com/ontology/y": 360,
+          "http://purl.org/dc/terms/description": "Extract partner types code list",
+          "http://linkedpipes.com/ontology/configurationGraph": {
+            "@id": "http://obeu.vse.cz:9080/resources/pipelines/created-1468236643962/components/c976eabc-4734-4abd-89f1-7ec08565ab76/configuration"
+          }
+        },
+        {
+          "@id": "http://obeu.vse.cz:9080/resources/pipelines/created-1468236643962/connection/f1b382a2-8664-474c-91e6-989bef6a42a8",
+          "@type": [
+            "http://linkedpipes.com/ontology/Connection"
+          ],
+          "http://linkedpipes.com/ontology/sourceComponent": {
+            "@id": "http://obeu.vse.cz:9080/resources/pipelines/created-1468236643962/components/0bcaa672-f335-4c90-9227-eb28b4134c37"
+          },
+          "http://linkedpipes.com/ontology/sourceBinding": "OutputRdf",
+          "http://linkedpipes.com/ontology/targetComponent": {
+            "@id": "http://obeu.vse.cz:9080/resources/pipelines/created-1468236643962/components/c976eabc-4734-4abd-89f1-7ec08565ab76"
+          },
+          "http://linkedpipes.com/ontology/targetBinding": "InputRdf"
+        },
+        {
+          "@id": "http://obeu.vse.cz:9080/resources/pipelines/created-1468236643962/components/710b7501-af47-4dce-bae4-5f4659168e33",
+          "@type": [
+            "http://linkedpipes.com/ontology/Component"
+          ],
+          "http://www.w3.org/2004/02/skos/core#prefLabel": "SPARQL update",
+          "http://linkedpipes.com/ontology/template": [
+            {
+              "@id": "http://obeu.vse.cz:9080/resources/components/t-sparqlUpdate"
+            }
+          ],
+          "http://linkedpipes.com/ontology/x": 940,
+          "http://linkedpipes.com/ontology/y": 140,
+          "http://purl.org/dc/terms/description": "Delete partner types code list",
+          "http://linkedpipes.com/ontology/configurationGraph": {
+            "@id": "http://obeu.vse.cz:9080/resources/pipelines/created-1468236643962/components/710b7501-af47-4dce-bae4-5f4659168e33/configuration"
+          }
+        },
+        {
+          "@id": "http://obeu.vse.cz:9080/resources/pipelines/created-1468236643962/connection/685bab3c-dddc-4826-a68a-d68d64995a26",
+          "@type": [
+            "http://linkedpipes.com/ontology/Connection"
+          ],
+          "http://linkedpipes.com/ontology/sourceComponent": {
+            "@id": "http://obeu.vse.cz:9080/resources/pipelines/created-1468236643962/components/2dbfbe58-538b-48eb-abfc-814d60ae5f4b"
+          },
+          "http://linkedpipes.com/ontology/sourceBinding": "OutputRdf",
+          "http://linkedpipes.com/ontology/targetComponent": {
+            "@id": "http://obeu.vse.cz:9080/resources/pipelines/created-1468236643962/components/710b7501-af47-4dce-bae4-5f4659168e33"
+          },
+          "http://linkedpipes.com/ontology/targetBinding": "InputRdf"
+        },
+        {
+          "@id": "http://obeu.vse.cz:9080/resources/pipelines/created-1468236643962/components/cc0a7e9a-78eb-47e7-9314-741113d1e049",
+          "@type": [
+            "http://linkedpipes.com/ontology/Component"
+          ],
+          "http://www.w3.org/2004/02/skos/core#prefLabel": "RDF to file",
+          "http://linkedpipes.com/ontology/template": [
+            {
+              "@id": "http://obeu.vse.cz:9080/resources/components/t-rdfToFile"
+            }
+          ],
+          "http://linkedpipes.com/ontology/x": 920,
+          "http://linkedpipes.com/ontology/y": 260,
+          "http://linkedpipes.com/ontology/configurationGraph": {
+            "@id": "http://obeu.vse.cz:9080/resources/pipelines/created-1468236643962/components/cc0a7e9a-78eb-47e7-9314-741113d1e049/configuration"
+          }
+        },
+        {
+          "@id": "http://obeu.vse.cz:9080/resources/pipelines/created-1468236643962/connection/69d51d97-b1fe-4797-8a81-279a5db1f50b",
+          "@type": [
+            "http://linkedpipes.com/ontology/Connection"
+          ],
+          "http://linkedpipes.com/ontology/sourceComponent": {
+            "@id": "http://obeu.vse.cz:9080/resources/pipelines/created-1468236643962/components/313e1cda-077a-4f0d-9fc6-b4e5cd1b1ba2"
+          },
+          "http://linkedpipes.com/ontology/sourceBinding": "OutputRdf",
+          "http://linkedpipes.com/ontology/targetComponent": {
+            "@id": "http://obeu.vse.cz:9080/resources/pipelines/created-1468236643962/components/cc0a7e9a-78eb-47e7-9314-741113d1e049"
+          },
+          "http://linkedpipes.com/ontology/targetBinding": "InputRdf"
+        },
+        {
+          "@id": "http://obeu.vse.cz:9080/resources/pipelines/created-1468236643962/components/6dfbbb2d-beae-45d1-9a45-a7e63c815cbc",
+          "@type": [
+            "http://linkedpipes.com/ontology/Component"
+          ],
+          "http://www.w3.org/2004/02/skos/core#prefLabel": "RDF to file",
+          "http://linkedpipes.com/ontology/template": [
+            {
+              "@id": "http://obeu.vse.cz:9080/resources/components/t-rdfToFile"
+            }
+          ],
+          "http://linkedpipes.com/ontology/x": 920,
+          "http://linkedpipes.com/ontology/y": 360,
+          "http://linkedpipes.com/ontology/configurationGraph": {
+            "@id": "http://obeu.vse.cz:9080/resources/pipelines/created-1468236643962/components/6dfbbb2d-beae-45d1-9a45-a7e63c815cbc/configuration"
+          }
+        },
+        {
+          "@id": "http://obeu.vse.cz:9080/resources/pipelines/created-1468236643962/connection/c6cf2c3f-f769-46c7-a51f-b9729770780e",
+          "@type": [
+            "http://linkedpipes.com/ontology/Connection"
+          ],
+          "http://linkedpipes.com/ontology/sourceComponent": {
+            "@id": "http://obeu.vse.cz:9080/resources/pipelines/created-1468236643962/components/c976eabc-4734-4abd-89f1-7ec08565ab76"
+          },
+          "http://linkedpipes.com/ontology/sourceBinding": "OutputRdf",
+          "http://linkedpipes.com/ontology/targetComponent": {
+            "@id": "http://obeu.vse.cz:9080/resources/pipelines/created-1468236643962/components/6dfbbb2d-beae-45d1-9a45-a7e63c815cbc"
+          },
+          "http://linkedpipes.com/ontology/targetBinding": "InputRdf"
+        },
+        {
+          "@id": "http://obeu.vse.cz:9080/resources/pipelines/created-1468236643962/components/29f96bb9-7f43-4edc-a18d-ffe98c59c4b1",
+          "@type": [
+            "http://linkedpipes.com/ontology/Component"
+          ],
+          "http://www.w3.org/2004/02/skos/core#prefLabel": "RDF to file",
+          "http://linkedpipes.com/ontology/template": [
+            {
+              "@id": "http://obeu.vse.cz:9080/resources/components/t-rdfToFile"
+            }
+          ],
+          "http://linkedpipes.com/ontology/x": 1460,
+          "http://linkedpipes.com/ontology/y": 140,
+          "http://linkedpipes.com/ontology/configurationGraph": {
+            "@id": "http://obeu.vse.cz:9080/resources/pipelines/created-1468236643962/components/29f96bb9-7f43-4edc-a18d-ffe98c59c4b1/configuration"
+          }
+        },
+        {
+          "@id": "http://obeu.vse.cz:9080/resources/pipelines/created-1468236643962/components/9bd824d2-e6c4-46cb-9595-1c61bff44b8e",
+          "@type": [
+            "http://linkedpipes.com/ontology/Component"
+          ],
+          "http://www.w3.org/2004/02/skos/core#prefLabel": "Files to SCP",
+          "http://linkedpipes.com/ontology/template": [
+            {
+              "@id": "http://obeu.vse.cz:9080/resources/components/l-filesToScp"
+            }
+          ],
+          "http://linkedpipes.com/ontology/x": 1600,
+          "http://linkedpipes.com/ontology/y": 360,
+          "http://linkedpipes.com/ontology/configurationGraph": {
+            "@id": "http://obeu.vse.cz:9080/resources/pipelines/created-1468236643962/components/9bd824d2-e6c4-46cb-9595-1c61bff44b8e/configuration"
+          }
+        },
+        {
+          "@id": "http://obeu.vse.cz:9080/resources/pipelines/created-1468236643962/connection/9b1dab37-e918-4f41-be88-033caccb100d",
+          "@type": [
+            "http://linkedpipes.com/ontology/Connection"
+          ],
+          "http://linkedpipes.com/ontology/sourceComponent": {
+            "@id": "http://obeu.vse.cz:9080/resources/pipelines/created-1468236643962/components/6dfbbb2d-beae-45d1-9a45-a7e63c815cbc"
+          },
+          "http://linkedpipes.com/ontology/sourceBinding": "OutputFile",
+          "http://linkedpipes.com/ontology/targetComponent": {
+            "@id": "http://obeu.vse.cz:9080/resources/pipelines/created-1468236643962/components/9bd824d2-e6c4-46cb-9595-1c61bff44b8e"
+          },
+          "http://linkedpipes.com/ontology/targetBinding": "FilesInput"
+        },
+        {
+          "@id": "http://obeu.vse.cz:9080/resources/pipelines/created-1468236643962/connection/2f08c0cf-7af8-477d-b450-51a11fce42b9",
+          "@type": [
+            "http://linkedpipes.com/ontology/Connection"
+          ],
+          "http://linkedpipes.com/ontology/sourceComponent": {
+            "@id": "http://obeu.vse.cz:9080/resources/pipelines/created-1468236643962/components/cc0a7e9a-78eb-47e7-9314-741113d1e049"
+          },
+          "http://linkedpipes.com/ontology/sourceBinding": "OutputFile",
+          "http://linkedpipes.com/ontology/targetComponent": {
+            "@id": "http://obeu.vse.cz:9080/resources/pipelines/created-1468236643962/components/9bd824d2-e6c4-46cb-9595-1c61bff44b8e"
+          },
+          "http://linkedpipes.com/ontology/targetBinding": "FilesInput"
+        },
+        {
+          "@id": "http://obeu.vse.cz:9080/resources/pipelines/created-1468236643962/connection/dd45580d-9c1e-416f-ae76-c6e31638ceb8",
+          "@type": [
+            "http://linkedpipes.com/ontology/Connection"
+          ],
+          "http://linkedpipes.com/ontology/sourceComponent": {
+            "@id": "http://obeu.vse.cz:9080/resources/pipelines/created-1468236643962/components/29f96bb9-7f43-4edc-a18d-ffe98c59c4b1"
+          },
+          "http://linkedpipes.com/ontology/sourceBinding": "OutputFile",
+          "http://linkedpipes.com/ontology/targetComponent": {
+            "@id": "http://obeu.vse.cz:9080/resources/pipelines/created-1468236643962/components/9bd824d2-e6c4-46cb-9595-1c61bff44b8e"
+          },
+          "http://linkedpipes.com/ontology/targetBinding": "FilesInput"
+        },
+        {
+          "@id": "http://obeu.vse.cz:9080/resources/pipelines/created-1468236643962/components/a9a1d19e-16df-4daa-9222-4cf4b0bd3993",
+          "@type": [
+            "http://linkedpipes.com/ontology/Component"
+          ],
+          "http://www.w3.org/2004/02/skos/core#prefLabel": "DCAT-AP Dataset",
+          "http://linkedpipes.com/ontology/template": [
+            {
+              "@id": "http://obeu.vse.cz:9080/resources/components/e-dcatAp11Dataset"
+            }
+          ],
+          "http://linkedpipes.com/ontology/x": 1160,
+          "http://linkedpipes.com/ontology/y": 260,
+          "http://linkedpipes.com/ontology/configurationGraph": {
+            "@id": "http://obeu.vse.cz:9080/resources/pipelines/created-1468236643962/components/a9a1d19e-16df-4daa-9222-4cf4b0bd3993/configuration"
+          }
+        },
+        {
+          "@id": "http://obeu.vse.cz:9080/resources/pipelines/created-1468236643962/components/d97ee582-9331-4e59-867f-9a1a66c1a2e0",
+          "@type": [
+            "http://linkedpipes.com/ontology/Component"
+          ],
+          "http://www.w3.org/2004/02/skos/core#prefLabel": "Union",
+          "http://linkedpipes.com/ontology/template": [
+            {
+              "@id": "http://obeu.vse.cz:9080/resources/components/t-singleGraphUnion"
+            }
+          ],
+          "http://linkedpipes.com/ontology/x": 1340,
+          "http://linkedpipes.com/ontology/y": 140
+        },
+        {
+          "@id": "http://obeu.vse.cz:9080/resources/pipelines/created-1468236643962/connection/b39d40f1-cadc-4559-8cfb-c6f9d23c1790",
+          "@type": [
+            "http://linkedpipes.com/ontology/Connection"
+          ],
+          "http://linkedpipes.com/ontology/sourceComponent": {
+            "@id": "http://obeu.vse.cz:9080/resources/pipelines/created-1468236643962/components/710b7501-af47-4dce-bae4-5f4659168e33"
+          },
+          "http://linkedpipes.com/ontology/sourceBinding": "OutputRdf",
+          "http://linkedpipes.com/ontology/targetComponent": {
+            "@id": "http://obeu.vse.cz:9080/resources/pipelines/created-1468236643962/components/d97ee582-9331-4e59-867f-9a1a66c1a2e0"
+          },
+          "http://linkedpipes.com/ontology/targetBinding": "InputRdf"
+        },
+        {
+          "@id": "http://obeu.vse.cz:9080/resources/pipelines/created-1468236643962/connection/1077c30a-56a4-4c0c-b797-d4166672ff36",
+          "@type": [
+            "http://linkedpipes.com/ontology/Connection"
+          ],
+          "http://linkedpipes.com/ontology/sourceComponent": {
+            "@id": "http://obeu.vse.cz:9080/resources/pipelines/created-1468236643962/components/a9a1d19e-16df-4daa-9222-4cf4b0bd3993"
+          },
+          "http://linkedpipes.com/ontology/sourceBinding": "Metadata",
+          "http://linkedpipes.com/ontology/targetComponent": {
+            "@id": "http://obeu.vse.cz:9080/resources/pipelines/created-1468236643962/components/d97ee582-9331-4e59-867f-9a1a66c1a2e0"
+          },
+          "http://linkedpipes.com/ontology/targetBinding": "InputRdf"
+        },
+        {
+          "@id": "http://obeu.vse.cz:9080/resources/pipelines/created-1468236643962/connection/b540027c-292f-4e30-8ad1-6b5a5001c34d",
+          "@type": [
+            "http://linkedpipes.com/ontology/Connection"
+          ],
+          "http://linkedpipes.com/ontology/sourceComponent": {
+            "@id": "http://obeu.vse.cz:9080/resources/pipelines/created-1468236643962/components/d97ee582-9331-4e59-867f-9a1a66c1a2e0"
+          },
+          "http://linkedpipes.com/ontology/sourceBinding": "OutputRdf",
+          "http://linkedpipes.com/ontology/targetComponent": {
+            "@id": "http://obeu.vse.cz:9080/resources/pipelines/created-1468236643962/components/29f96bb9-7f43-4edc-a18d-ffe98c59c4b1"
+          },
+          "http://linkedpipes.com/ontology/targetBinding": "InputRdf"
+        },
+        {
+          "@id": "http://obeu.vse.cz:9080/resources/pipelines/created-1468236643962/components/62b5ba97-2fef-4f11-9d0e-0bfc6babf3de",
+          "@type": [
+            "http://linkedpipes.com/ontology/Component"
+          ],
+          "http://www.w3.org/2004/02/skos/core#prefLabel": "HTTP get",
+          "http://linkedpipes.com/ontology/template": [
+            {
+              "@id": "http://obeu.vse.cz:9080/resources/components/e-httpGetFile"
+            }
+          ],
+          "http://linkedpipes.com/ontology/x": 200,
+          "http://linkedpipes.com/ontology/y": 40,
+          "http://linkedpipes.com/ontology/configurationGraph": {
+            "@id": "http://obeu.vse.cz:9080/resources/pipelines/created-1468236643962/components/62b5ba97-2fef-4f11-9d0e-0bfc6babf3de/configuration"
+          }
+        },
+        {
+          "@id": "http://obeu.vse.cz:9080/resources/pipelines/created-1468236643962/components/60bba7e2-4860-401a-9225-41d6c24ac539",
+          "@type": [
+            "http://linkedpipes.com/ontology/Component"
+          ],
+          "http://www.w3.org/2004/02/skos/core#prefLabel": "Excel to CSV",
+          "http://linkedpipes.com/ontology/template": [
+            {
+              "@id": "http://obeu.vse.cz:9080/resources/components/t-excelToCsv"
+            }
+          ],
+          "http://linkedpipes.com/ontology/x": 360,
+          "http://linkedpipes.com/ontology/y": 40,
+          "http://linkedpipes.com/ontology/configurationGraph": {
+            "@id": "http://obeu.vse.cz:9080/resources/pipelines/created-1468236643962/components/60bba7e2-4860-401a-9225-41d6c24ac539/configuration"
+          }
+        },
+        {
+          "@id": "http://obeu.vse.cz:9080/resources/pipelines/created-1468236643962/connection/61662281-8e22-40d1-8b27-9ab2fb662e49",
+          "@type": [
+            "http://linkedpipes.com/ontology/Connection"
+          ],
+          "http://linkedpipes.com/ontology/sourceComponent": {
+            "@id": "http://obeu.vse.cz:9080/resources/pipelines/created-1468236643962/components/62b5ba97-2fef-4f11-9d0e-0bfc6babf3de"
+          },
+          "http://linkedpipes.com/ontology/sourceBinding": "FilesOutput",
+          "http://linkedpipes.com/ontology/targetComponent": {
+            "@id": "http://obeu.vse.cz:9080/resources/pipelines/created-1468236643962/components/60bba7e2-4860-401a-9225-41d6c24ac539"
+          },
+          "http://linkedpipes.com/ontology/targetBinding": "InputFiles"
+        },
+        {
+          "@id": "http://obeu.vse.cz:9080/resources/pipelines/created-1468236643962/connection/5c0405cf-7717-4201-8209-5a6885286e0d",
+          "@type": [
+            "http://linkedpipes.com/ontology/Connection"
+          ],
+          "http://linkedpipes.com/ontology/sourceComponent": {
+            "@id": "http://obeu.vse.cz:9080/resources/pipelines/created-1468236643962/components/60bba7e2-4860-401a-9225-41d6c24ac539"
+          },
+          "http://linkedpipes.com/ontology/sourceBinding": "OutputFiles",
+          "http://linkedpipes.com/ontology/targetComponent": {
+            "@id": "http://obeu.vse.cz:9080/resources/pipelines/created-1468236643962/components/71df9d4b-8946-4828-bbf2-379ca341f7b8"
+          },
+          "http://linkedpipes.com/ontology/targetBinding": "InputFiles"
+        },
+        {
+          "@id": "http://obeu.vse.cz:9080/resources/pipelines/created-1468236643962/connection/47d226ce-ddee-44fd-b2d7-de7bc8a9c21f",
+          "@type": [
+            "http://linkedpipes.com/ontology/Connection"
+          ],
+          "http://linkedpipes.com/ontology/sourceComponent": {
+            "@id": "http://obeu.vse.cz:9080/resources/pipelines/created-1468236643962/components/70fd5139-76f0-4fea-9fd6-a544ff0efb5d"
+          },
+          "http://linkedpipes.com/ontology/sourceBinding": "OutputRdf",
+          "http://linkedpipes.com/ontology/targetComponent": {
+            "@id": "http://obeu.vse.cz:9080/resources/pipelines/created-1468236643962/components/0bcaa672-f335-4c90-9227-eb28b4134c37"
+          },
+          "http://linkedpipes.com/ontology/targetBinding": "InputRdf"
+        }
+      ],
+      "@id": "http://obeu.vse.cz:9080/resources/pipelines/created-1468236643962"
+    },
+    {
+      "@graph": [
+        {
+          "@id": "http://localhost/resources/configuration",
+          "@type": [
+            "http://www.w3.org/ns/csvw#Table"
+          ],
+          "http://www.w3.org/ns/csvw#tableSchema": {
+            "@id": "http://localhost/resources/configuration/schema"
+          },
+          "http://www.w3.org/ns/csvw#dialect": {
+            "@id": "http://localhost/resources/configuration/dialect"
+          },
+          "http://plugins.linkedpipes.com/ontology/t-tabular#baseUri": "http://localhost/",
+          "http://plugins.linkedpipes.com/ontology/t-tabular#fullMapping": true,
+          "http://plugins.linkedpipes.com/ontology/t-tabular#useBaseUri": true
+        },
+        {
+          "@id": "http://localhost/resources/configuration/schema",
+          "@type": [
+            "http://www.w3.org/ns/csvw#Schema"
+          ],
+          "http://www.w3.org/ns/csvw#aboutUrl": "",
+          "http://www.w3.org/ns/csvw#column": [
+            {
+              "@id": "http://localhost/resources/temp/1aoyqKy"
+            }
+          ]
+        },
+        {
+          "@id": "http://localhost/resources/configuration/dialect",
+          "@type": [
+            "http://www.w3.org/ns/csvw#Dialect"
+          ],
+          "http://www.w3.org/ns/csvw#delimeter": ",",
+          "http://www.w3.org/ns/csvw#encoding": "UTF-8",
+          "http://www.w3.org/ns/csvw#header": "",
+          "http://www.w3.org/ns/csvw#quoteChar": "\"",
+          "http://www.w3.org/ns/csvw#skipRows": 1,
+          "http://www.w3.org/ns/csvw#trim": true
+        },
+        {
+          "@id": "http://localhost/resources/temp/1aoyqKy",
+          "@type": [
+            "http://www.w3.org/ns/csvw#Column"
+          ],
+          "http://www.w3.org/ns/csvw#name": "",
+          "http://www.w3.org/ns/csvw#supressOutput": false,
+          "http://www.w3.org/ns/csvw#propertyUrl": "",
+          "http://www.w3.org/ns/csvw#aboutUrl": "",
+          "http://www.w3.org/ns/csvw#lang": "",
+          "http://www.w3.org/ns/csvw#datatype": "",
+          "http://www.w3.org/ns/csvw#valueUrl": ""
+        }
+      ],
+      "@id": "http://obeu.vse.cz:9080/resources/pipelines/created-1468236643962/components/71df9d4b-8946-4828-bbf2-379ca341f7b8/configuration"
+    },
+    {
+      "@graph": [
+        {
+          "@id": "http://localhost/resources/configuration",
+          "@type": [
+            "http://plugins.linkedpipes.com/ontology/t-sparqlUpdate#Configuration"
+          ],
+          "http://plugins.linkedpipes.com/ontology/t-sparqlUpdate#query": "PREFIX :   <http://localhost/>\nPREFIX qb: <http://purl.org/linked-data/cube#>\n\nINSERT {\n  ?row a qb:Observation .\n}\nWHERE {\n  ?row :column_1 [] .\n}"
+        }
+      ],
+      "@id": "http://obeu.vse.cz:9080/resources/pipelines/created-1468236643962/components/19081e02-ec18-4f9c-9096-9e52740e807a/configuration"
+    },
+    {
+      "@graph": [
+        {
+          "@id": "http://localhost/resources/configuration",
+          "@type": [
+            "http://plugins.linkedpipes.com/ontology/t-sparqlConstruct#Configuration"
+          ],
+          "http://plugins.linkedpipes.com/ontology/t-sparqlConstruct#query": "PREFIX :                 <http://localhost/>\nPREFIX obeu-dimension:   <http://data.openbudgets.eu/ontology/dsd/dimension/>\nPREFIX qb:               <http://purl.org/linked-data/cube#>\n\nCONSTRUCT {\n  ?observation a qb:Observation ;\n    ?target ?o .\n}\nWHERE {\n  VALUES (?source ?target) {\n    (:column_1 :operationalProgramme) \n    (:column_2 :priorityAxis)\n    (:column_3 :supportDomain)\n    (:column_4 :projectNotation)\n    (:column_5 :projectName)\n    (:column_6 :projectDescription)\n    (:column_7 :partnerName)\n    (:column_8 :partnerNotation)\n    (:column_9 :partnerType)\n    (:column_10 :partnerTypeGroup)\n    (:column_11 :projectStatus)\n    (:column_12 obeu-dimension:date)\n    (:column_13 :partnerAddress)\n    (:column_14 :partnerAddressRegionNotation)\n    (:column_15 :partnerAddressRegionName)\n    (:column_16 :partnerAddressLocalityNotation)\n    (:column_17 :partnerAddressLocalityName)\n    #(:column_18 )\n    (:column_19 :amountAllocatedCS)\n    (:column_20 :amountAllocatedEU)\n    (:column_21 :amountPaidCS)\n    (:column_22 :amountPaidEU)\n    (:column_23 :amountCertifiedCS)\n    (:column_24 :amountCertifiedEU)\n    (:column_25 :locationNuts)\n    (:column_26 :locationName)\n    #(:column_27 )\n    #(:column_28)\n  }\n  ?observation a qb:Observation ;\n    ?source ?o .\n}"
+        }
+      ],
+      "@id": "http://obeu.vse.cz:9080/resources/pipelines/created-1468236643962/components/70fd5139-76f0-4fea-9fd6-a544ff0efb5d/configuration"
+    },
+    {
+      "@graph": [
+        {
+          "@id": "http://localhost/resources/configuration",
+          "@type": [
+            "http://plugins.linkedpipes.com/ontology/t-sparqlUpdate#Configuration"
+          ],
+          "http://plugins.linkedpipes.com/ontology/t-sparqlUpdate#query": "PREFIX :                  <http://localhost/>\nPREFIX adms:              <http://www.w3.org/ns/adms#>\nPREFIX esf-codelist:      <http://data.openbudgets.eu/ontology/esf-czech-projects/code-list/>\nPREFIX esf-dimension:     <http://data.openbudgets.eu/ontology/esf-czech-projects/dimension/>\nPREFIX esf-measure:       <http://data.openbudgets.eu/ontology/esf-czech-projects/measure/>\nPREFIX foaf:              <http://xmlns.com/foaf/0.1/>\nPREFIX obeu-attribute:    <http://data.openbudgets.eu/ontology/dsd/attribute/>\nPREFIX obeu-dimension:    <http://data.openbudgets.eu/ontology/dsd/dimension/>\nPREFIX obeu-measure:      <http://data.openbudgets.eu/ontology/dsd/measure/>\nPREFIX obeu-operation:    <http://data.openbudgets.eu/resource/codelist/operation-character/>\nPREFIX obeu-optional:     <http://data.openbudgets.eu/ontology/dsd/optional/>\nPREFIX obeu-paymentphase: <http://data.openbudgets.eu/resource/codelist/payment-phase/>\nPREFIX qb:                <http://purl.org/linked-data/cube#>\nPREFIX rov:               <http://www.w3.org/ns/regorg#>\nPREFIX schema:            <http://schema.org/>\nPREFIX skos:              <http://www.w3.org/2004/02/skos/core#>\nPREFIX xsd:               <http://www.w3.org/2001/XMLSchema#>\n\n#################################\n### Cast measures as decimals ###\n#################################\nDELETE {\n  ?observation ?measureProperty ?_number .\n}\nINSERT {\n  ?observation ?measureProperty ?number .\n}\nWHERE {\n  VALUES ?measureProperty {\n    :amountAllocatedCS\n    :amountAllocatedEU\n    :amountPaidCS\n    :amountPaidEU\n    :amountCertifiedCS\n    :amountCertifiedEU\n  }\n  ?observation a qb:Observation ;\n    ?measureProperty ?_number .\n  BIND (STRDT(?_number, xsd:decimal) AS ?number)\n}\n;\n\n##############################\n### Add Czech language tag ###\n##############################\nDELETE {\n  ?observation ?languageProperty ?_literal .\n}\nINSERT {\n  ?observation ?languageProperty ?literal .\n}\nWHERE {\n  VALUES ?languageProperty {\n    :projectName\n    :projectDescription\n    :partnerType\n    :partnerTypeGroup\n    :projectStatus\n  }\n  ?observation a qb:Observation ;\n    ?languageProperty ?_literal .\n  BIND (STRLANG(?_literal, \"cs\") AS ?literal)\n}\n;\n\n#################\n### Cast date ###\n#################\nDELETE {\n  ?observation obeu-dimension:date ?_date .\n}\nINSERT {\n  ?observation obeu-dimension:date ?date .\n}\nWHERE {\n  ?observation a qb:Observation ;\n    obeu-dimension:date ?_date .\n  BIND (STRDT(?_date, xsd:date) AS ?date)\n}\n;\n\n######################\n### Group location ###\n######################\nDELETE {\n  ?observation :locationName ?name ;\n    :locationNuts ?nuts .\n}\nINSERT {\n  ?observation obeu-optional:location ?location .\n  ?location a skos:Concept ;\n    skos:prefLabel ?name ;\n    skos:notation ?nuts .\n}\nWHERE {\n  ?observation a qb:Observation ;\n    :locationName ?name ;\n    :locationNuts ?_nuts .\n  BIND (REPLACE(?_nuts, \"\\\\s+\", \"\") AS ?nuts)\n  BIND (IRI(CONCAT(\"http://linked.opendata.cz/resource/region/\",\n                   SUBSTR(?nuts, STRLEN(?nuts) - 5)))\n        AS ?location)\n}\n;\n\n###################################\n### Group operational programme ###\n###################################\nDELETE {\n  ?observation :operationalProgramme ?_operationalProgramme ;\n    :priorityAxis ?_priorityAxis ;\n    :supportDomain ?_supportDomain .\n}\nINSERT {\n  ?observation esf-dimension:operationalProgramme ?supportDomain .\n  ?supportDomain a skos:Concept ;\n    skos:notation ?_supportDomain ;\n    skos:broader ?priorityAxis ;\n    skos:inScheme esf-codelist:operational-programme .\n  ?priorityAxis a skos:Concept ;\n    skos:notation ?_priorityAxis ;\n    skos:broader ?operationalProgramme ;\n    skos:inScheme esf-codelist:operational-programme .\n  ?operationalProgramme a skos:Concept ;\n    skos:prefLabel ?operationalProgrammeLabel ;\n    skos:notation ?operationalProgrammeNotation ;\n    skos:topConceptOf esf-codelist:operationalProgramme ;\n    skos:inScheme esf-codelist:operational-programme .\n}\nWHERE {\n  ?observation a qb:Observation ;\n    :operationalProgramme ?_operationalProgramme ;\n    :priorityAxis ?_priorityAxis ;\n    :supportDomain ?_supportDomain .\n  BIND (\"http://data.openbudgets.eu/codelist/cz-operational-programme/\" AS ?ns)\n  BIND (SUBSTR(?_operationalProgramme, 1, 7) AS ?operationalProgrammeNotation)\n  BIND (SUBSTR(?_operationalProgramme, 9) AS ?operationalProgrammeLabel)\n  BIND (IRI(CONCAT(?ns, REPLACE(?operationalProgrammeNotation, \"\\\\.\", \"-\"))) AS ?operationalProgramme)\n  BIND (IRI(CONCAT(?ns, REPLACE(?_priorityAxis, \"\\\\.\", \"-\"))) AS ?priorityAxis)\n  BIND (IRI(CONCAT(?ns, REPLACE(?_supportDomain, \"\\\\.\", \"-\"))) AS ?supportDomain)\n}\n;\n\n#####################\n### Group partner ###\n#####################\nDELETE {\n  ?observation :partnerName ?name ;\n    :partnerNotation ?ico .\n}\nINSERT {\n  ?observation obeu-dimension:partner ?partner .\n  ?partner a rov:RegisteredOrganization ;\n    rov:legalName ?name ;\n    rov:registration ?registration .\n  ?registration a skos:Concept ;\n    skos:notation ?ico .\n}\nWHERE {\n  ?observation a qb:Observation ;\n    :partnerName ?name ;\n    :partnerNotation ?_ico .\n\n  BIND (REPLACE(?_ico, \"\\\\s+\", \"\") AS ?ico)\n  BIND (IRI(CONCAT(\"http://linked.opendata.cz/resource/business-entity/CZ\", ?ico)) AS ?partner)\n  BIND (IRI(CONCAT(\"http://data.openbudgets.eu/resource/dataset/esf-czech-projects/registration/CZ\",\n                   ?ico))\n        AS ?registration)\n}\n;\n\n#####################\n### Group project ###\n#####################\nDELETE {\n  ?observation :projectDescription ?description ;\n    :projectName ?name ;\n    :projectNotation ?notation .\n}\nINSERT {\n  ?observation obeu-dimension:project ?project .\n  ?project a foaf:Project ;\n    foaf:name ?name ;\n    adms:identifier ?identifier .\n  ?identifier a adms:Identifier ;\n    skos:notation ?notation .\n}\nWHERE {\n  ?observation a qb:Observation ;\n    :projectDescription ?description ;\n    :projectName ?name ;\n    :projectNotation ?notation .\n  BIND (\"http://data.openbudgets.eu/resource/dataset/esf-czech-projects/\" AS ?ns)\n  BIND (REPLACE(?notation, \"\\\\.|\\\\/\", \"-\") AS ?notationSlug)\n  BIND (IRI(CONCAT(?ns, \"project/\", ?notationSlug)) AS ?project)\n  BIND (IRI(CONCAT(?ns, \"identifier/\", ?notationSlug)) AS ?identifier) \n}\n;\n\n#############################\n### Group partner address ###\n#############################\nDELETE {\n  ?observation :partnerAddress ?partnerAddress ;\n    :partnerAddressLocalityName ?partnerAddressLocalityName ;\n    :partnerAddressLocalityNotation ?partnerAddressLocalityNotation ;\n    :partnerAddressRegionName ?partnerAddressRegionName ;\n    :partnerAddressRegionNotation ?partnerAddressRegionNotation .\n}\nINSERT {\n  ?partner schema:address ?address . \n  ?address a schema:PostalAddress ;\n    schema:description ?partnerAddress ;\n    schema:addressLocality ?addressLocality ;\n    schema:addressRegion ?addressRegion .\n  ?addressLocality a skos:Concept ;\n    skos:prefLabel ?partnerAddressLocalityName ;\n    skos:notation ?partnerAddressLocalityNotation .\n  ?addressRegion a skos:Concept ;\n    skos:prefLabel ?partnerAddressRegionName ;\n    skos:notation ?partnerAddressRegionNotation .\n}\nWHERE {\n  ?observation a qb:Observation ;\n    obeu-dimension:partner ?partner ;\n    :partnerAddress ?partnerAddress ;\n    :partnerAddressLocalityName ?partnerAddressLocalityName ;\n    :partnerAddressLocalityNotation ?_partnerAddressLocalityNotation ;\n    :partnerAddressRegionName ?partnerAddressRegionName ;\n    :partnerAddressRegionNotation ?_partnerAddressRegionNotation .\n  BIND (REPLACE(?_partnerAddressLocalityNotation, \"\\\\s+\", \"\") AS ?partnerAddressLocalityNotation)\n  BIND (REPLACE(?_partnerAddressRegionNotation, \"\\\\s+\", \"\") AS ?partnerAddressRegionNotation)\n  BIND (IRI(CONCAT(\"http://data.openbudgets.eu/resource/postal-address/\",\n                  SHA1(?partnerAddress)))\n        AS ?address)\n  BIND (IRI(CONCAT(\"http://ec.europa.eu/eurostat/ramon/rdfdata/nuts2008/\",\n                   ?partnerAddressRegionNotation))\n        AS ?addressRegion)\n  BIND (IRI(CONCAT(\"http://linked.opendata.cz/resource/region/\",\n                   SUBSTR(?partnerAddressLocalityNotation, STRLEN(?partnerAddressLocalityNotation) - 5)))\n        AS ?addressLocality)\n}\n;\n\n##########################\n### Group partner type ###\n##########################\nDELETE {\n  ?observation :partnerType ?partnerTypeLabel ;\n    :partnerTypeGroup ?partnerTypeGroupLabel .\n}\nINSERT {\n  ?partner rov:orgType ?orgType .\n  ?orgType a skos:Concept ;\n    skos:prefLabel ?partnerTypeLabel ;\n    skos:broader ?broaderOrgType ;\n    skos:inScheme ?codeList .\n  ?broaderOrgType a skos:Concept ;\n    skos:prefLabel ?partnerTypeGroupLabel ;\n    skos:inScheme ?codeList .\n}\nWHERE {\n  ?observation a qb:Observation ;\n    obeu-dimension:partner ?partner ;\n    :partnerType ?partnerTypeLabel ;\n    :partnerTypeGroup ?partnerTypeGroupLabel .\n  BIND (\"http://data.openbudgets.eu/resource/dataset/esf-cz-projects/codelist/partner-types\" AS ?ns)\n  BIND (IRI(?ns) AS ?codeList)\n  BIND (IRI(CONCAT(?ns, \"/\", SHA1(STR(?partnerTypeLabel)))) AS ?orgType)\n  BIND (IRI(CONCAT(?ns, \"/\", SHA1(STR(?partnerTypeGroupLabel)))) AS ?broaderOrgType)\n}\n;\n\n##############################\n### Split project statuses ###\n##############################\nDELETE {\n  ?observation :projectStatus ?projectStatusLabel ;\n}\nINSERT {\n  ?statusObservation a qb:Observation ;\n    obeu-dimension:project ?project ;\n    obeu-dimension:date ?date ;\n    esf-measure:projectStatus ?projectStatus ;\n    qb:dataSet <http://data.openbudgets.eu/resource/dataset/esf-czech-project-statuses> .\n\n  <http://data.openbudgets.eu/resource/dataset/esf-czech-project-statuses> a qb:DataSet ;\n    qb:structure <http://data.openbudgets.eu/ontology/dsd/esf-czech-project-statuses> .\n}\nWHERE {\n  ?observation a qb:Observation ;\n    :projectStatus ?projectStatusLabel ;\n    obeu-dimension:project ?project ;\n    obeu-dimension:date ?date .\n\n  ?project adms:identifier/skos:notation ?projectNotation .\n\n  BIND (\"http://data.openbudgets.eu/resource/dataset/esf-czech-project-statuses/\" AS ?ns)\n  BIND (SHA1(STR(?projectStatusLabel)) AS ?projectStatusId)\n  BIND (IRI(CONCAT(?ns, \"observation/\", ?projectStatusId,\n                   \"/\", ?projectNotation, \"/\", STR(?date))\n           ) AS ?statusObservation)\n  BIND (IRI(CONCAT(?ns, \"codelist/project-statuses/\", ?projectStatusId)) AS ?projectStatus)\n}\n;\n\n######################\n### Create dataset ###\n######################\nINSERT DATA {\n  <http://data.openbudgets.eu/resource/dataset/esf-czech-projects> a qb:DataSet ;\n    obeu-dimension:operationCharacter obeu-operation:expenditure ;\n    obeu-attribute:currency <http://data.openbudgets.eu/codelist/currency/CZK> ;\n    qb:structure <http://data.openbudgets.eu/ontology/dsd/esf-czech-projects> .\n}\n;\n\n####################################\n### Split allocated Czech amount ###\n####################################\nDELETE {\n  ?observation :amountAllocatedCS ?amountAllocatedCS .\n}\nINSERT {\n  ?splitObservation a qb:Observation ;\n    obeu-dimension:organization <http://linked.opendata.cz/resource/domain/mfcr/monitor/ciselniky/UcetniJednotka/66002222/2009-12-31> ;\n    obeu-dimension:paymentPhase obeu-paymentphase:allocated ;\n    esf-dimension:operationalProgramme ?operationalProgramme ; \n    obeu-dimension:partner ?partner ;\n    obeu-dimension:project ?project ;\n    obeu-optional:location ?location ;\n    obeu-dimension:date ?date ;\n    obeu-measure:amount ?amountAllocatedCS ;\n    qb:dataSet <http://data.openbudgets.eu/resource/dataset/esf-czech-projects> . \n}\nWHERE {\n  ?observation a qb:Observation ;\n    esf-dimension:operationalProgramme ?operationalProgramme ;\n    obeu-dimension:partner ?partner ;\n    obeu-dimension:project ?project ;\n    obeu-optional:location ?location ;\n    obeu-dimension:date ?date ;\n    :amountAllocatedCS ?amountAllocatedCS .\n\n  ?operationalProgramme skos:notation ?operationalProgrammeId .\n  ?partner rov:registration/skos:notation ?partnerId .\n  ?project adms:identifier/skos:notation ?projectId .\n  ?location skos:notation ?locationId .\n\n  BIND (IRI(CONCAT(\"http://data.openbudgets.eu/resource/datasets/esf-czech-projects/observation/\",\n                  \"expenditure/66002222/allocated/\", ?operationalProgrammeId, \"/\", ?partnerId, \"/\",\n                  ?projectId, \"/\", STR(?date), \"/\", ?locationId))\n       AS ?splitObservation)\n}\n;\n\n#################################\n### Split allocated EU amount ###\n#################################\nDELETE {\n  ?observation :amountAllocatedEU ?amountAllocatedEU .\n}\nINSERT {\n  ?splitObservation a qb:Observation ;\n    obeu-dimension:organization <http://dbpedia.org/resource/European_Union> ;\n    obeu-dimension:paymentPhase obeu-paymentphase:allocated ;\n    esf-dimension:operationalProgramme ?operationalProgramme ; \n    obeu-dimension:partner ?partner ;\n    obeu-dimension:project ?project ;\n    obeu-optional:location ?location ;\n    obeu-dimension:date ?date ;\n    obeu-measure:amount ?amountAllocatedEU ;\n    qb:dataSet <http://data.openbudgets.eu/resource/dataset/esf-czech-projects> . \n}\nWHERE {\n  ?observation a qb:Observation ;\n    esf-dimension:operationalProgramme ?operationalProgramme ;\n    obeu-dimension:partner ?partner ;\n    obeu-dimension:project ?project ;\n    obeu-optional:location ?location ;\n    obeu-dimension:date ?date ;\n    :amountAllocatedEU ?amountAllocatedEU .\n\n  ?partner rov:registration/skos:notation ?partnerId .\n  ?project adms:identifier/skos:notation ?projectId .\n  ?location skos:notation ?locationId .\n\n  BIND (IRI(CONCAT(\"http://data.openbudgets.eu/resource/datasets/esf-czech-projects/observation/\",\n                  \"expenditure/EU/allocated/\", ?partnerId, \"/\", ?projectId, \"/\", STR(?date),\n                  \"/\", ?locationId))\n       AS ?splitObservation)\n}\n;\n\n###############################\n### Split paid Czech amount ###\n###############################\nDELETE {\n  ?observation :amountPaidCS ?amountPaidCS .\n}\nINSERT {\n  ?splitObservation a qb:Observation ;\n    obeu-dimension:organization <http://linked.opendata.cz/resource/domain/mfcr/monitor/ciselniky/UcetniJednotka/66002222/2009-12-31> ;\n    obeu-dimension:paymentPhase obeu-paymentphase:paid ;\n    esf-dimension:operationalProgramme ?operationalProgramme ; \n    obeu-dimension:partner ?partner ;\n    obeu-dimension:project ?project ;\n    obeu-optional:location ?location ;\n    obeu-dimension:date ?date ;\n    obeu-measure:amount ?amountPaidCS ;\n    qb:dataSet <http://data.openbudgets.eu/resource/dataset/esf-czech-projects> . \n}\nWHERE {\n  ?observation a qb:Observation ;\n    esf-dimension:operationalProgramme ?operationalProgramme ;\n    obeu-dimension:partner ?partner ;\n    obeu-dimension:project ?project ;\n    obeu-optional:location ?location ;\n    obeu-dimension:date ?date ;\n    :amountPaidCS ?amountPaidCS .\n\n  ?operationalProgramme skos:notation ?operationalProgrammeId .\n  ?partner rov:registration/skos:notation ?partnerId .\n  ?project adms:identifier/skos:notation ?projectId .\n  ?location skos:notation ?locationId .\n\n  BIND (IRI(CONCAT(\"http://data.openbudgets.eu/resource/datasets/esf-czech-projects/observation/\",\n                  \"expenditure/66002222/paid/\", ?operationalProgrammeId, \"/\", ?partnerId, \"/\",\n                  ?projectId, \"/\", STR(?date), \"/\", ?locationId))\n       AS ?splitObservation)\n}\n;\n\n############################\n### Split paid EU amount ###\n############################\nDELETE {\n  ?observation :amountPaidEU ?amountPaidEU .\n}\nINSERT {\n  ?splitObservation a qb:Observation ;\n    obeu-dimension:organization <http://dbpedia.org/resource/European_Union> ;\n    obeu-dimension:paymentPhase obeu-paymentphase:paid ;\n    esf-dimension:operationalProgramme ?operationalProgramme ; \n    obeu-dimension:partner ?partner ;\n    obeu-dimension:project ?project ;\n    obeu-optional:location ?location ;\n    obeu-dimension:date ?date ;\n    obeu-measure:amount ?amountPaidEU ;\n    qb:dataSet <http://data.openbudgets.eu/resource/dataset/esf-czech-projects> . \n}\nWHERE {\n  ?observation a qb:Observation ;\n    esf-dimension:operationalProgramme ?operationalProgramme ;\n    obeu-dimension:partner ?partner ;\n    obeu-dimension:project ?project ;\n    obeu-optional:location ?location ;\n    obeu-dimension:date ?date ;\n    :amountPaidEU ?amountPaidEU .\n\n  ?partner rov:registration/skos:notation ?partnerId .\n  ?project adms:identifier/skos:notation ?projectId .\n  ?location skos:notation ?locationId .\n\n  BIND (IRI(CONCAT(\"http://data.openbudgets.eu/resource/datasets/esf-czech-projects/observation/\",\n                  \"expenditure/EU/paid/\", ?partnerId, \"/\", ?projectId, \"/\", STR(?date),\n                  \"/\", ?locationId))\n       AS ?splitObservation)\n}\n;\n\n####################################\n### Split certified Czech amount ###\n####################################\nDELETE {\n  ?observation :amountCertifiedCS ?amountCertifiedCS .\n}\nINSERT {\n  ?splitObservation a qb:Observation ;\n    obeu-dimension:organization <http://linked.opendata.cz/resource/domain/mfcr/monitor/ciselniky/UcetniJednotka/66002222/2009-12-31> ;\n    obeu-dimension:paymentPhase obeu-paymentphase:certified ;\n    esf-dimension:operationalProgramme ?operationalProgramme ; \n    obeu-dimension:partner ?partner ;\n    obeu-dimension:project ?project ;\n    obeu-optional:location ?location ;\n    obeu-dimension:date ?date ;\n    obeu-measure:amount ?amountCertifiedCS ;\n    qb:dataSet <http://data.openbudgets.eu/resource/dataset/esf-czech-projects> . \n}\nWHERE {\n  ?observation a qb:Observation ;\n    esf-dimension:operationalProgramme ?operationalProgramme ;\n    obeu-dimension:partner ?partner ;\n    obeu-dimension:project ?project ;\n    obeu-optional:location ?location ;\n    obeu-dimension:date ?date ;\n    :amountCertifiedCS ?amountCertifiedCS .\n\n  ?operationalProgramme skos:notation ?operationalProgrammeId .\n  ?partner rov:registration/skos:notation ?partnerId .\n  ?project adms:identifier/skos:notation ?projectId .\n  ?location skos:notation ?locationId .\n\n  BIND (IRI(CONCAT(\"http://data.openbudgets.eu/resource/datasets/esf-czech-projects/observation/\",\n                  \"expenditure/66002222/certified/\", ?operationalProgrammeId, \"/\", ?partnerId, \"/\",\n                  ?projectId, \"/\", STR(?date), \"/\", ?locationId))\n       AS ?splitObservation)\n}\n;\n\n#################################\n### Split certified EU amount ###\n#################################\nDELETE {\n  ?observation :amountCertifiedEU ?amountCertifiedEU .\n}\nINSERT {\n  ?splitObservation a qb:Observation ;\n    obeu-dimension:organization <http://dbpedia.org/resource/European_Union> ;\n    obeu-dimension:paymentPhase obeu-paymentphase:certified ;\n    esf-dimension:operationalProgramme ?operationalProgramme ; \n    obeu-dimension:partner ?partner ;\n    obeu-dimension:project ?project ;\n    obeu-optional:location ?location ;\n    obeu-dimension:date ?date ;\n    obeu-measure:amount ?amountCertifiedEU ;\n    qb:dataSet <http://data.openbudgets.eu/resource/dataset/esf-czech-projects> . \n}\nWHERE {\n  ?observation a qb:Observation ;\n    esf-dimension:operationalProgramme ?operationalProgramme ;\n    obeu-dimension:partner ?partner ;\n    obeu-dimension:project ?project ;\n    obeu-optional:location ?location ;\n    obeu-dimension:date ?date ;\n    :amountCertifiedEU ?amountCertifiedEU .\n\n  ?partner rov:registration/skos:notation ?partnerId .\n  ?project adms:identifier/skos:notation ?projectId .\n  ?location skos:notation ?locationId .\n\n  BIND (IRI(CONCAT(\"http://data.openbudgets.eu/resource/datasets/esf-czech-projects/observation/\",\n                  \"expenditure/EU/certified/\", ?partnerId, \"/\", ?projectId, \"/\", STR(?date),\n                  \"/\", ?locationId))\n       AS ?splitObservation)\n}\n;\n\n######################################\n### Delete blank node observations ###\n######################################\nDELETE {\n  ?observation ?p ?o .\n}\nWHERE {\n  {\n    SELECT DISTINCT ?observation\n    WHERE {\n      ?observation a qb:Observation .\n      FILTER isBlank(?observation)\n    }\n  }\n  ?observation ?p ?o .\n}\n;\n\n#############################\n### Pick longer notations ###\n#############################\nDELETE {\n  ?concept skos:notation ?notation .\n}\nWHERE {\n  {\n    SELECT ?concept \n    WHERE {\n      ?concept a skos:Concept ;\n        skos:notation ?notation .\n    }\n    GROUP BY ?concept\n    HAVING (COUNT(?notation) > 1)\n  }\n  ?concept skos:notation ?longestNotation, ?notation .\n  FILTER (!sameTerm(?longestNotation, ?notation) && STRLEN(?longestNotation) > STRLEN(?notation))\n}"
+        }
+      ],
+      "@id": "http://obeu.vse.cz:9080/resources/pipelines/created-1468236643962/components/0bcaa672-f335-4c90-9227-eb28b4134c37/configuration"
+    },
+    {
+      "@graph": [
+        {
+          "@id": "http://localhost/resources/configuration",
+          "@type": [
+            "http://plugins.linkedpipes.com/ontology/t-sparqlConstruct#Configuration"
+          ],
+          "http://plugins.linkedpipes.com/ontology/t-sparqlConstruct#query": "PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>\nPREFIX skos: <http://www.w3.org/2004/02/skos/core#>\n\nCONSTRUCT {\n  ?concept ?p ?o .\n  <http://data.openbudgets.eu/ontology/esf-czech-projects/code-list/operational-programme> a skos:ConceptScheme ;\n    rdfs:label \"Code list of the Czech operational programmes\"@en .\n}\nWHERE {\n  ?concept skos:inScheme <http://data.openbudgets.eu/ontology/esf-czech-projects/code-list/operational-programme> ;\n    ?p ?o .\n}"
+        }
+      ],
+      "@id": "http://obeu.vse.cz:9080/resources/pipelines/created-1468236643962/components/313e1cda-077a-4f0d-9fc6-b4e5cd1b1ba2/configuration"
+    },
+    {
+      "@graph": [
+        {
+          "@id": "http://localhost/resources/configuration",
+          "@type": [
+            "http://plugins.linkedpipes.com/ontology/t-sparqlUpdate#Configuration"
+          ],
+          "http://plugins.linkedpipes.com/ontology/t-sparqlUpdate#query": "PREFIX skos: <http://www.w3.org/2004/02/skos/core#>\n\nDELETE {\n  ?concept ?p ?o .\n}\nWHERE {\n  ?concept skos:inScheme <http://data.openbudgets.eu/ontology/esf-czech-projects/code-list/operational-programme> ;\n    ?p ?o .\n}"
+        }
+      ],
+      "@id": "http://obeu.vse.cz:9080/resources/pipelines/created-1468236643962/components/2dbfbe58-538b-48eb-abfc-814d60ae5f4b/configuration"
+    },
+    {
+      "@graph": [
+        {
+          "@id": "http://localhost/resources/configuration",
+          "@type": [
+            "http://plugins.linkedpipes.com/ontology/t-sparqlConstruct#Configuration"
+          ],
+          "http://plugins.linkedpipes.com/ontology/t-sparqlConstruct#query": "PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>\nPREFIX skos: <http://www.w3.org/2004/02/skos/core#>\n\nCONSTRUCT {\n  ?concept ?p ?o .\n  <http://data.openbudgets.eu/resource/dataset/esf-cz-projects/codelist/partner-types> a skos:ConceptScheme ;\n    rdfs:label \"Code list of partner types in Czech ESF projects\"@en .\n}\nWHERE {\n  ?concept skos:inScheme <http://data.openbudgets.eu/resource/dataset/esf-cz-projects/codelist/partner-types> ;\n    ?p ?o .\n}"
+        }
+      ],
+      "@id": "http://obeu.vse.cz:9080/resources/pipelines/created-1468236643962/components/c976eabc-4734-4abd-89f1-7ec08565ab76/configuration"
+    },
+    {
+      "@graph": [
+        {
+          "@id": "http://localhost/resources/configuration",
+          "@type": [
+            "http://plugins.linkedpipes.com/ontology/t-sparqlUpdate#Configuration"
+          ],
+          "http://plugins.linkedpipes.com/ontology/t-sparqlUpdate#query": "PREFIX skos: <http://www.w3.org/2004/02/skos/core#>\n\nDELETE {\n  ?concept ?p ?o .\n}\nWHERE {\n  ?concept skos:inScheme <http://data.openbudgets.eu/resource/dataset/esf-cz-projects/codelist/partner-types> ;\n    ?p ?o .\n}"
+        }
+      ],
+      "@id": "http://obeu.vse.cz:9080/resources/pipelines/created-1468236643962/components/710b7501-af47-4dce-bae4-5f4659168e33/configuration"
+    },
+    {
+      "@graph": [
+        {
+          "@id": "http://localhost/resources/t-rdfToFile/configuration",
+          "@type": [
+            "http://plugins.linkedpipes.com/ontology/t-rdfToFile#Configuration"
+          ],
+          "http://plugins.linkedpipes.com/ontology/t-rdfToFile#fileName": "czech_operational_programmes.ttl",
+          "http://plugins.linkedpipes.com/ontology/t-rdfToFile#fileType": "text/turtle",
+          "http://plugins.linkedpipes.com/ontology/t-rdfToFile#graphUri": "http://localhost/default"
+        }
+      ],
+      "@id": "http://obeu.vse.cz:9080/resources/pipelines/created-1468236643962/components/cc0a7e9a-78eb-47e7-9314-741113d1e049/configuration"
+    },
+    {
+      "@graph": [
+        {
+          "@id": "http://localhost/resources/t-rdfToFile/configuration",
+          "@type": [
+            "http://plugins.linkedpipes.com/ontology/t-rdfToFile#Configuration"
+          ],
+          "http://plugins.linkedpipes.com/ontology/t-rdfToFile#fileName": "czech_partner_types.ttl",
+          "http://plugins.linkedpipes.com/ontology/t-rdfToFile#fileType": "text/turtle",
+          "http://plugins.linkedpipes.com/ontology/t-rdfToFile#graphUri": "http://localhost/default"
+        }
+      ],
+      "@id": "http://obeu.vse.cz:9080/resources/pipelines/created-1468236643962/components/6dfbbb2d-beae-45d1-9a45-a7e63c815cbc/configuration"
+    },
+    {
+      "@graph": [
+        {
+          "@id": "http://localhost/resources/t-rdfToFile/configuration",
+          "@type": [
+            "http://plugins.linkedpipes.com/ontology/t-rdfToFile#Configuration"
+          ],
+          "http://plugins.linkedpipes.com/ontology/t-rdfToFile#fileName": "esf_czech_projects.ttl",
+          "http://plugins.linkedpipes.com/ontology/t-rdfToFile#fileType": "text/turtle",
+          "http://plugins.linkedpipes.com/ontology/t-rdfToFile#graphUri": "http://localhost/default"
+        }
+      ],
+      "@id": "http://obeu.vse.cz:9080/resources/pipelines/created-1468236643962/components/29f96bb9-7f43-4edc-a18d-ffe98c59c4b1/configuration"
+    },
+    {
+      "@graph": [
+        {
+          "@id": "http://localhost/resources/configuration",
+          "@type": [
+            "http://plugins.linkedpipes.com/ontology/l-filesToScp#Configuration"
+          ],
+          "http://plugins.linkedpipes.com/ontology/l-filesToScp#targetDirectory": "/data/dump/esf-czech-projects/",
+          "http://plugins.linkedpipes.com/ontology/l-filesToScp#createDirectory": true
+        }
+      ],
+      "@id": "http://obeu.vse.cz:9080/resources/pipelines/created-1468236643962/components/9bd824d2-e6c4-46cb-9595-1c61bff44b8e/configuration"
+    },
+    {
+      "@graph": [
+        {
+          "@id": "http://localhost/resources/configuration",
+          "@type": [
+            "http://etl.linkedpipes.com/resource/components/e-dcatAp11Dataset/Configuration"
+          ],
+          "http://etl.linkedpipes.com/resource/components/e-dcatAp11Dataset/datasetIRI": "http://data.openbudgets.eu/resource/dataset/esf-czech-projects",
+          "http://etl.linkedpipes.com/resource/components/e-dcatAp11Dataset/titles": [
+            {
+              "@language": "en",
+              "@value": "ESF Czech projects 2007-2013"
+            }
+          ],
+          "http://etl.linkedpipes.com/resource/components/e-dcatAp11Dataset/descriptions": [
+            {
+              "@language": "en",
+              "@value": "Dataset of Czech projects funded from the European Structural and Investment Fund"
+            }
+          ],
+          "http://etl.linkedpipes.com/resource/components/e-dcatAp11Dataset/contactPointTypeIRI": "",
+          "http://etl.linkedpipes.com/resource/components/e-dcatAp11Dataset/contactPointName": "",
+          "http://etl.linkedpipes.com/resource/components/e-dcatAp11Dataset/contactPointEmail": "",
+          "http://etl.linkedpipes.com/resource/components/e-dcatAp11Dataset/euThemeIRI": "",
+          "http://etl.linkedpipes.com/resource/components/e-dcatAp11Dataset/publisherIRI": "http://openbudgets.eu",
+          "http://etl.linkedpipes.com/resource/components/e-dcatAp11Dataset/publisherNames": [
+            {
+              "@language": "en",
+              "@value": "OpenBudgets.eu"
+            }
+          ],
+          "http://etl.linkedpipes.com/resource/components/e-dcatAp11Dataset/publisherTypeIRI": "http://purl.org/adms/publishertype/Academia-ScientificOrganisation",
+          "http://etl.linkedpipes.com/resource/components/e-dcatAp11Dataset/languages": [
+            {
+              "@id": "http://publications.europa.eu/resource/authority/language/CES",
+              "@types": [
+                "http://etl.linkedpipes.com/resource/components/e-dcatAp11Dataset/LanguageObject"
+              ],
+              "http://etl.linkedpipes.com/resource/components/e-dcatAp11Dataset/IRI": "http://publications.europa.eu/resource/authority/language/CES",
+              "http://www.w3.org/2004/02/skos/core#prefLabel": "czech"
+            }
+          ],
+          "http://etl.linkedpipes.com/resource/components/e-dcatAp11Dataset/accrualPeriodicityIRI": "",
+          "http://etl.linkedpipes.com/resource/components/e-dcatAp11Dataset/spatialIRIs": [],
+          "http://etl.linkedpipes.com/resource/components/e-dcatAp11Dataset/accessRightsIRI": "",
+          "http://etl.linkedpipes.com/resource/components/e-dcatAp11Dataset/identifier": "",
+          "http://etl.linkedpipes.com/resource/components/e-dcatAp11Dataset/datasetTypeIRI": "",
+          "http://etl.linkedpipes.com/resource/components/e-dcatAp11Dataset/version": ""
+        }
+      ],
+      "@id": "http://obeu.vse.cz:9080/resources/pipelines/created-1468236643962/components/a9a1d19e-16df-4daa-9222-4cf4b0bd3993/configuration"
+    },
+    {
+      "@graph": [
+        {
+          "@id": "http://localhost/resources/configuration",
+          "@type": [
+            "http://plugins.linkedpipes.com/ontology/e-httpGetFile#Configuration"
+          ],
+          "http://plugins.linkedpipes.com/ontology/e-httpGetFile#fileUri": "http://www.strukturalni-fondy.cz/getmedia/2447dd2b-b03c-49a7-affc-fda1b9b1334b/Prehled_projektu_20160603upraveno.xlsx?ext=.xlsx",
+          "http://plugins.linkedpipes.com/ontology/e-httpGetFile#fileName": "esf_cz_projects.xlsx"
+        }
+      ],
+      "@id": "http://obeu.vse.cz:9080/resources/pipelines/created-1468236643962/components/62b5ba97-2fef-4f11-9d0e-0bfc6babf3de/configuration"
+    },
+    {
+      "@graph": [
+        {
+          "@id": "http://localhost/resources/configuration",
+          "@type": [
+            "http://plugins.linkedpipes.com/ontology/t-excelToCsv#Configuration"
+          ],
+          "http://plugins.linkedpipes.com/ontology/t-excelToCsv#fileName": "esf_cz_projects.csv",
+          "http://plugins.linkedpipes.com/ontology/t-excelToCsv#sheetFilter": "List1",
+          "http://plugins.linkedpipes.com/ontology/t-excelToCsv#numericParse": true
+        }
+      ],
+      "@id": "http://obeu.vse.cz:9080/resources/pipelines/created-1468236643962/components/60bba7e2-4860-401a-9225-41d6c24ac539/configuration"
+    }
+  ]
+}
