@@ -1,0 +1,787 @@
+{
+  "@graph": [
+    {
+      "@graph": [
+        {
+          "@id": "http://localhost:18080/resources/pipelines/created-1472126089008",
+          "@type": [
+            "http://linkedpipes.com/ontology/Pipeline"
+          ],
+          "http://www.w3.org/2004/02/skos/core#prefLabel": "Bonn Budget Draft 2017-2024"
+        },
+        {
+          "@id": "http://localhost:18080/resources/pipelines/created-1472126089008/components/abae9164-33b8-423b-a465-d341b5f67a6e",
+          "@type": [
+            "http://linkedpipes.com/ontology/Component"
+          ],
+          "http://www.w3.org/2004/02/skos/core#prefLabel": "Graph merger",
+          "http://linkedpipes.com/ontology/template": [
+            {
+              "@id": "http://localhost:18080/resources/components/t-graphMerger"
+            }
+          ],
+          "http://linkedpipes.com/ontology/x": 1140,
+          "http://linkedpipes.com/ontology/y": 260
+        },
+        {
+          "@id": "http://localhost:18080/resources/pipelines/created-1472126089008/components/29f2d663-ac44-480a-b95e-1f86fe1aeff8",
+          "@type": [
+            "http://linkedpipes.com/ontology/Component"
+          ],
+          "http://www.w3.org/2004/02/skos/core#prefLabel": "SPARQL update",
+          "http://linkedpipes.com/ontology/template": [
+            {
+              "@id": "http://localhost:18080/resources/components/t-sparqlUpdate"
+            }
+          ],
+          "http://linkedpipes.com/ontology/x": 920,
+          "http://linkedpipes.com/ontology/y": 520,
+          "http://purl.org/dc/terms/description": "Remove Row Property",
+          "http://linkedpipes.com/ontology/configurationGraph": {
+            "@id": "http://localhost:18080/resources/pipelines/created-1472126089008/components/29f2d663-ac44-480a-b95e-1f86fe1aeff8/configuration"
+          }
+        },
+        {
+          "@id": "http://localhost:18080/resources/pipelines/created-1472126089008/components/ade48a5c-abe4-4dd3-98cf-8c7b57654d24",
+          "@type": [
+            "http://linkedpipes.com/ontology/Component"
+          ],
+          "http://www.w3.org/2004/02/skos/core#prefLabel": "SPARQL update",
+          "http://linkedpipes.com/ontology/template": [
+            {
+              "@id": "http://localhost:18080/resources/components/t-sparqlUpdate"
+            }
+          ],
+          "http://linkedpipes.com/ontology/x": 1720,
+          "http://linkedpipes.com/ontology/y": 540,
+          "http://linkedpipes.com/ontology/configurationGraph": {
+            "@id": "http://localhost:18080/resources/pipelines/created-1472126089008/components/ade48a5c-abe4-4dd3-98cf-8c7b57654d24/configuration"
+          },
+          "http://purl.org/dc/terms/description": "Insert Header"
+        },
+        {
+          "@id": "http://localhost:18080/resources/pipelines/created-1472126089008/components/b7e1a0d7-1399-4ea6-adc8-970aa6bfd151",
+          "@type": [
+            "http://linkedpipes.com/ontology/Component"
+          ],
+          "http://www.w3.org/2004/02/skos/core#prefLabel": "Tabular ODCS",
+          "http://linkedpipes.com/ontology/template": [
+            {
+              "@id": "http://localhost:18080/resources/components/t-tabularUv"
+            }
+          ],
+          "http://linkedpipes.com/ontology/x": 960,
+          "http://linkedpipes.com/ontology/y": 260,
+          "http://purl.org/dc/terms/description": "Mapping",
+          "http://linkedpipes.com/ontology/configurationGraph": {
+            "@id": "http://localhost:18080/resources/pipelines/created-1472126089008/components/b7e1a0d7-1399-4ea6-adc8-970aa6bfd151/configuration"
+          }
+        },
+        {
+          "@id": "http://localhost:18080/resources/pipelines/created-1472126089008/components/97e86312-4572-4b0f-b126-615a427f26f7",
+          "@type": [
+            "http://linkedpipes.com/ontology/Component"
+          ],
+          "http://www.w3.org/2004/02/skos/core#prefLabel": "HTTP get",
+          "http://linkedpipes.com/ontology/template": [
+            {
+              "@id": "http://localhost:18080/resources/components/e-httpGetFile"
+            }
+          ],
+          "http://linkedpipes.com/ontology/x": 740,
+          "http://linkedpipes.com/ontology/y": 260,
+          "http://purl.org/dc/terms/description": "Bonn Budget\nDraft 2017-2024",
+          "http://linkedpipes.com/ontology/configurationGraph": {
+            "@id": "http://localhost:18080/resources/pipelines/created-1472126089008/components/97e86312-4572-4b0f-b126-615a427f26f7/configuration"
+          }
+        },
+        {
+          "@id": "http://localhost:18080/resources/pipelines/created-1472126089008/components/8708a5f1-31b2-4ad8-94c0-f091cbbd303f",
+          "@type": [
+            "http://linkedpipes.com/ontology/Component"
+          ],
+          "http://www.w3.org/2004/02/skos/core#prefLabel": "SPARQL construct",
+          "http://linkedpipes.com/ontology/template": [
+            {
+              "@id": "http://localhost:18080/resources/components/t-sparqlConstruct"
+            }
+          ],
+          "http://linkedpipes.com/ontology/x": 1280,
+          "http://linkedpipes.com/ontology/y": 540,
+          "http://purl.org/dc/terms/description": "Classification literals to URIs",
+          "http://linkedpipes.com/ontology/configurationGraph": {
+            "@id": "http://localhost:18080/resources/pipelines/created-1472126089008/components/8708a5f1-31b2-4ad8-94c0-f091cbbd303f/configuration"
+          }
+        },
+        {
+          "@id": "http://localhost:18080/resources/pipelines/created-1472126089008/components/572e0c8c-a917-4da4-abbb-8d329421685b",
+          "@type": [
+            "http://linkedpipes.com/ontology/Component"
+          ],
+          "http://www.w3.org/2004/02/skos/core#prefLabel": "SPARQL update",
+          "http://linkedpipes.com/ontology/template": [
+            {
+              "@id": "http://localhost:18080/resources/components/t-sparqlUpdate"
+            }
+          ],
+          "http://linkedpipes.com/ontology/x": 1280,
+          "http://linkedpipes.com/ontology/y": 620,
+          "http://purl.org/dc/terms/description": "Remove classification literals",
+          "http://linkedpipes.com/ontology/configurationGraph": {
+            "@id": "http://localhost:18080/resources/pipelines/created-1472126089008/components/572e0c8c-a917-4da4-abbb-8d329421685b/configuration"
+          }
+        },
+        {
+          "@id": "http://localhost:18080/resources/pipelines/created-1472126089008/components/65177769-c7c2-4f26-87f2-075ba540dcd8",
+          "@type": [
+            "http://linkedpipes.com/ontology/Component"
+          ],
+          "http://www.w3.org/2004/02/skos/core#prefLabel": "SPARQL construct",
+          "http://linkedpipes.com/ontology/template": [
+            {
+              "@id": "http://localhost:18080/resources/components/t-sparqlConstruct"
+            }
+          ],
+          "http://linkedpipes.com/ontology/x": 1280,
+          "http://linkedpipes.com/ontology/y": 340,
+          "http://purl.org/dc/terms/description": "Operation character literals to URIs",
+          "http://linkedpipes.com/ontology/configurationGraph": {
+            "@id": "http://localhost:18080/resources/pipelines/created-1472126089008/components/65177769-c7c2-4f26-87f2-075ba540dcd8/configuration"
+          }
+        },
+        {
+          "@id": "http://localhost:18080/resources/pipelines/created-1472126089008/components/a8af5cb5-7f90-4587-adff-6d6c76d15b24",
+          "@type": [
+            "http://linkedpipes.com/ontology/Component"
+          ],
+          "http://www.w3.org/2004/02/skos/core#prefLabel": "SPARQL update",
+          "http://linkedpipes.com/ontology/template": [
+            {
+              "@id": "http://localhost:18080/resources/components/t-sparqlUpdate"
+            }
+          ],
+          "http://linkedpipes.com/ontology/x": 1280,
+          "http://linkedpipes.com/ontology/y": 420,
+          "http://purl.org/dc/terms/description": "Remove operation character literals",
+          "http://linkedpipes.com/ontology/configurationGraph": {
+            "@id": "http://localhost:18080/resources/pipelines/created-1472126089008/components/a8af5cb5-7f90-4587-adff-6d6c76d15b24/configuration"
+          }
+        },
+        {
+          "@id": "http://localhost:18080/resources/pipelines/created-1472126089008/connection/7e31552c-4c9a-419f-8cb5-36fef781877e",
+          "@type": [
+            "http://linkedpipes.com/ontology/Connection"
+          ],
+          "http://linkedpipes.com/ontology/sourceComponent": {
+            "@id": "http://localhost:18080/resources/pipelines/created-1472126089008/components/b7e1a0d7-1399-4ea6-adc8-970aa6bfd151"
+          },
+          "http://linkedpipes.com/ontology/sourceBinding": "OutputRdf",
+          "http://linkedpipes.com/ontology/targetComponent": {
+            "@id": "http://localhost:18080/resources/pipelines/created-1472126089008/components/abae9164-33b8-423b-a465-d341b5f67a6e"
+          },
+          "http://linkedpipes.com/ontology/targetBinding": "InputRdf"
+        },
+        {
+          "@id": "http://localhost:18080/resources/pipelines/created-1472126089008/connection/b20a1114-0b93-4eb8-810b-8233f3e9500a",
+          "@type": [
+            "http://linkedpipes.com/ontology/Connection"
+          ],
+          "http://linkedpipes.com/ontology/sourceComponent": {
+            "@id": "http://localhost:18080/resources/pipelines/created-1472126089008/components/97e86312-4572-4b0f-b126-615a427f26f7"
+          },
+          "http://linkedpipes.com/ontology/sourceBinding": "FilesOutput",
+          "http://linkedpipes.com/ontology/targetComponent": {
+            "@id": "http://localhost:18080/resources/pipelines/created-1472126089008/components/b7e1a0d7-1399-4ea6-adc8-970aa6bfd151"
+          },
+          "http://linkedpipes.com/ontology/targetBinding": "InputFiles"
+        },
+        {
+          "@id": "http://localhost:18080/resources/pipelines/created-1472126089008/connection/576aa399-273b-4a81-8631-f9d54426b095",
+          "@type": [
+            "http://linkedpipes.com/ontology/Connection"
+          ],
+          "http://linkedpipes.com/ontology/sourceComponent": {
+            "@id": "http://localhost:18080/resources/pipelines/created-1472126089008/components/8708a5f1-31b2-4ad8-94c0-f091cbbd303f"
+          },
+          "http://linkedpipes.com/ontology/sourceBinding": "OutputRdf",
+          "http://linkedpipes.com/ontology/targetComponent": {
+            "@id": "http://localhost:18080/resources/pipelines/created-1472126089008/components/ade48a5c-abe4-4dd3-98cf-8c7b57654d24"
+          },
+          "http://linkedpipes.com/ontology/targetBinding": "InputRdf"
+        },
+        {
+          "@id": "http://localhost:18080/resources/pipelines/created-1472126089008/connection/aa8d0269-bea1-483d-92b9-1bd03637ddf3",
+          "@type": [
+            "http://linkedpipes.com/ontology/Connection"
+          ],
+          "http://linkedpipes.com/ontology/sourceComponent": {
+            "@id": "http://localhost:18080/resources/pipelines/created-1472126089008/components/abae9164-33b8-423b-a465-d341b5f67a6e"
+          },
+          "http://linkedpipes.com/ontology/sourceBinding": "OutputRdf",
+          "http://linkedpipes.com/ontology/targetComponent": {
+            "@id": "http://localhost:18080/resources/pipelines/created-1472126089008/components/29f2d663-ac44-480a-b95e-1f86fe1aeff8"
+          },
+          "http://linkedpipes.com/ontology/targetBinding": "InputRdf"
+        },
+        {
+          "@id": "http://localhost:18080/resources/pipelines/created-1472126089008/connection/540ebf7f-b8b7-45f8-97f6-47d7f5997365",
+          "@type": [
+            "http://linkedpipes.com/ontology/Connection"
+          ],
+          "http://linkedpipes.com/ontology/sourceComponent": {
+            "@id": "http://localhost:18080/resources/pipelines/created-1472126089008/components/65177769-c7c2-4f26-87f2-075ba540dcd8"
+          },
+          "http://linkedpipes.com/ontology/sourceBinding": "OutputRdf",
+          "http://linkedpipes.com/ontology/targetComponent": {
+            "@id": "http://localhost:18080/resources/pipelines/created-1472126089008/components/ade48a5c-abe4-4dd3-98cf-8c7b57654d24"
+          },
+          "http://linkedpipes.com/ontology/targetBinding": "InputRdf"
+        },
+        {
+          "@id": "http://localhost:18080/resources/pipelines/created-1472126089008/connection/c8ae5615-0336-43d1-bc47-edc7cfeff747",
+          "@type": [
+            "http://linkedpipes.com/ontology/Connection"
+          ],
+          "http://linkedpipes.com/ontology/sourceComponent": {
+            "@id": "http://localhost:18080/resources/pipelines/created-1472126089008/components/29f2d663-ac44-480a-b95e-1f86fe1aeff8"
+          },
+          "http://linkedpipes.com/ontology/sourceBinding": "OutputRdf",
+          "http://linkedpipes.com/ontology/targetComponent": {
+            "@id": "http://localhost:18080/resources/pipelines/created-1472126089008/components/a8af5cb5-7f90-4587-adff-6d6c76d15b24"
+          },
+          "http://linkedpipes.com/ontology/targetBinding": "InputRdf"
+        },
+        {
+          "@id": "http://localhost:18080/resources/pipelines/created-1472126089008/connection/e05f7054-98dd-4806-b429-befb2dcf0c20",
+          "@type": [
+            "http://linkedpipes.com/ontology/Connection"
+          ],
+          "http://linkedpipes.com/ontology/sourceComponent": {
+            "@id": "http://localhost:18080/resources/pipelines/created-1472126089008/components/a8af5cb5-7f90-4587-adff-6d6c76d15b24"
+          },
+          "http://linkedpipes.com/ontology/sourceBinding": "OutputRdf",
+          "http://linkedpipes.com/ontology/targetComponent": {
+            "@id": "http://localhost:18080/resources/pipelines/created-1472126089008/components/572e0c8c-a917-4da4-abbb-8d329421685b"
+          },
+          "http://linkedpipes.com/ontology/targetBinding": "InputRdf"
+        },
+        {
+          "@id": "http://localhost:18080/resources/pipelines/created-1472126089008/connection/52182336-3d7b-4f20-91d8-fdd467602a20",
+          "@type": [
+            "http://linkedpipes.com/ontology/Connection"
+          ],
+          "http://linkedpipes.com/ontology/sourceComponent": {
+            "@id": "http://localhost:18080/resources/pipelines/created-1472126089008/components/29f2d663-ac44-480a-b95e-1f86fe1aeff8"
+          },
+          "http://linkedpipes.com/ontology/sourceBinding": "OutputRdf",
+          "http://linkedpipes.com/ontology/targetComponent": {
+            "@id": "http://localhost:18080/resources/pipelines/created-1472126089008/components/65177769-c7c2-4f26-87f2-075ba540dcd8"
+          },
+          "http://linkedpipes.com/ontology/targetBinding": "InputRdf"
+        },
+        {
+          "@id": "http://localhost:18080/resources/pipelines/created-1472126089008/components/4a045111-73d7-42f6-a877-48635f4da738",
+          "@type": [
+            "http://linkedpipes.com/ontology/Component"
+          ],
+          "http://www.w3.org/2004/02/skos/core#prefLabel": "SPARQL construct",
+          "http://linkedpipes.com/ontology/template": [
+            {
+              "@id": "http://localhost:18080/resources/components/t-sparqlConstruct"
+            }
+          ],
+          "http://linkedpipes.com/ontology/x": 1300,
+          "http://linkedpipes.com/ontology/y": 760,
+          "http://purl.org/dc/terms/description": "Construct Observations",
+          "http://linkedpipes.com/ontology/configurationGraph": {
+            "@id": "http://localhost:18080/resources/pipelines/created-1472126089008/components/4a045111-73d7-42f6-a877-48635f4da738/configuration"
+          }
+        },
+        {
+          "@id": "http://localhost:18080/resources/pipelines/created-1472126089008/connection/34559ec5-c8f4-45d8-b198-e6d9da39dea3",
+          "@type": [
+            "http://linkedpipes.com/ontology/Connection"
+          ],
+          "http://linkedpipes.com/ontology/sourceComponent": {
+            "@id": "http://localhost:18080/resources/pipelines/created-1472126089008/components/29f2d663-ac44-480a-b95e-1f86fe1aeff8"
+          },
+          "http://linkedpipes.com/ontology/sourceBinding": "OutputRdf",
+          "http://linkedpipes.com/ontology/targetComponent": {
+            "@id": "http://localhost:18080/resources/pipelines/created-1472126089008/components/8708a5f1-31b2-4ad8-94c0-f091cbbd303f"
+          },
+          "http://linkedpipes.com/ontology/targetBinding": "InputRdf"
+        },
+        {
+          "@id": "http://localhost:18080/resources/pipelines/created-1472126089008/connection/281bdf61-e9c6-415d-af22-1f4f4dec840b",
+          "@type": [
+            "http://linkedpipes.com/ontology/Connection"
+          ],
+          "http://linkedpipes.com/ontology/sourceComponent": {
+            "@id": "http://localhost:18080/resources/pipelines/created-1472126089008/components/29f2d663-ac44-480a-b95e-1f86fe1aeff8"
+          },
+          "http://linkedpipes.com/ontology/sourceBinding": "OutputRdf",
+          "http://linkedpipes.com/ontology/targetComponent": {
+            "@id": "http://localhost:18080/resources/pipelines/created-1472126089008/components/4a045111-73d7-42f6-a877-48635f4da738"
+          },
+          "http://linkedpipes.com/ontology/targetBinding": "InputRdf"
+        },
+        {
+          "@id": "http://localhost:18080/resources/pipelines/created-1472126089008/connection/88292011-c5ee-474b-8907-2b14fc983a5c",
+          "@type": [
+            "http://linkedpipes.com/ontology/Connection"
+          ],
+          "http://linkedpipes.com/ontology/sourceComponent": {
+            "@id": "http://localhost:18080/resources/pipelines/created-1472126089008/components/4a045111-73d7-42f6-a877-48635f4da738"
+          },
+          "http://linkedpipes.com/ontology/sourceBinding": "OutputRdf",
+          "http://linkedpipes.com/ontology/targetComponent": {
+            "@id": "http://localhost:18080/resources/pipelines/created-1472126089008/components/ade48a5c-abe4-4dd3-98cf-8c7b57654d24"
+          },
+          "http://linkedpipes.com/ontology/targetBinding": "InputRdf"
+        },
+        {
+          "@id": "http://localhost:18080/resources/pipelines/created-1472126089008/components/3220fc61-0c4c-40d1-9bff-a9f819e19d0a",
+          "@type": [
+            "http://linkedpipes.com/ontology/Component"
+          ],
+          "http://www.w3.org/2004/02/skos/core#prefLabel": "SPARQL update",
+          "http://linkedpipes.com/ontology/template": [
+            {
+              "@id": "http://localhost:18080/resources/components/t-sparqlUpdate"
+            }
+          ],
+          "http://linkedpipes.com/ontology/x": 1320,
+          "http://linkedpipes.com/ontology/y": 840,
+          "http://purl.org/dc/terms/description": "Remove amounts",
+          "http://linkedpipes.com/ontology/configurationGraph": {
+            "@id": "http://localhost:18080/resources/pipelines/created-1472126089008/components/3220fc61-0c4c-40d1-9bff-a9f819e19d0a/configuration"
+          }
+        },
+        {
+          "@id": "http://localhost:18080/resources/pipelines/created-1472126089008/connection/72ab3c27-1a01-4b62-b181-552262bca89e",
+          "@type": [
+            "http://linkedpipes.com/ontology/Connection"
+          ],
+          "http://linkedpipes.com/ontology/sourceComponent": {
+            "@id": "http://localhost:18080/resources/pipelines/created-1472126089008/components/572e0c8c-a917-4da4-abbb-8d329421685b"
+          },
+          "http://linkedpipes.com/ontology/sourceBinding": "OutputRdf",
+          "http://linkedpipes.com/ontology/targetComponent": {
+            "@id": "http://localhost:18080/resources/pipelines/created-1472126089008/components/3220fc61-0c4c-40d1-9bff-a9f819e19d0a"
+          },
+          "http://linkedpipes.com/ontology/targetBinding": "InputRdf"
+        },
+        {
+          "@id": "http://localhost:18080/resources/pipelines/created-1472126089008/connection/2b9a8443-cc78-4e8f-a2cd-931fd428f7ab",
+          "@type": [
+            "http://linkedpipes.com/ontology/Connection"
+          ],
+          "http://linkedpipes.com/ontology/sourceComponent": {
+            "@id": "http://localhost:18080/resources/pipelines/created-1472126089008/components/3220fc61-0c4c-40d1-9bff-a9f819e19d0a"
+          },
+          "http://linkedpipes.com/ontology/sourceBinding": "OutputRdf",
+          "http://linkedpipes.com/ontology/targetComponent": {
+            "@id": "http://localhost:18080/resources/pipelines/created-1472126089008/components/ade48a5c-abe4-4dd3-98cf-8c7b57654d24"
+          },
+          "http://linkedpipes.com/ontology/targetBinding": "InputRdf"
+        },
+        {
+          "@id": "http://localhost:18080/resources/pipelines/created-1472126089008/components/77c852f4-87a7-4d79-8f49-d0f1edfc0e46",
+          "@type": [
+            "http://linkedpipes.com/ontology/Component"
+          ],
+          "http://www.w3.org/2004/02/skos/core#prefLabel": "DCAT-AP Dataset",
+          "http://linkedpipes.com/ontology/template": {
+            "@id": "http://localhost:18080/resources/components/e-dcatAp11Dataset"
+          },
+          "http://linkedpipes.com/ontology/x": 1440,
+          "http://linkedpipes.com/ontology/y": 240,
+          "http://purl.org/dc/terms/description": "Metadata",
+          "http://linkedpipes.com/ontology/configurationGraph": {
+            "@id": "http://localhost:18080/resources/pipelines/created-1472126089008/components/77c852f4-87a7-4d79-8f49-d0f1edfc0e46/configuration"
+          }
+        },
+        {
+          "@id": "http://localhost:18080/resources/pipelines/created-1472126089008/connection/4f3a089f-e859-4fd7-8f20-4917abf7b889",
+          "@type": [
+            "http://linkedpipes.com/ontology/Connection"
+          ],
+          "http://linkedpipes.com/ontology/sourceComponent": {
+            "@id": "http://localhost:18080/resources/pipelines/created-1472126089008/components/77c852f4-87a7-4d79-8f49-d0f1edfc0e46"
+          },
+          "http://linkedpipes.com/ontology/sourceBinding": "Metadata",
+          "http://linkedpipes.com/ontology/targetComponent": {
+            "@id": "http://localhost:18080/resources/pipelines/created-1472126089008/components/ade48a5c-abe4-4dd3-98cf-8c7b57654d24"
+          },
+          "http://linkedpipes.com/ontology/targetBinding": "InputRdf"
+        }
+      ],
+      "@id": "http://localhost:18080/resources/pipelines/created-1472126089008"
+    },
+    {
+      "@graph": [
+        {
+          "@id": "http://localhost/resources/configuration",
+          "@type": [
+            "http://plugins.linkedpipes.com/ontology/t-sparqlUpdate#Configuration"
+          ],
+          "http://plugins.linkedpipes.com/ontology/t-sparqlUpdate#query": "DELETE { ?s <http://linked.opendata.cz/ontology/odcs/tabular/row> ?o . }\nWHERE { ?s ?p ?o }"
+        }
+      ],
+      "@id": "http://localhost:18080/resources/pipelines/created-1472126089008/components/29f2d663-ac44-480a-b95e-1f86fe1aeff8/configuration"
+    },
+    {
+      "@graph": [
+        {
+          "@id": "http://localhost/resources/configuration",
+          "@type": [
+            "http://plugins.linkedpipes.com/ontology/t-sparqlUpdate#Configuration"
+          ],
+          "http://plugins.linkedpipes.com/ontology/t-sparqlUpdate#query": "INSERT DATA {\n<http://data.openbudgets.eu/resource/dataset/bonn-budget-draft-2017-2024>  a <http://purl.org/linked-data/cube#DataSet> ;\n    <http://data.openbudgets.eu/ontology/dsd/dimension/organization> <http://dbpedia.org/resource/Bonn> ;\n    <http://data.openbudgets.eu/ontology/dsd/attribute/currency> <http://data.openbudgets.eu/codelist/currency/EUR> ;\n    <http://data.openbudgets.eu/ontology/dsd/dimension/budgetPhase> <http://data.openbudgets.eu/resource/codelist/budget-phase/draft> ;\n    <http://purl.org/linked-data/cube#structure> <http://data.openbudgets.eu/ontology/dsd/bonn-budget-draft> .\n}"
+        }
+      ],
+      "@id": "http://localhost:18080/resources/pipelines/created-1472126089008/components/ade48a5c-abe4-4dd3-98cf-8c7b57654d24/configuration"
+    },
+    {
+      "@graph": [
+        {
+          "@id": "http://localhost/resources/configuration",
+          "@type": [
+            "http://plugins.linkedpipes.com/ontology/t-tabularUv#Configuration"
+          ],
+          "http://plugins.linkedpipes.com/ontology/t-tabularUv#keyColumn": "",
+          "http://plugins.linkedpipes.com/ontology/t-tabularUv#baseUri": "http://data.openbudgets.eu/resource/dataset/bonn-budget-draft-2017-2024/slice/",
+          "http://plugins.linkedpipes.com/ontology/t-tabularUv#quote": "",
+          "http://plugins.linkedpipes.com/ontology/t-tabularUv#delimeter": "",
+          "http://plugins.linkedpipes.com/ontology/t-tabularUv#linesToIgnore": 0,
+          "http://plugins.linkedpipes.com/ontology/t-tabularUv#encoding": "ISO-8859-2",
+          "http://plugins.linkedpipes.com/ontology/t-tabularUv#rowsLimit": 10000,
+          "http://plugins.linkedpipes.com/ontology/t-tabularUv#tableType": "XLS",
+          "http://plugins.linkedpipes.com/ontology/t-tabularUv#hasHeader": true,
+          "http://plugins.linkedpipes.com/ontology/t-tabularUv#ignoreBlankCell": true,
+          "http://plugins.linkedpipes.com/ontology/t-tabularUv#rowsClass": "http://purl.org/linked-data/cube#Slice",
+          "http://plugins.linkedpipes.com/ontology/t-tabularUv#sheetName": "Tabelle1",
+          "http://plugins.linkedpipes.com/ontology/t-tabularUv#xlsAdvancedParser": true,
+          "http://plugins.linkedpipes.com/ontology/t-tabularUv#ignoreMissingColumn": true,
+          "http://plugins.linkedpipes.com/ontology/t-tabularUv#column": [
+            {
+              "@id": "http://localhost/resources/temp/c06SNqG"
+            },
+            {
+              "@id": "http://localhost/resources/temp/4XJqyHC"
+            },
+            {
+              "@id": "http://localhost/resources/temp/g6mlRXv"
+            },
+            {
+              "@id": "http://localhost/resources/temp/cmYDWdB"
+            },
+            {
+              "@id": "http://localhost/resources/temp/ZyH35vj"
+            },
+            {
+              "@id": "http://localhost/resources/temp/ykYNmr3"
+            },
+            {
+              "@id": "http://localhost/resources/temp/UZljPtN"
+            },
+            {
+              "@id": "http://localhost/resources/temp/JdSK8GV"
+            },
+            {
+              "@id": "http://localhost/resources/temp/rl6D9rV"
+            },
+            {
+              "@id": "http://localhost/resources/temp/af78MTi"
+            },
+            {
+              "@id": "http://localhost/resources/temp/svWLEEP"
+            },
+            {
+              "@id": "http://localhost/resources/temp/06pMuwk"
+            }
+          ],
+          "http://plugins.linkedpipes.com/ontology/t-tabularUv#columnsAdvanced": [],
+          "http://plugins.linkedpipes.com/ontology/t-tabularUv#namedCell": [],
+          "http://plugins.linkedpipes.com/ontology/t-tabularUv#staticRowCounter": true,
+          "http://plugins.linkedpipes.com/ontology/t-tabularUv#autoAsString": true,
+          "http://plugins.linkedpipes.com/ontology/t-tabularUv#generateNew": false
+        },
+        {
+          "@id": "http://localhost/resources/temp/c06SNqG",
+          "@type": [
+            "http://plugins.linkedpipes.com/ontology/t-tabularUv#ColumnInfo"
+          ],
+          "http://plugins.linkedpipes.com/ontology/t-tabularUv#name": "Amt_Code",
+          "http://plugins.linkedpipes.com/ontology/t-tabularUv#uri": "http://data.openbudgets.eu/ontology/dsd/bonn-budget/dimension/administrativeClassification",
+          "http://plugins.linkedpipes.com/ontology/t-tabularUv#type": "String",
+          "http://plugins.linkedpipes.com/ontology/t-tabularUv#lang": ""
+        },
+        {
+          "@id": "http://localhost/resources/temp/4XJqyHC",
+          "@type": [
+            "http://plugins.linkedpipes.com/ontology/t-tabularUv#ColumnInfo"
+          ],
+          "http://plugins.linkedpipes.com/ontology/t-tabularUv#name": "Produkt_Code",
+          "http://plugins.linkedpipes.com/ontology/t-tabularUv#uri": "http://data.openbudgets.eu/ontology/dsd/bonn-budget/dimension/functionalClassification",
+          "http://plugins.linkedpipes.com/ontology/t-tabularUv#type": "String",
+          "http://plugins.linkedpipes.com/ontology/t-tabularUv#lang": ""
+        },
+        {
+          "@id": "http://localhost/resources/temp/g6mlRXv",
+          "@type": [
+            "http://plugins.linkedpipes.com/ontology/t-tabularUv#ColumnInfo"
+          ],
+          "http://plugins.linkedpipes.com/ontology/t-tabularUv#name": "Zeile_Code",
+          "http://plugins.linkedpipes.com/ontology/t-tabularUv#uri": "http://data.openbudgets.eu/ontology/dsd/bonn-budget/dimension/economicClassification",
+          "http://plugins.linkedpipes.com/ontology/t-tabularUv#type": "String",
+          "http://plugins.linkedpipes.com/ontology/t-tabularUv#lang": ""
+        },
+        {
+          "@id": "http://localhost/resources/temp/cmYDWdB",
+          "@type": [
+            "http://plugins.linkedpipes.com/ontology/t-tabularUv#ColumnInfo"
+          ],
+          "http://plugins.linkedpipes.com/ontology/t-tabularUv#name": "operationCharacter",
+          "http://plugins.linkedpipes.com/ontology/t-tabularUv#uri": "http://data.openbudgets.eu/ontology/dsd/dimension/operationCharacter",
+          "http://plugins.linkedpipes.com/ontology/t-tabularUv#type": "String",
+          "http://plugins.linkedpipes.com/ontology/t-tabularUv#lang": ""
+        },
+        {
+          "@id": "http://localhost/resources/temp/ZyH35vj",
+          "@type": [
+            "http://plugins.linkedpipes.com/ontology/t-tabularUv#ColumnInfo"
+          ],
+          "http://plugins.linkedpipes.com/ontology/t-tabularUv#name": "Entwurf 2017",
+          "http://plugins.linkedpipes.com/ontology/t-tabularUv#uri": "http://tmp/amount2017",
+          "http://plugins.linkedpipes.com/ontology/t-tabularUv#type": "Float",
+          "http://plugins.linkedpipes.com/ontology/t-tabularUv#lang": ""
+        },
+        {
+          "@id": "http://localhost/resources/temp/ykYNmr3",
+          "@type": [
+            "http://plugins.linkedpipes.com/ontology/t-tabularUv#ColumnInfo"
+          ],
+          "http://plugins.linkedpipes.com/ontology/t-tabularUv#name": "Entwurf 2018",
+          "http://plugins.linkedpipes.com/ontology/t-tabularUv#uri": "http://tmp/amount2018",
+          "http://plugins.linkedpipes.com/ontology/t-tabularUv#type": "Float",
+          "http://plugins.linkedpipes.com/ontology/t-tabularUv#lang": ""
+        },
+        {
+          "@id": "http://localhost/resources/temp/UZljPtN",
+          "@type": [
+            "http://plugins.linkedpipes.com/ontology/t-tabularUv#ColumnInfo"
+          ],
+          "http://plugins.linkedpipes.com/ontology/t-tabularUv#name": "Entwurf 2019",
+          "http://plugins.linkedpipes.com/ontology/t-tabularUv#uri": "http://tmp/amount2019",
+          "http://plugins.linkedpipes.com/ontology/t-tabularUv#type": "Float",
+          "http://plugins.linkedpipes.com/ontology/t-tabularUv#typeFromDbf": false,
+          "http://plugins.linkedpipes.com/ontology/t-tabularUv#lang": ""
+        },
+        {
+          "@id": "http://localhost/resources/temp/JdSK8GV",
+          "@type": [
+            "http://plugins.linkedpipes.com/ontology/t-tabularUv#ColumnInfo"
+          ],
+          "http://plugins.linkedpipes.com/ontology/t-tabularUv#name": "Entwurf 2020",
+          "http://plugins.linkedpipes.com/ontology/t-tabularUv#uri": "http://tmp/amount2020",
+          "http://plugins.linkedpipes.com/ontology/t-tabularUv#type": "Float",
+          "http://plugins.linkedpipes.com/ontology/t-tabularUv#typeFromDbf": false,
+          "http://plugins.linkedpipes.com/ontology/t-tabularUv#lang": ""
+        },
+        {
+          "@id": "http://localhost/resources/temp/rl6D9rV",
+          "@type": [
+            "http://plugins.linkedpipes.com/ontology/t-tabularUv#ColumnInfo"
+          ],
+          "http://plugins.linkedpipes.com/ontology/t-tabularUv#name": "Entwurf 2021",
+          "http://plugins.linkedpipes.com/ontology/t-tabularUv#uri": "http://tmp/amount2021",
+          "http://plugins.linkedpipes.com/ontology/t-tabularUv#type": "Float",
+          "http://plugins.linkedpipes.com/ontology/t-tabularUv#typeFromDbf": false,
+          "http://plugins.linkedpipes.com/ontology/t-tabularUv#lang": ""
+        },
+        {
+          "@id": "http://localhost/resources/temp/af78MTi",
+          "@type": [
+            "http://plugins.linkedpipes.com/ontology/t-tabularUv#ColumnInfo"
+          ],
+          "http://plugins.linkedpipes.com/ontology/t-tabularUv#name": "Entwurf 2022",
+          "http://plugins.linkedpipes.com/ontology/t-tabularUv#uri": "http://tmp/amount2022",
+          "http://plugins.linkedpipes.com/ontology/t-tabularUv#type": "Float",
+          "http://plugins.linkedpipes.com/ontology/t-tabularUv#typeFromDbf": false,
+          "http://plugins.linkedpipes.com/ontology/t-tabularUv#lang": ""
+        },
+        {
+          "@id": "http://localhost/resources/temp/svWLEEP",
+          "@type": [
+            "http://plugins.linkedpipes.com/ontology/t-tabularUv#ColumnInfo"
+          ],
+          "http://plugins.linkedpipes.com/ontology/t-tabularUv#name": "Entwurf 2023",
+          "http://plugins.linkedpipes.com/ontology/t-tabularUv#uri": "http://tmp/amount2023",
+          "http://plugins.linkedpipes.com/ontology/t-tabularUv#type": "Float",
+          "http://plugins.linkedpipes.com/ontology/t-tabularUv#typeFromDbf": false,
+          "http://plugins.linkedpipes.com/ontology/t-tabularUv#lang": ""
+        },
+        {
+          "@id": "http://localhost/resources/temp/06pMuwk",
+          "@type": [
+            "http://plugins.linkedpipes.com/ontology/t-tabularUv#ColumnInfo"
+          ],
+          "http://plugins.linkedpipes.com/ontology/t-tabularUv#name": "Entwurf 2024",
+          "http://plugins.linkedpipes.com/ontology/t-tabularUv#uri": "http://tmp/amount2024",
+          "http://plugins.linkedpipes.com/ontology/t-tabularUv#type": "Float",
+          "http://plugins.linkedpipes.com/ontology/t-tabularUv#typeFromDbf": false,
+          "http://plugins.linkedpipes.com/ontology/t-tabularUv#lang": ""
+        }
+      ],
+      "@id": "http://localhost:18080/resources/pipelines/created-1472126089008/components/b7e1a0d7-1399-4ea6-adc8-970aa6bfd151/configuration"
+    },
+    {
+      "@graph": [
+        {
+          "@id": "http://localhost/resources/configuration",
+          "@type": [
+            "http://plugins.linkedpipes.com/ontology/e-httpGetFile#Configuration"
+          ],
+          "http://plugins.linkedpipes.com/ontology/e-httpGetFile#fileUri": "https://github.com/openbudgets/datasets/raw/master/Bonn/raw/Bonn_Budget_Draft_2017_2024_Processed.xlsx",
+          "http://plugins.linkedpipes.com/ontology/e-httpGetFile#fileName": "BonnBudgetDraft2017.xlsx"
+        }
+      ],
+      "@id": "http://localhost:18080/resources/pipelines/created-1472126089008/components/97e86312-4572-4b0f-b126-615a427f26f7/configuration"
+    },
+    {
+      "@graph": [
+        {
+          "@id": "http://localhost/resources/configuration",
+          "@type": [
+            "http://plugins.linkedpipes.com/ontology/t-sparqlConstruct#Configuration"
+          ],
+          "http://plugins.linkedpipes.com/ontology/t-sparqlConstruct#query": "CONSTRUCT {\n?s <http://data.openbudgets.eu/ontology/dsd/bonn-budget/dimension/functionalClassification> ?uri1 .\n?s <http://data.openbudgets.eu/ontology/dsd/bonn-budget/dimension/economicClassification> ?uri2 .\n?s <http://data.openbudgets.eu/ontology/dsd/bonn-budget/dimension/administrativeClassification> ?uri3 .\n?s <http://data.openbudgets.eu/ontology/dsd/bonn-budget/dimension/costCenter> ?uri4 .\n}\nWHERE {\n?s <http://data.openbudgets.eu/ontology/dsd/bonn-budget/dimension/functionalClassification>  ?not1 .\n?s <http://data.openbudgets.eu/ontology/dsd/bonn-budget/dimension/economicClassification>  ?not2 .\n?s <http://data.openbudgets.eu/ontology/dsd/bonn-budget/dimension/administrativeClassification>  ?not3 .\n\nBIND(URI(CONCAT(\"http://data.openbudgets.eu/resource/codelist/produktuebersicht_bonn/\",?not1)) as ?uri1) .\nBIND(URI(CONCAT(\"http://data.openbudgets.eu/resource/codelist/kostenartenuebersicht_bonn/\",?not2)) as ?uri2) .\nBIND(URI(CONCAT(\"http://data.openbudgets.eu/resource/codelist/aemterhierarchie_bonn/\",?not3)) as ?uri3) .\n}"
+        }
+      ],
+      "@id": "http://localhost:18080/resources/pipelines/created-1472126089008/components/8708a5f1-31b2-4ad8-94c0-f091cbbd303f/configuration"
+    },
+    {
+      "@graph": [
+        {
+          "@id": "http://localhost/resources/configuration",
+          "@type": [
+            "http://plugins.linkedpipes.com/ontology/t-sparqlUpdate#Configuration"
+          ],
+          "http://plugins.linkedpipes.com/ontology/t-sparqlUpdate#query": "DELETE {\n?s <http://data.openbudgets.eu/ontology/dsd/bonn-budget/dimension/functionalClassification> ?functional .\n?s <http://data.openbudgets.eu/ontology/dsd/bonn-budget/dimension/economicClassification> ?economic .\n?s <http://data.openbudgets.eu/ontology/dsd/bonn-budget/dimension/administrativeClassification> ?administrative .\n?s <http://data.openbudgets.eu/ontology/dsd/bonn-budget/dimension/costCenter> ?costcenter . }\nWHERE { ?s <http://data.openbudgets.eu/ontology/dsd/bonn-budget/dimension/functionalClassification> ?functional .\n?s <http://data.openbudgets.eu/ontology/dsd/bonn-budget/dimension/economicClassification> ?economic .\n?s <http://data.openbudgets.eu/ontology/dsd/bonn-budget/dimension/administrativeClassification> ?administrative .\n?s <http://data.openbudgets.eu/ontology/dsd/bonn-budget/dimension/costCenter> ?costcenter . \n}"
+        }
+      ],
+      "@id": "http://localhost:18080/resources/pipelines/created-1472126089008/components/572e0c8c-a917-4da4-abbb-8d329421685b/configuration"
+    },
+    {
+      "@graph": [
+        {
+          "@id": "http://localhost/resources/configuration",
+          "@type": [
+            "http://plugins.linkedpipes.com/ontology/t-sparqlConstruct#Configuration"
+          ],
+          "http://plugins.linkedpipes.com/ontology/t-sparqlConstruct#query": "CONSTRUCT {\n?s <http://data.openbudgets.eu/ontology/dsd/dimension/operationCharacter> ?uri .\n }\nWHERE {\n?s <http://data.openbudgets.eu/ontology/dsd/dimension/operationCharacter> ?opChar .\nBIND(URI(CONCAT(\"http://data.openbudgets.eu/resource/codelist/operation-character/\",?opChar)) as ?uri) .\n}"
+        }
+      ],
+      "@id": "http://localhost:18080/resources/pipelines/created-1472126089008/components/65177769-c7c2-4f26-87f2-075ba540dcd8/configuration"
+    },
+    {
+      "@graph": [
+        {
+          "@id": "http://localhost/resources/configuration",
+          "@type": [
+            "http://plugins.linkedpipes.com/ontology/t-sparqlUpdate#Configuration"
+          ],
+          "http://plugins.linkedpipes.com/ontology/t-sparqlUpdate#query": "DELETE { ?obs <http://data.openbudgets.eu/ontology/dsd/dimension/operationCharacter> ?opChar . }\nWHERE { ?obs <http://data.openbudgets.eu/ontology/dsd/dimension/operationCharacter> ?opChar . }"
+        }
+      ],
+      "@id": "http://localhost:18080/resources/pipelines/created-1472126089008/components/a8af5cb5-7f90-4587-adff-6d6c76d15b24/configuration"
+    },
+    {
+      "@graph": [
+        {
+          "@id": "http://localhost/resources/configuration",
+          "@type": [
+            "http://plugins.linkedpipes.com/ontology/t-sparqlConstruct#Configuration"
+          ],
+          "http://plugins.linkedpipes.com/ontology/t-sparqlConstruct#query": "CONSTRUCT {\n\n##### Observations #####\n\n?obs2017 a <http://purl.org/linked-data/cube#Observation> ;\n     <http://data.openbudgets.eu/ontology/measure/amount> ?amount2017 ;\n     <http://data.openbudgets.eu/ontology/dimension/fiscalYear> <http://reference.data.gov.uk/id/year/2017> ;\n     <http://purl.org/linked-data/cube#dataSet>  <http://data.openbudgets.eu/resource/dataset/bonn-budget-draft-2017-2024> .\n\n?obs2018 a <http://purl.org/linked-data/cube#Observation> ;\n     <http://data.openbudgets.eu/ontology/measure/amount> ?amount2018 ;\n     <http://data.openbudgets.eu/ontology/dimension/fiscalYear> <http://reference.data.gov.uk/id/year/2018> ;\n     <http://purl.org/linked-data/cube#dataSet>  <http://data.openbudgets.eu/resource/dataset/bonn-budget-draft-2017-2024> .\n\n?obs2019 a <http://purl.org/linked-data/cube#Observation> ;\n     <http://data.openbudgets.eu/ontology/measure/amount> ?amount2019 ;\n     <http://data.openbudgets.eu/ontology/dimension/fiscalYear> <http://reference.data.gov.uk/id/year/2019> ;\n     <http://purl.org/linked-data/cube#dataSet>  <http://data.openbudgets.eu/resource/dataset/bonn-budget-draft-2017-2024> .\n\n?obs2020 a <http://purl.org/linked-data/cube#Observation> ;\n     <http://data.openbudgets.eu/ontology/measure/amount> ?amount2020 ;\n     <http://data.openbudgets.eu/ontology/dimension/fiscalYear> <http://reference.data.gov.uk/id/year/2020> ;\n     <http://purl.org/linked-data/cube#dataSet>  <http://data.openbudgets.eu/resource/dataset/bonn-budget-draft-2017-2024> .\n\n?obs2021 a <http://purl.org/linked-data/cube#Observation> ;\n     <http://data.openbudgets.eu/ontology/measure/amount> ?amount2021 ;\n     <http://data.openbudgets.eu/ontology/dimension/fiscalYear> <http://reference.data.gov.uk/id/year/2021> ;\n     <http://purl.org/linked-data/cube#dataSet>  <http://data.openbudgets.eu/resource/dataset/bonn-budget-draft-2017-2024> .\n\n?obs2022 a <http://purl.org/linked-data/cube#Observation> ;\n     <http://data.openbudgets.eu/ontology/measure/amount> ?amount2022 ;\n     <http://data.openbudgets.eu/ontology/dimension/fiscalYear> <http://reference.data.gov.uk/id/year/2022> ;\n     <http://purl.org/linked-data/cube#dataSet>  <http://data.openbudgets.eu/resource/dataset/bonn-budget-draft-2017-2024> .\n\n?obs2023 a <http://purl.org/linked-data/cube#Observation> ;\n     <http://data.openbudgets.eu/ontology/measure/amount> ?amount2023 ;\n     <http://data.openbudgets.eu/ontology/dimension/fiscalYear> <http://reference.data.gov.uk/id/year/2023> ;\n     <http://purl.org/linked-data/cube#dataSet>  <http://data.openbudgets.eu/resource/dataset/bonn-budget-draft-2017-2024> .\n\n?obs2024 a <http://purl.org/linked-data/cube#Observation> ;\n     <http://data.openbudgets.eu/ontology/measure/amount> ?amount2024 ;\n     <http://data.openbudgets.eu/ontology/dimension/fiscalYear> <http://reference.data.gov.uk/id/year/2024> ;\n     <http://purl.org/linked-data/cube#dataSet>  <http://data.openbudgets.eu/resource/dataset/bonn-budget-draft-2017-2024> .\n\n##### Slices #####\n\n?slice <http://purl.org/linked-data/cube#observation> ?obs2017, ?obs2018, ?obs2019, ?obs2020, ?obs2021, ?obs2022, ?obs2023, ?obs2024 ;\n     <http://purl.org/linked-data/cube#sliceStructure> <http://data.openbudgets.eu/ontology/dsd/bonn-budget/slice/slice-by-classification> .\n\n<http://data.openbudgets.eu/resource/dataset/bonn-budget-draft-2017-2024>  <http://purl.org/linked-data/cube#slice> ?slice .\n}\nWHERE {\n?slice <http://tmp/amount2017>  ?amount2017 .\n?slice <http://tmp/amount2018>  ?amount2018 .\n?slice <http://tmp/amount2019>  ?amount2019 .\n?slice <http://tmp/amount2020>  ?amount2020 .\n?slice <http://tmp/amount2021>  ?amount2021 .\n?slice <http://tmp/amount2022>  ?amount2022 .\n?slice <http://tmp/amount2023>  ?amount2023 .\n?slice <http://tmp/amount2024>  ?amount2024 .\n\nBIND(URI(CONCAT(\"http://data.openbudgets.eu/resource/dataset/bonn-budget-draft-2017-2024/observation/\",STRAFTER(STR(?slice),\"/slice/\"),\"a\")) as ?obs2017) .\nBIND(URI(CONCAT(\"http://data.openbudgets.eu/resource/dataset/bonn-budget-draft-2017-2024/observation/\",STRAFTER(STR(?slice),\"/slice/\"),\"b\")) as ?obs2018) .\nBIND(URI(CONCAT(\"http://data.openbudgets.eu/resource/dataset/bonn-budget-draft-2017-2024/observation/\",STRAFTER(STR(?slice),\"/slice/\"),\"c\")) as ?obs2019) .\nBIND(URI(CONCAT(\"http://data.openbudgets.eu/resource/dataset/bonn-budget-draft-2017-2024/observation/\",STRAFTER(STR(?slice),\"/slice/\"),\"d\")) as ?obs2020) .\nBIND(URI(CONCAT(\"http://data.openbudgets.eu/resource/dataset/bonn-budget-draft-2017-2024/observation/\",STRAFTER(STR(?slice),\"/slice/\"),\"e\")) as ?obs2021) .\nBIND(URI(CONCAT(\"http://data.openbudgets.eu/resource/dataset/bonn-budget-draft-2017-2024/observation/\",STRAFTER(STR(?slice),\"/slice/\"),\"f\")) as ?obs2022) .\nBIND(URI(CONCAT(\"http://data.openbudgets.eu/resource/dataset/bonn-budget-draft-2017-2024/observation/\",STRAFTER(STR(?slice),\"/slice/\"),\"g\")) as ?obs2023) .\nBIND(URI(CONCAT(\"http://data.openbudgets.eu/resource/dataset/bonn-budget-draft-2017-2024/observation/\",STRAFTER(STR(?slice),\"/slice/\"),\"h\")) as ?obs2024) .\n}"
+        }
+      ],
+      "@id": "http://localhost:18080/resources/pipelines/created-1472126089008/components/4a045111-73d7-42f6-a877-48635f4da738/configuration"
+    },
+    {
+      "@graph": [
+        {
+          "@id": "http://localhost/resources/configuration",
+          "@type": [
+            "http://plugins.linkedpipes.com/ontology/t-sparqlUpdate#Configuration"
+          ],
+          "http://plugins.linkedpipes.com/ontology/t-sparqlUpdate#query": "DELETE {\n?s <http://tmp/amount2017> ?amount2017 .\n?s <http://tmp/amount2018> ?amount2018 .\n?s <http://tmp/amount2019> ?amount2019 .\n?s <http://tmp/amount2020> ?amount2020 .\n?s <http://tmp/amount2021> ?amount2021 .\n?s <http://tmp/amount2022> ?amount2022 .\n?s <http://tmp/amount2023> ?amount2023 .\n?s <http://tmp/amount2024> ?amount2024 .\n}\nWHERE {\n?s <http://tmp/amount2017> ?amount2017 .\n?s <http://tmp/amount2018> ?amount2018 .\n?s <http://tmp/amount2019> ?amount2019 .\n?s <http://tmp/amount2020> ?amount2020 .\n?s <http://tmp/amount2021> ?amount2021 .\n?s <http://tmp/amount2022> ?amount2022 .\n?s <http://tmp/amount2023> ?amount2023 .\n?s <http://tmp/amount2024> ?amount2024 .\n}"
+        }
+      ],
+      "@id": "http://localhost:18080/resources/pipelines/created-1472126089008/components/3220fc61-0c4c-40d1-9bff-a9f819e19d0a/configuration"
+    },
+    {
+      "@graph": [
+        {
+          "@id": "http://localhost/resources/configuration",
+          "@type": [
+            "http://etl.linkedpipes.com/resource/components/e-dcatAp11Dataset/Configuration"
+          ],
+          "http://etl.linkedpipes.com/resource/components/e-dcatAp11Dataset/modifiedNow": true,
+          "http://etl.linkedpipes.com/resource/components/e-dcatAp11Dataset/datasetIRI": "http://data.openbudgets.eu/resource/dataset/bonn-budget-draft-2017-2024",
+          "http://etl.linkedpipes.com/resource/components/e-dcatAp11Dataset/titles": [
+            {
+              "@language": "en",
+              "@value": "Bonn Budget Draft 2017-2024"
+            },
+            {
+              "@language": "de",
+              "@value": "Haushaltsentwurf der Stadt Bonn 2017-2024"
+            }
+          ],
+          "http://etl.linkedpipes.com/resource/components/e-dcatAp11Dataset/descriptions": [
+            {
+              "@language": "en",
+              "@value": "Budget Draft of City of Bonn (Germany) for the fiscal years 2017-2024"
+            },
+            {
+              "@language": "de",
+              "@value": "Haushaltsentwurf der Stadt Bonn für 2017-2024"
+            }
+          ],
+          "http://etl.linkedpipes.com/resource/components/e-dcatAp11Dataset/contactPointTypeIRI": "",
+          "http://etl.linkedpipes.com/resource/components/e-dcatAp11Dataset/contactPointName": "",
+          "http://etl.linkedpipes.com/resource/components/e-dcatAp11Dataset/contactPointEmail": "",
+          "http://etl.linkedpipes.com/resource/components/e-dcatAp11Dataset/euThemeIRI": "",
+          "http://etl.linkedpipes.com/resource/components/e-dcatAp11Dataset/publisherIRI": "http://openbudgets.eu",
+          "http://etl.linkedpipes.com/resource/components/e-dcatAp11Dataset/publisherNames": [
+            {
+              "@language": "en",
+              "@value": "EU H2020 Project OpenBudgets.eu"
+            }
+          ],
+          "http://etl.linkedpipes.com/resource/components/e-dcatAp11Dataset/publisherTypeIRI": "http://purl.org/adms/publishertype/Academia-ScientificOrganisation",
+          "http://etl.linkedpipes.com/resource/components/e-dcatAp11Dataset/languages": [
+            {
+              "@id": "http://publications.europa.eu/resource/authority/language/DEU",
+              "@types": [
+                "http://etl.linkedpipes.com/resource/components/e-dcatAp11Dataset/LanguageObject"
+              ],
+              "http://etl.linkedpipes.com/resource/components/e-dcatAp11Dataset/IRI": "http://publications.europa.eu/resource/authority/language/DEU",
+              "http://www.w3.org/2004/02/skos/core#prefLabel": "german"
+            }
+          ],
+          "http://etl.linkedpipes.com/resource/components/e-dcatAp11Dataset/accrualPeriodicityIRI": "",
+          "http://etl.linkedpipes.com/resource/components/e-dcatAp11Dataset/issued": "2016-08-19",
+          "http://etl.linkedpipes.com/resource/components/e-dcatAp11Dataset/accessRightsIRI": "",
+          "http://etl.linkedpipes.com/resource/components/e-dcatAp11Dataset/identifier": "",
+          "http://etl.linkedpipes.com/resource/components/e-dcatAp11Dataset/datasetTypeIRI": "",
+          "http://etl.linkedpipes.com/resource/components/e-dcatAp11Dataset/catalogIRI": "",
+          "http://etl.linkedpipes.com/resource/components/e-dcatAp11Dataset/version": ""
+        }
+      ],
+      "@id": "http://localhost:18080/resources/pipelines/created-1472126089008/components/77c852f4-87a7-4d79-8f49-d0f1edfc0e46/configuration"
+    }
+  ]
+}
