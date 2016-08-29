@@ -42,13 +42,6 @@
 
 # ----- Component properties -----
 
-esf-dimension:location a rdf:Property, qb:DimensionProperty, owl:ObjectProperty ;
-  rdfs:label "Location"@en ;
-  qb:concept sdmx-concept:refArea ;
-  rdfs:subPropertyOf obeu-optional:location ;
-  rdfs:range schema:Place ;
-  rdfs:isDefinedBy <http://data.openbudgets.eu/ontology/dsd/esf-czech-projects> .
-
 esf-dimension:operationalProgramme a rdf:Property, qb:DimensionProperty, owl:ObjectProperty ;
   rdfs:label "Operational programme"@en ;
   rdfs:subPropertyOf obeu-dimension:programmeClassification ;
