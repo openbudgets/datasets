@@ -28,7 +28,7 @@
 
   qb:component [ qb:dimension obeu-dimension:organization ;
                  qb:componentAttachment qb:DataSet ],
-               [ qb:dimension obeu-dimension:operationCharacter ;
+               [ qb:dimension bonn-dimension:operationCharacter ;
                  qb:componentAttachment qb:Slice],
                [ qb:dimension obeu-dimension:fiscalYear ],
                [ qb:dimension obeu-dimension:budgetPhase ;
@@ -52,16 +52,24 @@
 bonn-dsd-slice:slice-by-classification a qb:SliceKey ;
 	rdfs:label "Slice by classification"@en ;
 	rdfs:comment "Slice grouping observations of the same functional code for all budget phases."@en ;
-	qb:componentProperty obeu-dimension:operationCharacter ;
+	qb:componentProperty bonn-dimension:operationCharacter ;
 	qb:componentProperty bonn-dimension:administrativeClassification ;
 	qb:componentProperty bonn-dimension:functionalClassification ;
 	qb:componentProperty bonn-dimension:economicClassification .
 
 # ----- Component properties -----
 
+bonn-dimension:operationCharacter a rdf:Property, qb:CodedProperty, qb:DimensionProperty;
+  rdfs:label "Operation Character"@en ;
+  rdfs:comment "Distinguishes among expenditure, revenue, and internal invoicing."@en ;
+  rdfs:subPropertyOf obeu-dimension:operationCharacter ;
+  rdfs:range obeu:OperationCharacter ;
+  qb:codeList <http://data.openbudgets.eu/resource/codelist/bonn-operation-character>  ;
+  rdfs:isDefinedBy <http://data.openbudgets.eu/ontology/dsd/bonn-budget> .  
+
 bonn-dimension:administrativeClassification a rdf:Property, qb:CodedProperty, qb:DimensionProperty;
   rdfs:label "Organization managing the planned budget"@en ;
-  rdfs:comment "The administrative classification is organized hierarchical in two levels, departments and divisions."@en ; # Number of levels to be checked.
+  rdfs:comment "The administrative classification is organized hierarchical in two levels, departments and divisions."@en ;
   rdfs:subPropertyOf obeu-dimension:administrativeClassification ;
   rdfs:range skos:Concept ;
   qb:codeList <http://data.openbudgets.eu/resource/codelist/aemterhierarchie_bonn> ;
@@ -82,4 +90,3 @@ bonn-dimension:economicClassification a rdf:Property, qb:CodedProperty, qb:Dimen
   rdfs:range skos:Concept ;
   qb:codeList <http://data.openbudgets.eu/resource/codelist/kostenartenuebersicht_bonn> ;
   rdfs:isDefinedBy <http://data.openbudgets.eu/ontology/dsd/bonn-budget> .
- 

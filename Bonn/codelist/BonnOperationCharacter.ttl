@@ -1,0 +1,37 @@
+@prefix obeu:             <http://data.openbudgets.eu/ontology/> .
+@prefix rdfs:             <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:             <http://www.w3.org/2004/02/skos/core#> .
+
+@prefix obeu-codelist:    <http://data.openbudgets.eu/resource/codelist/> .
+
+@prefix bonn-operation:   <http://data.openbudgets.eu/resource/codelist/bonn-operation-character/> .
+
+# OperationCharacter
+obeu:OperationCharacter a rdfs:Class ;
+  rdfs:label "Operation character"@en ;
+  rdfs:subClassOf skos:Concept ;
+  rdfs:isDefinedBy <http://data.openbudgets.eu/ontology> .
+  
+obeu-codelist:bonn-operation-character a skos:ConceptScheme ;
+  rdfs:label "Code list that distinguishes among characters of fiscal operation adjusted for Bonn bugdet."@en ;
+  skos:hasTopConcept bonn-operation:expenditure, bonn-operation:revenue, bonn-oparation:internalInvoicing . 
+  
+bonn-operation:expenditure a skos:Concept, obeu:OperationCharacter ;
+  skos:prefLabel "Expenditure"@en ;
+  skos:definition "Decrease in net worth resulting from a transaction and the net investment in nonfinancial assets."@en ;
+  skos:topConceptOf obeu-codelist:bonn-operation-character ;
+  skos:inScheme obeu-codelist:bonn-operation-character ;
+  skos:exactMatch obeu-operation:expenditure .
+  
+bonn-operation:revenue a skos:Concept, obeu:OperationCharacter ;
+  skos:prefLabel "Revenue"@en ;
+  skos:definition "An increase in net worth resulting from a transaction."@en ;
+  skos:topConceptOf obeu-codelist:bonn-operation-character ;
+  skos:inScheme obeu-codelist:bonn-operation-character ;
+  skos:exactMatch obeu-operation:revenue .
+  
+bonn-operation:internalInvoicing a skos:Concept, obeu:OperationCharacter ;
+  skos:prefLabel "Internal Invoicing"@en ;
+  skos:definition "Internal invoicing such that the net worth is not changed."@en ;
+  skos:topConceptOf obeu-codelist:bonn-operation-character ;
+  skos:inScheme obeu-codelist:bonn-operation-character .
