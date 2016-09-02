@@ -5,18 +5,20 @@
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix sesame: <http://www.openrdf.org/schema/sesame#> .
 
-<http://data.openbudgets.eu/resource/codelist/estructura_financiacion_g_aragon_2006/> <http://purl.org/dc/terms/description> "The codelist of Aragon (ES) financial classification in 2006. This codelist is specific for expenditure budget."@en ;
-	<http://purl.org/dc/terms/modified> "2016-08-31"^^xsd:date ;
+<http://data.openbudgets.eu/resource/codelist/estructura_financiacion_g_aragon_2006> <http://purl.org/dc/terms/description> "The codelist of Aragon (ES) financial classification in 2006. This codelist is specific for expenditure budget."@en ;
+	<http://purl.org/dc/terms/modified> "2016-09-02"^^xsd:date ;
 	<http://purl.org/dc/terms/publisher> <http://openbudgets.eu/> ;
 	<http://purl.org/dc/terms/title> "Aragon financial classification codelist 2006 (expenditure)"@en ;
-	a <http://www.w3.org/ns/dcat#Dataset> ;
-	<http://www.w3.org/ns/dcat#contactPoint> <http://data.openbudgets.eu/resource/codelist/estructura_financiacion_g_aragon_2006//contactPoint> ;
+	a <http://www.w3.org/ns/dcat#Dataset> , <http://www.w3.org/2004/02/skos/core#ConceptScheme> ;
+	<http://www.w3.org/ns/dcat#contactPoint> <http://data.openbudgets.eu/resource/codelist/estructura_financiacion_g_aragon_2006/contactPoint> ;
 	<http://www.w3.org/ns/dcat#keyword> "codelist, budget, aragon, 2006, financial classification, expenditure codelist"@en ;
-	<http://www.w3.org/ns/dcat#distribution> <http://data.openbudgets.eu/resource/codelist/estructura_financiacion_g_aragon_2006//distribution> .
+	<http://www.w3.org/ns/dcat#distribution> <http://data.openbudgets.eu/resource/codelist/estructura_financiacion_g_aragon_2006/distribution> ;
+	rdfs:label "Estructura Financiacion Gasto Aragon 2006"@en ;
+	<http://www.w3.org/2004/02/skos/core#hasTopConcept> <http://data.openbudgets.eu/resource/codelist/estructura_financiacion_g_aragon_2006/1> , <http://data.openbudgets.eu/resource/codelist/estructura_financiacion_g_aragon_2006/3> , <http://data.openbudgets.eu/resource/codelist/estructura_financiacion_g_aragon_2006/5> , <http://data.openbudgets.eu/resource/codelist/estructura_financiacion_g_aragon_2006/7> , <http://data.openbudgets.eu/resource/codelist/estructura_financiacion_g_aragon_2006/9> .
 
 <http://openbudgets.eu/> a <http://xmlns.com/foaf/0.1/Agent> .
 
-<http://data.openbudgets.eu/resource/codelist/estructura_financiacion_g_aragon_2006//contactPoint> a <http://www.w3.org/2006/vcard/ns#Individual> , <http://www.w3.org/2006/vcard/ns#Kind> ;
+<http://data.openbudgets.eu/resource/codelist/estructura_financiacion_g_aragon_2006/contactPoint> a <http://www.w3.org/2006/vcard/ns#Individual> , <http://www.w3.org/2006/vcard/ns#Kind> ;
 	<http://www.w3.org/2006/vcard/ns#fn> "Fathoni Musyaffa" ;
 	<http://www.w3.org/2006/vcard/ns#hasEmail> "fathoni.am@gmail.com" .
 
@@ -1957,8 +1959,8 @@
 	<http://www.w3.org/2004/02/skos/core#narrower> <http://data.openbudgets.eu/resource/codelist/estructura_financiacion_g_aragon_2006/91> ;
 	<http://www.w3.org/2004/02/skos/core#inScheme> <http://data.openbudgets.eu/resource/codelist/estructura_financiacion_g_aragon_2006> .
 
-<http://data.openbudgets.eu/resource/codelist/estructura_financiacion_g_aragon_2006//distribution> <http://purl.org/dc/terms/description> "Datasets were obtained from Aragon Open Data portal. http://opendata.aragon.es/catalogo/busqueda-libre/Presupuestos . Semantific lifting was done by OpenBudgets.ue project."@en ;
-	<http://purl.org/dc/terms/modified> "2016-08-31"^^xsd:date ;
+<http://data.openbudgets.eu/resource/codelist/estructura_financiacion_g_aragon_2006/distribution> <http://purl.org/dc/terms/description> "Datasets were obtained from Aragon Open Data portal. http://opendata.aragon.es/catalogo/busqueda-libre/Presupuestos . Semantific lifting was done by OpenBudgets.ue project."@en ;
+	<http://purl.org/dc/terms/modified> "2016-09-02"^^xsd:date ;
 	a <http://www.w3.org/ns/dcat#Distribution> ;
 	<http://purl.org/dc/terms/format> <http://publications.europa.eu/resource/authority/file-type/RDF_TURTLE> ;
 	<http://purl.org/dc/terms/license> <https://creativecommons.org/licenses/by/4.0/> ;
@@ -1970,7 +1972,3 @@
 	<http://purl.org/dc/terms/type> <http://purl.org/adms/licencetype/Attribution> .
 
 <http://purl.org/adms/licencetype/Attribution> a <http://www.w3.org/2004/02/skos/core#Concept> .
-
-<http://data.openbudgets.eu/resource/codelist/estructura_financiacion_g_aragon_2006> a <http://www.w3.org/2004/02/skos/core#ConceptScheme> ;
-	rdfs:label "Estructura Financiacion Gasto Aragon 2006"@en ;
-	<http://www.w3.org/2004/02/skos/core#hasTopConcept> <http://data.openbudgets.eu/resource/codelist/estructura_financiacion_g_aragon_2006/1> , <http://data.openbudgets.eu/resource/codelist/estructura_financiacion_g_aragon_2006/3> , <http://data.openbudgets.eu/resource/codelist/estructura_financiacion_g_aragon_2006/5> , <http://data.openbudgets.eu/resource/codelist/estructura_financiacion_g_aragon_2006/7> , <http://data.openbudgets.eu/resource/codelist/estructura_financiacion_g_aragon_2006/9> .
