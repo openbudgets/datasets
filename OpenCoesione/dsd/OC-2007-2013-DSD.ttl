@@ -1,0 +1,134 @@
+# ----- DSD-specific namespaces -----
+
+@prefix oc-measure:    <http://data.openbudgets.eu/ontology/dsd/oc-2007-2013/measure/> .
+@prefix oc-dimension:  <http://data.openbudgets.eu/ontology/dsd/oc-2007-2013/dimension/> .
+
+# ----- OpenBudgets.eu namespaces -----
+
+@prefix obeu:             <http://data.openbudgets.eu/ontology/> .
+@prefix obeu-attribute:   <http://data.openbudgets.eu/ontology/dsd/attribute/> .
+@prefix obeu-dimension:   <http://data.openbudgets.eu/ontology/dsd/dimension/> .
+@prefix obeu-measure:     <http://data.openbudgets.eu/ontology/dsd/measure/> .
+
+# ----- Generic namespaces ------
+
+@prefix org:              <http://www.w3.org/ns/org#> .
+@prefix qb:               <http://purl.org/linked-data/cube#> .
+@prefix rdf:              <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:             <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:             <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd:              <http://www.w3.org/2001/XMLSchema#> .
+
+# ----- DSD -----
+
+
+<http://data.openbudgets.eu/ontology/dsd/oc-2007-2013> a qb:DataStructureDefinition ;
+  rdfs:label "Data structure definition for the Italian Structural and Cohesion Funds beneficiaries between 2007 and 2013, collected by OpenCoesione.it ."@en ;  
+
+  qb:component [ qb:dimension obeu-dimension:organization ],
+               [ qb:dimension obeu-dimension:partner ],
+               [ qb:dimension obeu-dimension:date ],
+               [ qb:dimension obeu-dimension:operationCharacter;
+                 qb:componentAttachment qb:DataSet ],
+               [ qb:dimension obeu-dimension:project ],
+               [ qb:dimension oc-dimension:QSNfunctionalClassification ],
+               [ qb:dimension oc-dimension:EUfunctionalClassification ],
+               [ qb:dimension oc-dimension:OCfunctionalClassification ],
+               [ qb:dimension oc-dimension:OCprogrammeClassification ],
+               [ qb:dimension oc-dimension:programmeClassification ],
+               [ qb:dimension oc-dimension:CUPeconomicClassification ],
+               [ qb:dimension oc-dimension:ATECOeconomicClassification ],
+               [ qb:dimension oc-dimension:CUPadministrativeClassification ],               
+               [ qb:attribute obeu-attribute:currency ;
+                 qb:componentRequired true ;
+                 qb:componentAttachment qb:DataSet ],
+               [ qb:attribute obeu-attribute:location ],  
+               [ qb:measure oc-measure:amountTotal ],
+               [ qb:measure oc-measure:amountEU ],
+               [ qb:measure oc-measure:amountNational ].
+
+
+# ----- Component properties -----
+
+oc-dimension:QSNfunctionalClassification a rdf:Property, qb:CodedProperty, qb:DimensionProperty;
+  rdfs:label "Functional classification according to QSN"@en ;
+  rdfs:comment "The functional classification according to QSN (Quadro Strategico Nazionale = National Strategic Framework) is hierarchically structured in three levels, priorities, general objectives, and specific objectives."@en ;
+  rdfs:subPropertyOf obeu-dimension:functionalClassification ;
+  rdfs:range skos:Concept ;
+  qb:codeList <http://data.openbudgets.eu/resource/codelist/qsn-functional-class> ;
+  rdfs:isDefinedBy <http://data.openbudgets.eu/ontology/dsd/oc-2007-2013> .
+  
+ oc-dimension:EUfunctionalClassification a rdf:Property, qb:CodedProperty, qb:DimensionProperty;
+  rdfs:label "Functional classification according to EU priorities"@en ;
+  rdfs:comment "The EU functional classification is defined by EU Regulation 1828/2006 and provides 86 entries that describe the sectoral categories of expenditure of the projects."@en ;
+  rdfs:subPropertyOf obeu-dimension:functionalClassification ;
+  rdfs:range skos:Concept ;
+  qb:codeList <http://data.openbudgets.eu/resource/codelist/eu-functional-class> ;
+  rdfs:isDefinedBy <http://data.openbudgets.eu/ontology/dsd/oc-2007-2013> .
+  
+oc-dimension:OCfunctionalClassification a rdf:Property, qb:CodedProperty, qb:DimensionProperty;
+  rdfs:label "Functional classification according to OpenCoesione"@en ;
+  rdfs:comment "The OpenCoesione functional classification defines 13 thematic topics, based on an aggregate of the EU priorities and sectoral classifications in the CUP (Codice Unico di Progetto) system."@en ;
+  rdfs:subPropertyOf obeu-dimension:functionalClassification ;
+  rdfs:range skos:Concept ;
+  qb:codeList <http://data.openbudgets.eu/resource/codelist/oc-functional-class> ;
+  rdfs:isDefinedBy <http://data.openbudgets.eu/ontology/dsd/oc-2007-2013> .  
+  
+oc-dimension:OCprogrammeClassification a rdf:Property, qb:CodedProperty, qb:DimensionProperty;
+  rdfs:label "Programme classification"@en ;
+  rdfs:comment "The programme classification is hierarchically structured in two levels, funds and programmes."@en ;
+  rdfs:subPropertyOf obeu-dimension:programmeClassification ;
+  rdfs:range skos:Concept ;
+  qb:codeList <http://data.openbudgets.eu/resource/codelist/oc-programme-class-a> ;
+  rdfs:isDefinedBy <http://data.openbudgets.eu/ontology/dsd/oc-2007-2013> .    
+  
+oc-dimension:programmeClassification a rdf:Property, qb:CodedProperty, qb:DimensionProperty;
+  rdfs:label "Programme classification"@en ;
+  rdfs:comment "For the structural fund, the programmes are hierarchically structured into axes and objectives, for the development and cohesion fund the programmes are hierarchically structured into lines and actions."@en ;
+  rdfs:subPropertyOf obeu-dimension:programmeClassification ;
+  rdfs:range skos:Concept ;
+  qb:codeList <http://data.openbudgets.eu/resource/codelist/oc-programme-class-b> ;
+  rdfs:isDefinedBy <http://data.openbudgets.eu/ontology/dsd/oc-2007-2013> .    
+
+oc-dimension:CUPeconomicClassification a rdf:Property, qb:CodedProperty, qb:DimensionProperty;
+  rdfs:label "Economic classification according to CUP"@en ;
+  rdfs:comment "The CUP (Codice Unico di Progetto) system classifies the projects hierarchically in nature and type."@en ;
+  rdfs:subPropertyOf obeu-dimension:economicClassification ;
+  rdfs:range skos:Concept ;
+  qb:codeList <http://data.openbudgets.eu/resource/codelist/cup-economic-class> ;
+  rdfs:isDefinedBy <http://data.openbudgets.eu/ontology/dsd/oc-2007-2013> .  
+
+oc-dimension:ATECOeconomicClassification a rdf:Property, qb:CodedProperty, qb:DimensionProperty;
+  rdfs:label "Economic classification according to ATECO"@en ;
+  rdfs:comment "ATECO (attività economiche = economic activities) is the national version of the European nomenclature NACE."@en ;
+  rdfs:subPropertyOf obeu-dimension:economicClassification ;
+  rdfs:range skos:Concept ;
+  qb:codeList <http://data.openbudgets.eu/resource/codelist/ateco-economic-class> ;
+  rdfs:isDefinedBy <http://data.openbudgets.eu/ontology/dsd/oc-2007-2013> .  
+
+oc-dimension:CUPadministrativeClassification a rdf:Property, qb:CodedProperty, qb:DimensionProperty;
+  rdfs:label "Administrative classification according to CUP"@en ;
+  rdfs:comment "The CUP (Codice Unico di Progetto) system classifies the projects hierarchically in sectors, subsectors and categories."@en ;
+  rdfs:subPropertyOf obeu-dimension:administrativeClassification ;
+  rdfs:range skos:Concept ;
+  qb:codeList <http://data.openbudgets.eu/resource/codelist/cup-admin-class> ;
+  rdfs:isDefinedBy <http://data.openbudgets.eu/ontology/dsd/oc-2007-2013> .  
+  
+oc-measure:amountTotal a rdf:Property, qb:MeasureProperty ;
+  rdfs:label "Amount Total"@en ;
+  rdfs:comment "Total payment of the transaction."@en ;
+  rdfs:subPropertyOf obeu-measure:amount ;
+  rdfs:isDefinedBy <http://data.openbudgets.eu/ontology/dsd/oc-2007-2013> .    
+  
+oc-measure:amountEU a rdf:Property, qb:MeasureProperty ;
+  rdfs:label "Amount EU"@en ;
+  rdfs:comment "Amount paid by the European Union."@en ;
+  rdfs:subPropertyOf obeu-measure:amount ;
+  rdfs:isDefinedBy <http://data.openbudgets.eu/ontology/dsd/oc-2007-2013> .   
+  
+oc-measure:amountNational a rdf:Property, qb:MeasureProperty ;
+  rdfs:label "Amount National"@en ;
+  rdfs:comment "National amount paid by PAC (Piano di Azione per la Coesione = Action Plan for Cohesion)."@en ;
+  rdfs:subPropertyOf obeu-measure:amount ;
+  rdfs:isDefinedBy <http://data.openbudgets.eu/ontology/dsd/oc-2007-2013> .    
+  
