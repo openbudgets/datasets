@@ -2,6 +2,7 @@
 
 @prefix oc-measure:    <http://data.openbudgets.eu/ontology/dsd/oc-2007-2013/measure/> .
 @prefix oc-dimension:  <http://data.openbudgets.eu/ontology/dsd/oc-2007-2013/dimension/> .
+@prefix oc-dsd-slice:  <http://data.openbudgets.eu/ontology/dsd/oc-2007-2013/slice/> .
 
 # ----- OpenBudgets.eu namespaces -----
 
@@ -25,28 +26,61 @@
 <http://data.openbudgets.eu/ontology/dsd/oc-2007-2013> a qb:DataStructureDefinition ;
   rdfs:label "Data structure definition for the Italian Structural and Cohesion Funds beneficiaries between 2007 and 2013, collected by OpenCoesione.it ."@en ;  
 
-  qb:component [ qb:dimension obeu-dimension:organization ],
-               [ qb:dimension obeu-dimension:partner ],
+  qb:component [ qb:dimension obeu-dimension:organization ;
+                 qb:componentAttachment qb:Slice ],
+               [ qb:dimension obeu-dimension:partner ;
+                 qb:componentAttachment qb:Slice ],
                [ qb:dimension obeu-dimension:date ],
                [ qb:dimension obeu-dimension:operationCharacter;
                  qb:componentAttachment qb:DataSet ],
-               [ qb:dimension obeu-dimension:project ],
-               [ qb:dimension oc-dimension:QSNfunctionalClassification ],
-               [ qb:dimension oc-dimension:EUfunctionalClassification ],
-               [ qb:dimension oc-dimension:OCfunctionalClassification ],
-               [ qb:dimension oc-dimension:OCprogrammeClassification ],
-               [ qb:dimension oc-dimension:programmeClassification ],
-               [ qb:dimension oc-dimension:CUPeconomicClassification ],
-               [ qb:dimension oc-dimension:ATECOeconomicClassification ],
-               [ qb:dimension oc-dimension:CUPadministrativeClassification ],               
+               [ qb:dimension obeu-dimension:project ;
+                 qb:componentAttachment qb:Slice ],
+               [ qb:dimension oc-dimension:QSNfunctionalClassification ;
+                 qb:componentAttachment qb:Slice ],
+               [ qb:dimension oc-dimension:EUfunctionalClassification ;
+                 qb:componentAttachment qb:Slice ],
+               [ qb:dimension oc-dimension:OCfunctionalClassification ;
+                 qb:componentAttachment qb:Slice ],
+               [ qb:dimension oc-dimension:OCprogrammeClassification ;
+                 qb:componentAttachment qb:Slice ],
+               [ qb:dimension oc-dimension:programmeClassification ;
+                 qb:componentAttachment qb:Slice ],
+               [ qb:dimension oc-dimension:CUPeconomicClassification ;
+                 qb:componentAttachment qb:Slice ],
+               [ qb:dimension oc-dimension:ATECOeconomicClassification ;
+                 qb:componentAttachment qb:Slice ],
+               [ qb:dimension oc-dimension:CUPadministrativeClassification ;
+                 qb:componentAttachment qb:Slice ],               
                [ qb:attribute obeu-attribute:currency ;
                  qb:componentRequired true ;
                  qb:componentAttachment qb:DataSet ],
-               [ qb:attribute obeu-attribute:location ],  
+               [ qb:attribute obeu-attribute:location ;
+                 qb:componentAttachment qb:Slice ],  
                [ qb:measure oc-measure:amountTotal ],
                [ qb:measure oc-measure:amountEU ],
-               [ qb:measure oc-measure:amountNational ].
+               [ qb:measure oc-measure:amountNational ];
+               
+  qb:sliceKey  oc-dsd-slice:slice-by-project .
 
+
+# ----- Slice key definition -----
+
+oc-dsd-slice:slice-by-project a qb:SliceKey ;
+	rdfs:label "Slice by project"@en ;
+	rdfs:comment "Slice grouping observations of the same project with the different payments as observations."@en ;
+	qb:componentProperty obeu-dimension:organization ;
+    qb:componentProperty obeu-dimension:partner ;
+    qb:componentProperty obeu-dimension:project ;
+    qb:componentProperty oc-dimension:QSNfunctionalClassification ;
+    qb:componentProperty oc-dimension:EUfunctionalClassification ;
+    qb:componentProperty oc-dimension:OCfunctionalClassification ;
+    qb:componentProperty oc-dimension:OCprogrammeClassification ;
+    qb:componentProperty oc-dimension:programmeClassification ;
+    qb:componentProperty oc-dimension:CUPeconomicClassification ;
+    qb:componentProperty oc-dimension:ATECOeconomicClassification ;
+    qb:componentProperty oc-dimension:CUPadministrativeClassification ;
+    qb:componentProperty obeu-attribute:location .
+	
 
 # ----- Component properties -----
 
