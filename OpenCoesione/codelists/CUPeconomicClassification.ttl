@@ -1,0 +1,341 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix fn: <http://www.w3.org/2005/xpath-functions#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sesame: <http://www.openrdf.org/schema/sesame#> .
+
+<http://data.openbudgets.eu/resource/codelist/oc-cup-economic-class/01> a <http://www.w3.org/2004/02/skos/core#Concept> ;
+	<http://www.w3.org/2004/02/skos/core#notation> "01" ;
+	<http://www.w3.org/2004/02/skos/core#prefLabel> "ACQUISTO DI BENI"@it ;
+	<http://www.w3.org/2004/02/skos/core#topConceptOf> <http://data.openbudgets.eu/resource/codelist/oc-cup-economic-class> .
+
+<http://data.openbudgets.eu/resource/codelist/oc-cup-economic-class/01-00> a <http://www.w3.org/2004/02/skos/core#Concept> ;
+	<http://www.w3.org/2004/02/skos/core#notation> "01-00" ;
+	<http://www.w3.org/2004/02/skos/core#prefLabel> "ACQUISTO DI BENI - NUOVA FORNITURA"@it ;
+	<http://www.w3.org/2004/02/skos/core#broader> <http://data.openbudgets.eu/resource/codelist/oc-cup-economic-class/01> ;
+	<http://www.w3.org/2004/02/skos/core#inScheme> <http://data.openbudgets.eu/resource/codelist/oc-cup-economic-class> .
+
+<http://data.openbudgets.eu/resource/codelist/oc-cup-economic-class/01-08> a <http://www.w3.org/2004/02/skos/core#Concept> ;
+	<http://www.w3.org/2004/02/skos/core#notation> "01-08" ;
+	<http://www.w3.org/2004/02/skos/core#prefLabel> "ACQUISTO DI BENI - MANUTENZIONE STRAORDINARIA"@it ;
+	<http://www.w3.org/2004/02/skos/core#broader> <http://data.openbudgets.eu/resource/codelist/oc-cup-economic-class/01> ;
+	<http://www.w3.org/2004/02/skos/core#inScheme> <http://data.openbudgets.eu/resource/codelist/oc-cup-economic-class> .
+
+<http://data.openbudgets.eu/resource/codelist/oc-cup-economic-class/01-99> a <http://www.w3.org/2004/02/skos/core#Concept> ;
+	<http://www.w3.org/2004/02/skos/core#notation> "01-99" ;
+	<http://www.w3.org/2004/02/skos/core#prefLabel> "ACQUISTO DI BENI - ALTRO"@it ;
+	<http://www.w3.org/2004/02/skos/core#broader> <http://data.openbudgets.eu/resource/codelist/oc-cup-economic-class/01> ;
+	<http://www.w3.org/2004/02/skos/core#inScheme> <http://data.openbudgets.eu/resource/codelist/oc-cup-economic-class> .
+
+<http://data.openbudgets.eu/resource/codelist/oc-cup-economic-class/02> a <http://www.w3.org/2004/02/skos/core#Concept> ;
+	<http://www.w3.org/2004/02/skos/core#notation> "02" ;
+	<http://www.w3.org/2004/02/skos/core#prefLabel> "ACQUISTO O REALIZZAZIONE DI SERVIZI"@it ;
+	<http://www.w3.org/2004/02/skos/core#topConceptOf> <http://data.openbudgets.eu/resource/codelist/oc-cup-economic-class> .
+
+<http://data.openbudgets.eu/resource/codelist/oc-cup-economic-class/02-10> a <http://www.w3.org/2004/02/skos/core#Concept> ;
+	<http://www.w3.org/2004/02/skos/core#notation> "02-10" ;
+	<http://www.w3.org/2004/02/skos/core#prefLabel> "ACQUISTO O REALIZZAZIONE DI SERVIZI - ASSISTENZA"@it ;
+	<http://www.w3.org/2004/02/skos/core#broader> <http://data.openbudgets.eu/resource/codelist/oc-cup-economic-class/02> ;
+	<http://www.w3.org/2004/02/skos/core#inScheme> <http://data.openbudgets.eu/resource/codelist/oc-cup-economic-class> .
+
+<http://data.openbudgets.eu/resource/codelist/oc-cup-economic-class/02-11> a <http://www.w3.org/2004/02/skos/core#Concept> ;
+	<http://www.w3.org/2004/02/skos/core#notation> "02-11" ;
+	<http://www.w3.org/2004/02/skos/core#prefLabel> "ACQUISTO O REALIZZAZIONE DI SERVIZI - STUDI E PROGETTAZIONI (INCLUDE REALIZZAZIONE DI APPLICATIVI INFORMATICI)"@it ;
+	<http://www.w3.org/2004/02/skos/core#broader> <http://data.openbudgets.eu/resource/codelist/oc-cup-economic-class/02> ;
+	<http://www.w3.org/2004/02/skos/core#inScheme> <http://data.openbudgets.eu/resource/codelist/oc-cup-economic-class> .
+
+<http://data.openbudgets.eu/resource/codelist/oc-cup-economic-class/02-12> a <http://www.w3.org/2004/02/skos/core#Concept> ;
+	<http://www.w3.org/2004/02/skos/core#notation> "02-12" ;
+	<http://www.w3.org/2004/02/skos/core#prefLabel> "ACQUISTO O REALIZZAZIONE DI SERVIZI - CORSI DI FORMAZIONE"@it ;
+	<http://www.w3.org/2004/02/skos/core#broader> <http://data.openbudgets.eu/resource/codelist/oc-cup-economic-class/02> ;
+	<http://www.w3.org/2004/02/skos/core#inScheme> <http://data.openbudgets.eu/resource/codelist/oc-cup-economic-class> .
+
+<http://data.openbudgets.eu/resource/codelist/oc-cup-economic-class/02-13> a <http://www.w3.org/2004/02/skos/core#Concept> ;
+	<http://www.w3.org/2004/02/skos/core#notation> "02-13" ;
+	<http://www.w3.org/2004/02/skos/core#prefLabel> "ACQUISTO O REALIZZAZIONE DI SERVIZI - CONSULENZE"@it ;
+	<http://www.w3.org/2004/02/skos/core#broader> <http://data.openbudgets.eu/resource/codelist/oc-cup-economic-class/02> ;
+	<http://www.w3.org/2004/02/skos/core#inScheme> <http://data.openbudgets.eu/resource/codelist/oc-cup-economic-class> .
+
+<http://data.openbudgets.eu/resource/codelist/oc-cup-economic-class/02-14> a <http://www.w3.org/2004/02/skos/core#Concept> ;
+	<http://www.w3.org/2004/02/skos/core#notation> "02-14" ;
+	<http://www.w3.org/2004/02/skos/core#prefLabel> "ACQUISTO O REALIZZAZIONE DI SERVIZI - PROGETTI DI RICERCA"@it ;
+	<http://www.w3.org/2004/02/skos/core#broader> <http://data.openbudgets.eu/resource/codelist/oc-cup-economic-class/02> ;
+	<http://www.w3.org/2004/02/skos/core#inScheme> <http://data.openbudgets.eu/resource/codelist/oc-cup-economic-class> .
+
+<http://data.openbudgets.eu/resource/codelist/oc-cup-economic-class/02-15> a <http://www.w3.org/2004/02/skos/core#Concept> ;
+	<http://www.w3.org/2004/02/skos/core#notation> "02-15" ;
+	<http://www.w3.org/2004/02/skos/core#prefLabel> "ACQUISTO O REALIZZAZIONE DI SERVIZI - LAVORI SOCIALMENTE UTILI"@it ;
+	<http://www.w3.org/2004/02/skos/core#broader> <http://data.openbudgets.eu/resource/codelist/oc-cup-economic-class/02> ;
+	<http://www.w3.org/2004/02/skos/core#inScheme> <http://data.openbudgets.eu/resource/codelist/oc-cup-economic-class> .
+
+<http://data.openbudgets.eu/resource/codelist/oc-cup-economic-class/02-99> a <http://www.w3.org/2004/02/skos/core#Concept> ;
+	<http://www.w3.org/2004/02/skos/core#notation> "02-99" ;
+	<http://www.w3.org/2004/02/skos/core#prefLabel> "ACQUISTO O REALIZZAZIONE DI SERVIZI - ALTRO"@it ;
+	<http://www.w3.org/2004/02/skos/core#broader> <http://data.openbudgets.eu/resource/codelist/oc-cup-economic-class/02> ;
+	<http://www.w3.org/2004/02/skos/core#inScheme> <http://data.openbudgets.eu/resource/codelist/oc-cup-economic-class> .
+
+<http://data.openbudgets.eu/resource/codelist/oc-cup-economic-class/03> a <http://www.w3.org/2004/02/skos/core#Concept> ;
+	<http://www.w3.org/2004/02/skos/core#notation> "03" ;
+	<http://www.w3.org/2004/02/skos/core#prefLabel> "REALIZZAZIONE DI LAVORI PUBBLICI (OPERE ED IMPIANTISTICA)"@it ;
+	<http://www.w3.org/2004/02/skos/core#topConceptOf> <http://data.openbudgets.eu/resource/codelist/oc-cup-economic-class> .
+
+<http://data.openbudgets.eu/resource/codelist/oc-cup-economic-class/03-01> a <http://www.w3.org/2004/02/skos/core#Concept> ;
+	<http://www.w3.org/2004/02/skos/core#notation> "03-01" ;
+	<http://www.w3.org/2004/02/skos/core#prefLabel> "REALIZZAZIONE DI LAVORI PUBBLICI (OPERE ED IMPIANTISTICA) - NUOVA REALIZZAZIONE"@it ;
+	<http://www.w3.org/2004/02/skos/core#broader> <http://data.openbudgets.eu/resource/codelist/oc-cup-economic-class/03> ;
+	<http://www.w3.org/2004/02/skos/core#inScheme> <http://data.openbudgets.eu/resource/codelist/oc-cup-economic-class> .
+
+<http://data.openbudgets.eu/resource/codelist/oc-cup-economic-class/03-02> a <http://www.w3.org/2004/02/skos/core#Concept> ;
+	<http://www.w3.org/2004/02/skos/core#notation> "03-02" ;
+	<http://www.w3.org/2004/02/skos/core#prefLabel> "REALIZZAZIONE DI LAVORI PUBBLICI (OPERE ED IMPIANTISTICA) - DEMOLIZIONE"@it ;
+	<http://www.w3.org/2004/02/skos/core#broader> <http://data.openbudgets.eu/resource/codelist/oc-cup-economic-class/03> ;
+	<http://www.w3.org/2004/02/skos/core#inScheme> <http://data.openbudgets.eu/resource/codelist/oc-cup-economic-class> .
+
+<http://data.openbudgets.eu/resource/codelist/oc-cup-economic-class/03-03> a <http://www.w3.org/2004/02/skos/core#Concept> ;
+	<http://www.w3.org/2004/02/skos/core#notation> "03-03" ;
+	<http://www.w3.org/2004/02/skos/core#prefLabel> "REALIZZAZIONE DI LAVORI PUBBLICI (OPERE ED IMPIANTISTICA) - RECUPERO"@it ;
+	<http://www.w3.org/2004/02/skos/core#broader> <http://data.openbudgets.eu/resource/codelist/oc-cup-economic-class/03> ;
+	<http://www.w3.org/2004/02/skos/core#inScheme> <http://data.openbudgets.eu/resource/codelist/oc-cup-economic-class> .
+
+<http://data.openbudgets.eu/resource/codelist/oc-cup-economic-class/03-04> a <http://www.w3.org/2004/02/skos/core#Concept> ;
+	<http://www.w3.org/2004/02/skos/core#notation> "03-04" ;
+	<http://www.w3.org/2004/02/skos/core#prefLabel> "REALIZZAZIONE DI LAVORI PUBBLICI (OPERE ED IMPIANTISTICA) - RISTRUTTURAZIONE"@it ;
+	<http://www.w3.org/2004/02/skos/core#broader> <http://data.openbudgets.eu/resource/codelist/oc-cup-economic-class/03> ;
+	<http://www.w3.org/2004/02/skos/core#inScheme> <http://data.openbudgets.eu/resource/codelist/oc-cup-economic-class> .
+
+<http://data.openbudgets.eu/resource/codelist/oc-cup-economic-class/03-05> a <http://www.w3.org/2004/02/skos/core#Concept> ;
+	<http://www.w3.org/2004/02/skos/core#notation> "03-05" ;
+	<http://www.w3.org/2004/02/skos/core#prefLabel> "REALIZZAZIONE DI LAVORI PUBBLICI (OPERE ED IMPIANTISTICA) - RESTAURO"@it ;
+	<http://www.w3.org/2004/02/skos/core#broader> <http://data.openbudgets.eu/resource/codelist/oc-cup-economic-class/03> ;
+	<http://www.w3.org/2004/02/skos/core#inScheme> <http://data.openbudgets.eu/resource/codelist/oc-cup-economic-class> .
+
+<http://data.openbudgets.eu/resource/codelist/oc-cup-economic-class/03-06> a <http://www.w3.org/2004/02/skos/core#Concept> ;
+	<http://www.w3.org/2004/02/skos/core#notation> "03-06" ;
+	<http://www.w3.org/2004/02/skos/core#prefLabel> "REALIZZAZIONE DI LAVORI PUBBLICI (OPERE ED IMPIANTISTICA) - MANUTENZIONE ORDINARIA"@it ;
+	<http://www.w3.org/2004/02/skos/core#broader> <http://data.openbudgets.eu/resource/codelist/oc-cup-economic-class/03> ;
+	<http://www.w3.org/2004/02/skos/core#inScheme> <http://data.openbudgets.eu/resource/codelist/oc-cup-economic-class> .
+
+<http://data.openbudgets.eu/resource/codelist/oc-cup-economic-class/03-07> a <http://www.w3.org/2004/02/skos/core#Concept> ;
+	<http://www.w3.org/2004/02/skos/core#notation> "03-07" ;
+	<http://www.w3.org/2004/02/skos/core#prefLabel> "REALIZZAZIONE DI LAVORI PUBBLICI (OPERE ED IMPIANTISTICA) - MANUTENZIONE STRAORDINARIA"@it ;
+	<http://www.w3.org/2004/02/skos/core#broader> <http://data.openbudgets.eu/resource/codelist/oc-cup-economic-class/03> ;
+	<http://www.w3.org/2004/02/skos/core#inScheme> <http://data.openbudgets.eu/resource/codelist/oc-cup-economic-class> .
+
+<http://data.openbudgets.eu/resource/codelist/oc-cup-economic-class/03-51> a <http://www.w3.org/2004/02/skos/core#Concept> ;
+	<http://www.w3.org/2004/02/skos/core#notation> "03-51" ;
+	<http://www.w3.org/2004/02/skos/core#prefLabel> "REALIZZAZIONE DI LAVORI PUBBLICI (OPERE ED IMPIANTISTICA) - COMPLETAMENTO DI NUOVA REALIZZAZIONE"@it ;
+	<http://www.w3.org/2004/02/skos/core#broader> <http://data.openbudgets.eu/resource/codelist/oc-cup-economic-class/03> ;
+	<http://www.w3.org/2004/02/skos/core#inScheme> <http://data.openbudgets.eu/resource/codelist/oc-cup-economic-class> .
+
+<http://data.openbudgets.eu/resource/codelist/oc-cup-economic-class/03-52> a <http://www.w3.org/2004/02/skos/core#Concept> ;
+	<http://www.w3.org/2004/02/skos/core#notation> "03-52" ;
+	<http://www.w3.org/2004/02/skos/core#prefLabel> "REALIZZAZIONE DI LAVORI PUBBLICI (OPERE ED IMPIANTISTICA) - COMPLETAMENTO DI DEMOLIZIONE"@it ;
+	<http://www.w3.org/2004/02/skos/core#broader> <http://data.openbudgets.eu/resource/codelist/oc-cup-economic-class/03> ;
+	<http://www.w3.org/2004/02/skos/core#inScheme> <http://data.openbudgets.eu/resource/codelist/oc-cup-economic-class> .
+
+<http://data.openbudgets.eu/resource/codelist/oc-cup-economic-class/03-53> a <http://www.w3.org/2004/02/skos/core#Concept> ;
+	<http://www.w3.org/2004/02/skos/core#notation> "03-53" ;
+	<http://www.w3.org/2004/02/skos/core#prefLabel> "REALIZZAZIONE DI LAVORI PUBBLICI (OPERE ED IMPIANTISTICA) - COMPLETAMENTO DI RECUPERO"@it ;
+	<http://www.w3.org/2004/02/skos/core#broader> <http://data.openbudgets.eu/resource/codelist/oc-cup-economic-class/03> ;
+	<http://www.w3.org/2004/02/skos/core#inScheme> <http://data.openbudgets.eu/resource/codelist/oc-cup-economic-class> .
+
+<http://data.openbudgets.eu/resource/codelist/oc-cup-economic-class/03-54> a <http://www.w3.org/2004/02/skos/core#Concept> ;
+	<http://www.w3.org/2004/02/skos/core#notation> "03-54" ;
+	<http://www.w3.org/2004/02/skos/core#prefLabel> "REALIZZAZIONE DI LAVORI PUBBLICI (OPERE ED IMPIANTISTICA) - COMPLETAMENTO DI RISTRUTTURAZIONE"@it ;
+	<http://www.w3.org/2004/02/skos/core#broader> <http://data.openbudgets.eu/resource/codelist/oc-cup-economic-class/03> ;
+	<http://www.w3.org/2004/02/skos/core#inScheme> <http://data.openbudgets.eu/resource/codelist/oc-cup-economic-class> .
+
+<http://data.openbudgets.eu/resource/codelist/oc-cup-economic-class/03-55> a <http://www.w3.org/2004/02/skos/core#Concept> ;
+	<http://www.w3.org/2004/02/skos/core#notation> "03-55" ;
+	<http://www.w3.org/2004/02/skos/core#prefLabel> "REALIZZAZIONE DI LAVORI PUBBLICI (OPERE ED IMPIANTISTICA) - COMPLETAMENTO DI RESTAURO"@it ;
+	<http://www.w3.org/2004/02/skos/core#broader> <http://data.openbudgets.eu/resource/codelist/oc-cup-economic-class/03> ;
+	<http://www.w3.org/2004/02/skos/core#inScheme> <http://data.openbudgets.eu/resource/codelist/oc-cup-economic-class> .
+
+<http://data.openbudgets.eu/resource/codelist/oc-cup-economic-class/03-56> a <http://www.w3.org/2004/02/skos/core#Concept> ;
+	<http://www.w3.org/2004/02/skos/core#notation> "03-56" ;
+	<http://www.w3.org/2004/02/skos/core#prefLabel> "REALIZZAZIONE DI LAVORI PUBBLICI (OPERE ED IMPIANTISTICA) - COMPLETAMENTO DI MANUTENZIONE ORDINARIA"@it ;
+	<http://www.w3.org/2004/02/skos/core#broader> <http://data.openbudgets.eu/resource/codelist/oc-cup-economic-class/03> ;
+	<http://www.w3.org/2004/02/skos/core#inScheme> <http://data.openbudgets.eu/resource/codelist/oc-cup-economic-class> .
+
+<http://data.openbudgets.eu/resource/codelist/oc-cup-economic-class/03-57> a <http://www.w3.org/2004/02/skos/core#Concept> ;
+	<http://www.w3.org/2004/02/skos/core#notation> "03-57" ;
+	<http://www.w3.org/2004/02/skos/core#prefLabel> "REALIZZAZIONE DI LAVORI PUBBLICI (OPERE ED IMPIANTISTICA) - COMPLETAMENTO DI MANUTENZIONE STRAORDINARIA"@it ;
+	<http://www.w3.org/2004/02/skos/core#broader> <http://data.openbudgets.eu/resource/codelist/oc-cup-economic-class/03> ;
+	<http://www.w3.org/2004/02/skos/core#inScheme> <http://data.openbudgets.eu/resource/codelist/oc-cup-economic-class> .
+
+<http://data.openbudgets.eu/resource/codelist/oc-cup-economic-class/03-58> a <http://www.w3.org/2004/02/skos/core#Concept> ;
+	<http://www.w3.org/2004/02/skos/core#notation> "03-58" ;
+	<http://www.w3.org/2004/02/skos/core#prefLabel> "REALIZZAZIONE DI LAVORI PUBBLICI (OPERE ED IMPIANTISTICA) - AMPLIAMENTO O POTENZIAMENTO"@it ;
+	<http://www.w3.org/2004/02/skos/core#broader> <http://data.openbudgets.eu/resource/codelist/oc-cup-economic-class/03> ;
+	<http://www.w3.org/2004/02/skos/core#inScheme> <http://data.openbudgets.eu/resource/codelist/oc-cup-economic-class> .
+
+<http://data.openbudgets.eu/resource/codelist/oc-cup-economic-class/03-59> a <http://www.w3.org/2004/02/skos/core#Concept> ;
+	<http://www.w3.org/2004/02/skos/core#notation> "03-59" ;
+	<http://www.w3.org/2004/02/skos/core#prefLabel> "REALIZZAZIONE DI LAVORI PUBBLICI (OPERE ED IMPIANTISTICA) - LAVORI SOCIALMENTE UTILI"@it ;
+	<http://www.w3.org/2004/02/skos/core#broader> <http://data.openbudgets.eu/resource/codelist/oc-cup-economic-class/03> ;
+	<http://www.w3.org/2004/02/skos/core#inScheme> <http://data.openbudgets.eu/resource/codelist/oc-cup-economic-class> .
+
+<http://data.openbudgets.eu/resource/codelist/oc-cup-economic-class/03-99> a <http://www.w3.org/2004/02/skos/core#Concept> ;
+	<http://www.w3.org/2004/02/skos/core#notation> "03-99" ;
+	<http://www.w3.org/2004/02/skos/core#prefLabel> "REALIZZAZIONE DI LAVORI PUBBLICI (OPERE ED IMPIANTISTICA) - ALTRO"@it ;
+	<http://www.w3.org/2004/02/skos/core#broader> <http://data.openbudgets.eu/resource/codelist/oc-cup-economic-class/03> ;
+	<http://www.w3.org/2004/02/skos/core#inScheme> <http://data.openbudgets.eu/resource/codelist/oc-cup-economic-class> .
+
+<http://data.openbudgets.eu/resource/codelist/oc-cup-economic-class/06> a <http://www.w3.org/2004/02/skos/core#Concept> ;
+	<http://www.w3.org/2004/02/skos/core#notation> "06" ;
+	<http://www.w3.org/2004/02/skos/core#prefLabel> "CONCESSIONE DI CONTRIBUTI AD ALTRI SOGGETTI (DIVERSI DA UNITA' PRODUTTIVE)"@it ;
+	<http://www.w3.org/2004/02/skos/core#topConceptOf> <http://data.openbudgets.eu/resource/codelist/oc-cup-economic-class> .
+
+<http://data.openbudgets.eu/resource/codelist/oc-cup-economic-class/06-01> a <http://www.w3.org/2004/02/skos/core#Concept> ;
+	<http://www.w3.org/2004/02/skos/core#notation> "06-01" ;
+	<http://www.w3.org/2004/02/skos/core#prefLabel> "CONCESSIONE DI CONTRIBUTI AD ALTRI SOGGETTI (DIVERSI DA UNITA' PRODUTTIVE) - ACQUISTO SERVIZI REALI (INCLUSA FORMAZIONE)"@it ;
+	<http://www.w3.org/2004/02/skos/core#broader> <http://data.openbudgets.eu/resource/codelist/oc-cup-economic-class/06> ;
+	<http://www.w3.org/2004/02/skos/core#inScheme> <http://data.openbudgets.eu/resource/codelist/oc-cup-economic-class> .
+
+<http://data.openbudgets.eu/resource/codelist/oc-cup-economic-class/06-02> a <http://www.w3.org/2004/02/skos/core#Concept> ;
+	<http://www.w3.org/2004/02/skos/core#notation> "06-02" ;
+	<http://www.w3.org/2004/02/skos/core#prefLabel> "CONCESSIONE DI CONTRIBUTI AD ALTRI SOGGETTI (DIVERSI DA UNITA' PRODUTTIVE) - NUOVA REALIZZAZIONE"@it ;
+	<http://www.w3.org/2004/02/skos/core#broader> <http://data.openbudgets.eu/resource/codelist/oc-cup-economic-class/06> ;
+	<http://www.w3.org/2004/02/skos/core#inScheme> <http://data.openbudgets.eu/resource/codelist/oc-cup-economic-class> .
+
+<http://data.openbudgets.eu/resource/codelist/oc-cup-economic-class/06-03> a <http://www.w3.org/2004/02/skos/core#Concept> ;
+	<http://www.w3.org/2004/02/skos/core#notation> "06-03" ;
+	<http://www.w3.org/2004/02/skos/core#prefLabel> "CONCESSIONE DI CONTRIBUTI AD ALTRI SOGGETTI (DIVERSI DA UNITA' PRODUTTIVE) - RESTAURO"@it ;
+	<http://www.w3.org/2004/02/skos/core#broader> <http://data.openbudgets.eu/resource/codelist/oc-cup-economic-class/06> ;
+	<http://www.w3.org/2004/02/skos/core#inScheme> <http://data.openbudgets.eu/resource/codelist/oc-cup-economic-class> .
+
+<http://data.openbudgets.eu/resource/codelist/oc-cup-economic-class/06-04> a <http://www.w3.org/2004/02/skos/core#Concept> ;
+	<http://www.w3.org/2004/02/skos/core#notation> "06-04" ;
+	<http://www.w3.org/2004/02/skos/core#prefLabel> "CONCESSIONE DI CONTRIBUTI AD ALTRI SOGGETTI (DIVERSI DA UNITA' PRODUTTIVE) - RISTRUTTURAZIONE"@it ;
+	<http://www.w3.org/2004/02/skos/core#broader> <http://data.openbudgets.eu/resource/codelist/oc-cup-economic-class/06> ;
+	<http://www.w3.org/2004/02/skos/core#inScheme> <http://data.openbudgets.eu/resource/codelist/oc-cup-economic-class> .
+
+<http://data.openbudgets.eu/resource/codelist/oc-cup-economic-class/06-08> a <http://www.w3.org/2004/02/skos/core#Concept> ;
+	<http://www.w3.org/2004/02/skos/core#notation> "06-08" ;
+	<http://www.w3.org/2004/02/skos/core#prefLabel> "CONCESSIONE DI CONTRIBUTI AD ALTRI SOGGETTI (DIVERSI DA UNITA' PRODUTTIVE) - MANUTENZIONE STRAORDINARIA"@it ;
+	<http://www.w3.org/2004/02/skos/core#broader> <http://data.openbudgets.eu/resource/codelist/oc-cup-economic-class/06> ;
+	<http://www.w3.org/2004/02/skos/core#inScheme> <http://data.openbudgets.eu/resource/codelist/oc-cup-economic-class> .
+
+<http://data.openbudgets.eu/resource/codelist/oc-cup-economic-class/06-99> a <http://www.w3.org/2004/02/skos/core#Concept> ;
+	<http://www.w3.org/2004/02/skos/core#notation> "06-99" ;
+	<http://www.w3.org/2004/02/skos/core#prefLabel> "CONCESSIONE DI CONTRIBUTI AD ALTRI SOGGETTI (DIVERSI DA UNITA' PRODUTTIVE) - ALTRO"@it ;
+	<http://www.w3.org/2004/02/skos/core#broader> <http://data.openbudgets.eu/resource/codelist/oc-cup-economic-class/06> ;
+	<http://www.w3.org/2004/02/skos/core#inScheme> <http://data.openbudgets.eu/resource/codelist/oc-cup-economic-class> .
+
+<http://data.openbudgets.eu/resource/codelist/oc-cup-economic-class/07> a <http://www.w3.org/2004/02/skos/core#Concept> ;
+	<http://www.w3.org/2004/02/skos/core#notation> "07" ;
+	<http://www.w3.org/2004/02/skos/core#prefLabel> "CONCESSIONE DI INCENTIVI AD UNITA' PRODUTTIVE"@it ;
+	<http://www.w3.org/2004/02/skos/core#topConceptOf> <http://data.openbudgets.eu/resource/codelist/oc-cup-economic-class> .
+
+<http://data.openbudgets.eu/resource/codelist/oc-cup-economic-class/07-01> a <http://www.w3.org/2004/02/skos/core#Concept> ;
+	<http://www.w3.org/2004/02/skos/core#notation> "07-01" ;
+	<http://www.w3.org/2004/02/skos/core#prefLabel> "CONCESSIONE DI INCENTIVI AD UNITA' PRODUTTIVE - NUOVA REALIZZAZIONE"@it ;
+	<http://www.w3.org/2004/02/skos/core#broader> <http://data.openbudgets.eu/resource/codelist/oc-cup-economic-class/07> ;
+	<http://www.w3.org/2004/02/skos/core#inScheme> <http://data.openbudgets.eu/resource/codelist/oc-cup-economic-class> .
+
+<http://data.openbudgets.eu/resource/codelist/oc-cup-economic-class/07-04> a <http://www.w3.org/2004/02/skos/core#Concept> ;
+	<http://www.w3.org/2004/02/skos/core#notation> "07-04" ;
+	<http://www.w3.org/2004/02/skos/core#prefLabel> "CONCESSIONE DI INCENTIVI AD UNITA' PRODUTTIVE - RISTRUTTURAZIONE"@it ;
+	<http://www.w3.org/2004/02/skos/core#broader> <http://data.openbudgets.eu/resource/codelist/oc-cup-economic-class/07> ;
+	<http://www.w3.org/2004/02/skos/core#inScheme> <http://data.openbudgets.eu/resource/codelist/oc-cup-economic-class> .
+
+<http://data.openbudgets.eu/resource/codelist/oc-cup-economic-class/07-08> a <http://www.w3.org/2004/02/skos/core#Concept> ;
+	<http://www.w3.org/2004/02/skos/core#notation> "07-08" ;
+	<http://www.w3.org/2004/02/skos/core#prefLabel> "CONCESSIONE DI INCENTIVI AD UNITA' PRODUTTIVE - MANUTENZIONE STRAORDINARIA"@it ;
+	<http://www.w3.org/2004/02/skos/core#broader> <http://data.openbudgets.eu/resource/codelist/oc-cup-economic-class/07> ;
+	<http://www.w3.org/2004/02/skos/core#inScheme> <http://data.openbudgets.eu/resource/codelist/oc-cup-economic-class> .
+
+<http://data.openbudgets.eu/resource/codelist/oc-cup-economic-class/07-09> a <http://www.w3.org/2004/02/skos/core#Concept> ;
+	<http://www.w3.org/2004/02/skos/core#notation> "07-09" ;
+	<http://www.w3.org/2004/02/skos/core#prefLabel> "CONCESSIONE DI INCENTIVI AD UNITA' PRODUTTIVE - AMPLIAMENTO"@it ;
+	<http://www.w3.org/2004/02/skos/core#broader> <http://data.openbudgets.eu/resource/codelist/oc-cup-economic-class/07> ;
+	<http://www.w3.org/2004/02/skos/core#inScheme> <http://data.openbudgets.eu/resource/codelist/oc-cup-economic-class> .
+
+<http://data.openbudgets.eu/resource/codelist/oc-cup-economic-class/07-11> a <http://www.w3.org/2004/02/skos/core#Concept> ;
+	<http://www.w3.org/2004/02/skos/core#notation> "07-11" ;
+	<http://www.w3.org/2004/02/skos/core#prefLabel> "CONCESSIONE DI INCENTIVI AD UNITA' PRODUTTIVE - STUDI E PROGETTAZIONI"@it ;
+	<http://www.w3.org/2004/02/skos/core#broader> <http://data.openbudgets.eu/resource/codelist/oc-cup-economic-class/07> ;
+	<http://www.w3.org/2004/02/skos/core#inScheme> <http://data.openbudgets.eu/resource/codelist/oc-cup-economic-class> .
+
+<http://data.openbudgets.eu/resource/codelist/oc-cup-economic-class/07-15> a <http://www.w3.org/2004/02/skos/core#Concept> ;
+	<http://www.w3.org/2004/02/skos/core#notation> "07-15" ;
+	<http://www.w3.org/2004/02/skos/core#prefLabel> "CONCESSIONE DI INCENTIVI AD UNITA' PRODUTTIVE - AMMODERNAMENTO"@it ;
+	<http://www.w3.org/2004/02/skos/core#broader> <http://data.openbudgets.eu/resource/codelist/oc-cup-economic-class/07> ;
+	<http://www.w3.org/2004/02/skos/core#inScheme> <http://data.openbudgets.eu/resource/codelist/oc-cup-economic-class> .
+
+<http://data.openbudgets.eu/resource/codelist/oc-cup-economic-class/07-16> a <http://www.w3.org/2004/02/skos/core#Concept> ;
+	<http://www.w3.org/2004/02/skos/core#notation> "07-16" ;
+	<http://www.w3.org/2004/02/skos/core#prefLabel> "CONCESSIONE DI INCENTIVI AD UNITA' PRODUTTIVE - RICONVERSIONE"@it ;
+	<http://www.w3.org/2004/02/skos/core#broader> <http://data.openbudgets.eu/resource/codelist/oc-cup-economic-class/07> ;
+	<http://www.w3.org/2004/02/skos/core#inScheme> <http://data.openbudgets.eu/resource/codelist/oc-cup-economic-class> .
+
+<http://data.openbudgets.eu/resource/codelist/oc-cup-economic-class/07-17> a <http://www.w3.org/2004/02/skos/core#Concept> ;
+	<http://www.w3.org/2004/02/skos/core#notation> "07-17" ;
+	<http://www.w3.org/2004/02/skos/core#prefLabel> "CONCESSIONE DI INCENTIVI AD UNITA' PRODUTTIVE - RIATTIVAZIONE"@it ;
+	<http://www.w3.org/2004/02/skos/core#broader> <http://data.openbudgets.eu/resource/codelist/oc-cup-economic-class/07> ;
+	<http://www.w3.org/2004/02/skos/core#inScheme> <http://data.openbudgets.eu/resource/codelist/oc-cup-economic-class> .
+
+<http://data.openbudgets.eu/resource/codelist/oc-cup-economic-class/07-18> a <http://www.w3.org/2004/02/skos/core#Concept> ;
+	<http://www.w3.org/2004/02/skos/core#notation> "07-18" ;
+	<http://www.w3.org/2004/02/skos/core#prefLabel> "CONCESSIONE DI INCENTIVI AD UNITA' PRODUTTIVE - TRASFERIMENTO"@it ;
+	<http://www.w3.org/2004/02/skos/core#broader> <http://data.openbudgets.eu/resource/codelist/oc-cup-economic-class/07> ;
+	<http://www.w3.org/2004/02/skos/core#inScheme> <http://data.openbudgets.eu/resource/codelist/oc-cup-economic-class> .
+
+<http://data.openbudgets.eu/resource/codelist/oc-cup-economic-class/07-19> a <http://www.w3.org/2004/02/skos/core#Concept> ;
+	<http://www.w3.org/2004/02/skos/core#notation> "07-19" ;
+	<http://www.w3.org/2004/02/skos/core#prefLabel> "CONCESSIONE DI INCENTIVI AD UNITA' PRODUTTIVE - ACQUISTO SERVIZI REALI (INCLUDE FORMAZIONE)"@it ;
+	<http://www.w3.org/2004/02/skos/core#broader> <http://data.openbudgets.eu/resource/codelist/oc-cup-economic-class/07> ;
+	<http://www.w3.org/2004/02/skos/core#inScheme> <http://data.openbudgets.eu/resource/codelist/oc-cup-economic-class> .
+
+<http://data.openbudgets.eu/resource/codelist/oc-cup-economic-class/07-20> a <http://www.w3.org/2004/02/skos/core#Concept> ;
+	<http://www.w3.org/2004/02/skos/core#notation> "07-20" ;
+	<http://www.w3.org/2004/02/skos/core#prefLabel> "CONCESSIONE DI INCENTIVI AD UNITA' PRODUTTIVE - ATTIVITA' DI RICERCA"@it ;
+	<http://www.w3.org/2004/02/skos/core#broader> <http://data.openbudgets.eu/resource/codelist/oc-cup-economic-class/07> ;
+	<http://www.w3.org/2004/02/skos/core#inScheme> <http://data.openbudgets.eu/resource/codelist/oc-cup-economic-class> .
+
+<http://data.openbudgets.eu/resource/codelist/oc-cup-economic-class/07-21> a <http://www.w3.org/2004/02/skos/core#Concept> ;
+	<http://www.w3.org/2004/02/skos/core#notation> "07-21" ;
+	<http://www.w3.org/2004/02/skos/core#prefLabel> "CONCESSIONE DI INCENTIVI AD UNITA' PRODUTTIVE - INCENTIVI AL LAVORO"@it ;
+	<http://www.w3.org/2004/02/skos/core#broader> <http://data.openbudgets.eu/resource/codelist/oc-cup-economic-class/07> ;
+	<http://www.w3.org/2004/02/skos/core#inScheme> <http://data.openbudgets.eu/resource/codelist/oc-cup-economic-class> .
+
+<http://data.openbudgets.eu/resource/codelist/oc-cup-economic-class/07-99> a <http://www.w3.org/2004/02/skos/core#Concept> ;
+	<http://www.w3.org/2004/02/skos/core#notation> "07-99" ;
+	<http://www.w3.org/2004/02/skos/core#prefLabel> "CONCESSIONE DI INCENTIVI AD UNITA' PRODUTTIVE - ALTRO"@it ;
+	<http://www.w3.org/2004/02/skos/core#broader> <http://data.openbudgets.eu/resource/codelist/oc-cup-economic-class/07> ;
+	<http://www.w3.org/2004/02/skos/core#inScheme> <http://data.openbudgets.eu/resource/codelist/oc-cup-economic-class> .
+
+<http://data.openbudgets.eu/resource/codelist/oc-cup-economic-class/08> a <http://www.w3.org/2004/02/skos/core#Concept> ;
+	<http://www.w3.org/2004/02/skos/core#notation> "08" ;
+	<http://www.w3.org/2004/02/skos/core#prefLabel> "SOTTOSCRIZIONE INIZIALE O AUMENTO DI CAPITALE SOCIALE (COMPRESI SPIN OFF), FONDI DI RISCHIO O DI GAR"@it ;
+	<http://www.w3.org/2004/02/skos/core#topConceptOf> <http://data.openbudgets.eu/resource/codelist/oc-cup-economic-class> .
+
+<http://data.openbudgets.eu/resource/codelist/oc-cup-economic-class/08-01> a <http://www.w3.org/2004/02/skos/core#Concept> ;
+	<http://www.w3.org/2004/02/skos/core#notation> "08-01" ;
+	<http://www.w3.org/2004/02/skos/core#prefLabel> "SOTTOSCRIZIONE INIZIALE O AUMENTO DI CAPITALE SOCIALE (COMPRESI SPIN OFF), FONDI DI RISCHIO O DI GAR - SOTTOSCRIZIONE DI AUMENTO DI CAPITALE SOCIALE"@it ;
+	<http://www.w3.org/2004/02/skos/core#broader> <http://data.openbudgets.eu/resource/codelist/oc-cup-economic-class/08> ;
+	<http://www.w3.org/2004/02/skos/core#inScheme> <http://data.openbudgets.eu/resource/codelist/oc-cup-economic-class> .
+
+<http://data.openbudgets.eu/resource/codelist/oc-cup-economic-class/08-02> a <http://www.w3.org/2004/02/skos/core#Concept> ;
+	<http://www.w3.org/2004/02/skos/core#notation> "08-02" ;
+	<http://www.w3.org/2004/02/skos/core#prefLabel> "SOTTOSCRIZIONE INIZIALE O AUMENTO DI CAPITALE SOCIALE (COMPRESI SPIN OFF), FONDI DI RISCHIO O DI GAR - SOTTOSCRIZIONE INIZIALE DI CAPITALE SOCIALE"@it ;
+	<http://www.w3.org/2004/02/skos/core#broader> <http://data.openbudgets.eu/resource/codelist/oc-cup-economic-class/08> ;
+	<http://www.w3.org/2004/02/skos/core#inScheme> <http://data.openbudgets.eu/resource/codelist/oc-cup-economic-class> .
+
+<http://data.openbudgets.eu/resource/codelist/oc-cup-economic-class/08-03> a <http://www.w3.org/2004/02/skos/core#Concept> ;
+	<http://www.w3.org/2004/02/skos/core#notation> "08-03" ;
+	<http://www.w3.org/2004/02/skos/core#prefLabel> "SOTTOSCRIZIONE INIZIALE O AUMENTO DI CAPITALE SOCIALE (COMPRESI SPIN OFF), FONDI DI RISCHIO O DI GAR - FONDI RISCHIO O DI GARANZIA"@it ;
+	<http://www.w3.org/2004/02/skos/core#broader> <http://data.openbudgets.eu/resource/codelist/oc-cup-economic-class/08> ;
+	<http://www.w3.org/2004/02/skos/core#inScheme> <http://data.openbudgets.eu/resource/codelist/oc-cup-economic-class> .
+
+<http://data.openbudgets.eu/resource/codelist/oc-cup-economic-class/08-99> a <http://www.w3.org/2004/02/skos/core#Concept> ;
+	<http://www.w3.org/2004/02/skos/core#notation> "08-99" ;
+	<http://www.w3.org/2004/02/skos/core#prefLabel> "SOTTOSCRIZIONE INIZIALE O AUMENTO DI CAPITALE SOCIALE (COMPRESI SPIN OFF), FONDI DI RISCHIO O DI GAR - ALTRO"@it ;
+	<http://www.w3.org/2004/02/skos/core#broader> <http://data.openbudgets.eu/resource/codelist/oc-cup-economic-class/08> ;
+	<http://www.w3.org/2004/02/skos/core#inScheme> <http://data.openbudgets.eu/resource/codelist/oc-cup-economic-class> .
+
+<http://data.openbudgets.eu/resource/codelist/oc-cup-economic-class> a <http://www.w3.org/2004/02/skos/core#ConceptScheme> ;
+	rdfs:comment "The code list of the CUP (Codice Unico di Progetto) system classifies the projects hierarchically in nature and type."@en , "Classificazione gerarchica a due livelli (natura e tipologia) del progetto definita dall'Amministrazione all'atto della richiesta del CUP. Di ciascun livello vengono riportati codice e descrizione. La natura del progetto si articola in: Acquisto di beni, Realizzazione e acquisto di servizi, Realizzazione di lavori pubblici, Concessione di aiuti a persone, Concessione di incentivi ad imprese, Conferimenti di capitale. Natura e tipologia formano chiave univoca di interrogazione solo congiuntamente."@it ;
+	rdfs:label "Code list for CUP economic classification"@en , "I codici della classificazione economica CUP"@it ;
+	<http://www.w3.org/2004/02/skos/core#hasTopConcept> <http://data.openbudgets.eu/resource/codelist/oc-cup-economic-class/01> , <http://data.openbudgets.eu/resource/codelist/oc-cup-economic-class/02> , <http://data.openbudgets.eu/resource/codelist/oc-cup-economic-class/03> , <http://data.openbudgets.eu/resource/codelist/oc-cup-economic-class/06> , <http://data.openbudgets.eu/resource/codelist/oc-cup-economic-class/07> , <http://data.openbudgets.eu/resource/codelist/oc-cup-economic-class/08> .

@@ -1,0 +1,457 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix fn: <http://www.w3.org/2005/xpath-functions#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sesame: <http://www.openrdf.org/schema/sesame#> .
+
+<http://data.openbudgets.eu/resource/codelist/oc-qsn-functional-class/1> a <http://www.w3.org/2004/02/skos/core#Concept> ;
+	<http://www.w3.org/2004/02/skos/core#notation> "1" ;
+	<http://www.w3.org/2004/02/skos/core#prefLabel> "Miglioramento e valorizzazione delle risorse umane"@it ;
+	<http://www.w3.org/2004/02/skos/core#topConceptOf> <http://data.openbudgets.eu/resource/codelist/oc-qsn-functional-class> .
+
+<http://data.openbudgets.eu/resource/codelist/oc-qsn-functional-class/1.1> a <http://www.w3.org/2004/02/skos/core#Concept> ;
+	<http://www.w3.org/2004/02/skos/core#notation> "1.1" ;
+	<http://www.w3.org/2004/02/skos/core#prefLabel> "Rafforzare, integrare e migliorare la qualità dei sistemi di istruzione, formazione e lavoro e il loro collegamento con il territorio"@it ;
+	<http://www.w3.org/2004/02/skos/core#broader> <http://data.openbudgets.eu/resource/codelist/oc-qsn-functional-class/1> ;
+	<http://www.w3.org/2004/02/skos/core#inScheme> <http://data.openbudgets.eu/resource/codelist/oc-qsn-functional-class> .
+
+<http://data.openbudgets.eu/resource/codelist/oc-qsn-functional-class/1.1.1> a <http://www.w3.org/2004/02/skos/core#Concept> ;
+	<http://www.w3.org/2004/02/skos/core#notation> "1.1.1" ;
+	<http://www.w3.org/2004/02/skos/core#prefLabel> "Migliorare la qualità dell'offerta di istruzione-formazione, i risultati dell'apprendimento e agevolare la riconoscibilità delle competenze acquisite"@it ;
+	<http://www.w3.org/2004/02/skos/core#broader> <http://data.openbudgets.eu/resource/codelist/oc-qsn-functional-class/1.1> ;
+	<http://www.w3.org/2004/02/skos/core#inScheme> <http://data.openbudgets.eu/resource/codelist/oc-qsn-functional-class> .
+
+<http://data.openbudgets.eu/resource/codelist/oc-qsn-functional-class/1.1.2> a <http://www.w3.org/2004/02/skos/core#Concept> ;
+	<http://www.w3.org/2004/02/skos/core#notation> "1.1.2" ;
+	<http://www.w3.org/2004/02/skos/core#prefLabel> "Migliorare il governo dell'attuazione, l'integrazione tra i sistemi dell'istruzione,formazione e lavoro e il rapporto con il territorio"@it ;
+	<http://www.w3.org/2004/02/skos/core#broader> <http://data.openbudgets.eu/resource/codelist/oc-qsn-functional-class/1.1> ;
+	<http://www.w3.org/2004/02/skos/core#inScheme> <http://data.openbudgets.eu/resource/codelist/oc-qsn-functional-class> .
+
+<http://data.openbudgets.eu/resource/codelist/oc-qsn-functional-class/1.2> a <http://www.w3.org/2004/02/skos/core#Concept> ;
+	<http://www.w3.org/2004/02/skos/core#notation> "1.2" ;
+	<http://www.w3.org/2004/02/skos/core#prefLabel> "Innalzare i livelli di apprendimento e di competenze chiave, l'effettiva equità di accesso ai percorsi migliori, aumentare la copertura dei percorsi di istruzione e formazione iniziale"@it ;
+	<http://www.w3.org/2004/02/skos/core#broader> <http://data.openbudgets.eu/resource/codelist/oc-qsn-functional-class/1> ;
+	<http://www.w3.org/2004/02/skos/core#inScheme> <http://data.openbudgets.eu/resource/codelist/oc-qsn-functional-class> .
+
+<http://data.openbudgets.eu/resource/codelist/oc-qsn-functional-class/1.2.1> a <http://www.w3.org/2004/02/skos/core#Concept> ;
+	<http://www.w3.org/2004/02/skos/core#notation> "1.2.1" ;
+	<http://www.w3.org/2004/02/skos/core#prefLabel> "Accrescere il tasso di partecipazione all'istruzione e formazione iniziale"@it ;
+	<http://www.w3.org/2004/02/skos/core#broader> <http://data.openbudgets.eu/resource/codelist/oc-qsn-functional-class/1.2> ;
+	<http://www.w3.org/2004/02/skos/core#inScheme> <http://data.openbudgets.eu/resource/codelist/oc-qsn-functional-class> .
+
+<http://data.openbudgets.eu/resource/codelist/oc-qsn-functional-class/1.2.2> a <http://www.w3.org/2004/02/skos/core#Concept> ;
+	<http://www.w3.org/2004/02/skos/core#notation> "1.2.2" ;
+	<http://www.w3.org/2004/02/skos/core#prefLabel> "Innalzare i livelli medi dell'apprendimento, promuovere le eccellenze e garantire un livello minimo di competenze per tutti"@it ;
+	<http://www.w3.org/2004/02/skos/core#broader> <http://data.openbudgets.eu/resource/codelist/oc-qsn-functional-class/1.2> ;
+	<http://www.w3.org/2004/02/skos/core#inScheme> <http://data.openbudgets.eu/resource/codelist/oc-qsn-functional-class> .
+
+<http://data.openbudgets.eu/resource/codelist/oc-qsn-functional-class/1.2.3> a <http://www.w3.org/2004/02/skos/core#Concept> ;
+	<http://www.w3.org/2004/02/skos/core#notation> "1.2.3" ;
+	<http://www.w3.org/2004/02/skos/core#prefLabel> "Accrescere la diffusione, l'accesso e l'uso della società dell'informazione nella scuola e nel sistema formativo"@it ;
+	<http://www.w3.org/2004/02/skos/core#broader> <http://data.openbudgets.eu/resource/codelist/oc-qsn-functional-class/1.2> ;
+	<http://www.w3.org/2004/02/skos/core#inScheme> <http://data.openbudgets.eu/resource/codelist/oc-qsn-functional-class> .
+
+<http://data.openbudgets.eu/resource/codelist/oc-qsn-functional-class/1.3> a <http://www.w3.org/2004/02/skos/core#Concept> ;
+	<http://www.w3.org/2004/02/skos/core#notation> "1.3" ;
+	<http://www.w3.org/2004/02/skos/core#prefLabel> "Aumentare la partecipazione a opportunità formative di base e avanzate lungo tutto l'arco della vita"@it ;
+	<http://www.w3.org/2004/02/skos/core#broader> <http://data.openbudgets.eu/resource/codelist/oc-qsn-functional-class/1> ;
+	<http://www.w3.org/2004/02/skos/core#inScheme> <http://data.openbudgets.eu/resource/codelist/oc-qsn-functional-class> .
+
+<http://data.openbudgets.eu/resource/codelist/oc-qsn-functional-class/1.3.1> a <http://www.w3.org/2004/02/skos/core#Concept> ;
+	<http://www.w3.org/2004/02/skos/core#notation> "1.3.1" ;
+	<http://www.w3.org/2004/02/skos/core#prefLabel> "Garantire l'accessibilità a opportunità formative, certificate, per le competenze chiave e la cittadinanza attiva"@it ;
+	<http://www.w3.org/2004/02/skos/core#broader> <http://data.openbudgets.eu/resource/codelist/oc-qsn-functional-class/1.3> ;
+	<http://www.w3.org/2004/02/skos/core#inScheme> <http://data.openbudgets.eu/resource/codelist/oc-qsn-functional-class> .
+
+<http://data.openbudgets.eu/resource/codelist/oc-qsn-functional-class/1.3.2> a <http://www.w3.org/2004/02/skos/core#Concept> ;
+	<http://www.w3.org/2004/02/skos/core#notation> "1.3.2" ;
+	<http://www.w3.org/2004/02/skos/core#prefLabel> "Sostenere la costruzione di un sistema nazionale di formazione superiore per aumentare la competitività"@it ;
+	<http://www.w3.org/2004/02/skos/core#broader> <http://data.openbudgets.eu/resource/codelist/oc-qsn-functional-class/1.3> ;
+	<http://www.w3.org/2004/02/skos/core#inScheme> <http://data.openbudgets.eu/resource/codelist/oc-qsn-functional-class> .
+
+<http://data.openbudgets.eu/resource/codelist/oc-qsn-functional-class/1.3.3> a <http://www.w3.org/2004/02/skos/core#Concept> ;
+	<http://www.w3.org/2004/02/skos/core#notation> "1.3.3" ;
+	<http://www.w3.org/2004/02/skos/core#prefLabel> "Accrescere l'utilizzo di percorsi integrati per l'inserimento e il reinserimento lavorativo"@it ;
+	<http://www.w3.org/2004/02/skos/core#broader> <http://data.openbudgets.eu/resource/codelist/oc-qsn-functional-class/1.3> ;
+	<http://www.w3.org/2004/02/skos/core#inScheme> <http://data.openbudgets.eu/resource/codelist/oc-qsn-functional-class> .
+
+<http://data.openbudgets.eu/resource/codelist/oc-qsn-functional-class/1.4> a <http://www.w3.org/2004/02/skos/core#Concept> ;
+	<http://www.w3.org/2004/02/skos/core#notation> "1.4" ;
+	<http://www.w3.org/2004/02/skos/core#prefLabel> "Migliorare la capacità di adattamento, innovazione e competitività delle persone e degli attori economici del sistema"@it ;
+	<http://www.w3.org/2004/02/skos/core#broader> <http://data.openbudgets.eu/resource/codelist/oc-qsn-functional-class/1> ;
+	<http://www.w3.org/2004/02/skos/core#inScheme> <http://data.openbudgets.eu/resource/codelist/oc-qsn-functional-class> .
+
+<http://data.openbudgets.eu/resource/codelist/oc-qsn-functional-class/1.4.1> a <http://www.w3.org/2004/02/skos/core#Concept> ;
+	<http://www.w3.org/2004/02/skos/core#notation> "1.4.1" ;
+	<http://www.w3.org/2004/02/skos/core#prefLabel> "Sostenere politiche di formazione e politiche di anticipazione indirizzate alla competitività delle imprese"@it ;
+	<http://www.w3.org/2004/02/skos/core#broader> <http://data.openbudgets.eu/resource/codelist/oc-qsn-functional-class/1.4> ;
+	<http://www.w3.org/2004/02/skos/core#inScheme> <http://data.openbudgets.eu/resource/codelist/oc-qsn-functional-class> .
+
+<http://data.openbudgets.eu/resource/codelist/oc-qsn-functional-class/1.4.2> a <http://www.w3.org/2004/02/skos/core#Concept> ;
+	<http://www.w3.org/2004/02/skos/core#notation> "1.4.2" ;
+	<http://www.w3.org/2004/02/skos/core#prefLabel> "Indirizzare il sistema di formazione continua a sostegno della capacità di adattamento dei lavoratori"@it ;
+	<http://www.w3.org/2004/02/skos/core#broader> <http://data.openbudgets.eu/resource/codelist/oc-qsn-functional-class/1.4> ;
+	<http://www.w3.org/2004/02/skos/core#inScheme> <http://data.openbudgets.eu/resource/codelist/oc-qsn-functional-class> .
+
+<http://data.openbudgets.eu/resource/codelist/oc-qsn-functional-class/10> a <http://www.w3.org/2004/02/skos/core#Concept> ;
+	<http://www.w3.org/2004/02/skos/core#notation> "10" ;
+	<http://www.w3.org/2004/02/skos/core#prefLabel> "Governance, capacità istituzionali e mercati concorrenziali ed efficaci"@it ;
+	<http://www.w3.org/2004/02/skos/core#topConceptOf> <http://data.openbudgets.eu/resource/codelist/oc-qsn-functional-class> .
+
+<http://data.openbudgets.eu/resource/codelist/oc-qsn-functional-class/10.1> a <http://www.w3.org/2004/02/skos/core#Concept> ;
+	<http://www.w3.org/2004/02/skos/core#notation> "10.1" ;
+	<http://www.w3.org/2004/02/skos/core#prefLabel> "Elevare le capacità delle amministrazioni, accrescere i livelli di legalità, rafforzare il coinvolgimento del partenariato e contribuire all'apertura dei mercati dei servizi per una programmazione e gestione piu efficace ed efficiente della politica regionale aggiuntiva"@it ;
+	<http://www.w3.org/2004/02/skos/core#broader> <http://data.openbudgets.eu/resource/codelist/oc-qsn-functional-class/10> ;
+	<http://www.w3.org/2004/02/skos/core#inScheme> <http://data.openbudgets.eu/resource/codelist/oc-qsn-functional-class> .
+
+<http://data.openbudgets.eu/resource/codelist/oc-qsn-functional-class/10.1.1> a <http://www.w3.org/2004/02/skos/core#Concept> ;
+	<http://www.w3.org/2004/02/skos/core#notation> "10.1.1" ;
+	<http://www.w3.org/2004/02/skos/core#prefLabel> "Rafforzare le competenze tecniche e di governo delle amministrazioni e degli enti attuatori, per migliorare l'efficacia della programmazione e la qualità degli interventi per offrire servizi migliori alla cittadinanza"@it ;
+	<http://www.w3.org/2004/02/skos/core#broader> <http://data.openbudgets.eu/resource/codelist/oc-qsn-functional-class/10.1> ;
+	<http://www.w3.org/2004/02/skos/core#inScheme> <http://data.openbudgets.eu/resource/codelist/oc-qsn-functional-class> .
+
+<http://data.openbudgets.eu/resource/codelist/oc-qsn-functional-class/10.1.2> a <http://www.w3.org/2004/02/skos/core#Concept> ;
+	<http://www.w3.org/2004/02/skos/core#notation> "10.1.2" ;
+	<http://www.w3.org/2004/02/skos/core#prefLabel> "Favorire un innalzamento dei livelli di legalità"@it ;
+	<http://www.w3.org/2004/02/skos/core#broader> <http://data.openbudgets.eu/resource/codelist/oc-qsn-functional-class/10.1> ;
+	<http://www.w3.org/2004/02/skos/core#inScheme> <http://data.openbudgets.eu/resource/codelist/oc-qsn-functional-class> .
+
+<http://data.openbudgets.eu/resource/codelist/oc-qsn-functional-class/10.1.3> a <http://www.w3.org/2004/02/skos/core#Concept> ;
+	<http://www.w3.org/2004/02/skos/core#notation> "10.1.3" ;
+	<http://www.w3.org/2004/02/skos/core#prefLabel> "Favorire l'apertura dei mercati dei servizi, migliorare e adeguare la regolazione per conseguire condizioni piu concorrenziali"@it ;
+	<http://www.w3.org/2004/02/skos/core#broader> <http://data.openbudgets.eu/resource/codelist/oc-qsn-functional-class/10.1> ;
+	<http://www.w3.org/2004/02/skos/core#inScheme> <http://data.openbudgets.eu/resource/codelist/oc-qsn-functional-class> .
+
+<http://data.openbudgets.eu/resource/codelist/oc-qsn-functional-class/2> a <http://www.w3.org/2004/02/skos/core#Concept> ;
+	<http://www.w3.org/2004/02/skos/core#notation> "2" ;
+	<http://www.w3.org/2004/02/skos/core#prefLabel> "Promozione, valorizzazione e diffusione della ricerca e dell'innovazione per la competitività"@it ;
+	<http://www.w3.org/2004/02/skos/core#topConceptOf> <http://data.openbudgets.eu/resource/codelist/oc-qsn-functional-class> .
+
+<http://data.openbudgets.eu/resource/codelist/oc-qsn-functional-class/2.1> a <http://www.w3.org/2004/02/skos/core#Concept> ;
+	<http://www.w3.org/2004/02/skos/core#notation> "2.1" ;
+	<http://www.w3.org/2004/02/skos/core#prefLabel> "Rafforzare e valorizzare l'intera filiera della ricerca e le reti di cooperazione tra il sistema della ricerca e le imprese, per contribuire alla competitività e alla crescita economica;sostenere la massima diffusione e utilizzo di nuove tecnologie e servizi avanzati; innalzare il livello delle competenze e conoscenze scientifiche e tecniche nel sistema produttivo e nelle Istituzioni"@it ;
+	<http://www.w3.org/2004/02/skos/core#broader> <http://data.openbudgets.eu/resource/codelist/oc-qsn-functional-class/2> ;
+	<http://www.w3.org/2004/02/skos/core#inScheme> <http://data.openbudgets.eu/resource/codelist/oc-qsn-functional-class> .
+
+<http://data.openbudgets.eu/resource/codelist/oc-qsn-functional-class/2.1.1> a <http://www.w3.org/2004/02/skos/core#Concept> ;
+	<http://www.w3.org/2004/02/skos/core#notation> "2.1.1" ;
+	<http://www.w3.org/2004/02/skos/core#prefLabel> "Qualificare in senso innovativo l'offerta di ricerca, favorendo la creazione di reti fra Università, centri di ricerca e tecnologia e il mondo della produzione sviluppando meccanismi a un tempo concorrenziali e cooperativi, in grado di assicurare fondi ai ricercatori piu promettenti"@it ;
+	<http://www.w3.org/2004/02/skos/core#broader> <http://data.openbudgets.eu/resource/codelist/oc-qsn-functional-class/2.1> ;
+	<http://www.w3.org/2004/02/skos/core#inScheme> <http://data.openbudgets.eu/resource/codelist/oc-qsn-functional-class> .
+
+<http://data.openbudgets.eu/resource/codelist/oc-qsn-functional-class/2.1.2> a <http://www.w3.org/2004/02/skos/core#Concept> ;
+	<http://www.w3.org/2004/02/skos/core#notation> "2.1.2" ;
+	<http://www.w3.org/2004/02/skos/core#prefLabel> "Valorizzare competenze e funzioni di mediazione per superare i limiti di tipo relazionale e organizzativo tra gli attori del sistema della ricerca e dell'innovazione"@it ;
+	<http://www.w3.org/2004/02/skos/core#broader> <http://data.openbudgets.eu/resource/codelist/oc-qsn-functional-class/2.1> ;
+	<http://www.w3.org/2004/02/skos/core#inScheme> <http://data.openbudgets.eu/resource/codelist/oc-qsn-functional-class> .
+
+<http://data.openbudgets.eu/resource/codelist/oc-qsn-functional-class/2.1.3> a <http://www.w3.org/2004/02/skos/core#Concept> ;
+	<http://www.w3.org/2004/02/skos/core#notation> "2.1.3" ;
+	<http://www.w3.org/2004/02/skos/core#prefLabel> "Aumentare la propensione delle imprese a investire in ricerca e innovazione"@it ;
+	<http://www.w3.org/2004/02/skos/core#broader> <http://data.openbudgets.eu/resource/codelist/oc-qsn-functional-class/2.1> ;
+	<http://www.w3.org/2004/02/skos/core#inScheme> <http://data.openbudgets.eu/resource/codelist/oc-qsn-functional-class> .
+
+<http://data.openbudgets.eu/resource/codelist/oc-qsn-functional-class/2.1.4> a <http://www.w3.org/2004/02/skos/core#Concept> ;
+	<http://www.w3.org/2004/02/skos/core#notation> "2.1.4" ;
+	<http://www.w3.org/2004/02/skos/core#prefLabel> "Valorizzare il capitale umano per favorire processi di ricerca e innovazione, promuovendo l'attrazione di investimenti e talenti e l'assorbimento di risorse umane da parte del sistema delle imprese e favorendo una migliore e piu intensa interazione fra queste ultime e le Università e i centri di ricerca e tecnologia"@it ;
+	<http://www.w3.org/2004/02/skos/core#broader> <http://data.openbudgets.eu/resource/codelist/oc-qsn-functional-class/2.1> ;
+	<http://www.w3.org/2004/02/skos/core#inScheme> <http://data.openbudgets.eu/resource/codelist/oc-qsn-functional-class> .
+
+<http://data.openbudgets.eu/resource/codelist/oc-qsn-functional-class/2.1.5> a <http://www.w3.org/2004/02/skos/core#Concept> ;
+	<http://www.w3.org/2004/02/skos/core#notation> "2.1.5" ;
+	<http://www.w3.org/2004/02/skos/core#prefLabel> "Valorizzare la capacità di ricerca, trasferimento e assorbimento dell'innovazione da parte delle Regioni tramite la cooperazione territoriale"@it ;
+	<http://www.w3.org/2004/02/skos/core#broader> <http://data.openbudgets.eu/resource/codelist/oc-qsn-functional-class/2.1> ;
+	<http://www.w3.org/2004/02/skos/core#inScheme> <http://data.openbudgets.eu/resource/codelist/oc-qsn-functional-class> .
+
+<http://data.openbudgets.eu/resource/codelist/oc-qsn-functional-class/2.1.6> a <http://www.w3.org/2004/02/skos/core#Concept> ;
+	<http://www.w3.org/2004/02/skos/core#notation> "2.1.6" ;
+	<http://www.w3.org/2004/02/skos/core#prefLabel> "Sviluppare contenuti, applicazioni e servizi digitali avanzati e accrescerne la capacità di utilizzo, l'accessibilità e fruibilità anche attraverso adeguata promozione dell'offerta"@it ;
+	<http://www.w3.org/2004/02/skos/core#broader> <http://data.openbudgets.eu/resource/codelist/oc-qsn-functional-class/2.1> ;
+	<http://www.w3.org/2004/02/skos/core#inScheme> <http://data.openbudgets.eu/resource/codelist/oc-qsn-functional-class> .
+
+<http://data.openbudgets.eu/resource/codelist/oc-qsn-functional-class/2.1.7> a <http://www.w3.org/2004/02/skos/core#Concept> ;
+	<http://www.w3.org/2004/02/skos/core#notation> "2.1.7" ;
+	<http://www.w3.org/2004/02/skos/core#prefLabel> "Sostenere la promozione di servizi pubblici moderni e rafforzare i processi di innovazione della Pubblica Amministrazione attorno alle nuove Tecnologie dell'Informazione e Comunicazione"@it ;
+	<http://www.w3.org/2004/02/skos/core#broader> <http://data.openbudgets.eu/resource/codelist/oc-qsn-functional-class/2.1> ;
+	<http://www.w3.org/2004/02/skos/core#inScheme> <http://data.openbudgets.eu/resource/codelist/oc-qsn-functional-class> .
+
+<http://data.openbudgets.eu/resource/codelist/oc-qsn-functional-class/2.1.8> a <http://www.w3.org/2004/02/skos/core#Concept> ;
+	<http://www.w3.org/2004/02/skos/core#notation> "2.1.8" ;
+	<http://www.w3.org/2004/02/skos/core#prefLabel> "Garantire a cittadini, imprese e Pubblica Amministrazione l'accesso alle reti, riducendo il divario infrastrutturale riguardante la banda larga nelle aree remote e rurali (aree deboli/marginali)"@it ;
+	<http://www.w3.org/2004/02/skos/core#broader> <http://data.openbudgets.eu/resource/codelist/oc-qsn-functional-class/2.1> ;
+	<http://www.w3.org/2004/02/skos/core#inScheme> <http://data.openbudgets.eu/resource/codelist/oc-qsn-functional-class> .
+
+<http://data.openbudgets.eu/resource/codelist/oc-qsn-functional-class/3> a <http://www.w3.org/2004/02/skos/core#Concept> ;
+	<http://www.w3.org/2004/02/skos/core#notation> "3" ;
+	<http://www.w3.org/2004/02/skos/core#prefLabel> "Energia e ambiente: uso sostenibile e efficiente delle risorse per lo sviluppo"@it ;
+	<http://www.w3.org/2004/02/skos/core#topConceptOf> <http://data.openbudgets.eu/resource/codelist/oc-qsn-functional-class> .
+
+<http://data.openbudgets.eu/resource/codelist/oc-qsn-functional-class/3.1> a <http://www.w3.org/2004/02/skos/core#Concept> ;
+	<http://www.w3.org/2004/02/skos/core#notation> "3.1" ;
+	<http://www.w3.org/2004/02/skos/core#prefLabel> "Promuovere le opportunità di sviluppo locale attraverso l'attivazione di filiere produttive collegate all'aumento della quota di energia prodotta da fonti rinnovabili e al risparmio energetico"@it ;
+	<http://www.w3.org/2004/02/skos/core#broader> <http://data.openbudgets.eu/resource/codelist/oc-qsn-functional-class/3> ;
+	<http://www.w3.org/2004/02/skos/core#inScheme> <http://data.openbudgets.eu/resource/codelist/oc-qsn-functional-class> .
+
+<http://data.openbudgets.eu/resource/codelist/oc-qsn-functional-class/3.1.1> a <http://www.w3.org/2004/02/skos/core#Concept> ;
+	<http://www.w3.org/2004/02/skos/core#notation> "3.1.1" ;
+	<http://www.w3.org/2004/02/skos/core#prefLabel> "Diversificazione delle fonti energetiche e aumento dell'energia prodotta da fonti rinnovabili"@it ;
+	<http://www.w3.org/2004/02/skos/core#broader> <http://data.openbudgets.eu/resource/codelist/oc-qsn-functional-class/3.1> ;
+	<http://www.w3.org/2004/02/skos/core#inScheme> <http://data.openbudgets.eu/resource/codelist/oc-qsn-functional-class> .
+
+<http://data.openbudgets.eu/resource/codelist/oc-qsn-functional-class/3.1.2> a <http://www.w3.org/2004/02/skos/core#Concept> ;
+	<http://www.w3.org/2004/02/skos/core#notation> "3.1.2" ;
+	<http://www.w3.org/2004/02/skos/core#prefLabel> "Promozione dell'efficienza energetica e del risparmio dell'energia"@it ;
+	<http://www.w3.org/2004/02/skos/core#broader> <http://data.openbudgets.eu/resource/codelist/oc-qsn-functional-class/3.1> ;
+	<http://www.w3.org/2004/02/skos/core#inScheme> <http://data.openbudgets.eu/resource/codelist/oc-qsn-functional-class> .
+
+<http://data.openbudgets.eu/resource/codelist/oc-qsn-functional-class/3.2> a <http://www.w3.org/2004/02/skos/core#Concept> ;
+	<http://www.w3.org/2004/02/skos/core#notation> "3.2" ;
+	<http://www.w3.org/2004/02/skos/core#prefLabel> "Garantire le condizioni di sostenibilità ambientale dello sviluppo e livelli adeguati di servizi ambientali per la popolazione e le imprese"@it ;
+	<http://www.w3.org/2004/02/skos/core#broader> <http://data.openbudgets.eu/resource/codelist/oc-qsn-functional-class/3> ;
+	<http://www.w3.org/2004/02/skos/core#inScheme> <http://data.openbudgets.eu/resource/codelist/oc-qsn-functional-class> .
+
+<http://data.openbudgets.eu/resource/codelist/oc-qsn-functional-class/3.2.1> a <http://www.w3.org/2004/02/skos/core#Concept> ;
+	<http://www.w3.org/2004/02/skos/core#notation> "3.2.1" ;
+	<http://www.w3.org/2004/02/skos/core#prefLabel> "Accrescere la capacità di offerta, la qualità e l'efficienza del servizio idrico, e rafforzare la difesa del suolo e la prevenzione dei rischi naturali"@it ;
+	<http://www.w3.org/2004/02/skos/core#broader> <http://data.openbudgets.eu/resource/codelist/oc-qsn-functional-class/3.2> ;
+	<http://www.w3.org/2004/02/skos/core#inScheme> <http://data.openbudgets.eu/resource/codelist/oc-qsn-functional-class> .
+
+<http://data.openbudgets.eu/resource/codelist/oc-qsn-functional-class/3.2.2> a <http://www.w3.org/2004/02/skos/core#Concept> ;
+	<http://www.w3.org/2004/02/skos/core#notation> "3.2.2" ;
+	<http://www.w3.org/2004/02/skos/core#prefLabel> "Accrescere la capacità di offerta, qualità e efficienza del servizio di gestione dei rifiuti, rafforzando le filiere produttive a esso collegate e recuperare alle opportunità di sviluppo sostenibile i siti contaminati, anche a tutela della salute pubblica"@it ;
+	<http://www.w3.org/2004/02/skos/core#broader> <http://data.openbudgets.eu/resource/codelist/oc-qsn-functional-class/3.2> ;
+	<http://www.w3.org/2004/02/skos/core#inScheme> <http://data.openbudgets.eu/resource/codelist/oc-qsn-functional-class> .
+
+<http://data.openbudgets.eu/resource/codelist/oc-qsn-functional-class/4> a <http://www.w3.org/2004/02/skos/core#Concept> ;
+	<http://www.w3.org/2004/02/skos/core#notation> "4" ;
+	<http://www.w3.org/2004/02/skos/core#prefLabel> "Inclusione sociale e servizi per la qualità della vita e l'attrattività territoriale"@it ;
+	<http://www.w3.org/2004/02/skos/core#topConceptOf> <http://data.openbudgets.eu/resource/codelist/oc-qsn-functional-class> .
+
+<http://data.openbudgets.eu/resource/codelist/oc-qsn-functional-class/4.1> a <http://www.w3.org/2004/02/skos/core#Concept> ;
+	<http://www.w3.org/2004/02/skos/core#notation> "4.1" ;
+	<http://www.w3.org/2004/02/skos/core#prefLabel> "Promuovere una società inclusiva e garantire condizioni di sicurezza al fine di migliorare, in modo permanente, le condizioni di contesto che più direttamente favoriscono lo sviluppo"@it ;
+	<http://www.w3.org/2004/02/skos/core#broader> <http://data.openbudgets.eu/resource/codelist/oc-qsn-functional-class/4> ;
+	<http://www.w3.org/2004/02/skos/core#inScheme> <http://data.openbudgets.eu/resource/codelist/oc-qsn-functional-class> .
+
+<http://data.openbudgets.eu/resource/codelist/oc-qsn-functional-class/4.1.1> a <http://www.w3.org/2004/02/skos/core#Concept> ;
+	<http://www.w3.org/2004/02/skos/core#notation> "4.1.1" ;
+	<http://www.w3.org/2004/02/skos/core#prefLabel> "Migliorare la qualità e l'equità della partecipazione sociale e lavorativa, attraverso maggiore integrazione e accessibilità dei servizi di protezione sociale, di cura e conciliazione e dei sistemi di formazione, apprendimento e lavoro, con particolare attenzione alle pari opportunità e alle azioni di antidiscriminazione"@it ;
+	<http://www.w3.org/2004/02/skos/core#broader> <http://data.openbudgets.eu/resource/codelist/oc-qsn-functional-class/4.1> ;
+	<http://www.w3.org/2004/02/skos/core#inScheme> <http://data.openbudgets.eu/resource/codelist/oc-qsn-functional-class> .
+
+<http://data.openbudgets.eu/resource/codelist/oc-qsn-functional-class/4.1.2> a <http://www.w3.org/2004/02/skos/core#Concept> ;
+	<http://www.w3.org/2004/02/skos/core#notation> "4.1.2" ;
+	<http://www.w3.org/2004/02/skos/core#prefLabel> "Garantire migliori condizioni di sicurezza a cittadini e imprese contribuendo alla riqualificazione dei contesti caratterizzati da maggiore pervasività e rilevanza dei fenomeni criminali"@it ;
+	<http://www.w3.org/2004/02/skos/core#broader> <http://data.openbudgets.eu/resource/codelist/oc-qsn-functional-class/4.1> ;
+	<http://www.w3.org/2004/02/skos/core#inScheme> <http://data.openbudgets.eu/resource/codelist/oc-qsn-functional-class> .
+
+<http://data.openbudgets.eu/resource/codelist/oc-qsn-functional-class/4.2> a <http://www.w3.org/2004/02/skos/core#Concept> ;
+	<http://www.w3.org/2004/02/skos/core#notation> "4.2" ;
+	<http://www.w3.org/2004/02/skos/core#prefLabel> "Servizi di cura per l'infanzia"@it ;
+	<http://www.w3.org/2004/02/skos/core#broader> <http://data.openbudgets.eu/resource/codelist/oc-qsn-functional-class/4> ;
+	<http://www.w3.org/2004/02/skos/core#inScheme> <http://data.openbudgets.eu/resource/codelist/oc-qsn-functional-class> .
+
+<http://data.openbudgets.eu/resource/codelist/oc-qsn-functional-class/4.2.4> a <http://www.w3.org/2004/02/skos/core#Concept> ;
+	<http://www.w3.org/2004/02/skos/core#notation> "4.2.4" ;
+	<http://www.w3.org/2004/02/skos/core#prefLabel> "Miglioramento della qualità e della gestione dei servizi socioeducativi"@it ;
+	<http://www.w3.org/2004/02/skos/core#broader> <http://data.openbudgets.eu/resource/codelist/oc-qsn-functional-class/4.2> ;
+	<http://www.w3.org/2004/02/skos/core#inScheme> <http://data.openbudgets.eu/resource/codelist/oc-qsn-functional-class> .
+
+<http://data.openbudgets.eu/resource/codelist/oc-qsn-functional-class/5> a <http://www.w3.org/2004/02/skos/core#Concept> ;
+	<http://www.w3.org/2004/02/skos/core#notation> "5" ;
+	<http://www.w3.org/2004/02/skos/core#prefLabel> "Valorizzazione delle risorse naturali e culturali per l'attrattività e lo sviluppo"@it ;
+	<http://www.w3.org/2004/02/skos/core#topConceptOf> <http://data.openbudgets.eu/resource/codelist/oc-qsn-functional-class> .
+
+<http://data.openbudgets.eu/resource/codelist/oc-qsn-functional-class/5.1> a <http://www.w3.org/2004/02/skos/core#Concept> ;
+	<http://www.w3.org/2004/02/skos/core#notation> "5.1" ;
+	<http://www.w3.org/2004/02/skos/core#prefLabel> "Valorizzare le risorse naturali, culturali e paesaggistiche locali, trasformandole in vantaggio competitivo per aumentare l'attrattività, anche turistica, del territorio, migliorare la qualità della vita dei residenti e promuovere nuove forme di sviluppo economico sostenibile"@it ;
+	<http://www.w3.org/2004/02/skos/core#broader> <http://data.openbudgets.eu/resource/codelist/oc-qsn-functional-class/5> ;
+	<http://www.w3.org/2004/02/skos/core#inScheme> <http://data.openbudgets.eu/resource/codelist/oc-qsn-functional-class> .
+
+<http://data.openbudgets.eu/resource/codelist/oc-qsn-functional-class/5.1.1> a <http://www.w3.org/2004/02/skos/core#Concept> ;
+	<http://www.w3.org/2004/02/skos/core#notation> "5.1.1" ;
+	<http://www.w3.org/2004/02/skos/core#prefLabel> "Valorizzare la rete ecologica e tutelare la biodiversità per migliorare la qualità dell'ambiente e promuovere opportunità di sviluppo economico sostenibile"@it ;
+	<http://www.w3.org/2004/02/skos/core#broader> <http://data.openbudgets.eu/resource/codelist/oc-qsn-functional-class/5.1> ;
+	<http://www.w3.org/2004/02/skos/core#inScheme> <http://data.openbudgets.eu/resource/codelist/oc-qsn-functional-class> .
+
+<http://data.openbudgets.eu/resource/codelist/oc-qsn-functional-class/5.1.2> a <http://www.w3.org/2004/02/skos/core#Concept> ;
+	<http://www.w3.org/2004/02/skos/core#notation> "5.1.2" ;
+	<http://www.w3.org/2004/02/skos/core#prefLabel> "Valorizzare i beni e le attività culturali quale vantaggio comparato delle Regioni italiane per aumentarne l'attrattività territoriale, per rafforzare la coesione sociale e migliorare la qualità della vita dei residenti"@it ;
+	<http://www.w3.org/2004/02/skos/core#broader> <http://data.openbudgets.eu/resource/codelist/oc-qsn-functional-class/5.1> ;
+	<http://www.w3.org/2004/02/skos/core#inScheme> <http://data.openbudgets.eu/resource/codelist/oc-qsn-functional-class> .
+
+<http://data.openbudgets.eu/resource/codelist/oc-qsn-functional-class/5.1.3> a <http://www.w3.org/2004/02/skos/core#Concept> ;
+	<http://www.w3.org/2004/02/skos/core#notation> "5.1.3" ;
+	<http://www.w3.org/2004/02/skos/core#prefLabel> "Aumentare in maniera sostenibile la competitività internazionale delle destinazioni turistiche delle Regioni italiane, migliorando la qualità dell'offerta e l'orientamento al mercato dei pacchetti turistici territoriali e valorizzando gli specifici vantaggi competitivi locali, in primo luogo le risorse naturali e culturali"@it ;
+	<http://www.w3.org/2004/02/skos/core#broader> <http://data.openbudgets.eu/resource/codelist/oc-qsn-functional-class/5.1> ;
+	<http://www.w3.org/2004/02/skos/core#inScheme> <http://data.openbudgets.eu/resource/codelist/oc-qsn-functional-class> .
+
+<http://data.openbudgets.eu/resource/codelist/oc-qsn-functional-class/5.1.4> a <http://www.w3.org/2004/02/skos/core#Concept> ;
+	<http://www.w3.org/2004/02/skos/core#notation> "5.1.4" ;
+	<http://www.w3.org/2004/02/skos/core#prefLabel> "Rafforzare la capacità di conservazione e gestione delle risorse naturali e culturali mediante la cooperazione territoriale"@it ;
+	<http://www.w3.org/2004/02/skos/core#broader> <http://data.openbudgets.eu/resource/codelist/oc-qsn-functional-class/5.1> ;
+	<http://www.w3.org/2004/02/skos/core#inScheme> <http://data.openbudgets.eu/resource/codelist/oc-qsn-functional-class> .
+
+<http://data.openbudgets.eu/resource/codelist/oc-qsn-functional-class/6> a <http://www.w3.org/2004/02/skos/core#Concept> ;
+	<http://www.w3.org/2004/02/skos/core#notation> "6" ;
+	<http://www.w3.org/2004/02/skos/core#prefLabel> "Reti e collegamenti per la mobilità"@it ;
+	<http://www.w3.org/2004/02/skos/core#topConceptOf> <http://data.openbudgets.eu/resource/codelist/oc-qsn-functional-class> .
+
+<http://data.openbudgets.eu/resource/codelist/oc-qsn-functional-class/6.1> a <http://www.w3.org/2004/02/skos/core#Concept> ;
+	<http://www.w3.org/2004/02/skos/core#notation> "6.1" ;
+	<http://www.w3.org/2004/02/skos/core#prefLabel> "Accelerare la realizzazione di un sistema di trasporto efficiente, integrato, flessibile,sicuro e sostenibile per assicurare servizi logistici e di trasporto funzionali allo sviluppo"@it ;
+	<http://www.w3.org/2004/02/skos/core#broader> <http://data.openbudgets.eu/resource/codelist/oc-qsn-functional-class/6> ;
+	<http://www.w3.org/2004/02/skos/core#inScheme> <http://data.openbudgets.eu/resource/codelist/oc-qsn-functional-class> .
+
+<http://data.openbudgets.eu/resource/codelist/oc-qsn-functional-class/6.1.1> a <http://www.w3.org/2004/02/skos/core#Concept> ;
+	<http://www.w3.org/2004/02/skos/core#notation> "6.1.1" ;
+	<http://www.w3.org/2004/02/skos/core#prefLabel> "Contribuire alla realizzazione di un sistema logistico nazionale, supportando la costruzione di una rete nazionale di terminali di trasporto e di logistica, integrata, sicura, interconnessa ed omogenea"@it ;
+	<http://www.w3.org/2004/02/skos/core#broader> <http://data.openbudgets.eu/resource/codelist/oc-qsn-functional-class/6.1> ;
+	<http://www.w3.org/2004/02/skos/core#inScheme> <http://data.openbudgets.eu/resource/codelist/oc-qsn-functional-class> .
+
+<http://data.openbudgets.eu/resource/codelist/oc-qsn-functional-class/6.1.2> a <http://www.w3.org/2004/02/skos/core#Concept> ;
+	<http://www.w3.org/2004/02/skos/core#notation> "6.1.2" ;
+	<http://www.w3.org/2004/02/skos/core#prefLabel> "Promuovere la mobilità urbana sostenibile e la logistica urbana"@it ;
+	<http://www.w3.org/2004/02/skos/core#broader> <http://data.openbudgets.eu/resource/codelist/oc-qsn-functional-class/6.1> ;
+	<http://www.w3.org/2004/02/skos/core#inScheme> <http://data.openbudgets.eu/resource/codelist/oc-qsn-functional-class> .
+
+<http://data.openbudgets.eu/resource/codelist/oc-qsn-functional-class/6.1.3> a <http://www.w3.org/2004/02/skos/core#Concept> ;
+	<http://www.w3.org/2004/02/skos/core#notation> "6.1.3" ;
+	<http://www.w3.org/2004/02/skos/core#prefLabel> "Favorire la connessione delle aree produttive e dei sistemi urbani alle reti principali, le sinergie tra i territori e i nodi logistici e l'accessibilità delle aree periferiche: migliorare i servizi di trasporto a livello regionale e promuovere modalità sostenibili"@it ;
+	<http://www.w3.org/2004/02/skos/core#broader> <http://data.openbudgets.eu/resource/codelist/oc-qsn-functional-class/6.1> ;
+	<http://www.w3.org/2004/02/skos/core#inScheme> <http://data.openbudgets.eu/resource/codelist/oc-qsn-functional-class> .
+
+<http://data.openbudgets.eu/resource/codelist/oc-qsn-functional-class/7> a <http://www.w3.org/2004/02/skos/core#Concept> ;
+	<http://www.w3.org/2004/02/skos/core#notation> "7" ;
+	<http://www.w3.org/2004/02/skos/core#prefLabel> "Competitività dei sistemi produttivi e occupazione"@it ;
+	<http://www.w3.org/2004/02/skos/core#topConceptOf> <http://data.openbudgets.eu/resource/codelist/oc-qsn-functional-class> .
+
+<http://data.openbudgets.eu/resource/codelist/oc-qsn-functional-class/7.1> a <http://www.w3.org/2004/02/skos/core#Concept> ;
+	<http://www.w3.org/2004/02/skos/core#notation> "7.1" ;
+	<http://www.w3.org/2004/02/skos/core#prefLabel> "Accrescere l'efficacia degli interventi per i sistemi locali, migliorando la governance e la capacità di integrazione fra politiche"@it ;
+	<http://www.w3.org/2004/02/skos/core#broader> <http://data.openbudgets.eu/resource/codelist/oc-qsn-functional-class/7> ;
+	<http://www.w3.org/2004/02/skos/core#inScheme> <http://data.openbudgets.eu/resource/codelist/oc-qsn-functional-class> .
+
+<http://data.openbudgets.eu/resource/codelist/oc-qsn-functional-class/7.1.1> a <http://www.w3.org/2004/02/skos/core#Concept> ;
+	<http://www.w3.org/2004/02/skos/core#notation> "7.1.1" ;
+	<http://www.w3.org/2004/02/skos/core#prefLabel> "Aumentare la capacità delle Istituzioni locali quale condizione per l'efficacia di progetti locali e di area vasta e della governance del territorio"@it ;
+	<http://www.w3.org/2004/02/skos/core#broader> <http://data.openbudgets.eu/resource/codelist/oc-qsn-functional-class/7.1> ;
+	<http://www.w3.org/2004/02/skos/core#inScheme> <http://data.openbudgets.eu/resource/codelist/oc-qsn-functional-class> .
+
+<http://data.openbudgets.eu/resource/codelist/oc-qsn-functional-class/7.1.2> a <http://www.w3.org/2004/02/skos/core#Concept> ;
+	<http://www.w3.org/2004/02/skos/core#notation> "7.1.2" ;
+	<http://www.w3.org/2004/02/skos/core#prefLabel> "Qualificare il partenariato socio-economico e rafforzarne il ruolo nello sviluppo locale"@it ;
+	<http://www.w3.org/2004/02/skos/core#broader> <http://data.openbudgets.eu/resource/codelist/oc-qsn-functional-class/7.1> ;
+	<http://www.w3.org/2004/02/skos/core#inScheme> <http://data.openbudgets.eu/resource/codelist/oc-qsn-functional-class> .
+
+<http://data.openbudgets.eu/resource/codelist/oc-qsn-functional-class/7.2> a <http://www.w3.org/2004/02/skos/core#Concept> ;
+	<http://www.w3.org/2004/02/skos/core#notation> "7.2" ;
+	<http://www.w3.org/2004/02/skos/core#prefLabel> "Promuovere processi sostenibili e inclusivi di innovazione e sviluppo imprenditoriale"@it ;
+	<http://www.w3.org/2004/02/skos/core#broader> <http://data.openbudgets.eu/resource/codelist/oc-qsn-functional-class/7> ;
+	<http://www.w3.org/2004/02/skos/core#inScheme> <http://data.openbudgets.eu/resource/codelist/oc-qsn-functional-class> .
+
+<http://data.openbudgets.eu/resource/codelist/oc-qsn-functional-class/7.2.1> a <http://www.w3.org/2004/02/skos/core#Concept> ;
+	<http://www.w3.org/2004/02/skos/core#notation> "7.2.1" ;
+	<http://www.w3.org/2004/02/skos/core#prefLabel> "Migliorare l'efficacia dei servizi alle imprese"@it ;
+	<http://www.w3.org/2004/02/skos/core#broader> <http://data.openbudgets.eu/resource/codelist/oc-qsn-functional-class/7.2> ;
+	<http://www.w3.org/2004/02/skos/core#inScheme> <http://data.openbudgets.eu/resource/codelist/oc-qsn-functional-class> .
+
+<http://data.openbudgets.eu/resource/codelist/oc-qsn-functional-class/7.2.2> a <http://www.w3.org/2004/02/skos/core#Concept> ;
+	<http://www.w3.org/2004/02/skos/core#notation> "7.2.2" ;
+	<http://www.w3.org/2004/02/skos/core#prefLabel> "Sostenere la competitività dei sistemi produttivi locali favorendo anche la loro Internazionalizzazione"@it ;
+	<http://www.w3.org/2004/02/skos/core#broader> <http://data.openbudgets.eu/resource/codelist/oc-qsn-functional-class/7.2> ;
+	<http://www.w3.org/2004/02/skos/core#inScheme> <http://data.openbudgets.eu/resource/codelist/oc-qsn-functional-class> .
+
+<http://data.openbudgets.eu/resource/codelist/oc-qsn-functional-class/7.2.3> a <http://www.w3.org/2004/02/skos/core#Concept> ;
+	<http://www.w3.org/2004/02/skos/core#notation> "7.2.3" ;
+	<http://www.w3.org/2004/02/skos/core#prefLabel> "Contribuire al miglioramento dell'efficienza del mercato dei capitali"@it ;
+	<http://www.w3.org/2004/02/skos/core#broader> <http://data.openbudgets.eu/resource/codelist/oc-qsn-functional-class/7.2> ;
+	<http://www.w3.org/2004/02/skos/core#inScheme> <http://data.openbudgets.eu/resource/codelist/oc-qsn-functional-class> .
+
+<http://data.openbudgets.eu/resource/codelist/oc-qsn-functional-class/7.2.4> a <http://www.w3.org/2004/02/skos/core#Concept> ;
+	<http://www.w3.org/2004/02/skos/core#notation> "7.2.4" ;
+	<http://www.w3.org/2004/02/skos/core#prefLabel> "Favorire l'emersione e contrastare l'irregolarità"@it ;
+	<http://www.w3.org/2004/02/skos/core#broader> <http://data.openbudgets.eu/resource/codelist/oc-qsn-functional-class/7.2> ;
+	<http://www.w3.org/2004/02/skos/core#inScheme> <http://data.openbudgets.eu/resource/codelist/oc-qsn-functional-class> .
+
+<http://data.openbudgets.eu/resource/codelist/oc-qsn-functional-class/7.3> a <http://www.w3.org/2004/02/skos/core#Concept> ;
+	<http://www.w3.org/2004/02/skos/core#notation> "7.3" ;
+	<http://www.w3.org/2004/02/skos/core#prefLabel> "Qualificare e finalizzare in termini di occupabilità e adattabilità gli interventi e i servizi di politica attiva del lavoro, collegandoli alle prospettive di sviluppo del territorio"@it ;
+	<http://www.w3.org/2004/02/skos/core#broader> <http://data.openbudgets.eu/resource/codelist/oc-qsn-functional-class/7> ;
+	<http://www.w3.org/2004/02/skos/core#inScheme> <http://data.openbudgets.eu/resource/codelist/oc-qsn-functional-class> .
+
+<http://data.openbudgets.eu/resource/codelist/oc-qsn-functional-class/7.3.1> a <http://www.w3.org/2004/02/skos/core#Concept> ;
+	<http://www.w3.org/2004/02/skos/core#notation> "7.3.1" ;
+	<http://www.w3.org/2004/02/skos/core#prefLabel> "Migliorare l'efficacia dei servizi di intermediazione tra domanda e offerta di lavoro e i raccordi con i sistemi delle imprese, dell'istruzione, della formazione e con le politiche sociali"@it ;
+	<http://www.w3.org/2004/02/skos/core#broader> <http://data.openbudgets.eu/resource/codelist/oc-qsn-functional-class/7.3> ;
+	<http://www.w3.org/2004/02/skos/core#inScheme> <http://data.openbudgets.eu/resource/codelist/oc-qsn-functional-class> .
+
+<http://data.openbudgets.eu/resource/codelist/oc-qsn-functional-class/7.3.2> a <http://www.w3.org/2004/02/skos/core#Concept> ;
+	<http://www.w3.org/2004/02/skos/core#notation> "7.3.2" ;
+	<http://www.w3.org/2004/02/skos/core#prefLabel> "Promuovere interventi mirati alle esigenze di specifici gruppi target"@it ;
+	<http://www.w3.org/2004/02/skos/core#broader> <http://data.openbudgets.eu/resource/codelist/oc-qsn-functional-class/7.3> ;
+	<http://www.w3.org/2004/02/skos/core#inScheme> <http://data.openbudgets.eu/resource/codelist/oc-qsn-functional-class> .
+
+<http://data.openbudgets.eu/resource/codelist/oc-qsn-functional-class/7.3.3> a <http://www.w3.org/2004/02/skos/core#Concept> ;
+	<http://www.w3.org/2004/02/skos/core#notation> "7.3.3" ;
+	<http://www.w3.org/2004/02/skos/core#prefLabel> "Migliorare la qualità del lavoro e sostenere la mobilità geografica e professionale."@it ;
+	<http://www.w3.org/2004/02/skos/core#broader> <http://data.openbudgets.eu/resource/codelist/oc-qsn-functional-class/7.3> ;
+	<http://www.w3.org/2004/02/skos/core#inScheme> <http://data.openbudgets.eu/resource/codelist/oc-qsn-functional-class> .
+
+<http://data.openbudgets.eu/resource/codelist/oc-qsn-functional-class/8> a <http://www.w3.org/2004/02/skos/core#Concept> ;
+	<http://www.w3.org/2004/02/skos/core#notation> "8" ;
+	<http://www.w3.org/2004/02/skos/core#prefLabel> "Competitività e attrattività delle città e dei sistemi urbani"@it ;
+	<http://www.w3.org/2004/02/skos/core#topConceptOf> <http://data.openbudgets.eu/resource/codelist/oc-qsn-functional-class> .
+
+<http://data.openbudgets.eu/resource/codelist/oc-qsn-functional-class/8.1> a <http://www.w3.org/2004/02/skos/core#Concept> ;
+	<http://www.w3.org/2004/02/skos/core#notation> "8.1" ;
+	<http://www.w3.org/2004/02/skos/core#prefLabel> "Promuovere la competitività, l'innovazione e l'attrattività delle città e delle reti urbane attraverso la diffusione di servizi avanzati di qualità, il miglioramento della qualità della vita, e il collegamento con le reti materiali e immateriali"@it ;
+	<http://www.w3.org/2004/02/skos/core#broader> <http://data.openbudgets.eu/resource/codelist/oc-qsn-functional-class/8> ;
+	<http://www.w3.org/2004/02/skos/core#inScheme> <http://data.openbudgets.eu/resource/codelist/oc-qsn-functional-class> .
+
+<http://data.openbudgets.eu/resource/codelist/oc-qsn-functional-class/8.1.1> a <http://www.w3.org/2004/02/skos/core#Concept> ;
+	<http://www.w3.org/2004/02/skos/core#notation> "8.1.1" ;
+	<http://www.w3.org/2004/02/skos/core#prefLabel> "Sostenere la crescita e la diffusione delle funzioni urbane superiori per aumentare la competitività e per migliorare la fornitura di servizi di qualità nelle città e nei bacini territoriali sovracomunali e regionali di riferimento"@it ;
+	<http://www.w3.org/2004/02/skos/core#broader> <http://data.openbudgets.eu/resource/codelist/oc-qsn-functional-class/8.1> ;
+	<http://www.w3.org/2004/02/skos/core#inScheme> <http://data.openbudgets.eu/resource/codelist/oc-qsn-functional-class> .
+
+<http://data.openbudgets.eu/resource/codelist/oc-qsn-functional-class/8.1.2> a <http://www.w3.org/2004/02/skos/core#Concept> ;
+	<http://www.w3.org/2004/02/skos/core#notation> "8.1.2" ;
+	<http://www.w3.org/2004/02/skos/core#prefLabel> "Elevare la qualità della vita, attraverso il miglioramento delle condizioni ambientali e la lotta ai disagi derivanti dalla congestione e dalle situazioni di marginalità urbana, al contempo valorizzando il patrimonio di identità e rafforzando la relazione della cittadinanza con i luoghi"@it ;
+	<http://www.w3.org/2004/02/skos/core#broader> <http://data.openbudgets.eu/resource/codelist/oc-qsn-functional-class/8.1> ;
+	<http://www.w3.org/2004/02/skos/core#inScheme> <http://data.openbudgets.eu/resource/codelist/oc-qsn-functional-class> .
+
+<http://data.openbudgets.eu/resource/codelist/oc-qsn-functional-class/8.1.3> a <http://www.w3.org/2004/02/skos/core#Concept> ;
+	<http://www.w3.org/2004/02/skos/core#notation> "8.1.3" ;
+	<http://www.w3.org/2004/02/skos/core#prefLabel> "Favorire il collegamento delle città e dei sistemi territoriali con le reti materiali e immateriali dell'accessibilità e della conoscenza"@it ;
+	<http://www.w3.org/2004/02/skos/core#broader> <http://data.openbudgets.eu/resource/codelist/oc-qsn-functional-class/8.1> ;
+	<http://www.w3.org/2004/02/skos/core#inScheme> <http://data.openbudgets.eu/resource/codelist/oc-qsn-functional-class> .
+
+<http://data.openbudgets.eu/resource/codelist/oc-qsn-functional-class/9> a <http://www.w3.org/2004/02/skos/core#Concept> ;
+	<http://www.w3.org/2004/02/skos/core#notation> "9" ;
+	<http://www.w3.org/2004/02/skos/core#prefLabel> "Apertura internazionale e attrazione di investimenti, consumi e risorse"@it ;
+	<http://www.w3.org/2004/02/skos/core#topConceptOf> <http://data.openbudgets.eu/resource/codelist/oc-qsn-functional-class> .
+
+<http://data.openbudgets.eu/resource/codelist/oc-qsn-functional-class/9.1> a <http://www.w3.org/2004/02/skos/core#Concept> ;
+	<http://www.w3.org/2004/02/skos/core#notation> "9.1" ;
+	<http://www.w3.org/2004/02/skos/core#prefLabel> "Sviluppare la capacità di apertura del sistema economico nazionale e di attuare politiche di rapporti stabili e di radicamento sui mercati internazionali e favorire la localizzazione nel nostro Paese di capitali, investimenti, competenze e flussi di consumo provenienti dall'esterno, di qualità elevata, in grado di dare un contributo allo sviluppo nazionale"@it ;
+	<http://www.w3.org/2004/02/skos/core#broader> <http://data.openbudgets.eu/resource/codelist/oc-qsn-functional-class/9> ;
+	<http://www.w3.org/2004/02/skos/core#inScheme> <http://data.openbudgets.eu/resource/codelist/oc-qsn-functional-class> .
+
+<http://data.openbudgets.eu/resource/codelist/oc-qsn-functional-class/9.1.1> a <http://www.w3.org/2004/02/skos/core#Concept> ;
+	<http://www.w3.org/2004/02/skos/core#notation> "9.1.1" ;
+	<http://www.w3.org/2004/02/skos/core#prefLabel> "Sviluppare le capacità di internazionalizzazione"@it ;
+	<http://www.w3.org/2004/02/skos/core#broader> <http://data.openbudgets.eu/resource/codelist/oc-qsn-functional-class/9.1> ;
+	<http://www.w3.org/2004/02/skos/core#inScheme> <http://data.openbudgets.eu/resource/codelist/oc-qsn-functional-class> .
+
+<http://data.openbudgets.eu/resource/codelist/oc-qsn-functional-class/9.1.2> a <http://www.w3.org/2004/02/skos/core#Concept> ;
+	<http://www.w3.org/2004/02/skos/core#notation> "9.1.2" ;
+	<http://www.w3.org/2004/02/skos/core#prefLabel> "Favorire l'attrazione di investimenti, di consumi e di risorse di qualità"@it ;
+	<http://www.w3.org/2004/02/skos/core#broader> <http://data.openbudgets.eu/resource/codelist/oc-qsn-functional-class/9.1> ;
+	<http://www.w3.org/2004/02/skos/core#inScheme> <http://data.openbudgets.eu/resource/codelist/oc-qsn-functional-class> .
+
+<http://data.openbudgets.eu/resource/codelist/oc-qsn-functional-class> a <http://www.w3.org/2004/02/skos/core#ConceptScheme> ;
+	rdfs:comment "The code list for the functional classification according to QSN (Quadro Strategico Nazionale = National Strategic Framework) is hierarchically structured in three levels, priorities, general objectives, and specific objectives."@en , "L'attuazione della politica regionale per il periodo di programmazione 2007-2013 si articola in 10 priorità, definite nel Quadro Strategico Nazionale (QSN), un documento che ne individua gli indirizzi strategici e operativi. Le priorità sono suddivise in obiettivi generali, a loro volta articolati in obiettivi specifici."@it ;
+	rdfs:label "Code list for QSN functional classification"@en , "I codici della classificazione funzionale QSN"@it ;
+	<http://www.w3.org/2004/02/skos/core#hasTopConcept> <http://data.openbudgets.eu/resource/codelist/oc-qsn-functional-class/1> , <http://data.openbudgets.eu/resource/codelist/oc-qsn-functional-class/10> , <http://data.openbudgets.eu/resource/codelist/oc-qsn-functional-class/2> , <http://data.openbudgets.eu/resource/codelist/oc-qsn-functional-class/3> , <http://data.openbudgets.eu/resource/codelist/oc-qsn-functional-class/4> , <http://data.openbudgets.eu/resource/codelist/oc-qsn-functional-class/5> , <http://data.openbudgets.eu/resource/codelist/oc-qsn-functional-class/6> , <http://data.openbudgets.eu/resource/codelist/oc-qsn-functional-class/7> , <http://data.openbudgets.eu/resource/codelist/oc-qsn-functional-class/8> , <http://data.openbudgets.eu/resource/codelist/oc-qsn-functional-class/9> .

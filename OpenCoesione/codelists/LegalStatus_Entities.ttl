@@ -1,0 +1,506 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix fn: <http://www.w3.org/2005/xpath-functions#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sesame: <http://www.openrdf.org/schema/sesame#> .
+
+<http://data.openbudgets.eu/resource/codelist/oc-legal-status/1> a <http://www.w3.org/2004/02/skos/core#Concept> ;
+	<http://www.w3.org/2004/02/skos/core#notation> "1" ;
+	<http://www.w3.org/2004/02/skos/core#prefLabel> "Wirtschaftsformen des Privatrechts"@de , "Entities under private law"@en , "Forme disciplinate dal diritto privato"@it ;
+	<http://www.w3.org/2004/02/skos/core#topConceptOf> <http://data.openbudgets.eu/resource/codelist/oc-legal-status> .
+
+<http://data.openbudgets.eu/resource/codelist/oc-legal-status/1.1> a <http://www.w3.org/2004/02/skos/core#Concept> ;
+	<http://www.w3.org/2004/02/skos/core#notation> "1.1" ;
+	<http://www.w3.org/2004/02/skos/core#prefLabel> "Einzelunternehmer, Freiberufler und Selbstständige"@de , "Sole trader, freelancer and self-employed workers"@en , "Imprenditore individuale, libero professionista e lavoratore autonomo"@it ;
+	<http://www.w3.org/2004/02/skos/core#broader> <http://data.openbudgets.eu/resource/codelist/oc-legal-status/1> ;
+	<http://www.w3.org/2004/02/skos/core#inScheme> <http://data.openbudgets.eu/resource/codelist/oc-legal-status> .
+
+<http://data.openbudgets.eu/resource/codelist/oc-legal-status/1.1.10> a <http://www.w3.org/2004/02/skos/core#Concept> ;
+	<http://www.w3.org/2004/02/skos/core#notation> "1.1.10" ;
+	<http://www.w3.org/2004/02/skos/core#prefLabel> "Landwirtschaftlicher Einzelunternehmer "@de , "Agricultural sole trader"@en , "Imprenditore individuale agricolo"@it ;
+	<http://www.w3.org/2004/02/skos/core#broader> <http://data.openbudgets.eu/resource/codelist/oc-legal-status/1.1> ;
+	<http://www.w3.org/2004/02/skos/core#inScheme> <http://data.openbudgets.eu/resource/codelist/oc-legal-status> .
+
+<http://data.openbudgets.eu/resource/codelist/oc-legal-status/1.1.20> a <http://www.w3.org/2004/02/skos/core#Concept> ;
+	<http://www.w3.org/2004/02/skos/core#notation> "1.1.20" ;
+	<http://www.w3.org/2004/02/skos/core#prefLabel> "Einzelunternehmer außerhalb der Landwirtschaft"@de , "Non-agricultural sole trader"@en , "Imprenditore individuale non agricolo"@it ;
+	<http://www.w3.org/2004/02/skos/core#broader> <http://data.openbudgets.eu/resource/codelist/oc-legal-status/1.1> ;
+	<http://www.w3.org/2004/02/skos/core#inScheme> <http://data.openbudgets.eu/resource/codelist/oc-legal-status> .
+
+<http://data.openbudgets.eu/resource/codelist/oc-legal-status/1.1.30> a <http://www.w3.org/2004/02/skos/core#Concept> ;
+	<http://www.w3.org/2004/02/skos/core#notation> "1.1.30" ;
+	<http://www.w3.org/2004/02/skos/core#prefLabel> "Freiberufler"@de , "Freelance"@en , "Libero professionista"@it ;
+	<http://www.w3.org/2004/02/skos/core#broader> <http://data.openbudgets.eu/resource/codelist/oc-legal-status/1.1> ;
+	<http://www.w3.org/2004/02/skos/core#inScheme> <http://data.openbudgets.eu/resource/codelist/oc-legal-status> .
+
+<http://data.openbudgets.eu/resource/codelist/oc-legal-status/1.1.40> a <http://www.w3.org/2004/02/skos/core#Concept> ;
+	<http://www.w3.org/2004/02/skos/core#notation> "1.1.40" ;
+	<http://www.w3.org/2004/02/skos/core#prefLabel> "Selbstständig"@de , "Self-employed"@en , "Lavoratore autonomo"@it ;
+	<http://www.w3.org/2004/02/skos/core#broader> <http://data.openbudgets.eu/resource/codelist/oc-legal-status/1.1> ;
+	<http://www.w3.org/2004/02/skos/core#inScheme> <http://data.openbudgets.eu/resource/codelist/oc-legal-status> .
+
+<http://data.openbudgets.eu/resource/codelist/oc-legal-status/1.2> a <http://www.w3.org/2004/02/skos/core#Concept> ;
+	<http://www.w3.org/2004/02/skos/core#notation> "1.2" ;
+	<http://www.w3.org/2004/02/skos/core#prefLabel> "Personengesellschaft"@de , "Private company"@en , "Società di persone"@it ;
+	<http://www.w3.org/2004/02/skos/core#broader> <http://data.openbudgets.eu/resource/codelist/oc-legal-status/1> ;
+	<http://www.w3.org/2004/02/skos/core#inScheme> <http://data.openbudgets.eu/resource/codelist/oc-legal-status> .
+
+<http://data.openbudgets.eu/resource/codelist/oc-legal-status/1.2.10> a <http://www.w3.org/2004/02/skos/core#Concept> ;
+	<http://www.w3.org/2004/02/skos/core#notation> "1.2.10" ;
+	<http://www.w3.org/2004/02/skos/core#prefLabel> "Gesellschaft bürgerlichen Rechts (GbR)"@de , "BGB company"@en , "Società  semplice"@it ;
+	<http://www.w3.org/2004/02/skos/core#broader> <http://data.openbudgets.eu/resource/codelist/oc-legal-status/1.2> ;
+	<http://www.w3.org/2004/02/skos/core#inScheme> <http://data.openbudgets.eu/resource/codelist/oc-legal-status> .
+
+<http://data.openbudgets.eu/resource/codelist/oc-legal-status/1.2.20> a <http://www.w3.org/2004/02/skos/core#Concept> ;
+	<http://www.w3.org/2004/02/skos/core#notation> "1.2.20" ;
+	<http://www.w3.org/2004/02/skos/core#prefLabel> "Offene Handelsgesellschaft (OHG)"@de , "General partnership"@en , "Società  in nome collettivo"@it ;
+	<http://www.w3.org/2004/02/skos/core#broader> <http://data.openbudgets.eu/resource/codelist/oc-legal-status/1.2> ;
+	<http://www.w3.org/2004/02/skos/core#inScheme> <http://data.openbudgets.eu/resource/codelist/oc-legal-status> .
+
+<http://data.openbudgets.eu/resource/codelist/oc-legal-status/1.2.30> a <http://www.w3.org/2004/02/skos/core#Concept> ;
+	<http://www.w3.org/2004/02/skos/core#notation> "1.2.30" ;
+	<http://www.w3.org/2004/02/skos/core#prefLabel> "Kommanditgesellschaft (KG)"@de , "Limited partnership"@en , "Società  in accomandita semplice"@it ;
+	<http://www.w3.org/2004/02/skos/core#broader> <http://data.openbudgets.eu/resource/codelist/oc-legal-status/1.2> ;
+	<http://www.w3.org/2004/02/skos/core#inScheme> <http://data.openbudgets.eu/resource/codelist/oc-legal-status> .
+
+<http://data.openbudgets.eu/resource/codelist/oc-legal-status/1.2.40> a <http://www.w3.org/2004/02/skos/core#Concept> ;
+	<http://www.w3.org/2004/02/skos/core#notation> "1.2.40" ;
+	<http://www.w3.org/2004/02/skos/core#prefLabel> "Gemeinschaftspraxis und Freiberuflergesellschaft"@de , "Group practice and freelance corporation"@en , "Studio associato e società  di professionisti"@it ;
+	<http://www.w3.org/2004/02/skos/core#broader> <http://data.openbudgets.eu/resource/codelist/oc-legal-status/1.2> ;
+	<http://www.w3.org/2004/02/skos/core#inScheme> <http://data.openbudgets.eu/resource/codelist/oc-legal-status> .
+
+<http://data.openbudgets.eu/resource/codelist/oc-legal-status/1.2.50> a <http://www.w3.org/2004/02/skos/core#Concept> ;
+	<http://www.w3.org/2004/02/skos/core#notation> "1.2.50" ;
+	<http://www.w3.org/2004/02/skos/core#prefLabel> "Faktische Gesellschaft oder regelwidrige Erbengemeinschaft "@de , "De facto corporation or irregular community of heirs"@en , "Società  di fatto o irregolare, comunione ereditaria"@it ;
+	<http://www.w3.org/2004/02/skos/core#broader> <http://data.openbudgets.eu/resource/codelist/oc-legal-status/1.2> ;
+	<http://www.w3.org/2004/02/skos/core#inScheme> <http://data.openbudgets.eu/resource/codelist/oc-legal-status> .
+
+<http://data.openbudgets.eu/resource/codelist/oc-legal-status/1.3> a <http://www.w3.org/2004/02/skos/core#Concept> ;
+	<http://www.w3.org/2004/02/skos/core#notation> "1.3" ;
+	<http://www.w3.org/2004/02/skos/core#prefLabel> "Kapitalgesellschaft"@de , "Capital company"@en , "Società di capitali"@it ;
+	<http://www.w3.org/2004/02/skos/core#broader> <http://data.openbudgets.eu/resource/codelist/oc-legal-status/1> ;
+	<http://www.w3.org/2004/02/skos/core#inScheme> <http://data.openbudgets.eu/resource/codelist/oc-legal-status> .
+
+<http://data.openbudgets.eu/resource/codelist/oc-legal-status/1.3.10> a <http://www.w3.org/2004/02/skos/core#Concept> ;
+	<http://www.w3.org/2004/02/skos/core#notation> "1.3.10" ;
+	<http://www.w3.org/2004/02/skos/core#prefLabel> "Faktische Gesellschaft oder regelwidrige Erbengemeinschaft "@de , "De facto corporation or irregular community of heirs"@en , "Società  di fatto o irregolare, comunione ereditaria"@it ;
+	<http://www.w3.org/2004/02/skos/core#broader> <http://data.openbudgets.eu/resource/codelist/oc-legal-status/1.3> ;
+	<http://www.w3.org/2004/02/skos/core#inScheme> <http://data.openbudgets.eu/resource/codelist/oc-legal-status> .
+
+<http://data.openbudgets.eu/resource/codelist/oc-legal-status/1.3.20> a <http://www.w3.org/2004/02/skos/core#Concept> ;
+	<http://www.w3.org/2004/02/skos/core#notation> "1.3.20" ;
+	<http://www.w3.org/2004/02/skos/core#prefLabel> "Aktiengesellschaft (AG)"@de , "Incorporation"@en , "Società  per azioni"@it ;
+	<http://www.w3.org/2004/02/skos/core#broader> <http://data.openbudgets.eu/resource/codelist/oc-legal-status/1.3> ;
+	<http://www.w3.org/2004/02/skos/core#inScheme> <http://data.openbudgets.eu/resource/codelist/oc-legal-status> .
+
+<http://data.openbudgets.eu/resource/codelist/oc-legal-status/1.3.30> a <http://www.w3.org/2004/02/skos/core#Concept> ;
+	<http://www.w3.org/2004/02/skos/core#notation> "1.3.30" ;
+	<http://www.w3.org/2004/02/skos/core#prefLabel> "Gesellschaft mit beschränkter Haftung (GmbH)"@de , "Limited liability company"@en , "Società a responsabilità  limitata"@it ;
+	<http://www.w3.org/2004/02/skos/core#broader> <http://data.openbudgets.eu/resource/codelist/oc-legal-status/1.3> ;
+	<http://www.w3.org/2004/02/skos/core#inScheme> <http://data.openbudgets.eu/resource/codelist/oc-legal-status> .
+
+<http://data.openbudgets.eu/resource/codelist/oc-legal-status/1.3.40> a <http://www.w3.org/2004/02/skos/core#Concept> ;
+	<http://www.w3.org/2004/02/skos/core#notation> "1.3.40" ;
+	<http://www.w3.org/2004/02/skos/core#prefLabel> "Kommanditgesellschaft auf Aktien (KGaA)"@de , "Association limited by shares"@en , "Società  in accomandita per azioni"@it ;
+	<http://www.w3.org/2004/02/skos/core#broader> <http://data.openbudgets.eu/resource/codelist/oc-legal-status/1.3> ;
+	<http://www.w3.org/2004/02/skos/core#inScheme> <http://data.openbudgets.eu/resource/codelist/oc-legal-status> .
+
+<http://data.openbudgets.eu/resource/codelist/oc-legal-status/1.4> a <http://www.w3.org/2004/02/skos/core#Concept> ;
+	<http://www.w3.org/2004/02/skos/core#notation> "1.4" ;
+	<http://www.w3.org/2004/02/skos/core#prefLabel> "Genossenschaft"@de , "Cooperative"@en , "Società Cooperativa"@it ;
+	<http://www.w3.org/2004/02/skos/core#broader> <http://data.openbudgets.eu/resource/codelist/oc-legal-status/1> ;
+	<http://www.w3.org/2004/02/skos/core#inScheme> <http://data.openbudgets.eu/resource/codelist/oc-legal-status> .
+
+<http://data.openbudgets.eu/resource/codelist/oc-legal-status/1.4.10> a <http://www.w3.org/2004/02/skos/core#Concept> ;
+	<http://www.w3.org/2004/02/skos/core#notation> "1.4.10" ;
+	<http://www.w3.org/2004/02/skos/core#prefLabel> "Genossenschaft mit vorherrschender Gegenseitigkeit"@de , "Cooperative with prevalent mutuality"@en , "Società  cooperativa a mutualità  prevalente"@it ;
+	<http://www.w3.org/2004/02/skos/core#broader> <http://data.openbudgets.eu/resource/codelist/oc-legal-status/1.4> ;
+	<http://www.w3.org/2004/02/skos/core#inScheme> <http://data.openbudgets.eu/resource/codelist/oc-legal-status> .
+
+<http://data.openbudgets.eu/resource/codelist/oc-legal-status/1.4.20> a <http://www.w3.org/2004/02/skos/core#Concept> ;
+	<http://www.w3.org/2004/02/skos/core#notation> "1.4.20" ;
+	<http://www.w3.org/2004/02/skos/core#prefLabel> "Andere Genossenschaft"@de , "Other cooperative"@en , "Società  cooperativa diversa"@it ;
+	<http://www.w3.org/2004/02/skos/core#broader> <http://data.openbudgets.eu/resource/codelist/oc-legal-status/1.4> ;
+	<http://www.w3.org/2004/02/skos/core#inScheme> <http://data.openbudgets.eu/resource/codelist/oc-legal-status> .
+
+<http://data.openbudgets.eu/resource/codelist/oc-legal-status/1.4.30> a <http://www.w3.org/2004/02/skos/core#Concept> ;
+	<http://www.w3.org/2004/02/skos/core#notation> "1.4.30" ;
+	<http://www.w3.org/2004/02/skos/core#prefLabel> "Soziale Genossenschaft"@de , "Social cooperative"@en , "Società  cooperativa sociale"@it ;
+	<http://www.w3.org/2004/02/skos/core#broader> <http://data.openbudgets.eu/resource/codelist/oc-legal-status/1.4> ;
+	<http://www.w3.org/2004/02/skos/core#inScheme> <http://data.openbudgets.eu/resource/codelist/oc-legal-status> .
+
+<http://data.openbudgets.eu/resource/codelist/oc-legal-status/1.4.40> a <http://www.w3.org/2004/02/skos/core#Concept> ;
+	<http://www.w3.org/2004/02/skos/core#notation> "1.4.40" ;
+	<http://www.w3.org/2004/02/skos/core#prefLabel> "Versicherungsgesellschaft auf Gegenseitigkeit (VVaG)"@de , "Mutual assurance society"@en , "Società di mutua assicurazione"@it ;
+	<http://www.w3.org/2004/02/skos/core#broader> <http://data.openbudgets.eu/resource/codelist/oc-legal-status/1.4> ;
+	<http://www.w3.org/2004/02/skos/core#inScheme> <http://data.openbudgets.eu/resource/codelist/oc-legal-status> .
+
+<http://data.openbudgets.eu/resource/codelist/oc-legal-status/1.5> a <http://www.w3.org/2004/02/skos/core#Concept> ;
+	<http://www.w3.org/2004/02/skos/core#notation> "1.5" ;
+	<http://www.w3.org/2004/02/skos/core#prefLabel> "Privatrechtliche Genossenschaften und andere Formen von Kooperation zwischen Unternehmen"@de , "Cooperative under private law and other form of business cooperation"@en , "Consorzio di diritto privato ed altre forme di cooperazione fra imprese"@it ;
+	<http://www.w3.org/2004/02/skos/core#broader> <http://data.openbudgets.eu/resource/codelist/oc-legal-status/1> ;
+	<http://www.w3.org/2004/02/skos/core#inScheme> <http://data.openbudgets.eu/resource/codelist/oc-legal-status> .
+
+<http://data.openbudgets.eu/resource/codelist/oc-legal-status/1.5.10> a <http://www.w3.org/2004/02/skos/core#Concept> ;
+	<http://www.w3.org/2004/02/skos/core#notation> "1.5.10" ;
+	<http://www.w3.org/2004/02/skos/core#prefLabel> "Privatrechtliche Genossenschaft"@de , "Cooperative under private law"@en , "Consorzio di diritto privato"@it ;
+	<http://www.w3.org/2004/02/skos/core#broader> <http://data.openbudgets.eu/resource/codelist/oc-legal-status/1.5> ;
+	<http://www.w3.org/2004/02/skos/core#inScheme> <http://data.openbudgets.eu/resource/codelist/oc-legal-status> .
+
+<http://data.openbudgets.eu/resource/codelist/oc-legal-status/1.5.20> a <http://www.w3.org/2004/02/skos/core#Concept> ;
+	<http://www.w3.org/2004/02/skos/core#notation> "1.5.20" ;
+	<http://www.w3.org/2004/02/skos/core#prefLabel> "Genossenschaftsgesellschaft"@de , "Cooperate consortium"@en , "Società  consortile"@it ;
+	<http://www.w3.org/2004/02/skos/core#broader> <http://data.openbudgets.eu/resource/codelist/oc-legal-status/1.5> ;
+	<http://www.w3.org/2004/02/skos/core#inScheme> <http://data.openbudgets.eu/resource/codelist/oc-legal-status> .
+
+<http://data.openbudgets.eu/resource/codelist/oc-legal-status/1.5.30> a <http://www.w3.org/2004/02/skos/core#Concept> ;
+	<http://www.w3.org/2004/02/skos/core#notation> "1.5.30" ;
+	<http://www.w3.org/2004/02/skos/core#prefLabel> "Bietergemeinschaft"@de , "Association or temporary grouping of companies (bidding consortium)"@en , "Associazione o raggruppamento temporaneo di imprese"@it ;
+	<http://www.w3.org/2004/02/skos/core#broader> <http://data.openbudgets.eu/resource/codelist/oc-legal-status/1.5> ;
+	<http://www.w3.org/2004/02/skos/core#inScheme> <http://data.openbudgets.eu/resource/codelist/oc-legal-status> .
+
+<http://data.openbudgets.eu/resource/codelist/oc-legal-status/1.5.40> a <http://www.w3.org/2004/02/skos/core#Concept> ;
+	<http://www.w3.org/2004/02/skos/core#notation> "1.5.40" ;
+	<http://www.w3.org/2004/02/skos/core#prefLabel> "Europäische Gruppe mit ökonomischem Interesse"@de , "European group with economic interest"@en , "Gruppo europeo di interesse economico"@it ;
+	<http://www.w3.org/2004/02/skos/core#broader> <http://data.openbudgets.eu/resource/codelist/oc-legal-status/1.5> ;
+	<http://www.w3.org/2004/02/skos/core#inScheme> <http://data.openbudgets.eu/resource/codelist/oc-legal-status> .
+
+<http://data.openbudgets.eu/resource/codelist/oc-legal-status/1.6> a <http://www.w3.org/2004/02/skos/core#Concept> ;
+	<http://www.w3.org/2004/02/skos/core#notation> "1.6" ;
+	<http://www.w3.org/2004/02/skos/core#prefLabel> "Öffentliche Wirtschaftskörperschaft, Sonderunternehmen und öffentliche Dienstleistungsunternehmen"@de , "Public economic corporation, special companies, and public service companies"@en , "Ente pubblico economico, azienda speciale e azienda pubblica di servizi"@it ;
+	<http://www.w3.org/2004/02/skos/core#broader> <http://data.openbudgets.eu/resource/codelist/oc-legal-status/1> ;
+	<http://www.w3.org/2004/02/skos/core#inScheme> <http://data.openbudgets.eu/resource/codelist/oc-legal-status> .
+
+<http://data.openbudgets.eu/resource/codelist/oc-legal-status/1.6.10> a <http://www.w3.org/2004/02/skos/core#Concept> ;
+	<http://www.w3.org/2004/02/skos/core#notation> "1.6.10" ;
+	<http://www.w3.org/2004/02/skos/core#prefLabel> "Öffentliche Wirtschaftskörperschaft"@de , "Public economic corporation"@en , "Ente pubblico economico"@it ;
+	<http://www.w3.org/2004/02/skos/core#broader> <http://data.openbudgets.eu/resource/codelist/oc-legal-status/1.6> ;
+	<http://www.w3.org/2004/02/skos/core#inScheme> <http://data.openbudgets.eu/resource/codelist/oc-legal-status> .
+
+<http://data.openbudgets.eu/resource/codelist/oc-legal-status/1.6.20> a <http://www.w3.org/2004/02/skos/core#Concept> ;
+	<http://www.w3.org/2004/02/skos/core#notation> "1.6.20" ;
+	<http://www.w3.org/2004/02/skos/core#prefLabel> "Sonderunternehmen gemäß Gesetzesverordnung 267/2000"@de , "Special company according to legislative decree no. 267/2000"@en , "Azienda speciale ai sensi del t.u. 267/2000"@it ;
+	<http://www.w3.org/2004/02/skos/core#broader> <http://data.openbudgets.eu/resource/codelist/oc-legal-status/1.6> ;
+	<http://www.w3.org/2004/02/skos/core#inScheme> <http://data.openbudgets.eu/resource/codelist/oc-legal-status> .
+
+<http://data.openbudgets.eu/resource/codelist/oc-legal-status/1.6.30> a <http://www.w3.org/2004/02/skos/core#Concept> ;
+	<http://www.w3.org/2004/02/skos/core#notation> "1.6.30" ;
+	<http://www.w3.org/2004/02/skos/core#prefLabel> "Öffentliches Dienstleistungsunternehmen für Personen gemäß Gesetzesverordnung Nr. 207/2001"@de , "Public service company for persons according to legislative decree no. 207/2001"@en , "Azienda pubblica di servizi alle persone ai sensi del d.lgs n. 207/2001"@it ;
+	<http://www.w3.org/2004/02/skos/core#broader> <http://data.openbudgets.eu/resource/codelist/oc-legal-status/1.6> ;
+	<http://www.w3.org/2004/02/skos/core#inScheme> <http://data.openbudgets.eu/resource/codelist/oc-legal-status> .
+
+<http://data.openbudgets.eu/resource/codelist/oc-legal-status/1.7> a <http://www.w3.org/2004/02/skos/core#Concept> ;
+	<http://www.w3.org/2004/02/skos/core#notation> "1.7" ;
+	<http://www.w3.org/2004/02/skos/core#prefLabel> "Private Organisationen mit eigener Rechtspersönlichkeit "@de , "Private incorporated enterprises"@en , "Ente privato con personalità giuridica"@it ;
+	<http://www.w3.org/2004/02/skos/core#broader> <http://data.openbudgets.eu/resource/codelist/oc-legal-status/1> ;
+	<http://www.w3.org/2004/02/skos/core#inScheme> <http://data.openbudgets.eu/resource/codelist/oc-legal-status> .
+
+<http://data.openbudgets.eu/resource/codelist/oc-legal-status/1.7.10> a <http://www.w3.org/2004/02/skos/core#Concept> ;
+	<http://www.w3.org/2004/02/skos/core#notation> "1.7.10" ;
+	<http://www.w3.org/2004/02/skos/core#prefLabel> "Eingetragener Verein (e.V.)"@de , "Incorporated association"@en , "Associazione riconosciuta"@it ;
+	<http://www.w3.org/2004/02/skos/core#broader> <http://data.openbudgets.eu/resource/codelist/oc-legal-status/1.7> ;
+	<http://www.w3.org/2004/02/skos/core#inScheme> <http://data.openbudgets.eu/resource/codelist/oc-legal-status> .
+
+<http://data.openbudgets.eu/resource/codelist/oc-legal-status/1.7.20> a <http://www.w3.org/2004/02/skos/core#Concept> ;
+	<http://www.w3.org/2004/02/skos/core#notation> "1.7.20" ;
+	<http://www.w3.org/2004/02/skos/core#prefLabel> "Stiftung (außgenommen Bankstiftung)"@de , "Foundation (excluding bank foundation)"@en , "Fondazione (esclusa fondazione bancaria)"@it ;
+	<http://www.w3.org/2004/02/skos/core#broader> <http://data.openbudgets.eu/resource/codelist/oc-legal-status/1.7> ;
+	<http://www.w3.org/2004/02/skos/core#inScheme> <http://data.openbudgets.eu/resource/codelist/oc-legal-status> .
+
+<http://data.openbudgets.eu/resource/codelist/oc-legal-status/1.7.30> a <http://www.w3.org/2004/02/skos/core#Concept> ;
+	<http://www.w3.org/2004/02/skos/core#notation> "1.7.30" ;
+	<http://www.w3.org/2004/02/skos/core#prefLabel> "Bankstiftung"@de , "Bank foundation"@en , "Fondazione bancaria"@it ;
+	<http://www.w3.org/2004/02/skos/core#broader> <http://data.openbudgets.eu/resource/codelist/oc-legal-status/1.7> ;
+	<http://www.w3.org/2004/02/skos/core#inScheme> <http://data.openbudgets.eu/resource/codelist/oc-legal-status> .
+
+<http://data.openbudgets.eu/resource/codelist/oc-legal-status/1.7.40> a <http://www.w3.org/2004/02/skos/core#Concept> ;
+	<http://www.w3.org/2004/02/skos/core#notation> "1.7.40" ;
+	<http://www.w3.org/2004/02/skos/core#prefLabel> "Kirchliche Einrichtung"@de , "Ecclesiastical institution"@en , "Ente ecclesiastico"@it ;
+	<http://www.w3.org/2004/02/skos/core#broader> <http://data.openbudgets.eu/resource/codelist/oc-legal-status/1.7> ;
+	<http://www.w3.org/2004/02/skos/core#inScheme> <http://data.openbudgets.eu/resource/codelist/oc-legal-status> .
+
+<http://data.openbudgets.eu/resource/codelist/oc-legal-status/1.7.50> a <http://www.w3.org/2004/02/skos/core#Concept> ;
+	<http://www.w3.org/2004/02/skos/core#notation> "1.7.50" ;
+	<http://www.w3.org/2004/02/skos/core#prefLabel> "Gegenseitige Hilfsgesellschaft"@de , "Mutual succor society"@en , "Società  di mutuo soccorso"@it ;
+	<http://www.w3.org/2004/02/skos/core#broader> <http://data.openbudgets.eu/resource/codelist/oc-legal-status/1.7> ;
+	<http://www.w3.org/2004/02/skos/core#inScheme> <http://data.openbudgets.eu/resource/codelist/oc-legal-status> .
+
+<http://data.openbudgets.eu/resource/codelist/oc-legal-status/1.7.90> a <http://www.w3.org/2004/02/skos/core#Concept> ;
+	<http://www.w3.org/2004/02/skos/core#notation> "1.7.90" ;
+	<http://www.w3.org/2004/02/skos/core#prefLabel> "Andere private Organisation mit eigener Rechtspersönlichkeit "@de , "Another form of private incorporated enterprise"@en , "Altra forma di ente privato con personalità  giuridica"@it ;
+	<http://www.w3.org/2004/02/skos/core#broader> <http://data.openbudgets.eu/resource/codelist/oc-legal-status/1.7> ;
+	<http://www.w3.org/2004/02/skos/core#inScheme> <http://data.openbudgets.eu/resource/codelist/oc-legal-status> .
+
+<http://data.openbudgets.eu/resource/codelist/oc-legal-status/1.8> a <http://www.w3.org/2004/02/skos/core#Concept> ;
+	<http://www.w3.org/2004/02/skos/core#notation> "1.8" ;
+	<http://www.w3.org/2004/02/skos/core#prefLabel> "Private Organisationen ohne eigene Rechtspersönlichkeit"@de , "Private organisations without legal personality"@en , "Ente privato senza personalità giuridica"@it ;
+	<http://www.w3.org/2004/02/skos/core#broader> <http://data.openbudgets.eu/resource/codelist/oc-legal-status/1> ;
+	<http://www.w3.org/2004/02/skos/core#inScheme> <http://data.openbudgets.eu/resource/codelist/oc-legal-status> .
+
+<http://data.openbudgets.eu/resource/codelist/oc-legal-status/1.8.10> a <http://www.w3.org/2004/02/skos/core#Concept> ;
+	<http://www.w3.org/2004/02/skos/core#notation> "1.8.10" ;
+	<http://www.w3.org/2004/02/skos/core#prefLabel> "Nicht anerkannter Verein"@de , "Unincorporated association"@en , "Associazione non riconosciuta"@it ;
+	<http://www.w3.org/2004/02/skos/core#broader> <http://data.openbudgets.eu/resource/codelist/oc-legal-status/1.8> ;
+	<http://www.w3.org/2004/02/skos/core#inScheme> <http://data.openbudgets.eu/resource/codelist/oc-legal-status> .
+
+<http://data.openbudgets.eu/resource/codelist/oc-legal-status/1.8.20> a <http://www.w3.org/2004/02/skos/core#Concept> ;
+	<http://www.w3.org/2004/02/skos/core#notation> "1.8.20" ;
+	<http://www.w3.org/2004/02/skos/core#prefLabel> "Ausschuss"@de , "Committee"@en , "Comitato"@it ;
+	<http://www.w3.org/2004/02/skos/core#broader> <http://data.openbudgets.eu/resource/codelist/oc-legal-status/1.8> ;
+	<http://www.w3.org/2004/02/skos/core#inScheme> <http://data.openbudgets.eu/resource/codelist/oc-legal-status> .
+
+<http://data.openbudgets.eu/resource/codelist/oc-legal-status/1.8.30> a <http://www.w3.org/2004/02/skos/core#Concept> ;
+	<http://www.w3.org/2004/02/skos/core#notation> "1.8.30" ;
+	<http://www.w3.org/2004/02/skos/core#prefLabel> "Miteigentumsgemeinschaft"@de , "Condominium owner collective"@en , "Condominio"@it ;
+	<http://www.w3.org/2004/02/skos/core#broader> <http://data.openbudgets.eu/resource/codelist/oc-legal-status/1.8> ;
+	<http://www.w3.org/2004/02/skos/core#inScheme> <http://data.openbudgets.eu/resource/codelist/oc-legal-status> .
+
+<http://data.openbudgets.eu/resource/codelist/oc-legal-status/1.8.90> a <http://www.w3.org/2004/02/skos/core#Concept> ;
+	<http://www.w3.org/2004/02/skos/core#notation> "1.8.90" ;
+	<http://www.w3.org/2004/02/skos/core#prefLabel> "Andere private Organisation ohne eigene Rechtspersönlichkeit"@de , "Another form of private organisation without legal personality"@en , "Altra forma di ente privato senza personalità  giuridica"@it ;
+	<http://www.w3.org/2004/02/skos/core#broader> <http://data.openbudgets.eu/resource/codelist/oc-legal-status/1.8> ;
+	<http://www.w3.org/2004/02/skos/core#inScheme> <http://data.openbudgets.eu/resource/codelist/oc-legal-status> .
+
+<http://data.openbudgets.eu/resource/codelist/oc-legal-status/1.9> a <http://www.w3.org/2004/02/skos/core#Concept> ;
+	<http://www.w3.org/2004/02/skos/core#notation> "1.9" ;
+	<http://www.w3.org/2004/02/skos/core#prefLabel> "Andere Unternehmen oder private gegründete Organisation im Ausland, die in Italien wirtschaftlich tätig sind"@de , "Other foreign company or privately constituted organizations abroad carrying out economic activities in Italy"@en , "Impresa o ente privato costituito all’estero non altrimenti classificabile che svolge una attività economica in Italia"@it ;
+	<http://www.w3.org/2004/02/skos/core#broader> <http://data.openbudgets.eu/resource/codelist/oc-legal-status/1> ;
+	<http://www.w3.org/2004/02/skos/core#inScheme> <http://data.openbudgets.eu/resource/codelist/oc-legal-status> .
+
+<http://data.openbudgets.eu/resource/codelist/oc-legal-status/1.9.00> a <http://www.w3.org/2004/02/skos/core#Concept> ;
+	<http://www.w3.org/2004/02/skos/core#notation> "1.9.00" ;
+	<http://www.w3.org/2004/02/skos/core#prefLabel> "Andere Unternehmen oder private gegründete Organisation im Ausland, die in Italien wirtschaftlich tätig sind"@de , "Other foreign company or privately constituted organizations abroad carrying out economic activities in Italy"@en , "Impresa o ente privato costituito all'estero non altrimenti classificabile che svolge una attività economica in Italia"@it ;
+	<http://www.w3.org/2004/02/skos/core#broader> <http://data.openbudgets.eu/resource/codelist/oc-legal-status/1.9> ;
+	<http://www.w3.org/2004/02/skos/core#inScheme> <http://data.openbudgets.eu/resource/codelist/oc-legal-status> .
+
+<http://data.openbudgets.eu/resource/codelist/oc-legal-status/2> a <http://www.w3.org/2004/02/skos/core#Concept> ;
+	<http://www.w3.org/2004/02/skos/core#notation> "2" ;
+	<http://www.w3.org/2004/02/skos/core#prefLabel> "Öffentlich-rechtliche Wirtschaftsformen"@de , "Entities under public law"@en , "Forme disciplinate dal diritto pubblico"@it ;
+	<http://www.w3.org/2004/02/skos/core#topConceptOf> <http://data.openbudgets.eu/resource/codelist/oc-legal-status> .
+
+<http://data.openbudgets.eu/resource/codelist/oc-legal-status/2.1> a <http://www.w3.org/2004/02/skos/core#Concept> ;
+	<http://www.w3.org/2004/02/skos/core#notation> "2.1" ;
+	<http://www.w3.org/2004/02/skos/core#prefLabel> "Verfassungsorgan oder Organ von konstitutioneller Relevanz"@de , "Constitutional organ or of constitutional importance"@en , "Organo costituzionale o a rilevanza costituzionale"@it ;
+	<http://www.w3.org/2004/02/skos/core#broader> <http://data.openbudgets.eu/resource/codelist/oc-legal-status/2> ;
+	<http://www.w3.org/2004/02/skos/core#inScheme> <http://data.openbudgets.eu/resource/codelist/oc-legal-status> .
+
+<http://data.openbudgets.eu/resource/codelist/oc-legal-status/2.1.00> a <http://www.w3.org/2004/02/skos/core#Concept> ;
+	<http://www.w3.org/2004/02/skos/core#notation> "2.1.00" ;
+	<http://www.w3.org/2004/02/skos/core#prefLabel> "Verfassungsorgan oder Organ von konstitutioneller Relevanz"@de , "Constitutional organ or of constitutional importance"@en , "Organo costituzionale o a rilevanza costituzionale"@it ;
+	<http://www.w3.org/2004/02/skos/core#broader> <http://data.openbudgets.eu/resource/codelist/oc-legal-status/2.1> ;
+	<http://www.w3.org/2004/02/skos/core#inScheme> <http://data.openbudgets.eu/resource/codelist/oc-legal-status> .
+
+<http://data.openbudgets.eu/resource/codelist/oc-legal-status/2.2> a <http://www.w3.org/2004/02/skos/core#Concept> ;
+	<http://www.w3.org/2004/02/skos/core#notation> "2.2" ;
+	<http://www.w3.org/2004/02/skos/core#prefLabel> "Staatsverwaltung"@de , "Public Administration"@en , "Amministrazione dello Stato"@it ;
+	<http://www.w3.org/2004/02/skos/core#broader> <http://data.openbudgets.eu/resource/codelist/oc-legal-status/2> ;
+	<http://www.w3.org/2004/02/skos/core#inScheme> <http://data.openbudgets.eu/resource/codelist/oc-legal-status> .
+
+<http://data.openbudgets.eu/resource/codelist/oc-legal-status/2.2.10> a <http://www.w3.org/2004/02/skos/core#Concept> ;
+	<http://www.w3.org/2004/02/skos/core#notation> "2.2.10" ;
+	<http://www.w3.org/2004/02/skos/core#prefLabel> "Ratsvorstand"@de , "Presidency of the council"@en , "Presidenza del consiglio"@it ;
+	<http://www.w3.org/2004/02/skos/core#broader> <http://data.openbudgets.eu/resource/codelist/oc-legal-status/2.2> ;
+	<http://www.w3.org/2004/02/skos/core#inScheme> <http://data.openbudgets.eu/resource/codelist/oc-legal-status> .
+
+<http://data.openbudgets.eu/resource/codelist/oc-legal-status/2.2.20> a <http://www.w3.org/2004/02/skos/core#Concept> ;
+	<http://www.w3.org/2004/02/skos/core#notation> "2.2.20" ;
+	<http://www.w3.org/2004/02/skos/core#prefLabel> "Ministerium"@de , "Ministry"@en , "Ministero"@it ;
+	<http://www.w3.org/2004/02/skos/core#broader> <http://data.openbudgets.eu/resource/codelist/oc-legal-status/2.2> ;
+	<http://www.w3.org/2004/02/skos/core#inScheme> <http://data.openbudgets.eu/resource/codelist/oc-legal-status> .
+
+<http://data.openbudgets.eu/resource/codelist/oc-legal-status/2.2.30> a <http://www.w3.org/2004/02/skos/core#Concept> ;
+	<http://www.w3.org/2004/02/skos/core#notation> "2.2.30" ;
+	<http://www.w3.org/2004/02/skos/core#prefLabel> "Staatliche Behörde"@de , "State Agency"@en , "Agenzia dello Stato"@it ;
+	<http://www.w3.org/2004/02/skos/core#broader> <http://data.openbudgets.eu/resource/codelist/oc-legal-status/2.2> ;
+	<http://www.w3.org/2004/02/skos/core#inScheme> <http://data.openbudgets.eu/resource/codelist/oc-legal-status> .
+
+<http://data.openbudgets.eu/resource/codelist/oc-legal-status/2.2.40> a <http://www.w3.org/2004/02/skos/core#Concept> ;
+	<http://www.w3.org/2004/02/skos/core#notation> "2.2.40" ;
+	<http://www.w3.org/2004/02/skos/core#prefLabel> "Notar-Archiv"@de , "Notary archive"@en , "Archivio notarile"@it ;
+	<http://www.w3.org/2004/02/skos/core#broader> <http://data.openbudgets.eu/resource/codelist/oc-legal-status/2.2> ;
+	<http://www.w3.org/2004/02/skos/core#inScheme> <http://data.openbudgets.eu/resource/codelist/oc-legal-status> .
+
+<http://data.openbudgets.eu/resource/codelist/oc-legal-status/2.3> a <http://www.w3.org/2004/02/skos/core#Concept> ;
+	<http://www.w3.org/2004/02/skos/core#notation> "2.3" ;
+	<http://www.w3.org/2004/02/skos/core#prefLabel> "Unabhängige Autoritäten"@de , "Independent authorities"@en , "Autorità indipendente"@it ;
+	<http://www.w3.org/2004/02/skos/core#broader> <http://data.openbudgets.eu/resource/codelist/oc-legal-status/2> ;
+	<http://www.w3.org/2004/02/skos/core#inScheme> <http://data.openbudgets.eu/resource/codelist/oc-legal-status> .
+
+<http://data.openbudgets.eu/resource/codelist/oc-legal-status/2.3.00> a <http://www.w3.org/2004/02/skos/core#Concept> ;
+	<http://www.w3.org/2004/02/skos/core#notation> "2.3.00" ;
+	<http://www.w3.org/2004/02/skos/core#prefLabel> "Unabhängige Autorität"@de , "Independent authority"@en , "Autorità  indipendenti"@it ;
+	<http://www.w3.org/2004/02/skos/core#broader> <http://data.openbudgets.eu/resource/codelist/oc-legal-status/2.3> ;
+	<http://www.w3.org/2004/02/skos/core#inScheme> <http://data.openbudgets.eu/resource/codelist/oc-legal-status> .
+
+<http://data.openbudgets.eu/resource/codelist/oc-legal-status/2.4> a <http://www.w3.org/2004/02/skos/core#Concept> ;
+	<http://www.w3.org/2004/02/skos/core#notation> "2.4" ;
+	<http://www.w3.org/2004/02/skos/core#prefLabel> "Regionen und Gebietsautonomien"@de , "Regions and local autonomies"@en , "Regione e autonomia locale"@it ;
+	<http://www.w3.org/2004/02/skos/core#broader> <http://data.openbudgets.eu/resource/codelist/oc-legal-status/2> ;
+	<http://www.w3.org/2004/02/skos/core#inScheme> <http://data.openbudgets.eu/resource/codelist/oc-legal-status> .
+
+<http://data.openbudgets.eu/resource/codelist/oc-legal-status/2.4.10> a <http://www.w3.org/2004/02/skos/core#Concept> ;
+	<http://www.w3.org/2004/02/skos/core#notation> "2.4.10" ;
+	<http://www.w3.org/2004/02/skos/core#prefLabel> "Region"@de , "Region"@en , "Regione"@it ;
+	<http://www.w3.org/2004/02/skos/core#broader> <http://data.openbudgets.eu/resource/codelist/oc-legal-status/2.4> ;
+	<http://www.w3.org/2004/02/skos/core#inScheme> <http://data.openbudgets.eu/resource/codelist/oc-legal-status> .
+
+<http://data.openbudgets.eu/resource/codelist/oc-legal-status/2.4.20> a <http://www.w3.org/2004/02/skos/core#Concept> ;
+	<http://www.w3.org/2004/02/skos/core#notation> "2.4.20" ;
+	<http://www.w3.org/2004/02/skos/core#prefLabel> "Provinz"@de , "Province"@en , "Provincia"@it ;
+	<http://www.w3.org/2004/02/skos/core#broader> <http://data.openbudgets.eu/resource/codelist/oc-legal-status/2.4> ;
+	<http://www.w3.org/2004/02/skos/core#inScheme> <http://data.openbudgets.eu/resource/codelist/oc-legal-status> .
+
+<http://data.openbudgets.eu/resource/codelist/oc-legal-status/2.4.30> a <http://www.w3.org/2004/02/skos/core#Concept> ;
+	<http://www.w3.org/2004/02/skos/core#notation> "2.4.30" ;
+	<http://www.w3.org/2004/02/skos/core#prefLabel> "Gemeinde"@de , "Municipality"@en , "Comune"@it ;
+	<http://www.w3.org/2004/02/skos/core#broader> <http://data.openbudgets.eu/resource/codelist/oc-legal-status/2.4> ;
+	<http://www.w3.org/2004/02/skos/core#inScheme> <http://data.openbudgets.eu/resource/codelist/oc-legal-status> .
+
+<http://data.openbudgets.eu/resource/codelist/oc-legal-status/2.4.40> a <http://www.w3.org/2004/02/skos/core#Concept> ;
+	<http://www.w3.org/2004/02/skos/core#notation> "2.4.40" ;
+	<http://www.w3.org/2004/02/skos/core#prefLabel> "Berg- oder Inselgemeinschaft"@de , "Mountain or island  community"@en , "Comunità  montana o isolana"@it ;
+	<http://www.w3.org/2004/02/skos/core#broader> <http://data.openbudgets.eu/resource/codelist/oc-legal-status/2.4> ;
+	<http://www.w3.org/2004/02/skos/core#inScheme> <http://data.openbudgets.eu/resource/codelist/oc-legal-status> .
+
+<http://data.openbudgets.eu/resource/codelist/oc-legal-status/2.4.50> a <http://www.w3.org/2004/02/skos/core#Concept> ;
+	<http://www.w3.org/2004/02/skos/core#notation> "2.4.50" ;
+	<http://www.w3.org/2004/02/skos/core#prefLabel> "Gemeindevereinigung"@de , "Union of municipalities"@en , "Unione di comuni"@it ;
+	<http://www.w3.org/2004/02/skos/core#broader> <http://data.openbudgets.eu/resource/codelist/oc-legal-status/2.4> ;
+	<http://www.w3.org/2004/02/skos/core#inScheme> <http://data.openbudgets.eu/resource/codelist/oc-legal-status> .
+
+<http://data.openbudgets.eu/resource/codelist/oc-legal-status/2.4.60> a <http://www.w3.org/2004/02/skos/core#Concept> ;
+	<http://www.w3.org/2004/02/skos/core#notation> "2.4.60" ;
+	<http://www.w3.org/2004/02/skos/core#prefLabel> "Großstadt"@de , "Major city"@en , "Città  metropolitana"@it ;
+	<http://www.w3.org/2004/02/skos/core#broader> <http://data.openbudgets.eu/resource/codelist/oc-legal-status/2.4> ;
+	<http://www.w3.org/2004/02/skos/core#inScheme> <http://data.openbudgets.eu/resource/codelist/oc-legal-status> .
+
+<http://data.openbudgets.eu/resource/codelist/oc-legal-status/2.5> a <http://www.w3.org/2004/02/skos/core#Concept> ;
+	<http://www.w3.org/2004/02/skos/core#notation> "2.5" ;
+	<http://www.w3.org/2004/02/skos/core#prefLabel> "Unternehmen oder Behörde der staatlichen Krankenkasse"@de , "Company or institute of the national health care"@en , "Azienda o ente del servizio sanitario nazionale"@it ;
+	<http://www.w3.org/2004/02/skos/core#broader> <http://data.openbudgets.eu/resource/codelist/oc-legal-status/2> ;
+	<http://www.w3.org/2004/02/skos/core#inScheme> <http://data.openbudgets.eu/resource/codelist/oc-legal-status> .
+
+<http://data.openbudgets.eu/resource/codelist/oc-legal-status/2.5.00> a <http://www.w3.org/2004/02/skos/core#Concept> ;
+	<http://www.w3.org/2004/02/skos/core#notation> "2.5.00" ;
+	<http://www.w3.org/2004/02/skos/core#prefLabel> "Unternehmen oder Behörde der staatlichen Krankenkasse"@de , "Company or institute of the national health care"@en , "Azienda o ente del servizio sanitario nazionale"@it ;
+	<http://www.w3.org/2004/02/skos/core#broader> <http://data.openbudgets.eu/resource/codelist/oc-legal-status/2.5> ;
+	<http://www.w3.org/2004/02/skos/core#inScheme> <http://data.openbudgets.eu/resource/codelist/oc-legal-status> .
+
+<http://data.openbudgets.eu/resource/codelist/oc-legal-status/2.6> a <http://www.w3.org/2004/02/skos/core#Concept> ;
+	<http://www.w3.org/2004/02/skos/core#notation> "2.6" ;
+	<http://www.w3.org/2004/02/skos/core#prefLabel> "Institute, Schulen und öffentliche Universitäten"@de , "Institutes, schools and public universities"@en , "Istituto, scuola e università pubblica"@it ;
+	<http://www.w3.org/2004/02/skos/core#broader> <http://data.openbudgets.eu/resource/codelist/oc-legal-status/2> ;
+	<http://www.w3.org/2004/02/skos/core#inScheme> <http://data.openbudgets.eu/resource/codelist/oc-legal-status> .
+
+<http://data.openbudgets.eu/resource/codelist/oc-legal-status/2.6.10> a <http://www.w3.org/2004/02/skos/core#Concept> ;
+	<http://www.w3.org/2004/02/skos/core#notation> "2.6.10" ;
+	<http://www.w3.org/2004/02/skos/core#prefLabel> "Institut und öffentliche Schule aller Klassenstufen"@de , "Institute and public school for every grade"@en , "Istituto e scuola pubblica di ogni ordine e grado"@it ;
+	<http://www.w3.org/2004/02/skos/core#broader> <http://data.openbudgets.eu/resource/codelist/oc-legal-status/2.6> ;
+	<http://www.w3.org/2004/02/skos/core#inScheme> <http://data.openbudgets.eu/resource/codelist/oc-legal-status> .
+
+<http://data.openbudgets.eu/resource/codelist/oc-legal-status/2.6.20> a <http://www.w3.org/2004/02/skos/core#Concept> ;
+	<http://www.w3.org/2004/02/skos/core#notation> "2.6.20" ;
+	<http://www.w3.org/2004/02/skos/core#prefLabel> "Öffentlichen Universität"@de , "Public university"@en , "Università pubblica"@it ;
+	<http://www.w3.org/2004/02/skos/core#broader> <http://data.openbudgets.eu/resource/codelist/oc-legal-status/2.6> ;
+	<http://www.w3.org/2004/02/skos/core#inScheme> <http://data.openbudgets.eu/resource/codelist/oc-legal-status> .
+
+<http://data.openbudgets.eu/resource/codelist/oc-legal-status/2.7> a <http://www.w3.org/2004/02/skos/core#Concept> ;
+	<http://www.w3.org/2004/02/skos/core#notation> "2.7" ;
+	<http://www.w3.org/2004/02/skos/core#prefLabel> "Nicht-wirtschaftliche öffentliche Körperschaft"@de , "Non-ecomonic public authorities"@en , "Ente pubblico non economico"@it ;
+	<http://www.w3.org/2004/02/skos/core#broader> <http://data.openbudgets.eu/resource/codelist/oc-legal-status/2> ;
+	<http://www.w3.org/2004/02/skos/core#inScheme> <http://data.openbudgets.eu/resource/codelist/oc-legal-status> .
+
+<http://data.openbudgets.eu/resource/codelist/oc-legal-status/2.7.11> a <http://www.w3.org/2004/02/skos/core#Concept> ;
+	<http://www.w3.org/2004/02/skos/core#notation> "2.7.11" ;
+	<http://www.w3.org/2004/02/skos/core#prefLabel> "Öffentliche Forschungseinrichtung oder -institut"@de , "Public research institution or agency"@en , "Istituto o ente pubblico di ricerca"@it ;
+	<http://www.w3.org/2004/02/skos/core#broader> <http://data.openbudgets.eu/resource/codelist/oc-legal-status/2.7> ;
+	<http://www.w3.org/2004/02/skos/core#inScheme> <http://data.openbudgets.eu/resource/codelist/oc-legal-status> .
+
+<http://data.openbudgets.eu/resource/codelist/oc-legal-status/2.7.12> a <http://www.w3.org/2004/02/skos/core#Concept> ;
+	<http://www.w3.org/2004/02/skos/core#notation> "2.7.12" ;
+	<http://www.w3.org/2004/02/skos/core#prefLabel> "Öffentliche Wohltätigkeitsorganisation"@de , "Public charity association"@en , "Istituto pubblico di assistenza e beneficenza"@it ;
+	<http://www.w3.org/2004/02/skos/core#broader> <http://data.openbudgets.eu/resource/codelist/oc-legal-status/2.7> ;
+	<http://www.w3.org/2004/02/skos/core#inScheme> <http://data.openbudgets.eu/resource/codelist/oc-legal-status> .
+
+<http://data.openbudgets.eu/resource/codelist/oc-legal-status/2.7.20> a <http://www.w3.org/2004/02/skos/core#Concept> ;
+	<http://www.w3.org/2004/02/skos/core#notation> "2.7.20" ;
+	<http://www.w3.org/2004/02/skos/core#prefLabel> "Handelskammer "@de , "Chamber of commerce"@en , "Camera di commercio"@it ;
+	<http://www.w3.org/2004/02/skos/core#broader> <http://data.openbudgets.eu/resource/codelist/oc-legal-status/2.7> ;
+	<http://www.w3.org/2004/02/skos/core#inScheme> <http://data.openbudgets.eu/resource/codelist/oc-legal-status> .
+
+<http://data.openbudgets.eu/resource/codelist/oc-legal-status/2.7.30> a <http://www.w3.org/2004/02/skos/core#Concept> ;
+	<http://www.w3.org/2004/02/skos/core#notation> "2.7.30" ;
+	<http://www.w3.org/2004/02/skos/core#prefLabel> "Berufskolleg/Fachhochschule"@de , "College of higher education"@en , "Ordine e collegio professionale"@it ;
+	<http://www.w3.org/2004/02/skos/core#broader> <http://data.openbudgets.eu/resource/codelist/oc-legal-status/2.7> ;
+	<http://www.w3.org/2004/02/skos/core#inScheme> <http://data.openbudgets.eu/resource/codelist/oc-legal-status> .
+
+<http://data.openbudgets.eu/resource/codelist/oc-legal-status/2.7.40> a <http://www.w3.org/2004/02/skos/core#Concept> ;
+	<http://www.w3.org/2004/02/skos/core#notation> "2.7.40" ;
+	<http://www.w3.org/2004/02/skos/core#prefLabel> "Öffentlich-rechtliches Konsortium"@de , "Public corporation"@en , "Consorzio di diritto pubblico"@it ;
+	<http://www.w3.org/2004/02/skos/core#broader> <http://data.openbudgets.eu/resource/codelist/oc-legal-status/2.7> ;
+	<http://www.w3.org/2004/02/skos/core#inScheme> <http://data.openbudgets.eu/resource/codelist/oc-legal-status> .
+
+<http://data.openbudgets.eu/resource/codelist/oc-legal-status/2.7.51> a <http://www.w3.org/2004/02/skos/core#Concept> ;
+	<http://www.w3.org/2004/02/skos/core#notation> "2.7.51" ;
+	<http://www.w3.org/2004/02/skos/core#prefLabel> "Parkbehörde"@de , "Park institute"@en , "Ente parco"@it ;
+	<http://www.w3.org/2004/02/skos/core#broader> <http://data.openbudgets.eu/resource/codelist/oc-legal-status/2.7> ;
+	<http://www.w3.org/2004/02/skos/core#inScheme> <http://data.openbudgets.eu/resource/codelist/oc-legal-status> .
+
+<http://data.openbudgets.eu/resource/codelist/oc-legal-status/2.7.52> a <http://www.w3.org/2004/02/skos/core#Concept> ;
+	<http://www.w3.org/2004/02/skos/core#notation> "2.7.52" ;
+	<http://www.w3.org/2004/02/skos/core#prefLabel> "Hafenbehörde "@de , "Port authority or institute"@en , "Ente o autorità  portuale"@it ;
+	<http://www.w3.org/2004/02/skos/core#broader> <http://data.openbudgets.eu/resource/codelist/oc-legal-status/2.7> ;
+	<http://www.w3.org/2004/02/skos/core#inScheme> <http://data.openbudgets.eu/resource/codelist/oc-legal-status> .
+
+<http://data.openbudgets.eu/resource/codelist/oc-legal-status/2.7.53> a <http://www.w3.org/2004/02/skos/core#Concept> ;
+	<http://www.w3.org/2004/02/skos/core#notation> "2.7.53" ;
+	<http://www.w3.org/2004/02/skos/core#prefLabel> "Behörde für regionale landwirtschaftliche Entwicklung oder andere lokale Behörde"@de , "Authority of regional agricultural development or other local authority"@en , "Ente di sviluppo agricolo regionale o di altro ente locale"@it ;
+	<http://www.w3.org/2004/02/skos/core#broader> <http://data.openbudgets.eu/resource/codelist/oc-legal-status/2.7> ;
+	<http://www.w3.org/2004/02/skos/core#inScheme> <http://data.openbudgets.eu/resource/codelist/oc-legal-status> .
+
+<http://data.openbudgets.eu/resource/codelist/oc-legal-status/2.7.54> a <http://www.w3.org/2004/02/skos/core#Concept> ;
+	<http://www.w3.org/2004/02/skos/core#notation> "2.7.54" ;
+	<http://www.w3.org/2004/02/skos/core#prefLabel> "Fremdenverkehrsamt"@de , "Tourist office"@en , "Ente per il turismo"@it ;
+	<http://www.w3.org/2004/02/skos/core#broader> <http://data.openbudgets.eu/resource/codelist/oc-legal-status/2.7> ;
+	<http://www.w3.org/2004/02/skos/core#inScheme> <http://data.openbudgets.eu/resource/codelist/oc-legal-status> .
+
+<http://data.openbudgets.eu/resource/codelist/oc-legal-status/2.7.55> a <http://www.w3.org/2004/02/skos/core#Concept> ;
+	<http://www.w3.org/2004/02/skos/core#notation> "2.7.55" ;
+	<http://www.w3.org/2004/02/skos/core#prefLabel> "Regionale Umweltbehörde"@de , "Regional environmental agency"@en , "Ente ambientale regionale"@it ;
+	<http://www.w3.org/2004/02/skos/core#broader> <http://data.openbudgets.eu/resource/codelist/oc-legal-status/2.7> ;
+	<http://www.w3.org/2004/02/skos/core#inScheme> <http://data.openbudgets.eu/resource/codelist/oc-legal-status> .
+
+<http://data.openbudgets.eu/resource/codelist/oc-legal-status/2.7.56> a <http://www.w3.org/2004/02/skos/core#Concept> ;
+	<http://www.w3.org/2004/02/skos/core#notation> "2.7.56" ;
+	<http://www.w3.org/2004/02/skos/core#prefLabel> "Institution für Bildung und Forschung"@de , "Institution for research and education"@en , "Ente per la ricerca e per l'aggiornamento educativo"@it ;
+	<http://www.w3.org/2004/02/skos/core#broader> <http://data.openbudgets.eu/resource/codelist/oc-legal-status/2.7> ;
+	<http://www.w3.org/2004/02/skos/core#inScheme> <http://data.openbudgets.eu/resource/codelist/oc-legal-status> .
+
+<http://data.openbudgets.eu/resource/codelist/oc-legal-status/2.7.90> a <http://www.w3.org/2004/02/skos/core#Concept> ;
+	<http://www.w3.org/2004/02/skos/core#notation> "2.7.90" ;
+	<http://www.w3.org/2004/02/skos/core#prefLabel> "Andere nicht-wirtschaftliche öffentliche Körperschaft"@de , "Other non-ecomonic public authority"@en , "Altro ente pubblico non economico nazionale"@it ;
+	<http://www.w3.org/2004/02/skos/core#broader> <http://data.openbudgets.eu/resource/codelist/oc-legal-status/2.7> ;
+	<http://www.w3.org/2004/02/skos/core#inScheme> <http://data.openbudgets.eu/resource/codelist/oc-legal-status> .
+
+<http://data.openbudgets.eu/resource/codelist/oc-legal-status/9> a <http://www.w3.org/2004/02/skos/core#Concept> ;
+	<http://www.w3.org/2004/02/skos/core#notation> "9" ;
+	<http://www.w3.org/2004/02/skos/core#prefLabel> "Privatperson"@de , "Private individual"@en , "Privato"@it ;
+	<http://www.w3.org/2004/02/skos/core#topConceptOf> <http://data.openbudgets.eu/resource/codelist/oc-legal-status> .
+
+<http://data.openbudgets.eu/resource/codelist/oc-legal-status/9.9> a <http://www.w3.org/2004/02/skos/core#Concept> ;
+	<http://www.w3.org/2004/02/skos/core#notation> "9.9" ;
+	<http://www.w3.org/2004/02/skos/core#prefLabel> "Privatperson"@de , "Private individual"@en , "Privato"@it ;
+	<http://www.w3.org/2004/02/skos/core#broader> <http://data.openbudgets.eu/resource/codelist/oc-legal-status/9> ;
+	<http://www.w3.org/2004/02/skos/core#inScheme> <http://data.openbudgets.eu/resource/codelist/oc-legal-status> .
+
+<http://data.openbudgets.eu/resource/codelist/oc-legal-status/9.9.99> a <http://www.w3.org/2004/02/skos/core#Concept> ;
+	<http://www.w3.org/2004/02/skos/core#notation> "9.9.99" ;
+	<http://www.w3.org/2004/02/skos/core#prefLabel> "Privatperson"@de , "Private individual"@en , "Privato"@it ;
+	<http://www.w3.org/2004/02/skos/core#broader> <http://data.openbudgets.eu/resource/codelist/oc-legal-status/9.9> ;
+	<http://www.w3.org/2004/02/skos/core#inScheme> <http://data.openbudgets.eu/resource/codelist/oc-legal-status> .
+
+<http://data.openbudgets.eu/resource/codelist/oc-legal-status> a <http://www.w3.org/2004/02/skos/core#ConceptScheme> ;
+	rdfs:comment "ISTAT Klassifizierung der rechtlichen Stellung von Entitäten im OpenCoesione-Datensatz. z.B. Region, Stiftung, GmbH, AG, ... . Die Codeliste ist hierarchisch in drei Ebenen gegliedert."@de , "ISTAT classification of the legal status of entities listed in the OpenCoesione dataset. The code list is hierarchically structured in three levels."@en , "Classificazione ISTAT della forma giuridica del soggetto. La descrizione della forma giuridica può essere, ad esempio: Regione, Provincia, Comune, Società per azioni, ecc."@it ;
+	rdfs:label "Rechtliche Stellung der Entitäten"@de , "Entities' legal status"@en , "Forma giuridica del soggetto"@it ;
+	<http://www.w3.org/2004/02/skos/core#hasTopConcept> <http://data.openbudgets.eu/resource/codelist/oc-legal-status/1> , <http://data.openbudgets.eu/resource/codelist/oc-legal-status/2> , <http://data.openbudgets.eu/resource/codelist/oc-legal-status/9> .

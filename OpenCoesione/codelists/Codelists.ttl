@@ -1,49 +1,49 @@
 # This document contains the following code lists related to the OpenCoesione 2007-2013 dataset:
 #
-# - Project Status: <http://data.openbudgets.eu/resource/codelist/oc_project_status>
-# - Project Activation Procedure Type: <http://data.openbudgets.eu/resource/codelist/oc_project_activation_procedure_type>
-# - Location Level: <http://data.openbudgets.eu/resource/codelist/oc_location_level>
-# - Entity Size: <http://data.openbudgets.eu/resource/codelist/oc_entity_size>
+# - Project Status: <http://data.openbudgets.eu/resource/codelist/oc-project-status>
+# - Project Activation Procedure Type: <http://data.openbudgets.eu/resource/codelist/oc-project-activation-procedure-type>
+# - Location Level: <http://data.openbudgets.eu/resource/codelist/oc-location-level>
+# - Entity Size: <http://data.openbudgets.eu/resource/codelist/oc-entity-size>
 #
 
 # --------------------------
 # ----- Project Status -----
 # --------------------------
 
-<http://data.openbudgets.eu/resource/codelist/oc_project_status> a <http://www.w3.org/2004/02/skos/core#ConceptScheme> ;
+<http://data.openbudgets.eu/resource/codelist/oc-project-status> a <http://www.w3.org/2004/02/skos/core#ConceptScheme> ;
 	<http://www.w3.org/2000/01/rdf-schema#comment> "Project status of the EU funded projects listed in the Italien OpenCoesione dataset."@en , "Stato dell'avanzamento del progetto, basato sulla combinazione dell'avanzamento finanziario e dell'effettiva conclusione della fase esecutiva."@it ;
 	<http://www.w3.org/2000/01/rdf-schema#label> "OpenCoesione project status"@en ;
-<http://www.w3.org/2004/02/skos/core#hasTopConcept> <http://data.openbudgets.eu/resource/codelist/oc_project_status/concluded>, <http://data.openbudgets.eu/resource/codelist/oc_project_status/notStarted>, <http://data.openbudgets.eu/resource/codelist/oc_project_status/inProgress>, <http://data.openbudgets.eu/resource/codelist/oc_project_status/liquidated>, <http://data.openbudgets.eu/resource/codelist/oc_project_status/notApplicable> .
+<http://www.w3.org/2004/02/skos/core#hasTopConcept> <http://data.openbudgets.eu/resource/codelist/oc-project-status/concluded>, <http://data.openbudgets.eu/resource/codelist/oc-project-status/notStarted>, <http://data.openbudgets.eu/resource/codelist/oc-project-status/inProgress>, <http://data.openbudgets.eu/resource/codelist/oc-project-status/liquidated>, <http://data.openbudgets.eu/resource/codelist/oc-project-status/notApplicable> .
 
-<http://data.openbudgets.eu/resource/codelist/oc_project_status/concluded> a <http://www.w3.org/2004/02/skos/core#Concept> ;
+<http://data.openbudgets.eu/resource/codelist/oc-project-status/concluded> a <http://www.w3.org/2004/02/skos/core#Concept> ;
 	<http://www.w3.org/2004/02/skos/core#notation> "Concluded" ;
 	<http://www.w3.org/2004/02/skos/core#prefLabel> "Concluded"@en, "Concluso"@it, "Abgeschlossen"@de ;
 	<http://www.w3.org/2004/02/skos/core#definition> "Avanzamento finanziario liquidato (superiore al 95%)  e fase di esecuzione conclusa nei tempi del monitoraggio."@it, "The financial progress is paid (over 95%) and the project ends in the monitored period."@en, "Der Finanzstatus ist bezahlt (über 95%) und das Projekt endet im betrachteten Zeitraum."@de ;
-	<http://www.w3.org/2004/02/skos/core#topConceptOf> <http://data.openbudgets.eu/resource/codelist/oc_project_status> .
+	<http://www.w3.org/2004/02/skos/core#topConceptOf> <http://data.openbudgets.eu/resource/codelist/oc-project-status> .
 	
-<http://data.openbudgets.eu/resource/codelist/oc_project_status/notStarted> a <http://www.w3.org/2004/02/skos/core#Concept> ;
+<http://data.openbudgets.eu/resource/codelist/oc-project-status/notStarted> a <http://www.w3.org/2004/02/skos/core#Concept> ;
 	<http://www.w3.org/2004/02/skos/core#notation> "Not started" ;
 	<http://www.w3.org/2004/02/skos/core#prefLabel> "Not started"@en, "Non avviato"@it, "Nicht gestarted"@de ;
 	<http://www.w3.org/2004/02/skos/core#definition> "Avanzamento finanziario non avviato (pagamenti nulli)."@it, "The financial progress has not started (zero payments)."@en, "Die Finanzierung hat noch nicht begonnen (keine Zahlungen)."@de ;
-	<http://www.w3.org/2004/02/skos/core#topConceptOf> <http://data.openbudgets.eu/resource/codelist/oc_project_status> .
+	<http://www.w3.org/2004/02/skos/core#topConceptOf> <http://data.openbudgets.eu/resource/codelist/oc-project-status> .
 	
-<http://data.openbudgets.eu/resource/codelist/oc_project_status/inProgress> a <http://www.w3.org/2004/02/skos/core#Concept> ;
+<http://data.openbudgets.eu/resource/codelist/oc-project-status/inProgress> a <http://www.w3.org/2004/02/skos/core#Concept> ;
 	<http://www.w3.org/2004/02/skos/core#notation> "In progress" ;
 	<http://www.w3.org/2004/02/skos/core#prefLabel> "In progress"@en, "In corso"@it, "Laufend"@de ;
 	<http://www.w3.org/2004/02/skos/core#definition> "Avanzamento finanziario in corso (non nullo e inferiore al 95%)."@it, "Financial status is progressing (non-zero and less than 95 %)"@en, "Laufende Finanzierung (mehr als 0, weniger als 95 %)."@de ;
-	<http://www.w3.org/2004/02/skos/core#topConceptOf> <http://data.openbudgets.eu/resource/codelist/oc_project_status> .
+	<http://www.w3.org/2004/02/skos/core#topConceptOf> <http://data.openbudgets.eu/resource/codelist/oc-project-status> .
 	
-<http://data.openbudgets.eu/resource/codelist/oc_project_status/paid> a <http://www.w3.org/2004/02/skos/core#Concept> ;
+<http://data.openbudgets.eu/resource/codelist/oc-project-status/paid> a <http://www.w3.org/2004/02/skos/core#Concept> ;
 	<http://www.w3.org/2004/02/skos/core#notation> "Paid" ;
 	<http://www.w3.org/2004/02/skos/core#prefLabel> "Paid"@en, "Liquidato"@it, "Bezahlt"@de ;
 	<http://www.w3.org/2004/02/skos/core#definition> "Avanzamento finanziario liquidato (superiore al 95%) ma fase di esecuzione non conclusa."@it, "The financial progress is paid (over 95%), but the project has not ended yet."@en, "Der Finanzstatus ist bezahlt (über 95%), aber das Projekt ist noch nicht beendet."@de ;	
-	<http://www.w3.org/2004/02/skos/core#topConceptOf> <http://data.openbudgets.eu/resource/codelist/oc_project_status> .
+	<http://www.w3.org/2004/02/skos/core#topConceptOf> <http://data.openbudgets.eu/resource/codelist/oc-project-status> .
 	
-<http://data.openbudgets.eu/resource/codelist/oc_project_status/notApplicable> a <http://www.w3.org/2004/02/skos/core#Concept> ;
+<http://data.openbudgets.eu/resource/codelist/oc-project-status/notApplicable> a <http://www.w3.org/2004/02/skos/core#Concept> ;
 	<http://www.w3.org/2004/02/skos/core#notation> "Not applicable" ;
 	<http://www.w3.org/2004/02/skos/core#prefLabel> "Not applicable"@en, "Non applicabile"@it, "Nicht anwendbar"@de ;
 	<http://www.w3.org/2004/02/skos/core#definition> "Avanzamento finanziario non applicabile. Viene attribuito questo stato anche a tutte le Assegnazioni CIPE, per le quali non si può definire uno stato di avanzamento, non essendo progetti in attuazione."@it, "Not applicable financial progress. This status is attributed also to all CIPE, for which one cannot define a state of progress, and projects not in the implementation."@en, "Finanzieller Fortschritt nicht anwendbar. Dieser Status wird auch für alle CIPE verwendet, für die man den Status des Fortschritts nicht definieren kann, und für noch nicht umgesetzte Projekte."@de ;
-	<http://www.w3.org/2004/02/skos/core#topConceptOf> <http://data.openbudgets.eu/resource/codelist/oc_project_status> .
+	<http://www.w3.org/2004/02/skos/core#topConceptOf> <http://data.openbudgets.eu/resource/codelist/oc-project-status> .
 	
 	
 	
@@ -51,55 +51,55 @@
 # ----- Project Activation Procedure Type ------
 # ----------------------------------------------
 
-<http://data.openbudgets.eu/resource/codelist/oc_project_activation_procedure_type> a <http://www.w3.org/2004/02/skos/core#ConceptScheme> ;
+<http://data.openbudgets.eu/resource/codelist/oc-project-activation-procedure-type> a <http://www.w3.org/2004/02/skos/core#ConceptScheme> ;
 	<http://www.w3.org/2000/01/rdf-schema#comment> "Project activation procedure type of the EU funded projects listed in the Italien OpenCoesione dataset."@en , "Le tipologie di procedure di attivazione dei progetti possono essere: bando, circolare, avviso pubblico, procedura negoziale, individuazione diretta nel programma, completamento programmi 2000-2006, altro."@it ;
 	<http://www.w3.org/2000/01/rdf-schema#label> "OpenCoesione project activation procedure type"@en ;
-<http://www.w3.org/2004/02/skos/core#hasTopConcept> <http://data.openbudgets.eu/resource/codelist/oc_project_activation_procedure_type/1>, <http://data.openbudgets.eu/resource/codelist/oc_project_activation_procedure_type/2>, <http://data.openbudgets.eu/resource/codelist/oc_project_activation_procedure_type/3>, <http://data.openbudgets.eu/resource/codelist/oc_project_activation_procedure_type/4>, <http://data.openbudgets.eu/resource/codelist/oc_project_activation_procedure_type/5>, <http://data.openbudgets.eu/resource/codelist/oc_project_activation_procedure_type/6>, <http://data.openbudgets.eu/resource/codelist/oc_project_activation_procedure_type/7>, <http://data.openbudgets.eu/resource/codelist/oc_project_activation_procedure_type/8>, <http://data.openbudgets.eu/resource/codelist/oc_project_activation_procedure_type/99> .
+<http://www.w3.org/2004/02/skos/core#hasTopConcept> <http://data.openbudgets.eu/resource/codelist/oc-project-activation-procedure-type/1>, <http://data.openbudgets.eu/resource/codelist/oc-project-activation-procedure-type/2>, <http://data.openbudgets.eu/resource/codelist/oc-project-activation-procedure-type/3>, <http://data.openbudgets.eu/resource/codelist/oc-project-activation-procedure-type/4>, <http://data.openbudgets.eu/resource/codelist/oc-project-activation-procedure-type/5>, <http://data.openbudgets.eu/resource/codelist/oc-project-activation-procedure-type/6>, <http://data.openbudgets.eu/resource/codelist/oc-project-activation-procedure-type/7>, <http://data.openbudgets.eu/resource/codelist/oc-project-activation-procedure-type/8>, <http://data.openbudgets.eu/resource/codelist/oc-project-activation-procedure-type/99> .
 
-<http://data.openbudgets.eu/resource/codelist/oc_project_activation_procedure_type/1> a <http://www.w3.org/2004/02/skos/core#Concept> ;
+<http://data.openbudgets.eu/resource/codelist/oc-project-activation-procedure-type/1> a <http://www.w3.org/2004/02/skos/core#Concept> ;
 	<http://www.w3.org/2004/02/skos/core#notation> "1" ;
 	<http://www.w3.org/2004/02/skos/core#prefLabel> "Tender"@en, "Bando"@it, "Ausschreibung"@de ;
-	<http://www.w3.org/2004/02/skos/core#topConceptOf> <http://data.openbudgets.eu/resource/codelist/oc_project_activation_procedure_type> .
+	<http://www.w3.org/2004/02/skos/core#topConceptOf> <http://data.openbudgets.eu/resource/codelist/oc-project-activation-procedure-type> .
 	
-<http://data.openbudgets.eu/resource/codelist/oc_project_activation_procedure_type/2> a <http://www.w3.org/2004/02/skos/core#Concept> ;
+<http://data.openbudgets.eu/resource/codelist/oc-project-activation-procedure-type/2> a <http://www.w3.org/2004/02/skos/core#Concept> ;
 	<http://www.w3.org/2004/02/skos/core#notation> "2" ;
 	<http://www.w3.org/2004/02/skos/core#prefLabel> "Circular"@en, "Circolare"@it, "Rundschreiben"@de ;
-	<http://www.w3.org/2004/02/skos/core#topConceptOf> <http://data.openbudgets.eu/resource/codelist/oc_project_activation_procedure_type> .
+	<http://www.w3.org/2004/02/skos/core#topConceptOf> <http://data.openbudgets.eu/resource/codelist/oc-project-activation-procedure-type> .
 	
-<http://data.openbudgets.eu/resource/codelist/oc_project_activation_procedure_type/3> a <http://www.w3.org/2004/02/skos/core#Concept> ;
+<http://data.openbudgets.eu/resource/codelist/oc-project-activation-procedure-type/3> a <http://www.w3.org/2004/02/skos/core#Concept> ;
 	<http://www.w3.org/2004/02/skos/core#notation> "3" ;
 	<http://www.w3.org/2004/02/skos/core#prefLabel> "Public notice"@en, "Avviso pubblico"@it, "Öffentliche Bekanntmachung"@de ;
-	<http://www.w3.org/2004/02/skos/core#topConceptOf> <http://data.openbudgets.eu/resource/codelist/oc_project_activation_procedure_type> .
+	<http://www.w3.org/2004/02/skos/core#topConceptOf> <http://data.openbudgets.eu/resource/codelist/oc-project-activation-procedure-type> .
 	
-<http://data.openbudgets.eu/resource/codelist/oc_project_activation_procedure_type/4> a <http://www.w3.org/2004/02/skos/core#Concept> ;
+<http://data.openbudgets.eu/resource/codelist/oc-project-activation-procedure-type/4> a <http://www.w3.org/2004/02/skos/core#Concept> ;
 	<http://www.w3.org/2004/02/skos/core#notation> "4" ;
 	<http://www.w3.org/2004/02/skos/core#prefLabel> "Negotiating procedure"@en, "Procedura negoziale"@it, "Verhandlungsverfahren"@de ;
-	<http://www.w3.org/2004/02/skos/core#topConceptOf> <http://data.openbudgets.eu/resource/codelist/oc_project_activation_procedure_type> .
+	<http://www.w3.org/2004/02/skos/core#topConceptOf> <http://data.openbudgets.eu/resource/codelist/oc-project-activation-procedure-type> .
 	
-<http://data.openbudgets.eu/resource/codelist/oc_project_activation_procedure_type/5> a <http://www.w3.org/2004/02/skos/core#Concept> ;
+<http://data.openbudgets.eu/resource/codelist/oc-project-activation-procedure-type/5> a <http://www.w3.org/2004/02/skos/core#Concept> ;
 	<http://www.w3.org/2004/02/skos/core#notation> "5" ;
 	<http://www.w3.org/2004/02/skos/core#prefLabel> "Direct individualization in the programm"@en, "Individuazione diretta nel Programma"@it, "Direkte Individualisierung im Programm"@de ;
-	<http://www.w3.org/2004/02/skos/core#topConceptOf> <http://data.openbudgets.eu/resource/codelist/oc_project_activation_procedure_type> .
+	<http://www.w3.org/2004/02/skos/core#topConceptOf> <http://data.openbudgets.eu/resource/codelist/oc-project-activation-procedure-type> .
 	
-<http://data.openbudgets.eu/resource/codelist/oc_project_activation_procedure_type/6> a <http://www.w3.org/2004/02/skos/core#Concept> ;
+<http://data.openbudgets.eu/resource/codelist/oc-project-activation-procedure-type/6> a <http://www.w3.org/2004/02/skos/core#Concept> ;
 	<http://www.w3.org/2004/02/skos/core#notation> "6" ;
 	<http://www.w3.org/2004/02/skos/core#prefLabel> "Completion of a 2000-2006 project"@en, "Completamento Programmi 2000-2006"@it, "Fertigstellung eines Projekts aus 2000-2006"@de ;
-	<http://www.w3.org/2004/02/skos/core#topConceptOf> <http://data.openbudgets.eu/resource/codelist/oc_project_activation_procedure_type> .
+	<http://www.w3.org/2004/02/skos/core#topConceptOf> <http://data.openbudgets.eu/resource/codelist/oc-project-activation-procedure-type> .
 	
-<http://data.openbudgets.eu/resource/codelist/oc_project_activation_procedure_type/7> a <http://www.w3.org/2004/02/skos/core#Concept> ;
+<http://data.openbudgets.eu/resource/codelist/oc-project-activation-procedure-type/7> a <http://www.w3.org/2004/02/skos/core#Concept> ;
 	<http://www.w3.org/2004/02/skos/core#notation> "7" ;
 	<http://www.w3.org/2004/02/skos/core#prefLabel> "Individual retrospective procedure"@en, "Procedura Individuazione Retrospettivi"@it, "Individuelles retrospektives Verfahren"@de ;
-	<http://www.w3.org/2004/02/skos/core#topConceptOf> <http://data.openbudgets.eu/resource/codelist/oc_project_activation_procedure_type> .
+	<http://www.w3.org/2004/02/skos/core#topConceptOf> <http://data.openbudgets.eu/resource/codelist/oc-project-activation-procedure-type> .
 	
-<http://data.openbudgets.eu/resource/codelist/oc_project_activation_procedure_type/8> a <http://www.w3.org/2004/02/skos/core#Concept> ;
+<http://data.openbudgets.eu/resource/codelist/oc-project-activation-procedure-type/8> a <http://www.w3.org/2004/02/skos/core#Concept> ;
 	<http://www.w3.org/2004/02/skos/core#notation> "8" ;
 	<http://www.w3.org/2004/02/skos/core#prefLabel> "Projects resulting from other QSN implementation tools"@en, "Progetti originati da altri strumenti attuativi QSN"@it, "Projekte aus anderen NSF Implementierungswerkzeugen"@de ;
-	<http://www.w3.org/2004/02/skos/core#topConceptOf> <http://data.openbudgets.eu/resource/codelist/oc_project_activation_procedure_type> .
+	<http://www.w3.org/2004/02/skos/core#topConceptOf> <http://data.openbudgets.eu/resource/codelist/oc-project-activation-procedure-type> .
 	
-<http://data.openbudgets.eu/resource/codelist/oc_project_activation_procedure_type/99> a <http://www.w3.org/2004/02/skos/core#Concept> ;
+<http://data.openbudgets.eu/resource/codelist/oc-project-activation-procedure-type/99> a <http://www.w3.org/2004/02/skos/core#Concept> ;
 	<http://www.w3.org/2004/02/skos/core#notation> "99" ;
 	<http://www.w3.org/2004/02/skos/core#prefLabel> "Other"@en, "Altro"@it, "Sonstiges"@de ;
-	<http://www.w3.org/2004/02/skos/core#topConceptOf> <http://data.openbudgets.eu/resource/codelist/oc_project_activation_procedure_type> .
+	<http://www.w3.org/2004/02/skos/core#topConceptOf> <http://data.openbudgets.eu/resource/codelist/oc-project-activation-procedure-type> .
 
 
 
@@ -107,36 +107,36 @@
 # ----- Location Level ------
 # ---------------------------
 
-<http://data.openbudgets.eu/resource/codelist/oc_location_level> a <http://www.w3.org/2004/02/skos/core#ConceptScheme> ;
+<http://data.openbudgets.eu/resource/codelist/oc-location-level> a <http://www.w3.org/2004/02/skos/core#ConceptScheme> ;
 	<http://www.w3.org/2000/01/rdf-schema#comment> "Level of the locations listed in the Italien OpenCoesione dataset, i.e. abroad, national, regional, provicial, and municipal."@en ,
 	"Indica il livello di dettaglio territoriale di ciascuna localizzazione associata ad un progetto. Si articola nelle seguenti 5 modalità: estero, nazionale, regionale, provinciale, comunale."@it ;
 	<http://www.w3.org/2000/01/rdf-schema#label> "Location level"@en ;
-<http://www.w3.org/2004/02/skos/core#hasTopConcept> <http://data.openbudgets.eu/resource/codelist/oc_location_level/E>, <http://data.openbudgets.eu/resource/codelist/oc_location_level/N>, <http://data.openbudgets.eu/resource/codelist/oc_location_level/R>, <http://data.openbudgets.eu/resource/codelist/oc_location_level/P>, <http://data.openbudgets.eu/resource/codelist/oc_location_level/C>.
+<http://www.w3.org/2004/02/skos/core#hasTopConcept> <http://data.openbudgets.eu/resource/codelist/oc-location-level/E>, <http://data.openbudgets.eu/resource/codelist/oc-location-level/N>, <http://data.openbudgets.eu/resource/codelist/oc-location-level/R>, <http://data.openbudgets.eu/resource/codelist/oc-location-level/P>, <http://data.openbudgets.eu/resource/codelist/oc-location-level/C>.
 
-<http://data.openbudgets.eu/resource/codelist/oc_location_level/E> a <http://www.w3.org/2004/02/skos/core#Concept> ;
+<http://data.openbudgets.eu/resource/codelist/oc-location-level/E> a <http://www.w3.org/2004/02/skos/core#Concept> ;
 	<http://www.w3.org/2004/02/skos/core#notation> "E" ;
 	<http://www.w3.org/2004/02/skos/core#prefLabel> "Abroad"@en, "Estero"@it, "Ausland"@de ;
-	<http://www.w3.org/2004/02/skos/core#topConceptOf> <http://data.openbudgets.eu/resource/codelist/oc_location_level> .
+	<http://www.w3.org/2004/02/skos/core#topConceptOf> <http://data.openbudgets.eu/resource/codelist/oc-location-level> .
 
-<http://data.openbudgets.eu/resource/codelist/oc_location_level/N> a <http://www.w3.org/2004/02/skos/core#Concept> ;
+<http://data.openbudgets.eu/resource/codelist/oc-location-level/N> a <http://www.w3.org/2004/02/skos/core#Concept> ;
 	<http://www.w3.org/2004/02/skos/core#notation> "N" ;
 	<http://www.w3.org/2004/02/skos/core#prefLabel> "National"@en, "Nazionale"@it, "National"@de ;
-	<http://www.w3.org/2004/02/skos/core#topConceptOf> <http://data.openbudgets.eu/resource/codelist/oc_location_level> .
+	<http://www.w3.org/2004/02/skos/core#topConceptOf> <http://data.openbudgets.eu/resource/codelist/oc-location-level> .
 
-<http://data.openbudgets.eu/resource/codelist/oc_location_level/R> a <http://www.w3.org/2004/02/skos/core#Concept> ;
+<http://data.openbudgets.eu/resource/codelist/oc-location-level/R> a <http://www.w3.org/2004/02/skos/core#Concept> ;
 	<http://www.w3.org/2004/02/skos/core#notation> "R" ;
 	<http://www.w3.org/2004/02/skos/core#prefLabel> "Regional"@en, "Regionale"@it, "Regional"@de ;
-	<http://www.w3.org/2004/02/skos/core#topConceptOf> <http://data.openbudgets.eu/resource/codelist/oc_location_level> .
+	<http://www.w3.org/2004/02/skos/core#topConceptOf> <http://data.openbudgets.eu/resource/codelist/oc-location-level> .
 	
-<http://data.openbudgets.eu/resource/codelist/oc_location_level/P> a <http://www.w3.org/2004/02/skos/core#Concept> ;
+<http://data.openbudgets.eu/resource/codelist/oc-location-level/P> a <http://www.w3.org/2004/02/skos/core#Concept> ;
 	<http://www.w3.org/2004/02/skos/core#notation> "P" ;
 	<http://www.w3.org/2004/02/skos/core#prefLabel> "Provincial"@en, "Provinciale"@it, "Provinzial"@de ;
-	<http://www.w3.org/2004/02/skos/core#topConceptOf> <http://data.openbudgets.eu/resource/codelist/oc_location_level> .
+	<http://www.w3.org/2004/02/skos/core#topConceptOf> <http://data.openbudgets.eu/resource/codelist/oc-location-level> .
 	
-<http://data.openbudgets.eu/resource/codelist/oc_location_level/C> a <http://www.w3.org/2004/02/skos/core#Concept> ;
+<http://data.openbudgets.eu/resource/codelist/oc-location-level/C> a <http://www.w3.org/2004/02/skos/core#Concept> ;
 	<http://www.w3.org/2004/02/skos/core#notation> "C" ;
 	<http://www.w3.org/2004/02/skos/core#prefLabel> "Municipal"@en, "Comunale"@it, "Kommunal"@de ;
-	<http://www.w3.org/2004/02/skos/core#topConceptOf> <http://data.openbudgets.eu/resource/codelist/oc_location_level> .
+	<http://www.w3.org/2004/02/skos/core#topConceptOf> <http://data.openbudgets.eu/resource/codelist/oc-location-level> .
 
 
 
@@ -144,29 +144,29 @@
 # ----- Entity Size ------
 # ------------------------
 
-<http://data.openbudgets.eu/resource/codelist/oc_entity_size> a <http://www.w3.org/2004/02/skos/core#ConceptScheme> ;
+<http://data.openbudgets.eu/resource/codelist/oc-entity-size> a <http://www.w3.org/2004/02/skos/core#ConceptScheme> ;
 	<http://www.w3.org/2000/01/rdf-schema#comment> "Categorization of an entity's size listed in the Italien OpenCoesione dataset into micro, small, medium, and large."@en , "Articolazione della classe di dimensione delle imprese in 4 modalità: micro/piccola/media/grande impresa."@it ;
 	<http://www.w3.org/2000/01/rdf-schema#label> "Entity size (categorization)"@en ;
-<http://www.w3.org/2004/02/skos/core#hasTopConcept> <http://data.openbudgets.eu/resource/codelist/oc_entity_size/1>, <http://data.openbudgets.eu/resource/codelist/oc_entity_size/2>, <http://data.openbudgets.eu/resource/codelist/oc_entity_size/3>, <http://data.openbudgets.eu/resource/codelist/oc_entity_size/4>.
+<http://www.w3.org/2004/02/skos/core#hasTopConcept> <http://data.openbudgets.eu/resource/codelist/oc-entity-size/1>, <http://data.openbudgets.eu/resource/codelist/oc-entity-size/2>, <http://data.openbudgets.eu/resource/codelist/oc-entity-size/3>, <http://data.openbudgets.eu/resource/codelist/oc-entity-size/4>.
 
-<http://data.openbudgets.eu/resource/codelist/oc_entity_size/1> a <http://www.w3.org/2004/02/skos/core#Concept> ;
+<http://data.openbudgets.eu/resource/codelist/oc-entity-size/1> a <http://www.w3.org/2004/02/skos/core#Concept> ;
 	<http://www.w3.org/2004/02/skos/core#notation> "1" ;
 	<http://www.w3.org/2004/02/skos/core#prefLabel> "Medium"@en, "Media"@it, "Mittel"@de ;
-	<http://www.w3.org/2004/02/skos/core#topConceptOf> <http://data.openbudgets.eu/resource/codelist/oc_entity_size> .
+	<http://www.w3.org/2004/02/skos/core#topConceptOf> <http://data.openbudgets.eu/resource/codelist/oc-entity-size> .
 	
-<http://data.openbudgets.eu/resource/codelist/oc_entity_size/2> a <http://www.w3.org/2004/02/skos/core#Concept> ;
+<http://data.openbudgets.eu/resource/codelist/oc-entity-size/2> a <http://www.w3.org/2004/02/skos/core#Concept> ;
 	<http://www.w3.org/2004/02/skos/core#notation> "2" ;
 	<http://www.w3.org/2004/02/skos/core#prefLabel> "Small"@en, "Piccola"@it, "Klein"@de ;
-	<http://www.w3.org/2004/02/skos/core#topConceptOf> <http://data.openbudgets.eu/resource/codelist/oc_entity_size> .
+	<http://www.w3.org/2004/02/skos/core#topConceptOf> <http://data.openbudgets.eu/resource/codelist/oc-entity-size> .
 	
-<http://data.openbudgets.eu/resource/codelist/oc_entity_size/3> a <http://www.w3.org/2004/02/skos/core#Concept> ;
+<http://data.openbudgets.eu/resource/codelist/oc-entity-size/3> a <http://www.w3.org/2004/02/skos/core#Concept> ;
 	<http://www.w3.org/2004/02/skos/core#notation> "3" ;
 	<http://www.w3.org/2004/02/skos/core#prefLabel> "Large"@en, "Grande"@it, "Groß"@de ;
-	<http://www.w3.org/2004/02/skos/core#topConceptOf> <http://data.openbudgets.eu/resource/codelist/oc_entity_size> .
+	<http://www.w3.org/2004/02/skos/core#topConceptOf> <http://data.openbudgets.eu/resource/codelist/oc-entity-size> .
 	
-<http://data.openbudgets.eu/resource/codelist/oc_entity_size/4> a <http://www.w3.org/2004/02/skos/core#Concept> ;
+<http://data.openbudgets.eu/resource/codelist/oc-entity-size/4> a <http://www.w3.org/2004/02/skos/core#Concept> ;
 	<http://www.w3.org/2004/02/skos/core#notation> "4" ;
 	<http://www.w3.org/2004/02/skos/core#prefLabel> "Micro"@en, "Micro"@it, "Micro"@de ;
-	<http://www.w3.org/2004/02/skos/core#topConceptOf> <http://data.openbudgets.eu/resource/codelist/oc_entity_size> .
+	<http://www.w3.org/2004/02/skos/core#topConceptOf> <http://data.openbudgets.eu/resource/codelist/oc-entity-size> .
 
 
