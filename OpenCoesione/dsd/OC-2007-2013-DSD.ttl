@@ -134,10 +134,10 @@ oc-dimension:CUPeconomicClassification a rdf:Property, qb:CodedProperty, qb:Dime
 
 oc-dimension:ATECOeconomicClassification a rdf:Property, qb:CodedProperty, qb:DimensionProperty;
   rdfs:label "Economic classification according to ATECO"@en ;
-  rdfs:comment "ATECO (attività economiche = economic activities) is the national version of the European nomenclature NACE."@en ;
+  rdfs:comment "ATECO (attività economiche = economic activities) is the national version of the European nomenclature, Nace Rev. 2, published in the Official Journal of 20 December 2006 (Regulation (EC) no 1893/2006 of the European Parliament and of the Council of 20 December 2006). The classification is structrued hierarchically in five levels."@en ;
   rdfs:subPropertyOf obeu-dimension:economicClassification ;
   rdfs:range skos:Concept ;
-  qb:codeList <http://data.openbudgets.eu/resource/codelist/ateco-economic-class> ;
+  qb:codeList <http://data.openbudgets.eu/resource/codelist/ateco-class> ;
   rdfs:isDefinedBy <http://data.openbudgets.eu/ontology/dsd/oc-2007-2013> .  
 
 oc-dimension:CUPadministrativeClassification a rdf:Property, qb:CodedProperty, qb:DimensionProperty;
