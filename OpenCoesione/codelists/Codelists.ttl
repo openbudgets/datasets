@@ -1,10 +1,67 @@
 # This document contains the following code lists related to the OpenCoesione 2007-2013 dataset:
 #
+# - Funds: <http://data.openbudgets.eu/resource/codelist/oc-fund>
+# - Target Areas: <http://data.openbudgets.eu/resource/codelist/oc-target-areas>
 # - Project Status: <http://data.openbudgets.eu/resource/codelist/oc-project-status>
 # - Project Activation Procedure Type: <http://data.openbudgets.eu/resource/codelist/oc-project-activation-procedure-type>
 # - Location Level: <http://data.openbudgets.eu/resource/codelist/oc-location-level>
 # - Entity Size: <http://data.openbudgets.eu/resource/codelist/oc-entity-size>
 #
+
+# ----------------
+# ----- Fund -----
+# ----------------
+
+<http://data.openbudgets.eu/resource/codelist/oc-fund> a <http://www.w3.org/2004/02/skos/core#ConceptScheme> ;
+	<http://www.w3.org/2000/01/rdf-schema#comment> "EU funds listed in the Italien OpenCoesione dataset."@en , "I Fondi Strutturali Comunitari sono gli strumenti finanziari a disposizione dell'UE per cofinanziare iniziative della politica regionale nei Paesi membri. La politica di coesione è sostenuta dai Fondi Strutturali Comunitari che per l'Italia, nella programmazione 2007-2013, si articolano in: 1. Fondo Europeo per lo Sviluppo Regionale (FESR): destinato alla promozione della coesione economica e sociale attraverso la correzione dei principali squilibri regionali; 2. Fondo Sociale Europeo (FSE): destinato a sostenere l’occupazione negli Stati membri e per promuovere la coesione economica e sociale."@it ;
+	<http://www.w3.org/2000/01/rdf-schema#label> "Fund"@en, "Fondo"@it ;
+<http://www.w3.org/2004/02/skos/core#hasTopConcept> <http://data.openbudgets.eu/resource/codelist/oc-fund/FESR>, <http://data.openbudgets.eu/resource/codelist/oc-fund/FSE> .
+
+<http://data.openbudgets.eu/resource/codelist/oc-fund/FESR> a <http://www.w3.org/2004/02/skos/core#Concept> ;
+	<http://www.w3.org/2004/02/skos/core#notation> "ERDF" ;
+	<http://www.w3.org/2004/02/skos/core#prefLabel> "ERDF"@en, "FESR"@it ;
+	<http://www.w3.org/2004/02/skos/core#definition> "European Regional Development Fund (ERDF): for the promotion of economic and social cohesion by correcting the main regional imbalances."@en, "Fondo Europeo per lo Sviluppo Regionale (FESR): destinato alla promozione della coesione economica e sociale attraverso la correzione dei principali squilibri regionali."@it ;
+    <http://www.w3.org/2004/02/skos/core#exactMatch> <http://data.openbudgets.eu/resource/ESIF-2014-2020/codelist/eu-funds/erdf>, <http://dbpedia.org/resource/European_Regional_Development_Fund>, <http://publications.europa.eu/resource/authority/eu-programme/ERDF> ;	
+	<http://www.w3.org/2004/02/skos/core#topConceptOf> <http://data.openbudgets.eu/resource/codelist/oc-fund> .
+
+<http://data.openbudgets.eu/resource/codelist/oc-fund/FSE> a <http://www.w3.org/2004/02/skos/core#Concept> ;
+	<http://www.w3.org/2004/02/skos/core#notation> "ESF" ;
+	<http://www.w3.org/2004/02/skos/core#prefLabel> "ESF"@en, "FSE"@it ;
+	<http://www.w3.org/2004/02/skos/core#definition> "European Social Fund (ESF): to support employment in the member states, and to promote economic and social cohesion."@en, "Fondo Sociale Europeo (FSE): destinato a sostenere l’occupazione negli Stati membri e per promuovere la coesione economica e sociale."@it ;
+    <http://www.w3.org/2004/02/skos/core#exactMatch> <http://data.openbudgets.eu/resource/ESIF-2014-2020/codelist/eu-funds/esf>,  <http://dbpedia.org/resource/European_Social_Fund>, <http://publications.europa.eu/resource/authority/eu-programme/ESF>	;
+	<http://www.w3.org/2004/02/skos/core#topConceptOf> <http://data.openbudgets.eu/resource/codelist/oc-fund> .
+
+
+
+# ------------------------
+# ----- Target Areas -----
+# ------------------------
+
+
+<http://data.openbudgets.eu/resource/codelist/oc-target-areas> a <http://www.w3.org/2004/02/skos/core#ConceptScheme> ;
+	<http://www.w3.org/2000/01/rdf-schema#comment> "The European Union is divided into several target areas of cohesion policy, each of which identifies regions eligible for different types of financing. In the 2007-2013, the target areas are: convergence (lagging regions), competitiveness (all except the regions of convergence), and european territorial cooperation (cross-border territories, transnational and interregional)."@en , "Il territorio dell'Unione Europea è interessato da più aree obiettivo della politica di coesione, ciascuna delle quali individua regioni ammissibili a diverse tipologie di finanziamento. Nella programmazione 2007-2013, le aree obiettivo sono: Convergenza (regioni in ritardo di sviluppo), Competitività (tutte le regioni ad eccezione di quelle della Convergenza), Cooperazione territoriale europea (territori transfrontalieri, transnazionali ed interregionali)."@it ;
+	<http://www.w3.org/2000/01/rdf-schema#label> "Target area"@en "Area obiettivo"@it;
+<http://www.w3.org/2004/02/skos/core#hasTopConcept> <http://data.openbudgets.eu/resource/codelist/oc-target-areas/conv>, <http://data.openbudgets.eu/resource/codelist/oc-target-areas/comp> .
+
+<http://data.openbudgets.eu/resource/codelist/oc-target-areas/conv> a <http://www.w3.org/2004/02/skos/core#Concept> ;
+	<http://www.w3.org/2004/02/skos/core#notation> "Convergence" ;
+	<http://www.w3.org/2004/02/skos/core#prefLabel> "Convergence"@en, "Convergenza"@it ;
+	<http://www.w3.org/2004/02/skos/core#definition> "Convergence (lagging regions)."@en, "Convergenza (regioni in ritardo di sviluppo)."@it ;
+	<http://www.w3.org/2004/02/skos/core#topConceptOf> <http://data.openbudgets.eu/resource/codelist/oc-target-areas> .
+
+<http://data.openbudgets.eu/resource/codelist/oc-target-areas/comp> a <http://www.w3.org/2004/02/skos/core#Concept> ;
+	<http://www.w3.org/2004/02/skos/core#notation> "Competitiveness" ;
+	<http://www.w3.org/2004/02/skos/core#prefLabel> "Competitiveness"@en, "Competitività"@it ;
+	<http://www.w3.org/2004/02/skos/core#definition> "Competitiveness (all except the regions of convergence)."@en, "Competitività (tutte le regioni ad eccezione di quelle della Convergenza)."@it ;
+	<http://www.w3.org/2004/02/skos/core#topConceptOf> <http://data.openbudgets.eu/resource/codelist/oc-target-areas> .	
+	
+<http://data.openbudgets.eu/resource/codelist/oc-target-areas/coor> a <http://www.w3.org/2004/02/skos/core#Concept> ;
+	<http://www.w3.org/2004/02/skos/core#notation> "Cooperation" ;
+	<http://www.w3.org/2004/02/skos/core#prefLabel> "European territorial cooperation"@en, "Cooperazione territoriale europea"@it ;
+	<http://www.w3.org/2004/02/skos/core#definition> "European territorial cooperation (cross-border territories, transnational and interregional)."@en, "Cooperazione territoriale europea (territori transfrontalieri, transnazionali ed interregionali)."@it ;
+	<http://www.w3.org/2004/02/skos/core#topConceptOf> <http://data.openbudgets.eu/resource/codelist/oc-target-areas> .		
+
+
 
 # --------------------------
 # ----- Project Status -----
