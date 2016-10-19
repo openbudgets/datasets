@@ -5,6 +5,7 @@
 # - Project Status: <http://data.openbudgets.eu/resource/codelist/oc-project-status>
 # - Project Activation Procedure Type: <http://data.openbudgets.eu/resource/codelist/oc-project-activation-procedure-type>
 # - Location Level: <http://data.openbudgets.eu/resource/codelist/oc-location-level>
+# - Location Elevation Type: <http://data.openbudgets.eu/resource/codelist/oc-location-elevation-type>
 # - Entity Size: <http://data.openbudgets.eu/resource/codelist/oc-entity-size>
 #
 
@@ -167,7 +168,7 @@
 <http://data.openbudgets.eu/resource/codelist/oc-location-level> a <http://www.w3.org/2004/02/skos/core#ConceptScheme> ;
 	<http://www.w3.org/2000/01/rdf-schema#comment> "Level of the locations listed in the Italien OpenCoesione dataset, i.e. abroad, national, regional, provicial, and municipal."@en ,
 	"Indica il livello di dettaglio territoriale di ciascuna localizzazione associata ad un progetto. Si articola nelle seguenti 5 modalità: estero, nazionale, regionale, provinciale, comunale."@it ;
-	<http://www.w3.org/2000/01/rdf-schema#label> "Location level"@en ;
+	<http://www.w3.org/2000/01/rdf-schema#label> "Location level"@en, "Livello territoriale della localizzazione"@it ;
 <http://www.w3.org/2004/02/skos/core#hasTopConcept> <http://data.openbudgets.eu/resource/codelist/oc-location-level/E>, <http://data.openbudgets.eu/resource/codelist/oc-location-level/N>, <http://data.openbudgets.eu/resource/codelist/oc-location-level/R>, <http://data.openbudgets.eu/resource/codelist/oc-location-level/P>, <http://data.openbudgets.eu/resource/codelist/oc-location-level/C>.
 
 <http://data.openbudgets.eu/resource/codelist/oc-location-level/E> a <http://www.w3.org/2004/02/skos/core#Concept> ;
@@ -194,6 +195,43 @@
 	<http://www.w3.org/2004/02/skos/core#notation> "C" ;
 	<http://www.w3.org/2004/02/skos/core#prefLabel> "Municipal"@en, "Comunale"@it, "Kommunal"@de ;
 	<http://www.w3.org/2004/02/skos/core#topConceptOf> <http://data.openbudgets.eu/resource/codelist/oc-location-level> .
+
+
+
+# ------------------------------------
+# ----- Location Elevation Type ------
+# ------------------------------------
+
+<http://data.openbudgets.eu/resource/codelist/oc-location-elevation-type> a <http://www.w3.org/2004/02/skos/core#ConceptScheme> ;
+	<http://www.w3.org/2000/01/rdf-schema#comment> "Division of the national territory into homogeneous areas resulting from the aggregation of contiguous municipalities on the basis of ​​elevation threshold values. Three elevations are distinguished, mountain zones, hill zones and plain zones. The mountain and hill areas have been further divided in the altitude zones of inland mountains and inland hills and coastal mountains and coastal hills to take account of the action of the sea moderating the climate. For further information please consult the ISTAT publication 'Circoscrizioni statistiche' (= districts statistics) - methods and standards, Series C, No. 1 August 1958."@en ,
+	"Ripartizione del territorio nazionale in zone omogenee derivanti dall'aggregazione di comuni contigui sulla base di valori soglia altimetrici. Si distinguono zone altimetriche di montagna, di collina e di pianura. Le zone altimetriche di montagna e di collina sono state divise, per tener conto dell'azione moderatrice del mare sul clima, rispettivamente, in zone altimetriche di montagna interna e collina interna e di montagna litoranea e collina litoranea, comprendendo in queste ultime i territori, esclusi dalla zona di pianura, bagnati dal mare o in prossimità di esso. Per maggiori approfondimenti si consulti la pubblicazione Istat 'Circoscrizioni statistiche' - metodi e norme, serie C, n. 1, agosto 1958."@it ;
+	<http://www.w3.org/2000/01/rdf-schema#label> "Location elevation type"@en, "Zona altimetrica"@it, "Höhenlage" ;
+<http://www.w3.org/2004/02/skos/core#hasTopConcept> <http://data.openbudgets.eu/resource/codelist/oc-location-elevation-type/1>, <http://data.openbudgets.eu/resource/codelist/oc-location-elevation-type/2>, <http://data.openbudgets.eu/resource/codelist/oc-location-elevation-type/3>, <http://data.openbudgets.eu/resource/codelist/oc-location-elevation-type/4>, <http://data.openbudgets.eu/resource/codelist/oc-location-elevation-type/5>.
+
+<http://data.openbudgets.eu/resource/codelist/oc-location-elevation-type/1> a <http://www.w3.org/2004/02/skos/core#Concept> ;
+	<http://www.w3.org/2004/02/skos/core#notation> "1" ;
+	<http://www.w3.org/2004/02/skos/core#prefLabel> "Inland mountain"@en, "Montagna interna"@it, "Gebirge Inland"@de ;
+	<http://www.w3.org/2004/02/skos/core#topConceptOf> <http://data.openbudgets.eu/resource/codelist/oc-location-elevation-type> .
+
+<http://data.openbudgets.eu/resource/codelist/oc-location-elevation-type/2> a <http://www.w3.org/2004/02/skos/core#Concept> ;
+	<http://www.w3.org/2004/02/skos/core#notation> "2" ;
+	<http://www.w3.org/2004/02/skos/core#prefLabel> "Coastal mountain"@en, "Montagna litoranea"@it, "Gebirge Küste"@de ;
+	<http://www.w3.org/2004/02/skos/core#topConceptOf> <http://data.openbudgets.eu/resource/codelist/oc-location-elevation-type> .
+
+<http://data.openbudgets.eu/resource/codelist/oc-location-elevation-type/3> a <http://www.w3.org/2004/02/skos/core#Concept> ;
+	<http://www.w3.org/2004/02/skos/core#notation> "3" ;
+	<http://www.w3.org/2004/02/skos/core#prefLabel> "Inland hill"@en, "Collina interna"@it, "Gebirge Inland"@de ;
+	<http://www.w3.org/2004/02/skos/core#topConceptOf> <http://data.openbudgets.eu/resource/codelist/oc-location-elevation-type> .
+
+<http://data.openbudgets.eu/resource/codelist/oc-location-elevation-type/4> a <http://www.w3.org/2004/02/skos/core#Concept> ;
+	<http://www.w3.org/2004/02/skos/core#notation> "4" ;
+	<http://www.w3.org/2004/02/skos/core#prefLabel> "Coastal hill"@en, "Collina litoranea"@it, "Gebirge Küste"@de ;
+	<http://www.w3.org/2004/02/skos/core#topConceptOf> <http://data.openbudgets.eu/resource/codelist/oc-location-elevation-type> .
+
+<http://data.openbudgets.eu/resource/codelist/oc-location-elevation-type/5> a <http://www.w3.org/2004/02/skos/core#Concept> ;
+	<http://www.w3.org/2004/02/skos/core#notation> "5" ;
+	<http://www.w3.org/2004/02/skos/core#prefLabel> "Plain"@en, "Pianura"@it, "Flachland"@de ;
+	<http://www.w3.org/2004/02/skos/core#topConceptOf> <http://data.openbudgets.eu/resource/codelist/oc-location-elevation-type> .
 
 
 
