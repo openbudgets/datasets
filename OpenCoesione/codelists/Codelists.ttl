@@ -69,8 +69,8 @@
 # --------------------------
 
 <http://data.openbudgets.eu/resource/codelist/oc-project-status> a <http://www.w3.org/2004/02/skos/core#ConceptScheme> ;
-	<http://www.w3.org/2000/01/rdf-schema#comment> "Project status of the EU funded projects listed in the Italien OpenCoesione dataset."@en , "Stato dell'avanzamento del progetto, basato sulla combinazione dell'avanzamento finanziario e dell'effettiva conclusione della fase esecutiva."@it ;
-	<http://www.w3.org/2000/01/rdf-schema#label> "OpenCoesione project status"@en ;
+	<http://www.w3.org/2000/01/rdf-schema#comment> "Project status of the EU funded projects listed in the Italien OpenCoesione dataset, based on the financial progress and the effective completion of the implementation phase."@en , "Stato dell'avanzamento del progetto, basato sulla combinazione dell'avanzamento finanziario e dell'effettiva conclusione della fase esecutiva."@it, "Projektstatus der in im OpenCoesione-Datensatz aufgeführten Projekt"@de ;
+	<http://www.w3.org/2000/01/rdf-schema#label> "OpenCoesione project status"@en, "OpenCoesione stato dell'avanzamento del progetto"@it, "OpenCoesione Projektstatus"@de ;
 <http://www.w3.org/2004/02/skos/core#hasTopConcept> <http://data.openbudgets.eu/resource/codelist/oc-project-status/concluded>, <http://data.openbudgets.eu/resource/codelist/oc-project-status/notStarted>, <http://data.openbudgets.eu/resource/codelist/oc-project-status/inProgress>, <http://data.openbudgets.eu/resource/codelist/oc-project-status/liquidated>, <http://data.openbudgets.eu/resource/codelist/oc-project-status/notApplicable> .
 
 <http://data.openbudgets.eu/resource/codelist/oc-project-status/concluded> a <http://www.w3.org/2004/02/skos/core#Concept> ;
@@ -111,7 +111,7 @@
 
 <http://data.openbudgets.eu/resource/codelist/oc-project-activation-procedure-type> a <http://www.w3.org/2004/02/skos/core#ConceptScheme> ;
 	<http://www.w3.org/2000/01/rdf-schema#comment> "Project activation procedure type of the EU funded projects listed in the Italien OpenCoesione dataset."@en , "Le tipologie di procedure di attivazione dei progetti possono essere: bando, circolare, avviso pubblico, procedura negoziale, individuazione diretta nel programma, completamento programmi 2000-2006, altro."@it ;
-	<http://www.w3.org/2000/01/rdf-schema#label> "OpenCoesione project activation procedure type"@en ;
+	<http://www.w3.org/2000/01/rdf-schema#label> "OpenCoesione project activation procedure type"@en, "Le tipologie di procedure di attivazione dei progetti"@it;
 <http://www.w3.org/2004/02/skos/core#hasTopConcept> <http://data.openbudgets.eu/resource/codelist/oc-project-activation-procedure-type/1>, <http://data.openbudgets.eu/resource/codelist/oc-project-activation-procedure-type/2>, <http://data.openbudgets.eu/resource/codelist/oc-project-activation-procedure-type/3>, <http://data.openbudgets.eu/resource/codelist/oc-project-activation-procedure-type/4>, <http://data.openbudgets.eu/resource/codelist/oc-project-activation-procedure-type/5>, <http://data.openbudgets.eu/resource/codelist/oc-project-activation-procedure-type/6>, <http://data.openbudgets.eu/resource/codelist/oc-project-activation-procedure-type/7>, <http://data.openbudgets.eu/resource/codelist/oc-project-activation-procedure-type/8>, <http://data.openbudgets.eu/resource/codelist/oc-project-activation-procedure-type/99> .
 
 <http://data.openbudgets.eu/resource/codelist/oc-project-activation-procedure-type/1> a <http://www.w3.org/2004/02/skos/core#Concept> ;
@@ -136,7 +136,7 @@
 	
 <http://data.openbudgets.eu/resource/codelist/oc-project-activation-procedure-type/5> a <http://www.w3.org/2004/02/skos/core#Concept> ;
 	<http://www.w3.org/2004/02/skos/core#notation> "5" ;
-	<http://www.w3.org/2004/02/skos/core#prefLabel> "Direct individualization in the programm"@en, "Individuazione diretta nel Programma"@it, "Direkte Individualisierung im Programm"@de ;
+	<http://www.w3.org/2004/02/skos/core#prefLabel> "Direct individualization in the programme"@en, "Individuazione diretta nel Programma"@it, "Direkte Individualisierung im Programm"@de ;
 	<http://www.w3.org/2004/02/skos/core#topConceptOf> <http://data.openbudgets.eu/resource/codelist/oc-project-activation-procedure-type> .
 	
 <http://data.openbudgets.eu/resource/codelist/oc-project-activation-procedure-type/6> a <http://www.w3.org/2004/02/skos/core#Concept> ;
@@ -203,8 +203,7 @@
 # ------------------------------------
 
 <http://data.openbudgets.eu/resource/codelist/oc-location-elevation-type> a <http://www.w3.org/2004/02/skos/core#ConceptScheme> ;
-	<http://www.w3.org/2000/01/rdf-schema#comment> "Division of the national territory into homogeneous areas resulting from the aggregation of contiguous municipalities on the basis of ​​elevation threshold values. Three elevations are distinguished, mountain zones, hill zones and plain zones. The mountain and hill areas have been further divided in the altitude zones of inland mountains and inland hills and coastal mountains and coastal hills to take account of the action of the sea moderating the climate. For further information please consult the ISTAT publication 'Circoscrizioni statistiche' (= districts statistics) - methods and standards, Series C, No. 1 August 1958."@en ,
-	"Ripartizione del territorio nazionale in zone omogenee derivanti dall'aggregazione di comuni contigui sulla base di valori soglia altimetrici. Si distinguono zone altimetriche di montagna, di collina e di pianura. Le zone altimetriche di montagna e di collina sono state divise, per tener conto dell'azione moderatrice del mare sul clima, rispettivamente, in zone altimetriche di montagna interna e collina interna e di montagna litoranea e collina litoranea, comprendendo in queste ultime i territori, esclusi dalla zona di pianura, bagnati dal mare o in prossimità di esso. Per maggiori approfondimenti si consulti la pubblicazione Istat 'Circoscrizioni statistiche' - metodi e norme, serie C, n. 1, agosto 1958."@it ;
+	<http://www.w3.org/2000/01/rdf-schema#comment> "Division of the national territory into homogeneous areas resulting from the aggregation of contiguous municipalities on the basis of ​​elevation threshold values. Three elevations are distinguished, mountain zones, hill zones and plain zones. The mountain and hill areas have been further divided in the altitude zones of inland mountains and inland hills and coastal mountains and coastal hills to take account of the action of the sea moderating the climate. For further information please consult the ISTAT publication 'Circoscrizioni statistiche' (= districts statistics) - methods and standards, Series C, No. 1 August 1958."@en ,	"Ripartizione del territorio nazionale in zone omogenee derivanti dall'aggregazione di comuni contigui sulla base di valori soglia altimetrici. Si distinguono zone altimetriche di montagna, di collina e di pianura. Le zone altimetriche di montagna e di collina sono state divise, per tener conto dell'azione moderatrice del mare sul clima, rispettivamente, in zone altimetriche di montagna interna e collina interna e di montagna litoranea e collina litoranea, comprendendo in queste ultime i territori, esclusi dalla zona di pianura, bagnati dal mare o in prossimità di esso. Per maggiori approfondimenti si consulti la pubblicazione Istat 'Circoscrizioni statistiche' - metodi e norme, serie C, n. 1, agosto 1958."@it ;
 	<http://www.w3.org/2000/01/rdf-schema#label> "Location elevation type"@en, "Zona altimetrica"@it, "Höhenlage" ;
 <http://www.w3.org/2004/02/skos/core#hasTopConcept> <http://data.openbudgets.eu/resource/codelist/oc-location-elevation-type/1>, <http://data.openbudgets.eu/resource/codelist/oc-location-elevation-type/2>, <http://data.openbudgets.eu/resource/codelist/oc-location-elevation-type/3>, <http://data.openbudgets.eu/resource/codelist/oc-location-elevation-type/4>, <http://data.openbudgets.eu/resource/codelist/oc-location-elevation-type/5>.
 
@@ -241,7 +240,7 @@
 
 <http://data.openbudgets.eu/resource/codelist/oc-entity-size> a <http://www.w3.org/2004/02/skos/core#ConceptScheme> ;
 	<http://www.w3.org/2000/01/rdf-schema#comment> "Categorization of an entity's size listed in the Italien OpenCoesione dataset into micro, small, medium, and large."@en , "Articolazione della classe di dimensione delle imprese in 4 modalità: micro/piccola/media/grande impresa."@it ;
-	<http://www.w3.org/2000/01/rdf-schema#label> "Entity size (categorization)"@en ;
+	<http://www.w3.org/2000/01/rdf-schema#label> "Entity size (categorization)"@en, "Dimensione delle imprese"@it ;
 <http://www.w3.org/2004/02/skos/core#hasTopConcept> <http://data.openbudgets.eu/resource/codelist/oc-entity-size/1>, <http://data.openbudgets.eu/resource/codelist/oc-entity-size/2>, <http://data.openbudgets.eu/resource/codelist/oc-entity-size/3>, <http://data.openbudgets.eu/resource/codelist/oc-entity-size/4>.
 
 <http://data.openbudgets.eu/resource/codelist/oc-entity-size/1> a <http://www.w3.org/2004/02/skos/core#Concept> ;

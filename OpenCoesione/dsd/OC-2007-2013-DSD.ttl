@@ -43,8 +43,6 @@
                  qb:componentAttachment qb:Slice ],
                [ qb:dimension oc-dimension:OCprogrammeClassification ;
                  qb:componentAttachment qb:Slice ],
-               [ qb:dimension oc-dimension:programmeClassification ;
-                 qb:componentAttachment qb:Slice ],
                [ qb:dimension oc-dimension:CUPeconomicClassification ;
                  qb:componentAttachment qb:Slice ],
                [ qb:dimension oc-dimension:ATECOeconomicClassification ;
@@ -75,7 +73,6 @@ oc-dsd-slice:slice-by-project a qb:SliceKey ;
     qb:componentProperty oc-dimension:EUfunctionalClassification ;
     qb:componentProperty oc-dimension:OCfunctionalClassification ;
     qb:componentProperty oc-dimension:OCprogrammeClassification ;
-    qb:componentProperty oc-dimension:programmeClassification ;
     qb:componentProperty oc-dimension:CUPeconomicClassification ;
     qb:componentProperty oc-dimension:ATECOeconomicClassification ;
     qb:componentProperty oc-dimension:CUPadministrativeClassification ;
@@ -89,15 +86,15 @@ oc-dimension:QSNfunctionalClassification a rdf:Property, qb:CodedProperty, qb:Di
   rdfs:comment "The functional classification according to QSN (Quadro Strategico Nazionale = National Strategic Framework) is hierarchically structured in three levels, priorities, general objectives, and specific objectives."@en ;
   rdfs:subPropertyOf obeu-dimension:functionalClassification ;
   rdfs:range skos:Concept ;
-  qb:codeList <http://data.openbudgets.eu/resource/codelist/qsn-functional-class> ;
+  qb:codeList <http://data.openbudgets.eu/resource/codelist/oc-qsn-functional-class> ;
   rdfs:isDefinedBy <http://data.openbudgets.eu/ontology/dsd/oc-2007-2013> .
   
- oc-dimension:EUfunctionalClassification a rdf:Property, qb:CodedProperty, qb:DimensionProperty;
+oc-dimension:EUfunctionalClassification a rdf:Property, qb:CodedProperty, qb:DimensionProperty;
   rdfs:label "Functional classification according to EU priorities"@en ;
   rdfs:comment "The EU functional classification is defined by EU Regulation 1828/2006 and provides 86 entries that describe the sectoral categories of expenditure of the projects."@en ;
   rdfs:subPropertyOf obeu-dimension:functionalClassification ;
   rdfs:range skos:Concept ;
-  qb:codeList <http://data.openbudgets.eu/resource/codelist/eu-functional-class> ;
+  qb:codeList <http://data.openbudgets.eu/resource/codelist/oc-eu-functional-class> ;
   rdfs:isDefinedBy <http://data.openbudgets.eu/ontology/dsd/oc-2007-2013> .
   
 oc-dimension:OCfunctionalClassification a rdf:Property, qb:CodedProperty, qb:DimensionProperty;
@@ -110,34 +107,26 @@ oc-dimension:OCfunctionalClassification a rdf:Property, qb:CodedProperty, qb:Dim
   
 oc-dimension:OCprogrammeClassification a rdf:Property, qb:CodedProperty, qb:DimensionProperty;
   rdfs:label "Programme classification"@en ;
-  rdfs:comment "The programme classification is hierarchically structured in two levels, funds and programmes."@en ;
+  rdfs:comment "The programme classification is hierarchically structured in three levels, programmes, lines and actions. Each programme is associated with a fund and a target area."@en ;
   rdfs:subPropertyOf obeu-dimension:programmeClassification ;
   rdfs:range skos:Concept ;
-  qb:codeList <http://data.openbudgets.eu/resource/codelist/oc-programme-class-a> ;
-  rdfs:isDefinedBy <http://data.openbudgets.eu/ontology/dsd/oc-2007-2013> .    
-  
-oc-dimension:programmeClassification a rdf:Property, qb:CodedProperty, qb:DimensionProperty;
-  rdfs:label "Programme classification"@en ;
-  rdfs:comment "For the structural fund, the programmes are hierarchically structured into axes and objectives, for the development and cohesion fund the programmes are hierarchically structured into lines and actions."@en ;
-  rdfs:subPropertyOf obeu-dimension:programmeClassification ;
-  rdfs:range skos:Concept ;
-  qb:codeList <http://data.openbudgets.eu/resource/codelist/oc-programme-class-b> ;
-  rdfs:isDefinedBy <http://data.openbudgets.eu/ontology/dsd/oc-2007-2013> .    
+  qb:codeList <http://data.openbudgets.eu/resource/codelist/oc-programme-class> ;
+  rdfs:isDefinedBy <http://data.openbudgets.eu/ontology/dsd/oc-2007-2013> .     
 
 oc-dimension:CUPeconomicClassification a rdf:Property, qb:CodedProperty, qb:DimensionProperty;
   rdfs:label "Economic classification according to CUP"@en ;
   rdfs:comment "The CUP (Codice Unico di Progetto) system classifies the projects hierarchically in nature and type."@en ;
   rdfs:subPropertyOf obeu-dimension:economicClassification ;
   rdfs:range skos:Concept ;
-  qb:codeList <http://data.openbudgets.eu/resource/codelist/cup-economic-class> ;
+  qb:codeList <http://data.openbudgets.eu/resource/codelist/oc-cup-economic-class> ;
   rdfs:isDefinedBy <http://data.openbudgets.eu/ontology/dsd/oc-2007-2013> .  
 
 oc-dimension:ATECOeconomicClassification a rdf:Property, qb:CodedProperty, qb:DimensionProperty;
   rdfs:label "Economic classification according to ATECO"@en ;
-  rdfs:comment "ATECO (attività economiche = economic activities) is the national version of the European nomenclature, Nace Rev. 2, published in the Official Journal of 20 December 2006 (Regulation (EC) no 1893/2006 of the European Parliament and of the Council of 20 December 2006). The classification is structrued hierarchically in five levels."@en ;
+  rdfs:comment "ATECO (attività economiche = economic activities) is the national version of the European nomenclature, Nace Rev. 2, published in the Official Journal of 20 December 2006 (Regulation (EC) no 1893/2006 of the European Parliament and of the Council of 20 December 2006). The classification is structrued hierarchically in six levels, section, division, group, class, category, and subcategory ."@en ;
   rdfs:subPropertyOf obeu-dimension:economicClassification ;
   rdfs:range skos:Concept ;
-  qb:codeList <http://data.openbudgets.eu/resource/codelist/ateco-class> ;
+  qb:codeList <http://data.openbudgets.eu/resource/codelist/oc-ateco> ;
   rdfs:isDefinedBy <http://data.openbudgets.eu/ontology/dsd/oc-2007-2013> .  
 
 oc-dimension:CUPadministrativeClassification a rdf:Property, qb:CodedProperty, qb:DimensionProperty;
@@ -145,12 +134,12 @@ oc-dimension:CUPadministrativeClassification a rdf:Property, qb:CodedProperty, q
   rdfs:comment "The CUP (Codice Unico di Progetto) system classifies the projects hierarchically in sectors, subsectors and categories."@en ;
   rdfs:subPropertyOf obeu-dimension:administrativeClassification ;
   rdfs:range skos:Concept ;
-  qb:codeList <http://data.openbudgets.eu/resource/codelist/cup-admin-class> ;
+  qb:codeList <http://data.openbudgets.eu/resource/codelist/oc-cup-admin-class> ;
   rdfs:isDefinedBy <http://data.openbudgets.eu/ontology/dsd/oc-2007-2013> .  
   
 oc-measure:amountTotal a rdf:Property, qb:MeasureProperty ;
   rdfs:label "Amount Total"@en ;
-  rdfs:comment "Total payment of the transaction."@en ;
+  rdfs:comment "Total payment of the transaction. (Caution: amountTotal != amountEU + amountNational)"@en ;
   rdfs:subPropertyOf obeu-measure:amount ;
   rdfs:isDefinedBy <http://data.openbudgets.eu/ontology/dsd/oc-2007-2013> .    
   

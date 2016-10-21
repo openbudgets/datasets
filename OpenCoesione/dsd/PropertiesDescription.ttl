@@ -1,0 +1,86 @@
+# ----- Generic namespaces ------
+
+@prefix foaf:             <http://xmlns.com/foaf/0.1/> .
+@prefix org:              <http://www.w3.org/ns/org#> .
+@prefix qb:               <http://purl.org/linked-data/cube#> .
+@prefix rdf:              <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rov:              <http://www.w3.org/ns/regorg#> .
+@prefix rdfs:             <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:             <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd:              <http://www.w3.org/2001/XMLSchema#> .
+	
+
+# ----- Properties description -----
+
+# ----- Projects -----
+
+<http://data.openbudgets.eu/resource/oc-2007-2013/projectStatus> a rdf:Property, qb:CodedProperty ;
+  rdfs:label "Project status"@en, "Stato dell'avanzamento del progetto"@it ;
+  rdfs:comment "Project status, based on the financial progress and the effective completion of the implementation phase."@en, "Stato dell'avanzamento del progetto, basato sulla combinazione dell'avanzamento finanziario e dell'effettiva conclusione della fase esecutiva."@it ;
+  rdfs:domain foaf:Project ;
+  rdfs:range skos:Concept ;
+  qb:codeList <http://data.openbudgets.eu/resource/codelist/oc-project-status> .
+  
+<http://data.openbudgets.eu/resource/oc-2007-2013/activationProcedure> a rdf:Property, qb:CodedProperty ;
+  rdfs:label "Activation procedure of a project"@en, "Procedure di attivazione dei progetti"@it ;
+  rdfs:comment "The activation procedure of a project relates to all the administrative activities undertaken by the administrations of resources to the identification of beneficiaries and operations to be carried."@en, "La procedura di attivazione attiene all'insieme delle attività amministrative poste in essere dalle Amministrazioni titolari di risorse al fine dell'individuazione dei beneficiari e delle operazioni da realizzare"@it ;
+  rdfs:domain foaf:Project ;
+  rdfs:range skos:Concept ;
+  qb:codeList <http://data.openbudgets.eu/resource/codelist/oc-project-activation-procedure> .
+  
+<http://data.openbudgets.eu/resource/oc-2007-2013/activationProcedureType> a rdf:Property, qb:CodedProperty ;
+  rdfs:label "Type of the activation procedure"@en, "Le tipologie di procedure di attivazione dei progetti"@it ;
+  rdfs:comment "The types of projects activation procedures can be: tender, circular, public notice, negotiating procedure, direct individualization in the programme, completion of a 2000-2006 project, etc."@en, "Le tipologie di procedure di attivazione dei progetti possono essere: bando, circolare, avviso pubblico, procedura negoziale, individuazione diretta nel programma, completamento programmi 2000-2006, altro."@it ;
+  rdfs:domain skos:Concept ;  
+  rdfs:range skos:Concept ;
+  qb:codeList <http://data.openbudgets.eu/resource/codelist/oc-project-activation-procedure-type> .  
+  
+	
+# ----- Entities -----
+
+<http://data.openbudgets.eu/resource/dataset/oc-2007-2013/legalStatus> a rdf:Property, qb:CodedProperty ;
+  rdfs:label "Legal status of the entity"@en, "Forma giuridica del soggetto"@it, "Rechtliche Stellung"@de ;
+  rdfs:comment "ISTAT classification of the legal status of entities listed in the OpenCoesione dataset. The code list is hierarchically structured in three levels."@en, "Classificazione ISTAT della forma giuridica del soggetto. La descrizione della forma giuridica può essere, ad esempio: Regione, Provincia, Comune, Società per azioni, ecc."@it , "ISTAT Klassifizierung der rechtlichen Stellung von Entitäten im OpenCoesione-Datensatz. z.B. Region, Stiftung, GmbH, AG, ... . Die Codeliste ist hierarchisch in drei Ebenen gegliedert."@de ;
+  rdfs:subPropertyOf rov:orgType ;
+  rdfs:domain org:Organization ;
+  rdfs:range skos:Concept ;
+  qb:codeList <http://data.openbudgets.eu/resource/codelist/oc-legal-status> .
+  
+  <http://data.openbudgets.eu/resource/dataset/oc-2007-2013/entitySize> a rdf:Property, qb:CodedProperty ;
+  rdfs:label "Size of the entity"@en, "Dimensione delle imprese"@it ;
+  rdfs:comment "Categorization of an entity's size into micro, small, medium, and large."@en , "Articolazione della classe di dimensione delle imprese in 4 modalità: micro/piccola/media/grande impresa."@it ;
+  rdfs:domain org:Organization ;
+  rdfs:range skos:Concept ;
+  qb:codeList <http://data.openbudgets.eu/resource/codelist/oc-entity-size> .
+
+# ----- Locations -----
+
+<http://data.openbudgets.eu/resource/dataset/oc-2007-2013/locationLevel> a rdf:Property, qb:CodedProperty ;
+  rdfs:label "Level of the location"@en, "Livello territoriale della localizzazione"@it ;
+  rdfs:comment "The level of a location is either abroad, national, regional, provicial, or municipal."@en, "Indica il livello di dettaglio territoriale di ciascuna localizzazione associata ad un progetto. Si articola nelle seguenti 5 modalità: estero, nazionale, regionale, provinciale, comunale."@it ;
+  rdfs:domain skos:Concept ;  
+  rdfs:range skos:Concept ;
+  qb:codeList <http://data.openbudgets.eu/resource/codelist/oc-location-level> .
+
+<http://data.openbudgets.eu/resource/dataset/oc-2007-2013/locationElevationType> a rdf:Property, qb:CodedProperty ;
+  rdfs:label "Elevation type of the location"@en, "Zona altimetrica della localizzazione"@it ;
+  rdfs:comment "The national territory is divided into three elevation levels (mountain, hill, plain) and distinguishes between inland and coastal areas."@en, "Ripartizione del territorio nazionale in zone omogenee derivanti dall'aggregazione di comuni contigui sulla base di valori soglia altimetrici. Si distinguono zone altimetriche di montagna, di collina e di pianura. Le zone altimetriche di montagna e di collina sono state divise, per tener conto dell'azione moderatrice del mare sul clima, rispettivamente, in zone altimetriche di montagna interna e collina interna e di montagna litoranea e collina litoranea."@it ;
+  rdfs:domain skos:Concept ; 
+  rdfs:range skos:Concept ;
+  qb:codeList <http://data.openbudgets.eu/resource/codelist/oc-location-elevation-type> .
+
+# ----- Programme classification -----
+  
+<http://data.openbudgets.eu/resource/oc-2007-2013/fund> a rdf:Property, qb:CodedProperty ;
+  rdfs:label "Fund of the programme"@en, "Fondo della programma"@it ;
+  rdfs:comment "Provides the EU fund related to the programme. The dataset contains information about two funds: European Regional Development Fund (ERDF) and European Social Fund (ESF)."@en, "Fondi Strutturali Comunitari sono gli strumenti finanziari a disposizione dell'UE per cofinanziare iniziative della politica regionale nei Paesi membri. La politica di coesione è sostenuta dai Fondi Strutturali Comunitari che per l'Italia, nella programmazione 2007-2013, si articolano in: 1. Fondo Europeo per lo Sviluppo Regionale (FESR): destinato alla promozione della coesione economica e sociale attraverso la correzione dei principali squilibri regionali; 2. Fondo Sociale Europeo (FSE): destinato a sostenere l’occupazione negli Stati membri e per promuovere la coesione economica e sociale."@it ;
+  rdfs:domain skos:Concept ;   
+  rdfs:range skos:Concept ;
+  qb:codeList <http://data.openbudgets.eu/resource/codelist/oc-fund> .
+  
+<http://data.openbudgets.eu/resource/oc-2007-2013/targetArea> a rdf:Property, qb:CodedProperty ;
+  rdfs:label "Target area of the programme"@en, "Area obiettivo della programma"@it ;
+  rdfs:comment "Provides the target area related to the programme. In the 2007-2013, the target areas are: convergence (lagging regions), competitiveness (all except the regions of convergence), and european territorial cooperation (cross-border territories, transnational and interregional)."@en, "Il territorio dell'Unione Europea è interessato da più aree obiettivo della politica di coesione, ciascuna delle quali individua regioni ammissibili a diverse tipologie di finanziamento. Nella programmazione 2007-2013, le aree obiettivo sono: Convergenza (regioni in ritardo di sviluppo), Competitività (tutte le regioni ad eccezione di quelle della Convergenza), Cooperazione territoriale europea (territori transfrontalieri, transnazionali ed interregionali)."@it ;
+  rdfs:domain skos:Concept ;   
+  rdfs:range skos:Concept ;
+  qb:codeList <http://data.openbudgets.eu/resource/codelist/oc-target-area> .
