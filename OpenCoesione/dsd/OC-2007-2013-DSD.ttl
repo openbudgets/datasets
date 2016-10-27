@@ -17,8 +17,11 @@
 @prefix qb:               <http://purl.org/linked-data/cube#> .
 @prefix rdf:              <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs:             <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema:           <https://schema.org/> .
+@prefix sdmx-concept:     <http://purl.org/linked-data/sdmx/2009/concept#> .
 @prefix skos:             <http://www.w3.org/2004/02/skos/core#> .
 @prefix xsd:              <http://www.w3.org/2001/XMLSchema#> .
+
 
 # ----- DSD -----
 
@@ -48,12 +51,12 @@
                [ qb:dimension oc-dimension:ATECOeconomicClassification ;
                  qb:componentAttachment qb:Slice ],
                [ qb:dimension oc-dimension:CUPadministrativeClassification ;
-                 qb:componentAttachment qb:Slice ],               
+                 qb:componentAttachment qb:Slice ],
+               [ qb:attribute oc-dimension:location ;
+                 qb:componentAttachment qb:Slice ],                  
                [ qb:attribute obeu-attribute:currency ;
                  qb:componentRequired true ;
-                 qb:componentAttachment qb:DataSet ],
-               [ qb:attribute obeu-attribute:location ;
-                 qb:componentAttachment qb:Slice ],  
+                 qb:componentAttachment qb:DataSet ], 
                [ qb:measure oc-measure:amountTotal ],
                [ qb:measure oc-measure:amountEU ],
                [ qb:measure oc-measure:amountNational ];
@@ -76,7 +79,7 @@ oc-dsd-slice:slice-by-project a qb:SliceKey ;
     qb:componentProperty oc-dimension:CUPeconomicClassification ;
     qb:componentProperty oc-dimension:ATECOeconomicClassification ;
     qb:componentProperty oc-dimension:CUPadministrativeClassification ;
-    qb:componentProperty obeu-attribute:location .
+    qb:componentProperty oc-dimension:location .
 	
 
 # ----- Component properties -----
@@ -136,6 +139,13 @@ oc-dimension:CUPadministrativeClassification a rdf:Property, qb:CodedProperty, q
   rdfs:range skos:Concept ;
   qb:codeList <http://data.openbudgets.eu/resource/codelist/oc-cup-admin-class> ;
   rdfs:isDefinedBy <http://data.openbudgets.eu/ontology/dsd/oc-2007-2013> .  
+  
+oc-dimension:location a rdf:Property, qb:DimensionProperty;
+  rdfs:label "Location"@en ;
+  rdfs:comment "Location associated with a payment."@en ;
+  rdfs:range schema:Place ;  
+  qb:concept sdmx-concept:refArea ;
+  rdfs:isDefinedBy <http://data.openbudgets.eu/ontology/dsd/oc-2007-2013> .
   
 oc-measure:amountTotal a rdf:Property, qb:MeasureProperty ;
   rdfs:label "Amount Total"@en ;
