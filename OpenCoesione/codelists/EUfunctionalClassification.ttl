@@ -1,0 +1,729 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix fn: <http://www.w3.org/2005/xpath-functions#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sesame: <http://www.openrdf.org/schema/sesame#> .
+
+<http://data.openbudgets.eu/resource/codelist/oc-eu-functional-class/01> a <http://www.w3.org/2004/02/skos/core#Concept> ;
+	<http://www.w3.org/2004/02/skos/core#broadMatch> <http://data.openbudgets.eu/resource/codelist/oc-functional-class/01> ;
+	<http://www.w3.org/2004/02/skos/core#broader> <http://data.openbudgets.eu/resource/codelist/oc-eu-functional-class/G01> ;
+	<http://www.w3.org/2004/02/skos/core#notation> "01" ;
+	<http://www.w3.org/2004/02/skos/core#prefLabel> "Attività di RST nei centri di ricerca"@it ;
+	<http://www.w3.org/2004/02/skos/core#inScheme> <http://data.openbudgets.eu/resource/codelist/oc-eu-functional-class> .
+
+<http://data.openbudgets.eu/resource/codelist/oc-eu-functional-class/02> a <http://www.w3.org/2004/02/skos/core#Concept> ;
+	<http://www.w3.org/2004/02/skos/core#broadMatch> <http://data.openbudgets.eu/resource/codelist/oc-functional-class/01> ;
+	<http://www.w3.org/2004/02/skos/core#broader> <http://data.openbudgets.eu/resource/codelist/oc-eu-functional-class/G01> ;
+	<http://www.w3.org/2004/02/skos/core#notation> "02" ;
+	<http://www.w3.org/2004/02/skos/core#prefLabel> "Infrastrutture di RST e centri di competenza in una tecnologia specifica"@it ;
+	<http://www.w3.org/2004/02/skos/core#inScheme> <http://data.openbudgets.eu/resource/codelist/oc-eu-functional-class> .
+
+<http://data.openbudgets.eu/resource/codelist/oc-eu-functional-class/03> a <http://www.w3.org/2004/02/skos/core#Concept> ;
+	<http://www.w3.org/2004/02/skos/core#broadMatch> <http://data.openbudgets.eu/resource/codelist/oc-functional-class/01> ;
+	<http://www.w3.org/2004/02/skos/core#broader> <http://data.openbudgets.eu/resource/codelist/oc-eu-functional-class/G01> ;
+	<http://www.w3.org/2004/02/skos/core#notation> "03" ;
+	<http://www.w3.org/2004/02/skos/core#prefLabel> "Trasferimento di tecnologie e miglioramento delle reti di cooperazione tra PMI"@it ;
+	<http://www.w3.org/2004/02/skos/core#inScheme> <http://data.openbudgets.eu/resource/codelist/oc-eu-functional-class> .
+
+<http://data.openbudgets.eu/resource/codelist/oc-eu-functional-class/04> a <http://www.w3.org/2004/02/skos/core#Concept> ;
+	<http://www.w3.org/2004/02/skos/core#broadMatch> <http://data.openbudgets.eu/resource/codelist/oc-functional-class/01> ;
+	<http://www.w3.org/2004/02/skos/core#broader> <http://data.openbudgets.eu/resource/codelist/oc-eu-functional-class/G01> ;
+	<http://www.w3.org/2004/02/skos/core#notation> "04" ;
+	<http://www.w3.org/2004/02/skos/core#prefLabel> "Assistenza alla RST, in particolare nelle PMI (incluso l'accesso ai servizi di RST nei centri di ricerca)"@it ;
+	<http://www.w3.org/2004/02/skos/core#inScheme> <http://data.openbudgets.eu/resource/codelist/oc-eu-functional-class> .
+
+<http://data.openbudgets.eu/resource/codelist/oc-eu-functional-class/05> a <http://www.w3.org/2004/02/skos/core#Concept> ;
+	<http://www.w3.org/2004/02/skos/core#broadMatch> <http://data.openbudgets.eu/resource/codelist/oc-functional-class/03> ;
+	<http://www.w3.org/2004/02/skos/core#broader> <http://data.openbudgets.eu/resource/codelist/oc-eu-functional-class/G01> ;
+	<http://www.w3.org/2004/02/skos/core#notation> "05" ;
+	<http://www.w3.org/2004/02/skos/core#prefLabel> "Servizi di sostegno avanzato per imprese e gruppi di imprese"@it ;
+	<http://www.w3.org/2004/02/skos/core#inScheme> <http://data.openbudgets.eu/resource/codelist/oc-eu-functional-class> .
+
+<http://data.openbudgets.eu/resource/codelist/oc-eu-functional-class/06> a <http://www.w3.org/2004/02/skos/core#Concept> ;
+	<http://www.w3.org/2004/02/skos/core#broadMatch> <http://data.openbudgets.eu/resource/codelist/oc-functional-class/01> ;
+	<http://www.w3.org/2004/02/skos/core#broader> <http://data.openbudgets.eu/resource/codelist/oc-eu-functional-class/G01> ;
+	<http://www.w3.org/2004/02/skos/core#notation> "06" ;
+	<http://www.w3.org/2004/02/skos/core#prefLabel> "Assistenza alle PMI nella promozione di prodotti e processi di produzione ecologici"@it ;
+	<http://www.w3.org/2004/02/skos/core#inScheme> <http://data.openbudgets.eu/resource/codelist/oc-eu-functional-class> .
+
+<http://data.openbudgets.eu/resource/codelist/oc-eu-functional-class/07> a <http://www.w3.org/2004/02/skos/core#Concept> ;
+	<http://www.w3.org/2004/02/skos/core#broadMatch> <http://data.openbudgets.eu/resource/codelist/oc-functional-class/01> ;
+	<http://www.w3.org/2004/02/skos/core#broader> <http://data.openbudgets.eu/resource/codelist/oc-eu-functional-class/G01> ;
+	<http://www.w3.org/2004/02/skos/core#notation> "07" ;
+	<http://www.w3.org/2004/02/skos/core#prefLabel> "Investimenti nelle imprese direttamente connesse alla ricerca e all'innovazione"@it ;
+	<http://www.w3.org/2004/02/skos/core#inScheme> <http://data.openbudgets.eu/resource/codelist/oc-eu-functional-class> .
+
+<http://data.openbudgets.eu/resource/codelist/oc-eu-functional-class/08> a <http://www.w3.org/2004/02/skos/core#Concept> ;
+	<http://www.w3.org/2004/02/skos/core#broadMatch> <http://data.openbudgets.eu/resource/codelist/oc-functional-class/03> ;
+	<http://www.w3.org/2004/02/skos/core#broader> <http://data.openbudgets.eu/resource/codelist/oc-eu-functional-class/G01> ;
+	<http://www.w3.org/2004/02/skos/core#notation> "08" ;
+	<http://www.w3.org/2004/02/skos/core#prefLabel> "Altre investimenti nelle imprese"@it ;
+	<http://www.w3.org/2004/02/skos/core#inScheme> <http://data.openbudgets.eu/resource/codelist/oc-eu-functional-class> .
+
+<http://data.openbudgets.eu/resource/codelist/oc-eu-functional-class/09> a <http://www.w3.org/2004/02/skos/core#Concept> ;
+	<http://www.w3.org/2004/02/skos/core#broadMatch> <http://data.openbudgets.eu/resource/codelist/oc-functional-class/01> ;
+	<http://www.w3.org/2004/02/skos/core#broader> <http://data.openbudgets.eu/resource/codelist/oc-eu-functional-class/G01> ;
+	<http://www.w3.org/2004/02/skos/core#notation> "09" ;
+	<http://www.w3.org/2004/02/skos/core#prefLabel> "Altre misure per stimolare la ricerca, l'innovazione e l'imprenditorialità nelle PMI"@it ;
+	<http://www.w3.org/2004/02/skos/core#inScheme> <http://data.openbudgets.eu/resource/codelist/oc-eu-functional-class> .
+
+<http://data.openbudgets.eu/resource/codelist/oc-eu-functional-class/10> a <http://www.w3.org/2004/02/skos/core#Concept> ;
+	<http://www.w3.org/2004/02/skos/core#broadMatch> <http://data.openbudgets.eu/resource/codelist/oc-functional-class/02> ;
+	<http://www.w3.org/2004/02/skos/core#broader> <http://data.openbudgets.eu/resource/codelist/oc-eu-functional-class/G02> ;
+	<http://www.w3.org/2004/02/skos/core#notation> "10" ;
+	<http://www.w3.org/2004/02/skos/core#prefLabel> "Infrastrutture telefoniche (incluse le reti a banda larga)"@it ;
+	<http://www.w3.org/2004/02/skos/core#inScheme> <http://data.openbudgets.eu/resource/codelist/oc-eu-functional-class> .
+
+<http://data.openbudgets.eu/resource/codelist/oc-eu-functional-class/11> a <http://www.w3.org/2004/02/skos/core#Concept> ;
+	<http://www.w3.org/2004/02/skos/core#broadMatch> <http://data.openbudgets.eu/resource/codelist/oc-functional-class/02> ;
+	<http://www.w3.org/2004/02/skos/core#broader> <http://data.openbudgets.eu/resource/codelist/oc-eu-functional-class/G02> ;
+	<http://www.w3.org/2004/02/skos/core#notation> "11" ;
+	<http://www.w3.org/2004/02/skos/core#prefLabel> "Tecnologie dell'informazione e della comunicazione (accesso, sicurezza, interoperabilità, prevenzione dei rischi, ricerca, innovazione)"@it ;
+	<http://www.w3.org/2004/02/skos/core#inScheme> <http://data.openbudgets.eu/resource/codelist/oc-eu-functional-class> .
+
+<http://data.openbudgets.eu/resource/codelist/oc-eu-functional-class/12> a <http://www.w3.org/2004/02/skos/core#Concept> ;
+	<http://www.w3.org/2004/02/skos/core#broadMatch> <http://data.openbudgets.eu/resource/codelist/oc-functional-class/02> ;
+	<http://www.w3.org/2004/02/skos/core#broader> <http://data.openbudgets.eu/resource/codelist/oc-eu-functional-class/G02> ;
+	<http://www.w3.org/2004/02/skos/core#notation> "12" ;
+	<http://www.w3.org/2004/02/skos/core#prefLabel> "Tecnologie dell'informazione e della comunicazione (TEN-ICT)"@it ;
+	<http://www.w3.org/2004/02/skos/core#inScheme> <http://data.openbudgets.eu/resource/codelist/oc-eu-functional-class> .
+
+<http://data.openbudgets.eu/resource/codelist/oc-eu-functional-class/13> a <http://www.w3.org/2004/02/skos/core#Concept> ;
+	<http://www.w3.org/2004/02/skos/core#broadMatch> <http://data.openbudgets.eu/resource/codelist/oc-functional-class/02> ;
+	<http://www.w3.org/2004/02/skos/core#broader> <http://data.openbudgets.eu/resource/codelist/oc-eu-functional-class/G02> ;
+	<http://www.w3.org/2004/02/skos/core#notation> "13" ;
+	<http://www.w3.org/2004/02/skos/core#prefLabel> "Servizi e applicazioni per i cittadini (sanità on-line, e-Governo, e-Learning, e-Inclusione, ecc.)"@it ;
+	<http://www.w3.org/2004/02/skos/core#inScheme> <http://data.openbudgets.eu/resource/codelist/oc-eu-functional-class> .
+
+<http://data.openbudgets.eu/resource/codelist/oc-eu-functional-class/14> a <http://www.w3.org/2004/02/skos/core#Concept> ;
+	<http://www.w3.org/2004/02/skos/core#broadMatch> <http://data.openbudgets.eu/resource/codelist/oc-functional-class/02> ;
+	<http://www.w3.org/2004/02/skos/core#broader> <http://data.openbudgets.eu/resource/codelist/oc-eu-functional-class/G02> ;
+	<http://www.w3.org/2004/02/skos/core#notation> "14" ;
+	<http://www.w3.org/2004/02/skos/core#prefLabel> "Servizi e applicazioni per le PMI  (e-Commercio, istruzione e formazione, reti, ecc.)"@it ;
+	<http://www.w3.org/2004/02/skos/core#inScheme> <http://data.openbudgets.eu/resource/codelist/oc-eu-functional-class> .
+
+<http://data.openbudgets.eu/resource/codelist/oc-eu-functional-class/15> a <http://www.w3.org/2004/02/skos/core#Concept> ;
+	<http://www.w3.org/2004/02/skos/core#broadMatch> <http://data.openbudgets.eu/resource/codelist/oc-functional-class/02> ;
+	<http://www.w3.org/2004/02/skos/core#broader> <http://data.openbudgets.eu/resource/codelist/oc-eu-functional-class/G02> ;
+	<http://www.w3.org/2004/02/skos/core#notation> "15" ;
+	<http://www.w3.org/2004/02/skos/core#prefLabel> "Altre misure per migliorare l'accesso e l'impiego efficiente delle TIC da parte delle PMI"@it ;
+	<http://www.w3.org/2004/02/skos/core#inScheme> <http://data.openbudgets.eu/resource/codelist/oc-eu-functional-class> .
+
+<http://data.openbudgets.eu/resource/codelist/oc-eu-functional-class/16> a <http://www.w3.org/2004/02/skos/core#Concept> ;
+	<http://www.w3.org/2004/02/skos/core#broadMatch> <http://data.openbudgets.eu/resource/codelist/oc-functional-class/07> ;
+	<http://www.w3.org/2004/02/skos/core#broader> <http://data.openbudgets.eu/resource/codelist/oc-eu-functional-class/G03> ;
+	<http://www.w3.org/2004/02/skos/core#notation> "16" ;
+	<http://www.w3.org/2004/02/skos/core#prefLabel> "Ferrovie"@it ;
+	<http://www.w3.org/2004/02/skos/core#inScheme> <http://data.openbudgets.eu/resource/codelist/oc-eu-functional-class> .
+
+<http://data.openbudgets.eu/resource/codelist/oc-eu-functional-class/17> a <http://www.w3.org/2004/02/skos/core#Concept> ;
+	<http://www.w3.org/2004/02/skos/core#broadMatch> <http://data.openbudgets.eu/resource/codelist/oc-functional-class/07> ;
+	<http://www.w3.org/2004/02/skos/core#broader> <http://data.openbudgets.eu/resource/codelist/oc-eu-functional-class/G03> ;
+	<http://www.w3.org/2004/02/skos/core#notation> "17" ;
+	<http://www.w3.org/2004/02/skos/core#prefLabel> "Ferrovie (TEN-T)"@it ;
+	<http://www.w3.org/2004/02/skos/core#inScheme> <http://data.openbudgets.eu/resource/codelist/oc-eu-functional-class> .
+
+<http://data.openbudgets.eu/resource/codelist/oc-eu-functional-class/18> a <http://www.w3.org/2004/02/skos/core#Concept> ;
+	<http://www.w3.org/2004/02/skos/core#broadMatch> <http://data.openbudgets.eu/resource/codelist/oc-functional-class/07> ;
+	<http://www.w3.org/2004/02/skos/core#broader> <http://data.openbudgets.eu/resource/codelist/oc-eu-functional-class/G03> ;
+	<http://www.w3.org/2004/02/skos/core#notation> "18" ;
+	<http://www.w3.org/2004/02/skos/core#prefLabel> "Beni mobili delle ferrovie"@it ;
+	<http://www.w3.org/2004/02/skos/core#inScheme> <http://data.openbudgets.eu/resource/codelist/oc-eu-functional-class> .
+
+<http://data.openbudgets.eu/resource/codelist/oc-eu-functional-class/19> a <http://www.w3.org/2004/02/skos/core#Concept> ;
+	<http://www.w3.org/2004/02/skos/core#broadMatch> <http://data.openbudgets.eu/resource/codelist/oc-functional-class/07> ;
+	<http://www.w3.org/2004/02/skos/core#broader> <http://data.openbudgets.eu/resource/codelist/oc-eu-functional-class/G03> ;
+	<http://www.w3.org/2004/02/skos/core#notation> "19" ;
+	<http://www.w3.org/2004/02/skos/core#prefLabel> "Beni mobili delle ferrovie (TEN-T)"@it ;
+	<http://www.w3.org/2004/02/skos/core#inScheme> <http://data.openbudgets.eu/resource/codelist/oc-eu-functional-class> .
+
+<http://data.openbudgets.eu/resource/codelist/oc-eu-functional-class/20> a <http://www.w3.org/2004/02/skos/core#Concept> ;
+	<http://www.w3.org/2004/02/skos/core#broadMatch> <http://data.openbudgets.eu/resource/codelist/oc-functional-class/07> ;
+	<http://www.w3.org/2004/02/skos/core#broader> <http://data.openbudgets.eu/resource/codelist/oc-eu-functional-class/G03> ;
+	<http://www.w3.org/2004/02/skos/core#notation> "20" ;
+	<http://www.w3.org/2004/02/skos/core#prefLabel> "Autostrade"@it ;
+	<http://www.w3.org/2004/02/skos/core#inScheme> <http://data.openbudgets.eu/resource/codelist/oc-eu-functional-class> .
+
+<http://data.openbudgets.eu/resource/codelist/oc-eu-functional-class/21> a <http://www.w3.org/2004/02/skos/core#Concept> ;
+	<http://www.w3.org/2004/02/skos/core#broadMatch> <http://data.openbudgets.eu/resource/codelist/oc-functional-class/07> ;
+	<http://www.w3.org/2004/02/skos/core#broader> <http://data.openbudgets.eu/resource/codelist/oc-eu-functional-class/G03> ;
+	<http://www.w3.org/2004/02/skos/core#notation> "21" ;
+	<http://www.w3.org/2004/02/skos/core#prefLabel> "Autostrade (TEN-T)"@it ;
+	<http://www.w3.org/2004/02/skos/core#inScheme> <http://data.openbudgets.eu/resource/codelist/oc-eu-functional-class> .
+
+<http://data.openbudgets.eu/resource/codelist/oc-eu-functional-class/22> a <http://www.w3.org/2004/02/skos/core#Concept> ;
+	<http://www.w3.org/2004/02/skos/core#broadMatch> <http://data.openbudgets.eu/resource/codelist/oc-functional-class/07> ;
+	<http://www.w3.org/2004/02/skos/core#broader> <http://data.openbudgets.eu/resource/codelist/oc-eu-functional-class/G03> ;
+	<http://www.w3.org/2004/02/skos/core#notation> "22" ;
+	<http://www.w3.org/2004/02/skos/core#prefLabel> "Strade nazionali"@it ;
+	<http://www.w3.org/2004/02/skos/core#inScheme> <http://data.openbudgets.eu/resource/codelist/oc-eu-functional-class> .
+
+<http://data.openbudgets.eu/resource/codelist/oc-eu-functional-class/23> a <http://www.w3.org/2004/02/skos/core#Concept> ;
+	<http://www.w3.org/2004/02/skos/core#broadMatch> <http://data.openbudgets.eu/resource/codelist/oc-functional-class/07> ;
+	<http://www.w3.org/2004/02/skos/core#broader> <http://data.openbudgets.eu/resource/codelist/oc-eu-functional-class/G03> ;
+	<http://www.w3.org/2004/02/skos/core#notation> "23" ;
+	<http://www.w3.org/2004/02/skos/core#prefLabel> "Strade regionali e locali"@it ;
+	<http://www.w3.org/2004/02/skos/core#inScheme> <http://data.openbudgets.eu/resource/codelist/oc-eu-functional-class> .
+
+<http://data.openbudgets.eu/resource/codelist/oc-eu-functional-class/24> a <http://www.w3.org/2004/02/skos/core#Concept> ;
+	<http://www.w3.org/2004/02/skos/core#broadMatch> <http://data.openbudgets.eu/resource/codelist/oc-functional-class/07> ;
+	<http://www.w3.org/2004/02/skos/core#broader> <http://data.openbudgets.eu/resource/codelist/oc-eu-functional-class/G03> ;
+	<http://www.w3.org/2004/02/skos/core#notation> "24" ;
+	<http://www.w3.org/2004/02/skos/core#prefLabel> "Piste ciclabili"@it ;
+	<http://www.w3.org/2004/02/skos/core#inScheme> <http://data.openbudgets.eu/resource/codelist/oc-eu-functional-class> .
+
+<http://data.openbudgets.eu/resource/codelist/oc-eu-functional-class/25> a <http://www.w3.org/2004/02/skos/core#Concept> ;
+	<http://www.w3.org/2004/02/skos/core#broadMatch> <http://data.openbudgets.eu/resource/codelist/oc-functional-class/07> ;
+	<http://www.w3.org/2004/02/skos/core#broader> <http://data.openbudgets.eu/resource/codelist/oc-eu-functional-class/G03> ;
+	<http://www.w3.org/2004/02/skos/core#notation> "25" ;
+	<http://www.w3.org/2004/02/skos/core#prefLabel> "Trasporti urbani"@it ;
+	<http://www.w3.org/2004/02/skos/core#inScheme> <http://data.openbudgets.eu/resource/codelist/oc-eu-functional-class> .
+
+<http://data.openbudgets.eu/resource/codelist/oc-eu-functional-class/26> a <http://www.w3.org/2004/02/skos/core#Concept> ;
+	<http://www.w3.org/2004/02/skos/core#broadMatch> <http://data.openbudgets.eu/resource/codelist/oc-functional-class/07> ;
+	<http://www.w3.org/2004/02/skos/core#broader> <http://data.openbudgets.eu/resource/codelist/oc-eu-functional-class/G03> ;
+	<http://www.w3.org/2004/02/skos/core#notation> "26" ;
+	<http://www.w3.org/2004/02/skos/core#prefLabel> "Trasporti multimodali"@it ;
+	<http://www.w3.org/2004/02/skos/core#inScheme> <http://data.openbudgets.eu/resource/codelist/oc-eu-functional-class> .
+
+<http://data.openbudgets.eu/resource/codelist/oc-eu-functional-class/27> a <http://www.w3.org/2004/02/skos/core#Concept> ;
+	<http://www.w3.org/2004/02/skos/core#broadMatch> <http://data.openbudgets.eu/resource/codelist/oc-functional-class/07> ;
+	<http://www.w3.org/2004/02/skos/core#broader> <http://data.openbudgets.eu/resource/codelist/oc-eu-functional-class/G03> ;
+	<http://www.w3.org/2004/02/skos/core#notation> "27" ;
+	<http://www.w3.org/2004/02/skos/core#prefLabel> "Trasporti multimodali (TEN-T)"@it ;
+	<http://www.w3.org/2004/02/skos/core#inScheme> <http://data.openbudgets.eu/resource/codelist/oc-eu-functional-class> .
+
+<http://data.openbudgets.eu/resource/codelist/oc-eu-functional-class/28> a <http://www.w3.org/2004/02/skos/core#Concept> ;
+	<http://www.w3.org/2004/02/skos/core#broadMatch> <http://data.openbudgets.eu/resource/codelist/oc-functional-class/07> ;
+	<http://www.w3.org/2004/02/skos/core#broader> <http://data.openbudgets.eu/resource/codelist/oc-eu-functional-class/G03> ;
+	<http://www.w3.org/2004/02/skos/core#notation> "28" ;
+	<http://www.w3.org/2004/02/skos/core#prefLabel> "Sistemi di trasporto intelligenti"@it ;
+	<http://www.w3.org/2004/02/skos/core#inScheme> <http://data.openbudgets.eu/resource/codelist/oc-eu-functional-class> .
+
+<http://data.openbudgets.eu/resource/codelist/oc-eu-functional-class/29> a <http://www.w3.org/2004/02/skos/core#Concept> ;
+	<http://www.w3.org/2004/02/skos/core#broadMatch> <http://data.openbudgets.eu/resource/codelist/oc-functional-class/07> ;
+	<http://www.w3.org/2004/02/skos/core#broader> <http://data.openbudgets.eu/resource/codelist/oc-eu-functional-class/G03> ;
+	<http://www.w3.org/2004/02/skos/core#notation> "29" ;
+	<http://www.w3.org/2004/02/skos/core#prefLabel> "Aeroporti"@it ;
+	<http://www.w3.org/2004/02/skos/core#inScheme> <http://data.openbudgets.eu/resource/codelist/oc-eu-functional-class> .
+
+<http://data.openbudgets.eu/resource/codelist/oc-eu-functional-class/30> a <http://www.w3.org/2004/02/skos/core#Concept> ;
+	<http://www.w3.org/2004/02/skos/core#broadMatch> <http://data.openbudgets.eu/resource/codelist/oc-functional-class/07> ;
+	<http://www.w3.org/2004/02/skos/core#broader> <http://data.openbudgets.eu/resource/codelist/oc-eu-functional-class/G03> ;
+	<http://www.w3.org/2004/02/skos/core#notation> "30" ;
+	<http://www.w3.org/2004/02/skos/core#prefLabel> "Porti"@it ;
+	<http://www.w3.org/2004/02/skos/core#inScheme> <http://data.openbudgets.eu/resource/codelist/oc-eu-functional-class> .
+
+<http://data.openbudgets.eu/resource/codelist/oc-eu-functional-class/31> a <http://www.w3.org/2004/02/skos/core#Concept> ;
+	<http://www.w3.org/2004/02/skos/core#broadMatch> <http://data.openbudgets.eu/resource/codelist/oc-functional-class/07> ;
+	<http://www.w3.org/2004/02/skos/core#broader> <http://data.openbudgets.eu/resource/codelist/oc-eu-functional-class/G03> ;
+	<http://www.w3.org/2004/02/skos/core#notation> "31" ;
+	<http://www.w3.org/2004/02/skos/core#prefLabel> "Vie d'acqua interne (regionali e locali)"@it ;
+	<http://www.w3.org/2004/02/skos/core#inScheme> <http://data.openbudgets.eu/resource/codelist/oc-eu-functional-class> .
+
+<http://data.openbudgets.eu/resource/codelist/oc-eu-functional-class/32> a <http://www.w3.org/2004/02/skos/core#Concept> ;
+	<http://www.w3.org/2004/02/skos/core#broadMatch> <http://data.openbudgets.eu/resource/codelist/oc-functional-class/07> ;
+	<http://www.w3.org/2004/02/skos/core#broader> <http://data.openbudgets.eu/resource/codelist/oc-eu-functional-class/G03> ;
+	<http://www.w3.org/2004/02/skos/core#notation> "32" ;
+	<http://www.w3.org/2004/02/skos/core#prefLabel> "Vie d'acqua interne (TEN-T)"@it ;
+	<http://www.w3.org/2004/02/skos/core#inScheme> <http://data.openbudgets.eu/resource/codelist/oc-eu-functional-class> .
+
+<http://data.openbudgets.eu/resource/codelist/oc-eu-functional-class/33> a <http://www.w3.org/2004/02/skos/core#Concept> ;
+	<http://www.w3.org/2004/02/skos/core#broadMatch> <http://data.openbudgets.eu/resource/codelist/oc-functional-class/04> ;
+	<http://www.w3.org/2004/02/skos/core#broader> <http://data.openbudgets.eu/resource/codelist/oc-eu-functional-class/G04> ;
+	<http://www.w3.org/2004/02/skos/core#notation> "33" ;
+	<http://www.w3.org/2004/02/skos/core#prefLabel> "Elettricità"@it ;
+	<http://www.w3.org/2004/02/skos/core#inScheme> <http://data.openbudgets.eu/resource/codelist/oc-eu-functional-class> .
+
+<http://data.openbudgets.eu/resource/codelist/oc-eu-functional-class/34> a <http://www.w3.org/2004/02/skos/core#Concept> ;
+	<http://www.w3.org/2004/02/skos/core#broadMatch> <http://data.openbudgets.eu/resource/codelist/oc-functional-class/04> ;
+	<http://www.w3.org/2004/02/skos/core#broader> <http://data.openbudgets.eu/resource/codelist/oc-eu-functional-class/G04> ;
+	<http://www.w3.org/2004/02/skos/core#notation> "34" ;
+	<http://www.w3.org/2004/02/skos/core#prefLabel> "Elettricità (TEN-E)"@it ;
+	<http://www.w3.org/2004/02/skos/core#inScheme> <http://data.openbudgets.eu/resource/codelist/oc-eu-functional-class> .
+
+<http://data.openbudgets.eu/resource/codelist/oc-eu-functional-class/35> a <http://www.w3.org/2004/02/skos/core#Concept> ;
+	<http://www.w3.org/2004/02/skos/core#broadMatch> <http://data.openbudgets.eu/resource/codelist/oc-functional-class/04> ;
+	<http://www.w3.org/2004/02/skos/core#broader> <http://data.openbudgets.eu/resource/codelist/oc-eu-functional-class/G04> ;
+	<http://www.w3.org/2004/02/skos/core#notation> "35" ;
+	<http://www.w3.org/2004/02/skos/core#prefLabel> "Gas naturale"@it ;
+	<http://www.w3.org/2004/02/skos/core#inScheme> <http://data.openbudgets.eu/resource/codelist/oc-eu-functional-class> .
+
+<http://data.openbudgets.eu/resource/codelist/oc-eu-functional-class/36> a <http://www.w3.org/2004/02/skos/core#Concept> ;
+	<http://www.w3.org/2004/02/skos/core#broadMatch> <http://data.openbudgets.eu/resource/codelist/oc-functional-class/04> ;
+	<http://www.w3.org/2004/02/skos/core#broader> <http://data.openbudgets.eu/resource/codelist/oc-eu-functional-class/G04> ;
+	<http://www.w3.org/2004/02/skos/core#notation> "36" ;
+	<http://www.w3.org/2004/02/skos/core#prefLabel> "Gas naturale (TEN-E)"@it ;
+	<http://www.w3.org/2004/02/skos/core#inScheme> <http://data.openbudgets.eu/resource/codelist/oc-eu-functional-class> .
+
+<http://data.openbudgets.eu/resource/codelist/oc-eu-functional-class/37> a <http://www.w3.org/2004/02/skos/core#Concept> ;
+	<http://www.w3.org/2004/02/skos/core#broadMatch> <http://data.openbudgets.eu/resource/codelist/oc-functional-class/04> ;
+	<http://www.w3.org/2004/02/skos/core#broader> <http://data.openbudgets.eu/resource/codelist/oc-eu-functional-class/G04> ;
+	<http://www.w3.org/2004/02/skos/core#notation> "37" ;
+	<http://www.w3.org/2004/02/skos/core#prefLabel> "Prodotti a base di petrolio"@it ;
+	<http://www.w3.org/2004/02/skos/core#inScheme> <http://data.openbudgets.eu/resource/codelist/oc-eu-functional-class> .
+
+<http://data.openbudgets.eu/resource/codelist/oc-eu-functional-class/38> a <http://www.w3.org/2004/02/skos/core#Concept> ;
+	<http://www.w3.org/2004/02/skos/core#broadMatch> <http://data.openbudgets.eu/resource/codelist/oc-functional-class/04> ;
+	<http://www.w3.org/2004/02/skos/core#broader> <http://data.openbudgets.eu/resource/codelist/oc-eu-functional-class/G04> ;
+	<http://www.w3.org/2004/02/skos/core#notation> "38" ;
+	<http://www.w3.org/2004/02/skos/core#prefLabel> "Prodotti a base di petrolio (TEN-E)"@it ;
+	<http://www.w3.org/2004/02/skos/core#inScheme> <http://data.openbudgets.eu/resource/codelist/oc-eu-functional-class> .
+
+<http://data.openbudgets.eu/resource/codelist/oc-eu-functional-class/39> a <http://www.w3.org/2004/02/skos/core#Concept> ;
+	<http://www.w3.org/2004/02/skos/core#broadMatch> <http://data.openbudgets.eu/resource/codelist/oc-functional-class/04> ;
+	<http://www.w3.org/2004/02/skos/core#broader> <http://data.openbudgets.eu/resource/codelist/oc-eu-functional-class/G04> ;
+	<http://www.w3.org/2004/02/skos/core#notation> "39" ;
+	<http://www.w3.org/2004/02/skos/core#prefLabel> "Energia rinnovabile: eolica"@it ;
+	<http://www.w3.org/2004/02/skos/core#inScheme> <http://data.openbudgets.eu/resource/codelist/oc-eu-functional-class> .
+
+<http://data.openbudgets.eu/resource/codelist/oc-eu-functional-class/40> a <http://www.w3.org/2004/02/skos/core#Concept> ;
+	<http://www.w3.org/2004/02/skos/core#broadMatch> <http://data.openbudgets.eu/resource/codelist/oc-functional-class/04> ;
+	<http://www.w3.org/2004/02/skos/core#broader> <http://data.openbudgets.eu/resource/codelist/oc-eu-functional-class/G04> ;
+	<http://www.w3.org/2004/02/skos/core#notation> "40" ;
+	<http://www.w3.org/2004/02/skos/core#prefLabel> "Energia rinnovabile: solare"@it ;
+	<http://www.w3.org/2004/02/skos/core#inScheme> <http://data.openbudgets.eu/resource/codelist/oc-eu-functional-class> .
+
+<http://data.openbudgets.eu/resource/codelist/oc-eu-functional-class/41> a <http://www.w3.org/2004/02/skos/core#Concept> ;
+	<http://www.w3.org/2004/02/skos/core#broadMatch> <http://data.openbudgets.eu/resource/codelist/oc-functional-class/04> ;
+	<http://www.w3.org/2004/02/skos/core#broader> <http://data.openbudgets.eu/resource/codelist/oc-eu-functional-class/G04> ;
+	<http://www.w3.org/2004/02/skos/core#notation> "41" ;
+	<http://www.w3.org/2004/02/skos/core#prefLabel> "Energia rinnovabile: biomassa"@it ;
+	<http://www.w3.org/2004/02/skos/core#inScheme> <http://data.openbudgets.eu/resource/codelist/oc-eu-functional-class> .
+
+<http://data.openbudgets.eu/resource/codelist/oc-eu-functional-class/42> a <http://www.w3.org/2004/02/skos/core#Concept> ;
+	<http://www.w3.org/2004/02/skos/core#broadMatch> <http://data.openbudgets.eu/resource/codelist/oc-functional-class/04> ;
+	<http://www.w3.org/2004/02/skos/core#broader> <http://data.openbudgets.eu/resource/codelist/oc-eu-functional-class/G04> ;
+	<http://www.w3.org/2004/02/skos/core#notation> "42" ;
+	<http://www.w3.org/2004/02/skos/core#prefLabel> "Energia rinnovabile: idroelettrica, geotermale e altre"@it ;
+	<http://www.w3.org/2004/02/skos/core#inScheme> <http://data.openbudgets.eu/resource/codelist/oc-eu-functional-class> .
+
+<http://data.openbudgets.eu/resource/codelist/oc-eu-functional-class/43> a <http://www.w3.org/2004/02/skos/core#Concept> ;
+	<http://www.w3.org/2004/02/skos/core#broadMatch> <http://data.openbudgets.eu/resource/codelist/oc-functional-class/04> ;
+	<http://www.w3.org/2004/02/skos/core#broader> <http://data.openbudgets.eu/resource/codelist/oc-eu-functional-class/G04> ;
+	<http://www.w3.org/2004/02/skos/core#notation> "43" ;
+	<http://www.w3.org/2004/02/skos/core#prefLabel> "Efficienza dell'energia, cogenerazione, gestione energetica"@it ;
+	<http://www.w3.org/2004/02/skos/core#inScheme> <http://data.openbudgets.eu/resource/codelist/oc-eu-functional-class> .
+
+<http://data.openbudgets.eu/resource/codelist/oc-eu-functional-class/44> a <http://www.w3.org/2004/02/skos/core#Concept> ;
+	<http://www.w3.org/2004/02/skos/core#broadMatch> <http://data.openbudgets.eu/resource/codelist/oc-functional-class/05> ;
+	<http://www.w3.org/2004/02/skos/core#broader> <http://data.openbudgets.eu/resource/codelist/oc-eu-functional-class/G05> ;
+	<http://www.w3.org/2004/02/skos/core#notation> "44" ;
+	<http://www.w3.org/2004/02/skos/core#prefLabel> "Gestione dei rifiuti domestici e industriali"@it ;
+	<http://www.w3.org/2004/02/skos/core#inScheme> <http://data.openbudgets.eu/resource/codelist/oc-eu-functional-class> .
+
+<http://data.openbudgets.eu/resource/codelist/oc-eu-functional-class/45> a <http://www.w3.org/2004/02/skos/core#Concept> ;
+	<http://www.w3.org/2004/02/skos/core#broadMatch> <http://data.openbudgets.eu/resource/codelist/oc-functional-class/05> ;
+	<http://www.w3.org/2004/02/skos/core#broader> <http://data.openbudgets.eu/resource/codelist/oc-eu-functional-class/G05> ;
+	<http://www.w3.org/2004/02/skos/core#notation> "45" ;
+	<http://www.w3.org/2004/02/skos/core#prefLabel> "Gestione e distribuzione dell'acqua (potabile)"@it ;
+	<http://www.w3.org/2004/02/skos/core#inScheme> <http://data.openbudgets.eu/resource/codelist/oc-eu-functional-class> .
+
+<http://data.openbudgets.eu/resource/codelist/oc-eu-functional-class/46> a <http://www.w3.org/2004/02/skos/core#Concept> ;
+	<http://www.w3.org/2004/02/skos/core#broadMatch> <http://data.openbudgets.eu/resource/codelist/oc-functional-class/05> ;
+	<http://www.w3.org/2004/02/skos/core#broader> <http://data.openbudgets.eu/resource/codelist/oc-eu-functional-class/G05> ;
+	<http://www.w3.org/2004/02/skos/core#notation> "46" ;
+	<http://www.w3.org/2004/02/skos/core#prefLabel> "Trattamento delle acque (potabili)"@it ;
+	<http://www.w3.org/2004/02/skos/core#inScheme> <http://data.openbudgets.eu/resource/codelist/oc-eu-functional-class> .
+
+<http://data.openbudgets.eu/resource/codelist/oc-eu-functional-class/47> a <http://www.w3.org/2004/02/skos/core#Concept> ;
+	<http://www.w3.org/2004/02/skos/core#broadMatch> <http://data.openbudgets.eu/resource/codelist/oc-functional-class/05> ;
+	<http://www.w3.org/2004/02/skos/core#broader> <http://data.openbudgets.eu/resource/codelist/oc-eu-functional-class/G05> ;
+	<http://www.w3.org/2004/02/skos/core#notation> "47" ;
+	<http://www.w3.org/2004/02/skos/core#prefLabel> "Qualità dell'aria"@it ;
+	<http://www.w3.org/2004/02/skos/core#inScheme> <http://data.openbudgets.eu/resource/codelist/oc-eu-functional-class> .
+
+<http://data.openbudgets.eu/resource/codelist/oc-eu-functional-class/48> a <http://www.w3.org/2004/02/skos/core#Concept> ;
+	<http://www.w3.org/2004/02/skos/core#broadMatch> <http://data.openbudgets.eu/resource/codelist/oc-functional-class/05> ;
+	<http://www.w3.org/2004/02/skos/core#broader> <http://data.openbudgets.eu/resource/codelist/oc-eu-functional-class/G05> ;
+	<http://www.w3.org/2004/02/skos/core#notation> "48" ;
+	<http://www.w3.org/2004/02/skos/core#prefLabel> "Prevenzione e controllo integrati dell'inquinamento"@it ;
+	<http://www.w3.org/2004/02/skos/core#inScheme> <http://data.openbudgets.eu/resource/codelist/oc-eu-functional-class> .
+
+<http://data.openbudgets.eu/resource/codelist/oc-eu-functional-class/49> a <http://www.w3.org/2004/02/skos/core#Concept> ;
+	<http://www.w3.org/2004/02/skos/core#broadMatch> <http://data.openbudgets.eu/resource/codelist/oc-functional-class/05> ;
+	<http://www.w3.org/2004/02/skos/core#broader> <http://data.openbudgets.eu/resource/codelist/oc-eu-functional-class/G05> ;
+	<http://www.w3.org/2004/02/skos/core#notation> "49" ;
+	<http://www.w3.org/2004/02/skos/core#prefLabel> "Mitigazione e adattamento al cambiamento climatico"@it ;
+	<http://www.w3.org/2004/02/skos/core#inScheme> <http://data.openbudgets.eu/resource/codelist/oc-eu-functional-class> .
+
+<http://data.openbudgets.eu/resource/codelist/oc-eu-functional-class/50> a <http://www.w3.org/2004/02/skos/core#Concept> ;
+	<http://www.w3.org/2004/02/skos/core#broadMatch> <http://data.openbudgets.eu/resource/codelist/oc-functional-class/05> ;
+	<http://www.w3.org/2004/02/skos/core#broader> <http://data.openbudgets.eu/resource/codelist/oc-eu-functional-class/G05> ;
+	<http://www.w3.org/2004/02/skos/core#notation> "50" ;
+	<http://www.w3.org/2004/02/skos/core#prefLabel> "Bonifica di siti industriali e di terreni contaminati"@it ;
+	<http://www.w3.org/2004/02/skos/core#inScheme> <http://data.openbudgets.eu/resource/codelist/oc-eu-functional-class> .
+
+<http://data.openbudgets.eu/resource/codelist/oc-eu-functional-class/51> a <http://www.w3.org/2004/02/skos/core#Concept> ;
+	<http://www.w3.org/2004/02/skos/core#broadMatch> <http://data.openbudgets.eu/resource/codelist/oc-functional-class/05> ;
+	<http://www.w3.org/2004/02/skos/core#broader> <http://data.openbudgets.eu/resource/codelist/oc-eu-functional-class/G05> ;
+	<http://www.w3.org/2004/02/skos/core#notation> "51" ;
+	<http://www.w3.org/2004/02/skos/core#prefLabel> "Promozione della biodiversità e della tutela della natura (inclusa Natura 2000)"@it ;
+	<http://www.w3.org/2004/02/skos/core#inScheme> <http://data.openbudgets.eu/resource/codelist/oc-eu-functional-class> .
+
+<http://data.openbudgets.eu/resource/codelist/oc-eu-functional-class/52> a <http://www.w3.org/2004/02/skos/core#Concept> ;
+	<http://www.w3.org/2004/02/skos/core#broadMatch> <http://data.openbudgets.eu/resource/codelist/oc-functional-class/07> ;
+	<http://www.w3.org/2004/02/skos/core#broader> <http://data.openbudgets.eu/resource/codelist/oc-eu-functional-class/G05> ;
+	<http://www.w3.org/2004/02/skos/core#notation> "52" ;
+	<http://www.w3.org/2004/02/skos/core#prefLabel> "Promozione di trasporti urbani non inquinanti"@it ;
+	<http://www.w3.org/2004/02/skos/core#inScheme> <http://data.openbudgets.eu/resource/codelist/oc-eu-functional-class> .
+
+<http://data.openbudgets.eu/resource/codelist/oc-eu-functional-class/53> a <http://www.w3.org/2004/02/skos/core#Concept> ;
+	<http://www.w3.org/2004/02/skos/core#broadMatch> <http://data.openbudgets.eu/resource/codelist/oc-functional-class/05> ;
+	<http://www.w3.org/2004/02/skos/core#broader> <http://data.openbudgets.eu/resource/codelist/oc-eu-functional-class/G05> ;
+	<http://www.w3.org/2004/02/skos/core#notation> "53" ;
+	<http://www.w3.org/2004/02/skos/core#prefLabel> "Prevenzione dei rischi (inclusa elaborazione e attuazione di piani e provvedimenti)"@it ;
+	<http://www.w3.org/2004/02/skos/core#inScheme> <http://data.openbudgets.eu/resource/codelist/oc-eu-functional-class> .
+
+<http://data.openbudgets.eu/resource/codelist/oc-eu-functional-class/54> a <http://www.w3.org/2004/02/skos/core#Concept> ;
+	<http://www.w3.org/2004/02/skos/core#broadMatch> <http://data.openbudgets.eu/resource/codelist/oc-functional-class/05> ;
+	<http://www.w3.org/2004/02/skos/core#broader> <http://data.openbudgets.eu/resource/codelist/oc-eu-functional-class/G05> ;
+	<http://www.w3.org/2004/02/skos/core#notation> "54" ;
+	<http://www.w3.org/2004/02/skos/core#prefLabel> "Altre misure per tutelare l'ambiente e prevenire i rischi"@it ;
+	<http://www.w3.org/2004/02/skos/core#inScheme> <http://data.openbudgets.eu/resource/codelist/oc-eu-functional-class> .
+
+<http://data.openbudgets.eu/resource/codelist/oc-eu-functional-class/55> a <http://www.w3.org/2004/02/skos/core#Concept> ;
+	<http://www.w3.org/2004/02/skos/core#broadMatch> <http://data.openbudgets.eu/resource/codelist/oc-functional-class/06> ;
+	<http://www.w3.org/2004/02/skos/core#broader> <http://data.openbudgets.eu/resource/codelist/oc-eu-functional-class/G06> ;
+	<http://www.w3.org/2004/02/skos/core#notation> "55" ;
+	<http://www.w3.org/2004/02/skos/core#prefLabel> "Promozione dei beni naturali"@it ;
+	<http://www.w3.org/2004/02/skos/core#inScheme> <http://data.openbudgets.eu/resource/codelist/oc-eu-functional-class> .
+
+<http://data.openbudgets.eu/resource/codelist/oc-eu-functional-class/56> a <http://www.w3.org/2004/02/skos/core#Concept> ;
+	<http://www.w3.org/2004/02/skos/core#broadMatch> <http://data.openbudgets.eu/resource/codelist/oc-functional-class/06> ;
+	<http://www.w3.org/2004/02/skos/core#broader> <http://data.openbudgets.eu/resource/codelist/oc-eu-functional-class/G06> ;
+	<http://www.w3.org/2004/02/skos/core#notation> "56" ;
+	<http://www.w3.org/2004/02/skos/core#prefLabel> "Tutela e sviluppo del patrimonio naturale"@it ;
+	<http://www.w3.org/2004/02/skos/core#inScheme> <http://data.openbudgets.eu/resource/codelist/oc-eu-functional-class> .
+
+<http://data.openbudgets.eu/resource/codelist/oc-eu-functional-class/57> a <http://www.w3.org/2004/02/skos/core#Concept> ;
+	<http://www.w3.org/2004/02/skos/core#broadMatch> <http://data.openbudgets.eu/resource/codelist/oc-functional-class/06> ;
+	<http://www.w3.org/2004/02/skos/core#broader> <http://data.openbudgets.eu/resource/codelist/oc-eu-functional-class/G06> ;
+	<http://www.w3.org/2004/02/skos/core#notation> "57" ;
+	<http://www.w3.org/2004/02/skos/core#prefLabel> "Altra assistenza per migliorare i servizi turistici"@it ;
+	<http://www.w3.org/2004/02/skos/core#inScheme> <http://data.openbudgets.eu/resource/codelist/oc-eu-functional-class> .
+
+<http://data.openbudgets.eu/resource/codelist/oc-eu-functional-class/58> a <http://www.w3.org/2004/02/skos/core#Concept> ;
+	<http://www.w3.org/2004/02/skos/core#broadMatch> <http://data.openbudgets.eu/resource/codelist/oc-functional-class/06> ;
+	<http://www.w3.org/2004/02/skos/core#broader> <http://data.openbudgets.eu/resource/codelist/oc-eu-functional-class/G07> ;
+	<http://www.w3.org/2004/02/skos/core#notation> "58" ;
+	<http://www.w3.org/2004/02/skos/core#prefLabel> "Tutela e conservazione del patrimonio culturale"@it ;
+	<http://www.w3.org/2004/02/skos/core#inScheme> <http://data.openbudgets.eu/resource/codelist/oc-eu-functional-class> .
+
+<http://data.openbudgets.eu/resource/codelist/oc-eu-functional-class/59> a <http://www.w3.org/2004/02/skos/core#Concept> ;
+	<http://www.w3.org/2004/02/skos/core#broadMatch> <http://data.openbudgets.eu/resource/codelist/oc-functional-class/06> ;
+	<http://www.w3.org/2004/02/skos/core#broader> <http://data.openbudgets.eu/resource/codelist/oc-eu-functional-class/G07> ;
+	<http://www.w3.org/2004/02/skos/core#notation> "59" ;
+	<http://www.w3.org/2004/02/skos/core#prefLabel> "Sviluppo delle infrastrutture culturali"@it ;
+	<http://www.w3.org/2004/02/skos/core#inScheme> <http://data.openbudgets.eu/resource/codelist/oc-eu-functional-class> .
+
+<http://data.openbudgets.eu/resource/codelist/oc-eu-functional-class/60> a <http://www.w3.org/2004/02/skos/core#Concept> ;
+	<http://www.w3.org/2004/02/skos/core#broadMatch> <http://data.openbudgets.eu/resource/codelist/oc-functional-class/06> ;
+	<http://www.w3.org/2004/02/skos/core#broader> <http://data.openbudgets.eu/resource/codelist/oc-eu-functional-class/G07> ;
+	<http://www.w3.org/2004/02/skos/core#notation> "60" ;
+	<http://www.w3.org/2004/02/skos/core#prefLabel> "Altra assistenza per migliorare i servizi culturali"@it ;
+	<http://www.w3.org/2004/02/skos/core#inScheme> <http://data.openbudgets.eu/resource/codelist/oc-eu-functional-class> .
+
+<http://data.openbudgets.eu/resource/codelist/oc-eu-functional-class/61> a <http://www.w3.org/2004/02/skos/core#Concept> ;
+	<http://www.w3.org/2004/02/skos/core#broadMatch> <http://data.openbudgets.eu/resource/codelist/oc-functional-class/12> ;
+	<http://www.w3.org/2004/02/skos/core#broader> <http://data.openbudgets.eu/resource/codelist/oc-eu-functional-class/G08> ;
+	<http://www.w3.org/2004/02/skos/core#notation> "61" ;
+	<http://www.w3.org/2004/02/skos/core#prefLabel> "Progetti integrati per la rigenerazione urbana e rurale"@it ;
+	<http://www.w3.org/2004/02/skos/core#inScheme> <http://data.openbudgets.eu/resource/codelist/oc-eu-functional-class> .
+
+<http://data.openbudgets.eu/resource/codelist/oc-eu-functional-class/62> a <http://www.w3.org/2004/02/skos/core#Concept> ;
+	<http://www.w3.org/2004/02/skos/core#broadMatch> <http://data.openbudgets.eu/resource/codelist/oc-functional-class/08> ;
+	<http://www.w3.org/2004/02/skos/core#broader> <http://data.openbudgets.eu/resource/codelist/oc-eu-functional-class/G09> ;
+	<http://www.w3.org/2004/02/skos/core#notation> "62" ;
+	<http://www.w3.org/2004/02/skos/core#prefLabel> "Sviluppo di sistemi e strategie di apprendimento permanente nelle imprese; formazione e servizi per i dipendenti"@it ;
+	<http://www.w3.org/2004/02/skos/core#inScheme> <http://data.openbudgets.eu/resource/codelist/oc-eu-functional-class> .
+
+<http://data.openbudgets.eu/resource/codelist/oc-eu-functional-class/63> a <http://www.w3.org/2004/02/skos/core#Concept> ;
+	<http://www.w3.org/2004/02/skos/core#broadMatch> <http://data.openbudgets.eu/resource/codelist/oc-functional-class/08> ;
+	<http://www.w3.org/2004/02/skos/core#broader> <http://data.openbudgets.eu/resource/codelist/oc-eu-functional-class/G09> ;
+	<http://www.w3.org/2004/02/skos/core#notation> "63" ;
+	<http://www.w3.org/2004/02/skos/core#prefLabel> "Progettazione e disseminazione di modi più produttivi per organizzare il lavoro"@it ;
+	<http://www.w3.org/2004/02/skos/core#inScheme> <http://data.openbudgets.eu/resource/codelist/oc-eu-functional-class> .
+
+<http://data.openbudgets.eu/resource/codelist/oc-eu-functional-class/64> a <http://www.w3.org/2004/02/skos/core#Concept> ;
+	<http://www.w3.org/2004/02/skos/core#broadMatch> <http://data.openbudgets.eu/resource/codelist/oc-functional-class/08> ;
+	<http://www.w3.org/2004/02/skos/core#broader> <http://data.openbudgets.eu/resource/codelist/oc-eu-functional-class/G09> ;
+	<http://www.w3.org/2004/02/skos/core#notation> "64" ;
+	<http://www.w3.org/2004/02/skos/core#prefLabel> "Sviluppo di servizi speciali per l'occupazione, la formazione e il sostegno connessi alla ristrutturazione settoriale"@it ;
+	<http://www.w3.org/2004/02/skos/core#inScheme> <http://data.openbudgets.eu/resource/codelist/oc-eu-functional-class> .
+
+<http://data.openbudgets.eu/resource/codelist/oc-eu-functional-class/65> a <http://www.w3.org/2004/02/skos/core#Concept> ;
+	<http://www.w3.org/2004/02/skos/core#broadMatch> <http://data.openbudgets.eu/resource/codelist/oc-functional-class/08> ;
+	<http://www.w3.org/2004/02/skos/core#broader> <http://data.openbudgets.eu/resource/codelist/oc-eu-functional-class/G09> ;
+	<http://www.w3.org/2004/02/skos/core#notation> "65" ;
+	<http://www.w3.org/2004/02/skos/core#prefLabel> "Modernizzazione e rafforzamento delle istituzioni del mercato del lavoro"@it ;
+	<http://www.w3.org/2004/02/skos/core#inScheme> <http://data.openbudgets.eu/resource/codelist/oc-eu-functional-class> .
+
+<http://data.openbudgets.eu/resource/codelist/oc-eu-functional-class/66> a <http://www.w3.org/2004/02/skos/core#Concept> ;
+	<http://www.w3.org/2004/02/skos/core#broadMatch> <http://data.openbudgets.eu/resource/codelist/oc-functional-class/08> ;
+	<http://www.w3.org/2004/02/skos/core#broader> <http://data.openbudgets.eu/resource/codelist/oc-eu-functional-class/G09> ;
+	<http://www.w3.org/2004/02/skos/core#notation> "66" ;
+	<http://www.w3.org/2004/02/skos/core#prefLabel> "Attuazione di misure attive e preventive sul mercato del lavoro"@it ;
+	<http://www.w3.org/2004/02/skos/core#inScheme> <http://data.openbudgets.eu/resource/codelist/oc-eu-functional-class> .
+
+<http://data.openbudgets.eu/resource/codelist/oc-eu-functional-class/67> a <http://www.w3.org/2004/02/skos/core#Concept> ;
+	<http://www.w3.org/2004/02/skos/core#broadMatch> <http://data.openbudgets.eu/resource/codelist/oc-functional-class/08> ;
+	<http://www.w3.org/2004/02/skos/core#broader> <http://data.openbudgets.eu/resource/codelist/oc-eu-functional-class/G09> ;
+	<http://www.w3.org/2004/02/skos/core#notation> "67" ;
+	<http://www.w3.org/2004/02/skos/core#prefLabel> "Misure che incoraggiano un invecchiamento attivo e prolungano la vita di lavoro"@it ;
+	<http://www.w3.org/2004/02/skos/core#inScheme> <http://data.openbudgets.eu/resource/codelist/oc-eu-functional-class> .
+
+<http://data.openbudgets.eu/resource/codelist/oc-eu-functional-class/68> a <http://www.w3.org/2004/02/skos/core#Concept> ;
+	<http://www.w3.org/2004/02/skos/core#broadMatch> <http://data.openbudgets.eu/resource/codelist/oc-functional-class/08> ;
+	<http://www.w3.org/2004/02/skos/core#broader> <http://data.openbudgets.eu/resource/codelist/oc-eu-functional-class/G09> ;
+	<http://www.w3.org/2004/02/skos/core#notation> "68" ;
+	<http://www.w3.org/2004/02/skos/core#prefLabel> "Sostegno per l'occupazione indipendente e per l'avvio di imprese"@it ;
+	<http://www.w3.org/2004/02/skos/core#inScheme> <http://data.openbudgets.eu/resource/codelist/oc-eu-functional-class> .
+
+<http://data.openbudgets.eu/resource/codelist/oc-eu-functional-class/69> a <http://www.w3.org/2004/02/skos/core#Concept> ;
+	<http://www.w3.org/2004/02/skos/core#broadMatch> <http://data.openbudgets.eu/resource/codelist/oc-functional-class/08> ;
+	<http://www.w3.org/2004/02/skos/core#broader> <http://data.openbudgets.eu/resource/codelist/oc-eu-functional-class/G09> ;
+	<http://www.w3.org/2004/02/skos/core#notation> "69" ;
+	<http://www.w3.org/2004/02/skos/core#prefLabel> "Misure per migliorare l'accesso all'occupazione, aumentare la partecipazione sostenibile delle donne, ridurre le discriminazioni e riconciliare vita lavorativa e privata"@it ;
+	<http://www.w3.org/2004/02/skos/core#inScheme> <http://data.openbudgets.eu/resource/codelist/oc-eu-functional-class> .
+
+<http://data.openbudgets.eu/resource/codelist/oc-eu-functional-class/70> a <http://www.w3.org/2004/02/skos/core#Concept> ;
+	<http://www.w3.org/2004/02/skos/core#broadMatch> <http://data.openbudgets.eu/resource/codelist/oc-functional-class/08> ;
+	<http://www.w3.org/2004/02/skos/core#broader> <http://data.openbudgets.eu/resource/codelist/oc-eu-functional-class/G09> ;
+	<http://www.w3.org/2004/02/skos/core#notation> "70" ;
+	<http://www.w3.org/2004/02/skos/core#prefLabel> "Azioni specifiche per aumentare la partecipazione dei migranti all'occupazione"@it ;
+	<http://www.w3.org/2004/02/skos/core#inScheme> <http://data.openbudgets.eu/resource/codelist/oc-eu-functional-class> .
+
+<http://data.openbudgets.eu/resource/codelist/oc-eu-functional-class/71> a <http://www.w3.org/2004/02/skos/core#Concept> ;
+	<http://www.w3.org/2004/02/skos/core#broadMatch> <http://data.openbudgets.eu/resource/codelist/oc-functional-class/09> ;
+	<http://www.w3.org/2004/02/skos/core#broader> <http://data.openbudgets.eu/resource/codelist/oc-eu-functional-class/G10> ;
+	<http://www.w3.org/2004/02/skos/core#notation> "71" ;
+	<http://www.w3.org/2004/02/skos/core#prefLabel> "Percorsi di integrazione e reinserimento nel mondo del lavoro per le persone svantaggiate"@it ;
+	<http://www.w3.org/2004/02/skos/core#inScheme> <http://data.openbudgets.eu/resource/codelist/oc-eu-functional-class> .
+
+<http://data.openbudgets.eu/resource/codelist/oc-eu-functional-class/72> a <http://www.w3.org/2004/02/skos/core#Concept> ;
+	<http://www.w3.org/2004/02/skos/core#broadMatch> <http://data.openbudgets.eu/resource/codelist/oc-functional-class/11> ;
+	<http://www.w3.org/2004/02/skos/core#broader> <http://data.openbudgets.eu/resource/codelist/oc-eu-functional-class/G11> ;
+	<http://www.w3.org/2004/02/skos/core#notation> "72" ;
+	<http://www.w3.org/2004/02/skos/core#prefLabel> "Progettazione, introduzione e attuazione di riforme dei sistemi di istruzione e formazione al fine di sviluppare la capacità di inserimento professionale"@it ;
+	<http://www.w3.org/2004/02/skos/core#inScheme> <http://data.openbudgets.eu/resource/codelist/oc-eu-functional-class> .
+
+<http://data.openbudgets.eu/resource/codelist/oc-eu-functional-class/73> a <http://www.w3.org/2004/02/skos/core#Concept> ;
+	<http://www.w3.org/2004/02/skos/core#broadMatch> <http://data.openbudgets.eu/resource/codelist/oc-functional-class/11> ;
+	<http://www.w3.org/2004/02/skos/core#broader> <http://data.openbudgets.eu/resource/codelist/oc-eu-functional-class/G11> ;
+	<http://www.w3.org/2004/02/skos/core#notation> "73" ;
+	<http://www.w3.org/2004/02/skos/core#prefLabel> "Misure per aumentare la partecipazione all'istruzione e alla formazione permanente"@it ;
+	<http://www.w3.org/2004/02/skos/core#inScheme> <http://data.openbudgets.eu/resource/codelist/oc-eu-functional-class> .
+
+<http://data.openbudgets.eu/resource/codelist/oc-eu-functional-class/74> a <http://www.w3.org/2004/02/skos/core#Concept> ;
+	<http://www.w3.org/2004/02/skos/core#broadMatch> <http://data.openbudgets.eu/resource/codelist/oc-functional-class/11> ;
+	<http://www.w3.org/2004/02/skos/core#broader> <http://data.openbudgets.eu/resource/codelist/oc-eu-functional-class/G11> ;
+	<http://www.w3.org/2004/02/skos/core#notation> "74" ;
+	<http://www.w3.org/2004/02/skos/core#prefLabel> "Sviluppo di potenziale umano nel settore della ricerca e dell'innovazione, in particolare mediante studi post-laurea"@it ;
+	<http://www.w3.org/2004/02/skos/core#inScheme> <http://data.openbudgets.eu/resource/codelist/oc-eu-functional-class> .
+
+<http://data.openbudgets.eu/resource/codelist/oc-eu-functional-class/75> a <http://www.w3.org/2004/02/skos/core#Concept> ;
+	<http://www.w3.org/2004/02/skos/core#broadMatch> <http://data.openbudgets.eu/resource/codelist/oc-functional-class/11> ;
+	<http://www.w3.org/2004/02/skos/core#broader> <http://data.openbudgets.eu/resource/codelist/oc-eu-functional-class/G12> ;
+	<http://www.w3.org/2004/02/skos/core#notation> "75" ;
+	<http://www.w3.org/2004/02/skos/core#prefLabel> "Infrastrutture per l'istruzione"@it ;
+	<http://www.w3.org/2004/02/skos/core#inScheme> <http://data.openbudgets.eu/resource/codelist/oc-eu-functional-class> .
+
+<http://data.openbudgets.eu/resource/codelist/oc-eu-functional-class/76> a <http://www.w3.org/2004/02/skos/core#Concept> ;
+	<http://www.w3.org/2004/02/skos/core#broadMatch> <http://data.openbudgets.eu/resource/codelist/oc-functional-class/09> ;
+	<http://www.w3.org/2004/02/skos/core#broader> <http://data.openbudgets.eu/resource/codelist/oc-eu-functional-class/G12> ;
+	<http://www.w3.org/2004/02/skos/core#notation> "76" ;
+	<http://www.w3.org/2004/02/skos/core#prefLabel> "Infrastrutture per la sanità"@it ;
+	<http://www.w3.org/2004/02/skos/core#inScheme> <http://data.openbudgets.eu/resource/codelist/oc-eu-functional-class> .
+
+<http://data.openbudgets.eu/resource/codelist/oc-eu-functional-class/77> a <http://www.w3.org/2004/02/skos/core#Concept> ;
+	<http://www.w3.org/2004/02/skos/core#broadMatch> <http://data.openbudgets.eu/resource/codelist/oc-functional-class/10> ;
+	<http://www.w3.org/2004/02/skos/core#broader> <http://data.openbudgets.eu/resource/codelist/oc-eu-functional-class/G12> ;
+	<http://www.w3.org/2004/02/skos/core#notation> "77" ;
+	<http://www.w3.org/2004/02/skos/core#prefLabel> "Infrastrutture per la custodia dei bambini"@it ;
+	<http://www.w3.org/2004/02/skos/core#inScheme> <http://data.openbudgets.eu/resource/codelist/oc-eu-functional-class> .
+
+<http://data.openbudgets.eu/resource/codelist/oc-eu-functional-class/78> a <http://www.w3.org/2004/02/skos/core#Concept> ;
+	<http://www.w3.org/2004/02/skos/core#broadMatch> <http://data.openbudgets.eu/resource/codelist/oc-functional-class/09> ;
+	<http://www.w3.org/2004/02/skos/core#broader> <http://data.openbudgets.eu/resource/codelist/oc-eu-functional-class/G12> ;
+	<http://www.w3.org/2004/02/skos/core#notation> "78" ;
+	<http://www.w3.org/2004/02/skos/core#prefLabel> "Infrastrutture degli alloggi"@it ;
+	<http://www.w3.org/2004/02/skos/core#inScheme> <http://data.openbudgets.eu/resource/codelist/oc-eu-functional-class> .
+
+<http://data.openbudgets.eu/resource/codelist/oc-eu-functional-class/79> a <http://www.w3.org/2004/02/skos/core#Concept> ;
+	<http://www.w3.org/2004/02/skos/core#broadMatch> <http://data.openbudgets.eu/resource/codelist/oc-functional-class/09> ;
+	<http://www.w3.org/2004/02/skos/core#broader> <http://data.openbudgets.eu/resource/codelist/oc-eu-functional-class/G12> ;
+	<http://www.w3.org/2004/02/skos/core#notation> "79" ;
+	<http://www.w3.org/2004/02/skos/core#prefLabel> "Altre infrastrutture sociali"@it ;
+	<http://www.w3.org/2004/02/skos/core#inScheme> <http://data.openbudgets.eu/resource/codelist/oc-eu-functional-class> .
+
+<http://data.openbudgets.eu/resource/codelist/oc-eu-functional-class/80> a <http://www.w3.org/2004/02/skos/core#Concept> ;
+	<http://www.w3.org/2004/02/skos/core#broadMatch> <http://data.openbudgets.eu/resource/codelist/oc-functional-class/08> ;
+	<http://www.w3.org/2004/02/skos/core#broader> <http://data.openbudgets.eu/resource/codelist/oc-eu-functional-class/G13> ;
+	<http://www.w3.org/2004/02/skos/core#notation> "80" ;
+	<http://www.w3.org/2004/02/skos/core#prefLabel> "Promozione di partnership, accordi e iniziative mediante la creazione di reti di parti interessate"@it ;
+	<http://www.w3.org/2004/02/skos/core#inScheme> <http://data.openbudgets.eu/resource/codelist/oc-eu-functional-class> .
+
+<http://data.openbudgets.eu/resource/codelist/oc-eu-functional-class/81> a <http://www.w3.org/2004/02/skos/core#Concept> ;
+	<http://www.w3.org/2004/02/skos/core#broadMatch> <http://data.openbudgets.eu/resource/codelist/oc-functional-class/13> ;
+	<http://www.w3.org/2004/02/skos/core#broader> <http://data.openbudgets.eu/resource/codelist/oc-eu-functional-class/G14> ;
+	<http://www.w3.org/2004/02/skos/core#notation> "81" ;
+	<http://www.w3.org/2004/02/skos/core#prefLabel> "Meccanismi per migliorare l'elaborazione di buone politiche e programmi, il monitoraggio e la valutazione"@it ;
+	<http://www.w3.org/2004/02/skos/core#inScheme> <http://data.openbudgets.eu/resource/codelist/oc-eu-functional-class> .
+
+<http://data.openbudgets.eu/resource/codelist/oc-eu-functional-class/82> a <http://www.w3.org/2004/02/skos/core#Concept> ;
+	<http://www.w3.org/2004/02/skos/core#broadMatch> <http://data.openbudgets.eu/resource/codelist/oc-functional-class/03> ;
+	<http://www.w3.org/2004/02/skos/core#broader> <http://data.openbudgets.eu/resource/codelist/oc-eu-functional-class/G15> ;
+	<http://www.w3.org/2004/02/skos/core#notation> "82" ;
+	<http://www.w3.org/2004/02/skos/core#prefLabel> "Compensazione di costi supplementari dovuti al deficit di accessibilità e alla frammentazione territoriale"@it ;
+	<http://www.w3.org/2004/02/skos/core#inScheme> <http://data.openbudgets.eu/resource/codelist/oc-eu-functional-class> .
+
+<http://data.openbudgets.eu/resource/codelist/oc-eu-functional-class/83> a <http://www.w3.org/2004/02/skos/core#Concept> ;
+	<http://www.w3.org/2004/02/skos/core#broadMatch> <http://data.openbudgets.eu/resource/codelist/oc-functional-class/03> ;
+	<http://www.w3.org/2004/02/skos/core#broader> <http://data.openbudgets.eu/resource/codelist/oc-eu-functional-class/G15> ;
+	<http://www.w3.org/2004/02/skos/core#notation> "83" ;
+	<http://www.w3.org/2004/02/skos/core#prefLabel> "Azioni specifiche volte a compensare i costi supplementari dovuti a fattori di dimensione di mercato"@it ;
+	<http://www.w3.org/2004/02/skos/core#inScheme> <http://data.openbudgets.eu/resource/codelist/oc-eu-functional-class> .
+
+<http://data.openbudgets.eu/resource/codelist/oc-eu-functional-class/84> a <http://www.w3.org/2004/02/skos/core#Concept> ;
+	<http://www.w3.org/2004/02/skos/core#broadMatch> <http://data.openbudgets.eu/resource/codelist/oc-functional-class/03> ;
+	<http://www.w3.org/2004/02/skos/core#broader> <http://data.openbudgets.eu/resource/codelist/oc-eu-functional-class/G15> ;
+	<http://www.w3.org/2004/02/skos/core#notation> "84" ;
+	<http://www.w3.org/2004/02/skos/core#prefLabel> "Sostegno per compensare i costi supplementari dovuti alle condizioni climatiche e ai rilievi"@it ;
+	<http://www.w3.org/2004/02/skos/core#inScheme> <http://data.openbudgets.eu/resource/codelist/oc-eu-functional-class> .
+
+<http://data.openbudgets.eu/resource/codelist/oc-eu-functional-class/85> a <http://www.w3.org/2004/02/skos/core#Concept> ;
+	<http://www.w3.org/2004/02/skos/core#broadMatch> <http://data.openbudgets.eu/resource/codelist/oc-functional-class/13> ;
+	<http://www.w3.org/2004/02/skos/core#broader> <http://data.openbudgets.eu/resource/codelist/oc-eu-functional-class/G16> ;
+	<http://www.w3.org/2004/02/skos/core#notation> "85" ;
+	<http://www.w3.org/2004/02/skos/core#prefLabel> "Preparazione, attuazione, monitoraggio e ispezione"@it ;
+	<http://www.w3.org/2004/02/skos/core#inScheme> <http://data.openbudgets.eu/resource/codelist/oc-eu-functional-class> .
+
+<http://data.openbudgets.eu/resource/codelist/oc-eu-functional-class/86> a <http://www.w3.org/2004/02/skos/core#Concept> ;
+	<http://www.w3.org/2004/02/skos/core#broadMatch> <http://data.openbudgets.eu/resource/codelist/oc-functional-class/13> ;
+	<http://www.w3.org/2004/02/skos/core#broader> <http://data.openbudgets.eu/resource/codelist/oc-eu-functional-class/G16> ;
+	<http://www.w3.org/2004/02/skos/core#notation> "86" ;
+	<http://www.w3.org/2004/02/skos/core#prefLabel> "Valutazioni e studi; informazioni e comunicazione"@it ;
+	<http://www.w3.org/2004/02/skos/core#inScheme> <http://data.openbudgets.eu/resource/codelist/oc-eu-functional-class> .
+
+<http://data.openbudgets.eu/resource/codelist/oc-eu-functional-class/A1> a <http://www.w3.org/2004/02/skos/core#Concept> ;
+	<http://www.w3.org/2004/02/skos/core#broadMatch> <http://data.openbudgets.eu/resource/codelist/oc-functional-class/10> ;
+	<http://www.w3.org/2004/02/skos/core#notation> "A1" ;
+	<http://www.w3.org/2004/02/skos/core#prefLabel> "Servizi per l'infanzia - Sostegno alla domanda e alla gestione (solo nidi)"@it ;
+	<http://www.w3.org/2004/02/skos/core#topConceptOf> <http://data.openbudgets.eu/resource/codelist/oc-eu-functional-class> .
+
+<http://data.openbudgets.eu/resource/codelist/oc-eu-functional-class/A2> a <http://www.w3.org/2004/02/skos/core#Concept> ;
+	<http://www.w3.org/2004/02/skos/core#broadMatch> <http://data.openbudgets.eu/resource/codelist/oc-functional-class/10> ;
+	<http://www.w3.org/2004/02/skos/core#notation> "A2" ;
+	<http://www.w3.org/2004/02/skos/core#prefLabel> "Servizi per l'infanzia - Progetti per la qualità e azioni di sistema"@it ;
+	<http://www.w3.org/2004/02/skos/core#topConceptOf> <http://data.openbudgets.eu/resource/codelist/oc-eu-functional-class> .
+
+<http://data.openbudgets.eu/resource/codelist/oc-eu-functional-class/B1> a <http://www.w3.org/2004/02/skos/core#Concept> ;
+	<http://www.w3.org/2004/02/skos/core#broadMatch> <http://data.openbudgets.eu/resource/codelist/oc-functional-class/10> ;
+	<http://www.w3.org/2004/02/skos/core#notation> "B1" ;
+	<http://www.w3.org/2004/02/skos/core#prefLabel> "Servizi per gli anziani - Assistenza domiciliare (socio-assistenziale)"@it ;
+	<http://www.w3.org/2004/02/skos/core#topConceptOf> <http://data.openbudgets.eu/resource/codelist/oc-eu-functional-class> .
+
+<http://data.openbudgets.eu/resource/codelist/oc-eu-functional-class/B2> a <http://www.w3.org/2004/02/skos/core#Concept> ;
+	<http://www.w3.org/2004/02/skos/core#broadMatch> <http://data.openbudgets.eu/resource/codelist/oc-functional-class/10> ;
+	<http://www.w3.org/2004/02/skos/core#notation> "B2" ;
+	<http://www.w3.org/2004/02/skos/core#prefLabel> "Servizi per gli anziani - Servizi residenziali e semi-residenziali"@it ;
+	<http://www.w3.org/2004/02/skos/core#topConceptOf> <http://data.openbudgets.eu/resource/codelist/oc-eu-functional-class> .
+
+<http://data.openbudgets.eu/resource/codelist/oc-eu-functional-class/B3> a <http://www.w3.org/2004/02/skos/core#Concept> ;
+	<http://www.w3.org/2004/02/skos/core#broadMatch> <http://data.openbudgets.eu/resource/codelist/oc-functional-class/10> ;
+	<http://www.w3.org/2004/02/skos/core#notation> "B3" ;
+	<http://www.w3.org/2004/02/skos/core#prefLabel> "Servizi per gli anziani - Miglioramento delle competenze"@it ;
+	<http://www.w3.org/2004/02/skos/core#topConceptOf> <http://data.openbudgets.eu/resource/codelist/oc-eu-functional-class> .
+
+<http://data.openbudgets.eu/resource/codelist/oc-eu-functional-class/B4> a <http://www.w3.org/2004/02/skos/core#Concept> ;
+	<http://www.w3.org/2004/02/skos/core#broadMatch> <http://data.openbudgets.eu/resource/codelist/oc-functional-class/10> ;
+	<http://www.w3.org/2004/02/skos/core#notation> "B4" ;
+	<http://www.w3.org/2004/02/skos/core#prefLabel> "Servizi per gli anziani - Progetti pilota territoriali"@it ;
+	<http://www.w3.org/2004/02/skos/core#topConceptOf> <http://data.openbudgets.eu/resource/codelist/oc-eu-functional-class> .
+
+<http://data.openbudgets.eu/resource/codelist/oc-eu-functional-class/G01> a <http://www.w3.org/2004/02/skos/core#Concept> ;
+	<http://www.w3.org/2004/02/skos/core#notation> "G01" ;
+	<http://www.w3.org/2004/02/skos/core#prefLabel> "Ricerca e sviluppo, innovazione, imprenditorialità"@it ;
+	<http://www.w3.org/2004/02/skos/core#topConceptOf> <http://data.openbudgets.eu/resource/codelist/oc-eu-functional-class> .
+
+<http://data.openbudgets.eu/resource/codelist/oc-eu-functional-class/G02> a <http://www.w3.org/2004/02/skos/core#Concept> ;
+	<http://www.w3.org/2004/02/skos/core#notation> "G02" ;
+	<http://www.w3.org/2004/02/skos/core#prefLabel> "Società dell'informazione"@it ;
+	<http://www.w3.org/2004/02/skos/core#topConceptOf> <http://data.openbudgets.eu/resource/codelist/oc-eu-functional-class> .
+
+<http://data.openbudgets.eu/resource/codelist/oc-eu-functional-class/G03> a <http://www.w3.org/2004/02/skos/core#Concept> ;
+	<http://www.w3.org/2004/02/skos/core#notation> "G03" ;
+	<http://www.w3.org/2004/02/skos/core#prefLabel> "Trasporti"@it ;
+	<http://www.w3.org/2004/02/skos/core#topConceptOf> <http://data.openbudgets.eu/resource/codelist/oc-eu-functional-class> .
+
+<http://data.openbudgets.eu/resource/codelist/oc-eu-functional-class/G04> a <http://www.w3.org/2004/02/skos/core#Concept> ;
+	<http://www.w3.org/2004/02/skos/core#notation> "G04" ;
+	<http://www.w3.org/2004/02/skos/core#prefLabel> "Energia"@it ;
+	<http://www.w3.org/2004/02/skos/core#topConceptOf> <http://data.openbudgets.eu/resource/codelist/oc-eu-functional-class> .
+
+<http://data.openbudgets.eu/resource/codelist/oc-eu-functional-class/G05> a <http://www.w3.org/2004/02/skos/core#Concept> ;
+	<http://www.w3.org/2004/02/skos/core#notation> "G05" ;
+	<http://www.w3.org/2004/02/skos/core#prefLabel> "Protezione dell'ambiente e prevenzione dei rischi"@it ;
+	<http://www.w3.org/2004/02/skos/core#topConceptOf> <http://data.openbudgets.eu/resource/codelist/oc-eu-functional-class> .
+
+<http://data.openbudgets.eu/resource/codelist/oc-eu-functional-class/G06> a <http://www.w3.org/2004/02/skos/core#Concept> ;
+	<http://www.w3.org/2004/02/skos/core#notation> "G06" ;
+	<http://www.w3.org/2004/02/skos/core#prefLabel> "Turismo"@it ;
+	<http://www.w3.org/2004/02/skos/core#topConceptOf> <http://data.openbudgets.eu/resource/codelist/oc-eu-functional-class> .
+
+<http://data.openbudgets.eu/resource/codelist/oc-eu-functional-class/G07> a <http://www.w3.org/2004/02/skos/core#Concept> ;
+	<http://www.w3.org/2004/02/skos/core#notation> "G07" ;
+	<http://www.w3.org/2004/02/skos/core#prefLabel> "Cultura"@it ;
+	<http://www.w3.org/2004/02/skos/core#topConceptOf> <http://data.openbudgets.eu/resource/codelist/oc-eu-functional-class> .
+
+<http://data.openbudgets.eu/resource/codelist/oc-eu-functional-class/G08> a <http://www.w3.org/2004/02/skos/core#Concept> ;
+	<http://www.w3.org/2004/02/skos/core#notation> "G08" ;
+	<http://www.w3.org/2004/02/skos/core#prefLabel> "Rinnovamento urbano  e rurale"@it ;
+	<http://www.w3.org/2004/02/skos/core#topConceptOf> <http://data.openbudgets.eu/resource/codelist/oc-eu-functional-class> .
+
+<http://data.openbudgets.eu/resource/codelist/oc-eu-functional-class/G09> a <http://www.w3.org/2004/02/skos/core#Concept> ;
+	<http://www.w3.org/2004/02/skos/core#notation> "G09" ;
+	<http://www.w3.org/2004/02/skos/core#prefLabel> "Sviluppo capacità di adattamento dei lavoratori, imprese, imprenditori"@it ;
+	<http://www.w3.org/2004/02/skos/core#topConceptOf> <http://data.openbudgets.eu/resource/codelist/oc-eu-functional-class> .
+
+<http://data.openbudgets.eu/resource/codelist/oc-eu-functional-class/G10> a <http://www.w3.org/2004/02/skos/core#Concept> ;
+	<http://www.w3.org/2004/02/skos/core#notation> "G10" ;
+	<http://www.w3.org/2004/02/skos/core#prefLabel> "Migliore inclusione sociale dei gruppi svantaggiati"@it ;
+	<http://www.w3.org/2004/02/skos/core#topConceptOf> <http://data.openbudgets.eu/resource/codelist/oc-eu-functional-class> .
+
+<http://data.openbudgets.eu/resource/codelist/oc-eu-functional-class/G11> a <http://www.w3.org/2004/02/skos/core#Concept> ;
+	<http://www.w3.org/2004/02/skos/core#notation> "G11" ;
+	<http://www.w3.org/2004/02/skos/core#prefLabel> "Miglioramento capitale umano"@it ;
+	<http://www.w3.org/2004/02/skos/core#topConceptOf> <http://data.openbudgets.eu/resource/codelist/oc-eu-functional-class> .
+
+<http://data.openbudgets.eu/resource/codelist/oc-eu-functional-class/G12> a <http://www.w3.org/2004/02/skos/core#Concept> ;
+	<http://www.w3.org/2004/02/skos/core#notation> "G12" ;
+	<http://www.w3.org/2004/02/skos/core#prefLabel> "Investimenti nelle infrastrutture sociali"@it ;
+	<http://www.w3.org/2004/02/skos/core#topConceptOf> <http://data.openbudgets.eu/resource/codelist/oc-eu-functional-class> .
+
+<http://data.openbudgets.eu/resource/codelist/oc-eu-functional-class/G13> a <http://www.w3.org/2004/02/skos/core#Concept> ;
+	<http://www.w3.org/2004/02/skos/core#notation> "G13" ;
+	<http://www.w3.org/2004/02/skos/core#prefLabel> "Mobilitazione a favore delle riforme nei settori occupazione e inclusione"@it ;
+	<http://www.w3.org/2004/02/skos/core#topConceptOf> <http://data.openbudgets.eu/resource/codelist/oc-eu-functional-class> .
+
+<http://data.openbudgets.eu/resource/codelist/oc-eu-functional-class/G14> a <http://www.w3.org/2004/02/skos/core#Concept> ;
+	<http://www.w3.org/2004/02/skos/core#notation> "G14" ;
+	<http://www.w3.org/2004/02/skos/core#prefLabel> "Consolidamento delle capacità istituzionali a livello nazionale, regionale e locale"@it ;
+	<http://www.w3.org/2004/02/skos/core#topConceptOf> <http://data.openbudgets.eu/resource/codelist/oc-eu-functional-class> .
+
+<http://data.openbudgets.eu/resource/codelist/oc-eu-functional-class/G15> a <http://www.w3.org/2004/02/skos/core#Concept> ;
+	<http://www.w3.org/2004/02/skos/core#notation> "G15" ;
+	<http://www.w3.org/2004/02/skos/core#prefLabel> "Riduzione dei costi supplementari che ostacolo lo sviluppo delle regioni ultraperiferiche"@it ;
+	<http://www.w3.org/2004/02/skos/core#topConceptOf> <http://data.openbudgets.eu/resource/codelist/oc-eu-functional-class> .
+
+<http://data.openbudgets.eu/resource/codelist/oc-eu-functional-class/G16> a <http://www.w3.org/2004/02/skos/core#Concept> ;
+	<http://www.w3.org/2004/02/skos/core#notation> "G16" ;
+	<http://www.w3.org/2004/02/skos/core#prefLabel> "Assistenza tecnica"@it ;
+	<http://www.w3.org/2004/02/skos/core#topConceptOf> <http://data.openbudgets.eu/resource/codelist/oc-eu-functional-class> .
+
+<http://data.openbudgets.eu/resource/codelist/oc-eu-functional-class> a <http://www.w3.org/2004/02/skos/core#ConceptScheme> ;
+	rdfs:comment "The code list of the EU functional classification is defined for the 2007-2013 programme in EU Regulation 1828/2006 and provides 86 entries in 16 groups that describe the sectoral categories of project expenditures."@en , "La classificazione per temi prioritari UE è definita, per la programmazione 2007-2013, nel Regolamento UE 1828/2006 e prevede 86 voci che descrivono le categorie settoriali di spesa dei progetti."@it ;
+	rdfs:label "Code list for EU functional classification"@en , "I codici identificativo del tema prioritario UE"@it ;
+	<http://www.w3.org/2004/02/skos/core#hasTopConcept> <http://data.openbudgets.eu/resource/codelist/oc-eu-functional-class/A1> , <http://data.openbudgets.eu/resource/codelist/oc-eu-functional-class/A2> , <http://data.openbudgets.eu/resource/codelist/oc-eu-functional-class/B1> , <http://data.openbudgets.eu/resource/codelist/oc-eu-functional-class/B2> , <http://data.openbudgets.eu/resource/codelist/oc-eu-functional-class/B3> , <http://data.openbudgets.eu/resource/codelist/oc-eu-functional-class/B4> , <http://data.openbudgets.eu/resource/codelist/oc-eu-functional-class/G01> , <http://data.openbudgets.eu/resource/codelist/oc-eu-functional-class/G02> , <http://data.openbudgets.eu/resource/codelist/oc-eu-functional-class/G03> , <http://data.openbudgets.eu/resource/codelist/oc-eu-functional-class/G04> , <http://data.openbudgets.eu/resource/codelist/oc-eu-functional-class/G05> , <http://data.openbudgets.eu/resource/codelist/oc-eu-functional-class/G06> , <http://data.openbudgets.eu/resource/codelist/oc-eu-functional-class/G07> , <http://data.openbudgets.eu/resource/codelist/oc-eu-functional-class/G08> , <http://data.openbudgets.eu/resource/codelist/oc-eu-functional-class/G09> , <http://data.openbudgets.eu/resource/codelist/oc-eu-functional-class/G10> , <http://data.openbudgets.eu/resource/codelist/oc-eu-functional-class/G11> , <http://data.openbudgets.eu/resource/codelist/oc-eu-functional-class/G12> , <http://data.openbudgets.eu/resource/codelist/oc-eu-functional-class/G13> , <http://data.openbudgets.eu/resource/codelist/oc-eu-functional-class/G14> , <http://data.openbudgets.eu/resource/codelist/oc-eu-functional-class/G15> , <http://data.openbudgets.eu/resource/codelist/oc-eu-functional-class/G16> .
