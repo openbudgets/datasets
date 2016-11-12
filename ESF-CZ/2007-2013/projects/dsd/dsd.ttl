@@ -4,6 +4,7 @@
 @prefix esf-class:      <http://data.openbudgets.eu/ontology/esf-czech-projects/class/> .
 @prefix esf-codelist:   <http://data.openbudgets.eu/ontology/esf-czech-projects/code-list/> .
 @prefix esf-dimension:  <http://data.openbudgets.eu/ontology/esf-czech-projects/dimension/> .
+@prefix esf-slice:      <http://data.openbudgets.eu/ontology/esf-czech-projects/slice-key/> .
 
 # ----- OpenBudgets.eu namespaces -----
 
@@ -34,12 +35,16 @@
                [ qb:dimension obeu-dimension:paymentPhase ;
                  qb:order 3 ],
                [ qb:dimension esf-dimension:operationalProgramme ;
+                 qb:componentAttachment qb:Slice ;
                  qb:order 4 ],
                [ qb:dimension obeu-dimension:partner ;
+                 qb:componentAttachment qb:Slice ;
                  qb:order 5 ],
                [ qb:dimension obeu-dimension:project ;
+                 qb:componentAttachment qb:Slice ;
                  qb:order 6 ],
                [ qb:dimension obeu-dimension:date ;
+                 qb:componentAttachment qb:Slice ;
                  qb:order 7 ],
                [ qb:measure obeu-measure:amount ;
                  qb:order 8 ],
@@ -47,6 +52,13 @@
                  qb:componentRequired true ;
                  qb:componentAttachment qb:DataSet ;
                  qb:order 9 ] .
+
+# ----- Slice keys -----
+
+esf-slice:by-operational-programme-partner-project-date a qb:SliceKey ;
+  rdfs:label "Slice by operational programme, partner, project, and date"@en ;
+  qb:componentProperty esf-dimension:operationalProgramme, obeu-dimension:partner,
+                       obeu-dimension:project, obeu-dimension:date .
 
 # ----- Component properties -----
 
