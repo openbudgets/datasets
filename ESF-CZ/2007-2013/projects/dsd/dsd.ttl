@@ -1,0 +1,77 @@
+# ----- DSD-specific namespaces -----
+
+@prefix esf:            <http://data.openbudgets.eu/ontology/esf-czech-projects/> .
+@prefix esf-class:      <http://data.openbudgets.eu/ontology/esf-czech-projects/class/> .
+@prefix esf-codelist:   <http://data.openbudgets.eu/ontology/esf-czech-projects/code-list/> .
+@prefix esf-dimension:  <http://data.openbudgets.eu/ontology/esf-czech-projects/dimension/> .
+
+# ----- OpenBudgets.eu namespaces -----
+
+@prefix obeu-attribute: <http://data.openbudgets.eu/ontology/dsd/attribute/> .
+@prefix obeu-dimension: <http://data.openbudgets.eu/ontology/dsd/dimension/> .
+@prefix obeu-measure:   <http://data.openbudgets.eu/ontology/dsd/measure/> .
+
+# ----- Generic namespaces ------
+
+@prefix foaf:           <http://xmlns.com/foaf/0.1/> .
+@prefix owl:            <http://www.w3.org/2002/07/owl#> .
+@prefix qb:             <http://purl.org/linked-data/cube#> .
+@prefix rdf:            <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:           <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema:         <http://schema.org/> .
+@prefix sdmx-concept:   <http://purl.org/linked-data/sdmx/2009/concept#> .
+@prefix skos:           <http://www.w3.org/2004/02/skos/core#> .
+
+# ----- DSD -----
+
+<http://data.openbudgets.eu/ontology/dsd/esf-czech-projects> a qb:DataStructureDefinition ;
+  rdfs:label "DSD of Czech ESF projects"@en ;
+  qb:component [ qb:dimension obeu-dimension:operationCharacter ;
+                 qb:componentAttachment qb:DataSet ;
+                 qb:order 1 ],
+               [ qb:dimension obeu-dimension:organization ;
+                 qb:order 2 ],
+               [ qb:dimension obeu-dimension:paymentPhase ;
+                 qb:order 3 ],
+               [ qb:dimension esf-dimension:operationalProgramme ;
+                 qb:order 4 ],
+               [ qb:dimension obeu-dimension:partner ;
+                 qb:order 5 ],
+               [ qb:dimension obeu-dimension:project ;
+                 qb:order 6 ],
+               [ qb:dimension obeu-dimension:date ;
+                 qb:order 7 ],
+               [ qb:measure obeu-measure:amount ;
+                 qb:order 8 ],
+               [ qb:attribute obeu-attribute:currency ;
+                 qb:componentRequired true ;
+                 qb:componentAttachment qb:DataSet ;
+                 qb:order 9 ] .
+
+# ----- Component properties -----
+
+esf-dimension:operationalProgramme a rdf:Property, qb:DimensionProperty, owl:ObjectProperty ;
+  rdfs:label "Operational programme"@en ;
+  rdfs:subPropertyOf obeu-dimension:programmeClassification ;
+  qb:codeList esf-codelist:operational-programme ;
+  rdfs:range esf-class:OperationalProgramme ;
+  rdfs:isDefinedBy <http://data.openbudgets.eu/ontology/dsd/esf-czech-projects> .
+
+# ----- Code lists -----
+
+esf-codelist:operational-programme a skos:ConceptScheme ;
+  rdfs:label "Code list of operational programmes"@en .
+
+# ----- Classes -----
+
+esf-class:OperationalProgramme a rdfs:Class ;
+  rdfs:label "Operational programme"@en ;
+  rdfs:subClassOf skos:Concept .
+
+# ----- Properties -----
+
+esf:projectStatus a rdf:Property, owl:ObjectProperty, owl:FunctionalProperty ;
+  rdfs:label "Project status"@en ;
+  rdfs:domain foaf:Project ;
+  rdfs:range skos:Concept ;
+  rdfs:isDefinedBy <http://data.openbudgets.eu/ontology/esf-czech-projects> .
