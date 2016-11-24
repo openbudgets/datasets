@@ -73,16 +73,6 @@ esif-dimension:memberStates a rdf:Property, qb:CodedProperty, qb:DimensionProper
   qb:codeList <http://data.openbudgets.eu/resource/ESIF-2014-2020/codelist/memberStates> ;
   rdfs:isDefinedBy <http://data.openbudgets.eu/ontology/dsd/ESIF-2014-2020> . 
 
-esif-dimension:priority a rdf:Property, qb:CodedProperty, qb:DimensionProperty ;
-  rdfs:label "Priority"@en ;
-  rdfs:comment "EU ESIF Priority ."@en ;
-  rdfs:subPropertyOf obeu-dimension:classification ;
-  qb:codeList <http://data.openbudgets.eu/resource/ESIF-2014-2020/codelist/priority>;
-  rdfs:range esif:Priority ;
-  rdfs:isDefinedBy <http://data.openbudgets.eu/ontology/dsd/ESIF-2014-2020> .
-
-
-
 esif-dimension:eafrdPriority a rdf:Property, qb:CodedProperty, qb:DimensionProperty ;
   rdfs:label "EAFRD Priority"@en ;
   rdfs:comment "EU ESIF-EAFRD (European Agricultural Fund for Rural Development) Priority ."@en ;
@@ -98,11 +88,6 @@ esif-dimension:eafrdPriority a rdf:Property, qb:CodedProperty, qb:DimensionPrope
   qb:codeList <http://data.openbudgets.eu/resource/ESIF-2014-2020/codelist/nationalPriority>;
   rdfs:range esif:NationalPriority ;
   rdfs:isDefinedBy <http://data.openbudgets.eu/ontology/dsd/ESIF-2014-2020> . 
-
-
-
-
-
 
 
 esif-dimension:measure a rdf:Property, qb:CodedProperty, qb:DimensionProperty ;
@@ -145,14 +130,6 @@ esif-measure:amountTotal a rdf:Property, qb:MeasureProperty ;
 # rdfs:comment "Purpose of funded money"@en ;
 #  rdfs:subClassOf skos:Concept ;
 # rdfs:isDefinedBy <http://data.openbudgets.eu/ontology/dsd/ESIF-2014-2020> .
-
-esif:Priority a rdfs:Class ;
-  rdfs:label "Priority"@en ;
-  rdfs:comment "Priority of funded money"@en ;
-  rdfs:subClassOf skos:Concept ;
-  rdfs:isDefinedBy <http://data.openbudgets.eu/ontology/dsd/ESIF-2014-2020> .  
-
-
 
 esif:EafrdPriority a rdfs:Class ;
   rdfs:label "EAFRD-EU Priority"@en ;
