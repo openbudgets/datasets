@@ -81,6 +81,30 @@ esif-dimension:priority a rdf:Property, qb:CodedProperty, qb:DimensionProperty ;
   rdfs:range esif:Priority ;
   rdfs:isDefinedBy <http://data.openbudgets.eu/ontology/dsd/ESIF-2014-2020> .
 
+
+
+esif-dimension:eafrdPriority a rdf:Property, qb:CodedProperty, qb:DimensionProperty ;
+  rdfs:label "EAFRD Priority"@en ;
+  rdfs:comment "EU ESIF-EAFRD (European Agricultural Fund for Rural Development) Priority ."@en ;
+  rdfs:subPropertyOf obeu-dimension:classification ;
+  qb:codeList <http://data.openbudgets.eu/resource/ESIF-2014-2020/codelist/eafrdPriority>;
+  rdfs:range esif:Priority ;
+  rdfs:isDefinedBy <http://data.openbudgets.eu/ontology/dsd/ESIF-2014-2020> .
+
+ esif-dimension:nationalPriority a rdf:Property, qb:CodedProperty, qb:DimensionProperty ;
+  rdfs:label "EAFRD National Priority"@en ;
+  rdfs:comment "EAFRD Priority defined directly by EU member states."@en ;
+  rdfs:subPropertyOf obeu-dimension:classification ;
+  qb:codeList <http://data.openbudgets.eu/resource/ESIF-2014-2020/codelist/nationalPriority>;
+  rdfs:range esif:NationalPriority ;
+  rdfs:isDefinedBy <http://data.openbudgets.eu/ontology/dsd/ESIF-2014-2020> . 
+
+
+
+
+
+
+
 esif-dimension:measure a rdf:Property, qb:CodedProperty, qb:DimensionProperty ;
   rdfs:label "Measure"@en ;
   rdfs:comment "EU ESIF Measure ."@en ;
@@ -127,6 +151,23 @@ esif:Priority a rdfs:Class ;
   rdfs:comment "Priority of funded money"@en ;
   rdfs:subClassOf skos:Concept ;
   rdfs:isDefinedBy <http://data.openbudgets.eu/ontology/dsd/ESIF-2014-2020> .  
+
+
+
+esif:EafrdPriority a rdfs:Class ;
+  rdfs:label "EAFRD-EU Priority"@en ;
+  rdfs:comment "EAFRD Priority defined by EU committee"@en ;
+  rdfs:subClassOf skos:Concept ;
+  rdfs:isDefinedBy <http://data.openbudgets.eu/ontology/dsd/ESIF-2014-2020> .  
+
+
+esif:NationalPriority a rdfs:Class ;
+  rdfs:label "EAFRD-National Priority"@en ;
+  rdfs:comment "EAFRD Priority defined directly by EU member states"@en ;
+  rdfs:subClassOf skos:Concept ;
+  rdfs:isDefinedBy <http://data.openbudgets.eu/ontology/dsd/ESIF-2014-2020> .    
+
+
 
 esif:Measure a rdfs:Class ;
   rdfs:label "Measure"@en ;
