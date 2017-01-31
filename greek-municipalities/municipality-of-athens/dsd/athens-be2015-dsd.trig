@@ -1,0 +1,85 @@
+@prefix athens-be2015-dimension: <http://data.openbudgets.eu/ontology/dsd/budget-athens-expenditure-2015/dimension/> .
+@prefix athens-be2015:           <http://data.openbudgets.eu/resource/dataset/budget-athens-expenditure-2015/> .
+@prefix athens-be2015-dsd-slice: <http://data.openbudgets.eu/ontology/dsd/budget-athens-expenditure-2015/slice/> .
+@prefix athens-dimension: <http://data.openbudgets.eu/ontology/dsd/municipality-of-athens/dimension/> .
+@prefix gr-dimension: <http://data.openbudgets.eu/ontology/dsd/greek-municipalities/dimension/> .
+@prefix gr-budgetPhase: <http://data.openbudgets.eu/resource/dataset/greek-municipalities/codelist/budget-phase> .
+@prefix gr-codelist: <http://data.openbudgets.eu/resource/dataset/greek-municipalities/codelist/> .
+@prefix obeu:             <http://data.openbudgets.eu/ontology/> .
+@prefix obeu-attribute:   <http://data.openbudgets.eu/ontology/dsd/attribute/> .
+@prefix obeu-dimension:   <http://data.openbudgets.eu/ontology/dsd/dimension/>.
+@prefix obeu-measure:     <http://data.openbudgets.eu/ontology/dsd/measure/> .
+@prefix obeu-budgetphase: <http://data.openbudgets.eu/resource/codelist/budget-phase/> .
+@prefix obeu-codelist:    <http://data.openbudgets.eu/resource/codelist/> .
+@prefix qb:               <http://purl.org/linked-data/cube#> .
+@prefix rdf:              <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:             <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:             <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd:              <http://www.w3.org/2001/XMLSchema#> .
+<http://data.openbudgets.eu/ontology/dsd/athens-be2015-dsd> {
+# -----DSD-specific namespaces
+# -----Athens Municipality specific namespaces
+# -----Greek Municipalities specific namespaces
+# -----OpenBudgets.eu namespaces -----
+# -----Generic namespaces ------
+
+
+# DSD 
+<http://data.openbudgets.eu/ontology/dsd/budget-athens-expenditure-2015> a 
+  qb:DataStructureDefinition ;
+	rdfs:label "Data structure definition for the expenditure budget of Athens Municipality for year 2015"@en ;
+  qb:component
+	[ qb:dimension obeu-dimension:organization ;
+		qb:componentAttachment qb:DataSet ],
+	[ qb:dimension obeu-dimension:operationCharacter ;
+		qb:componentAttachment qb:DataSet ],
+	[ qb:dimension obeu-dimension:fiscalYear;
+		qb:componentAttachment qb:DataSet ],
+	[ qb:dimension athens-dimension:administrativeClassification ;
+                qb:componentAttachment qb:Slice ],
+	[ qb:dimension gr-dimension:economicClassification ;
+                qb:componentAttachment qb:Slice],
+	[ qb:dimension athens-be2015-dimension:functionalClassification;
+		qb:componentAttachment qb:Slice ],
+	[ qb:dimension gr-dimension:budgetPhase], 
+	[ qb:attribute obeu-attribute:currency ;
+	  qb:componentRequired "true"^^xsd:boolean ;
+	  qb:componentAttachment qb:DataSet ],
+	[ qb:measure obeu-measure:amount ] ;
+	
+	qb:sliceKey  athens-be2015-dsd-slice:slice-by-functionalCode.
+
+	
+# Slice key definition
+athens-be2015-dsd-slice:slice-by-functionalCode a qb:SliceKey ;
+	rdfs:label "slice by functional code"@en ;
+	rdfs:comment "Slice grouping observations of the same functional code for all budget phases."@en ;
+	qb:componentProperty athens-be2015-dimension:functionalClassification ;
+	qb:componentProperty athens-dimension:administrativeClassification ;
+	qb:componentProperty gr-dimension:economicClassification .
+
+#dimension definition	
+gr-dimension:economicClassification a rdf:Property, qb:CodedProperty, qb:DimensionProperty ;
+	rdfs:label "KA of Expenditure"@en ;
+	rdfs:comment "Budget expenditure codes (KAE) for greek municipalities"@en ;
+	rdfs:subPropertyOf obeu-dimension:economicClassification ;
+	qb:codeList obeu-codelist:kae-ota-exodwn-2014 ;
+	rdfs:range skos:Concept ;
+	rdfs:isDefinedBy <http://data.openbudgets.eu/ontology/dsd/greek-municipalities> . 
+
+athens-dimension:administrativeClassification a rdf:Property, qb:CodedProperty, qb:DimensionProperty ;
+	rdfs:label "Municipality Office"@en ;
+	rdfs:comment "The organization unit (office) of the municipality of Athens that is responsible for the budget amount."@en ;
+	rdfs:subPropertyOf obeu-dimension:administrativeClassification ;
+	qb:codeList gr-codelist:athens-administrations ;
+	rdfs:range skos:Concept ;
+	rdfs:isDefinedBy <http://data.openbudgets.eu/ontology/dsd/municipality-of-athens> .
+	
+athens-be2015-dimension:functionalClassification a rdf:Property, qb:CodedProperty, qb:DimensionProperty ;
+	rdfs:label "Municipality Office - KAE Programme"@en ;
+	rdfs:comment "Specific function of expenditure budget per office for Municipality of Athens expenditure Budget of year 2015"@en ;
+	rdfs:subPropertyOf obeu-dimension:functionalClassification ;
+	qb:codeList athens-be2015:codelist ;
+	rdfs:range skos:Concept ;
+	rdfs:isDefinedBy <http://data.openbudgets.eu/ontology/dsd/budget-athens-expenditure-2015> .
+}

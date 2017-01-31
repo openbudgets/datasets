@@ -1,0 +1,37 @@
+@prefix gr-codelist: <http://data.openbudgets.eu/resource/dataset/greek-municipalities/codelist/> .
+@prefix gr-dimension: <http://data.openbudgets.eu/ontology/dsd/greek-municipalities/dimension/> .
+@prefix gr-budgetPhase: <http://data.openbudgets.eu/resource/dataset/greek-municipalities/codelist/budget-phase/> .
+@prefix obeu:             <http://data.openbudgets.eu/ontology/> .
+@prefix obeu-attribute:   <http://data.openbudgets.eu/ontology/dsd/attribute/> .
+@prefix obeu-dimension:   <http://data.openbudgets.eu/ontology/dsd/dimension/>.
+@prefix obeu-measure:     <http://data.openbudgets.eu/ontology/dsd/measure/> .
+@prefix obeu-budgetphase: <http://data.openbudgets.eu/resource/codelist/budget-phase/> .
+@prefix qb:               <http://purl.org/linked-data/cube#> .
+@prefix rdf:              <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:             <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:             <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd:              <http://www.w3.org/2001/XMLSchema#> .
+<http://data.openbudgets.eu/resource/codelist/budget-phase> {
+# -----DSD-specific namespaces
+# -----OpenBudgets.eu namespaces -----
+
+# -----Generic namespaces ------
+
+
+gr-dimension:budgetPhase a rdf:Property, qb:CodedProperty, qb:DimensionProperty ;
+rdfs:label "Budget Phase"@en ;
+rdfs:comment "Greek Municipalities budget's specific budget phases"@en ;
+rdfs:subPropertyOf obeu-dimension:budgetPhase ;
+qb:codeList gr-codelist:budget-phase ;
+rdfs:range obeu:BudgetPhase ;
+rdfs:isDefinedBy <http://data.openbudgets.eu/ontology/dsd/greek-municipalities> .
+
+gr-codelist:budget-phase a skos:ConceptScheme ;
+rdfs:label "An extended code list of budget phases for the Greek Municipalities budget's"@en ;
+skos:hasTopConcept obeu-budgetphase:draft, obeu-budgetphase:revised, obeu-budgetphase:approved, obeu-budgetphase:executed, gr-budgetPhase:reserved .
+
+gr-budgetPhase:reserved a skos:Concept, obeu:BudgetPhase ;
+skos:prefLabel "Reserved"@en ;
+skos:definition "The amount reserved for the budget line."@en ;
+skos:inScheme gr-codelist:budget-phase .
+}

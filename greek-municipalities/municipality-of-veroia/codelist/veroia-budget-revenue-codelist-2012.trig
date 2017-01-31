@@ -1,0 +1,1479 @@
+@prefix gr-dimension: <http://data.openbudgets.eu/ontology/dsd/greek-municipalities/dimension/> .
+@prefix kae-ota-es14: <http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014/> .
+@prefix gr-administrations: <http://data.openbudgets.eu/resource/codelist/kae-ota-administration-2014/> .
+@prefix gr-budgetPhase: <http://data.openbudgets.eu/resource/dataset/greek-municipalities/codelist/budget-phase/> .
+@prefix veroia-br2012-slice: <http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/slice/> .
+@prefix veroia-br2012-dsd: <http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/> .
+@prefix veroia-br2012-observation: <http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/observation/> .
+@prefix veroia-br2012-dimension: <http://data.openbudgets.eu/ontology/dsd/budget-veroia-revenue-2012/dimension/> .
+@prefix veroia-br2012-codelist: <http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist/> .
+@prefix dbp: <http://dbpedia.org/property/> .
+@prefix interval: <http://reference.data.gov.uk/def/intervals/> .
+@prefix obeu: <http://data.openbudgets.eu/ontology/> .
+@prefix obeu-attribute: <http://data.openbudgets.eu/ontology/dsd/attribute/> .
+@prefix obeu-codelist: <http://data.openbudgets.eu/resource/codelist/> .
+@prefix obeu-dimension: <http://data.openbudgets.eu/ontology/dsd/dimension/> .
+@prefix obeu-measure: <http://data.openbudgets.eu/ontology/dsd/measure/> .
+@prefix obeu-budgetphase: <http://data.openbudgets.eu/resource/codelist/budget-phase/> .
+@prefix obeu-currency: <http://data.openbudgets.eu/codelist/currency/> .
+@prefix obeu-operation: <http://data.openbudgets.eu/resource/codelist/operation-character/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix qb: <http://purl.org/linked-data/cube#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <http://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix time: <http://www.w3.org/2006/time#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix dcat: <http://www.w3.org/ns/dcat#> .
+@prefix terms: <http://purl.org/dc/terms/> .
+@prefix sesame: <http://www.openrdf.org/schema/sesame#> .
+@prefix fn: <http://www.w3.org/2005/xpath-functions#> .
+<http://data.openbudgets.eu/resource/codelist/veroia-budget-revenue-codelist-2012> {
+
+veroia-br2012-dsd:codelist a skos:ConceptScheme ;
+	skos:hasTopConcept veroia-br2012-codelist:00 ;
+	skos:prefLabel "Veroia municipality revenue budget codelist as derived from the dataset of year 2012" .
+
+veroia-br2012-codelist:00 a skos:Concept ;
+	skos:inScheme veroia-br2012-dsd:codelist ;
+	skos:narrower <http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist/00/0111> , <http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist/00/0112> , <http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist/00/0113> , <http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist/00/0114> , <http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist/00/0115> , <http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist/00/0116> , <http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist/00/0117> , <http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist/00/0121> , <http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist/00/0122> , <http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist/00/0123> , <http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist/00/0124> , <http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist/00/0125> , <http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist/00/0126> , <http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist/00/0127> , <http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist/00/0129> , <http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist/00/0211> , <http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist/00/0213> , <http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist/00/0221> , <http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist/00/0223> , <http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist/00/0311> , <http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist/00/0322> , <http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist/00/0331> , <http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist/00/0411> , <http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist/00/0412> , <http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist/00/0413> , <http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist/00/0414> , <http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist/00/0415> , <http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist/00/0431> , <http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist/00/0441> , <http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist/00/0451> , <http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist/00/0452> , <http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist/00/0461> , <http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist/00/0462> , <http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist/00/0464> , <http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist/00/0465> , <http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist/00/0468> , <http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist/00/0469> , <http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist/00/0471> , <http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist/00/0511> , <http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist/00/0512> , <http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist/00/0514> , <http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist/00/0521> , <http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist/00/0522> , <http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist/00/0523> , <http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist/00/0611> , <http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist/00/0612> , <http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist/00/0613> , <http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist/00/0614> , <http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist/00/0615> , <http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist/00/0619> , <http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist/00/0621> , <http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist/00/0711> , <http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist/00/0713> , <http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist/00/0714> , <http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist/00/0715> , <http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist/00/0716> , <http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist/00/0718> , <http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist/00/1115> , <http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist/00/1116> , <http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist/00/1121> , <http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist/00/1122> , <http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist/00/1211> , <http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist/00/1212> , <http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist/00/1213> , <http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist/00/1214> , <http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist/00/1311> , <http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist/00/1312> , <http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist/00/1313> , <http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist/00/1314> , <http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist/00/1319> , <http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist/00/1321> , <http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist/00/1322> , <http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist/00/1325> , <http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist/00/1326> , <http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist/00/1327> , <http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist/00/1411> , <http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist/00/1511> , <http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist/00/1512> , <http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist/00/1513> , <http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist/00/1514> , <http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist/00/1515> , <http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist/00/1516> , <http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist/00/1517> , <http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist/00/1518> , <http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist/00/1519> , <http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist/00/1521> , <http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist/00/1522> , <http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist/00/1611> , <http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist/00/1612> , <http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist/00/1613> , <http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist/00/1614> , <http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist/00/1615> , <http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist/00/1616> , <http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist/00/1617> , <http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist/00/1619> , <http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist/00/1622> , <http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist/00/1623> , <http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist/00/1624> , <http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist/00/1626> , <http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist/00/1627> , <http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist/00/1699> , <http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist/00/2111> , <http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist/00/2112> , <http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist/00/2113> , <http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist/00/2114> , <http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist/00/2115> , <http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist/00/2117> , <http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist/00/2118> , <http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist/00/2119> , <http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist/00/2211> , <http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist/00/2212> , <http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist/00/3111> , <http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist/00/3112> , <http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist/00/3121> , <http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist/00/3122> , <http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist/00/3211> , <http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist/00/3212> , <http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist/00/3213> , <http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist/00/3214> , <http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist/00/3215> , <http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist/00/3217> , <http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist/00/3218> , <http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist/00/3219> , <http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist/00/3221> , <http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist/00/3222> , <http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist/00/4111> , <http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist/00/4112> , <http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist/00/4121> , <http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist/00/4122> , <http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist/00/4123> , <http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist/00/4124> , <http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist/00/4131> , <http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist/00/4141> , <http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist/00/4142> , <http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist/00/4211> , <http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist/00/4212> , <http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist/00/4213> , <http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist/00/4214> , <http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist/00/5111> , <http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist/00/5112> , <http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist/00/5121> , <http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist/00/5122> ;
+	skos:notation "00" ;
+	skos:prefLabel "ΓΕΝΙΚΕΣ ΥΠΗΡΕΣΙΕΣ"@el ;
+	skos:topConceptOf veroia-br2012-dsd:codelist .
+
+<http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist/00/0111> a skos:Concept ;
+	skos:inScheme veroia-br2012-dsd:codelist ;
+	skos:notation "0111" ;
+	skos:prefLabel "Μισθώματα από αστικά ακίνητα (άρθρο 253 ΔΚΚ)" ;
+	skos:broader veroia-br2012-codelist:00 ;
+	skos:broadMatch kae-ota-es14:0111 .
+
+<http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist/00/0112> a skos:Concept ;
+	skos:inScheme veroia-br2012-dsd:codelist ;
+	skos:notation "0112" ;
+	skos:prefLabel "Μισθώματα βοσκησίμων εκτάσεων (άρθρο 5 ΒΔ 24/9-20/1958, άρθρο 31ΝΔ 4260/62)" ;
+	skos:broader veroia-br2012-codelist:00 ;
+	skos:broadMatch kae-ota-es14:0112 .
+
+<http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist/00/0113> a skos:Concept ;
+	skos:inScheme veroia-br2012-dsd:codelist ;
+	skos:notation "0113" ;
+	skos:prefLabel "Μισθώματα καλλιεργήσιμης γης (άρθρο 255 ΔΚΚ)" ;
+	skos:broader veroia-br2012-codelist:00 ;
+	skos:broadMatch kae-ota-es14:0113 .
+
+<http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist/00/0114> a skos:Concept ;
+	skos:inScheme veroia-br2012-dsd:codelist ;
+	skos:notation "0114" ;
+	skos:prefLabel "Μισθώματα δημοτικής αγοράς (άρθρο 2 ΒΔ 24/9-20/10/1958)" ;
+	skos:broader veroia-br2012-codelist:00 ;
+	skos:broadMatch kae-ota-es14:0114 .
+
+<http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist/00/0115> a skos:Concept ;
+	skos:inScheme veroia-br2012-dsd:codelist ;
+	skos:notation "0115" ;
+	skos:prefLabel "Μισθώματα από την παραχώρηση κοινόχρηστων χώρων για την τοποθέτηση διαφημιστικών μέσων (άρθρο 3Ν 2946/2001)" ;
+	skos:broader veroia-br2012-codelist:00 ;
+	skos:broadMatch kae-ota-es14:0115 .
+
+<http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist/00/0116> a skos:Concept ;
+	skos:inScheme veroia-br2012-dsd:codelist ;
+	skos:notation "0116" ;
+	skos:prefLabel "Μισθώματα δημοτικών και κοινοτικών λατομείων (άρθρο 20 Ν 669/77, άρθρο 7 Ν 1428/84)" ;
+	skos:broader veroia-br2012-codelist:00 ;
+	skos:broadMatch kae-ota-es14:0116 .
+
+<http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist/00/0117> a skos:Concept ;
+	skos:inScheme veroia-br2012-dsd:codelist ;
+	skos:notation "0117" ;
+	skos:prefLabel "Μισθώματα δασών και δασικών εκτάσεων (άρθρο 257 ΔΚΚ, άρθρο 39 Ν 998/79)" ;
+	skos:broader veroia-br2012-codelist:00 ;
+	skos:broadMatch kae-ota-es14:0117 .
+
+<http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist/00/0121> a skos:Concept ;
+	skos:inScheme veroia-br2012-dsd:codelist ;
+	skos:notation "0121" ;
+	skos:prefLabel "Έσοδα από την εκμετάλλευση διαφημιστικών χώρων σε αθλητικές εγκαταστάσεις (άρθρο 56 Ν 2725/99) και στέγαστρα αστικών και υπεραστικών συγκοινωνιών (άρθρο 21 Ν 2963/2001)" ;
+	skos:broader veroia-br2012-codelist:00 ;
+	skos:broadMatch kae-ota-es14:0121 .
+
+<http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist/00/0122> a skos:Concept ;
+	skos:inScheme veroia-br2012-dsd:codelist ;
+	skos:notation "0122" ;
+	skos:prefLabel "Τέλη και δικαιώματα από εμποροπανηγύρεις, παζάρια και λαϊκές αγορές (άρθρο 19 ΒΔ 24/9-20/10/1958)" ;
+	skos:broader veroia-br2012-codelist:00 ;
+	skos:broadMatch kae-ota-es14:0122 .
+
+<http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist/00/0123> a skos:Concept ;
+	skos:inScheme veroia-br2012-dsd:codelist ;
+	skos:notation "0123" ;
+	skos:prefLabel "Δικαίωμα αμμοληψίας (άρθρο 19 ΒΔ 24/9-20/10/1958)" ;
+	skos:broader veroia-br2012-codelist:00 ;
+	skos:broadMatch kae-ota-es14:0123 .
+
+<http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist/00/0124> a skos:Concept ;
+	skos:inScheme veroia-br2012-dsd:codelist ;
+	skos:notation "0124" ;
+	skos:prefLabel "Έσοδα από την εκμετάλλευση αναδασομένων εκτάσεων (άρθρο 40 Ν 998/79)" ;
+	skos:broader veroia-br2012-codelist:00 ;
+	skos:broadMatch kae-ota-es14:0124 .
+
+<http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist/00/0125> a skos:Concept ;
+	skos:inScheme veroia-br2012-dsd:codelist ;
+	skos:notation "0125" ;
+	skos:prefLabel "Δικαίωμα βοσκής (άρθρο 5 ΒΔ 24/9-20/10/1958, άρθρο 16 Ν 2130/93)" ;
+	skos:broader veroia-br2012-codelist:00 ;
+	skos:broadMatch kae-ota-es14:0125 .
+
+<http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist/00/0126> a skos:Concept ;
+	skos:inScheme veroia-br2012-dsd:codelist ;
+	skos:notation "0126" ;
+	skos:prefLabel "Ειδικό δικαίωμα χρήσεως βελτιωμένων βοσκοτόπων (άρθρο 8 Ν 994/79)" ;
+	skos:broader veroia-br2012-codelist:00 ;
+	skos:broadMatch kae-ota-es14:0126 .
+
+<http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist/00/0127> a skos:Concept ;
+	skos:inScheme veroia-br2012-dsd:codelist ;
+	skos:notation "0127" ;
+	skos:prefLabel "Δικαίωμα χρήσης αποκαλυπτόμενων καλλιεργητικών εκτάσεων (άρθρο 250 ΔΚΚ)" ;
+	skos:broader veroia-br2012-codelist:00 ;
+	skos:broadMatch kae-ota-es14:0127 .
+
+<http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist/00/0129> a skos:Concept ;
+	skos:inScheme veroia-br2012-dsd:codelist ;
+	skos:narrower <http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist/00/0129.001> , <http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist/00/0129.002> , <http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist/00/0129.003> ;
+	skos:notation "0129" ;
+	skos:prefLabel "Λοιπά έσοδα από ακίνητα" ;
+	skos:broader veroia-br2012-codelist:00 ;
+	skos:broadMatch kae-ota-es14:0129 .
+
+<http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist/00/0129.001> a skos:Concept ;
+	skos:inScheme veroia-br2012-dsd:codelist ;
+	skos:notation "0129.001" ;
+	skos:prefLabel "Έσοδα από αυθαίρετη αγροτική καλλιέργεια" ;
+	skos:broader <http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist/00/0129> .
+
+<http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist/00/0129.002> a skos:Concept ;
+	skos:inScheme veroia-br2012-dsd:codelist ;
+	skos:notation "0129.002" ;
+	skos:prefLabel "Έσοδα από υλοτόμηση δασικών εκτάσεων" ;
+	skos:broader <http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist/00/0129> .
+
+<http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist/00/0129.003> a skos:Concept ;
+	skos:inScheme veroia-br2012-dsd:codelist ;
+	skos:notation "0129.003" ;
+	skos:prefLabel "Έσοδα από μίσθωση κοινόχρηστων χώρων για παραγωγή ανανεώσιμων πηγών ενέργειας" ;
+	skos:broader <http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist/00/0129> .
+
+<http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist/00/0211> a skos:Concept ;
+	skos:inScheme veroia-br2012-dsd:codelist ;
+	skos:notation "0211" ;
+	skos:prefLabel "Τόκοι χρηματικών καταθέσεων σε τράπεζες" ;
+	skos:broader veroia-br2012-codelist:00 ;
+	skos:broadMatch kae-ota-es14:0211 .
+
+<http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist/00/0213> a skos:Concept ;
+	skos:inScheme veroia-br2012-dsd:codelist ;
+	skos:notation "0213" ;
+	skos:prefLabel "Mερίσματα Μετοχών Τράπεζας Ελλάδος" ;
+	skos:broader veroia-br2012-codelist:00 ;
+	skos:broadMatch kae-ota-es14:0213 .
+
+<http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist/00/0221> a skos:Concept ;
+	skos:inScheme veroia-br2012-dsd:codelist ;
+	skos:notation "0221" ;
+	skos:prefLabel "Έσοδα από αμιγείς Δημοτικές/Διαδημοτικές επιχειρήσεις" ;
+	skos:broader veroia-br2012-codelist:00 ;
+	skos:broadMatch kae-ota-es14:0221 .
+
+<http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist/00/0223> a skos:Concept ;
+	skos:inScheme veroia-br2012-dsd:codelist ;
+	skos:notation "0223" ;
+	skos:prefLabel "Έσοδα από συμμετοχή λοιπές επιχειρήσεις (κοινοπροξίες, ΑΕ, κλπ)" ;
+	skos:broader veroia-br2012-codelist:00 ;
+	skos:broadMatch kae-ota-es14:0223 .
+
+<http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist/00/0311> a skos:Concept ;
+	skos:inScheme veroia-br2012-dsd:codelist ;
+	skos:notation "0311" ;
+	skos:prefLabel "Τέλος καθαριότητας και φωτισμού (άρθρο 25 Ν 1828/89)" ;
+	skos:broader veroia-br2012-codelist:00 ;
+	skos:broadMatch kae-ota-es14:0311 .
+
+<http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist/00/0322> a skos:Concept ;
+	skos:inScheme veroia-br2012-dsd:codelist ;
+	skos:notation "0322" ;
+	skos:prefLabel "Τέλος ύδρευσης" ;
+	skos:broader veroia-br2012-codelist:00 ;
+	skos:broadMatch kae-ota-es14:0322 .
+
+<http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist/00/0331> a skos:Concept ;
+	skos:inScheme veroia-br2012-dsd:codelist ;
+	skos:notation "0331" ;
+	skos:prefLabel "Δικαιώματα χρήσεως αρδευτικού δικτύου." ;
+	skos:broader veroia-br2012-codelist:00 ;
+	skos:broadMatch kae-ota-es14:0331 .
+
+<http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist/00/0411> a skos:Concept ;
+	skos:inScheme veroia-br2012-dsd:codelist ;
+	skos:notation "0411" ;
+	skos:prefLabel "Δικαιώματα σύστασης οικογενειακού τάφου" ;
+	skos:broader veroia-br2012-codelist:00 ;
+	skos:broadMatch kae-ota-es14:0411 .
+
+<http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist/00/0412> a skos:Concept ;
+	skos:inScheme veroia-br2012-dsd:codelist ;
+	skos:notation "0412" ;
+	skos:prefLabel "Δικαίωμα ενταφιασμού" ;
+	skos:broader veroia-br2012-codelist:00 ;
+	skos:broadMatch kae-ota-es14:0412 .
+
+<http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist/00/0413> a skos:Concept ;
+	skos:inScheme veroia-br2012-dsd:codelist ;
+	skos:notation "0413" ;
+	skos:prefLabel "Δικαίωμα ανανέωσης (παράστασης χρόνου ταφής)" ;
+	skos:broader veroia-br2012-codelist:00 ;
+	skos:broadMatch kae-ota-es14:0413 .
+
+<http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist/00/0414> a skos:Concept ;
+	skos:inScheme veroia-br2012-dsd:codelist ;
+	skos:notation "0414" ;
+	skos:prefLabel "Τέλος ανακομιδής" ;
+	skos:broader veroia-br2012-codelist:00 ;
+	skos:broadMatch kae-ota-es14:0414 .
+
+<http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist/00/0415> a skos:Concept ;
+	skos:inScheme veroia-br2012-dsd:codelist ;
+	skos:notation "0415" ;
+	skos:prefLabel "Δικαιώματα από τη χρήση οστεοφυλακίων" ;
+	skos:broader veroia-br2012-codelist:00 ;
+	skos:broadMatch kae-ota-es14:0415 .
+
+<http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist/00/0431> a skos:Concept ;
+	skos:inScheme veroia-br2012-dsd:codelist ;
+	skos:notation "0431" ;
+	skos:prefLabel "Έσοδα από ειδικούς χώρους στάθμευσης" ;
+	skos:broader veroia-br2012-codelist:00 ;
+	skos:broadMatch kae-ota-es14:0431 .
+
+<http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist/00/0441> a skos:Concept ;
+	skos:inScheme veroia-br2012-dsd:codelist ;
+	skos:notation "0441" ;
+	skos:prefLabel "Τέλος ακίνητης περιουσίας (άρθρο 24 Ν 2130/93)" ;
+	skos:broader veroia-br2012-codelist:00 ;
+	skos:broadMatch kae-ota-es14:0441 .
+
+<http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist/00/0451> a skos:Concept ;
+	skos:inScheme veroia-br2012-dsd:codelist ;
+	skos:notation "0451" ;
+	skos:prefLabel "Τέλος διαμονής παρεπιδημούντων (άρθρο 6 Ν 1080/80, άρθρο 27 παρ. 10 Ν 2130/93)" ;
+	skos:broader veroia-br2012-codelist:00 ;
+	skos:broadMatch kae-ota-es14:0451 .
+
+<http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist/00/0452> a skos:Concept ;
+	skos:inScheme veroia-br2012-dsd:codelist ;
+	skos:notation "0452" ;
+	skos:prefLabel "Τέλος επί των ακαθαρίστων εσόδων των κέντρων διασκέδασης, εστιατορίων και συναφών καταστημάτων (άρθρο 20 Ν 1080/80)" ;
+	skos:broader veroia-br2012-codelist:00 ;
+	skos:broadMatch kae-ota-es14:0452 .
+
+<http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist/00/0461> a skos:Concept ;
+	skos:inScheme veroia-br2012-dsd:codelist ;
+	skos:notation "0461" ;
+	skos:prefLabel "Τέλος χρήσης κοινόχρηστων χώρων (άρθρο 3 Ν 1080/80)" ;
+	skos:broader veroia-br2012-codelist:00 ;
+	skos:broadMatch kae-ota-es14:0461 .
+
+<http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist/00/0462> a skos:Concept ;
+	skos:inScheme veroia-br2012-dsd:codelist ;
+	skos:notation "0462" ;
+	skos:prefLabel "Τέλος διαφήμισης (άρθρο 5 Ν 1900/90)" ;
+	skos:broader veroia-br2012-codelist:00 ;
+	skos:broadMatch kae-ota-es14:0462 .
+
+<http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist/00/0464> a skos:Concept ;
+	skos:inScheme veroia-br2012-dsd:codelist ;
+	skos:notation "0464" ;
+	skos:prefLabel "Τέλη ελεγχόμενης στάθμευσης σε κοινόχρηστους χώρους (άρθρο 4 Ν 1990/90)" ;
+	skos:broader veroia-br2012-codelist:00 ;
+	skos:broadMatch kae-ota-es14:0464 .
+
+<http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist/00/0465> a skos:Concept ;
+	skos:inScheme veroia-br2012-dsd:codelist ;
+	skos:notation "0465" ;
+	skos:prefLabel "Ειδικό τέλος λατομικών προϊόντων (άρθρο 15 Ν 2115/93, άρθρο 27 Ν 2130/90)" ;
+	skos:broader veroia-br2012-codelist:00 ;
+	skos:broadMatch kae-ota-es14:0465 .
+
+<http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist/00/0468> a skos:Concept ;
+	skos:inScheme veroia-br2012-dsd:codelist ;
+	skos:notation "0468" ;
+	skos:prefLabel "Τέλος αδειών οικοδομών (άρθρο 23 ΒΔ 24/9-20/10/1958)" ;
+	skos:broader veroia-br2012-codelist:00 ;
+	skos:broadMatch kae-ota-es14:0468 .
+
+<http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist/00/0469> a skos:Concept ;
+	skos:inScheme veroia-br2012-dsd:codelist ;
+	skos:notation "0469" ;
+	skos:prefLabel "Τέλος ανανεώσιμων πηγών ενέργειας (άρθρο 38 Ν 2773/99)" ;
+	skos:broader veroia-br2012-codelist:00 ;
+	skos:broadMatch kae-ota-es14:0469 .
+
+<http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist/00/0471> a skos:Concept ;
+	skos:inScheme veroia-br2012-dsd:codelist ;
+	skos:narrower <http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist/00/0471.001> ;
+	skos:notation "0471" ;
+	skos:prefLabel "ΛΟΙΠΑ ΔΥΝΗΤΙΚΑ ΤΕΛΗ" ;
+	skos:broader veroia-br2012-codelist:00 ;
+	skos:broadMatch kae-ota-es14:0471 .
+
+<http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist/00/0471.001> a skos:Concept ;
+	skos:inScheme veroia-br2012-dsd:codelist ;
+	skos:notation "0471.001" ;
+	skos:prefLabel "Τέλος τέλεσης πολιτικών γάμων" ;
+	skos:broader <http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist/00/0471> .
+
+<http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist/00/0511> a skos:Concept ;
+	skos:inScheme veroia-br2012-dsd:codelist ;
+	skos:notation "0511" ;
+	skos:prefLabel "Φόρος ηλεκτροδοτούμενων χώρων (άρθρο 10 Ν 1080/80)" ;
+	skos:broader veroia-br2012-codelist:00 ;
+	skos:broadMatch kae-ota-es14:0511 .
+
+<http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist/00/0512> a skos:Concept ;
+	skos:inScheme veroia-br2012-dsd:codelist ;
+	skos:notation "0512" ;
+	skos:prefLabel "Φόρος ζύθου (άρθρο 9 ΝΔ 703/70, άρθρο 12 Ν 1080/80)" ;
+	skos:broader veroia-br2012-codelist:00 ;
+	skos:broadMatch kae-ota-es14:0512 .
+
+<http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist/00/0514> a skos:Concept ;
+	skos:inScheme veroia-br2012-dsd:codelist ;
+	skos:notation "0514" ;
+	skos:prefLabel "Λοιποί φόροι" ;
+	skos:broader veroia-br2012-codelist:00 ;
+	skos:broadMatch kae-ota-es14:0514 .
+
+<http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist/00/0521> a skos:Concept ;
+	skos:inScheme veroia-br2012-dsd:codelist ;
+	skos:notation "0521" ;
+	skos:prefLabel "Εισφορά σε χρήμα λόγω ένταξης ή επέκτασης πολεοδομικών σχεδίων (άρθρο 24 Συντ. 1975/2001, άρθρο 9 Ν 1337/83, άρθρο 21 Ν 2508/97)" ;
+	skos:broader veroia-br2012-codelist:00 ;
+	skos:broadMatch kae-ota-es14:0521 .
+
+<http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist/00/0522> a skos:Concept ;
+	skos:inScheme veroia-br2012-dsd:codelist ;
+	skos:notation "0522" ;
+	skos:prefLabel "Μετατροπή σε χρήμα της εισφοράς σε γή (άρθρο 8 Ν 1337/83)" ;
+	skos:broader veroia-br2012-codelist:00 ;
+	skos:broadMatch kae-ota-es14:0522 .
+
+<http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist/00/0523> a skos:Concept ;
+	skos:inScheme veroia-br2012-dsd:codelist ;
+	skos:notation "0523" ;
+	skos:prefLabel "Εισφορά 40% ή 75% του ΚΗ/1947 Ψηφίσματος (άρθρο 34 Ν 1337/83)" ;
+	skos:broader veroia-br2012-codelist:00 ;
+	skos:broadMatch kae-ota-es14:0523 .
+
+<http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist/00/0611> a skos:Concept ;
+	skos:inScheme veroia-br2012-dsd:codelist ;
+	skos:notation "0611" ;
+	skos:prefLabel "ΚΑΠ για την κάλυψη γενικών αναγκών (άρθρο 25 Ν 1828/89)" ;
+	skos:broader veroia-br2012-codelist:00 ;
+	skos:broadMatch kae-ota-es14:0611 .
+
+<http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist/00/0612> a skos:Concept ;
+	skos:inScheme veroia-br2012-dsd:codelist ;
+	skos:notation "0612" ;
+	skos:prefLabel "ΚΑΠ για τη λειτουργία παιδικών και βρεφονηπιακών σταθμών (άρθρο 12 Ν 2880/2001)" ;
+	skos:broader veroia-br2012-codelist:00 ;
+	skos:broadMatch kae-ota-es14:0612 .
+
+<http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist/00/0613> a skos:Concept ;
+	skos:inScheme veroia-br2012-dsd:codelist ;
+	skos:notation "0613" ;
+	skos:prefLabel "ΚΑΠ για τη λειτουργία δημοτικών και κοινοτικών χώρων άθλησης (άρθρο 14 Ν 2880/2001)" ;
+	skos:broader veroia-br2012-codelist:00 ;
+	skos:broadMatch kae-ota-es14:0613 .
+
+<http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist/00/0614> a skos:Concept ;
+	skos:inScheme veroia-br2012-dsd:codelist ;
+	skos:notation "0614" ;
+	skos:prefLabel "ΚΑΠ για την κάλυψη των λειτουργικών αναγκών των σχολειων Α/θμιας και Β/θμιας εκπαίδευσης (άρθρο 55 Ν 1946/91)" ;
+	skos:broader veroia-br2012-codelist:00 ;
+	skos:broadMatch kae-ota-es14:0614 .
+
+<http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist/00/0615> a skos:Concept ;
+	skos:inScheme veroia-br2012-dsd:codelist ;
+	skos:notation "0615" ;
+	skos:prefLabel "ΚΑΠ για την καταβολή αποζημίωσης σε σχολικούς τροχονόμους (άρθρο 14 Ν 2817/2000)" ;
+	skos:broader veroia-br2012-codelist:00 ;
+	skos:broadMatch kae-ota-es14:0615 .
+
+<http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist/00/0619> a skos:Concept ;
+	skos:inScheme veroia-br2012-dsd:codelist ;
+	skos:narrower <http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist/00/0619.001> , <http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist/00/0619.002> ;
+	skos:notation "0619" ;
+	skos:prefLabel "ΚΑΠ για λοιπούς σκοπούς (δεν περιλαμβάνονται πιστώσεις του ΠΔΕ)" ;
+	skos:broader veroia-br2012-codelist:00 ;
+	skos:broadMatch kae-ota-es14:0619 .
+
+<http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist/00/0619.001> a skos:Concept ;
+	skos:inScheme veroia-br2012-dsd:codelist ;
+	skos:notation "0619.001" ;
+	skos:prefLabel "ΚΑΠ για κάλυψη λειτουργικών και λοιπών γενικών δαπανών" ;
+	skos:broader <http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist/00/0619> .
+
+<http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist/00/0619.002> a skos:Concept ;
+	skos:inScheme veroia-br2012-dsd:codelist ;
+	skos:notation "0619.002" ;
+	skos:prefLabel "ΚΑΠ για κάλυψη δαπάνης μεταφοράς και επιδότησης μαθητών" ;
+	skos:broader <http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist/00/0619> .
+
+<http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist/00/0621> a skos:Concept ;
+	skos:inScheme veroia-br2012-dsd:codelist ;
+	skos:notation "0621" ;
+	skos:prefLabel "Κάλυψη δαπάνης των προνοιακών επιδομάτων" ;
+	skos:broader veroia-br2012-codelist:00 ;
+	skos:broadMatch kae-ota-es14:0621 .
+
+<http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist/00/0711> a skos:Concept ;
+	skos:inScheme veroia-br2012-dsd:codelist ;
+	skos:notation "0711" ;
+	skos:prefLabel "Έσοδα από μισθώματα δημόσιων λατομείων (άρθρο 21 Ν 2115/93)" ;
+	skos:broader veroia-br2012-codelist:00 ;
+	skos:broadMatch kae-ota-es14:0711 .
+
+<http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist/00/0713> a skos:Concept ;
+	skos:inScheme veroia-br2012-dsd:codelist ;
+	skos:notation "0713" ;
+	skos:prefLabel "Παράβολα για την έκδοση των αδειών ίδρυσης και λειτουργίας επιχειρήσεων υγειονομικού ενδιαφέροντος (άρθρο 25 ΔΚΚ)" ;
+	skos:broader veroia-br2012-codelist:00 ;
+	skos:broadMatch kae-ota-es14:0713 .
+
+<http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist/00/0714> a skos:Concept ;
+	skos:inScheme veroia-br2012-dsd:codelist ;
+	skos:notation "0714" ;
+	skos:prefLabel "Έσοδα από τη διάθεση δασικών προϊόντων του δημοσίου (άρθρο 37 ΝΔ 4260/62)" ;
+	skos:broader veroia-br2012-codelist:00 ;
+	skos:broadMatch kae-ota-es14:0714 .
+
+<http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist/00/0715> a skos:Concept ;
+	skos:inScheme veroia-br2012-dsd:codelist ;
+	skos:notation "0715" ;
+	skos:prefLabel "Τέλος διαφήμισης της κατηγορίας Δ' του άρθρου 15 του ΒΔ 24/9-20/10/1958 (άρθρο 9 Ν 2880/2001)" ;
+	skos:broader veroia-br2012-codelist:00 ;
+	skos:broadMatch kae-ota-es14:0715 .
+
+<http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist/00/0716> a skos:Concept ;
+	skos:inScheme veroia-br2012-dsd:codelist ;
+	skos:notation "0716" ;
+	skos:prefLabel "Έσοδα από παράβολα αδειών παραμονής αλλοδαπών (άρθρο 16 Ν 2946/2001)" ;
+	skos:broader veroia-br2012-codelist:00 ;
+	skos:broadMatch kae-ota-es14:0716 .
+
+<http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist/00/0718> a skos:Concept ;
+	skos:inScheme veroia-br2012-dsd:codelist ;
+	skos:notation "0718" ;
+	skos:prefLabel "Λοιπά τακτικά έσοδα που δεν εντάσσονται στις ανωτέρω τάξεις." ;
+	skos:broader veroia-br2012-codelist:00 ;
+	skos:broadMatch kae-ota-es14:0718 .
+
+<http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist/00/1115> a skos:Concept ;
+	skos:inScheme veroia-br2012-dsd:codelist ;
+	skos:notation "1115" ;
+	skos:prefLabel "Προσκύρωση δημοτικών ή κοινοτικών εκτάσεων (άρθρα 300-309 ΚΒΠΝ, άρθρο 56 Ν 1416/84)" ;
+	skos:broader veroia-br2012-codelist:00 ;
+	skos:broadMatch kae-ota-es14:1115 .
+
+<http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist/00/1116> a skos:Concept ;
+	skos:inScheme veroia-br2012-dsd:codelist ;
+	skos:notation "1116" ;
+	skos:prefLabel "Λοιπά έσοδα από εκποίηση ακίνητης περιουσίας (άρθρο 248 ΔΚΚ)" ;
+	skos:broader veroia-br2012-codelist:00 ;
+	skos:broadMatch kae-ota-es14:1116 .
+
+<http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist/00/1121> a skos:Concept ;
+	skos:inScheme veroia-br2012-dsd:codelist ;
+	skos:notation "1121" ;
+	skos:prefLabel "Εκποίηση οχημάτων (άρθρο 10 Ν 2880/2001)" ;
+	skos:broader veroia-br2012-codelist:00 ;
+	skos:broadMatch kae-ota-es14:1121 .
+
+<http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist/00/1122> a skos:Concept ;
+	skos:inScheme veroia-br2012-dsd:codelist ;
+	skos:narrower <http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist/00/1122.001> , <http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist/00/1122.002> ;
+	skos:notation "1122" ;
+	skos:prefLabel "Εκποίηση άλλων κινητών πραγμάτων (άρθρο 259 ΔΚΚ)" ;
+	skos:broader veroia-br2012-codelist:00 ;
+	skos:broadMatch kae-ota-es14:1122 .
+
+<http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist/00/1122.001> a skos:Concept ;
+	skos:inScheme veroia-br2012-dsd:codelist ;
+	skos:notation "1122.001" ;
+	skos:prefLabel "Εκποίηση άλλων κινητών πραγμάτων (άρθρο 259 ΔΚΚ)" ;
+	skos:broader <http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist/00/1122> .
+
+<http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist/00/1122.002> a skos:Concept ;
+	skos:inScheme veroia-br2012-dsd:codelist ;
+	skos:notation "1122.002" ;
+	skos:prefLabel "Έσοδα από εκποίηση υλικών ανακύκλωσης" ;
+	skos:broader <http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist/00/1122> .
+
+<http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist/00/1211> a skos:Concept ;
+	skos:inScheme veroia-br2012-dsd:codelist ;
+	skos:narrower <http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist/00/1211.001> , <http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist/00/1211.002> , <http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist/00/1211.003> , <http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist/00/1211.004> ;
+	skos:notation "1211" ;
+	skos:prefLabel "Από εθνικούς πόρους" ;
+	skos:broader veroia-br2012-codelist:00 ;
+	skos:broadMatch kae-ota-es14:1211 .
+
+<http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist/00/1211.001> a skos:Concept ;
+	skos:inScheme veroia-br2012-dsd:codelist ;
+	skos:notation "1211.001" ;
+	skos:prefLabel "Επιχορήγηση ΥΠΕΣ για ΚΕΠ" ;
+	skos:broader <http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist/00/1211> .
+
+<http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist/00/1211.002> a skos:Concept ;
+	skos:inScheme veroia-br2012-dsd:codelist ;
+	skos:notation "1211.002" ;
+	skos:prefLabel "Επιχορήγηση ΥΠΕΣ για κάλυψη λειτουργικών δαπανών" ;
+	skos:broader <http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist/00/1211> .
+
+<http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist/00/1211.003> a skos:Concept ;
+	skos:inScheme veroia-br2012-dsd:codelist ;
+	skos:notation "1211.003" ;
+	skos:prefLabel "Επιχορήγηση ΥΠΕΣ για κάλυψη δαπάνης σίτισης μαθητών Μουσικού Σχολείου Βέροιας" ;
+	skos:broader <http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist/00/1211> .
+
+<http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist/00/1211.004> a skos:Concept ;
+	skos:inScheme veroia-br2012-dsd:codelist ;
+	skos:notation "1211.004" ;
+	skos:prefLabel "Επιχορήγηση ΥΠΕΣ γισ κάλυψη δαπάνης προπαρασκευής και διεξαγωγής βουλευτικών εκλογών" ;
+	skos:broader <http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist/00/1211> .
+
+<http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist/00/1212> a skos:Concept ;
+	skos:inScheme veroia-br2012-dsd:codelist ;
+	skos:notation "1212" ;
+	skos:prefLabel "Από Συγχρηματοδοτούμενα προγράμματα" ;
+	skos:broader veroia-br2012-codelist:00 ;
+	skos:broadMatch kae-ota-es14:1212 .
+
+<http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist/00/1213> a skos:Concept ;
+	skos:inScheme veroia-br2012-dsd:codelist ;
+	skos:narrower <http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist/00/1213.001> ;
+	skos:notation "1213" ;
+	skos:prefLabel "Έσοδα από προγραμματικές συμβάσεις για υλοποίηση τοπικών πολιτικών" ;
+	skos:broader veroia-br2012-codelist:00 ;
+	skos:broadMatch kae-ota-es14:1213 .
+
+<http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist/00/1213.001> a skos:Concept ;
+	skos:inScheme veroia-br2012-dsd:codelist ;
+	skos:notation "1213.001" ;
+	skos:prefLabel "Επιχορήγηση ΥΠΕΣ για πρόγρ. ΣΥΝ+ΚΟΙΝΩΝΙΑ" ;
+	skos:broader <http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist/00/1213> .
+
+<http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist/00/1214> a skos:Concept ;
+	skos:inScheme veroia-br2012-dsd:codelist ;
+	skos:narrower <http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist/00/1214.001> , <http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist/00/1214.002> , <http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist/00/1214.003> , <http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist/00/1214.004> , <http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist/00/1214.005> , <http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist/00/1214.007> , <http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist/00/1214.008> ;
+	skos:notation "1214" ;
+	skos:prefLabel "Λοιπές επιχορηγήσεις" ;
+	skos:broader veroia-br2012-codelist:00 ;
+	skos:broadMatch kae-ota-es14:1214 .
+
+<http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist/00/1214.001> a skos:Concept ;
+	skos:inScheme veroia-br2012-dsd:codelist ;
+	skos:notation "1214.001" ;
+	skos:prefLabel "Επιχορήγηση για το πρόγραμμα YOUTH IN ACTION" ;
+	skos:broader <http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist/00/1214> .
+
+<http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist/00/1214.002> a skos:Concept ;
+	skos:inScheme veroia-br2012-dsd:codelist ;
+	skos:notation "1214.002" ;
+	skos:prefLabel "Επιχορήγηση προγράμματος URBACT II" ;
+	skos:broader <http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist/00/1214> .
+
+<http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist/00/1214.003> a skos:Concept ;
+	skos:inScheme veroia-br2012-dsd:codelist ;
+	skos:notation "1214.003" ;
+	skos:prefLabel "Επιχορήγηση ΥΠΕΣ για βοηθήματα ένδειας και αντιμετώπιση άμεσων βιοτικών αναγκών" ;
+	skos:broader <http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist/00/1214> .
+
+<http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist/00/1214.004> a skos:Concept ;
+	skos:inScheme veroia-br2012-dsd:codelist ;
+	skos:notation "1214.004" ;
+	skos:prefLabel "Επιχορήγηση Ι. Μητρόπολης και λοιπών φορέων για βοηθήματα ένδειας και αντιμετώπιση άμεσων βιοτικών αναγκών" ;
+	skos:broader <http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist/00/1214> .
+
+<http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist/00/1214.005> a skos:Concept ;
+	skos:inScheme veroia-br2012-dsd:codelist ;
+	skos:notation "1214.005" ;
+	skos:prefLabel "Επιχορήγηση Υπουργείου Παιδείας του τομεακού προγράμματος LEONARDO DA VINCI με τίτλο 'Βιολογικές καλλιέργειες: Οπωροκηπευτικά- Οίνος" ;
+	skos:broader <http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist/00/1214> .
+
+<http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist/00/1214.007> a skos:Concept ;
+	skos:inScheme veroia-br2012-dsd:codelist ;
+	skos:notation "1214.007" ;
+	skos:prefLabel "Επιχορήγηση Υπουργείου Παιδείας του τομεακού προγράμματος LEONARDO DA VINCI με τίτλο 'Ολοκληρωμένο σχέδιο αναβάθμισης υπηρεσιών τουρισμού" ;
+	skos:broader <http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist/00/1214> .
+
+<http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist/00/1214.008> a skos:Concept ;
+	skos:inScheme veroia-br2012-dsd:codelist ;
+	skos:notation "1214.008" ;
+	skos:prefLabel "Επιχορήγηση Υπουργείου Παιδείας του τομεακού προγράμματος LEONARDO DA VINCI με τίτλο 'Βιοκλιματικές παρεμβάσεις σε κτίρια και κοινόχρηστους χώρους" ;
+	skos:broader <http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist/00/1214> .
+
+<http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist/00/1311> a skos:Concept ;
+	skos:inScheme veroia-br2012-dsd:codelist ;
+	skos:notation "1311" ;
+	skos:prefLabel "Κεντρικοί αυτοτελείς πόροι από το Πρόγραμμα Δημοσίων Επενδύσεων (ΣΑΤΑ)" ;
+	skos:broader veroia-br2012-codelist:00 ;
+	skos:broadMatch kae-ota-es14:1311 .
+
+<http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist/00/1312> a skos:Concept ;
+	skos:inScheme veroia-br2012-dsd:codelist ;
+	skos:narrower <http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist/00/1312.001> , <http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist/00/1312.002> , <http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist/00/1312.003> ;
+	skos:notation "1312" ;
+	skos:prefLabel "Επιχορήγηση και συντήρηση σχολικών κτιρίων (άρθρο 13 Ν. 2880/2001)" ;
+	skos:broader veroia-br2012-codelist:00 ;
+	skos:broadMatch kae-ota-es14:1312 .
+
+<http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist/00/1312.001> a skos:Concept ;
+	skos:inScheme veroia-br2012-dsd:codelist ;
+	skos:notation "1312.001" ;
+	skos:prefLabel "Επισκευή και συντήρηση σχολικών κτιρίων ΣΑΤΑ" ;
+	skos:broader <http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist/00/1312> .
+
+<http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist/00/1312.002> a skos:Concept ;
+	skos:inScheme veroia-br2012-dsd:codelist ;
+	skos:notation "1312.002" ;
+	skos:prefLabel "Επιχορήγηση για κάλυψη δαπανών πυροπροστασίας ΣΑΤΑ" ;
+	skos:broader <http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist/00/1312> .
+
+<http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist/00/1312.003> a skos:Concept ;
+	skos:inScheme veroia-br2012-dsd:codelist ;
+	skos:notation "1312.003" ;
+	skos:prefLabel "Επιχορήγηση για κάλυψη δαπανών πολιτικής δασοπροστασίας ΣΑΤΑ" ;
+	skos:broader <http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist/00/1312> .
+
+<http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist/00/1313> a skos:Concept ;
+	skos:inScheme veroia-br2012-dsd:codelist ;
+	skos:notation "1313" ;
+	skos:prefLabel "Επιχορηγήσεις του Ειδικού προγράμματος Τοπικής Αυτοδιοίκησης (ΕΠΤΑ, άρθρο 13 Ν 2539/97)" ;
+	skos:broader veroia-br2012-codelist:00 ;
+	skos:broadMatch kae-ota-es14:1313 .
+
+<http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist/00/1314> a skos:Concept ;
+	skos:inScheme veroia-br2012-dsd:codelist ;
+	skos:narrower <http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist/00/1314.001> ;
+	skos:notation "1314" ;
+	skos:prefLabel "Λοιπά ειδικά προγράμματα" ;
+	skos:broader veroia-br2012-codelist:00 ;
+	skos:broadMatch kae-ota-es14:1314 .
+
+<http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist/00/1314.001> a skos:Concept ;
+	skos:inScheme veroia-br2012-dsd:codelist ;
+	skos:notation "1314.001" ;
+	skos:prefLabel "Επιχορήγηση Προγράμματος ¨Αλέξανδρος Μπαλτατζής'" ;
+	skos:broader <http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist/00/1314> .
+
+<http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist/00/1319> a skos:Concept ;
+	skos:inScheme veroia-br2012-dsd:codelist ;
+	skos:narrower <http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist/00/1319.001> , <http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist/00/1319.002> ;
+	skos:notation "1319" ;
+	skos:prefLabel "Λοιπά ειδικά προγράμματα" ;
+	skos:broader veroia-br2012-codelist:00 ;
+	skos:broadMatch kae-ota-es14:1319 .
+
+<http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist/00/1319.001> a skos:Concept ;
+	skos:inScheme veroia-br2012-dsd:codelist ;
+	skos:notation "1319.001" ;
+	skos:prefLabel "Επιχορήγηση Γ.Γ.Μακεδονίας-Θράκης" ;
+	skos:broader <http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist/00/1319> .
+
+<http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist/00/1319.002> a skos:Concept ;
+	skos:inScheme veroia-br2012-dsd:codelist ;
+	skos:notation "1319.002" ;
+	skos:prefLabel "Επιχορηγήση Προγράμματος Παραμεθορίων" ;
+	skos:broader <http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist/00/1319> .
+
+<http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist/00/1321> a skos:Concept ;
+	skos:inScheme veroia-br2012-dsd:codelist ;
+	skos:narrower <http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist/00/1321.001> , <http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist/00/1321.002> , <http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist/00/1321.003> ;
+	skos:notation "1321" ;
+	skos:prefLabel "Χρηματοδοτήσεις από Περιφερειακά επιχειρησιακά προγράμματα" ;
+	skos:broader veroia-br2012-codelist:00 ;
+	skos:broadMatch kae-ota-es14:1321 .
+
+<http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist/00/1321.001> a skos:Concept ;
+	skos:inScheme veroia-br2012-dsd:codelist ;
+	skos:notation "1321.001" ;
+	skos:prefLabel "Επιχορήγηση ΠΕΠ Κ. Μακεδονίας" ;
+	skos:broader <http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist/00/1321> .
+
+<http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist/00/1321.002> a skos:Concept ;
+	skos:inScheme veroia-br2012-dsd:codelist ;
+	skos:notation "1321.002" ;
+	skos:prefLabel "Επιχορήγηση προγράμματος Αλ. Μπαλτατζής" ;
+	skos:broader <http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist/00/1321> .
+
+<http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist/00/1321.003> a skos:Concept ;
+	skos:inScheme veroia-br2012-dsd:codelist ;
+	skos:notation "1321.003" ;
+	skos:prefLabel "Επιχορήγηση Ε.Π. 'Μακεδονία - Θράκη'" ;
+	skos:broader <http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist/00/1321> .
+
+<http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist/00/1322> a skos:Concept ;
+	skos:inScheme veroia-br2012-dsd:codelist ;
+	skos:narrower <http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist/00/1322.001> , <http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist/00/1322.002> , <http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist/00/1322.003> , <http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist/00/1322.004> , <http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist/00/1322.005> , <http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist/00/1322.006> , <http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist/00/1322.007> , <http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist/00/1322.008> , <http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist/00/1322.010> , <http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist/00/1322.011> , <http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist/00/1322.012> , <http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist/00/1322.013> , <http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist/00/1322.014> , <http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist/00/1322.015> , <http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist/00/1322.016> , <http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist/00/1322.017> ;
+	skos:notation "1322" ;
+	skos:prefLabel "Χρηματοδοτήσεις από Κεντρικούς φορείς" ;
+	skos:broader veroia-br2012-codelist:00 ;
+	skos:broadMatch kae-ota-es14:1322 .
+
+<http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist/00/1322.001> a skos:Concept ;
+	skos:inScheme veroia-br2012-dsd:codelist ;
+	skos:notation "1322.001" ;
+	skos:prefLabel "Επιχορηγήσεις  Γ.Γ.Α. για κλειστό κολυμβητήριο" ;
+	skos:broader <http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist/00/1322> .
+
+<http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist/00/1322.002> a skos:Concept ;
+	skos:inScheme veroia-br2012-dsd:codelist ;
+	skos:notation "1322.002" ;
+	skos:prefLabel "Επιχορήγηση  ΟΠΑΑΧ" ;
+	skos:broader <http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist/00/1322> .
+
+<http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist/00/1322.003> a skos:Concept ;
+	skos:inScheme veroia-br2012-dsd:codelist ;
+	skos:notation "1322.003" ;
+	skos:prefLabel "Επιχορηγήση προγράμματος ΘΗΣΕΑΣ" ;
+	skos:broader <http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist/00/1322> .
+
+<http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist/00/1322.004> a skos:Concept ;
+	skos:inScheme veroia-br2012-dsd:codelist ;
+	skos:notation "1322.004" ;
+	skos:prefLabel "Επιχορήγηση ΟΣΚ" ;
+	skos:broader <http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist/00/1322> .
+
+<http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist/00/1322.005> a skos:Concept ;
+	skos:inScheme veroia-br2012-dsd:codelist ;
+	skos:notation "1322.005" ;
+	skos:prefLabel "Επιχορήγηση ΥΠΕΣ" ;
+	skos:broader <http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist/00/1322> .
+
+<http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist/00/1322.006> a skos:Concept ;
+	skos:inScheme veroia-br2012-dsd:codelist ;
+	skos:notation "1322.006" ;
+	skos:prefLabel "Επιχορήγηση ΕΣΠΑ" ;
+	skos:broader <http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist/00/1322> .
+
+<http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist/00/1322.007> a skos:Concept ;
+	skos:inScheme veroia-br2012-dsd:codelist ;
+	skos:notation "1322.007" ;
+	skos:prefLabel "Επιχορήγηση ΥΠ.Α.Α.Τ. για το έργο Ανάδειξη Οικισμού Σελίου" ;
+	skos:broader <http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist/00/1322> .
+
+<http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist/00/1322.008> a skos:Concept ;
+	skos:inScheme veroia-br2012-dsd:codelist ;
+	skos:notation "1322.008" ;
+	skos:prefLabel "Επιχορήγηση ΥΠ.Α.Α.Τ.για το έργο 'Προμήθεια πινακίδων για την σήμανση των αξιοθέατων και μνημείων στη Βεργίνα'" ;
+	skos:broader <http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist/00/1322> .
+
+<http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist/00/1322.010> a skos:Concept ;
+	skos:inScheme veroia-br2012-dsd:codelist ;
+	skos:notation "1322.010" ;
+	skos:prefLabel "Επιχορήγηση ΥΠΕΣ για το έργο Καινοτόμο σύστημα εξοικονόμησης καυσίμων με εφαρμογή στα δημοτικά οχήματακαι τα δημοτικά κτίρια του Δήμου Βέροιαςκαι σύστημα βελτιστοποίησης της αποκομιδής απορριμμάτων" ;
+	skos:broader <http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist/00/1322> .
+
+<http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist/00/1322.011> a skos:Concept ;
+	skos:inScheme veroia-br2012-dsd:codelist ;
+	skos:notation "1322.011" ;
+	skos:prefLabel "Επιχορήγηση ΥΠΑΑΝ για το έργο Τεχνική Βοήθεια Δήμου Βέροιας" ;
+	skos:broader <http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist/00/1322> .
+
+<http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist/00/1322.012> a skos:Concept ;
+	skos:inScheme veroia-br2012-dsd:codelist ;
+	skos:notation "1322.012" ;
+	skos:prefLabel "Επιχορήγηση έργου Εξοικονόμηση ενέργειας Βέροιας" ;
+	skos:broader <http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist/00/1322> .
+
+<http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist/00/1322.013> a skos:Concept ;
+	skos:inScheme veroia-br2012-dsd:codelist ;
+	skos:notation "1322.013" ;
+	skos:prefLabel "Επιχορήγηση για προμήθεια εξοπλισμού για τη μεταφόρτωση και μεταφορά των απορριμάτων του Δήμου Βέροιας" ;
+	skos:broader <http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist/00/1322> .
+
+<http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist/00/1322.014> a skos:Concept ;
+	skos:inScheme veroia-br2012-dsd:codelist ;
+	skos:notation "1322.014" ;
+	skos:prefLabel "Επιχορήγηση ΥΠΕΣ για το πρόγραμμα 'Ανάπτυξη δομών και υπηρεσιών της Τοπικής Αυτοδιοίκησης προς όφελος των γυναικών για την καταπολέμηση της βίας- Δημιουργία κέντρων συμβουλευτικής υποστήρηξης γυναικών'" ;
+	skos:broader <http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist/00/1322> .
+
+<http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist/00/1322.015> a skos:Concept ;
+	skos:inScheme veroia-br2012-dsd:codelist ;
+	skos:notation "1322.015" ;
+	skos:prefLabel "Επιχορήγηση από το Πράσινο Ταμείο για το πρόγραμμα 'Αστική αναζωογώνηση πόλεων 2012-2015'" ;
+	skos:broader <http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist/00/1322> .
+
+<http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist/00/1322.016> a skos:Concept ;
+	skos:inScheme veroia-br2012-dsd:codelist ;
+	skos:notation "1322.016" ;
+	skos:prefLabel "Επιχορήγηση Πράσινου Ταμείου για το χρηματοδοτικό πρόγραμμα 'Ολοκλήρωση Πολεοδομικού Σχεδιασμού'" ;
+	skos:broader <http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist/00/1322> .
+
+<http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist/00/1322.017> a skos:Concept ;
+	skos:inScheme veroia-br2012-dsd:codelist ;
+	skos:notation "1322.017" ;
+	skos:prefLabel "Επιχορήγηση ΥΠΑΑΝ για το έργο 'Εκσυγχρονισμός βελτίωση αρδευτικών δικτύων στα Δ.Δ. Σφυκιάς Ριζωμάτων του Δ. Μακεδονίδος'" ;
+	skos:broader <http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist/00/1322> .
+
+<http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist/00/1325> a skos:Concept ;
+	skos:inScheme veroia-br2012-dsd:codelist ;
+	skos:narrower <http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist/00/1325.001> , <http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist/00/1325.002> ;
+	skos:notation "1325" ;
+	skos:prefLabel "Επιχορηγήσεις από εθνικούς πόρους για κάλυψη έκτακτων αναγκών για έργα" ;
+	skos:broader veroia-br2012-codelist:00 ;
+	skos:broadMatch kae-ota-es14:1325 .
+
+<http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist/00/1325.001> a skos:Concept ;
+	skos:inScheme veroia-br2012-dsd:codelist ;
+	skos:notation "1325.001" ;
+	skos:prefLabel "Έπιχορηγήσεις ΥΠΕΣ για Επενδύσεις-Έργα" ;
+	skos:broader <http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist/00/1325> .
+
+<http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist/00/1325.002> a skos:Concept ;
+	skos:inScheme veroia-br2012-dsd:codelist ;
+	skos:notation "1325.002" ;
+	skos:prefLabel "Επιχορηγήσεις ΔΕΗ για αντιπλημυρική μελέτη Τριποτάμου" ;
+	skos:broader <http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist/00/1325> .
+
+<http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist/00/1326> a skos:Concept ;
+	skos:inScheme veroia-br2012-dsd:codelist ;
+	skos:notation "1326" ;
+	skos:prefLabel "Επιχορηγήσεις ΔΕΗ για αντιπλημυρική μελέτη Τριποτάμου" ;
+	skos:broader veroia-br2012-codelist:00 ;
+	skos:broadMatch kae-ota-es14:1326 .
+
+<http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist/00/1327> a skos:Concept ;
+	skos:inScheme veroia-br2012-dsd:codelist ;
+	skos:notation "1327" ;
+	skos:prefLabel "Λοιπές επιχορηγήσεις για επενδύσεις και έργα" ;
+	skos:broader veroia-br2012-codelist:00 ;
+	skos:broadMatch kae-ota-es14:1327 .
+
+<http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist/00/1411> a skos:Concept ;
+	skos:inScheme veroia-br2012-dsd:codelist ;
+	skos:narrower <http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist/00/1411.001> , <http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist/00/1411.002> , <http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist/00/1411.003> ;
+	skos:notation "1411" ;
+	skos:prefLabel "Προϊόν δωρεών" ;
+	skos:broader veroia-br2012-codelist:00 ;
+	skos:broadMatch kae-ota-es14:1411 .
+
+<http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist/00/1411.001> a skos:Concept ;
+	skos:inScheme veroia-br2012-dsd:codelist ;
+	skos:notation "1411.001" ;
+	skos:prefLabel "Προιόν δωρεών" ;
+	skos:broader <http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist/00/1411> .
+
+<http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist/00/1411.002> a skos:Concept ;
+	skos:inScheme veroia-br2012-dsd:codelist ;
+	skos:notation "1411.002" ;
+	skos:prefLabel "Προιόν δωρεών Αφών Κούσιου" ;
+	skos:broader <http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist/00/1411> .
+
+<http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist/00/1411.003> a skos:Concept ;
+	skos:inScheme veroia-br2012-dsd:codelist ;
+	skos:notation "1411.003" ;
+	skos:prefLabel "Προιον δωρεάς CYTA Ελλάς Τηλεπικοινωνιακή Α.Ε." ;
+	skos:broader <http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist/00/1411> .
+
+<http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist/00/1511> a skos:Concept ;
+	skos:inScheme veroia-br2012-dsd:codelist ;
+	skos:notation "1511" ;
+	skos:prefLabel "Προσαυξήσεις εκπρόθεσμης καταβολής χρεών" ;
+	skos:broader veroia-br2012-codelist:00 ;
+	skos:broadMatch kae-ota-es14:1511 .
+
+<http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist/00/1512> a skos:Concept ;
+	skos:inScheme veroia-br2012-dsd:codelist ;
+	skos:notation "1512" ;
+	skos:prefLabel "Πρόστιμα του ΚΟΚ, του ΝΔ 805/71 και του ΑΝ 170/67 (άρθρο 31 Ν 2130/93)" ;
+	skos:broader veroia-br2012-codelist:00 ;
+	skos:broadMatch kae-ota-es14:1512 .
+
+<http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist/00/1513> a skos:Concept ;
+	skos:inScheme veroia-br2012-dsd:codelist ;
+	skos:notation "1513" ;
+	skos:prefLabel "Πρόστιμα για παραβάσεις φορολογικών διατάξεων (άρθρο 19 Ν 1080/80)" ;
+	skos:broader veroia-br2012-codelist:00 ;
+	skos:broadMatch kae-ota-es14:1513 .
+
+<http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist/00/1514> a skos:Concept ;
+	skos:inScheme veroia-br2012-dsd:codelist ;
+	skos:notation "1514" ;
+	skos:prefLabel "Πρόστιμα ανέγερσης και διατήρησης αυθαιρέτων κατασκευών (άρθρο 12 Ν 1647/86)" ;
+	skos:broader veroia-br2012-codelist:00 ;
+	skos:broadMatch kae-ota-es14:1514 .
+
+<http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist/00/1515> a skos:Concept ;
+	skos:inScheme veroia-br2012-dsd:codelist ;
+	skos:notation "1515" ;
+	skos:prefLabel "Πειθαρχικά πρόστιμα σε βάρος των υπαλλήλων (άρθρο 284 Ν 1188/81)" ;
+	skos:broader veroia-br2012-codelist:00 ;
+	skos:broadMatch kae-ota-es14:1515 .
+
+<http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist/00/1516> a skos:Concept ;
+	skos:inScheme veroia-br2012-dsd:codelist ;
+	skos:notation "1516" ;
+	skos:prefLabel "Έσοδα από διάφορες καταλογιστικές αποφάσεις" ;
+	skos:broader veroia-br2012-codelist:00 ;
+	skos:broadMatch kae-ota-es14:1516 .
+
+<http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist/00/1517> a skos:Concept ;
+	skos:inScheme veroia-br2012-dsd:codelist ;
+	skos:notation "1517" ;
+	skos:prefLabel "Πρόστιμα και ποινικές ρήτρες που επιβάλλονται σε βάρος προμηθευτών και εργολάβων" ;
+	skos:broader veroia-br2012-codelist:00 ;
+	skos:broadMatch kae-ota-es14:1517 .
+
+<http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist/00/1518> a skos:Concept ;
+	skos:inScheme veroia-br2012-dsd:codelist ;
+	skos:notation "1518" ;
+	skos:prefLabel "Καταπτώσεις εγγυήσεων" ;
+	skos:broader veroia-br2012-codelist:00 ;
+	skos:broadMatch kae-ota-es14:1518 .
+
+<http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist/00/1519> a skos:Concept ;
+	skos:inScheme veroia-br2012-dsd:codelist ;
+	skos:notation "1519" ;
+	skos:prefLabel "Λοιπά πρόστιμα και χρηματικές ποινές" ;
+	skos:broader veroia-br2012-codelist:00 ;
+	skos:broadMatch kae-ota-es14:1519 .
+
+<http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist/00/1521> a skos:Concept ;
+	skos:inScheme veroia-br2012-dsd:codelist ;
+	skos:notation "1521" ;
+	skos:prefLabel "Παράβολα πλειστηριασμών (άρθρα 932 και 959 ΚΠολΔ)" ;
+	skos:broader veroia-br2012-codelist:00 ;
+	skos:broadMatch kae-ota-es14:1521 .
+
+<http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist/00/1522> a skos:Concept ;
+	skos:inScheme veroia-br2012-dsd:codelist ;
+	skos:notation "1522" ;
+	skos:prefLabel "Παράβολα υποβαλλόμενα για τη χορήγηση διευκολύνσεων τμηματικής καταβολής χρεών (άρθρο 18 Ν 2648/98)" ;
+	skos:broader veroia-br2012-codelist:00 ;
+	skos:broadMatch kae-ota-es14:1522 .
+
+<http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist/00/1611> a skos:Concept ;
+	skos:inScheme veroia-br2012-dsd:codelist ;
+	skos:notation "1611" ;
+	skos:prefLabel "Δαπάνες αφαίρεσης παράνομων διαφημιστικών μέσων (άρθρο 9 Ν 2946/2001, άρθρο 11 Ν 2696/99)" ;
+	skos:broader veroia-br2012-codelist:00 ;
+	skos:broadMatch kae-ota-es14:1611 .
+
+<http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist/00/1612> a skos:Concept ;
+	skos:inScheme veroia-br2012-dsd:codelist ;
+	skos:notation "1612" ;
+	skos:prefLabel "Έσοδα από δαπάνες  ακινητοποίησης και μεταφοράς παρανόμως σταθμευμένων οχημάτων (άρθρο 45 Ν 2218/94)" ;
+	skos:broader veroia-br2012-codelist:00 ;
+	skos:broadMatch kae-ota-es14:1612 .
+
+<http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist/00/1613> a skos:Concept ;
+	skos:inScheme veroia-br2012-dsd:codelist ;
+	skos:notation "1613" ;
+	skos:prefLabel "Έσοδα από δαπάνες απομάκρυνσης και φύλαξης εγκαταλελειμμένων οχημάτων (ΚΥΑ 1002901/67/2002)" ;
+	skos:broader veroia-br2012-codelist:00 ;
+	skos:broadMatch kae-ota-es14:1613 .
+
+<http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist/00/1614> a skos:Concept ;
+	skos:inScheme veroia-br2012-dsd:codelist ;
+	skos:notation "1614" ;
+	skos:prefLabel "Έσοδα από την κατασκευή, επισκευή και συντήρηση οδών και πεζοδρομίων (άρθρο 47 Ν 2696/99, άρθρο 367 ΚΒΠΝ)" ;
+	skos:broader veroia-br2012-codelist:00 ;
+	skos:broadMatch kae-ota-es14:1614 .
+
+<http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist/00/1615> a skos:Concept ;
+	skos:inScheme veroia-br2012-dsd:codelist ;
+	skos:notation "1615" ;
+	skos:prefLabel "Αποζημίωση καταβληθείσα για λογαρισμό των υπόχρεων, λόγω προσκύρωσης ή ρυμοτόμησης ακινήτων (άρθρο 26 Ν 2539/97)" ;
+	skos:broader veroia-br2012-codelist:00 ;
+	skos:broadMatch kae-ota-es14:1615 .
+
+<http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist/00/1616> a skos:Concept ;
+	skos:inScheme veroia-br2012-dsd:codelist ;
+	skos:notation "1616" ;
+	skos:prefLabel "Έσοδα από συμβάσεις διαδημοτικής συνεργασίας (άρθρο 23 Ν 2539/97)" ;
+	skos:broader veroia-br2012-codelist:00 ;
+	skos:broadMatch kae-ota-es14:1616 .
+
+<http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist/00/1617> a skos:Concept ;
+	skos:inScheme veroia-br2012-dsd:codelist ;
+	skos:notation "1617" ;
+	skos:prefLabel "Εισφορές άλλων ΟΤΑ για την καταβολή αποζημίωσης στα μέλη υπηρεσιακού συμβουλίου (άρθρο 12 Ν 2130/93)" ;
+	skos:broader veroia-br2012-codelist:00 ;
+	skos:broadMatch kae-ota-es14:1617 .
+
+<http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist/00/1619> a skos:Concept ;
+	skos:inScheme veroia-br2012-dsd:codelist ;
+	skos:notation "1619" ;
+	skos:prefLabel "Λοιπά έσοδα από δαπάνες πραγματοποιηθείσες για λογαρισμό τρίτων" ;
+	skos:broader veroia-br2012-codelist:00 ;
+	skos:broadMatch kae-ota-es14:1619 .
+
+<http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist/00/1622> a skos:Concept ;
+	skos:inScheme veroia-br2012-dsd:codelist ;
+	skos:notation "1622" ;
+	skos:prefLabel "Έσοδα από δαπάνες ακινητοποίησης και μεταφοράς παρανόμως σταθμευμένων οχημάτων" ;
+	skos:broader veroia-br2012-codelist:00 ;
+	skos:broadMatch kae-ota-es14:1622 .
+
+<http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist/00/1623> a skos:Concept ;
+	skos:inScheme veroia-br2012-dsd:codelist ;
+	skos:notation "1623" ;
+	skos:prefLabel "Έσοδα από δαπάνες απομάκρυνσης και φύλαξης εγκαταλελειμένων οχημάτων" ;
+	skos:broader veroia-br2012-codelist:00 ;
+	skos:broadMatch kae-ota-es14:1623 .
+
+<http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist/00/1624> a skos:Concept ;
+	skos:inScheme veroia-br2012-dsd:codelist ;
+	skos:notation "1624" ;
+	skos:prefLabel "Έσοδα από κατασκευή, επισκευή και συντήρηση οδών και πεζοδρομίων" ;
+	skos:broader veroia-br2012-codelist:00 ;
+	skos:broadMatch kae-ota-es14:1624 .
+
+<http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist/00/1626> a skos:Concept ;
+	skos:inScheme veroia-br2012-dsd:codelist ;
+	skos:notation "1626" ;
+	skos:prefLabel "Εσοδα από συμβάσεις διαδημοτικής συνεργασίας (άρθρο 23Ν 2539/97)" ;
+	skos:broader veroia-br2012-codelist:00 ;
+	skos:broadMatch kae-ota-es14:1626 .
+
+<http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist/00/1627> a skos:Concept ;
+	skos:inScheme veroia-br2012-dsd:codelist ;
+	skos:notation "1627" ;
+	skos:prefLabel "Εισφορές άλλων ΟΤΑ για την καταβολή αποζημίωσης στα μέλη του υπηρεσιακού συμβουλίου" ;
+	skos:broader veroia-br2012-codelist:00 ;
+	skos:broadMatch kae-ota-es14:1627 .
+
+<http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist/00/1699> a skos:Concept ;
+	skos:inScheme veroia-br2012-dsd:codelist ;
+	skos:notation "1699" ;
+	skos:prefLabel "Λοιπά έκτακτα έσοδα που δεν μπορούν να ενταχθούν στις ανωτέρω τάξεις" ;
+	skos:broader veroia-br2012-codelist:00 ;
+	skos:broadMatch kae-ota-es14:1699 .
+
+<http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist/00/2111> a skos:Concept ;
+	skos:inScheme veroia-br2012-dsd:codelist ;
+	skos:notation "2111" ;
+	skos:prefLabel "Τακτικά έσοδα από τέλη καθαριότητας και ηλεκτροφωτισμού που βεβαιώ" ;
+	skos:broader veroia-br2012-codelist:00 ;
+	skos:broadMatch kae-ota-es14:2111 .
+
+<http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist/00/2112> a skos:Concept ;
+	skos:inScheme veroia-br2012-dsd:codelist ;
+	skos:notation "2112" ;
+	skos:prefLabel "Τακτικά έσοδα από τέλη και δικαιώματα ύδρευσης" ;
+	skos:broader veroia-br2012-codelist:00 ;
+	skos:broadMatch kae-ota-es14:2112 .
+
+<http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist/00/2113> a skos:Concept ;
+	skos:inScheme veroia-br2012-dsd:codelist ;
+	skos:notation "2113" ;
+	skos:prefLabel "Τακτικά έσοδα από τέλη και δικαιώματα άρδευσης" ;
+	skos:broader veroia-br2012-codelist:00 ;
+	skos:broadMatch kae-ota-es14:2113 .
+
+<http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist/00/2114> a skos:Concept ;
+	skos:inScheme veroia-br2012-dsd:codelist ;
+	skos:notation "2114" ;
+	skos:prefLabel "Τακτικά έσοδα από τέλη και δικαιώματα αποχέτευσης" ;
+	skos:broader veroia-br2012-codelist:00 ;
+	skos:broadMatch kae-ota-es14:2114 .
+
+<http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist/00/2115> a skos:Concept ;
+	skos:inScheme veroia-br2012-dsd:codelist ;
+	skos:notation "2115" ;
+	skos:prefLabel "Τακτικά έσοδα από τέλος ακίνητης περιουσίας" ;
+	skos:broader veroia-br2012-codelist:00 ;
+	skos:broadMatch kae-ota-es14:2115 .
+
+<http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist/00/2117> a skos:Concept ;
+	skos:inScheme veroia-br2012-dsd:codelist ;
+	skos:notation "2117" ;
+	skos:prefLabel "Τακτικά έσοδα από εισφορά λόγω ένταξης ή επέκτασης πολεοδομικών σχεδίων" ;
+	skos:broader veroia-br2012-codelist:00 ;
+	skos:broadMatch kae-ota-es14:2117 .
+
+<http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist/00/2118> a skos:Concept ;
+	skos:inScheme veroia-br2012-dsd:codelist ;
+	skos:notation "2118" ;
+	skos:prefLabel "Τακτικά έσοδα επί των ακαθαρίστων εσόδων επιτηδευματιών" ;
+	skos:broader veroia-br2012-codelist:00 ;
+	skos:broadMatch kae-ota-es14:2118 .
+
+<http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist/00/2119> a skos:Concept ;
+	skos:inScheme veroia-br2012-dsd:codelist ;
+	skos:notation "2119" ;
+	skos:prefLabel "Τακτικά έσοδα από λοιπά έσοδα" ;
+	skos:broader veroia-br2012-codelist:00 ;
+	skos:broadMatch kae-ota-es14:2119 .
+
+<http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist/00/2211> a skos:Concept ;
+	skos:inScheme veroia-br2012-dsd:codelist ;
+	skos:notation "2211" ;
+	skos:prefLabel "Έκτακτα γενικά έσοδα" ;
+	skos:broader veroia-br2012-codelist:00 ;
+	skos:broadMatch kae-ota-es14:2211 .
+
+<http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist/00/2212> a skos:Concept ;
+	skos:inScheme veroia-br2012-dsd:codelist ;
+	skos:notation "2212" ;
+	skos:prefLabel "Έκτακτα ειδικευμένα έσοδα" ;
+	skos:broader veroia-br2012-codelist:00 ;
+	skos:broadMatch kae-ota-es14:2212 .
+
+<http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist/00/3111> a skos:Concept ;
+	skos:inScheme veroia-br2012-dsd:codelist ;
+	skos:notation "3111" ;
+	skos:prefLabel "Δάνεια Ταμείου Παρακαταθηκών και Δανείων" ;
+	skos:broader veroia-br2012-codelist:00 ;
+	skos:broadMatch kae-ota-es14:3111 .
+
+<http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist/00/3112> a skos:Concept ;
+	skos:inScheme veroia-br2012-dsd:codelist ;
+	skos:notation "3112" ;
+	skos:prefLabel "Δάνεια από άλλους πιστωτικούς οργανισμούς της ημεδαπής ή της αλλοδαπής (άρθρο 11 Ν 2503/97)" ;
+	skos:broader veroia-br2012-codelist:00 ;
+	skos:broadMatch kae-ota-es14:3112 .
+
+<http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist/00/3121> a skos:Concept ;
+	skos:inScheme veroia-br2012-dsd:codelist ;
+	skos:notation "3121" ;
+	skos:prefLabel "Δάνεια του Ταμείου Παρακαταθηκών και Δανείων" ;
+	skos:broader veroia-br2012-codelist:00 ;
+	skos:broadMatch kae-ota-es14:3121 .
+
+<http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist/00/3122> a skos:Concept ;
+	skos:inScheme veroia-br2012-dsd:codelist ;
+	skos:notation "3122" ;
+	skos:prefLabel "Δάνεια από άλλους πιστωτικούς οργανισμούς της ημεδαπής ή της αλλοδαπής (άρθρο 11 Ν 2503/97)" ;
+	skos:broader veroia-br2012-codelist:00 ;
+	skos:broadMatch kae-ota-es14:3122 .
+
+<http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist/00/3211> a skos:Concept ;
+	skos:inScheme veroia-br2012-dsd:codelist ;
+	skos:notation "3211" ;
+	skos:prefLabel "Τέλη καθαριότητας και ηλεκτροφωτισμού" ;
+	skos:broader veroia-br2012-codelist:00 ;
+	skos:broadMatch kae-ota-es14:3211 .
+
+<http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist/00/3212> a skos:Concept ;
+	skos:inScheme veroia-br2012-dsd:codelist ;
+	skos:notation "3212" ;
+	skos:prefLabel "Τέλη και δικαιώματα ύδρευσης" ;
+	skos:broader veroia-br2012-codelist:00 ;
+	skos:broadMatch kae-ota-es14:3212 .
+
+<http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist/00/3213> a skos:Concept ;
+	skos:inScheme veroia-br2012-dsd:codelist ;
+	skos:notation "3213" ;
+	skos:prefLabel "Τέλη και δικαιώματα άρδευσης" ;
+	skos:broader veroia-br2012-codelist:00 ;
+	skos:broadMatch kae-ota-es14:3213 .
+
+<http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist/00/3214> a skos:Concept ;
+	skos:inScheme veroia-br2012-dsd:codelist ;
+	skos:notation "3214" ;
+	skos:prefLabel "Τέλη και δικαιωματά αποχέτευσης" ;
+	skos:broader veroia-br2012-codelist:00 ;
+	skos:broadMatch kae-ota-es14:3214 .
+
+<http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist/00/3215> a skos:Concept ;
+	skos:inScheme veroia-br2012-dsd:codelist ;
+	skos:notation "3215" ;
+	skos:prefLabel "Τέλος ακίνητης περιουσίας" ;
+	skos:broader veroia-br2012-codelist:00 ;
+	skos:broadMatch kae-ota-es14:3215 .
+
+<http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist/00/3217> a skos:Concept ;
+	skos:inScheme veroia-br2012-dsd:codelist ;
+	skos:notation "3217" ;
+	skos:prefLabel "Εισφορά λόγω ένταξης ή επέκτασης πολεοδομικών σχεδίων" ;
+	skos:broader veroia-br2012-codelist:00 ;
+	skos:broadMatch kae-ota-es14:3217 .
+
+<http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist/00/3218> a skos:Concept ;
+	skos:inScheme veroia-br2012-dsd:codelist ;
+	skos:notation "3218" ;
+	skos:prefLabel "Τακτικά έσοδα απί των ακαθαρίστων εσόδων επιτηδευματιών" ;
+	skos:broader veroia-br2012-codelist:00 ;
+	skos:broadMatch kae-ota-es14:3218 .
+
+<http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist/00/3219> a skos:Concept ;
+	skos:inScheme veroia-br2012-dsd:codelist ;
+	skos:narrower <http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist/00/3219.001> , <http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist/00/3219.002> , <http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist/00/3219.003> , <http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist/00/3219.004> , <http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist/00/3219.005> , <http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist/00/3219.006> , <http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist/00/3219.007> , <http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist/00/3219.008> ;
+	skos:notation "3219" ;
+	skos:prefLabel "Λοιπά έσοδα" ;
+	skos:broader veroia-br2012-codelist:00 ;
+	skos:broadMatch kae-ota-es14:3219 .
+
+<http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist/00/3219.001> a skos:Concept ;
+	skos:inScheme veroia-br2012-dsd:codelist ;
+	skos:notation "3219.001" ;
+	skos:prefLabel "Μισθώματα ακινητων" ;
+	skos:broader <http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist/00/3219> .
+
+<http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist/00/3219.002> a skos:Concept ;
+	skos:inScheme veroia-br2012-dsd:codelist ;
+	skos:notation "3219.002" ;
+	skos:prefLabel "Μισθώματα Δημοτικής Αγοράς" ;
+	skos:broader <http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist/00/3219> .
+
+<http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist/00/3219.003> a skos:Concept ;
+	skos:inScheme veroia-br2012-dsd:codelist ;
+	skos:notation "3219.003" ;
+	skos:prefLabel "Τέλος Διαφήμισης" ;
+	skos:broader <http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist/00/3219> .
+
+<http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist/00/3219.004> a skos:Concept ;
+	skos:inScheme veroia-br2012-dsd:codelist ;
+	skos:notation "3219.004" ;
+	skos:prefLabel "Τέλη χρήσης κοινόχρηστων χώρων" ;
+	skos:broader <http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist/00/3219> .
+
+<http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist/00/3219.005> a skos:Concept ;
+	skos:inScheme veroia-br2012-dsd:codelist ;
+	skos:notation "3219.005" ;
+	skos:prefLabel "Μισθώματα λατομείων" ;
+	skos:broader <http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist/00/3219> .
+
+<http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist/00/3219.006> a skos:Concept ;
+	skos:inScheme veroia-br2012-dsd:codelist ;
+	skos:notation "3219.006" ;
+	skos:prefLabel "Δικαιώματα βοσκής" ;
+	skos:broader <http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist/00/3219> .
+
+<http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist/00/3219.007> a skos:Concept ;
+	skos:inScheme veroia-br2012-dsd:codelist ;
+	skos:notation "3219.007" ;
+	skos:prefLabel "Αυθαίρετη αγροτική καλλιέργεια" ;
+	skos:broader <http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist/00/3219> .
+
+<http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist/00/3219.008> a skos:Concept ;
+	skos:inScheme veroia-br2012-dsd:codelist ;
+	skos:notation "3219.008" ;
+	skos:prefLabel "Λοιπά τακτικά έσοδα" ;
+	skos:broader <http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist/00/3219> .
+
+<http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist/00/3221> a skos:Concept ;
+	skos:inScheme veroia-br2012-dsd:codelist ;
+	skos:narrower <http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist/00/3221.001> , <http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist/00/3221.002> , <http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist/00/3221.003> , <http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist/00/3221.004> , <http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist/00/3221.005> , <http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist/00/3221.010> ;
+	skos:notation "3221" ;
+	skos:prefLabel "Έκτακτα γενικά έσοδα" ;
+	skos:broader veroia-br2012-codelist:00 ;
+	skos:broadMatch kae-ota-es14:3221 .
+
+<http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist/00/3221.001> a skos:Concept ;
+	skos:inScheme veroia-br2012-dsd:codelist ;
+	skos:notation "3221.001" ;
+	skos:prefLabel "Έσοδα από εκποίηση ακίνητης περιουσίας" ;
+	skos:broader <http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist/00/3221> .
+
+<http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist/00/3221.002> a skos:Concept ;
+	skos:inScheme veroia-br2012-dsd:codelist ;
+	skos:notation "3221.002" ;
+	skos:prefLabel "Έσοδα από προσκύρωση δημοτικών εκτάσεων" ;
+	skos:broader <http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist/00/3221> .
+
+<http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist/00/3221.003> a skos:Concept ;
+	skos:inScheme veroia-br2012-dsd:codelist ;
+	skos:notation "3221.003" ;
+	skos:prefLabel "Πρόστιμα ανέγερσης και διατήρησης αυθαιρέτων" ;
+	skos:broader <http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist/00/3221> .
+
+<http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist/00/3221.004> a skos:Concept ;
+	skos:inScheme veroia-br2012-dsd:codelist ;
+	skos:notation "3221.004" ;
+	skos:prefLabel "Πρόστιμα Κ.Ο.Κ." ;
+	skos:broader <http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist/00/3221> .
+
+<http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist/00/3221.005> a skos:Concept ;
+	skos:inScheme veroia-br2012-dsd:codelist ;
+	skos:notation "3221.005" ;
+	skos:prefLabel "Λοιπά πρόστιμα" ;
+	skos:broader <http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist/00/3221> .
+
+<http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist/00/3221.010> a skos:Concept ;
+	skos:inScheme veroia-br2012-dsd:codelist ;
+	skos:notation "3221.010" ;
+	skos:prefLabel "Καταλογισμός χρηματικού ελλείμματος" ;
+	skos:broader <http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist/00/3221> .
+
+<http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist/00/3222> a skos:Concept ;
+	skos:inScheme veroia-br2012-dsd:codelist ;
+	skos:notation "3222" ;
+	skos:prefLabel "Έκτακτα ειδικευμένα έσοδα" ;
+	skos:broader veroia-br2012-codelist:00 ;
+	skos:broadMatch kae-ota-es14:3222 .
+
+<http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist/00/4111> a skos:Concept ;
+	skos:inScheme veroia-br2012-dsd:codelist ;
+	skos:notation "4111" ;
+	skos:prefLabel "Εισφορά υπέρ του Δημοσίου στις αποδοχές και τα έξοδα παράστασης" ;
+	skos:broader veroia-br2012-codelist:00 ;
+	skos:broadMatch kae-ota-es14:4111 .
+
+<http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist/00/4112> a skos:Concept ;
+	skos:inScheme veroia-br2012-dsd:codelist ;
+	skos:notation "4112" ;
+	skos:prefLabel "Εξαγορά συντάξιμης υπηρεσίας" ;
+	skos:broader veroia-br2012-codelist:00 ;
+	skos:broadMatch kae-ota-es14:4112 .
+
+<http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist/00/4121> a skos:Concept ;
+	skos:inScheme veroia-br2012-dsd:codelist ;
+	skos:notation "4121" ;
+	skos:prefLabel "Φόροι μισθωτών υπηρεσιών" ;
+	skos:broader veroia-br2012-codelist:00 ;
+	skos:broadMatch kae-ota-es14:4121 .
+
+<http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist/00/4122> a skos:Concept ;
+	skos:inScheme veroia-br2012-dsd:codelist ;
+	skos:notation "4122" ;
+	skos:prefLabel "Φόροι και χαρτόσημο Δημάρχων Αντιδημάρχων, μελών Δημοτικών Συμβουλίων και λοιπών συλλογικών οργάνων" ;
+	skos:broader veroia-br2012-codelist:00 ;
+	skos:broadMatch kae-ota-es14:4122 .
+
+<http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist/00/4123> a skos:Concept ;
+	skos:inScheme veroia-br2012-dsd:codelist ;
+	skos:notation "4123" ;
+	skos:prefLabel "Φόρων προμηθευτών εργολάβων ελ. Επαγγελματιών κλπ" ;
+	skos:broader veroia-br2012-codelist:00 ;
+	skos:broadMatch kae-ota-es14:4123 .
+
+<http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist/00/4124> a skos:Concept ;
+	skos:inScheme veroia-br2012-dsd:codelist ;
+	skos:notation "4124" ;
+	skos:prefLabel "Λοιπές κρατήσεις υπέρ του Δημοσίου" ;
+	skos:broader veroia-br2012-codelist:00 ;
+	skos:broadMatch kae-ota-es14:4124 .
+
+<http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist/00/4131> a skos:Concept ;
+	skos:inScheme veroia-br2012-dsd:codelist ;
+	skos:notation "4131" ;
+	skos:prefLabel "Εισφορές σε ασφαλιστικούς οργανισμούς και ταμεία" ;
+	skos:broader veroia-br2012-codelist:00 ;
+	skos:broadMatch kae-ota-es14:4131 .
+
+<http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist/00/4141> a skos:Concept ;
+	skos:inScheme veroia-br2012-dsd:codelist ;
+	skos:notation "4141" ;
+	skos:prefLabel "Κρατήσεις στις αποδοχές για την εξόφληση δανείων του ΤΠ & Δ" ;
+	skos:broader veroia-br2012-codelist:00 ;
+	skos:broadMatch kae-ota-es14:4141 .
+
+<http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist/00/4142> a skos:Concept ;
+	skos:inScheme veroia-br2012-dsd:codelist ;
+	skos:narrower <http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist/00/4142.001> ;
+	skos:notation "4142" ;
+	skos:prefLabel "Εισπράξεις υπερ ΚΕΜΑΕΔ" ;
+	skos:broader veroia-br2012-codelist:00 ;
+	skos:broadMatch kae-ota-es14:4142 .
+
+<http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist/00/4142.001> a skos:Concept ;
+	skos:inScheme veroia-br2012-dsd:codelist ;
+	skos:notation "4142.001" ;
+	skos:prefLabel "Εισπράξεις υπέρ ιδρύματος ΚΑΠΠΟΥ" ;
+	skos:broader <http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist/00/4142> .
+
+<http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist/00/4211> a skos:Concept ;
+	skos:inScheme veroia-br2012-dsd:codelist ;
+	skos:notation "4211" ;
+	skos:prefLabel "Επιστροφή χρημάτων από υπολόγους χρηματικών ενταλμάτων προπληρωμής" ;
+	skos:broader veroia-br2012-codelist:00 ;
+	skos:broadMatch kae-ota-es14:4211 .
+
+<http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist/00/4212> a skos:Concept ;
+	skos:inScheme veroia-br2012-dsd:codelist ;
+	skos:narrower <http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist/00/4212.001> , <http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist/00/4212.002> ;
+	skos:notation "4212" ;
+	skos:prefLabel "Επιστροφή πάγιας προκαταβολής" ;
+	skos:broader veroia-br2012-codelist:00 ;
+	skos:broadMatch kae-ota-es14:4212 .
+
+<http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist/00/4212.001> a skos:Concept ;
+	skos:inScheme veroia-br2012-dsd:codelist ;
+	skos:notation "4212.001" ;
+	skos:prefLabel "Επιστροφή πάγιας προκαταβολής" ;
+	skos:broader <http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist/00/4212> .
+
+<http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist/00/4212.002> a skos:Concept ;
+	skos:inScheme veroia-br2012-dsd:codelist ;
+	skos:notation "4212.002" ;
+	skos:prefLabel "Επιστροφή πάγιας προκαταβολής προέδρων Δημοτικών και Τοπικών Κοινοτήτων" ;
+	skos:broader <http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist/00/4212> .
+
+<http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist/00/4213> a skos:Concept ;
+	skos:inScheme veroia-br2012-dsd:codelist ;
+	skos:notation "4213" ;
+	skos:prefLabel "Επιστροφή αχρεωστήτως καταβληθέντων χρηματικών ποσών (άρθρο 26 Ν 318/69, Απόφ. Υπ. Οικν. 2081241/11652/1997)" ;
+	skos:broader veroia-br2012-codelist:00 ;
+	skos:broadMatch kae-ota-es14:4213 .
+
+<http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist/00/4214> a skos:Concept ;
+	skos:inScheme veroia-br2012-dsd:codelist ;
+	skos:narrower <http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist/00/4214.001> , <http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist/00/4214.002> , <http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist/00/4214.003> ;
+	skos:notation "4214" ;
+	skos:prefLabel "Επιστροφή εν γένει χρημάτων" ;
+	skos:broader veroia-br2012-codelist:00 ;
+	skos:broadMatch kae-ota-es14:4214 .
+
+<http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist/00/4214.001> a skos:Concept ;
+	skos:inScheme veroia-br2012-dsd:codelist ;
+	skos:notation "4214.001" ;
+	skos:prefLabel "Επιστροφή χρημάτων από Δημοτικές Επιχειρήσεις" ;
+	skos:broader <http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist/00/4214> .
+
+<http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist/00/4214.002> a skos:Concept ;
+	skos:inScheme veroia-br2012-dsd:codelist ;
+	skos:notation "4214.002" ;
+	skos:prefLabel "Επιστροφή παρακράτησης δανείου  από ΔΕΥΑΒ" ;
+	skos:broader <http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist/00/4214> .
+
+<http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist/00/4214.003> a skos:Concept ;
+	skos:inScheme veroia-br2012-dsd:codelist ;
+	skos:notation "4214.003" ;
+	skos:prefLabel "Διάφορες επιστροφές χρημάτων" ;
+	skos:broader <http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist/00/4214> .
+
+<http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist/00/5111> a skos:Concept ;
+	skos:inScheme veroia-br2012-dsd:codelist ;
+	skos:notation "5111" ;
+	skos:prefLabel "Χρηματικό υπόλοιπο προερχόμενο από τακτικά έσοδα για την κάλυψη  υποχρεώσεων  παρελθόντων ετών" ;
+	skos:broader veroia-br2012-codelist:00 ;
+	skos:broadMatch kae-ota-es14:5111 .
+
+<http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist/00/5112> a skos:Concept ;
+	skos:inScheme veroia-br2012-dsd:codelist ;
+	skos:notation "5112" ;
+	skos:prefLabel "Χρηματικό υπόλοιπο προερχόμενο από τακτικά έσοδα για την κάλυψη έργων του Π.Δ.Ε. ή πιστώσεις προοριζόμενες για δημόσιες επενδύσεις" ;
+	skos:broader veroia-br2012-codelist:00 ;
+	skos:broadMatch kae-ota-es14:5112 .
+
+<http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist/00/5121> a skos:Concept ;
+	skos:inScheme veroia-br2012-dsd:codelist ;
+	skos:notation "5121" ;
+	skos:prefLabel "Χρηματικό υπόλοιπο προερχόμενο από έκτακτα έσοδα για την κάλυψη υποχρεώσεων  παρελθόντων ετών" ;
+	skos:broader veroia-br2012-codelist:00 ;
+	skos:broadMatch kae-ota-es14:5121 .
+
+<http://data.openbudgets.eu/resource/dataset/budget-veroia-revenue-2012/codelist/00/5122> a skos:Concept ;
+	skos:inScheme veroia-br2012-dsd:codelist ;
+	skos:notation "5122" ;
+	skos:prefLabel "Χρηματικό υπόλοιπο προερχόμενο από έκτακτα έσοδα για την κάλυψη έργων του Π.Δ.Ε. ή πιστώσεις προοριζόμενες για δημόσιες επενδύσεις" ;
+	skos:broader veroia-br2012-codelist:00 ;
+	skos:broadMatch kae-ota-es14:5122 .
+}
