@@ -1,0 +1,1585 @@
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix sesame: <http://www.openrdf.org/schema/sesame#> .
+@prefix fn: <http://www.w3.org/2005/xpath-functions#> .
+
+<http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014/0> <http://www.w3.org/2004/02/skos/core#notation> "0" ;
+	<http://www.w3.org/2004/02/skos/core#prefLabel> "ΤΑΚΤΙΚΑ ΕΣΟΔΑ"@el ;
+	a <http://www.w3.org/2004/02/skos/core#Concept> ;
+	<http://www.w3.org/2004/02/skos/core#narrower> <http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014/01> , <http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014/02> , <http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014/03> , <http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014/04> , <http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014/05> , <http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014/06> , <http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014/07> ;
+	<http://www.w3.org/2004/02/skos/core#topConceptOf> <http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014> ;
+	<http://www.w3.org/2004/02/skos/core#inScheme> <http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014> .
+
+<http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014/01> <http://www.w3.org/2004/02/skos/core#notation> "01" ;
+	<http://www.w3.org/2004/02/skos/core#prefLabel> "ΠΡΟΣΟΔΟΙ ΑΠΟ ΑΚΙΝΗΤΗ ΠΕΡΙΟΥΣΙΑ"@el ;
+	a <http://www.w3.org/2004/02/skos/core#Concept> ;
+	<http://www.w3.org/2004/02/skos/core#narrower> <http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014/011> , <http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014/012> ;
+	<http://www.w3.org/2004/02/skos/core#broader> <http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014/0> ;
+	<http://www.w3.org/2004/02/skos/core#inScheme> <http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014> .
+
+<http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014/011> <http://www.w3.org/2004/02/skos/core#notation> "011" ;
+	<http://www.w3.org/2004/02/skos/core#prefLabel> "ΜΙΣΘΩΜΑΤΑ"@el ;
+	a <http://www.w3.org/2004/02/skos/core#Concept> ;
+	<http://www.w3.org/2004/02/skos/core#narrower> <http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014/0111> , <http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014/0112> , <http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014/0113> , <http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014/0114> , <http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014/0115> , <http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014/0116> , <http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014/0117> , <http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014/0118> ;
+	<http://www.w3.org/2004/02/skos/core#broader> <http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014/01> ;
+	<http://www.w3.org/2004/02/skos/core#inScheme> <http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014> .
+
+<http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014/0111> <http://www.w3.org/2004/02/skos/core#notation> "0111" ;
+	<http://www.w3.org/2004/02/skos/core#prefLabel> "Μισθώματα από αστικά ακίνητα (άρθρο 192 ΚΔΚ)"@el ;
+	a <http://www.w3.org/2004/02/skos/core#Concept> ;
+	<http://www.w3.org/2004/02/skos/core#broader> <http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014/011> ;
+	<http://www.w3.org/2004/02/skos/core#inScheme> <http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014> .
+
+<http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014/0112> <http://www.w3.org/2004/02/skos/core#notation> "0112" ;
+	<http://www.w3.org/2004/02/skos/core#prefLabel> "Μισθώματα βοσκησίμων εκτάσεων (άρθρο 5 ΒΔ 24/9-20/1958, άρθρο 31 ΝΔ 4260/62)"@el ;
+	a <http://www.w3.org/2004/02/skos/core#Concept> ;
+	<http://www.w3.org/2004/02/skos/core#broader> <http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014/011> ;
+	<http://www.w3.org/2004/02/skos/core#inScheme> <http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014> .
+
+<http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014/0113> <http://www.w3.org/2004/02/skos/core#notation> "0113" ;
+	<http://www.w3.org/2004/02/skos/core#prefLabel> "Μισθώματα καλλιεργήσιμης γης (άρθρο 195 ΚΔΚ)"@el ;
+	a <http://www.w3.org/2004/02/skos/core#Concept> ;
+	<http://www.w3.org/2004/02/skos/core#broader> <http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014/011> ;
+	<http://www.w3.org/2004/02/skos/core#inScheme> <http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014> .
+
+<http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014/0114> <http://www.w3.org/2004/02/skos/core#notation> "0114" ;
+	<http://www.w3.org/2004/02/skos/core#prefLabel> "Μισθώματα δημοτικής αγοράς (άρθρο 2 ΒΔ 24/9-20/10/1958)"@el ;
+	a <http://www.w3.org/2004/02/skos/core#Concept> ;
+	<http://www.w3.org/2004/02/skos/core#broader> <http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014/011> ;
+	<http://www.w3.org/2004/02/skos/core#inScheme> <http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014> .
+
+<http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014/0115> <http://www.w3.org/2004/02/skos/core#notation> "0115" ;
+	<http://www.w3.org/2004/02/skos/core#prefLabel> "Μισθώματα από την παραχώρηση κοινόχρηστων χώρων για την τοποθέτηση διαφημιστικών μέσων (άρθρο 3 Ν 2946/2001)"@el ;
+	a <http://www.w3.org/2004/02/skos/core#Concept> ;
+	<http://www.w3.org/2004/02/skos/core#broader> <http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014/011> ;
+	<http://www.w3.org/2004/02/skos/core#inScheme> <http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014> .
+
+<http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014/0116> <http://www.w3.org/2004/02/skos/core#notation> "0116" ;
+	<http://www.w3.org/2004/02/skos/core#prefLabel> "Μισθώματα δημοτικών και κοινοτικών λατομείων (άρθρο 20 Ν 669/77, άρθρο 7 Ν 1428/84)"@el ;
+	a <http://www.w3.org/2004/02/skos/core#Concept> ;
+	<http://www.w3.org/2004/02/skos/core#broader> <http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014/011> ;
+	<http://www.w3.org/2004/02/skos/core#inScheme> <http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014> .
+
+<http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014/0117> <http://www.w3.org/2004/02/skos/core#notation> "0117" ;
+	<http://www.w3.org/2004/02/skos/core#prefLabel> "Μισθώματα δασών και δασικών εκτάσεων (άρθρο 197 ΚΔΚ, άρθρο 39 Ν 998/79)"@el ;
+	a <http://www.w3.org/2004/02/skos/core#Concept> ;
+	<http://www.w3.org/2004/02/skos/core#broader> <http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014/011> ;
+	<http://www.w3.org/2004/02/skos/core#inScheme> <http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014> .
+
+<http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014/0118> <http://www.w3.org/2004/02/skos/core#notation> "0118" ;
+	<http://www.w3.org/2004/02/skos/core#prefLabel> "Μισθώματα ιχθυοτροφείων (άρθρο 14 Ν 127/75, άρθρο 75 Ν 2065/92, ΚΥΑ 32489/82)"@el ;
+	a <http://www.w3.org/2004/02/skos/core#Concept> ;
+	<http://www.w3.org/2004/02/skos/core#broader> <http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014/011> ;
+	<http://www.w3.org/2004/02/skos/core#inScheme> <http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014> .
+
+<http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014/012> <http://www.w3.org/2004/02/skos/core#notation> "012" ;
+	<http://www.w3.org/2004/02/skos/core#prefLabel> "ΕΣΟΔΑ ΑΠΟ ΕΚΜΕΤΑΛΛΕΥΣΗ ΕΔΑΦΟΥΣ ΑΚΙΝΗΤΗΣ ΠΕΡΙΟΥΣΙΑΣ ΚΑΙ ΚΟΙΝΟΧΡΗΣΤΩΝ ΧΩΡΩΝ"@el ;
+	a <http://www.w3.org/2004/02/skos/core#Concept> ;
+	<http://www.w3.org/2004/02/skos/core#narrower> <http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014/0121> , <http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014/0122> , <http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014/0123> , <http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014/0124> , <http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014/0125> , <http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014/0126> , <http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014/0127> , <http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014/0128> , <http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014/0129> ;
+	<http://www.w3.org/2004/02/skos/core#broader> <http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014/01> ;
+	<http://www.w3.org/2004/02/skos/core#inScheme> <http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014> .
+
+<http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014/0121> <http://www.w3.org/2004/02/skos/core#notation> "0121" ;
+	<http://www.w3.org/2004/02/skos/core#prefLabel> "Έσοδα από την εκμετάλλευση διαφημιστικών χώρων σε αθλητικές εγκαταστάσεις (άρθρο 56 Ν 2725/99) και στέγαστρα αστικών και υπεραστικών συγκοινωνιών (άρθρο 21 Ν 2963/2001)"@el ;
+	a <http://www.w3.org/2004/02/skos/core#Concept> ;
+	<http://www.w3.org/2004/02/skos/core#broader> <http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014/012> ;
+	<http://www.w3.org/2004/02/skos/core#inScheme> <http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014> .
+
+<http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014/0122> <http://www.w3.org/2004/02/skos/core#notation> "0122" ;
+	<http://www.w3.org/2004/02/skos/core#prefLabel> "Τέλη και δικαιώματα από εμποροπανηγύρεις, παζάρια και λαϊκές αγορές (άρθρο 19 ΒΔ 24/9-20/10/1958)"@el ;
+	a <http://www.w3.org/2004/02/skos/core#Concept> ;
+	<http://www.w3.org/2004/02/skos/core#broader> <http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014/012> ;
+	<http://www.w3.org/2004/02/skos/core#inScheme> <http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014> .
+
+<http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014/0123> <http://www.w3.org/2004/02/skos/core#notation> "0123" ;
+	<http://www.w3.org/2004/02/skos/core#prefLabel> "Δικαίωμα αμμοληψίας (άρθρο 19 ΒΔ 24/9-20/10/1958)"@el ;
+	a <http://www.w3.org/2004/02/skos/core#Concept> ;
+	<http://www.w3.org/2004/02/skos/core#broader> <http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014/012> ;
+	<http://www.w3.org/2004/02/skos/core#inScheme> <http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014> .
+
+<http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014/0124> <http://www.w3.org/2004/02/skos/core#notation> "0124" ;
+	<http://www.w3.org/2004/02/skos/core#prefLabel> "Έσοδα από την εκμετάλλευση αναδασομένων εκτάσεων (άρθρο 40 Ν 998/79)"@el ;
+	a <http://www.w3.org/2004/02/skos/core#Concept> ;
+	<http://www.w3.org/2004/02/skos/core#broader> <http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014/012> ;
+	<http://www.w3.org/2004/02/skos/core#inScheme> <http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014> .
+
+<http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014/0125> <http://www.w3.org/2004/02/skos/core#notation> "0125" ;
+	<http://www.w3.org/2004/02/skos/core#prefLabel> "Δικαίωμα βοσκής (άρθρο 5 ΒΔ 24/9-20/10/1958, άρθρο 16 Ν 2130/93)"@el ;
+	a <http://www.w3.org/2004/02/skos/core#Concept> ;
+	<http://www.w3.org/2004/02/skos/core#broader> <http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014/012> ;
+	<http://www.w3.org/2004/02/skos/core#inScheme> <http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014> .
+
+<http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014/0126> <http://www.w3.org/2004/02/skos/core#notation> "0126" ;
+	<http://www.w3.org/2004/02/skos/core#prefLabel> "Ειδικό δικαίωμα χρήσεως βελτιωμένων βοσκοτόπων (άρθρο 8 Ν 994/79)"@el ;
+	a <http://www.w3.org/2004/02/skos/core#Concept> ;
+	<http://www.w3.org/2004/02/skos/core#broader> <http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014/012> ;
+	<http://www.w3.org/2004/02/skos/core#inScheme> <http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014> .
+
+<http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014/0127> <http://www.w3.org/2004/02/skos/core#notation> "0127" ;
+	<http://www.w3.org/2004/02/skos/core#prefLabel> "Δικαίωμα χρήσης αποκαλυπτόμενων καλλιεργητικών εκτάσεων (άρθρο 189 ΚΔΚ)"@el ;
+	a <http://www.w3.org/2004/02/skos/core#Concept> ;
+	<http://www.w3.org/2004/02/skos/core#broader> <http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014/012> ;
+	<http://www.w3.org/2004/02/skos/core#inScheme> <http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014> .
+
+<http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014/0128> <http://www.w3.org/2004/02/skos/core#notation> "0128" ;
+	<http://www.w3.org/2004/02/skos/core#prefLabel> "Δικαίωμα χρήσης δημοτικών και κοινοτικών κατοικιών (άρθρο 188 ΚΔΚ)"@el ;
+	a <http://www.w3.org/2004/02/skos/core#Concept> ;
+	<http://www.w3.org/2004/02/skos/core#broader> <http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014/012> ;
+	<http://www.w3.org/2004/02/skos/core#inScheme> <http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014> .
+
+<http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014/0129> <http://www.w3.org/2004/02/skos/core#notation> "0129" ;
+	<http://www.w3.org/2004/02/skos/core#prefLabel> "Λοιπά έσοδα από ακίνητα"@el ;
+	a <http://www.w3.org/2004/02/skos/core#Concept> ;
+	<http://www.w3.org/2004/02/skos/core#broader> <http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014/012> ;
+	<http://www.w3.org/2004/02/skos/core#inScheme> <http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014> .
+
+<http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014/02> <http://www.w3.org/2004/02/skos/core#notation> "02" ;
+	<http://www.w3.org/2004/02/skos/core#prefLabel> "ΕΣΟΔΑ ΑΠΟ ΚΙΝΗΤΗ ΠΕΡΙΟΥΣΙΑ"@el ;
+	a <http://www.w3.org/2004/02/skos/core#Concept> ;
+	<http://www.w3.org/2004/02/skos/core#narrower> <http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014/021> , <http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014/023> ;
+	<http://www.w3.org/2004/02/skos/core#broader> <http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014/0> ;
+	<http://www.w3.org/2004/02/skos/core#inScheme> <http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014> .
+
+<http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014/021> <http://www.w3.org/2004/02/skos/core#notation> "021" ;
+	<http://www.w3.org/2004/02/skos/core#prefLabel> "ΤΟΚΟΙ ΚΕΦΑΛΑΙΩΝ"@el ;
+	a <http://www.w3.org/2004/02/skos/core#Concept> ;
+	<http://www.w3.org/2004/02/skos/core#narrower> <http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014/0211> , <http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014/0212> , <http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014/0213> ;
+	<http://www.w3.org/2004/02/skos/core#broader> <http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014/02> ;
+	<http://www.w3.org/2004/02/skos/core#inScheme> <http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014> .
+
+<http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014/0211> <http://www.w3.org/2004/02/skos/core#notation> "0211" ;
+	<http://www.w3.org/2004/02/skos/core#prefLabel> "Τόκοι χρηματικών καταθέσεων σε τράπεζες"@el ;
+	a <http://www.w3.org/2004/02/skos/core#Concept> ;
+	<http://www.w3.org/2004/02/skos/core#broader> <http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014/021> ;
+	<http://www.w3.org/2004/02/skos/core#inScheme> <http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014> .
+
+<http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014/0212> <http://www.w3.org/2004/02/skos/core#notation> "0212" ;
+	<http://www.w3.org/2004/02/skos/core#prefLabel> "Τόκοι λοιπών περιπτώσεων"@el ;
+	a <http://www.w3.org/2004/02/skos/core#Concept> ;
+	<http://www.w3.org/2004/02/skos/core#broader> <http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014/021> ;
+	<http://www.w3.org/2004/02/skos/core#inScheme> <http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014> .
+
+<http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014/0213> <http://www.w3.org/2004/02/skos/core#notation> "0213" ;
+	<http://www.w3.org/2004/02/skos/core#prefLabel> "Έσοδα από λοιπές κινητές αξίες"@el ;
+	a <http://www.w3.org/2004/02/skos/core#Concept> ;
+	<http://www.w3.org/2004/02/skos/core#broader> <http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014/021> ;
+	<http://www.w3.org/2004/02/skos/core#inScheme> <http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014> .
+
+<http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014/023> <http://www.w3.org/2004/02/skos/core#notation> "023" ;
+	<http://www.w3.org/2004/02/skos/core#prefLabel> "ΕΣΟΔΑ ΑΠΟ ΛΟΙΠΗ ΚΙΝΗΤΗ ΠΕΡΙΟΥΣΙΑ"@el ;
+	a <http://www.w3.org/2004/02/skos/core#Concept> ;
+	<http://www.w3.org/2004/02/skos/core#narrower> <http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014/0231> , <http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014/0239> ;
+	<http://www.w3.org/2004/02/skos/core#broader> <http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014/02> ;
+	<http://www.w3.org/2004/02/skos/core#inScheme> <http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014> .
+
+<http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014/0231> <http://www.w3.org/2004/02/skos/core#notation> "0231" ;
+	<http://www.w3.org/2004/02/skos/core#prefLabel> "Μισθώματα κινητών πραγμάτων"@el ;
+	a <http://www.w3.org/2004/02/skos/core#Concept> ;
+	<http://www.w3.org/2004/02/skos/core#broader> <http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014/023> ;
+	<http://www.w3.org/2004/02/skos/core#inScheme> <http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014> .
+
+<http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014/0239> <http://www.w3.org/2004/02/skos/core#notation> "0239" ;
+	<http://www.w3.org/2004/02/skos/core#prefLabel> "Λοιπά έσοδα από κινητή περιουσία"@el ;
+	a <http://www.w3.org/2004/02/skos/core#Concept> ;
+	<http://www.w3.org/2004/02/skos/core#broader> <http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014/023> ;
+	<http://www.w3.org/2004/02/skos/core#inScheme> <http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014> .
+
+<http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014/03> <http://www.w3.org/2004/02/skos/core#notation> "03" ;
+	<http://www.w3.org/2004/02/skos/core#prefLabel> "ΕΣΟΔΑ ΑΠΟ ΑΝΤΑΠΟΔΟΤΙΚΑ ΤΕΛΗ ΚΑΙ ΔΙΚΑΙΩΜΑΤΑ"@el ;
+	a <http://www.w3.org/2004/02/skos/core#Concept> ;
+	<http://www.w3.org/2004/02/skos/core#narrower> <http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014/031> , <http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014/032> , <http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014/033> , <http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014/034> ;
+	<http://www.w3.org/2004/02/skos/core#broader> <http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014/0> ;
+	<http://www.w3.org/2004/02/skos/core#inScheme> <http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014> .
+
+<http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014/031> <http://www.w3.org/2004/02/skos/core#notation> "031" ;
+	<http://www.w3.org/2004/02/skos/core#prefLabel> "ΥΠΗΡΕΣΙΕΣ ΚΑΘΑΡΙΟΤΗΤΑΣ ΚΑΙ ΗΛΕΚΤΡΟΦΩΤΙΣΜΟΥ"@el ;
+	a <http://www.w3.org/2004/02/skos/core#Concept> ;
+	<http://www.w3.org/2004/02/skos/core#narrower> <http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014/0311> , <http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014/0312> , <http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014/0313> ;
+	<http://www.w3.org/2004/02/skos/core#broader> <http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014/03> ;
+	<http://www.w3.org/2004/02/skos/core#inScheme> <http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014> .
+
+<http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014/0311> <http://www.w3.org/2004/02/skos/core#notation> "0311" ;
+	<http://www.w3.org/2004/02/skos/core#prefLabel> "Τέλος καθαριότητας και φωτισμού (άρθρο 25 Ν 1828/89)"@el ;
+	a <http://www.w3.org/2004/02/skos/core#Concept> ;
+	<http://www.w3.org/2004/02/skos/core#broader> <http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014/031> ;
+	<http://www.w3.org/2004/02/skos/core#inScheme> <http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014> .
+
+<http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014/0312> <http://www.w3.org/2004/02/skos/core#notation> "0312" ;
+	<http://www.w3.org/2004/02/skos/core#prefLabel> "Επιδοτήσεις από Οργανισμούς Λιμένων και Λιμενικά Ταμεία (άρθρο 6 ΚΥΑ 69728/824/1996)"@el ;
+	a <http://www.w3.org/2004/02/skos/core#Concept> ;
+	<http://www.w3.org/2004/02/skos/core#broader> <http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014/031> ;
+	<http://www.w3.org/2004/02/skos/core#inScheme> <http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014> .
+
+<http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014/0313> <http://www.w3.org/2004/02/skos/core#notation> "0313" ;
+	<http://www.w3.org/2004/02/skos/core#prefLabel> "Λοιπά έσοδα των υπηρεσιών καθαριότητος και ηλεκτροφωτισμού"@el ;
+	a <http://www.w3.org/2004/02/skos/core#Concept> ;
+	<http://www.w3.org/2004/02/skos/core#broader> <http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014/031> ;
+	<http://www.w3.org/2004/02/skos/core#inScheme> <http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014> .
+
+<http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014/032> <http://www.w3.org/2004/02/skos/core#notation> "032" ;
+	<http://www.w3.org/2004/02/skos/core#prefLabel> "ΥΠΗΡΕΣΙΑ ΥΔΡΕΥΣΕΩΣ (άρθρο 19 ΒΔ 24/9-20/10/1958)"@el ;
+	a <http://www.w3.org/2004/02/skos/core#Concept> ;
+	<http://www.w3.org/2004/02/skos/core#narrower> <http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014/0323> , <http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014/0324> ;
+	<http://www.w3.org/2004/02/skos/core#broader> <http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014/03> ;
+	<http://www.w3.org/2004/02/skos/core#inScheme> <http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014> .
+
+<http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014/0323> <http://www.w3.org/2004/02/skos/core#notation> "0323" ;
+	<http://www.w3.org/2004/02/skos/core#prefLabel> "Έσοδα από γενόμενες δαπάνες για λογαρισμό των υδροληπτών"@el ;
+	a <http://www.w3.org/2004/02/skos/core#Concept> ;
+	<http://www.w3.org/2004/02/skos/core#broader> <http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014/032> ;
+	<http://www.w3.org/2004/02/skos/core#inScheme> <http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014> .
+
+<http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014/0324> <http://www.w3.org/2004/02/skos/core#notation> "0324" ;
+	<http://www.w3.org/2004/02/skos/core#prefLabel> "Λοιπά έσοδα της υπηρεσίας υδρεύσεως"@el ;
+	a <http://www.w3.org/2004/02/skos/core#Concept> ;
+	<http://www.w3.org/2004/02/skos/core#broader> <http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014/032> ;
+	<http://www.w3.org/2004/02/skos/core#inScheme> <http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014> .
+
+<http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014/033> <http://www.w3.org/2004/02/skos/core#notation> "033" ;
+	<http://www.w3.org/2004/02/skos/core#prefLabel> "ΥΠΗΡΕΣΙΑ ΑΡΔΕΥΣΕΩΣ (άρθρο 19 ΒΔ 24/9-20/10/1958)"@el ;
+	a <http://www.w3.org/2004/02/skos/core#Concept> ;
+	<http://www.w3.org/2004/02/skos/core#narrower> <http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014/0331> , <http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014/0332> ;
+	<http://www.w3.org/2004/02/skos/core#broader> <http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014/03> ;
+	<http://www.w3.org/2004/02/skos/core#inScheme> <http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014> .
+
+<http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014/0331> <http://www.w3.org/2004/02/skos/core#notation> "0331" ;
+	<http://www.w3.org/2004/02/skos/core#prefLabel> "Δικαιώματα χρήσεως αρδευτικού δικτύου"@el ;
+	a <http://www.w3.org/2004/02/skos/core#Concept> ;
+	<http://www.w3.org/2004/02/skos/core#broader> <http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014/033> ;
+	<http://www.w3.org/2004/02/skos/core#inScheme> <http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014> .
+
+<http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014/0332> <http://www.w3.org/2004/02/skos/core#notation> "0332" ;
+	<http://www.w3.org/2004/02/skos/core#prefLabel> "Λοιπά έσοδα υπηρεσίας αρδεύσεως"@el ;
+	a <http://www.w3.org/2004/02/skos/core#Concept> ;
+	<http://www.w3.org/2004/02/skos/core#broader> <http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014/033> ;
+	<http://www.w3.org/2004/02/skos/core#inScheme> <http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014> .
+
+<http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014/034> <http://www.w3.org/2004/02/skos/core#notation> "034" ;
+	<http://www.w3.org/2004/02/skos/core#prefLabel> "ΥΠΗΡΕΣΙΑ ΑΠΟΧΕΤΕΥΣΗΣ (άρθρο 19 ΒΔ 24/9-20/10/1958)"@el ;
+	a <http://www.w3.org/2004/02/skos/core#Concept> ;
+	<http://www.w3.org/2004/02/skos/core#narrower> <http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014/0341> , <http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014/0342> , <http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014/0343> ;
+	<http://www.w3.org/2004/02/skos/core#broader> <http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014/03> ;
+	<http://www.w3.org/2004/02/skos/core#inScheme> <http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014> .
+
+<http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014/0341> <http://www.w3.org/2004/02/skos/core#notation> "0341" ;
+	<http://www.w3.org/2004/02/skos/core#prefLabel> "Δικαιώματα σύνδεσης με το αποχετευτικό δίκτυο"@el ;
+	a <http://www.w3.org/2004/02/skos/core#Concept> ;
+	<http://www.w3.org/2004/02/skos/core#broader> <http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014/034> ;
+	<http://www.w3.org/2004/02/skos/core#inScheme> <http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014> .
+
+<http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014/0342> <http://www.w3.org/2004/02/skos/core#notation> "0342" ;
+	<http://www.w3.org/2004/02/skos/core#prefLabel> "Τέλη χρήσεως υπονόμων"@el ;
+	a <http://www.w3.org/2004/02/skos/core#Concept> ;
+	<http://www.w3.org/2004/02/skos/core#broader> <http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014/034> ;
+	<http://www.w3.org/2004/02/skos/core#inScheme> <http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014> .
+
+<http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014/0343> <http://www.w3.org/2004/02/skos/core#notation> "0343" ;
+	<http://www.w3.org/2004/02/skos/core#prefLabel> "Λοιπά έσοδα υπηρεσίας αποχέτευσης"@el ;
+	a <http://www.w3.org/2004/02/skos/core#Concept> ;
+	<http://www.w3.org/2004/02/skos/core#broader> <http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014/034> ;
+	<http://www.w3.org/2004/02/skos/core#inScheme> <http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014> .
+
+<http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014/04> <http://www.w3.org/2004/02/skos/core#notation> "04" ;
+	<http://www.w3.org/2004/02/skos/core#prefLabel> "ΕΣΟΔΑ ΑΠΟ ΛΟΙΠΑ ΤΕΛΗ ΔΙΚΑΙΩΜΑΤΑ ΚΑΙ ΠΑΡΟΧΗ ΥΠΗΡΕΣΙΩΝ"@el ;
+	a <http://www.w3.org/2004/02/skos/core#Concept> ;
+	<http://www.w3.org/2004/02/skos/core#narrower> <http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014/041> , <http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014/042> , <http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014/043> , <http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014/044> , <http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014/045> , <http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014/046> ;
+	<http://www.w3.org/2004/02/skos/core#broader> <http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014/0> ;
+	<http://www.w3.org/2004/02/skos/core#inScheme> <http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014> .
+
+<http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014/041> <http://www.w3.org/2004/02/skos/core#notation> "041" ;
+	<http://www.w3.org/2004/02/skos/core#prefLabel> "ΕΣΟΔΑ ΝΕΚΡΟΤΑΦΕΙΩΝ (άρθρο 4 ΑΝ 582/1968, άρθρο 3 Ν 547/1977)"@el ;
+	a <http://www.w3.org/2004/02/skos/core#Concept> ;
+	<http://www.w3.org/2004/02/skos/core#narrower> <http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014/0411> , <http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014/0412> , <http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014/0413> , <http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014/0414> , <http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014/0415> , <http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014/0416> , <http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014/0417> ;
+	<http://www.w3.org/2004/02/skos/core#broader> <http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014/04> ;
+	<http://www.w3.org/2004/02/skos/core#inScheme> <http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014> .
+
+<http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014/0411> <http://www.w3.org/2004/02/skos/core#notation> "0411" ;
+	<http://www.w3.org/2004/02/skos/core#prefLabel> "Δικαιώματα σύστασης οικογενειακού τάφου"@el ;
+	a <http://www.w3.org/2004/02/skos/core#Concept> ;
+	<http://www.w3.org/2004/02/skos/core#broader> <http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014/041> ;
+	<http://www.w3.org/2004/02/skos/core#inScheme> <http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014> .
+
+<http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014/0412> <http://www.w3.org/2004/02/skos/core#notation> "0412" ;
+	<http://www.w3.org/2004/02/skos/core#prefLabel> "Δικαίωμα ενταφιασμού"@el ;
+	a <http://www.w3.org/2004/02/skos/core#Concept> ;
+	<http://www.w3.org/2004/02/skos/core#broader> <http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014/041> ;
+	<http://www.w3.org/2004/02/skos/core#inScheme> <http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014> .
+
+<http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014/0413> <http://www.w3.org/2004/02/skos/core#notation> "0413" ;
+	<http://www.w3.org/2004/02/skos/core#prefLabel> "Δικαίωμα ανανέωσης (παράστασης χρόνου ταφής)"@el ;
+	a <http://www.w3.org/2004/02/skos/core#Concept> ;
+	<http://www.w3.org/2004/02/skos/core#broader> <http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014/041> ;
+	<http://www.w3.org/2004/02/skos/core#inScheme> <http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014> .
+
+<http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014/0414> <http://www.w3.org/2004/02/skos/core#notation> "0414" ;
+	<http://www.w3.org/2004/02/skos/core#prefLabel> "Τέλος ανακομιδής"@el ;
+	a <http://www.w3.org/2004/02/skos/core#Concept> ;
+	<http://www.w3.org/2004/02/skos/core#broader> <http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014/041> ;
+	<http://www.w3.org/2004/02/skos/core#inScheme> <http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014> .
+
+<http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014/0415> <http://www.w3.org/2004/02/skos/core#notation> "0415" ;
+	<http://www.w3.org/2004/02/skos/core#prefLabel> "Δικαιώματα από τη χρήση οστεοφυλακίων"@el ;
+	a <http://www.w3.org/2004/02/skos/core#Concept> ;
+	<http://www.w3.org/2004/02/skos/core#broader> <http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014/041> ;
+	<http://www.w3.org/2004/02/skos/core#inScheme> <http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014> .
+
+<http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014/0416> <http://www.w3.org/2004/02/skos/core#notation> "0416" ;
+	<http://www.w3.org/2004/02/skos/core#prefLabel> "Δικαιώματα ιεροπραξιών"@el ;
+	a <http://www.w3.org/2004/02/skos/core#Concept> ;
+	<http://www.w3.org/2004/02/skos/core#broader> <http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014/041> ;
+	<http://www.w3.org/2004/02/skos/core#inScheme> <http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014> .
+
+<http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014/0417> <http://www.w3.org/2004/02/skos/core#notation> "0417" ;
+	<http://www.w3.org/2004/02/skos/core#prefLabel> "Λοιπά έσοδα νεκροταφείων και ιερών ναών"@el ;
+	a <http://www.w3.org/2004/02/skos/core#Concept> ;
+	<http://www.w3.org/2004/02/skos/core#broader> <http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014/041> ;
+	<http://www.w3.org/2004/02/skos/core#inScheme> <http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014> .
+
+<http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014/042> <http://www.w3.org/2004/02/skos/core#notation> "042" ;
+	<http://www.w3.org/2004/02/skos/core#prefLabel> "ΕΣΟΔΑ ΑΠΟ ΣΦΑΓΕΙΑ"@el ;
+	a <http://www.w3.org/2004/02/skos/core#Concept> ;
+	<http://www.w3.org/2004/02/skos/core#narrower> <http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014/0421> , <http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014/0422> ;
+	<http://www.w3.org/2004/02/skos/core#broader> <http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014/04> ;
+	<http://www.w3.org/2004/02/skos/core#inScheme> <http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014> .
+
+<http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014/0421> <http://www.w3.org/2004/02/skos/core#notation> "0421" ;
+	<http://www.w3.org/2004/02/skos/core#prefLabel> "Δικαιώματα χρήσης σφαγείων (άρθρο 3 ΒΔ 24/9-20/10/1958)"@el ;
+	a <http://www.w3.org/2004/02/skos/core#Concept> ;
+	<http://www.w3.org/2004/02/skos/core#broader> <http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014/042> ;
+	<http://www.w3.org/2004/02/skos/core#inScheme> <http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014> .
+
+<http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014/0422> <http://www.w3.org/2004/02/skos/core#notation> "0422" ;
+	<http://www.w3.org/2004/02/skos/core#prefLabel> "Λοιπά έσοδα σφαγείων"@el ;
+	a <http://www.w3.org/2004/02/skos/core#Concept> ;
+	<http://www.w3.org/2004/02/skos/core#broader> <http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014/042> ;
+	<http://www.w3.org/2004/02/skos/core#inScheme> <http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014> .
+
+<http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014/043> <http://www.w3.org/2004/02/skos/core#notation> "043" ;
+	<http://www.w3.org/2004/02/skos/core#prefLabel> "ΕΣΟΔΑ ΑΠΟ ΤΗΝ ΕΚΜΕΤΑΛΕΥΣΗ ΕΡΓΩΝ ΚΑΙ ΤΗΝ ΠΑΡΟΧΗ ΥΠΗΡΕΣΙΩΝ"@el ;
+	a <http://www.w3.org/2004/02/skos/core#Concept> ;
+	<http://www.w3.org/2004/02/skos/core#narrower> <http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014/0431> , <http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014/0432> , <http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014/0433> , <http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014/0434> ;
+	<http://www.w3.org/2004/02/skos/core#broader> <http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014/04> ;
+	<http://www.w3.org/2004/02/skos/core#inScheme> <http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014> .
+
+<http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014/0431> <http://www.w3.org/2004/02/skos/core#notation> "0431" ;
+	<http://www.w3.org/2004/02/skos/core#prefLabel> "Έσοδα από ειδικούς χώρους στάθμευσης"@el ;
+	a <http://www.w3.org/2004/02/skos/core#Concept> ;
+	<http://www.w3.org/2004/02/skos/core#broader> <http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014/043> ;
+	<http://www.w3.org/2004/02/skos/core#inScheme> <http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014> .
+
+<http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014/0432> <http://www.w3.org/2004/02/skos/core#notation> "0432" ;
+	<http://www.w3.org/2004/02/skos/core#prefLabel> "Εισιτήρια θεάτρων, μουσείων κλπ"@el ;
+	a <http://www.w3.org/2004/02/skos/core#Concept> ;
+	<http://www.w3.org/2004/02/skos/core#broader> <http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014/043> ;
+	<http://www.w3.org/2004/02/skos/core#inScheme> <http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014> .
+
+<http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014/0433> <http://www.w3.org/2004/02/skos/core#notation> "0433" ;
+	<http://www.w3.org/2004/02/skos/core#prefLabel> "Σταθμικά και μετρικά δικαιώματα (άρθρο 14 ΒΔ 24/9-20/10/1958)"@el ;
+	a <http://www.w3.org/2004/02/skos/core#Concept> ;
+	<http://www.w3.org/2004/02/skos/core#broader> <http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014/043> ;
+	<http://www.w3.org/2004/02/skos/core#inScheme> <http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014> .
+
+<http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014/0434> <http://www.w3.org/2004/02/skos/core#notation> "0434" ;
+	<http://www.w3.org/2004/02/skos/core#prefLabel> "Λοιπά έσοδα από την εκμετάλλευση έργων και την παροχή υπηρεσιών"@el ;
+	a <http://www.w3.org/2004/02/skos/core#Concept> ;
+	<http://www.w3.org/2004/02/skos/core#broader> <http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014/043> ;
+	<http://www.w3.org/2004/02/skos/core#inScheme> <http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014> .
+
+<http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014/044> <http://www.w3.org/2004/02/skos/core#notation> "044" ;
+	<http://www.w3.org/2004/02/skos/core#prefLabel> "ΕΣΟΔΑ ΑΠΟ ΤΕΛΟΣ ΑΚΙΝΗΤΗΣ ΠΕΡΙΟΥΣΙΑΣ"@el ;
+	a <http://www.w3.org/2004/02/skos/core#Concept> ;
+	<http://www.w3.org/2004/02/skos/core#narrower> <http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014/0441> ;
+	<http://www.w3.org/2004/02/skos/core#broader> <http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014/04> ;
+	<http://www.w3.org/2004/02/skos/core#inScheme> <http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014> .
+
+<http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014/0441> <http://www.w3.org/2004/02/skos/core#notation> "0441" ;
+	<http://www.w3.org/2004/02/skos/core#prefLabel> "Τέλος ακίνητης περιουσίας (άρθρο 24 Ν 2130/93)"@el ;
+	a <http://www.w3.org/2004/02/skos/core#Concept> ;
+	<http://www.w3.org/2004/02/skos/core#broader> <http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014/044> ;
+	<http://www.w3.org/2004/02/skos/core#inScheme> <http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014> .
+
+<http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014/045> <http://www.w3.org/2004/02/skos/core#notation> "045" ;
+	<http://www.w3.org/2004/02/skos/core#prefLabel> "ΤΕΛΟΣ ΕΠΙ ΤΩΝ ΑΚΑΘΑΡΙΣΤΩΝ ΕΣΟΔΩΝ ΕΠΙΤΗΔΕΥΜΑΤΙΩΝ"@el ;
+	a <http://www.w3.org/2004/02/skos/core#Concept> ;
+	<http://www.w3.org/2004/02/skos/core#narrower> <http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014/0451> , <http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014/0452> ;
+	<http://www.w3.org/2004/02/skos/core#broader> <http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014/04> ;
+	<http://www.w3.org/2004/02/skos/core#inScheme> <http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014> .
+
+<http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014/0451> <http://www.w3.org/2004/02/skos/core#notation> "0451" ;
+	<http://www.w3.org/2004/02/skos/core#prefLabel> "Τέλος διαμονής παρεπιδημούντων (άρθρο 6 Ν 1080/80, άρθρο 27 παρ. 10 Ν 2130/93)"@el ;
+	a <http://www.w3.org/2004/02/skos/core#Concept> ;
+	<http://www.w3.org/2004/02/skos/core#broader> <http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014/045> ;
+	<http://www.w3.org/2004/02/skos/core#inScheme> <http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014> .
+
+<http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014/0452> <http://www.w3.org/2004/02/skos/core#notation> "0452" ;
+	<http://www.w3.org/2004/02/skos/core#prefLabel> "Τέλος επί των ακαθαρίστων εσόδων των κέντρων διασκέδασης, εστιατορίων και συναφών καταστημάτων (άρθρο 20 Ν 2539/97)"@el ;
+	a <http://www.w3.org/2004/02/skos/core#Concept> ;
+	<http://www.w3.org/2004/02/skos/core#broader> <http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014/045> ;
+	<http://www.w3.org/2004/02/skos/core#inScheme> <http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014> .
+
+<http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014/046> <http://www.w3.org/2004/02/skos/core#notation> "046" ;
+	<http://www.w3.org/2004/02/skos/core#prefLabel> "ΛΟΙΠΑ ΤΕΛΗ ΚΑΙ ΔΙΚΑΙΩΜΑΤΑ"@el ;
+	a <http://www.w3.org/2004/02/skos/core#Concept> ;
+	<http://www.w3.org/2004/02/skos/core#narrower> <http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014/0461> , <http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014/0462> , <http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014/0463> , <http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014/0464> , <http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014/0465> , <http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014/0466> , <http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014/0467> , <http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014/0468> , <http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014/0469> ;
+	<http://www.w3.org/2004/02/skos/core#broader> <http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014/04> ;
+	<http://www.w3.org/2004/02/skos/core#inScheme> <http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014> .
+
+<http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014/0461> <http://www.w3.org/2004/02/skos/core#notation> "0461" ;
+	<http://www.w3.org/2004/02/skos/core#prefLabel> "Τέλος χρήσης κοινόχρηστων χώρων (άρθρο 3 Ν 1080/80)"@el ;
+	a <http://www.w3.org/2004/02/skos/core#Concept> ;
+	<http://www.w3.org/2004/02/skos/core#broader> <http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014/046> ;
+	<http://www.w3.org/2004/02/skos/core#inScheme> <http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014> .
+
+<http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014/0462> <http://www.w3.org/2004/02/skos/core#notation> "0462" ;
+	<http://www.w3.org/2004/02/skos/core#prefLabel> "Τέλος διαφήμισης (άρθρο 5 Ν 1900/90)"@el ;
+	a <http://www.w3.org/2004/02/skos/core#Concept> ;
+	<http://www.w3.org/2004/02/skos/core#broader> <http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014/046> ;
+	<http://www.w3.org/2004/02/skos/core#inScheme> <http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014> .
+
+<http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014/0463> <http://www.w3.org/2004/02/skos/core#notation> "0463" ;
+	<http://www.w3.org/2004/02/skos/core#prefLabel> "Δικαίωμα εμπορίας ποσίμων υδάτων (άρθρο 2 Ν 1080/80, άρθρο 26 Ν 1828/89, άρθρο 57 Ν 2218/94)"@el ;
+	a <http://www.w3.org/2004/02/skos/core#Concept> ;
+	<http://www.w3.org/2004/02/skos/core#broader> <http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014/046> ;
+	<http://www.w3.org/2004/02/skos/core#inScheme> <http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014> .
+
+<http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014/0464> <http://www.w3.org/2004/02/skos/core#notation> "0464" ;
+	<http://www.w3.org/2004/02/skos/core#prefLabel> "Τέλη ελεγχόμενης στάθμευσης σε κοινόχρηστους χώρους (άρθρο 4 Ν 1990/90)"@el ;
+	a <http://www.w3.org/2004/02/skos/core#Concept> ;
+	<http://www.w3.org/2004/02/skos/core#broader> <http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014/046> ;
+	<http://www.w3.org/2004/02/skos/core#inScheme> <http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014> .
+
+<http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014/0465> <http://www.w3.org/2004/02/skos/core#notation> "0465" ;
+	<http://www.w3.org/2004/02/skos/core#prefLabel> "Ειδικό τέλος λατομικών προϊόντων (άρθρο 15 Ν 2115/93, άρθρο 27 Ν 2130/90)"@el ;
+	a <http://www.w3.org/2004/02/skos/core#Concept> ;
+	<http://www.w3.org/2004/02/skos/core#broader> <http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014/046> ;
+	<http://www.w3.org/2004/02/skos/core#inScheme> <http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014> .
+
+<http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014/0466> <http://www.w3.org/2004/02/skos/core#notation> "0466" ;
+	<http://www.w3.org/2004/02/skos/core#prefLabel> "Τέλος παροπλιζόμενων πλοίων (άρθρο 3 Ν 995/79)"@el ;
+	a <http://www.w3.org/2004/02/skos/core#Concept> ;
+	<http://www.w3.org/2004/02/skos/core#broader> <http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014/046> ;
+	<http://www.w3.org/2004/02/skos/core#inScheme> <http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014> .
+
+<http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014/0467> <http://www.w3.org/2004/02/skos/core#notation> "0467" ;
+	<http://www.w3.org/2004/02/skos/core#prefLabel> "Τέλος οχημάτων επιβιβαζομένων σε οχηματαγωγά πλοία (άρθρο 26 Ν 1828/89)"@el ;
+	a <http://www.w3.org/2004/02/skos/core#Concept> ;
+	<http://www.w3.org/2004/02/skos/core#broader> <http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014/046> ;
+	<http://www.w3.org/2004/02/skos/core#inScheme> <http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014> .
+
+<http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014/0468> <http://www.w3.org/2004/02/skos/core#notation> "0468" ;
+	<http://www.w3.org/2004/02/skos/core#prefLabel> "Τέλος αδειών οικοδομών (άρθρο 23 ΒΔ 24/9-20/10/1958)"@el ;
+	a <http://www.w3.org/2004/02/skos/core#Concept> ;
+	<http://www.w3.org/2004/02/skos/core#broader> <http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014/046> ;
+	<http://www.w3.org/2004/02/skos/core#inScheme> <http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014> .
+
+<http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014/0469> <http://www.w3.org/2004/02/skos/core#notation> "0469" ;
+	<http://www.w3.org/2004/02/skos/core#prefLabel> "Τέλος ανανεώσιμων πηγών ενέργειας (άρθρο 38 Ν 2773/99, άρθρο 25"@el ;
+	a <http://www.w3.org/2004/02/skos/core#Concept> ;
+	<http://www.w3.org/2004/02/skos/core#broader> <http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014/046> ;
+	<http://www.w3.org/2004/02/skos/core#inScheme> <http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014> .
+
+<http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014/05> <http://www.w3.org/2004/02/skos/core#notation> "05" ;
+	<http://www.w3.org/2004/02/skos/core#prefLabel> "ΦΟΡΟΙ ΚΑΙ ΕΙΣΦΟΡΕΣ"@el ;
+	a <http://www.w3.org/2004/02/skos/core#Concept> ;
+	<http://www.w3.org/2004/02/skos/core#narrower> <http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014/051> , <http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014/052> , <http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014/053> ;
+	<http://www.w3.org/2004/02/skos/core#broader> <http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014/0> ;
+	<http://www.w3.org/2004/02/skos/core#inScheme> <http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014> .
+
+<http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014/051> <http://www.w3.org/2004/02/skos/core#notation> "051" ;
+	<http://www.w3.org/2004/02/skos/core#prefLabel> "ΦΟΡΟΙ"@el ;
+	a <http://www.w3.org/2004/02/skos/core#Concept> ;
+	<http://www.w3.org/2004/02/skos/core#narrower> <http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014/0511> , <http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014/0512> , <http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014/0513> , <http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014/0514> ;
+	<http://www.w3.org/2004/02/skos/core#broader> <http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014/05> ;
+	<http://www.w3.org/2004/02/skos/core#inScheme> <http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014> .
+
+<http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014/0511> <http://www.w3.org/2004/02/skos/core#notation> "0511" ;
+	<http://www.w3.org/2004/02/skos/core#prefLabel> "Φόρος ηλεκτροδοτούμενων χώρων (άρθρο 10 Ν 1080/80)"@el ;
+	a <http://www.w3.org/2004/02/skos/core#Concept> ;
+	<http://www.w3.org/2004/02/skos/core#broader> <http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014/051> ;
+	<http://www.w3.org/2004/02/skos/core#inScheme> <http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014> .
+
+<http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014/0512> <http://www.w3.org/2004/02/skos/core#notation> "0512" ;
+	<http://www.w3.org/2004/02/skos/core#prefLabel> "Φόρος ζύθου (άρθρο 9 ΝΔ 703/70, άρθρο 12 Ν 1080/80)"@el ;
+	a <http://www.w3.org/2004/02/skos/core#Concept> ;
+	<http://www.w3.org/2004/02/skos/core#broader> <http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014/051> ;
+	<http://www.w3.org/2004/02/skos/core#inScheme> <http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014> .
+
+<http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014/0513> <http://www.w3.org/2004/02/skos/core#notation> "0513" ;
+	<http://www.w3.org/2004/02/skos/core#prefLabel> "Δημοτικός φόρος Δωδεκανήσου (άρθρο 60 Ν 2214/94)"@el ;
+	a <http://www.w3.org/2004/02/skos/core#Concept> ;
+	<http://www.w3.org/2004/02/skos/core#broader> <http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014/051> ;
+	<http://www.w3.org/2004/02/skos/core#inScheme> <http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014> .
+
+<http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014/0514> <http://www.w3.org/2004/02/skos/core#notation> "0514" ;
+	<http://www.w3.org/2004/02/skos/core#prefLabel> "Λοιποί φόροι"@el ;
+	a <http://www.w3.org/2004/02/skos/core#Concept> ;
+	<http://www.w3.org/2004/02/skos/core#broader> <http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014/051> ;
+	<http://www.w3.org/2004/02/skos/core#inScheme> <http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014> .
+
+<http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014/052> <http://www.w3.org/2004/02/skos/core#notation> "052" ;
+	<http://www.w3.org/2004/02/skos/core#prefLabel> "ΕΙΣΦΟΡΕΣ"@el ;
+	a <http://www.w3.org/2004/02/skos/core#Concept> ;
+	<http://www.w3.org/2004/02/skos/core#narrower> <http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014/0521> , <http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014/0522> , <http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014/0523> , <http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014/0524> , <http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014/0525> , <http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014/0526> , <http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014/0527> , <http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014/0529> ;
+	<http://www.w3.org/2004/02/skos/core#broader> <http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014/05> ;
+	<http://www.w3.org/2004/02/skos/core#inScheme> <http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014> .
+
+<http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014/0521> <http://www.w3.org/2004/02/skos/core#notation> "0521" ;
+	<http://www.w3.org/2004/02/skos/core#prefLabel> "Εισφορά σε χρήμα λόγω ένταξης ή επέκτασης πολεοδομικών σχεδίων (άρθρο 24 Συντ. 1975/2001, άρθρο 9 Ν 1337/83, άρθρο 21 Ν 2508/97)"@el ;
+	a <http://www.w3.org/2004/02/skos/core#Concept> ;
+	<http://www.w3.org/2004/02/skos/core#broader> <http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014/052> ;
+	<http://www.w3.org/2004/02/skos/core#inScheme> <http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014> .
+
+<http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014/0522> <http://www.w3.org/2004/02/skos/core#notation> "0522" ;
+	<http://www.w3.org/2004/02/skos/core#prefLabel> "Μετατροπή σε χρήμα της εισφοράς σε γή (άρθρο 8 Ν 1337/83)"@el ;
+	a <http://www.w3.org/2004/02/skos/core#Concept> ;
+	<http://www.w3.org/2004/02/skos/core#broader> <http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014/052> ;
+	<http://www.w3.org/2004/02/skos/core#inScheme> <http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014> .
+
+<http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014/0523> <http://www.w3.org/2004/02/skos/core#notation> "0523" ;
+	<http://www.w3.org/2004/02/skos/core#prefLabel> "Εισφορά 40% ή 75% του ΚΗ/1947 Ψηφίσματος (άρθρο 34 Ν 1337/83)"@el ;
+	a <http://www.w3.org/2004/02/skos/core#Concept> ;
+	<http://www.w3.org/2004/02/skos/core#broader> <http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014/052> ;
+	<http://www.w3.org/2004/02/skos/core#inScheme> <http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014> .
+
+<http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014/0524> <http://www.w3.org/2004/02/skos/core#notation> "0524" ;
+	<http://www.w3.org/2004/02/skos/core#prefLabel> "Ειδική εισφορά εφαρμογής ρυμοτομικών σχεδίων (άρθρο 34 του ν.4067/2012)"@el ;
+	a <http://www.w3.org/2004/02/skos/core#Concept> ;
+	<http://www.w3.org/2004/02/skos/core#broader> <http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014/052> ;
+	<http://www.w3.org/2004/02/skos/core#inScheme> <http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014> .
+
+<http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014/0525> <http://www.w3.org/2004/02/skos/core#notation> "0525" ;
+	<http://www.w3.org/2004/02/skos/core#prefLabel> "Ειδική εισφορά διυλιστηρίων πετρελαίου (άρθρου 19 του ν.3054/2002)"@el ;
+	a <http://www.w3.org/2004/02/skos/core#Concept> ;
+	<http://www.w3.org/2004/02/skos/core#broader> <http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014/052> ;
+	<http://www.w3.org/2004/02/skos/core#inScheme> <http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014> .
+
+<http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014/0526> <http://www.w3.org/2004/02/skos/core#notation> "0526" ;
+	<http://www.w3.org/2004/02/skos/core#prefLabel> "Έσοδα για δαπάνες μεταφοράς παιδιών δημοτικών παιδικών σταθμών (άρθρων 9 και 10 της ΚΥΑ.16065/2002 (ΦΕΚ 497/Β΄))"@el ;
+	a <http://www.w3.org/2004/02/skos/core#Concept> ;
+	<http://www.w3.org/2004/02/skos/core#broader> <http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014/052> ;
+	<http://www.w3.org/2004/02/skos/core#inScheme> <http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014> .
+
+<http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014/0527> <http://www.w3.org/2004/02/skos/core#notation> "0527" ;
+	<http://www.w3.org/2004/02/skos/core#prefLabel> "Τροφεία δημοτικών παιδικών-βρεφονηπιακών σταθμών (άρθρων 9 και 10 της ΚΥΑ.16065/2002 (ΦΕΚ 497/Β΄))"@el ;
+	a <http://www.w3.org/2004/02/skos/core#Concept> ;
+	<http://www.w3.org/2004/02/skos/core#broader> <http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014/052> ;
+	<http://www.w3.org/2004/02/skos/core#inScheme> <http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014> .
+
+<http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014/0529> <http://www.w3.org/2004/02/skos/core#notation> "0529" ;
+	<http://www.w3.org/2004/02/skos/core#prefLabel> "Λοιπές εισφορές"@el ;
+	a <http://www.w3.org/2004/02/skos/core#Concept> ;
+	<http://www.w3.org/2004/02/skos/core#broader> <http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014/052> ;
+	<http://www.w3.org/2004/02/skos/core#inScheme> <http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014> .
+
+<http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014/053> <http://www.w3.org/2004/02/skos/core#notation> "053" ;
+	<http://www.w3.org/2004/02/skos/core#prefLabel> "ΔΥΝΗΤΙΚΕΣ ΕΙΣΦΟΡΕΣ (άρθρο 25 Ν 1828/89)"@el ;
+	a <http://www.w3.org/2004/02/skos/core#Concept> ;
+	<http://www.w3.org/2004/02/skos/core#narrower> <http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014/0531> ;
+	<http://www.w3.org/2004/02/skos/core#broader> <http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014/05> ;
+	<http://www.w3.org/2004/02/skos/core#inScheme> <http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014> .
+
+<http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014/0531> <http://www.w3.org/2004/02/skos/core#notation> "0531" ;
+	<http://www.w3.org/2004/02/skos/core#prefLabel> "Λοιπές δυνητικές εισφορές"@el ;
+	a <http://www.w3.org/2004/02/skos/core#Concept> ;
+	<http://www.w3.org/2004/02/skos/core#broader> <http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014/053> ;
+	<http://www.w3.org/2004/02/skos/core#inScheme> <http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014> .
+
+<http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014/06> <http://www.w3.org/2004/02/skos/core#notation> "06" ;
+	<http://www.w3.org/2004/02/skos/core#prefLabel> "ΕΣΟΔΑ ΑΠΟ ΕΠΙΧΟΡΗΓΗΣΕΙΣ ΓΙΑ ΛΕΙΤΟΥΡΓΙΚΕΣ ΔΑΠΑΝΕΣ"@el ;
+	a <http://www.w3.org/2004/02/skos/core#Concept> ;
+	<http://www.w3.org/2004/02/skos/core#narrower> <http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014/061> , <http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014/062> ;
+	<http://www.w3.org/2004/02/skos/core#broader> <http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014/0> ;
+	<http://www.w3.org/2004/02/skos/core#inScheme> <http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014> .
+
+<http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014/061> <http://www.w3.org/2004/02/skos/core#notation> "061" ;
+	<http://www.w3.org/2004/02/skos/core#prefLabel> "ΑΠΟ ΘΕΣΜΟΘΕΤΗΜΕΝΟΥΣ ΠΟΡΟΥΣ ΓΙΑ ΚΑΛΥΨΗ ΛΕΙΤΟΥΡΓΙΚΩΝ ΔΑΠΑΝΩΝ"@el ;
+	a <http://www.w3.org/2004/02/skos/core#Concept> ;
+	<http://www.w3.org/2004/02/skos/core#narrower> <http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014/0611> , <http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014/0612> , <http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014/0613> , <http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014/0614> , <http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014/0615> , <http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014/0619> ;
+	<http://www.w3.org/2004/02/skos/core#broader> <http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014/06> ;
+	<http://www.w3.org/2004/02/skos/core#inScheme> <http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014> .
+
+<http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014/0611> <http://www.w3.org/2004/02/skos/core#notation> "0611" ;
+	<http://www.w3.org/2004/02/skos/core#prefLabel> "ΚΑΠ για την κάλυψη γενικών αναγκών (άρθρο 25 Ν 1828/89)"@el ;
+	a <http://www.w3.org/2004/02/skos/core#Concept> ;
+	<http://www.w3.org/2004/02/skos/core#broader> <http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014/061> ;
+	<http://www.w3.org/2004/02/skos/core#inScheme> <http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014> .
+
+<http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014/0612> <http://www.w3.org/2004/02/skos/core#notation> "0612" ;
+	<http://www.w3.org/2004/02/skos/core#prefLabel> "ΚΑΠ για την καταβολή μισθωμάτων ακινήτων προς στέγαση δημοσίων σχολικών μονάδων και λοιπών υπηρεσιών"@el ;
+	a <http://www.w3.org/2004/02/skos/core#Concept> ;
+	<http://www.w3.org/2004/02/skos/core#broader> <http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014/061> ;
+	<http://www.w3.org/2004/02/skos/core#inScheme> <http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014> .
+
+<http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014/0613> <http://www.w3.org/2004/02/skos/core#notation> "0613" ;
+	<http://www.w3.org/2004/02/skos/core#prefLabel> "ΚΑΠ εκ του Φόρου Εισοδήματος Φυσικών και Νομικών Προσώπων σε δήμους του Ν. Δωδεκανήσου"@el ;
+	a <http://www.w3.org/2004/02/skos/core#Concept> ;
+	<http://www.w3.org/2004/02/skos/core#broader> <http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014/061> ;
+	<http://www.w3.org/2004/02/skos/core#inScheme> <http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014> .
+
+<http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014/0614> <http://www.w3.org/2004/02/skos/core#notation> "0614" ;
+	<http://www.w3.org/2004/02/skos/core#prefLabel> "ΚΑΠ για την κάλυψη των λειτουργικών αναγκών των σχολειων Α/θμιας και Β/θμιας εκπαίδευσης (άρθρο 55 Ν 1946/91)"@el ;
+	a <http://www.w3.org/2004/02/skos/core#Concept> ;
+	<http://www.w3.org/2004/02/skos/core#broader> <http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014/061> ;
+	<http://www.w3.org/2004/02/skos/core#inScheme> <http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014> .
+
+<http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014/0615> <http://www.w3.org/2004/02/skos/core#notation> "0615" ;
+	<http://www.w3.org/2004/02/skos/core#prefLabel> "ΚΑΠ για την καταβολή αποζημίωσης σε σχολικούς τροχονόμους (άρθρο 14 Ν 2817/2000)"@el ;
+	a <http://www.w3.org/2004/02/skos/core#Concept> ;
+	<http://www.w3.org/2004/02/skos/core#broader> <http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014/061> ;
+	<http://www.w3.org/2004/02/skos/core#inScheme> <http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014> .
+
+<http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014/0619> <http://www.w3.org/2004/02/skos/core#notation> "0619" ;
+	<http://www.w3.org/2004/02/skos/core#prefLabel> "ΚΑΠ για λοιπούς σκοπούς (δεν περιλαμβάνονται πιστώσεις του ΠΔΕ)"@el ;
+	a <http://www.w3.org/2004/02/skos/core#Concept> ;
+	<http://www.w3.org/2004/02/skos/core#broader> <http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014/061> ;
+	<http://www.w3.org/2004/02/skos/core#inScheme> <http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014> .
+
+<http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014/062> <http://www.w3.org/2004/02/skos/core#notation> "062" ;
+	<http://www.w3.org/2004/02/skos/core#prefLabel> "ΑΠΟ ΘΕΣΜΟΘΕΤΗΜΕΝΟΥΣ ΠΟΡΟΥΣ ΓΙΑ ΚΑΛΥΨΗ ΓΕΝΙΚΩΝ ΔΑΠΑΝΩΝ"@el ;
+	a <http://www.w3.org/2004/02/skos/core#Concept> ;
+	<http://www.w3.org/2004/02/skos/core#narrower> <http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014/0621> ;
+	<http://www.w3.org/2004/02/skos/core#broader> <http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014/06> ;
+	<http://www.w3.org/2004/02/skos/core#inScheme> <http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014> .
+
+<http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014/0621> <http://www.w3.org/2004/02/skos/core#notation> "0621" ;
+	<http://www.w3.org/2004/02/skos/core#prefLabel> "Κάλυψη δαπάνης προνοιακών επιδομάτων (άρθρου 94 παρ. 3Β περίπτ. 17"@el ;
+	a <http://www.w3.org/2004/02/skos/core#Concept> ;
+	<http://www.w3.org/2004/02/skos/core#broader> <http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014/062> ;
+	<http://www.w3.org/2004/02/skos/core#inScheme> <http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014> .
+
+<http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014/07> <http://www.w3.org/2004/02/skos/core#notation> "07" ;
+	<http://www.w3.org/2004/02/skos/core#prefLabel> "ΛΟΙΠΑ ΤΑΚΤΙΚΑ ΕΣΟΔΑ"@el ;
+	a <http://www.w3.org/2004/02/skos/core#Concept> ;
+	<http://www.w3.org/2004/02/skos/core#narrower> <http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014/071> ;
+	<http://www.w3.org/2004/02/skos/core#broader> <http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014/0> ;
+	<http://www.w3.org/2004/02/skos/core#inScheme> <http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014> .
+
+<http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014/071> <http://www.w3.org/2004/02/skos/core#notation> "071" ;
+	<http://www.w3.org/2004/02/skos/core#prefLabel> "ΛΟΙΠΑ ΤΑΚΤΙΚΑ ΕΣΟΔΑ"@el ;
+	a <http://www.w3.org/2004/02/skos/core#Concept> ;
+	<http://www.w3.org/2004/02/skos/core#narrower> <http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014/0711> , <http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014/0712> , <http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014/0713> , <http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014/0714> , <http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014/0715> , <http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014/0718> ;
+	<http://www.w3.org/2004/02/skos/core#broader> <http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014/07> ;
+	<http://www.w3.org/2004/02/skos/core#inScheme> <http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014> .
+
+<http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014/0711> <http://www.w3.org/2004/02/skos/core#notation> "0711" ;
+	<http://www.w3.org/2004/02/skos/core#prefLabel> "Έσοδα από μισθώματα δημόσιων λατομείων (άρθρο 21 Ν 2115/93)"@el ;
+	a <http://www.w3.org/2004/02/skos/core#Concept> ;
+	<http://www.w3.org/2004/02/skos/core#broader> <http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014/071> ;
+	<http://www.w3.org/2004/02/skos/core#inScheme> <http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014> .
+
+<http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014/0712> <http://www.w3.org/2004/02/skos/core#notation> "0712" ;
+	<http://www.w3.org/2004/02/skos/core#prefLabel> "Μισθώματα θαλασσίων εκτάσεων (άρθρο 15 Ν 2130/93)"@el ;
+	a <http://www.w3.org/2004/02/skos/core#Concept> ;
+	<http://www.w3.org/2004/02/skos/core#broader> <http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014/071> ;
+	<http://www.w3.org/2004/02/skos/core#inScheme> <http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014> .
+
+<http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014/0713> <http://www.w3.org/2004/02/skos/core#notation> "0713" ;
+	<http://www.w3.org/2004/02/skos/core#prefLabel> "Παράβολα για την έκδοση των αδειών ίδρυσης και λειτουργίας επιχειρήσεων υγειονομικού ενδιαφέροντος (άρθρο 80 ΚΔΚ)"@el ;
+	a <http://www.w3.org/2004/02/skos/core#Concept> ;
+	<http://www.w3.org/2004/02/skos/core#broader> <http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014/071> ;
+	<http://www.w3.org/2004/02/skos/core#inScheme> <http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014> .
+
+<http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014/0714> <http://www.w3.org/2004/02/skos/core#notation> "0714" ;
+	<http://www.w3.org/2004/02/skos/core#prefLabel> "Έσοδα από τη διάθεση δασικών προϊόντων του δημοσίου (άρθρο 37 ΝΔ 4260/62)"@el ;
+	a <http://www.w3.org/2004/02/skos/core#Concept> ;
+	<http://www.w3.org/2004/02/skos/core#broader> <http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014/071> ;
+	<http://www.w3.org/2004/02/skos/core#inScheme> <http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014> .
+
+<http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014/0715> <http://www.w3.org/2004/02/skos/core#notation> "0715" ;
+	<http://www.w3.org/2004/02/skos/core#prefLabel> "Τέλος διαφήμισης της κατηγορίας Δ' του άρθρου 15 του ΒΔ 24/9-20/10/1958 (άρθρο 9 Ν 2880/2001)"@el ;
+	a <http://www.w3.org/2004/02/skos/core#Concept> ;
+	<http://www.w3.org/2004/02/skos/core#broader> <http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014/071> ;
+	<http://www.w3.org/2004/02/skos/core#inScheme> <http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014> .
+
+<http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014/0718> <http://www.w3.org/2004/02/skos/core#notation> "0718" ;
+	<http://www.w3.org/2004/02/skos/core#prefLabel> "Λοιπά τακτικά έσοδα που δεν εντάσσονται στις ανωτέρω τάξεις."@el ;
+	a <http://www.w3.org/2004/02/skos/core#Concept> ;
+	<http://www.w3.org/2004/02/skos/core#broader> <http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014/071> ;
+	<http://www.w3.org/2004/02/skos/core#inScheme> <http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014> .
+
+<http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014/1> <http://www.w3.org/2004/02/skos/core#notation> "1" ;
+	<http://www.w3.org/2004/02/skos/core#prefLabel> "ΕΚΤΑΚΤΑ ΕΣΟΔΑ"@el ;
+	a <http://www.w3.org/2004/02/skos/core#Concept> ;
+	<http://www.w3.org/2004/02/skos/core#narrower> <http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014/11> , <http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014/12> , <http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014/13> , <http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014/15> , <http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014/16> ;
+	<http://www.w3.org/2004/02/skos/core#topConceptOf> <http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014> ;
+	<http://www.w3.org/2004/02/skos/core#inScheme> <http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014> .
+
+<http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014/11> <http://www.w3.org/2004/02/skos/core#notation> "11" ;
+	<http://www.w3.org/2004/02/skos/core#prefLabel> "ΕΣΟΔΑ ΑΠΟ ΕΚΠΟΙΗΣΗ ΚΙΝΗΤΗΣ ΚΑΙ ΑΚΙΝΗΤΗΣ ΠΕΡΙΟΥΣΙΑΣ"@el ;
+	a <http://www.w3.org/2004/02/skos/core#Concept> ;
+	<http://www.w3.org/2004/02/skos/core#narrower> <http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014/111> , <http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014/112> ;
+	<http://www.w3.org/2004/02/skos/core#broader> <http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014/1> ;
+	<http://www.w3.org/2004/02/skos/core#inScheme> <http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014> .
+
+<http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014/111> <http://www.w3.org/2004/02/skos/core#notation> "111" ;
+	<http://www.w3.org/2004/02/skos/core#prefLabel> "ΕΣΟΔΑ ΑΠΟ ΕΚΠΟΙΗΣΗ ΑΚΙΝΗΤΩΝ"@el ;
+	a <http://www.w3.org/2004/02/skos/core#Concept> ;
+	<http://www.w3.org/2004/02/skos/core#narrower> <http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014/1111> , <http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014/1112> , <http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014/1113> , <http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014/1114> , <http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014/1115> , <http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014/1116> ;
+	<http://www.w3.org/2004/02/skos/core#broader> <http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014/11> ;
+	<http://www.w3.org/2004/02/skos/core#inScheme> <http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014> .
+
+<http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014/1111> <http://www.w3.org/2004/02/skos/core#notation> "1111" ;
+	<http://www.w3.org/2004/02/skos/core#prefLabel> "Εκποίηση οικοπέδων σε άστεγους δημότες (άρθρο 249 ΔΚΚ)"@el ;
+	a <http://www.w3.org/2004/02/skos/core#Concept> ;
+	<http://www.w3.org/2004/02/skos/core#broader> <http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014/111> ;
+	<http://www.w3.org/2004/02/skos/core#inScheme> <http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014> .
+
+<http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014/1112> <http://www.w3.org/2004/02/skos/core#notation> "1112" ;
+	<http://www.w3.org/2004/02/skos/core#prefLabel> "Εκποίηση οικοπέδων στον Οργανισμό Εργατικής Κατοικίας (άρθρο 2 Ν 2336/95)"@el ;
+	a <http://www.w3.org/2004/02/skos/core#Concept> ;
+	<http://www.w3.org/2004/02/skos/core#broader> <http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014/111> ;
+	<http://www.w3.org/2004/02/skos/core#inScheme> <http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014> .
+
+<http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014/1113> <http://www.w3.org/2004/02/skos/core#notation> "1113" ;
+	<http://www.w3.org/2004/02/skos/core#prefLabel> "Εκποίηση δημοτικών ή κοινοτικών εκτάσεων για την ίδρυση ή επέκταση βιομηχανικών ή βιοτεχνικών επιχειρήσεων και κτηνοτροφικών εκμεταλλεύσεων (άρθρα 4 και 6 ΝΔ 221/1974)"@el ;
+	a <http://www.w3.org/2004/02/skos/core#Concept> ;
+	<http://www.w3.org/2004/02/skos/core#broader> <http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014/111> ;
+	<http://www.w3.org/2004/02/skos/core#inScheme> <http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014> .
+
+<http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014/1114> <http://www.w3.org/2004/02/skos/core#notation> "1114" ;
+	<http://www.w3.org/2004/02/skos/core#prefLabel> "Εκποίηση ακινήτων σε Ζώνες Κοινωτικού Συντελεστή (άρθρα 215-220 ΚΒΔΝ)"@el ;
+	a <http://www.w3.org/2004/02/skos/core#Concept> ;
+	<http://www.w3.org/2004/02/skos/core#broader> <http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014/111> ;
+	<http://www.w3.org/2004/02/skos/core#inScheme> <http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014> .
+
+<http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014/1115> <http://www.w3.org/2004/02/skos/core#notation> "1115" ;
+	<http://www.w3.org/2004/02/skos/core#prefLabel> "Προσκύρωση δημοτικών ή κοινοτικών εκτάσεων (άρθρα 300-309 ΚΒΠΝ, άρθρο 56 Ν 1416/84)"@el ;
+	a <http://www.w3.org/2004/02/skos/core#Concept> ;
+	<http://www.w3.org/2004/02/skos/core#broader> <http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014/111> ;
+	<http://www.w3.org/2004/02/skos/core#inScheme> <http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014> .
+
+<http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014/1116> <http://www.w3.org/2004/02/skos/core#notation> "1116" ;
+	<http://www.w3.org/2004/02/skos/core#prefLabel> "Λοιπά έσοδα από εκποίηση ακίνητης περιουσίας (άρθρο 248 ΔΚΚ)"@el ;
+	a <http://www.w3.org/2004/02/skos/core#Concept> ;
+	<http://www.w3.org/2004/02/skos/core#broader> <http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014/111> ;
+	<http://www.w3.org/2004/02/skos/core#inScheme> <http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014> .
+
+<http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014/112> <http://www.w3.org/2004/02/skos/core#notation> "112" ;
+	<http://www.w3.org/2004/02/skos/core#prefLabel> "ΕΣΟΔΑ ΑΠΟ ΕΚΠΟΙΗΣΗ ΚΙΝΗΤΩΝ"@el ;
+	a <http://www.w3.org/2004/02/skos/core#Concept> ;
+	<http://www.w3.org/2004/02/skos/core#narrower> <http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014/1121> , <http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014/1122> ;
+	<http://www.w3.org/2004/02/skos/core#broader> <http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014/11> ;
+	<http://www.w3.org/2004/02/skos/core#inScheme> <http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014> .
+
+<http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014/1121> <http://www.w3.org/2004/02/skos/core#notation> "1121" ;
+	<http://www.w3.org/2004/02/skos/core#prefLabel> "Εκποίηση οχημάτων (άρθρο 10 Ν 2880/2001)"@el ;
+	a <http://www.w3.org/2004/02/skos/core#Concept> ;
+	<http://www.w3.org/2004/02/skos/core#broader> <http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014/112> ;
+	<http://www.w3.org/2004/02/skos/core#inScheme> <http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014> .
+
+<http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014/1122> <http://www.w3.org/2004/02/skos/core#notation> "1122" ;
+	<http://www.w3.org/2004/02/skos/core#prefLabel> "Εκποίηση άλλων κινητών πραγμάτων (άρθρο 259 ΔΚΚ)"@el ;
+	a <http://www.w3.org/2004/02/skos/core#Concept> ;
+	<http://www.w3.org/2004/02/skos/core#broader> <http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014/112> ;
+	<http://www.w3.org/2004/02/skos/core#inScheme> <http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014> .
+
+<http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014/12> <http://www.w3.org/2004/02/skos/core#notation> "12" ;
+	<http://www.w3.org/2004/02/skos/core#prefLabel> "ΕΚΤΑΚΤΕΣ ΕΠΙΧΟΡΗΓΗΣΕΙΣ ΓΙΑ ΚΑΛΥΨΗ ΛΕΙΤΟΥΡΓΙΚΩΝ ΔΑΠΑΝΩΝ"@el ;
+	a <http://www.w3.org/2004/02/skos/core#Concept> ;
+	<http://www.w3.org/2004/02/skos/core#narrower> <http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014/121> ;
+	<http://www.w3.org/2004/02/skos/core#broader> <http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014/1> ;
+	<http://www.w3.org/2004/02/skos/core#inScheme> <http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014> .
+
+<http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014/121> <http://www.w3.org/2004/02/skos/core#notation> "121" ;
+	<http://www.w3.org/2004/02/skos/core#prefLabel> "ΕΠΙΧΟΡΗΓΗΣΕΙΣ ΓΙΑ ΚΑΛΥΨΗ ΛΕΙΤΟΥΡΓΙΚΩΝ ΔΑΠΑΝΩΝ"@el ;
+	a <http://www.w3.org/2004/02/skos/core#Concept> ;
+	<http://www.w3.org/2004/02/skos/core#narrower> <http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014/1211> , <http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014/1212> , <http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014/1213> , <http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014/1214> , <http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014/1215> , <http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014/1219> ;
+	<http://www.w3.org/2004/02/skos/core#broader> <http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014/12> ;
+	<http://www.w3.org/2004/02/skos/core#inScheme> <http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014> .
+
+<http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014/1211> <http://www.w3.org/2004/02/skos/core#notation> "1211" ;
+	<http://www.w3.org/2004/02/skos/core#prefLabel> "Από εθνικούς πόρους"@el ;
+	a <http://www.w3.org/2004/02/skos/core#Concept> ;
+	<http://www.w3.org/2004/02/skos/core#broader> <http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014/121> ;
+	<http://www.w3.org/2004/02/skos/core#inScheme> <http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014> .
+
+<http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014/1212> <http://www.w3.org/2004/02/skos/core#notation> "1212" ;
+	<http://www.w3.org/2004/02/skos/core#prefLabel> "Από συγχρηματοδοτούμενα προγράμματα"@el ;
+	a <http://www.w3.org/2004/02/skos/core#Concept> ;
+	<http://www.w3.org/2004/02/skos/core#broader> <http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014/121> ;
+	<http://www.w3.org/2004/02/skos/core#inScheme> <http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014> .
+
+<http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014/1213> <http://www.w3.org/2004/02/skos/core#notation> "1213" ;
+	<http://www.w3.org/2004/02/skos/core#prefLabel> "Έσοδα από προγραμματικές συμβάσεις για υλοποίηση τοπικών πολιτικών"@el ;
+	a <http://www.w3.org/2004/02/skos/core#Concept> ;
+	<http://www.w3.org/2004/02/skos/core#broader> <http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014/121> ;
+	<http://www.w3.org/2004/02/skos/core#inScheme> <http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014> .
+
+<http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014/1214> <http://www.w3.org/2004/02/skos/core#notation> "1214" ;
+	<http://www.w3.org/2004/02/skos/core#prefLabel> "Επιχορηγήσεις για πυροπροστασία που προορίζονται για λειτουργικές δαπάνες"@el ;
+	a <http://www.w3.org/2004/02/skos/core#Concept> ;
+	<http://www.w3.org/2004/02/skos/core#broader> <http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014/121> ;
+	<http://www.w3.org/2004/02/skos/core#inScheme> <http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014> .
+
+<http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014/1215> <http://www.w3.org/2004/02/skos/core#notation> "1215" ;
+	<http://www.w3.org/2004/02/skos/core#prefLabel> "Επιχορηγήσεις για εξόφληση ληξιπροθέσμων υποχρεώσεων"@el ;
+	a <http://www.w3.org/2004/02/skos/core#Concept> ;
+	<http://www.w3.org/2004/02/skos/core#broader> <http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014/121> ;
+	<http://www.w3.org/2004/02/skos/core#inScheme> <http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014> .
+
+<http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014/1219> <http://www.w3.org/2004/02/skos/core#notation> "1219" ;
+	<http://www.w3.org/2004/02/skos/core#prefLabel> "Λοιπές επιχορηγήσεις"@el ;
+	a <http://www.w3.org/2004/02/skos/core#Concept> ;
+	<http://www.w3.org/2004/02/skos/core#broader> <http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014/121> ;
+	<http://www.w3.org/2004/02/skos/core#inScheme> <http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014> .
+
+<http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014/13> <http://www.w3.org/2004/02/skos/core#notation> "13" ;
+	<http://www.w3.org/2004/02/skos/core#prefLabel> "ΕΠΙΧΟΡΗΓΗΣΕΙΣ ΓΙΑ ΕΠΕΝΔΥΣΕΙΣ"@el ;
+	a <http://www.w3.org/2004/02/skos/core#Concept> ;
+	<http://www.w3.org/2004/02/skos/core#narrower> <http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014/131> , <http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014/132> ;
+	<http://www.w3.org/2004/02/skos/core#broader> <http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014/1> ;
+	<http://www.w3.org/2004/02/skos/core#inScheme> <http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014> .
+
+<http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014/131> <http://www.w3.org/2004/02/skos/core#notation> "131" ;
+	<http://www.w3.org/2004/02/skos/core#prefLabel> "ΕΠΙΧΟΡΗΓΗΣΕΙΣ ΑΠΟ ΘΕΣΜΟΘΕΤΗΜΕΝΟΥΣ ΠΟΡΟΥΣ ΓΙΑ ΕΠΕΝΔΥΤΙΚΕΣ ΔΑΠΑΝΕΣ"@el ;
+	a <http://www.w3.org/2004/02/skos/core#Concept> ;
+	<http://www.w3.org/2004/02/skos/core#narrower> <http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014/1311> , <http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014/1312> , <http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014/1313> , <http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014/1314> , <http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014/1319> ;
+	<http://www.w3.org/2004/02/skos/core#broader> <http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014/13> ;
+	<http://www.w3.org/2004/02/skos/core#inScheme> <http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014> .
+
+<http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014/1311> <http://www.w3.org/2004/02/skos/core#notation> "1311" ;
+	<http://www.w3.org/2004/02/skos/core#prefLabel> "ΚΑΠ επενδυτικών δαπανών των δήμων"@el ;
+	a <http://www.w3.org/2004/02/skos/core#Concept> ;
+	<http://www.w3.org/2004/02/skos/core#broader> <http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014/131> ;
+	<http://www.w3.org/2004/02/skos/core#inScheme> <http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014> .
+
+<http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014/1312> <http://www.w3.org/2004/02/skos/core#notation> "1312" ;
+	<http://www.w3.org/2004/02/skos/core#prefLabel> "Επισκευή και συντήρηση σχολικών κτιρίων άρθρο (13 Ν 2880/2001)"@el ;
+	a <http://www.w3.org/2004/02/skos/core#Concept> ;
+	<http://www.w3.org/2004/02/skos/core#broader> <http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014/131> ;
+	<http://www.w3.org/2004/02/skos/core#inScheme> <http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014> .
+
+<http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014/1313> <http://www.w3.org/2004/02/skos/core#notation> "1313" ;
+	<http://www.w3.org/2004/02/skos/core#prefLabel> "Επιχορηγήσεις για πυροπροστασία που προορίζονται για επενδυτικές δαπάνες"@el ;
+	a <http://www.w3.org/2004/02/skos/core#Concept> ;
+	<http://www.w3.org/2004/02/skos/core#broader> <http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014/131> ;
+	<http://www.w3.org/2004/02/skos/core#inScheme> <http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014> .
+
+<http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014/1314> <http://www.w3.org/2004/02/skos/core#notation> "1314" ;
+	<http://www.w3.org/2004/02/skos/core#prefLabel> "Επιχορηγήσεις από το πρόγραμμα Θησέας (άρθρα 6-12 ν. 3274/2004)"@el ;
+	a <http://www.w3.org/2004/02/skos/core#Concept> ;
+	<http://www.w3.org/2004/02/skos/core#broader> <http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014/131> ;
+	<http://www.w3.org/2004/02/skos/core#inScheme> <http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014> .
+
+<http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014/1319> <http://www.w3.org/2004/02/skos/core#notation> "1319" ;
+	<http://www.w3.org/2004/02/skos/core#prefLabel> "Λοιπά Ειδικά προγράμματα"@el ;
+	a <http://www.w3.org/2004/02/skos/core#Concept> ;
+	<http://www.w3.org/2004/02/skos/core#broader> <http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014/131> ;
+	<http://www.w3.org/2004/02/skos/core#inScheme> <http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014> .
+
+<http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014/132> <http://www.w3.org/2004/02/skos/core#notation> "132" ;
+	<http://www.w3.org/2004/02/skos/core#prefLabel> "ΛΟΙΠΕΣ ΕΠΙΧΟΡΗΓΗΣΕΙΣ ΓΙΑ ΕΠΕΝΔΥΣΕΙΣ ΚΑΙ ΕΡΓΑ"@el ;
+	a <http://www.w3.org/2004/02/skos/core#Concept> ;
+	<http://www.w3.org/2004/02/skos/core#narrower> <http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014/1321> , <http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014/1322> , <http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014/1323> , <http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014/1324> , <http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014/1325> ;
+	<http://www.w3.org/2004/02/skos/core#broader> <http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014/13> ;
+	<http://www.w3.org/2004/02/skos/core#inScheme> <http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014> .
+
+<http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014/1321> <http://www.w3.org/2004/02/skos/core#notation> "1321" ;
+	<http://www.w3.org/2004/02/skos/core#prefLabel> "Χρηματοδοτήσεις από Περιφερειακά επιχειρησιακά προγράμματα"@el ;
+	a <http://www.w3.org/2004/02/skos/core#Concept> ;
+	<http://www.w3.org/2004/02/skos/core#broader> <http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014/132> ;
+	<http://www.w3.org/2004/02/skos/core#inScheme> <http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014> .
+
+<http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014/1322> <http://www.w3.org/2004/02/skos/core#notation> "1322" ;
+	<http://www.w3.org/2004/02/skos/core#prefLabel> "Χρηματοδοτήσεις από Κεντρικούς φορείς"@el ;
+	a <http://www.w3.org/2004/02/skos/core#Concept> ;
+	<http://www.w3.org/2004/02/skos/core#broader> <http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014/132> ;
+	<http://www.w3.org/2004/02/skos/core#inScheme> <http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014> .
+
+<http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014/1323> <http://www.w3.org/2004/02/skos/core#notation> "1323" ;
+	<http://www.w3.org/2004/02/skos/core#prefLabel> "Χρηματοδοτήσεις έργων από Ε.Ε."@el ;
+	a <http://www.w3.org/2004/02/skos/core#Concept> ;
+	<http://www.w3.org/2004/02/skos/core#broader> <http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014/132> ;
+	<http://www.w3.org/2004/02/skos/core#inScheme> <http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014> .
+
+<http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014/1324> <http://www.w3.org/2004/02/skos/core#notation> "1324" ;
+	<http://www.w3.org/2004/02/skos/core#prefLabel> "Χρηματοδοτήσεις έργων από Διεθνείς οργανισμούς"@el ;
+	a <http://www.w3.org/2004/02/skos/core#Concept> ;
+	<http://www.w3.org/2004/02/skos/core#broader> <http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014/132> ;
+	<http://www.w3.org/2004/02/skos/core#inScheme> <http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014> .
+
+<http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014/1325> <http://www.w3.org/2004/02/skos/core#notation> "1325" ;
+	<http://www.w3.org/2004/02/skos/core#prefLabel> "Επιχορηγήσεις από εθνικούς πόρους για κάλυψη έκτακτων αναγκών για έργα"@el ;
+	a <http://www.w3.org/2004/02/skos/core#Concept> ;
+	<http://www.w3.org/2004/02/skos/core#broader> <http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014/132> ;
+	<http://www.w3.org/2004/02/skos/core#inScheme> <http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014> .
+
+<http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014/1330> <http://www.w3.org/2004/02/skos/core#notation> "1330" ;
+	<http://www.w3.org/2004/02/skos/core#prefLabel> "Χρηματοδοτήσεις από το Εθνικό Στρατηγικό Πλαίσιο Αναφοράς (ΕΣΠΑ)"@el ;
+	a <http://www.w3.org/2004/02/skos/core#Concept> ;
+	<http://www.w3.org/2004/02/skos/core#inScheme> <http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014> .
+
+<http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014/1331> <http://www.w3.org/2004/02/skos/core#notation> "1331" ;
+	<http://www.w3.org/2004/02/skos/core#prefLabel> "Λοιπές επιχορηγήσεις για επενδύσεις και έργα"@el ;
+	a <http://www.w3.org/2004/02/skos/core#Concept> ;
+	<http://www.w3.org/2004/02/skos/core#inScheme> <http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014> .
+
+<http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014/1411> <http://www.w3.org/2004/02/skos/core#notation> "1411" ;
+	<http://www.w3.org/2004/02/skos/core#prefLabel> "Προϊόν δωρεών"@el ;
+	a <http://www.w3.org/2004/02/skos/core#Concept> ;
+	<http://www.w3.org/2004/02/skos/core#inScheme> <http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014> .
+
+<http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014/142> <http://www.w3.org/2004/02/skos/core#notation> "142" ;
+	<http://www.w3.org/2004/02/skos/core#prefLabel> "ΚΛΗΡΟΝΟΜΙΕΣ ΚΑΙ ΚΛΗΡΟΔΟΣΙΕΣ"@el ;
+	a <http://www.w3.org/2004/02/skos/core#Concept> ;
+	<http://www.w3.org/2004/02/skos/core#narrower> <http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014/1421> ;
+	<http://www.w3.org/2004/02/skos/core#inScheme> <http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014> .
+
+<http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014/1421> <http://www.w3.org/2004/02/skos/core#notation> "1421" ;
+	<http://www.w3.org/2004/02/skos/core#prefLabel> "Έσοδα από κληρονομιές, κληροδοσίες"@el ;
+	a <http://www.w3.org/2004/02/skos/core#Concept> ;
+	<http://www.w3.org/2004/02/skos/core#broader> <http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014/142> ;
+	<http://www.w3.org/2004/02/skos/core#inScheme> <http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014> .
+
+<http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014/15> <http://www.w3.org/2004/02/skos/core#notation> "15" ;
+	<http://www.w3.org/2004/02/skos/core#prefLabel> "ΠΡΟΣΑΥΞΗΣΕΙΣ - ΠΡΟΣΤΙΜΑ - ΠΑΡΑΒΟΛΑ"@el ;
+	a <http://www.w3.org/2004/02/skos/core#Concept> ;
+	<http://www.w3.org/2004/02/skos/core#narrower> <http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014/151> , <http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014/152> ;
+	<http://www.w3.org/2004/02/skos/core#broader> <http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014/1> ;
+	<http://www.w3.org/2004/02/skos/core#inScheme> <http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014> .
+
+<http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014/151> <http://www.w3.org/2004/02/skos/core#notation> "151" ;
+	<http://www.w3.org/2004/02/skos/core#prefLabel> "ΠΡΟΣΑΥΞΗΣΕΙΣ ΚΑΙ ΠΡΟΣΤΙΜΑ"@el ;
+	a <http://www.w3.org/2004/02/skos/core#Concept> ;
+	<http://www.w3.org/2004/02/skos/core#narrower> <http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014/1511> , <http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014/1512> , <http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014/1513> , <http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014/1514> , <http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014/1515> , <http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014/1516> , <http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014/1517> , <http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014/1518> , <http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014/1519> ;
+	<http://www.w3.org/2004/02/skos/core#broader> <http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014/15> ;
+	<http://www.w3.org/2004/02/skos/core#inScheme> <http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014> .
+
+<http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014/1511> <http://www.w3.org/2004/02/skos/core#notation> "1511" ;
+	<http://www.w3.org/2004/02/skos/core#prefLabel> "Προσαυξήσεις εκπρόθεσμης καταβολής χρεών (άρθρο 6 ΝΔ 356/74, άρθρο 16 Ν 2130/93)"@el ;
+	a <http://www.w3.org/2004/02/skos/core#Concept> ;
+	<http://www.w3.org/2004/02/skos/core#broader> <http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014/151> ;
+	<http://www.w3.org/2004/02/skos/core#inScheme> <http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014> .
+
+<http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014/1512> <http://www.w3.org/2004/02/skos/core#notation> "1512" ;
+	<http://www.w3.org/2004/02/skos/core#prefLabel> "Πρόστιμα του ΚΟΚ, του ΝΔ 805/71 και του ΑΝ 170/67 (άρθρο 31 Ν 2130/93)"@el ;
+	a <http://www.w3.org/2004/02/skos/core#Concept> ;
+	<http://www.w3.org/2004/02/skos/core#broader> <http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014/151> ;
+	<http://www.w3.org/2004/02/skos/core#inScheme> <http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014> .
+
+<http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014/1513> <http://www.w3.org/2004/02/skos/core#notation> "1513" ;
+	<http://www.w3.org/2004/02/skos/core#prefLabel> "Πρόστιμα για παραβάσεις φορολογικών διατάξεων (άρθρο 19 Ν 1080/80)"@el ;
+	a <http://www.w3.org/2004/02/skos/core#Concept> ;
+	<http://www.w3.org/2004/02/skos/core#broader> <http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014/151> ;
+	<http://www.w3.org/2004/02/skos/core#inScheme> <http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014> .
+
+<http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014/1514> <http://www.w3.org/2004/02/skos/core#notation> "1514" ;
+	<http://www.w3.org/2004/02/skos/core#prefLabel> "Πρόστιμα ανέγερσης και διατήρησης αυθαιρέτων κατασκευών (άρθρο 12 Ν 1647/86)"@el ;
+	a <http://www.w3.org/2004/02/skos/core#Concept> ;
+	<http://www.w3.org/2004/02/skos/core#broader> <http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014/151> ;
+	<http://www.w3.org/2004/02/skos/core#inScheme> <http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014> .
+
+<http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014/1515> <http://www.w3.org/2004/02/skos/core#notation> "1515" ;
+	<http://www.w3.org/2004/02/skos/core#prefLabel> "Πειθαρχικά πρόστιμα σε βάρος των υπαλλήλων (άρθρο 284 Ν 1188/81)"@el ;
+	a <http://www.w3.org/2004/02/skos/core#Concept> ;
+	<http://www.w3.org/2004/02/skos/core#broader> <http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014/151> ;
+	<http://www.w3.org/2004/02/skos/core#inScheme> <http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014> .
+
+<http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014/1516> <http://www.w3.org/2004/02/skos/core#notation> "1516" ;
+	<http://www.w3.org/2004/02/skos/core#prefLabel> "Έσοδα από διάφορες καταλογιστικές αποφάσεις"@el ;
+	a <http://www.w3.org/2004/02/skos/core#Concept> ;
+	<http://www.w3.org/2004/02/skos/core#broader> <http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014/151> ;
+	<http://www.w3.org/2004/02/skos/core#inScheme> <http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014> .
+
+<http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014/1517> <http://www.w3.org/2004/02/skos/core#notation> "1517" ;
+	<http://www.w3.org/2004/02/skos/core#prefLabel> "Πρόστιμα και ποινικές ρήτρες που επιβάλλονται σε βάρος προμηθευτών και εργολάβων"@el ;
+	a <http://www.w3.org/2004/02/skos/core#Concept> ;
+	<http://www.w3.org/2004/02/skos/core#broader> <http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014/151> ;
+	<http://www.w3.org/2004/02/skos/core#inScheme> <http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014> .
+
+<http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014/1518> <http://www.w3.org/2004/02/skos/core#notation> "1518" ;
+	<http://www.w3.org/2004/02/skos/core#prefLabel> "Καταπτώσεις εγγυήσεων"@el ;
+	a <http://www.w3.org/2004/02/skos/core#Concept> ;
+	<http://www.w3.org/2004/02/skos/core#broader> <http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014/151> ;
+	<http://www.w3.org/2004/02/skos/core#inScheme> <http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014> .
+
+<http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014/1519> <http://www.w3.org/2004/02/skos/core#notation> "1519" ;
+	<http://www.w3.org/2004/02/skos/core#prefLabel> "Λοιπά πρόστιμα και χρηματικές ποινές επιβαλλόμενες βάσει ειδικών διατάξεων"@el ;
+	a <http://www.w3.org/2004/02/skos/core#Concept> ;
+	<http://www.w3.org/2004/02/skos/core#broader> <http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014/151> ;
+	<http://www.w3.org/2004/02/skos/core#inScheme> <http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014> .
+
+<http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014/152> <http://www.w3.org/2004/02/skos/core#notation> "152" ;
+	<http://www.w3.org/2004/02/skos/core#prefLabel> "ΠΑΡΑΒΟΛΑ"@el ;
+	a <http://www.w3.org/2004/02/skos/core#Concept> ;
+	<http://www.w3.org/2004/02/skos/core#narrower> <http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014/1521> , <http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014/1522> ;
+	<http://www.w3.org/2004/02/skos/core#broader> <http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014/15> ;
+	<http://www.w3.org/2004/02/skos/core#inScheme> <http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014> .
+
+<http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014/1521> <http://www.w3.org/2004/02/skos/core#notation> "1521" ;
+	<http://www.w3.org/2004/02/skos/core#prefLabel> "Παράβολα πλειστηριασμών (άρθρα 932 και 959 ΚΠολΔ)"@el ;
+	a <http://www.w3.org/2004/02/skos/core#Concept> ;
+	<http://www.w3.org/2004/02/skos/core#broader> <http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014/152> ;
+	<http://www.w3.org/2004/02/skos/core#inScheme> <http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014> .
+
+<http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014/1522> <http://www.w3.org/2004/02/skos/core#notation> "1522" ;
+	<http://www.w3.org/2004/02/skos/core#prefLabel> "Παράβολα υποβαλλόμενα για τη χορήγηση διευκολύνσεων τμηματικής καταβολής χρεών (άρθρο 18 Ν 2648/98)"@el ;
+	a <http://www.w3.org/2004/02/skos/core#Concept> ;
+	<http://www.w3.org/2004/02/skos/core#broader> <http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014/152> ;
+	<http://www.w3.org/2004/02/skos/core#inScheme> <http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014> .
+
+<http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014/16> <http://www.w3.org/2004/02/skos/core#notation> "16" ;
+	<http://www.w3.org/2004/02/skos/core#prefLabel> "ΛΟΙΠΑ ΕΚΤΑΚΤΑ ΕΣΟΔΑ"@el ;
+	a <http://www.w3.org/2004/02/skos/core#Concept> ;
+	<http://www.w3.org/2004/02/skos/core#narrower> <http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014/161> , <http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014/162> ;
+	<http://www.w3.org/2004/02/skos/core#broader> <http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014/1> ;
+	<http://www.w3.org/2004/02/skos/core#inScheme> <http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014> .
+
+<http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014/161> <http://www.w3.org/2004/02/skos/core#notation> "161" ;
+	<http://www.w3.org/2004/02/skos/core#prefLabel> "ΕΣΟΔΑ ΑΠΟ ΕΠΙΧΕΙΡΗΣΕΙΣ"@el ;
+	a <http://www.w3.org/2004/02/skos/core#Concept> ;
+	<http://www.w3.org/2004/02/skos/core#narrower> <http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014/1611> , <http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014/1612> , <http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014/1613> , <http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014/1614> ;
+	<http://www.w3.org/2004/02/skos/core#broader> <http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014/16> ;
+	<http://www.w3.org/2004/02/skos/core#inScheme> <http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014> .
+
+<http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014/1611> <http://www.w3.org/2004/02/skos/core#notation> "1611" ;
+	<http://www.w3.org/2004/02/skos/core#prefLabel> "Έσοδα από δημοτικές ή κοινοτικές κοινωφελείς επιχειρήσεις"@el ;
+	a <http://www.w3.org/2004/02/skos/core#Concept> ;
+	<http://www.w3.org/2004/02/skos/core#broader> <http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014/161> ;
+	<http://www.w3.org/2004/02/skos/core#inScheme> <http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014> .
+
+<http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014/1612> <http://www.w3.org/2004/02/skos/core#notation> "1612" ;
+	<http://www.w3.org/2004/02/skos/core#prefLabel> "Έσοδα από αμιγείς δημοτικές ή κοινοτικές /διαδημοτικές ή διακοινοτικές επιχειρήσεις"@el ;
+	a <http://www.w3.org/2004/02/skos/core#Concept> ;
+	<http://www.w3.org/2004/02/skos/core#broader> <http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014/161> ;
+	<http://www.w3.org/2004/02/skos/core#inScheme> <http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014> .
+
+<http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014/1613> <http://www.w3.org/2004/02/skos/core#notation> "1613" ;
+	<http://www.w3.org/2004/02/skos/core#prefLabel> "Έσοδα από λοιπές δημοτικές επιχειρήσεις"@el ;
+	a <http://www.w3.org/2004/02/skos/core#Concept> ;
+	<http://www.w3.org/2004/02/skos/core#broader> <http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014/161> ;
+	<http://www.w3.org/2004/02/skos/core#inScheme> <http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014> .
+
+<http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014/1614> <http://www.w3.org/2004/02/skos/core#notation> "1614" ;
+	<http://www.w3.org/2004/02/skos/core#prefLabel> "Έσοδα από συμμετοχή σε λοιπές επιχειρήσεις"@el ;
+	a <http://www.w3.org/2004/02/skos/core#Concept> ;
+	<http://www.w3.org/2004/02/skos/core#broader> <http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014/161> ;
+	<http://www.w3.org/2004/02/skos/core#inScheme> <http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014> .
+
+<http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014/162> <http://www.w3.org/2004/02/skos/core#notation> "162" ;
+	<http://www.w3.org/2004/02/skos/core#prefLabel> "ΕΣΟΔΑ ΑΠΟ ΔΑΠΑΝΕΣ ΠΡΑΓΜΑΤΟΠΟΙΗΘΕΙΣΕΣ ΓΙΑ ΛΟΓΑΡΙΑΣΜΟ ΤΡΙΤΩΝ"@el ;
+	a <http://www.w3.org/2004/02/skos/core#Concept> ;
+	<http://www.w3.org/2004/02/skos/core#narrower> <http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014/1621> , <http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014/1622> , <http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014/1623> , <http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014/1624> , <http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014/1625> , <http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014/1626> , <http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014/1627> , <http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014/1628> ;
+	<http://www.w3.org/2004/02/skos/core#broader> <http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014/16> ;
+	<http://www.w3.org/2004/02/skos/core#inScheme> <http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014> .
+
+<http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014/1621> <http://www.w3.org/2004/02/skos/core#notation> "1621" ;
+	<http://www.w3.org/2004/02/skos/core#prefLabel> "Δαπάνες αφαίρεσης παράνομων διαφημιστικών μέσων (άρθρο 9 ν. 2946/2001, άρθρο 11 ν. 2696/1999)"@el ;
+	a <http://www.w3.org/2004/02/skos/core#Concept> ;
+	<http://www.w3.org/2004/02/skos/core#broader> <http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014/162> ;
+	<http://www.w3.org/2004/02/skos/core#inScheme> <http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014> .
+
+<http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014/1622> <http://www.w3.org/2004/02/skos/core#notation> "1622" ;
+	<http://www.w3.org/2004/02/skos/core#prefLabel> "Έξοδα ακινητοποίησης και μεταφοράς παρανόμως σταθμευμένων οχημάτων (άρθρο 45 ν. 2218/1994)"@el ;
+	a <http://www.w3.org/2004/02/skos/core#Concept> ;
+	<http://www.w3.org/2004/02/skos/core#broader> <http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014/162> ;
+	<http://www.w3.org/2004/02/skos/core#inScheme> <http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014> .
+
+<http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014/1623> <http://www.w3.org/2004/02/skos/core#notation> "1623" ;
+	<http://www.w3.org/2004/02/skos/core#prefLabel> "Δαπάνες απομάκρυνσης και φύλαξης εγκαταλελειμμένων οχημάτων (ΚΥΑ 1002901/67/2002)"@el ;
+	a <http://www.w3.org/2004/02/skos/core#Concept> ;
+	<http://www.w3.org/2004/02/skos/core#broader> <http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014/162> ;
+	<http://www.w3.org/2004/02/skos/core#inScheme> <http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014> .
+
+<http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014/1624> <http://www.w3.org/2004/02/skos/core#notation> "1624" ;
+	<http://www.w3.org/2004/02/skos/core#prefLabel> "Έσοδα από την κατασκευή, επισκευή και συντήρηση οδών και πεζοδρομίων (άρθρο 47 ν. 2696/1999, άρθρο 367 ΚΒΠΝ"@el ;
+	a <http://www.w3.org/2004/02/skos/core#Concept> ;
+	<http://www.w3.org/2004/02/skos/core#broader> <http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014/162> ;
+	<http://www.w3.org/2004/02/skos/core#inScheme> <http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014> .
+
+<http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014/1625> <http://www.w3.org/2004/02/skos/core#notation> "1625" ;
+	<http://www.w3.org/2004/02/skos/core#prefLabel> "Αποζημίωση καταβληθείσα για λογαριασμό των υπόχρεων, λόγω προσκύρωσης ή ρυμοτόμησης ακινήτων (άρθρο 26 ν. 1828/1989)"@el ;
+	a <http://www.w3.org/2004/02/skos/core#Concept> ;
+	<http://www.w3.org/2004/02/skos/core#broader> <http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014/162> ;
+	<http://www.w3.org/2004/02/skos/core#inScheme> <http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014> .
+
+<http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014/1626> <http://www.w3.org/2004/02/skos/core#notation> "1626" ;
+	<http://www.w3.org/2004/02/skos/core#prefLabel> "Έσοδα από συμβάσεις διαδημοτικής συνεργασίας (άρθρο 23 ν. 2539/1997)"@el ;
+	a <http://www.w3.org/2004/02/skos/core#Concept> ;
+	<http://www.w3.org/2004/02/skos/core#broader> <http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014/162> ;
+	<http://www.w3.org/2004/02/skos/core#inScheme> <http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014> .
+
+<http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014/1627> <http://www.w3.org/2004/02/skos/core#notation> "1627" ;
+	<http://www.w3.org/2004/02/skos/core#prefLabel> "Εισφορές άλλων ΟΤΑ για την καταβολή αποζημίωσης στα μέλη του υπηρεσιακού συμβουλίου (άρθρο 12 ν. 2130/1993)"@el ;
+	a <http://www.w3.org/2004/02/skos/core#Concept> ;
+	<http://www.w3.org/2004/02/skos/core#broader> <http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014/162> ;
+	<http://www.w3.org/2004/02/skos/core#inScheme> <http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014> .
+
+<http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014/1628> <http://www.w3.org/2004/02/skos/core#notation> "1628" ;
+	<http://www.w3.org/2004/02/skos/core#prefLabel> "Εισφορές άλλων ΟΤΑ για τη μισθοδοσία ελεγκτών εσόδων - εξόδων και εισπρακτόρων (άρθρα 227 και 229 ν 1188/1981 )"@el ;
+	a <http://www.w3.org/2004/02/skos/core#Concept> ;
+	<http://www.w3.org/2004/02/skos/core#broader> <http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014/162> ;
+	<http://www.w3.org/2004/02/skos/core#inScheme> <http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014> .
+
+<http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014/1691> <http://www.w3.org/2004/02/skos/core#notation> "1691" ;
+	<http://www.w3.org/2004/02/skos/core#prefLabel> "Τέλη επιβαλλόμενα σε βάρος επιχειρήσεων για την εκτέλεση έργων και προγραμμάτων προστασίας του περιβάλλοντος(άρθρο 6 ν. 1650/1986)"@el ;
+	a <http://www.w3.org/2004/02/skos/core#Concept> ;
+	<http://www.w3.org/2004/02/skos/core#inScheme> <http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014> .
+
+<http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014/1692> <http://www.w3.org/2004/02/skos/core#notation> "1692" ;
+	<http://www.w3.org/2004/02/skos/core#prefLabel> "Εφάπαξ ειδική εισφορά για τη δημιουργία κοινόχρηστων χώρων (άρθρο 16 ν 2508/97)"@el ;
+	a <http://www.w3.org/2004/02/skos/core#Concept> ;
+	<http://www.w3.org/2004/02/skos/core#inScheme> <http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014> .
+
+<http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014/1693> <http://www.w3.org/2004/02/skos/core#notation> "1693" ;
+	<http://www.w3.org/2004/02/skos/core#prefLabel> "Έσοδα από την πώληση αγαθών ή την παροχή υπηρεσιών"@el ;
+	a <http://www.w3.org/2004/02/skos/core#Concept> ;
+	<http://www.w3.org/2004/02/skos/core#inScheme> <http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014> .
+
+<http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014/1699> <http://www.w3.org/2004/02/skos/core#notation> "1699" ;
+	<http://www.w3.org/2004/02/skos/core#prefLabel> "Έσοδα που δεν εμπίπτουν σε κανέναν από τους λοιπούς κωδικούς της ομάδας 1 ΕΚΤΑΚΤΑ ΕΣΟΔΑ"@el ;
+	a <http://www.w3.org/2004/02/skos/core#Concept> ;
+	<http://www.w3.org/2004/02/skos/core#inScheme> <http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014> .
+
+<http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014/2> <http://www.w3.org/2004/02/skos/core#notation> "2" ;
+	<http://www.w3.org/2004/02/skos/core#prefLabel> "ΕΣΟΔΑ ΠΑΡΕΛΘΟΝΤΩΝ ΟΙΚΟΝΟΜΙΚΩΝ ΕΤΩΝ (Π.Ο.Ε.) ΠΟΥ ΒΕΒΑΙΩΝΟΝΤΑΙ ΓΙΑ ΠΡΩΤΗ ΦΟΡΑ"@el ;
+	a <http://www.w3.org/2004/02/skos/core#Concept> ;
+	<http://www.w3.org/2004/02/skos/core#narrower> <http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014/21> , <http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014/22> ;
+	<http://www.w3.org/2004/02/skos/core#topConceptOf> <http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014> ;
+	<http://www.w3.org/2004/02/skos/core#inScheme> <http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014> .
+
+<http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014/21> <http://www.w3.org/2004/02/skos/core#notation> "21" ;
+	<http://www.w3.org/2004/02/skos/core#prefLabel> "ΕΣΟΔΑ Π.Ο.Ε. ΤΑΚΤΑΚΑ"@el ;
+	a <http://www.w3.org/2004/02/skos/core#Concept> ;
+	<http://www.w3.org/2004/02/skos/core#narrower> <http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014/211> ;
+	<http://www.w3.org/2004/02/skos/core#broader> <http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014/2> ;
+	<http://www.w3.org/2004/02/skos/core#inScheme> <http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014> .
+
+<http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014/211> <http://www.w3.org/2004/02/skos/core#notation> "211" ;
+	<http://www.w3.org/2004/02/skos/core#prefLabel> "ΤΑΚΤΙΚΑ ΕΣΟΔΑ ΠΑΡΕΛΘΟΝΤΩΝ ΟΙΚΟΝΟΜΙΚΩΝ ΕΤΩΝ ΠΟΥ ΒΕΒΑΙΩΝΟΝΤΑΙ ΚΑΙ ΕΙΣΠΡΑΤΤΟΝΤΑΙ ΓΙΑ ΠΡΩΤΗ ΦΟΡΑ"@el ;
+	a <http://www.w3.org/2004/02/skos/core#Concept> ;
+	<http://www.w3.org/2004/02/skos/core#narrower> <http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014/2111> , <http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014/2112> , <http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014/2113> , <http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014/2114> , <http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014/2115> , <http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014/2116> , <http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014/2117> , <http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014/2118> , <http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014/2119> ;
+	<http://www.w3.org/2004/02/skos/core#broader> <http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014/21> ;
+	<http://www.w3.org/2004/02/skos/core#inScheme> <http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014> .
+
+<http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014/2111> <http://www.w3.org/2004/02/skos/core#notation> "2111" ;
+	<http://www.w3.org/2004/02/skos/core#prefLabel> "Τακτικά έσοδα από τέλη καθαριότητας και ηλεκτροφωτισμού"@el ;
+	a <http://www.w3.org/2004/02/skos/core#Concept> ;
+	<http://www.w3.org/2004/02/skos/core#broader> <http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014/211> ;
+	<http://www.w3.org/2004/02/skos/core#inScheme> <http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014> .
+
+<http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014/2112> <http://www.w3.org/2004/02/skos/core#notation> "2112" ;
+	<http://www.w3.org/2004/02/skos/core#prefLabel> "Τακτικά έσοδα από τέλη και δικαιώματα ύδρευσης"@el ;
+	a <http://www.w3.org/2004/02/skos/core#Concept> ;
+	<http://www.w3.org/2004/02/skos/core#broader> <http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014/211> ;
+	<http://www.w3.org/2004/02/skos/core#inScheme> <http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014> .
+
+<http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014/2113> <http://www.w3.org/2004/02/skos/core#notation> "2113" ;
+	<http://www.w3.org/2004/02/skos/core#prefLabel> "Τακτικά έσοδα από τέλη και δικαιώματα άρδευσης"@el ;
+	a <http://www.w3.org/2004/02/skos/core#Concept> ;
+	<http://www.w3.org/2004/02/skos/core#broader> <http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014/211> ;
+	<http://www.w3.org/2004/02/skos/core#inScheme> <http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014> .
+
+<http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014/2114> <http://www.w3.org/2004/02/skos/core#notation> "2114" ;
+	<http://www.w3.org/2004/02/skos/core#prefLabel> "Τακτικά έσοδα από τέλη και δικαιώματα αποχέτευσης"@el ;
+	a <http://www.w3.org/2004/02/skos/core#Concept> ;
+	<http://www.w3.org/2004/02/skos/core#broader> <http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014/211> ;
+	<http://www.w3.org/2004/02/skos/core#inScheme> <http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014> .
+
+<http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014/2115> <http://www.w3.org/2004/02/skos/core#notation> "2115" ;
+	<http://www.w3.org/2004/02/skos/core#prefLabel> "Τακτικά έσοδα από τέλος ακίνητης περιουσίας"@el ;
+	a <http://www.w3.org/2004/02/skos/core#Concept> ;
+	<http://www.w3.org/2004/02/skos/core#broader> <http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014/211> ;
+	<http://www.w3.org/2004/02/skos/core#inScheme> <http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014> .
+
+<http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014/2116> <http://www.w3.org/2004/02/skos/core#notation> "2116" ;
+	<http://www.w3.org/2004/02/skos/core#prefLabel> "Τακτικά έσοδα από δυνητικά ανταποδοτικά τέλη και εισφορές"@el ;
+	a <http://www.w3.org/2004/02/skos/core#Concept> ;
+	<http://www.w3.org/2004/02/skos/core#broader> <http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014/211> ;
+	<http://www.w3.org/2004/02/skos/core#inScheme> <http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014> .
+
+<http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014/2117> <http://www.w3.org/2004/02/skos/core#notation> "2117" ;
+	<http://www.w3.org/2004/02/skos/core#prefLabel> "Τακτικά έσοδα από εισφορά λόγω ένταξης ή επέκτασης πολεοδομικών σχεδίων"@el ;
+	a <http://www.w3.org/2004/02/skos/core#Concept> ;
+	<http://www.w3.org/2004/02/skos/core#broader> <http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014/211> ;
+	<http://www.w3.org/2004/02/skos/core#inScheme> <http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014> .
+
+<http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014/2118> <http://www.w3.org/2004/02/skos/core#notation> "2118" ;
+	<http://www.w3.org/2004/02/skos/core#prefLabel> "Τακτικά έσοδα επί των ακαθαρίστων εσόδων επιτηδευματιών"@el ;
+	a <http://www.w3.org/2004/02/skos/core#Concept> ;
+	<http://www.w3.org/2004/02/skos/core#broader> <http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014/211> ;
+	<http://www.w3.org/2004/02/skos/core#inScheme> <http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014> .
+
+<http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014/2119> <http://www.w3.org/2004/02/skos/core#notation> "2119" ;
+	<http://www.w3.org/2004/02/skos/core#prefLabel> "Τακτικά έσοδα από λοιπά έσοδα"@el ;
+	a <http://www.w3.org/2004/02/skos/core#Concept> ;
+	<http://www.w3.org/2004/02/skos/core#broader> <http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014/211> ;
+	<http://www.w3.org/2004/02/skos/core#inScheme> <http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014> .
+
+<http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014/22> <http://www.w3.org/2004/02/skos/core#notation> "22" ;
+	<http://www.w3.org/2004/02/skos/core#prefLabel> "ΕΣΟΔΑ Π.Ο.Ε. ΕΚΤΑΚΤΑ"@el ;
+	a <http://www.w3.org/2004/02/skos/core#Concept> ;
+	<http://www.w3.org/2004/02/skos/core#narrower> <http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014/221> ;
+	<http://www.w3.org/2004/02/skos/core#broader> <http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014/2> ;
+	<http://www.w3.org/2004/02/skos/core#inScheme> <http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014> .
+
+<http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014/221> <http://www.w3.org/2004/02/skos/core#notation> "221" ;
+	<http://www.w3.org/2004/02/skos/core#prefLabel> "ΕΚΤΑΚΤΑ ΕΣΟΔΑ ΠΑΡΕΛΘΟΝΤΩΝ ΟΙΚΟΝΟΜΙΚΩΝ ΕΤΩΝ ΠΟΥ ΒΕΒΑΙΩΝΟΝΤΑΙ ΚΑΙ ΕΙΣΠΡΑΤΤΟΝΤΑΙ ΓΙΑ ΠΡΩΤΗ ΦΟΡΑ"@el ;
+	a <http://www.w3.org/2004/02/skos/core#Concept> ;
+	<http://www.w3.org/2004/02/skos/core#narrower> <http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014/2211> , <http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014/2212> ;
+	<http://www.w3.org/2004/02/skos/core#broader> <http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014/22> ;
+	<http://www.w3.org/2004/02/skos/core#inScheme> <http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014> .
+
+<http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014/2211> <http://www.w3.org/2004/02/skos/core#notation> "2211" ;
+	<http://www.w3.org/2004/02/skos/core#prefLabel> "Έκτακτα γενικά έσοδα"@el ;
+	a <http://www.w3.org/2004/02/skos/core#Concept> ;
+	<http://www.w3.org/2004/02/skos/core#broader> <http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014/221> ;
+	<http://www.w3.org/2004/02/skos/core#inScheme> <http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014> .
+
+<http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014/2212> <http://www.w3.org/2004/02/skos/core#notation> "2212" ;
+	<http://www.w3.org/2004/02/skos/core#prefLabel> "Έκτακτα ειδικευμένα έσοδα"@el ;
+	a <http://www.w3.org/2004/02/skos/core#Concept> ;
+	<http://www.w3.org/2004/02/skos/core#broader> <http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014/221> ;
+	<http://www.w3.org/2004/02/skos/core#inScheme> <http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014> .
+
+<http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014/3> <http://www.w3.org/2004/02/skos/core#notation> "3" ;
+	<http://www.w3.org/2004/02/skos/core#prefLabel> "ΕΙΣΠΡΑΞΕΙΣ ΑΠΟ ΔΑΝΕΙΑ ΚΑΙ ΑΠΑΙΤΗΣΕΙΣ ΑΠΟ Π.Ο.Ε."@el ;
+	a <http://www.w3.org/2004/02/skos/core#Concept> ;
+	<http://www.w3.org/2004/02/skos/core#narrower> <http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014/31> , <http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014/32> ;
+	<http://www.w3.org/2004/02/skos/core#topConceptOf> <http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014> ;
+	<http://www.w3.org/2004/02/skos/core#inScheme> <http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014> .
+
+<http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014/31> <http://www.w3.org/2004/02/skos/core#notation> "31" ;
+	<http://www.w3.org/2004/02/skos/core#prefLabel> "ΕΙΣΠΡΑΞΕΙΣ ΑΠΟ ΔΑΝΕΙΑ"@el ;
+	a <http://www.w3.org/2004/02/skos/core#Concept> ;
+	<http://www.w3.org/2004/02/skos/core#narrower> <http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014/311> , <http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014/312> ;
+	<http://www.w3.org/2004/02/skos/core#broader> <http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014/3> ;
+	<http://www.w3.org/2004/02/skos/core#inScheme> <http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014> .
+
+<http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014/311> <http://www.w3.org/2004/02/skos/core#notation> "311" ;
+	<http://www.w3.org/2004/02/skos/core#prefLabel> "ΔΑΝΕΙΑ ΓΙΑ ΚΑΛΥΨΗ ΛΕΙΤΟΥΡΓΙΚΩΝ ΔΑΠΑΝΩΝ"@el ;
+	a <http://www.w3.org/2004/02/skos/core#Concept> ;
+	<http://www.w3.org/2004/02/skos/core#narrower> <http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014/3111> , <http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014/3112> ;
+	<http://www.w3.org/2004/02/skos/core#broader> <http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014/31> ;
+	<http://www.w3.org/2004/02/skos/core#inScheme> <http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014> .
+
+<http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014/3111> <http://www.w3.org/2004/02/skos/core#notation> "3111" ;
+	<http://www.w3.org/2004/02/skos/core#prefLabel> "Δάνεια Ταμείου Παρακαταθηκών και Δανείων"@el ;
+	a <http://www.w3.org/2004/02/skos/core#Concept> ;
+	<http://www.w3.org/2004/02/skos/core#broader> <http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014/311> ;
+	<http://www.w3.org/2004/02/skos/core#inScheme> <http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014> .
+
+<http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014/3112> <http://www.w3.org/2004/02/skos/core#notation> "3112" ;
+	<http://www.w3.org/2004/02/skos/core#prefLabel> "Δάνεια από άλλους πιστωτικούς οργανισμούς της ημεδαπής ή της αλλοδαπής (άρθρο 11 Ν 2503/97)"@el ;
+	a <http://www.w3.org/2004/02/skos/core#Concept> ;
+	<http://www.w3.org/2004/02/skos/core#broader> <http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014/311> ;
+	<http://www.w3.org/2004/02/skos/core#inScheme> <http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014> .
+
+<http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014/312> <http://www.w3.org/2004/02/skos/core#notation> "312" ;
+	<http://www.w3.org/2004/02/skos/core#prefLabel> "ΔΑΝΕΙΑ ΓΙΑ ΚΑΛΥΨΗ ΕΠΕΝΔΥΤΙΚΩΝ ΔΑΠΑΝΩΝ"@el ;
+	a <http://www.w3.org/2004/02/skos/core#Concept> ;
+	<http://www.w3.org/2004/02/skos/core#narrower> <http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014/3121> , <http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014/3122> ;
+	<http://www.w3.org/2004/02/skos/core#broader> <http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014/31> ;
+	<http://www.w3.org/2004/02/skos/core#inScheme> <http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014> .
+
+<http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014/3121> <http://www.w3.org/2004/02/skos/core#notation> "3121" ;
+	<http://www.w3.org/2004/02/skos/core#prefLabel> "Δάνεια του Ταμείου Παρακαταθηκών και Δανείων"@el ;
+	a <http://www.w3.org/2004/02/skos/core#Concept> ;
+	<http://www.w3.org/2004/02/skos/core#broader> <http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014/312> ;
+	<http://www.w3.org/2004/02/skos/core#inScheme> <http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014> .
+
+<http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014/3122> <http://www.w3.org/2004/02/skos/core#notation> "3122" ;
+	<http://www.w3.org/2004/02/skos/core#prefLabel> "Δάνεια από άλλους πιστωτικούς οργανισμούς της ημεδαπής ή της αλλοδαπής (άρθρο 11 Ν 2503/97)"@el ;
+	a <http://www.w3.org/2004/02/skos/core#Concept> ;
+	<http://www.w3.org/2004/02/skos/core#broader> <http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014/312> ;
+	<http://www.w3.org/2004/02/skos/core#inScheme> <http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014> .
+
+<http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014/32> <http://www.w3.org/2004/02/skos/core#notation> "32" ;
+	<http://www.w3.org/2004/02/skos/core#prefLabel> "ΕΙΣΠΡΑΚΤΕΑ ΥΠΟΛΟΙΠΑ ΑΠΟ ΒΕΒΑΙΩΘΕΝΤΑ ΕΣΟΔΑ ΚΑΤΑ ΤΑ ΠΑΡΕΛΘΟΝΤΑ ΕΤΗ"@el ;
+	a <http://www.w3.org/2004/02/skos/core#Concept> ;
+	<http://www.w3.org/2004/02/skos/core#narrower> <http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014/321> ;
+	<http://www.w3.org/2004/02/skos/core#broader> <http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014/3> ;
+	<http://www.w3.org/2004/02/skos/core#inScheme> <http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014> .
+
+<http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014/321> <http://www.w3.org/2004/02/skos/core#notation> "321" ;
+	<http://www.w3.org/2004/02/skos/core#prefLabel> "ΕΙΣΠΡΑΚΤΕΑ ΥΠΟΛΟΙΠΑ ΑΠΟ ΒΕΒΑΙΩΘΕΝΤΑ ΚΑΤΑ ΤΑ ΠΑΡΕΛΘΟΝΤΑ ΟΙΚΟΝΟΜΙΚΑ ΕΤΗ ΤΑΚΤΙΚΑ ΕΣΟΔΑ"@el ;
+	a <http://www.w3.org/2004/02/skos/core#Concept> ;
+	<http://www.w3.org/2004/02/skos/core#narrower> <http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014/3211> , <http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014/3212> , <http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014/3213> , <http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014/3214> , <http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014/3215> , <http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014/3216> , <http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014/3217> , <http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014/3218> ;
+	<http://www.w3.org/2004/02/skos/core#broader> <http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014/32> ;
+	<http://www.w3.org/2004/02/skos/core#inScheme> <http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014> .
+
+<http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014/3211> <http://www.w3.org/2004/02/skos/core#notation> "3211" ;
+	<http://www.w3.org/2004/02/skos/core#prefLabel> "Τέλη καθαριότητας και ηλεκτροφωτισμού"@el ;
+	a <http://www.w3.org/2004/02/skos/core#Concept> ;
+	<http://www.w3.org/2004/02/skos/core#broader> <http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014/321> ;
+	<http://www.w3.org/2004/02/skos/core#inScheme> <http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014> .
+
+<http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014/3212> <http://www.w3.org/2004/02/skos/core#notation> "3212" ;
+	<http://www.w3.org/2004/02/skos/core#prefLabel> "Τέλη και δικαιώματα ύδρευσης"@el ;
+	a <http://www.w3.org/2004/02/skos/core#Concept> ;
+	<http://www.w3.org/2004/02/skos/core#broader> <http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014/321> ;
+	<http://www.w3.org/2004/02/skos/core#inScheme> <http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014> .
+
+<http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014/3213> <http://www.w3.org/2004/02/skos/core#notation> "3213" ;
+	<http://www.w3.org/2004/02/skos/core#prefLabel> "Τέλη και δικαιώματα άρδευσης"@el ;
+	a <http://www.w3.org/2004/02/skos/core#Concept> ;
+	<http://www.w3.org/2004/02/skos/core#broader> <http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014/321> ;
+	<http://www.w3.org/2004/02/skos/core#inScheme> <http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014> .
+
+<http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014/3214> <http://www.w3.org/2004/02/skos/core#notation> "3214" ;
+	<http://www.w3.org/2004/02/skos/core#prefLabel> "Τέλη και δικαιώματα αποχέτευσης"@el ;
+	a <http://www.w3.org/2004/02/skos/core#Concept> ;
+	<http://www.w3.org/2004/02/skos/core#broader> <http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014/321> ;
+	<http://www.w3.org/2004/02/skos/core#inScheme> <http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014> .
+
+<http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014/3215> <http://www.w3.org/2004/02/skos/core#notation> "3215" ;
+	<http://www.w3.org/2004/02/skos/core#prefLabel> "Τέλος ακίνητης περιουσίας"@el ;
+	a <http://www.w3.org/2004/02/skos/core#Concept> ;
+	<http://www.w3.org/2004/02/skos/core#broader> <http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014/321> ;
+	<http://www.w3.org/2004/02/skos/core#inScheme> <http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014> .
+
+<http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014/3216> <http://www.w3.org/2004/02/skos/core#notation> "3216" ;
+	<http://www.w3.org/2004/02/skos/core#prefLabel> "Δυνητικά ανταποδοτικά τέλη και εισφορές"@el ;
+	a <http://www.w3.org/2004/02/skos/core#Concept> ;
+	<http://www.w3.org/2004/02/skos/core#broader> <http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014/321> ;
+	<http://www.w3.org/2004/02/skos/core#inScheme> <http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014> .
+
+<http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014/3217> <http://www.w3.org/2004/02/skos/core#notation> "3217" ;
+	<http://www.w3.org/2004/02/skos/core#prefLabel> "Εισφορά λόγω ένταξης ή επέκτασης πολεοδομικών σχεδίων"@el ;
+	a <http://www.w3.org/2004/02/skos/core#Concept> ;
+	<http://www.w3.org/2004/02/skos/core#broader> <http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014/321> ;
+	<http://www.w3.org/2004/02/skos/core#inScheme> <http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014> .
+
+<http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014/3218> <http://www.w3.org/2004/02/skos/core#notation> "3218" ;
+	<http://www.w3.org/2004/02/skos/core#prefLabel> "Τακτικά έσοδα απί των ακαθαρίστων εσόδων επιτηδευματιών"@el ;
+	a <http://www.w3.org/2004/02/skos/core#Concept> ;
+	<http://www.w3.org/2004/02/skos/core#broader> <http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014/321> ;
+	<http://www.w3.org/2004/02/skos/core#inScheme> <http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014> .
+
+<http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014/3221> <http://www.w3.org/2004/02/skos/core#notation> "3221" ;
+	<http://www.w3.org/2004/02/skos/core#prefLabel> "Έκτακτα γενικά έσοδα"@el ;
+	a <http://www.w3.org/2004/02/skos/core#Concept> ;
+	<http://www.w3.org/2004/02/skos/core#inScheme> <http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014> .
+
+<http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014/3222> <http://www.w3.org/2004/02/skos/core#notation> "3222" ;
+	<http://www.w3.org/2004/02/skos/core#prefLabel> "Έκτακτα ειδικευμένα έσοδα"@el ;
+	a <http://www.w3.org/2004/02/skos/core#Concept> ;
+	<http://www.w3.org/2004/02/skos/core#inScheme> <http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014> .
+
+<http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014/4> <http://www.w3.org/2004/02/skos/core#notation> "4" ;
+	<http://www.w3.org/2004/02/skos/core#prefLabel> "ΕΙΣΠΡΑΞΕΙΣ ΥΠΕΡ ΤΟΥ ΔΗΜΟΣΙΟΥ ΚΑΙ ΤΡΙΤΩΝ ΚΑΙ ΕΠΙΣΤΡΟΦΕΣ ΧΡΗΜΑΤΩΝ"@el ;
+	a <http://www.w3.org/2004/02/skos/core#Concept> ;
+	<http://www.w3.org/2004/02/skos/core#narrower> <http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014/41> , <http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014/42> ;
+	<http://www.w3.org/2004/02/skos/core#topConceptOf> <http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014> ;
+	<http://www.w3.org/2004/02/skos/core#inScheme> <http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014> .
+
+<http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014/41> <http://www.w3.org/2004/02/skos/core#notation> "41" ;
+	<http://www.w3.org/2004/02/skos/core#prefLabel> "ΕΙΣΠΡΑΞΕΙΣ ΥΠΕΡ ΤΟΥ ΔΗΜΟΣΙΟΥ ΚΑΙ ΤΡΙΤΩΝ"@el ;
+	a <http://www.w3.org/2004/02/skos/core#Concept> ;
+	<http://www.w3.org/2004/02/skos/core#narrower> <http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014/411> , <http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014/412> , <http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014/413> , <http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014/414> ;
+	<http://www.w3.org/2004/02/skos/core#broader> <http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014/4> ;
+	<http://www.w3.org/2004/02/skos/core#inScheme> <http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014> .
+
+<http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014/411> <http://www.w3.org/2004/02/skos/core#notation> "411" ;
+	<http://www.w3.org/2004/02/skos/core#prefLabel> "ΣΥΝΤΑΞΙΟΔΟΤΙΚΕΣ ΕΙΣΦΟΡΕΣ"@el ;
+	a <http://www.w3.org/2004/02/skos/core#Concept> ;
+	<http://www.w3.org/2004/02/skos/core#narrower> <http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014/4111> , <http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014/4112> ;
+	<http://www.w3.org/2004/02/skos/core#broader> <http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014/41> ;
+	<http://www.w3.org/2004/02/skos/core#inScheme> <http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014> .
+
+<http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014/4111> <http://www.w3.org/2004/02/skos/core#notation> "4111" ;
+	<http://www.w3.org/2004/02/skos/core#prefLabel> "Εισφορά υπέρ του Δημοσίου στις αποδοχές και τα έξοδα παράστασης"@el ;
+	a <http://www.w3.org/2004/02/skos/core#Concept> ;
+	<http://www.w3.org/2004/02/skos/core#broader> <http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014/411> ;
+	<http://www.w3.org/2004/02/skos/core#inScheme> <http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014> .
+
+<http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014/4112> <http://www.w3.org/2004/02/skos/core#notation> "4112" ;
+	<http://www.w3.org/2004/02/skos/core#prefLabel> "Εξαγορά συντάξιμης υπηρεσίας"@el ;
+	a <http://www.w3.org/2004/02/skos/core#Concept> ;
+	<http://www.w3.org/2004/02/skos/core#broader> <http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014/411> ;
+	<http://www.w3.org/2004/02/skos/core#inScheme> <http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014> .
+
+<http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014/412> <http://www.w3.org/2004/02/skos/core#notation> "412" ;
+	<http://www.w3.org/2004/02/skos/core#prefLabel> "ΦΟΡΟΙ ΚΑΙ ΛΟΙΠΕΣ ΕΠΙΒΑΡΥΝΣΕΙΣ"@el ;
+	a <http://www.w3.org/2004/02/skos/core#Concept> ;
+	<http://www.w3.org/2004/02/skos/core#narrower> <http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014/4121> , <http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014/4122> , <http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014/4123> , <http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014/4124> ;
+	<http://www.w3.org/2004/02/skos/core#broader> <http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014/41> ;
+	<http://www.w3.org/2004/02/skos/core#inScheme> <http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014> .
+
+<http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014/4121> <http://www.w3.org/2004/02/skos/core#notation> "4121" ;
+	<http://www.w3.org/2004/02/skos/core#prefLabel> "Φόροι μισθωτών υπηρεσιών"@el ;
+	a <http://www.w3.org/2004/02/skos/core#Concept> ;
+	<http://www.w3.org/2004/02/skos/core#broader> <http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014/412> ;
+	<http://www.w3.org/2004/02/skos/core#inScheme> <http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014> .
+
+<http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014/4122> <http://www.w3.org/2004/02/skos/core#notation> "4122" ;
+	<http://www.w3.org/2004/02/skos/core#prefLabel> "Φόροι και χαρτόσημο Δημάρχων Αντιδημάρχων, μελών Δημοτικών Συμβουλίων και λοιπών συλλογικών οργάνων"@el ;
+	a <http://www.w3.org/2004/02/skos/core#Concept> ;
+	<http://www.w3.org/2004/02/skos/core#broader> <http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014/412> ;
+	<http://www.w3.org/2004/02/skos/core#inScheme> <http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014> .
+
+<http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014/4123> <http://www.w3.org/2004/02/skos/core#notation> "4123" ;
+	<http://www.w3.org/2004/02/skos/core#prefLabel> "Φόρων προμηθευτών εργολάβων ελ. Επαγγελματιών κλπ"@el ;
+	a <http://www.w3.org/2004/02/skos/core#Concept> ;
+	<http://www.w3.org/2004/02/skos/core#broader> <http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014/412> ;
+	<http://www.w3.org/2004/02/skos/core#inScheme> <http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014> .
+
+<http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014/4124> <http://www.w3.org/2004/02/skos/core#notation> "4124" ;
+	<http://www.w3.org/2004/02/skos/core#prefLabel> "Λοιπές κρατήσεις υπέρ του Δημοσίου"@el ;
+	a <http://www.w3.org/2004/02/skos/core#Concept> ;
+	<http://www.w3.org/2004/02/skos/core#broader> <http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014/412> ;
+	<http://www.w3.org/2004/02/skos/core#inScheme> <http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014> .
+
+<http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014/413> <http://www.w3.org/2004/02/skos/core#notation> "413" ;
+	<http://www.w3.org/2004/02/skos/core#prefLabel> "ΑΣΦΑΛΙΣΤΙΚΕΣ ΕΙΣΦΟΡΕΣ"@el ;
+	a <http://www.w3.org/2004/02/skos/core#Concept> ;
+	<http://www.w3.org/2004/02/skos/core#narrower> <http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014/4131> , <http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014/4132> ;
+	<http://www.w3.org/2004/02/skos/core#broader> <http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014/41> ;
+	<http://www.w3.org/2004/02/skos/core#inScheme> <http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014> .
+
+<http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014/4131> <http://www.w3.org/2004/02/skos/core#notation> "4131" ;
+	<http://www.w3.org/2004/02/skos/core#prefLabel> "Εισφορές σε ασφαλιστικούς οργανισμούς και ταμεία"@el ;
+	a <http://www.w3.org/2004/02/skos/core#Concept> ;
+	<http://www.w3.org/2004/02/skos/core#broader> <http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014/413> ;
+	<http://www.w3.org/2004/02/skos/core#inScheme> <http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014> .
+
+<http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014/4132> <http://www.w3.org/2004/02/skos/core#notation> "4132" ;
+	<http://www.w3.org/2004/02/skos/core#prefLabel> "Εισφορά για το εφάπαξ βοήθημα του Ν 103/75"@el ;
+	a <http://www.w3.org/2004/02/skos/core#Concept> ;
+	<http://www.w3.org/2004/02/skos/core#broader> <http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014/413> ;
+	<http://www.w3.org/2004/02/skos/core#inScheme> <http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014> .
+
+<http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014/414> <http://www.w3.org/2004/02/skos/core#notation> "414" ;
+	<http://www.w3.org/2004/02/skos/core#prefLabel> "ΛΟΙΠΕΣ ΕΙΣΠΡΑΞΕΙΣ ΥΠΕΡ ΤΡΙΤΩΝ"@el ;
+	a <http://www.w3.org/2004/02/skos/core#Concept> ;
+	<http://www.w3.org/2004/02/skos/core#narrower> <http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014/4141> , <http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014/4142> ;
+	<http://www.w3.org/2004/02/skos/core#broader> <http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014/41> ;
+	<http://www.w3.org/2004/02/skos/core#inScheme> <http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014> .
+
+<http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014/4141> <http://www.w3.org/2004/02/skos/core#notation> "4141" ;
+	<http://www.w3.org/2004/02/skos/core#prefLabel> "Κρατήσεις στις αποδοχές για την εξόφληση δανείων του ΤΠ & Δ"@el ;
+	a <http://www.w3.org/2004/02/skos/core#Concept> ;
+	<http://www.w3.org/2004/02/skos/core#broader> <http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014/414> ;
+	<http://www.w3.org/2004/02/skos/core#inScheme> <http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014> .
+
+<http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014/4142> <http://www.w3.org/2004/02/skos/core#notation> "4142" ;
+	<http://www.w3.org/2004/02/skos/core#prefLabel> "Λοιπές κρατήσεις υπέρ τρίτων"@el ;
+	a <http://www.w3.org/2004/02/skos/core#Concept> ;
+	<http://www.w3.org/2004/02/skos/core#broader> <http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014/414> ;
+	<http://www.w3.org/2004/02/skos/core#inScheme> <http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014> .
+
+<http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014/42> <http://www.w3.org/2004/02/skos/core#notation> "42" ;
+	<http://www.w3.org/2004/02/skos/core#prefLabel> "ΕΠΙΣΤΡΟΦΕΣ ΧΡΗΜΑΤΩΝ"@el ;
+	a <http://www.w3.org/2004/02/skos/core#Concept> ;
+	<http://www.w3.org/2004/02/skos/core#narrower> <http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014/421> ;
+	<http://www.w3.org/2004/02/skos/core#broader> <http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014/4> ;
+	<http://www.w3.org/2004/02/skos/core#inScheme> <http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014> .
+
+<http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014/421> <http://www.w3.org/2004/02/skos/core#notation> "421" ;
+	<http://www.w3.org/2004/02/skos/core#prefLabel> "ΕΠΙΣΤΡΟΦΕΣ ΧΡΗΜΑΤΩΝ"@el ;
+	a <http://www.w3.org/2004/02/skos/core#Concept> ;
+	<http://www.w3.org/2004/02/skos/core#narrower> <http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014/4211> , <http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014/4212> , <http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014/4213> , <http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014/4218> , <http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014/4219> ;
+	<http://www.w3.org/2004/02/skos/core#broader> <http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014/42> ;
+	<http://www.w3.org/2004/02/skos/core#inScheme> <http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014> .
+
+<http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014/4211> <http://www.w3.org/2004/02/skos/core#notation> "4211" ;
+	<http://www.w3.org/2004/02/skos/core#prefLabel> "Επιστροφή χρημάτων από υπολόγους χρηματικών ενταλμάτων προπληρωμής"@el ;
+	a <http://www.w3.org/2004/02/skos/core#Concept> ;
+	<http://www.w3.org/2004/02/skos/core#broader> <http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014/421> ;
+	<http://www.w3.org/2004/02/skos/core#inScheme> <http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014> .
+
+<http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014/4212> <http://www.w3.org/2004/02/skos/core#notation> "4212" ;
+	<http://www.w3.org/2004/02/skos/core#prefLabel> "Επιστροφή πάγιας προκαταβολής"@el ;
+	a <http://www.w3.org/2004/02/skos/core#Concept> ;
+	<http://www.w3.org/2004/02/skos/core#broader> <http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014/421> ;
+	<http://www.w3.org/2004/02/skos/core#inScheme> <http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014> .
+
+<http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014/4213> <http://www.w3.org/2004/02/skos/core#notation> "4213" ;
+	<http://www.w3.org/2004/02/skos/core#prefLabel> "Επιστροφή αχρεωστήτων καταβληθέντων χρηματικών ποσών (άρθρο 26 Ν "@el ;
+	a <http://www.w3.org/2004/02/skos/core#Concept> ;
+	<http://www.w3.org/2004/02/skos/core#broader> <http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014/421> ;
+	<http://www.w3.org/2004/02/skos/core#inScheme> <http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014> .
+
+<http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014/4218> <http://www.w3.org/2004/02/skos/core#notation> "4218" ;
+	<http://www.w3.org/2004/02/skos/core#prefLabel> "Επιστροφή χρημάτων από δημοτικές επιχειρήσεις έπειτα από κατάπτωση των υπέρ αυτών εγυήσεων"@el ;
+	a <http://www.w3.org/2004/02/skos/core#Concept> ;
+	<http://www.w3.org/2004/02/skos/core#broader> <http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014/421> ;
+	<http://www.w3.org/2004/02/skos/core#inScheme> <http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014> .
+
+<http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014/4219> <http://www.w3.org/2004/02/skos/core#notation> "4219" ;
+	<http://www.w3.org/2004/02/skos/core#prefLabel> "Επιστροφή εν γένει χρημάτων"@el ;
+	a <http://www.w3.org/2004/02/skos/core#Concept> ;
+	<http://www.w3.org/2004/02/skos/core#broader> <http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014/421> ;
+	<http://www.w3.org/2004/02/skos/core#inScheme> <http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014> .
+
+<http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014/5> <http://www.w3.org/2004/02/skos/core#notation> "5" ;
+	<http://www.w3.org/2004/02/skos/core#prefLabel> "ΧΡΗΜΑΤΙΚΟ ΥΠΟΛΟΙΠΟ"@el ;
+	a <http://www.w3.org/2004/02/skos/core#Concept> ;
+	<http://www.w3.org/2004/02/skos/core#narrower> <http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014/51> ;
+	<http://www.w3.org/2004/02/skos/core#topConceptOf> <http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014> ;
+	<http://www.w3.org/2004/02/skos/core#inScheme> <http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014> .
+
+<http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014/51> <http://www.w3.org/2004/02/skos/core#notation> "51" ;
+	<http://www.w3.org/2004/02/skos/core#prefLabel> "ΧΡΗΜΑΤΙΚΟ ΥΠΟΛΟΙΠΟ ΠΡΟΗΓΟΥΜΕΝΗΣ ΧΡΗΣΗΣ"@el ;
+	a <http://www.w3.org/2004/02/skos/core#Concept> ;
+	<http://www.w3.org/2004/02/skos/core#narrower> <http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014/511> , <http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014/512> ;
+	<http://www.w3.org/2004/02/skos/core#broader> <http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014/5> ;
+	<http://www.w3.org/2004/02/skos/core#inScheme> <http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014> .
+
+<http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014/511> <http://www.w3.org/2004/02/skos/core#notation> "511" ;
+	<http://www.w3.org/2004/02/skos/core#prefLabel> "ΧΡΗΜΑΤΙΚΟ ΥΠΟΛΟΙΠΟ ΠΡΟΕΡΧΟΜΕΝΟ ΑΠΟ ΤΑΚΤΙΚΑ ΕΣΟΔΑ"@el ;
+	a <http://www.w3.org/2004/02/skos/core#Concept> ;
+	<http://www.w3.org/2004/02/skos/core#narrower> <http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014/5111> , <http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014/5112> , <http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014/5113> , <http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014/5119> ;
+	<http://www.w3.org/2004/02/skos/core#broader> <http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014/51> ;
+	<http://www.w3.org/2004/02/skos/core#inScheme> <http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014> .
+
+<http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014/5111> <http://www.w3.org/2004/02/skos/core#notation> "5111" ;
+	<http://www.w3.org/2004/02/skos/core#prefLabel> "Χρηματικό υπόλοιπο προερχόμενο από τακτικά έσοδα για την κάλυψη υποχρεώσεων  παρελθόντων ετών"@el ;
+	a <http://www.w3.org/2004/02/skos/core#Concept> ;
+	<http://www.w3.org/2004/02/skos/core#broader> <http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014/511> ;
+	<http://www.w3.org/2004/02/skos/core#inScheme> <http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014> .
+
+<http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014/5112> <http://www.w3.org/2004/02/skos/core#notation> "5112" ;
+	<http://www.w3.org/2004/02/skos/core#prefLabel> "Χρηματικό υπόλοιπο προερχόμενο από τακτικά έσοδα για την κάλυψη έργων του Π.Δ.Ε. ή πιστώσεις προοριζόμενες για δημόσιες επενδύσεις"@el ;
+	a <http://www.w3.org/2004/02/skos/core#Concept> ;
+	<http://www.w3.org/2004/02/skos/core#broader> <http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014/511> ;
+	<http://www.w3.org/2004/02/skos/core#inScheme> <http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014> .
+
+<http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014/5113> <http://www.w3.org/2004/02/skos/core#notation> "5113" ;
+	<http://www.w3.org/2004/02/skos/core#prefLabel> "χρηματικό υπόλοιπο προερχόμενο από τακτικά έσοδα για την κάλυψη ειδικευμένων δαπανών"@el ;
+	a <http://www.w3.org/2004/02/skos/core#Concept> ;
+	<http://www.w3.org/2004/02/skos/core#broader> <http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014/511> ;
+	<http://www.w3.org/2004/02/skos/core#inScheme> <http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014> .
+
+<http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014/5119> <http://www.w3.org/2004/02/skos/core#notation> "5119" ;
+	<http://www.w3.org/2004/02/skos/core#prefLabel> "χρηματικό υπόλοιπο προερχόμενο από τακτικά έσοδα για την κάλυψη εν γένει δαπανών του δήμου"@el ;
+	a <http://www.w3.org/2004/02/skos/core#Concept> ;
+	<http://www.w3.org/2004/02/skos/core#broader> <http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014/511> ;
+	<http://www.w3.org/2004/02/skos/core#inScheme> <http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014> .
+
+<http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014/512> <http://www.w3.org/2004/02/skos/core#notation> "512" ;
+	<http://www.w3.org/2004/02/skos/core#prefLabel> "ΧΡΗΜΑΤΙΚΟ ΥΠΟΛΟΙΠΟ ΠΡΟΕΡΧΟΜΕΝΟ ΑΠΟ ΕΚΤΑΚΤΑ ΕΣΟΔΑ"@el ;
+	a <http://www.w3.org/2004/02/skos/core#Concept> ;
+	<http://www.w3.org/2004/02/skos/core#narrower> <http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014/5121> , <http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014/5122> , <http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014/5123> ;
+	<http://www.w3.org/2004/02/skos/core#broader> <http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014/51> ;
+	<http://www.w3.org/2004/02/skos/core#inScheme> <http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014> .
+
+<http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014/5121> <http://www.w3.org/2004/02/skos/core#notation> "5121" ;
+	<http://www.w3.org/2004/02/skos/core#prefLabel> "Χρηματικό υπόλοιπο προερχόμενο από έκτακτα έσοδα για την κάλυψη υποχρεώσεων  παρελθόντων ετών"@el ;
+	a <http://www.w3.org/2004/02/skos/core#Concept> ;
+	<http://www.w3.org/2004/02/skos/core#broader> <http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014/512> ;
+	<http://www.w3.org/2004/02/skos/core#inScheme> <http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014> .
+
+<http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014/5122> <http://www.w3.org/2004/02/skos/core#notation> "5122" ;
+	<http://www.w3.org/2004/02/skos/core#prefLabel> "Χρηματικό υπόλοιπο προερχόμενο από έκτακτα έσοδα για την κάλυψη έργων του Π.Δ.Ε. ή πιστώσεις προοριζόμενες για δημόσιες επενδύσεις"@el ;
+	a <http://www.w3.org/2004/02/skos/core#Concept> ;
+	<http://www.w3.org/2004/02/skos/core#broader> <http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014/512> ;
+	<http://www.w3.org/2004/02/skos/core#inScheme> <http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014> .
+	
+<http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014/5122> <http://www.w3.org/2004/02/skos/core#notation> "missing" ;
+	<http://www.w3.org/2004/02/skos/core#prefLabel> "missing"@el ;
+	a <http://www.w3.org/2004/02/skos/core#Concept> ;
+	<http://www.w3.org/2004/02/skos/core#topConceptOf> <http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014> ;
+	<http://www.w3.org/2004/02/skos/core#inScheme> <http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014> .
+
+<http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014/5123> <http://www.w3.org/2004/02/skos/core#notation> "5123" ;
+	<http://www.w3.org/2004/02/skos/core#prefLabel> "χρηματικό υπόλοιπο προερχόμενο από έκτακτα  έσοδα για την κάλυψη ειδικευμένων δαπανών"@el ;
+	a <http://www.w3.org/2004/02/skos/core#Concept> ;
+	<http://www.w3.org/2004/02/skos/core#broader> <http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014/512> ;
+	<http://www.w3.org/2004/02/skos/core#inScheme> <http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014> .
+
+<http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014> a <http://www.w3.org/2004/02/skos/core#ConceptScheme> ;
+	rdfs:label "Numerical codes for the representation of Greek Municipalities Revenue of fiscal year 2014"@en ;
+	<http://www.w3.org/2004/02/skos/core#hasTopConcept> <http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014/0> , <http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014/1> , <http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014/2> , <http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014/3> , <http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014/4> , <http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014/5> , <http://data.openbudgets.eu/resource/codelist/kae-ota-esodwn-2014/missing> .

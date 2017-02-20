@@ -1,0 +1,102 @@
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix sesame: <http://www.openrdf.org/schema/sesame#> .
+@prefix fn: <http://www.w3.org/2005/xpath-functions#> .
+<http://data.openbudgets.eu/resource/codelist/kae-ota-administration-2014> {
+<http://data.openbudgets.eu/resource/codelist/kae-ota-administration-2014/00> <http://www.w3.org/2004/02/skos/core#notation> "00" ;
+	<http://www.w3.org/2004/02/skos/core#prefLabel> "ΓΕΝΙΚΕΣ ΥΠΗΡΕΣΙΕΣ"@el ;
+	<http://www.w3.org/2004/02/skos/core#altLabel> "Γενικές υπηρεσίες"@el ;
+	a <http://www.w3.org/2004/02/skos/core#Concept> ;
+	<http://www.w3.org/2004/02/skos/core#topConceptOf> <http://data.openbudgets.eu/resource/codelist/kae-ota-administration-2014> ;
+	<http://www.w3.org/2004/02/skos/core#inScheme> <http://data.openbudgets.eu/resource/codelist/kae-ota-administration-2014> .
+
+<http://data.openbudgets.eu/resource/codelist/kae-ota-administration-2014/10> <http://www.w3.org/2004/02/skos/core#notation> "10" ;
+	<http://www.w3.org/2004/02/skos/core#prefLabel> "ΟΙΚΟΝΟΜΙΚΕΣ ΚΑΙ ΔΙΟΙΚΗΤΙΚΕΣ ΥΠΗΡΕΣΙΕΣ"@el ;
+	<http://www.w3.org/2004/02/skos/core#altLabel> "Οικονομικές και Διοικητικές υπηρεσίες"@el ;
+	a <http://www.w3.org/2004/02/skos/core#Concept> ;
+	<http://www.w3.org/2004/02/skos/core#topConceptOf> <http://data.openbudgets.eu/resource/codelist/kae-ota-administration-2014> ;
+	<http://www.w3.org/2004/02/skos/core#inScheme> <http://data.openbudgets.eu/resource/codelist/kae-ota-administration-2014> .
+
+<http://data.openbudgets.eu/resource/codelist/kae-ota-administration-2014/15> <http://www.w3.org/2004/02/skos/core#notation> "15" ;
+	<http://www.w3.org/2004/02/skos/core#prefLabel> "ΥΠΗΡΕΣΙΕΣ ΠΟΛΙΤΙΣΜΟΥ, ΑΘΛΗΤΙΣΜΟΥ ΚΑΙ ΚΟΙΝΩΝΙΚΗΣ ΠΟΛΙΤΙΚΗΣ"@el ;
+	<http://www.w3.org/2004/02/skos/core#altLabel> "Υπηρεσίες Πολιτισμού, Αθλητισμού και κοινωνικής πολιτικής"@el ;
+	a <http://www.w3.org/2004/02/skos/core#Concept> ;
+	<http://www.w3.org/2004/02/skos/core#topConceptOf> <http://data.openbudgets.eu/resource/codelist/kae-ota-administration-2014> ;
+	<http://www.w3.org/2004/02/skos/core#inScheme> <http://data.openbudgets.eu/resource/codelist/kae-ota-administration-2014> .
+
+<http://data.openbudgets.eu/resource/codelist/kae-ota-administration-2014/20> <http://www.w3.org/2004/02/skos/core#notation> "20" ;
+	<http://www.w3.org/2004/02/skos/core#prefLabel> "ΥΠΗΡΕΣΙΕΣ ΚΑΘΑΡΙΟΤΗΤΑΣ ΚΑΙ ΗΛΕΚΤΡΟΦΩΤΙΣΜΟΥ"@el ;
+	<http://www.w3.org/2004/02/skos/core#altLabel> "Υπηρεσία καθαριότητας και ηλεκτροφωτισμού"@el ;
+	a <http://www.w3.org/2004/02/skos/core#Concept> ;
+	<http://www.w3.org/2004/02/skos/core#topConceptOf> <http://data.openbudgets.eu/resource/codelist/kae-ota-administration-2014> ;
+	<http://www.w3.org/2004/02/skos/core#inScheme> <http://data.openbudgets.eu/resource/codelist/kae-ota-administration-2014> .
+
+<http://data.openbudgets.eu/resource/codelist/kae-ota-administration-2014/25> <http://www.w3.org/2004/02/skos/core#notation> "25" ;
+	<http://www.w3.org/2004/02/skos/core#prefLabel> "ΥΠΗΡΕΣΙΕΣ ΥΔΡΕΥΣΗΣ, ΑΡΔΕΥΣΗΣ ΚΑΙ ΑΠΟΧΕΤΕΥΣΗΣ"@el ;
+	<http://www.w3.org/2004/02/skos/core#altLabel> "Υπηρεσίες Ύδρευσης, Άρδευσης και Αποχέτευσης"@el ;
+	a <http://www.w3.org/2004/02/skos/core#Concept> ;
+	<http://www.w3.org/2004/02/skos/core#topConceptOf> <http://data.openbudgets.eu/resource/codelist/kae-ota-administration-2014> ;
+	<http://www.w3.org/2004/02/skos/core#inScheme> <http://data.openbudgets.eu/resource/codelist/kae-ota-administration-2014> .
+
+<http://data.openbudgets.eu/resource/codelist/kae-ota-administration-2014/30> <http://www.w3.org/2004/02/skos/core#notation> "30" ;
+	<http://www.w3.org/2004/02/skos/core#prefLabel> "ΥΠΗΡΕΣΙΑ ΤΕΧΝΙΚΩΝ ΕΡΓΩΝ"@el ;
+	<http://www.w3.org/2004/02/skos/core#altLabel> "Υπηρεσία Τεχνικών έργων"@el ;
+	a <http://www.w3.org/2004/02/skos/core#Concept> ;
+	<http://www.w3.org/2004/02/skos/core#topConceptOf> <http://data.openbudgets.eu/resource/codelist/kae-ota-administration-2014> ;
+	<http://www.w3.org/2004/02/skos/core#inScheme> <http://data.openbudgets.eu/resource/codelist/kae-ota-administration-2014> .
+
+<http://data.openbudgets.eu/resource/codelist/kae-ota-administration-2014/35> <http://www.w3.org/2004/02/skos/core#notation> "35" ;
+	<http://www.w3.org/2004/02/skos/core#prefLabel> "ΥΠΗΡΕΣΙΕΣ ΠΡΑΣΙΝΟΥ"@el ;
+	<http://www.w3.org/2004/02/skos/core#altLabel> "Υπηρεσίες πρασίνου"@el ;
+	a <http://www.w3.org/2004/02/skos/core#Concept> ;
+	<http://www.w3.org/2004/02/skos/core#topConceptOf> <http://data.openbudgets.eu/resource/codelist/kae-ota-administration-2014> ;
+	<http://www.w3.org/2004/02/skos/core#inScheme> <http://data.openbudgets.eu/resource/codelist/kae-ota-administration-2014> .
+
+<http://data.openbudgets.eu/resource/codelist/kae-ota-administration-2014/40> <http://www.w3.org/2004/02/skos/core#notation> "40" ;
+	<http://www.w3.org/2004/02/skos/core#prefLabel> "ΥΠΗΡΕΣΙΑ ΠΟΛΕΟΔΟΜΙΑΣ"@el ;
+	<http://www.w3.org/2004/02/skos/core#altLabel> "Υπηρεσία Πολεοδομίας"@el ;
+	a <http://www.w3.org/2004/02/skos/core#Concept> ;
+	<http://www.w3.org/2004/02/skos/core#topConceptOf> <http://data.openbudgets.eu/resource/codelist/kae-ota-administration-2014> ;
+	<http://www.w3.org/2004/02/skos/core#inScheme> <http://data.openbudgets.eu/resource/codelist/kae-ota-administration-2014> .
+
+<http://data.openbudgets.eu/resource/codelist/kae-ota-administration-2014/45> <http://www.w3.org/2004/02/skos/core#notation> "45" ;
+	<http://www.w3.org/2004/02/skos/core#prefLabel> "ΥΠΗΡΕΣΙΑ ΝΕΚΡΟΤΑΦΕΙΩΝ"@el ;
+	<http://www.w3.org/2004/02/skos/core#altLabel> "Υπηρεσία Νεκροταφείων"@el ;
+	a <http://www.w3.org/2004/02/skos/core#Concept> ;
+	<http://www.w3.org/2004/02/skos/core#topConceptOf> <http://data.openbudgets.eu/resource/codelist/kae-ota-administration-2014> ;
+	<http://www.w3.org/2004/02/skos/core#inScheme> <http://data.openbudgets.eu/resource/codelist/kae-ota-administration-2014> .
+
+<http://data.openbudgets.eu/resource/codelist/kae-ota-administration-2014/50> <http://www.w3.org/2004/02/skos/core#notation> "50" ;
+	<http://www.w3.org/2004/02/skos/core#prefLabel> "ΔΗΜΟΤΙΚΗ ΑΣΤΥΝΟΜΙΑ"@el ;
+	<http://www.w3.org/2004/02/skos/core#altLabel> "Δημοτική Αστυνομία"@el ;
+	a <http://www.w3.org/2004/02/skos/core#Concept> ;
+	<http://www.w3.org/2004/02/skos/core#topConceptOf> <http://data.openbudgets.eu/resource/codelist/kae-ota-administration-2014> ;
+	<http://www.w3.org/2004/02/skos/core#inScheme> <http://data.openbudgets.eu/resource/codelist/kae-ota-administration-2014> .
+
+<http://data.openbudgets.eu/resource/codelist/kae-ota-administration-2014/70> <http://www.w3.org/2004/02/skos/core#notation> "70" ;
+	<http://www.w3.org/2004/02/skos/core#prefLabel> "ΛΟΙΠΕΣ ΥΠΗΡΕΣΙΕΣ"@el ;
+	<http://www.w3.org/2004/02/skos/core#altLabel> "Λοιπές Υπηρεσίες"@el ;
+	a <http://www.w3.org/2004/02/skos/core#Concept> ;
+	<http://www.w3.org/2004/02/skos/core#topConceptOf> <http://data.openbudgets.eu/resource/codelist/kae-ota-administration-2014> ;
+	<http://www.w3.org/2004/02/skos/core#inScheme> <http://data.openbudgets.eu/resource/codelist/kae-ota-administration-2014> .
+
+<http://data.openbudgets.eu/resource/codelist/kae-ota-administration-2014/80> <http://www.w3.org/2004/02/skos/core#notation> "80" ;
+	<http://www.w3.org/2004/02/skos/core#prefLabel> "Π.Ο.Ε."@el ;
+	<http://www.w3.org/2004/02/skos/core#altLabel> "ΠΛΗΡΩΜΕΣ Π.Ο.Ε  & ΛΟΙΠΕΣ ΑΠΟΔΟΣΕΙΣ ΚΑΙ ΠΡΟΒΛΕΨΕΙΣ"@el ;
+	a <http://www.w3.org/2004/02/skos/core#Concept> ;
+	<http://www.w3.org/2004/02/skos/core#topConceptOf> <http://data.openbudgets.eu/resource/codelist/kae-ota-administration-2014> ;
+	<http://www.w3.org/2004/02/skos/core#inScheme> <http://data.openbudgets.eu/resource/codelist/kae-ota-administration-2014> .
+
+<http://data.openbudgets.eu/resource/codelist/kae-ota-administration-2014/90> <http://www.w3.org/2004/02/skos/core#notation> "90" ;
+	<http://www.w3.org/2004/02/skos/core#prefLabel> "ΑΠΟΘΕΜΑΤΙΚΟ"@el ;
+	<http://www.w3.org/2004/02/skos/core#altLabel> "Αποθεματικό"@el ;
+	a <http://www.w3.org/2004/02/skos/core#Concept> ;
+	<http://www.w3.org/2004/02/skos/core#topConceptOf> <http://data.openbudgets.eu/resource/codelist/kae-ota-administration-2014> ;
+	<http://www.w3.org/2004/02/skos/core#inScheme> <http://data.openbudgets.eu/resource/codelist/kae-ota-administration-2014> .
+
+<http://data.openbudgets.eu/resource/codelist/kae-ota-administration-2014> a <http://www.w3.org/2004/02/skos/core#ConceptScheme> ;
+	<http://www.w3.org/2004/02/skos/core#hasTopConcept> <http://data.openbudgets.eu/resource/codelist/kae-ota-administration-2014/00> , <http://data.openbudgets.eu/resource/codelist/kae-ota-administration-2014/10> , <http://data.openbudgets.eu/resource/codelist/kae-ota-administration-2014/15> , <http://data.openbudgets.eu/resource/codelist/kae-ota-administration-2014/20> , <http://data.openbudgets.eu/resource/codelist/kae-ota-administration-2014/25> , <http://data.openbudgets.eu/resource/codelist/kae-ota-administration-2014/30> , <http://data.openbudgets.eu/resource/codelist/kae-ota-administration-2014/35> , <http://data.openbudgets.eu/resource/codelist/kae-ota-administration-2014/40> , <http://data.openbudgets.eu/resource/codelist/kae-ota-administration-2014/45> , <http://data.openbudgets.eu/resource/codelist/kae-ota-administration-2014/50> , <http://data.openbudgets.eu/resource/codelist/kae-ota-administration-2014/70> , <http://data.openbudgets.eu/resource/codelist/kae-ota-administration-2014/80> , <http://data.openbudgets.eu/resource/codelist/kae-ota-administration-2014/90> ;
+	rdfs:label "Numerical codes for the representation of Greek Municipalities Administration Offices of fiscal year 2014"@en .
+}
