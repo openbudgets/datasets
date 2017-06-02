@@ -10,7 +10,7 @@
 @prefix obeu-budgetphase: <http://data.openbudgets.eu/resource/codelist/budget-phase/> .
 @prefix obeu-codelist:    <http://data.openbudgets.eu/resource/codelist/> .
 @prefix nsrf-gr-optional:		  <http://data.openbudgets.eu/ontology/dsd/nsrf-GR/optional-property/> .
-@prefix  nsrf-gr-dimension: <http://data.openbudgets.eu/ontology/dsd/nsrf-GR/dimension/> .
+@prefix nsrf-gr-dimension: <http://data.openbudgets.eu/ontology/dsd/nsrf-GR/dimension/> .
 
 # DSD 
 <http://data.openbudgets.eu/ontology/dsd/nsrf-GR> a 
@@ -19,6 +19,8 @@
   qb:component
 	[ qb:dimension obeu-dimension:organization ],
 	[ qb:dimension obeu-dimension:operationCharacter ;
+		qb:componentAttachment qb:DataSet ],
+	[ qb:dimension obeu-dimension:fiscalPeriod ;
 		qb:componentAttachment qb:DataSet ],
 	[ qb:componentProperty nsrf-gr-optional:functionalClassification ],
 	[ qb:dimension obeu-dimension:project ],
