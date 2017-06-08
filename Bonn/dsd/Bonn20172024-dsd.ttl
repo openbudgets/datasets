@@ -1,8 +1,8 @@
 # ----- DSD-specific namespaces -----
 
-@prefix bonn-attribute:  <http://data.openbudgets.eu/ontology/dsd/bonn-budget/attribute/> .
-@prefix bonn-dimension:  <http://data.openbudgets.eu/ontology/dsd/bonn-budget/dimension/> .
-@prefix bonn-dsd-slice:  <http://data.openbudgets.eu/ontology/dsd/bonn-budget/slice/> .
+@prefix bonn-attribute:  <http://data.openbudgets.eu/ontology/dsd/bonn-budget-2017_2014/attribute/> .
+@prefix bonn-dimension:  <http://data.openbudgets.eu/ontology/dsd/bonn-budget-2017_2014/dimension/> .
+@prefix bonn-dsd-slice:  <http://data.openbudgets.eu/ontology/dsd/bonn-budget-2017_2014/slice/> .
 
 # ----- OpenBudgets.eu namespaces -----
 
@@ -107,22 +107,30 @@ bonn-dimension:economicClassification a rdf:Property, qb:CodedProperty, qb:Dimen
   qb:codeList <http://data.openbudgets.eu/resource/codelist/geschaeftsbereich_bonn> ;
   rdfs:isDefinedBy <http://data.openbudgets.eu/ontology/dsd/bonn-budget-2017_2014>.
 
-bonn-dimension:pspElements a rdf:Property, qb:CodedProperty, obeu:OptionalProperty;
-  rdfs:label "PSP element"@en ;
-  rdfs:comment "PSP Element is a part of three different account assignment elements (PSP/products, cost centers, and internal orders.)"@en ;
+ bonn-dimension:accountAssignmentElement a rdf:Property, qb:CodedProperty, obeu:DimensionProperty;
+  rdfs:label "Account assignment element"@en ;
+  rdfs:comment "Three different account assignment elements are distinguished: products, cost centers, and internal orders."@en ;
+  rdfs:subPropertyOf obeu-dimension:classification ;
   rdfs:range skos:Concept ;
-  qb:codeList <http://data.openbudgets.eu/resource/codelist/psp-elemente_bonn> ;
-  rdfs:isDefinedBy <http://data.openbudgets.eu/ontology/dsd/bonn-budget-2017_2014>.
+  qb:codeList <http://data.openbudgets.eu/resource/codelist/kontierungselemente_bonn> ;
+  rdfs:isDefinedBy <http://data.openbudgets.eu/ontology/dsd/bonn-budget-2017_2014> .   
 
-bonn-dimension:costCenters a rdf:Property, qb:CodedProperty, obeu:OptionalProperty;
-  rdfs:label "Cost Center"@en ;
-  rdfs:comment "Cost Center is a part of three different account assignment elements (PSP/products, cost centers, and internal orders.)"@en ;
-  qb:codeList <http://data.openbudgets.eu/resource/codelist/kostenstellenuebersicht_bonn> ;
-  rdfs:isDefinedBy <http://data.openbudgets.eu/ontology/dsd/bonn-budget-2017_2014>.  
+#bonn-dimension:pspElements a rdf:Property, qb:CodedProperty, obeu:OptionalProperty;
+#  rdfs:label "PSP element"@en ;
+#  rdfs:comment "PSP Element is a part of three different account assignment elements (PSP/products, cost centers, and internal orders)."@en ;
+#  rdfs:range skos:Concept ;
+#  qb:codeList <http://data.openbudgets.eu/resource/codelist/psp-elemente_bonn> ;
+#  rdfs:isDefinedBy <http://data.openbudgets.eu/ontology/dsd/bonn-budget-2017_2014>.
+
+#bonn-dimension:costCenters a rdf:Property, qb:CodedProperty, obeu:OptionalProperty;
+#  rdfs:label "Cost Center"@en ;
+#  rdfs:comment "Cost centers are the organizational unit in which costs arise. The following is planned for each cost center: a) what services are provided by the cost center b) The cost of products when they are used by the cost center. Cost Center is a part of three different account assignment elements (PSP/products, cost centers, and internal orders)."@en ;
+#  qb:codeList <http://data.openbudgets.eu/resource/codelist/kostenstellenuebersicht_bonn> ;
+#  rdfs:isDefinedBy <http://data.openbudgets.eu/ontology/dsd/bonn-budget-2017_2014>.  
  
-bonn-dimension:internalOders a rdf:Property, qb:CodedProperty, obeu:OptionalProperty;
-  rdfs:label "Internal orders"@en ;
-  rdfs:comment "Internal order is a part of three different account assignment elements (PSP/products, cost centers, and internal orders.)"@en ;
-  rdfs:range skos:Concept ;
-  qb:codeList <http://data.openbudgets.eu/resource/codelist/innenauftraege_bonn> ;
-  rdfs:isDefinedBy <http://data.openbudgets.eu/ontology/dsd/bonn-budget-2017_2014>. 
+#bonn-dimension:internalOders a rdf:Property, qb:CodedProperty, obeu:OptionalProperty;
+#  rdfs:label "Internal orders"@en ;
+#  rdfs:comment "Classification according to controlling targets. Internal orders can be invested for a temporary business measure or for continuous monitoring of costs. If necessary, they can be booked statistically to monitor costs according to other criteria than on the real-booked object. Internal order is a part of three different account assignment elements (PSP/products, cost centers, and internal orders)."@en ;
+#  rdfs:range skos:Concept ;
+#  qb:codeList <http://data.openbudgets.eu/resource/codelist/innenauftraege_bonn> ;
+#  rdfs:isDefinedBy <http://data.openbudgets.eu/ontology/dsd/bonn-budget-2017_2014>. 
