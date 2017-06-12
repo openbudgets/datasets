@@ -1,8 +1,8 @@
 # ----- DSD-specific namespaces -----
 
-@prefix bonn-attribute:  <http://data.openbudgets.eu/ontology/dsd/bonn-budget-2017_2014/attribute/> .
-@prefix bonn-dimension:  <http://data.openbudgets.eu/ontology/dsd/bonn-budget-2017_2014/dimension/> .
-@prefix bonn-dsd-slice:  <http://data.openbudgets.eu/ontology/dsd/bonn-budget-2017_2014/slice/> .
+@prefix bonn-attribute:  <http://data.openbudgets.eu/ontology/dsd/bonn-budget-2017_2024/attribute/> .
+@prefix bonn-dimension:  <http://data.openbudgets.eu/ontology/dsd/bonn-budget-2017_2024/dimension/> .
+@prefix bonn-dsd-slice:  <http://data.openbudgets.eu/ontology/dsd/bonn-budget-2017_2024/slice/> .
 
 # ----- OpenBudgets.eu namespaces -----
 
@@ -23,7 +23,7 @@
 # ----- DSD -----
 
 
-<http://data.openbudgets.eu/ontology/dsd/bonn-budget-2017_2014> a qb:DataStructureDefinition ;
+<http://data.openbudgets.eu/ontology/dsd/bonn-budget-2017_2024> a qb:DataStructureDefinition ;
   rdfs:label "Data structure definition for the approved budget of Stadt Bonn (German city)."@en ;  
 
   qb:component [ qb:dimension obeu-dimension:organization ;
@@ -65,7 +65,7 @@ bonn-dimension:operationCharacter a rdf:Property, qb:CodedProperty, qb:Dimension
   rdfs:subPropertyOf obeu-dimension:operationCharacter ;
   rdfs:range obeu:OperationCharacter ;
   qb:codeList <http://data.openbudgets.eu/resource/codelist/bonn-operation-character>  ;
-  rdfs:isDefinedBy <http://data.openbudgets.eu/ontology/dsd/bonn-budget-2017_2014> .  
+  rdfs:isDefinedBy <http://data.openbudgets.eu/ontology/dsd/bonn-budget-2017_2024> .  
 
 bonn-dimension:administrativeClassification a rdf:Property, qb:CodedProperty, qb:DimensionProperty;
   rdfs:label "Organization managing the planned budget"@en ;
@@ -73,7 +73,7 @@ bonn-dimension:administrativeClassification a rdf:Property, qb:CodedProperty, qb
   rdfs:subPropertyOf obeu-dimension:administrativeClassification ;
   rdfs:range skos:Concept ;
   qb:codeList <http://data.openbudgets.eu/resource/codelist/aemterhierarchie_bonn> ;
-  rdfs:isDefinedBy <http://data.openbudgets.eu/ontology/dsd/bonn-budget-2017_2014> .
+  rdfs:isDefinedBy <http://data.openbudgets.eu/ontology/dsd/bonn-budget-2017_2024> .
 
 bonn-dimension:functionalClassification a rdf:Property, qb:CodedProperty, qb:DimensionProperty;
   rdfs:label "Functional Classification"@en ;
@@ -81,7 +81,7 @@ bonn-dimension:functionalClassification a rdf:Property, qb:CodedProperty, qb:Dim
   rdfs:subPropertyOf obeu-dimension:functionalClassification ;
   rdfs:range skos:Concept ;
   qb:codeList <http://data.openbudgets.eu/resource/codelist/produktuebersicht_bonn> ;
-  rdfs:isDefinedBy <http://data.openbudgets.eu/ontology/dsd/bonn-budget-2017_2014> .
+  rdfs:isDefinedBy <http://data.openbudgets.eu/ontology/dsd/bonn-budget-2017_2024> .
 
 bonn-dimension:economicClassification a rdf:Property, qb:CodedProperty, qb:DimensionProperty;
   rdfs:label "Economic Classification"@en ;
@@ -89,7 +89,7 @@ bonn-dimension:economicClassification a rdf:Property, qb:CodedProperty, qb:Dimen
   rdfs:subPropertyOf obeu-dimension:economicClassification ;
   rdfs:range skos:Concept ;
   qb:codeList <http://data.openbudgets.eu/resource/codelist/kostenartenuebersicht_bonn> ;
-  rdfs:isDefinedBy <http://data.openbudgets.eu/ontology/dsd/bonn-budget-2017_2014>.
+  rdfs:isDefinedBy <http://data.openbudgets.eu/ontology/dsd/bonn-budget-2017_2024>.
 
  bonn-dimension:profitCenter a rdf:Property, qb:CodedProperty, qb:DimensionProperty;
   rdfs:label "Profit Center (PC) Classification"@en ;
@@ -97,7 +97,7 @@ bonn-dimension:economicClassification a rdf:Property, qb:CodedProperty, qb:Dimen
   rdfs:subPropertyOf bonn-dimension:administrativeClassification ;
   rdfs:range skos:Concept ;
   qb:codeList <http://data.openbudgets.eu/resource/codelist/profitcenter_bonn> ;
-  rdfs:isDefinedBy <http://data.openbudgets.eu/ontology/dsd/bonn-budget-2017_2014>.
+  rdfs:isDefinedBy <http://data.openbudgets.eu/ontology/dsd/bonn-budget-2017_2024>.
 
  bonn-dimension:businessArea a rdf:Property, qb:CodedProperty, qb:DimensionProperty;
   rdfs:label "Business Area"@en ;
@@ -105,7 +105,7 @@ bonn-dimension:economicClassification a rdf:Property, qb:CodedProperty, qb:Dimen
   rdfs:subPropertyOf bonn-dimension:administrativeClassification ;
   rdfs:range skos:Concept ;
   qb:codeList <http://data.openbudgets.eu/resource/codelist/geschaeftsbereich_bonn> ;
-  rdfs:isDefinedBy <http://data.openbudgets.eu/ontology/dsd/bonn-budget-2017_2014>.
+  rdfs:isDefinedBy <http://data.openbudgets.eu/ontology/dsd/bonn-budget-2017_2024>.
 
  bonn-dimension:accountAssignmentElement a rdf:Property, qb:CodedProperty, obeu:DimensionProperty;
   rdfs:label "Account assignment element"@en ;
@@ -113,24 +113,24 @@ bonn-dimension:economicClassification a rdf:Property, qb:CodedProperty, qb:Dimen
   rdfs:subPropertyOf obeu-dimension:classification ;
   rdfs:range skos:Concept ;
   qb:codeList <http://data.openbudgets.eu/resource/codelist/kontierungselemente_bonn> ;
-  rdfs:isDefinedBy <http://data.openbudgets.eu/ontology/dsd/bonn-budget-2017_2014> .   
+  rdfs:isDefinedBy <http://data.openbudgets.eu/ontology/dsd/bonn-budget-2017_2024> .   
 
 #bonn-dimension:pspElements a rdf:Property, qb:CodedProperty, obeu:OptionalProperty;
 #  rdfs:label "PSP element"@en ;
 #  rdfs:comment "PSP Element is a part of three different account assignment elements (PSP/products, cost centers, and internal orders)."@en ;
 #  rdfs:range skos:Concept ;
 #  qb:codeList <http://data.openbudgets.eu/resource/codelist/psp-elemente_bonn> ;
-#  rdfs:isDefinedBy <http://data.openbudgets.eu/ontology/dsd/bonn-budget-2017_2014>.
+#  rdfs:isDefinedBy <http://data.openbudgets.eu/ontology/dsd/bonn-budget-2017_2024>.
 
 #bonn-dimension:costCenters a rdf:Property, qb:CodedProperty, obeu:OptionalProperty;
 #  rdfs:label "Cost Center"@en ;
 #  rdfs:comment "Cost centers are the organizational unit in which costs arise. The following is planned for each cost center: a) what services are provided by the cost center b) The cost of products when they are used by the cost center. Cost Center is a part of three different account assignment elements (PSP/products, cost centers, and internal orders)."@en ;
 #  qb:codeList <http://data.openbudgets.eu/resource/codelist/kostenstellenuebersicht_bonn> ;
-#  rdfs:isDefinedBy <http://data.openbudgets.eu/ontology/dsd/bonn-budget-2017_2014>.  
+#  rdfs:isDefinedBy <http://data.openbudgets.eu/ontology/dsd/bonn-budget-2017_2024>.  
  
 #bonn-dimension:internalOders a rdf:Property, qb:CodedProperty, obeu:OptionalProperty;
 #  rdfs:label "Internal orders"@en ;
 #  rdfs:comment "Classification according to controlling targets. Internal orders can be invested for a temporary business measure or for continuous monitoring of costs. If necessary, they can be booked statistically to monitor costs according to other criteria than on the real-booked object. Internal order is a part of three different account assignment elements (PSP/products, cost centers, and internal orders)."@en ;
 #  rdfs:range skos:Concept ;
 #  qb:codeList <http://data.openbudgets.eu/resource/codelist/innenauftraege_bonn> ;
-#  rdfs:isDefinedBy <http://data.openbudgets.eu/ontology/dsd/bonn-budget-2017_2014>. 
+#  rdfs:isDefinedBy <http://data.openbudgets.eu/ontology/dsd/bonn-budget-2017_2024>. 
