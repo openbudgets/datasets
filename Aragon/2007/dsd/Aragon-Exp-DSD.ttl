@@ -26,7 +26,7 @@
 <http://data.openbudgets.eu/ontology/dsd/aragon-budget-exp-2007> a qb:DataStructureDefinition ;
   rdfs:label "Data structure definition for the expenditure part of the Aragonian budget (autonomous community in northeastern Spain)."@en ;  
 
-  qb:component [ qb:dimension obeu-dimension:budgetaryUnit ;
+  qb:component [ qb:dimension obeu-dimension:organization ;
                  qb:componentAttachment qb:DataSet ],
                [ qb:dimension obeu-dimension:operationCharacter ;
                  qb:componentAttachment qb:DataSet ],
@@ -34,8 +34,8 @@
                  qb:componentAttachment qb:DataSet ],
                [ qb:dimension aragon-dimension:administrativeClassification ],
                [ qb:dimension aragon-dimension:functionalClassification ],     
-         [ qb:dimension aragon-dimension:economicClassification ],
-         [ qb:dimension aragon-dimension:fundingClassification ],        
+         	   [ qb:dimension aragon-dimension:economicClassification ],
+               [ qb:dimension aragon-dimension:fundingClassification ],        
                [ qb:attribute obeu-attribute:currency ;
                  qb:componentRequired true ;
                  qb:componentAttachment qb:DataSet ],
