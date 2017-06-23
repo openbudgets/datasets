@@ -604,6 +604,12 @@
             "@id": "http://localhost:8181/resources/pipelines/created-1472814438882/components/fe323937-45d0-4fbf-92b5-550954c92f5e/configuration"
           }
         ],
+        "http://linkedpipes.com/ontology/disabled": [
+          {
+            "@type": "http://www.w3.org/2001/XMLSchema#boolean",
+            "@value": "true"
+          }
+        ],
         "http://linkedpipes.com/ontology/template": [
           {
             "@id": "http://etl.linkedpipes.com/resources/components/l-graphStoreProtocol/0.0.0"
@@ -1820,7 +1826,7 @@
   {
     "@graph": [
       {
-        "@id": "http://localhost/resources/configuration/e-httpGetFile",
+        "@id": "http://localhost:8181/resources/pipelines/created-1472814438882/components/b5f81198-fb1a-404e-9674-4a1467d409a8/configuration",
         "@type": [
           "http://plugins.linkedpipes.com/ontology/e-httpGetFile#Configuration"
         ],
@@ -1829,9 +1835,30 @@
             "@value": "Aragon-Inc-DSD.ttl"
           }
         ],
+        "http://plugins.linkedpipes.com/ontology/e-httpGetFile#fileNameControl": [
+          {
+            "@id": "http://plugins.linkedpipes.com/resource/configuration/None"
+          }
+        ],
         "http://plugins.linkedpipes.com/ontology/e-httpGetFile#fileUri": [
           {
-            "@value": "https://raw.githubusercontent.com/openbudgets/datasets/master/Aragon/2006/dsd/Aragon-Inc-DSD.ttl"
+            "@value": "https://raw.githubusercontent.com/openbudgets/datasets/master/Aragon/2006/dsd/Aragon-Inc-DSD-2006.ttl"
+          }
+        ],
+        "http://plugins.linkedpipes.com/ontology/e-httpGetFile#fileUriControl": [
+          {
+            "@id": "http://plugins.linkedpipes.com/resource/configuration/None"
+          }
+        ],
+        "http://plugins.linkedpipes.com/ontology/e-httpGetFile#hardRedirect": [
+          {
+            "@type": "http://www.w3.org/2001/XMLSchema#boolean",
+            "@value": "false"
+          }
+        ],
+        "http://plugins.linkedpipes.com/ontology/e-httpGetFile#hardRedirectControl": [
+          {
+            "@id": "http://plugins.linkedpipes.com/resource/configuration/None"
           }
         ]
       }
