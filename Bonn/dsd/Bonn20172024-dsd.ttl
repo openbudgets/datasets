@@ -28,34 +28,31 @@
 
   qb:component [ qb:dimension obeu-dimension:organization ;
                  qb:componentAttachment qb:DataSet ],
-               [ qb:dimension bonn-dimension:operationCharacter ;
-                 qb:componentAttachment qb:Slice ],
-               [ qb:dimension obeu-dimension:fiscalYear ],
+               [ qb:dimension bonn-dimension:operationCharacter],
+               [ qb:dimension obeu-dimension:fiscalYear ;
+                 qb:componentAttachment qb:DataSet ],
                [ qb:dimension obeu-dimension:budgetPhase ;
                  qb:componentAttachment qb:DataSet ],  
-               [ qb:dimension bonn-dimension:administrativeClassification ;
-                 qb:componentAttachment qb:Slice ],
-               [ qb:dimension bonn-dimension:functionalClassification ;
-                 qb:componentAttachment qb:Slice ],     
-               [ qb:dimension bonn-dimension:economicClassification ;
-                 qb:componentAttachment qb:Slice ],
+               [ qb:dimension bonn-dimension:administrativeClassification],
+               [ qb:dimension bonn-dimension:functionalClassification],     
+               [ qb:dimension bonn-dimension:economicClassification ],
                [ qb:attribute obeu-attribute:currency ;
                  qb:componentRequired true ;
                  qb:componentAttachment qb:DataSet ],
-               [ qb:measure obeu-measure:amount ] ;
+               [ qb:measure obeu-measure:amount ]  .
 
-	qb:sliceKey  bonn-dsd-slice:slice-by-classification .
+#	qb:sliceKey  bonn-dsd-slice:slice-by-classification .
 
 	
 # ----- Slice key definition -----
 
-bonn-dsd-slice:slice-by-classification a qb:SliceKey ;
-	rdfs:label "Slice by classification"@en ;
-	rdfs:comment "Slice grouping observations of the same functional code for all budget phases."@en ;
-	qb:componentProperty bonn-dimension:operationCharacter ;
-	qb:componentProperty bonn-dimension:administrativeClassification ;
-	qb:componentProperty bonn-dimension:functionalClassification ;
-	qb:componentProperty bonn-dimension:economicClassification .
+#bonn-dsd-slice:slice-by-classification a qb:SliceKey ;
+#	rdfs:label "Slice by classification"@en ;
+#	rdfs:comment "Slice grouping observations of the same functional code for all budget phases."@en ;
+#	qb:componentProperty bonn-dimension:operationCharacter ;
+#	qb:componentProperty bonn-dimension:administrativeClassification ;
+#	qb:componentProperty bonn-dimension:functionalClassification ;
+#	qb:componentProperty bonn-dimension:economicClassification .
 
 # ----- Component properties -----
 
@@ -93,7 +90,7 @@ bonn-dimension:economicClassification a rdf:Property, qb:CodedProperty, qb:Dimen
 
  bonn-dimension:profitCenter a rdf:Property, qb:CodedProperty, qb:DimensionProperty;
   rdfs:label "Profit Center (PC) Classification"@en ;
-  rdfs:comment "A combination of administrative classification and functional classification. A Profitcenter consists of: Amt / Administrative Classification (Digit 2-5) + Functional Classification (Digit 6-9), the whole PC can be used as a subproperty of obeu:administrativeClassification and each PC code has it's own description"@en ;
+  rdfs:comment "A combination of administrative classification and functional classification. A profitcenter consists of: amt / administrative classification (Digit 2-5) + functional classification (digit 6-9), the whole PC can be used as a subproperty of obeu:administrativeClassification and each PC code has it's own description"@en ;
   rdfs:subPropertyOf bonn-dimension:administrativeClassification ;
   rdfs:range skos:Concept ;
   qb:codeList <http://data.openbudgets.eu/resource/codelist/profitcenter_bonn> ;
