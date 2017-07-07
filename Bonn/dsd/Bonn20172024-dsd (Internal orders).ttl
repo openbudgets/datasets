@@ -26,7 +26,7 @@
 <http://data.openbudgets.eu/ontology/dsd/bonn-budget-2017_2024> a qb:DataStructureDefinition ;
   rdfs:label "Data structure definition for the approved budget of Stadt Bonn (German city)."@en ;  
 
-  qb:component [ qb:dimension obeu-dimension:organization ;
+  qb:component [ qb:dimension obeu-dimension:organizat
                  qb:componentAttachment qb:DataSet ],
                [ qb:dimension bonn-dimension:operationCharacter],
                [ qb:dimension obeu-dimension:fiscalYear ;
@@ -37,7 +37,7 @@
                [ qb:dimension bonn-dimension:functionalClassification],     
                [ qb:dimension bonn-dimension:economicClassification ],
                [ qb:dimension bonn-dimension:profitCenter ],
-               [ qb:dimension bonn-dimension:internalOders ],
+               [ qb:dimension bonn-dimension:internalOder ],
                [ qb:dimension bonn-dimension:businessArea ],
                [ qb:attribute obeu-attribute:currency ;
                  qb:componentRequired true ;
@@ -128,7 +128,7 @@ bonn-dimension:economicClassification a rdf:Property, qb:CodedProperty, qb:Dimen
 #  qb:codeList <http://data.openbudgets.eu/resource/codelist/kostenstellenuebersicht_bonn> ;
 #  rdfs:isDefinedBy <http://data.openbudgets.eu/ontology/dsd/bonn-budget-2017_2024>.  
  
- bonn-dimension:internalOders a rdf:Property, qb:CodedProperty, obeu:OptionalProperty;
+ bonn-dimension:internalOder a rdf:Property, qb:CodedProperty, obeu:OptionalProperty;
    rdfs:label "Internal orders"@en ;
    rdfs:comment "Classification according to controlling targets. Internal orders can be invested for a temporary business measure or for continuous monitoring of costs. If necessary, they can be booked statistically to monitor costs according to other criteria than on the real-booked object. Internal order is a part of three different account assignment elements (PSP/products, cost centers, and internal orders)."@en ;
    rdfs:range skos:Concept ;
