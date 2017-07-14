@@ -37,7 +37,7 @@
                [ qb:dimension bonn-dimension:functionalClassification],     
                [ qb:dimension bonn-dimension:economicClassification ],
                [ qb:dimension bonn-dimension:profitCenter ],
-               [ qb:dimension bonn-dimension:pspElements ],
+               [ qb:dimension bonn-dimension:pspElement ],
                [ qb:dimension bonn-dimension:businessArea ],
                [ qb:attribute obeu-attribute:currency ;
                  qb:componentRequired true ;
@@ -107,7 +107,7 @@ bonn-dimension:economicClassification a rdf:Property, qb:CodedProperty, qb:Dimen
   qb:codeList <http://data.openbudgets.eu/resource/codelist/geschaeftsbereich_bonn> ;
   rdfs:isDefinedBy <http://data.openbudgets.eu/ontology/dsd/bonn-budget-2017_2024-PSPelement>. 
 
- bonn-dimension:pspElements a rdf:Property, qb:CodedProperty, obeu:OptionalProperty;
+ bonn-dimension:pspElement a rdf:Property, qb:CodedProperty, obeu:OptionalProperty;
    rdfs:label "PSP element"@en ;
    rdfs:comment "PSP Element is a part of three different account assignment elements (PSP/products, cost centers, and internal orders)."@en ;
    rdfs:range skos:Concept ;
